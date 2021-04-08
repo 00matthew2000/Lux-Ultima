@@ -25211,72 +25211,49 @@ e_persia = {
 		zoroastrian_group = 4000 # Crusade target weight
 		zun_pagan_reformed = 100 # Crusade target weight
 		
-		d_mafaza = {
-			color={ 142 176 84 }
-			color2={ 255 255 255 }
+		d_arya = {
+			color = { 136 169 80 }
+			capital = 637 #Arya
 			
-			capital = 636 # Mafaza/Lut
-			
-			c_yazd = {
-				color={ 148 182 90 }
-				color2={ 255 255 255 }
+			c_birjand = {
+				color = { 138 171 82 }
 				
-				b_meybod = {
-				}
-				b_yazd = {
-				}
-				b_chak_chak = {
-				}
-				b_ardakan = {
-				}
-				b_zarch = {
-				}
-				b_taft = {
-				}
-				b_nir = {
-				}
-				b_dar_anjir = {
-				}
+				b_nehbandan = {}
+				b_birjand = {}
+				b_toon = {}
+				b_furg = {}
+				b_sarayan = {}
+				b_boshruyeh = {}
+				b_qaen = {}
+				b_paeenshahr = {}
+			}
+			c_qohistan = {
+				color = { 115 166 25 }
+				
+				b_torshiz = {}
+				b_beyhaq = {}
+				b_gonabad = {}
+				b_kalat = {}
+				b_torbatjam = {}
+				b_bardaskan = {}
+				b_mahvalat = {}
+				b_fariman = {}
 			}
 			c_sistan = {
-				color={ 102 122 67 }
-				color2={ 255 255 255 }
-
-				holy_site = zoroastrian # Lake Hamun / Mount Khwaja
+				color = { 102 122 67 }
 				
-				b_haozdar = {
-				}
-				b_kuh_taftan = {
-				}
-				b_nok_kundi = {
-				}
-				b_dozz_aap = {
-				}
-				b_shahresukhteh = {
-				}
-				b_esfandak = {
-				}
-				b_dehak = {
-				}
-				b_adar = {
-				}
-			}
-			c_lut = { # Mafaza
-				color = { 150 183 94 }
-				
-				b_sabzevar = {}
-				b_adraskan = {}
-				b_baluci = {}
-				b_saghar = {}
-				b_kwajaha = {}
-				b_taywara = {}
-				b_gozareh = {}
-				b_chanechahan = {}
+				b_haozdar = {}
+				b_kuh_taftan = {}
+				b_nok_kundi = {}
+				b_dozz_aap = {}
+				b_zabol = {}
+				b_shahresukhteh = {}
+				b_esfandak = {}
+				b_dehak = {}
 			}
 		}
 		d_kerman = {
-			color={ 98 118 63 }
-			color2={ 255 255 255 }
+			color = { 117 36 47 }
 			
 			capital = 639 # Kerman
 			
@@ -25538,169 +25515,139 @@ e_persia = {
 				}
 			}
 		}
-		d_jibal = {
-			color={ 184 225 112 }
-			color2={ 255 255 255 }
+		d_hamadan = {
+			color = { 184 225 112 }
+			capital = 658 #Hagmatana
+			
+			c_hamadan = {
+				color = { 190 231 118 }
+				
+				b_hamadan = {}
+				b_nahavand = {}
+				b_ganjnameh = {}
+				b_malayer = {}
+				b_ecbatana = {}
+				b_asadabad = {}
+				b_kabudrahang = {}
+				b_roudavar = {}
+			}
+			c_qom = {
+				color = { 187 228 115 }
+				
+				b_khourabad = {}
+				b_qom = {}
+				b_jamkaran = {}
+				b_kahak = {}
+				b_dastjerd = {}
+				b_salafchegan = {}
+				b_qanavat = {}
+				b_jafariyeh = {}
+			}
+		}
+		d_mazandaran = { #Rhagae
+			color = { 109 149 39 }
+			capital = 664 #Arsakia Rhagae
+			
+			c_rayy = {
+				color = { 193 234 121 }
+				
+				b_rayy = {}
+				b_tehran = {}
+				b_roudehen = {}
+				b_hashtgerd = {}
+				b_shahriar = {}
+				b_eslamshahr = {}
+				b_karaj = {}
+				b_pakdasht = {}
+			}
+			c_qwivir = {
+				color = { 115 155 45 }
+				
+				b_semnan = {}
+				b_darvar = {}
+				b_damqan = {}
+				b_dehnamak = {}
+				b_sangsar = {}
+				b_sharequmis = {}
+				b_gerdkuh = {}
+				b_kohandej = {}
+			}
+		}
+		d_esfahan = {
+			color = { 142 176 84 }
 			
 			capital = 646 #	Esfahan
 			
-			c_qom = {
-				color={ 187 228 115 }
-				color2={ 255 255 255 }
-				
-				b_khourabad = {
-				}
-				b_qom = {
-				}
-				b_jamkaran = {
-				}
-				b_kahak = {
-				}
-				b_dastjerd = {
-				}
-				b_salafchegan = {
-				}
-				b_qanavat = {
-				}
-				b_jafariyeh = {
-				}
-			}
-			c_hamadan = {
-				color={ 190 231 118 }
-				color2={ 255 255 255 }
-
-				holy_site = jewish
-				holy_site = samaritan
-				holy_site = karaite
-				
-				b_hamadan = {
-				}
-				b_nahavand = {
-				}
-				b_ganjnameh = {
-				}
-				b_malayer = {
-				}
-				b_ecbatana = {
-				}
-				b_asadabad = {
-				}
-				b_kabudrahang = {
-				}
-				b_roudavar = {
-				}
-			}
-			c_rayy = {
-				color={ 193 234 121 }
-				color2={ 255 255 255 }
-
-				b_rayy = {
-				}
-				b_tehran = {
-				}
-				b_roudehen = {
-				}
-				b_hashtgerd = {
-				}
-				b_shahriar = {
-				}
-				b_eslamshahr = {
-				}
-				b_karaj = {
-				}
-				b_pakdasht = {
-				}
-			}
-			c_zanjan_abhar = {
-				color={ 182 238 131 }
-				color2={ 255 255 255 }
-				
-				b_zahanj = {
-				}
-				b_abhar = {
-				}
-				b_wasamkuh = {
-				}
-				b_aba = {
-				}
-				b_suhraward = {
-				}
-				b_mozaffari = { # Fictional, for prosperity
-				}
-				b_quzlucheh = { # Fictional, for prosperity
-				}
-			}
-			c_luristan = {
-				color={ 75 164 110 }
-				color2={ 255 255 255 }
-				
-				b_dezbar = {
-				}
-				b_khorramabad = {
-				}
-				b_borujerd = {
-				}
-				b_dorood = {
-				}
-				b_aligoodarz = {
-				}
-				b_koohdasht = {
-				}
-				b_poledokhtar = {
-				}
-				b_alashtar = {
-				}
-			}
 			c_esfahan = {
-				color={ 145 179 87 }
-				color2={ 255 255 255 }
+				color = { 145 179 87 }
 				
-				b_esfahan = {
-				}
-				b_zarrinshahr = {
-				}
-				b_khansar = {
-				}
-				b_kashan = {
-				}
-				b_sedeh = {
-				}
-				b_qomsheh = {
-				}
-				b_abyaneh = {
-				}
-				b_ardestan = {
-				}
+				b_esfahan = {}
+				b_zarrinshahr = {}
+				b_khansar = {}
+				b_kashan = {}
+				b_sedeh = {}
+				b_qomsheh = {}
+				b_abyaneh = {}
+				b_ardestan = {}
+			}
+			c_yazd = {
+				color = { 148 182 90 }
+				
+				b_meybod = {}
+				b_yazd = {}
+				b_chak_chak = {}
+				b_ardakan = {}
+				b_zarch = {}
+				b_taft = {}
+				b_nir = {}
+				b_dar_anjir = {}
 			}
 		}
 		d_kurdistan = {
-			color={ 124 232 67 }
-			color2={ 255 255 255 }
-			
-			capital = 686 #Kurdistan
+			color = { 170 28 182 }
+			capital = 686 #Ganzak
 			
 			c_kurdistan = {
-				color={ 124 180 90 }
-				color2={ 255 255 255 }
+				color = { 11 91 238 }
+					holy_site = tarhunt
+					holy_site = tarhunt_reformed
+					holy_site = illuyanka_reformed
+					holy_site = zoroastrian
+					holy_site = mani
+					holy_site = mani_mithra
+					holy_site = mithra
+					holy_site = zor_angra
+					holy_site = zor_hindu
+					holy_site = ahriman_reformed
+					holy_site = mazdakism_reformed
+					holy_site = zor_angra_reformed
+					holy_site = zurvanism_reformed
+					holy_site = yazdanism
+					holy_site = yazidism
+					holy_site = yazdanism_reformed
 				
-				holy_site = zoroastrian # The Great Fire of Adur Gushnasp
+				b_duhok = {}
+				b_araden = {}
+				b_bebadi = {		# Âdur Gušnasp
+				}
+				b_dehi = {}
+				b_dairodmorhannanyo = {}
+				b_harmashi = {}
+				b_marqayoma = {}
+				b_dawodiya = {}
+				b_sarsink = {}
+			}
+			c_kirkuk = {
+				color = { 141 181 254 }
 				
-				b_duhok = {
-				}
-				b_araden = {
-				}
-				b_bebadi = {
-				}
-				b_dehi = {
-				}
-				b_harmashi = {
-				}
-				b_marqayoma = {
-				}
-				b_dawodiya = {
-				}
-				b_sarsink = {
-				}
+				b_kirkuk = {}
+				b_daquq = {}
+				b_ranya = {}
+				b_halabja = {}
+				b_makhmur = {}
+				b_dukan = {}
+				b_chuartan = {}
+				b_kifri = {}
 			}
 			c_shahrazur = {
 				color={ 124 199 5 }
@@ -25926,9 +25873,8 @@ e_persia = {
 		
 		culture = afghan
 	
-		d_baluchistan = { # Makran
-			color={ 150 170 118 }
-			color2={ 255 255 255 }
+		d_gedrosia = {
+			color = { 160 110 15 }
 			
 			capital = 1139 # Makran
 			
@@ -25947,6 +25893,27 @@ e_persia = {
 				b_akara = {}
 				b_chatti = {}
 			}
+			c_zahedan = {
+				color={ 142 175 86 }
+				color2={ 255 255 255 }
+				
+				b_zahedan = {
+				}
+				b_khajeh = {
+				}
+				b_kuhtaftan = {
+				}
+				b_hamun = {
+				}
+				b_jahangir = {
+				}
+				b_golchah = {
+				}
+				b_buk = {
+				}
+				b_kacharud = {
+				}
+			}
 			c_istakhr = {
 				color={ 134 158 76 }
 				color2={ 255 255 255 }
@@ -25964,27 +25931,6 @@ e_persia = {
 				b_kamin = {
 				}
 				b_main = {
-				}
-			}
-			c_chagai = {
-				color={ 152 185 96 }
-				color2={ 255 255 255 }
-				
-				b_nushki = {
-				}
-				b_dad = { # Fictional, for prosperity
-				}
-				b_chachoke = { # Fictional, for prosperity
-				}
-				b_kandar = { # Fictional, for prosperity
-				}
-				b_bochra = { # Fictional, for prosperity
-				}
-				b_kallarwala = { # Fictional, for prosperity
-				}
-				b_kashmir_kili = { # Fictional, for prosperity
-				}
-				b_peshai = { # Fictional, for prosperity
 				}
 			}
 			c_armail = {
@@ -26049,34 +25995,51 @@ e_persia = {
 				}
 			}
 		}
-		d_sistan = {
-			color={ 118 148 40 }
-			color2={ 255 255 255 }
+		d_zarangiana = {
+			color = { 144 65 177 }
 			
 			saka = "Sakastan"
 			
-			capital = 1183 # Bost
+			capital = 1275 # Zranka
 			
-			c_bost = {
-				color={ 189 110 60 }
+			c_mandesh = {
+				color={ 183 210 94 }
 				color2={ 255 255 255 }
-
-				holy_site = zun_pagan
-				holy_site = zun_pagan_reformed
 				
-				b_bost = { # Aka Lashgar Gah
+				b_chaghcharan = {
 				}
-				b_kandahar = {
+				b_adraskan = {
 				}
-				b_sangin = {
+				b_baluci = {
 				}
-				b_gereshk = {
+				b_saghar = {
 				}
-				b_chaman = {
+				b_kwajaha = {
 				}
-				b_chora = {
+				b_taywara = {
 				}
-				b_panjwai = {
+				b_gozareh = {
+				}
+			}
+			c_chagai = {
+				color={ 152 185 96 }
+				color2={ 255 255 255 }
+				
+				b_nushki = {
+				}
+				b_dad = { # Fictional, for prosperity
+				}
+				b_chachoke = { # Fictional, for prosperity
+				}
+				b_kandar = { # Fictional, for prosperity
+				}
+				b_bochra = { # Fictional, for prosperity
+				}
+				b_kallarwala = { # Fictional, for prosperity
+				}
+				b_kashmir_kili = { # Fictional, for prosperity
+				}
+				b_peshai = { # Fictional, for prosperity
 				}
 			}
 			c_zaranj = {
@@ -26119,27 +26082,6 @@ e_persia = {
 				b_juwayn = {
 				}
 			}
-			c_zahedan = {
-				color={ 142 175 86 }
-				color2={ 255 255 255 }
-				
-				b_zahedan = {
-				}
-				b_khajeh = {
-				}
-				b_kuhtaftan = {
-				}
-				b_hamun = {
-				}
-				b_jahangir = {
-				}
-				b_golchah = {
-				}
-				b_buk = {
-				}
-				b_kacharud = {
-				}
-			}
 		}
 	}
 
@@ -26151,16 +26093,25 @@ e_persia = {
 		
 		culture = afghan
 		
-		zun_pagan_reformed = 1000 # Crusade target weight
-		zoroastrian_group = 1500 # Crusade target weight
+		mani = 5000
+		mani_mithra = 5000
+		zoroastrian = 10000
+		ahriman_reformed = 2000
+		mazdakism_reformed = 2000
+		zor_angra_reformed = 2000
+		zurvanism_reformed = 10000
+		bud_mahayana = 500
+		bud_pureland = 2000
+		bud_sthaviravada = 1000
+		bud_vajrayana = 1000
+		bud_zen_reformed = 500
+		tengri_bud_reformed = 1000
 		
 		d_kabul = {
 			color={ 125 68 23 }
 			color2={ 255 255 255 }
 			
 			capital = 1185 # Kabul
-			
-			zun_pagan_reformed = 300 # Crusade target weight
 			
 			c_kabul = {
 				color={ 135 90 30 }
@@ -26182,27 +26133,6 @@ e_persia = {
 				b_kunar = {
 				}
 				b_kharabat = {
-				}
-			}
-			c_bamiyan = {
-				color={ 175 140 30 }
-				color2={ 255 255 255 }
-				
-				holy_site = buddhist
-				
-				b_bamiyan = {
-				}
-				b_shar_i_gholghola = {
-				}
-				b_istalif = {
-				}
-				b_zakhak = {
-				}
-				b_shibar = {
-				}
-				b_shihak = { #Fictional, for prosperity
-				}
-				b_shilif = { #Fictional, for prosperity
 				}
 			}
 			c_kunduz = {
@@ -26227,13 +26157,12 @@ e_persia = {
 				}
 			}
 		}
-		d_zabulistan = {
-			color={ 179 120 64 }
-			color2={ 255 255 255 }
+		d_arakhosia = {
+			color = { 180 120 0 }
 			
 			saka = "Seyanish"
 			
-			capital = 1182 # Ghazna
+			capital = 1183 # Ghazna
 			
 			zun_pagan_reformed = 300 # Crusade target weight
 			
@@ -26249,23 +26178,26 @@ e_persia = {
 				b_sharana = {}
 				b_sangar = {}
 			}
-			c_zamindawar = {
-				color={ 195 100 65 }
+			c_bost = {
+				color={ 189 110 60 }
 				color2={ 255 255 255 }
+
+				holy_site = zun_pagan
+				holy_site = zun_pagan_reformed
 				
-				b_zamindawar = {
+				b_bost = { # Aka Lashgar Gah
 				}
-				b_bishlang = {
+				b_kandahar = {
 				}
-				b_khalai = {
+				b_sangin = {
 				}
-				b_ymanda = { #Fictional, for prosperity
+				b_gereshk = {
 				}
-				b_langi = { #Fictional, for prosperity
+				b_chaman = {
 				}
-				b_afgilai = { #Fictional, for prosperity
+				b_chora = {
 				}
-				b_amandawar = { #Fictional, for prosperity
+				b_panjwai = {
 				}
 			}
 			c_kalat = {
@@ -26648,9 +26580,13 @@ e_persia = {
 				b_anah = {
 				}
 			}
+		}
+		d_kermanshah = {
+			color = { 88 80 112 }
+			capital = 688 #Kirmanshah
+			
 			c_kermanshah = {
-				color={ 75 114 90 }
-				color2={ 255 255 255 }
+				color = { 74 111 180 }
 				
 				b_javanroud = {
 				}
@@ -26670,8 +26606,7 @@ e_persia = {
 				}
 			}
 			c_ilam = {
-				color={ 105 150 52 }
-				color2={ 255 255 255 }
+				color = { 58 118 228 }
 				
 				b_dehloran = {
 				}
@@ -26688,6 +26623,26 @@ e_persia = {
 				b_ghalehghiran = {
 				}
 				b_towhid = {
+				}
+			}
+			c_luristan = {
+				color = { 76 113 182 }
+				
+				b_dezbar = {
+				}
+				b_khorramabad = {
+				}
+				b_borujerd = {
+				}
+				b_dorood = {
+				}
+				b_aligoodarz = {
+				}
+				b_koohdasht = {
+				}
+				b_poledokhtar = {
+				}
+				b_alashtar = {
 				}
 			}
 		}
@@ -26760,34 +26715,6 @@ e_persia = {
 				b_telloh2 = {}
 				b_muntafiq2 = {}
 				b_shatra2 = {}
-			}
-		}
-		d_samarra = {
-			color={ 110 190 80 }
-			color2={ 255 255 255 }
-			
-			capital = 696 # Samarra/c_euphrates
-			
-			c_kirkuk = {
-				color={ 90 160 105 }
-				color2={ 255 255 255 }
-				
-				b_kirkuk = {
-				}
-				b_daquq = {
-				}
-				b_ranya = {
-				}
-				b_halabja = {
-				}
-				b_makhmur = {
-				}
-				b_dukan = {
-				}
-				b_chuartan = {
-				}
-				b_kifri = {
-				}
 			}
 		}
 		d_basra = {
@@ -26898,37 +26825,43 @@ e_persia = {
 		mand_ruha_reformed = 1000
 		mandaean_reformed = 1000
 		
-		d_gilan = {
-			color={ 65 90 137 }
-			color2={ 255 255 255 }
+		d_dailam = {
+			color = { 130 100 15 }
+			capital = 679 #Daylam
 			
-			capital = 666 # Gilan
-			
-			c_qazwin = {
-				color={ 55 144 90 }
-				color2={ 255 255 255 }
+			c_zanjan_abhar = {
+				color = { 72 109 178 }
 				
-				b_lambsar = {
+				b_zahanj = {
 				}
-				b_qazwin = {
+				b_abhar = {
 				}
-				b_ahmadabad = {
+				b_wasamkuh = {
 				}
-				b_avaj = {
+				b_aba = {
 				}
-				b_abeyek = {
+				b_suhraward = {
 				}
-				b_takestan = {
+				b_mozaffari = { # Fictional, for prosperity
 				}
-				b_alvand = {
-				}
-				b_buinzahra = {
+				b_quzlucheh = { # Fictional, for prosperity
 				}
 			}
+			c_qazwin = {
+				color = { 70 107 176 }
+				
+				b_lambsar = {}
+				b_qazwin = {}
+				b_ahmadabad = {}
+				b_avaj = {}
+				b_abeyek = {}
+				b_takestan = {}
+				b_alvand = {}
+				b_buinzahra = {}
+			}
 		}
-		d_mazandaran = { # Tabaristan
-			color={ 92 155 187 }
-			color2={ 255 255 255 }
+		d_verkana = {
+			color = { 180 150 60 }
 			
 			capital = 662 # Mazandaran
 			
@@ -26976,6 +26909,27 @@ e_persia = {
 				b_kalar = {
 				}
 			}
+			c_dihistan = {
+				color={ 162 210 79 }
+				color2={ 255 255 255 }
+				
+				b_akhur = {
+				}
+				b_gasankuli = {
+				}
+				b_bayatkhadzi = {
+				}
+				b_kumdag = {
+				}
+				b_torskhali = {
+				}
+				b_yasydepe = {
+				}
+				b_yarymtyk = {
+				}
+				b_kemir = {
+				}
+			}
 			c_gurgan = {
 				color={ 107 158 17 }
 				color2={ 255 255 255 }
@@ -26997,51 +26951,43 @@ e_persia = {
 				b_khanbebin = {
 				}
 			}
-			c_qwivir = {
-				color={ 115 155 45 }
-				color2={ 255 255 255 }
-				
-				b_semnan = {
-				}
-				b_darvar = {
-				}
-				b_damqan = {
-				}
-				b_dehnamak = {
-				}
-				b_sangsar = {
-				}
-				b_sharequmis = {
-				}
-				b_gerdkuh = {
-				}
-				b_kohandej = {
-				}
-			}
 		}
 		d_tabriz = {
-			color={ 76 103 200 }
-			color2={ 255 255 255 }
+			color = { 60 140 60 }
 			
-			capital = 1537 # Tabriz
+			capital = 666 # Anzali
 			
 			c_maragha = {
-				color={ 116 90 165 }
-				color2={ 255 255 255 }
+				color = { 67 92 138 }
+					holy_site = muslim_sufi_reformed
 				
-				b_maragheh = {
+				b_babak = {}
+				b_tabriz = {
 				}
-				b_kursara = {
+				b_maragheh = {}
+				b_ahar = {}
+				b_zahhak = {}
+				b_sarab = {}
+				b_shabestar = {}
+				b_miyaneh = {}
+			}
+			c_gilan = {
+				color = { 64 89 136 }
+				
+				b_gilan = {
 				}
-				b_miyaneh = {
+				#b_rasht = {}
+				b_talysh = {
 				}
-				b_ujan = {
+				b_astara = {
 				}
-				b_bahaduran = { # Fictional, for prosperity
+				b_rudkhan = {
 				}
-				b_kileh_shin = { # Fictional, for prosperity
+				b_lahijan = {
 				}
-				b_mansurlu = { # Fictional, for prosperity
+				b_masouleh = {
+				}
+				b_masal = {
 				}
 			}
 			c_daylam = {
@@ -27134,54 +27080,13 @@ e_persia = {
 				b_dihnakhirjan = {
 				}
 			}
-			c_gilan = {
-				color={ 106 143 61 }
-				color2={ 255 255 255 }
-				
-				b_gilan = {
-				}
-				#b_rasht = {}
-				b_talysh = {
-				}
-				b_astara = {
-				}
-				b_rudkhan = {
-				}
-				b_lahijan = {
-				}
-				b_masouleh = {
-				}
-				b_masal = {
-				}
-			}
 		}
 		d_dihistan = {
 			color={ 153 160 180 }
 			color2={ 255 255 255 }
 			
 			capital = 631 # Dihistan
-			
-			c_dihistan = {
-				color={ 162 210 79 }
-				color2={ 255 255 255 }
-				
-				b_akhur = {
-				}
-				b_gasankuli = {
-				}
-				b_bayatkhadzi = {
-				}
-				b_kumdag = {
-				}
-				b_torskhali = {
-				}
-				b_yasydepe = {
-				}
-				b_yarymtyk = {
-				}
-				b_kemir = {
-				}
-			}
+		
 			c_kara-kum = {
 				color={ 165 243 30 }
 				color2={ 255 255 255 }
@@ -27251,26 +27156,55 @@ e_persia = {
 				b_tus = {
 				}
 			}
-			c_birjand = {
-				color={ 138 171 82 }
+			c_sarakhs = {
+				color={ 171 210 85 }
 				color2={ 255 255 255 }
 				
-				b_nehbandan = {
+				b_sarakhs = {
 				}
-				b_birjand = {
+				b_mazduran = {
 				}
-				b_toon = {
+				b_shiraz_merv = {
 				}
-				b_furg = {
+				b_maihana = {
 				}
-				b_sarayan = {
+				b_dandanqan = {
 				}
-				b_boshruyeh = {
+				b_yuzlar = { # Fictional, for prosperity
 				}
-				b_qaen = {
+				b_paxtachi = { # Fictional, for prosperity
 				}
-				b_paeenshahr = {
+			}
+			c_badghis = {
+				color = { 145 244 62 }
+				color2={ 255 255 255 }
+				
+				b_zurabad = {
 				}
+				b_kusuya = {
+				}
+				b_buzgan = {
+				}
+				b_pushang = {
+				}
+				b_malin = {
+				}
+				b_jabal_al_adda = {
+				}
+				b_kuhsim = {
+				}
+			}
+			c_lut = { # Mafaza
+				color = { 150 183 94 }
+				
+				b_sabzevar = {}
+				b_adraskan = {}
+				b_baluci = {}
+				b_saghar = {}
+				b_kwajaha = {}
+				b_taywara = {}
+				b_gozareh = {}
+				b_chanechahan = {}
 			}
 			c_nishapur = {
 				color={ 111 162 21 }
@@ -27296,27 +27230,6 @@ e_persia = {
 				b_chenaran = {
 				}
 				b_shamat = {
-				}
-			}
-			c_qohistan = {
-				color={ 115 166 25 }
-				color2={ 255 255 255 }
-				
-				b_torshiz = {
-				}
-				b_beyhaq = {
-				}
-				b_gonabad = {
-				}
-				b_torbatjam = {
-				}
-				b_bardaskan = {
-				}
-				b_mahvalat = {
-				}
-				b_fariman = {
-				}
-				b_dasu = {
 				}
 			}
 		}
@@ -27347,25 +27260,6 @@ e_persia = {
 				b_chishti = {
 				}
 			}
-			c_badghis = {
-				color = { 145 244 62 }
-				color2={ 255 255 255 }
-				
-				b_zurabad = {
-				}
-				b_kusuya = {
-				}
-				b_buzgan = {
-				}
-				b_pushang = {
-				}
-				b_malin = {
-				}
-				b_jabal_al_adda = {
-				}
-				b_kuhsim = {
-				}
-			}
 			c_kanj_rustaq = {
 				color = { 112 200 51 }
 				color2={ 255 255 255 }
@@ -27383,25 +27277,6 @@ e_persia = {
 				b_tajarg = { # Fictional, for prosperity
 				}
 				b_fenesk = { # Fictional, for prosperity
-				}
-			}
-			c_mandesh = {
-				color={ 183 210 94 }
-				color2={ 255 255 255 }
-				
-				b_chaghcharan = {
-				}
-				b_adraskan = {
-				}
-				b_baluci = {
-				}
-				b_saghar = {
-				}
-				b_kwajaha = {
-				}
-				b_taywara = {
-				}
-				b_gozareh = {
 				}
 			}
 		}
@@ -27453,25 +27328,6 @@ e_persia = {
 				b_megejik = { # Fictional, for prosperity
 				}
 			}
-			c_sarakhs = {
-				color={ 171 210 85 }
-				color2={ 255 255 255 }
-				
-				b_sarakhs = {
-				}
-				b_mazduran = {
-				}
-				b_shiraz_merv = {
-				}
-				b_maihana = {
-				}
-				b_dandanqan = {
-				}
-				b_yuzlar = { # Fictional, for prosperity
-				}
-				b_paxtachi = { # Fictional, for prosperity
-				}
-			}
 			c_konjikala = {
 				color={ 153 128 53 }
 				color2={ 255 255 255 }
@@ -27492,9 +27348,8 @@ e_persia = {
 				}
 			}
 		}
-		d_balkh = {
-			color={ 171 215 108 }
-			color2={ 255 255 255 }
+		d_baktria = {
+			color = { 250 180 0 }
 			
 			capital = 904 # Balkh
 			
@@ -27525,13 +27380,67 @@ e_persia = {
 				}
 			}
 			
+			c_zamindawar = {
+				color={ 195 100 65 }
+				color2={ 255 255 255 }
+				
+				b_zamindawar = {
+				}
+				b_bishlang = {
+				}
+				b_khalai = {
+				}
+				b_ymanda = { #Fictional, for prosperity
+				}
+				b_langi = { #Fictional, for prosperity
+				}
+				b_afgilai = { #Fictional, for prosperity
+				}
+				b_amandawar = { #Fictional, for prosperity
+				}
+			}
+			
+			c_bamiyan = {
+				color={ 175 140 30 }
+				color2={ 255 255 255 }
+				
+				holy_site = buddhist
+				
+				b_bamiyan = {
+				}
+				b_shar_i_gholghola = {
+				}
+				b_istalif = {
+				}
+				b_zakhak = {
+				}
+				b_shibar = {
+				}
+				b_shihak = { #Fictional, for prosperity
+				}
+				b_shilif = { #Fictional, for prosperity
+				}
+			}
+			
 			c_balkh = {
 				color={ 201 225 158 }
 				color2={ 255 255 255 }
 
-				holy_site = bon
-				holy_site = bon_reformed
 				holy_site = zoroastrian
+				holy_site = mani
+				holy_site = mani_mithra
+				holy_site = zor_angra
+				holy_site = zor_hindu
+				holy_site = ahriman_reformed
+				holy_site = mazdakism_reformed
+				holy_site = zor_angra_reformed
+				holy_site = zurvanism_reformed
+				holy_site = indohelen
+				holy_site = indoh_bud
+				holy_site = indoh_hindu
+				holy_site = indoh_zor
+				holy_site = indohelen_reformed
+				holy_site = bud_zor_reformed
 
 				roman = "Bactria"
 				armenian = "Bactria"
@@ -27540,20 +27449,15 @@ e_persia = {
 				georgian = "Bactria"
 				assyrian = "Bactria"
 				
-				b_balkh = {
+				b_balkh = {}
+				b_alexandriaoxiana = {}
+				b_oxiana = {
 				}
-				b_tiliatepe = {
-				}
-				b_takhtisangin = {
-				}
-				b_alkhanoum = {
-				}
-				b_surkhkotal = {
-				}
-				b_dalverzintepe = {
-				}
-				b_khulm = {
-				}
+				b_begram = {}
+				b_eucratideia = {}
+				b_navavihara = {}
+				b_tarmis = {}
+				b_dalverzintepe = {}
 			}
 			
 			c_guzgan = {
@@ -52147,19 +52051,7 @@ d_african_tiny = { # Tiny Merc
 
 
 # OBSOLETE TITLES IN THE MIDDLE EAST SINCE 2.8
-d_hamadan = {
-	color={ 184 225 112 }
-	color2={ 255 255 255 }
-}
 
-d_esfahan = {
-	color={ 142 176 84 }
-	color2={ 255 255 255 }	
-}
-d_kermanshah = { # Luristan
-	color={ 55 144 95 }
-	color2={ 255 255 255 }	
-}
 d_burtas = {
 	color = { 173 121 176 }
 	color2 = { 0 128 128 }
