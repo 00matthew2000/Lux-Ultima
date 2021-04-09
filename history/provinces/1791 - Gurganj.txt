@@ -3,11 +3,17 @@
 # County title
 title = c_gurganj
 
-max_settlements = 3
-
-b_kyrkmolla = castle
-b_urgench = city
-b_nukus = temple
+# Settlements
+max_settlements = 4
+b_darvaza = castle
+#b_beruni = city
+b_kuskupir = temple
+b_tagta = temple
+#b_tahta = castle
+#b_kizketken = castle
+#b_atajab = castle
+#b_sumanay = castle
+#b_nukus = city
 
 # Misc
 culture = parthian

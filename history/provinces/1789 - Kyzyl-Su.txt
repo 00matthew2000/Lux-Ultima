@@ -4,16 +4,16 @@
 title = c_kyzyl-su
 
 # Settlements
-max_settlements = 2
-b_kyzyl-su = castle
+max_settlements = 4
+b_karakhan = castle
+b_gijduvan = city
+b_saydon = temple
+#b_gishty =
+#b_kum_rabad =
+#b_kiziltepa =
+#b_gamkhurd =
+#b_khodzzha_kurgan =
 
 # Misc
-culture = parthian
-religion = zoroastrian
-
-# History
-1100.1.1 = {
-	religion = sunni
-}
-
-1230.1.1 = { culture = parthian }
+culture = tocharian
+religion = sunni
