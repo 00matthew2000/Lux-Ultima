@@ -26317,27 +26317,6 @@ e_sassanid = {
 				b_main = {
 				}
 			}
-			c_armail = {
-				color={ 152 185 96 }
-				color2={ 255 255 255 }
-				
-				b_armail = {
-				}
-				b_hingula = {
-				}
-				b_kambali = {
-				}
-				b_yusli = {
-				}
-				b_rihana_sahu = { # Fictional, for prosperity
-				}
-				b_basti_basira = { # Fictional, for prosperity
-				}
-				b_pejoke = { # Fictional, for prosperity
-				}
-				b_daryun = { # Fictional, for prosperity
-				}
-			}
 			c_saravan = {
 				color={ 152 185 96 }
 				color2={ 255 255 255 }
@@ -43462,162 +43441,120 @@ e_rajastan = {
 	
 	capital = 1356 # Kanyakubja
 	
-	k_sindh = {
-		color={ 225 135 20 }
-		color2={ 255 255 255 }
+	k_sindhia = {
+		color = { 162 98 22 }
 		
-		capital = 1297 # Debul
+		capital = 1375 # Alexandria Opiana
 		
-		zun_pagan_reformed = 100 # Crusade target weight
-		zoroastrian_group = 50 # Crusade target weight
+		jain = 500
+		murugan_reformed = 500
+		vidharma_reformed = 500
+		bud_mahayana = 1000
+		bud_pureland = 1000
+		bud_sthaviravada = 1000
+		bud_vajrayana = 1000
+		bud_zen_reformed = 500
+		tengri_bud_reformed = 500
 		
-		d_sauvira = {
-			color={ 230 135 20 }
-			color2={ 255 255 255 }
+		d_sakala = {
+  			color = { 192 91 86 }
 			
-			capital = 1297 # Debul
+			capital = 1362 # Prasthala
 			
-			c_debul = {
-				color={ 230 155 20 }
+			c_lahur = {
+				color = { 212 75 57 }
+
+				b_lahur = {}
+				b_shahdara = {}
+				b_sharaqpur = {}
+				b_chung = {}
+				b_sabzazar = {}
+				b_khanuwal = {}
+				b_ferozewala = {}
+				b_raiwind = {}
+			}
+			c_trigarta = {
+				color={ 155 80 15 }
 				color2={ 255 255 255 }
 				
-				b_debul = {
+				b_jalandhar = {
 				}
-				b_banbhore = {
+				b_rahon = {
 				}
-				b_landhi = {
+				b_pathankot = {
 				}
-				b_thatta = {
+				b_kaparthula = {
 				}
-				b_makli = {
+				b_milwat = {
 				}
-				b_shahbandar = {
+				b_sarwmanpur = {
 				}
-				b_kolachi = {
-				}
-				b_lari_bandar = {
+				b_ragnagar = {
 				}
 			}
-			c_sonda = {
-				color={ 230 115 20 }
-				color2={ 255 255 255 }
-				
-				b_sonda = {
-				}
-				b_nagarparkar = {
-				}
-				b_karoonjar = {
-				}
-				b_amarkot = {
-				}
-				b_mamhal = {
-				}
-				b_matli = {
-				}
-				b_badin = {
-				}
+			c_sakala = {
+				color = { 73 167 23 }
+
+				b_jambupura = {}
+				b_udhampur = {}
+				b_vijay_pur = {}
+				b_bani = {}
+				b_kathua = {}
+				b_pathankot = {}
+				b_dalhousie = {}
+				b_dharamsala = {}
 			}
-			c_mansura = {
-				color={ 230 155 40 }
-				color2={ 255 255 255 }
+			c_gurjaratra = {
+				color = { 202 75 67 }
 				
-				b_mansura = {
-				}
-				b_mirpur_khas = {
-				}
-				b_hala = {
-				}
-				b_nerunkot = {
-				}
-				b_matiari = {
-				}
-				b_nasarpur = {
-				}
-				b_mirman = {
-				}
-			}
-			c_ranikot = {
-				color={ 210 155 40 }
-				color2={ 255 255 255 }
-				
-				b_ranikot = {
-				}
-				b_sharusan = {
-				}
-				b_paat = {
-				}
-				b_khudabad = {
-				}
-				b_manhabari = {
-				}
-				b_jandar = {
-				}
-				b_abu = { # Fictional - For Prosperity
-				}
-			}
-			c_siwistan = {
-				color={ 250 155 40 }
-				color2={ 255 255 255 }
-				
-				b_siwistan = {
-				}
-				b_dahlilah = {
-				}
-				b_mir_rukan = {
-				}
-				b_guja = {
-				}
-				b_vicalapura = {
-				}
-				b_bahera = { # Fictional - For Prosperity
-				}
-				b_kamharia = { # Fictional - For Prosperity
-				}
+				b_sakala = {}
+				b_kalra_kalan = {}
+				b_sheikh_pur = {}
+				b_sook_kalan = {}
+				b_daudpur = {}
+				b_ranewal_syedan = {}
+				b_jalalpur_jattan = {}
+				b_lakhanwal_khas = {}
 			}
 		}
-		d_bhakkar = {
-			color={ 200 105 18 }
-			color2={ 255 255 255 }
+		d_taxila = {
+			color = { 202 75 57 }
 			
-			capital = 1138 # Bhakkar
+			capital = 1375 # Alexandria Opiana
 			
-			c_bhakkar = {
-				color={ 220 105 18 }
-				color2={ 255 255 255 }
+			c_purushapura = {
+				color = { 202 85 57 }
+					holy_site = indohelen
+					holy_site = indoh_bud
+					holy_site = indoh_hindu
+					holy_site = indoh_zor
+					holy_site = indohelen_reformed
+
+				hellenistic = "Sirkap" 
+				greek = "Sirkap" 
+				indohellenic = "Sirkap" 
+				gandharan = "Sirkap" 
+				tocharian = "Sirkap" 
+				sinohellenic = "Sirkap" 
+				viethellenic = "Sirkap" 
 				
-				b_bhakkar = {
+				b_purusapura = {}
+				b_udabhanda = {}
+				b_taksasila = {
+					hellenistic = "Sirkap" 
+					greek = "Sirkap" 
+					indohellenic = "Sirkap" 
+					gandharan = "Sirkap" 
+					tocharian = "Sirkap" 
+					sinohellenic = "Sirkap" 
+					viethellenic = "Sirkap" 
+					
 				}
-				b_larkana = {
-				}
-				b_sarkara = {
-				}
-				b_kalari = {
-				}
-				b_sialkot = {
-				}
-				b_shikarpur = {
-				}
-				b_mejia = { # Fictional - For Prosperity
-				}
-			}
-			c_aror = {
-				color={ 180 105 18 }
-				color2={ 255 255 255 }
-				
-				b_aror = {
-				}
-				b_sukkur = {
-				}
-				b_chak = {
-				}
-				b_basmak = {
-				}
-				b_siraj_ji_takri = {
-				}
-				b_allah_abad = {
-				}
-				b_mahokhar = { # Fictional - For Prosperity
-				}
+				b_hayatabad = {}
+				b_wadpagga = {}
+				b_jhagra = {}
+				b_mian_gujjar = {}
+				b_pabbi = {}
 			}
 			c_rajanpur = {
 				color={ 200 115 18 }
@@ -43657,61 +43594,64 @@ e_rajastan = {
 				b_valikondapuram = { # Fictional - For Prosperity
 				}
 			}
-			c_kandail = {
-				color={ 200 105 38 }
+			c_kafirkot = {
+				color = { 202 91 86 }
+				holy_site = zz01_vedanta
+				
+				b_multan = {}
+				b_khanewal = {}
+				b_chak_mahni = {
+					pentarchy = zz01_vedanta
+				}
+				b_kot_rab_nawaz = {}
+				b_moza_nigana_durana = {}
+				b_qadirpur_ran = {}
+				b_moza_lothar = {}
+				b_kotla_maharan = {}
+			}
+			c_wana = { # Bori
+				color={ 244 80 5 }
 				color2={ 255 255 255 }
 				
-				b_kandail = {
+				b_bori = {
 				}
-				b_dadu = {
+				b_mun = { # Fictional - For Prosperity
 				}
-				b_jhal = {
+				b_nandulia = { # Fictional - For Prosperity
 				}
-				b_vinjamoor = { # Fictional - For Prosperity
+				b_jua = { # Fictional - For Prosperity
 				}
-				b_wilong = { # Fictional - For Prosperity
+				b_junaghur = { # Fictional - For Prosperity
 				}
-				b_xelvona = { # Fictional - For Prosperity
+				b_kakshar = { # Fictional - For Prosperity
 				}
-				b_yamanpalli = { # Fictional - For Prosperity
+				b_kalamboli = { # Fictional - For Prosperity
 				}
 			}
-			c_quzdar = {
-				color={ 200 115 28 }
+			c_bannu = {
+				color={ 9 150 51 } #265 modulo 256 is 9
 				color2={ 255 255 255 }
 				
-				b_quzdar = {
+				b_bannu = {
 				}
-				b_bodein = {
+				b_hangu = {
 				}
-				b_sumandal = { # Fictional - For Prosperity
+				b_karrak = {
 				}
-				b_supa = { # Fictional - For Prosperity
+				b_kohat = {
 				}
-				b_suratgarh = { # Fictional - For Prosperity
+				b_dinkot = {
 				}
-				b_talya = { # Fictional - For Prosperity
+				b_kalabagh = {
 				}
-				b_tekkumuri = { # Fictional - For Prosperity
+				b_hindolia = { # Fictional - For Prosperity
 				}
 			}
 		}
-		
-	}
-	k_punjab = {
-		color={ 255 90 20 }
-		color2={ 255 255 255 }
-		
-		capital = 1362 # Lahur
-		
-		zun_pagan_reformed = 150 # Crusade target weight
-		zoroastrian_group = 50 # Crusade target weight
-	
-		d_multan = {
-			color={ 234 100 21 }
-			color2={ 255 255 255 }
+		d_pentapotamia = {
+			color = { 132 190 80 }
 			
-			capital = 1338 # Multan
+			capital = 1178 #Pentapotamia
 			
 			c_multan = {
 				color={ 234 110 21 }
@@ -43735,125 +43675,23 @@ e_rajastan = {
 				b_makhdum_rashid = {
 				}
 			}
-			c_kafirkot = {
-				color={ 234 90 21 }
+			c_nandana = {
+				color={ 255 150 11 }
 				color2={ 255 255 255 }
 				
-				b_kafirkot = {
+				b_nandana = {
 				}
-				b_malot = {
+				b_hund = {
 				}
-				b_bilot = {
+				b_lund2 = {
 				}
-				b_maniot = {
+				b_simhapura = {
 				}
-				b_dera_ghazi_khan = {
+				b_khushab = {
 				}
-				b_rupsi = { # Fictional - For Prosperity
+				b_tulaja = {
 				}
-				b_sagra = { # Fictional - For Prosperity
-				}
-			}
-			c_uch = {
-				color={ 234 80 21 }
-				color2={ 255 255 255 }
-				
-				b_uch = {
-				}
-				b_chachran = {
-				}
-				b_mithankot = {
-				}
-				b_derawar = {
-				}
-				b_chaudari = {
-				}
-				b_sitpur = {
-				}
-				b_rardhu = { # Fictional - For Prosperity
-				}
-			}
-			c_karur = {
-				color={ 234 50 11 }
-				color2={ 255 255 255 }
-				
-				b_karur = {
-				}
-				b_askhanda = {
-				}
-				b_vehari = {
-				}
-				b_chishtian = {
-				}
-				b_marot = {
-				}
-				b_nyahalode = { # Fictional - For Prosperity
-				}
-				b_odalgaon = { # Fictional - For Prosperity
-				}
-			}
-			c_karor = {
-				color={ 255 120 21 }
-				color2={ 255 255 255 }
-				
-				b_karor = {
-				}
-				b_mankera = {
-				}
-				b_shadia = {
-				}
-				b_wan_bhachran = {
-				}
-				b_murwa = { # Fictional - For Prosperity
-				}
-				b_naithra = { # Fictional - For Prosperity
-				}
-				b_namchang = { # Fictional - For Prosperity
-				}
-			}
-			c_wana = { # Bori
-				color={ 244 80 5 }
-				color2={ 255 255 255 }
-				
-				b_bori = {
-				}
-				b_mun = { # Fictional - For Prosperity
-				}
-				b_nandulia = { # Fictional - For Prosperity
-				}
-				b_jua = { # Fictional - For Prosperity
-				}
-				b_junaghur = { # Fictional - For Prosperity
-				}
-				b_kakshar = { # Fictional - For Prosperity
-				}
-				b_kalamboli = { # Fictional - For Prosperity
-				}
-			}
-		}
-		d_lahore = {
-			color={ 180 110 41 }
-			color2={ 255 255 255 }
-			
-			capital = 1362 # Lahur
-			
-			c_lahur = {
-				color={ 180 130 41 }
-				color2={ 255 255 255 }
-				
-				b_lahur = {
-				}
-				b_sangla = {
-				}
-				b_kasur = {
-				}
-				b_samnabad = {
-				}
-				b_mehdiabad = {
-				}
-				b_chunian = {
-				}
-				b_data_darbar = {
+				b_khewra = {
 				}
 			}
 			c_dipalpur = {
@@ -43913,7 +43751,242 @@ e_rajastan = {
 				b_rabwah = {
 				}
 			}
+			c_vijnot = {
+				color={ 150 60 50 }
+				color2={ 255 255 255 }
+				
+				b_vijnot = {
+				}
+				b_bhatiya = {
+				}
+				b_kishangarh = {
+				}
+				b_ghotki = {
+				}
+				b_ravel = { # Fictional - For Prosperity
+				}
+				b_saitual = { # Fictional - For Prosperity
+				}
+				b_sakyang = { # Fictional - For Prosperity
+				}
+			}
+			c_uch = {
+				color={ 234 80 21 }
+				color2={ 255 255 255 }
+				
+				b_uch = {
+				}
+				b_chachran = {
+				}
+				b_mithankot = {
+				}
+				b_derawar = {
+				}
+				b_chaudari = {
+				}
+				b_sitpur = {
+				}
+				b_rardhu = { # Fictional - For Prosperity
+				}
+			}
+			c_karur = {
+				color = { 192 91 96 }
+				
+				b_pancapura = {}
+				b_manawala = {}
+				b_makkuana = {}
+				b_dasuha = {}
+				b_sidhar = {}
+				b_nanakpur = {}
+				b_chak_bahga = {}
+				b_khurianwala = {}
+			}
+			c_karor = {
+				color={ 255 120 21 }
+				color2={ 255 255 255 }
+				
+				b_karor = {
+				}
+				b_mankera = {
+				}
+				b_shadia = {
+				}
+				b_wan_bhachran = {
+				}
+				b_murwa = { # Fictional - For Prosperity
+				}
+				b_naithra = { # Fictional - For Prosperity
+				}
+				b_namchang = { # Fictional - For Prosperity
+				}
+			}
 		}
+		d_sindh = {
+  			color = { 203 119 56 }
+			
+			capital = 1297 # Debul
+			
+			c_debul = { #Alexandria Sindhia
+  				color = { 203 119 66 }
+#				holy_site = shaytana
+
+				b_kolachi = {}
+				b_winder = {}
+				b_bapro_jakhro = {}
+				b_landhi = {}
+				b_gadap = {}
+				b_liari = {}
+				b_uthal = {}
+				b_thano_bula_khan = {}
+			}
+			c_sonda = {
+				color = { 193 119 56 }
+
+				b_thatta = {}
+				b_makli = {}
+				b_ghumullah = {}
+				b_vur = {}
+				b_badin = {}
+				b_jati = {}
+				b_keti_bandar = {}
+				b_mirpur_sakro = {}
+			}
+			c_mansura = {
+				color = { 213 119 56 }
+
+				b_mansura = {}
+				b_mirpur_khas = {}
+				b_mirwah_gorchani = {}
+				b_tando_allahyar = {}
+				b_tando_adam = {}
+				b_hala = {}
+				b_sabu_rahu = {}
+				b_sanghar = {}
+			}
+			c_armail = {
+				color={ 152 185 96 }
+				color2={ 255 255 255 }
+				
+				b_armail = {
+				}
+				b_hingula = {
+				}
+				b_kambali = {
+				}
+				b_yusli = {
+				}
+				b_rihana_sahu = { # Fictional, for prosperity
+				}
+				b_basti_basira = { # Fictional, for prosperity
+				}
+				b_pejoke = { # Fictional, for prosperity
+				}
+				b_daryun = { # Fictional, for prosperity
+				}
+			}
+			c_ranikot = {
+				color={ 210 155 40 }
+				color2={ 255 255 255 }
+				
+				b_ranikot = {
+				}
+				b_sharusan = {
+				}
+				b_paat = {
+				}
+				b_khudabad = {
+				}
+				b_manhabari = {
+				}
+				b_jandar = {
+				}
+				b_abu = { # Fictional - For Prosperity
+				}
+			}
+			c_siwistan = {
+				color={ 250 155 40 }
+				color2={ 255 255 255 }
+				
+				b_siwistan = {
+				}
+				b_dahlilah = {
+				}
+				b_mir_rukan = {
+				}
+				b_guja = {
+				}
+				b_vicalapura = {
+				}
+				b_bahera = { # Fictional - For Prosperity
+				}
+				b_kamharia = { # Fictional - For Prosperity
+				}
+			}
+			c_bhakkar = {
+				color = { 203 129 56 }
+
+				b_alor = {}
+				b_khairpur = {}
+				b_shikarpur = {}
+				b_jacobabad = {}
+				b_sukkur = {}
+				b_baiji_purani = {}
+				b_ghotki = {}
+				b_khandh_kot = {}
+			}
+			c_aror = {
+				color = { 45 192 79 }
+			
+				b_oran = {}
+				b_mostaganem = {}
+				b_aintemouchent = {}
+				b_maghnia = {}
+				b_benisaf = {}
+				b_ainelberd = {}
+				b_merselhadjad = {}
+				b_gdyel = {}
+			}
+			c_kandail = {
+				color = { 204 130 70 }
+				
+				b_karak = {}
+				b_quetta = {}
+				b_kuchlak = {}
+				b_bostan = {}
+				b_yaru_karez = {}
+				b_hazaraganji = {}
+				b_spezand = {}
+				b_shah_bakhah = {}
+			}
+			c_quzdar = {
+				color={ 200 115 28 }
+				color2={ 255 255 255 }
+				
+				b_quzdar = {
+				}
+				b_bodein = {
+				}
+				b_sumandal = { # Fictional - For Prosperity
+				}
+				b_supa = { # Fictional - For Prosperity
+				}
+				b_suratgarh = { # Fictional - For Prosperity
+				}
+				b_talya = { # Fictional - For Prosperity
+				}
+				b_tekkumuri = { # Fictional - For Prosperity
+				}
+			}
+		}
+	}
+	k_punjab = {
+		color={ 255 90 20 }
+		color2={ 255 255 255 }
+		
+		capital = 1362 # Lahur
+		
+		zun_pagan_reformed = 150 # Crusade target weight
+		zoroastrian_group = 50 # Crusade target weight
 		
 		d_trigarta = {
 			color={ 155 80 15 }
@@ -43921,143 +43994,23 @@ e_rajastan = {
 			
 			capital = 1193 # Trigarta
 			
-			c_trigarta = {
-				color={ 155 80 15 }
-				color2={ 255 255 255 }
-				
-				b_jalandhar = {
-				}
-				b_rahon = {
-				}
-				b_pathankot = {
-				}
-				b_kaparthula = {
-				}
-				b_milwat = {
-				}
-				b_sarwmanpur = {
-				}
-				b_ragnagar = {
-				}
-			}
-			c_sakala = {
-				color={ 180 120 21 }
-				color2={ 255 255 255 }
-				
-				b_sakala = {
-				}
-				b_jammu = {
-				}
-				b_bhuttar = {
-				}
-				b_bahu = {
-				}
-				b_vallapura = {
-				}
-				b_puran_nagar = {
-				}
-				b_pasrur = {
-				}
-			}
-			c_gurjaratra = {
-				color={ 140 120 41 }
-				color2={ 255 255 255 }
-				
-				b_gurjaratra = {
-				}
-				b_jhelum = {
-				}
-				b_kharian = {
-				}
-				b_kunjah = {
-				}
-				b_hakla = {
-				}
-				b_tibbi = {
-				}
-				b_karianwala = {
-				}
-				b_bhaddar = {
-				}
-			}
-		}
-		
-		d_gandhara = {
-			color={ 255 150 31 }
-			color2={ 255 255 255 }
-			
-			capital = 1180 # Udabhanda
-			
-			c_purushapura = {
-				color = { 202 85 57 }
-					holy_site = indohelen
-					holy_site = indoh_bud
-					holy_site = indoh_hindu
-					holy_site = indoh_zor
-					holy_site = indohelen_reformed
+			c_kangra = {
+				color= { 150 140 30 }
+				color2= { 255 255 255 }
 
-				hellenistic = "Sirkap" 
-				greek = "Sirkap" 
-				indohellenic = "Sirkap" 
-				gandharan = "Sirkap" 
-				tocharian = "Sirkap" 
-				sinohellenic = "Sirkap" 
-				viethellenic = "Sirkap" 
-				
-				b_purusapura = {}
-				b_udabhanda = {}
-				b_taksasila = {
-					hellenistic = "Sirkap" 
-					greek = "Sirkap" 
-					indohellenic = "Sirkap" 
-					gandharan = "Sirkap" 
-					tocharian = "Sirkap" 
-					sinohellenic = "Sirkap" 
-					viethellenic = "Sirkap" 
-					
+				b_kangra = {
 				}
-				b_hayatabad = {}
-				b_wadpagga = {}
-				b_jhagra = {}
-				b_mian_gujjar = {}
-				b_pabbi = {}
-			}
-			c_nandana = {
-				color={ 255 150 11 }
-				color2={ 255 255 255 }
-				
-				b_nandana = {
+				b_shimla = {
 				}
-				b_hund = {
+				b_nurpur = {
 				}
-				b_lund2 = {
+				b_chamba = {
 				}
-				b_simhapura = {
+				b_bharmour = {
 				}
-				b_khushab = {
+				b_kahlur = {
 				}
-				b_tulaja = {
-				}
-				b_khewra = {
-				}
-			}
-			c_bannu = {
-				color={ 9 150 51 } #265 modulo 256 is 9
-				color2={ 255 255 255 }
-				
-				b_bannu = {
-				}
-				b_hangu = {
-				}
-				b_karrak = {
-				}
-				b_kohat = {
-				}
-				b_dinkot = {
-				}
-				b_kalabagh = {
-				}
-				b_hindolia = { # Fictional - For Prosperity
+				b_kullu = {
 				}
 			}
 		}
@@ -44093,51 +44046,6 @@ e_rajastan = {
 				b_jahanpanah = {
 				}
 			}
-			c_hastinapura = {
-				color={ 190 65 12 }
-				color2={ 255 255 255 }
-				
-				b_hastinapura = {
-				}
-				b_pandeshwar = {
-				}
-				b_pankot = {
-				}
-				b_indrasthana = {
-				}
-				b_mirath = {
-				}
-				b_baran = {
-				}
-				b_hapur = {
-				}
-			}
-			c_sthanisvara = {
-				color={ 210 65 12 }
-				color2={ 255 255 255 }
-				
-				b_saharanpur = {
-				}
-				b_sthanisvara = {
-				}
-				b_shakumbhri_devi = {
-				}
-				b_sirhind = {
-				}
-				b_karnal = {
-				}
-				b_samana = {
-				}
-				b_panipat = {
-				}
-			}
-		}
-		d_haritanaka = {
-			color={ 100 25 3 }
-			color2={ 255 255 255 }
-			
-			capital = 1364 # Tribandapura
-			
 			c_hisar = {
 				color={ 100 25 23 }
 				color2={ 255 255 255 }
@@ -44157,43 +44065,66 @@ e_rajastan = {
 				b_agroha = {
 				}
 			}
-			c_tribandapura = {
-				color={ 130 25 3 }
+			c_hastinapura = {
+				color={ 190 65 12 }
 				color2={ 255 255 255 }
 				
-				b_tribandapura = {
+				b_hastinapura = {
 				}
-				b_sunam = {
+				b_pandeshwar = {
 				}
-				b_jaintpuri = {
+				b_pankot = {
 				}
-				b_kartikeya = {
+				b_indrasthana = {
 				}
-				b_amin = {
+				b_mirath = {
 				}
-				b_chitwye = { # Fictional - For Prosperity
+				b_baran = {
 				}
-				b_dabthala = { # Fictional - For Prosperity
+				b_hapur = {
 				}
 			}
-			c_sarasvati = {
-				color={ 100 55 3 }
-				color2={ 255 255 255 }
+		}
+		d_haritanaka = {
+  			color = { 83 190 52 }
+			
+			capital = 1364 # Tribandapura
+			
+			c_reni = {
+				color = { 93 190 52 }
 				
-				b_sarasvati = {
-				}
-				b_bhadra = {
-				}
-				b_bhatnir = {
-				}
-				b_tarain = {
-				}
-				b_bukar = { # Fictional - For Prosperity
-				}
-				b_chakarpura = { # Fictional - For Prosperity
-				}
-				b_chandara = { # Fictional - For Prosperity
-				}
+				b_asika = {}
+				b_milkpur = {}
+				b_barsi = {}
+				b_mehanda = {}
+				b_kumbha = {}
+				b_sisai = {}
+				b_bhatla = {}
+				b_umra = {}
+			}
+			c_tribandapura = {
+				color = { 83 190 62 }
+				
+				b_sirindha = {}
+				b_sthanvisvara = {}
+				b_jalandhara = {}
+				b_sarva = {}
+				b_kalka = {}
+				b_kharar = {}
+				b_ambala = {}
+				b_mohri = {}
+			}
+			c_sarasvati = {
+				color = { 83 200 52 }
+				
+				b_tribhandapura = {}
+				b_sarasvati = {}
+				b_tarain = {}
+				b_padla = {}
+				b_kultaran = {}
+				b_siwan = {}
+				b_keorak = {}
+				b_prempura = {}
 			}
 		}
 		d_mathura = {
@@ -44335,70 +44266,34 @@ e_rajastan = {
 		
 		capital = 1292 # Sarasvata Mandala
 	
-		d_gurjara_mandala = {
-			color={ 175 80 20 }
-			color2={ 255 255 255 }
+		d_citrakuta = {
+  			color = { 244 208 168 }
 			
-			capital = 1292 # Sarasvata Mandala
+			capital = 1291 # Agata
 			
-			c_sarasvata_mandala = {
-				color={ 155 80 20 }
-				color2={ 255 255 255 }
+			c_medapata = {
+				color = { 254 208 168 }
 				
-				b_anahilapataka = {
-				}
-				b_vadnagar = {
-				}
-				b_siddhapura = {
-				}
-				b_kamboika = {
-				}
-				b_modhera = {
-				}
-				b_kheralu = {
-				}
-				b_shertha = {
-				}
-			}
-			c_khetaka = {
-				color={ 175 80 40 }
-				color2={ 255 255 255 }
-				
-				b_khetaka = {
-				}
-				b_khambhat = {
-				}
-				b_dholka = {
-				}
-				b_tarapur = {
-				}
-				b_ashaval = {
-				}
-				b_nadiad = {
-				}
-				b_bhadran = {
-				}
-				b_sanand = {
-				}
+				b_nagahrada = {}
+				b_citrakuta = {}
+				b_naddula = {}
+				b_desuri = {}
+				b_ghanerao = {}
+				b_neepal = {}
+				b_nadol = {}
+				b_dadai = {}
 			}
 			c_mohadavasaka = {
-				color={ 175 100 20 }
-				color2={ 255 255 255 }
+				color = { 244 218 168 }
 				
-				b_mohadavasaka = {
-				}
-				b_jhalod = {
-				}
-				b_lunawada = {
-				}
-				b_shamlaji = {
-				}
-				b_idar = {
-				}
-				b_unjha = {
-				}
-				b_danta = {
-				}
+				b_aghata = {}
+				b_kanpur = {}
+				b_kotra_aghata = {}
+				b_bisadi = {}
+				b_gudli = {}
+				b_jhamar_kotra = {}
+				b_jagat = {}
+				b_zawar = {}
 			}
 		}
 		d_anartta = {
@@ -44492,6 +44387,27 @@ e_rajastan = {
 				b_mangrol = {
 				}
 				b_shrinagar = {
+				}
+			}
+			c_khetaka = {
+				color={ 175 80 40 }
+				color2={ 255 255 255 }
+				
+				b_khetaka = {
+				}
+				b_khambhat = {
+				}
+				b_dholka = {
+				}
+				b_tarapur = {
+				}
+				b_ashaval = {
+				}
+				b_nadiad = {
+				}
+				b_bhadran = {
+				}
+				b_sanand = {
 				}
 			}
 			c_somnath = {
@@ -44632,17 +44548,109 @@ e_rajastan = {
 	}
 	k_rajputana = {
 		
-		color={ 200 70 0 }
-		color2={ 255 255 255 }
+		color = { 251 227 60 }
 		
 		capital = 1346 # Ajayameru
+		
+		jain = 500
+		murugan_reformed = 500
+		vidharma_reformed = 500
 	
-		d_maru = {
-			color={ 194 67 10 }
+		d_jangladesh = {
+			color={ 144 47 0 }
 			color2={ 255 255 255 }
 			
-			capital = 1130 # Mandavyapura
+			capital = 1354 # Nagauda
 			
+			c_garhwal = {
+
+				color= { 200 180 50 }
+				color2= { 255 255 255 }
+
+				b_devalghar = {
+				}
+				b_badrinath = { # Temple & Hindu Holy Site
+				}
+				b_srinagar = {
+				}
+				b_tehri = {
+				}
+				b_uttarkashi = {
+				}
+				b_sudhnagar = {
+				}
+				b_haridwar = {
+				}
+				# Joshimath / Jyotirmath
+			}
+			c_sthanisvara = {
+				color={ 210 65 12 }
+				color2={ 255 255 255 }
+				
+				b_saharanpur = {
+				}
+				b_sthanisvara = {
+				}
+				b_shakumbhri_devi = {
+				}
+				b_sirhind = {
+				}
+				b_karnal = {
+				}
+				b_samana = {
+				}
+				b_panipat = {
+				}
+			}
+		}
+		d_thar = {
+  			color = { 183 164 28 }
+			
+			capital = 1304 # Ludrava
+			
+			c_vikramapura = {
+				color={ 144 47 20 }
+				color2={ 255 255 255 }
+				
+				b_vikramapura = {
+				}
+				b_kolayat = {
+				}
+				b_bhurupal = {
+				}
+				b_bhandasar = {
+				}
+				b_shekhsar = {
+				}
+				b_odur = { # Fictional - For Prosperity
+				}
+				b_pallikondai = { # Fictional - For Prosperity
+				}
+			}
+			c_nagauda = {
+				color = { 183 174 28 }
+				
+				b_nagauda = {}
+				b_bikaner = {}
+				b_nagaur = {}
+				b_sardarshahar = {}
+				b_bahawalpur = {}
+				b_hanumangarh = {}
+				b_sri_ganganagar = {}
+				b_gusaisar = {}
+			}
+			c_ludrava = {
+				color = { 193 164 28 }
+				
+				b_ludrava = {}
+				b_phalodi = {}
+				b_chandan = {}
+				b_khavolai = {}
+				b_pokaran = {}
+				b_rasoolpur = {}
+				b_barmer = {}
+				b_balotra = {}
+			}
 			c_mandavyapura = {
 				color={ 194 87 10 }
 				color2={ 255 255 255 }
@@ -44662,25 +44670,6 @@ e_rajastan = {
 				b_ghaneraov = {
 				}
 				b_naddula = {
-				}
-			}
-			c_medantaka = {
-				color={ 194 67 30 }
-				color2={ 255 255 255 }
-				
-				b_medantaka = {
-				}
-				b_purnatallakapura = {
-				}
-				b_phalarddhi = {
-				}
-				b_sanjoo = {
-				}
-				b_oudh = { # Fictional - For Prosperity
-				}
-				b_pachaur = { # Fictional - For Prosperity
-				}
-				b_pakal = { # Fictional - For Prosperity
 				}
 			}
 			c_godwad = {
@@ -44704,115 +44693,6 @@ e_rajastan = {
 				b_nibnutvadi = { # Fictional - For Prosperity
 				}
 			}
-		}
-		d_jangladesh = {
-			color={ 144 47 0 }
-			color2={ 255 255 255 }
-			
-			capital = 1354 # Nagauda
-			
-			c_vikramapura = {
-				color={ 144 47 20 }
-				color2={ 255 255 255 }
-				
-				b_vikramapura = {
-				}
-				b_kolayat = {
-				}
-				b_bhurupal = {
-				}
-				b_bhandasar = {
-				}
-				b_shekhsar = {
-				}
-				b_odur = { # Fictional - For Prosperity
-				}
-				b_pallikondai = { # Fictional - For Prosperity
-				}
-			}
-			c_reni = {
-				color={ 124 47 0 }
-				color2={ 255 255 255 }
-				
-				b_reni = {
-				}
-				b_dadrewa = {
-				}
-				b_mandir = {
-				}
-				b_bidasar = {
-				}
-				b_sidhmukh = {
-				}
-				b_niralapalli = { # Fictional - For Prosperity
-				}
-				b_palshet = { # Fictional - For Prosperity
-				}
-			}
-			c_nagauda = {
-				color={ 144 67 0 }
-				color2={ 255 255 255 }
-				
-				b_ahichhatrapur = {
-				}
-				b_nagauda = {
-				}
-				b_ladnu = {
-				}
-				b_makrana = {
-				}
-				b_ladnun = {
-				}
-				b_kuchaman = {
-				}
-				b_mundwa = {
-				}
-			}
-		}
-		d_stravani = {
-			color={ 150 60 30 }
-			color2={ 255 255 255 }
-			
-			capital = 1304 # Ludrava
-			
-			c_ludrava = {
-				color={ 170 60 30 }
-				color2={ 255 255 255 }
-				
-				b_ludrava = {
-				}
-				b_phalavardhika = {
-				}
-				b_lanela = {
-				}
-				b_jaisalmer = {
-				}
-				b_ranakpur = {
-				}
-				b_runjha = { # Fictional - For Prosperity
-				}
-				b_sahna = { # Fictional - For Prosperity
-				}
-			}
-			c_vijnot = {
-				color={ 150 60 50 }
-				color2={ 255 255 255 }
-				
-				b_vijnot = {
-				}
-				b_bhatiya = {
-				}
-				b_kishangarh = {
-				}
-				b_ghotki = {
-				}
-				b_ravel = { # Fictional - For Prosperity
-				}
-				b_saitual = { # Fictional - For Prosperity
-				}
-				b_sakyang = { # Fictional - For Prosperity
-				}
-			}
 			c_satyapura = {
 				color={ 150 40 30 }
 				color2={ 255 255 255 }
@@ -44832,114 +44712,98 @@ e_rajastan = {
 				b_timmanayanipela = { # Fictional - For Prosperity
 				}
 			}
-		}
-		d_medapata = {
-			color={ 136 66 32 }
-			color2={ 255 255 255 }
-			
-			capital = 1345 # Medapata
-			
-			c_medapata = {
-				color={ 136 86 32 }
+			c_sarasvata_mandala = {
+				color={ 155 80 20 }
 				color2={ 255 255 255 }
 				
-				b_aghata = {
+				b_anahilapataka = {
 				}
-				b_eklingji = {
+				b_vadnagar = {
 				}
-				b_nagahrada = {
+				b_siddhapura = {
 				}
-				b_bagar = {
+				b_kamboika = {
 				}
-				b_jagadamba = {
+				b_modhera = {
 				}
-				b_sas_bahu = {
+				b_kheralu = {
 				}
-				b_rishabhdeo = {
+				b_shertha = {
 				}
 			}
+		}
+		d_kotah = {
+  			color = { 241 138 111 }
+			
+			capital = 1148 # Jamvaka
+			
 			c_chitrakut = {
-				color={ 136 66 52 }
-				color2={ 255 255 255 }
+				color = { 251 138 111 }
 				
-				b_chitrakut = {
-				}
-				b_rampura = {
-				}
-				b_baroli = {
-				}
-				b_bhainsrorgarh = {
-				}
-				b_mandalgarh = {
-				}
-				b_nagari = {
-				}
-				b_saunk = { # Fictional - For Prosperity
-				}
+				b_kotah = {}
+				b_nayapura = {}
+				b_rangbari = {}
+				b_gurla = {}
+				b_dadwara = {}
+				b_bargaon = {}
+				b_jagpura = {}
+				b_kaithoon = {}
+			}
+			c_dasapura = {
+  				color = { 241 138 121 }
+				
+				b_dasapura = {}
+				b_multanpura = {}
+				b_digau = {}
+				b_guradia_deda = {}
+				b_botalganj = {}
+				b_takrawad = {}
+				b_dalauda = {}
+				b_nadeota = {}
 			}
 			c_kota = {
-				color={ 156 66 32 }
-				color2={ 255 255 255 }
+				color = { 241 148 111 }
 				
-				b_kota = {
-				}
-				b_koshvardhan = {
-				}
-				b_ramgarh = {
-				}
-				b_bundi = {
-				}
-				b_ului = { # Fictional - For Prosperity
-				}
-				b_vairampatti = { # Fictional - For Prosperity
-				}
-				b_vana = { # Fictional - For Prosperity
-				}
+				b_kirttigiri = {}
+				b_dudahi = {}
+				b_bilonia = {}
+				b_bajranggarh = {}
+				b_rasulpura = {}
+				b_bhadaura = {}
+				b_umri = {}
+				b_gara = {}
 			}
 		}
-		d_ajmer = {
-			color={ 230 190 51 }
-			color2={ 255 255 255 }
+		d_ajayameru = {
+  			color = { 247 199 100 }
 			
-			capital = 1346 # Ajayameru
+			capital = 1346 # Viratopuris
 			
 			c_ajayameru = {
-				color={ 210 190 51 }
-				color2={ 255 255 255 }
+				color = { 255 199 100 }
+					holy_site = bud_zor
 				
-				b_shakambhari = {
-				}
+				b_ajayameru = {}
+				b_mandavyapura = {}
 				b_pushkar = {
 				}
-				b_ajayameru = {
-				}
-				b_taragarh = {
-				}
-				b_dhanop = {
-				}
-				b_nareli = {
-				}
-				b_lawah = {
-				}
+				b_kanas = {}
+				b_tabiji = {}
+				b_saredhana = {}
+				b_makadwali = {}
+				b_makreda = {}
 			}
 			c_ranthambore = {
-				color={ 230 170 51 }
-				color2={ 255 255 255 }
+				color = { 247 209 100 }
 				
-				b_ranthambore = {
-				}
-				b_gangapur = {
-				}
-				b_tonkra = {
-				}
-				b_utgir = {
-				}
-				b_mandrael = {
-				}
-				b_sheopur = {
-				}
-				b_sendamarani = { # Fictional - For Prosperity
-				}
+				b_ranastambhapura = {}
+				b_sherpur = {}
+				b_behraonda = {}
+				b_kushtala = {}
+				b_bodal = {}
+				b_khandhar = {}
+				b_anantpura = {}
+				b_bhagwatgarh = {}
 			}
 			c_vairata = {
 				color={ 230 190 71 }
@@ -45031,25 +44895,6 @@ e_rajastan = {
 				b_jobat = {
 				}
 				b_sailana = {
-				}
-			}
-			c_dasapura = {
-				color={ 225 180 20 }
-				color2={ 255 255 255 }
-				
-				b_dasapura = {
-				}
-				b_sondani = {
-				}
-				b_dharmrajeshwar = {
-				}
-				b_hinglajgarh = {
-				}
-				b_taxakeshwar = {
-				}
-				b_chinchwad = { # Fictional - For Prosperity
-				}
-				b_dalu = { # Fictional - For Prosperity
 				}
 			}
 			c_ujjayini = {
@@ -50660,46 +50505,6 @@ e_tibet = {
 
 			capital = 1470 # Garhwal
 
-			c_kangra = {
-				color= { 150 140 30 }
-				color2= { 255 255 255 }
-
-				b_kangra = {
-				}
-				b_shimla = {
-				}
-				b_nurpur = {
-				}
-				b_chamba = {
-				}
-				b_bharmour = {
-				}
-				b_kahlur = {
-				}
-				b_kullu = {
-				}
-			}
-			c_garhwal = {
-
-				color= { 200 180 50 }
-				color2= { 255 255 255 }
-
-				b_devalghar = {
-				}
-				b_badrinath = { # Temple & Hindu Holy Site
-				}
-				b_srinagar = {
-				}
-				b_tehri = {
-				}
-				b_uttarkashi = {
-				}
-				b_sudhnagar = {
-				}
-				b_haridwar = {
-				}
-				# Joshimath / Jyotirmath
-			}
 			c_kurmanchal = {
 
 				color= { 220 200 70 }
