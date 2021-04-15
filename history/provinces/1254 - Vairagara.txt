@@ -4,17 +4,21 @@
 title = c_vairagara
 
 # Settlements
-max_settlements = 3
-b_vairagara = castle
-b_bhandugara = city
-#b_cikamburika = temple
-#b_gondia = city
+max_settlements = 5
+b_visapur = castle
+b_vairagara = city
+b_chandrapur = temple
+#b_tukum =
+#b_rajura =
+#b_kothari =
+#b_wirur =
+#b_lathi =
 
 # Misc
-culture = hindustani
+culture = hindavi
 religion = jain
 
 # History
 1066.1.1 = {
-	religion = hindu
+	religion = buddhist
 }
