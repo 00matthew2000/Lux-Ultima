@@ -46565,16 +46565,45 @@ e_deccan = {
 			}
 		}
 	}
-	k_karnata = {
-		color={ 150 20 0 }
-		color2={ 255 255 255 }
+	k_karnataka = {
+ 		color = { 200 215 221 }
 		
-		capital = 1158 #Asmaka
+		capital = 4054 #Tulunga
 		
 		jain = 500
 		murugan_reformed = 500
 		vidharma_reformed = 500
 		
+		d_alupa = {
+ 			color = { 181 223 202 }
+			
+			capital = 4054 #Tulunga
+			
+			c_sosavur = {
+ 				color = { 181 233 202 }
+
+				b_sosavur = {}
+				b_thalangara = {}
+				b_meepuguri = {}
+				b_madhur = {}
+				b_melparamba = {}
+				b_udma = {}
+				b_bendichal = {}
+				b_poinachi = {}
+			}
+			c_kanara = {
+				color = { 191 223 202 }
+
+				b_udayavara = {}
+				b_kavoor = {}
+				b_bondel = {}
+				b_kuntikan = {}
+				b_kapikad = {}
+				b_gandhinagar = {}
+				b_ashok_nagar = {}
+				b_kodikal = {}
+			}
+		}
 		d_idaturainadu = {
  			color = { 160 205 204 }
 			
@@ -46897,36 +46926,6 @@ e_deccan = {
 				b_pottapalayam = {}
 				b_virathanoor = {}
 				b_kusavakundu = {}
-			}
-		}
-		d_alupa = {
- 			color = { 181 223 202 }
-			
-			capital = 4054 #Tulunga
-			
-			c_sosavur = {
- 				color = { 181 233 202 }
-
-				b_sosavur = {}
-				b_thalangara = {}
-				b_meepuguri = {}
-				b_madhur = {}
-				b_melparamba = {}
-				b_udma = {}
-				b_bendichal = {}
-				b_poinachi = {}
-			}
-			c_kanara = {
-				color = { 191 223 202 }
-
-				b_udayavara = {}
-				b_kavoor = {}
-				b_bondel = {}
-				b_kuntikan = {}
-				b_kapikad = {}
-				b_gandhinagar = {}
-				b_ashok_nagar = {}
-				b_kodikal = {}
 			}
 		}
 		d_chera_nadu = {
