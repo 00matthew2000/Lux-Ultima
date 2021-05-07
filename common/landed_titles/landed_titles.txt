@@ -33877,8 +33877,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color2={ 255 255 255 }
 				
 				b_damietta = {
-					coptic = "Tamiat"
-					greek = "Tamiathis"
 				}
 				b_burlus = {
 				}
@@ -34109,37 +34107,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_mount_anthony = {}
 			}
 		}
-		d_aswan = {
-			color={ 41 188 120 }
-			color2={ 255 255 255 }
-			
-			capital = 794 # Aswan
-			
-			coptic = "Sowan"
-			
-			c_aswan = {
-				color={ 43 190 122 }
-				color2={ 255 255 255 }
-				
-				coptic = "Sowan"
-				
-				b_aswan = {
-					coptic = "Sowan"
-				}
-				b_elefantina = {
-				}
-				b_shellal = {
-				}
-				b_bigeh = {
-				}
-				b_veset = {
-				}
-				b_philae = {
-				}
-				b_kalabsha = {
-				}
-			}
-		}
 		d_faiyum = {
 			color={ 110 240 145 }
 			color2={ 255 255 255 }
@@ -34258,6 +34225,28 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_meir = {
 				}
 				b_suhaj = {
+				}
+			}
+			c_aswan = {
+				color={ 43 190 122 }
+				color2={ 255 255 255 }
+				
+				coptic = "Sowan"
+				
+				b_aswan = {
+					coptic = "Sowan"
+				}
+				b_elefantina = {
+				}
+				b_shellal = {
+				}
+				b_bigeh = {
+				}
+				b_veset = {
+				}
+				b_philae = {
+				}
+				b_kalabsha = {
 				}
 			}
 			c_farafra = {
@@ -36991,8 +36980,8 @@ e_abyssinia = {
 			}
 		}
 		
-		d_nobatia = {
-			color = { 162 133 85 }
+		d_dongola = {
+			color = { 170 43 70 }
 
 			capital = 1282 # Dotawo
 
@@ -37033,6 +37022,17 @@ e_abyssinia = {
 				}
 				b_kulubnarti = {
 				}
+			}
+			c_west_nobatia = {
+				color = { 214 22 52 }
+				
+				b_para = {}
+				b_kulb = {}
+			}
+			c_south_nobatia = {
+				color = { 214 22 52 }
+				
+				b_ibrim = {}
 			}
 			c_qasr_ibrim = {
 				color = { 119 134 74 }
@@ -37150,9 +37150,8 @@ e_abyssinia = {
 			}
 
 		}
-		d_sennar = { # Alodia
-			color={ 128 60 20 }
-			color2={ 255 255 255 }
+		d_darfur = {
+			color = { 100 88 35 }
 			
 			capital = 1334 # Alodia
 			
@@ -37223,6 +37222,18 @@ e_abyssinia = {
 				b_uri = {}
 				b_um_marrih = {} # Fictional - For Prosperity
 				b_kalkal = {} # Fictional - For Prosperity
+			}
+			c_fuka_lolong = {
+				color = { 20 25 60 }
+					holy_site = sol_sahara
+					holy_site = sol_sahara_reformed
+					holy_site = set
+					holy_site = set_reformed
+				
+				b_bir_murr = {}
+				b_ain_dua = {}
+				b_el_tag = {}
+				b_fuka_lolong = {}
 			}
 			c_el_fasher = {
 				color={ 175 140 115 }
