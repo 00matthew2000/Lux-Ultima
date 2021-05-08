@@ -34178,7 +34178,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 		d_aswan = {
 			color = { 41 188 120 }
 			
-			capital = 1003 #Asyut
+			capital = 794 #Aswan
 
 			coptic = "Sioout"
 			greek = "Lycopolis"
@@ -34186,14 +34186,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 
 			c_asyut = {
 				color = { 43 190 122 }
-				
-				holy_site = amun
-				holy_site = isis
-				holy_site = set
-				holy_site = amun_reformed
-				holy_site = aten_reformed
-				holy_site = isis_reformed
-				holy_site = set_reformed
 				
 				coptic = "Sioout"
 				greek = "Lycopolis"
@@ -34231,10 +34223,22 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 43 190 122 }
 				color2={ 255 255 255 }
 				
+				holy_site = amun
+				holy_site = isis
+				holy_site = set
+				holy_site = amun_reformed
+				holy_site = aten_reformed
+				holy_site = isis_reformed
+				holy_site = set_reformed
+				
 				coptic = "Sowan"
 				
 				b_aswan = {
 					coptic = "Sowan"
+					nubian = "Karnak" 
+					sao = "Karnak" 
+					fur = "Karnak" 
+					luo = "Karnak"
 				}
 				b_elefantina = {
 				}
@@ -34268,22 +34272,19 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_qasrfarfra = {}
 			}
 			c_kharga = {
-				color={ 108 227 142 }
-				color2={ 255 255 255 }
+				color = { 108 227 142 }
 
 				coptic = "Wah Empsoy"
 				roman = "Oasis Magna"
-				
-				b_elkharga = {
-					coptic = "Wah Empsoy"
-					roman = "Oasis Magna"
-				}
+			
+				b_buhairya = {}
+				b_mut = {}
+				b_qasrfarfra = {}
+				b_elkharga = {}
 				b_baris = {}
+				b_budhkula = {}
+				b_abuminqar = {}
 				b_ismant = {}
-				b_zuhrah = {} # Fictional, for prosperity
-				b_gahdam = {} # Fictional, for prosperity
-				b_banja = {} # Fictional, for prosperity
-				b_panopolis = {} # Fictional, for prosperity
 			}
 			c_esna = {
 				color={ 33 242 122 }
@@ -36967,23 +36968,22 @@ e_abyssinia = {
 		}
 	}
 	
-	k_nubia = {
-		color={ 180 85 39 }
-		capital = 793 # Makuria
+	k_nobatia = {
+		color = { 151 56 155 }
+		title = SETEPENRE
 		
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					religion_group = christian
-				}
-			}
-		}
+		capital = 1326 #Napata
+
+		solomonic_alexandros = 2000
+		ethiopian_war_reformed = 2000
+		aten_reformed = 2000
+		isis_reformed = 2000
+		set_reformed = 2000
 		
 		d_dongola = {
 			color = { 170 43 70 }
 
-			capital = 1282 # Dotawo
+			capital = 793 # Dotawo
 
 			c_dotawo = {
 				color = { 160 130 85 }
@@ -37004,9 +37004,49 @@ e_abyssinia = {
 				b_premnis = {
 				}
 			}
-			c_nobatia = {
-				color = { 150 140 65 }
+			c_makuria = {
+				color = { 140 155 75 }
 				color2={ 255 255 255 }
+			
+				b_dongola = {
+				}
+				b_kawa = {
+				}
+				b_affat = {
+				}
+				b_qubban = {
+				}
+				b_gabriya = {
+				}
+				b_kerma = {
+				}
+				b_kerat = {
+				}
+			}
+			c_napata = {
+				color = { 155 140 67 }
+				color2={ 255 255 255 }
+
+				b_napata = {
+				}
+				b_marawi = {
+				}
+				b_ghazali = {
+				}
+				b_kanisah = {
+				}
+				b_korti = {
+				}
+				b_keheilli = {
+				}
+				b_karima = {
+				}
+			}
+			c_nobatia = {
+				color = { 200 33 33 }
+				
+				holy_site = isis
+				holy_site = isis_reformed
 			
 				b_semna = {
 				}
@@ -37047,108 +37087,74 @@ e_abyssinia = {
 				b_voyvozh2 = {}
 			}
 			c_nubia = {
-				color = { 145 130 60 }
-				color2={ 255 255 255 }
+				color = { 47 194 126 }
 			
-				b_anag = {
-				}
-				b_eirayab = {
-				}
-				b_salala = {
-				}
-				b_nafab = {
-				}
-				b_komotit = {
-				}
-				b_tahtani = {
-				}
-				b_fanoidig = {
-				}
-				b_nubia = {
-				}
-			}
-			c_aydhab = {
-				color = { 125 120 65 }
-				color2={ 255 255 255 }
-			
-				b_aydhab = {
-				}
-				b_halayeb = {
-				}
-				b_troglodytica = {
-				}
-				b_marsaalam = {
-				}
-				b_elba = {
-				}
-				b_shalateen = {
-				}
-				b_zabargad = {
-				}
+				b_alwa = {}
+				b_salala = {}
+				b_komelshokafa = {}
+				b_farata = {}
+				b_dradate = {}
 			}
 		}
+		d_aydhab = {
+			color = { 75 230 80 }
+			
+			capital = 1320 #Adabos
+			
+			c_aydhab = {
+				color = { 207 39 102 }
+				
+				b_aydhab = {}
+				b_halayeb = {}
+				b_mukkawar = {}
+				b_shalateen = {}
+				b_siyal = {}
+				b_gebel_elba = {}
+			}
+			c_suakin = {
+				color = { 210 63 77 }
+			
+				b_sawakin = {}
+				b_tisiamti = {}
+				b_salum = {}
+				b_taiwi = {}
+				b_derkin = {}
+				b_dubarua = {}
+			}
+			c_trinkitat = {
+				color = { 210 63 77 }
+			
+				b_trinkitat = {}
+				b_derri = {}
+				b_tokar = {}
+				b_teb = {}
+				b_kwababa = {}
+				b_mukden = {}
+			}
+		}
+					
 		d_nubia = { # Makuria
 			color = { 141 162 79 }
 			capital = 793 # Makuria
 			
-			c_makuria = {
-				color = { 140 155 75 }
-				color2={ 255 255 255 }
-			
-				b_dongola = {
-				}
-				b_kawa = {
-				}
-				b_affat = {
-				}
-				b_qubban = {
-				}
-				b_gabriya = {
-				}
-				b_kerma = {
-				}
-				b_kerat = {
-				}
-			}
-			c_napata = {
-				color = { 155 140 67 }
-				color2={ 255 255 255 }
-
-				b_napata = {
-				}
-				b_marawi = {
-				}
-				b_ghazali = {
-				}
-				b_kanisah = {
-				}
-				b_korti = {
-				}
-				b_keheilli = {
-				}
-				b_karima = {
-				}
-			}
 			c_atbara = {
-				color = { 145 120 50 }
-				color2={ 255 255 255 }
+				color = { 208 40 103 }
+					holy_site = amun
+					holy_site = isis
+					holy_site = set
+					holy_site = amun_reformed
+					holy_site = aten_reformed
+					holy_site = isis_reformed
+					holy_site = set_reformed
 			
-				b_atbara = {
+				b_atbara = {}
+				b_meroe = {		#Medewi
 				}
-				b_meruwah = {
-				}
-				b_begarawiyah = {
-				}
-				b_hajaralasla = {
-				}
-				b_ummmardi = {
-				}
-				b_abudis = {
-				}
-				b_shendi = {
-				}
+				b_tabat = {}
+				b_wadrawah = {}
+				b_meruwah = {}
+				b_hajaralasla = {}
 			}
-
 		}
 		d_darfur = {
 			color = { 100 88 35 }
@@ -37244,16 +37250,14 @@ e_abyssinia = {
 				b_masalat = {} # Fictional - For Prosperity
 			}
 			c_bayuda = {
-				color={ 64 216 152 }
-				color2={ 255 255 255 }
-				
+				color = { 78 152 99 }
+			
 				b_bayuda = {}
-				b_almeragh = {}
-				b_atongour = {} # Fictional - For Prosperity
-				b_jeroko = {} # Fictional - For Prosperity
-				b_es_soriba = {} # Fictional - For Prosperity
-				b_elkhandaq = {} # Fictional - For Prosperity
-				b_faras_east = {} # Fictional - For Prosperity
+				b_marawi = {}
+				b_ghazali = {}
+				b_korti = {}
+				b_keheilli = {}
+				b_karima = {}
 			}
 		}
 		d_hayya = { # Blemmyia
@@ -37264,44 +37268,6 @@ e_abyssinia = {
 
 			culture = nubian
 		
-			c_suakin = {
-				color={ 176 85 35 }
-				color2={ 255 255 255 }
-			
-				b_sawakin = {
-				}
-				b_tisiamti = {
-				}
-				b_salum = {
-				}
-				b_taiwi = {
-				}
-				b_derkin = {
-				}
-				b_dubarua = {
-				}
-				b_komelshokafa = {
-				}
-			}
-			c_trinkitat = {
-				color={ 141 55 35 }
-				color2={ 255 255 255 }
-			
-				b_trinkitat = {
-				}
-				b_derri = {
-				}
-				b_tokar = {
-				}
-				b_farata = {
-				}
-				b_teb = {
-				}
-				b_kwababa = {
-				}
-				b_mukden = {
-				}
-			}
 			c_hayya = {
 				color={ 186 91 41 }
 				color2={ 255 255 255 }
