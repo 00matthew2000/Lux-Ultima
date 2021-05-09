@@ -36968,6 +36968,186 @@ e_abyssinia = {
 		}
 	}
 	
+	k_darfur = {
+		color = { 150 175 200 }
+		capital = 1771 #Darfur
+
+		yoruba = 1000
+		aten_reformed = 1000
+		isis_reformed = 1000
+		set_reformed = 1000
+		nyau = 500
+		zande_pagan_reformed = 10000
+		zulu_pagan_reformed = 500
+	
+		d_darfur = {
+			color = { 100 88 35 }
+						
+			capital = 1771 #Darfur
+				
+			c_fitri = {
+				color={ 32 212 170 }
+				color2={ 255 255 255 }
+				
+				b_gaska = {}
+				b_ndoye = {} # Fictional - For Prosperity
+				b_atourda = {} # Fictional - For Prosperity
+				b_sambourou = {} # Fictional - For Prosperity
+			}
+			c_kuka = {
+				color={ 132 232 130 }
+				color2={ 255 255 255 }
+				
+				b_kuka = {}
+				b_manouachi = {} # Fictional - For Prosperity
+				b_troan = {} # Fictional - For Prosperity
+			}
+			c_wadai = {
+				color = { 25 30 41 }
+				
+				b_abeche = {}
+				b_iriba = {}
+				b_fada = {}
+				b_zalingei = {}
+				b_el_daein = {}
+				b_geneina = {}
+			}
+			c_wara = {
+				color={ 127 117 21 }
+				color2={ 255 255 255 }
+				
+				b_wara = {}
+				b_gourmoga = {} # Fictional - For Prosperity
+				b_asafik = {} # Fictional - For Prosperity
+			}
+			c_ennedi = {
+				color = { 18 12 30 }
+				
+				b_nyala = {}
+				b_al_fashir = {}
+				b_kutum = {}
+				b_kobbei = {}
+				b_ain_farah = {}
+				b_tabit = {}
+				b_um_sidir = {}
+			}
+			c_fuka_lolong = {
+				color = { 20 25 60 }
+					holy_site = sol_sahara
+					holy_site = sol_sahara_reformed
+					holy_site = set
+					holy_site = set_reformed
+				
+				b_bir_murr = {}
+				b_ain_dua = {}
+				b_el_tag = {}
+				b_fuka_lolong = {}
+			}
+			c_kobbai = {
+				color={ 150 225 46 }
+				color2={ 255 255 255 }
+				
+				b_kobbai = {}
+				b_sabu = {} # Fictional - For Prosperity
+				b_et_taba = {} # Fictional - For Prosperity
+			}
+		}
+		d_khordofan = {
+			color = { 54 10 134 }
+			
+			capital = 4065 #Omdurman
+			
+			c_alodia = {
+				color={ 135 65 20 }
+				color2={ 255 255 255 }
+			
+				b_alwa = {
+				}
+				b_soba = {
+				}
+				b_omdurman = {
+				}
+				b_barah = {
+				}
+				b_omjerky = {
+				}
+				b_malaka = {
+				}
+				b_wawissi = {
+				}
+			}
+			c_darfur = {
+				color = { 31 12 21 }
+				
+				b_el_obeid = {}
+				b_um_ruwaba = {}
+				b_ed_dueim = {}
+				b_tendelti = {}
+				b_abu_zadad = {}
+			}
+			c_omdurman = {
+				color = { 228 168 7 }
+			
+				b_volgamozhaysk2 = {}
+				b_aiwa = {}
+				b_yaransk2 = {}
+				b_vakhtan 2= {}
+				b_varnavino2 = {}
+				b_kiknur2 = {}
+				b_tonshaevo2 = {}
+				b_uren2 = {}
+			}
+			c_sennar = {
+				color={ 115 60 20 }
+				color2={ 255 255 255 }
+			
+				b_sennar = {
+				}
+				b_tabat = {
+				}
+				b_sinjah = {
+				}
+				b_bakkah = {
+				}
+				b_kukur = {
+				}
+				b_galgani = {
+				}
+				b_wadrawah = {
+				}
+				b_kinanah = {
+				}
+			}
+			c_kosti = {
+				color={ 160 70 40 }
+				color2={ 255 255 255 }
+			
+				b_kosti = {
+				}
+				b_abbeit = {
+				}
+				b_tandalti = {
+				}
+				b_umm_ruwaba = {
+				}
+				b_dalang = {
+				}
+				b_kaduqli = {
+				}
+				b_lagawa = {
+				}
+			}
+			c_el_fasher = {
+				color={ 175 140 115 }
+				color2={ 255 255 255 }
+				
+				b_el_fasher = {}
+				b_ad_dukaydik = {} # Fictional - For Prosperity
+				b_masalat = {} # Fictional - For Prosperity
+			}
+		}
+	}
+	
 	k_nobatia = {
 		color = { 151 56 155 }
 		title = SETEPENRE
@@ -37086,15 +37266,6 @@ e_abyssinia = {
 				b_kadzherom2 = {}
 				b_voyvozh2 = {}
 			}
-			c_nubia = {
-				color = { 47 194 126 }
-			
-				b_alwa = {}
-				b_salala = {}
-				b_komelshokafa = {}
-				b_farata = {}
-				b_dradate = {}
-			}
 		}
 		d_aydhab = {
 			color = { 75 230 80 }
@@ -37133,9 +37304,10 @@ e_abyssinia = {
 			}
 		}
 					
-		d_nubia = { # Makuria
-			color = { 141 162 79 }
-			capital = 793 # Makuria
+		d_napata = {
+			color = { 140 36 54 }
+			
+			capital = 1994 #Napata
 			
 			c_atbara = {
 				color = { 208 40 103 }
@@ -37155,99 +37327,23 @@ e_abyssinia = {
 				b_meruwah = {}
 				b_hajaralasla = {}
 			}
-		}
-		d_darfur = {
-			color = { 100 88 35 }
+			c_hayya = {
+				color = { 206 38 101 }
 			
-			capital = 1334 # Alodia
+				b_kanisah = {}
+				b_affat = {}
+				b_gabriya = {}
+				b_abudis = {}
+				b_ummmardi = {}
+			}
+			c_nubia = {
+				color = { 47 194 126 }
 			
-			c_alodia = {
-				color={ 135 65 20 }
-				color2={ 255 255 255 }
-			
-				b_alwa = {
-				}
-				b_soba = {
-				}
-				b_omdurman = {
-				}
-				b_barah = {
-				}
-				b_omjerky = {
-				}
-				b_malaka = {
-				}
-				b_wawissi = {
-				}
-			}
-			c_sennar = {
-				color={ 115 60 20 }
-				color2={ 255 255 255 }
-			
-				b_sennar = {
-				}
-				b_tabat = {
-				}
-				b_sinjah = {
-				}
-				b_bakkah = {
-				}
-				b_kukur = {
-				}
-				b_galgani = {
-				}
-				b_wadrawah = {
-				}
-				b_kinanah = {
-				}
-			}
-			c_kosti = {
-				color={ 160 70 40 }
-				color2={ 255 255 255 }
-			
-				b_kosti = {
-				}
-				b_abbeit = {
-				}
-				b_tandalti = {
-				}
-				b_umm_ruwaba = {
-				}
-				b_dalang = {
-				}
-				b_kaduqli = {
-				}
-				b_lagawa = {
-				}
-			}
-			c_darfur = {
-				color={ 75 190 165 }
-				color2={ 255 255 255 }
-				
-				b_ain_farah = {}
-				b_uri = {}
-				b_um_marrih = {} # Fictional - For Prosperity
-				b_kalkal = {} # Fictional - For Prosperity
-			}
-			c_fuka_lolong = {
-				color = { 20 25 60 }
-					holy_site = sol_sahara
-					holy_site = sol_sahara_reformed
-					holy_site = set
-					holy_site = set_reformed
-				
-				b_bir_murr = {}
-				b_ain_dua = {}
-				b_el_tag = {}
-				b_fuka_lolong = {}
-			}
-			c_el_fasher = {
-				color={ 175 140 115 }
-				color2={ 255 255 255 }
-				
-				b_el_fasher = {}
-				b_ad_dukaydik = {} # Fictional - For Prosperity
-				b_masalat = {} # Fictional - For Prosperity
+				b_alwa = {}
+				b_salala = {}
+				b_komelshokafa = {}
+				b_farata = {}
+				b_dradate = {}
 			}
 			c_bayuda = {
 				color = { 78 152 99 }
@@ -37259,34 +37355,13 @@ e_abyssinia = {
 				b_keheilli = {}
 				b_karima = {}
 			}
-		}
+		}			
 		d_hayya = { # Blemmyia
 			color={ 186 91 41 }
 			color2={ 255 255 255 }
 			
 			capital = 878 # Hayya
-
-			culture = nubian
 		
-			c_hayya = {
-				color={ 186 91 41 }
-				color2={ 255 255 255 }
-			
-				b_hayya = {
-				}
-				b_musmer = {
-				}
-				b_sinkat = {
-				}
-				b_kataigarsa = {
-				}
-				b_aliab = {
-				}
-				b_gebeit = {
-				}
-				b_taris = {
-				}
-			}
 			c_kassala = {
 				color={ 200 101 34 }
 				color2={ 255 255 255 }
@@ -41051,64 +41126,6 @@ e_kanem = {
 				b_msus = {} # Fictional - For Prosperity
 				b_grennah = {} # Fictional - For Prosperity
 				b_djemmari = {} # Fictional - For Prosperity
-			}
-		}
-		d_wadai = {
-			color={ 17 237 189 }
-			color2={ 255 255 255 }
-			
-			capital = 1770 # Wadai
-			
-			c_fitri = {
-				color={ 32 212 170 }
-				color2={ 255 255 255 }
-				
-				b_gaska = {}
-				b_ndoye = {} # Fictional - For Prosperity
-				b_atourda = {} # Fictional - For Prosperity
-				b_sambourou = {} # Fictional - For Prosperity
-			}
-			c_kuka = {
-				color={ 132 232 130 }
-				color2={ 255 255 255 }
-				
-				b_kuka = {}
-				b_manouachi = {} # Fictional - For Prosperity
-				b_troan = {} # Fictional - For Prosperity
-			}
-			c_wadai = {
-				color={ 27 247 201 }
-				color2={ 255 255 255 }
-				
-				b_abeche = {}
-				b_nimro = {}
-				b_koulkoule = {} # Fictional - For Prosperity
-				b_yue = {} # Fictional - For Prosperity
-			}
-			c_wara = {
-				color={ 127 117 21 }
-				color2={ 255 255 255 }
-				
-				b_wara = {}
-				b_gourmoga = {} # Fictional - For Prosperity
-				b_asafik = {} # Fictional - For Prosperity
-			}
-			c_ennedi = {
-				color={ 10 205 162 }
-				color2={ 255 255 255 }
-				
-				b_kebkabiya = {}
-				b_shaiqab = {} # Fictional - For Prosperity
-				b_bandarbi = {} # Fictional - For Prosperity
-				b_esh_sharafa = {} # Fictional - For Prosperity
-			}
-			c_kobbai = {
-				color={ 150 225 46 }
-				color2={ 255 255 255 }
-				
-				b_kobbai = {}
-				b_sabu = {} # Fictional - For Prosperity
-				b_et_taba = {} # Fictional - For Prosperity
 			}
 		}
 	}
