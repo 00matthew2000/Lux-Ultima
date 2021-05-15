@@ -33600,15 +33600,34 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 		
 		capital	= 796 # Cairo
 		
-		culture = egyptian_arabic
-		
-		catholic = 450 # Crusade target weight
-		orthodox = 20 # Crusade target weight
-		muslim = 400 # Crusade target weight
-		zoroastrian_group = 100 # Crusade target weight
-		zun_pagan_reformed = 100 # Crusade target weight
-		jewish_group = 500 # Crusade target weight
-		hellenic_pagan_reformed = 1000 # Crusade target weight
+		apollinarist = 5000
+		iconoclast = 5000
+		melkite = 5000
+		monophysite = 10000
+		monothelite = 10000
+		nestorian = 2000
+		sabellianist = 2000
+		ashari = 2000
+		athari = 2000
+		haruri = 2000
+		maturidi = 2000
+		mutazil = 2000
+		shiite = 5000
+		zahiri = 2000
+		muslim_aliite_reformed = 2000
+		muslim_domination_reformed = 2000
+		alexandros = 10000
+		mithra = 2000
+		mithra_christ = 2000
+		mithra_sol = 5000
+		solomonic_alexandros = 10000
+		cybele_reformed = 2000
+		ethiopian_war_reformed = 5000
+		shaytana = 2000
+		berber_pagan_reformed = 500
+		aten_reformed = 10000
+		isis_reformed = 10000
+		set_reformed = 10000
 		
 		coptic = "Kemet"
 
@@ -33624,10 +33643,53 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 102 221 136 }
 				color2={ 255 255 255 }
 
-				holy_site = miaphysite
+				holy_site = orthodox
+				holy_site = nestorian
 				holy_site = monophysite
-				holy_site = hellenic_pagan
-				holy_site = hellenic_pagan_reformed
+				holy_site = audianist
+				holy_site = marcionist
+				holy_site = solomonic_christ
+				holy_site = montanist_reformed
+				holy_site = palmyran_pagan
+				holy_site = judaism
+				holy_site = jud_zion
+				holy_site = sethian
+				holy_site = jud_ark_reformed
+				holy_site = judaism_reformed
+				holy_site = sethian_reformed
+				holy_site = graeco_roman
+				holy_site = graeco_roman_reformed
+				holy_site = mithra
+				holy_site = neoplato
+				holy_site = sol
+				holy_site = alexandros
+				holy_site = solomonic_alexandros
+				holy_site = cybele
+				holy_site = cybele_reformed
+				holy_site = mithra_sol
+				holy_site = plato_christ
+				holy_site = plato_islam
+				holy_site = porphyryan
+				holy_site = roman_imperial
+				holy_site = sol_apollo 
+				holy_site = sol_boreas
+				holy_site = sol_boreas_reformed
+				holy_site = sol_islam
+				holy_site = sol_islam_reformed 
+				holy_site = sol_norse
+				holy_site = northern_sun_reformed
+				holy_site = sol_slav
+				holy_site = sol_tsahay
+				holy_site = sol_sahara
+				holy_site = sol_sahara_reformed
+				holy_site = ethiopian_war_reformed
+				holy_site = amun
+				holy_site = isis
+				holy_site = set
+				holy_site = amun_reformed
+				holy_site = aten_reformed
+				holy_site = isis_reformed
+				holy_site = set_reformed
 				
 				coptic = "Rakote"
 				egyptian_arabic = "al-Iskandariyya"
@@ -33638,6 +33700,39 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				
 				b_alexandria = {
 					pentarchy = yes
+					pentarchy = adoptionist
+					pentarchy = alexandros
+					pentarchy = apollinarist
+					pentarchy = arian
+					pentarchy = audianist
+					pentarchy = docetist
+					pentarchy = jupiter
+					pentarchy = melkite
+					pentarchy = mithra
+					pentarchy = mithra_christ
+					pentarchy = mithra_sol
+					pentarchy = monophysite
+					pentarchy = monothelite
+					pentarchy = neoplato
+					pentarchy = orthodox
+					pentarchy = pelagian
+					pentarchy = plato_christ
+					pentarchy = plato_islam
+					pentarchy = plato_pythagorean
+					pentarchy = porphyryan
+					pentarchy = sabellianist
+					pentarchy = semipelagian
+					pentarchy = sol
+					pentarchy = sol_apollo
+					pentarchy = sol_christ
+					pentarchy = sol_mani
+					pentarchy = cybele_reformed
+					pentarchy = ethiopian_war_reformed
+					pentarchy = graeco_roman_reformed
+					pentarchy = northern_sun_reformed
+					pentarchy = sol_boreas_reformed
+					pentarchy = sol_islam_reformed
+					pentarchy = sol_sahara_reformed
 					coptic = "Rakote"
 					egyptian_arabic = "al-Iskandariyya"
 					bedouin_arabic = "al-Iskandariyya"
@@ -33781,17 +33876,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 9 255 80 }
 				color2={ 255 255 255 }
 				
-				coptic = "Tamiat"
-				greek = "Tamiathis"
-				egyptian_arabic = "ad-Dingawiya"
-				bedouin_arabic = "ad-Dingawiya"
-				maghreb_arabic = "ad-Dingawiya"
-				levantine_arabic = "ad-Dingawiya"
-				andalusian_arabic = "ad-Dingawiya"
-				
 				b_damietta = {
-					coptic = "Tamiat"
-					greek = "Tamiathis"
 				}
 				b_burlus = {
 				}
@@ -33814,22 +33899,25 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 12 255 83 }
 				color2={ 255 255 255 }
 				
-				coptic = "Jani"
-				egyptian_arabic = "ad-Daqahliya"
-				bedouin_arabic = "ad-Daqahliya"
-				maghreb_arabic = "ad-Daqahliya"
-				levantine_arabic = "ad-Daqahliya"
-				andalusian_arabic = "ad-Daqahliya"
+				coptic = "Tamiat"
+				hellenistic = "Tamiathis"
+				egyptian_arabic = "ad-Dingawiya"
+				bedouin_arabic = "ad-Dingawiya"
+				maghreb_arabic = "ad-Dingawiya"
+				levantine_arabic = "ad-Dingawiya"
+				andalusian_arabic = "ad-Dingawiya"
 				
-				b_pelusia = {
+				b_tjaru = {
+					hellenistic = "Zele" 
+					greek = "Sile" 
+				}
+				b_tinnis = {
 				}
 				b_alsalihiyah = {
 				}
 				b_sile = {
 				}
 				b_ismaillia = {
-				}
-				b_said = {
 				}
 				b_pithom = {
 				}
@@ -33875,31 +33963,59 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			coptic = "Kahiree"
 			
 			c_cairo = {
-				color={ 24 236 119 }
+				color = { 24 236 119 }
+				color2 = { 255 255 255 }
+			
+				b_cairo = {}
+				b_fustat = {}
+				b_memphis = {}
+				b_helwan = {}
+				b_heliopolis = {}
+				b_maadi = {}
+				b_tekkekyahudiyya = {}
+				b_merimdabenisalama = {}
+			}
+			c_quena = {
+				color={ 32 244 127 }
+				color2={ 255 255 255 }
+				
+				coptic = "Ena"
+				egyptian_arabic = "al-Qusiya"
+				bedouin_arabic = "al-Qusiya"
+				maghreb_arabic = "al-Qusiya"
+				levantine_arabic = "al-Qusiya"
+				andalusian_arabic = "al-Qusiya"
+				
+				b_quena = {
+					coptic = "Ena"
+				}
+				b_qus = {
+				}
+				b_qift = {
+				}
+				b_luxor = {
+				}
+				b_shiblanjah = { # Fictional, for prosperity
+				}
+				b_khalaf = { # Fictional, for prosperity
+				}
+				b_bilbeis = { # Fictional, for prosperity
+				}
+			}
+			c_alqusair = {
+				color={ 32 244 127 }
 				color2={ 255 255 255 }
 
-				holy_site = zun_pagan
-				holy_site = zun_pagan_reformed
+				greek = "Leucus Limen"
+				coptic = "Leucus Limen"
 				
-				coptic = "Kahiree"
-				
-				b_cairo = {
-					coptic = "Kahiree"
-				}
-				b_fustat = {
-				}
-				b_memphis = {
-				}
-				b_helwan = {
-				}
-				b_heliopolis = {
-				}
-				b_maadi = {
-				}
-				b_tekkekyahudiyya = {
-				}
-				b_merimdabenisalama = {
-				}
+				b_kosseir = {}
+				b_safaga = {}
+				b_abughusun = {}
+				b_ummrus = {}
+				b_asfoun = {} # Fictional, for prosperity
+				b_bureid = {} # Fictional, for prosperity
+				b_jamsah = {} # Fictional, for prosperity
 			}
 			c_sarqihya = {
 				color={ 28 240 123 }
@@ -33991,79 +34107,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_mount_anthony = {}
 			}
 		}
-		d_aswan = {
-			color={ 41 188 120 }
-			color2={ 255 255 255 }
-			
-			capital = 794 # Aswan
-			
-			coptic = "Sowan"
-			
-			c_aswan = {
-				color={ 43 190 122 }
-				color2={ 255 255 255 }
-				
-				coptic = "Sowan"
-				
-				b_aswan = {
-					coptic = "Sowan"
-				}
-				b_elefantina = {
-				}
-				b_shellal = {
-				}
-				b_bigeh = {
-				}
-				b_veset = {
-				}
-				b_philae = {
-				}
-				b_kalabsha = {
-				}
-			}
-			c_quena = {
-				color={ 32 244 127 }
-				color2={ 255 255 255 }
-				
-				coptic = "Ena"
-				egyptian_arabic = "al-Qusiya"
-				bedouin_arabic = "al-Qusiya"
-				maghreb_arabic = "al-Qusiya"
-				levantine_arabic = "al-Qusiya"
-				andalusian_arabic = "al-Qusiya"
-				
-				b_quena = {
-					coptic = "Ena"
-				}
-				b_qus = {
-				}
-				b_qift = {
-				}
-				b_luxor = {
-				}
-				b_shiblanjah = { # Fictional, for prosperity
-				}
-				b_khalaf = { # Fictional, for prosperity
-				}
-				b_bilbeis = { # Fictional, for prosperity
-				}
-			}
-			c_alqusair = {
-				color={ 32 244 127 }
-				color2={ 255 255 255 }
-
-				greek = "Leucus Limen"
-				coptic = "Leucus Limen"
-				
-				b_kosseir = {}
-				b_safaga = {}
-				b_abughusun = {}
-				b_ummrus = {}
-				b_asfoun = {} # Fictional, for prosperity
-				b_bureid = {} # Fictional, for prosperity
-				b_jamsah = {} # Fictional, for prosperity
-			}
-		}
 		d_faiyum = {
 			color={ 110 240 145 }
 			color2={ 255 255 255 }
@@ -34132,17 +34175,17 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				}
 			}
 		}
-		d_asyut = {
-			color={ 30 250 124 }
-			color2={ 255 255 255 }
+		d_aswan = {
+			color = { 41 188 120 }
+			
+			capital = 794 #Aswan
 
 			coptic = "Sioout"
 			greek = "Lycopolis"
 			roman = "Oasis Magna"
 
 			c_asyut = {
-				color={ 36 248 131 }
-				color2={ 255 255 255 }
+				color = { 43 190 122 }
 				
 				coptic = "Sioout"
 				greek = "Lycopolis"
@@ -34176,6 +34219,40 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_suhaj = {
 				}
 			}
+			c_aswan = {
+				color={ 43 190 122 }
+				color2={ 255 255 255 }
+				
+				holy_site = amun
+				holy_site = isis
+				holy_site = set
+				holy_site = amun_reformed
+				holy_site = aten_reformed
+				holy_site = isis_reformed
+				holy_site = set_reformed
+				
+				coptic = "Sowan"
+				
+				b_aswan = {
+					coptic = "Sowan"
+					nubian = "Karnak" 
+					sao = "Karnak" 
+					fur = "Karnak" 
+					luo = "Karnak"
+				}
+				b_elefantina = {
+				}
+				b_shellal = {
+				}
+				b_bigeh = {
+				}
+				b_veset = {
+				}
+				b_philae = {
+				}
+				b_kalabsha = {
+				}
+			}
 			c_farafra = {
 				color={ 104 234 148 }
 				color2={ 255 255 255 }
@@ -34195,22 +34272,19 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_qasrfarfra = {}
 			}
 			c_kharga = {
-				color={ 108 227 142 }
-				color2={ 255 255 255 }
+				color = { 108 227 142 }
 
 				coptic = "Wah Empsoy"
 				roman = "Oasis Magna"
-				
-				b_elkharga = {
-					coptic = "Wah Empsoy"
-					roman = "Oasis Magna"
-				}
+			
+				b_buhairya = {}
+				b_mut = {}
+				b_qasrfarfra = {}
+				b_elkharga = {}
 				b_baris = {}
+				b_budhkula = {}
+				b_abuminqar = {}
 				b_ismant = {}
-				b_zuhrah = {} # Fictional, for prosperity
-				b_gahdam = {} # Fictional, for prosperity
-				b_banja = {} # Fictional, for prosperity
-				b_panopolis = {} # Fictional, for prosperity
 			}
 			c_esna = {
 				color={ 33 242 122 }
@@ -36894,23 +36968,22 @@ e_abyssinia = {
 		}
 	}
 	
-	k_nubia = {
-		color={ 180 85 39 }
-		capital = 793 # Makuria
+	k_nobatia = {
+		color = { 151 56 155 }
+		title = SETEPENRE
 		
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					religion_group = christian
-				}
-			}
-		}
-		
-		d_nobatia = {
-			color = { 162 133 85 }
+		capital = 1326 #Napata
 
-			capital = 1282 # Dotawo
+		solomonic_alexandros = 2000
+		ethiopian_war_reformed = 2000
+		aten_reformed = 2000
+		isis_reformed = 2000
+		set_reformed = 2000
+		
+		d_dongola = {
+			color = { 170 43 70 }
+
+			capital = 793 # Dotawo
 
 			c_dotawo = {
 				color = { 160 130 85 }
@@ -36931,70 +37004,6 @@ e_abyssinia = {
 				b_premnis = {
 				}
 			}
-			c_nobatia = {
-				color = { 150 140 65 }
-				color2={ 255 255 255 }
-			
-				b_semna = {
-				}
-				b_wawa = {
-				}
-				b_delgo = {
-				}
-				b_soleb = {
-				}
-				b_abri = {
-				}
-				b_akasha = {
-				}
-				b_kulubnarti = {
-				}
-			}
-			c_nubia = {
-				color = { 145 130 60 }
-				color2={ 255 255 255 }
-			
-				b_anag = {
-				}
-				b_eirayab = {
-				}
-				b_salala = {
-				}
-				b_nafab = {
-				}
-				b_komotit = {
-				}
-				b_tahtani = {
-				}
-				b_fanoidig = {
-				}
-				b_nubia = {
-				}
-			}
-			c_aydhab = {
-				color = { 125 120 65 }
-				color2={ 255 255 255 }
-			
-				b_aydhab = {
-				}
-				b_halayeb = {
-				}
-				b_troglodytica = {
-				}
-				b_marsaalam = {
-				}
-				b_elba = {
-				}
-				b_shalateen = {
-				}
-				b_zabargad = {
-				}
-			}
-		}
-		d_nubia = { # Makuria
-			color = { 141 162 79 }
-			capital = 793 # Makuria
-			
 			c_makuria = {
 				color = { 140 155 75 }
 				color2={ 255 255 255 }
@@ -37033,30 +37042,122 @@ e_abyssinia = {
 				b_karima = {
 				}
 			}
-			c_atbara = {
-				color = { 145 120 50 }
-				color2={ 255 255 255 }
+			c_nobatia = {
+				color = { 200 33 33 }
+				
+				holy_site = isis
+				holy_site = isis_reformed
 			
-				b_atbara = {
+				b_semna = {
 				}
-				b_meruwah = {
+				b_wawa = {
 				}
-				b_begarawiyah = {
+				b_delgo = {
 				}
-				b_hajaralasla = {
+				b_soleb = {
 				}
-				b_ummmardi = {
+				b_abri = {
 				}
-				b_abudis = {
+				b_akasha = {
 				}
-				b_shendi = {
+				b_kulubnarti = {
 				}
 			}
-
+			c_west_nobatia = {
+				color = { 214 22 52 }
+				
+				b_para = {}
+				b_kulb = {}
+			}
+			c_south_nobatia = {
+				color = { 214 22 52 }
+				
+				b_ibrim = {}
+			}
+			c_qasr_ibrim = {
+				color = { 119 134 74 }
+				
+				b_ukhta2 = {}
+				b_sosnogorsk2 = {}
+				b_yarega2 = {}
+				b_vodnyy2 = {}
+				b_nizhodes2 = {}
+				b_vuktyl2 = {}
+				b_kadzherom2 = {}
+				b_voyvozh2 = {}
+			}
+			c_nubia = {
+				color = { 47 194 126 }
+			
+				b_alwa = {}
+				b_salala = {}
+				b_komelshokafa = {}
+				b_farata = {}
+				b_dradate = {}
+			}
 		}
-		d_sennar = { # Alodia
-			color={ 128 60 20 }
-			color2={ 255 255 255 }
+		d_aydhab = {
+			color = { 75 230 80 }
+			
+			capital = 1320 #Adabos
+			
+			c_aydhab = {
+				color = { 207 39 102 }
+				
+				b_aydhab = {}
+				b_halayeb = {}
+				b_mukkawar = {}
+				b_shalateen = {}
+				b_siyal = {}
+				b_gebel_elba = {}
+			}
+			c_suakin = {
+				color = { 210 63 77 }
+			
+				b_sawakin = {}
+				b_tisiamti = {}
+				b_salum = {}
+				b_taiwi = {}
+				b_derkin = {}
+				b_dubarua = {}
+			}
+			c_trinkitat = {
+				color = { 210 63 77 }
+			
+				b_trinkitat = {}
+				b_derri = {}
+				b_tokar = {}
+				b_teb = {}
+				b_kwababa = {}
+				b_mukden = {}
+			}
+		}
+					
+		d_nubia = { # Makuria
+			color = { 141 162 79 }
+			capital = 793 # Makuria
+			
+			c_atbara = {
+				color = { 208 40 103 }
+					holy_site = amun
+					holy_site = isis
+					holy_site = set
+					holy_site = amun_reformed
+					holy_site = aten_reformed
+					holy_site = isis_reformed
+					holy_site = set_reformed
+			
+				b_atbara = {}
+				b_meroe = {		#Medewi
+				}
+				b_tabat = {}
+				b_wadrawah = {}
+				b_meruwah = {}
+				b_hajaralasla = {}
+			}
+		}
+		d_darfur = {
+			color = { 100 88 35 }
 			
 			capital = 1334 # Alodia
 			
@@ -37128,6 +37229,18 @@ e_abyssinia = {
 				b_um_marrih = {} # Fictional - For Prosperity
 				b_kalkal = {} # Fictional - For Prosperity
 			}
+			c_fuka_lolong = {
+				color = { 20 25 60 }
+					holy_site = sol_sahara
+					holy_site = sol_sahara_reformed
+					holy_site = set
+					holy_site = set_reformed
+				
+				b_bir_murr = {}
+				b_ain_dua = {}
+				b_el_tag = {}
+				b_fuka_lolong = {}
+			}
 			c_el_fasher = {
 				color={ 175 140 115 }
 				color2={ 255 255 255 }
@@ -37137,16 +37250,14 @@ e_abyssinia = {
 				b_masalat = {} # Fictional - For Prosperity
 			}
 			c_bayuda = {
-				color={ 64 216 152 }
-				color2={ 255 255 255 }
-				
+				color = { 78 152 99 }
+			
 				b_bayuda = {}
-				b_almeragh = {}
-				b_atongour = {} # Fictional - For Prosperity
-				b_jeroko = {} # Fictional - For Prosperity
-				b_es_soriba = {} # Fictional - For Prosperity
-				b_elkhandaq = {} # Fictional - For Prosperity
-				b_faras_east = {} # Fictional - For Prosperity
+				b_marawi = {}
+				b_ghazali = {}
+				b_korti = {}
+				b_keheilli = {}
+				b_karima = {}
 			}
 		}
 		d_hayya = { # Blemmyia
@@ -37157,44 +37268,6 @@ e_abyssinia = {
 
 			culture = nubian
 		
-			c_suakin = {
-				color={ 176 85 35 }
-				color2={ 255 255 255 }
-			
-				b_sawakin = {
-				}
-				b_tisiamti = {
-				}
-				b_salum = {
-				}
-				b_taiwi = {
-				}
-				b_derkin = {
-				}
-				b_dubarua = {
-				}
-				b_komelshokafa = {
-				}
-			}
-			c_trinkitat = {
-				color={ 141 55 35 }
-				color2={ 255 255 255 }
-			
-				b_trinkitat = {
-				}
-				b_derri = {
-				}
-				b_tokar = {
-				}
-				b_farata = {
-				}
-				b_teb = {
-				}
-				b_kwababa = {
-				}
-				b_mukden = {
-				}
-			}
 			c_hayya = {
 				color={ 186 91 41 }
 				color2={ 255 255 255 }

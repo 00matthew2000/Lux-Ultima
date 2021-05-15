@@ -1,4 +1,4 @@
-max_provinces = 4060
+max_provinces = 4065
 definitions = "definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"
@@ -52,6 +52,7 @@ sea_zones = { 3189 3308 }
 
 # Nile
 sea_zones = { 2861 2870 }
+sea_zones = { 4064 4064 }
 
 # Blue Nile
 sea_zones = { 2871 2872 }
@@ -134,6 +135,7 @@ major_rivers =
 
 	# Africa
 	2861 2862 2863 2864 2865 2866 2867 2868 2869 2870 #Nile
+	4064 #Neilos
 	2871 2872 #Blue Nile
 	2873 2874 2875 2876 2877 2878 2879 #White Nile
 	2880 #Semliki
