@@ -35969,6 +35969,8 @@ e_maghreb = {
 			c_tripolitana = {
 				color={ 45 192 107 }
 				color2={ 255 255 255 }
+				
+				roman = "Oea" 
 			
 				b_libtripoli = {
 				}
@@ -36150,8 +36152,7 @@ e_maghreb = {
 			}
 		}
 		d_cyrenaica = {
-			color={ 32 150 63 }
-			color2={ 255 255 255 }
+			color = { 241 193 26 }
 			
 			capital = 806 # Cyrenaica
 		
@@ -36435,115 +36436,104 @@ e_abyssinia = {
 	
 	culture = ethiopian
 	
-	k_abyssinia = {
-		color={ 120 62 20 }
-		color2={ 255 255 255 }
+	k_aksum = {
+		color = { 121 121 121 }
 		
-		capital = 883 # Gondar
-		
-		culture = ethiopian
-		
-		jewish_group = 100
+		capital = 875 #Axum
+
+		solomonic_alexandros = 2000
+		ethiopian_war_reformed = 10000
 		
 		d_axum = {
-			color={ 186 135 70 }
-			color2={ 255 255 255 }
+			color = { 198 30 93 }
 			
 			capital = 875 # Aksum
 		
 			c_aksum = {
-				color={ 186 135 70 }
-				color2={ 255 255 255 }
-
-				holy_site = miaphysite
-				holy_site = monophysite
-				
-				b_adwa = {
-				}
-				b_aksum = {
-				}
-				b_mekele = {
-				}
-				b_rama2 = {
-				}
-				b_adigrat = {
-				}
-				b_hawzen = {
-				}
-				b_yeha = {
-				}
+				color = { 200 32 95 }
+					holy_site = solomonic_christ
+					holy_site = solomonic_alexandros
+					holy_site = jud_ark_reformed
+					holy_site = sol_tsahay
+					holy_site = ethiopian_war_reformed
+			
+				b_adwa = {}
+				b_aksum = {}
+				b_mekele = {}
+				b_rama2 = {}
+				b_adigrat = {}
+				b_hawzen = {}
+				b_yeha = {}
 			}
 			c_massawa = {
-				color={ 186 135 70 }
-				color2={ 255 255 255 }
+				color = { 212 34 97 }
 			
-				b_massawa = {
-				}
-				b_cheren = {
-				}
-				b_dahano = {
-				}
-				b_matara = {
-				}
-				b_qohaito = {
-				}
-				b_adulis = {
-				}
-				b_sembel = {
-				}
+				b_massawa = {}
+				b_cheren = {}
+				b_dahano = {}
+				b_matara = {}
+				b_adulis = {}
+				b_qohaito = {}
+				b_sembel = {}
 			}
 			c_akordat = {
-				color={ 186 135 70 }
-				color2={ 255 255 255 }
+				color = { 202 34 97 }
 			
-				b_akordat = {
-				}
-				b_teseney = {
-				}
-				b_antalla = {
-				}
-				b_barentu = {
-				}
-				b_dghe = {
-				}
-				b_mogolo = {
-				}
-				b_shambuko = {
-				}
+				b_akordat = {}
+				b_teseney = {}
+				b_barentu = {}
+				b_dghe = {}
+				b_mogolo = {}
+				b_shambuko = {}
 			}
-
-		}
-		d_semien = {
-			color={ 146 105 50 }
-			color2={ 255 255 255 }
-			
-			ashkenazi = "Beta Israel"
-			sephardi = "Beta Israel"
-			
-			capital = 1380 # Semien
-
 			c_tigrinya = {
-				color={ 146 105 50 }
-				color2={ 255 255 255 }
+				color = { 202 44 97 }
 			
-				b_tigrinya = {
+				b_tigrinya = {}
+				b_adi_ramets = {}
+				b_amba_maderiya = {}
+				b_bilamba = {}
+				b_golonco = {}
+				b_zagamat = {}
+				b_adenna = {}
+			}
+		}
+	}
+	k_abyssinia = {
+		color = { 201 143 68 }
+		culture = ethiopian
+		
+		capital = 883 #Gwandar
+
+		ethiopian_war_reformed = 5000
+		aten_reformed = 1000
+		isis_reformed = 1000
+		set_reformed = 1000
+		
+		d_gondar= {
+			color = { 148 59 92 }
+			
+			capital = 883 # Gondar
+		
+			c_gondar = {
+				color = { 154 65 98 }
+					holy_site = attar
+					holy_site = maher
+					holy_site = waaq
+					holy_site = kothar
+			
+				b_fasilghebbi = {}
+				b_gondar = {}
+				b_roha = {
 				}
-				b_adi_ramets = {
-				}
-				b_amba_maderiya = {
-				}
-				b_bilamba = {
-				}
-				b_golonco = {
-				}
-				b_zagamat = {
-				}
-				b_adenna = {
-				}
+				b_ambassel = {}
+				b_bahirdar = {}
+				b_magdala = {}
+				b_tanaqirqos = {}
+				b_dembiya = {}
 			}
 			c_semien = {
-				color={ 146 105 50 }
-				color2={ 255 255 255 }
+				color = { 158 67 104 }
 			
 				b_dabat = {
 				}
@@ -36558,34 +36548,6 @@ e_abyssinia = {
 				b_amja_lebes = {
 				}
 				b_ambaras = {
-				}
-			}
-		}
-		d_gondar= {
-			color={ 215 119 45 }
-			color2={ 255 255 255 }
-			
-			capital = 883 # Gondar
-		
-			c_gondar = {
-				color={ 215 119 45 }
-				color2={ 255 255 255 }
-			
-				b_fasilghebbi = {
-				}
-				b_gondar = {
-				}
-				b_roha = {
-				}
-				b_ambassel = {
-				}
-				b_bahirdar = {
-				}
-				b_magdala = {
-				}
-				b_tanaqirqos = {
-				}
-				b_dembiya = {
 				}
 			}
 			c_begemder = {
@@ -36607,16 +36569,8 @@ e_abyssinia = {
 				b_maryamu = {
 				}
 			}
-		}
-		d_wag = {
-			color={ 186 100 55 }
-			color2={ 255 255 255 }
-			
-			capital =  1417 # Wag
-		
 			c_wag = {
-				color={ 186 100 55 }
-				color2={ 255 255 255 }
+				color = { 212 34 107 }
 			
 				b_sekota = {
 				}
@@ -36652,13 +36606,6 @@ e_abyssinia = {
 				b_metene = {
 				}
 			}
-		}
-		d_gojjam = {
-			color={ 137 90 76 }
-			color2={ 255 255 255 }
-			
-			capital =  1280 # Gojjam
-		
 			c_gojjam = {
 				color={ 137 90 76 }
 				color2={ 255 255 255 }
@@ -36678,26 +36625,28 @@ e_abyssinia = {
 				b_baremma = {
 				}
 			}
-			c_matamma = {
-				color={ 137 90 76 }
-				color2={ 255 255 255 }
+		}
+		d_gojjam = {
+			color={ 137 90 76 }
+			color2={ 255 255 255 }
 			
-				b_ginbo = {
-				}
-				b_bonga = {
-				}
-				b_gishabay = {
-				}
-				b_wacha = {
-				}
-				b_chiri = {
-				}
-				b_kaffa = {
-				}
-				b_yadeta = {
-				}
-				b_garo = {
-				}
+			capital =  885 # Gwazzam
+		
+			c_matamma = {
+				color = { 168 79 112 }
+			
+				b_gojjam = {}
+				b_bonga = {}
+				b_gishabay = {}
+				b_wacha = {}
+				b_chiri = {}
+				b_yadeta = {}
+				b_garo = {}
+			}
+			c_gezira = {
+				color = { 158 69 102 }
+			
+				b_ginbo = {}
 			}
 		}
 		d_damot = {
@@ -36726,74 +36675,45 @@ e_abyssinia = {
 				}
 			}
 			c_asosa = {
-				color={ 198 93 30 }
-				color2={ 255 255 255 }
+				color = { 150 61 94 }
 			
-				b_asosa = {
-				}
-				b_bambasi = {
-				}
-				b_genetemariam = {
-				}
-				b_debrezeyit = {
-				}
-				b_mankush = {
-				}
-				b_dibate = {
-				}
-				b_ketema = {
-				}
-				b_kormuk = {
-				}
+				b_asosa = {}
+				b_bambasi = {}
+				b_genetemariam = {}
+				b_debrezeyit = {}
+				b_mankush = {}
+				b_dibate = {}
+				b_ketema = {}
+				b_kormuk = {}
 			}
 		}
 		d_shewa = {
-			color={  147 90 48 }
-			color2={ 255 255 255 }
+			color = { 70 231 34 }
 			
 			capital = 882 # Ankober
 		
 			c_ankober = {
-				color={  147 90 48 }
-				color2={ 255 255 255 }
+				color = { 152 63 96 }
 			
-				b_ankober = {
-				}
-				b_doqaqit = {
-				}
-				b_qundi = {
-				}
-				b_saqqa = {
-				}
-				b_aliyuamba = {
-				}
-				b_berehet = {
-				}
-				b_keyagebriel = {
-				}
-				b_tegulet = {
-				}
+				b_ankober = {}
+				b_doqaqit = {}
+				b_qundi = {}
+				b_saqqa = {}
+				b_aliyuamba = {}
+				b_berehet = {}
+				b_keyagebriel = {}
+				b_tegulet = {}
 			}
 			c_antalo = {
-				color={  147 90 48 }
-				color2={ 255 255 255 }
+				color = { 156 67 100 }
 			
-				b_entoto = {
-				}
-				b_hayq = {
-				}
-				b_shewa = {
-				}
-				b_antsokia = {
-				}
-				b_debreberhan = {
-				}
-				b_bale = {
-				}
-				b_debrelibanos = {
-				}
-				b_oromos = {
-				}
+				b_entoto = {}
+				b_hayq = {}
+				b_shewa = {}
+				b_antsokia = {}
+				b_debreberhan = {}
+				b_debrelibanos = {}
+				b_oromos = {}
 			}
 		}
 		d_kaffa = {
@@ -36872,56 +36792,6 @@ e_abyssinia = {
 				b_duna = {
 				}
 			}
-			c_gamo = {
-				color={ 179 135 20 }
-				color2={ 255 255 255 }
-			
-				b_gamo_gamo = {
-				}
-				b_ganz = {
-				}
-				b_kambata = {
-				}
-				b_arba_minch = {
-				}
-				b_bonk = {
-				}
-				b_boreda = {
-				}
-				b_melokoza = {
-				}
-				b_sawla = {
-				}
-			}
-			c_oromo = {
-				color={ 179 135 30 }
-				color2={ 255 255 255 }
-			
-				b_oromo = {
-				}
-				b_abaya = {
-				}
-				b_arero = {
-				}
-				b_gelana = {
-				}
-				b_miyu = {
-				}
-				b_yabelo = {
-				}
-				b_dire_oromo = {
-				}
-				b_bule_hora = {
-				}
-			}
-		}
-
-		d_dawaro = {
-			color={ 179 125 106 }
-			color2={ 255 255 255 }
-			
-			capital = 2339 # Dawaro
-
 			c_dawaro = {
 				color={ 179 135 116 }
 				color2={ 255 255 255 }
@@ -36943,28 +36813,27 @@ e_abyssinia = {
 				b_gololcha = {
 				}
 			}
-			c_bali = {
-				color={ 179 135 126 }
+			c_gamo = {
+				color={ 179 135 20 }
 				color2={ 255 255 255 }
 			
-				b_bali_bali = {
+				b_gamo_gamo = {
 				}
-				b_agarfa = {
+				b_ganz = {
 				}
-				b_raytu = {
+				b_kambata = {
 				}
-				b_seweyna = {
+				b_arba_minch = {
 				}
-				b_sinana = {
+				b_bonk = {
 				}
-				b_dinsho = {
+				b_boreda = {
 				}
-				b_dawe_kachen = {
+				b_melokoza = {
 				}
-				b_gasera = {
+				b_sawla = {
 				}
 			}
-
 		}
 	}
 	
@@ -37031,27 +36900,6 @@ e_abyssinia = {
 			
 			capital = 2339 # Dawaro
 
-			c_dawaro = {
-				color={ 179 135 116 }
-				color2={ 255 255 255 }
-			
-				b_dawaro = {
-				}
-				b_amigna = {
-				}
-				b_aseke = {
-				}
-				b_munesa = {
-				}
-				b_sude = {
-				}
-				b_tena = {
-				}
-				b_chole = {
-				}
-				b_gololcha = {
-				}
-			}
 			c_nobatia = {
 				color = { 200 33 33 }
 				
@@ -37071,27 +36919,6 @@ e_abyssinia = {
 				b_akasha = {
 				}
 				b_kulubnarti = {
-				}
-			}
-			c_bali = {
-				color={ 179 135 126 }
-				color2={ 255 255 255 }
-			
-				b_bali_bali = {
-				}
-				b_agarfa = {
-				}
-				b_raytu = {
-				}
-				b_seweyna = {
-				}
-				b_sinana = {
-				}
-				b_dinsho = {
-				}
-				b_dawe_kachen = {
-				}
-				b_gasera = {
 				}
 			}
 			c_west_nobatia = {
@@ -37189,6 +37016,67 @@ e_abyssinia = {
 		}
 	}
 	
+	k_alodia = {
+		color = { 73 230 255 }
+		title = NEFERKARE
+		
+		capital = 1334 #Soba
+		
+		solomonic_alexandros = 2000
+		ethiopian_war_reformed = 5000
+		aten_reformed = 2000
+		isis_reformed = 2000
+		set_reformed = 2000
+
+		d_meroe = {
+			color = { 234 190 39 }
+			
+			capital = 1334 #Soba
+			
+			c_alodia = {
+				color = { 191 58 89 }
+					holy_site = jud_zion
+			
+				b_soba = {}
+				b_omdurman = {}
+				b_barah = {}
+				b_omjerky = {}
+				b_malaka = {
+				}
+				b_wawissi = {}
+			}
+			c_kassala = {
+				color={ 200 101 34 }
+				color2={ 255 255 255 }
+			
+				b_kassala = {
+				}
+				b_doka = {
+				}
+				b_dinder = {
+				}
+				b_aroma = {
+				}
+				b_kagnarti = {
+				}
+				b_tebteb = {
+				}
+				b_gherset = {
+				}
+			}
+			c_sennar = {
+				color = { 210 42 105 }
+			
+				b_sennar = {}
+				b_sinjah = {}
+				b_bakkah = {}
+				b_kukur = {}
+				b_galgani = {}
+				b_kinanah = {}
+			}
+		}
+	}
+	
 	k_darfur = {
 		color = { 150 175 200 }
 		capital = 1771 #Darfur
@@ -37278,25 +37166,6 @@ e_abyssinia = {
 			
 			capital = 4065 #Omdurman
 			
-			c_alodia = {
-				color={ 135 65 20 }
-				color2={ 255 255 255 }
-			
-				b_alwa = {
-				}
-				b_soba = {
-				}
-				b_omdurman = {
-				}
-				b_barah = {
-				}
-				b_omjerky = {
-				}
-				b_malaka = {
-				}
-				b_wawissi = {
-				}
-			}
 			c_darfur = {
 				color = { 31 12 21 }
 				
@@ -37317,27 +37186,6 @@ e_abyssinia = {
 				b_kiknur2 = {}
 				b_tonshaevo2 = {}
 				b_uren2 = {}
-			}
-			c_sennar = {
-				color={ 115 60 20 }
-				color2={ 255 255 255 }
-			
-				b_sennar = {
-				}
-				b_tabat = {
-				}
-				b_sinjah = {
-				}
-				b_bakkah = {
-				}
-				b_kukur = {
-				}
-				b_galgani = {
-				}
-				b_wadrawah = {
-				}
-				b_kinanah = {
-				}
 			}
 			c_kosti = {
 				color={ 160 70 40 }
@@ -37608,125 +37456,69 @@ e_abyssinia = {
 				b_karima = {}
 			}
 		}			
-		d_hayya = { # Blemmyia
-			color={ 186 91 41 }
-			color2={ 255 255 255 }
-			
-			capital = 878 # Hayya
-		
-			c_kassala = {
-				color={ 200 101 34 }
-				color2={ 255 255 255 }
-			
-				b_kassala = {
-				}
-				b_doka = {
-				}
-				b_dinder = {
-				}
-				b_aroma = {
-				}
-				b_kagnarti = {
-				}
-				b_tebteb = {
-				}
-				b_gherset = {
-				}
-			}
-			c_gezira = {
-				color={ 215 122 38 }
-				color2={ 255 255 255 }
-				
-				b_wolqayt = {}
-				b_showak = {}
-				b_tangasi = {} # Fictional - For Prosperity
-				b_dahar_jihena = {} # Fictional - For Prosperity
-				b_koijam = {} # Fictional - For Prosperity
-				b_shawwaf = {} # Fictional - For Prosperity
-				b_karkab = {} # Fictional - For Prosperity
-			}
-		}
 	}
 		
-	k_somalia = {
-		color={ 209 236 211 }
-		color2={ 255 255 255 }
+	k_macrobia = {
+		color = { 70 103 175 }
 		
-		capital = 872 # Berbera
-		
-		culture = somali
+		capital = 872 #Malao
 
-		d_harer = { # Berbera
-			color={ 127 151 52 }
-			color2={ 255 255 255 }
+		ethiopian_war_reformed = 5000
+
+		d_harer = {
+			color = { 153 2 59 }
 			
-			capital = 872 # Berbera
+			capital = 872 # Malao
 		
-			c_busaso = {
-				color={ 127 151 52 }
+			c_hobyo = {
+				color={ 236 225 85 }
 				color2={ 255 255 255 }
 			
-				b_mosylon = {
+				b_hobyo = {
 				}
-				b_bandaraassim = {
+				b_barbacadle = {
 				}
-				b_lasanod = {
+				b_ras_hafun = {
 				}
-				b_garoowe = {
+				b_galkayo = {
 				}
-				b_qardho = {
+				b_eyl = {
 				}
-				b_erigavo = {
+				b_qosoltire = {
 				}
-				b_hadaftimo = {
+				b_el_hur = {
 				}
-				b_buraan = {
+				b_garowe = {
 				}
+			}
+			c_busaso = {
+				color = { 155 4 61 }
+			
+				b_mosylon = {}
+				b_bandaraassim = {}
+				b_lasanod = {}
+				b_garoowe = {}
+				b_qardho = {}
+				b_erigavo = {}
+				b_hadaftimo = {}
+				b_buraan = {}
 			}
 			c_berbera = {
-				color={ 127 151 52 }
-				color2={ 255 255 255 }
+				color = { 157 6 63 }
 			
-				b_berbera = {
-				}
-				b_maydh = {
-				}
-				b_gabiley = {
-				}
-				b_burco = {
-				}
-				b_mandera = {
-				}
-				b_daarbuduq = {
-				}
-				b_shiikh = {
-				}
-			}
-			c_zeila = {
-				color={ 127 151 52 }
-				color2={ 255 255 255 }
-			
-				b_zeila = {
-				}
-				b_hargeysa = {
-				}
-				b_borama = {
-				}
-				b_amud = {
-				}
-				b_jijiga = {
-				}
-				b_dilla = {
-				}
-				b_lughaya = {
-				}
+				b_berbera = {}
+				b_maydh = {}
+				b_gabiley = {}
+				b_burco = {}
+				b_mandera = {}
+				b_daarbuduq = {}
+				b_shiikh = {}
 			}
 		}
-		d_afar = {
-			color={ 159 189 65 }
-			color2={ 255 255 255 }
+		d_punt = {
+			color = { 64 173 113 }
 			
-			capital = 873 # Harer
+			capital = 873 # Gey
 
 			c_assab = {
 				color={ 159 189 65 }
@@ -37767,55 +37559,65 @@ e_abyssinia = {
 				}
 			}
 			c_harer = {
-				color={ 159 189 65 }
-				color2={ 255 255 255 }
+				color = { 159 8 65 }
 			
-				b_dakkar = {
-				}
-				b_harar = {
-				}
-				b_alemaya = {
-				}
-				b_diridawa = {
-				}
-				b_kurfachele = {
-				}
-				b_kombolcha = {
-				}
-				b_babile = {
-				}
+				b_harar = {}
+				b_dakkar = {}
+				b_diridawa = {}
+				b_alemaya = {}
+				b_kurfachele = {}
+				b_kombolcha = {}
+				b_babile = {}
 			}
 			c_tadjoura = {
-				color={ 159 189 65 }
-				color2={ 255 255 255 }
+				color = { 161 10 67 }
+				holy_site = shaytana
 			
-				b_tadjoura = {
-				}
-				b_berenice = {
-				}
-				b_obock = {
-				}
-				b_galafi = {
-				} 
-				b_dikhil = {
-				}
-				b_djibouti = {
-				}
-				b_holhol = {
-				}
-				b_randa = {
-				}
+				b_tadjoura = {}
+				b_berenice = {}
+				b_obock = {}
+				b_galafi = {}
+				b_dikhil = {}
+				b_djibouti = {}
+				b_holhol = {}
+				b_randa = {}
+			}
+			c_zeila = {
+				color = { 159 8 65 }
+			
+				b_zeila = {}
+				b_hargeysa = {}
+				b_borama = {}
+				b_amud = {}
+				b_jijiga = {}
+				b_dilla = {}
+				b_lughaya = {}
 			}
 		}
 		d_mogadishu = {
-			color={ 236 215 65 }
-			color2={ 255 255 255 }
+			color = { 140 83 200 }
+			roman = "Erythrea Adalia" 
 			
 			capital = 2341 # Mogadishu
 
 			c_mogadishu = {
-				color={ 236 225 75 }
-				color2={ 255 255 255 }
+				color = { 24 50 177 }
+				roman = "Serapium" 
+				greek = "Sarapion" 
+				hellenistic = "Sarapion" 
+					holy_site = batembuzi
+					holy_site = imana
+					holy_site = kintu
+					holy_site = makonde_pagan
+					holy_site = mwari
+					holy_site = nyasaye
+					holy_site = nyau
+					holy_site = zande_pagan
+					holy_site = zulu_pagan
+					holy_site = bantu_pagan_reformed
+					holy_site = nyakalagan_reformed
+					holy_site = zande_pagan_reformed
+					holy_site = zulu_pagan_reformed
 			
 				b_mogadishu = {
 				}
@@ -37832,27 +37634,6 @@ e_abyssinia = {
 				b_mareeg = {
 				}
 				b_adale = {
-				}
-			}
-			c_hobyo = {
-				color={ 236 225 85 }
-				color2={ 255 255 255 }
-			
-				b_hobyo = {
-				}
-				b_barbacadle = {
-				}
-				b_ras_hafun = {
-				}
-				b_galkayo = {
-				}
-				b_eyl = {
-				}
-				b_qosoltire = {
-				}
-				b_el_hur = {
-				}
-				b_garowe = {
 				}
 			}
 			c_marka = {
@@ -37926,9 +37707,8 @@ e_abyssinia = {
 				}
 			}
 		}
-		d_qalaafe = {
-			color={ 159 215 65 }
-			color2={ 255 255 255 }
+		d_urgoma = {
+			color = { 130 42 56 }
 			
 			capital = 2329 # Qalaafe
 
@@ -37972,6 +37752,48 @@ e_abyssinia = {
 				b_wajid = {
 				}
 				b_mandera_bardera = {
+				}
+			}
+			c_bali = {
+				color={ 179 135 126 }
+				color2={ 255 255 255 }
+			
+				b_bali_bali = {
+				}
+				b_agarfa = {
+				}
+				b_raytu = {
+				}
+				b_seweyna = {
+				}
+				b_sinana = {
+				}
+				b_dinsho = {
+				}
+				b_dawe_kachen = {
+				}
+				b_gasera = {
+				}
+			}
+			c_oromo = {
+				color={ 179 135 30 }
+				color2={ 255 255 255 }
+			
+				b_oromo = {
+				}
+				b_abaya = {
+				}
+				b_arero = {
+				}
+				b_gelana = {
+				}
+				b_miyu = {
+				}
+				b_yabelo = {
+				}
+				b_dire_oromo = {
+				}
+				b_bule_hora = {
 				}
 			}
 		}
