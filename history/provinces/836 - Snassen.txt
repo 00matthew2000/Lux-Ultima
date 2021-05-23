@@ -4,7 +4,7 @@
 title = c_snassen
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 
 b_oujda = castle
 b_jerada = city
@@ -18,9 +18,5 @@ b_saldia = temple
 
 # Misc
 culture = berber
-religion = kharijite
-
-# History
-
-909.1.1 = { religion = sunni }
-1130.1.1 = { trade_post = b_embriaco }
+religion = ibadi
+1066.1.1 = { }

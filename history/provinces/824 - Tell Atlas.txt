@@ -6,10 +6,12 @@ title = c_tell_atlas
 # Settlements
 max_settlements = 3
 
-b_setif = castle
-b_ikjan = city
+b_tiziouzou = castle
 
-#b_zaoula = temple
+#b_zaoula = city
+#b_akaoudj = temple
+
+#b_mirabeau = castle
 #b_nacina = castle
 #b_draaelmizan = castle
 #b_tagoughalt = castle
@@ -17,8 +19,5 @@ b_ikjan = city
 
 # Misc
 culture = berber
-religion = ibadi
-
-# History
-909.1.1 = { religion = sunni }
-1187.1.1 = { b_mechreck = castle }
+religion = sunni
+1066.1.1 = { }

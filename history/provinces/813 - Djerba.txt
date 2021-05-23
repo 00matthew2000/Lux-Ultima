@@ -6,24 +6,21 @@ title = c_djerba
 # Settlements
 max_settlements = 3
 
-b_houmtsouk = tribal
-b_ajim = temple
-
-#b_midoun = city
-#b_aghir = castle
-#b_abarda = castle
-#b_elmey = castle
-#b_cedriane = castle
-#b_taguermess = castle
+b_tubirett = castle
+b_msila = city
+b_sidiheg = temple
+#b_roumana = castle
+#b_ainzia = castle
+#b_sidinhar = castle
+#b_bordjelcaid = castle
+#b_beneldir = castle
 
 # Misc
 culture = roman
-religion = ibadi
+religion = mithra
 terrain = desert
 
 # History
-
-1050.1.1 = { religion = sunni }
 
 1126.1.1 = {
 	b_houmtsouk = castle

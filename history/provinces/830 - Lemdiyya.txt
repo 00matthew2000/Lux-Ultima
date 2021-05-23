@@ -6,8 +6,7 @@ title = c_lemdiyya
 # Settlements
 max_settlements = 3
 
-b_tiaret = castle
-#b_medea = castle
+b_medea = castle
 b_relizane = city
 b_aindefla = temple
 
@@ -18,8 +17,5 @@ b_aindefla = temple
 #b_elhachem = castle
 
 # Misc
-culture = berber
-religion = kharijite
-
-# History
-1009.1.1 = { religion = sunni }
+culture = maghreb_arabic
+religion = sunni
