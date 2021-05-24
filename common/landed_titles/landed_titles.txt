@@ -6142,7 +6142,7 @@ e_byzantium = {
 		solomonic_alexandros = 5000
 		cybele_reformed = 5000
 		ethiopian_war_reformed = 2000
-#		shaytana = 2000
+		shaytana = 2000
 		zal = 2000
 		zal_christ = 2000
 		zal_mani = 2000
@@ -6380,10 +6380,6 @@ e_byzantium = {
 			color2={ 255 255 20 }
 			
 			capital = 496 # Konstantinopolis
-			
-			orthodox = 250 # Crusade target weight
-			catholic = 125 # Crusade target weight
-			muslim = 100 # Crusade target weight
 			
 			c_kaliopolis = {
 				color={ 176 80 143 }
@@ -32091,23 +32087,16 @@ e_spain = {
 			capital = 180 # Granada
 			
 			c_granada = {
-				color = { 245 242 15 }
-				color2={ 255 255 255 }
+				color = { 127 248 10 }
 				
-				b_granada = {
-				}
-				b_elvira = {
-				}
-				b_moclin = {
-				}
-				b_iznajar = {
-				}
-				b_guadix = {
-				}
-				b_huelma = {
-				}
-				b_antequara = {
-				}
+				b_jaen = {}
+				b_granada = {}
+				b_elvira = {}
+				b_baeza = {}
+				b_moclin = {}
+				b_iznajar = {}
+				b_guadix = {}
+				b_huelma = {}
 			}
 			c_jaen = {
 				color={ 255 215 25 }
@@ -32354,25 +32343,22 @@ e_spain = {
 				andalusian_arabic = "Kunka"
 				
 				
+				b_siguenza = {}
 				b_cuenca = {
-					bedouin_arabic = "Kunka"
-					maghreb_arabic = "Kunka"
-					levantine_arabic = "Kunka"
-					egyptian_arabic = "Kunka"
-					andalusian_arabic = "Kunka"
+				bedouin_arabic = "Kunka"
+				maghreb_arabic = "Kunka"
+				levantine_arabic = "Kunka"
+				egyptian_arabic = "Kunka"
+				andalusian_arabic = "Kunka"
 				}
-				b_ucles = {
-				}
-				b_laspedroneras = {
-				}
-				b_villanuevadelajara = {
-				}
-				b_tarancon = {
-				}
-				b_sisante = {
-				}
-				b_motadelcuervo = {
-				}
+				b_guadalajara = {}
+				b_ucles = {}
+				b_laspedroneras = {}
+				b_villanuevadelajara = {}
+				b_tarancon = {}
+				b_sisante = {}
+				b_motadelcuervo = {}
+			}
 			}
 			c_alcala = {
 				color={ 255 200 30 }
@@ -35327,18 +35313,6 @@ e_maghreb = {
 			
 			capital = 822 # Laghouat/Ouled Nail
 			
-			c_mzab = { # Ghardaia
-				color={ 39 157 50 }
-				color2={ 255 255 255 }
-			
-				b_ghardaia = {}
-				b_noumerat = {}
-				b_sebseb = {}
-				b_zelfana = {}
-				b_bermane = {}
-				b_mzab = {}
-				b_ouargla = {}
-			}
 			c_biskra = {
 				color = { 47 253 104 }
 				
@@ -35391,30 +35365,6 @@ e_maghreb = {
 			
 				b_zabi = {}
 				b_equizeto = {}
-			}
-			c_arigh = {
-				color={ 51 255 108 }
-				color2={ 255 255 255 }
-				
-				b_arigh = {}
-				b_ajlu = {}
-				b_bouchaoui = {} # Fictional, for prosperity
-				b_mgadid = {} # Fictional, for prosperity
-				b_zemours = {} # Fictional, for prosperity
-				b_timoktene = {} # Fictional, for prosperity
-				b_rabta = {} # Fictional, for prosperity
-			}
-			c_tuggurt = {
-				color={ 51 255 108 }
-				color2={ 255 255 255 }
-				
-				b_tuggurt = {}
-				b_elalia = {}
-				b_elbour = {}
-				b_timeliline = {} # Fictional, for prosperity
-				b_smadja = {} # Fictional, for prosperity
-				b_tennsaout = {} # Fictional, for prosperity
-				b_meftah = {} # Fictional, for prosperity
 			}
 		}
 		d_tangiers = {
@@ -35658,6 +35608,18 @@ e_maghreb = {
 			
 			capital = 918 # Sijilmasa
 			
+			c_tuggurt = {
+				color={ 51 255 108 }
+				color2={ 255 255 255 }
+				
+				b_tuggurt = {}
+				b_elalia = {}
+				b_elbour = {}
+				b_timeliline = {} # Fictional, for prosperity
+				b_smadja = {} # Fictional, for prosperity
+				b_tennsaout = {} # Fictional, for prosperity
+				b_meftah = {} # Fictional, for prosperity
+			}
 			c_sijilmasa = {
 				color={ 72 214 60 }
 				color2={ 255 255 255 }
@@ -35734,8 +35696,8 @@ e_maghreb = {
 				color={ 49 156 38 }
 				color2={ 255 255 255 }
 				
-				b_ifni = {}
 				b_tharasset = {}
+				b_ifni = {}
 				b_tartaya = {}
 				b_tantan = {}
 				b_akhfennir = {}
@@ -35778,6 +35740,18 @@ e_maghreb = {
 			
 			capital = 920 # Ouadane
 			
+			c_arigh = {
+				color={ 51 255 108 }
+				color2={ 255 255 255 }
+				
+				b_arigh = {}
+				b_ajlu = {}
+				b_bouchaoui = {} # Fictional, for prosperity
+				b_mgadid = {} # Fictional, for prosperity
+				b_zemours = {} # Fictional, for prosperity
+				b_timoktene = {} # Fictional, for prosperity
+				b_rabta = {} # Fictional, for prosperity
+			}
 			c_ouadane = {
 				color={ 23 109 202 }
 				color2={ 255 255 255 }
@@ -36129,6 +36103,8 @@ e_maghreb = {
 			c_cyrenaica = {
 				color={ 34 152 65 }
 				color2={ 255 255 255 }
+				
+				holy_site = sol_apollo 
 			
 				b_cyrene = {
 				}
@@ -40809,17 +40785,26 @@ e_mali = {
 			capital = 911 # Timbuktu			
 		
 			c_timbuktu = {
-				color={ 35 75 209 }
-				color2={ 255 255 255 }	
-				
+				color = { 240 245 100 }
+					holy_site = amanai
+					holy_site = berber_pagan
+					holy_site = gurzil
+					holy_site = berber_pagan_reformed
+					holy_site = anansi
+					holy_site = mande_pagan
+					holy_site = nyame
+					holy_site = yoruba
+					holy_site = serer_reformed
+			
 				b_timbuktu = {}
-				b_tirakka = {}
-				b_sankore = {}
-				b_safanqu = {}
-				b_kabara = {}
-				b_tendirma = {}
-				b_dire = {}
-				b_gundam = {}
+				b_alafia = {}
+				b_sankore = {
+				}
+				b_lafia = {}
+				b_ber = {}
+				b_boureminaly = {}
+				b_toya = {}
+				b_aglal = {}
 			}
 			c_oualata = {
 				color={ 53 81 203 }
@@ -40891,6 +40876,18 @@ e_mali = {
 				b_gabero = {}
 				b_anchawadi = {}
 			}
+			c_mzab = { # Ghardaia
+				color={ 39 157 50 }
+				color2={ 255 255 255 }
+			
+				b_ghardaia = {}
+				b_noumerat = {}
+				b_sebseb = {}
+				b_zelfana = {}
+				b_bermane = {}
+				b_mzab = {}
+				b_ouargla = {}
+			}
 			c_tadmekka = {
 				color={ 205 92 59 }
 				color2={ 255 255 255 }
@@ -40953,9 +40950,11 @@ e_mali = {
 	}
 }
 
-e_kanem = {
-	color={ 50 230 235 }
-	color2={ 255 255 255 }
+e_central_africa = {
+	color = { 140 136 34 }
+	color2 = { 255 255 255 }
+	
+	capital = 1739
 	
 	k_garama = {
 		color = { 140 56 84 }
@@ -40991,6 +40990,18 @@ e_kanem = {
 				b_ash_shurraf = {} # Fictional - For Prosperity
 				b_massah = {} # Fictional - For Prosperity
 				b_tmessa = {} # Fictional - For Prosperity
+			}
+			c_bilma = {
+				color={ 85 180 221 }
+				color2={ 255 255 255 }
+				
+				b_bilma = {}
+				b_gouam = {} # Fictional - For Prosperity
+				b_tigue = {} # Fictional - For Prosperity
+				b_libasso = {} # Fictional - For Prosperity
+				b_danouala = {} # Fictional - For Prosperity
+				b_kiroungou = {} # Fictional - For Prosperity
+				b_mateukous = {} # Fictional - For Prosperity
 			}
 			c_zawila = {
 				color={ 33 172 138 }
@@ -41137,18 +41148,6 @@ e_kanem = {
 				b_nankassa = {} # Fictional - For Prosperity
 				b_arkolo = {} # Fictional - For Prosperity
 			}
-			c_bilma = {
-				color={ 85 180 221 }
-				color2={ 255 255 255 }
-				
-				b_bilma = {}
-				b_gouam = {} # Fictional - For Prosperity
-				b_tigue = {} # Fictional - For Prosperity
-				b_libasso = {} # Fictional - For Prosperity
-				b_danouala = {} # Fictional - For Prosperity
-				b_kiroungou = {} # Fictional - For Prosperity
-				b_mateukous = {} # Fictional - For Prosperity
-			}
 		}
 	}
 	
@@ -41287,20 +41286,8 @@ e_kanem = {
 			color={ 100 10 165 }
 			color2={ 255 255 255 }
 			
-			capital = 1738 # Air
+			capital = 1737 # Fachi
 			
-			c_air = {
-				color={ 85 10 135 }
-				color2={ 255 255 255 }
-				
-				b_agades = {}
-				b_takedda = {}
-				b_gabasour = {} # Fictional - For Prosperity
-				b_toumboula = {} # Fictional - For Prosperity
-				b_tchalta = {} # Fictional - For Prosperity
-				b_ngargue = {} # Fictional - For Prosperity
-				b_koufe = {} # Fictional - For Prosperity
-			}
 			c_fachi = {
 				color={ 127 10 186 }
 				color2={ 255 255 255 }

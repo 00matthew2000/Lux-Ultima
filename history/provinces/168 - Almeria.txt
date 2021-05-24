@@ -15,24 +15,5 @@ b_motril = temple
 #b_vera = castle
 
 culture = vandal
-religion = catholic
-
-# History
-
-811.1.1 = { religion = sunni }
-
-884.1.1 = {
-	b_pechina = city
-	capital = b_pechina
-}
-
-939.1.1 = {
-	culture = vandal
-}
-
-955.1.1 = {
-	capital = b_almeria
-	remove_settlement = b_pechina
-}
-
-1140.1.1 = { trade_post = b_fieschi }
+religion = sunni
+1066.1.1 = { }
