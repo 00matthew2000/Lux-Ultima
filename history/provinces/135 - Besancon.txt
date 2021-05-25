@@ -4,17 +4,18 @@
 title = c_besancon
 
 # Settlements
-max_settlements = 5
-b_morteau = castle
-b_besancon = city
-b_bellevaux = temple
+max_settlements = 6
+b_besancon = castle
+b_vesoul = city
+b_belfort = temple
+#b_montbeliard = castle
 
+#b_beaucourt = castle
 #b_valdahon = castle
 #b_maiche = castle
+#b_morteau = castle
 
 # Misc
 culture = burgundian
 religion = catholic
-
-# History
-790.1.1 = { culture = burgundian }
+1066.1.1 = { }

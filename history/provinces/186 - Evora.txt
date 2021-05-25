@@ -5,7 +5,7 @@ title = c_evora
 
 # Settlements
 max_settlements = 4
-b_evora = castle
+b_evora = tribal
 b_portalegre = city
 b_avis = temple
 #b_marvao = castle
@@ -16,16 +16,4 @@ b_avis = temple
 
 # Misc
 culture = lusitanian
-religion = catholic
-
-# History
-
-939.1.1 = {
-	culture = lusitanian
-	religion = sunni
-}
-
-1161.1.1 = {
-	culture = lusitanian
-	religion = catholic
-}
+religion = endovellico

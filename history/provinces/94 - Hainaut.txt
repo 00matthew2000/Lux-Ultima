@@ -4,7 +4,7 @@
 title = c_hainaut
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 b_ath = castle
 
 b_cambrai = temple
@@ -17,11 +17,6 @@ b_valenciennes = city
 #b_avesnes = castle
 
 # Misc
-culture = old_frankish
+culture = frankish
 religion = catholic
-
-# History
-790.1.1 = { culture = frankish }
-1187.1.1 = { b_avesnes = castle }
-1280.10.2= { capital = b_avesnes } 
-
+1066.1.1 = { }

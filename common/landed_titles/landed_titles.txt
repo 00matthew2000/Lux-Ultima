@@ -4843,23 +4843,11 @@ e_german = {
 				}
 			}
 			c_bar = {
-				color={ 115 115 145 }
-				color2={ 255 255 255 }
+				color = { 100 105 110 }
 				
-				b_barleduc = {
-				}
-				b_vaucouleurs = {
-				}
-				b_saintmihel = {
-				}
-				b_commercy = {
-				}
-				b_joinville = {
-				}
-				b_saintdizier = {
-				}
-				b_saintmartinengourgandelle = { # Fictional, for prosperity
-				}
+				b_barleduc = {}
+				b_commercy = {}
+				b_saintdizier = {}
 			}
 			c_verdun = {
 				color={ 130 130 165 }
@@ -28800,25 +28788,16 @@ e_france = {
 				}
 			}
 			c_reims = {
-				color={ 101 30 232 }
-				color2={ 255 255 255 }
+				color = { 101 30 232 }
 				
-				b_reims = {
-				}
-				b_chatillon = {
-				}
-				b_rethel = {
-				}
-				b_chalons = {
-				}
-				b_attigny = {
-				}
-				b_epernay = {
-				}
-				b_roucy = {
-				}
-				b_dampierre = {
-				}
+				b_reims = {}
+				b_chateauthierry = {}
+				b_provins = {}
+				b_chalons = {}
+				b_chatillon = {}
+				b_vertus = {}
+				b_epernay = {}
+				b_roucy = {}
 			}
 			c_brie = {	#NEW
 				color={ 95 20 240 }
@@ -28871,43 +28850,28 @@ e_france = {
 				}
 			}
 			c_vermandois = {
-				color={ 41 147 214 }
-				color2={ 255 255 255 }
+				color = { 41 147 214 }
 				
-				b_coucy = {
-				}
-				b_stquentin = {
-				}
-				b_laon = {
-				}
-				b_montaigu = {
-				}
-				b_gauchy = {
-				}
-				b_guise = {
-				}
-				b_signy = {
-				}
+				b_coucy = {}
+				b_stquentin = {}
+				b_laon = {}
+				b_crepy = {}
+				b_montaigu = {}
+				b_rethel = {}
+				b_guise = {}
+				b_signy = {}
 			}
 			c_amiens = {
-				color={ 44 151 217 }
-				color2={ 255 255 255 }
+				color = { 44 151 217 }
 				
-				b_peronne = {
-				}
-				b_amiens = {
-				}
-				b_noyon = {
-				}
-				b_corbie = {
-				}
-				b_montdidier = {
-				}
-				b_breteuil = {
-				}
-				b_nesle = {
-				}
+				b_peronne = {}
+				b_amiens = {}
+				b_beauvais = {}
 				b_soissons = {}
+				b_corbie = {}
+				b_noyon = {}
+				b_montdidier = {}
+				b_breteuil = {}
 			}
 			c_senlis = {	#NEW
 				color={ 68 164 235 }
@@ -29005,23 +28969,16 @@ e_france = {
 				}
 			}
 			c_nice = {
-				color={ 147 39 69 }
-				color2={ 255 255 255 }
+				color = { 147 39 69 }
 				
-				b_nizza = {
-				}
-				b_monaco = {
-				}
-				b_mentone = {
-				}
-				b_antibes = {
-				}
-				b_campogrosso = {
-				}
-				b_lantosque = {
-				}
-				b_contes = {
-				}
+				b_nizza = {}
+				b_monaco = {}
+				b_mentone = {}
+				b_antibes = {}
+				b_sanremo = {}
+				b_campogrosso = {}
+				b_lantosque = {}
+				b_contes = {}
 			}
 		}
 		d_dauphine = {
@@ -30310,25 +30267,16 @@ e_gallia = {
 				}
 			}
 			c_albret = {
-				color={ 36 25 255 }
-				color2={ 255 255 255 }
+				color = { 36 25 255 }
 				
-				b_labrit = {
-				}
-				b_tartas = {
-				}
-				b_bazas = {
-				}
-				b_roquefort = {
-				}
-				b_montdemarsan = {
-				}
-				b_gabarret = {
-				}
-				b_mimizan = {
-				}
-				b_latestedebuch = {
-				}
+				b_labrit = {}
+				b_tartas = {}
+				b_bazas = {}
+				b_roquefort = {}
+				b_montdemarsan = {}
+				b_gabarret = {}
+				b_mimizan = {}
+				b_latestedebuch = {}
 			}
 		}
 		d_poitou = {
@@ -30879,15 +30827,15 @@ e_spain = {
 			}
 			c_alcacer_do_sal = {
 				color = { 182 105 5 }
-				color2={ 255 255 255 }
 				
 				b_alcacerdosal = {}
+				b_alcacovas = {}
+				b_espinheiro = {}
+				b_montemoronovo = {}
+				b_alvito = {}
 				b_santiagodocacem = {}
-				b_aljustrel = {}
-				b_castroverde = {}
-				b_ourique = {}
-				b_odemira = {}
-				b_alvalade = {}
+				b_sines = {}
+				b_grandola = {}
 			}
 			c_faro = {
 				color = { 192 98 5 }
@@ -30935,6 +30883,9 @@ e_spain = {
 				egyptian_arabic = "Lishbuna"
 				andalusian_arabic = "Lishbuna"
 				
+				holy_site = endovellico
+				holy_site = iberian_pagan_reformed
+				
 				b_lisboa = {
 					bedouin_arabic = "Lishbuna"
 					maghreb_arabic = "Lishbuna"
@@ -30942,13 +30893,13 @@ e_spain = {
 					egyptian_arabic = "Lishbuna"
 					andalusian_arabic = "Lishbuna"
 				}
-				b_santarem = {}
 				b_alcobaca = {}
-				b_sintra = {}
+				b_setubal = {}
+				b_batalha = {}
 				b_alenquer = {}
+				b_santarem = {}
 				b_atouguia = {}
 				b_tomar = {} 
-				b_batalha = {}
 			}
 			c_almada = {
 				color={ 185 90 5 }

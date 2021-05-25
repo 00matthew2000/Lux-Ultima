@@ -4,18 +4,12 @@
 title = c_bar
 
 # Settlements
-max_settlements = 4
-b_barleduc = castle # Bar-le-Duc
-b_commercy = city # Commercy
-b_saintdizier = temple # Saint-Dizier
-
-#b_vaucouleurs = castle # Vaucouleurs
-#b_joinville = city # Joinville
-#b_saintmihel = temple # Saint-Mihiel
+max_settlements = 3
+b_barleduc = castle
+b_commercy = city
+b_saintdizier = temple
 
 # Misc
-culture = old_frankish
-religion = catholic
-
-# History
-790.1.1 = { culture = frankish }
+culture = frankish
+religion = antinomian
+1066.1.1 = { }

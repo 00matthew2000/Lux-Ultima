@@ -4,7 +4,7 @@
 title = c_artois
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 b_bethune = castle
 b_arras = city
 b_terwaan = temple
@@ -16,11 +16,6 @@ b_terwaan = temple
 #b_bapaume = castle
 
 # Misc
-culture = old_frankish
+culture = frankish
 religion = catholic
-
-# History
-790.1.1 = { culture = frankish }
-
-
-
+1066.1.1 = { }

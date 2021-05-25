@@ -5,9 +5,9 @@ title = c_agen
 
 # Settlements
 max_settlements = 4
+b_luzech = castle
 b_agen = temple
 b_cahors = city
-b_luzech = castle
 
 #b_cahors = temple
 #b_figeac = temple
@@ -17,13 +17,6 @@ b_luzech = castle
 #b_penne = castle
 
 #Misc
-religion = catholic
+religion = arian
 culture = romanogothic
-
-# History
-936.1.1 = {
-	capital = b_luzech
-}
-1066.1.1 ={
-	capital = b_agen
-}
+1066.1.1 = { }
