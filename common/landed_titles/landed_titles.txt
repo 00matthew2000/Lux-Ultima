@@ -28380,23 +28380,16 @@ e_france = {
 				}
 			}
 			c_vexin = {
-				color={ 80 33 235 }
-				color2={ 255 255 255 }
+				color = { 80 33 235 }
 				
-				b_larocheguyon = {
-				}
-				b_mantes = {
-				}
-				b_pontoise = {
-				}
-				b_harcourt = {
-				}
-				b_andely = {
-				}
-				b_ivry = {
-				}
-				b_abbayedemortemer = {
-				}
+				b_larocheguyon = {}
+				b_mantes = {}
+				b_pontoise = {}
+				b_harcourt = {}
+				b_gisors = {}
+				b_andely = {}
+				b_ivry = {}
+				b_abbayedemortemer = {}
 			}
 		}
 		d_normandy = {
@@ -28408,42 +28401,28 @@ e_france = {
 			culture = norman
 			
 			c_evreux = {
-				color={ 74 27 229 }
-				color2={ 255 255 255 }
+				color = { 74 27 229 }
 				
-				b_evreux = {
-				}
-				b_falaise = {
-				}
-				b_lisieux = {
-				}
-				b_alencon = {
-				}
-				b_argentan = {
-				}
-				b_sees = {
-				}
-				b_honfleur = {
-				}
+				b_evreux = {}
+				b_falaise = {}
+				b_lisieux = {}
+				b_alencon = {}
+				b_argentan = {}
+				b_sees = {}
+				b_verneuil = {}
+				b_honfleur = {}
 			}
 			c_avranches = {
-				color={ 77 30 232 }
-				color2={ 255 255 255 }
+				color = { 77 30 232 }
 				
-				b_mortain = {
-				}
-				b_avranches = {
-				}
-				b_barfleur = {
-				}
-				b_cherbourg = {
-				}
-				b_coutances = {
-				}
-				b_carentan = {
-				}
-				b_barneville-carteret = {
-				}
+				b_caen = {}
+				b_coutances = {}
+				b_bayeux = {}
+				b_avranches = {}
+				b_mortain = {}
+				b_domfront = {}
+				b_barfleur = {}
+				b_cherbourg = {}
 			}
 			c_caen = {	#NEW
 				color={ 90 27 240 }
@@ -28499,42 +28478,31 @@ e_france = {
 				}
 			}
 			c_orleans = {
-				color={ 94 32 234 }
-				color2={ 255 255 255 }
+				color = { 94 32 234 }
+					holy_site = celtic_pagan
+					holy_site = celtic_pagan_reformed
 				
-				b_orleans = {
-				}
+				b_gien = {}
+				b_orleans = {}
 				b_fleury = {
 				}
-				b_lepuiset = {
-				}
-				b_sully = {
-				}
-				b_meung = {
-				}
-				b_janville = {
-				}
-				b_jargeau = {
-				}
+				b_lepuiset = {}
+				b_sully = {}
+				b_meung = {}
+				b_janville = {}
+				b_jargeau = {}
 			}
 			c_chartres = {
-				color={ 98 36 238 }
-				color2={ 255 255 255 }
+				color = { 98 36 238 }
 				
-				b_bretigny = {
-				}
-				b_chartres = {
-				}
-				b_dreux = {
-				}
-				b_nogent = {
-				}
-				b_gallardon = {
-				}
-				b_epernon = {
-				}
-				b_le_coudray = {
-				}
+				b_chateaudun = {}
+				b_chartres = {}
+				b_dreux = {}
+				b_nogent = {}
+				b_gallardon = {}
+				b_epernon = {}
+				b_bonneval = {}
+				b_tiron = {}
 			}
 			c_dunois = {	#NEW
 				color={ 83 45 215 }
@@ -28584,23 +28552,16 @@ e_france = {
 				}
 			}
 			c_bourges = {
-				color={ 30 58 232 }
-				color2={ 255 255 255 }
+				color = { 30 58 232 }
 				
-				b_bourges = {
-				}
-				b_deols = {
-				}
-				b_chateauroux = {
-				}
-				b_issoudun = {
-				}
-				b_stsatur = {
-				}
-				b_mehun = {
-				}
-				b_vierzon = {
-				}
+				b_chateauroux = {}
+				b_deols = {}
+				b_bourges = {}
+				b_issoudun = {}
+				b_stsatur = {}
+				b_sancerre = {}
+				b_mehun = {}
+				b_vierzon = {}
 			}
 			c_sancerre = {	#NEW
 				color={ 22 65 240 }
@@ -28629,23 +28590,16 @@ e_france = {
 			capital = 107 # Anjou
 			
 			c_anjou = {
-				color={ 45 26 228 }
-				color2={ 255 255 255 }
+				color = { 45 26 228 }
 				
-				b_angers = {
-				}
-				b_lude = {
-				}
-				b_graon = {
-				}
-				b_montsoreau = {
-				}
-				b_vihiers = {
-				}
-				b_treves = {
-				}
-				b_chateaugontier = {
-				}
+				b_vihiers = {}
+				b_angers = {}
+				b_fontevraud = {}
+				b_saumur = {}
+				b_montsoreau = {}
+				b_cholet = {}
+				b_treves = {}
+				b_chateaugontier = {}
 			}
 			c_saumur = {
 				color={ 65 26 218 }
@@ -28707,23 +28661,16 @@ e_france = {
 				}
 			}
 			c_vendome = {
-				color={ 47 28 230 }
-				color2={ 255 255 255 }
+				color = { 47 28 230 }
 				
-				b_lavardin = {
-				}
-				b_vendome = {
-				}
-				b_romilly = {
-				}
-				b_chateaurenault = {
-				}
-				b_montoire = {
-				}
-				b_oucques = {
-				}
-				b_stavit = {
-				}
+				b_lavardin = {}
+				b_vendome = {}
+				b_cloyes = {}
+				b_freteval = {}
+				b_chateaurenault = {}
+				b_montoire = {}
+				b_montmirail = {}
+				b_stavit = {}
 			}
 		}
 	}
@@ -28767,25 +28714,16 @@ e_france = {
 				}
 			}
 			c_sens = {
-				color={ 102 40 242 }
-				color2={ 255 255 255 }
+				color = { 102 40 242 }
 				
-				b_montargis = {
-				}
-				b_sens = {
-				}
-				b_nemours = {
-				}
-				b_chateaulandon = {
-				}
-				b_nogentsurseine = {
-				}
-				b_joigny = {
-				}
-				b_montereau = {
-				}
-				b_villeneuveleroi = {
-				}
+				b_montargis = {}
+				b_sens = {}
+				b_nemours = {}
+				b_chateaulandon = {}
+				b_nogentsurseine = {}
+				b_joigny = {}
+				b_montereau = {}
+				b_villeneuveleroi = {}
 			}
 			c_reims = {
 				color = { 101 30 232 }
@@ -28825,29 +28763,19 @@ e_france = {
 			capital = 112 # Ile de France
 
 			c_ile_de_france = {
-				color={ 38 144 211 }
-				color2={ 255 255 255 }
-
-				#holy_site = aztec
-				#holy_site = aztec_reformed
-				holy_site = unctionist
-				holy_site = christian_populist_reformed
+				color = { 38 144 211 }
+					holy_site = unctionist
+					holy_site = christian_populist_reformed
 				
-				b_paris = {
-					used_for_dynasty_names = no
-				}
-				b_melun = {
-				}
+				b_paris = {}
+				b_melun = {}
 				b_stdenis = {
 				}
-				b_etampes = {
-				}
-				b_montfortlamaury = {
-				}
-				b_corbeil = {
-				}
-				b_montlhery = {
-				}
+				b_meaux = {}
+				b_etampes = {}
+				b_montfortlamaury = {}
+				b_senlis = {}
+				b_compiegne = {}
 			}
 			c_vermandois = {
 				color = { 41 147 214 }
@@ -29169,44 +29097,28 @@ e_france = {
 				}
 			}
 			c_dijon = {
-				color={ 30 168 232 }
-				color2={ 255 255 255 }
+				color = { 30 168 232 }
 				
-				b_semur = {
-				}
-				b_dijon = {
-				}
-				b_autun = {
-				}
-				b_vezelay = {
-				}
-				b_avallon = {
-				}
-				b_citeaux = {
-				}
-				b_beaune = {
-				}
-				b_noyers = {
-				}
+				b_semur = {}
+				b_dijon = {}
+				b_autun = {}
+				b_vezelay = {}
+				b_avallon = {}
+				b_citeaux = {}
+				b_beaune = {}
+				b_noyers = {}
 			}
 			c_nevers = {
-				color={ 33 171 235 }
-				color2={ 255 255 255 }
+				color = { 33 171 235 }
 				
-				b_courtenay = {
-				}
-				b_nevers = {
-				}
-				b_lacharite = {
-				}
-				b_donzy = {
-				}
-				b_chateauchinon = {
-				}
-				b_vandenesse = {
-				}
-				b_clamecy = {
-				}
+				b_courtenay = {}
+				b_nevers = {}
+				b_lacharite = {}
+				b_donzy = {}
+				b_chateauchinon = {}
+				b_vandenesse = {}
+				b_clamecy = {}
+				b_cosne = {}
 			}
 			c_charolais = {
 				color={ 36 174 238 }
@@ -29626,32 +29538,16 @@ e_gallia = {
 			
 			
 			c_nantes = {
-				color={ 170 50 23 }
-				color2={ 255 255 255 }
+				color = { 37 28 230 }
 				
-				breton = Naoned
-				
-				b_nantes = {
-					breton = Naoned
-				}
-				b_chateaubriant = {
-					breton = Kastell-Briant
-				}
-				b_redon = {
-					breton = Ridined
-				}
-				b_guerande = {
-					breton = Gwennrann
-				}
-				b_donges = {
-					breton = Dined
-				}
-				b_la_roche-bernard = {
-					breton = "Ar Roc'h-Bernez"
-				}
-				b_st_nazaire = {
-					breton = "Sant-Nazer"
-				}
+				b_nantes = {}
+				b_chateaubriant = {}
+				b_redon = {}
+				b_guerande = {}
+				b_clisson = {}
+				b_donges = {}
+				b_la_roche-bernard = {}
+				b_st_nazaire = {}
 			}
 			c_rennes = {
 				color={ 106 42 8 }
@@ -29711,52 +29607,28 @@ e_gallia = {
 			culture = breton
 			
 			c_cornouaille = {
-				color={ 126 27 9 }
-				color2={ 255 255 255 }
+				color = { 45 36 238 }
 				
-				breton = "Kernev"
-				
-				b_quimper = {
-					breton = "Kemper"
-				}
-				b_quimperle = {
-					breton = "Kemperle"
-				}
-				b_landevennec = {
-					breton = "Landevenneg"
-				}
-				b_lezergue = {
-					breton = "An Erge Vras"
-				}
-				b_concarneau = {
-				}
-				b_chateaulin = {
-				}
-				b_douarnenez = {
-				}
+				b_quimper = {}
+				b_carhaix = {}
+				b_quimperle = {}
+				b_landevennec = {}
+				b_corlay = {}
+				b_huelgoat = {}
+				b_langonnet = {}
+				b_lezergue = {}
 			}
 			c_french_leon = {
-				color={ 166 67 14 }
-				color2={ 255 255 255 }
+				color = { 49 40 242 }
 				
-				b_brest = {
-				}
-				b_st_pol_de_leon = {
-					breton = "Kastell-Paol"
-				}
-				b_morlaix = {
-					breton = "Montroulez"
-				}
-				b_roscoff = {
-					breton = "Rosko"
-				}
-				b_landerneau = {
-				}
-				b_plouescat = {
-				}
-				b_breles = {
-				}
-
+				b_brest = {}
+				b_guingamp = {}
+				b_st_pol_de_leon = {}
+				b_treguier = {}
+				b_morlaix = {}
+				b_roscoff = {}
+				b_plougonven = {}
+				b_plourivo = {}
 			}
 			c_poher = {
 				color={ 133 84 19 }
@@ -29782,8 +29654,14 @@ e_gallia = {
 				}
 			}
 			c_vannes = {
-				color={ 140 30 13 }
-				color2={ 255 255 255 }
+				color = { 41 32 234 }
+				
+				holy_site = celtic_pagan
+				holy_site = celtic_pagan_reformed
+				holy_site = celtic_christ
+				holy_site = celtic_christ_reformed
+				holy_site = endovellico
+				holy_site = iberian_pagan_reformed
 
 				breton = Broërec
 				welsh = Guened
@@ -38866,22 +38744,16 @@ e_britannia = {
 			c_northampton = {
 				color = { 126 204 34 }
 				
-				b_peterborough = {
+				b_hamburh = {
+					saxon = "Hamtune" 
 				}
-				b_huntingdon = {
-				}
-				b_ramsey = {
-				}
-				b_northampton = {
-				}
+				b_medeshamstede = {}
+				b_grantabrycge = {}
 				b_kettering = {
+					roman = "Catuvellaunium" 
+					romanobrython = "Catuvellaunium" 
 				}
-				b_cambridge = {
-				}
-				b_crowland = {
-				}
-				b_rockingham = {
-				}
+				b_crowland = {}
 			}
 			c_warwick = {
 				color={ 84 201 161 }
@@ -38955,46 +38827,41 @@ e_britannia = {
 			english = "Norfolk"
 			
 			c_norfolk = {
-				color = { 200 90 0 }
+				color = { 0 210 35 }
 			
+				b_thetford = {}
 				b_norwich = {
+					roman = "Venta Icenorum" 
+					romanobrython = "Venta Icenorum" 
 				}
-				b_thetford = {
+				b_elmham = {}
+				b_westwich = {}
+				b_lynn = {}
+				b_yarmouth = {
+					brython = "Gernemwa" 
+					roman = "Gariannonum" 
+					romanobrython = "Gariannonor" 
 				}
-				b_buckenham = {
-				}
-				b_lynn = {
-				}
-				b_elmham = {
-				}
-				b_castle_rising = {
-				}
-				b_chatteris = {
-				}
+				b_chatteris = {}
 			}
 			c_suffolk = {
 				color = { 42 0 163 }
 			
-				b_ipswich = {
-				}
+				b_dunwich = {}
 				b_ely = {
+					brython = "Elge" 
+					roman = "Helia" 
 				}
-				b_bury = {
+				b_ipswich = {}
+				b_beodericsworth = {
+					roman = "Villa Faustina" 
+					romanobrython = "Villa Faustina" 
 				}
 				b_lowestoft = {
-					danish = "Lothvistoft"
-					swedish = "Lothvistoft"
-					norwegian = "Lothvistoft"
-					norse = "Lothvistoft"
+					norwegian = "Hlothvertoft" 
+					danish = "Hlothvertoft" 
 				}
-				b_dunwich = {
-				}
-				b_stow = {
-				}
-				b_bungay = {
-				}
-				b_framlingham = {
-				}
+				b_bungay = {}
 			}
 			c_essex = {
 				color = { 84 3 36 }
@@ -39004,20 +38871,10 @@ e_britannia = {
 					romanobrython = "Camulodunum" 
 					brython = "Camulodunon" 
 				}
-				b_maldon = {
-				}
-				b_havering = {
-				}
-				b_dunmow = {
-				}
-				b_waltham = {
-				}
-				b_barking = {
-				}
-				b_pleshey = {
-				}
-				b_hedingham = {
-				}
+				b_maldon = {}
+				b_havering = {}
+				b_barking = {}
+				b_dunmow = {}
 			}
 		}
 		d_middlesex = {
@@ -39047,28 +38904,19 @@ e_britannia = {
 			c_middlesex = {
 				color = { 84 96 16 }
 			
-				#holy_site = aztec
-				#holy_site = aztec_reformed
-
-				b_westminster = {
-					used_for_dynasty_names = no
-					norse=Vestmystur
-				}
+				b_fulham = {}
 				b_london = {
-					used_for_dynasty_names = no
-					norse=Lundúnir
+					welsh = "Llundain" 
+					brython = "Lowonidonjon" 
 				}
-				b_st_pauls = {
-				}
-				b_tottenham = {
-				}
-				b_fulham = {
-				}
+				b_westminster = {}
 				b_staines = {
+					roman = "Ad Pontes" 
 				}
-				b_harrow = {
-				}
+				b_harrow = {}
+				b_tottenham = {}
 				b_chelsea = {
+					brython = "Chelchith" 
 				}
 			}
 		}	
@@ -39079,69 +38927,55 @@ e_britannia = {
 			capital = 73 # Kent
 			
 			c_surrey = {
-				color={ 241 105 55 }
-				color2={ 255 255 255 }
+				color = { 168 72 12 }
 				
-				b_farnham = {
-				}
-				b_guildford = {
-				}
-				b_lambeth = {
-				}
-				b_southwark = {
-				}
-				b_woking = {
-				}
-				b_chertsey = {
-				}
-				b_croydon = {
-				}
-				b_waverley = {
-				}
+				b_southwark = {}
+				b_astolat = {}
+				b_godalming = {}
+				b_lambeth = {}
+				b_farnham = {}
+				b_woking = {}
+				b_chertsey = {}
+				b_croydon = {}
+				b_tooting = {}
 			}
 			c_kent = {
-				color={ 241 115 65 }
-				color2={ 255 255 255 }
+				color = { 126 6 164 }
+					holy_site = pelagian
+					holy_site = semipelagian
+					holy_site = celtic_christ
+					holy_site = celtic_christ_reformed
 				
-				holy_site = catholic
-				
-				b_rochester = {
-				}
-				b_dover = {
-				}
+				b_faversham = {}
+				b_rutupiae = {}
 				b_canterbury = {
+					roman = "Durovernum Cantiacorum" 
+					romanobrython = "Durovernum Cantiacorum" 
+					brython = "Durovernon" 
 				}
-				b_faversham = {
-				}
-				b_sandwich = {
+				b_rochester = {
+					roman = "Durobrivae" 
+					romanobrython = "Durobrovum" 
+					brython = "Dourbruf" 
 				}
 				b_lympne = {
+					saxon = "Stutfall" 
 				}
-				b_romney = {
-				}
-				b_tonbridge = {
-				}
+				b_dover = {}
 			}
 			c_sussex = {
-				color={ 241 110 60 }
-				color2={ 255 255 255 }
+				color = { 0 75 140 }
 				
-				b_hastings = {
+				b_anderitum = {
+					romanobrython = "Anderida" 
+					brython = "Anderidos" 
+					saxon = "Andredesceaster" 
 				}
-				b_pevensey = {
-				}
-				b_chichester = {
-				}
+				b_hastings = {}
+				b_chichester = {}
 				b_lewes = {
-				}
-				b_arundel = {
-					saxon = "Selsey"
-				}
-				b_rye = {
-				}
-				b_bramber = {
-				}
-				b_bodiam = {
+					roman = "Mutuantonis" 
+					romanobrython = "Mutuantonis" 
 				}
 			}
 		}
@@ -39187,25 +39021,24 @@ e_britannia = {
 			
 			c_winchester = {
 				color = { 42 78 13 }
-				
-				saxon="Wessex"
 				roman = "Venta Belgarum" 
 				romanobrython = "Venta Belgarum" 
 				
-				b_southampton = {
-				}
-				b_portchester = {
+				b_portus_adurni = {
+					brython = "Ardaoneon" 
 				}
 				b_winchester = {
+					saxon = "Wintanceaster" 
 				}
-				b_romsey = {
+				b_st_swithun = {}
+				b_wihtwarasburh = {}
+				b_hamwic = {
+					roman = "Clausentum" 
+					romanobrython = "Clausentum" 
 				}
-				b_andover = {
-				}
-				b_st_swithun = {
-				}
-				b_wherwell = {
-				}
+				b_wherwell = {}
+				b_rumseg = {}
+				b_andover = {}
 			}
 			c_wight = {
 				color={ 241 10 50 }
@@ -39231,42 +39064,32 @@ e_britannia = {
 			c_dorset = {
 				color = { 126 84 14 }
 				
-				b_wareham = {
-				}
-				b_corfe = {
+				b_dorchester = {
+					saxon = "Dornwaraceaster" 
 				}
 				b_shaftesbury = {
+					welsh = "Caer Palladwr" 
 				}
-				b_dorchester = {
-				}
-				b_sherborne = {
-				}
-				b_lyme = {
-				}
-				b_weymouth = {
-				}
-				b_wimborne = {
-				}
+				b_wareham = {}
+				b_sherborne = {}
+				b_corfe = {}
 			}
 			c_wiltshire = {
 				color = { 126 69 139 }
 			
-				b_wilton = {
-				}
+				b_wilton = {}
+				b_malmesbury = {}
 				b_sarum = {
+					welsh = "Caer Gradawc" 
+					saxon = "Searesbyrig" 
+					norman = "Seresberi" 
 				}
-				b_clarendon = {
+				b_clarendon = {}
+				b_merlbeorg = {}
+				b_cunetio = {
+					saxon = "Mildanhald" 
 				}
-				b_malmesbury = {
-				}
-				b_salisbury = {
-				}
-				b_devizes = {
-				}
-				b_ramsbury = {
-				}
-				b_marlborough = {
-				}
+				b_swinedun = {}
 			}
 			c_oxford = {
 				color = { 84 66 11 }
@@ -39305,7 +39128,7 @@ e_britannia = {
 			english="Somerset"
 			welsh = "Lloegyr"
 			
-			c_somerset = {
+			c_somerset = {		#Aquae Sulis
 				color = { 84 81 141 }
 				saxon = "Sumortunsæte" 
 				holy_site = celtic_pagan
@@ -39314,22 +39137,25 @@ e_britannia = {
 				holy_site = celtic_christ_reformed
 				holy_site = endovellico
 				holy_site = iberian_pagan_reformed
-#				holy_site = shaytana
+				holy_site = shaytana
 				
-				b_taunton = {
+				b_lindinis = {}
+				b_bath = {
+					welsh = "Caer Baddan" 
+					saxon = "Baðum" 
+				}
+				b_ynys_yr_afalon = {
 				}
 				b_glastonbury = {
+					saxon = "Glestingaburg" 
 				}
-				b_ilchester = {
+				b_taunton = {}
+				b_muchelney = {}
+				b_wells = {
+					roman = "Fontanetum" 
+					romanobrython = "Fontanensis Ecclesia" 
 				}
-				b_muchelney = {
-				}
-				b_castle_cary = {
-				}
-				b_bridgwater = {
-				}
-				b_yeovil = {
-				}
+				b_willetun = {}
 			}
 			c_bath = {
 				color={ 241 15 55 }
@@ -39355,46 +39181,31 @@ e_britannia = {
 				}
 			}
 			c_cornwall = {
-				color={ 150 40 15 }
-				color2={ 255 255 255 }
+				color = { 42 93 143 }
 				
+				b_tintagol = {}
 				b_bodmin = {
+					saxon = "Petrocstow" 
 				}
+				b_liskeard = {}
 				b_launceston = {
-				}
-				b_st_germans = {
-				}
-				b_truro = {
-				}
-				b_liskeard = {
-				}
-				b_tintagel = {
-				}
-				b_st_michael = {
-				}
-				b_restormel = {
+					brython = "Dunheved" 
 				}
 			}
 			c_devon = {
-				color={ 135 35 25 }
-				color2={ 255 255 255 }
+				color = { 168 87 142 }
+				welsh = "Dyfneint" 
+				breton = "Devnent" 
 				
-				b_lydford = {
-				}
 				b_exeter = {
+					saxon = "Escanceaster" 
 				}
-				b_crediton = {
-				}
-				b_totnes = {
-				}
-				b_axminster = {
-				}
-				b_tavistock = {
-				}
-				b_buckfast = {
-				}
-				b_dartmouth = {
-				}
+				b_lydford = {}
+				b_axminster = {}
+				b_crediton = {}
+				b_totnes = {}
+				b_tavistock = {}
+				b_deruentiu = {}
 			}
 		}
 	}
@@ -39440,19 +39251,21 @@ e_britannia = {
 					holy_site = endovellico
 					holy_site = iberian_pagan_reformed
 				
-				b_caernarfon = {
+				b_aberffraw = {}
+				b_bangor = {
 				}
+				b_cardigan = {}
 				b_degannwy = {
+					brython = "Decantouion" 
+					romanobrython = "Deganhui" 
 				}
-				b_bangor_fawr = {
+				b_caernarfon = {
+					roman = "Segontium" 
+					romanobrython = "Caer Seiont" 
 				}
-				b_harlech = {
-				}
-				b_abergwyngregyn = {
-				}
-				b_conwy = {
-				}
-				b_llanrhos = {
+				b_caergybi = {}
+				b_caerhun = {
+					roman = "Canovium" 
 				}
 			}
 			c_anglesey = {
@@ -39499,48 +39312,22 @@ e_britannia = {
 		d_powys = {
 			color = { 120 24 40 }
 				
-			capital = 65 # Shrewsbury
+			capital = 65 # Ternyllwg
 
-			allow = {
-				conditional_tooltip = {
-					trigger = {
-						d_powys = {
-							is_titular = yes
-						}
-					}
-					d_powys = {
-						is_titular = no
-					}
-				}
-				hidden_tooltip = {
-					OR = {
-						ai = no
-						culture = welsh
-						culture = irish
-						culture = breton
-					}
-				}
-			}
-
-			c_powys = {
-				color={ 175 90 20 }
-				color2={ 255 255 255 }
+			c_ternyllwg = {
+				color = { 0 195 160 }
 				
+				b_mathrafal = {}
 				b_caersws = {
-				}
-				b_mathrafal = {
-				}
-				b_llangollen = {
-				}
-				b_llandinam = {
+					roman = "Mediomanum" 
 				}
 				b_glascwm = {
+					saxon = "Glascun" 
 				}
-				b_radnor = {
-				}
-				b_montgomery = {
-				}
-				b_rhayader = {
+				b_pencraig = {}
+				b_rhayader = {}
+				b_forden_gaer = {
+					romanobrython = "Lavrobrinta" 
 				}
 			}
 			c_builth = {
@@ -39563,30 +39350,26 @@ e_britannia = {
 				}
 			}
 		}
-		d_deheubarth = {
+		d_dyfed = {
 			color = { 125 51 3 }
-			
-			capital = 18 # Dyfed
+			roman = "Demetae" 
+			romanobrython = "Demetae" 
+			capital = 18 #Deheubarth
 			
 			c_dyfed = {
 				color = { 126 54 9 }
+				roman = "Demetae" 
+				romanobrython = "Demetae" 
 			
-				b_pembroke = {
+				b_dinefwr = {}
+				b_tyddewi = {}
+				b_caerfyrddin = {
+					roman = "Moridunum" 
+					romanobrython = "Moridunum Demetarum" 
 				}
-				b_st_davids = {
-					welsh = Tyddewi
-					norwegian = "Ramsøy"
-				}
-				b_penycwm = {
-				}
-				b_llanstadwell = {
-				}
-				b_tenby = {
-				}
-				b_narberth = {
-				}
-				b_haverford = {
-				}
+				b_kidwelly = {}
+				b_llandeilo = {}
+				b_narberth = {}
 			}
 			c_ceredigion = {
 				color={ 155 84 20 }
@@ -39657,24 +39440,20 @@ e_britannia = {
 			}
 			c_gower = {
 				color = { 168 57 137 }
-
-				welsh = Gwyr
 			
-				b_carmarthen = {
+				b_neath = {
+					roman = "Nidum" 
+					romanobrython = "Nido" 
 				}
-				b_dinefwr = {
+				b_tir_iarll = {}
+				b_abertawe = {
+					norwegian = "Sveinsey" 
 				}
-				b_llandeilo = {
+				b_casllwchwr = {
+					roman = "Leucarum" 
+					romanobrython = "Leucarum" 
 				}
-				b_kidwelly = {
-					welsh = Cydweli
-				}
-				b_swansea = {
-				}
-				b_caerphilly_gower = {
-				}
-				b_loughor = {
-				}
+				b_aberogwr = {}
 			}
 		}
 	}

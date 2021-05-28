@@ -5,20 +5,17 @@ title = c_anjou
 
 # Settlements
 max_settlements = 5
-
 b_angers = castle
-b_lude = city
-b_graon = castle
+b_saumur = city
+b_cholet = castle
 
-#b_montsoreau
-#b_vihiers
-#b_chateaugontier
-#b_treves
+b_fontevraud = temple
 
-culture = old_frankish
-religion = catholic
+#b_montsoreau = castle
+#b_cholet = castle
+#b_chateaugontier = castle
+#b_treves = temple
 
-# History
-790.1.1 = { culture = frankish }
-
-
+culture = frankish
+religion = semipelagian
+1066.1.1 = { }

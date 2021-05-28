@@ -1,4 +1,4 @@
-# 70 - Norfolk
+# 62 - Nordfolc
 
 # County Title
 title = c_norfolk
@@ -6,22 +6,13 @@ title = c_norfolk
 # Settlements
 max_settlements = 4
 b_thetford = castle
+b_norwich = city
 b_elmham = temple
-b_lynn = city
-
-#b_norwich = temple
-#b_buckenham = castle
-#b_castle_rising = castle
+#b_westwich = temple
+#b_lynn = temple
+#b_yarmouth = city
 #b_chatteris = castle
 
 # Misc
 culture = saxon
 religion = catholic
-
-# History
-1094.1.1={ # Herbert de Losinga relocates the diocese to Norwich
-	remove_settlement = b_elmham
-	b_norwich = temple
-}
-1100.11.11 = { culture = english }
- 

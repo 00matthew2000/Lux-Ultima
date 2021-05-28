@@ -4,31 +4,17 @@
 title = c_gwynedd
 
 # Settlements
-max_settlements = 5
-b_degannwy = castle
-b_bangor_fawr = temple
-b_caernarfon = city
-
-#b_abergwyngregyn = castle
-#b_harlech = castle
-#b_conwy = castle
-#b_llanrhos = temple
+max_settlements = 4
+b_aberffraw = tribal
+b_bangor = temple
+b_cardigan = city
+#b_degannwy = castle
+#b_caernarfon = castle
+#b_caergybi = temple
+#b_caerhun = city
 
 # Misc
 culture = welsh
-religion = catholic
-terrain = hills
+religion = celtic_christ
+terrain = mountain
 
-# History
-1159.1.1 = { b_conwy = castle }
-1215.1.1 = { 
-	b_abergwyngregyn = castle
-	capital = b_abergwyngregyn
-}
-1263.1.1 = {
-	remove_settlement = b_degannwy
-}#castle destroyed
-1286.1.1 = {
-	max_settlements = 6
-	b_harlech = castle
-}

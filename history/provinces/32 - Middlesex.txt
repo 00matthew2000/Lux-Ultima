@@ -4,22 +4,15 @@
 title = c_middlesex
 
 # Settlements
-max_settlements = 6
-b_westminster = castle
+max_settlements = 5
+b_fulham = tribal
 b_london = city
-b_st_pauls = temple
-b_tottenham = castle
-#b_fulham = castle
-#b_staines = castle
-#b_harrow = castle
-#b_chelsea = castle
+b_westminster = temple
+b_staines = tribal
+#b_harrow = temple
+#b_tottenham = city
+#b_chelsea = city
 
 # Misc
 culture = danish
-religion = catholic
-
-
-# History
-1100.11.11 = { culture = danish }
-1187.1.1 = { b_fulham = castle } 
-1290.1.1 = { trade_post = b_vorrade }
+religion = sowilo

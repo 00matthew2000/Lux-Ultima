@@ -4,8 +4,8 @@
 title = c_penthievre
 
 # Settlements
-max_settlements = 4
-b_monkontour = castle
+max_settlements = 3
+b_monkontour = tribal
 b_paimpol = temple
 b_st_brieuc = city
 #b_peran = castle
@@ -16,11 +16,5 @@ b_st_brieuc = city
 
 # Misc
 culture = breton
-religion = catholic
-
-# History
-867.1.1 = {
-	b_monkontour = ca_keep_1
-	b_monkontour = ca_militia_barracks_1
-	b_monkontour = ca_wall_1
-}
+religion = celtic_pagan
+1066.1.1 = { }

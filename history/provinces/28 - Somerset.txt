@@ -1,22 +1,19 @@
-# 28 - Somerset
+# 28 - Aquae Sulis
 
 # County Title
 title = c_somerset
 
 # Settlements
 max_settlements = 4
-b_taunton = castle
-b_glastonbury = temple
-b_ilchester = city
-
-#b_muchelney = castle
-#b_castle_cary = castle
-#b_bridgwater = temple
-#b_yeovil = city
+b_lindinis = castle
+b_bath = city
+b_ynys_yr_afalon = temple
+#b_glastonbury = city
+#b_taunton = city
+#b_muchelney = temple
+#b_wells = temple
+#b_williton = city
 
 # Misc
 culture = romanobrython
-religion = catholic
-
-# History
-1100.11.11 = { culture = romanobrython }
+religion = sol_christ

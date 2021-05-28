@@ -5,7 +5,6 @@ title = c_blois
 
 # Settlements
 max_settlements = 4
-
 b_blois = castle
 b_staignan = temple
 b_beaugency = city 
@@ -16,9 +15,6 @@ b_beaugency = city
 #b_fougeressurbievre = castle
 #b_romorantin = city
 
-culture = old_frankish
+culture = frankish
 religion = catholic
-
-# History
-790.1.1 = { culture = frankish }
-
+1066.1.1 = { }

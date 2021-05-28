@@ -1,36 +1,19 @@
-# 26 - Winchester
+# 26 - Wintanceaster
 
 # County Title
 title = c_winchester
 
 # Settlements
-max_settlements = 5
-b_winchester = castle
+max_settlements = 4
+b_wihtwarasburh = tribal
+b_portus_adurni = tribal
+b_winchester = city
 b_st_swithun = temple
-b_southampton = city
-
-#b_portchester = castle
-#b_wherwell = castle
-#b_romsey = castle
-#b_andover = castle
+#b_hamwic = city
+#b_wherwell = city
+#b_rumseg = temple
+#b_andover = city
 
 # Misc
 culture = saxon
-religion = catholic
-
-# History
-867.1.1 = {
-	b_winchester = ca_keep_1
-	b_winchester = ca_militia_barracks_1
-	b_winchester = ca_wall_1
-}
-
-1070.1.1 = { capital = b_st_swithun }
-1100.11.11 = { culture = english } 
-1187.1.1 = { b_andover = castle }
-
-#Hugh Despencer, Earl of Winchester
-1322.1.1 = { capital = b_winchester }
-
-#Hugh Despencer, beheaded
-1326.11.27 = { capital = b_st_swithun }
+religion = german_pagan

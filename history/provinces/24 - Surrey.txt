@@ -5,19 +5,16 @@ title = c_surrey
 
 # Settlements
 max_settlements = 4
-b_lambeth = castle
-
-#b_farnham = castle
-#b_guildford = castle
-b_southwark = temple
-b_woking = city
-#b_chertsey = castle
-#b_waverley = castle
-#b_croydon = castle
+b_southwark = castle
+b_astolat = city
+#b_godalming = temple
+#b_lambeth = city
+#b_farnham = temple
+#b_woking = temple
+#b_chertsey = temple
+#b_croydon = city
+#b_tooting = castle
 
 # Misc
 culture = saxon
 religion = catholic
-
-# History
-1100.11.11 = { culture = english } 
