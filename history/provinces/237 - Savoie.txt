@@ -5,17 +5,18 @@ title = c_savoie
 
 # Settlements
 max_settlements = 5
-b_faucigny = castle
+b_aosta = castle
 b_tarentaise = temple
-b_chambery = city
+b_ciamberi = city
+
+#b_savosusa = castle
+#b_pombia = castle
+#b_montjovet = castle
+#b_vercelli = city
+#b_bussoleno = castle
 
 # Misc
 culture = romanogothic
-religion = catholic
-
-# History
-790.1.1 = { culture = romanogothic }
-1295.1.1 = { b_chambery = castle }
-1295.1.1 = { capital = b_chambery }
-1295.1.1 = { b_conflens = city }
+religion = sol_christ
+1066.1.1 = { }
 

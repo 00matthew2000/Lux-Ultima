@@ -4,17 +4,17 @@
 title = c_nassau
 
 # Settlements
-max_settlements = 5
-b_nassau = castle
-b_fritzlar = city
+max_settlements = 4
+b_nassau = tribal
 b_fulda = temple
 
+#b_marburg = city
+#b_katzenelnbogen = castle
 #b_hersfeld = castle
 #b_falkenstein = castle
 #b_isenburg = castle
 
 # Misc
 culture = teutonic
-religion = catholic
-
-# History
+religion = allfather
+1066.1.1 = { }

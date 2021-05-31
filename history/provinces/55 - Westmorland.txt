@@ -5,27 +5,13 @@ title = c_westmorland
 
 # Settlements
 max_settlements = 3
-b_appleby = castle
-
-b_lowther = city
-#b_kendal = castle
-b_cartmel = temple
-#b_brough = castle
-#b_kirkby = castle
-#b_shap = castle
-#b_brougham = castle
+b_verteris = tribal
+b_kirkjabyr = temple
+#b_lowther = city
+#b_cherchbi = temple
+#b_heap = temple
+#b_brocavum = castle
 
 # Misc
 culture = saxon
-religion = catholic
-
-# History
-900.1.1 = {
-	culture = norse
-	religion = norse_pagan
-}
-1000.1.1 = {
-	culture = saxon
-	religion = catholic
-}
-1100.11.11 = { culture = english }
+religion = celtic_christ

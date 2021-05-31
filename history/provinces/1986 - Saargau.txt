@@ -4,13 +4,18 @@
 title = c_saargau
 
 # Settlements
-max_settlements = 3
-b_saarbrucken = castle
-b_merkingen = city
-b_st_arnual = temple
+max_settlements = 5
+b_kaiserslautern = castle
+b_worms = temple
+b_hagenau = city
+b_stahleck = castle
+
+#b_trifels = castle
+#b_zweibrucken = castle
+#b_speyer = temple
+#b_saarbrucken = city
 
 # Misc
 culture = german
 religion = catholic
-
-# History
+1066.1.1 = { }

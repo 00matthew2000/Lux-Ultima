@@ -5,23 +5,12 @@ title = c_oriel
 
 # Settlements
 max_settlements = 3
-b_clones = tribal
-#b_dundalk = city
-b_armagh = temple
-
-
-#b_clogher = temple
-#b_drogheda = castle
-#b_monaghan = castle
-#b_olouth = castle
+b_armagh = tribal
+#b_annagassan = city
 #b_ardee = castle
+#b_clogher = temple
+#b_clones = temple
 
 # Misc
 culture = norsegael
-religion = catholic
-
-# History
-1000.1.1 = {
-	b_clones = castle
-	b_dundalk = city
-}
+religion = norse_pagan

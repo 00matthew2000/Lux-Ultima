@@ -5,10 +5,11 @@ title = c_piemonte
 
 # Settlements
 max_settlements = 5
-b_novara = castle
+b_ivrea = castle
 b_torino = city
 b_settimo = temple
 
+#b_novara = castle
 #b_ferrero = castle
 #b_auriate = castle
 #b_messarano = castle
@@ -17,6 +18,4 @@ b_settimo = temple
 # Misc
 culture = romanogothic
 religion = catholic
-
-# History
-829.1.1 = { culture = romanogothic }
+1066.1.1 = { }

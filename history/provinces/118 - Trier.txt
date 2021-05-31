@@ -5,9 +5,9 @@ title = c_trier
 
 # Settlements
 max_settlements = 4
+b_sponheim = castle
 b_trier = temple
 b_coblenz = city
-b_sponheim = castle
 
 #b_andernach = castle
 #b_wittlich = castle
@@ -16,11 +16,9 @@ b_sponheim = castle
 #b_bitburg = castle
 
 # Misc
-culture = old_frankish
+culture = german
 religion = catholic
-
-# History
-790.1.1 = { culture = german }
+1066.1.1 = { }
 
 
 

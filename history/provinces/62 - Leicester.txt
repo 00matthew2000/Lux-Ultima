@@ -1,23 +1,16 @@
-# 62 - Leicester
+# 62 - Ligeraceaster
 
 # County Title
 title = c_leicester
 
 # Settlements
-max_settlements = 5
-b_leicester = castle
-
-b_nottingham = city
-#b_southwell = castle
-#b_newark = castle
-#b_hucknall = castle
-#b_worksop = castle
+max_settlements = 4
+b_nottingham = castle
+b_leicester = city
+#b_werchesope = city
 #b_tickhill = castle
-b_newstead = temple
+#b_newstead = temple
 
 # Misc
 culture = danish
-religion = catholic
-
-# History
-1100.11.11 = { culture = danish }
+religion = pelagian

@@ -5,20 +5,18 @@ title = c_schwyz
 
 # Settlements
 max_settlements = 4
-
+b_schwyz = castle
+b_zurich = city
+b_engelberg = temple
 b_altdorf = castle
-b_schwyz = city
-b_disentis = temple
 
-#b_schanis = temple
-#b_kussnacht = city
+#b_zug = castle
+#b_stans = castle
+#b_glarus = castle
+#b_winterthur = city
 
 # Misc
-culture = bavarian
+culture = german
 religion = catholic
-
-# History
-1291.7.15 = {
-	capital = b_schwyz
-}
+1066.1.1 = { }
 

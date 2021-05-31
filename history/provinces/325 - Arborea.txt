@@ -4,28 +4,16 @@
 title = c_arborea
 
 # Settlements
-max_settlements = 4
+max_settlements = 3
 b_tharros = castle
-b_fordongianus = city
-b_santa_giusta = temple
-#b_oristano = castle
-#b_sanluri = castle
-#b_pabillonis = city
+b_oristano = city
+b_sanluri = temple
+#b_santa_giusta = castle
+#b_pabillonis = castle
 #b_cabras = castle
+#b_fordongianus = castle
 #b_sorgono = castle
 
 # Misc
 culture = roman
-religion = orthodox
-terrain = mountain
-
-# History
-1015.1.1 = { trade_post = b_caetani }
-1054.1.1 = { religion = catholic }
-1070.1.1 = { 
-	b_oristano = castle
-	capital = b_oristano
-	remove_settlement = b_tharros
-} #Tharros abandoned to Oristano
-1133.1.1 = { trade_post = b_fieschi }
-1145.1.1 = { trade_post = b_della_gherardesca }
+religion = graeco_roman

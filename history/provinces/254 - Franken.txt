@@ -5,9 +5,8 @@ title = c_wurzburg
 
 # Settlements
 max_settlements = 5
-b_schweinfurt = castle
+b_schweinfurt = tribal
 b_wurzburg = temple
-b_marienberg = city
 
 #b_marienberg = castle
 #b_hammelburg = castle
@@ -17,10 +16,5 @@ b_marienberg = city
 
 # Misc
 culture = teutonic
-religion = catholic
-
-# History
-
-1168.1.1 = {
-	capital = b_wurzburg
-}
+religion = teiwaz
+1066.1.1 = { }

@@ -4,27 +4,14 @@
 title = c_teviotdale
 
 # Settlements
-max_settlements = 4
-b_jedburgh = tribal
-
-#b_roxburgh = city
-
-#b_peebles = castle
-b_melrose = temple
-#b_kelso = castle
-#b_selkirk = castle
-#b_maxwell = castle
-#b_ednam = castle
+max_settlements = 3
+b_dumfries = tribal
+#b_rosbroig = city
+#b_edenham = castle
+#b_jeddart = temple
+#b_magilros = temple
 
 # Misc
 culture = brython
-religion = catholic
-
-# History
-867.1.1 = {
-	b_jedburgh = castle
-}
-1100.11.11 = { culture = brython }
-1124.1.1 = { b_peebles = castle }
-1235.9.25 = { culture = brython }
+religion = celtic_pagan
 

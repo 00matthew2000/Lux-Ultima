@@ -1,22 +1,18 @@
-# 61 - Lincoln
+# 61 - Lincylene
 
 # County Title
 title = c_lincoln
 
 # Settlements
-max_settlements = 5
-b_gainsborough = castle
+max_settlements = 3
+b_torksey = castle
 b_lincoln = temple
-b_boston = city
-#b_spalding = castle
-#b_stamford = castle
-#b_grantham = castle
-#b_louth = castle
-#b_bardney = castle
+#b_boston = temple
+#b_spalding = city
+#b_stamford = city
+#b_grantham = city
+#b_louth = temple
 
 # Misc
 culture = danish
-religion = catholic
-
-# History
-1100.11.11 = { culture = danish }
+religion = pelagian

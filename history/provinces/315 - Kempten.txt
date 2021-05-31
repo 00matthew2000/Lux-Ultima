@@ -4,10 +4,9 @@
 title = c_kempten
 
 # Settlements
-max_settlements = 3
-b_kempten = castle
+max_settlements = 4
+b_kempten = tribal
 b_augsburg = temple
-b_donauworth = city
 
 #b_zumarshausen = temple
 #b_kaufbeuren = castle
@@ -17,12 +16,5 @@ b_donauworth = city
 
 # Misc
 culture = teutonic
-religion = catholic
-
-# History
-936.1.1 = {
-	capital = b_augsburg
-}
-973.1.1 = {
-	capital = b_kempten
-}
+religion = german_pagan
+1066.1.1 = { }

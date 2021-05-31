@@ -5,28 +5,18 @@ title = c_cumberland
 
 # Settlements
 max_settlements = 4
-b_burgh = castle
-
-b_carlisle = temple
-b_gilsland = castle
-b_penrith = city
+b_luguvalion = tribal
+b_kukra = city
+b_blennerhasset = temple
+#b_fanum_cocidi = castle
+#b_banna = castle
+#b_penrith = city
 #b_egremont = castle
-#b_cockermouth = castle
-#b_papcastlet = castle
-#b_dacre = castle
+#b_derventio = castle
+#b_dacre = city
 
 # Misc
 culture = brython
-religion = catholic
+religion = lugh 
 
-# History
-900.1.1 = {
-	culture = brython
-	religion = norse_pagan
-}
-1000.1.1 = {
-	culture = brython
-	religion = catholic
-}
-1100.11.11 = { culture = brython }
  

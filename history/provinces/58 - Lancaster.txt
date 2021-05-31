@@ -1,23 +1,14 @@
-# 58 - Lancaster
+# 58 - Loncæster
 
 # County Title
 title = c_lancaster
 
 # Settlements
-max_settlements = 4
-b_lancaster = castle
-
-#b_salford = castle
-b_preston = city
-#b_sawley = castle
-b_furness = temple
-#b_gisburn = castle
+max_settlements = 3
+b_ribchester = tribal
+b_lancaster = temple
 #b_clitheroe = castle
 
 # Misc
 culture = saxon
-religion = catholic
-
-# History
-1100.11.11 = { culture = english }
-1305.1.1 = { b_clitheroe = castle }
+religion = celtic_christ

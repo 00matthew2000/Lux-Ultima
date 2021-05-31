@@ -4,20 +4,17 @@
 title = c_leiningen
 
 # Settlements
-max_settlements = 5
-b_leiningen = castle
-b_aschaffenburg = city
+max_settlements = 4
+b_battenberg = castle
 b_lorsch = temple
 
 #b_durkheim = castle
-#b_battenberg = castle
+#b_leiningen  = castle
 #b_hardenburg = castle
 #b_ungstein = castle
 #b_pfeffingen = castle
 
 # Misc
 culture = teutonic
-religion = catholic
-
-# History
-
+religion = teiwaz
+1066.1.1 = { }

@@ -6,8 +6,8 @@ title = c_holland
 # Settlements
 max_settlements = 5
 
-b_vlaardingen = castle
-#b_leiden = castle
+b_vlaardingen = tribal
+b_leiden = tribal
 
 #b_amsterdam = city
 #b_sgravenhage = castle
@@ -18,11 +18,5 @@ b_haarlem = temple
 
 # Misc
 culture = frisian
-religion = catholic
-
-# History
-790.1.1 = { culture = frisian }
-1248.1.1 = { b_sgravenhage = castle }
-1248.1.1 = { capital = b_sgravenhage }
-1306.1.1 = { b_amsterdam = city }
-1317.1.1 = { trade_post = b_warendorp }
+religion = allfather
+1066.1.1 = { }
