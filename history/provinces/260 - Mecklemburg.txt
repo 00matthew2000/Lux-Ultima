@@ -6,9 +6,8 @@ title = c_mecklemburg
 # Settlements
 max_settlements = 4
 b_mecklemburg = tribal
+b_gevezin = temple
 
-#b_wismar = city
-#b_gevezin = temple
 #b_lutzow = castle
 #b_grevesmuhlen = castle
 #b_parchim = temple
@@ -16,29 +15,7 @@ b_mecklemburg = tribal
 
 # Misc
 culture = polabian
-religion = slavic_pagan
-
-# History
-800.1.1 = {
-	b_mecklemburg = castle
-	b_wismar = city
-	b_gevezin = temple
-
-	b_mecklemburg = ca_keep_1
-	b_mecklemburg = ca_militia_barracks_1
-	b_mecklemburg = ca_wall_1
-	b_mecklemburg = ca_wall_q_1
-	b_wismar = ct_barracks_1
-	b_gevezin = tp_barracks_1
-}
-
-1160.8.2={ religion=catholic }
-
-1167.1.1 = { b_schwerin = castle }
-
-1200.1.1= { culture = polabian } 
-
-1235.1.1 = { trade_post = b_bardewik }
-
+religion = svaroh
+1066.1.1 = { }
 
 

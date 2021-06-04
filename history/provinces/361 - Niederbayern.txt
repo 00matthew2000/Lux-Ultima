@@ -4,21 +4,16 @@
 title = c_niederbayern
 
 # Settlements
-max_settlements = 3
-b_regenstauf = castle
-b_cham = city
-b_schwandorf = temple
+max_settlements = 4
+b_wittelsbach = tribal
+b_regensburg = temple
 
+#b_ingolstadt = city
+#b_rohrbach = castle
+#b_cham = castle
 #b_kirchroth = castle
 
 # Misc
 culture = bavarian
-religion = catholic
-
-# History
-936.1.1 = {
-	capital = b_cham
-}
-937.7.14 = {
-	capital = b_regenstauf
-}
+religion = mani_germanic
+1066.1.1 = { }

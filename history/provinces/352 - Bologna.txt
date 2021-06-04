@@ -5,11 +5,10 @@ title = c_bologna
 
 # Settlements
 max_settlements = 5
-b_bentivoglio = castle
 b_bologna = city
 #b_faenza = castle
 b_forli = temple
-
+b_bentivoglio = castle
 #b_castelguelfo = castle
 #b_bagnacavallo = castle
 #b_imola = city
@@ -17,8 +16,5 @@ b_forli = temple
 
 # Misc
 culture = roman
-religion = catholic
-
-# History
-1139.1.1 = { capital = b_bologna }
-1139.1.1 = { b_imola = city }
+religion = mithra_christ
+1066.1.1 = { }

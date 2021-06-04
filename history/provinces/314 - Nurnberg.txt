@@ -5,8 +5,7 @@ title = c_nurnberg
 
 # Settlements
 max_settlements = 5
-b_nurnberg = castle
-b_furth = city
+b_nurnberg = tribal
 b_ellwangen = temple
 
 #b_kulmbach = castle
@@ -17,8 +16,5 @@ b_ellwangen = temple
 
 # Misc
 culture = bavarian
-religion = catholic
-
-# History
-## Nuremburg was Kaiserburg, inofficial capial
-1187.1.1 = { b_hohenburg = castle }
+religion = mani_germanic
+1066.1.1 = { }

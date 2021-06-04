@@ -4,19 +4,17 @@
 title = c_steiermark
 
 # Settlements
-max_settlements = 3
-b_steyr = tribal
+max_settlements = 4
+b_eppenstein = tribal
+b_lavant = temple
+
+#b_cilli = castle
+#b_seckau = castle
+#b_leibnitz = castle
+#b_radkersburg = castle
+#b_stubing = castle
 
 # Misc
 culture = bavarian
-religion = slavic_pagan
-
-# History
-
-826.1.1 = { 
-	culture = bavarian
-	religion = catholic
-	b_losenstein = castle
-	b_steyr = city
-	capital = b_losenstein
-}
+religion = mani
+1066.1.1 = { }

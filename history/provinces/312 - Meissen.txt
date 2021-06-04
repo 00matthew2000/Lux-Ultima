@@ -6,10 +6,9 @@ title = c_meissen
 # Settlements
 max_settlements = 5
 b_dresden = tribal
+b_meissen = temple
 
-#b_dohna = city
-#b_meissen = temple
-#b_belgern = castle # Called Altenburg
+#b_belgern = castle
 #b_strehla = castle
 #b_rabenau = castle
 #b_wettin = castle
@@ -17,19 +16,5 @@ b_dresden = tribal
 
 # Misc
 culture = sorbian
-religion = slavic_pagan
-
-# History
-800.1.1 = {
-	b_dresden = castle
-	b_dohna = city
-	b_meissen = temple
-	b_belgern = castle
-}
-1066.1.1 = {
-	culture = sorbian
-	religion = catholic
-}
-
-# silver mines of Freiberg founded in 1186 (not listed)
-1186.1.1 = { b_radeburg = city }
+religion = dazhbog
+1066.1.1 = { }

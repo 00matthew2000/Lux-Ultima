@@ -4,10 +4,9 @@
 title = c_oberbayern
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
+b_munchen = tribal
 b_freising = temple
-b_andechs = castle
-b_dachau = city
 
 #b_diessen = castle
 #b_pfaffenberg = castle
@@ -16,9 +15,5 @@ b_dachau = city
 
 # Misc
 culture = bavarian
-religion = catholic
-
-# History
-1158.1.1 = {
-	b_munchen = city
-}
+religion = mani_germanic
+1066.1.1 = { }

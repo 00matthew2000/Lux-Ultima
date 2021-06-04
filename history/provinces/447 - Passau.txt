@@ -4,19 +4,17 @@
 title = c_passau
 
 # Settlements
-max_settlements = 3
-b_passau = castle
-b_ortenburg = city
+max_settlements = 4
+b_passau = tribal
+b_schaumberg = temple
 
 #b_ulrichsberg = castle
 #b_formbach = castle
+#b_freistadt = castle
 #b_raab = castle
 #b_freyung = castle
 
 # Misc
 culture = bavarian
-religion = catholic
-
-# History
-
-
+religion = mani_germanic
+1066.1.1 = { }

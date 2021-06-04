@@ -5,11 +5,11 @@ title = c_tirol
 
 # Settlements
 max_settlements = 4
-b_landeck = castle
-b_bregenz = city
+b_bregenz = castle
+b_landeck = city
 b_stanton = temple
+b_sterzing = castle
 
-#b_sterzing = castle
 #b_dornbirn = castle
 #b_nenzing = castle
 #b_imst = castle
@@ -17,7 +17,6 @@ b_stanton = temple
 
 # Misc
 culture = bavarian
-religion = catholic
-
-# History
+religion = antinomian
+1066.1.1 = { }
 

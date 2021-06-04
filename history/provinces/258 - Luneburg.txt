@@ -7,7 +7,8 @@ title = c_luneburg
 max_settlements = 4
 b_luneburg = tribal
 
-#b_gifhorn = temple
+b_gifhorn = temple
+
 #b_evern = castle
 #b_reppenstedt = castle
 #b_thomasburg = castle
@@ -16,16 +17,5 @@ b_luneburg = tribal
 
 # Misc
 culture = teutonic
-religion = norse_pagan
-
-# History
-790.1.1 = {
-	culture = teutonic
-	religion = catholic
-
-	b_luneburg = castle
-	b_bardowick = city
-	b_gifhorn = temple
-}
-
-
+religion = irminsul
+1066.1.1 = { }
