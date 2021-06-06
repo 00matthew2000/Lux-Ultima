@@ -4,34 +4,15 @@
 title = c_smaland
 
 # Settlements
-max_settlements = 3
-b_kronoberg = tribal
+max_settlements = 5
+b_nasborg = tribal
+b_alvesta = temple
 
-#b_vaxjo = city
-#b_aringsas
-#b_alvesta
-#b_kronoberg
-#b_furuby
-#b_markaryd
+#b_kronoberg = castle	
+#b_piksborg = castle
+#b_aringsas = temple
 
 # Misc
 culture = geat
 religion = norse_pagan
-
-# History
-#800.1.1 = {
-#	b_kronoberg = tb_shipyard_1
-#}
-1000.1.1 = {
-	b_kronoberg = castle
-	b_vaxjo = city
-}
-1066.1.1 = {
-	culture = geat
-}
-1123.1.1 = {
-	religion = catholic # Around the time of the "crusade" against Småland
-}
-1170.1.1 = {
-	b_vaxjo = temple
-}
+1066.1.1 = { }

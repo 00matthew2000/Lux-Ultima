@@ -6,8 +6,7 @@ title = c_hedmark
 # Settlements
 max_settlements = 3
 b_hamarhus = tribal
-
-#b_hamar = temple
+b_hamar = temple
 #b_elverum = city
 #b_vang = city
 #b_loten = castle
@@ -16,15 +15,6 @@ b_hamarhus = tribal
 #b_kongsvinger = castle
 
 # Misc
-culture = norse
+culture = norwegian
 religion = norse_pagan
-
-# History
-1000.1.1 = {
-	b_hamarhus = castle
-	b_hamar = temple
-}
-1066.1.1 = {
-	culture = norwegian
-	religion = catholic
-}
+1066.1.1 = { }

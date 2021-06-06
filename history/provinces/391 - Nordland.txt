@@ -6,7 +6,6 @@ title = c_nordland
 # Settlements
 max_settlements = 2
 b_rost = tribal
-
 #b_kabelvag = temple
 #b_bodo = city
 #b_narvik = castle
@@ -15,16 +14,6 @@ b_rost = tribal
 #b_beiarn = castle
 #b_harstad = city
 
-culture = norse
-religion = norse_pagan
-
-# History
-800.1.1 = {
-	b_rost = tb_shipyard_1
-}
-1000.1.1 = {
-	b_rost = castle
-	b_rost = ca_shipyard_1
-}
-1066.1.1 = { culture = norwegian }
-1080.1.1 = { religion = catholic }
+culture = norwegian
+religion = ragnarok
+1066.1.1 = { }
