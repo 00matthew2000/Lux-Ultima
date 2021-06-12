@@ -7,25 +7,17 @@ title = c_lower_silesia
 terrain = forest
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 b_glogow = tribal
-#b_krosno = city
-#b_zielonagora = temple
+b_legnica = temple
 
-#b_nowogrod = castle
-#b_swiebozin = castle
-#b_bytomodrz = city
+#b_jawor = castle
+#b_lwowek = castle
+#b_swidnica = city
+#b_boleslawiec = castle
 #b_zagan = castle 
 
 # Misc
 culture = polish
-religion = slavic_pagan
-
-# History
-990.1.1 = {
-	religion = catholic
-	b_glogow = castle
-	b_krosno = city
-	b_zielonagora = temple
-}
-1250.1.1 = { culture = german } #German settlers
+religion = rod
+1066.1.1 = { }

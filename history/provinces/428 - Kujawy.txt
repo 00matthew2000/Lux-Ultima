@@ -4,24 +4,17 @@
 title = c_kujawy
 
 # Settlements
-max_settlements = 5
-b_bygdoszcz = tribal
-#b_leczyca = city
-#b_kruszwica = temple
+max_settlements = 4
+b_inowroclaw = tribal
+b_kruszwica = temple
 
 #b_brzesckujawskie = castle
-#b_klodawa = city
-#b_nieszawa = castle
-#b_inowroclaw = castle
+#b_bydgoszcz = city
+#b_topolka = castle
+#b_wlocawek = castle
+#b_lubanie = castle
 
 # Misc
 culture = polish
-religion = slavic_pagan
-
-# History
-969.1.1 = {
-	religion = catholic
-	b_bygdoszcz = castle
-	b_leczyca = city
-	b_kruszwica = temple
-}
+religion = svetovid
+1066.1.1 = { }

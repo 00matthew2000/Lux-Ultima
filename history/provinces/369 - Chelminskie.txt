@@ -6,9 +6,9 @@ title = c_chelminskie
 # Settlements
 max_settlements = 4
 b_chelmno = tribal
-#b_thorn = city
 #b_niedenburg = castle
 
+#b_thorn = city
 #b_kulm = temple
 #b_rehden = city
 #b_lobau = castle
@@ -17,12 +17,5 @@ b_briesen = temple
 
 # Misc
 culture = prussian
-religion = baltic_pagan
-
-# History 
-1250.1.1 = {
-	religion = catholic
-	b_chelmno = castle
-	b_thorn = city
-}
-1250.1.1 = { culture = german }
+religion = peckols
+1066.1.1 = { }

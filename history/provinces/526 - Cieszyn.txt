@@ -4,23 +4,17 @@
 title = c_cieszyn
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
 b_cieszyn = tribal
-#b_zywiec = city
-#b_oswiecim = temple
+b_oswiecim = temple
 
-#b_bielsko = castle
-#b_pszczyna = castle
-#b_zator = castle
 #b_skoczow = castle
+#b_goleszow = castle
+#b_ustron = castle
+#b_bielskobiala = castle
+#b_zebrydowice = castle
 
 # Misc
 culture = polish
-religion = slavic_pagan
-
-# History
-990.1.1 = { religion = catholic }
-1000.1.1 = {
-	b_cieszyn = castle
-	b_zywiec = city
-}
+religion = rod
+1066.1.1 = { }

@@ -6,7 +6,6 @@ title = c_orava
 # Settlements
 max_settlements = 4
 b_arvavara = tribal
-#b_rozsahegy = city
 b_liptovskymikulas = temple
 
 #b_nameszto = city
@@ -17,11 +16,5 @@ b_liptovskymikulas = temple
 
 # Misc
 culture = slovakian
-religion = slavic_pagan
-
-# History
-900.1.1 = {
-	b_arvavara = castle
-	b_rozsahegy = city
-	religion = catholic
-}
+religion = veles
+1066.1.1 = { }

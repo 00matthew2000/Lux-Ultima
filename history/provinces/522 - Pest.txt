@@ -16,23 +16,6 @@ b_vac = temple
 #b_kiskoros = castle
 
 # Misc
-culture = avar
-religion = tengri_pagan
-
-# History
-800.1.1 = {
-	b_pest = castle
-	b_kecskemet = city
-}
-895.1.1 = {
-	remove_settlement = b_kecskemet
-	b_pest = tribal
-}
-930.1.1 = { culture = hungarian }
-950.1.1 = { 
-	religion = catholic 
-	b_pest = castle
-	b_kecskemet = city
-}
-1187.1.1 = { b_kiskunhalas = castle }
-
+culture = hungarian
+religion = tengri_mani
+1066.1.1 = { }

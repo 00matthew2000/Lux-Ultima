@@ -5,9 +5,11 @@ title = c_varadzin
 
 # Settlements
 max_settlements = 4
-b_varazdin = tribal
+#b_varazdin = tribal
+b_varazdin = castle
+b_ludbreg = temple
 
-#b_lepoglava = castle
+b_lepoglava = city
 #b_toplice = castle
 #b_donjastubica = castle
 #b_krapina = castle
@@ -15,12 +17,5 @@ b_varazdin = tribal
 
 # Misc
 culture = slovene
-religion = slavic_pagan
-
-# History
-800.1.1 = {
-	religion = catholic
-	b_varazdin = castle
-	b_cakovec = city
-	b_ludbreg = temple
-}
+religion = sol_mani
+1066.1.1 = { }

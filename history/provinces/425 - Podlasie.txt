@@ -4,7 +4,7 @@
 title = c_podlasie
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
 
 b_drohiczyn = tribal
 b_sejny = temple
@@ -18,10 +18,5 @@ b_sejny = temple
 
 # Misc
 culture = lithuanian
-religion = baltic_pagan
-
-# History
-1200.1.1 = {
-	b_drohiczyn = castle
-	b_goniadz = city
-}
+religion = dievas
+1066.1.1 = { }

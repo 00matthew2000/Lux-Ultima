@@ -4,7 +4,7 @@
 title = c_monemvasia
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
 b_monemvasia = castle
 
 b_arkadia = city
@@ -17,28 +17,49 @@ b_nikli = temple
 
 # Misc
 culture = hellenistic
-religion = hellenic_pagan
+religion = mithra_sol
 terrain = hills
 
 # History
-800.1.1 = { religion = orthodox }
-1121.1.1 = { trade_post = b_morosini }
-1187.1.1 = { b_nikli = castle }
 
-# 4th crusade
-
-#1205.1.1 = { culture = frankish }
-#1205.1.1 = { religion = catholic } 
-
-# Guillaume de Villehardouin hands it over to the Byzantine Empire
-
-#1259.1.1 = { culture = greek }
-#1259.1.1 = { religion = orthodox }
-
-# Mistra becomes the capital of the Despotate of the Morea
-1259.1.1 = {
-	remove_settlement = b_nikli
-	b_mistra = castle
-	b_monemvasia = temple
-	capital = b_mistra
+1066.1.1 = { 
+	b_monemvasia = ca_control_1
+	b_monemvasia = ca_control_2
+	b_monemvasia = ca_control_3
+	b_monemvasia = ca_control_4
+	b_monemvasia = ca_control_5
+	b_monemvasia = ca_control_6
+	b_monemvasia = ca_control_7
+	b_monemvasia = ca_admin_1
+	b_monemvasia = ca_admin_2
+	b_monemvasia = ca_admin_3
+	b_monemvasia = ca_admin_4
+	b_monemvasia = ca_admin_5
+	b_monemvasia = ca_wall_1
+	b_monemvasia = ca_wall_2
+	b_monemvasia = ca_wall_3
+	b_monemvasia = ca_wall_4
+	b_monemvasia = ca_granary_q_1
+	b_monemvasia = ca_granary_q_2
+	b_monemvasia = ca_granary_q_3
+	b_monemvasia = ca_granary_q_4
+	b_monemvasia = ca_roads_1
+	b_monemvasia = ca_farming_1
+	b_monemvasia = ca_farming_2
+	b_monemvasia = ca_farming_3
+	b_monemvasia = ca_farming_4
+	b_monemvasia = ca_farming_5
+	b_monemvasia = ca_mill_1
+	b_monemvasia = ca_mill_2
+	b_monemvasia = ca_mill_3
+	b_monemvasia = ca_scribes_1
+	b_monemvasia = ca_scribes_2
+	b_monemvasia = ca_sshrine_1
+	b_monemvasia = ca_sshrine_2
+	b_monemvasia = ca_sshrine_3
+	b_monemvasia = ca_sshrine_4
+	b_monemvasia = ca_sshrine_5
+	b_monemvasia = ca_sshrine_6
+	b_monemvasia = ca_sshrine_7
 }
+1066.1.1 = { }

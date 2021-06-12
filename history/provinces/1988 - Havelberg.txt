@@ -4,21 +4,18 @@
 title = c_havelberg
 
 # Settlements
-max_settlements = 3
-b_lenzen = tribal
+max_settlements = 4
+b_stendal = tribal
+b_halberstedt = temple
+
+
+#b_werben = castle
+#b_luchow = castle
+#b_salzwedel = castle
+#b_osterburg = castle
+#b_tangermunde = castle
 
 # Misc
 culture = polabian
-religion = slavic_pagan
-
-# History
-800.1.1 = {
-	b_lenzen = castle
-	b_wittstock = city
-	b_havelberg = temple
-}
-983.1.1 = {
-	capital = b_havelberg
-}
-1200.1.1 = { culture = polabian } 
-1200.1.1 = { religion = catholic } 
+religion = svaroh
+1066.1.1 = { }

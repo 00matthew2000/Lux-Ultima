@@ -7,25 +7,18 @@ title = c_czersk		#Is more or less "Liw" since HF
 terrain=forest
 
 # Settlements
-max_settlements = 2
+max_settlements = 4
+b_czersk = tribal
+#b_siedlce = castle
 
-b_liw = tribal
-
-#b_brodno
-#b_radzymin
-
-#b_wegrow
-#b_liw_nowy
-#b_lochow
-#b_tluszoz
+b_garwolin = temple
+#b_borowie = castle
+#b_losice = castle
+#b_gorzno = castle
+#b_grojec = castle
 
 # Misc
 culture = polish
-religion = slavic_pagan
-
-# History
-987.1.1 = {
-	religion = catholic
-	b_liw = castle
-}
+religion = svetovid
+1066.1.1 = { }
 

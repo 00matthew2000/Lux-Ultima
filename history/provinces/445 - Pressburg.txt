@@ -4,7 +4,7 @@
 title = c_pressburg
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 b_pressburg = tribal
 b_nagyszombat = temple
 
@@ -17,18 +17,5 @@ b_nagyszombat = temple
 
 # Misc
 culture = bavarian
-religion = slavic_pagan
-
-# History
-800.1.1 = {
-	b_pressburg = castle
-	b_bazin = city
-	b_modor = castle
-}
-930.1.1 = {
-	b_pressburg = tribal
-}
-950.1.1 = {
-	b_pressburg = castle
-}
-861.1.1 = { religion = catholic }
+religion = mani
+1066.1.1 = { }

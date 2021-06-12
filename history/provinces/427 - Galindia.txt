@@ -6,8 +6,8 @@ title = c_galindia
 # Settlements
 max_settlements = 4
 b_angerburg = tribal
-#b_osterode = city
 #b_nikelshagen = temple
+#b_osterode = city
 
 #b_gilgenburg = castle
 #b_neidenburg = castle
@@ -17,12 +17,5 @@ b_angerburg = tribal
 
 # Misc
 culture = prussian
-religion = baltic_pagan
-
-# History
-1225.1.1 = {
-	b_angerburg = castle
-	b_osterode = city
-}
-1290.1.1 = { b_nikelshagen = temple }
-1290.1.1 = { religion = catholic }
+religion = peckols
+1066.1.1 = { }

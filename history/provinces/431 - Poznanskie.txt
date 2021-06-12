@@ -7,24 +7,17 @@ title = c_poznanskie
 terrain = forest
 
 # Settlements
-max_settlements = 6
+max_settlements = 4
 b_poznan = tribal
-#b_oborniki = city
-#b_czarnkow = temple
+b_obrzycko = temple
 
-#b_koscian = castle
-#b_miedzyrzecz = castle
-#b_walcz = castle
-#b_wschowa = castle
+#b_miedryrzecz = castle
+#b_drzen = castle
+#b_zbaszyn = castle
+#b_strarygrode = castle
+#b_srem = castle
 
 # Misc
 culture = polish
-religion = slavic_pagan
-
-# History
-962.1.1 = {
-	religion = catholic
-	b_poznan = castle
-	b_oborniki = city
-	b_czarnkow = temple
-}
+religion = svaroh
+1066.1.1 = { }

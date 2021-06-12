@@ -4,25 +4,16 @@
 title = c_opole
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 b_opole = tribal
-#b_lubliniec = temple
-#b_kozle = city
-
+b_czestochowa = temple
 #b_strzelce = castle
-#b_rybnik = castle
-#b_siewerz = castle
+#b_lelow = castle
+#b_olezno = castle
 #b_raciborz = city
+#b_namyslow = castle
 
 # Misc
 culture = polish
-religion = slavic_pagan
-
-# History
-990.1.1 = {
-	religion = catholic
-	b_opole = castle
-	b_lubliniec = temple
-	b_kozle = city
-}
-1250.1.1 = { culture = german } # German Settlers
+religion = rod
+1066.1.1 = { }

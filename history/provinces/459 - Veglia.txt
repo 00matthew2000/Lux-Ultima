@@ -5,7 +5,9 @@ title = c_veglia
 
 # Settlements
 max_settlements = 4
-b_veglia = tribal
+b_frankopan = castle
+b_veglia = city
+b_krk = temple
 
 #b_kraljevica = castle
 #b_bakar = castle
@@ -16,16 +18,4 @@ b_veglia = tribal
 # Misc
 culture = croatian
 religion = catholic
-
-# History
-769.1.1 = {
-	b_frankopan = castle
-	b_veglia = city
-	b_krk = temple
-	capital = b_veglia
-}
-1000.1.1 = { culture = croatian }
-1000.1.1 = {
-	capital = b_frankopan
-}
-1146.1.1 = { trade_post = b_contarini }
+1066.1.1 = { }

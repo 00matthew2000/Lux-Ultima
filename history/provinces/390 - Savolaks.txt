@@ -4,7 +4,7 @@
 title = c_savolaks
 
 # Settlements
-max_settlements = 3
+max_settlements = 2
 
 b_olavinlinna = tribal
 
@@ -18,13 +18,6 @@ b_olavinlinna = tribal
 
 # Misc
 culture = finnish
-religion = finnish_pagan
+religion = ilmatar
 terrain = forest
-
-# History
-1292.1.1 = { religion = catholic }	#Northern Crusades
-1292.1.1 = { name = "Savolax" }
-1300.1.1 = {
-	b_olavinlinna = castle
-}
-1337.1.1 = { b_mikkeli = city }
+1066.1.1 = { }

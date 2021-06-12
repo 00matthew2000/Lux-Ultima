@@ -5,9 +5,8 @@ title = c_split
 
 # Settlements
 max_settlements = 4
-
-b_trogir = castle
-b_split = city
+b_split = castle
+b_trogir = city
 b_hvar = temple
 
 #b_solin = city
@@ -18,13 +17,4 @@ b_hvar = temple
 
 # Misc
 culture = roman
-religion = catholic
-
-# History
-769.1.1 = {
-	capital = b_split
-}
-1066.1.1 = { 
-	culture = roman
-	trade_post = b_dandolo 
-}
+religion = sol

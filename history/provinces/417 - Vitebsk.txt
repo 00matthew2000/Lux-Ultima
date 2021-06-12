@@ -4,32 +4,17 @@
 title = c_vitebsk
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
+b_vitebsk = tribal
+b_sakolniki = temple
 
-b_vitebsk = tribal	#947/1021
-
-#b_sianno			#XVth
-#b_beshankovichy	#XVth
-#b_liozna			#1800
-#b_boguchevsk		#1800
-#b_ruba
-#b_bilieva
+#b_drazdy = castle
+#b_ruba = castle
+#b_liozno = city
+#b_stryzhava = castle
+#b_baroniki = castle
 
 # Misc
-culture = ilmenian
-religion = slavic_pagan
-
-# History
-867.1.1 = {
-	culture = russian
-}
-947.1.1 = {
-	b_vitebsk = tb_hillfort_1
-}
-988.1.1 = {
-	religion = orthodox
-}
-1150.1.1 = {
-	b_vitebsk = castle
-	b_sianno = city
-}
+culture = varangian
+religion = sol_slav
+1066.1.1 = { }
