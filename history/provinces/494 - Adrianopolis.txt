@@ -4,7 +4,7 @@
 title = c_adrianopolis
 
 # Settlements
-max_settlements = 4
+max_settlements = 6
 b_adrianopolis = castle
 b_skalothe = city
 b_didymoteichon = temple
@@ -16,11 +16,5 @@ b_didymoteichon = temple
 
 # Misc
 culture = greek
-religion = orthodox
-
-# History
-
-1337.1.1 = { b_kypsela = castle }
-
-1382.1.1 = { culture = turkish }
-1382.1.1 = { religion = sunni }
+religion = sol
+1066.1.1 = { }
