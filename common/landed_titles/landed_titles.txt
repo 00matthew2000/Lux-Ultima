@@ -8042,8 +8042,7 @@ e_byzantium = {
 				}
 			}
 			c_karvuna = {
-				color={ 210 95 253 }
-				color2={ 255 255 255 }
+				color = { 210 95 253 }
 				
 				greek = "Krounoi"
 				
@@ -8645,8 +8644,7 @@ e_pontus = {
 			capital = 559 # Crimea
 		
 			c_lower_don = {
-				color={ 230 190 84 }
-				color2={ 255 255 255 }
+				color = { 230 190 84 }
 			
 				b_taganrog = {
 				}
@@ -8685,10 +8683,9 @@ e_pontus = {
 				}
 			}
 			c_oleshye = {
-				color={ 238 198 92 }
-				color2={ 255 255 255 }
+				color = { 238 198 92 }
 			
-				b_dnieprkherson = {
+				b_oleshye = {
 				}
 				b_kamiansk = {
 				}
@@ -8704,25 +8701,16 @@ e_pontus = {
 				}
 			}
 			c_lukomorie = {
-				color={ 242 202 96 }
-				color2={ 255 255 255 }
+				color = { 242 202 96 }
 			
-				b_zaporzhye = {
-				}
-				b_kushunum = {
-				}
-				b_huliaipole = {
-				}
-				b_kalmius = {
-				}
-				b_kalchik = {
-				}
-				b_onkhiv = {
-				}
-				b_polohy = {
-				}
-				b_chernihivka = {
-				}
+				b_zaporzhye = {}
+				b_kushunum = {}
+				b_huliaipole = {}
+				b_kalmius = {}
+				b_kalchik = {}
+				b_onkhiv = {}
+				b_polohy = {}
+				b_chernihivka = {}
 			}
 			c_lower_dniepr = {
 				color={ 246 206 100 }
@@ -8777,8 +8765,7 @@ e_pontus = {
 			capital = 598 # Phanagoria
 		
 			c_tana = {
-				color={ 222 183 79 }
-				color2={ 255 255 255 }
+				color = { 222 183 79 }
 			
 				b_tana = {
 				}
@@ -8819,29 +8806,19 @@ e_pontus = {
 				}
 			}
 			c_azov = {
-				color={ 226 187 83 }
-				color2={ 255 255 255 }
+				color = { 226 187 83 }
 			
-				b_azov = {
-				}
-				b_azaq = {
-				}
-				b_sadki = {
-				}
-				b_eysk = {
-				}
-				b_kagalnik = {
-				}
-				b_akhtarsk = {
-				}
-				b_kugey = {
-				}
-				b_katon = {
-				}
+				b_azov = {}
+				b_azaq = {}
+				b_sadki = {}
+				b_eysk = {}
+				b_kagalnik = {}
+				b_akhtarsk = {}
+				b_kugey = {}
+				b_katon = {}
 			}
 			c_kuban = {
-				color={ 230 191 87 }
-				color2={ 255 255 255 }
+				color = { 230 191 87 }
 			
 				b_khumar = {
 				}
@@ -16711,16 +16688,26 @@ e_russia = {
 			#}
 	
 			c_kiev = {
-				color={ 106 106 26 }
-				color2={ 255 255 255 }
+				color = { 106 106 26 }
+					
 				
 				norse = Könugarðr
 				swedish = Könugård
 				norwegian = Kønugård
 				danish = Kønugård
 
-				holy_site = slavic_pagan
+				holy_site = perun
+				holy_site = dazhbog
+				holy_site = mani_slavic
+				holy_site = mani_slavic_reformed
+				holy_site = rod
+				holy_site = slavic_christian					
+				holy_site = slavic_christian_reformed
+				holy_site = slavic_paga
 				holy_site = slavic_pagan_reformed
+				holy_site = svaroh
+				holy_site = svetovid
+				holy_site = tengri_rod_reformed
 				
 				b_kiev = {
 					norse = Könugarðr
@@ -16767,8 +16754,10 @@ e_russia = {
 			capital = 536 # Galich
 			
 			c_galich = {
-				color={ 224 112 130 }
-				color2={ 255 255 255 }
+				color = { 254 255 215 }
+					holy_site = mani_slavic
+					holy_site = mani_slavic_reformed
+					holy_site = zal
 				
 				polish = "Halicz"
 				
@@ -16871,8 +16860,7 @@ e_russia = {
 				}
 			}
 			c_terebovl = {
-				color={ 224 132 120 }
-				color2={ 255 255 255 }
+				color = { 104 104 24 }
 				
 				polish = "Trembowla"
 	
@@ -16956,12 +16944,10 @@ e_russia = {
 			}
 		}
 	}
-	k_rus = {		#Russia
+	k_rus = { #Russia
 		color = { 147 164 104 }
-		
-		capital = 575 # Moscow
-		
 		culture = russian
+		capital = 575 #Moscow
 		
 		voipel_reformed = 5000
 		slavic_christian_reformed = 10000
@@ -16969,22 +16955,12 @@ e_russia = {
 		tengri_confucian_reformed = 1000
 		tengri_mani_reformed = 2000
 		
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture_group = north_germanic
-					culture_group = east_slavic 
-				}
-			}
-		}
-		
 		norse = Könugarðr
 		swedish = Könugård
 		norwegian = Kønugård
 		danish = Kønugård
 		
-				d_tver = {
+		d_tver = {
 			color={ 169 183 125 }
 			color2={ 255 255 255 }
 			
@@ -17034,8 +17010,7 @@ e_russia = {
 		}
 	
 		d_moskva = {
-			color={ 207 222 123 }
-			color2={ 255 255 255 }
+			color = { 207 222 123 }
 			
 			capital = 575 # Moskva
 			
@@ -17043,8 +17018,7 @@ e_russia = {
 			meshchera = Mochkava
 			
 			c_moskva = {
-				color={ 220 235 176 }
-				color2={ 255 255 255 }
+				color = { 220 235 176 }
 				
 				mordvin = Mochkava
 				meshchera = Mochkava
@@ -17376,7 +17350,7 @@ e_russia = {
 			}
 		}
 		
-		d_minsk = {
+		d_vitebsk = {
 			color = { 196 33 55 }
 			
 			capital = 550 # Minsk
@@ -17395,8 +17369,7 @@ e_russia = {
 			}
 			
 			c_minsk = {
-				color={ 60 105 2 }
-				color2={ 255 255 255 }
+				color = { 174 43 43 }
 				
 				b_minsk = {
 				}
@@ -17565,26 +17538,18 @@ e_russia = {
 			capital = 564
 			
 			c_sharukan = {
-				color={ 238 203 121 }
-				color2={ 255 255 255 }
+				color = { 238 203 121 }
 				
-				b_kharka = {
-				}
-				b_sumy = {
-				}
-				b_challykala = {
-				}
-				b_khorysdan = {
-				}
-				b_izyum = {
-				}
-				b_balakliia = {
-				}
-				b_kupyansk = {
-				}
-				b_lyubotin = {
-				}
+				b_kharka = {}
+				b_sumy = {}
+				b_challykala = {}
+				b_khorysdan = {}
+				b_izyum = {}
+				b_balakliia = {}
+				b_kupyansk = {}
+				b_lyubotin = {}
 			}
+		}
 			c_sugrov = {
 				color={ 240 204 109 }
 				color2={ 255 255 255 }
@@ -17645,25 +17610,19 @@ e_russia = {
 				}
 			}
 			c_desht-i-kipchak = {
-				color={ 242 206 111 }
-				color2={ 255 255 255 }
+				color = { 242 206 111 }
+				
+				holy_site = tengri_rod_reformed
 			
-				b_bakhmut = {
-				}
+				b_bakhmut = {}
+				b_krasne = {}
 				b_sviatohirsk = {
 				}
-				b_krasne = {
-				}
-				b_dobropillia = {
-				}
-				b_druzhkivka = {
-				}
-				b_kramatorsk = {
-				}
-				b_lyman = {
-				}
-				b_mospyne = {
-				}
+				b_dobropillia = {}
+				b_druzhkivka = {}
+				b_kramatorsk = {}
+				b_lyman = {}
+				b_mospyne = {}
 			}
 		}
 		
@@ -17707,8 +17666,7 @@ e_russia = {
 		}
 		
 		d_smolensk = {
-			color={ 226 241 182 }
-			color2={ 255 255 255 }
+			color = { 226 241 182 }
 			
 			capital = 568 # Smolensk
 			
@@ -17716,8 +17674,7 @@ e_russia = {
 			ilmenian = "Radimichia"
 			
 			c_smolensk = {
-				color={ 229 244 185 }
-				color2={ 255 255 255 }
+				color = { 229 244 185 }
 				
 				swedish = "Smaleskja"
 				norse = "Smaleskja"
@@ -17744,8 +17701,7 @@ e_russia = {
 				}
 			}
 			c_roslavl = {
-				color={ 239 242 185 }
-				color2={ 255 255 255 }
+				color = { 202 180 230 }
 					
 				b_roslavl = {
 				}
@@ -17782,8 +17738,7 @@ e_russia = {
 				}
 			}
 			c_vyazma = {
-				color={ 175 189 131 }
-				color2={ 255 255 255 }
+				color = { 175 189 131 }
 					
 				b_vyazma = {
 				}
@@ -17884,8 +17839,7 @@ e_russia = {
 			}
 		}
 		d_chernigov = {
-			color={ 150 235 91 }
-			color2={ 255 255 255 }
+			color = { 150 235 91 }
 			
 			capital = 554 # Chernigov
 			
@@ -17914,11 +17868,7 @@ e_russia = {
 				}
 			}
 			c_bryansk = {
-				color = { 160 175 40 }
-				color2={ 255 255 255 }
-
-				holy_site = baltic_pagan
-				holy_site = baltic_pagan_reformed
+				color = { 223 238 179 }
 				
 				b_bryansk = {
 				}
@@ -17955,8 +17905,7 @@ e_russia = {
 				}
 			}
 			c_chernigov = {
-				color={ 242 255 197 }
-				color2={ 255 255 255 }
+				color = { 242 255 197 }
 		
 				b_chernigov = {
 				}
@@ -18000,8 +17949,7 @@ e_russia = {
 			capital = 567 # Novgorod-Seversky 
 	
 			c_novgorod_seversky = {
-				color = { 140 165 40 }
-				color2 = { 255 255 255 }
+				color = { 19 128 77 }
 	
 				b_novgorodseversky = {
 				}
@@ -18148,11 +18096,26 @@ e_russia = {
 				}
 			}
 			c_ryazan = {
-				color={ 121 140 50 }
-				color2={ 255 255 255 }
-
-				holy_site = finnish_pagan
-				holy_site = finnish_pagan_reformed
+				color = { 211 225 167 }
+					holy_site = chumbylat
+					holy_site = chumbylat_reformed
+					holy_site = vattisenyaly
+					holy_site = vattisenyaly_reformed
+					holy_site = voipel
+					holy_site = voipel_reformed
+					holy_site = perun
+					holy_site = dazhbog
+					holy_site = mani_slavic
+					holy_site = mani_slavic_reformed
+					holy_site = rod
+					holy_site = slavic_christian
+					holy_site = slavic_christian_reformed
+					holy_site = slavic_pagan
+					holy_site = slavic_pagan_reformed
+					holy_site = svaroh
+					holy_site = svetovid
+					holy_site = tengri_rod
+					holy_site = tengri_rod_reformed
 				
 				b_ryazan = {
 				}
@@ -18173,39 +18136,30 @@ e_russia = {
 	}
 	
 	k_perm = {
-		color={ 204 188 127 }
-		color2={ 255 255 255 }
-		
-		capital = 886 # Perm
-		
-		finnish_pagan_reformed = 500 # Crusade target weight
-		slavic_pagan_reformed = 100 # Crusade target weight
-		tengri_pagan_reformed = 50
-		
-		culture = komi
-		
-		# Creation/usurpation trigger
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture_group = finno_ugric
-				}
-			}
-		}
+		color = { 204 188 127 }
+		capital = 886 #Perm
+
+		voipel_reformed = 10000
+		slavic_christian_reformed = 1000
 	
 		d_perm = {
-			color={ 234 208 137 }
-			color2={ 255 255 255 }
+			color = { 234 208 137 }
 			
 			capital = 886 # Perm
 		
 			c_perm = {
-				color={ 237 211 140 }
-				color2={ 255 255 255 }
-
-				holy_site = finnish_pagan
-				holy_site = finnish_pagan_reformed
+				color = { 237 211 140 }
+					holy_site = chumbylat
+					holy_site = vattisenyaly
+					holy_site = voipel
+					holy_site = chumbylat_reformed
+					holy_site = vattisenyaly_reformed
+					holy_site = voipel_reformed
+					holy_site = finnish_pagan
+					holy_site = ilmatar
+					holy_site = jumala
+					holy_site = finnish_pagan_reformed
+					holy_site = nott
 				
 				b_perym = {
 				}
@@ -18389,8 +18343,7 @@ e_russia = {
 				}
 			}
 			c_galich_mersky = {
-				color={ 190 204 146 }
-				color2={ 255 255 255 }
+				color = { 190 204 146 }
 						
 				b_galichmersky = {
 				}
@@ -18763,8 +18716,7 @@ e_russia = {
 				}
 			}
 			c_uglich = {
-				color={ 169 183 125 }
-				color2={ 255 255 255 }
+				color = { 169 183 125 }
 					
 				b_uglich = {
 				}
@@ -19071,8 +19023,7 @@ e_russia = {
 				}
 			}
 			c_trans-portage = {
-				color={ 103 118 58 }
-				color2={ 255 255 255 }
+				color = { 103 118 58 }
 				
 				finnish = "Ääninen"
 				lappish = "Ääninen"
@@ -19098,9 +19049,8 @@ e_russia = {
 				}
 			}
 		}	
-		d_hlynov = { # Ugra
-			color={ 134 145 31 }
-			color2={ 255 255 255 }
+		d_hlynov = { #Ugra
+			color = { 134 145 31 }
 			
 			capital = 1826 # Ugra
 			
@@ -19117,8 +19067,8 @@ e_russia = {
 				b_shilovskaya = {}
 			}
 			c_syrj = {
-				color={ 122 137 77 }
-				color2={ 255 255 255 }
+				color = { 122 137 77 }
+				
 				b_pyras = {
 				}
 				b_yugydyag = {
@@ -19274,8 +19224,7 @@ e_russia = {
 				}
 			}
 			c_vologda = {
-				color={ 141 158 98 }
-				color2={ 255 255 255 }
+				color = { 141 158 98 }
 					
 				b_vologda = {
 				}
@@ -19343,8 +19292,7 @@ e_russia = {
 				}
 			}
 			c_beloozero = {
-				color={ 133 148 90 }
-				color2={ 255 255 255 }
+				color = { 133 148 90 }
 				
 				b_belozersk = {
 				}
@@ -19383,8 +19331,7 @@ e_russia = {
 		}
 		
 		d_rostov = {
-			color={ 124 137 89 }
-			color2={ 255 255 255 }
+			color = { 124 137 89 }
 			
 			capital = 574 # Rostov
 			
@@ -19397,8 +19344,7 @@ e_russia = {
 			meshchera = Merya
 			
 			c_rostov = {
-				color={ 166 180 122 }
-				color2={ 255 255 255 }
+				color = { 166 180 122 }
 				
 				swedish = "Radstofa"
 				norse = "Radstofa"
@@ -19473,8 +19419,7 @@ e_russia = {
 				}
 			}
 			c_yaroslavl = {
-				color={ 184 198 140 }
-				color2={ 255 255 255 }
+				color = { 184 198 140 }
 				
 				b_timerevo = {
 				}
@@ -19645,23 +19590,14 @@ e_pontic_steppe = {
 		}
 	}
 	k_khazaria = {
-		color={ 250 184 31 }
-		color2={ 255 255 255 }
+		color = { 250 184 31 }
 		
-		capital = 620 #	Itil
-		
-		culture = khazar
-		
-		# Creation/Usurp Trigger
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture = khazar
-					religion_group = jewish_group
-				}
-			}
-		}
+		capital = 619 #Akhtuba
+		voipel_reformed = 1000
+		slavic_christian_reformed = 500
+		erlik_reformed = 5000
+		tengri_confucian_reformed = 5000
+		tengri_mani_reformed = 5000
 		
 		d_ubagan = {
 			color = { 178 120 9 }
@@ -20134,8 +20070,7 @@ e_pontic_steppe = {
 				b_ardon = {}
 			}
 			c_sarpa = {
-				color={ 255 212 90 }
-				color2={ 255 255 255 }
+				color = { 255 212 90 }
 			
 				b_elst = {
 				}
@@ -20155,8 +20090,7 @@ e_pontic_steppe = {
 				}
 			}
 			c_yegorlyk = {
-				color={ 255 214 92 }
-				color2={ 255 255 255 }
+				color = { 255 214 92 }
 			
 				b_piatigorie = {
 				}
@@ -20204,8 +20138,18 @@ e_pontic_steppe = {
 			capital = 594 # Sarkel
 	
 			c_sarkel = {
-				color={ 244 208 113 }
-				color2={ 255 255 255 }
+				color = { 244 208 113 }
+					holy_site = tengri_ahriman
+					holy_site = tengri_bud
+					holy_site = erlik
+					holy_site = tengri_pagan
+					holy_site = tengri_confucian
+					holy_site = tengri_mani
+					holy_site = tengri_rod
+					holy_site = tengri_mani_reformed
+					holy_site = tengri_pagan_reformed
+					holy_site = erlik_reformed
+					holy_site = tengri_confucian_reformed
 			
 				b_kazarki = {
 				}
@@ -21426,8 +21370,7 @@ e_tartaria = {
 			capital = 893 # Sibir
 		
 			c_sibir = {
-				color={ 227 174 31 }
-				color2={ 255 255 255 }
+				color = { 227 174 31 }
 				
 				holy_site = chumbylat
 				holy_site = chumbylat_reformed
@@ -21948,8 +21891,7 @@ e_idel_ural = {
 				}
 			}
 			c_bilyar = {
-				color={ 201 166 71 }
-				color2={ 255 255 255 }
+				color = { 201 166 71 }
 			
 				b_bilyar = {
 				}
@@ -22194,8 +22136,9 @@ e_idel_ural = {
 				}
 			}
 			c_chuvash = {
-				color={ 237 177 16 }
-				color2={ 255 255 255 }
+				color = { 237 177 16 }
+					holy_site = chumbylat
+					holy_site = chumbylat_reformed
 			
 				b_vedasuvar = {
 				}
@@ -22415,8 +22358,7 @@ e_turk = {
 				b_toutli = {}
 			}
 			c_mangyshlak = {
-				color={ 233 179 33 }
-				color2={ 255 255 255 }
+				color = { 233 179 33 }
 			
 				b_aqtaw = {
 				}
@@ -25797,25 +25739,16 @@ e_sassanid = {
 				}
 			}
 			c_dihistan = {
-				color={ 162 210 79 }
-				color2={ 255 255 255 }
+				color = { 162 210 79 }
 				
-				b_akhur = {
-				}
-				b_gasankuli = {
-				}
-				b_bayatkhadzi = {
-				}
-				b_kumdag = {
-				}
-				b_torskhali = {
-				}
-				b_yasydepe = {
-				}
-				b_yarymtyk = {
-				}
-				b_kemir = {
-				}
+				b_akhur = {}
+				b_gasankuli = {}
+				b_bayatkhadzi = {}
+				b_kumdag = {}
+				b_torskhali = {}
+				b_yasydepe = {}
+				b_yarymtyk = {}
+				b_kemir = {}
 			}
 			c_gurgan = {
 				color={ 107 158 17 }
@@ -26003,33 +25936,23 @@ e_pannonia = {
 		}
 		
 		d_transylvania = {
-			color={ 255 150 150 }
-			color2={ 255 255 255 }
+			color = { 255 150 150 }
 			
 			capital = 519 # Feher
 			
 			c_szekelyfold = {
-				color={ 237 54 54 }
-				color2={ 255 255 255 }
+				color = { 237 54 54 }
 
 				german = Szeklerland
 				
-				b_csik = {
-				}
-				b_aranyos = {
-				}
-				b_haromszek = {
-				}
-				b_maros = {
-				}
-				b_kezdi = {
-				}
-				b_szekelyudvarhely = {
-				}
-				b_sepsiszentgyorgy = {
-				}
-				b_marosvasarhely = {
-				}
+				b_csik = {}
+				b_aranyos = {}
+				b_haromszek = {}
+				b_maros = {}
+				b_kezdi = {}
+				b_szekelyudvarhely = {}
+				b_sepsiszentgyorgy = {}
+				b_marosvasarhely = {}
 			}
 			c_bihar = {
 				color = { 241 58 58 }
@@ -26126,8 +26049,7 @@ e_pannonia = {
 				}
 			}
 			c_turnu = {
-				color={ 241 195 72 }
-				color2={ 255 255 255 }
+				color = { 241 195 72 }
 			
 				b_turnu = {
 				}
@@ -26375,8 +26297,7 @@ e_pannonia = {
 				}
 			}	
 			c_olvia = {
-				color={ 220 180 80 }
-				color2={ 255 255 255 }
+				color = { 229 208 151 }
 				
 				b_olvia = {
 				}
@@ -26432,11 +26353,7 @@ e_pannonia = {
 				}
 			}
 			c_birlad = {
-				color={ 233 212 155 }
-				color2={ 255 255 255 }
-
-				holy_site = slavic_pagan
-				holy_site = slavic_pagan_reformed
+				color = { 233 212 155 }
 				
 				b_barlad = {
 				}
@@ -26626,27 +26543,18 @@ e_pannonia = {
 				b_tokaj = {}
 			}
 			c_marmaros = {
-				color={ 164 23 23 }
-				color2={ 255 255 255 }
+				color = { 164 23 23 }
 				
 				german = Maramuresch
 				
-				b_maramarossziget = {
-				}
-				b_nagybanya = {
-				}
-				b_nagykaroly = {
-				}
-				b_huszt = {
-				}
-				b_aknasugatag = {
-				}
-				b_tecso = {
-				}
-				b_raho = {
-				}
-				b_felsoviso = {
-				}
+				b_maramarossziget = {}
+				b_nagybanya = {}
+				b_nagykaroly = {}
+				b_huszt = {}
+				b_aknasugatag = {}
+				b_tecso = {}
+				b_raho = {}
+				b_felsoviso = {}
 			}
 		}
 		d_pest = {

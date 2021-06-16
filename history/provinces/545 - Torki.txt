@@ -4,7 +4,7 @@
 title = c_torki
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 
 b_suceava = tribal
 #b_radauti = city
@@ -16,15 +16,6 @@ b_suceava = tribal
 #b_putna = castle
 
 # Misc
-culture = sarmatian
-religion = slavic_pagan
-
-# History
-867.1.1 = {
-	culture = sarmatian
-	b_suceava = castle
-	b_radauti = city
-	b_bogdana = temple
-	b_baia = castle
-}
-988.1.1 = { religion = orthodox }
+culture = russian
+religion = mani_slavic
+1066.1.1 = { }

@@ -4,13 +4,12 @@
 title = c_sarkel
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
 
-b_sarkel = castle
+b_sarkel = tribal
+b_belayavezha = temple
 
 #b_kazarki = city
-#b_belayavezha = temple
-
 #b_semikarakorsk = castle
 #b_tsimlyanskoye = castle
 #b_ustdonetskiy = castle
@@ -19,14 +18,7 @@ b_sarkel = castle
  
 # Misc
 culture = hunnic
-religion = tengri_pagan
-
-# History
-
-1060.1.1 = { culture = hunnic }
-
-1227.1.1 = { religion = sunni } 
-
-1238.1.1 = { culture = hunnic }
+religion = tengri_ahriman
+1066.1.1 = { }
 
 

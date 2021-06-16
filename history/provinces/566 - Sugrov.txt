@@ -6,9 +6,9 @@ title = c_sugrov
 # Settlements
 max_settlements = 4
 b_sugrov = tribal
+b_yauchy = temple
 
 #b_khursa = city
-#b_yauchy = temple
 
 #b_khazar = castle
 #b_khratayak = castle
@@ -17,13 +17,6 @@ b_sugrov = tribal
 #b_fatezh = castle
 
 # Misc
-culture = hungarian
+culture = cuman
 religion = tengri_pagan
-
-# History
-
-833.1.1 = { culture = khazar }
-
-1227.1.1 = { religion = sunni } 
-
-1238.1.1 = { culture = mongol }
+1066.1.1 = { }

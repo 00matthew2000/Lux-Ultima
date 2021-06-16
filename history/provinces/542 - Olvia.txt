@@ -4,11 +4,11 @@
 title = c_olvia
 
 # Settlements
-max_settlements = 1
+max_settlements = 4
 
 b_olvia = tribal
+b_ochakiv = temple
 
-#b_ochakiv		#1492
 #b_veselynove	#end of XVIIIth
 #b_voznesensk	#1795
 #b_kobleve
@@ -16,15 +16,6 @@ b_olvia = tribal
 #b_rybakivka
 
 # Misc
-culture = volhynian
-religion = slavic_pagan
-
-# History
-892.1.1 = { 
-	culture = pecheneg
-	religion = tengri_pagan
-}
-1171.1.1 = { culture = cuman }
-1204.1.1 = { trade_post = b_grimaldi }
-1238.1.1 = { culture = russian } 
-1238.1.1 = { religion = orthodox }
+culture = pecheneg
+religion = mani
+1066.1.1 = { }

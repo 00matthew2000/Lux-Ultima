@@ -7,8 +7,8 @@ title = c_turnu
 max_settlements = 4
 
 b_turnu = castle
-b_giurgiu = city
-#b_comana = temple
+b_comana = temple
+#b_giurgiu = city
 
 #b_zimnicea = castle
 #b_bucuresti = city
@@ -16,9 +16,6 @@ b_giurgiu = city
 #b_glavacioc = temple
 
 # Misc
-culture = bolghar
-religion = tengri_pagan
-
-# History
-892.1.1 = { culture = romanian }
-900.1.1 = { religion = orthodox }
+culture = romanian
+religion = orthodox
+1066.1.1 = { }

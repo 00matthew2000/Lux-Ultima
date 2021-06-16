@@ -6,7 +6,7 @@ title = c_lower_dniepr
 # Settlements
 max_settlements = 3
 
-b_oleshye = castle
+b_dnieprkherson = castle
 
 b_kyzylyar = city
 b_kairy = temple
@@ -19,17 +19,6 @@ b_kairy = temple
 
 # Misc
 culture = ostrogothic
-religion = orthodox
-
-# History
-
-833.1.1 = { culture = ostrogothic }
-892.1.1 = { culture = ostrogothic } 
-
-1177.1.1 = { trade_post = b_grimaldi }
-
-1227.1.1 = { religion = sunni } 
-
-1238.1.1 = { culture = ostrogothic } 
-
+religion = antinomian
+1066.1.1 = { }
 

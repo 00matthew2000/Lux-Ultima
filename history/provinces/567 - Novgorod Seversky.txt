@@ -4,7 +4,7 @@
 title = c_novgorod_seversky
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
 
 b_novgorodseversky = tribal		#Xth
 
@@ -17,17 +17,6 @@ b_novgorodseversky = tribal		#Xth
 #b_atyshua
 
 # Misc
-culture = turkish
-religion = slavic_pagan
-
-# History
-867.1.1 = {
-	culture = russian
-}
-988.1.1 = {
-	religion = orthodox
-}
-1150.1.1 = {
-	b_novgorodseversky = castle
-	b_glukhov = city
-}
+culture = russian
+religion = tengri_rod
+1066.1.1 = { }

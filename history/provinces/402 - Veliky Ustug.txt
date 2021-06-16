@@ -4,7 +4,7 @@
 title = c_veliky_ustug
 
 # Settlements
-max_settlements = 2
+max_settlements = 3
 b_velikyustug = tribal
 #b_krasavino = city
 #b_gleden = temple
@@ -17,9 +17,5 @@ b_velikyustug = tribal
 
 # Misc
 culture = komi
-religion = finnish_pagan
-
-# History
-#1207.1.1 = { b_krasavino = city }
-1207.1.1 = { culture = komi }
-1207.1.1 = { religion = orthodox }
+religion = voipel
+1066.1.1 = { }

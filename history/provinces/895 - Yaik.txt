@@ -4,12 +4,12 @@
 title = c_yaik
 
 # Settlements
-max_settlements = 2
+max_settlements = 3
+
 b_kurgan = tribal
+b_vagay = temple
 
 #b_kyzalyar = city
-#b_vagay = temple
-
 #b_lebyazhe = castle
 #b_yurgamysh = castle
 #b_shumikha = castle
@@ -17,12 +17,6 @@ b_kurgan = tribal
 #b_makushino = castle
 
 # Misc
-culture = turkish
-religion = tengri_pagan
+culture = khazar
+religion = jud_sabaoth
 terrain = steppe
-
-# History
-
-1227.1.1={ culture = turkish }
-1227.1.1={ religion = tengri_pagan }
-1313.1.1={ religion = sunni } 

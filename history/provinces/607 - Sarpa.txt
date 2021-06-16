@@ -7,10 +7,9 @@ title = c_sarpa
 max_settlements = 3
 
 b_elst = tribal
+b_ikburul = temple
 
 #b_bachanta = city
-#b_ikburul = temple
-
 #b_karatchaplak = castle
 #b_ketchenery = castle
 #b_yashkul = castle 
@@ -18,10 +17,5 @@ b_elst = tribal
 #b_ysaganaman = temple
 
 culture = hunnic
-religion = tengri_pagan
-
-# History
-
-1227.1.1 = { religion = sunni } 
-
-1238.1.1 = { culture = hunnic }
+religion = tengri_ahriman
+1066.1.1 = { }

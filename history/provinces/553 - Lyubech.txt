@@ -4,30 +4,18 @@
 title = c_lyubech
 
 # Settlements
-max_settlements = 2
+max_settlements = 5
 
-b_lyubech = tribal	#882
+b_lyubech = castle	#882
+b_dobrouch = city		#1335
+b_cierachouka = castle
+b_dobryanka = temple
 
-#b_dobrouch		#1335
-#b_cierachouka
-#b_dobryanka
 #b_lysyye
 #b_skytok
 #b_perepys
 
 # Misc
-culture = severian
-religion = slavic_pagan
-
-# History
-867.1.1 = {
-	culture = russian
-}
-988.1.1 = {
-	religion = orthodox
-}
-1150.1.1 = {
-	b_lyubech = castle
-	b_dobrouch = temple
-}
-
+culture = russian
+religion = slavic_christian
+1066.1.1 = { }

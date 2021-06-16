@@ -6,9 +6,8 @@ title = c_don_portage
 # Settlements
 max_settlements = 3
 b_kalach = castle
-
-#b_illovlya = city
 #b_ryumino = temple
+#b_illovlya = city
 
 #b_donskoy = castle
 #b_illevka = castle
@@ -18,16 +17,5 @@ b_kalach = castle
 
 # Misc
 culture = hunnic
-religion = tengri_pagan
-
-# History
-
-826.1.1 = { culture = hunnic } 
-
-1060.1.1 = { culture = hunnic }
-
-1227.1.1 = { religion = sunni } 
-
-1238.1.1 = { culture = hunnic }
-
-#1337.1.1 = { b_donskoy = castle } 
+religion = tengri_ahriman
+1066.1.1 = { }

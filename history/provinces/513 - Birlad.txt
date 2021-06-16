@@ -4,7 +4,7 @@
 title = c_birlad
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 
 b_barlad = castle
 b_tecuci = city
@@ -16,10 +16,6 @@ b_focsani = temple
 #b_marasesti = castle
 
 # Misc
-
 culture = sarmatian
-religion = tengri_pagan
-
-# History
-892.1.1 = { culture = sarmatian }
-900.1.1 = { religion = orthodox }
+religion = zal_mani
+1066.1.1 = { }

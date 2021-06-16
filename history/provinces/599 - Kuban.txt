@@ -6,9 +6,7 @@ title = c_kuban
 # Settlements
 max_settlements = 3
 
-b_khumar = castle
-
-#b_kuban = city
+b_khumar = tribal
 #b_psekups = temple
 
 #b_khutor = castle 
@@ -17,12 +15,7 @@ b_khumar = castle
 #b_beshtau = castle
 #b_kirpili = castle
 
-culture = hellenistic
-religion = orthodox
-
-# History
-
-1227.1.1 = { religion = sunni } 
-
-1238.1.1 = { culture = hellenistic }
+culture = alan
+religion = arian
+1066.1.1 = { }
 

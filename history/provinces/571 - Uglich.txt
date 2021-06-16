@@ -7,27 +7,15 @@ title = c_uglich
 max_settlements = 4
 
 b_uglich = tribal	#937
+#b_ugliche_pole = temple	#More or less Uglich
 
 #b_ustyuzhna	#XIth
-#b_ugliche_pole		#More or less Uglich
 #b_mologa		#XIIth
 #b_krasny_kholm	#1518
 #b_koprino
 #b_breytovo
 
+# Misc
 culture = varangian
-religion = finnish_pagan
-
-# History
-988.1.1 = {
-	culture = varangian
-	religion = orthodox
-}
-1050.1.1 = {
-	b_uglich = castle
-	b_ustyuzhna = temple
-	b_ugliche_pole = city
-}
-1149.1.1 = {
-	b_mologa = castle
-}
+religion = norse_pagan
+1066.1.1 = { }

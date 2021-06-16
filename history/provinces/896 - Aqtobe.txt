@@ -4,12 +4,11 @@
 title = c_aqtobe
 
 # Settlements
-max_settlements = 2
+max_settlements = 3
 b_aqtobe = tribal
-
-#b_burta = city 
 #b_ashchesay = temple
 
+#b_burta = city 
 #b_sibiryak = castle
 #b_kunsay = castle
 #b_zharlysay = castle
@@ -19,12 +18,5 @@ b_aqtobe = tribal
 # Misc
 culture = turkish
 religion = tengri_pagan
-
-# History
-
-1060.1.1 = { culture = turkish }
-
-1100.1.1 = { religion = sunni } 
-
-1218.1.1 = { culture = mongol } 
+1066.1.1 = { }
 

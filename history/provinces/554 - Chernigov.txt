@@ -4,30 +4,18 @@
 title = c_chernigov
 
 # Settlements
-max_settlements = 5
+max_settlements = 6
 
-b_chernigov = tribal	#907
+b_chernigov = castle	#907
 
-#b_snov		#early, before 1068	#Today called "Sedniv"
-#b_korop	#1153
-#b_sosnytsia	#1247
-#b_mena	#1408
+b_snov = city		#early, before 1068	#Today called "Sedniv"
+b_korop = city	#1153
+b_sosnytsia = castle	#1247
+b_mena = castle	#1408
 #b_horodina	#1550
 #b_ripky	#1607
 
 # Misc
-culture = severian
-religion = slavic_pagan
-
-# History
-867.1.1 = {
-	culture = russian
-}
-988.1.1 = { 
-	religion = orthodox
-}
-1150.1.1 = {
-	b_chernigov = castle
-	b_snov = city
-	b_korop = temple
-}
+culture = russian
+religion = slavic_christian
+1066.1.1 = { }

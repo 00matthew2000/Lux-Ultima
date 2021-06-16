@@ -4,13 +4,12 @@
 title = c_lower_volga
 
 # Settlements
-max_settlements = 2
+max_settlements = 4
 
 b_sarysu = tribal
+b_kamyshin = temple
 
 #b_tsaritsyn = city
-#b_kamyshin = temple
-
 #b_petrovval = city
 #b_serebrjakovo = castle
 #b_dubovka = castle
@@ -18,16 +17,6 @@ b_sarysu = tribal
 #b_prishib = castle
 
 # Misc
-culture = khazar
-religion = tengri_pagan
-
-# History
-
-822.1.1 = { culture = khazar } 
-
-1060.1.1 = { culture = khazar }
-
-1200.1.1 = { religion = sunni } 
-
-1227.1.1 = { culture = khazar } 
-
+culture = hunnic
+religion = tengri_ahriman
+1066.1.1 = { }

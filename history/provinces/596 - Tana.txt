@@ -7,8 +7,7 @@ title = c_tana
 max_settlements = 4
 
 b_tana = castle
-
-#b_rostovnadonu = city
+b_rostovnadonu = city
 #b_monastyrsky = temple
 
 #b_bataysk = castle
@@ -18,14 +17,5 @@ b_tana = castle
 #b_ustaksayaskaya = castle
 
 culture = hellenistic
-religion = orthodox
-
-# History
-
-
-1227.1.1 = { religion = sunni } 
-
-#1187.1.1 = { b_bataysk = castle } 
-
-1238.1.1 = { culture = hellenistic }
-1297.1.1 = { trade_post = b_grimaldi }
+religion = sol_boreas
+1066.1.1 = { }
