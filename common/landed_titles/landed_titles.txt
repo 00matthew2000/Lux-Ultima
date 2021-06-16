@@ -24828,23 +24828,16 @@ e_sassanid = {
 			capital = 1275 # Zranka
 			
 			c_mandesh = {
-				color={ 183 210 94 }
-				color2={ 255 255 255 }
+				color = { 205 224 162 }
 				
-				b_chaghcharan = {
-				}
-				b_adraskan = {
-				}
-				b_baluci = {
-				}
-				b_saghar = {
-				}
-				b_kwajaha = {
-				}
-				b_taywara = {
-				}
-				b_gozareh = {
-				}
+				b_herat = {}
+				b_karukh = {}
+				b_kushk = {}
+				b_gulran = {}
+				b_obe = {}
+				b_zarghun = {}
+				b_farsi = {}
+				b_chishti = {}
 			}
 			c_chagai = {
 				color={ 152 185 96 }
@@ -25769,34 +25762,6 @@ e_sassanid = {
 				b_minudasht = {
 				}
 				b_khanbebin = {
-				}
-			}
-		}
-		d_herat = {
-			color = { 175 234 82 }
-			color2={ 255 255 255 }
-			
-			capital = 905 # Herat
-			
-			c_herat = {
-				color={ 205 244 152 }
-				color2={ 255 255 255 }
-				
-				b_herat = {
-				}
-				b_karukh = {
-				}
-				b_kushk = {
-				}
-				b_gulran = {
-				}
-				b_obe = {
-				}
-				b_zarghun = {
-				}
-				b_farsi = {
-				}
-				b_chishti = {
 				}
 			}
 		}

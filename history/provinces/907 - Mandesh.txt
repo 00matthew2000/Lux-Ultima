@@ -4,19 +4,17 @@
 title = c_mandesh
 
 # Settlements
-max_settlements = 3
-b_chaghcharan = castle
-b_adraskan = city
+max_settlements = 4
+b_herat = castle
+b_karukh = city
+b_kushk = temple
+b_gulran = castle
 
-#b_baluci = castle
-#b_saghar = castle
-#b_kwajaha = castle
-#b_gozareh = castle
-#b_taywara = castle
+#b_obe = castle
+#b_farsi = castle
+#b_zarghun = city
+#b_chishti = castle
 
-# Misc
 culture = indohellenic
-religion = buddhist
-
-# History
-1000.1.1 = { religion = sunni }
+religion = indoh_bud
+1066.1.1 = { }
