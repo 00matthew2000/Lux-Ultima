@@ -22219,25 +22219,16 @@ e_turk = {
 			capital = 1378 #Xvairizem
 			
 			c_khiva = {
-				color={ 167 245 32 }
-				color2={ 255 255 255 }
+				color = { 189 214 146 }
 				
-				b_darvaza = {
-				}
-				b_kath = {
-				}
-				b_kuskupir = {
-				}
-				b_tahta = {
-				}
-				b_kizketken = {
-				}
-				b_atajab = {
-				}
-				b_sumanay = {
-				}
-				b_khiva = {
-				}
+				b_itchankila = {}
+				b_khiva = {}
+				b_xazorasp = {}
+				b_bogot = {}
+				b_xonqa = {}
+				b_qorovul = {}
+				b_yangiariq = {}
+				b_shovot = {}
 			}
 			
 			c_urgench = {
@@ -23414,8 +23405,7 @@ e_turk = {
 				b_yubiljeynov = {}
 			}
 			c_kyzyl-su = {
-				color={ 165 243 30 }
-				color2={ 255 255 255 }
+				color = { 170 250 60 }
 
 				b_kyzyl-su = {}
 				b_dzhanga = {
@@ -23700,8 +23690,8 @@ e_sassanid = {
 				}
 			}
 			c_bam = {
-				color={ 144 177 88 }
-				color2={ 255 255 255 }
+				color = { 144 177 88 }
+					holy_site = indoh_zor
 				
 				b_bampur = {
 				}
@@ -23768,12 +23758,17 @@ e_sassanid = {
 			
 			capital = 644 # Pârsa
 			
-			c_fars = {
-				color={ 91 130 24 }
-				color2={ 255 255 255 }
-
-				holy_site = zoroastrian # The Great Fire of Adur Farnbag
-				holy_site = yazidi
+			c_fars = {		#Laristan
+				color = { 91 130 24 }
+					holy_site = zoroastrian
+					holy_site = mani
+					holy_site = mani_mithra
+					holy_site = zor_angra
+					holy_site = zor_hindu
+					holy_site = ahriman_reformed
+					holy_site = mazdakism_reformed
+					holy_site = zor_angra_reformed
+					holy_site = zurvanism_reformed
 				
 				b_perozabad = {
 				}
@@ -23814,8 +23809,9 @@ e_sassanid = {
 				}
 			}
 			c_shiraz = {
-				color={ 154 188 96 }
-				color2={ 255 255 255 }
+				color = { 154 188 96 }
+					holy_site = zoroastrian
+					holy_site = mazdakism_reformed
 				
 				b_shiraz = {
 				}
@@ -23841,10 +23837,8 @@ e_sassanid = {
 			capital = 648
 			
 			c_khozistan = {
-				color={ 95 134 28 }
-				color2={ 255 255 255 }
-				
-				holy_site = mandaean
+				color = { 95 134 28 }
+					holy_site = mandaean
 					holy_site = yahyanism
 					holy_site = yazdanism
 					holy_site = yazidism
@@ -23891,8 +23885,7 @@ e_sassanid = {
 				}
 			}
 			c_avhaz = {
-				color={ 151 185 93 }
-				color2={ 255 255 255 }
+				color = { 151 185 93 }
 				
 				b_dezful = {
 				}
@@ -24740,8 +24733,7 @@ e_sassanid = {
 				b_chatti = {}
 			}
 			c_zahedan = {
-				color={ 142 175 86 }
-				color2={ 255 255 255 }
+				color = { 142 175 86 }
 				
 				b_zahedan = {
 				}
@@ -24861,23 +24853,16 @@ e_sassanid = {
 				}
 			}
 			c_zaranj = {
-				color={ 204 160 60 }
-				color2={ 255 255 255 }
+				color = { 142 169 80 }
 				
-				b_zaranj = {
-				}
-				b_zabol = {
-				}
-				b_zahak = {
-				}
-				b_rudbar = {
-				}
-				b_milak = {
-				}
-				b_bonjar = {
-				}
-				b_nimeh = {
-				}
+				b_soro = {}
+				b_zaranj = {}
+				b_mulla_jamal = {}
+				b_khvajeh_aziz = {}
+				b_haji_abdurrahman = {}
+				b_khvabgah = {}
+				b_aqa_mosammad_khan = {}
+				b_din_mosammad = {}
 			}
 			c_farrah = {
 				color={ 173 140 84 }
@@ -25656,13 +25641,16 @@ e_sassanid = {
 				b_chanechahan = {}
 			}
 			c_nishapur = {
-				color={ 111 162 21 }
-				color2={ 255 255 255 }
-
-				holy_site = zoroastrian # The Great Fire of Adur Burzen-Mehr
-				holy_site = yazidi
-				holy_site = zun_pagan
-				holy_site = zun_pagan_reformed
+				color = { 111 162 21 }
+					holy_site = zoroastrian
+					holy_site = mani
+					holy_site = mani_mithra
+					holy_site = zor_angra
+					holy_site = zor_hindu
+					holy_site = ahriman_reformed
+					holy_site = mazdakism_reformed
+					holy_site = zor_angra_reformed
+					holy_site = zurvanism_reformed
 				
 				b_nishapur = {
 				}
@@ -25771,10 +25759,10 @@ e_sassanid = {
 			capital = 630 # Merv
 			
 			c_merv = {
-				color={ 156 204 73 }
-				color2={ 255 255 255 }
-				
-				holy_site = nestorian # Metropolitan site and important for missionaries
+				color = { 156 204 73 }
+					holy_site = mani
+					holy_site = tengri_mani
+					holy_site = tengri_mani_reformed
 				
 				b_merv = {
 				}
