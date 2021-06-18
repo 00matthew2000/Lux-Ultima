@@ -25490,10 +25490,8 @@ e_sassanid = {
 			culture = persian
 			
 			c_shirvan = {
-				color={ 162 234 22 }
-				color2={ 255 255 255 }
-				
-				holy_site = mani_mithra
+				color = { 162 234 22 }
+					holy_site = mani_mithra
 				
 				b_baku = {
 				}
@@ -25534,23 +25532,16 @@ e_sassanid = {
 				}
 			}
 			c_tabriz = {
-				color={ 106 115 180 }
-				color2={ 255 255 255 }
+				color = { 164 236 24 }
 				
-				b_babak = {
-				}
-				b_tabriz = {
-				}
-				b_ahar = {
-				}
-				b_zahhak = {
-				}
-				b_sarab = {
-				}
-				b_shabestar = {
-				}
-				b_dihnakhirjan = {
-				}
+				b_urmiah = {}
+				b_kapalak = {}
+				b_takhtesuleiman = {}
+				b_bastam = {}
+				b_maku = {} 
+				b_kalaberd = {}
+				b_chaldoran = {}
+				b_deglane = {}
 			}
 		}
 	}
