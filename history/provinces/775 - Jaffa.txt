@@ -4,7 +4,7 @@
 title = c_jaffa
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 b_jaffa = castle
 b_arsuf = city
 b_lydda = temple
@@ -17,11 +17,7 @@ b_lydda = temple
 
 # Misc
 culture = levantine_arabic
-religion = orthodox
-
-# History
-867.1.1 = { religion = sunni }
-1110.1.1= { b_ibelin = castle }
-1231.1.1 = { trade_post = b_faliero }
+religion = plato_islam
+1066.1.1 = { }
 
 

@@ -16,19 +16,7 @@ b_comanagene = temple
 #b_germanikeia = city
 
 # Misc
+culture = armenian
+religion = docetist
 terrain = mountain
-culture = greek
-religion = orthodox
-
-# History
-700.1.1 = { religion = orthodox } # iconoclast
-#930.1.1 = { religion = orthodox }
-
-910.1.1 = {
-	culture = armenian
-	religion = miaphysite
-}
-
-1177.1.1 = { culture = turkish }
-1177.1.1 = { religion = sunni }
-1187.1.1 = { b_germanikeia = city }
+1066.1.1 = { }

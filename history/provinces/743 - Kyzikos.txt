@@ -4,7 +4,7 @@
 title = c_kyzikos
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 b_kyzikos = castle
 b_artake = city
 b_militopolis = temple
@@ -17,12 +17,6 @@ b_militopolis = temple
 
 # Misc
 culture = greek
-religion = orthodox
+religion = montanist
 terrain = hills
-
-# History
-760.1.1 = { religion = orthodox } #iconoclast
-#787.10.23 = { religion = orthodox }
-
-1209.1.1 = { trade_post = b_ziani }
-
+1066.1.1 = { }

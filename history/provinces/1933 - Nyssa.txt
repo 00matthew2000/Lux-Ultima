@@ -4,17 +4,10 @@
 title = c_nyssa
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
 b_nyssa = castle
 b_archelais = city
 
 # Misc
 culture = galatian
-religion = orthodox
-
-# History
-720.1.1 = { religion = iconoclast }
-855.1.1 = { religion = orthodox }
-
-1091.8.26 = { culture = galatian }
-1091.8.26 = { religion = sunni }
+religion = mithra_sol

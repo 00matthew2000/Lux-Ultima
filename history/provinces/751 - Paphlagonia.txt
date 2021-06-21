@@ -18,21 +18,5 @@ b_gangra = temple
 
 # Misc
 culture = galatian
-religion = orthodox
-
-# History
-730.1.1 = { religion = orthodox } #iconoclast
-#850.1.1 = { religion = orthodox }
-
-
-# The Seljuks take over Anatolia
-
-1187.1.1 = { b_safranbolu = castle } 
-
- # Fourth Crusade
-
-1204.5.16 = { 
-	culture = galatian
-	religion = sunni 
-}
-
+religion = mithra_sol
+1066.1.1 = { }

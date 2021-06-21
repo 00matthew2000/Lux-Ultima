@@ -6,7 +6,7 @@ title = c_kathiri
 # Settlements
 max_settlements = 4
 b_shabwa = tribal
-#b_qana = city
+b_qana = city
 #b_lodar = temple
 
 #b_seiyun = castle
@@ -17,11 +17,5 @@ b_shabwa = tribal
 
 # Misc
 culture = sabaean
-religion = ibadi
-
-# History
-850.1.1 = {
-	religion = sunni
-	b_shabwa = castle
-}
-1066.1.1 = { b_qana = city }
+religion = almaqah
+1066.1.1 = { }

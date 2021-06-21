@@ -4,12 +4,12 @@
 title = c_mahra
 
 # Settlements
-max_settlements = 3
-b_ghaydah = tribal
-#b_nishtun = city
-#b_damqwat = temple
+max_settlements = 4
+b_ghaydah = castle
+b_nishtun = city
+b_itab = castle
 
-#b_itab = castle
+#b_damqwat = temple
 #b_qishn = castle
 #b_haswayn = castle
 #b_alkurah = castle
@@ -17,10 +17,5 @@ b_ghaydah = tribal
 
 # Misc
 culture = sabaean
-religion = sunni
-
-# History
-1066.1.1 = {
-	b_ghaydah = castle
-	b_nishtun = city
-}
+religion = shams
+1066.1.1 = { }

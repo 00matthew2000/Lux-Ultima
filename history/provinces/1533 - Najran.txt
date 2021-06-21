@@ -4,18 +4,11 @@
 title = c_najran
 
 # Settlements
-max_settlements = 3
-b_najran = tribal
-
-#b_sada = temple
-#b_huth = city
+max_settlements = 4
+b_najran = castle
+b_sada = temple
+b_huth = city
 
 # Misc
 culture = sabaean
-religion = ibadi
-
-# History
-850.1.1 = { religion = shiite }
-1000.1.1 = {
-	b_najran = castle
-}
+religion = hubal
