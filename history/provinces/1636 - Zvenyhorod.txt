@@ -8,7 +8,7 @@ max_settlements = 4
 
 b_zvenyhorod = tribal
 #b_lvov = city
-#b_butsk = temple
+b_butsk = temple
 
 #b_sambir = castle
 #b_udech = castle
@@ -16,17 +16,5 @@ b_zvenyhorod = tribal
 #b_rogozhyn = castle
 
 # Misc
-culture = volhynian
-religion = slavic_pagan
-
-# History
-867.1.1 = {
-	culture = russian
-}
-988.1.1 = {
-	religion = orthodox
-	b_zvenyhorod = castle
-	b_lvov = city
-	b_butsk = temple
-}
-1187.1.1 = { b_sambir = castle }
+culture = russian
+religion = mani_slavic

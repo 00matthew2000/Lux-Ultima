@@ -8,7 +8,7 @@ max_settlements = 3
 
 b_dobrzyn = tribal
 #b_wloclawek = city
-#b_lipno = temple
+b_lipno = temple
 
 #b_rypin = castle
 #b_skepe = castle
@@ -17,10 +17,4 @@ b_dobrzyn = tribal
 
 # Misc
 culture = polish
-religion = slavic_pagan
-
-# History
-969.1.1 = {
-	religion = catholic
-	b_dobrzyn = castle
-}
+religion = svetovid

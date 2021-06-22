@@ -7,7 +7,7 @@ title = c_sieradzka
 max_settlements = 4
 
 b_sieradz = tribal
-#b_piotrkow = temple
+b_piotrkow = temple
 #b_przedborz = city
 
 #b_szadek = castle
@@ -17,12 +17,4 @@ b_sieradz = tribal
 
 # Misc
 culture = polish
-religion = slavic_pagan
-
-# History
-969.1.1 = {
-	religion = catholic
-	b_sieradz = castle
-	b_piotrkow = temple
-	b_przedborz = city
-}
+religion = svetovid

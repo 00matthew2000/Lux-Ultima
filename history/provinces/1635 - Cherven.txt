@@ -7,25 +7,15 @@ title = c_cherven
 max_settlements = 5
 
 b_cherven = tribal
-#b_volyn
-#b_hrubeshiv
+b_volyn = city
+b_hrubeshiv = temple
 
-#b_saciaska
+b_saciaska = tribal
 #b_kholm_ch	#"ch" added because the amount of places named Kholm is too damn high
 #b_krasnystaw
 #b_suteysk
 
 # Misc
-culture = volhynian
-religion = slavic_pagan
-
-# History
-867.1.1 = {
-	culture = russian
-}
-989.1.1 = {
-	religion = orthodox
-	b_cherven = castle
-	b_volyn = city
-	b_hrubeshiv = temple
-}
+culture = russian
+religion = rod
+1066.1.1 = { }

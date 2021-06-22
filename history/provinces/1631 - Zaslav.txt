@@ -8,7 +8,7 @@ max_settlements = 4
 
 b_zaslav = tribal
 #b_kremyanets = city
-#b_plisnesk = temple
+b_plisnesk = temple
 
 #b_buzhesk
 #b_ostroh
@@ -16,16 +16,5 @@ b_zaslav = tribal
 #b_slavuta
 
 # Misc
-culture = volhynian
-religion = slavic_pagan
-
-# History
-867.1.1 = {
-	culture = russian
-}
-988.1.1 = {
-	religion = orthodox
-	b_zaslav = castle
-	b_kremyanets = city
-	b_plisnesk = temple
-}
+culture = russian
+religion = rod
