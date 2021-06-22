@@ -9,22 +9,12 @@ b_melk = tribal
 
 # Misc
 culture = bavarian
-religion = slavic_pagan
+religion = mani
 
 # History
 
 846.1.1 = { 
-	culture = bavarian
-	religion = catholic
-	b_zelking = castle
-	b_melk = city
-	b_stpolten = city
-	capital = b_zelking
-}
-930.1.1 = {
-	b_zelking = tribal
-}
-950.1.1 = {
-	b_zelking = castle
+	b_zelking = city
+	b_stpolten = temple
 }
 

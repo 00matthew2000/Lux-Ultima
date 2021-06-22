@@ -6,8 +6,8 @@ title = c_syrte
 # Settlements
 max_settlements = 3
 
-b_syrte = tribal
-b_assidr = temple
+b_syrte = castle
+b_assidr = city
 
 #b_abuhadi = city
 #b_lanuf = castle
@@ -15,12 +15,4 @@ b_assidr = temple
 
 # Misc
 culture = berber
-religion = ibadi
-
-# History
-1051.1.1 = {
-	religion = sunni
-	b_syrte = castle
-	b_abuhadi = city
-}
-1168.1.1 = { trade_post = b_ziani }
+religion = amanai
