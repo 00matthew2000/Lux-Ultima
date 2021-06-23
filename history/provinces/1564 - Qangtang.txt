@@ -2,21 +2,16 @@
 title = c_qangtang
 
 # Settlements
-max_settlements = 2
+max_settlements = 7
 
-b_bairab = tribal
-#b_burog = 
-#b_margai = {
-#b_yurba = {
-#b_satso = {
-#b_zhoyon = {
-#b_laxong = {
+b_bairab = castle
+b_burog = city
+b_margai = temple
+b_yurba = temple
+b_satso = castle
+#b_zhoyon = castle
+#b_laxong = temple
 
 # Misc
 culture = xiongnu
-religion = bon
-
-# History
-900.1.1 = {
-	culture = xiongnu
-} #The Sumpa culture is fully absorbed by Tibetan culture
+religion = tao

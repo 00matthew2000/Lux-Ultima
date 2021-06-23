@@ -4,19 +4,15 @@ title = c_nagchu
 # Settlements
 max_settlements = 4
 
-b_namra = tribal #Capital of Sumpa kingdom, according to Eternal Bon texts
+b_namra = castle #Capital of Sumpa kingdom, according to Eternal Bon texts
 b_nagchu = city
-#b_lhomar = 
+b_lhomar = temple
 #b_golug = {
 #b_khormang = {
 #b_daqen = {
 #b_yochak = {
 
 # Misc
-culture = sumpa
+culture = bodpa
 religion = bon
 
-# History
-800.1.1 = {
-	culture = bodpa
-} #The Sumpa culture is absorbed by Tibetan culture in the Nagchu region

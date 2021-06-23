@@ -2,11 +2,11 @@
 title = c_gyantse
 
 # Settlements
-max_settlements = 5
+max_settlements = 4
 
 b_gyantse = castle
 b_palcho = temple
-b_bainang = city
+b_bainang = temple
 #b_kangmar = {
 #b_rinbung = {
 #b_yatung = {
@@ -14,15 +14,5 @@ b_bainang = city
 
 # Misc
 culture = bodpa
-religion = buddhist
+religion = bud_sthaviravada
 
-# History
-641.1.1 = {
-	religion = buddhist
-}# Songtsen Gampo promotes Buddhism
-840.1.1 = {
-	religion = bon
-}# Langdarma persecutes Buddhism and promotes Bon
-1045.1.1 = {
-	religion = buddhist
-}# Atisa's renewal of Buddhism in Central Tibet

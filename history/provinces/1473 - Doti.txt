@@ -4,19 +4,15 @@ title = c_doti
 # Settlements
 max_settlements = 4
 
-b_dullu = castle
-b_dailekh = city
-#b_gularia = {
-#b_mahendranagar = {
+b_dailekh = castle
+b_mahendranagar = temple
+b_dullu = city
+b_gularia = temple
+
 #b_dadeldhura = {
 #b_dhamboji = {
 #b_khalanga = {
 
 # Misc
 culture = maghada
-religion = buddhist
-
-# History
-1041.1.1 = {
-	religion = hindu
-}#Hinduism influence spread in Nepal during the 11th century via relations with the Chalukya, reducing the once flourishing Buddhism.
+religion = bud_sthaviravada

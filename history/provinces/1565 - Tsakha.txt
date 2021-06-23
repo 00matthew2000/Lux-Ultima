@@ -2,10 +2,9 @@
 title = c_tsakha
 
 # Settlements
-max_settlements = 2
-
-b_tsakha = tribal
-#b_sharma = 
+max_settlements = 4
+b_tsakha = castle
+b_sharma = city
 #b_nyer = 
 #b_rungra = 
 #b_gacha = 
@@ -13,10 +12,6 @@ b_tsakha = tribal
 #b_perotse = 
 
 # Misc
-culture = zhangzhung
+culture = bodpa
 religion = bon
 
-# History
-1050.1.1 = {
-	culture =  bodpa
-}# Zhangzhung culture becomes mostly absorbed by Tibetan

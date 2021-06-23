@@ -2,24 +2,15 @@
 title = c_mustang
 
 # Settlements
-max_settlements = 3
-
-b_lo = castle
-b_chhonhup = city
-b_tetang = temple
-#b_kagbeni = {
-#b_chhusang = {
-#b_chhoser = {
-#b_drak_gyawu = {
+max_settlements = 5
+#b_lo = castle
+b_chhonhup = castle
+b_muktinath = temple
+b_kagbeni = castle
+#b_chhusang = castle
+#b_marpha = city
+#b_chhoser = castle
 
 # Misc
-culture = zhangzhung
-religion = bon
-
-# History
-1050.1.1 = {
-	culture =  bodpa
-}# Zhangzhung culture becomes mostly absorbed by Tibetan
-1045.1.1 = {
-	religion = buddhist
-}# Atisa's renewal of Buddhism in Central Tibet
+culture = maghada
+religion = bud_sthaviravada

@@ -2,21 +2,16 @@
 title = c_kurmanchal
 
 # Settlements
-max_settlements = 5
-
-b_kartikeyapura = castle
-b_katarmal = city
-b_askot_kurmanchal = temple
-#b_govishana = {
-#b_ranikhet = {
-#b_didihat = {
-#b_champawat = {
+max_settlements = 4
+b_almora = castle
+b_kartikkeyapura = city
+b_haridwara = temple
+#b_mirai_malli =
+#b_bhimtal =
+#b_nainital =
+#b_danya =
+#b_rungri =
 
 # Misc
 culture = maghada
-religion = buddhist
-
-# History
-810.1.1 = {
-	religion = hindu
-}#Influence of Hinduism speaks in Uttaranchal by Adi Shankara and decreases adherents to Buddhism
+religion = bud_sthaviravada
