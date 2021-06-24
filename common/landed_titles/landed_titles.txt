@@ -35050,6 +35050,62 @@ e_abyssinia = {
 				b_et_taba = {} # Fictional - For Prosperity
 			}
 		}
+		d_kharal = {
+
+			color = { 143 40 115 }
+			color2 = { 250 250 250 }
+
+			capital = 3359 
+
+			c_khartoum = {
+
+				color = { 43 130 210 }
+				color2 = { 250 250 250 }
+
+				b_khartoum = {
+				}
+				b_zureiqa = {
+				}
+				b_wadhamid = {
+				}
+				b_aulia = {
+				}
+			}
+		}
+		d_malakal = {
+			color = { 100 32 43 }
+			capital = 3480 #Gondokoro
+			
+			c_albara = {
+
+				color = { 43 12 56 }
+
+				b_albara = {
+				}
+				b_mikniya = {
+				}
+				b_shereiq = {
+				}
+				b_abidiya = {
+				}
+			}
+			c_zeidab = {
+
+				color = { 203 168 73 }}
+				
+				holy_site = zande_pagan
+				holy_site = zande_pagan_reformed
+
+				b_zeidab = {
+				}
+				b_ganael = {
+				}
+				b_taragma = {
+				}
+				b_dogwaya = {
+				}
+			}
+		}
 		d_khordofan = {
 			color = { 54 10 134 }
 			
@@ -35483,165 +35539,18 @@ e_abyssinia = {
 				b_lughaya = {}
 			}
 		}
-		d_mogadishu = {
-			color = { 140 83 200 }
-			roman = "Erythrea Adalia" 
-			
-			capital = 2341 # Mogadishu
-
-			c_mogadishu = {
-				color = { 24 50 177 }
-				roman = "Serapium" 
-				greek = "Sarapion" 
-				hellenistic = "Sarapion" 
-					holy_site = batembuzi
-					holy_site = imana
-					holy_site = kintu
-					holy_site = makonde_pagan
-					holy_site = mwari
-					holy_site = nyasaye
-					holy_site = nyau
-					holy_site = zande_pagan
-					holy_site = zulu_pagan
-					holy_site = bantu_pagan_reformed
-					holy_site = nyakalagan_reformed
-					holy_site = zande_pagan_reformed
-					holy_site = zulu_pagan_reformed
-			
-				b_mogadishu = {
-				}
-				b_warsheikh = {
-				}
-				b_hamar_weyne = {
-				}
-				b_shangani = {
-				}
-				b_afgooye = {
-				}
-				b_xamar = {
-				}
-				b_mareeg = {
-				}
-				b_adale = {
-				}
-			}
-			c_marka = {
-				color={ 236 225 95 }
-				color2={ 255 255 255 }
-			
-				b_marka = {
-				}
-				b_gendershe = {
-				}
-				b_shalan_bood = {
-				}
-				b_janaale = {
-				}
-				b_golweyn = {
-				}
-				b_qoryoley = {
-				}
-				b_buulo_mareer = {
-				}
-				b_awdheegle = {
-				}
-			}
-		}
-		d_baraawe = {
-			color={ 196 215 139 }
-			color2={ 255 255 255 }
-			
-			capital = 2342 # Barawa
-
-			c_baraawe = {
-				color={ 196 225 149 }
-				color2={ 255 255 255 }
-			
-				b_barawa = {
-				}
-				b_haramka = {
-				}
-				b_diinsoor = {
-				}
-				b_jilib = {
-				}
-				b_dujuma = {
-				}
-				b_saacow = {
-				}
-				b_xabaalo_barbar = {
-				}
-				b_jilaani = {
-				}
-			}
-			c_kismaayo = {
-				color={ 196 225 159 }
-				color2={ 255 255 255 }
-			
-				b_kismaayo = {
-				}
-				b_goobweyn = {
-				}
-				b_yoontoy = {
-				}
-				b_rassini = {
-				}
-				b_kaambooni = {
-				}
-				b_kolbio = {
-				}
-				b_turdo = {
-				}
-				b_jamaane = {
-				}
-			}
-		}
 		d_urgoma = {
 			color = { 130 42 56 }
 			
 			capital = 2329 # Qalaafe
 
 			c_qalaafe = {
-				color={ 159 225 75 }
-				color2={ 255 255 255 }
-			
-				b_qalaafe = {
-				}
-				b_beledweyne = {
-				}
-				b_el_dher = {
-				}
-				b_farlibaax = {
-				}
-				b_hanan = {
-				}
-				b_shilabe = {
-				}
-				b_korahe = {
-				}
-				b_werder = {
-				}
-			}
-			c_bardera = {
-				color={ 159 225 85 }
-				color2={ 255 255 255 }
-			
-				b_bardera = {
-				}
-				b_baidoa = {
-				}
-				b_luuq = {
-				}
-				b_madiino = {
-				}
-				b_garbahaarey = {
-				}
-				b_buurdhuubo = {
-				}
-				b_wajid = {
-				}
-				b_mandera_bardera = {
-				}
+				color = { 125 43 60 }
+				
+				b_gode = {}
+				b_degehabur = {}
+				b_geladin = {}
+				b_shinile = {}
 			}
 			c_bali = {
 				color={ 179 135 126 }
@@ -35686,18 +35595,6 @@ e_abyssinia = {
 				}
 			}
 		}
-	}
-	
-	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture_group = east_african
-			}
-		}
-		has_landed_title=k_egypt
-		has_landed_title=k_nubia
-		has_landed_title=k_abyssinia
 	}
 }
 
