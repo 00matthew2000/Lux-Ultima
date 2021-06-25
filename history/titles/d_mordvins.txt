@@ -1,65 +1,19 @@
-750.1.1 = {
-	holder = 194152
-	set_tribute_suzerain = { who = d_burtas type = nomadic }
-}
-799.1.1 = {
-	clear_tribute_suzerain = d_burtas
-	holder = 194153
-}
-822.1.1 = {
-	holder = 194154
-}
-860.1.1={
-	holder=0
-}
+#Chiefs of the Mari before this, maybe?
+680.1.1={ holder=1711516 historical_nomad = yes }
+702.1.1={ holder=1711530 }
+772.1.1={ holder=1711517 }
+820.1.1={ holder=1711518 }
+849.1.1={ holder=1711519 }
+882.1.1={ holder=1711520 }
+925.1.1={ holder=1711521 }
+937.1.1={ holder=1711522 }
+958.1.1={ holder=1711523 }
+994.1.1={ holder=1711524 }
+1008.1.1={ holder=1711525 }
+1015.1.1={ holder=1711526 }
+1022.1.1={ holder=1711527 }
+1033.1.1={ holder=1711528 }
 1066.1.1={
-	holder=20628
-}
-1120.1.1={
-	holder=143146
-}
-1187.1.1=
-{
-holder=228070
-}
-1236.1.2=
-{
-liege="e_golden_horde"
-holder=125507
-}
-1255.1.2=
-{
-holder=125505
-}
-1256.1.2=
-{
-holder=125506
-}
-1257.1.2=
-{
-holder=125504
-}
-1266.1.2=
-{
-holder=125508
-}
-1280.1.2=
-{
-holder=125509
-}
-1287.1.2=
-{
-holder=125511
-}
-1291.1.2=
-{
-holder=125512
-}
-1312.1.2=
-{
-holder=480000
-}
-1337.1.1=
-{
-holder=428070
+	holder=939
+	law = agnatic_succession
 }

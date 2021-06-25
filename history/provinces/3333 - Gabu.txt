@@ -5,10 +5,9 @@ title = c_gabu
 
 # Settlements
 max_settlements = 4
-b_gabu = tribal
-
-#b_yaresna = city
-#b_ghiyaru = temple
+b_gabu = city
+b_yaresna = castle
+b_ghiyaru = temple
 #b_diouboye = castle
 #b_goundafal = castle
 #b_sankaran = castle
@@ -16,12 +15,40 @@ b_gabu = tribal
 
 # Misc
 culture = phoenician
-religion = west_african_pagan
+religion = hadad
 
-# History
-1250.1.1 = { religion = sunni }
-1300.1.1 = {
-	b_gabu = castle
-	b_dayankara = city
-	b_dubaduhanda = temple
+#History
+1066.1.1 = {
+	b_gabu = ct_control_1
+	b_gabu = ct_control_2
+	b_gabu = ct_control_3
+	b_gabu = ct_control_4
+	b_gabu = ct_control_5
+	b_gabu = ct_control_6
+	b_gabu = ct_control_7
+	b_gabu = ct_admin_1
+	b_gabu = ct_admin_2
+	b_gabu = ct_admin_3
+	b_gabu = ct_admin_4
+	b_gabu = ct_admin_5
+	b_gabu = ct_admin_6
+	b_gabu = ct_admin_7
+	b_gabu = ct_definit_1
+	b_gabu = ct_definit_2
+	b_gabu = ct_wall_1
+	b_gabu = ct_wall_2
+	b_gabu = ct_partner_1
+	b_gabu = ct_partner_2
+	b_gabu = ct_partner_3
+	b_gabu = ct_partner_4
+	b_gabu = ct_partner_5
+	b_gabu = ct_partner_6
+	b_gabu = ct_partner_7
+	b_gabu = ct_marketplace_1
+	b_gabu = ct_farming_1
+	b_gabu = ct_farming_2
+	b_gabu = ct_farming_3
+	b_gabu = ct_herding_1
+	b_gabu = ct_herding_2
+	b_gabu = ct_herding_3
 }

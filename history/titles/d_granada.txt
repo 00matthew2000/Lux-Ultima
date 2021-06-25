@@ -1,54 +1,58 @@
-1012.1.1={
-	holder=45014 # Zawi Zirid
-	liege=0
+410.1.1={ holder = 10000 }
+428.1.1={ holder = 10001 }
+477.1.1={ holder = 10002 }
+484.1.1={ holder = 10004 }
+496.1.1={ holder = 10005 }
+523.1.1={ holder = 10006 }
+532.1.1={ holder = 10007 }
+547.1.1={ holder = 0 }
+550.1.1=
+{
+holder=10008
 }
-1019.1.1={
-	holder=45015 # Habud Zirid
+575.1.1=
+{
+holder=1716000
 }
-1038.1.1={
-	holder=45016 # Badis Zirid
+633.1.1=
+{
+holder=1716001
 }
-1073.1.1={
-	holder=32952 # Abdallah Zirid
+667.1.1=
+{
+holder=1716002
 }
-1090.1.1={
-	holder=0
+700.1.1=
+{
+holder=1716003
 }
-1145.1.1={
-	holder=73259 # Ya'far Adhavid
-	liege=0
+754.1.1=
+{
+holder=1716004
 }
-1145.7.1={
-	holder=73181 # Ahmad Hudid
+804.1.1=
+{
+holder=1716005
 }
-1146.1.1={
-	holder=0
+854.1.1=
+{
+holder=1716006
 }
-1237.1.1={
-	holder=73651 # Muhammad I Nasrid
-	liege=0
+873.1.1=
+{
+holder=1716007
 }
-1245.1.1={
-	set_tribute_suzerain = {
-		who = k_castille
-		type = permanent 
-	}
+897.1.1=
+{
+holder=1716008
 }
-1273.1.1={
-	holder=73650 # Muhammad II Nasrid
+924.1.1=
+{
+holder=1716009
 }
-1302.4.7={
-	holder=73647 # Muhammad III Nasrid
-}
-1309.3.14={
-	holder=73646 # Nasr Nasrid
-}
-1314.2.8={
-	holder=73641 # Isma'il Nasrid
-}
-1325.1.1={
-	holder=487001 # Muhammad IV Nasrid
-}
-1333.1.1={
-	holder=487000 # Yusuf Nasrid
+955.1.1={ holder = 1715992 }
+1003.1.1={ holder = 1715991 } 
+1058.1.1={
+	holder=716
+	law = agnatic_succession
 }

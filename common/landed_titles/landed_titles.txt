@@ -4734,11 +4734,23 @@ e_german = {
 				}
 			}
 		}
-		d_trier = {
+		d_lower_lorraine = {
 			color = { 166 157 157 }
 
-			capital = 118 # Trier
+			capital = 1986 # Pfalz
 
+			c_saargau = {
+				color = { 117 117 117 }
+			
+				b_kaiserslautern = {}
+				b_worms = {}
+				b_hagenau = {}
+				b_stahleck = {}
+				b_trifels = {}
+				b_speyer = {}
+				b_zweibrucken = {}
+				b_saarbrucken = {}
+			}
 			c_trier = {
 				color = { 135 135 135 }
 			
@@ -4783,18 +4795,6 @@ e_german = {
 				}
 				b_audunleroman = {
 				}
-			}
-			c_saargau = {
-				color = { 117 117 117 }
-			
-				b_kaiserslautern = {}
-				b_worms = {}
-				b_hagenau = {}
-				b_stahleck = {}
-				b_trifels = {}
-				b_speyer = {}
-				b_zweibrucken = {}
-				b_saarbrucken = {}
 			}
 		}
 	}
@@ -26480,24 +26480,6 @@ e_france = {
 	culture = frankish
 
 	roman = "Gallia"
-	
-	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture = frankish
-				culture = norman
-				culture = occitan
-			}
-		}
-		any_demesne_title = {
-			tier = king
-			NOT = { title = k_france }
-			NOT = { title = k_aquitaine }
-			NOT = { title = k_brittany }
-			NOT = { title = k_burgundy }
-		}
-	}
 
 	k_normandy = {
 		color = { 169 35 75 }
@@ -26740,6 +26722,25 @@ e_france = {
 				b_montbazon = {
 				}
 			}
+			c_saumur = {
+				color={ 65 26 218 }
+				color2={ 255 255 255 }
+				
+				b_saumur = {
+				}
+				b_cholet = {
+				}
+				b_fontevraud-l_abbaye = {
+				}
+				b_doue_la_fontaine = {
+				}
+				b_maulevrier = {
+				}
+				b_beaupreau = {
+				}
+				b_vauchretien = {
+				}
+			}
 			c_bourges = {
 				color = { 30 58 232 }
 				
@@ -26789,25 +26790,6 @@ e_france = {
 				b_cholet = {}
 				b_treves = {}
 				b_chateaugontier = {}
-			}
-			c_saumur = {
-				color={ 65 26 218 }
-				color2={ 255 255 255 }
-				
-				b_saumur = {
-				}
-				b_cholet = {
-				}
-				b_fontevraud-l_abbaye = {
-				}
-				b_doue_la_fontaine = {
-				}
-				b_maulevrier = {
-				}
-				b_beaupreau = {
-				}
-				b_vauchretien = {
-				}
 			}
 			c_maine = {
 				color={ 49 30 232 }
@@ -27213,28 +27195,6 @@ e_france = {
 			color2={ 255 255 255 }
 			capital = 136 # Dijon
 			
-			c_chalons = {
-				color={ 161 22 60 }
-				color2={ 255 255 255 }
-				
-				b_brancion = {
-				}
-				b_chalon = {
-				}
-				b_tournus = {
-				}
-				b_louhans = {
-				}
-				b_chamilly = {
-				}
-				b_seurre = {
-				}
-				b_stjeandelosne = {
-				}
-				b_cuisery = {
-				}
-			}
-			
 			c_auxerre = {
 				color={ 97 26 228 }
 				color2={ 255 255 255 }
@@ -27436,6 +27396,27 @@ e_france = {
 				b_maiche = {
 				}
 				b_morteau = {
+				}
+			}
+			c_chalons = {
+				color={ 161 22 60 }
+				color2={ 255 255 255 }
+				
+				b_brancion = {
+				}
+				b_chalon = {
+				}
+				b_tournus = {
+				}
+				b_louhans = {
+				}
+				b_chamilly = {
+				}
+				b_seurre = {
+				}
+				b_stjeandelosne = {
+				}
+				b_cuisery = {
 				}
 			}
 			c_amous = {
@@ -27662,14 +27643,9 @@ e_gallia = {
 	capital = 149
 	
 	k_brittany = {
-		color={ 165 49 16 }
-		color2={ 255 255 255 }
+		color = { 153 54 110 }
 		
 		capital = 105 # Vannes
-		
-		culture = breton
-		
-		catholic = 300 # Crusade target weight
 		
 		breton = Breizh
 		norse = Bertangaland
@@ -27677,15 +27653,6 @@ e_gallia = {
 		irish = Bhriotáin
 		frankish = Bretagne
 		roman = Armorica
-		
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture_group = celtic
-				}
-			}
-		}
 		
 		d_loire = {	
 			color = { 140 20 5 }
@@ -28999,7 +28966,7 @@ e_spain = {
 		}
 	}
 
-	k_valencia = {
+	k_aragon = {
 		color = { 27 71 127 }
 
 		capital = 171 # Valencia
@@ -29008,7 +28975,7 @@ e_spain = {
 		roman = "Carthaginensis"
 		greek = "Carthaginensis"
 
-		muslim = 25 # Crusade target weight
+		adoptionist = 10000
 
 		d_valencia = {
 			color = { 37 71 127 }
@@ -29101,6 +29068,76 @@ e_spain = {
 				}
 			}
 		}
+		d_mallorca = {
+			color = { 30 45 233 }
+			
+			capital = 827 # Mallorca
+			
+			c_mallorca = {
+				color = { 255 249 3 }
+				color2={ 255 255 255 }
+				
+				bedouin_arabic = "Mayurqa"
+				maghreb_arabic = "Mayurqa"
+				levantine_arabic = "Mayurqa"
+				egyptian_arabic = "Mayurqa"
+				andalusian_arabic = "Mayurqa"
+				
+				b_alcudia = {
+				}
+				b_palma = {
+					bedouin_arabic = "Madinat Mayurqa"
+					maghreb_arabic = "Madinat Mayurqa"
+					levantine_arabic = "Madinat Mayurqa"
+					egyptian_arabic = "Madinat Mayurqa"
+					andalusian_arabic = "Madinat Mayurqa"
+				}
+				b_algaida = {
+				}
+				b_felanitx = {
+				}
+				b_santaponsa = {
+				}
+				b_eivissa = {
+				}
+				b_manacor = {
+				}
+				b_formentera = {
+				}
+			}
+			c_menorca = {
+				color = { 255 252 6 }
+				color2={ 255 255 255 }
+				
+				bedouin_arabic = "Manurqa"
+				maghreb_arabic = "Manurqa"
+				levantine_arabic = "Manurqa"
+				egyptian_arabic = "Manurqa"
+				andalusian_arabic = "Manurqa"
+				
+				b_ciutadella = {
+					bedouin_arabic = "Madinat al-Jazirah"
+					maghreb_arabic = "Madinat al-Jazirah"
+					levantine_arabic = "Madinat al-Jazirah"
+					egyptian_arabic = "Madinat al-Jazirah"
+					andalusian_arabic = "Madinat al-Jazirah"
+				} 
+				b_mahon = {
+				}
+				b_alaior = {
+				}
+				b_santaagueda = {
+				}
+				b_esmercadal = {
+				}
+				b_santlluis = {
+				}
+				b_ferreries = {
+				}
+				b_escastell = {
+				}
+			}
+		}
 		d_barcelona = {
 			color = { 166 100 72 }
 			color2={ 255 255 255 }
@@ -29120,6 +29157,8 @@ e_spain = {
 				levantine_arabic = "Barshiluna"
 				egyptian_arabic = "Barshiluna"
 				andalusian_arabic = "Barshiluna"
+				
+				holy_site = arian
 				
 				b_berga = {
 				}
@@ -29207,8 +29246,7 @@ e_spain = {
 				}
 			}
 			c_lleida = {
-				color = { 140 90 20 }
-				color2={ 255 255 255 }
+				color = { 255 248 20 }
 				
 				bedouin_arabic = "Larida"
 				maghreb_arabic = "Larida"
@@ -29239,8 +29277,7 @@ e_spain = {
 				}
 			}
 			c_tarragona = {
-				color = { 186 90 45 }
-				color2={ 255 255 255 }
+				color = { 255 252 24 }
 				
 				bedouin_arabic = "Turtusha"
 				maghreb_arabic = "Turtusha"
@@ -29472,32 +29509,8 @@ e_spain = {
 		color = { 146 13 13 }
 		
 		capital = 202 # Zaragoza
-		
-		culture = castillan
 
 		roman = "Tarraconensis"
-		
-		allow = {
-			conditional_tooltip = {
-				trigger = {
-					k_aragon = {
-						is_titular = yes
-					}
-				}
-				k_aragon = {
-					is_titular = no
-				}
-			}
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					religion_group = christian
-				}
-			}		
-		}
-		
-		catholic = 250 # Crusade target weight
-		muslim = 25 # Crusade target weight
 	
 		d_aragon = {
 			color = { 166 68 72 }
@@ -29593,76 +29606,6 @@ e_spain = {
 				b_calmarza = {
 				}
 				b_cimballa = {
-				}
-			}
-		}
-		d_mallorca = {
-			color = { 30 45 233 }
-			
-			capital = 827 # Mallorca
-			
-			c_mallorca = {
-				color = { 255 249 3 }
-				color2={ 255 255 255 }
-				
-				bedouin_arabic = "Mayurqa"
-				maghreb_arabic = "Mayurqa"
-				levantine_arabic = "Mayurqa"
-				egyptian_arabic = "Mayurqa"
-				andalusian_arabic = "Mayurqa"
-				
-				b_alcudia = {
-				}
-				b_palma = {
-					bedouin_arabic = "Madinat Mayurqa"
-					maghreb_arabic = "Madinat Mayurqa"
-					levantine_arabic = "Madinat Mayurqa"
-					egyptian_arabic = "Madinat Mayurqa"
-					andalusian_arabic = "Madinat Mayurqa"
-				}
-				b_algaida = {
-				}
-				b_felanitx = {
-				}
-				b_santaponsa = {
-				}
-				b_eivissa = {
-				}
-				b_manacor = {
-				}
-				b_formentera = {
-				}
-			}
-			c_menorca = {
-				color = { 255 252 6 }
-				color2={ 255 255 255 }
-				
-				bedouin_arabic = "Manurqa"
-				maghreb_arabic = "Manurqa"
-				levantine_arabic = "Manurqa"
-				egyptian_arabic = "Manurqa"
-				andalusian_arabic = "Manurqa"
-				
-				b_ciutadella = {
-					bedouin_arabic = "Madinat al-Jazirah"
-					maghreb_arabic = "Madinat al-Jazirah"
-					levantine_arabic = "Madinat al-Jazirah"
-					egyptian_arabic = "Madinat al-Jazirah"
-					andalusian_arabic = "Madinat al-Jazirah"
-				} 
-				b_mahon = {
-				}
-				b_alaior = {
-				}
-				b_santaagueda = {
-				}
-				b_esmercadal = {
-				}
-				b_santlluis = {
-				}
-				b_ferreries = {
-				}
-				b_escastell = {
 				}
 			}
 		}
@@ -36893,7 +36836,7 @@ e_britannia = {
 				b_ashridge = {
 				}
 			}
-			c_middlesex = {
+			c_londinium = {
 				color = { 84 96 16 }
 			
 				b_fulham = {}
@@ -37633,9 +37576,10 @@ e_britannia = {
 				}
 			}
 		}
-		d_lothian = {
-			color = { 16 62 157 }
-			color2={ 255 255 255 }
+		d_labhdaidh = {
+			color = { 10 164 243 }
+			norwegian = "Loðen" 
+			brython = "Lleuddiniawn" 
 			
 			capital = 48 # Lothian
 			
@@ -37652,6 +37596,8 @@ e_britannia = {
 				pictish = "Lut"
 				welsh = "Lleuddiniawn"
 				irish = "Labhdaidh"
+				norwegian = "Loðen" 
+				brython = "Lleuddiniawn" 
 	
 				b_iuddeu = {
 					pictish = "Iutheu"

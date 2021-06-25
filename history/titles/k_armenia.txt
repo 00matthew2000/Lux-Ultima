@@ -1,328 +1,87 @@
-62.1.1={
-	pentarch = b_antiocheia
-	holder=214059 # Tiridates
-}
-88.1.1={
-	holder = 0 # Sanatruces
-}
-110.1.1={
-	holder=214052 # Axidares
-}
-113.1.1={
-	holder=214053 # Parthamasiris
-}
-114.1.1={
-	holder=0 # Romans
-}
-118.1.1={
-	holder=214060 # Vologases III
-}
-144.1.1={
-	holder = 0 # Sohaemus, Bakur
-}
-186.1.1={
-	holder=159550 # Vologases V
-}
-191.1.1={
-	holder=214061 # Khosrov
-}
-217.1.1={
-	holder=214064 # Tiridates II
-}
-252.1.1={
-	holder=214065 # Khosrov II
-}
-252.6.1={
-	holder = 0 # Sassanid puppet
-}
-287.1.1={
-	holder=214066 # Tiridates III
-}
-330.1.1={
-	holder=214068 # Khosrov III
-}
-339.1.1={
-	holder=214070 # Tiran
-}
-350.1.1={
-	holder=214071 # Arshak II
-}
-370.1.1={
-	holder=214072 # Pap
-}
-374.1.1={
-	holder = 214074 # Varasdates
-}
-378.1.1={
-	holder=214073 # Arshak III
-}
-387.1.1={
-	holder=214076 # Khosrov IV
-}
-389.1.1={
-	holder=214077 # Vramshapuh
-}
-417.1.1={
-	holder=214078 # Artaxias IV
-}
-428.1.1={
-	holder=0 # Marzapanate
-}
-
-654.1.1={
-	liege="e_arabia"
-	#law = agnatic_succession
-	#law = succ_primogeniture
-}
-657.1.1={
-	liege=0
-}
-661.1.1={
-	liege="e_arabia"
-}
-732.1.1=
+1.1.1= { liege = "k_armenia" }
+1.1.1= { holder=1710273 }
+1.1.2= { holder=1710274 }
+1.1.3= { holder=1710275 }
+1.1.4= { holder=1710276 }
+1.1.5= { holder=1710277 }
+1.1.6= { holder=1710278 }
+1.1.7= { holder=1710279 }
+1.1.8= { holder=1710280 }
+1.1.9= { holder=1710281 }
+1.1.10= { holder=0 }
+1.1.11= { holder=0 } #Diadochi kings of Armenia
+1.1.12= { holder=0 }
+1.1.13= { holder=1710282 }
+1.1.14= { holder=1710283 }
+1.1.15= { holder=1710284 }
+1.1.16= { holder=1710285 }
+1.1.17= { holder=1710286 }
+1.1.18= { holder=1710287 }
+1.1.19= { holder=1710288 }
+1.1.20= { holder=1710289 }
+1.1.21= { holder=1710290 }
+1.1.22= { holder=1710291 }
+1.1.23= { holder=1710292 }
+1.1.24= { holder=1710293 }
+1.1.25= { holder= 0 } #Alexander Helios
+1.1.26= { holder=1710294 }
+1.1.27= { holder=1710295 }
+1.1.28= { holder=1710296 }
+1.1.29= { holder= 0 } #chaos between Artaxiads and Arshakunids- will do this later!
+54.1.1= { holder= 1710311 }
+91.1.1= { holder=1710312 }
+110.1.1= { holder=1710313 }
+113.1.1= { holder=1710314 }
+114.1.1= { holder = 0 } # Abgar IX, Armenian Emperor
+118.1.1= { holder=1710315 }
+144.1.1= { holder=1710316 }
+166.1.1= { holder=1710317 }
+168.1.1= { holder=1710318 }
+198.1.1= { holder=1710319 }
+217.1.1= { holder=1710320 }
+252.1.1= { holder=1710321 }
+266.1.1= { holder=1710322 }
+287.1.1= { holder=1710323 }
+315.1.1= { holder=1710324 }
+332.1.1= { holder=1710325 }
+350.1.1= { holder=1710326 }
+368.1.1= { holder=1710327 }
+378.1.1= { holder=1710328 }
+384.1.1= { holder=1710329 }
+387.1.1= { holder=1710330 }
+389.1.1= { holder=1710331 }
+417.1.1= { holder=1710332 }
+422.1.1= { holder=1710333 }
+448.1.1= { holder=1710334 }
+474.1.1= { holder=1710335 }
+502.1.1= { holder=1710336 }
+539.1.1= { holder=1710337 }
+556.1.1= { holder=1710338 }
+586.1.1= { holder=1710339 }
+633.1.1= { holder=1710340 }
+656.1.1= { holder=1710341 }
+672.1.1= { holder=1710342 }
+689.1.1= { holder=1710343 }
+709.1.1= { holder=1710344 }
+741.1.1= { holder=1710345 }
+767.1.1= { holder=1710371 } #Bagratids
+785.1.1= { holder=1710372 }
+806.1.1= { holder=1710373 }
+843.1.1= { holder=1710374 }
+865.1.1= { holder=1710375 }
+885.1.1= { holder=1710376 }
+890.1.1= { holder=1710377 }
+914.1.1= { holder=1710378 }
+928.1.1= { holder=1710379 }
+952.1.1= { holder=1710380 }
+977.1.1= { holder=1710381 }
+989.1.1= { holder=1710382 }
+1020.1.1= { holder=1710383 }
+1021.1.1= { holder=1710384 }
+1039.1.1= { holder=1710385 }
+1045.1.1= { holder=1710383 }
+1060.1.1=
 {
-holder=163041 # The Ostikans / Emirs
+holder=13
+	law = agnatic_succession
 }
-733.1.1=
-{
-holder=146055
-}
-735.1.1=
-{
-holder=163041
-}
-744.11.3=
-{
-holder=146033
-}
-750.1.1=
-{
-holder=34002
-}
-753.1.1=
-{
-holder=146016
-}
-755.1.1=
-{
-holder=146038
-}
-767.1.1 = {
-	holder = 146024
-	liege = 0 # De facto
-	set_tribute_suzerain = { who = e_arabia type = permanent }
-}
-769.1.1=
-{
-holder=146036
-}
-770.1.1=
-{
-holder=188575
-}
-774.1.1=
-{
-holder=146016
-}
-778.1.1=
-{
-holder=146053
-}
-785.1.1=
-{
-holder=188631
-}
-786.1.1=
-{
-holder=146020
-}
-787.1.1=
-{
-holder=146071
-}
-788.1.1=
-{
-holder=146050
-}
-788.6.1=
-{
-holder=146040
-}
-799.1.1=
-{
-holder=146071
-}
-801.1.1=
-{
-holder=146074
-}
-802.1.1=
-{
-holder=146075
-}
-803.1.1=
-{
-holder=188631
-}
-810.1.1=
-{
-holder=146074
-}
-812.1.1=
-{
-holder=146041
-}
-813.1.1=
-{
-holder=146076
-}
-844.1.1=
-{
-holder=146077
-}
-849.1.1=
-{
-holder=146044
-}
-851.1.1=
-{
-holder=146045
-}
-852.3.1=
-{
-clear_tribute_suzerain = e_arabia
-liege=0
-holder=0
-}
-857.1.1=
-{
-liege="e_arabia"
-holder=146077
-}
-862.1.1=
-{
-holder=146048
-}
-863.1.1=
-{
-liege=0
-holder=0
-}
-870.1.1=
-{
-liege="e_arabia"
-holder=159732
-}
-883.1.1=
-{
-liege=0
-holder=0
-}
-886.1.1=
-{
-holder=41505 # Kings Restored
-}
-890.1.1=
-{
-holder=41506
-}
-912.1.1=
-{
-holder=41507
-}
-928.1.1=
-{
-holder=41508
-}
-951.1.1=
-{
-holder=41509
-}
-977.1.1=
-{
-holder=41510
-}
-990.1.1=
-{
-holder=41519
-}
-1020.1.1=
-{
-holder=41520
-}
-1041.1.1=
-{
-holder=41521
-}
-1041.9.1=
-{
-holder=41522
-}
-1045.1.1=
-{
-holder=0
-}
-1199.1.1=
-{
-holder=223000 #Levon I Rubenid
-#law = cognatic_succession
-#law = succ_primogeniture
-}
-1219.5.2=
-{
-holder=30998 #Zabel I Rubenid
-}
-1226.1.1=
-{
-holder=31830 #Hethun I
-}
-1247.1.1={
-	set_tribute_suzerain = {
-		who = e_il-khanate
-		type = nomadic
-	}
-}
-1270.10.28={
-holder=461802 #Levon II
-#clear_tribute_suzerain = e_il-khanate
-}
-1289.1.1=
-{
-holder=31857 #Hethum II
-}
-1293.1.1=
-{
-holder=461801 #Thoros I
-}
-1294.1.1=
-{
-holder=31857 #Hethum II
-}
-1296.1.1=
-{
-holder=31860 #Smbat I
-}
-1298.1.1=
-{
-holder=31879 #Gosdantin I
-}
-1299.1.1=
-{
-holder=31857 #Hethum II
-}
-1305.1.1=
-{
-holder=31878 #Levon III
-}
-1307.1.1=
-{
-holder=461803 #Oshim I
-}
-1320.7.20=
-{
-holder=461800 #Levon IV
-}
-
-
-

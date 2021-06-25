@@ -1,63 +1,28 @@
-# Kryvians
-750.1.1 = {
-	holder = 194133
-}
-799.1.1 = {
-	holder = 160049
-}
-830.1.1 = {
-	holder = 160050
-}
-865.1.1={
-	holder=159719
-}
-989.1.2={
-	holder=0
-}
-
-# Vitebsk
-1101.4.14={
-	holder=682
-	#law = agnatic_succession
-	#law = succ_gavelkind
-	set_tribute_suzerain = {
-		who = k_ruthenia
-		type = permanent 
-	}
-}
-1129.1.2={
-	holder=222554
-}
-1144.1.2={
-	holder=222552
-}
-1168.1.2={
-	holder=222562
-}
-1169.1.2 = {		#When Kiev lost too much legitimacy to be a proper suzerain of the Rus principalities
-	clear_tribute_suzerain = k_ruthenia
-}
-1185.1.2={
-	holder=222560
-}
-1221.1.2={
-	holder=125010
-}
-1232.1.2={
-	holder=125012
-}
-1264.1.2={
-	holder=125014
-	liege="k_lithuania"
-}
-1280.1.2={
-	holder=125015
-}
-1297.1.2={
-	holder=125016
-}
-1320.1.2={
-}
-1320.1.2={
-	holder=473506
+502.1.1={ holder=16348 }
+516.1.1={ holder=16254 }
+561.1.1={ holder=16255 }
+561.1.2={ holder=16256 }
+587.1.1={ holder=16319 }
+601.1.1={ holder=16320 }
+608.1.1={ holder=16321 }
+635.1.1={ holder=16322 }
+672.1.1={ holder=16323 }
+675.1.1={ holder=16261 }
+685.1.1={ holder=16262 }
+709.1.1={ holder=16263 }
+753.1.1={ holder=16264 }
+761.1.1={ holder=16349 }
+808.1.1={ holder=16350 }
+829.1.1={ holder=16351 }
+852.1.1={ holder=16352 }
+879.1.1={ holder=16353 }
+916.1.1={ holder=16354 }
+942.1.1={ holder=16355 }
+969.1.1={ holder=13520 }
+978.1.1={ holder=13524 }
+1011.1.1={ holder=13525 }
+1054.1.2=
+{
+holder=33
+	law = agnatic_succession
 }
