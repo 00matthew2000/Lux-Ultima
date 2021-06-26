@@ -3698,9 +3698,7 @@ e_hre = {                      # Created by special decision only
 			color={ 200 100 60 }
 			color2={ 255 255 255 }
 			
-			capital = 94 #Hainaut
-			
-			culture = dutch
+			capital = 117 #Brabant
 		
 			c_brabant = {
 				color = { 153 153 153 }
@@ -4098,7 +4096,7 @@ e_hre = {                      # Created by special decision only
 				b_barmen = {}
 			}
 		}
-		d_lower_lorraine = {
+		d_luxembourg = {
 			color = { 102 97 97 }
 			
 			capital = 115 #Luxembourg
@@ -5136,6 +5134,38 @@ e_german = {
 				b_nenzing = {
 				}
 			}
+			c_chur = {
+				color = { 87 87 87 }
+			
+				b_chur = {
+					frankish = "Coire"
+					italian = "Coira"
+				}
+				b_churwalden = {
+					frankish = "Coirvaud"
+					italian = "Curvalda"
+				}
+				b_davos = {
+					frankish = "Davos"
+					italian = "Tavate"
+				}
+				b_maienfeld = {
+					italian = "Maiavilla"
+					frankish = "Maieville"
+				}
+				b_illanz = {
+				}
+				b_thusis = {
+					frankish = "Thouson"
+					italian = "Tosana"
+				}
+				b_glurns = {
+					italian = "Glorenza"
+				}
+				b_zuoz = {
+					german = "Zutz"
+				}
+			}
 			c_innsbruck = {
 				color = { 84 84 84 }
 
@@ -5368,112 +5398,15 @@ e_german = {
 				b_rottweil = {}
 			}
 		}
-		d_thurgau = {
-			color={ 180 220 203 }
-			color2={ 255 255 255 }
-
-			capital = 248 # Thurgau
-
-			allow = {
-				conditional_tooltip = {
-					trigger = {
-						d_thurgau = {
-							is_titular = yes
-						}
-					}
-
-					d_thurgau = {
-						is_titular = no
-					}
-				}
-			}
-			
-			c_zurichgau = {
-				color={ 95 70 75 }
-				color2={ 255 255 255 }
-				
-				b_zurich = {
-					german = "Zürich"
-					frankish = "Turic"
-					italian = "Turigo"
-				}
-				b_winterthur = {
-					frankish = "Wintertour"
-					italian = "Vinterduro"
-				}
-				b_swiss_baden = {
-				}
-				b_aarau = {
-				}
-				b_kappel = {
-					frankish = "Chapel"
-				}
-				b_kyburg = {
-					frankish = "Kybourg"
-				}
-				b_toggenburg = {
-				}
-				b_zug = {
-					frankish = "Zoug"
-				}
-				b_rapperswil = {
-				}
-			}
-		}
 		d_raetia = {
 			color={ 150 240 190 }
 			color2={ 255 255 255 }
 
 			capital = 247 # Chur
 
-			allow = {
-				conditional_tooltip = {
-					trigger = {
-						d_raetia = {
-							is_titular = yes
-						}
-					}
-
-					d_raetia = {
-						is_titular = no
-					}
-				}
-			}
 
 			german = "Churrätien"
 
-			c_chur = {
-				color = { 87 87 87 }
-			
-				b_chur = {
-					frankish = "Coire"
-					italian = "Coira"
-				}
-				b_churwalden = {
-					frankish = "Coirvaud"
-					italian = "Curvalda"
-				}
-				b_davos = {
-					frankish = "Davos"
-					italian = "Tavate"
-				}
-				b_maienfeld = {
-					italian = "Maiavilla"
-					frankish = "Maieville"
-				}
-				b_illanz = {
-				}
-				b_thusis = {
-					frankish = "Thouson"
-					italian = "Tosana"
-				}
-				b_glurns = {
-					italian = "Glorenza"
-				}
-				b_zuoz = {
-					german = "Zutz"
-				}
-			}
 			c_schwyz = {
 				color = { 167 28 66 }
 				
@@ -10278,51 +10211,6 @@ e_roman = {
 		culture = italian
 	}
 
-	k_romagna = {
-		color={ 215 141 152 }
-		color2={ 255 255 255 }
-
-		capital = 351 # Rome
-
-		greek = "Ravenna"
-
-		christian = 10000 # Crusade target weight
-
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					AND = {
-						k_romagna = {
-							owner = {
-								has_landed_title = k_papal_state
-							}
-						}
-						NOT = {
-							religion = catholic
-						}
-					}
-					AND = {
-						has_landed_title = d_latium
-						has_landed_title = c_roma
-					}
-				}
-			}
-
-			conditional_tooltip = {
-				trigger = {
-					k_romagna = {
-						is_titular = yes
-					}
-				}
-
-				k_romagna = {
-					is_titular = no
-				}
-			}
-		}
-	}
-
 	k_genoa = {
 		color = { 230 181 140 }
 		
@@ -11081,8 +10969,7 @@ e_roman = {
 				b_algajola = {}
 			}
 			c_cinarca = {
-				color={ 250 243 220 }
-				color2={ 255 255 255 }
+				color = { 232 245 242 }
 				
 				b_ajaccio = {
 				}
@@ -27576,6 +27463,37 @@ e_france = {
 				b_sursee = {
 				}
 			}
+			c_zurichgau = {
+				color={ 95 70 75 }
+				color2={ 255 255 255 }
+				
+				b_zurich = {
+					german = "Zürich"
+					frankish = "Turic"
+					italian = "Turigo"
+				}
+				b_winterthur = {
+					frankish = "Wintertour"
+					italian = "Vinterduro"
+				}
+				b_swiss_baden = {
+				}
+				b_aarau = {
+				}
+				b_kappel = {
+					frankish = "Chapel"
+				}
+				b_kyburg = {
+					frankish = "Kybourg"
+				}
+				b_toggenburg = {
+				}
+				b_zug = {
+					frankish = "Zoug"
+				}
+				b_rapperswil = {
+				}
+			}
 			c_aargau = {
 				color = { 169 30 68 }
 				
@@ -34120,8 +34038,8 @@ e_maghreb = {
 		color = { 70 105 208 }
 		color2 = { 255 255 255 }
 		
-		title = EXARCH
-		title_prefix = "EXARCHATE OF" 
+		title = Exarch
+		title_prefix = "Exarchate Of" 
 		capital = 811
 
 		berber_pagan_reformed = 1000
@@ -48398,10 +48316,6 @@ d_burtas = {
 }
 
 # OBSOLETE TITLES HRE
-d_luxembourg = {
-	color={ 110 110 155 }
-	color2={ 255 255 255 }
-}
 
 e_russian_empire = {	
 	color={ 220 60 70 }
