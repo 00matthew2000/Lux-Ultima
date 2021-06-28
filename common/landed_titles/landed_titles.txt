@@ -3960,6 +3960,8 @@ e_hre = {                      # Created by special decision only
 				saxon = Köln
 				old_saxon = Köln
 				
+				b_brauweiler = {
+				}
 				b_koln = {
 					norse = Köln
 					swedish = Köln
@@ -3983,8 +3985,6 @@ e_hre = {                      # Created by special decision only
 				b_saffenburg = {
 				}
 				b_hochstaden = {
-				}
-				b_brauweiler = {
 				}
 			}
 			c_julich = {
@@ -9862,7 +9862,7 @@ e_roman = {
 					carantanian = "Oglej"
 				}
 				b_udine = {}
-				b_friuli = {}
+				b_friuli2 = {}
 				b_motta = {}
 				b_concordia = {}
 				b_ciridale = {}
@@ -27643,8 +27643,7 @@ e_gallia = {
 			}
 		}
 		d_brittany = {
-			color={ 159 75 34 }
-			color2={ 255 255 255 }
+			color = { 133 34 90 }
 			
 			capital = 104 # Cornouaille
 			
