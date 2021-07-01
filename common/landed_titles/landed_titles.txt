@@ -4912,7 +4912,7 @@ e_german = {
 
 				carantanian = "Stajerska"
 				
-				b_eppenstein = {}
+				b_eppenstein2 = {}
 				b_graz = {}
 				b_lavant = {}
 				b_cilli = {}
@@ -13980,13 +13980,10 @@ e_scandinavia = {
         finnish_pagan_reformed = 300 # Crusade target weight
         baltic_pagan_reformed = 250 # Crusade target weight
 		
-		d_esthonia = {
-			color={ 150 75 75 }
-			color2={ 255 255 255 }
+		d_estonia = {
+			color = { 150 75 75 }
 			
 			capital = 378 # Kalevan
-			
-			culture = ugricbaltic
 		
 			c_reval = {
 				color={ 160 85 85 }
@@ -13997,6 +13994,8 @@ e_scandinavia = {
 				norwegian = "Reval"
 				german = "Reval"
 				norse = "Reval"
+				
+				holy_site = ilmatar
 			
 				b_reval = { # Kalevan
 					swedish = "Reval"
@@ -14619,25 +14618,6 @@ e_slavinia = {
 			
 			capital = 529 # Plock
 			
-			c_lubelska = {			#New with HF
-				color={ 147 40 2 }
-				color2={ 255 255 255 }
-			
-				b_lublin = {
-				}
-				b_parczew = {
-				}
-				b_urzedow = {
-				}
-				b_goraj = {
-				}
-				b_zamosc = {		#modern
-				}
-				b_podwieprza = {	#fictional
-				}
-				b_nadwisla = {		#fictional
-				}
-			}
 			c_podlasie = {
 				color={ 214 145 111 }
 				color2={ 255 255 255 }
@@ -15008,6 +14988,25 @@ e_slavinia = {
 				b_giralth = {}
 				b_hethars = {}
 				b_lemesany = {}
+			}
+			c_lubelska = {			#New with HF
+				color={ 147 40 2 }
+				color2={ 255 255 255 }
+			
+				b_lublin = {
+				}
+				b_parczew = {
+				}
+				b_urzedow = {
+				}
+				b_goraj = {
+				}
+				b_zamosc = {		#modern
+				}
+				b_podwieprza = {	#fictional
+				}
+				b_nadwisla = {		#fictional
+				}
 			}
 			c_sacz = {
 				color = { 6 117 2 }
@@ -16352,22 +16351,10 @@ e_russia = {
 		
 		capital = 547 # Kiev
 		
-		culture = russian
-		
 		slavic_christian_reformed = 5000
 		erlik_reformed = 1000
 		tengri_confucian_reformed = 500
 		tengri_mani_reformed = 1000
-		
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture_group = north_germanic
-					culture_group = east_slavic 
-				}
-			}
-		}
 		
 		d_volhynia = {
 			color = { 204 155 121 }
@@ -16585,6 +16572,25 @@ e_russia = {
 				b_fastiv = {
 				}
 			}
+			c_vinnytsia = {
+				color={ 233 193 87 }
+				color2={ 255 255 255 }
+				
+				b_vinnytsia = {
+				}
+				b_ladyzhyn = {
+				}
+				b_illintsi = {
+				}
+				b_rov = {
+				}
+				b_haisyn = {
+				}
+				b_bershad = {
+				}
+				b_pervomaisk = {
+				}
+			}
 			c_korsun = {
 				color={ 230 190 85 }
 				color2={ 255 255 255 }
@@ -16633,25 +16639,6 @@ e_russia = {
 				b_tovmach = {
 				}
 			}
-			c_vinnytsia = {
-				color={ 233 193 87 }
-				color2={ 255 255 255 }
-				
-				b_vinnytsia = {
-				}
-				b_ladyzhyn = {
-				}
-				b_illintsi = {
-				}
-				b_rov = {
-				}
-				b_haisyn = {
-				}
-				b_bershad = {
-				}
-				b_pervomaisk = {
-				}
-			}
 			c_vozviahel = {
 				color={ 116 116 36 }
 				color2={ 255 255 255 }
@@ -16674,6 +16661,9 @@ e_russia = {
 			c_medjybij = {
 				color={ 101 101 21 }
 				color2={ 255 255 255 }
+				
+				russian = "Mezhybozhe"
+				polish = "Miedzyboz"
 				
 				b_medjybij = {
 				}
@@ -18113,6 +18103,57 @@ e_russia = {
 			}
 		}
 		
+		d_komiland = {
+			color = { 165 175 84 }
+			capital = 1834
+			
+			c_lyzha = {
+				color={ 230 150 120 }
+				color2={ 255 255 255 }
+
+				b_lyzha = {}
+				b_akis = {}
+				b_ust_usa = {}
+				b_novikobzh = {}
+				b_mutnyy = {}
+				b_materik = {}
+				b_zakharvan = {}
+			}
+			c_kozhva = {
+				color={ 234 154 124 }
+				color2={ 255 255 255 }
+
+				b_kozhva = {}
+				b_berozovka = {}
+				b_iz_yayu = {}
+				b_puteyets = {}
+				b_byzovaya = {}
+				b_ozornyy = {}
+				b_chikshino = {}
+			}
+			c_khantia = {
+				color={ 249 223 152 }
+				color2={ 255 255 255 }
+			
+				b_chanty = {
+				}
+				b_beloyarskiy = {
+				}
+				b_igrim = {
+				}
+				b_berezovo = {
+				}
+				b_pnobe = {
+				}
+				b_nyagyn = {
+				}
+				b_djinesh = {
+				}
+				b_sherkala = {
+				}
+			}
+		}
+		
 		d_maris = {
 			color = { 150 132 110 }
 			
@@ -18363,31 +18404,7 @@ e_russia = {
 			color2={ 255 255 255 }
 
 			capital = 1827 # Lyzha
-
-			c_lyzha = {
-				color={ 230 150 120 }
-				color2={ 255 255 255 }
-
-				b_lyzha = {}
-				b_akis = {}
-				b_ust_usa = {}
-				b_novikobzh = {}
-				b_mutnyy = {}
-				b_materik = {}
-				b_zakharvan = {}
-			}
-			c_kozhva = {
-				color={ 234 154 124 }
-				color2={ 255 255 255 }
-
-				b_kozhva = {}
-				b_berozovka = {}
-				b_iz_yayu = {}
-				b_puteyets = {}
-				b_byzovaya = {}
-				b_ozornyy = {}
-				b_chikshino = {}
-			}
+			
 			c_izhma = {
 				color={ 238 158 128 }
 				color2={ 255 255 255 }
@@ -18707,12 +18724,10 @@ e_russia = {
 		}
 		
 		d_bjarmia = {
-			color = { 95 50 20 }
-			color2={ 255 255 255 }
+			color = { 100 115 55 }
 			
+			norwegian = "Bjarmaland" 
 			capital = 396 # Bjarmia
-			
-			culture = komi
 			
 			c_north_dvina = {
 				color={ 106 121 61 }
@@ -18877,6 +18892,27 @@ e_russia = {
 				b_kholuy = {
 				}
 				b_vysokaya = {
+				}
+			}
+			c_chud = {
+				color={ 138 154 94 }
+				color2={ 255 255 255 }
+					
+				b_totma = {
+				}
+				b_krbor = {
+				}
+				b_kamchuga = {
+				}
+				b_chunlovka = {
+				}
+				b_zalese = {
+				}
+				b_krutayaosyp = {
+				}
+				b_veldvor = {
+				}
+				b_zaytsevo = {
 				}
 			}
 			c_trans-portage = {
@@ -19098,27 +19134,6 @@ e_russia = {
 				b_motyn = {
 				}
 				b_staroye = {
-				}
-			}
-			c_chud = {
-				color={ 138 154 94 }
-				color2={ 255 255 255 }
-					
-				b_totma = {
-				}
-				b_krbor = {
-				}
-				b_kamchuga = {
-				}
-				b_chunlovka = {
-				}
-				b_zalese = {
-				}
-				b_krutayaosyp = {
-				}
-				b_veldvor = {
-				}
-				b_zaytsevo = {
 				}
 			}
 		}
@@ -21395,27 +21410,6 @@ e_tartaria = {
 				b_samza = {
 				}
 			}
-			c_khantia = {
-				color={ 249 223 152 }
-				color2={ 255 255 255 }
-			
-				b_chanty = {
-				}
-				b_beloyarskiy = {
-				}
-				b_igrim = {
-				}
-				b_berezovo = {
-				}
-				b_pnobe = {
-				}
-				b_nyagyn = {
-				}
-				b_djinesh = {
-				}
-				b_sherkala = {
-				}
-			}
 			c_yamalia = {
 				color={ 240 214 143 }
 				color2={ 255 255 255 }
@@ -21635,16 +21629,25 @@ e_idel_ural = {
 			capital = 1845 # Tynea
 			
 			c_tynea = {
-				color={ 195 190 140 }
+				color={ 203 168 73 }
 				color2={ 255 255 255 }
-
-				b_tynea = {}
-				b_yelovo = {}
-				b_akbash = {}
-				b_fedorki = {}
-				b_posha = {}
-				b_osa_tynea = {}
-				b_voyady = {}
+			
+				b_bulgar2 = {
+				}
+				b_suar2 = {
+				}
+				b_balimer2 = {
+				}
+				b_arbuga2 = {
+				}
+				b_tawille2 = {
+				}
+				b_tetyushi2 = {
+				}
+				b_koshki2 = {
+				}
+				b_iq2 = {
+				}
 			}
 			c_alabuga = {
 				color={ 189 154 59 }
@@ -25923,10 +25926,29 @@ e_pannonia = {
 			color={ 223 202 145 }
 			color2={ 255 255 255 }
 			
-			capital = 545 # Torki
+			capital = 1638 # Iasi
 			
 			volhynian = "Tivertsians"
 			
+			c_iasi = {
+				color={ 203 222 145 }
+				color2={ 255 255 255 }
+				
+				b_iasi = {
+				}
+				b_harlau = {
+				}
+				b_hotin = {
+				}
+				b_cernauti = {
+				}
+				b_dorohoi = {
+				}
+				b_varzaresti = {
+				}
+				b_ungheni = {
+				}
+			}
 			c_torki = {				#Suceava since HF
 				color={ 227 206 149 }
 				color2={ 255 255 255 }
@@ -25984,25 +26006,6 @@ e_pannonia = {
 				b_bistrita_bacau = {
 				}
 			}
-			c_iasi = {
-				color={ 203 222 145 }
-				color2={ 255 255 255 }
-				
-				b_iasi = {
-				}
-				b_harlau = {
-				}
-				b_hotin = {
-				}
-				b_cernauti = {
-				}
-				b_dorohoi = {
-				}
-				b_varzaresti = {
-				}
-				b_ungheni = {
-				}
-			}
 			c_peresechen = {
 				color={ 225 204 147 }
 				color2={ 255 255 255 }
@@ -26028,10 +26031,29 @@ e_pannonia = {
 			color={ 190 202 175 }
 			color2={ 255 255 255 }
 			
-			capital = 1640 # Chilia
+			capital = 512 #Maurokastron
 			
 			pecheneg = "Pecheneg"
 			
+			c_belgorod = {
+				color={ 231 210 153 }
+				color2={ 255 255 255 }
+			
+				b_cetatea_alba = {
+				}
+				b_belgorod = {
+				}
+				b_tighina = {
+				}
+				b_capriana = {
+				}
+				b_chisinau = {
+				}
+				b_causeni = {
+				}
+				b_cedaesti = {
+				}
+			}
 			c_chilia = {
 				color={ 210 212 145 }
 				color2={ 255 255 255 }
@@ -26123,25 +26145,6 @@ e_pannonia = {
 				b_targu_putnei = {
 				}
 				b_marasesti = {
-				}
-			}
-			c_belgorod = {
-				color={ 231 210 153 }
-				color2={ 255 255 255 }
-			
-				b_cetatea_alba = {
-				}
-				b_belgorod = {
-				}
-				b_tighina = {
-				}
-				b_capriana = {
-				}
-				b_chisinau = {
-				}
-				b_causeni = {
-				}
-				b_cedaesti = {
 				}
 			}
 		}
@@ -38972,21 +38975,6 @@ d_el-arish = {
 }
 d_erzerum = {
 	color = { 103 84 255 }
-}
-d_estonia = {
-	color = { 94 60 22 }
-	
-	capital	= 378 # Reval
-	
-	allow = {
-		always = no
-	}
-	
-#	tribe = yes
-	
-	culture = ugricbaltic
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
 }
 d_galatia = {
 	color = { 244 75 185 }
