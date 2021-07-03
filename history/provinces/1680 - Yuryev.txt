@@ -4,17 +4,17 @@
 title = c_yuryev
 
 # Settlements
-max_settlements = 2
+max_settlements = 4
+b_uglich = tribal
+b_pertoma = temple
 
-b_yuryev = tribal	#1152
+#b_kalyazin = castle
+#b_ustscheksna = castle
+#b_myshkin = castle
+#b_tikhmenevo = castle
+#b_novynekouz = castle
 
-#b_godenovo		#before 1430?
-#b_gavrilov_posad	#1434
-#b_kolchugino	#1871
-#b_varvarino
-#b_bavleny
-#b_berezhok
-
-#Misc
-culture = russian
-religion = rod
+# Misc
+culture = varangian
+religion = norse_pagan
+1066.1.1 = { }
