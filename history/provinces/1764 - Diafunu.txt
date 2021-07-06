@@ -4,20 +4,12 @@
 title = c_diafunu
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
 b_diafunu = tribal
 
 #b_guidimaka = city
 #b_galam = temple
 
 # Misc
-culture = serer
-religion = west_african_pagan
-
-# History
-1080.1.1 = { religion = sunni }
-1200.1.1 = {
-	b_diafunu = castle
-	b_guidimaka = city
-	b_galam = temple
-}
+culture = mandinka
+religion = yoruba

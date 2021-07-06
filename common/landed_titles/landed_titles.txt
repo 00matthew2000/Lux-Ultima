@@ -18141,28 +18141,6 @@ e_russia = {
 			
 			culture = mordvin
 
-			c_merya = { # Actually Mari
-				
-				color={ 234 174 13 }
-				color2={ 255 255 255 }
-			
-				b_yoshkarola = {
-				}
-				b_volzhsk = {
-				}
-				b_lopatino = {
-				}
-				b_tsikma = {
-				}
-				b_provoi = {
-				}
-				b_kilemary = {
-				}
-				b_mariturek = {
-				}
-				b_morki = {
-				}
-			}
 			c_hlynov = {
 				color={ 116 131 71 }
 				color2={ 255 255 255 }
@@ -22957,27 +22935,6 @@ e_idel_ural = {
 				b_shungut = {
 				}
 			}
-			c_ashli = {
-				color={ 207 172 77 }
-				color2={ 255 255 255 }
-				
-				b_ashli = {
-				}
-				b_boro = {
-				}
-				b_durtojle = {
-				}
-				b_daulakan = {
-				}
-				b_blagovescen = {
-				}
-				b_tuimasy = {
-				}
-				b_janauyl = {
-				}
-				b_yamantaw = {
-				}
-			}
 		}
 
 		d_cheremisa = {
@@ -23489,7 +23446,7 @@ e_sassanid = {
 				b_dehak = {}
 			}
 		}
-		d_kerman = {
+		d_sistan = {
 			color = { 117 36 47 }
 			
 			capital = 639 # Kerman
@@ -30218,31 +30175,42 @@ e_arabia = {
 	
 	short_name = yes
 	
-	k_arabia = {
-		color = { 32 150 85 }
+	k_hedjaz = {
+		color = { 16 157 12 }
+		short_name = yes
+		capital = 719 # Makkah
 		
-		capital = 868 # Masqat
-		
-		culture = bedouin_arabic
-		
-		muslim = 4000 # Crusade target weight
-		zoroastrian_group = 500 # Crusade target weight
+		almaqah = 2000
+		ashari = 10000
+		athari = 10000
+		haruri = 10000
+		maturidi = 10000
+		mutazil = 10000
+		shiite = 10000
+		zahiri = 10000
+		muslim_aliite_reformed = 10000
+		muslim_domination_reformed = 10000
 	
 		d_arabia_felix = {
 			color = { 150 249 43 }
 			capital = 719 #Makkah
 			
-			muslim = 500 # Crusade target weight
-			
 			c_medina = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
 				
-				muslim = 500 # Crusade target weight
-
-				holy_site = sunni
-				holy_site = shiite
+				holy_site = druze
+				holy_site = druze_reformed
+				holy_site = haruri
 				holy_site = ibadi
+				holy_site = muslim_aliite_reformed
+				holy_site = ilm_islam
+				holy_site = muslim_domination_reformed
+				holy_site = marabout
+				holy_site = shiite
+				holy_site = muslim_sufi_reformed
+				holy_site = sunni
+				sabaean = Yathrib
 				
 				b_medina = {
 				}
@@ -30262,14 +30230,25 @@ e_arabia = {
 			c_mecca = {
 				color={ 166 253 59 }
 				color2={ 255 255 255 }
-				
-				muslim = 1000 # Crusade target weight
 
-				holy_site = sunni
-				holy_site = shiite
-				holy_site = pagan
-				holy_site = yazidi
+				holy_site = almaqah
+				holy_site = shams
+				holy_site = hubal
+				holy_site = attar
+				holy_site = maher
+				holy_site = waaq
+				holy_site = arab_pagan_reformed
+				holy_site = druze
+				holy_site = druze_reformed
+				holy_site = haruri
 				holy_site = ibadi
+				holy_site = muslim_aliite_reformed
+				holy_site = ilm_islam
+				holy_site = muslim_domination_reformed
+				holy_site = marabout
+				holy_site = shiite
+				holy_site = muslim_sufi_reformed
+				holy_site = sunni
 				
 				b_mecca = {
 				}
@@ -30680,8 +30659,7 @@ e_arabia = {
 				}
 			}
 			c_uwal = {
-				color = { 30 89 35 }
-				color2={ 255 255 255 }
+				color = { 18 83 202 }
 				
 				b_muharraq = {
 				}
@@ -33564,11 +33542,9 @@ e_maghreb = {
 				b_tamchennennt = {} # Fictional, for prosperity
 			}
 		}
-		d_adrar = {
-			color={ 90 190 5 }
-			color2={ 255 255 255 }
-			
-			capital = 920 # Ouadane
+		d_ouadane = {
+			color = { 158 168 25 }
+			capital = 944
 			
 			c_arigh = {
 				color={ 51 255 108 }
@@ -33582,18 +33558,13 @@ e_maghreb = {
 				b_timoktene = {} # Fictional, for prosperity
 				b_rabta = {} # Fictional, for prosperity
 			}
-			c_ouadane = {
-				color={ 23 109 202 }
+			c_wolof = {
+				color={ 125 97 157 }
 				color2={ 255 255 255 }
 				
-				b_ouadane = {}
-				b_idjil = {}
-				b_wadan = {}
-				b_azuggi = {}
-				b_ksaralkiali = {}
-				b_wadane = {} #Fictional, for prosperity
-				b_kaliki = {} #Fictional, for prosperity
-				b_gag = {} #Fictional, for prosperity
+				b_wolof = {}
+				b_hiskapmnar = {}
+				b_hukansinti = {}
 			}
 			c_idjil = {
 				color={ 8 76 207 }
@@ -33925,6 +33896,16 @@ e_maghreb = {
 				b_lacroix = {}
 			}
 		}
+	}
+	k_kyrene = {
+		color = { 225 165 4 }
+		capital = 806
+
+		berber_pagan_reformed = 1000
+		aten_reformed = 2000
+		isis_reformed = 2000
+		set_reformed = 2000
+		
 		d_cyrenaica = {
 			color = { 241 193 26 }
 			
@@ -34571,186 +34552,208 @@ e_abyssinia = {
 			}
 		}
 	}
-	
-	k_nobatia = {
-		color = { 151 56 155 }
-		title = SETEPENRE
 		
-		capital = 1326 #Napata
-
-		solomonic_alexandros = 2000
-		ethiopian_war_reformed = 2000
-		aten_reformed = 2000
-		isis_reformed = 2000
-		set_reformed = 2000
+	k_macrobia = {
+		color = { 70 103 175 }
 		
-		d_dongola = {
-			color = { 170 43 70 }
+		capital = 872 #Malao
 
-			capital = 793 # Dotawo
+		ethiopian_war_reformed = 5000
 
-			c_dotawo = {
-				color = { 160 130 85 }
+		d_harer = {
+			color = { 153 2 59 }
+			
+			capital = 872 # Malao
+		
+			c_hobyo = {
+				color={ 236 225 85 }
 				color2={ 255 255 255 }
 			
-				b_dotawo = {
+				b_hobyo = {
 				}
-				b_jebeladda = {
+				b_barbacadle = {
 				}
-				b_faras = {
+				b_ras_hafun = {
 				}
-				b_qasribrim = {
+				b_galkayo = {
 				}
-				b_ballana = {
+				b_eyl = {
 				}
-				b_buhen = {
+				b_qosoltire = {
 				}
-				b_premnis = {
+				b_el_hur = {
+				}
+				b_garowe = {
 				}
 			}
-			c_makuria = {
-				color = { 140 155 75 }
+			c_busaso = {
+				color = { 155 4 61 }
+			
+				b_mosylon = {}
+				b_bandaraassim = {}
+				b_lasanod = {}
+				b_garoowe = {}
+				b_qardho = {}
+				b_erigavo = {}
+				b_hadaftimo = {}
+				b_buraan = {}
+			}
+			c_berbera = {
+				color = { 157 6 63 }
+			
+				b_berbera = {}
+				b_maydh = {}
+				b_gabiley = {}
+				b_burco = {}
+				b_mandera = {}
+				b_daarbuduq = {}
+				b_shiikh = {}
+			}
+		}
+		d_punt = {
+			color = { 64 173 113 }
+			
+			capital = 873 # Gey
+
+			c_assab = {
+				color={ 159 189 65 }
 				color2={ 255 255 255 }
 			
-				b_dongola = {
+				b_assab = {
 				}
-				b_kawa = {
+				b_debaysima = {
 				}
-				b_affat = {
+				b_rehayto = {
 				}
-				b_qubban = {
+				b_manda = {
 				}
-				b_gabriya = {
+				b_agurto = {
 				}
-				b_kerma = {
+				b_mergebla = {
+				}
+				b_gehare = {
+				}
+			}
+			c_asayita = {
+				color={ 159 189 65 }
+				color2={ 255 255 255 }
+			
+				b_asayita = {
+				}
+				b_afambo = {
+				}
+				b_serdo = {
+				}
+				b_dedai = {
+				}
+				b_lofefle = {
+				}
+				b_tendaho = {
+				}
+				b_jewaha = {
+				}
+			}
+			c_harer = {
+				color = { 159 8 65 }
+			
+				b_harar = {}
+				b_dakkar = {}
+				b_diridawa = {}
+				b_alemaya = {}
+				b_kurfachele = {}
+				b_kombolcha = {}
+				b_babile = {}
+			}
+			c_tadjoura = {
+				color = { 161 10 67 }
+				holy_site = shaytana
+			
+				b_tadjoura = {}
+				b_berenice = {}
+				b_obock = {}
+				b_galafi = {}
+				b_dikhil = {}
+				b_djibouti = {}
+				b_holhol = {}
+				b_randa = {}
+			}
+			c_zeila = {
+				color = { 159 8 65 }
+			
+				b_zeila = {}
+				b_hargeysa = {}
+				b_borama = {}
+				b_amud = {}
+				b_jijiga = {}
+				b_dilla = {}
+				b_lughaya = {}
+			}
+		}
+		d_urgoma = {
+			color = { 130 42 56 }
+			
+			capital = 2329 # Qalaafe
+
+			c_qalaafe = {
+				color = { 125 43 60 }
+				
+				b_gode = {}
+				b_degehabur = {}
+				b_geladin = {}
+				b_shinile = {}
+			}
+			c_bali = {
+				color={ 179 135 126 }
+				color2={ 255 255 255 }
+			
+				b_bali_bali = {
+				}
+				b_agarfa = {
+				}
+				b_raytu = {
+				}
+				b_seweyna = {
+				}
+				b_sinana = {
+				}
+				b_dinsho = {
+				}
+				b_dawe_kachen = {
+				}
+				b_gasera = {
+				}
+			}
+			c_oromo = {
+				color={ 179 135 30 }
+				color2={ 255 255 255 }
+			
+				b_oromo = {
+				}
+				b_abaya = {
+				}
+				b_arero = {
+				}
+				b_gelana = {
+				}
+				b_miyu = {
+				}
+				b_yabelo = {
+				}
+				b_dire_oromo = {
 				}
 				b_bule_hora = {
 				}
 			}
 		}
-
-		d_dawaro = {
-			color={ 179 125 106 }
-			color2={ 255 255 255 }
-			
-			capital = 2339 # Dawaro
-
-			c_nobatia = {
-				color = { 200 33 33 }
-				
-				holy_site = isis
-				holy_site = isis_reformed
-			
-				b_semna = {
-				}
-				b_wawa = {
-				}
-				b_delgo = {
-				}
-				b_soleb = {
-				}
-				b_abri = {
-				}
-				b_akasha = {
-				}
-				b_kulubnarti = {
-				}
-			}
-			c_west_nobatia = {
-				color = { 214 22 52 }
-				
-				b_para = {}
-				b_kulb = {}
-			}
-			c_south_nobatia = {
-				color = { 214 22 52 }
-				
-				b_ibrim = {}
-			}
-			c_qasr_ibrim = {
-				color = { 119 134 74 }
-				
-				b_ukhta2 = {}
-				b_sosnogorsk2 = {}
-				b_yarega2 = {}
-				b_vodnyy2 = {}
-				b_nizhodes2 = {}
-				b_vuktyl2 = {}
-				b_kadzherom2 = {}
-				b_voyvozh2 = {}
-			}
-			c_nubia = {
-				color = { 47 194 126 }
-			
-				b_alwa = {}
-				b_salala = {}
-				b_komelshokafa = {}
-				b_farata = {}
-				b_dradate = {}
-			}
-		}
-		d_aydhab = {
-			color = { 75 230 80 }
-			
-			capital = 1320 #Adabos
-			
-			c_aydhab = {
-				color = { 207 39 102 }
-				
-				b_aydhab = {}
-				b_halayeb = {}
-				b_mukkawar = {}
-				b_shalateen = {}
-				b_siyal = {}
-				b_gebel_elba = {}
-			}
-			c_suakin = {
-				color = { 210 63 77 }
-			
-				b_sawakin = {}
-				b_tisiamti = {}
-				b_salum = {}
-				b_taiwi = {}
-				b_derkin = {}
-				b_dubarua = {}
-			}
-			c_trinkitat = {
-				color = { 210 63 77 }
-			
-				b_trinkitat = {}
-				b_derri = {}
-				b_tokar = {}
-				b_teb = {}
-				b_kwababa = {}
-				b_mukden = {}
-			}
-		}
-					
-		d_nubia = { # Makuria
-			color = { 141 162 79 }
-			capital = 793 # Makuria
-			
-			c_atbara = {
-				color = { 208 40 103 }
-					holy_site = amun
-					holy_site = isis
-					holy_site = set
-					holy_site = amun_reformed
-					holy_site = aten_reformed
-					holy_site = isis_reformed
-					holy_site = set_reformed
-			
-				b_atbara = {}
-				b_meroe = {		#Medewi
-				}
-				b_tabat = {}
-				b_wadrawah = {}
-				b_meruwah = {}
-				b_hajaralasla = {}
-			}
-		}
 	}
+}
+
+e_kush = {
+	color = { 255 255 89 }
+	title = MENKHEPERRE
 	
+	capital = 1326
+
 	k_alodia = {
 		color = { 73 230 255 }
 		title = NEFERKARE
@@ -34966,6 +34969,21 @@ e_abyssinia = {
 				b_tendelti = {}
 				b_abu_zadad = {}
 			}
+			c_dongola = {
+
+				color = { 64 43 180 }
+				color2 = { 250 250 250 }
+
+				b_dongolaa = {
+				}
+				b_debba = {
+				}
+				b_dongala = {
+				}
+				b_oasis = {
+				}
+
+			}
 			c_omdurman = {
 				color = { 228 168 7 }
 			
@@ -35005,18 +35023,6 @@ e_abyssinia = {
 				b_uri = {}
 				b_um_marrih = {} # Fictional - For Prosperity
 				b_kalkal = {} # Fictional - For Prosperity
-			}
-			c_fuka_lolong = {
-				color = { 20 25 60 }
-					holy_site = sol_sahara
-					holy_site = sol_sahara_reformed
-					holy_site = set
-					holy_site = set_reformed
-				
-				b_bir_murr = {}
-				b_ain_dua = {}
-				b_el_tag = {}
-				b_fuka_lolong = {}
 			}
 			c_el_fasher = {
 				color={ 175 140 115 }
@@ -35247,200 +35253,6 @@ e_abyssinia = {
 				b_karima = {}
 			}
 		}			
-	}
-		
-	k_macrobia = {
-		color = { 70 103 175 }
-		
-		capital = 872 #Malao
-
-		ethiopian_war_reformed = 5000
-
-		d_harer = {
-			color = { 153 2 59 }
-			
-			capital = 872 # Malao
-		
-			c_hobyo = {
-				color={ 236 225 85 }
-				color2={ 255 255 255 }
-			
-				b_hobyo = {
-				}
-				b_barbacadle = {
-				}
-				b_ras_hafun = {
-				}
-				b_galkayo = {
-				}
-				b_eyl = {
-				}
-				b_qosoltire = {
-				}
-				b_el_hur = {
-				}
-				b_garowe = {
-				}
-			}
-			c_busaso = {
-				color = { 155 4 61 }
-			
-				b_mosylon = {}
-				b_bandaraassim = {}
-				b_lasanod = {}
-				b_garoowe = {}
-				b_qardho = {}
-				b_erigavo = {}
-				b_hadaftimo = {}
-				b_buraan = {}
-			}
-			c_berbera = {
-				color = { 157 6 63 }
-			
-				b_berbera = {}
-				b_maydh = {}
-				b_gabiley = {}
-				b_burco = {}
-				b_mandera = {}
-				b_daarbuduq = {}
-				b_shiikh = {}
-			}
-		}
-		d_punt = {
-			color = { 64 173 113 }
-			
-			capital = 873 # Gey
-
-			c_assab = {
-				color={ 159 189 65 }
-				color2={ 255 255 255 }
-			
-				b_assab = {
-				}
-				b_debaysima = {
-				}
-				b_rehayto = {
-				}
-				b_manda = {
-				}
-				b_agurto = {
-				}
-				b_mergebla = {
-				}
-				b_gehare = {
-				}
-			}
-			c_asayita = {
-				color={ 159 189 65 }
-				color2={ 255 255 255 }
-			
-				b_asayita = {
-				}
-				b_afambo = {
-				}
-				b_serdo = {
-				}
-				b_dedai = {
-				}
-				b_lofefle = {
-				}
-				b_tendaho = {
-				}
-				b_jewaha = {
-				}
-			}
-			c_harer = {
-				color = { 159 8 65 }
-			
-				b_harar = {}
-				b_dakkar = {}
-				b_diridawa = {}
-				b_alemaya = {}
-				b_kurfachele = {}
-				b_kombolcha = {}
-				b_babile = {}
-			}
-			c_tadjoura = {
-				color = { 161 10 67 }
-				holy_site = shaytana
-			
-				b_tadjoura = {}
-				b_berenice = {}
-				b_obock = {}
-				b_galafi = {}
-				b_dikhil = {}
-				b_djibouti = {}
-				b_holhol = {}
-				b_randa = {}
-			}
-			c_zeila = {
-				color = { 159 8 65 }
-			
-				b_zeila = {}
-				b_hargeysa = {}
-				b_borama = {}
-				b_amud = {}
-				b_jijiga = {}
-				b_dilla = {}
-				b_lughaya = {}
-			}
-		}
-		d_urgoma = {
-			color = { 130 42 56 }
-			
-			capital = 2329 # Qalaafe
-
-			c_qalaafe = {
-				color = { 125 43 60 }
-				
-				b_gode = {}
-				b_degehabur = {}
-				b_geladin = {}
-				b_shinile = {}
-			}
-			c_bali = {
-				color={ 179 135 126 }
-				color2={ 255 255 255 }
-			
-				b_bali_bali = {
-				}
-				b_agarfa = {
-				}
-				b_raytu = {
-				}
-				b_seweyna = {
-				}
-				b_sinana = {
-				}
-				b_dinsho = {
-				}
-				b_dawe_kachen = {
-				}
-				b_gasera = {
-				}
-			}
-			c_oromo = {
-				color={ 179 135 30 }
-				color2={ 255 255 255 }
-			
-				b_oromo = {
-				}
-				b_abaya = {
-				}
-				b_arero = {
-				}
-				b_gelana = {
-				}
-				b_miyu = {
-				}
-				b_yabelo = {
-				}
-				b_dire_oromo = {
-				}
-				b_bule_hora = {
-				}
-			}
-		}
 	}
 }
 
@@ -38028,8 +37840,7 @@ e_britannia = {
 	}
 }
 e_mali = {
-	color={ 138 148 55 }
-	color2={ 255 255 255 }
+	color = { 140 140 0 }
 	
 	capital = 911 # Timbuktu
 	
@@ -38037,43 +37848,61 @@ e_mali = {
 	
 	west_african_pagan_reformed = 500
 	
-	# Creation/usurpation trigger
-	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture_group = west_african
-			}
-		}
-	}
-	
-	k_mali = {
-		color={ 158 188 61 }
-		color2={ 255 255 255 }
+	k_baoule = {
+		color = { 199 203 144 }
 		
-		capital = 925 # Mali/Niani
+		capital = 3341 #Accra
+
+		yoruba = 2000
 		
-		culture = manden
-		
-		d_mali = { # Manding
-			color={ 130 180 61 } #80 120 70
-			color2={ 255 255 255 }
-	
-			capital = 925 # Mali/Niani
+		d_aboisso = {
+			color = { 10 145 67 }
 			
-			c_mali = { # Niani
-				color={ 108 170 48 }
-				color2={ 255 255 255 }
-				
-				b_niani = {}
-				b_selegon = {}
-				b_kamaro = {}
-				b_tabou = {}
-				b_safo = {}
-				b_baguineda = {}
-				b_dialakoro = {}
-				b_bougouni = {}
-				b_soussa = {}
+			capital = 3337 #Odienné
+			
+			c_savanes = {
+
+				color = { 64 174 133 }
+				color2 = { 250 250 250 }
+
+				b_korhogo = {
+				}
+				b_boundiali = {
+				}
+				b_seguelo = {
+				}
+				b_madinani = {
+				}
+				b_samatigulla = {
+				}
+				b_maniniam = {
+				}
+				b_sokoro = {
+				}
+				b_tingrela = {
+				}
+			}
+			c_montagnes = {
+
+				color = { 104 124 20 }
+				color2 = { 250 250 250 }
+
+				b_mannn = {
+				}
+				b_zagne = {
+				}
+				b_toulepleu = {
+				}
+				b_duekoue = {
+				}
+				b_issia = {
+				}
+				b_sinfra = {
+				}
+				b_vavoua = {
+				}
+				b_zuenoula = {
+				}
 			}
 			c_bure = {
 				color={ 145 195 51 }
@@ -38087,48 +37916,208 @@ e_mali = {
 				b_boeganiola = {} # Fictional, for prosperity
 				b_galadiou = {} # Fictional, for prosperity
 			}
-			c_dodugu = {
-				color={ 158 200 84 }
-				color2={ 255 255 255 }
-				
-				b_bamako = {}
-				b_sibi_mali = {}
-				b_kangaba = {}
-				b_ndantari = {} # Fictional, for prosperity
-				b_tichilit = {} # Fictional, for prosperity
-				b_namandiguina = {} # Fictional, for prosperity
-				b_manankoro = {} # Fictional, for prosperity
-			}
-			c_kiri = {
-				color={ 92 193 76 }
-				color2={ 255 255 255 }
-				
-				b_kita = {}
-				b_nioro = {}
-				b_diakha = {}
-				b_dakadiala = {}
-				b_dianguinare = {} # Fictional, for prosperity
-				b_serne = {} # Fictional, for prosperity
-				b_kassiola = {} # Fictional, for prosperity
+			c_woroba = {
+
+				color = { 124 17 13 }
+				color2 = { 250 250 250 }
+
+				b_seguela = {
+				}
+				b_mankono = {
+				}
+				b_nandala = {
+				}
+				b_fadyadougou = {
+				}
+				b_foungenso = {
+				}
+				b_peatogo = {
+				}
+				b_biankouma = {
+				}
+				b_glanle = {
+				}
 			}
 		}
-		d_bambuk = {
-			color={ 80 120 70 } #202 224 128
-			color2={ 255 255 255 }
+		d_accra = {
+
+			color = { 150 66 134 }
+
+			capital = 3341 #Yamoussoukro
+
+			c_lagunes = {
+
+				color = { 243 40 20 }
+				color2 = { 250 250 250 }
+
+				b_abidjan = {
+				}
+				b_tiassale = {
+				}
+				b_agbowille = {
+				}
+				b_adzope = {
+				}
+				b_lahou = {
+				}
+				b_aboisso = {
+				}
+				b_bebou = {
+				}
+				b_toumodi = {
+				}
+			}
+			c_yamoussoukro = {
+
+				color = { 153 27 55 }
+				color2 = { 250 250 250 }
+
+				b_yamoussoukro = {
+				}
+				b_daoukro = {
+				}
+				b_abengourou = {
+				}
+				b_bahiacro = {
+				}
+				b_toumbo = {
+				}
+				b_sakassou = {
+				}
+				b_dimbokro = {
+				}
+				b_lacs = {
+				}
+			}
+			c_bandama = {
+
+				color = { 233 10 150 }
+				color2 = { 250 250 250 }
+
+				holy_site = anansi
+				holy_site = mande_pagan
+				holy_site = nyame
+				holy_site = yoruba
+				holy_site = serer_reformed
+
+				b_bouake = {
+				}
+				b_beoumi = {
+				}
+				b_katiola = {
+				}
+				b_dabakala = {
+				}
+				b_tafire = {
+				}
+				b_fasselemon = {
+				}
+				b_ferkessedougou = {
+				}
+				b_ouangolodougou = {
+				}
+			}
+			c_zanzan = {
+
+				color = { 113 40 111 }
+				color2 = { 250 250 250 }
+
+				b_bondoukau = {
+				}
+				b_boudouyo = {
+				}
+				b_bandoli = {
+				}
+				b_kakpin = {
+				}
+				b_kineta = {
+				}
+				b_siraodi = {
+				}
+				b_bobanie = {
+				}
+				b_moromoro = {
+				}
+			}
+		}
+		d_sataspes = {
+			color = { 90 144 56 }
 			
-			capital = 926 # Bambuk
+			capital = 588
 			
-			c_bambuk = {
-				color={ 90 138 64 }
+			c_merya = { # Actually Mari
+				
+				color={ 234 174 13 }
 				color2={ 255 255 255 }
 			
-				b_bambuk = {}
-				b_yaresna = {}
-				b_ghiyaru = {}
-				b_diouboye = {}
-				b_goundafal = {}
-				b_sankaran = {}
-				b_kiffa = {}
+				b_yoshkarola = {
+				}
+				b_volzhsk = {
+				}
+				b_lopatino = {
+				}
+				b_tsikma = {
+				}
+				b_provoi = {
+				}
+				b_kilemary = {
+				}
+				b_mariturek = {
+				}
+				b_morki = {
+				}
+			}
+		}
+	}
+	
+	k_jolof = {
+		color = { 255 255 28 }
+		
+		capital = 3334 #Sanghana
+		yoruba = 2000
+		
+		d_kaabu = {
+			color = { 240 255 98 }
+			
+			capital = 3333 # Kambra
+			
+			c_gabu = {
+				color = { 230 223 13 }
+				
+				holy_site = hadad
+				holy_site = anansi
+				holy_site = mande_pagan
+				holy_site = nyame
+				holy_site = yoruba
+				holy_site = serer_reformed
+#				holy_site = shaytana
+				
+				b_gabu = {}
+				b_dayankara = {}
+				b_dubaduhanda = {}
+			}
+			c_sassandra = {
+
+				color = { 14 74 90 }
+				color2 = { 250 250 250 }
+
+				b_san_pedro = {
+				}
+				b_niebe = {
+				}
+				b_grabo = {
+				}
+				b_soubre = {
+				}
+				b_divo = {
+				}
+				b_gribouo = {
+				}
+				b_tabouu = {
+				}
+				b_sassandra = {
+				}
+
 			}
 			c_diafunu = {
 				color={ 102 117 85 }
@@ -38156,78 +38145,33 @@ e_mali = {
 				b_mandio = {} # Fictional, for prosperity
 			}
 		}
-		d_malle = {
-			color={ 40 170 16 }
-			color2={ 255 255 255 }
+		d_jolof = {
+			color = { 230 223 13 }
 	
-			capital = 3333 # Gabu
+			capital = 3334 #Sanghana
 		
-			c_gabu = {
-				color={ 145 197 77 }
-				color2={ 255 255 255 }
-				
-				b_gabu = {}
-				b_dayankara = {}
-				b_dubaduhanda = {}
-			}
 			c_cayor = {
 				color={ 45 97 177 }
 				color2={ 255 255 255 }
+				
+				holy_site = mande_pagan
 				
 				b_cayor = {}
 				b_daludulum = {}
 				b_tatanmarah = {}
 			}
-			c_wolof = {
-				color={ 125 97 157 }
+			c_ouadane = {
+				color={ 23 109 202 }
 				color2={ 255 255 255 }
 				
-				b_wolof = {}
-				b_hiskapmnar = {}
-				b_hukansinti = {}
-			}
-		}
-		d_yatenga = {
-			color={ 128 163 13 }
-			color2={ 255 255 255 }
-			
-			capital = 1757 # Yatenga
-			
-			c_yatenga = {
-				color={ 108 148 13 }
-				color2={ 255 255 255 }
-				
-				b_yatenga = {}
-				b_dubare = {}
-				b_zondoma = {}
-				b_giti = {}
-				b_walguyo = {}
-				b_direlabe = {} # Fictional, for prosperity
-				b_kotola = {} # Fictional, for prosperity
-			}
-			c_bobo_dyulasso = {
-				color={ 95 171 21 }
-				color2={ 255 255 255 }
-				
-				b_bobo_dyulasso = {}
-				b_taba = {}
-				b_sikasso = {}
-				b_bountoumba = {} # Fictional, for prosperity
-				b_kikele = {} # Fictional, for prosperity
-				b_kongola = {} # Fictional, for prosperity
-				b_awadi = {} # Fictional, for prosperity
-			}
-			c_wagadougou = {
-				color={ 138 186 27 }
-				color2={ 255 255 255 }
-				
-				b_wagadougou = {}
-				b_po = {}
-				b_gursi = {}
-				b_boboye = {} # Fictional, for prosperity
-				b_balangoka = {} # Fictional, for prosperity
-				b_niamalo = {} # Fictional, for prosperity
-				b_diba = {} # Fictional, for prosperity
+				b_ouadane = {}
+				b_idjil = {}
+				b_wadan = {}
+				b_azuggi = {}
+				b_ksaralkiali = {}
+				b_wadane = {} #Fictional, for prosperity
+				b_kaliki = {} #Fictional, for prosperity
+				b_gag = {} #Fictional, for prosperity
 			}
 		}
 	}
@@ -38240,165 +38184,20 @@ e_mali = {
 		
 		culture = manden
 		
-		d_ghana = {
-			color={ 62 150 247 }
-			color2={ 255 255 255 }
-	
-			capital = 913 # Ghana/Wagadu
 		
-			c_ghana = { # Wagadu
-				color={ 52 130 227 }
-				color2={ 255 255 255 }
-				
-				holy_site = west_african_pagan
-				holy_site = west_african_pagan_reformed
-				holy_site = pagan
-				
-				b_el_ghaba = {}
-				b_koumbi_saleh = {}
-				b_diara = {}
-				b_baghena = {}
-				b_goumbou = {}
-				b_kughah = {}
-				b_nema = {}
-			}
-			c_mema = {
-				color={ 81 167 241 }
-				color2={ 255 255 255 }
-				
-				b_mema = {}
-				b_dia = {}
-				b_kabora = {}
-				b_macina = {}
-				b_bakara = {} #Fictional, for prosperity
-				b_sadiabougouda = {} #Fictional, for prosperity
-				b_perge = {} #Fictional, for prosperity
-			}
-			c_djenne = {
-				color={ 75 143 212 }
-				color2={ 255 255 255 }
-			
-				b_bindugu = {}
-				b_djenne = {}
-				b_bandiagara = {}
-				b_mopti = {}
-				b_korienza = {}
-				b_pondori = {}
-				b_femaye = {}
-				b_derary = {}
-			}
-			c_soso = {
-				color={ 83 160 241 }
-				color2={ 255 255 255 }
-				
-				b_soso = {}
-				b_kirina = {}
-				b_sama = {}
-				b_segou = {}
-				b_diado = {} #Modern placeholder, for prosperity
-				b_koio = {} #Modern placeholder, for prosperity
-				b_sebete = {} #Modern placeholder, for prosperity
-			}
-		}
-		d_tagant = {
-			color={ 13 98 191 }
-			color2={ 255 255 255 }
-			
-			capital = 912 # Aoudaghost
-			
-			c_aoudaghost = {
-				color={ 10 88 176 }
-				color2={ 255 255 255 }
-			
-				b_hodh = {}
-				b_aoudaghost = {}
-				b_moudjeria  = {}
-				b_ksarelbarka = {}
-				b_kedama = {}
-				b_sarel = {} #Fictional, for prosperity
-				b_ichga = {} #Fictional, for prosperity
-			}
-			c_tagant = {
-				color={ 5 116 182 }
-				color2={ 255 255 255 }
-			
-				b_tagant  = {}
-				b_tichitt  = {}
-				b_tibogona = {} #Fictional, for prosperity
-				b_nyinuito = {} #Fictional, for prosperity
-				b_apowa = {} #Fictional, for prosperity
-				b_dawba = {} #Fictional, for prosperity
-				b_bagble = {} #Fictional, for prosperity
-			}
-		}
-		d_timbuktu = {
-			color={ 45 90 224 }
-			color2={ 255 255 255 }
-	
-			capital = 911 # Timbuktu			
-		
-			c_timbuktu = {
-				color = { 240 245 100 }
-					holy_site = amanai
-					holy_site = berber_pagan
-					holy_site = gurzil
-					holy_site = berber_pagan_reformed
-					holy_site = anansi
-					holy_site = mande_pagan
-					holy_site = nyame
-					holy_site = yoruba
-					holy_site = serer_reformed
-			
-				b_timbuktu = {}
-				b_alafia = {}
-				b_sankore = {
-				}
-				b_lafia = {}
-				b_ber = {}
-				b_boureminaly = {}
-				b_toya = {}
-				b_aglal = {}
-			}
-			c_oualata = {
-				color={ 53 81 203 }
-				color2={ 255 255 255 }
-			
-				b_oualata = {}
-				b_biru = {}
-				b_neiguiat = {}
-				b_konou = {}
-				b_birnsara = {}
-				b_tizert = {}
-				b_tarhalet = {}
-				b_fassekra = {}
-			}
-			c_araouane = {
-				color={ 64 108 235 }
-				color2={ 255 255 255 }
-			
-				b_araouane = {}
-				b_tessalit = {}
-				b_aguelhok = {}
-				b_abalessa = {}
-				b_tinzaouten = {}
-				b_guezzam = {}
-				b_tamanrasset = {}
-				b_tazrouk = {}
-			}
-		}
 	}
 	
 	k_songhay = {
 		color={ 178 76 81 }
 		color2={ 255 255 255 }
 		
-		capital = 914 # Gao
+		capital = 911 # Timbuktu
 		
-		culture = manden
+		berber_pagan_reformed = 5000
+		yoruba = 10000
 		
 		d_songhay = {
-			color={ 210 82 89 }
-			color2={ 255 255 255 }
+			color = { 242 238 179 }
 			
 			capital = 914 # Gao
 			
@@ -38453,6 +38252,211 @@ e_mali = {
 				b_djila = {} #Fictional, for prosperity
 				b_dongossela = {} #Fictional, for prosperity
 			}
+		}
+		d_timbuktu = {
+			color = { 240 245 100 }
+	
+			capital = 911 # Timbuktu			
+		
+			c_timbuktu = {
+				color = { 240 245 100 }
+					holy_site = amanai
+					holy_site = berber_pagan
+					holy_site = gurzil
+					holy_site = berber_pagan_reformed
+					holy_site = anansi
+					holy_site = mande_pagan
+					holy_site = nyame
+					holy_site = yoruba
+					holy_site = serer_reformed
+			
+				b_timbuktu = {}
+				b_alafia = {}
+				b_sankore = {
+				}
+				b_lafia = {}
+				b_ber = {}
+				b_boureminaly = {}
+				b_toya = {}
+				b_aglal = {}
+			}
+			c_oualata = {
+				color={ 53 81 203 }
+				color2={ 255 255 255 }
+			
+				b_oualata = {}
+				b_biru = {}
+				b_neiguiat = {}
+				b_konou = {}
+				b_birnsara = {}
+				b_tizert = {}
+				b_tarhalet = {}
+				b_fassekra = {}
+			}
+			c_araouane = {
+				color={ 64 108 235 }
+				color2={ 255 255 255 }
+			
+				b_araouane = {}
+				b_tessalit = {}
+				b_aguelhok = {}
+				b_abalessa = {}
+				b_tinzaouten = {}
+				b_guezzam = {}
+				b_tamanrasset = {}
+				b_tazrouk = {}
+			}
+		}
+		d_ghana = {
+			color = { 245 188 102 }
+	
+			capital = 913 # Ghana/Wagadu
+		
+			c_ghana = { # Wagadu
+				color={ 52 130 227 }
+				color2={ 255 255 255 }
+				
+				holy_site = west_african_pagan
+				holy_site = west_african_pagan_reformed
+				holy_site = pagan
+				
+				b_el_ghaba = {}
+				b_koumbi_saleh = {}
+				b_diara = {}
+				b_baghena = {}
+				b_goumbou = {}
+				b_kughah = {}
+				b_nema = {}
+			}
+			c_aoudaghost = {
+				color={ 10 88 176 }
+				color2={ 255 255 255 }
+			
+				b_hodh = {}
+				b_aoudaghost = {}
+				b_moudjeria  = {}
+				b_ksarelbarka = {}
+				b_kedama = {}
+				b_sarel = {} #Fictional, for prosperity
+				b_ichga = {} #Fictional, for prosperity
+			}
+			c_tagant = {
+				color={ 5 116 182 }
+				color2={ 255 255 255 }
+			
+				b_tagant  = {}
+				b_tichitt  = {}
+				b_tibogona = {} #Fictional, for prosperity
+				b_nyinuito = {} #Fictional, for prosperity
+				b_apowa = {} #Fictional, for prosperity
+				b_dawba = {} #Fictional, for prosperity
+				b_bagble = {} #Fictional, for prosperity
+			}
+			c_bambuk = {
+				color={ 90 138 64 }
+				color2={ 255 255 255 }
+			
+				b_bambuk = {}
+				b_yaresna = {}
+				b_ghiyaru = {}
+				b_diouboye = {}
+				b_goundafal = {}
+				b_sankaran = {}
+				b_kiffa = {}
+			}
+			c_soso = {
+				color={ 83 160 241 }
+				color2={ 255 255 255 }
+				
+				b_soso = {}
+				b_kirina = {}
+				b_sama = {}
+				b_segou = {}
+				b_diado = {} #Modern placeholder, for prosperity
+				b_koio = {} #Modern placeholder, for prosperity
+				b_sebete = {} #Modern placeholder, for prosperity
+			}
+		}
+		d_mali = { # Manding
+			color={ 130 180 61 } #80 120 70
+			color2={ 255 255 255 }
+	
+			capital = 925 # Mali/Niani
+			
+			c_mali = { # Niani
+				color={ 108 170 48 }
+				color2={ 255 255 255 }
+				
+				b_niani = {}
+				b_selegon = {}
+				b_kamaro = {}
+				b_tabou = {}
+				b_safo = {}
+				b_baguineda = {}
+				b_dialakoro = {}
+				b_bougouni = {}
+				b_soussa = {}
+			}
+			c_yatenga = {
+				color={ 108 148 13 }
+				color2={ 255 255 255 }
+				
+				b_yatenga = {}
+				b_dubare = {}
+				b_zondoma = {}
+				b_giti = {}
+				b_walguyo = {}
+				b_direlabe = {} # Fictional, for prosperity
+				b_kotola = {} # Fictional, for prosperity
+			}
+			c_kiri = {
+				color={ 92 193 76 }
+				color2={ 255 255 255 }
+				
+				b_kita = {}
+				b_nioro = {}
+				b_diakha = {}
+				b_dakadiala = {}
+				b_dianguinare = {} # Fictional, for prosperity
+				b_serne = {} # Fictional, for prosperity
+				b_kassiola = {} # Fictional, for prosperity
+			}
+			c_wagadougou = {
+				color={ 138 186 27 }
+				color2={ 255 255 255 }
+				
+				b_wagadougou = {}
+				b_po = {}
+				b_gursi = {}
+				b_boboye = {} # Fictional, for prosperity
+				b_balangoka = {} # Fictional, for prosperity
+				b_niamalo = {} # Fictional, for prosperity
+				b_diba = {} # Fictional, for prosperity
+			}
+			c_bobo_dyulasso = {
+				color={ 95 171 21 }
+				color2={ 255 255 255 }
+				
+				b_bobo_dyulasso = {}
+				b_taba = {}
+				b_sikasso = {}
+				b_bountoumba = {} # Fictional, for prosperity
+				b_kikele = {} # Fictional, for prosperity
+				b_kongola = {} # Fictional, for prosperity
+				b_awadi = {} # Fictional, for prosperity
+			}
+			c_mema = {
+				color={ 81 167 241 }
+				color2={ 255 255 255 }
+				
+				b_mema = {}
+				b_dia = {}
+				b_kabora = {}
+				b_macina = {}
+				b_bakara = {} #Fictional, for prosperity
+				b_sadiabougouda = {} #Fictional, for prosperity
+				b_perge = {} #Fictional, for prosperity
+			}
 			c_kurumba = {
 				color={ 187 77 98 }
 				color2={ 255 255 255 }
@@ -38464,6 +38468,31 @@ e_mali = {
 				b_ouario_ouario = {} # Fictional, for prosperity
 				b_gourel_bassirou = {} # Fictional, for prosperity
 				b_seriwala = {} # Fictional, for prosperity
+			}
+			c_dodugu = {
+				color={ 158 200 84 }
+				color2={ 255 255 255 }
+				
+				b_bamako = {}
+				b_sibi_mali = {}
+				b_kangaba = {}
+				b_ndantari = {} # Fictional, for prosperity
+				b_tichilit = {} # Fictional, for prosperity
+				b_namandiguina = {} # Fictional, for prosperity
+				b_manankoro = {} # Fictional, for prosperity
+			}
+			c_djenne = {
+				color={ 75 143 212 }
+				color2={ 255 255 255 }
+			
+				b_bindugu = {}
+				b_djenne = {}
+				b_bandiagara = {}
+				b_mopti = {}
+				b_korienza = {}
+				b_pondori = {}
+				b_femaye = {}
+				b_derary = {}
 			}
 		}
 		d_gurma = {

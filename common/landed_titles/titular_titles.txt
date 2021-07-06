@@ -164,6 +164,19 @@ k_idrisid = {
 		}
 	}
 }
+k_nubia = {
+	color = { 161 172 86 }
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}	
+}
 k_maurya = {
 	color = { 168 74 57 }
 	allow = {
@@ -1413,8 +1426,8 @@ k_raumariki = {
 }
 k_ravenna = {
 	color = { 125 35 55 }
-	title = Exarch
-	title_prefix = "Exarchate Of" 
+	title = EXARCH
+	title_prefix = "EXARCHATE OF" 
 	allow = {
 		war = no
 		ruled_years = 5

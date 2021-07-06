@@ -1135,22 +1135,25 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 				b_jappimn = {
 				}
 			}
-`			c_inhambenna = {
-
-				color = { 28 208 171 }
-				color2 = { 250 250 250 }
-
-				b_inhambenna = {
+			c_ashli = {
+				color={ 207 172 77 }
+				color2={ 255 255 255 }
+				
+				b_ashli = {
 				}
-				b_maramani = {
+				b_boro = {
 				}
-				b_raditshaba = {
+				b_durtojle = {
 				}
-				b_makado = {
+				b_daulakan = {
 				}
-				b_chamumnanga = {
+				b_blagovescen = {
 				}
-				b_lutombe = {
+				b_tuimasy = {
+				}
+				b_janauyl = {
+				}
+				b_yamantaw = {
 				}
 			}
 			c_zambezia = {
@@ -1612,10 +1615,9 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 		zande_pagan_reformed = 1000
 		zulu_pagan_reformed = 1000
 
-		d_merina = {
+		d_madagascar = {
 
-			color = { 255 137 86 }
-			color2 = { 250 250 250 }
+			color = { 145 33 220 }
 
 			capital = 2829 #Antananarivo
 
