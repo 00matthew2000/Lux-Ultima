@@ -24968,6 +24968,10 @@ zoroastrian_group = {
 	
 
 american_pagan_group = {
+    graphical_culture = norsegfx
+    playable = yes
+	hostile_within_group = yes
+    
 	pagan = { # Use for misc other pagans
 		graphical_culture = pagangfx
 		alternate_start = { always = no }
@@ -25088,11 +25092,15 @@ american_pagan_group = {
 		
 		religious_clothing_head = 14
 		religious_clothing_priest = 3
-		
-		}
+
 	}
+}
 	
 asian_religion_group = {
+    graphical_culture = indiangfx
+    playable = yes
+	hostile_within_group = yes
+    
 	jurchen_pagan_reformed = { # Jurchens
 		graphical_culture = mongolgfx	
 		secondary_event_pictures = tengri_pagan
@@ -26240,6 +26248,10 @@ asian_religion_group = {
 }
 
 african_pagan_group = {
+    graphical_culture = muslimgfx
+    playable = yes
+	hostile_within_group = yes
+    
 	south_bantu_mythology_reformed = {
 		graphical_culture = africangfx
 		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
@@ -26858,6 +26870,9 @@ african_pagan_group = {
 }
 
 native_american_group = {
+    graphical_culture = norsegfx
+    playable = yes
+	hostile_within_group = yes
 
 	algic_pagan_reformed = {
 		graphical_culture = mesoamericangfx
@@ -27534,6 +27549,10 @@ native_american_group = {
 
 	
 eastern_folk_group = {
+    graphical_culture = indiangfx
+    playable = yes
+	hostile_within_group = yes
+
 	nat = { #Burman-Pyu folk religion
 		has_coa_on_barony_only = yes
 		graphical_culture = buddhistgfx
@@ -28209,5 +28228,5 @@ eastern_folk_group = {
 		intermarry = malagasy_religion_reformed	
 		intermarry = ainu_pantheism
 		intermarry = ainu_pantheism_reformed
-		}
 	}
+}
