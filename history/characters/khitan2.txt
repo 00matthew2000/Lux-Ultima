@@ -309,9 +309,9 @@
 }
 217176 = {
 	name = "Dashi" # fictional
-	dynasty = 1051111 # Yuzhi
-	religion = buddhist
-	culture = khitan
+	dynasty = 1051111111 # Yuzhi
+	religion = tengri_pagan
+	culture = mongol
 	1014.5.9 = {
 		birth = yes
 	}
@@ -324,8 +324,8 @@
 }
 217177 = {
 	name = "Dianni" # fictional
-	religion = buddhist
-	culture = khitan
+	religion = tengri_pagan
+	culture = mongol
 	female = yes
 	1012.11.4 = {
 		birth = yes
@@ -336,9 +336,9 @@
 }
 217178 = {
 	name = "Yilie" # fictional
-	dynasty = 1051111 # Yuzhi
-	religion = buddhist
-	culture = khitan
+	dynasty = 1051111111 # Yuzhi
+	religion = tengri_pagan
+	culture = mongol
 	father = 217176
 	mother = 217177
 	1033.6.10 = {
@@ -350,9 +350,9 @@
 }
 217179 = {
 	name = "Shulü-Ping" # fictional
-	dynasty = 1051111 # Yuzhi
-	religion = buddhist
-	culture = khitan
+	dynasty = 1051111111 # Yuzhi
+	religion = tengri_pagan
+	culture = mongol
 	father = 217176
 	mother = 217177
 	female = yes
@@ -365,9 +365,9 @@
 }
 217180 = {
 	name = "Zongzhen" # fictional
-	dynasty = 1051111 # Yuzhi
-	religion = buddhist
-	culture = khitan
+	dynasty = 1051111111 # Yuzhi
+	religion = tengri_pagan
+	culture = mongol
 	father = 217176
 	mother = 217177
 	1042.12.22 = {
@@ -379,7 +379,7 @@
 }
 217181 = {
 	name = "Wenshunu" # fictional
-	dynasty = 1051112 # Wanyan
+	dynasty = 1000051112 # Wanyan
 	religion = buddhist
 	culture = khitan
 	1006.5.24 = {
@@ -406,7 +406,7 @@
 }
 217183 = {
 	name = "Cuiba" # fictional
-	dynasty = 1051112 # Wanyan
+	dynasty = 1000051112 # Wanyan
 	religion = buddhist
 	culture = khitan
 	female = yes
@@ -421,7 +421,7 @@
 }
 217184 = {
 	name = "Yingtian" # fictional
-	dynasty = 1051112 # Wanyan
+	dynasty = 1000051112 # Wanyan
 	religion = buddhist
 	culture = khitan
 	female = yes
@@ -435,10 +435,10 @@
 	}
 }
 217185 = {
-	name = "Gou'er" # fictional
-	dynasty = 1051112 # Wanyan
-	religion = tengri_pagan
-	culture = khitan
+	name = "Buyirugh" # fictional
+	dynasty = 1000051112 # Wanyan
+	religion = bud_zen
+	culture = mongol
 	father = 217181
 	mother = 217182
 	1039.2.12 = {
@@ -463,7 +463,7 @@
 
 217335 = {
 	name = Dashi # fictional
-	dynasty = 1051111 # Yuzhi
+	dynasty = 1051111111 # Yuzhi
 	religion = buddhist
 	culture = khitan
 	father = 217178
@@ -479,7 +479,7 @@
 
 217336 = {
 	name = Yanxi # fictional
-	dynasty = 1051111 # Yuzhi
+	dynasty = 1051111111 # Yuzhi
 	religion = buddhist
 	culture = khitan
 	father = 217335
@@ -495,7 +495,7 @@
 
 217337 = {
 	name = "Duolubu" # fictional
-	dynasty = 1051112 # Wanyan
+	dynasty = 1000051112 # Wanyan
 	religion = tengri_pagan
 	culture = khitan
 	father = 217185
@@ -512,7 +512,7 @@
 
 217338 = {
 	name = "Tiande" # fictional
-	dynasty = 1051112 # Wanyan
+	dynasty = 1000051112 # Wanyan
 	religion = buddhist
 	culture = khitan
 	father = 217337
@@ -1830,9 +1830,9 @@ father=93263
 }
 258101 = {
 	name="Qinde"
-	dynasty=1100023
-	religion="buddhist"
-	culture="khitan"
+	dynasty=11100
+	religion="tengri_pagan"
+	culture="mongol"
 	1033.1.1={
 		birth=yes
 	}

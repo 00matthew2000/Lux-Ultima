@@ -3162,6 +3162,7 @@ altaic = {
 		}
 		
 		from_dynasty_prefix = "of "
+		dynasty_title_names = yes
 		founder_named_dynasties = yes
 
 		allow_looting = yes
@@ -3406,6 +3407,32 @@ altaic = {
 		}
 		
 		from_dynasty_prefix = "dur "
+		founder_named_dynasties = yes
+
+		modifier = default_culture_modifier
+	}
+	xianbei = {
+		graphical_cultures = { mongolgfx }
+		
+		color = { 0.82 0.39 0.05 }
+
+		male_names = {
+			Abachi Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arasen Arslan Badarongga Bagaridai Barghujin Bedugun Belgunutei Belgutei Bodonchar Bogen Bogorchu Bolkhadar 
+			Borjigidai Boroghul Bughu Bughutu Bugunutei Burkhan Buyirugh Chaghagan Chagur Chagurkhai Chidukhul Chiledu Chormakhan Chulgutei Dokholkhu Dologadai Dorlipun Eljigedei Engkebatu Gantimur 
+			Ghachin Guigudar Horkhudagh Hutenu Idughadai Jirghogadai Jurchedei Khaligudar Kharachar Khorghosun Khutughtu Khutula Khuyildar Kinggiyadai Kiriltugh Kokochu Kuchlug Mergan Mergujin 
+			Mersentei Miyanggetu Miyangëdei Mulkhalkhu Mungetu Nakhu Nayaga Odchigin Oldaghar Oronartai Shingkhor Shiraghul Shirgugetu Sorkhatu Soyiketu Subetei Sukegei Targhutai Telegetu 
+			Temuge Tobukha Tobsakha Toghoril Toghon Toghtoga Tokhuchar Torolchi Tumbinai Tunghhuidai Tusakha Tuyuideger Ukhuna Yesugun Yesunge Üjiyedin Urtusakhal
+		}
+		female_names = {
+			Al-Alta Alan Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Doregene Doquz Ebegei Gurbesu Hogelun Holuikhan Ibakha Khadagan Khogaghchin Khojin Khorijin Khugurchin
+			Khulan Mandukhai Mongoljin Nomolun Oghul Orbei Sokhatai Sorkhaghatani Tekine Temulun Töregene Yesugun Yesui
+		}
+
+		male_patronym = "ben "
+		female_patronym = "ben "
+		prefix = yes
+		
+		dynasty_title_names = yes
 		founder_named_dynasties = yes
 
 		modifier = default_culture_modifier

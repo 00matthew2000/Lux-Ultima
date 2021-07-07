@@ -20363,6 +20363,8 @@ e_tartaria = {
 			
 			capital = 1456 # Ikh Bogd
 			
+			mongol = "Naiman"
+			
 			c_ikh_bogd = {
 				color = { 115 160 240 }
 				
@@ -20864,15 +20866,6 @@ e_tartaria = {
 				b_yustik = {}
 				b_aktach = {}
 				b_kuray = {}
-			}
-			c_khuiten = {
-				color = { 57 57 80 }
-				
-				b_apaer = {}
-				b_kuldja = {}
-				b_ili = {}
-				b_djideli = {}
-				b_dikankairat = {}
 			}
 		}
 		d_abakan = {
@@ -22060,6 +22053,15 @@ e_serindia = {
 				b_gulja = {}
 				b_kazanqi = {}
 				b_gukure = {}
+			}
+			c_khuiten = {
+				color = { 57 57 80 }
+				
+				b_apaer = {}
+				b_kuldja = {}
+				b_ili = {}
+				b_djideli = {}
+				b_dikankairat = {}
 			}
 		}
 	}

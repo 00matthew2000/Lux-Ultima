@@ -7302,7 +7302,7 @@
 	culture = xiongnu
 }
 7027 = {
-	name="Naiman"
+	name="Modun"
 	culture = xiongnu
 }
 7028 = {
@@ -10675,7 +10675,15 @@
 }
 11100 = {
 	name="Borjigin"
-	culture = xiongnu
+	culture="mongol"
+	religion="tengri_pagan"
+	coat_of_arms=
+	{
+		data=
+		{
+0 8 0 44 0 0 0 			}
+	}
+	used_for_random=no
 }
 11101 = {
 	name="Mikulinich"
