@@ -117,7 +117,7 @@ feudal_governments = {
 	}
 
 	oriental_monarchy_government = {
-		preferred_holdings = { CITY }
+		preferred_holdings = { CASTLE CITY }
 		allowed_holdings = { 
 			CITY
 			CASTLE 
@@ -145,13 +145,27 @@ feudal_governments = {
 			messianic_government
 		}
 		potential = {
-			NAND = {
-				controls_religion = yes
-				can_head_religion_trigger = no
-			}
-			LI_pagan_trigger = no
-			oriental_monarchy_government_trigger = yes
-			is_patrician = no
+			OR = {   
+				AND = {   
+					NAND = {
+						controls_religion = yes
+                        can_head_religion_trigger = no
+                    }
+                    LI_pagan_trigger = no
+                    oriental_monarchy_government_trigger = yes
+                    is_patrician = no
+					OR = {
+					    higher_tier_than = BARON
+						capital_holding = { holding_type = CASTLE }
+					}
+					NOT = { government = republic_government }
+                }   
+            has_law = messianic_power_0
+            has_law = messianic_power_1
+            has_law = messianic_power_2
+            has_law = messianic_power_3
+            has_law = messianic_power_4
+            }    
 		}
 		
 		color = { 124 52 88 }
@@ -175,7 +189,7 @@ feudal_governments = {
 	}
 
 	classical_government = {
-		preferred_holdings = { CITY }
+		preferred_holdings = { CASTLE CITY }
 		allowed_holdings = { 
 			CITY
 			CASTLE 
@@ -210,6 +224,11 @@ feudal_governments = {
 			LI_pagan_trigger = no
 			classical_government_trigger = yes
 			is_patrician = no
+			OR = {
+			    higher_tier_than = BARON
+				capital_holding = { holding_type = CASTLE }
+			}
+			NOT = { government = republic_government }
 		}
 		
 		color = { 238 238 238 }
@@ -510,6 +529,7 @@ feudal_governments = {
 		}
 		allowed_holdings_religion = { # Holdings need to be of the correct religion
 			CASTLE
+			CITY
 			TRIBAL
 		}
 		accepts_liege_governments_religion = { 
@@ -589,8 +609,8 @@ feudal_governments = {
 		}
 		potential = {
 			OR = {
-				has_law = knowledge_control_3
-				has_law = knowledge_control_4
+				has_law = messianic_power_3
+                has_law = messianic_power_4
 			}
 		}
 		
