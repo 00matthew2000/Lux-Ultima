@@ -1,61 +1,47 @@
-618.6.18 ={
-	liege = d_ghrembjen
+#Yaolian Dynasty
+20.1.1 = {
+	historical_nomad = yes
+}
+730.1.1 = {
+	holder=1000202496 #Wa
+}
+734.1.1 = {
+	holder=1000202497 #Guozhe
+}
+735.1.1 = {
+	holder=1000202498 #Zuwu
+}
+745.1.1 = {
+	holder=1000202499 #Hula
+}
+778.1.1 = {
+	holder=1000202500 #Su
+}
+800.1.1 = {
+	holder=1000202501 #Bala
+}
+820.1.1 = {
+	holder=1000202502 #Zhaogu
+}
+842.1.1 = {
+	holder=1000202503 #Yelan
 }
 
-618.6.18 ={
-	holder = 1000455766
+#Shiwei
+859.1.1 = {
+	liege="d_limghuang"
 }
-
-641.9.3 ={
-	holder = 1000455767
+859.1.1 = {
+	holder=1000202570 #Dale
 }
-
-671.6.20 ={
-	holder = 1000455768
+873.1.1 = {
+	holder=1000202504 #Xianzhi
 }
-
-695.3.6 ={
-	holder = 1000455769
+882.1.1 = {
+	holder=1000202505 #Hendeji
 }
-
-724.11.1 ={
-	holder = 1000455770
-}
-
-748.3.16 ={
-	holder = 1000455771
-}
-
-770.10.7 ={
-	holder = 1000455772
-}
-
-800.3.11 ={
-	holder = 1000455773
-}
-
-824.2.20 ={
-	holder = 1000455774
-}
-
-848.8.25 ={
-	holder = 1000455775
-}
-
-869.8.19 ={
-	holder = 1000455776
-}
-
-895.7.27 ={
-	holder = 1000455777
-}
-
-
 
 #Yelu Dynasty
-907.2.27 = {
-	liege="e_kitai"
-}
 907.2.27 = {
 	holder=194325 #Abaoji
 }
@@ -78,16 +64,17 @@
 	holder = 194332
 }
 1055.8.28 = {
-	holder = 194333
+	holder = 188912
 }
 1101.2.12 = {
 	holder = 194334
 }
 
+#Wanyan Dynasty
 1125.3.16 ={
 	liege = e_anchuhu
 }
-1125.3.16 ={
+1125.3.16 = {
 	holder=217731 #Wuqimai
 }
 1135.2.9 = {
@@ -106,45 +93,58 @@
 	holder=217737 #Yongji
 }
 
-1212.1.1 ={
-	liege = e_mongol_empire
+#Mongol Empire
+1212.1.1 = {
+	liege="e_mongol_empire"
 }
-
-1212.1.1 ={
-	holder = 125501
+1212.1.1={
+	holder=125501 #Genghis
 }
 1227.12.2 = {
-	liege = k_mongolia
+	liege="k_mongolia"
 }
-1234.2.10 ={
-	holder = 172005
+1227.12.2 = {
+	holder = 172005 # Ögedei Khan
 }
-
-1241.12.11 ={
-	holder = 172007
+1241.12.11 = {
+	holder = 172007 # Güyük Khan
 }
-
-1248.1.1 ={
-	holder = 217265
+1248.1.1 = {
+	holder = 217265 # Möngke Khan
 }
-
-1259.8.11 ={
-	holder = 217266
+1259.8.11 = {
+	holder = 217266 # Kublai Khan
 }
-
-1279.3.19 ={
-	liege = d_ghrembjen
+1294.2.18 = {
+	holder = 217269 # Temür Khan
 }
-
-1279.3.19 ={
-	holder = 1000455778
+1307.2.10 = {
+	holder = 217271 # Külüg Khan
 }
-
-1307.10.22 ={
-	holder = 1000455779
+1311.1.27 = {
+	holder = 217272 # Buyantu Khan
 }
-
-1336.9.23 ={
-	holder = 1000455780
+1320.3.1 = {
+	holder = 217274 # Gegeen Khan
 }
-
+1323.9.4 = {
+	holder = 217279 # Yesün Temür Khan
+}
+1328.8.15 = {
+	holder = 217280 # Ragibagh Khan
+}
+1328.11.14 = {
+	holder = 217281 # Jayaatu Khan
+}
+1329.2.27 = {
+	holder = 217282 # Khutughtu Khan Kusala
+}
+1329.8.30 = { # Enthroned 1329.9.8
+	holder = 217281 # Jayaatu Khan
+}
+1332.9.2 = { # Coronation 1332.10.23
+	holder = 217283 # Rinchinbal Khan
+}
+1332.12.14 = {
+	holder = 217284 # Toghon Temür Khan
+}

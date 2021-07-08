@@ -743,14 +743,27 @@
 
 
 100084005 = {
-	name="Muggyeong"
+	name="Menander"
 	dynasty=1000027805 #Buk
-	religion="shingyo"
-	culture="korean"
-	1050.1.1={
+	religion="indoh_confucian"
+	culture="sinohellenic"
+	1049.8.12={
 		birth=yes
 	}
-	1078.1.1={
+	1088.10.1={
+		death=yes
+	}
+}
+
+100084006 = {
+	name="Cassius"
+	dynasty=1000027806 #Thurinus
+	religion="bud_pureland"
+	culture="romanokoric"
+	1037.4.17={
+		birth=yes
+	}
+	1095.1.22={
 		death=yes
 	}
 }
@@ -768,21 +781,18 @@
 	}
 }
 
-
-100084010 = {
-	name="Won"
-	dynasty=1000027810 #San
+100084019 = {
+	name="Nikandros"
+	dynasty=1000027813 #San
 	religion="shingyo"
-	culture="korean"
-	1050.1.1={
+	culture=huakyo"
+	1046.5.15={
 		birth=yes
 	}
-	1078.1.1={
+	1099.4.4={
 		death=yes
 	}
 }
-
-
 
 100084013 = {
 	name="Bang"

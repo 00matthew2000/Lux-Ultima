@@ -1,8 +1,5 @@
 #Goguryeo Kingdom
 313.1.1={
-	liege="k_goguryeo"
-}
-313.1.1={
 	holder=1000450527 #Micheon
 }
 331.1.1={
@@ -45,10 +42,6 @@
 	holder=1000450565 #Bojang
 }
 #Silla
-668.1.1={
-	liege="k_silla"
-	holder=1000450284 #Munmu
-}
 681.1.1={
 	holder=1000450297 #Sinmun
 }
@@ -84,9 +77,6 @@
 }
 #Balhae
 820.1.1={
-	liege="k_balhae"
-}
-820.1.1={
 	holder=1000450601 #Seon
 }
 830.1.1={
@@ -106,9 +96,6 @@
 }
 #Yelu Dynasty
 926.1.1 = {
-	liege="k_dan_gur"
-}
-926.1.1 = {
 	#holder=1000202509 #Bei
 	holder=194327 #Bei
 }
@@ -117,9 +104,6 @@
 }
 
 #Wanyan Dynasty
-936.1.1 = {
-	liege="k_jurchens"
-}
 936.1.1 = {
 	holder=1000202534 #Oboi
 }
@@ -136,9 +120,6 @@
 	holder=1000202543 #Seiku
 }
 #Goryeo
-993.1.1={
-	liege="k_goryeo"
-}
 993.1.1={
 	holder=1000075507 #Chi
 }
@@ -159,6 +140,7 @@
 }
 1066.1.1={
 	holder = 100084005
+	liege = d_seohae
 }
 1078.1.1={
 	holder=1000075513 #Hwi

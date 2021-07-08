@@ -11,9 +11,306 @@ e_anchuhu = {
    		color2 = { 255 255 255 }
 
 		capital = 2035 # Sang
+
+		sinohellenic = "Angoka"
+		hellenistic = "Angoka"
+		greek = "Angoka"
+		roman = "Angoca"
+		romanokoric = "Angoca"
+		huakyo = "Angoka"
 	
-		culture = silla
+		d_gyeongsang = {
 	
+    			color = { 95 148 126 }
+    			color2 = { 255 255 255 }
+
+			capital = 2035 # Sang
+			
+			silla = "Saro"
+
+			c_sang = {
+			
+				silla = "Sangju"
+				korean = "Yeongnam"
+		
+				color = { 105 148 126 }
+				color2 = { 255 255 255  }
+				
+				holy_site = shingyo
+		
+				b_sang = {
+				}
+				b_yeong = {
+				}
+				b_daegu = {
+				}
+				b_andong = {
+				}
+				b_gimcheon = {
+				}
+				b_gumi = {
+				}
+				b_yeon = {
+				}
+				b_bonghwa = {
+				}
+			}
+			c_yang = {
+			
+				silla = "Yangju"
+				korean = "Yeongdong"
+		
+				color = { 95 158 126 }
+				color2 = { 255 255 255  }
+
+				b_gyeong = {
+				}
+				b_pohang = {
+				}
+				b_yang = {
+				}
+				b_ulsan = {
+				}
+				b_busan_yang = {
+				}
+				b_yangsan = {
+				}
+				b_gimhae = {
+				}
+				b_miryang = {
+				}
+			}
+			c_gang = {
+			
+				korean = "Sannam"
+				silla = "Gangju"
+				gaya = "Gaya"
+		
+				color = { 174 219 213 }
+				color2 = { 255 255 255  }
+
+				b_gang = {
+					gaya = "Goryeong Gaya"
+				}
+				b_sacheon = {
+					gaya = "Geumgwan Gaya"
+				}
+				b_namhae_gang = {
+				}
+				b_geochang = {
+					gaya = "Dae Gaya"
+				}
+				b_jin = {
+				}
+				b_tongyeong = {
+					gaya = "So Gaya"
+				}
+				b_geoje = {
+					gaya = "Ara Gaya"
+				}
+				b_uiryeong = {
+					gaya = "Bihwa Gaya"
+				}
+			}
+		}
+		d_tamna = {
+		
+			color = { 80 128 145 }
+			color2 = { 255 255 255  }
+				
+			capital = 2031 # Jeon
+			
+			culture = tamna
+			
+			c_jeju = {
+		
+				color = { 76 121 156 }
+				color2 = { 255 255 255  }
+				
+				holy_site = shingyo
+			
+				b_jeju = {
+				}
+				b_seogwipo = {
+				}
+				b_halla = {
+				}
+				b_marado = {
+				}
+			}
+		}
+		d_yanggwang = {
+	
+    			color = { 63 180 168 }
+    			color2 = { 255 255 255  }
+
+			capital = 2027 # Gwang
+			
+			silla = "Ungju"
+
+			c_gwang = {
+		
+				color = { 73 180 168 }
+				color2 = { 255 255 255  }
+				
+				holy_site = shingyo
+		
+				b_hanyang = {
+				}
+				b_gwang = {
+				}
+				b_ganghwa = {
+				}
+				b_sugwang = {
+				}
+				b_yanggwang = {
+				}
+				b_yeo = {
+				}
+				b_anseong = {
+				}
+				b_hanam = {
+				}
+			}
+			c_cheong = {
+		
+				color = { 63 190 168 }
+				color2 = { 255 255 255  }
+			
+				b_chungcheong = {
+				}
+				b_cheong = {
+				}
+				b_jecheon = {
+				}
+				b_goesan = {
+				}
+				b_okcheon = {
+				}
+				b_enmseong = {
+				}
+				b_cheongwon = {
+				}
+				b_danyang = {
+				}
+			}
+			c_gong = {
+		
+				color = { 63 180 178 }
+				color2 = { 255 255 255  }
+			
+				b_gong = {
+				}
+				b_asan = {
+				}
+				b_hongseong = {
+				}
+				b_taean = {
+				}
+				b_buyeo = {
+				}
+				b_cheongyang = {
+				}
+				b_yesan = {
+				}
+				b_seocheon = {
+				}
+			}
+			c_won = {
+		
+				color = { 53 180 168 }
+				color2 = { 255 255 255  }
+			
+				b_won = {
+				}
+				b_hoengseong = {
+				}
+				b_yeongwol = {
+				}
+				b_pyeongchan = {
+				}
+				b_jeongseon = {
+				}
+			}
+		}
+		d_jeolla = {
+	
+    			color = { 86 121 156 }
+    			color2 = { 255 255 255  }
+
+			capital = 2031 # Jeon
+			
+			silla = "Muju"
+		
+			c_jeon = {
+		
+				silla = "Jeonju"
+				
+				color = { 96 121 156 }
+				color2 = { 255 255 255  }
+		
+				b_jeon = {
+				}
+				b_gangnam = {
+				}
+				b_wan = {
+				}
+				b_iksan = {
+				}
+				b_namwon = {
+				}
+				b_gunsan = {
+				}
+				b_jeongeup = {
+				}
+				b_gimje = {
+				}
+			}
+			c_na = {
+		
+				color = { 86 131 156 }
+				color2 = { 255 255 255  }
+			
+				b_na = {
+				}
+				b_mokpo = {
+				}
+				b_gwangna = {
+				}
+				b_haenam = {
+				}
+				b_sinan_na = {
+				}
+				b_yeongam = {
+				}
+				b_wando = {
+				}
+				b_muan = {
+				}
+			}
+			c_seung = {
+
+				color = { 86 121 166 }
+				color2 = { 255 255 255  }
+			
+				b_seung = {
+				}
+				b_suncheon = {
+				}
+				b_gwangyang = {
+				}
+				b_yeosu = {
+				}
+				b_gokseong = {
+				}
+				b_gurye = {
+				}
+				b_boseong = {
+				}
+				b_hwasun = {
+				}
+			}
+		}
 		d_gaya = {
 
 			capital = 2036 # Gang
@@ -356,8 +653,8 @@ e_anchuhu = {
     			color2 = { 255 255 255  }
 			
 			han = "Zhongjing"
-			mohe = "Juningu"
-			jurchen = "Juningu"
+			mohe = "Balhae"
+			jurchen = "Balhae"
 
 			c_jangnyeong = {
 		
@@ -605,6 +902,12 @@ e_anchuhu = {
 		baekje = "Baekje"
 		korean = "Goryeo"
 		tamna = "Tamna"
+		sinohellenic = "Lelanga"
+		hellenistic = "Lelanga"
+		greek = "Lelanga"
+		roman = "Lelangion"
+		romanokoric = "Lelangion"
+		huakyo = "Lelanga"
 
     		d_seohae = {
 
@@ -612,6 +915,7 @@ e_anchuhu = {
     			color2 = { 255 255 255  }
 				
 			silla = "Hanju"
+			sinohellenic = "Lelang"
 
 			capital = 2024 # Gyeonggi
 
@@ -712,6 +1016,12 @@ e_anchuhu = {
 			capital = 2570 # Gyo
 			
 			silla = "Sakju"
+			romanokoric = "Sakjon"
+			sinohellenic = "Sakjana"
+			hellenistic = "Sakjana"
+			greek = "Sakjana"
+			roman = "Sakjon"
+			huakyo = "Sakjana"
 		
 	   		c_gyogyo = {
 		
@@ -757,298 +1067,6 @@ e_anchuhu = {
 				b_koseong = {
 				}
 				b_Kimhwa = {
-				}
-			}
-		}
-		d_yanggwang = {
-	
-    			color = { 63 180 168 }
-    			color2 = { 255 255 255  }
-
-			capital = 2027 # Gwang
-			
-			silla = "Ungju"
-
-			c_gwang = {
-		
-				color = { 73 180 168 }
-				color2 = { 255 255 255  }
-				
-				holy_site = shingyo
-		
-				b_hanyang = {
-				}
-				b_gwang = {
-				}
-				b_ganghwa = {
-				}
-				b_sugwang = {
-				}
-				b_yanggwang = {
-				}
-				b_yeo = {
-				}
-				b_anseong = {
-				}
-				b_hanam = {
-				}
-			}
-			c_cheong = {
-		
-				color = { 63 190 168 }
-				color2 = { 255 255 255  }
-			
-				b_chungcheong = {
-				}
-				b_cheong = {
-				}
-				b_jecheon = {
-				}
-				b_goesan = {
-				}
-				b_okcheon = {
-				}
-				b_enmseong = {
-				}
-				b_cheongwon = {
-				}
-				b_danyang = {
-				}
-			}
-			c_gong = {
-		
-				color = { 63 180 178 }
-				color2 = { 255 255 255  }
-			
-				b_gong = {
-				}
-				b_asan = {
-				}
-				b_hongseong = {
-				}
-				b_taean = {
-				}
-				b_buyeo = {
-				}
-				b_cheongyang = {
-				}
-				b_yesan = {
-				}
-				b_seocheon = {
-				}
-			}
-			c_won = {
-		
-				color = { 53 180 168 }
-				color2 = { 255 255 255  }
-			
-				b_won = {
-				}
-				b_hoengseong = {
-				}
-				b_yeongwol = {
-				}
-				b_pyeongchan = {
-				}
-				b_jeongseon = {
-				}
-			}
-		}
-		d_jeolla = {
-	
-    			color = { 86 121 156 }
-    			color2 = { 255 255 255  }
-
-			capital = 2031 # Jeon
-			
-			silla = "Muju"
-		
-			c_jeon = {
-		
-				silla = "Jeonju"
-				
-				color = { 96 121 156 }
-				color2 = { 255 255 255  }
-		
-				b_jeon = {
-				}
-				b_gangnam = {
-				}
-				b_wan = {
-				}
-				b_iksan = {
-				}
-				b_namwon = {
-				}
-				b_gunsan = {
-				}
-				b_jeongeup = {
-				}
-				b_gimje = {
-				}
-			}
-			c_na = {
-		
-				color = { 86 131 156 }
-				color2 = { 255 255 255  }
-			
-				b_na = {
-				}
-				b_mokpo = {
-				}
-				b_gwangna = {
-				}
-				b_haenam = {
-				}
-				b_sinan_na = {
-				}
-				b_yeongam = {
-				}
-				b_wando = {
-				}
-				b_muan = {
-				}
-			}
-			c_seung = {
-
-				color = { 86 121 166 }
-				color2 = { 255 255 255  }
-			
-				b_seung = {
-				}
-				b_suncheon = {
-				}
-				b_gwangyang = {
-				}
-				b_yeosu = {
-				}
-				b_gokseong = {
-				}
-				b_gurye = {
-				}
-				b_boseong = {
-				}
-				b_hwasun = {
-				}
-			}
-		}
-		d_tamna = {
-		
-			color = { 80 128 145 }
-			color2 = { 255 255 255  }
-				
-			capital = 2031 # Jeon
-			
-			culture = tamna
-			
-			c_jeju = {
-		
-				color = { 76 121 156 }
-				color2 = { 255 255 255  }
-				
-				holy_site = shingyo
-			
-				b_jeju = {
-				}
-				b_seogwipo = {
-				}
-				b_halla = {
-				}
-				b_marado = {
-				}
-			}
-		}
-		d_gyeongsang = {
-	
-    			color = { 95 148 126 }
-    			color2 = { 255 255 255 }
-
-			capital = 2035 # Sang
-			
-			silla = "Saro"
-
-			c_sang = {
-			
-				silla = "Sangju"
-				korean = "Yeongnam"
-		
-				color = { 105 148 126 }
-				color2 = { 255 255 255  }
-				
-				holy_site = shingyo
-		
-				b_sang = {
-				}
-				b_yeong = {
-				}
-				b_daegu = {
-				}
-				b_andong = {
-				}
-				b_gimcheon = {
-				}
-				b_gumi = {
-				}
-				b_yeon = {
-				}
-				b_bonghwa = {
-				}
-			}
-			c_yang = {
-			
-				silla = "Yangju"
-				korean = "Yeongdong"
-		
-				color = { 95 158 126 }
-				color2 = { 255 255 255  }
-
-				b_gyeong = {
-				}
-				b_pohang = {
-				}
-				b_yang = {
-				}
-				b_ulsan = {
-				}
-				b_busan_yang = {
-				}
-				b_yangsan = {
-				}
-				b_gimhae = {
-				}
-				b_miryang = {
-				}
-			}
-			c_gang = {
-			
-				korean = "Sannam"
-				silla = "Gangju"
-				gaya = "Gaya"
-		
-				color = { 174 219 213 }
-				color2 = { 255 255 255  }
-
-				b_gang = {
-					gaya = "Goryeong Gaya"
-				}
-				b_sacheon = {
-					gaya = "Geumgwan Gaya"
-				}
-				b_namhae_gang = {
-				}
-				b_geochang = {
-					gaya = "Dae Gaya"
-				}
-				b_jin = {
-				}
-				b_tongyeong = {
-					gaya = "So Gaya"
-				}
-				b_geoje = {
-					gaya = "Ara Gaya"
-				}
-				b_uiryeong = {
-					gaya = "Bihwa Gaya"
 				}
 			}
 		}
