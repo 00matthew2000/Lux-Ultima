@@ -23,6 +23,94 @@ e_japan = {
 		Narutaki Umezu Fujimori Kuga Momoyama Kinugasa Kyojin
 	}
 
+	k_emishi = {
+
+		color={ 15 97 130 }
+		color2={ 255 255 255 }
+		
+		capital = 2850 #Mutsu
+
+	d_tohoku = {
+				
+				ainu = Emishi
+
+			color={ 20 15 180 }
+			color2={ 255 255 255 }
+
+			capital = 2850 # Mutsu
+
+			c_mutsu = { # capital of this duchy
+
+				color={ 205 132 180 }
+				color2={ 255 255 255 }
+				
+				holy_site = ainu_pantheism
+				holy_site = ainu_pantheism_reformed
+
+                		b_hiraizumi = {
+                		}
+                		b_tosaminato = { # city
+                		}
+                		b_hei = {
+                		}
+                		b_iwate = {
+                		}
+                		b_tsugaru = {
+                		}
+                		b_kitaa = {
+                		}
+                		b_sannohe = {
+                		}
+				b_waga = {
+				}
+			}
+            		c_rikuzen = {
+
+				color={ 205 152 160 }
+				color2={ 255 255 255 }
+
+                		b_taga = {
+                		}
+                		b_kesen = {
+                		}
+                		b_shirakawa = {
+                		}
+                		b_iwaki = {
+                		}
+                		b_aizu = {
+                		}
+                		b_date = {
+               			}
+                		b_kurokawa = {
+                		}
+				b_inawashiro = {
+				}
+           		}
+            		c_dewa = {
+
+				color={ 205 152 200 }
+				color2={ 255 255 255 }
+
+                		b_akita = {
+                		}
+                		b_dewa = { # temple
+                		}
+                		b_kagae = {
+                		}
+                		b_yuri = {
+                		}
+                		b_daihoji = {
+                		}
+               		b_mogami = {
+                		}
+                		b_senboku = {
+                		}
+		b_hiraka = {
+		}
+            		}
+        	}
+	}
+
 	k_japan = {
 
 		color={ 225 152 180 }
@@ -708,15 +796,23 @@ e_japan = {
 		}
         	d_shikoku = {
 
-			color={ 225 192 170 }
-			color2={ 255 255 255 }
+		color={ 225 192 170 }
+		color2={ 255 255 255 }
 
-			capital = 2843 # Iyo
+		nihonohellenic = "Hephaistion"
+		sinohellenic = "Hephaistion"
+		hellenistic = "Hephaistion"
+		greek = "Hephaistion"
+		roman = "Hephaistionos"
+		romanokoric = "Hephaistionos"
+		huakyo = "Hephaistion"
+
+		capital = 2843 # Iyo
 
             		c_awa = {
 
-				color={ 235 172 170 }
-				color2={ 255 255 255 }
+		color={ 235 172 170 }
+		color2={ 255 255 255 }
 
                 		b_nakata = {
                 		}
@@ -782,15 +878,31 @@ e_japan = {
         	}
         	d_kyushu = {
 
-			color={ 225 102 180 }
-			color2={ 255 255 255 }
+		color={ 225 102 180 }
+		color2={ 255 255 255 }
 
-			capital = 2845 #Chikuzen
+		nihonohellenic = "Menandra"
+		sinohellenic = "Menandra"
+		hellenistic = "Menandra"
+		greek = "Menandra"
+		roman = "Menandros"
+		romanokoric = "Menandros"
+		huakyo = "Menandra"
+
+		capital = 2845 #Chikuzen
 			
             		c_chikuzen = { # capital of this duchy
 
-				color={ 235 102 190 }
-				color2={ 255 255 255 }
+		color={ 235 102 190 }
+		color2={ 255 255 255 }
+
+		nihonohellenic = "Menandra"
+		sinohellenic = "Menandra"
+		hellenistic = "Menandra"
+		greek = "Menandra"
+		roman = "Menandros"
+		romanokoric = "Menandros"
+		huakyo = "Menandra"
 
                 		b_dazaifu = {
                 		}
@@ -941,86 +1053,6 @@ e_japan = {
 	
 	color={ 49 103 69 }
 	color2={ 255 255 255 }
-	
-	        d_tohoku = {
-				
-				ainu = Emishi
-
-			color={ 205 152 180 }
-			color2={ 255 255 255 }
-
-			capital = 2850 # Mutsu
-
-			c_mutsu = { # capital of this duchy
-
-				color={ 205 132 180 }
-				color2={ 255 255 255 }
-				
-				holy_site = ainu_pantheism
-				holy_site = ainu_pantheism_reformed
-
-                		b_hiraizumi = {
-                		}
-                		b_tosaminato = { # city
-                		}
-                		b_hei = {
-                		}
-                		b_iwate = {
-                		}
-                		b_tsugaru = {
-                		}
-                		b_kitaa = {
-                		}
-                		b_sannohe = {
-                		}
-				b_waga = {
-				}
-			}
-            		c_rikuzen = {
-
-				color={ 205 152 160 }
-				color2={ 255 255 255 }
-
-                		b_taga = {
-                		}
-                		b_kesen = {
-                		}
-                		b_shirakawa = {
-                		}
-                		b_iwaki = {
-                		}
-                		b_aizu = {
-                		}
-                		b_date = {
-               			}
-                		b_kurokawa = {
-                		}
-				b_inawashiro = {
-				}
-           		}
-            		c_dewa = {
-
-				color={ 205 152 200 }
-				color2={ 255 255 255 }
-
-                		b_akita = {
-                		}
-                		b_dewa = { # temple
-                		}
-                		b_kagae = {
-                		}
-                		b_yuri = {
-                		}
-                		b_daihoji = {
-                		}
-               			b_mogami = {
-                		}
-                		b_senboku = {
-                		}
-				b_hiraka = {
-				}
-            		}
-        	}
 
         d_hokkaido = { # capital of this kingdom
 
