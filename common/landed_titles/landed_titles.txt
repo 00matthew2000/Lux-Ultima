@@ -18091,18 +18091,6 @@ e_russia = {
 				b_yurla = {
 				}
 			}
-			c_kolva = {
-				color={ 230 210 160 }
-				color2={ 255 255 255 }
-
-				b_kolva = {}
-				b_seleya = {}
-				b_kumay = {}
-				b_ayya = {}
-				b_tulpan = {}
-				b_nizva = {}
-				b_mudyl = {}
-			}
 		}
 		
 		d_komiland = {
@@ -18773,6 +18761,25 @@ e_russia = {
 				b_lyaga = {}
 				b_voloshka = {}
 				b_ivanovo_kargopol = {}
+			}
+			c_kremenchuk = {
+				color={ 170 135 40 }
+				color2={ 255 255 255 }
+			
+				b_volgakremenchuk = {
+				}
+				b_sharan = {
+				}
+				b_mamadich = {
+				}
+				b_albay = {
+				}
+				b_katmysh = {
+				}
+				b_shumbut = {
+				}
+				b_otarka = {
+				}
 			}
 			c_romny = {
 				color={ 128 143 83 }
@@ -21167,6 +21174,19 @@ e_tartaria = {
 				b_borovskiy = {
 				}
 			}
+			
+			c_kolva = {
+				color={ 230 210 160 }
+				color2={ 255 255 255 }
+
+				b_kolva = {}
+				b_seleya = {}
+				b_kumay = {}
+				b_ayya = {}
+				b_tulpan = {}
+				b_nizva = {}
+				b_mudyl = {}
+			}
 
 			c_miass = {
 				color={ 211 150 50 }
@@ -21242,6 +21262,18 @@ e_tartaria = {
 				b_kaek = {
 				}
 			}
+			c_tui = {
+				color={ 210 170 170 }
+				color={ 255 255 255 }
+
+				b_tui = {}
+				b_aksurka = {}
+				b_abaul = {}
+				b_azy = {}
+				b_saurgachi = {}
+				b_supra = {}
+				b_shabry = {}
+			}
 		}
 
 		d_vasyugan = {
@@ -21274,19 +21306,6 @@ e_tartaria = {
 				b_megion = {}
 				b_nazino = {}
 				b_sredny = {}
-			}
-
-			c_tui = {
-				color={ 210 170 170 }
-				color={ 255 255 255 }
-
-				b_tui = {}
-				b_aksurka = {}
-				b_abaul = {}
-				b_azy = {}
-				b_saurgachi = {}
-				b_supra = {}
-				b_shabry = {}
 			}
 
 			c_shish = {
@@ -22775,25 +22794,6 @@ e_idel_ural = {
 				b_voljsk = {
 				}
 				b_dubyazy = {
-				}
-			}
-			c_kremenchuk = {
-				color={ 170 135 40 }
-				color2={ 255 255 255 }
-			
-				b_volgakremenchuk = {
-				}
-				b_sharan = {
-				}
-				b_mamadich = {
-				}
-				b_albay = {
-				}
-				b_katmysh = {
-				}
-				b_shumbut = {
-				}
-				b_otarka = {
 				}
 			}
 			c_syrt = {
