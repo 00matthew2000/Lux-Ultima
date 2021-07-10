@@ -1179,8 +1179,8 @@
 	name="Guanghua"
 	female=yes
 	dynasty= 105837 #Yang
-	religion="taoist"
-	culture="han"
+	religion = bud_zen
+	culture = sinohellenic
 	father= 247737 #Yang Hong
 	trait=fair
 	580.1.1={
@@ -1562,8 +1562,8 @@
 247725 = { # Emperor Wen of Sui (lived 541-604)(reigned 581-604)
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Jian" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	trait = diligent
 	father = 247730 #Yang Zhong, Duke of Sui
 	mother = 247732 #Lü Gutao
@@ -1586,8 +1586,8 @@
 247726 = { # Emperor Yang(di) of Sui (lived 569-618)(reigned 604-618)
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Ying" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	trait = cruel
 	trait = deceitful
 	father = 247725 #Emperor Wen of Sui
@@ -1612,8 +1612,8 @@
 247727 = { # Crown Prince Yuande, Yang Zhao of Sui
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Zhao" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247726 #Emperor Yang(di) of Sui
 	mother = 247754 #Princess Xiao of Western Liang
 	# spouse = Crown Princess Wei, daughter of Wei Shou
@@ -1627,8 +1627,8 @@
 247728 = { # Emperor Gong of Sui (lived 605-619)(reigned 617-618)
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "You" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247727 #Crown Prince Yuande
 	# mother = Crown Princess Wei, daughter of Wei Shou
 	605.1.1 = {
@@ -1644,8 +1644,8 @@
 247729 = { # Yang Zhen, Duke of Sui
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Zhen" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247789 #Yang Lie, Duke of Sui
 	476.1.1 = {
 		birth = yes
@@ -1657,8 +1657,8 @@
 247730 = { # Yang Zhong, Duke of Sui
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Zhong" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247729 #Yang Zhen, Duke of Sui
 	# spouse = Lü Gutao
 	507.1.1 = {
@@ -1674,8 +1674,8 @@
 247731 = { # Yang Aijing
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Aijing" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247729 #Yang Zhen, Duke of Sui
 	510.1.1 = {
 		birth = yes
@@ -1703,8 +1703,8 @@
 247733 = { # Yang Zan
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Zan" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247730 #Yang Zhong, Duke of Sui
 	mother = 247732 #Lü Gutao
 	# spouse = Princess Shunyang
@@ -1718,8 +1718,8 @@
 247734 = { # Yang Song
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Song" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247730 #Yang Zhong, Duke of Sui
 	mother = 247732 #Lü Gutao
 	553.1.1 = {
@@ -1732,8 +1732,8 @@
 247735 = { # Yang Shuang
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Shuang" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247730 #Yang Zhong, Duke of Sui
 	mother = 247732 #Lü Gutao
 	563.1.1 = {
@@ -1746,8 +1746,8 @@
 247736 = { # Yang Suji - fictional personal name
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Suji" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247731 #Yang Aijing
 	532.1.1 = {
 		birth = yes
@@ -1759,8 +1759,8 @@
 247737 = { # Yang Hong
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Hong" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247736 #Yang Suji
 	550.1.1 = {
 		birth = yes
@@ -1772,8 +1772,8 @@
 247738 = { # Yang Zheng
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Zheng" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247730 #Yang Zhong, Duke of Sui
 	mother = 247732 #Lü Gutao
 	564.1.1 = {
@@ -1787,8 +1787,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Wanan" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247730 #Yang Zhong, Duke of Sui
 	mother = 247732 #Lü Gutao
 	# spouse = Dou Rongding
@@ -1803,8 +1803,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Changle" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247730 #Yang Zhong, Duke of Sui
 	mother = 247732 #Lü Gutao
 	# spouse = Dou Lukuan
@@ -1819,8 +1819,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Shi" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247730 #Yang Zhong, Duke of Sui
 	mother = 247732 #Lü Gutao
 	# spouse = Li Licheng
@@ -1878,8 +1878,8 @@
 247745 = { # Crown Prince Yang Yong
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Yong" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247725 #Emperor Wen of Sui
 	mother = 247742 #Dugu Qieluo, Empress Wenxian
 	# spouse = Lady Yuan Shi
@@ -1894,8 +1894,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Lihua" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247725 #Emperor Wen of Sui
 	mother = 247742 #Dugu Qieluo, Empress Wenxian
 	# spouse = Emperor Xuan of Northern Zhou
@@ -1910,8 +1910,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Xiangguo" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247725 #Emperor Wen of Sui
 	mother = 247742 #Dugu Qieluo, Empress Wenxian
 	# spouse = Li Changya
@@ -1926,8 +1926,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Guangping" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247725 #Emperor Wen of Sui
 	mother = 247742 #Dugu Qieluo, Empress Wenxian
 	# spouse = Yuwen Jingli, son of Yuwen Qing
@@ -1941,8 +1941,8 @@
 247749 = { #  Prince Xiao of Qin
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Jun" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247725 #Emperor Wen of Sui
 	mother = 247742 #Dugu Qieluo, Empress Wenxian
 	# spouse = Princess Cui
@@ -1957,8 +1957,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Wan'an" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247725 #Emperor Wen of Sui
 	mother = 247742 #Dugu Qieluo, Empress Wenxian
 	# spouse = Dou Rong, Duke of Chen
@@ -1972,8 +1972,8 @@
 247751 = { #  Prince of Shu
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Xiu" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247725 #Emperor Wen of Sui
 	mother = 247742 #Dugu Qieluo, Empress Wenxian
 	# spouse = Concubine Dong Mei (m. 578-597.8.31)
@@ -1988,8 +1988,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Awu" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247725 #Emperor Wen of Sui
 	mother = 247742 #Dugu Qieluo, Empress Wenxian
 	# spouses = Wang Fengxiao, Liu Shu
@@ -2003,8 +2003,8 @@
 247753 = { #  Prince of Han 
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Liang" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247725 #Emperor Wen of Sui
 	mother = 247742 #Dugu Qieluo, Empress Wenxian
 	# spouse = Dou Lushi, daughter of Dou Luji
@@ -2034,8 +2034,8 @@
 247755 = { # Prince Jian of Qi
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Jian" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247726 #Emperor Yang(di) of Sui
 	mother = 247754 #Princess Xiao of Western Liang
 	# spouse = Princess Wei, daughter of Wei Chong
@@ -2046,12 +2046,208 @@
 		death = { death_reason = death_in_china_historic }
 	}
 } 
+2477551 = { # Prince Huang of Qi
+	dynasty = 105837 # Yang - Sui dynasty
+	name = "Huang" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 247755 #Emperor Yang(di) of Sui
+	604.1.1 = {
+		birth = yes
+	}
+	663.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477552 = { # Prince Yi of Qi
+	dynasty = 105837 # Yang - Sui dynasty
+	name = "Yi" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477551 
+	645.1.1 = {
+		birth = yes
+	}
+	705.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477553 = { # Prince Yun of Qi
+	dynasty = 105837 # Yang - Sui dynasty
+	name = "Yun" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477552 
+	681.1.1 = {
+		birth = yes
+	}
+	719.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477554 = { # Prince Lei of Qi
+	dynasty = 105837 # Yang - Sui dynasty
+	name = "Lei" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477553 
+	714.1.1 = {
+		birth = yes
+	}
+	763.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477555 = { # Prince Guo of Qi
+	dynasty = 105837 # Yang - Sui dynasty
+	name = "Guo" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477554 
+	734.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477556 = { # Prince Su of Qi
+	dynasty = 105837 # Yang - Sui dynasty
+	name = "Su" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477555 
+	758.1.1 = {
+		birth = yes
+	}
+	812.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477557 = { # Prince Xue of Qi
+	dynasty = 105837 # Yang - Sui dynasty
+	name = "Xue" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477556 
+	783.1.1 = {
+		birth = yes
+	}
+	845.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477558 = { # Prince Ming of Qi
+	dynasty = 105837 # Yang - Sui dynasty
+	name = "Ming" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477557 
+	804.1.1 = {
+		birth = yes
+	}
+	871.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477559 = { # Prince Wu of Qi
+	dynasty = 105837 # Yang - Sui dynasty
+	name = "Wu" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477558
+	859.1.1 = {
+		birth = yes
+	}
+	917.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477560 = { # Prince Zhi of Youguo
+	dynasty = 105837 # Yang - Later Sui dynasty
+	name = "Zhi" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477559
+	trait = brilliant_strategist
+	883.1.1 = {
+		birth = yes
+	}
+	946.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477561 = { # Prince Jingyi of Youguo
+	dynasty = 105837 # Yang - Later Sui dynasty
+	name = "Jingyi" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477560
+	902.1.1 = {
+		birth = yes
+	}
+	955.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477562 = { # Prince Zhen of Youguo
+	dynasty = 105837 # Yang - Later Sui dynasty
+	name = "Zhen" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477561
+	928.1.1 = {
+		birth = yes
+	}
+	989.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477563 = { # Prince Xue of Youguo
+	dynasty = 105837 # Yang - Later Sui dynasty
+	name = "Xue" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477562
+	952.1.1 = {
+		birth = yes
+	}
+	1005.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477564 = { # Prince Bao of Youguo
+	dynasty = 105837 # Yang - Later Sui dynasty
+	name = "Bao" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477563
+	978.1.1 = {
+		birth = yes
+	}
+	1042.1.1 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
+2477565 = { # Prince Rong of Youguo
+	dynasty = 105837 # Yang - Later Sui dynasty
+	name = "Rong" 
+	religion = bud_zen
+	culture = sinohellenic
+	father = 2477564
+	1022.3.18 = {
+		birth = yes
+	}
+	1081.1.6 = {
+		death = { death_reason = death_in_china_historic }
+	}
+} 
 247756 = { # Princess Nanyang
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Nanyang" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247726 #Emperor Yang(di) of Sui
 	mother = 247754 #Princess Xiao of Western Liang
 	# spouse = Yuwen Shiji
@@ -2066,8 +2262,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Shi" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247726 #Emperor Yang(di) of Sui
 	# spouse = Emperor Taizong of Tang
 	trait = child_of_consort
@@ -2081,8 +2277,8 @@
 247758 = { # Prince Gao of Zhao
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Gao" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247726 #Emperor Yang(di) of Sui
 	# mother = # Consort Xiao
 	trait = child_of_consort
@@ -2096,8 +2292,8 @@
 247759 = { # Prince Tan of Yan
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Tan" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247727 #Crown Prince Yuande
 	# mother = Consort Liu
 	trait = child_of_consort
@@ -2111,8 +2307,8 @@
 247760 = { # Prince Tong of Yue, later Emperor Renjin of Eastern Sui dynasty
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Tong" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247727 #Crown Prince Yuande
 	# mother = Consort Liu
 	trait = child_of_consort
@@ -2126,8 +2322,8 @@
 247761 = { #  Prince Hao of Qin
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Hao" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247749 #Prince Xiao of Qin
 	# mother =  #Princess Cui
 	587.11.22 = {
@@ -2505,8 +2701,8 @@
 247789 = { # Yang Lie
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Lie" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	# father = Yang Hui
 	447.1.1 = {
 		birth = yes
@@ -2518,8 +2714,8 @@
 247790 = { # Yang Zhongkui
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Zhongkui" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247789 #Yang Lie, Duke of Sui
 	479.1.1 = {
 		birth = yes
@@ -2531,8 +2727,8 @@
 247791 = { # Yang Xing
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Xing" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247789 #Yang Lie, Duke of Sui
 	484.1.1 = {
 		birth = yes
@@ -2544,8 +2740,8 @@
 247792 = { # Yang Guo
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Guo" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247791 #Yang Xing
 	500.1.1 = {
 		birth = yes
@@ -2557,8 +2753,8 @@
 247793 = { # Yang Shao
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Shao" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247792 #Yang Guo
 	521.1.1 = {
 		birth = yes
@@ -2570,8 +2766,8 @@
 247794 = { # Yang Xiong
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Xiong" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247793 #Yang Shao
 	542.1.1 = {
 		birth = yes
@@ -2583,8 +2779,8 @@
 247795 = { # Yang Da
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Da" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247793 #Yang Shao
 	548.1.1 = {
 		birth = yes
@@ -2596,8 +2792,8 @@
 247796 = { # Yang Gui
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Gui" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247793 #Yang Shao
 	550.1.1 = {
 		birth = yes
@@ -2609,8 +2805,8 @@
 247797 = { # Yang Gongren
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Gongren" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247794 #Yang Xiong
 	568.1.1 = {
 		birth = yes
@@ -2622,8 +2818,8 @@
 247798 = { # Yang Shidao
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Shidao" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247794 #Yang Xiong
 	570.1.1 = {
 		birth = yes
@@ -2635,8 +2831,8 @@
 247799 = { # Yang Ze
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Ze" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247795 #Yang Da
 	565.1.1 = {
 		birth = yes
@@ -2648,8 +2844,8 @@
 247800 = { # Yang Jian
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Jian" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247795 #Yang Da
 	569.1.1 = {
 		birth = yes
@@ -2662,8 +2858,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Bao" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247795 #Yang Da
 	#spouse = #Guo Lun
 	575.1.1 = {
@@ -2677,8 +2873,8 @@
 	female=yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Shi" 
-	religion = buddhist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247795 #Yang Da
 	#spouse = #Wu Shihou
 	579.1.1 = {
@@ -3290,7 +3486,7 @@
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Shi" 
 	religion = taoist
-	culture = han
+	culture = sinohellenic
 	father = 247797 #Yang Gongren
 	601.1.1 = {
 		birth = yes
@@ -5192,7 +5388,7 @@
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Quanjie" 
 	religion = taoist
-	culture = han
+	culture = sinohellenic
 	father = 247800 #Yang Jian
 	600.1.1 = {
 		birth = yes
@@ -5204,8 +5400,8 @@
 247969 = { # Yang Zhiqing
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Zhiqing" 
-	religion = taoist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247968 #Yang Quanjie
 	649.1.1 = {
 		birth = yes
@@ -5218,8 +5414,8 @@
 	female = yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Guipin" 
-	religion = taoist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	father = 247969 #Yang Zhiqing
 	689.1.1 = {
 		birth = yes
@@ -5245,8 +5441,8 @@
 219551 = { # Father of Yang Guifei
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Xuanyan"
-	religion = taoist
-	culture = han
+	religion = bud_zen
+	culture = sinohellenic
 	
 	# Fictional connection to connect the dynasty tree
 	father = 247969 #Yang Zhiqing
@@ -5262,8 +5458,8 @@
 	female = yes
 	dynasty = 105837 # Yang - ruling Sui dynasty
 	name = "Yuhuan" 
-	religion = taoist
-	culture = han
+	religion = indoh_confucian
+	culture = sinohellenic
 	trait = fair
 	father = 219551 #Yang Xuanyan
 	719.6.26 = {
@@ -6764,6 +6960,20 @@
 		birth=yes
 	}
 	1337.1.1 = {
+		death=yes
+	}
+}
+242349 = {
+	name="Fang"
+	dynasty = 10625631
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	trait = midas_touched
+	trait = ambitious
+	1047.1.1={
+		birth=yes
+	}
+	1116.1.1 = {
 		death=yes
 	}
 }
