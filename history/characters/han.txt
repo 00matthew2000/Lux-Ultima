@@ -559,6 +559,111 @@
 	}
 }
 
+2177201 = { # Marquis Wei of Tang 
+	dynasty = 1051150 # Li - ruling Tang dynasty
+	name = "Wei"
+	religion = taoist
+	culture = jin
+	father = 217720 # Emperor Zhaoozong
+	#mother = 
+	908.1.1 = {
+		birth = yes
+	}
+	946.1.1 = {
+		death = { death_reason = death_offmap }
+	}
+}
+
+2177202 = { # Marquis He of Tang 
+	dynasty = 1051150 # Li - ruling Tang dynasty
+	name = "He"
+	religion = taoist
+	culture = jin
+	father = 2177201 # Emperor Zhaoozong
+	#mother = 
+	931.1.1 = {
+		birth = yes
+	}
+	992.3.26 = {
+		death = { death_reason = death_offmap }
+	}
+}
+
+2177203 = { # Marquis Jing of Tang 
+	dynasty = 1051150 # Li - ruling Tang dynasty
+	name = "Jing"
+	religion = taoist
+	culture = jin
+	father = 2177202 # Emperor Zhaoozong
+	#mother = 
+	954.1.1 = {
+		birth = yes
+	}
+	1005.1.1 = {
+		death = { death_reason = death_offmap }
+	}
+}
+
+2177204 = { # Marquis Xiaoping of Tang 
+	dynasty = 1051150 # Li - ruling Tang dynasty
+	name = "Xiaoping"
+	religion = taoist
+	culture = jin
+	father = 2177203 # Emperor Zhaoozong
+	#mother = 
+	979.1.1 = {
+		birth = yes
+	}
+	1035.1.1 = {
+		death = { death_reason = death_offmap }
+	}
+}
+
+2177205 = { # Marquis Ze of Tang 
+	dynasty = 1051150 # Li - ruling Tang dynasty
+	name = "Ze"
+	religion = taoist
+	culture = jin
+	father = 2177204 # Emperor Zhaoozong
+	#mother = 
+	1002.1.1 = {
+		birth = yes
+	}
+	1042.1.1 = {
+		death = { death_reason = death_offmap }
+	}
+}
+
+2177206 = { # Marquis Zhang of Tang 
+	dynasty = 1051150 # Li - ruling Tang dynasty
+	name = "Zhang"
+	religion = taoist
+	culture = jin
+	father = 2177205 # Emperor Zhaoozong
+	#mother = 
+	1036.1.1 = {
+		birth = yes
+	}
+	1091.1.1 = {
+		death = { death_reason = death_offmap }
+	}
+}
+
+2177207 = { # Marquis Hua of Tang 
+	dynasty = 1051150 # Li - ruling Tang dynasty
+	name = "Hua"
+	religion = taoist
+	culture = jin
+	father = 2177205 # Emperor Zhaoozong
+	#mother = 
+	1038.1.1 = {
+		birth = yes
+	}
+	1095.1.1 = {
+		death = { death_reason = death_offmap }
+	}
+}
+
 215596 = { 
 	dynasty = 1051151 # Zhao - ruling Song dynasty
 	name = "Hongyin"
@@ -6974,6 +7079,23 @@
 		birth=yes
 	}
 	1116.1.1 = {
+		death=yes
+	}
+}
+242350 = {
+	name="Kuo"
+	dynasty = 10625632
+	religion="indoh_confucian"
+	culture="taihu"
+	trait = fortune_builder
+	trait = genius
+	trait = scholar
+	trait = gardener
+	trait = erudite
+	1031.6.15={
+		birth=yes
+	}
+	1095.3.4 = {
 		death=yes
 	}
 }

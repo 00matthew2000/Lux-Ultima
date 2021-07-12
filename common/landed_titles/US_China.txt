@@ -6,239 +6,6 @@ e_china = {
 	color={ 162 32 65 }
 	color2={ 255 255 255 }
 
-	k_xixia = {
-		color={ 8 119 114 }
-		color2={ 255 255 255 }
-		
-		#capital = 1513 # Jiuquan (in lieu of Xingqing/Yinchuan)
-		capital = 2437 # Leng
-		
-		culture = tangut
-		
-		khitan = "Tuyuhun"
-		bodpa = "Amdo"
-		han = "Qinghai"
-		#tangut = "Minyak"
-		mongol = "Tangghut"
-		
-		d_hingkhieng = { #Xingqing
-
-			capital = 2437 # Leng
-
-			color={ 205 143 205 }
-			color2={ 255 255 255 }
-
-			c_leng = {
-
-				color={ 215 143 205 }
-				color2={ 255 255 255 }
-
-				b_hingkhieng = {
-				}
-				b_pauxziengxghrax = {
-				}
-				b_lengmyox = {
-				}
-				b_ghuailak = {
-				}
-				b_anziengx = {
-				}
-				b_haixpauxzsih = {
-				}
-			}
-			c_ghraxyoi = {
-
-				color={ 205 153 205 }
-				color2={ 255 255 255 }
-
-				b_uondrie = {
-				}
-				b_miengsra = {
-				}
-				b_inghlix = {
-				}
-			}
-		}
-		d_bjenghrax = { #Pingxia
-
-			capital = 2439 # Ghrax
-
-			color={ 232 202 232 }
-			color2={ 255 255 255 }
-
-			c_ghrax = {
-
-				color={ 242 202 232 }
-				color2={ 255 255 255 }
-
-				b_srukpyang = {
-				}
-				b_tokziengx = {
-				}
-			}
-			c_jem = {
-
-				color={ 232 212 232 }
-				color2={ 255 255 255 }
-
-				b_ngoxngyan = {
-				}
-				b_brakdrie = {
-				}
-				b_thetmuonkruan = {
-				}
-			}
-			c_iuh = {
-
-				color={ 232 202 242 }
-				color2={ 255 255 255 }
-
-				b_driangdrak = {
-				}
-			}
-			c_ngin = {
-
-				color={ 222 202 232 }
-				color2={ 255 255 255 }
-
-				b_njyolim = {
-				}
-				b_nengsruk = {
-				}
-				b_cjinhiang = {
-				}
-			}
-		}
-		d_jiuquan = {
-			color={ 31 186 165 }
-			
-			capital = 1513 # Jiuquan
-			
-			uyghur = "Yugur"
-			
-			c_jiuquan = {
-				color={ 8 119 114 }
-				
-				#holy_site = taoist
-				
-				b_jiuquan = {
-				}
-				b_suzhou = {
-				}
-				b_kongtong = {
-				}
-				b_fulu = {
-				}
-				b_xianshi = {
-				}
-				b_longdi = { # Fictional, for prosperity
-				}
-				b_guantou = { # Fictional, for prosperity
-				}
-			}
-			c_dunhuang = {
-				color={ 8 129 114 }
-
-				uyghur = "Dukhan"
-				
-				b_dunhuang = {
-					uyghur = "Dukhan"
-				}
-				b_fangpan = {
-				}
-				b_mogao = {
-				}
-				b_yueyaquan = {
-				}
-				b_yumenquan = {
-				}
-				b_hongliuwan = {
-				}
-				b_xuanquanzhi = {
-				}
-			}
-			c_anxi = {
-				color={ 28 119 114 }
-				
-				b_anxi = {
-				}
-				b_guazhou = {
-				}
-				b_xincheng = {
-				}
-				b_yuanquan = {
-				}
-				b_yulin = {
-				}
-				b_suoyang = {
-				}
-				b_renhou = { # Fictional, for prosperity
-				}
-			}
-			c_yungguan = {
-				color={ 8 119 134 }
-
-				b_yungguan = {
-				}
-				b_shouchang = {
-				}
-				b_ziting = {
-				}
-				b_tuotou = { # Fictional, for prosperity
-				}
-				b_guihuayuan = { # Fictional, for prosperity
-				}
-				b_nieercun = { # Fictional, for prosperity
-				}
-				b_pochao = { # Fictional, for prosperity
-				}
-			}
-			c_yumen = {
-				color={ 18 129 124 }
-
-				b_yumen = {
-				}
-				b_xiaxihao = {
-				}
-				b_huangzhawan = {
-				}
-				b_chuanbei = {
-				}
-				b_baoen = { #temple
-				}
-				b_dongshuwo = { #temple
-				}
-				b_shagang = {
-				}
-			}
-			c_ghraxliang = {
-
-				color={ 219 154 171 }
-				color2={ 255 255 255 }
-
-				b_kocang = {
-				}
-				b_zsjino = {
-				}
-				b_kralin = {
-				}
-				b_phyanghua = {
-				}
-				b_chjangzsyung = {
-				}
-			}
-			c_kam = {
-
-				color={ 209 164 171 }
-				color2={ 255 255 255 }
-
-				b_triangjek = {
-				}
-				b_srantan = {
-				}
-			}
-		}
-	}
 	k_liang = { #Liang
 
 		capital = 2550 # Bienh
@@ -379,6 +146,8 @@ e_china = {
 
 				color={ 128 250 179 }
 				color2={ 255 255 255 }
+				
+				primary = yes
 
 				b_gyosren = {
 				}
@@ -3065,8 +2834,16 @@ e_china = {
 			color={ 245 133 245 }
 			color2={ 255 255 255 }
 
-			capital = 2645 # Mjen
-
+			capital = 2649 # Antiocheia Eschate
+			
+			sinohellenic = "Antiocheia Eschate"
+			greek = "Antiocheia Eschate"
+			hellenistic = "Antiocheia Eschate"
+			roman = "Antiocheia Eschate"
+			romanokoric = "Antiocheia Eschate"
+			huakyo = "Antiocheia Eschate"
+			nihonohellenic = "Antiocheia Eschate"
+			
 			c_mjen = {
 
 				color={ 255 133 245 }
@@ -3155,11 +2932,25 @@ e_china = {
 
 				color={ 255 123 245 }
 				color2={ 255 255 255 }
+				
+				sinohellenic = "Antiocheia Eschate"
+				greek = "Antiocheia Eschate"
+				hellenistic = "Antiocheia Eschate"
+				roman = "Antiocheia Eschate"
+				romanokoric = "Antiocheia Eschate"
+				huakyo = "Antiocheia Eschate"
+				nihonohellenic = "Antiocheia Eschate"
 
 				b_zjengto = {
 				}
 				b_ghruahjang = {
 				sinohellenic = "Antiocheia Eschate"
+				greek = "Antiocheia Eschate"
+				hellenistic = "Antiocheia Eschate"
+				roman = "Antiocheia Eschate"
+				romanokoric = "Antiocheia Eschate"
+				huakyo = "Antiocheia Eschate"
+				nihonohellenic = "Antiocheia Eschate"
 				}
 				b_bie = {
 				}
@@ -3237,497 +3028,6 @@ e_china = {
 				b_jaxchjyen = {
 				}
 				b_sesren = {
-				}
-			}
-		}
-	}
-	k_zin = { #Qin
-
-		color={ 195 195 195 }
-		color2={ 255 255 255 }
-
-		capital = 2653 # 'yung
-
-		d_kiengdrieux = { #Jingzhao
-
-			color={ 219 219 219 }
-			color2={ 255 255 255 }
-
-			capital = 2653 # 'yung
-
-			c_zinyung = {
-
-				color={ 229 219 219 }
-				color2={ 255 255 255 }
-
-				b_driangan = {
-				}
-				b_myanhnen = {
-				}
-				b_limdung = {
-				}
-				b_ghremjang = {
-				}
-				b_lamden = {
-				}
-				b_zinyunglekjang = {
-				}
-				b_myoxkung = {
-				}
-				b_dadzienzsih = {
-				}
-			}
-			c_sjang = {
-
-				color={ 219 229 219 }
-				color2={ 255 255 255 }
-
-				b_zjangxlak = {
-				}
-				b_sjanglak = {
-				}
-				b_laknom = {
-				}
-				b_myoxkruan = {
-				}
-				b_zjangcin = {
-				}
-				b_phiungjang = {
-				}
-			}
-			c_sjemx = {
-
-				color={ 209 219 219 }
-				color2={ 255 255 255 }
-
-				b_sjemx = {
-				}
-				b_lengpaux = {
-				}
-				b_bjenliuk = {
-				}
-				b_ghrax = {
-				}
-				b_ghozjeng = {
-				}
-				b_myonhiang = {
-				}
-				b_njyedzjeng = {
-				}
-				b_ghomkukkruan = {
-				}
-			}
-			c_bo = {
-
-				color={ 219 219 209 }
-				color2={ 255 255 255 }
-
-				b_ghatung = {
-				}
-				b_ngyohiang = {
-				}
-				b_limcinh = {
-				}
-				b_yenggho = {
-				}
-				b_myanhzyen = {
-				}
-				b_iezjex = {
-				}
-				b_lyungmuon_bo = {
-				}
-				b_ghuxcikzsi = {
-				}
-			}
-			c_ghruah = {
-
-				color={ 219 229 209 }
-				color2={ 255 255 255 }
-
-				b_driengh = {
-				}
-				b_ghruahim = {
-				}
-				b_yoihnom = {
-				}
-				b_bozjeng = {
-				}
-				b_ghraxkue = {
-				}
-				b_sengrukmieuh = {
-				}
-				b_dungkruan = {
-				}
-				b_ziemlyungzsih = {
-				}
-			}
-			c_jeuh = {
-
-				color={ 209 219 229 }
-				color2={ 255 255 255 }
-
-				b_ghruahngyan = {
-				}
-				b_samngyan = {
-				}
-				b_miixngyan = {
-				}
-				b_dungkuan = {
-				}
-				b_yonjang = {
-				}
-				b_piuhbjen = {
-				}
-				b_zjynhruah = {
-				}
-			}
-		}
-		d_phyojen = { #Fuyan
-
-			color={ 116 116 116 }
-			color2={ 255 255 255 }
-
-			capital = 2659 # Jen
-
-			c_jen = {
-
-				color={ 126 116 116 }
-				color2={ 255 255 255 }
-
-				b_pyosje = {
-				}
-				b_kamzyen = {
-				}
-				b_phyocjengh = {
-				}
-				b_jenchjyen = {
-				}
-				b_jendriang = {
-				}
-				b_limcjin = {
-				}
-				b_pauxan = {
-				}
-				b_muonsren = {
-				}
-			}
-			c_syi = {
-
-				color={ 116 126 116 }
-				color2={ 255 255 255 }
-
-				b_syitok = {
-				}
-				b_chiengkranh = {
-				}
-				b_mexcjii = {
-				}
-				b_ansaih = {
-				}
-			}
-			c_phyo = {
-
-				color={ 106 116 116 }
-				color2={ 255 255 255 }
-
-				b_lakkrau = {
-				}
-				b_lakchjyen = {
-				}
-				b_Phyozjeng = {
-				}
-				b_drikla = {
-				}
-				b_pauxsjitzsih = {
-				}
-				b_praksrenzsih = {
-				}
-				b_zjekruengzsih = {
-				}
-				b_thadghuasren = {
-				}
-			}
-			c_pyang = {
-
-				color={ 116 106 116 }
-				color2={ 255 255 255 }
-
-				b_triungbox = {
-				}
-				b_ngiekyon = {
-				}
-				b_gieuling = {
-				}
-				b_chenbyotzsih = {
-				}
-			}
-		}
-		d_ghruankhiengh = { #Huanqing
-
-			color={ 159 154 180 }
-			color2={ 255 255 255 }
-
-			capital = 2663 # Khiengh
-
-			c_khiengh = {
-
-				color={ 169 154 180 }
-				color2={ 255 255 255 }
-
-				b_anhruah = {
-				}
-				b_ghopsjyix = {
-				}
-				b_brangngyan = {
-				}
-				b_denghpen = {
-				}
-				b_ghruaiyoi = {
-				}
-				b_sjinghkhiang = {
-				}
-			}
-			c_ghruan = {
-
-				color={ 159 164 180 }
-				color2={ 255 255 255 }
-
-				b_thungyanx = {
-				}
-				b_chiengbjenkruan = {
-				}
-				b_mukkrua = {
-				}
-				b_ghuehtreng = {
-				}
-			}
-			c_neng = {
-
-				color={ 159 154 190 }
-				color2={ 255 255 255 }
-
-				b_denghan = {
-				}
-				b_sianglak = {
-				}
-				b_denghbjen = {
-				}
-				b_cjinneng = {
-				}
-			}
-		}
-		d_zinbiungh = { #Qinfeng
-
-			color={ 147 172 187 }
-			color2={ 255 255 255 }
-
-			capital = 2666 # Gje
-
-			c_gje = {
-
-				color={ 157 172 187 }
-				color2={ 255 255 255 }
-
-				b_thenhing = {
-				}
-				b_gjesren = {
-				}
-				b_pauxke = {
-				}
-				b_kruak = {
-				}
-				b_mii_gje = {
-				}
-				b_byopiung = {
-				}
-				b_hauxcjix = {
-				}
-				b_triucjit = {
-				}
-			}
-			c_zin = {
-
-
-				color={ 147 172 197 }
-				color2={ 255 255 255 }
-
-				b_zjengkix = {
-				}
-				b_lyungzjeng = {
-				}
-				b_zinchiengsjyix = {
-				}
-				b_thensjyix = {
-				}
-				b_kiungmuon = {
-				}
-				b_thatliung = {
-				}
-				b_biukhiezsi = {
-				}
-				b_mrekcieksren = {
-				}
-			}
-			c_yoih = {
-
-				color={ 147 162 187 }
-				color2={ 255 255 255 }
-
-				b_bjenliang = {
-				}
-				b_phuanngyan = {
-				}
-				b_zriungsinh = {
-				}
-				b_yoihghruadeng = {
-				}
-				b_yoihanhruah = {
-				}
-				b_tokzsjynh = {
-				}
-				b_lyungxkan = {
-				}
-				b_liungtok = {
-				}
-			}
-			c_zinngyan = {
-
-				color={ 147 172 177 }
-				color2={ 255 255 255 }
-
-				b_limkeng = {
-				}
-				b_brangjang = {
-				}
-				b_kohngyan = {
-				}
-				b_bjenghrax = {
-				}
-				b_zinngyansean = {
-				}
-				b_thentosren = {
-				}
-				b_ngyanlyungsren = {
-				}
-				b_seukruan = {
-				}
-				b_higha = {
-				}
-			}
-			c_lan = {
-
-				color={ 137 172 197 }
-				color2={ 255 255 255 }
-
-				b_lanzyen = {
-				}
-				b_kimzjengkruan = {
-				}
-				b_kiengngyukkruan = {
-				}
-				b_lyungku = {
-				}
-				b_kaulan = {
-				}
-			}
-			c_gha = {
-
-				color={ 147 162 197 }
-				color2={ 255 255 255 }
-
-				b_nenggha = {
-				}
-				b_anhiangkruan = {
-				}
-				b_thungghuadkruan = {
-				}
-				b_zsynhruah = {
-				}
-				b_denghkhiang = {
-				}
-			}
-			c_zinghuang = {
-
-				color={ 157 172 177 }
-				color2={ 255 255 255 }
-
-				b_mrukchjyen = {
-				}
-				b_anlyungx = {
-				}
-				b_nengthau = {
-				}
-				b_syiyanxkruan = {
-				}
-			}
-			c_zinzjenx = {
-
-				color={ 157 162 177 }
-				color2={ 255 255 255 }
-
-				b_seneng = {
-				}
-				b_nengse = {
-				}
-				b_chiengbjen = {
-				}
-				b_lyungcje = {
-				}
-			}
-		}
-		d_dungkhiengh = { #Tongqing
-
-			color={ 147 187 168 }
-			color2={ 255 255 255 }
-
-			capital = 2674 # Biungh (was 1630 Zjeng)
-
-			c_biungh = {
-
-				color={ 147 197 168 }
-				color2={ 255 255 255 }
-
-				b_liangzyen = {
-				}
-				b_liangxtang = {
-				}
-				b_ghadrie = {
-				}
-				b_dadsanxkruan = {
-				}
-			}
-			c_krai = {
-
-				color={ 147 187 178 }
-				color2={ 255 255 255 }
-
-				b_piukcin = {
-				}
-				b_ciangliih = {
-				}
-			}
-			c_min = {
-
-				color={ 137 187 168 }
-				color2={ 255 255 255 }
-
-				b_minmin = {
-				}
-				b_iuhchjyen = {
-				}
-				b_driangdaux = {
-				}
-				b_daddom = {
-				}
-			}
-			c_thau = {
-
-				color={ 147 177 168 }
-				color2={ 255 255 255 }
-
-				b_limthau = {
-				}
-				b_thebo = {
 				}
 			}
 		}
@@ -5096,3 +4396,746 @@ k_leu = {
 
 #	culture = uyghur
 #}
+
+e_archeserika = {
+
+	capital = 2653 #Alexandria Tsangana
+
+	color={ 5 7 250 }
+	color2={ 255 255 255 }
+	
+	k_zin = { #Qin
+
+		color={ 195 195 195 }
+		color2={ 255 255 255 }
+
+		capital = 2653 #Alexandria Tsangana
+		
+		sinohellenic = "Alexandria Tsangana"
+		greek = "Alexandria Tsangana"
+		hellenistic = "Alexandria Tsangana"
+		roman = "Alexandria Tsangana"
+		romanokoric = "Alexandria Tsangana"
+		huakyo = "Alexandria Tsangana"
+		nihonohellenic = "Alexandria Tsangana"
+
+		d_kiengdrieux = { #Jingzhao
+
+			color={ 219 219 219 }
+			color2={ 255 255 255 }
+
+			capital = 2653 # 'yung
+
+			c_zinyung = {
+
+				color={ 229 219 219 }
+				color2={ 255 255 255 }
+
+				b_driangan = {
+				}
+				b_myanhnen = {
+				}
+				b_limdung = {
+				}
+				b_ghremjang = {
+				}
+				b_lamden = {
+				}
+				b_zinyunglekjang = {
+				}
+				b_myoxkung = {
+				}
+				b_dadzienzsih = {
+				}
+			}
+			c_sjang = {
+
+				color={ 219 229 219 }
+				color2={ 255 255 255 }
+
+				b_zjangxlak = {
+				}
+				b_sjanglak = {
+				}
+				b_laknom = {
+				}
+				b_myoxkruan = {
+				}
+				b_zjangcin = {
+				}
+				b_phiungjang = {
+				}
+			}
+			c_sjemx = {
+
+				color={ 209 219 219 }
+				color2={ 255 255 255 }
+
+				b_sjemx = {
+				}
+				b_lengpaux = {
+				}
+				b_bjenliuk = {
+				}
+				b_ghrax = {
+				}
+				b_ghozjeng = {
+				}
+				b_myonhiang = {
+				}
+				b_njyedzjeng = {
+				}
+				b_ghomkukkruan = {
+				}
+			}
+			c_bo = {
+
+				color={ 219 219 209 }
+				color2={ 255 255 255 }
+
+				b_ghatung = {
+				}
+				b_ngyohiang = {
+				}
+				b_limcinh = {
+				}
+				b_yenggho = {
+				}
+				b_myanhzyen = {
+				}
+				b_iezjex = {
+				}
+				b_lyungmuon_bo = {
+				}
+				b_ghuxcikzsi = {
+				}
+			}
+			c_ghruah = {
+
+				color={ 219 229 209 }
+				color2={ 255 255 255 }
+
+				b_driengh = {
+				}
+				b_ghruahim = {
+				}
+				b_yoihnom = {
+				}
+				b_bozjeng = {
+				}
+				b_ghraxkue = {
+				}
+				b_sengrukmieuh = {
+				}
+				b_dungkruan = {
+				}
+				b_ziemlyungzsih = {
+				}
+			}
+			c_jeuh = {
+
+				color={ 209 219 229 }
+				color2={ 255 255 255 }
+
+				b_ghruahngyan = {
+				}
+				b_samngyan = {
+				}
+				b_miixngyan = {
+				}
+				b_dungkuan = {
+				}
+				b_yonjang = {
+				}
+				b_piuhbjen = {
+				}
+				b_zjynhruah = {
+				}
+			}
+		}
+		d_phyojen = { #Fuyan
+
+			color={ 116 116 116 }
+			color2={ 255 255 255 }
+
+			capital = 2659 # Jen
+
+			c_jen = {
+
+				color={ 126 116 116 }
+				color2={ 255 255 255 }
+
+				b_pyosje = {
+				}
+				b_kamzyen = {
+				}
+				b_phyocjengh = {
+				}
+				b_jenchjyen = {
+				}
+				b_jendriang = {
+				}
+				b_limcjin = {
+				}
+				b_pauxan = {
+				}
+				b_muonsren = {
+				}
+			}
+			c_syi = {
+
+				color={ 116 126 116 }
+				color2={ 255 255 255 }
+
+				b_syitok = {
+				}
+				b_chiengkranh = {
+				}
+				b_mexcjii = {
+				}
+				b_ansaih = {
+				}
+			}
+			c_phyo = {
+
+				color={ 106 116 116 }
+				color2={ 255 255 255 }
+
+				b_lakkrau = {
+				}
+				b_lakchjyen = {
+				}
+				b_Phyozjeng = {
+				}
+				b_drikla = {
+				}
+				b_pauxsjitzsih = {
+				}
+				b_praksrenzsih = {
+				}
+				b_zjekruengzsih = {
+				}
+				b_thadghuasren = {
+				}
+			}
+			c_pyang = {
+
+				color={ 116 106 116 }
+				color2={ 255 255 255 }
+
+				b_triungbox = {
+				}
+				b_ngiekyon = {
+				}
+				b_gieuling = {
+				}
+				b_chenbyotzsih = {
+				}
+			}
+		}
+		d_ghruankhiengh = { #Huanqing
+
+			color={ 159 154 180 }
+			color2={ 255 255 255 }
+
+			capital = 2663 # Khiengh
+
+			c_khiengh = {
+
+				color={ 169 154 180 }
+				color2={ 255 255 255 }
+
+				b_anhruah = {
+				}
+				b_ghopsjyix = {
+				}
+				b_brangngyan = {
+				}
+				b_denghpen = {
+				}
+				b_ghruaiyoi = {
+				}
+				b_sjinghkhiang = {
+				}
+			}
+			c_ghruan = {
+
+				color={ 159 164 180 }
+				color2={ 255 255 255 }
+
+				b_thungyanx = {
+				}
+				b_chiengbjenkruan = {
+				}
+				b_mukkrua = {
+				}
+				b_ghuehtreng = {
+				}
+			}
+			c_neng = {
+
+				color={ 159 154 190 }
+				color2={ 255 255 255 }
+
+				b_denghan = {
+				}
+				b_sianglak = {
+				}
+				b_denghbjen = {
+				}
+				b_cjinneng = {
+				}
+			}
+		}
+		d_zinbiungh = { #Qinfeng
+
+			color={ 147 172 187 }
+			color2={ 255 255 255 }
+
+			capital = 2666 # Gje
+
+			c_gje = {
+
+				color={ 157 172 187 }
+				color2={ 255 255 255 }
+
+				b_thenhing = {
+				}
+				b_gjesren = {
+				}
+				b_pauxke = {
+				}
+				b_kruak = {
+				}
+				b_mii_gje = {
+				}
+				b_byopiung = {
+				}
+				b_hauxcjix = {
+				}
+				b_triucjit = {
+				}
+			}
+			c_zin = {
+
+
+				color={ 147 172 197 }
+				color2={ 255 255 255 }
+
+				b_zjengkix = {
+				}
+				b_lyungzjeng = {
+				}
+				b_zinchiengsjyix = {
+				}
+				b_thensjyix = {
+				}
+				b_kiungmuon = {
+				}
+				b_thatliung = {
+				}
+				b_biukhiezsi = {
+				}
+				b_mrekcieksren = {
+				}
+			}
+			c_yoih = {
+
+				color={ 147 162 187 }
+				color2={ 255 255 255 }
+
+				b_bjenliang = {
+				}
+				b_phuanngyan = {
+				}
+				b_zriungsinh = {
+				}
+				b_yoihghruadeng = {
+				}
+				b_yoihanhruah = {
+				}
+				b_tokzsjynh = {
+				}
+				b_lyungxkan = {
+				}
+				b_liungtok = {
+				}
+			}
+			c_zinngyan = {
+
+				color={ 147 172 177 }
+				color2={ 255 255 255 }
+
+				b_limkeng = {
+				}
+				b_brangjang = {
+				}
+				b_kohngyan = {
+				}
+				b_bjenghrax = {
+				}
+				b_zinngyansean = {
+				}
+				b_thentosren = {
+				}
+				b_ngyanlyungsren = {
+				}
+				b_seukruan = {
+				}
+				b_higha = {
+				}
+			}
+			c_lan = {
+
+				color={ 137 172 197 }
+				color2={ 255 255 255 }
+
+				b_lanzyen = {
+				}
+				b_kimzjengkruan = {
+				}
+				b_kiengngyukkruan = {
+				}
+				b_lyungku = {
+				}
+				b_kaulan = {
+				}
+			}
+			c_gha = {
+
+				color={ 147 162 197 }
+				color2={ 255 255 255 }
+
+				b_nenggha = {
+				}
+				b_anhiangkruan = {
+				}
+				b_thungghuadkruan = {
+				}
+				b_zsynhruah = {
+				}
+				b_denghkhiang = {
+				}
+			}
+			c_zinghuang = {
+
+				color={ 157 172 177 }
+				color2={ 255 255 255 }
+
+				b_mrukchjyen = {
+				}
+				b_anlyungx = {
+				}
+				b_nengthau = {
+				}
+				b_syiyanxkruan = {
+				}
+			}
+			c_zinzjenx = {
+
+				color={ 157 162 177 }
+				color2={ 255 255 255 }
+
+				b_seneng = {
+				}
+				b_nengse = {
+				}
+				b_chiengbjen = {
+				}
+				b_lyungcje = {
+				}
+			}
+		}
+		d_dungkhiengh = { #Tongqing
+
+			color={ 147 187 168 }
+			color2={ 255 255 255 }
+
+			capital = 2674 # Biungh (was 1630 Zjeng)
+
+			c_biungh = {
+
+				color={ 147 197 168 }
+				color2={ 255 255 255 }
+
+				b_liangzyen = {
+				}
+				b_liangxtang = {
+				}
+				b_ghadrie = {
+				}
+				b_dadsanxkruan = {
+				}
+			}
+			c_krai = {
+
+				color={ 147 187 178 }
+				color2={ 255 255 255 }
+
+				b_piukcin = {
+				}
+				b_ciangliih = {
+				}
+			}
+			c_min = {
+
+				color={ 137 187 168 }
+				color2={ 255 255 255 }
+
+				b_minmin = {
+				}
+				b_iuhchjyen = {
+				}
+				b_driangdaux = {
+				}
+				b_daddom = {
+				}
+			}
+			c_thau = {
+
+				color={ 147 177 168 }
+				color2={ 255 255 255 }
+
+				b_limthau = {
+				}
+				b_thebo = {
+				}
+			}
+		}
+	}
+	k_xixia = {
+		color={ 8 119 114 }
+		color2={ 255 255 255 }
+		
+		#capital = 1513 # Jiuquan (in lieu of Xingqing/Yinchuan)
+		capital = 2437 # Leng
+		
+		culture = tangut
+		
+		khitan = "Tuyuhun"
+		bodpa = "Amdo"
+		han = "Qinghai"
+		#tangut = "Minyak"
+		mongol = "Tangghut"
+		
+		d_hingkhieng = { #Xingqing
+
+			capital = 2437 # Leng
+
+			color={ 205 143 205 }
+			color2={ 255 255 255 }
+
+			c_leng = {
+
+				color={ 215 143 205 }
+				color2={ 255 255 255 }
+
+				b_hingkhieng = {
+				}
+				b_pauxziengxghrax = {
+				}
+				b_lengmyox = {
+				}
+				b_ghuailak = {
+				}
+				b_anziengx = {
+				}
+				b_haixpauxzsih = {
+				}
+			}
+			c_ghraxyoi = {
+
+				color={ 205 153 205 }
+				color2={ 255 255 255 }
+
+				b_uondrie = {
+				}
+				b_miengsra = {
+				}
+				b_inghlix = {
+				}
+			}
+		}
+		d_bjenghrax = { #Pingxia
+
+			capital = 2439 # Ghrax
+
+			color={ 232 202 232 }
+			color2={ 255 255 255 }
+
+			c_ghrax = {
+
+				color={ 242 202 232 }
+				color2={ 255 255 255 }
+
+				b_srukpyang = {
+				}
+				b_tokziengx = {
+				}
+			}
+			c_jem = {
+
+				color={ 232 212 232 }
+				color2={ 255 255 255 }
+
+				b_ngoxngyan = {
+				}
+				b_brakdrie = {
+				}
+				b_thetmuonkruan = {
+				}
+			}
+			c_iuh = {
+
+				color={ 232 202 242 }
+				color2={ 255 255 255 }
+
+				b_driangdrak = {
+				}
+			}
+			c_ngin = {
+
+				color={ 222 202 232 }
+				color2={ 255 255 255 }
+
+				b_njyolim = {
+				}
+				b_nengsruk = {
+				}
+				b_cjinhiang = {
+				}
+			}
+		}
+		d_jiuquan = {
+			color={ 31 186 165 }
+			
+			capital = 1513 # Jiuquan
+			
+			uyghur = "Yugur"
+			
+			c_jiuquan = {
+				color={ 8 119 114 }
+				
+				#holy_site = taoist
+				
+				b_jiuquan = {
+				}
+				b_suzhou = {
+				}
+				b_kongtong = {
+				}
+				b_fulu = {
+				}
+				b_xianshi = {
+				}
+				b_longdi = { # Fictional, for prosperity
+				}
+				b_guantou = { # Fictional, for prosperity
+				}
+			}
+			c_dunhuang = {
+				color={ 8 129 114 }
+
+				uyghur = "Dukhan"
+				
+				b_dunhuang = {
+					uyghur = "Dukhan"
+				}
+				b_fangpan = {
+				}
+				b_mogao = {
+				}
+				b_yueyaquan = {
+				}
+				b_yumenquan = {
+				}
+				b_hongliuwan = {
+				}
+				b_xuanquanzhi = {
+				}
+			}
+			c_anxi = {
+				color={ 28 119 114 }
+				
+				b_anxi = {
+				}
+				b_guazhou = {
+				}
+				b_xincheng = {
+				}
+				b_yuanquan = {
+				}
+				b_yulin = {
+				}
+				b_suoyang = {
+				}
+				b_renhou = { # Fictional, for prosperity
+				}
+			}
+			c_yungguan = {
+				color={ 8 119 134 }
+
+				b_yungguan = {
+				}
+				b_shouchang = {
+				}
+				b_ziting = {
+				}
+				b_tuotou = { # Fictional, for prosperity
+				}
+				b_guihuayuan = { # Fictional, for prosperity
+				}
+				b_nieercun = { # Fictional, for prosperity
+				}
+				b_pochao = { # Fictional, for prosperity
+				}
+			}
+			c_yumen = {
+				color={ 18 129 124 }
+
+				b_yumen = {
+				}
+				b_xiaxihao = {
+				}
+				b_huangzhawan = {
+				}
+				b_chuanbei = {
+				}
+				b_baoen = { #temple
+				}
+				b_dongshuwo = { #temple
+				}
+				b_shagang = {
+				}
+			}
+			c_ghraxliang = {
+
+				color={ 219 154 171 }
+				color2={ 255 255 255 }
+
+				b_kocang = {
+				}
+				b_zsjino = {
+				}
+				b_kralin = {
+				}
+				b_phyanghua = {
+				}
+				b_chjangzsyung = {
+				}
+			}
+			c_kam = {
+
+				color={ 209 164 171 }
+				color2={ 255 255 255 }
+
+				b_triangjek = {
+				}
+				b_srantan = {
+				}
+			}
+		}
+	}
+}
+	
+	
