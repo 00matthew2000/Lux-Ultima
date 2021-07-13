@@ -3,7 +3,6 @@
 technology = {
 	titles = {
 		d_mahra						#Added
-		
 		d_napata					#Added
 		d_dongola					#Added
 		d_aydhab					#Added
@@ -26,8 +25,7 @@ technology = {
 		d_zimbabwe					#Added
 		d_zulu						#Added
 		d_makonde					#Added
-		d_sofala					#Adde					
-#		d_afar						#Checked - absent				
+		d_sofala					#Added				
 		d_tripolitania				#Checked
 		d_cyrenaica
 		d_axum
@@ -45,35 +43,6 @@ technology = {
 		d_sennar
 		d_tangiers
 		d_tunis
-	}
-
-	#preliminary flattening
-	1066 = { 
-		military = 0.0
-		economy = 0.0
-		culture = 0.0		
-	}
-}
-
-# Trade republics
-technology = {
-	titles = {
-		d_mombasa					#Added
-		d_rhapta					#Added
-	}
-
-	1066 = {
-		military = 0.0
-		economy = 0.1
-		culture = 0.0
-		TECH_TRADE_PRACTICES = 1.0
-	}
-}
-
-#WEST AFRICA
-
-technology = {
-	titles = {
 		d_accra					#Added
 		d_sataspes				#Added
 		d_jolof					#Added
@@ -93,38 +62,6 @@ technology = {
 		d_tangiers				#Checked
 		d_fes					#Checked
 		d_alger					#Checked
-	}
-	
-	#preliminary flattening
-	1066 = { 
-		military = 0.0
-		economy = 0.0
-		culture = 0.0		
-	}
-	
-}
-
-# Trade republics
-technology = {
-	titles = {
-		d_aboisso				#Added
-		d_kaabu					#Added
-		d_socotra					#Added
-	}
-
-	1066 = {
-		military = 0.0
-		economy = 0.1
-		culture = 0.0
-		TECH_TRADE_PRACTICES = 1.0
-	}
-}
-
-
-#EGYPT
-
-technology = {
-	titles = {
 		d_alexandria
 		d_damietta
 		d_cairo
@@ -132,20 +69,6 @@ technology = {
 		d_faiyum
 		d_asyut
 		d_paraetonium
-	}
-
-	#preliminary flattening
-	1066 = { 
-		military = 0.0
-		economy = 0.0
-		culture = 0.0		
-	}
-}
-
-# BERBERS EXCLUDING TUNIS
-
-technology = {
-	titles = {
 		d_tlemcen
 		d_kabylia
 		d_marrakech
@@ -158,20 +81,6 @@ technology = {
 		d_syrte
 		d_jerid
 		d_mzab
-	}
-	
-	#preliminary flattening
-	1066 = { 
-		military = 0.0
-		economy = 0.0
-		culture = 0.0		
-	}
-}
-
-#SUB SAHARA
-
-technology = {
-	titles = {
 		d_timbuktu
 		d_ghana
 		d_mali
@@ -187,37 +96,33 @@ technology = {
 		d_bornu
 		d_hausaland
 		d_wadai
-                d_malle
-                d_sassamon
-                d_layabaza
-                d_kobuyo
-                d_zampapaa
-                d_garber
-                d_kharnya
-                d_kharal
-                d_yaodou
-                d_makomasu
-                d_kasmal
-                d_kasman
-	}
-	
-	#preliminary flattening
-	1066 = { 
-		military = 0.0
-		economy = 0.0
-		culture = 0.0		
-	}
-}
-
-technology = {
-	titles = {
+		d_malle
+		d_sassamon
+		d_layabaza
+		d_kobuyo
+		d_zampapaa
+		d_garber
+		d_kharnya
+		d_kharal
+		d_yaodou
+		d_makomasu
+		d_kasmal
+		d_kasman
 		d_khorwind
 		d_sermole
 		d_ghagabtsha
 		d_kimcabloem
 		d_johasowne
+		d_monsol
+		d_ligetchi
+		d_lualuba
+		d_uimala
+		d_hualuen
+		d_mukharata
+		d_zaopoi
+		d_jamuji
 	}
-	
+
 	#preliminary flattening
 	1066 = { 
 		military = 0.0
@@ -226,23 +131,20 @@ technology = {
 	}
 }
 
+# Trade republics
 technology = {
 	titles = {
-                d_monsol
-                d_ligetchi
-                d_lualuba
-                d_uimala
-                d_hualuen
-                d_mukharata
-                d_zaopoi
-                d_jamuji
+		d_mombasa					#Added
+		d_rhapta					#Added
+		d_aboisso				#Added
+		d_kaabu					#Added
+		d_socotra					#Added
 	}
-	
-	#preliminary flattening
-	1066 = { 
+
+	1066 = {
 		military = 0.0
-		economy = 0.0
-		culture = 0.0		
+		economy = 0.1
+		culture = 0.0
+		TECH_TRADE_PRACTICES = 1.0
 	}
 }
-
