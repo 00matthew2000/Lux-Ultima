@@ -38,7 +38,6 @@ technology = {
 		d_piukkianh
 		d_wmin
 		d_smin
-		d_ekuangxnom
 		d_liengxtung
 		d_drieux-khiengh
 		d_ziengxhaix
@@ -87,5 +86,19 @@ technology = {
 		military = 0.2
 		economy = 0.2
 		culture = 0.2		
+	}
+}
+
+# Trade republics
+technology = {
+	titles = {
+		d_ekuangxnom
+	}
+
+	1066 = {
+		military = 0.0
+		economy = 0.1
+		culture = 0.0
+		TECH_TRADE_PRACTICES = 1.0
 	}
 }

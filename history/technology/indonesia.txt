@@ -36,23 +36,6 @@ technology = {
 		d_maidh
 		d_maweport
 		d_rabara
-	}
-	
-	769 = {
-		military = 0.1
-		economy = 0.1
-		culture = 0.1
-	}
-		
-	1337 = {
-		military = 3.5
-		economy = 3.5
-		culture = 3.5
-	}
-}
-
-technology = {
-	titles = {
 		d_palembang
 		d_jambi
 		d_panai
@@ -68,18 +51,13 @@ technology = {
 		d_dieng
 		d_mataram
 		d_bali
-                            d_vasucasatu
+		d_vasucasatu
 	}
 	
-	769 = {
-		military = 1.0
-		economy = 1.5
-		culture = 0.5
-	}
-		
-	1337 = {
-		military = 4.0
-		economy = 4.0
-		culture = 4.0
+	#preliminary flattening
+	1066 = { 
+		military = 0.0
+		economy = 0.0
+		culture = 0.0		
 	}
 }

@@ -17,23 +17,6 @@ technology = {
 		d_phanat
 		d_u_thong
 		d_ratchaburi
-	}
-
-	769 = {
-		military = 0.1
-		economy = 0.1
-		culture = 0.1
-	}
-		
-	1337 = {
-		military = 3.5
-		economy = 3.5
-		culture = 3.5
-	}
-}
-
-technology = {
-	titles = {
 		d_dali
 		d_lunghtungh
 		d_ghuadchjyen
@@ -57,15 +40,10 @@ technology = {
 		d_panduranga
 	}
 
-	769 = {
-		military = 0.5
-		economy = 1.0
-		culture = 0.5
-	}
-		
-	1337 = {
-		military = 4.0
-		economy = 4.0
-		culture = 4.0
+	#preliminary flattening
+	1066 = { 
+		military = 0.0
+		economy = 0.0
+		culture = 0.0		
 	}
 }
