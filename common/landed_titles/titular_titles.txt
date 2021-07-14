@@ -151,6 +151,19 @@ k_eretnid = {
 		}
 	}
 }
+k_former_zhao = {
+	color = { 204 255 208 }
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
 k_gupta = {
 	color = { 195 167 70 }
 	allow = {
@@ -205,6 +218,19 @@ k_nubia = {
 }
 k_maurya = {
 	color = { 168 74 57 }
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
+k_nanman = {
+	color = { 84 16 92 }
 	allow = {
 		war = no
 		ruled_years = 5

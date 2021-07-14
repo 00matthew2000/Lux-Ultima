@@ -23724,11 +23724,11 @@
 }
 
 1000452948 ={
-	name = "CaiShu"
+	name = "Caishu"
 	dynasty = 1000156275
-	culture = "han"
+	culture = "gan"
+	religion = "indoh_confucian"
 	father = 0
-	religion = "confucian"
 	935.12.24 ={
 		birth = "935.12.24"
 	}
@@ -23738,11 +23738,11 @@
 }
 
 1000452949 ={
-	name = "FeiWen"
+	name = "Feiwen"
 	dynasty = 1000156275
-	culture = "han"
+	culture = "gan"
+	religion = "indoh_confucian"
 	father = 1000452948
-	religion = "confucian"
 	968.10.1 ={
 		birth = "968.10.1"
 	}
@@ -23754,9 +23754,9 @@
 1000452950 ={
 	name = "Wen"
 	dynasty = 1000156275
-	culture = "han"
+	culture = "gan"
+	religion = "indoh_confucian"
 	father = 1000452949
-	religion = "confucian"
 	990.11.18 ={
 		birth = "990.11.18"
 	}
@@ -23766,11 +23766,11 @@
 }
 
 1000452951 ={
-	name = "JingHua"
+	name = "Jinghua"
 	dynasty = 1000156275
-	culture = "han"
+	culture = "gan"
+	religion = "indoh_confucian"
 	father = 1000452950
-	religion = "confucian"
 	1010.8.10 ={
 		birth = "1010.8.10"
 	}
@@ -23782,9 +23782,12 @@
 1000452952 ={
 	name = "Zhe"
 	dynasty = 1000156275
-	culture = "han"
+	culture = "gan"
+	religion = "indoh_confucian"
+	trait = grey_eminence
+	trait = kind
+	trait = just
 	father = 1000452951
-	religion = "confucian"
 	1037.4.14 ={
 		birth = "1037.4.14"
 	}
@@ -23794,11 +23797,11 @@
 }
 
 1000452953 ={
-	name = "HaoJing"
+	name = "Hao"
 	dynasty = 1000156275
-	culture = "han"
+	culture = "gan"
+	religion = "indoh_confucian"
 	father = 1000452952
-	religion = "confucian"
 	1065.11.14 ={
 		birth = "1065.11.14"
 	}
@@ -23808,11 +23811,11 @@
 }
 
 1000452954 ={
-	name = "QuanMin"
+	name = "Quanmin"
 	dynasty = 1000156275
-	culture = "han"
+	culture = "gan"
+	religion = "indoh_confucian"
 	father = 1000452953
-	religion = "confucian"
 	1095.9.12 ={
 		birth = "1095.9.12"
 	}
@@ -23822,114 +23825,16 @@
 }
 
 1000452955 ={
-	name = "HongQing"
+	name = "Hongqing"
 	dynasty = 1000156275
-	culture = "han"
+	culture = "gan"
+	religion = "indoh_confucian"
 	father = 1000452954
-	religion = "confucian"
 	1122.2.27 ={
 		birth = "1122.2.27"
 	}
 	1174.10.28 ={
 		death = "1174.10.28"
-	}
-}
-
-1000452956 ={
-	name = "GongBi"
-	dynasty = 1000156275
-	culture = "han"
-	father = 1000452955
-	religion = "confucian"
-	1142.9.16 ={
-		birth = "1142.9.16"
-	}
-	1202.7.21 ={
-		death = "1202.7.21"
-	}
-}
-
-1000452957 ={
-	name = "QuanJing"
-	dynasty = 1000156275
-	culture = "han"
-	father = 1000452956
-	religion = "confucian"
-	1178.4.27 ={
-		birth = "1178.4.27"
-	}
-	1235.8.16 ={
-		death = "1235.8.16"
-	}
-}
-
-1000452958 ={
-	name = "PingXiang"
-	dynasty = 1000156275
-	culture = "han"
-	father = 1000452957
-	religion = "confucian"
-	1203.9.21 ={
-		birth = "1203.9.21"
-	}
-	1262.4.19 ={
-		death = "1262.4.19"
-	}
-}
-
-1000452959 ={
-	name = "BoPu"
-	dynasty = 1000156275
-	culture = "han"
-	father = 1000452958
-	religion = "confucian"
-	1238.7.8 ={
-		birth = "1238.7.8"
-	}
-	1284.5.14 ={
-		death = "1284.5.14"
-	}
-}
-
-1000452960 ={
-	name = "ShiXin"
-	dynasty = 1000156275
-	culture = "han"
-	father = 1000452959
-	religion = "confucian"
-	1256.3.4 ={
-		birth = "1256.3.4"
-	}
-	1303.11.8 ={
-		death = "1303.11.8"
-	}
-}
-
-1000452961 ={
-	name = "HongCai"
-	dynasty = 1000156275
-	culture = "han"
-	father = 1000452960
-	religion = "confucian"
-	1273.5.19 ={
-		birth = "1273.5.19"
-	}
-	1328.11.2 ={
-		death = "1328.11.2"
-	}
-}
-
-1000452962 ={
-	name = "Bo"
-	dynasty = 1000156275
-	culture = "han"
-	father = 1000452961
-	religion = "confucian"
-	1298.8.7 ={
-		birth = "1298.8.7"
-	}
-	1352.8.28 ={
-		death = "1352.8.28"
 	}
 }
 
@@ -24102,11 +24007,11 @@
 }
 
 1000452975 ={
-	name = "SongSu"
+	name = "Nicias"
 	dynasty = 1000156277
-	culture = "han"
+	culture = "sinohellenic"
+	religion = "indoh_confucian"
 	father = 0
-	religion = "confucian"
 	935.12.5 ={
 		birth = "935.12.5"
 	}
@@ -24116,11 +24021,11 @@
 }
 
 1000452976 ={
-	name = "HuiZhong"
+	name = "Huizhong"
 	dynasty = 1000156277
-	culture = "han"
+	culture = "sinohellenic"
+	religion = "indoh_confucian"
 	father = 1000452975
-	religion = "confucian"
 	955.11.11 ={
 		birth = "955.11.11"
 	}
@@ -24130,11 +24035,11 @@
 }
 
 1000452977 ={
-	name = "XunChong"
+	name = "Xunchong"
 	dynasty = 1000156277
-	culture = "han"
+	culture = "sinohellenic"
+	religion = "indoh_confucian"
 	father = 1000452976
-	religion = "confucian"
 	977.11.20 ={
 		birth = "977.11.20"
 	}
@@ -24144,11 +24049,11 @@
 }
 
 1000452978 ={
-	name = "MinWen"
+	name = "Minwen"
 	dynasty = 1000156277
-	culture = "han"
+	culture = "sinohellenic"
+	religion = "indoh_confucian"
 	father = 1000452977
-	religion = "confucian"
 	1011.10.15 ={
 		birth = "1011.10.15"
 	}
@@ -24160,9 +24065,9 @@
 1000452979 ={
 	name = "Gong"
 	dynasty = 1000156277
-	culture = "han"
+	culture = "sinohellenic"
+	religion = "indoh_confucian"
 	father = 1000452978
-	religion = "confucian"
 	1029.6.12 ={
 		birth = "1029.6.12"
 	}
@@ -24172,142 +24077,16 @@
 }
 
 1000452980 ={
-	name = "AnZhong"
+	name = "Anzhong"
 	dynasty = 1000156277
-	culture = "han"
+	culture = "sinohellenic"
+	religion = "indoh_confucian"
 	father = 1000452979
-	religion = "confucian"
 	1057.4.26 ={
 		birth = "1057.4.26"
 	}
 	1106.4.1 ={
 		death = "1106.4.1"
-	}
-}
-
-1000452981 ={
-	name = "Pu"
-	dynasty = 1000156277
-	culture = "han"
-	father = 1000452980
-	religion = "confucian"
-	1076.7.1 ={
-		birth = "1076.7.1"
-	}
-	1130.10.28 ={
-		death = "1130.10.28"
-	}
-}
-
-1000452982 ={
-	name = "LiShu"
-	dynasty = 1000156277
-	culture = "han"
-	father = 1000452981
-	religion = "confucian"
-	1110.1.23 ={
-		birth = "1110.1.23"
-	}
-	1160.4.22 ={
-		death = "1160.4.22"
-	}
-}
-
-1000452983 ={
-	name = "Su"
-	dynasty = 1000156277
-	culture = "han"
-	father = 1000452982
-	religion = "confucian"
-	1139.12.11 ={
-		birth = "1139.12.11"
-	}
-	1188.11.17 ={
-		death = "1188.11.17"
-	}
-}
-
-1000452984 ={
-	name = "GuangGong"
-	dynasty = 1000156277
-	culture = "han"
-	father = 1000452983
-	religion = "confucian"
-	1169.9.12 ={
-		birth = "1169.9.12"
-	}
-	1229.12.7 ={
-		death = "1229.12.7"
-	}
-}
-
-1000452985 ={
-	name = "Zi"
-	dynasty = 1000156277
-	culture = "han"
-	father = 1000452984
-	religion = "confucian"
-	1190.10.4 ={
-		birth = "1190.10.4"
-	}
-	1242.5.3 ={
-		death = "1242.5.3"
-	}
-}
-
-1000452986 ={
-	name = "XiChong"
-	dynasty = 1000156277
-	culture = "han"
-	father = 1000452985
-	religion = "confucian"
-	1217.4.12 ={
-		birth = "1217.4.12"
-	}
-	1261.2.11 ={
-		death = "1261.2.11"
-	}
-}
-
-1000452987 ={
-	name = "GuoZheng"
-	dynasty = 1000156277
-	culture = "han"
-	father = 1000452986
-	religion = "confucian"
-	1237.10.6 ={
-		birth = "1237.10.6"
-	}
-	1286.9.4 ={
-		death = "1286.9.4"
-	}
-}
-
-1000452988 ={
-	name = "ZiWen"
-	dynasty = 1000156277
-	culture = "han"
-	father = 1000452987
-	religion = "confucian"
-	1257.6.20 ={
-		birth = "1257.6.20"
-	}
-	1316.1.25 ={
-		death = "1316.1.25"
-	}
-}
-
-1000452989 ={
-	name = "Ji"
-	dynasty = 1000156277
-	culture = "han"
-	father = 1000452988
-	religion = "confucian"
-	1287.12.21 ={
-		birth = "1287.12.21"
-	}
-	1339.6.27 ={
-		death = "1339.6.27"
 	}
 }
 
@@ -25252,9 +25031,9 @@
 1000453057 ={
 	name = "Hong"
 	dynasty = 1000156283
-	culture = "han"
+	culture = "hakka"
+	religion = "shenjiao"
 	father = 0
-	religion = "confucian"
 	933.11.22 ={
 		birth = "933.11.22"
 	}
@@ -25264,11 +25043,11 @@
 }
 
 1000453058 ={
-	name = "HongPing"
+	name = "Hongping"
 	dynasty = 1000156283
-	culture = "han"
+	culture = "hakka"
+	religion = "shenjiao"
 	father = 1000453057
-	religion = "confucian"
 	968.12.9 ={
 		birth = "968.12.9"
 	}
@@ -25278,11 +25057,11 @@
 }
 
 1000453059 ={
-	name = "ZheQing"
+	name = "Zheqing"
 	dynasty = 1000156283
-	culture = "han"
+	culture = "hakka"
+	religion = "shenjiao"
 	father = 1000453058
-	religion = "confucian"
 	996.12.8 ={
 		birth = "996.12.8"
 	}
@@ -25294,9 +25073,9 @@
 1000453060 ={
 	name = "Zhong"
 	dynasty = 1000156283
-	culture = "han"
+	culture = "hakka"
+	religion = "shenjiao"
 	father = 1000453059
-	religion = "confucian"
 	1018.3.25 ={
 		birth = "1018.3.25"
 	}
@@ -25308,168 +25087,14 @@
 1000453061 ={
 	name = "Zhong"
 	dynasty = 1000156283
-	culture = "han"
+	culture = "hakka"
+	religion = "shenjiao"
 	father = 1000453060
-	religion = "confucian"
 	1034.11.12 ={
 		birth = "1034.11.12"
 	}
 	1094.6.26 ={
 		death = "1094.6.26"
-	}
-}
-
-1000453062 ={
-	name = "XinQuan"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453061
-	religion = "confucian"
-	1075.4.2 ={
-		birth = "1075.4.2"
-	}
-	1120.5.25 ={
-		death = "1120.5.25"
-	}
-}
-
-1000453063 ={
-	name = "XiangXian"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453062
-	religion = "confucian"
-	1092.9.20 ={
-		birth = "1092.9.20"
-	}
-	1151.1.16 ={
-		death = "1151.1.16"
-	}
-}
-
-1000453064 ={
-	name = "Yuan"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453063
-	religion = "confucian"
-	1114.10.7 ={
-		birth = "1114.10.7"
-	}
-	1173.8.19 ={
-		death = "1173.8.19"
-	}
-}
-
-1000453065 ={
-	name = "BiHui"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453064
-	religion = "confucian"
-	1140.3.28 ={
-		birth = "1140.3.28"
-	}
-	1191.2.18 ={
-		death = "1191.2.18"
-	}
-}
-
-1000453066 ={
-	name = "FeiHong"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453065
-	religion = "confucian"
-	1163.8.3 ={
-		birth = "1163.8.3"
-	}
-	1217.1.3 ={
-		death = "1217.1.3"
-	}
-}
-
-1000453067 ={
-	name = "Xiu"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453066
-	religion = "confucian"
-	1188.7.19 ={
-		birth = "1188.7.19"
-	}
-	1245.6.6 ={
-		death = "1245.6.6"
-	}
-}
-
-1000453068 ={
-	name = "Hua"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453067
-	religion = "confucian"
-	1212.1.7 ={
-		birth = "1212.1.7"
-	}
-	1269.2.17 ={
-		death = "1269.2.17"
-	}
-}
-
-1000453069 ={
-	name = "GongMin"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453068
-	religion = "confucian"
-	1236.3.17 ={
-		birth = "1236.3.17"
-	}
-	1279.1.4 ={
-		death = "1279.1.4"
-	}
-}
-
-1000453070 ={
-	name = "CaiSu"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453069
-	religion = "confucian"
-	1255.7.28 ={
-		birth = "1255.7.28"
-	}
-	1314.5.28 ={
-		death = "1314.5.28"
-	}
-}
-
-1000453071 ={
-	name = "GongRen"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453070
-	religion = "confucian"
-	1278.10.9 ={
-		birth = "1278.10.9"
-	}
-	1330.4.13 ={
-		death = "1330.4.13"
-	}
-}
-
-1000453072 ={
-	name = "SongChong"
-	dynasty = 1000156283
-	culture = "han"
-	father = 1000453071
-	religion = "confucian"
-	1296.5.5 ={
-		birth = "1296.5.5"
-	}
-	1356.4.22 ={
-		death = "1356.4.22"
 	}
 }
 
@@ -31323,11 +30948,11 @@
 }
 
 1000453630 ={
-	name = "DaoBi"
+	name = "Yan"
 	dynasty = 1000156327
-	culture = "han"
+	culture = "ba_shu"
+	religion = "sol_taoist"
 	father = 0
-	religion = "confucian"
 	932.7.15 ={
 		birth = "932.7.15"
 	}
@@ -31339,9 +30964,9 @@
 1000453631 ={
 	name = "Yi"
 	dynasty = 1000156327
-	culture = "han"
+	culture = "ba_shu"
+	religion = "sol_taoist"
 	father = 1000453630
-	religion = "confucian"
 	963.3.18 ={
 		birth = "963.3.18"
 	}
@@ -31351,11 +30976,11 @@
 }
 
 1000453632 ={
-	name = "QingSu"
+	name = "Qingsu"
 	dynasty = 1000156327
-	culture = "han"
+	culture = "ba_shu"
+	religion = "sol_taoist"
 	father = 1000453631
-	religion = "confucian"
 	989.12.2 ={
 		birth = "989.12.2"
 	}
@@ -31365,11 +30990,11 @@
 }
 
 1000453633 ={
-	name = "MinWan"
+	name = "Min"
 	dynasty = 1000156327
-	culture = "han"
+	culture = "ba_shu"
+	religion = "sol_taoist"
 	father = 1000453632
-	religion = "confucian"
 	1018.12.21 ={
 		birth = "1018.12.21"
 	}
@@ -31379,156 +31004,16 @@
 }
 
 1000453634 ={
-	name = "WenShu"
+	name = "Jing"
 	dynasty = 1000156327
-	culture = "han"
+	culture = "ba_shu"
+	religion = "sol_taoist"
 	father = 1000453633
-	religion = "confucian"
 	1040.1.25 ={
 		birth = "1040.1.25"
 	}
 	1099.10.8 ={
 		death = "1099.10.8"
-	}
-}
-
-1000453635 ={
-	name = "ZheHao"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453634
-	religion = "confucian"
-	1070.12.19 ={
-		birth = "1070.12.19"
-	}
-	1118.6.24 ={
-		death = "1118.6.24"
-	}
-}
-
-1000453636 ={
-	name = "ZiGong"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453635
-	religion = "confucian"
-	1092.1.6 ={
-		birth = "1092.1.6"
-	}
-	1141.5.25 ={
-		death = "1141.5.25"
-	}
-}
-
-1000453637 ={
-	name = "Bi"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453636
-	religion = "confucian"
-	1114.9.16 ={
-		birth = "1114.9.16"
-	}
-	1168.4.5 ={
-		death = "1168.4.5"
-	}
-}
-
-1000453638 ={
-	name = "DaZhong"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453637
-	religion = "confucian"
-	1136.12.8 ={
-		birth = "1136.12.8"
-	}
-	1193.6.7 ={
-		death = "1193.6.7"
-	}
-}
-
-1000453639 ={
-	name = "WanZhong"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453638
-	religion = "confucian"
-	1169.1.26 ={
-		birth = "1169.1.26"
-	}
-	1221.6.8 ={
-		death = "1221.6.8"
-	}
-}
-
-1000453640 ={
-	name = "QingZhe"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453639
-	religion = "confucian"
-	1197.4.27 ={
-		birth = "1197.4.27"
-	}
-	1248.3.11 ={
-		death = "1248.3.11"
-	}
-}
-
-1000453641 ={
-	name = "XiuCheng"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453640
-	religion = "confucian"
-	1213.5.15 ={
-		birth = "1213.5.15"
-	}
-	1267.10.5 ={
-		death = "1267.10.5"
-	}
-}
-
-1000453642 ={
-	name = "RenZi"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453641
-	religion = "confucian"
-	1241.10.22 ={
-		birth = "1241.10.22"
-	}
-	1292.9.18 ={
-		death = "1292.9.18"
-	}
-}
-
-1000453643 ={
-	name = "LongYi"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453642
-	religion = "confucian"
-	1263.11.3 ={
-		birth = "1263.11.3"
-	}
-	1316.8.28 ={
-		death = "1316.8.28"
-	}
-}
-
-1000453644 ={
-	name = "DaXian"
-	dynasty = 1000156327
-	culture = "han"
-	father = 1000453643
-	religion = "confucian"
-	1291.7.27 ={
-		birth = "1291.7.27"
-	}
-	1344.2.6 ={
-		death = "1344.2.6"
 	}
 }
 
@@ -49328,11 +48813,11 @@
 }
 
 1000455120 ={
-	name = "QuanSong"
+	name = "Yuan"
 	dynasty = 1000156477
-	culture = "han"
+	culture = "jin"
+	religion = "tengri_confucian"
 	father = 0
-	religion = "confucian"
 	933.3.24 ={
 		birth = "933.3.24"
 	}
@@ -49342,11 +48827,11 @@
 }
 
 1000455121 ={
-	name = "YiDao"
+	name = "Yi"
 	dynasty = 1000156477
-	culture = "han"
+	culture = "jin"
+	religion = "tengri_confucian"
 	father = 1000455120
-	religion = "confucian"
 	955.10.6 ={
 		birth = "955.10.6"
 	}
@@ -49356,11 +48841,11 @@
 }
 
 1000455122 ={
-	name = "WanRen"
+	name = "Xi"
 	dynasty = 1000156477
-	culture = "han"
+	culture = "jin"
+	religion = "tengri_confucian"
 	father = 1000455121
-	religion = "confucian"
 	987.12.19 ={
 		birth = "987.12.19"
 	}
@@ -49370,11 +48855,11 @@
 }
 
 1000455123 ={
-	name = "GongFei"
+	name = "Gongfei"
 	dynasty = 1000156477
-	culture = "han"
+	culture = "jin"
+	religion = "tengri_confucian"
 	father = 1000455122
-	religion = "confucian"
 	1016.2.16 ={
 		birth = "1016.2.16"
 	}
@@ -49384,11 +48869,11 @@
 }
 
 1000455124 ={
-	name = "ZhengBo"
+	name = "Cong"
 	dynasty = 1000156477
-	culture = "han"
+	culture = "jin"
+	religion = "tengri_confucian"
 	father = 1000455123
-	religion = "confucian"
 	1036.6.6 ={
 		birth = "1036.6.6"
 	}
@@ -49398,11 +48883,11 @@
 }
 
 1000455125 ={
-	name = "SongGong"
+	name = "Songgong"
 	dynasty = 1000156477
-	culture = "han"
+	culture = "jin"
+	religion = "tengri_confucian"
 	father = 1000455124
-	religion = "confucian"
 	1057.11.1 ={
 		birth = "1057.11.1"
 	}
@@ -49414,9 +48899,9 @@
 1000455126 ={
 	name = "BiXi"
 	dynasty = 1000156477
-	culture = "han"
+	culture = "jin"
+	religion = "tengri_confucian"
 	father = 1000455125
-	religion = "confucian"
 	1085.5.2 ={
 		birth = "1085.5.2"
 	}
