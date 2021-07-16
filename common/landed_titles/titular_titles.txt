@@ -1583,6 +1583,19 @@ k_sarmatia = {
 		}
 	}
 }
+k_sima = {
+	color = { 1 13 7 }
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
 k_singidunum = {
 	color = { 102 102 22 }
 	capital = 489 #Singidunum
@@ -1689,6 +1702,34 @@ k_tuyuhun = {
 k_tylis = {
 	color = { 77 127 8 }
 	capital = 513 #Philippoupolis
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
+k_cao_wei = {
+	color = { 76 0 153 }
+	
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
+k_yellow_turban = {
+	color = { 255 255 0 }
+	
 	allow = {
 		war = no
 		ruled_years = 5
@@ -1949,6 +1990,17 @@ e_roman_empire = {
 	
 	allow = {
 		always = no #Created through special decision
+	}
+}
+
+# Unified Northern China/Korea/Japan
+e_polypercheia = {
+	color = { 17 188 34 }
+	capital = 2449 # Alexandria Eschate
+	short_name = yes
+	
+	allow = {
+		culture = sinohellenic
 	}
 }
 

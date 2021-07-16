@@ -5491,13 +5491,13 @@ chinese_group = {
 			land_morale = 0.60
 		}
 		
+		aggression = 1.5
 		can_call_crusade = no
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
 		max_consorts = 3
 		priests_can_marry = yes
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 4 # The default in LI is 5
 		hard_to_convert = yes
+		short_reign_opinion_year_mult = 4 # The default in LI is 5
 		
 		religious_clothing_head = 6
 		religious_clothing_priest = 4
@@ -5606,10 +5606,16 @@ chinese_group = {
 	}
 	
 	tao = {
-		graphical_culture = mongolgfx
+		graphical_culture = chinesegfx
 		color = { 0.4 0.1 0.1 }
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
 		icon = 97
 		heresy_icon = 99
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
 		
 		reformed = tao_reformed
 		#reformer_head_of_religion = yes
@@ -5691,6 +5697,129 @@ chinese_group = {
 		
 		religious_clothing_head = 6
 		religious_clothing_priest = 6
+	}
+
+	sol_taoist = {
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 53
+		heresy_icon = 54
+		
+		color = { 200 141 183 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+
+		parent = tao
+		
+		high_god_name = GOD_HEAVENLY_ORDER
+		
+		god_names = {
+			THE_THREE_PURITIES THE_ANCESTORS GOD_YANSHIH_TIENTSUN GOD_XIHE
+		}
+		
+		evil_god_names = {
+			KING_YAN YANLUO DEMON_KING
+		}
+
+		character_modifier = {
+			global_revolt_risk = 0.03
+			church_opinion = -10
+			castle_vassal_tax_modifier = 0.30
+			temple_vassal_tax_modifier = -0.30
+			land_organisation = 0.60
+			castle_vassal_min_levy = 0.30
+			castle_vassal_max_levy = 0.30
+			city_vassal_min_levy = 0.45
+			city_vassal_max_levy = 0.45
+			temple_vassal_min_levy = -0.05
+			temple_vassal_max_levy = -0.10
+#			monthly_character_prestige = 0.10
+#			monthly_character_piety = -0.20
+			assassinate_chance_modifier = 0.20
+			arrest_chance_modifier = 0.20
+			diplomacy = -1
+			martial = 3
+			stewardship = 3
+#			ai_ambition = 50
+#			ai_honor = 30
+#			ai_rationality = 20
+		}
+
+		unit_modifier = {
+			key = "DEF_RELIGION_HOME_TERRITORY"
+			
+			levy_size = 0.50
+			light_cavalry_offensive = -0.30
+			light_infantry_offensive = -0.30
+			archers_offensive = -0.30
+			heavy_infantry_offensive = -0.10
+			knights_offensive = -0.10
+			pikemen_offensive = -0.10
+			land_morale = 0.10
+		}
+		unit_home_modifier = {
+			key = "DEF_RELIGION_HOME_TERRITORY"
+			
+			heavy_infantry_defensive = 0.40
+			knights_defensive = 0.40
+			pikemen_defensive = 0.40
+			land_morale = 0.60
+		}
+
+		aggression = 1.5
+		allow_viking_invasion = yes
+		can_call_crusade = no
+		independence_war_score_bonus = 10
+		max_consorts = 3
+		priests_can_marry = yes
+		short_reign_opinion_year_mult = 8 # The default in LI is 5
+		hard_to_convert = yes
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
+
+		scripture_name = TAO_TE_CHING
+		priest_title = DAOSHI
+		piety_name = PIETY_TE
+		
+		# Buddhist open-minded (sectarian 0), can be married from the same group or civilization or related ones
+		intermarry = bud_pratyeka
+		intermarry = bud_sthaviravada
+		intermarry = bud_zen
+		intermarry = bud_zor
+		intermarry = bud_zen_reformed
+		intermarry = bud_zor_reformed
+
+		# Chinese open-minded (sectarian 0), can be married from the same group or civilization or related ones
+		intermarry = bon
+		intermarry = lubu
+		intermarry = bon_reformed
+		intermarry = lubu_reformed
+		
+		# Chinese restrictive (sectarian 1), can be married from the same group or civilization or related ones
+		intermarry = tao
+		intermarry = tao_reformed
+		intermarry = melanesian_religion
+		intermarry = melanesian_religion_reformed
+		intermarry = taiwanese_religion
+		intermarry = taiwanese_religion_reformed
+		intermarry = philippine_religion
+		intermarry = philippine_religion_reformed
+		intermarry = bornean_religion
+		intermarry = bornean_religion_reformed	
+		intermarry = sulawesi_religion
+		intermarry = sulawesi_religion_reformed
+		intermarry = flores_religion
+		intermarry = flores_religion_reformed
+		intermarry = java_religion
+		intermarry = java_religion_reformed	
+		intermarry = sumatran_religion
+		intermarry = sumatran_religion_reformed	
+		intermarry = malagasy_religion
+		intermarry = malagasy_religion_reformed	
 	}
 }
 norsegerman_group = {

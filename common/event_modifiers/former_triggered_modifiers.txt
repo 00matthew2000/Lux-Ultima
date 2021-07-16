@@ -2307,6 +2307,20 @@ ruler_sol_slav = {
 	monthly_character_piety = -0.2
 }
 
+# sol_taoist Triggered Modifiers
+ruler_sol_taoist = {
+	icon = 15
+	monthly_character_prestige = -2
+	monthly_character_piety = -0.2
+}
+
+# sol_taoist low prestige Triggered Modifiers
+ruler_sol_taoist_b = {
+	icon = 15
+	monthly_character_prestige = 0
+	monthly_character_piety = 4.8
+}
+
 # sol_tsahay Triggered Modifiers
 ruler_sol_tsahay = {
 	icon = 15

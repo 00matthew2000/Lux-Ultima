@@ -3305,6 +3305,23 @@ province_zz01_vedanta = {
 	icon = 15
 }
 
+# 199 Sol Taoist province modifier <- post-Expansion checked and updated
+province_sol_taoist = {
+	local_revolt_risk = 0.06
+	local_build_time_modifier = 0.15
+	castle_tax_modifier = 0.10
+	city_tax_modifier = 0.10
+	temple_tax_modifier = 0.10
+	levy_size = 0.40
+	levy_reinforce_rate = 0.10
+	city_levy_size = 0.10
+	temple_levy_size = 0.25
+	tech_growth_modifier_military = 0.05
+	tech_growth_modifier_economy = -0.40
+	tech_growth_modifier_culture = 0.05
+	
+	icon = 15
+}
 
 # 2. RELIGIONS CREATED BY REFORMS
 
