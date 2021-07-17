@@ -305,6 +305,47 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
+	khrysean = {
+		graphical_cultures = { chinesegfx bodpagfx mongolgfx indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+		
+		dynasty_name_first = yes
+
+		color = { 0.86 0.12 0.03 }
+		
+		male_names = {
+			Abhae Aegos Agathocles Agni Akakios Alexandros_Alexander Alexios_Alexis Amyntas Anish Anthemios_Anthimos Antialcidas_Antialkidas Antigonos Antimachus Antipater_Antipater
+			Apollodotus Apollophanes Archebios Ariarathes Artemidoros Antiochos Apollonios Arrhidaeus_Arrhidaeus Basileios_Basil Baskara Cassander_Cassander Craterus_Craterus Demetrios_Demetrius
+			Devaraja Diodotus Diogenes Diomedes Dionysios_Dionysus Dorotheos Eirenaios Epander Eucratides Eudoxios Eumenes_Eumenes Eustratios Eugenios Euphemios Eusebios Eustathios_Eustace
+			Euthydemus Hektorios Helias Heliokles Heraklios_Heracles Hermaeus Himerios Hippolytos_Hippolytos Hippostratos Hypatios Kallinikos Kallistos Komitas Kosmas_Cosmas Laomedon_Laomedon
+			Leonnatus_Leonnatus Lochan Lysias Lysimachus_Lysimachus Mahavira Manu Maximos_Maximus Meleager_Meleager Menander Megistos Meletios Neophytos Neoptolemus_Neoptolemus Nicias
+			Niketas Nikodemos_Nicodemus Nikomedes Orestes Pankratios Pantoleon Peithon_Peithon Perdiccas_Perdiccas Peucestas_Peucestas Peukolaos Philippos_Philip Philotas_Philotas Philotheos
+			Plato Polykarpos Polyperchon_Polyperchon Polyxenios Philoxenus Porphyrios Prabhakara Prabhu Pyrros Rajesh Rajuvula Serapion Singh Strato Sushila Telephos Theophilos Thraso Yash
+			Zenobios Zenon_Zenon Zoilos Zusakrishna
+		}
+		female_names = {
+			Adriana Agathe_Agatha Agathokleia Agne_Agnes Alexandra Alexeia Anthe Anthousa Antipatra Antonina Apollonia Athanasia Barbara Basileia Basilissa Chrysogone Damiane Demetra Dionysia Dorothea_Dorothy
+			Aigidia Eirene_Irene Elaiodora Eudokia_Eudocia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne_Euphrosyne	Eupraxia Eusebia Eustathia Evanthia Garyphallia Helene_Helen Hypatia Kale Nikarete
+			Nonna Parthena Philippa_Philippa Phyllis Rhodanthe Sibylla_Sibylla
+			Simonis Sophia_Sophia Thekla Xene Zenobia
+		}
+
+		dynasty_title_names = no		
+		
+		prefix = no
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
 	viethellenic = {
 		graphical_cultures = { eastasiangfx mongolgfx }
 		

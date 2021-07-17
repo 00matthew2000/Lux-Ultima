@@ -242,6 +242,19 @@ k_nanman = {
 		}
 	}
 }
+k_nanzhao = {
+	color = { 0 255 128 }
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
 k_pala = {
 	color = { 50 160 75 }
 	allow = {
@@ -283,6 +296,19 @@ k_rashtrakuta = {
 }
 k_satavahana = {
 	color = { 185 76 190 }
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
+k_thai = {
+	color = { 0 115 55 }
 	allow = {
 		war = no
 		ruled_years = 5

@@ -70,50 +70,6 @@ e_bagan = {
 				b_khuangkhan = {
 				}
 			}
-			c_minbu = {
-
-    				color= { 126 251 234 }
-    				color2= { 255 255 255 }
-
-				b_minbu = {
-				}
-				b_pwintbyu = {
-				}
-				b_yenangyaung = {
-				}
-				b_salin = {
-				}
-				b_natmauk = {
-				}
-				b_taungdwingyi = {
-				}
-				b_sagu = {
-				}
-				b_magwe = {
-				}
-			}
-			c_kyaukse = {
-
-    				color= { 155 203 232 }
-    				color2= { 255 255 255 }
-
-				b_kyaukse = {
-				}
-				b_bellin = {
-				}
-				b_sa_mar = {
-				}
-				b_minsu = {
-				}
-				b_onhmin = {
-				}
-				b_buyauk = {
-				}
-				b_thein_ni_kan = {
-				}
-				b_eswa = {
-				}
-			}
 			c_imphal = {
 
     				color= { 160 15 153  }
@@ -290,7 +246,59 @@ e_bagan = {
     			color= { 155 193 232 }
     			color2= { 255 255 255 }
 
-			capital = 2166 #Yawnghwe
+			capital = 2205 #Hansawadi
+
+			c_lashio = {
+
+    				color= { 155 193 242 }
+    				color2= { 255 255 255 }
+
+				b_lashio = {
+				}
+				b_mehan = {
+				}
+				b_ho_ta = {
+				}
+				b_loi_pye = {
+				}
+				b_man_hsa_long = {
+				}
+				b_san_men = {
+				}
+				b_nogmon = {
+				}
+				b_kaungkha = {
+				}
+			}
+			c_hansawadi = {
+
+    				color= { 145 193 232 }
+    				color2= { 255 255 255 }
+
+				b_hansawadi = {
+				}
+				b_kunhing = {
+				}
+				b_mong_yang = {
+				}
+				b_wan_na_noi = {
+				}
+				b_nawnghit = {
+				}
+				b_nawnghkio = {
+				}
+				b_ho_lao = {
+				}
+				b_hsaw = {
+				}
+			}
+		}
+		d_pyu = {
+
+    			color= { 128 128 255 }
+    			color2= { 255 255 255 }
+
+			capital = 2153 #Ava
 
 			c_yawnghwe = {
 
@@ -336,48 +344,48 @@ e_bagan = {
 				b_madaya = {
 				}
 			}
-			c_lashio = {
+			c_minbu = {
 
-    				color= { 155 193 242 }
+    				color= { 126 251 234 }
     				color2= { 255 255 255 }
 
-				b_lashio = {
+				b_minbu = {
 				}
-				b_mehan = {
+				b_pwintbyu = {
 				}
-				b_ho_ta = {
+				b_yenangyaung = {
 				}
-				b_loi_pye = {
+				b_salin = {
 				}
-				b_man_hsa_long = {
+				b_natmauk = {
 				}
-				b_san_men = {
+				b_taungdwingyi = {
 				}
-				b_nogmon = {
+				b_sagu = {
 				}
-				b_kaungkha = {
+				b_magwe = {
 				}
 			}
-			c_hansawadi = {
+			c_kyaukse = {
 
-    				color= { 145 193 232 }
+    				color= { 155 203 232 }
     				color2= { 255 255 255 }
 
-				b_hansawadi = {
+				b_kyaukse = {
 				}
-				b_kunhing = {
+				b_bellin = {
 				}
-				b_mong_yang = {
+				b_sa_mar = {
 				}
-				b_wan_na_noi = {
+				b_minsu = {
 				}
-				b_nawnghit = {
+				b_onhmin = {
 				}
-				b_nawnghkio = {
+				b_buyauk = {
 				}
-				b_ho_lao = {
+				b_thein_ni_kan = {
 				}
-				b_hsaw = {
+				b_eswa = {
 				}
 			}
 		}
