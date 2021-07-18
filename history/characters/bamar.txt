@@ -3,7 +3,7 @@
 1000203904 = {
 	name="Theinga"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	662.1.1={
 		birth="662.1.1"
@@ -16,7 +16,7 @@
 1000203905 = {
 	name="Thein-Khun"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000203904
 	682.1.1={
@@ -30,7 +30,7 @@
 1000203906 = {
 	name="Shwe-Laung"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000203905
 	702.1.1={
@@ -44,7 +44,7 @@
 1000203907 = {
 	name="Htun-Htwin"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000203906
 	722.1.1={
@@ -58,7 +58,7 @@
 1000203908 = {
 	name="Shwe-Hmauk"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000203907
 	742.1.1={
@@ -72,7 +72,7 @@
 1000203909 = {
 	name="Htun-Lut"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000203907
 	760.1.1={
@@ -86,7 +86,7 @@
 1000203910 = {
 	name="Saw-Khin-Hnit"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000203909
 	770.1.1={
@@ -100,7 +100,7 @@
 1000203911 = {
 	name="Khe-Lu"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000203910
 	790.1.1={
@@ -114,7 +114,7 @@
 1000080170 = {
 	name="Pyinbya"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000203910
 	817.1.1={
@@ -128,7 +128,7 @@
 1000080171 = {
 	name="Tannet"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000080170
 	859.1.1={
@@ -142,7 +142,7 @@
 1000080193 = {
 	name="Uzana"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000080171
 	900.1.1={
@@ -156,7 +156,7 @@
 1000080175 = {
 	name="Kunhsaw-Kyaunghpyu"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000080193
 	955.1.1={
@@ -170,7 +170,7 @@
 1000076105 = {
 	name="Anawrahta"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000080175
 	1015.3.8={
@@ -187,8 +187,8 @@
 1000076108 = {
 	name="Saw-Mon-Hla"
 	female = yes
-	religion="buddhist"
-	culture="shan"
+	religion="nat"
+	culture="bamar"
 	1040.1.1={
 		birth="1040.1.1"
 	}
@@ -200,7 +200,7 @@
 1000080178 = {
 	name="Sawlu"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000076105
 	1050.3.13={
@@ -214,7 +214,7 @@
 1000080179 = {
 	name="Kyansittha"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000076105
 	1030.7.21={
@@ -229,7 +229,7 @@
 	name="Shwe-Einthi"
 	female=yes
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000080179
 	1070.1.1={
@@ -243,7 +243,7 @@
 1000080181 = {
 	name="Sawyun"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000080178
 	1070.1.1={
@@ -260,7 +260,7 @@
 1000080182 = {
 	name="Sithu"
 	dynasty=1000028220 #Bagan
-	religion="buddhist"
+	religion="nat"
 	culture="bamar"
 	father=1000080181
 	mother=1000080180
@@ -269,226 +269,6 @@
 	}
 	1168.1.1={
 		death="1168.1.1"
-	}
-}
-
-1000080183 = {
-	name="Narathu"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080182
-	1118.3.16={
-		birth="1118.3.16"
-	}
-	1171.2.1={
-		death="1171.2.1"
-	}
-}
-
-1000080184 = {
-	name="Naratheinkha"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080183
-	1134.9.5={
-		birth="1134.9.5"
-	}
-	1174.5.1={
-		death="1174.5.1"
-	}
-}
-
-1000080185 = {
-	name="Sithu"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080183
-	1138.8.23={
-		birth="1138.8.23"
-	}
-	1211.8.18={
-		death="1211.8.18"
-	}
-}
-
-1000080186 = {
-	name="Htilominlo"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080185
-	1175.2.4={
-		birth="1175.2.4"
-	}
-	1235.7.19={
-		death="1235.7.19"
-	}
-}
-
-1000080187 = {
-	name="Kyaswa"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080186
-	1198.5.4={
-		birth="1198.5.4"
-	}
-	1251.5.1={
-		death="1251.5.1"
-	}
-}
-
-1000080188 = {
-	name="Sithu"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080187
-	1213.2.23={
-		birth="1213.2.23"
-	}
-	1256.5.1={
-		death="1256.5.1"
-	}
-}
-
-1000080189 = {
-	name="Sithu"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080188
-	1238.4.23={
-		birth="1238.4.23"
-	}
-	1287.12.1={
-		death="1287.12.1"
-	}
-}
-
-1000080190 = {
-	name="Kyawswa"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080189
-	1260.8.2={
-		birth="1260.8.2"
-	}
-	1297.1.1={
-		add_spouse=1000080202
-	}
-	1298.6.2={
-		remove_spouse=1000080202
-	}
-	1299.5.10={
-		death="1299.5.10"
-	}
-}
-
-1000080191 = {
-	name="Sawhnit"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080190
-	1283.1.1={
-		birth="1283.1.1"
-	}
-	1325.1.1={
-		death="1325.1.1"
-	}
-}
-
-1000080192 = {
-	name="Uzana"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080191
-	1311.1.1={
-		birth="1311.1.1"
-	}
-	1368.1.1={
-		death="1368.1.1"
-	}
-}
-
-1000080198 = {
-	name="Uzana"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080190
-	mother=1000080202
-	1298.6.1={
-		birth="1298.6.1"
-	}
-	1357.1.1={
-		death="1357.1.1"
-	}
-}
-
-1000080202 = {
-	name="Mi-Saw-U"
-	female=yes
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080189
-	1278.1.1={
-		birth="1278.1.1"
-	}
-	1325.1.1={
-		death="1325.1.1"
-	}
-}
-
-1000080199 = {
-	name="Sithu"
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080189
-	1279.1.1={
-		birth="1279.1.1"
-	}
-	1344.3.29={
-		death="1344.3.29"
-	}
-}
-
-1000080214 = {
-	name="Saw-Gyi"
-	female=yes
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080199
-	1299.1.1={
-		birth="1299.1.1"
-	}
-	1360.1.1={
-		death="1360.1.1"
-	}
-}
-
-1000080215 = {
-	name="Saw-Einthe"
-	female=yes
-	dynasty=1000028220 #Bagan
-	religion="buddhist"
-	culture="bamar"
-	father=1000080199
-	1300.1.1={
-		birth="1300.1.1"
-	}
-	1360.1.1={
-		death="1360.1.1"
 	}
 }
 
@@ -781,8 +561,8 @@
 1000080231 = {
 	name="Sandra"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080230
 	932.1.1={
 		birth="932.1.1"
@@ -795,8 +575,8 @@
 1000080232 = {
 	name="Khettatheng"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080231
 	948.1.1={
 		birth="948.1.1"
@@ -809,8 +589,8 @@
 1000080233 = {
 	name="Tsandatheng"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080231
 	949.1.1={
 		birth="949.1.1"
@@ -823,8 +603,8 @@
 1000080234 = {
 	name="Mengrengphyu"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080233
 	965.1.1={
 		birth="965.1.1"
@@ -837,8 +617,8 @@
 1000080235 = {
 	name="Nagathuriya"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080234
 	981.1.1={
 		birth="981.1.1"
@@ -851,8 +631,8 @@
 1000080236 = {
 	name="Thuriya-Radza"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080235
 	997.1.1={
 		birth="997.1.1"
@@ -865,8 +645,8 @@
 1000080237 = {
 	name="Punnaka"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080236
 	1013.1.1={
 		birth="1013.1.1"
@@ -879,8 +659,8 @@
 1000080238 = {
 	name="Mengphyugyi"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080237
 	1029.1.1={
 		birth="1029.1.1"
@@ -891,10 +671,10 @@
 }
 
 1000080240 = {
-	name="Mengnanthu"
+	name="Mengnanthus"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080238
 	1045.1.1={
 		birth="1045.1.1"
@@ -905,44 +685,16 @@
 }
 
 1000076106 = {
-	name="Menglade"
+	name="Mengladius"
 	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
+	religion="bud_sthaviravada"
+	culture="khrysean"
 	father=1000080238
 	1046.1.1={
 		birth="1046.1.1"
 	}
 	1072.1.1={
 		death="1072.1.1"
-	}
-}
-
-1000080241 = {
-	name="Mengkula"
-	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
-	father=1000080238
-	1047.1.1={
-		birth="1047.1.1"
-	}
-	1075.1.1={
-		death="1075.1.1"
-	}
-}
-
-1000080242 = {
-	name="Meng-Bhilu"
-	dynasty=1000028221 #Pyinsa
-	religion="buddhist"
-	culture="bamar"
-	father=1000080238
-	1048.1.1={
-		birth="1048.1.1"
-	}
-	1078.1.1={
-		death="1078.1.1"
 	}
 }
 
@@ -2142,15 +1894,20 @@
 }
 
 1000203926 = {
-	name="Thirikhan"
-	dynasty=1000078085 #Sri Ksetra
-	religion="buddhist"
-	culture="bamar"
-	father=1000203925
-	780.1.1={
-		birth="780.1.1"
+	name="Polybius"
+	dynasty = 1100425
+	religion = "bud_pratyeka"
+	culture = "indohellenic"
+	add_trait = "mastermind_theologian"
+	add_trait = "scholar"
+	add_trait = "zealous"
+	add_trait = "chaste"
+	add_trait = "shy"
+	add_trait = "quick"
+	1050.1.1 = {
+		birth = "1050.1.1"
 	}
-	825.1.1={
-		death="825.1.1"
+	1113.1.1 = {
+		death = "1113.1.1"
 	}
 }
