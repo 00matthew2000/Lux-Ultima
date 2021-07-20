@@ -600,7 +600,7 @@
 1000076042 = {
 	name="Yan-Pu-Ku"
 	dynasty=1000028207 #Vijaya
-	religion="hindu"
+	religion="vidharma"
 	culture="cham"
 	father=1000076041
 	979.1.1={
@@ -614,7 +614,7 @@
 1000076043 = {
 	name="Harivarman"
 	dynasty=1000028207 #Vijaya
-	religion="hindu"
+	religion="vidharma"
 	culture="cham"
 	father=1000076041
 	980.1.1={
@@ -628,7 +628,7 @@
 1000076044 = {
 	name="Paramesvaravarman"
 	dynasty=1000028207 #Vijaya
-	religion="hindu"
+	religion="vidharma"
 	culture="cham"
 	father=1000076043
 	996.1.1={
@@ -642,7 +642,7 @@
 1000076045 = {
 	name="Vikrantavarman"
 	dynasty=1000028207 #Vijaya
-	religion="hindu"
+	religion="vidharma"
 	culture="cham"
 	father=1000076044
 	1012.1.1={
@@ -656,7 +656,7 @@
 1000076046 = {
 	name="Jaya-Sinhavarman"
 	dynasty=1000028207 #Vijaya
-	religion="hindu"
+	religion="vidharma"
 	culture="cham"
 	father=1000076045
 	1028.1.1={
@@ -664,6 +664,20 @@
 	}
 	1044.1.1={
 		death="1044.1.1"
+	}
+}
+
+1000076061 = {
+	name="Fan-Hariva"
+	dynasty=1000028207 #Vijaya
+	religion="vidharma"
+	culture="cham"
+	father=1000076046
+	1040.1.1={
+		birth="1040.1.1"
+	}
+	1097.1.1={
+		death="1097.1.1"
 	}
 }
 
@@ -781,20 +795,6 @@
 	}
 	1139.1.1={
 		death="1139.1.1"
-	}
-}
-
-1000076061 = {
-	name="Fan-Hariva"
-	dynasty=1000028209 #Ceh-Vijaya
-	religion="hindu"
-	culture="cham"
-	father=1000076050
-	1072.1.1={
-		birth="1072.1.1"
-	}
-	1114.1.1={
-		death="1114.1.1"
 	}
 }
 

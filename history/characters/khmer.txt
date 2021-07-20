@@ -573,12 +573,54 @@
 	}
 }
 
+1000080096 = {
+	name="Yasovarman"
+	dynasty=1000028212 #Baladityapura
+	religion="hindu"
+	culture="khmer"
+	father=1000076080
+	1010.1.1={
+		birth="1010.1.1"
+	}
+	1045.1.1={
+		death="1045.1.1"
+	}
+}
+
+1000080098 = {
+	name="Jayavarman"
+	dynasty=1000028212 #Baladityapura
+	religion="hindu"
+	culture="khmer"
+	father=1000080096
+	1025.1.1={
+		birth="1025.1.1"
+	}
+	1064.1.1={
+		death="1064.1.1"
+	}
+}
+
+1000080099 = {
+	name="Indravarman"
+	dynasty=1000028212 #Baladityapura
+	religion="hindu"
+	culture="khmer"
+	father=1000080098
+	1046.1.1={
+		birth="1046.1.1"
+	}
+	1103.1.1={
+		death="1103.1.1"
+	}
+}
+
 # Tambralinga Dynasty (1006-1080) (Khmer Empire)
 
 1000076081 = {
 	name="Suryavarman"
 	dynasty=1000028213 #Tambralinga
-	religion="hindu"
+	religion="vidharma"
 	culture="khmer"
 	father=1000080869
 	976.1.1={
@@ -592,7 +634,7 @@
 1000076082 = {
 	name="Udayadityavarman"
 	dynasty=1000028213 #Tambralinga
-	religion="hindu"
+	religion="vidharma"
 	culture="khmer"
 	father=1000076081
 	1020.1.1={
@@ -606,7 +648,7 @@
 1000076083 = {
 	name="Harshavarman"
 	dynasty=1000028213 #Tambralinga
-	religion="hindu"
+	religion="vidharma"
 	culture="khmer"
 	father=1000076081
 	1021.1.1={
@@ -728,62 +770,6 @@
 	}
 	1156.1.1={
 		death="1156.1.1"
-	}
-}
-
-1000080096 = {
-	name="Yasovarman"
-	dynasty=1000028214 #Mahidharapura
-	religion="hindu"
-	culture="khmer"
-	father=1000080095
-	1110.1.1={
-		birth="1110.1.1"
-	}
-	1165.1.1={
-		death="1165.1.1"
-	}
-}
-
-1000080098 = {
-	name="Jayavarman"
-	dynasty=1000028214 #Mahidharapura
-	religion="buddhist"
-	culture="khmer"
-	father=1000080095
-	1125.1.1={
-		birth="1125.1.1"
-	}
-	1218.1.1={
-		death="1218.1.1"
-	}
-}
-
-1000080099 = {
-	name="Indravarman"
-	dynasty=1000028214 #Mahidharapura
-	religion="buddhist"
-	culture="khmer"
-	father=1000080098
-	1180.1.1={
-		birth="1180.1.1"
-	}
-	1243.1.1={
-		death="1243.1.1"
-	}
-}
-
-1000080100 = {
-	name="Jayavarman"
-	dynasty=1000028214 #Mahidharapura
-	religion="buddhist"
-	culture="khmer"
-	father=1000080099
-	1220.1.1={
-		birth="1220.1.1"
-	}
-	1295.1.1={
-		death="1295.1.1"
 	}
 }
 
