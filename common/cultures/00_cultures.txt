@@ -145,7 +145,7 @@ byzantine = {
 		modifier = default_culture_modifier
 	}
 	sinohellenic = {
-		graphical_cultures = { eastasiangfx chinesegfx mongolgfx }
+		graphical_cultures = { sinohellenicgfx eastasiangfx chinesegfx mongolgfx }
 		
 		color = { 1.0 0.85 0.35 }
 
@@ -183,7 +183,7 @@ byzantine = {
 		modifier = default_culture_modifier
 	}
 	huakyo = {
-		graphical_cultures = { chinesegfx bodpagfx mongolgfx indiangfx muslimgfx }
+		graphical_cultures = { asianhellenicgfx chinesegfx bodpagfx mongolgfx indiangfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		dynasty_name_first = yes
@@ -224,7 +224,7 @@ byzantine = {
 		modifier = default_culture_modifier
 	}
 	romanokoric = {
-		graphical_cultures = { chinesegfx bodpagfx mongolgfx indiangfx muslimgfx }
+		graphical_cultures = { asianhellenicgfx chinesegfx bodpagfx mongolgfx romangfx latingfx italiangfx byzantinegfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		dynasty_name_first = yes
@@ -265,7 +265,7 @@ byzantine = {
 		modifier = default_culture_modifier
 	}
 	nihonohellenic = {
-		graphical_cultures = { chinesegfx bodpagfx mongolgfx indiangfx muslimgfx }
+		graphical_cultures = { japhellenicgfx chinesegfx bodpagfx mongolgfx indiangfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		dynasty_name_first = yes
@@ -347,7 +347,8 @@ byzantine = {
 		modifier = default_culture_modifier
 	}
 	viethellenic = {
-		graphical_cultures = { eastasiangfx mongolgfx }
+		graphical_cultures = { chinesegfx bodpagfx mongolgfx indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
 		
 		color = { 0.2 0.5 0.45 }
 

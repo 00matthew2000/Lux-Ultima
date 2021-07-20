@@ -1,5 +1,8 @@
 #Vyadhapura Dynasty
 550.1.1 = {
+	liege="k_kambuja"
+}
+550.1.1 = {
 	holder = 1000076062 #Bhavavarman I
 }
 600.1.1 = {
@@ -79,10 +82,10 @@
 	holder = 1000076081 #Suryavarman I
 }
 1050.1.1 = {
-	holder = 1000076082 #Udayadityavarman II
+	holder = 1000080098 #Udayadityavarman II
 }
 1066.1.1 = {
-	holder = 1000076083 #Harshavarman III
+	holder = 1000080099 #Harshavarman III
 }
 
 #Mahidharapura Dynasty
@@ -106,11 +109,18 @@
 1165.1.1 = {
 	holder = 1000080097 #Tribhuvanadityavarman
 }
+
 1177.1.1 = {
-	holder = 0
+	liege="k_champa"
+}
+1177.1.1={
+	holder = 1000080047 #Jaya-Indravarman IV
 }
 
 #Mahidharapura Dynasty (restored)
+1181.1.1 = {
+	liege="k_kambuja"
+}
 1181.1.1 = {
 	holder = 1000080098 #Jayavarman VII
 }

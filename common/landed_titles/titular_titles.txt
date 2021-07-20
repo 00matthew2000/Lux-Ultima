@@ -164,6 +164,19 @@ k_former_zhao = {
 		}
 	}
 }
+k_funan = {
+	color = { 255 255 31 }
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
 k_gupta = {
 	color = { 195 167 70 }
 	allow = {
@@ -296,6 +309,19 @@ k_rashtrakuta = {
 }
 k_satavahana = {
 	color = { 185 76 190 }
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
+k_sri_gotapuros = {
+	color = { 225 161 39 }
 	allow = {
 		war = no
 		ruled_years = 5
