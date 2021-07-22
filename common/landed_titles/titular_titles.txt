@@ -26,6 +26,9 @@ d_chauhan = {
 d_hammadid = {
 	color = { 133 151 55 }
 }
+d_konkonagara = {
+	color = { 37 46 155 }
+}
 d_maitraka = {
 	color = { 35 140 85 }
 }
@@ -62,6 +65,19 @@ k_al-murabitids = {
 }
 k_almohad = {
 	color = { 0 105 56 }
+	allow = {
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+		OR = {
+			tier = king
+			independent = yes
+		}
+	}
+}
+k_annam = {
+	color = { 255 255 77 }
 	allow = {
 		war = no
 		ruled_years = 5
