@@ -994,7 +994,7 @@
 1000203939 = {
 	name="Megat"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	720.1.1={
 		birth="720.1.1"
@@ -1007,7 +1007,7 @@
 1000203940 = {
 	name="Jaya"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000203939
 	750.1.1={
@@ -1021,7 +1021,7 @@
 1000203941 = {
 	name="Haron"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000203940
 	780.1.1={
@@ -1035,7 +1035,7 @@
 1000080865 = {
 	name="Andika"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000203941
 	810.1.1={
@@ -1049,7 +1049,7 @@
 1000080866 = {
 	name="Baba"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000080865
 	840.1.1={
@@ -1063,7 +1063,7 @@
 1000080867 = {
 	name="Kuning"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000080866
 	867.1.1={
@@ -1077,7 +1077,7 @@
 1000080868 = {
 	name="Kesuma"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000080867
 	900.1.1={
@@ -1091,7 +1091,7 @@
 1000080869 = {
 	name="Sujita"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000080868
 	930.1.1={
@@ -1105,7 +1105,7 @@
 1000080870 = {
 	name="Kamboja"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000080869
 	960.1.1={
@@ -1119,7 +1119,7 @@
 1000080871 = {
 	name="Ujang"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000080870
 	990.1.1={
@@ -1133,7 +1133,7 @@
 1000080872 = {
 	name="Wira"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000080871
 	1020.1.1={
@@ -1147,171 +1147,14 @@
 1000080873 = {
 	name="Hijau"
 	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
+	religion="bud_sthaviravada"
 	culture="malay"
 	father=1000080872
-	1050.1.1={
-		birth="1050.1.1"
+	1053.1.1={
+		birth="1053.1.1"
 	}
 	1110.1.1={
 		death="1110.1.1"
-	}
-}
-
-1000080874 = {
-	name="Chik"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080873
-	1080.1.1={
-		birth="1080.1.1"
-	}
-	1140.1.1={
-		death="1140.1.1"
-	}
-}
-
-1000080875 = {
-	name="Kefli"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080874
-	1110.1.1={
-		birth="1110.1.1"
-	}
-	1170.1.1={
-		death="1170.1.1"
-	}
-}
-
-1000080876 = {
-	name="Gombak"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080875
-	1140.1.1={
-		birth="1140.1.1"
-	}
-	1200.1.1={
-		death="1200.1.1"
-	}
-}
-
-1000080877 = {
-	name="Perwira"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080876
-	1170.1.1={
-		birth="1170.1.1"
-	}
-	1230.1.1={
-		death="1230.1.1"
-	}
-}
-
-1000080878 = {
-	name="Candrabhanu"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080877
-	1200.1.1={
-		birth="1200.1.1"
-	}
-	1260.1.1={
-		death="1260.1.1"
-	}
-}
-
-1000080883 = {
-	name="Savakanmaindan"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080878
-	1220.1.1={
-		birth="1220.1.1"
-	}
-	1277.1.1={
-		death="1277.1.1"
-	}
-}
-
-1000203363 = {
-	name="Vijayabahu"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080878
-	1250.1.1={
-		birth="1250.1.1"
-	}
-	1260.1.1={
-		culture="sinhala"
-	}
-	1344.1.1={
-		death="1344.1.1"
-	}
-}
-
-1000080879 = {
-	name="Jusoh"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080878
-	1230.1.1={
-		birth="1230.1.1"
-	}
-	1290.1.1={
-		death="1290.1.1"
-	}
-}
-
-1000080880 = {
-	name="Yunos"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080879
-	1260.1.1={
-		birth="1260.1.1"
-	}
-	1320.1.1={
-		death="1320.1.1"
-	}
-}
-
-1000080881 = {
-	name="Budiarto"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080880
-	1290.1.1={
-		birth="1290.1.1"
-	}
-	1350.1.1={
-		death="1350.1.1"
-	}
-}
-
-1000080882 = {
-	name="Atan"
-	dynasty=1000028213 #Tambralinga
-	religion="buddhist"
-	culture="malay"
-	father=1000080881
-	1320.1.1={
-		birth="1320.1.1"
-	}
-	1380.1.1={
-		death="1380.1.1"
 	}
 }
 

@@ -443,12 +443,10 @@
 }
 
 1000080506 = {
-	name="Wijayottungadewi"
-	female=yes
-	dynasty=1000028299 #Warmadewa
-	religion="hindu"
+	name="Sindok"
+	dynasty=1000027646 #Isyana
+	religion="java_religion"
 	culture="javanese"
-	father=1000080505
 	1045.1.1={
 		birth="1045.1.1"
 	}
@@ -459,10 +457,10 @@
 
 1000080507 = {
 	name="Suradhipa"
-	dynasty=1000028299 #Warmadewa
-	religion="hindu"
+	dynasty=1000027646 #Isyana
+	religion="java_religion"
 	culture="javanese"
-	mother=1000080506
+	father=1000080506
 	1065.1.1={
 		birth="1065.1.1"
 	}
