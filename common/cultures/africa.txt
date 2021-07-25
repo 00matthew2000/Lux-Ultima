@@ -224,64 +224,6 @@ south_bantu = {
 		modifier = default_culture_modifier
 	}
 
-	ila_tonga = { 
-		graphical_cultures = { westafricangfx africangfx muslimgfx }
-		
-		color = { 0.15 0.3 0.43 }
-
-		male_names = {
-			#tonga
-			Banji Beenzu Busiku Chabota Cheelo Chimuka Chipo Choolwe Hachikoko Hakainde Hichilema Junza Kuchiswa Kulenga Linda Lingubona Luse Lushomo Luyando Luumuno Lweendo Mabotu
-			Mainza Makani Malambo Malindi Mapenzi Mayaba Mazuba Mbonyazo Michelo Milimo Milumbe Miyoba Moono Mpimpa Muchaala Muchimba Muchindu Muleya Mulonga Munkombwe Muntanga Mutinta
-			Mutwe Muyuni Mwaka Mweene Mwiinga Nchimunya Nguzu Sondo
-		}
-		female_names = {
-			#tonga
-			Banji Beenzu Busiku Chabota Cheelo Chimuka Chipo Choolwe Hachikoko Hakainde Hichilema Junza Kuchiswa Kulenga Linda Lingubona Luse Lushomo Luyando Luumuno Lweendo Mabotu
-			Mainza Makani Malambo Malindi Mapenzi Mayaba Mazuba Mbonyazo Michelo Milimo Milumbe Miyoba Moono Mpimpa Muchaala Muchimba Muchindu Muleya Mulonga Munkombwe Muntanga Mutinta
-			Mutwe Muyuni Mwaka Mweene Mwiinga Nchimunya Nguzu Sondo
-		}
-
-		founder_named_dynasties = yes
-		dukes_called_kings = no
-		modifier = default_culture_modifier
-	}
-
-	venda_tsonga = { 
-		graphical_cultures = { westafricangfx africangfx muslimgfx }
-		
-		color = { 0.26 0.72 0.12 }
-
-		male_names = {
-			#venda
-			Mashudu Mulalo Nkhangweleni Rolivhuwa Thikhathali Thilivhali Tshifhiwa Zwanga
-			Alu Aluwanip Arehone Athiambiwied Avhadali Avhapfani Azwihangwisi Azwimmbahvi Azwinaki Azwinndini Dali Dowe Dowelani Fhulufhuwani Funi Hangwani Hulisani Humbe Humbelani
-			Khathu Khathutshelo Khuliso Khumbu Lindelani Livhu Lutendo Luvhengo Mpfareleli Mphedziseni Muwambiwa Mutsutshudzi Ndiyafhi Nduvho Nkhumbudzeni Nkhumbuleni Nnyadzeni
-			Nnyawedzeni Nnyaweleni Ntungufhadzeni Ntshengedzeni Pfunzo Phathutshedzo Phathu Phathutshedzo Rabe Rendi Rotshidzwa Rudzani Rudzi Sei Shandu Shandukani Taki Tanga Tendani
-			Thabelo Thanyani  Thina Thinawanga Tondani Tshanduko Tshiananeo Tshidino Tshinyalani Tungu
-
-			#tshona
-			Ntokoto			
-			Akani Amukelani Elela Eletsa Masana Masingita Minkateko Nsuku Ntsako Ntosvelo Ntsumi Ntwanano Nyeleti Rhandzu Rhulani Shiluva Thirani Unwana Vuthlari
-		}
-		female_names = {
-			#venda
-			Elelwani Mufunwa Washu
-			Alu Aluwanip Arehone Athiambiwied Avhadali Avhapfani Azwihangwisi Azwimmbahvi Azwinaki Azwinndini Dali Dowe Dowelani Fhulufhuwani Funi Hangwani Hulisani Humbe Humbelani
-			Khathu Khathutshelo Khuliso Khumbu Lindelani Livhu Lutendo Luvhengo Mpfareleli Mphedziseni Muwambiwa Mutsutshudzi Ndiyafhi Nduvho Nkhumbudzeni Nkhumbuleni Nnyadzeni
-			Nnyawedzeni Nnyaweleni Ntungufhadzeni Ntshengedzeni Pfunzo Phathutshedzo Phathu Phathutshedzo Rabe Rendi Rotshidzwa Rudzani Rudzi Sei Shandu Shandukani Taki Tanga Tendani
-			Thabelo Thanyani  Thina Thinawanga Tondani Tshanduko Tshiananeo Tshidino Tshinyalani Tungu
-
-			#tshona
-			Dyondzeka Khensani Lelani Xongi			
-			Akani Amukelani Elela Eletsa Masana Masingita Minkateko Nsuku Ntsako Ntosvelo Ntsumi Ntwanano Nyeleti Rhandzu Rhulani Shiluva Thirani Unwana Vuthlari
-		}
-
-		founder_named_dynasties = yes
-		dukes_called_kings = no
-		modifier = default_culture_modifier
-	}
-
 	venda_bonga = { 
 		graphical_cultures = { westafricangfx africangfx muslimgfx }
 		
@@ -795,7 +737,7 @@ afroaustronesian = {
 khoi_san_group = {
 	graphical_cultures = { africangfx westafricangfx muslimgfx }
 
-	khoi_san = { 
+	khoe = { 
 		graphical_cultures = { africangfx westafricangfx muslimgfx }
 		
 		color = { 0.4 0.45 0.35 }
@@ -811,6 +753,24 @@ khoi_san_group = {
 
 		founder_named_dynasties = yes
 		dukes_called_kings = yes
+		modifier = default_culture_modifier
+	}
+	san = { 
+		graphical_cultures = { westafricangfx africangfx muslimgfx }
+		
+		color = { 0.26 0.72 0.12 }
+
+		male_names = {
+			#San
+			Cgose Coexae Gamnqoa Kase Kgakgam Kukama Mangana Ncgabe Ncokgo Ntcoxo Nxaedom Qaetcao Qgam Qgoma Qhomatca Setshogo Sobe Taase Tcuixgao Thama Thamae Xaga Xare Xgaiga Xgaoco Xgoa
+		}
+		female_names = {
+			#San
+			Cgose Coexae Gamnqoa Kase Kgakgam Kukama Mangana Ncgabe Ncokgo Ntcoxo Nxaedom Qaetcao Qgam Qgoma Qhomatca Setshogo Sobe Taase Tcuixgao Thama Thamae Xaga Xare Xgaiga Xgaoco Xgoa
+		}
+
+		founder_named_dynasties = yes
+		dukes_called_kings = no
 		modifier = default_culture_modifier
 	}
 }
