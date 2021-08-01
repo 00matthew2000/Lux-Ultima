@@ -564,15 +564,21 @@ east_african_group = {
 		intermarry = ethiopian_war_reformed
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		# West African open-minded (sectarian 0), can be married from the same group or civilization or related ones
@@ -2101,14 +2107,20 @@ bantu_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
@@ -2203,14 +2215,20 @@ bantu_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
@@ -2466,14 +2484,20 @@ bantu_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
@@ -2570,6 +2594,200 @@ bantu_group = {
 		religious_clothing_priest = 4
 	}
 	
+	bumuntu = {
+		graphical_culture = africangfx
+		color = { 246 64 64 }
+		icon = 67
+		heresy_icon = 68
+		
+		high_god_name = THE_ANCESTORS
+		
+		piety_name = PIETY
+		priest_title = PRIEST
+		scripture_name = THE_DANCES
+		
+		god_names = {
+			THE_ANCESTORS GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		reformed = bumuntu_reformed
+		#reformer_head_of_religion = yes
+		
+		character_modifier = {
+			global_revolt_risk = 0.03
+			church_opinion = -10
+			castle_vassal_tax_modifier = 0.10
+			city_vassal_tax_modifier = -0.10
+			build_cost_modifier = 0.45
+			land_organisation = 0.30
+			castle_vassal_min_levy = 0.30
+			castle_vassal_max_levy = 0.30
+			city_vassal_min_levy = -0.15
+			city_vassal_max_levy = -0.15
+			temple_vassal_min_levy = 0.35
+			temple_vassal_max_levy = 0.30
+#			monthly_character_prestige = 0.10
+#			monthly_character_piety = -0.20
+			assassinate_chance_modifier = 0.20
+			arrest_chance_modifier = 0.20
+			diplomacy = -1
+			martial = 4
+			stewardship = 1
+			intrigue = -2
+			learning = -2
+#			ai_ambition = 40
+#			ai_zeal = 50
+		}
+		unit_modifier = {
+			key = "DEF_RELIGION_HOME_TERRITORY"
+			
+			levy_size = 0.10
+			light_cavalry_offensive = 0.30
+			light_infantry_offensive = 0.30
+			archers_offensive = 0.30
+			land_morale = 0.50
+		}
+		
+		aggression = 2.0
+		allow_looting = yes
+#		allow_viking_invasion = yes
+		can_call_crusade = no
+#		can_hold_temples = yes
+		priests_can_marry = yes
+		independence_war_score_bonus = 20
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
+		short_reign_opinion_year_mult = 6 # The default in LI is 5
+		ignores_defensive_attrition = yes
+				
+		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
+		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
+		intermarry = imana
+		intermarry = kintu
+		intermarry = mwari
+		intermarry = nyame
+		intermarry = nzambiist
+		intermarry = zande_pagan
+		intermarry = zulu_pagan
+		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
+		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
+		intermarry = zande_pagan_reformed
+		intermarry = zulu_pagan_reformed
+		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
+		intermarry = batembuzi
+		intermarry = nyasaye
+		intermarry = nyau
+		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
+		intermarry = mande_pagan
+		intermarry = serer_reformed
+
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+	}
+
+	byeri = {
+		graphical_culture = africangfx
+		color = { 233 139 16 }
+		icon = 67
+		heresy_icon = 68
+		
+		high_god_name = THE_ANCESTORS
+		
+		piety_name = PIETY
+		priest_title = PRIEST
+		scripture_name = THE_DANCES
+		
+		god_names = {
+			THE_ANCESTORS GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		reformed = byeri_reformed
+		#reformer_head_of_religion = yes
+		
+		character_modifier = {
+			global_revolt_risk = 0.03
+			church_opinion = -10
+			castle_vassal_tax_modifier = 0.10
+			city_vassal_tax_modifier = -0.10
+			build_cost_modifier = 0.45
+			land_organisation = 0.30
+			castle_vassal_min_levy = 0.30
+			castle_vassal_max_levy = 0.30
+			city_vassal_min_levy = -0.15
+			city_vassal_max_levy = -0.15
+			temple_vassal_min_levy = 0.35
+			temple_vassal_max_levy = 0.30
+#			monthly_character_prestige = 0.10
+#			monthly_character_piety = -0.20
+			assassinate_chance_modifier = 0.20
+			arrest_chance_modifier = 0.20
+			diplomacy = -1
+			martial = 4
+			stewardship = 1
+			intrigue = -2
+			learning = -2
+#			ai_ambition = 40
+#			ai_zeal = 50
+		}
+		unit_modifier = {
+			key = "DEF_RELIGION_HOME_TERRITORY"
+			
+			levy_size = 0.10
+			light_cavalry_offensive = 0.30
+			light_infantry_offensive = 0.30
+			archers_offensive = 0.30
+			land_morale = 0.50
+		}
+		
+		aggression = 2.0
+		allow_looting = yes
+#		allow_viking_invasion = yes
+		can_call_crusade = no
+#		can_hold_temples = yes
+		priests_can_marry = yes
+		independence_war_score_bonus = 20
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
+		short_reign_opinion_year_mult = 6 # The default in LI is 5
+		ignores_defensive_attrition = yes
+				
+		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
+		intermarry = anansi
+		intermarry = imana
+		intermarry = kintu
+		intermarry = mwari
+		intermarry = nyame
+		intermarry = nzambiist
+		intermarry = zande_pagan
+		intermarry = zulu_pagan
+		intermarry = bantu_pagan_reformed
+		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
+		intermarry = zande_pagan_reformed
+		intermarry = zulu_pagan_reformed
+		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
+		intermarry = batembuzi
+		intermarry = nyasaye
+		intermarry = nyau
+		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
+		intermarry = mande_pagan
+		intermarry = serer_reformed
+
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+	}
+	
 	imana = {
 		graphical_culture = africangfx
 		color = { 0.45 0.1 0.25 }
@@ -2641,14 +2859,20 @@ bantu_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
@@ -2737,15 +2961,21 @@ bantu_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
@@ -2842,6 +3072,105 @@ bantu_group = {
 		religious_clothing_priest = 4
 	}
 	
+	nzambiist = {
+		graphical_culture = africangfx
+		color = { 141 14 14 }
+		icon = 67
+		heresy_icon = 68
+		
+		high_god_name = THE_ANCESTORS
+		
+		piety_name = PIETY
+		priest_title = PRIEST
+		scripture_name = THE_DANCES
+		
+		god_names = {
+			THE_ANCESTORS GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		reformed = nzambiist_reformed
+		#reformer_head_of_religion = yes
+		
+		character_modifier = {
+			global_revolt_risk = 0.03
+			church_opinion = -10
+			castle_vassal_tax_modifier = 0.10
+			city_vassal_tax_modifier = -0.10
+			build_cost_modifier = 0.45
+			land_organisation = 0.30
+			castle_vassal_min_levy = 0.30
+			castle_vassal_max_levy = 0.30
+			city_vassal_min_levy = -0.15
+			city_vassal_max_levy = -0.15
+			temple_vassal_min_levy = 0.35
+			temple_vassal_max_levy = 0.30
+#			monthly_character_prestige = 0.10
+#			monthly_character_piety = -0.20
+			assassinate_chance_modifier = 0.20
+			arrest_chance_modifier = 0.20
+			diplomacy = -1
+			martial = 4
+			stewardship = 1
+			intrigue = -2
+			learning = -2
+#			ai_ambition = 40
+#			ai_zeal = 50
+		}
+		unit_modifier = {
+			key = "DEF_RELIGION_HOME_TERRITORY"
+			
+			levy_size = 0.10
+			light_cavalry_offensive = 0.30
+			light_infantry_offensive = 0.30
+			archers_offensive = 0.30
+			land_morale = 0.50
+		}
+		
+		aggression = 2.0
+		allow_looting = yes
+#		allow_viking_invasion = yes
+		can_call_crusade = no
+#		can_hold_temples = yes
+		priests_can_marry = yes
+		independence_war_score_bonus = 20
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
+		short_reign_opinion_year_mult = 6 # The default in LI is 5
+		ignores_defensive_attrition = yes
+				
+		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
+		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
+		intermarry = imana
+		intermarry = kintu
+		intermarry = mwari
+		intermarry = nyame
+		intermarry = nzambiist
+		intermarry = zande_pagan
+		intermarry = zulu_pagan
+		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
+		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
+		intermarry = zande_pagan_reformed
+		intermarry = zulu_pagan_reformed
+		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
+		intermarry = batembuzi
+		intermarry = nyasaye
+		intermarry = nyau
+		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
+		intermarry = mande_pagan
+		intermarry = serer_reformed
+
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+	}
+	
 	makonde_pagan = {
 		graphical_culture = africangfx
 		color = { 0.1 0.2 0.15 }
@@ -2914,14 +3243,20 @@ bantu_group = {
 				
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
@@ -3005,14 +3340,20 @@ bantu_group = {
 				
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
@@ -3336,15 +3677,21 @@ berberpagan_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		
@@ -19855,15 +20202,21 @@ serer_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 
@@ -19954,15 +20307,21 @@ serer_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist	
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 
@@ -20056,15 +20415,21 @@ serer_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 
@@ -20154,14 +20519,20 @@ serer_group = {
 				
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
@@ -21362,15 +21733,21 @@ sol_group = {
 
 		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
 		intermarry = anansi
+		intermarry = bumuntu
+		intermarry = byeri
 		intermarry = imana
 		intermarry = kintu
 		intermarry = makonde_pagan
 		intermarry = mwari
 		intermarry = nyame
+		intermarry = nzambiist
 		intermarry = zande_pagan
 		intermarry = zulu_pagan
 		intermarry = bantu_pagan_reformed
+		intermarry = bumuntu_reformed
+		intermarry = byeri_reformed
 		intermarry = nyakalagan_reformed
+		intermarry = nzambiist_reformed
 		intermarry = zande_pagan_reformed
 		intermarry = zulu_pagan_reformed
 

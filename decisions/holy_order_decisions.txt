@@ -15156,6 +15156,76 @@ decisions = {
 		}
 	}
 
+	borrow_money_d_holybyeri_reformed = {
+		only_playable = yes
+		ai_check_interval = 120
+		potential = {
+			is_playable = yes
+			is_nomadic = no
+			religion = byeri_reformed
+			is_heretic = no
+			is_title_active = d_holybyeri_reformed
+			NOT = { has_character_modifier = borrowed_from_d_holybyeri_reformed }
+			NOT = { has_character_modifier = expelled_d_holybyeri_reformed }
+
+			has_dlc = "Sons of Abraham"
+
+			d_holybyeri_reformed = {
+				holder_scope = {
+					liege = {
+						NOT = { character = ROOT }
+					}
+				}
+			}
+		}
+
+		allow = {
+			d_holybyeri_reformed = {
+				holder_scope = {
+					wealth = 300
+					ROOT = {
+						NOT = { excommunicated_for = PREV }
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_character_modifier = {
+				name = borrowed_from_d_holybyeri_reformed
+				duration = -1
+				inherit = yes
+			}
+
+			hidden_tooltip = {
+				d_holybyeri_reformed = {
+					holder_scope = {
+						character_event = {
+							id = SoA.1010
+						}
+					}
+				}
+			}
+
+			wealth = 300
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				wealth = 0
+			}
+			modifier = {
+				factor = 0.01 # Slow it down
+			}
+		}
+	}
+
 	expel_d_holycathar_reformed = {
 		only_independent = yes
 		ai = no

@@ -459,6 +459,11 @@ character_event = {
 					save_event_target_as = holy_order
 				}
 			}
+			byeri_reformed = {
+				d_holybyeri_reformed = {
+					save_event_target_as = holy_order
+				}
+			}
 			cathar_reformed = {
 				d_holycathar_reformed = {
 					save_event_target_as = holy_order
@@ -1392,6 +1397,11 @@ province_event = {
 				}
 				bud_zor_reformed = {
 					d_holybud_zor_reformed = {
+						save_event_target_as = holy_order
+					}
+				}
+				byeri_reformed = {
+					d_holybyeri_reformed = {
 						save_event_target_as = holy_order
 					}
 				}
@@ -2381,6 +2391,11 @@ character_event = {
 					save_event_target_as = holy_order
 				}
 			}
+			byeri_reformed = {
+				d_holybyeri_reformed = {
+					save_event_target_as = holy_order
+				}
+			}
 			cathar_reformed = {
 				d_holycathar_reformed = {
 					save_event_target_as = holy_order
@@ -3172,6 +3187,11 @@ province_event = {
 				}
 				bud_zor_reformed = {
 					d_holybud_zor_reformed = {
+						save_event_target_as = holy_order
+					}
+				}
+				byeri_reformed = {
+					d_holybyeri_reformed = {
 						save_event_target_as = holy_order
 					}
 				}
@@ -5250,6 +5270,23 @@ character_event = {
 					clr_character_flag = expel_d_holybud_zor_reformed_check
 				}
 			}
+			expel_d_holybyeri_reformed_check = {
+				hidden_tooltip = {
+					d_holybyeri_reformed = {
+						holder_scope = {
+							character_event = {
+								id = CM.4012
+							}
+						}
+					}
+					add_character_modifier = {
+						name = expelled_d_holybyeri_reformed
+						duration = -1
+						inherit = yes
+					}
+					clr_character_flag = expel_d_holybyeri_reformed_check
+				}
+			}
 			expel_d_holycathar_reformed_check = {
 				hidden_tooltip = {
 					d_holycathar_reformed = {
@@ -6423,6 +6460,7 @@ character_event = {
 			clr_character_flag = expel_d_holyberber_pagan_reformed_check
 			clr_character_flag = expel_d_holybud_zen_reformed_check
 			clr_character_flag = expel_d_holybud_zor_reformed_check
+			clr_character_flag = expel_d_holybyeri_reformed_check
 			clr_character_flag = expel_d_holycathar_reformed_check
 			clr_character_flag = expel_d_holyceltic_christ_reformed_check
 			clr_character_flag = expel_d_holyceltic_pagan_reformed_check

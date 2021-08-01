@@ -1377,6 +1377,13 @@ ruler_bud_zor = {
 	monthly_character_piety = -0.2
 }
 
+# byeri Triggered Modifiers
+ruler_byeri = {
+	icon = 15
+	monthly_character_prestige = 0.1
+	monthly_character_piety = -0.2
+}
+
 # cathar Triggered Modifiers
 ruler_cathar = {
 	icon = 15
@@ -2689,6 +2696,13 @@ ruler_bud_zen_reformed = {
 ruler_bud_zor_reformed = {
 	icon = 15
 	monthly_character_prestige = 1.2
+	monthly_character_piety = 0
+}
+
+# byeri_reformed Triggered Modifiers
+ruler_byeri_reformed = {
+	icon = 15
+	monthly_character_prestige = 1.1
 	monthly_character_piety = 0
 }
 

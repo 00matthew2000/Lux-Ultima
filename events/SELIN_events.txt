@@ -1089,6 +1089,29 @@ province_event = {
 				duration = 9125
 			}
 		}
+		#byeri flagging
+		if = {
+			limit = {
+				religion = byeri
+				NOT = { has_province_modifier = province_byeri }
+			}
+			add_province_modifier = {
+				name = province_byeri
+				duration = -1
+			}
+		}
+		#byeri cleansing
+		if = {
+			limit = {
+				NOT = { religion = byeri }
+				has_province_modifier = province_byeri
+			}
+			remove_province_modifier = province_byeri
+			add_province_modifier = {
+				name = province_conversion
+				duration = 9125
+			}
+		}
 		#cathar flagging
 		if = {
 			limit = {
@@ -5178,6 +5201,29 @@ province_event = {
 				has_province_modifier = province_bud_zor_reformed
 			}
 			remove_province_modifier = province_bud_zor_reformed
+			add_province_modifier = {
+				name = province_conversion
+				duration = 9125
+			}
+		}
+		#byeri_reformed flagging
+		if = {
+			limit = {
+				religion = byeri_reformed
+				NOT = { has_province_modifier = province_byeri_reformed }
+			}
+			add_province_modifier = {
+				name = province_byeri_reformed
+				duration = -1
+			}
+		}
+		#byeri_reformed cleansing
+		if = {
+			limit = {
+				NOT = { religion = byeri_reformed }
+				has_province_modifier = province_byeri_reformed
+			}
+			remove_province_modifier = province_byeri_reformed
 			add_province_modifier = {
 				name = province_conversion
 				duration = 9125

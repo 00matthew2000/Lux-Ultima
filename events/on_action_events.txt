@@ -4531,6 +4531,10 @@ narrative_event = {
 			set_global_flag = bud_zor_reformation
 		}
 		if = {
+			limit = { religion = byeri_reformed }
+			set_global_flag = byeri_reformation
+		}
+		if = {
 			limit = { religion = cathar_reformed }
 			set_global_flag = cathar_reformation
 		}

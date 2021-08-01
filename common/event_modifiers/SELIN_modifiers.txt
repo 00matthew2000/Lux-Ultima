@@ -3323,6 +3323,25 @@ province_sol_taoist = {
 	icon = 15
 }
 
+# 200 Byeri province modifier <- post-Expansion checked and updated
+province_byeri = {
+	local_revolt_risk = 0.02
+	local_tax_modifier = -0.50
+	local_build_time_modifier = 0.30
+	city_tax_modifier = -0.20
+	temple_tax_modifier = 0.20
+	levy_size = 0.20
+	levy_reinforce_rate = 0.10
+	fort_level = -2
+	city_levy_size = -0.20
+	temple_levy_size = 0.50
+	tech_growth_modifier_military = 0.30
+	tech_growth_modifier_economy = -0.40
+	tech_growth_modifier_culture = -0.40
+	
+	icon = 15
+}
+
 # 2. RELIGIONS CREATED BY REFORMS
 
 # R1 Akomanic province modifier <- post-Expansion checked and updated
@@ -4532,6 +4551,25 @@ province_zurvanism_reformed = {
 	city_levy_size = -0.10
 	temple_levy_size = 0.30
 	tech_growth_modifier_culture = 0.20
+	
+	icon = 15
+}
+
+# R76 byeri_reformed province modifier <- post-Expansion checked and updated
+province_byeri_reformed = {
+	local_revolt_risk = 0.02
+	local_tax_modifier = -0.50
+	local_build_time_modifier = 0.30
+	city_tax_modifier = -0.20
+	temple_tax_modifier = 0.20
+	levy_size = 0.20
+	levy_reinforce_rate = 0.10
+	fort_level = -2
+	city_levy_size = -0.20
+	temple_levy_size = 0.50
+	tech_growth_modifier_military = 0.50
+	tech_growth_modifier_economy = -0.20
+	tech_growth_modifier_culture = -0.30
 	
 	icon = 15
 }
