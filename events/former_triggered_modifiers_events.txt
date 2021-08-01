@@ -16736,3 +16736,87 @@ character_event = {
 		clr_character_flag = ruler_zurvanism_reformed
 	}
 }
+character_event = {
+	id = former_triggered_modifiers.745
+	hide_window = yes
+	only_playable = yes
+	religion = byeri
+	trigger = {
+		NOT = {
+			has_character_flag = ruler_byeri
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		add_character_modifier = {
+			name = ruler_byeri
+			days = -1
+		}
+		set_character_flag = ruler_byeri
+	}
+}
+character_event = {
+	id = former_triggered_modifiers.746
+	hide_window = yes
+	has_character_flag = ruler_byeri
+	trigger = {
+		OR = {
+			is_playable = no
+			is_landed = no
+			NOT = {
+				religion = byeri	
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		remove_character_modifier = ruler_byeri
+		clr_character_flag = ruler_byeri
+	}
+}
+character_event = {
+	id = former_triggered_modifiers.747
+	hide_window = yes
+	only_playable = yes
+	religion = byeri_reformed
+	trigger = {
+		NOT = {
+			has_character_flag = ruler_byeri_reformed
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		add_character_modifier = {
+			name = ruler_byeri_reformed
+			days = -1
+		}
+		set_character_flag = ruler_byeri_reformed
+	}
+}
+character_event = {
+	id = former_triggered_modifiers.748
+	hide_window = yes
+	has_character_flag = ruler_byeri_reformed
+	trigger = {
+		OR = {
+			is_playable = no
+			is_landed = no
+			NOT = {
+				religion = byeri_reformed	
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		remove_character_modifier = ruler_byeri_reformed
+		clr_character_flag = ruler_byeri_reformed
+	}
+}

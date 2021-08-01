@@ -345,6 +345,29 @@ d_holybud_vajrayana = {
 	strength_growth_per_century = 0.5
 	mercenary_type = d_holybud_vajrayana_composition
 }
+d_holybyeri_reformed = {
+	color = { 0.1 0.15 0.2 }
+	color2 = { 255 255 255 }
+	capital = 890
+
+	holy_order = yes
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+
+	# Parent Religion/Culture
+	religion = byeri_reformed
+
+	# Cannot be held as a secondary title
+	primary = yes
+
+	strength_growth_per_century = 0.5
+	mercenary_type = d_holybyeri_reformed_composition
+}
 d_holycatholic = {
 	color = { 255 255 153 }
 	color2 = { 255 255 255 }
