@@ -1820,11 +1820,6 @@ character_event = {
 	trigger = {
 		#in_command = no
 		NOT = { has_character_flag = VIET_powerful_chinese_empress_tales }
-		offmap_china = {
-			offmap_ruler = {
-				is_female = no
-			}
-		}
 		#NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		NOT = { has_alternate_start_parameter = { key = culture_names value = random } }
 	}
@@ -7263,29 +7258,6 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 10000
-		modifier = { #less likely when China's stable if in non-Indian territory
-			factor = 2
-			NOT = {
-				region = world_india
-			}
-			offmap_china = {
-				NOR = {
-					has_status = china_civil_war
-					has_status = china_plague
-					has_status = china_mongol_invasion
-					has_status = china_jurchen_invasion
-					has_status = china_unrest
-				}			
-			}
-		}
-		#modifier = {
-		#	factor = 1.5
-		#	NOT = { num_of_max_settlements = 5 }
-		#}
-		#modifier = {
-		#	factor = 1.2
-		#	NOT = { num_of_max_settlements = 3 }
-		#}
 	}
 	
 
