@@ -677,28 +677,6 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 				b_asketamo = {
 				}
 			}
-			c_central = {
-
-				color = { 54 224 80 }
-				color2 = { 250 250 250 }
-
-				b_nyeri = {
-				}
-				b_thika = {
-				}
-				b_nanyuid = {
-				}
-				b_nyahururu = {
-				}
-				b_fakomeno = {
-				}
-				b_chamo = {
-				}
-				b_nondama = {
-				}
-				b_dukisaha = {
-				}
-			}
 			c_nakuru = {
 
 				color = { 133 121 171 }
@@ -782,6 +760,28 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 				b_hasikisi = {
 				}
 				b_hurumaru = {
+				}
+			}
+			c_central = {
+
+				color = { 54 224 80 }
+				color2 = { 250 250 250 }
+
+				b_nyeri = {
+				}
+				b_thika = {
+				}
+				b_nanyuid = {
+				}
+				b_nyahururu = {
+				}
+				b_fakomeno = {
+				}
+				b_chamo = {
+				}
+				b_nondama = {
+				}
+				b_dukisaha = {
 				}
 			}
 			c_mucapuca = {
@@ -900,27 +900,6 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 				b_hezibuzu = {
 				}
 				b_fintomomo = {
-				}
-			}
-			c_bardera = {
-				color={ 159 225 85 }
-				color2={ 255 255 255 }
-			
-				b_bardera = {
-				}
-				b_baidoa = {
-				}
-				b_luuq = {
-				}
-				b_madiino = {
-				}
-				b_garbahaarey = {
-				}
-				b_buurdhuubo = {
-				}
-				b_wajid = {
-				}
-				b_mandera_bardera = {
 				}
 			}
 			c_coast = {
@@ -1906,89 +1885,6 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 				b_betioky = {
 				}
 				b_ankiliarivo = {
-				}
-			}
-		}
-	}
-	k_zulu = {
-		color = { 10 25 20 }
-		capital = 2371
-
-		nyau = 2000
-		zande_pagan_reformed = 500
-		zulu_pagan_reformed = 10000
-
-		d_zulu = {
-			color = { 35 50 12 }
-			capital = 2371
-
-			c_tulamela = {
-
-				color = { 80 80 80 }
-
-				holy_site = zulu_pagan
-				holy_site = zulu_pagan_reformed
-
-				b_tulamela = {
-				}
-				b_tshaulu = {
-				}
-				b_tshilamba = {
-				}
-				b_gundani = {
-				}
-				b_shakadza = {
-				}
-				b_rambuda = {
-				}
-				b_tshipise = {
-				}
-				b_mutele = {
-				}
-
-			}
-			c_manyikeni = {
-
-				color = { 223 153 163 }
-				color2 = { 250 250 250 }
-
-				b_manyikeni = {
-				}
-				b_maimelane = {
-				}
-				b_pambarra = {
-				}
-				b_mapinhane = {
-				}
-				b_naite = {
-				}
-				b_mabote = {
-				}
-				b_tesselo = {
-				}
-				b_inhassoro = {
-				}
-			}
-			c_inhambane = {
-
-				color = { 223 153 163 }
-				color2 = { 250 250 250 }
-
-				b_inhambane = {
-				}
-				b_jangamo = {
-				}
-				b_massinga = {
-				}
-				b_umguana = {
-				}
-				b_sitila = {
-				}
-				b_mavume = {
-				}
-				b_chacane = {
-				}
-				b_inharrime = {
 				}
 			}
 		}

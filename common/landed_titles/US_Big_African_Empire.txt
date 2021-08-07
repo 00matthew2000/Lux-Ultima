@@ -2,47 +2,305 @@ e_big_african_empire = {
 
 	capital = 3379 # Oshakati
 
-	color={ 62 112 185 }
+	color={ 111 0 255 }
 	color2={ 255 255 255 }
 
-	k_gabon = { #
+	k_zambia = {
 
-		capital = 3366 # Bienh
+		color = { 85 165 222 }
+		color2 = { 250 250 250 }
 
-		color={ 144 59 125 }
-		color2={ 255 255 255 }		
+		capital = 3365 #Abuja
+
+		d_monsol = {
+
+			color = { 15 84 35 }
+			color2 = { 250 250 250 }
+
+			capital = 3362 #Monguu
+
+			c_monguu = {
+
+				color = { 141 174 190 }
+				color2 = { 250 250 250 }
+
+				b_monguu = {
+				}
+				b_kalabo = {
+				}
+				b_shangombo = {
+				}
+				b_mavua = {
+				}
+				b_senanga = {
+				}
+				b_kataba = {
+				}
+				b_mulobezi = {
+				}
+				b_sesheke = {
+				}
+
+			}
+			c_solwezi = {
+
+				color = { 34 44 50 }
+				color2 = { 250 250 250 }
+
+				b_solwezi = {
+				}
+				b_mutanda = {
+				}
+				b_mwinilunga = {
+				}
+				b_kasempa = {
+				}
+				b_kabompo = {
+				}
+				b_zambezi = {
+				}
+				b_chavuma = {
+				}
+				b_luanshya = {
+				}
+
+			}
+		}
+		d_kasman = {
+
+			color = { 43 160 125 }
+			color2 = { 250 250 250 }
+
+			capital = 3365 #Kasama
+
+			c_mansa = {
+
+				holy_site=khoi_san_mythology
+				holy_site=khoi_san_mythology_reformed
+				holy_site=andrianerinerinan
+				holy_site=andrianerinerinan_reformed
+				holy_site=animism
+				holy_site=animism_reformed
+
+				color = { 203 67 40 }
+				color2 = { 250 250 250 }
+
+				b_mansa = {
+				}
+				b_chipili = {
+				}
+				b_kawambwa = {
+				}
+				b_nchelenge = {
+				}
+				b_mporokoso = {
+				}
+				b_samfya = {
+				}
+				b_mkushi = {
+				}
+				b_kabwe = {
+				}
+			}
+			c_kasama = {
+
+				color = { 93 40 125 }
+				color2 = { 250 250 250 }
+
+				b_kasama = {
+				}
+				b_mayuka = {
+				}
+				b_mwenzo = {
+				}
+				b_mpulungu = {
+				}
+				b_chama = {
+				}
+				b_lundazi = {
+				}
+				b_mpika = {
+				}
+				b_chipata = {
+				}
+			}
+		}
+	}
+	k_sudan = {
+
+		color = { 15 75 232 }
+		color2 = { 250 250 250 }
+
+		capital = 3359 #Khartoum
+
+		d_kharnya = {
+
+			color = { 85 154 115 }
+			color2 = { 250 250 250 }
+
+			capital = 3356 #Nyala
+
+			c_nyala = {
+
+				color = { 31 114 136 }
+				color2 = { 250 250 250 }
+
+				b_nyala = {
+				}
+				b_kebkobiya = {
+				}
+				b_dibbis = {
+				}
+				b_hagarbanga = {
+				}
+
+			}
+			c_menawashel = {
+
+				color = { 124 144 46 }
+				color2 = { 250 250 250 }
+
+				b_menawashel = {
+				}
+				b_zalingei = {
+				}
+				b_muhagiriya = {
+				}
+				b_taweisha = {
+				}
+
+			}
+			c_juba = {
+
+				color = { 163 27 47 }
+				color2 = { 250 250 250 }
+
+				b_juba = {
+				}
+				b_fadiat = {
+				}
+				b_faiwil = {
+				}
+				b_terakeka = {
+				}
+			}
+			c_khandaq = {
+
+				color = { 164 63 190 }
+				color2 = { 250 250 250 }
+
+				b_khandaq = {
+				}
+				b_karimaa = {
+				}
+				b_malha = {
+				}
+				b_nukheila = {
+				}
+
+			}
+		}
+		d_kharal = {
+
+			color = { 143 40 115 }
+			color2 = { 250 250 250 }
+
+			capital = 3359 
+
+			c_khartoum = {
+
+				color = { 43 130 210 }
+				color2 = { 250 250 250 }
+
+				b_khartoum = {
+				}
+				b_zureiqa = {
+				}
+				b_wadhamid = {
+				}
+				b_aulia = {
+				}
+			}
+			c_kassalaa= {
+
+				color = { 23 50 170 }
+				color2 = { 250 250 250 }
+
+				b_kassalaa = {
+				}
+				b_showakk = {
+				}
+				b_tegalhust = {
+				}
+				b_sufeiya = {
+				}
+			}
+			c_shabasha = {
+
+				color = { 193 10 130 }
+				color2 = { 250 250 250 }
+
+				b_shabasha = {
+				}
+				b_renk = {
+				}
+				b_girbanat = {
+				}
+				b_manaqi = {
+				}
+			}
+		}
+		d_kasmal = {
+
+			color = { 163 60 15 }
+			color2 = { 250 250 250 }
+
+			capital = 3360 #Kassala
+
+			c_malawiya= {
+
+				color = { 123 70 190 }
+				color2 = { 250 250 250 }
+
+				b_malawiya = {
+				}
+				b_qallabat = {
+				}
+				b_galegu = {
+				}
+				b_mitatib = {
+				}
+			}
+			c_malakal = {
+
+				color = { 43 125 17 }
+				color2 = { 250 250 250 }
+
+				b_malakal = {
+				}
+				b_gumuru = {
+				}
+				b_damazin = {
+				}
+				b_farmaka = {
+				}
+			}
+		}
+	}
+	k_angola = { 
+
+		color={ 98 91 15 }
+		color2={ 255 255 255 }
+
+		capital = 3368 # 
 
 		d_ligetchi = { #
 
 			color={ 132 75 241 }
 			color2={ 255 255 255 }
 
-			capital = 3366 #
+			capital = 3368 #
 
-			c_libreville = {
-
-				color={ 212 15 11 }
-				color2={ 255 255 255 }
-					holy_site = byeri
-					holy_site = byeri_reformed
-
-				b_libreville = {
-				}
-				b_ntoum = {
-				}
-				b_foulenzem = {
-				}
-				b_abounn = {
-				}
-				b_lambarene = {
-				}
-				b_ndjole = {
-				}
-				b_bifoun = {
-				}
-				b_assok = {
-				}
-			}
 			c_gentill = {
 
 				color={ 122 185 151 }
@@ -78,64 +336,6 @@ e_big_african_empire = {
 				}
 			}
 		}
-		d_makomasu = { #Guide
-
-			color={ 11 95 247 }
-			color2={ 255 255 255 }
-
-			capital = 3370
-
-			c_makokou = {
-
-				color={ 151 245 207 }
-				color2={ 255 255 255 }
-
-				b_makokou = {
-				}
-				b_indombo = {
-				}
-				b_scierie = {
-				}
-				b_belinga = {
-				}
-				b_mekambo = {
-				}
-				b_mazingo = {
-				}
-				b_minvoul = {
-				}
-			}
-			c_masuku = {
-
-				color={ 111 115 7 }
-				color2={ 255 255 255 }
-
-				b_masuku = {
-				}
-				b_moanda = {
-				}
-				b_mbounga = {
-				}
-				b_okondja = {
-				}
-				b_lekila = {
-				}
-				b_ndjounou = {
-				}
-				b_lifouta = {
-				}
-				b_koulamoutou = {
-				}
-			}
-		}
-        }
-	k_angola = { 
-
-		color={ 69 243 66 }
-		color2={ 255 255 255 }
-
-		capital = 3371 # 
-
 		d_lualuba = { #
 
 			color={ 148 110 14 }
@@ -264,6 +464,13 @@ e_big_african_empire = {
 				}
 			}			
 		}
+	}
+	k_katanga = {
+		color={ 8 9 8 }
+		color2={ 255 255 255 }
+
+		capital = 3375 #		
+
 		d_hualuen = { 
 
 			color={ 86 88 87 }
@@ -336,81 +543,6 @@ e_big_african_empire = {
 
 		capital = 3379 #
 
-		d_khorwind = { #
-
-			color={ 29 250 12 }
-			color2={ 255 255 255 }
-
-			capital = 3377 #
-
-			c_windhoek = {
-
-				color={ 29 50 212 }
-				color2={ 255 255 255 }
-
-				holy_site=khoi_san_mythology
-				holy_site=khoi_san_mythology_reformed
-				holy_site=andrianerinerinan
-				holy_site=andrianerinerinan_reformed
-				holy_site=animism
-				holy_site=animism_reformed
-
-				b_windhoek = {
-				}
-				b_omitara = {
-				}
-				b_dordabis = {
-				}
-				b_gamsberg = {
-				}
-				b_leonardville = {
-				}
-				b_dmandundehn = {
-				}
-			}
-			c_brakwater = {
-
-				color={ 69 20 234 }
-				color2={ 255 255 255 }
-
-				b_brakwater = {
-				}
-				b_solitaire = {
-				}
-				b_okohandja = {
-				}
-				b_swakopmund = {
-				}
-			}			
-			c_khorixas = {
-
-				color={ 139 170 132 }
-				color2={ 255 255 255 }
-
-				b_khorixas = {
-				}
-				b_palmwag = {
-				}
-				b_sesfontein = {
-				}
-				b_opuwo = {
-				}
-			}
-			c_fransfontein = {
-
-				color={ 89 190 122 }
-				color2={ 255 255 255 }
-
-				b_fransfontein = {
-				}
-				b_ruacana = {
-				}
-				b_kamanjab = {
-				}
-				b_otjikondo = {
-				}
-			}			
-		}
 		d_oskeetotji = { 
 
 			color={ 60 199 111 }
@@ -460,76 +592,68 @@ e_big_african_empire = {
 				b_otjosondu = {
 				}
 			}
-			c_okakarara = {
-
-				color={ 44 79 197 }
-				color2={ 255 255 255 }
-
-				b_okakarara = {
-				}
-				b_otjinene = {
-				}
-				b_wilhelmstal = {
-				}
-				b_kombatt = {
-				}
-			}			
-			c_keetmanshoop = {
-
-				color={ 60 109 161 }
-				color2={ 255 255 255 }
-
-				b_keetmanshoop = {
-				}
-				b_aroab = {
-				}
-				b_grunau = {
-				}
-				b_holoog = {
-				}
-			}
-			c_narubis = {
-
-				color={ 50 139 191 }
-				color2={ 255 255 255 }
-
-				b_narubis = {
-				}
-				b_karasburg = {
-				}
-				b_warmbad = {
-				}
-				b_ariamsvlei = {
-				}
-			}			
 		}
 	}
-	k_botswana = { #
+}
+e_khoisan = {
+	capital = 3384 # Gaborone
 
-		color={ 64 143 121 }
+	color={ 222 18 87 }
+	color2={ 255 255 255 }
+
+	k_herero = {
+		color={ 69 243 66 }
 		color2={ 255 255 255 }
 
-		capital = 3384 #
+		capital = 3377 #
 
-		d_ghagabtsha = { #
+		d_khorwind = { #
 
-			color={ 213 33 77 }
+			color={ 29 250 12 }
 			color2={ 255 255 255 }
 
-			capital = 3384 #
+			capital = 3377 #
 
-			c_ghanzi = {
+			c_brakwater = {
 
-				color={ 153 63 67 }
+				color={ 69 20 234 }
 				color2={ 255 255 255 }
 
-				b_ghanzi = {
+				b_brakwater = {
 				}
-				b_nojane = {
+				b_solitaire = {
 				}
-				b_takatshwane = {
+				b_okohandja = {
 				}
-				b_bodibeng = {
+				b_swakopmund = {
+				}
+			}			
+			c_khorixas = {
+
+				color={ 139 170 132 }
+				color2={ 255 255 255 }
+
+				b_khorixas = {
+				}
+				b_palmwag = {
+				}
+				b_sesfontein = {
+				}
+				b_opuwo = {
+				}
+			}
+			c_fransfontein = {
+
+				color={ 89 190 122 }
+				color2={ 255 255 255 }
+
+				b_fransfontein = {
+				}
+				b_ruacana = {
+				}
+				b_kamanjab = {
+				}
+				b_otjikondo = {
 				}
 			}
 			c_mamuno = {
@@ -544,6 +668,47 @@ e_big_african_empire = {
 				b_sepupa = {
 				}
 				b_shakawe = {
+				}
+			}			
+		}
+	}
+	k_south_africa = { #
+
+		color={ 244 25 6 }
+		color2={ 255 255 255 }
+
+		capital = 3390 #
+
+		d_windhoek = { #
+
+			color={ 249 231 245 }
+			color2={ 255 255 255 }
+
+			capital = 3377 #
+
+			c_windhoek = {
+
+				color={ 29 50 212 }
+				color2={ 255 255 255 }
+
+				holy_site=khoi_san_mythology
+				holy_site=khoi_san_mythology_reformed
+				holy_site=andrianerinerinan
+				holy_site=andrianerinerinan_reformed
+				holy_site=animism
+				holy_site=animism_reformed
+
+				b_windhoek = {
+				}
+				b_omitara = {
+				}
+				b_dordabis = {
+				}
+				b_gamsberg = {
+				}
+				b_leonardville = {
+				}
+				b_dmandundehn = {
 				}
 			}			
 			c_tshabong = {
@@ -573,108 +738,8 @@ e_big_african_empire = {
 				}
 				b_zerenhambin = {
 				}				
-			}			
-			c_gaborone = {
-
-				color={ 113 23 57 }
-				color2={ 255 255 255 }
-
-				b_gaborone = {
-				}
-				b_ramotswa = {
-				}
-				b_sikwane = {
-				}
-				b_mosoname = {
-				}
 			}
-			c_lobatse = {
-
-				color={ 46 33 87 }
-				color2={ 255 255 255 }
-
-				b_lobatse = {
-				}
-				b_dibete = {
-				}
-				b_mahalapye = {
-				}
-				b_lentswelelau = {
-				}
-			}			
 		}
-		d_sermole = { 
-
-			color={ 43 179 168 }
-			color2={ 255 255 255 }
-
-			capital = 3386 
-
-			c_serowe = {
-
-				color={ 143 159 136 }
-				color2={ 255 255 255 }
-
-				b_serowe = {
-				}
-				b_ngwezumba = {
-				}
-				b_lethakane = {
-				}
-				b_xorodomo = {
-				}
-			}
-			c_pandamatenga = {
-
-				color={ 125 131 177 }
-				color2={ 255 255 255 }
-
-				b_pandamatenga = {
-				}
-				b_rakops = {
-				}
-				b_mopipi = {
-				}
-				b_tutumme = {
-				}
-			}			
-			c_molepolole = {
-
-				color={ 163 149 66 }
-				color2={ 255 255 255 }
-
-				b_molepolole = {
-				}
-				b_sefophe = {
-				}
-				b_mmadinaree = {
-				}
-				b_faksinhanton = {
-				}
-			}
-			c_palapyee = {
-
-				color={ 123 19 76 }
-				color2={ 255 255 255 }
-
-				b_palapyee = {
-				}
-				b_bobonong = {
-				}
-				b_tonota = {
-				}
-				b_kurankonto = {
-				}
-			}			
-		}
-	}
-	k_south_africa = { #
-
-		color={ 244 25 6 }
-		color2={ 255 255 255 }
-
-		capital = 3390 #
-
 		d_kimcabloem = { #
 
 			color={ 14 144 94 }
@@ -770,13 +835,172 @@ e_big_african_empire = {
 				}
 			}			
 		}
-		d_johasowne = { #
+	}
+	k_botswana = { #
 
-			color={ 143 177 77 }
+		color={ 64 143 121 }
+		color2={ 255 255 255 }
+
+		capital = 3384 #
+
+		d_narubis = {
+
+			color={ 26 45 19 }
+			color2={ 255 255 255 }
+
+			capital = 3452
+
+			c_okakarara = {
+
+				color={ 44 79 197 }
+				color2={ 255 255 255 }
+
+				b_okakarara = {
+				}
+				b_otjinene = {
+				}
+				b_wilhelmstal = {
+				}
+				b_kombatt = {
+				}
+			}			
+			c_keetmanshoop = {
+
+				color={ 60 109 161 }
+				color2={ 255 255 255 }
+
+				b_keetmanshoop = {
+				}
+				b_aroab = {
+				}
+				b_grunau = {
+				}
+				b_holoog = {
+				}
+			}
+			c_narubis = {
+
+				color={ 50 139 191 }
+				color2={ 255 255 255 }
+
+				b_narubis = {
+				}
+				b_karasburg = {
+				}
+				b_warmbad = {
+				}
+				b_ariamsvlei = {
+				}
+			}			
+		}
+		d_serowe = {
+			color={ 19 159 240 }
+			color2={ 255 255 255 }
+
+			capital = 3385
+
+			c_serowe = {
+
+				color={ 143 159 136 }
+				color2={ 255 255 255 }
+
+				b_serowe = {
+				}
+				b_ngwezumba = {
+				}
+				b_lethakane = {
+				}
+				b_xorodomo = {
+				}
+			}
+			c_pandamatenga = {
+
+				color={ 125 131 177 }
+				color2={ 255 255 255 }
+
+				b_pandamatenga = {
+				}
+				b_rakops = {
+				}
+				b_mopipi = {
+				}
+				b_tutumme = {
+				}
+			}
+		}
+		d_ghagabtsha = { #
+
+			color={ 213 33 77 }
+			color2={ 255 255 255 }
+
+			capital = 3384 #
+
+			c_ghanzi = {
+
+				color={ 153 63 67 }
+				color2={ 255 255 255 }
+
+				b_ghanzi = {
+				}
+				b_nojane = {
+				}
+				b_takatshwane = {
+				}
+				b_bodibeng = {
+				}
+			}			
+			c_gaborone = {
+
+				color={ 113 23 57 }
+				color2={ 255 255 255 }
+
+				b_gaborone = {
+				}
+				b_ramotswa = {
+				}
+				b_sikwane = {
+				}
+				b_mosoname = {
+				}
+			}
+			c_lobatse = {
+
+				color={ 46 33 87 }
+				color2={ 255 255 255 }
+
+				b_lobatse = {
+				}
+				b_dibete = {
+				}
+				b_mahalapye = {
+				}
+				b_lentswelelau = {
+				}
+			}			
+		}
+	}
+}
+e_nguni = {
+	capital = 3392 # Neispruit
+
+	color={ 5 48 165 }
+	color2={ 255 255 255 }
+
+	k_xhosa = {
+		color = { 135 31 255 }
+		capital = 3391
+
+		nyau = 2000
+		zande_pagan_reformed = 500
+		zulu_pagan_reformed = 10000
+		
+		d_sotho = { 
+
+			color={ 100 250 10 }
 			color2={ 255 255 255 }
 
 			capital = 3390
-
+			
 			c_johannesburg = {
 
 				color={ 233 117 17 }
@@ -825,6 +1049,14 @@ e_big_african_empire = {
 				b_kathlehong = {
 				}
 			}
+		}
+		d_johasowne = { 
+
+			color={ 143 177 77 }
+			color2={ 255 255 255 }
+
+			capital = 3391
+
 			c_soweto = {
 
 				color={ 213 147 37 }
@@ -852,7 +1084,72 @@ e_big_african_empire = {
 				}
 				b_steelpoort = {
 				}
-			}			
+			}						
+		}
+	}
+	k_zulu = {
+		color = { 10 25 20 }
+		capital = 2371
+
+		nyau = 2000
+		zande_pagan_reformed = 500
+		zulu_pagan_reformed = 10000
+
+		d_inhambane
+			color = { 135 150 112 }
+			capital = 2363
+			
+			c_tulamela = {
+
+				color = { 80 80 80 }
+
+				holy_site = zulu_pagan
+				holy_site = zulu_pagan_reformed
+
+				b_tulamela = {
+				}
+				b_tshaulu = {
+				}
+				b_tshilamba = {
+				}
+				b_gundani = {
+				}
+				b_shakadza = {
+				}
+				b_rambuda = {
+				}
+				b_tshipise = {
+				}
+				b_mutele = {
+				}
+			}
+			c_inhambane = {
+
+				color = { 223 153 163 }
+				color2 = { 250 250 250 }
+
+				b_inhambane = {
+				}
+				b_jangamo = {
+				}
+				b_massinga = {
+				}
+				b_umguana = {
+				}
+				b_sitila = {
+				}
+				b_mavume = {
+				}
+				b_chacane = {
+				}
+				b_inharrime = {
+				}
+			}
+		}	
+		d_zulu = {
+			color = { 35 50 12 }
+			capital = 3392
+
 			c_neispruit = {
 
 				color={ 218 76 45 }
@@ -879,6 +1176,50 @@ e_big_african_empire = {
 				b_estcourt = {
 				}
 				b_bibintantan = {
+				}
+			}
+		}
+	}
+	k_tswana = {
+
+		color={ 48 139 16 }
+		color2={ 255 255 255 }
+
+		capital = 3386
+
+		d_sermole = { 
+
+			color={ 43 179 168 }
+			color2={ 255 255 255 }
+
+			capital = 3386 
+			
+			c_molepolole = {
+
+				color={ 163 149 66 }
+				color2={ 255 255 255 }
+
+				b_molepolole = {
+				}
+				b_sefophe = {
+				}
+				b_mmadinaree = {
+				}
+				b_faksinhanton = {
+				}
+			}
+			c_palapyee = {
+
+				color={ 123 19 76 }
+				color2={ 255 255 255 }
+
+				b_palapyee = {
+				}
+				b_bobonong = {
+				}
+				b_tonota = {
+				}
+				b_kurankonto = {
 				}
 			}			
 		}

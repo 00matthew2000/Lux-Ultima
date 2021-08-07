@@ -218,37 +218,26 @@ e_nigeria = {
 
 		capital = 3353 #Yaounde
 
-		d_yaodou = {
+		d_garber = {
 
-			color = { 85 34 55 }
+			color = { 31 131 147 }
 			color2 = { 250 250 250 }
 
-			capital = 3353 #Yaounde
+			capital = 3355 #Garoua
 
-			c_doula = {
+			c_bertoua = {
 
-				color = { 34 44 60 }
+				color = { 233 43 78 }
 				color2 = { 250 250 250 }
-					holy_site = byeri
-					holy_site = byeri_reformed
 
-				b_doula = {
+				b_bertoua = {
 				}
-				b_yabassi = {
+				b_meiganga = {
 				}
-				b_yingui = {
+				b_goyoum = {
 				}
-				b_ngambe = {
+				b_samaloma = {
 				}
-				b_mbanga = {
-				}
-				b_bamusso = {
-				}
-				b_akwaya = {
-				}
-				b_eyumojok = {
-				}
-
 			}
 			c_yaounde = {
 
@@ -274,28 +263,6 @@ e_nigeria = {
 				b_djoum = {
 				}
 
-			}
-		}
-		d_garber = {
-
-			color = { 31 131 147 }
-			color2 = { 250 250 250 }
-
-			capital = 3355 #Garoua
-
-			c_bertoua = {
-
-				color = { 233 43 78 }
-				color2 = { 250 250 250 }
-
-				b_bertoua = {
-				}
-				b_meiganga = {
-				}
-				b_goyoum = {
-				}
-				b_samaloma = {
-				}
 			}
 			c_ngaoundere = {
 
@@ -336,264 +303,118 @@ e_nigeria = {
 		}
 	}
 
-	k_sudan = {
+	k_gabon = { #
 
-		color = { 15 75 232 }
-		color2 = { 250 250 250 }
+		capital = 3366
 
-		capital = 3359 #Khartoum
+		color={ 144 59 125 }
+		color2={ 255 255 255 }		
 
-		d_kharnya = {
+		d_yaodou = {
 
-			color = { 85 154 115 }
+			color = { 85 34 55 }
 			color2 = { 250 250 250 }
 
-			capital = 3356 #Nyala
+			capital = 3366 #Yaounde
 
-			c_nyala = {
+			c_doula = {
 
-				color = { 31 114 136 }
+				color = { 34 44 60 }
 				color2 = { 250 250 250 }
+					holy_site = byeri
+					holy_site = byeri_reformed
 
-				b_nyala = {
+				b_doula = {
 				}
-				b_kebkobiya = {
+				b_yabassi = {
 				}
-				b_dibbis = {
+				b_yingui = {
 				}
-				b_hagarbanga = {
+				b_ngambe = {
 				}
-
-			}
-			c_menawashel = {
-
-				color = { 124 144 46 }
-				color2 = { 250 250 250 }
-
-				b_menawashel = {
+				b_mbanga = {
 				}
-				b_zalingei = {
+				b_bamusso = {
 				}
-				b_muhagiriya = {
+				b_akwaya = {
 				}
-				b_taweisha = {
-				}
-
-			}
-			c_khandaq = {
-
-				color = { 164 63 190 }
-				color2 = { 250 250 250 }
-
-				b_khandaq = {
-				}
-				b_karimaa = {
-				}
-				b_malha = {
-				}
-				b_nukheila = {
-				}
-
-			}
-		}
-		d_kasmal = {
-
-			color = { 163 60 15 }
-			color2 = { 250 250 250 }
-
-			capital = 3360 #Kassala
-
-			c_kassalaa= {
-
-				color = { 23 50 170 }
-				color2 = { 250 250 250 }
-
-				b_kassalaa = {
-				}
-				b_showakk = {
-				}
-				b_tegalhust = {
-				}
-				b_sufeiya = {
+				b_eyumojok = {
 				}
 			}
-			c_shabasha = {
+			c_libreville = {
 
-				color = { 193 10 130 }
-				color2 = { 250 250 250 }
+				color={ 212 15 11 }
+				color2={ 255 255 255 }
+					holy_site = byeri
+					holy_site = byeri_reformed
 
-				b_shabasha = {
+				b_libreville = {
 				}
-				b_renk = {
+				b_ntoum = {
 				}
-				b_girbanat = {
+				b_foulenzem = {
 				}
-				b_manaqi = {
+				b_abounn = {
 				}
-			}
-			c_malawiya= {
-
-				color = { 123 70 190 }
-				color2 = { 250 250 250 }
-
-				b_malawiya = {
+				b_lambarene = {
 				}
-				b_qallabat = {
+				b_ndjole = {
 				}
-				b_galegu = {
+				b_bifoun = {
 				}
-				b_mitatib = {
-				}
-			}
-			c_malakal = {
-
-				color = { 43 125 17 }
-				color2 = { 250 250 250 }
-
-				b_malakal = {
-				}
-				b_gumuru = {
-				}
-				b_damazin = {
-				}
-				b_farmaka = {
-				}
-			}
-			c_juba = {
-
-				color = { 163 27 47 }
-				color2 = { 250 250 250 }
-
-				b_juba = {
-				}
-				b_fadiat = {
-				}
-				b_faiwil = {
-				}
-				b_terakeka = {
+				b_assok = {
 				}
 			}
 		}
-	}
-	k_zambia = {
+		d_makomasu = { #Guide
 
-		color = { 85 165 222 }
-		color2 = { 250 250 250 }
+			color={ 11 95 247 }
+			color2={ 255 255 255 }
 
-		capital = 3365 #Abuja
+			capital = 3370
 
-		d_monsol = {
+			c_makokou = {
 
-			color = { 15 84 35 }
-			color2 = { 250 250 250 }
+				color={ 151 245 207 }
+				color2={ 255 255 255 }
 
-			capital = 3362 #Monguu
-
-			c_monguu = {
-
-				color = { 141 174 190 }
-				color2 = { 250 250 250 }
-
-				b_monguu = {
+				b_makokou = {
 				}
-				b_kalabo = {
+				b_indombo = {
 				}
-				b_shangombo = {
+				b_scierie = {
 				}
-				b_mavua = {
+				b_belinga = {
 				}
-				b_senanga = {
+				b_mekambo = {
 				}
-				b_kataba = {
+				b_mazingo = {
 				}
-				b_mulobezi = {
-				}
-				b_sesheke = {
-				}
-
-			}
-			c_solwezi = {
-
-				color = { 34 44 50 }
-				color2 = { 250 250 250 }
-
-				b_solwezi = {
-				}
-				b_mutanda = {
-				}
-				b_mwinilunga = {
-				}
-				b_kasempa = {
-				}
-				b_kabompo = {
-				}
-				b_zambezi = {
-				}
-				b_chavuma = {
-				}
-				b_luanshya = {
-				}
-
-			}
-		}
-		d_kasman = {
-
-			color = { 43 160 125 }
-			color2 = { 250 250 250 }
-
-			capital = 3365 #Kasama
-
-			c_mansa = {
-
-				holy_site=khoi_san_mythology
-				holy_site=khoi_san_mythology_reformed
-				holy_site=andrianerinerinan
-				holy_site=andrianerinerinan_reformed
-				holy_site=animism
-				holy_site=animism_reformed
-
-				color = { 203 67 40 }
-				color2 = { 250 250 250 }
-
-				b_mansa = {
-				}
-				b_chipili = {
-				}
-				b_kawambwa = {
-				}
-				b_nchelenge = {
-				}
-				b_mporokoso = {
-				}
-				b_samfya = {
-				}
-				b_mkushi = {
-				}
-				b_kabwe = {
+				b_minvoul = {
 				}
 			}
-			c_kasama = {
+			c_masuku = {
 
-				color = { 93 40 125 }
-				color2 = { 250 250 250 }
+				color={ 111 115 7 }
+				color2={ 255 255 255 }
 
-				b_kasama = {
+				b_masuku = {
 				}
-				b_mayuka = {
+				b_moanda = {
 				}
-				b_mwenzo = {
+				b_mbounga = {
 				}
-				b_mpulungu = {
+				b_okondja = {
 				}
-				b_chama = {
+				b_lekila = {
 				}
-				b_lundazi = {
+				b_ndjounou = {
 				}
-				b_mpika = {
+				b_lifouta = {
 				}
-				b_chipata = {
+				b_koulamoutou = {
 				}
 			}
 		}
-	}
+    }
 }

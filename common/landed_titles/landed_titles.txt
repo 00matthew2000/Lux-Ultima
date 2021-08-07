@@ -3690,6 +3690,154 @@ e_hre = {                      # Created by special decision only
 		always = no # Only created through special decisions
 	}
 
+	k_lotharingia = {
+		color = { 144 80 60 }
+		
+		culture = frankish
+		
+		capital = 127 #Lorraine
+		
+		catholic = 5000 # Crusade target weight
+		
+		dignity = 17 # One more than Burgundy
+		
+		d_upper_lorraine = {
+			color = { 190 187 187 }
+			
+			capital = 127 #Lorraine		
+			c_lorraine = {
+				color={ 92 92 127 }
+				color2={ 255 255 255 }
+			
+				b_nancy = {
+				}
+				b_toul = {
+				}
+				b_sarrebourg = {
+				}
+				b_epinal = {
+				}
+				b_luneville = {
+				}
+				b_charpeigne = {
+				}
+				b_mortagnedevosges = {
+				}
+				b_saintavoid = {
+				}
+			}
+			c_saintois = {
+				color={ 105 105 135 }
+				color2={ 255 255 255 }
+		
+				b_saintois = {
+				}
+				b_vaudemont = {
+				}
+				b_brixey = {
+				}
+				b_sorcystmartin = {
+				}
+				b_ivios = {
+				}
+				b_ornois = {
+				}
+				b_saulnois = {
+				}
+				b_dompaire = {
+				}
+			}
+			c_bar = {
+				color = { 100 105 110 }
+				
+				b_barleduc = {}
+				b_commercy = {}
+				b_saintdizier = {}
+			}
+			c_verdun = {
+				color={ 130 130 165 }
+				color2={ 255 255 255 }
+			
+				b_verdun = {
+				}
+				b_grandpre = {
+				}
+				b_barlecomte = {
+				}
+				b_longuyon = {
+				}
+				b_doaumont = {
+				}
+				b_stenay = {
+				}
+				b_etain = {
+				}
+			}
+		}
+		d_lower_lorraine = {
+			color = { 166 157 157 }
+
+			capital = 1986 # Pfalz
+
+			c_saargau = {
+				color = { 117 117 117 }
+			
+				b_kaiserslautern = {}
+				b_worms = {}
+				b_hagenau = {}
+				b_stahleck = {}
+				b_trifels = {}
+				b_speyer = {}
+				b_zweibrucken = {}
+				b_saarbrucken = {}
+			}
+			c_trier = {
+				color = { 135 135 135 }
+			
+				b_andernach = {}
+				b_trier = {}
+				b_coblenz = {}
+				b_sponheim = {}
+				b_wittlich = {}
+				b_gerolstein = {}
+				b_laach = {}
+				b_bitburg = {}
+			}
+			c_mainz = {
+				color = { 129 129 129 }
+			
+				b_mainz = {}
+				b_frankfurt = {}
+				b_eppstein = {}
+				b_ingelheim = {}
+				b_mannheim = {}
+				b_weilburg = {}
+				b_dornburg = {}
+				b_hanau = {}
+			}
+			c_metz = {	
+				color={ 150 150 185 }
+				color2={ 255 255 255 }
+			
+				b_metz = {
+				}
+				b_thionville = {
+				}
+				b_saintjulien = {
+				}
+				b_marslatour = {
+				}
+				b_bouzonville = {
+				}
+				b_briey = {
+				}
+				b_joudreville = {
+				}
+				b_audunleroman = {
+				}
+			}
+		}
+	}
 	k_belgica = {
 		color = { 25 55 55 }
 		capital = 78
@@ -4644,155 +4792,6 @@ e_german = {
 				b_dokkum = {}
 				b_assen = {}
 				b_harlingen = {}
-			}
-		}
-	}
-	
-	k_lotharingia = {
-		color = { 144 80 60 }
-		
-		culture = frankish
-		
-		capital = 127 #Lorraine
-		
-		catholic = 5000 # Crusade target weight
-		
-		dignity = 17 # One more than Burgundy
-		
-		d_upper_lorraine = {
-			color = { 190 187 187 }
-			
-			capital = 127 #Lorraine		
-			c_lorraine = {
-				color={ 92 92 127 }
-				color2={ 255 255 255 }
-			
-				b_nancy = {
-				}
-				b_toul = {
-				}
-				b_sarrebourg = {
-				}
-				b_epinal = {
-				}
-				b_luneville = {
-				}
-				b_charpeigne = {
-				}
-				b_mortagnedevosges = {
-				}
-				b_saintavoid = {
-				}
-			}
-			c_saintois = {
-				color={ 105 105 135 }
-				color2={ 255 255 255 }
-		
-				b_saintois = {
-				}
-				b_vaudemont = {
-				}
-				b_brixey = {
-				}
-				b_sorcystmartin = {
-				}
-				b_ivios = {
-				}
-				b_ornois = {
-				}
-				b_saulnois = {
-				}
-				b_dompaire = {
-				}
-			}
-			c_bar = {
-				color = { 100 105 110 }
-				
-				b_barleduc = {}
-				b_commercy = {}
-				b_saintdizier = {}
-			}
-			c_verdun = {
-				color={ 130 130 165 }
-				color2={ 255 255 255 }
-			
-				b_verdun = {
-				}
-				b_grandpre = {
-				}
-				b_barlecomte = {
-				}
-				b_longuyon = {
-				}
-				b_doaumont = {
-				}
-				b_stenay = {
-				}
-				b_etain = {
-				}
-			}
-		}
-		d_lower_lorraine = {
-			color = { 166 157 157 }
-
-			capital = 1986 # Pfalz
-
-			c_saargau = {
-				color = { 117 117 117 }
-			
-				b_kaiserslautern = {}
-				b_worms = {}
-				b_hagenau = {}
-				b_stahleck = {}
-				b_trifels = {}
-				b_speyer = {}
-				b_zweibrucken = {}
-				b_saarbrucken = {}
-			}
-			c_trier = {
-				color = { 135 135 135 }
-			
-				b_andernach = {}
-				b_trier = {}
-				b_coblenz = {}
-				b_sponheim = {}
-				b_wittlich = {}
-				b_gerolstein = {}
-				b_laach = {}
-				b_bitburg = {}
-			}
-			c_mainz = {
-				color = { 129 129 129 }
-			
-				b_mainz = {}
-				b_frankfurt = {}
-				b_eppstein = {}
-				b_ingelheim = {}
-				b_mannheim = {}
-				b_weilburg = {}
-				b_dornburg = {}
-				b_hanau = {}
-			}
-			c_metz = {	
-				color={ 150 150 185 }
-				color2={ 255 255 255 }
-			
-				b_metz = {
-				}
-				b_thionville = {
-				}
-				b_saintjulien = {
-				}
-				b_marslatour = {
-				}
-				b_bouzonville = {
-				}
-				b_briey = {
-				}
-				b_joudreville = {
-				}
-				b_audunleroman = {
-				}
 			}
 		}
 	}
@@ -34313,7 +34312,13 @@ e_abyssinia = {
 			c_gezira = {
 				color = { 158 69 102 }
 			
-				b_ginbo = {}
+				b_ginbo2 = {}
+				b_bonga2 = {}
+				b_gishabay2 = {}
+				b_wacha2 = {}
+				b_chiri2 = {}
+				b_yadeta2 = {}
+				b_garo2 = {}
 			}
 		}
 		d_damot = {
@@ -34653,6 +34658,27 @@ e_abyssinia = {
 				b_geladin = {}
 				b_shinile = {}
 			}
+			c_bardera = {
+				color={ 159 225 85 }
+				color2={ 255 255 255 }
+			
+				b_bardera = {
+				}
+				b_baidoa = {
+				}
+				b_luuq = {
+				}
+				b_madiino = {
+				}
+				b_garbahaarey = {
+				}
+				b_buurdhuubo = {
+				}
+				b_wajid = {
+				}
+				b_mandera_bardera = {
+				}
+			}
 			c_bali = {
 				color={ 179 135 126 }
 				color2={ 255 255 255 }
@@ -34848,28 +34874,6 @@ e_kush = {
 				b_kobbai = {}
 				b_sabu = {} # Fictional - For Prosperity
 				b_et_taba = {} # Fictional - For Prosperity
-			}
-		}
-		d_kharal = {
-
-			color = { 143 40 115 }
-			color2 = { 250 250 250 }
-
-			capital = 3359 
-
-			c_khartoum = {
-
-				color = { 43 130 210 }
-				color2 = { 250 250 250 }
-
-				b_khartoum = {
-				}
-				b_zureiqa = {
-				}
-				b_wadhamid = {
-				}
-				b_aulia = {
-				}
 			}
 		}
 		d_malakal = {

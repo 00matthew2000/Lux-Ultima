@@ -434,41 +434,6 @@ south_bantu = {
 		modifier = default_culture_modifier
 	}
 
-	tangan = { 
-		graphical_cultures = { westafricangfx africangfx muslimgfx }
-		
-		color = { 0.38 0.79 0.19 }
-
-		male_names = {
-			#venda
-			Mafhudu Muzalo Nkhangweleni Rolivhuwa Thikhathali Thilivhali Tshifhiwa Zwanga
-			Alu Aluwanip Arehone Athiambiwied Avhadali Avhapfani Azwihangwisi Azwimmbahvi Azwinaki Azwinndini Dali Dowe Dowelani Fhulufhuwani Funi Hangwani Hulisani Humbe Humbelani
-			Ksayhu Khathutshelo Khuliso Khumbu Lindelani Livhu Lutendo Luvhengo Mpfareleli Mphedziseni Muwambiwa Mutsutshudzi Ndiyafhi Nduvho Nkhumbudzeni Nkhumbuleni Nnyadzeni
-			Nnyawedzeni Nnyaweleni Ntungufhadzeni Ntshengedzeni Pfunzo Phathutshedzo Phathu Phathutshedzo Rabe Rendi Rotshidzwa Rudzani Rudzi Sei Shandu Shandukani Taki Tanga Tendani
-			Thabelo Thanyani  Thina Thinawanga Tondani Tshanduko Tshiananeo Tshidino Tshinyalani Tungu
-
-			#tshona
-			Ntokoto			
-			Akani Amukelani Elela Eletsa Masana Masingita Minkateko Nsuku Ntsako Ntosvelo Ntsumi Ntwanano Nyeleti Rhandzu Rhulani Shiluva Thirani Unwana Vuthlari
-		}
-		female_names = {
-			#venda
-			Elelwani Mufunwa Washu
-			Alu Aluwanip Arehone Athiambiwied Avhadali Avhapfani Azwihangwisi Azwimmbahvi Azwinaki Azwinndini Dali Dowe Dowelani Fhulufhuwani Funi Hangwani Hulisani Humbe Humbelani
-			Khathu Khathutshelo Khuliso Khumbu Lindelani Livhu Lutendo Luvhengo Mpfareleli Mphedziseni Muwambiwa Mutsutshudzi Ndiyafhi Nduvho Nkhumbudzeni Nkhumbuleni Nnyadzeni
-			Nnyawedzeni Nnyaweleni Ntungufhadzeni Ntshengedzeni Pfunzo Phathutshedzo Phathu Phathutshedzo Rabe Rendi Rotshidzwa Rudzani Rudzi Sei Shandu Shandukani Taki Tanga Tendani
-			Thabelo Thanyani  Thina Thinawanga Tondani Tshanduko Tshiananeo Tshidino Tshinyalani Tungu
-
-			#tshona
-			Dyondzeka Khensani Lelani Xongi			
-			Akani Amukelani Elela Eletsa Masana Masingita Minkateko Nsuku Ntsako Ntosvelo Ntsumi Ntwanano Nyeleti Rhandzu Rhulani Shiluva Thirani Unwana Vuthlari
-		}
-
-		founder_named_dynasties = yes
-		dukes_called_kings = no
-		modifier = default_culture_modifier
-	}
-
 	mozam = { 
 		graphical_cultures = { westafricangfx africangfx muslimgfx }
 		
