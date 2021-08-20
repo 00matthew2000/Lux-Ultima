@@ -37033,7 +37033,7 @@ e_britannia = {
 			c_gower = {
 				color = { 168 57 137 }
 			
-				b_neath = {
+				b_gower = {
 					roman = "Nidum" 
 					romanobrython = "Nido" 
 				}
@@ -37053,11 +37053,11 @@ e_britannia = {
 	k_fortriu = {
 		color = { 10 81 243 }
 		roman = "Pictavia" 
-		capital = 24 #Moireibh
+		capital = 40 #Moireibh
 		
 		d_fidach = {
 			color = { 21 93 230 }
-			capital = 24 #Moireibh
+			capital = 40 #Moireibh
 			
 			c_moray = {
 				color = { 0 120 20 }
@@ -37070,7 +37070,7 @@ e_britannia = {
 				b_aberdon = {}
 				b_lhanbryde = {}
 			}
-			c_ros = {
+			c_ross = {
 				color = { 168 117 147 }
 				
 				b_tain = {}
@@ -37081,7 +37081,7 @@ e_britannia = {
 		}
 		d_ce = {
 			color = { 9 86 243 }
-			capital = 28 #Gobharaidh
+			capital = 43 #Gobharaidh
 			
 			c_buchan = {
 				color = { 42 123 148 }
@@ -37102,7 +37102,7 @@ e_britannia = {
 				b_pitardle = {}
 				b_ballintuim = {}
 			}
-			c_gobharaidh = {
+			c_gowrie = {
 				color = { 126 129 149 }
 				
 				b_dunkeld = {}
@@ -37154,11 +37154,6 @@ e_britannia = {
 				irish = "Na Rannaibh"
 				saxon = "Rhinns"
 
-				b_dunragit = {
-					pictish = "Dunrad"
-					welsh = "Dinrhyd"
-					irish = "Dùn Phris"
-				}
 				b_dunragit = {
 					pictish = "Dunreget"
 					welsh = "Din Rheged"
@@ -37561,231 +37556,6 @@ e_britannia = {
 					pictish = "Mamuanon"
 					welsh = "Mamffynnon"
 					irish = "Tobar na Màthar"
-				}
-			}
-		}
-	}
-	
-	k_fortriu = {
-		color = { 10 81 243 }
-		roman = "Pictavia" 
-		capital = 24 #Moireibh
-		
-		d_moray = {
-			color={ 10 81 243 }
-			color2={ 255 255 255 }
-			
-			capital = 40 # Moray
-			
-			pictish = "Fortriu"
-			welsh = "Gwrturio"
-			irish = "Muireb"
-			
-			c_moray = {
-				color={ 20 85 243 }
-				color2={ 255 255 255 }
-				
-				pictish = "Fortriu"
-				welsh = "Gwrturio"
-				irish = "Muireb"
-				
-				b_forres = {
-					pictish = "Uerris"
-					welsh = "Gwerrys"
-					irish = "Farrais"
-				}
-				b_cawdor = {
-					pictish = "Caerdurn"
-					welsh = "Caerdwrn"
-					irish = "Caladar"
-				}
-				b_elgin = {
-					pictish = "Eruan"
-					welsh = "Aergwyn"
-					irish = "Ailgin"
-				}
-				b_nairn = {
-					pictish = "Abernard"
-					welsh = "Abernard"
-					irish = "Inbhir Narann"
-				}
-				b_inverness = {
-					pictish = "Abernis"
-					welsh = "Abernis"
-					irish = "Inbhir Nis"
-				}
-				b_lochindorb = {
-					pictish = "Lansildod"
-					welsh = "Llyn y Sildod"
-					irish = "Loch nan Doirb"
-				}
-				b_kinloss = {
-					pictish = "Canalosc"
-					welsh = "Cynyddullosg"
-					irish = "Cinnlois"
-				}
-				b_urquhart = {
-					pictish = "Urcarthen"
-					welsh = "Aercardden"
-					irish = "Airdchartdan"
-				}
-			}
-			c_ross = {
-				color={ 15 55 243 }
-				color2={ 255 255 255 }
-				
-				pictish = "Fidach"
-				welsh = "Gwidauc"
-				irish = "Ros"
-				
-				b_applecross = {
-					pictish = "Aporcrosan"
-					welsh = "Aporcrosan"
-					irish = "Obar Crosain"
-				}
-				b_dingwall = {
-					norwegian = "Tingvall"
-					danish = "Tingvall"
-					swedish = "Tingvall"
-					norse = "Tingvall"
-					pictish = "Aberpis"
-					welsh = "Aberpeffry"
-					irish = "Inbhir Pheofharain"
-				}
-				b_rosemarkie = {
-					pictish = "Rosanmairch"
-					welsh = "Rhosan Meirchnant"
-					irish = "Ros Mhaircnidh"
-				}
-				b_fortrose = {
-					pictish = "Caerrosan"
-					welsh = "Caerrhosan"
-					irish = "Dùnrois"
-				}
-				b_fearn = {
-					pictish = "Manech Rasan"
-					welsh = "Mynachdy Rhosan"
-					irish = "Manachainn Rois"
-				}
-				b_tain = {
-					welsh = "Duthactref"
-					irish = "Baile Dubhthaich"
-				}
-				b_cromarty = {
-					pictish = "Crucabachu"
-					welsh = "Crwcabachwy"
-					irish = "Crombati"
-				}
-				b_avoch = {
-					pictish = "Aberauc"
-					welsh = "Aberauc"
-					irish = "Abhach"
-				}
-			}
-		}
-		d_ce = {
-			color = { 9 86 243 }
-			capital = 43 #Gobharaidh
-			
-			c_buchan = {
-				color = { 42 123 148 }
-				
-				pictish = "Cei"
-				welsh = "Cai"
-				irish = "Beanaomh"
-				
-				b_ellon = {
-					pictish = "Inseeol"
-					welsh = "Ynysol"
-					irish = "Eilean"
-				}
-				b_aberdeen = {
-					welsh = "Aberdwyafon"
-					irish = "Obar Dabhuin"
-				}
-				b_banff = {
-					pictish = "Banaugluas"
-					welsh = "Benywglwys"
-					irish = "Beanaomh"
-				}
-				b_kintore = {
-					pictish = "Pintar"
-					welsh = "Penntyrau"
-					irish = "Ceann Tòrr"
-				}
-				b_inverurie = {
-					pictish = "Aberury"
-					welsh = "Aberury"
-					irish = "Inbhir Uraidh"
-				}
-				b_fyvie = {
-					pictish = "Carubran"
-					welsh = "Carwbryn"
-					irish = "Fiachein"
-				}
-				b_deer = {
-					pictish = "Ceiru"
-					welsh = "Ceirw"
-					irish = "Fiadh"
-				}
-				b_st_machar = {
-					pictish = "Mabaur"
-					welsh = "Mabfawr Sant"
-					irish = "Naomh Machar"
-				}
-			}
-			c_atholl = {
-				color = { 168 132 22 }
-				
-				b_enochdhu = {}
-				b_fortingall = {}
-				b_rannoch = {}
-				b_pitardle = {}
-				b_ballintuim = {}
-			}
-			c_gowrie = {
-				color = { 126 129 149 }
-				
-				pictish = "Circinn"
-				welsh = "Caer Cinn"
-				irish = "Gobharaidh"
-				
-				b_scone = {
-					pictish = "Sguun"
-					welsh = "Sgon"
-					irish = "Sgoinde"
-				}
-				b_dunkeld = {
-					pictish = "Dun Celadon"
-					welsh = "Din Celyddon"
-					irish = "Dùn Chailleann"
-				}
-				b_perth = {
-				}
-				b_forteviot = {
-					pictish = "Nan Aruadocet"
-					welsh = "Nant Arwyddocâd"
-					irish = "Fothair Tabhaicht"
-				}
-				b_dundee = {
-					pictish = "Orrea"
-					welsh = "Dindân"
-					irish = "Dùn Dèagh"
-				}
-				b_abernethy = {
-					pictish = "Aber Naiton"
-					welsh = "Aber Neithon"
-					irish = "Obar Neithich"
-				}
-				b_clunie = {
-					pictish = "Luned"
-					welsh = "Llynaedd"
-					irish = "Cluainidh"
-				}
-				b_errol = {
-					pictish = "Landafan"
-					welsh = "Llandyffryn"
-					irish = "Lannfothir"
 				}
 			}
 		}
@@ -44530,6 +44300,12 @@ e_deccan = {
 				b_parippally = {}
 				b_paravur = {}
 			}
+         }
+         d_maldives = {
+            color = { 120 75 75 }
+			
+			capital = 1114 # Mahoyadapuram
+			
 			c_maldives = {
 				color={ 120 75 75 }
 				color2={ 255 255 255 }
@@ -44549,21 +44325,7 @@ e_deccan = {
 				b_gan = {
 				}
 			}
-#			c_kavaratti = {
-#				color={ 30 95 165 }
-#				color2={ 255 255 255 }
-#				
-#				b_kavaratti = {
-#				}
-#                                          }
-		}
-		d_tondai_nadu = {
-			color={ 200 120 120 }
-			color2={ 255 255 255 }
-			
-			capital = 1119 # Kanchipuram
-		
-		}
+        }
 	}
 	k_andhra = {
  		color = { 132 70 102 }
