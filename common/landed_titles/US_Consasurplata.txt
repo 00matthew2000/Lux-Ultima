@@ -4,7 +4,32 @@ e_consasurplata = {
 	color2={ 220 220 220 }
 
 	capital = 4013 # Santiago
+	
+	k_bolivay = { 
+		color={ 151 132 0 }
+		color2={ 220 220 220 }
 
+		capital = 4249 # canichana
+
+		d_chuqiyapu = {
+			color={ 45 64 71 }
+			color2={ 220 220 220 }
+			
+			capital = 4013 # chuqiyapu
+			
+			c_pacayuaca = {
+				color={ 125 177 143 }
+				color2={ 220 220 220 }
+				
+				b_pacayuaca = {
+				}
+				b_yacuban = {
+				}
+				b_goemferah = {
+				}
+			}
+		}
+	}
 	k_chile = {
 
 		color={ 106 85 0 }
