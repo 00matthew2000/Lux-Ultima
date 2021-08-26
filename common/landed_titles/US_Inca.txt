@@ -97,7 +97,7 @@ e_inca = {
 				}
 				b_kitu-ii = {
 				}
-				b_kitu-iii = {
+			b_kitu-iii = {
 				}
 				b_kitu-iv = {
 				}
@@ -138,19 +138,31 @@ e_inca = {
 				b_esmeraldas-iii = {
 				}
 			}
+			c_sucumbios = {
+
+				color={ 175 32 179 }
+				color2={ 220 220 220 }
+				
+				b_sucumbios = {
+				}
+				b_cascalago = {
+				}
+				b_shushufindi = {
+				}
+			}
 		}
-		d_iquitos = {
+	d_iquitos = {
+
 			color={ 157 43 52 }
 			color2={ 220 220 220 }
 
 			capital = 4233 # iquitos
 			
 			c_iquitos = {
+
 				color={ 75 19 75 }
 				color2={ 220 220 220 }
 				
-				b_iquitos = {
-				}
 				b_punchana = {
 				}
 				b_beleiquist = {
@@ -158,6 +170,30 @@ e_inca = {
 				b_sajabaus = {
 				}
 				b_maynasqui = {
+				}
+			}
+			c_loretaru = {
+
+				color={ 55 184 59 }
+				color2={ 220 220 220 }
+				
+				b_yurimaguas = {
+				}
+				b_requenucayal = {
+				}
+				b_putumayrecho = {
+				}
+			}
+			c_huanuco = {
+
+				color={ 41 97 49 }
+				color2={ 220 220 220 }
+				
+				b_huanuco = {
+				}
+				b_kotosuanco = {
+				}
+				b_huanuquena = {
 				}
 			}
 		}
@@ -184,8 +220,7 @@ e_inca = {
 				}
 				b_qasamarka-iv = {
 				}
-			}
-			c_pisqupampa = {
+			}			c_pisqupampa = {
 
 				color={ 75 74 149 }
 				color2={ 220 220 220 }
@@ -453,18 +488,6 @@ e_inca = {
 				b_tiahuanaco-iii = {
 				}
 			}
-			c_chuqiyapu = {
-
-				color={ 39 34 149 }
-				color2={ 220 220 220 }
-				
-				b_chuqiyapu = {
-				}
-				b_chuqiyapu-ii = {
-			              }
-				b_chuqiyapu-iii = {
-				}
-			}
 			c_macaya = {
 
 				color={ 149 54 97 }
@@ -478,7 +501,7 @@ e_inca = {
 				}
 			}
 		}
-              }
+	}
 
 	k_upper_peru = {
 
@@ -551,6 +574,16 @@ e_inca = {
 				b_tarija-iii = {
 				}
 			}
+			c_joseuniano = {
+
+                color={ 115 114 182 }
+                color2={ 220 220 220 }
+
+                b_joseuniano = {
+                }
+                b_joseuniano-ii = {
+                }
+            }
 		}
 		d_potosi = {
 
@@ -677,103 +710,6 @@ e_inca = {
 				b_capayan-ii = {
 			              }
 				b_capayan-iii = {
-				}
-			}
-		}
-		d_antofagasta = {
-
-			color={ 165 182 137 }
-			color2={ 220 220 220 }
-			
-			capital = 3959 # Antofagasta
-			
-			c_antofagasta = {
-
-				color={ 97 67 46 }
-				color2={ 220 220 220 }
-
-				holy_site=inti
-				holy_site=inti_reformed
-				
-				b_antofagasta = {
-				}
-				b_antofagasta-ii = {
-				}
-				b_antofagasta-iii = {
-				}
-				b_antofagasta-iv = {
-				}
-			}
-			c_arika = {
-
-				color={ 155 75 6 }
-				color2={ 220 220 220 }
-				
-				b_arika = {
-				}
-				b_arika-ii = {
-				}
-				b_arika-iii = {
-				}
-			}
-			c_iquique = {
-
-				color={ 78 44 148 }
-				color2={ 220 220 220 }
-				
-				b_iquique = {
-				}
-				b_iquique-ii = {
-			              }
-				b_iquique-iii = {
-				}
-			}
-			c_calama = {
-
-				color={ 58 194 161 }
-				color2={ 220 220 220 }
-				
-				b_calama = {
-				}
-				b_calama-ii = {
-			              }
-				b_calama-iii = {
-				}
-			}
-			c_qhupiyapu = {
-
-				color={ 158 174 71 }
-				color2={ 220 220 220 }
-				
-				b_qhupiyapu = {
-				}
-				b_qhupiyapu-ii = {
-			              }
-				b_qhupiyapu-iii = {
-				}
-			}
-			c_kukimpu = {
-
-				color={ 48 224 141 }
-				color2={ 220 220 220 }
-				
-				b_kukimpu = {
-				}
-				b_kukimpu-ii = {
-			              }
-				b_kukimpu-iii = {
-				}
-			}
-			c_picunche = {
-
-				color={ 68 94 171 }
-				color2={ 220 220 220 }
-				
-				b_picunche = {
-				}
-				b_picunche-ii = {
-			              }
-				b_picunche-iii = {
 				}
 			}
 		}
