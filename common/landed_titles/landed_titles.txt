@@ -3807,7 +3807,7 @@ e_hre = {                      # Created by special decision only
 				color = { 129 129 129 }
 			
 				b_mainz = {}
-				b_frankfurt = {}
+				b_frankfurt1 = {}
 				b_eppstein = {}
 				b_ingelheim = {}
 				b_mannheim = {}
@@ -4493,7 +4493,7 @@ e_german = {
 				
 				b_bremen = {}
 				b_hoya = {}
-				b_verden = {}
+				b_verden1 = {}
 				b_stade = {}
 				b_blumenthal = {}
 				b_ritzebuttel = {}
@@ -4631,7 +4631,6 @@ e_german = {
 				b_bentheim = {}
 				b_wildeshausen = {}
 				b_tecklenburg = {}
-				b_minden = {}
 				b_quackenbruck = {}
 				b_meppen = {}
 			}
@@ -4748,7 +4747,6 @@ e_german = {
 			
 				b_nijmegen = {}
 				b_zutphen = {}
-				b_deventer = {}
 				b_arnhem = {}
 				b_zwolle = {}
 				b_kampen = {}
@@ -4760,11 +4758,11 @@ e_german = {
 				color2={ 255 255 255 }
 
 				b_deventer = {}
-				b_zwolle = {}
+				b_zwolle1 = {}
 				b_enschede = {}
 				b_drenthe = {}
 				b_coevorden = {}
-				b_kampen = {}
+				b_kampen1 = {}
 				b_vollenhove = {}
 			}			
 			c_ostfriesland = {
@@ -14228,6 +14226,9 @@ e_slavinia = {
 				color={ 194 25 25 }
 				color2={ 255 255 255 }
 
+				holy_site = mani_slavic
+				holy_site = mani_slavic_reformed
+
 				german = Neutra
 				bohemian = Nitra
 				
@@ -18432,7 +18433,9 @@ e_russia = {
 				holy_site = slavic_pagan
 				holy_site = slavic_pagan_reformed
 				holy_site = finnish_pagan
-				holy_site = finnish_pagan_reformed								
+				holy_site = finnish_pagan_reformed
+				holy_site = mani_slavic
+				holy_site = mani_slavic_reformed
 
 				b_novgorod = {
 					swedish = "Holmgård"
@@ -40311,33 +40314,6 @@ b_mastropiero = {
 }
 
 b_tiepolo = {
-	culture = italian
-	religion = catholic
-}
-
-# GENOA:
-
-b_doria = {
-	culture = italian
-	religion = catholic
-}
-
-b_spinola = {
-	culture = italian
-	religion = catholic
-}
-
-b_grimaldi = {
-	culture = italian
-	religion = catholic
-}
-
-b_fieschi = {
-	culture = italian
-	religion = catholic
-}
-
-b_embriaco = {
 	culture = italian
 	religion = catholic
 }
