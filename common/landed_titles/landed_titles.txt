@@ -5635,30 +5635,6 @@ e_byzantium = {
 			religion_openly_hellenic_or_reformed_trigger = yes
 		}
 	}
-	
-	k_cyprus = {
-		color = { 85 138 236 }
-		capital = 757 # Famagusta
-
-		allow = {
-			conditional_tooltip = {
-				trigger = {
-					k_cyprus = {
-						is_titular = yes
-					}
-				}
-				k_cyprus = {
-					is_titular = no
-				}
-			}
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					religion_group = christian
-				}
-			}	
-		}
-	}
 
 	k_saruhan = {
 		color = { 144 171 225 }
@@ -6130,8 +6106,8 @@ e_byzantium = {
 				color2={ 255 255 20 }
 
 				b_astibus = {}
-				b_veles = {}
-				b_skopje = {}
+				b_veles1 = {}
+				b_skopje1 = {}
 				b_zegligovo = {}
 				b_presevo = {}
 				b_dukena = {}
