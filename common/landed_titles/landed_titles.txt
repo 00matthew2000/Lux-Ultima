@@ -24958,6 +24958,7 @@ e_sassanid = {
 				color2={ 255 255 255 }
 
 				holy_site = shiite
+				holy_site = haruri
 				
 				b_nadjaf = {
 				}
@@ -29730,6 +29731,7 @@ e_spain = {
 				andalusian_arabic = "Qurtubah"
 
 				holy_site = sunni
+				holy_site = ilm_islam
 				
 				b_cordoba = {
 					bedouin_arabic = "Qurtubah"
@@ -30642,7 +30644,8 @@ e_arabia = {
 					holy_site = kothar
 					holy_site = baal_monotheistic_reformed
 					holy_site = sol_islam
-					holy_site = sol_islam_reformed 
+					holy_site = sol_islam_reformed
+					holy_site = nyame
 			
 				b_tophel = {}
 				b_petra = {
@@ -38454,6 +38457,9 @@ e_central_africa = {
 			c_daura = {
 				color={ 185 105 205 }
 				color2={ 255 255 255 }
+				
+				holy_site = serer_reformed
+				holy_site = yoruba
 				
 				b_daura = {}
 				b_maradi = {}
