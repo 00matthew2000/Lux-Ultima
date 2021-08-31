@@ -1,13 +1,13 @@
 e_tejas = {
 
-	color={ 156 84 113 }
+	color={ 100 32 76 }
 	color2={ 220 220 220 }
 
 	capital = 3780 # Atakapa
 
 	k_caddo = {
 
-		color={ 145 174 52 }
+		color={ 120 147 25 }
 		color2={ 220 220 220 }
 
 		capital = 4818 # Efeketaspuy
@@ -44,7 +44,7 @@ e_tejas = {
 				color={ 125 164 83 }
 				color2={ 220 220 220 }
 				
-				b_nakodokhaes = {
+				b_nakogdokhaes = {
 				}
 				b_atohopkacet = {
 				}
@@ -65,10 +65,6 @@ e_tejas = {
 				color2={ 220 220 220 }
 				
 				b_efeketaspuyvfenaft = {
-				}
-				b_efeketaspuyvfenaft1 = {
-				}
-				b_efeketaspuyvfenaft2 = {
 				}
 				b_hotvletoyanlofrakko = {
 				}
@@ -200,7 +196,7 @@ e_tejas = {
 
 		d_tejas = {
 
-			color={ 65 44 202 }
+			color={ 56 44 202 }
 			color2={ 220 220 220 }
 
 			capital = 3780 # Atakapa
@@ -268,7 +264,7 @@ e_tejas = {
 		}
 		d_atakarankawa = {
 
-			color={ 65 44 202 }
+			color={ 65 202 44 }
 			color2={ 220 220 220 }
 
 			capital = 3780 # Atakapa
@@ -386,8 +382,6 @@ e_tejas = {
 				
 				b_manahodesa = {
 				}
-				b_manahodesa1 = {
-				}
 				b_goohoondahahikku = {
 				}
 			}
@@ -439,6 +433,18 @@ e_tejas = {
 				b_kamangantammayain = {
 				}
 			}
+			c_salta = {
+
+				color={ 218 161 154 }
+				color2={ 220 220 220 }
+				
+				b_salta = {
+				}
+				b_salta-ii = {
+			              }
+				b_salta-iii = {
+				}
+			}
 			c_akaltitempleistee = {
 
 				color={ 65 164 129 }
@@ -479,7 +485,7 @@ e_tejas = {
 	}
 	k_oklahoma = {
 
-		color={ 145 174 52 }
+		color={ 52 147 215 }
 		color2={ 220 220 220 }
 
 		capital = 4243 # tulsa
@@ -539,10 +545,6 @@ e_tejas = {
 				b_witcitejueohkav = {
 				}
 				b_oklatohcopokse = {
-				}
-				b_witcitejueohkav1 = {
-				}
-				b_witcitejueohkav2 = {
 				}
 				b_encakuseeten = {
 				}
@@ -655,7 +657,7 @@ e_tejas = {
 			color={ 65 44 202 }
 			color2={ 220 220 220 }
 
-			capital = 4243 # tulsa
+			capital = 4243 # Tulsa
 			
 			c_tulsa = {
 
@@ -767,14 +769,13 @@ e_tejas = {
 				b_anadartrix = {
 				}
 			}
-
 		}
     }
 }
 
 e_mississippi = {
 
-	color={ 156 84 113 }
+	color={ 250 93 108 }
 	color2={ 220 220 220 }
 
 	capital = 3780 # Atakapa
@@ -788,7 +789,7 @@ e_mississippi = {
 
 		d_louisiana = {
 
-			color={ 25 91 187 }
+			color={ 30 97 187 }
 			color2={ 220 220 220 }
 			
 			capital = 3788 # Chitimachi
@@ -870,7 +871,7 @@ e_mississippi = {
 		}
 		d_adai = {
 
-			color={ 25 91 187 }
+			color={ 125 30 122 }
 			color2={ 220 220 220 }
 			
 			capital = 3787 # Chitimachi
@@ -940,7 +941,7 @@ e_mississippi = {
 		}
 		d_natchitoches = {
 
-			color={ 25 91 187 }
+			color={ 80 177 24 }
 			color2={ 220 220 220 }
 			
 			capital = 3789 # natchitoches
@@ -982,8 +983,6 @@ e_mississippi = {
 				}
 				b_assunwvtehoy = {
 				}
-				b_ohkopvnetpivnne1 = {
-				}
 				b_keachiteja = {
 				}
 				b_erocatuerakko = {
@@ -1006,7 +1005,7 @@ e_mississippi = {
 				}
 			}
 		}
-	d_arkansas = {
+		d_arkansas = {
 
 			color={ 56 24 102 }
 			color2={ 220 220 220 }
@@ -1275,7 +1274,7 @@ e_mississippi = {
 	}
 	k_kheroshawnee = {
 
-		color={ 145 174 52 }
+		color={ 20 122 173 }
 		color2={ 220 220 220 }
 
 		capital = 4387 # chuckamauya
