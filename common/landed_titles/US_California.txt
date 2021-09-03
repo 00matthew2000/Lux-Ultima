@@ -12,7 +12,7 @@ e_california = {
 
 		capital = 4443 # Skitlaw (for now)
 
-		d_california = {
+		d_wintoon = {
 
 			color={ 5 214 31 }
 			color2={ 220 220 220 }
@@ -41,6 +41,930 @@ e_california = {
 				color2={ 220 220 220 }
 				
 				b_tutunti = {
+				}
+			}
+			c_yurok = {
+
+				color={ 16 85 85 }
+				color2={ 220 220 220 }
+				
+				b_yurok = {
+				}
+				b_wiyot = {
+				}
+				b_gwisok = {
+				}
+				b_pimir = {
+				}
+				b_dabot = {
+				}
+				b_molehl = {
+				}
+				b_hisgatgak = {
+				}
+			}
+			c_gool = {
+
+				color={ 2 59 6 }
+				color2={ 220 220 220 }
+				
+				b_gool = {
+				}
+				b_wiki = {
+				}
+				b_hikshori = {
+				}
+				b_kawot = {
+				}
+				b_moprakw = {
+				}
+				b_weitchpec = {
+				}
+				b_hoopa = {
+				}
+			}
+			c_tehamshasta = {
+
+				color={ 2 59 6 }
+				color2={ 220 220 220 }
+				
+				b_tehamshasta = {
+				}
+				b_sogohw = {
+				}
+				b_siswow = {
+				}
+				b_soulatluk = {
+				}
+				b_weott = {
+				}
+				b_sipiwi = {
+				}
+				b_sipiwehsehsi = {
+				}
+			}
+		}
+		d_maidu = {
+
+			color={ 67 85 53 }
+			color2={ 220 220 220 }
+			
+			capital = 4703 # Plumalassen (Temp maybe)
+
+			c_lasshasto = {
+
+				color={ 55 55 10 }
+				color2={ 220 220 220 }
+				
+				b_lasshasto = {
+				}
+				b_achomwai = {
+				}
+				b_tionesta = {
+				}
+				b_modoc = {
+				}
+				b_ahjumawi = {
+				}
+				b_sahapti = {
+				}
+				b_lassweot = {
+				}
+			}
+			c_plumalassen = {
+
+				color={ 15 35 115 }
+				color2={ 220 220 220 }
+				
+				b_plumalassen = {
+				}
+				b_kizis = {
+				}
+				b_nigamo = {
+				}
+				b_waba = {
+				}
+				b_tibik = {
+				}
+				b_nananweot = {
+				}
+				b_makwa = {
+				}
+			}
+			c_nevierrada = {
+
+				color={ 116 116 9 }
+				color2={ 220 220 220 }
+				
+				b_nevierrada = {
+				}
+				b_nyyhmy = {
+				}
+				b_maidu = {
+				}
+				b_esiban = {
+				}
+				b_cohasset = {
+				}
+				b_concow = {
+				}
+				b_mikiziw = {
+				}
+			}
+			c_buyyeubette = {
+
+				color={ 23 74 190 }
+				color2={ 220 220 220 }
+				
+				b_buyyeubette = {
+				}
+				b_waboz = {
+				}
+				b_nika = {
+				}
+				b_pijaki = {
+				}
+				b_pijakiwot = {
+				}
+				b_caribou = {
+				}
+				b_squaw = {
+				}
+			}
+			c_modor = {
+
+				color={ 168 174 204 }
+				color2={ 220 220 220 }
+				
+				b_modor2 = {
+				}
+				b_nomiaki = {
+				}
+				b_wabiwot = {
+				}
+				b_esquon = {
+				}
+				b_paskenta = {
+				}
+				b_lodoga = {
+				}
+				b_wagosh = {
+				}
+			}
+		}
+		d_yuki = {
+
+			color={ 121 104 14 }
+			color2={ 220 220 220 }
+			
+			capital = 4345 # Wiyol (Temp maybe)
+
+			c_wiyol = {
+
+				color={ 18 18 18 }
+				color2={ 220 220 220 }
+				
+				b_wiyol = {
+				}
+				b_yuki = {
+				}
+				b_pomo = {
+				}
+				b_miwok = {
+				}
+				b_kato = {
+				}
+				b_sinkiyone = {
+				}
+				b_wallaki = {
+				}
+			}
+			c_lakolusa = {
+
+				color={ 119 57 33 }
+				color2={ 220 220 220 }
+				
+				b_lakolusa = {
+				}
+				b_wappo = {
+				}
+				b_wiyolweot = {
+				}
+				b_huchnom = {
+				}
+				b_wailaki = {
+				}
+				b_sinkiuse = {
+				}
+				b_mattole = {
+				}
+			}
+			c_frashine = {
+
+				color={ 119 57 33 }
+				color2={ 220 220 220 }
+				
+				b_frashine = {
+				}
+				b_wintu = {
+				}
+				b_miwokwat = {
+				}
+				b_marin = {
+				}
+				b_kashaya = {
+				}
+				b_patwin = {
+				}
+				b_niekeni = {
+				}
+			}
+		}
+		d_patwin = {
+
+			color={ 99 146 3 }
+			color2={ 220 220 220 }
+			
+			capital = 4341 # Yolouki (Temp maybe)
+			
+			c_yubasutter = {
+
+				color={ 119 57 33 }
+				color2={ 220 220 220 }
+				
+				b_yubasutter = {
+				}
+				b_patweni = {
+				}
+				b_nisenan = {
+				}
+				b_patween = {
+				}
+				b_uwai = {
+				}
+				b_sukui = {
+				}
+				b_lopa = {
+				}
+			}
+			c_yolouki = {
+
+				color={ 43 157 63 }
+				color2={ 220 220 220 }
+				
+				b_yolouki = {
+				}
+				b_moso = {
+				}
+				b_liwai = {
+				}
+				b_uluisto = {
+				}
+				b_soneto = {
+				}
+				b_putato = {
+				}
+				b_imil = {
+				}
+			}
+			c_placarado = {
+
+				color={ 204 109 181 }
+				color2={ 220 220 220 }
+				
+				b_placarado = {
+				}
+				b_yedai = {
+				}
+				b_chunup = {
+				}
+				b_kohpah = {
+				}
+				b_palo = {
+				}
+				b_gapa = {
+				}
+				b_katail = {
+				}
+			}
+			c_napayolo = {
+
+				color={ 35 95 231 }
+				color2={ 220 220 220 }
+				
+				b_napayolo = {
+				}
+				b_suskal = {
+				}
+				b_aguasto = {
+				}
+				b_tokti = {
+				}
+				b_holokomi = {
+				}
+				b_sukiomi = {
+				}
+				b_bodo = {
+				}
+			}
+		}
+		d_me_wok = {
+
+			color={ 250 13 62 }
+			color2={ 220 220 220 }
+			
+			capital = 4705 # Sacramento (Temp maybe)
+
+			c_sacramento = {
+
+				color={ 168 1 5 }
+				color2={ 220 220 220 }
+				
+				b_sacramento = {
+				}
+				b_alaguali = {
+				}
+				b_chocuyen = {
+				}
+				b_omiomi = {
+				}
+				b_olema = {
+				}
+				b_guaulen = {
+				}
+				b_huimen = {
+				}
+			}
+			c_adamarcalvera = {
+
+				color={ 22 179 172 }
+				color2={ 220 220 220 }
+				
+				b_adamarcalvera = {
+				}
+				b_sierramiwok = {
+				}
+				b_novato = {
+				}
+				b_sonoma = {
+				}
+				b_huiali = {
+				}
+				b_toktoma = {
+				}
+				b_latrobe = {
+				}
+			}
+			c_joacmantecasiaus = {
+
+				color={ 59 151 33 }
+				color2={ 220 220 220 }
+				
+				b_joacmantecasiaus = {
+				}
+				b_sonomato = {
+				}
+				b_yosemite = {
+				}
+				b_ahwahnee = {
+				}
+				b_paiutes = {
+				}
+				b_numobe = {
+				}
+				b_tawalimnu = {
+				}
+			}
+			c_solanocontracostra = {
+
+				color={ 69 15 39 }
+				color2={ 220 220 220 }
+				
+				b_solanocontracostra = {
+				}
+				b_tomales = {
+				}
+				b_bodega = {
+				}
+				b_olompali = {
+				}
+				b_ohlone = {
+				}
+				b_petaluma = {
+				}
+				b_suisun = {
+				}
+			}
+		}
+		d_yokut = {
+
+			color={ 15 39 26 }
+			color2={ 220 220 220 }
+			
+			capital = 4336 # Maidu (Temp maybe)
+
+			c_wanhoash = {
+
+				color={ 143 163 183 }
+				color2={ 220 220 220 }
+				
+				b_wanhoash = {
+				}
+				b_siskiyou = {
+				}
+				b_klamath = {
+				}
+				b_okwanuchu = {
+				}
+				b_maidoc = {
+				}
+				b_yanawat = {
+				}
+				b_waika = {
+				}
+			}
+			c_patisin = {
+
+				color={ 44 53 81 }
+				color2={ 220 220 220 }
+				
+				b_patisin = {
+				}
+				b_mutsun = {
+				}
+				b_tamyen = {
+				}
+				b_chochenyo = {
+				}
+				b_yokuts = {
+				}
+				b_yokmath = {
+				}
+				b_konkow = {
+				}
+			}
+			c_alpermanro = {
+
+				color={ 37 38 199 }
+				color2={ 220 220 220 }
+				
+				b_alpermanro = {
+				}
+				b_yana = {
+				}
+				b_atsugewi = {
+				}
+				b_achumawi = {
+				}
+				b_shasta = {
+				}
+				b_wintath = {
+				}
+				b_yukian = {
+				}
+			}
+			c_fresnoshone = {
+
+				color={ 71 221 203 }
+				color2={ 220 220 220 }
+				
+				b_fresnoshone = {
+				}
+				b_koowsup = {
+				}
+				b_malpwan = {
+				}
+				b_tamsta = {
+				}
+				b_chulamni = {
+				}
+				b_yowlumne = {
+				}
+				b_tubatulabal = {
+				}
+			}
+			c_mitsak = {
+
+				color={ 177 194 215 }
+				color2={ 220 220 220 }
+				
+				b_mitsak = {
+				}
+				b_tuhohi = {
+				}
+				b_waina = {
+				}
+				b_sukwurnu = {
+				}
+				b_chunut = {
+				}
+				b_hoyima = {
+				}
+				b_koveti = {
+				}
+			}
+			c_maidu = {
+
+				color={ 209 29 15 }
+				color2={ 220 220 220 }
+				
+				b_maidu = {
+				}
+				b_bokninuwad = {
+				}
+				b_balwisha = {
+				}
+				b_kumachisi = {
+				}
+				b_gawia = {
+				}
+				b_waksachi = {
+				}
+				b_nutunutu = {
+				}
+			}
+			c_sudrapaiute = {
+
+				color={ 195 199 199 }
+				color2={ 220 220 220 }
+				
+				b_sudrapaiute = {
+				}
+				b_pitanisha = {
+				}
+				b_imono = {
+				}
+				b_owensa = {
+				}
+				b_yaudanchi = {
+				}
+				b_bokninuwad = {
+				}
+				b_waksachich = {
+				}
+			}
+		}
+		d_ennesen = {
+
+			color={ 45 115 9 }
+			color2={ 220 220 220 }
+			
+			capital = 4696 # En-ne-sen (Temp maybe)
+
+			c_nacmiento = {
+
+				color={ 13 142 157 }
+				color2={ 220 220 220 }
+				
+				b_nacmiento = {
+				}
+				b_ehmahl = {
+				}
+				b_quiguil = {
+				}
+				b_swaleko = {
+				}
+				b_skeyem = {
+				}
+				b_matihlshe = {
+				}
+				b_tsalakaka = {
+				}
+			}
+			c_pomoshone = {
+
+				color={ 203 109 22 }
+				color2={ 220 220 220 }
+				
+				b_pomoshone = {
+				}
+				b_xaxaamonga = {
+				}
+				b_amahmutsun = {
+				}
+				b_mewuk = {
+				}
+				b_patwin = {
+				}
+				b_waashiw = {
+				}
+				b_excelen = {
+				}
+			}
+		}
+		d_chumash = {
+
+			color={ 133 255 19 }
+			color2={ 220 220 220 }
+			
+			capital = 4330 # Esselen (Temp maybe)
+
+			c_esselen = {
+
+				color={ 63 94 115 }
+				color2={ 220 220 220 }
+				
+				b_esselen = {
+				}
+				b_sisolop = {
+				}
+				b_tuxmu = {
+				}
+				b_anaxuwi = {
+				}
+				b_kuyamu = {
+				}
+				b_lisil = {
+				}
+				b_sahucu = {
+				}
+			}
+			c_lastonanon = {
+
+				color={ 104 35 103 }
+				color2={ 220 220 220 }
+				
+				b_lastonanon = {
+				}
+				b_stipu = {
+				}
+				b_laxsakupi = {
+				}
+				b_amuu = {
+				}
+				b_sipuk = {
+				}
+				b_saqsiyol = {
+				}
+				b_guyam = {
+				}
+			}
+			c_salmap = {
+
+				color={ 177 194 215 }
+				color2={ 220 220 220 }
+				
+				b_salmap = {
+				}
+				b_simomo = {
+				}
+				b_saptuhuy = {
+				}
+				b_kimistax = {
+				}
+				b_alalhew = {
+				}
+				b_talopop = {
+				}
+				b_humaliwo = {
+				}
+			}
+		}
+		d_tecachapi = {
+
+			color={ 7 106 43 }
+			color2={ 220 220 220 }
+			
+			capital = 4333 # Mitsak (Temp maybe)
+			
+			c_mono = {
+
+				color={ 98 10 10 }
+				color2={ 220 220 220 }
+				
+				b_mono = {
+				}
+				b_nakwarpave = {
+				}
+				b_kastiq = {
+				}
+				b_tecuya = {
+				}
+				b_yeetipuu = {
+				}
+				b_tehechita = {
+				}
+				b_konoilkin = {
+				}
+			}
+			c_yakuto = {
+
+				color={ 167 13 78 }
+				color2={ 220 220 220 }
+				
+				b_yakuto = {
+				}
+				b_peelakawi = {
+				}
+				b_tulonoya = {
+				}
+				b_tubaltulabal = {
+				}
+				b_pahkanapul = {
+				}
+				b_palagewan = {
+				}
+				b_toloim = {
+				}
+			}
+			c_panaaint = {
+
+				color={ 133 49 172 }
+				color2={ 220 220 220 }
+				
+				b_panaaint = {
+				}
+				b_telamui = {
+				}
+				b_wolabi = {
+				}
+				b_wowol = {
+				}
+				b_apiachi = {
+				}
+				b_aitigua = {
+				}
+				b_chimono = {
+				}
+			}
+		}
+		d_pimugna = {
+
+			color={ 4 69 102 }
+			color2={ 220 220 220 }
+			
+			capital = 4325 # Luiteno (Temp maybe)
+			
+			c_alameda = {
+
+				color={ 105 108 43 }
+				color2={ 220 220 220 }
+				
+				b_alameda = {
+				}
+			}
+			c_luiteno = {
+
+				color={ 18 18 18 }
+				color2={ 220 220 220 }
+				
+				b_luiteno = {
+				}
+			}
+		}
+		d_tongva = {
+
+			color={ 241 18 93 }
+			color2={ 220 220 220 }
+			
+			capital = 4322 # Serrano (Temp maybe)
+
+			c_chuponk = {
+
+				color={ 28 84 84 }
+				color2={ 220 220 220 }
+				
+				b_chuponk = {
+				}
+				b_haramoknga = {
+				}
+				b_chokishnga = {
+				}
+				b_siutcanga = {
+				}
+				b_saanga = {
+				}
+				b_kuruvanga = {
+				}
+				b_topanga = {
+				}
+			}
+			c_mianion = {
+
+				color={ 44 35 235 }
+				color2={ 220 220 220 }
+				
+				b_mianion = {
+				}
+				b_lopuuknga = {
+				}
+				b_hotuuknga = {
+				}
+				b_pasbenga = {
+				}
+				b_shwaanga = {
+				}
+				b_povunga = {
+				}
+				b_mutuucheynga = {
+				}
+			}
+			c_cuhuillo = {
+
+				color={ 55 55 55 }
+				color2={ 220 220 220 }
+				
+				b_cuhuillo = {
+				}
+				b_amaunga = {
+				}
+				b_moyonga = {
+				}
+				b_temecula = {
+				}
+				b_pechanga = {
+				}
+				b_kuuki = {
+				}
+				b_paayaxchi = {
+				}
+			}
+			c_chomehioux = {
+
+				color={ 181 6 14 }
+				color2={ 220 220 220 }
+				
+				b_chomehioux = {
+				}
+				b_vanyume = {
+				}
+				b_moyonga = {
+				}
+				b_tokya = {
+				}
+				b_hometwol = {
+				}
+				b_yauelmani = {
+				}
+				b_mayaintalap = {
+				}
+			}
+			c_serrano = {
+
+				color={ 51 255 51 }
+				color2={ 220 220 220 }
+				
+				b_serrano = {
+				}
+				b_tacikoho = {
+				}
+				b_kapelusnac = {
+				}
+				b_cipowhi = {
+				}
+				b_kamulus = {
+				}
+				b_simiyi = {
+				}
+				b_huwam = {
+				}
+			}
+		}
+		d_acjachemen = {
+
+			color={ 59 161 12 }
+			color2={ 220 220 220 }
+			
+			capital = 4319 # Diegueno (Temp maybe)
+
+			c_diegueno = {
+
+				color={ 177 142 163 }
+				color2={ 220 220 220 }
+				
+				b_diegueno = {
+				}
+				b_paxauxa = {
+				}
+				b_isantcanga = {
+				}
+				b_torojoatnga = {
+				}
+				b_kumeyaay = {
+				}
+				b_cocopa = {
+				}
+				b_paipai = {
+				}
+			}
+			c_mojave = {
+
+				color={ 119 61 211 }
+				color2={ 220 220 220 }
+				
+				b_mojave = {
+				}
+				b_tipal = {
+				}
+				b_ahamacau = {
+				}
+				b_miwuk = {
+				}
+				b_hualapai = {
+				}
+				b_coyotero = {
+				}
+				b_tohono = {
 				}
 			}
 		}
