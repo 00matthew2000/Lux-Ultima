@@ -34,9 +34,86 @@ maranon = {
 
 		mother_name_chance = 0
 
-
 		modifier = default_culture_modifier
 		
+	}
+	chachapoyan = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.16 0.43 0.97 } 
+
+		male_names = { Anquimarca Atoc Cayo Coyllas Curiatao Cusichaca Cuyuchi Guaritopa Huachuri Huaypalcon Luyes Marcavilca Mayta Ninan Orco Pascac Pomaguala Pumi Quispe Ruminavi Sahuaraura Sopa Surandaman Taraque Titu Topa Tucuycuyche Umu Usca Varanca Villac Yamqui Yupanqui Zambiza Zopahua }
+		female_names = { Ana Axomamma Cavillaca Chia China Kantuta Maiara Nina }
+ 
+        from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
+	}  
+	kanari = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.16 0.43 0.97 } 
+
+		male_names = { Anquimarca Atoc Cayo Coyllas Curiatao Cusichaca Cuyuchi Guaritopa Huachuri Huaypalcon Luyes Marcavilca Mayta Ninan Orco Pascac Pomaguala Pumi Quispe Ruminavi Sahuaraura Sopa Surandaman Taraque Titu Topa Tucuycuyche Umu Usca Varanca Villac Yamqui Yupanqui Zambiza Zopahua }
+		female_names = { Ana Axomamma Cavillaca Chia China Kantuta Maiara Nina }
+ 
+        from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
+	}  
+	huancabamba = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.16 0.43 0.97 } 
+
+		male_names = { Anquimarca Atoc Cayo Coyllas Curiatao Cusichaca Cuyuchi Guaritopa Huachuri Huaypalcon Luyes Marcavilca Mayta Ninan Orco Pascac Pomaguala Pumi Quispe Ruminavi Sahuaraura Sopa Surandaman Taraque Titu Topa Tucuycuyche Umu Usca Varanca Villac Yamqui Yupanqui Zambiza Zopahua }
+		female_names = { Ana Axomamma Cavillaca Chia China Kantuta Maiara Nina }
+ 
+        from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
 	}
 }
 
@@ -83,6 +160,32 @@ andean = {
 
 		modifier = default_culture_modifier
 		
+	}
+	huaylas = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.22 0.22 0.22 } 
+
+		male_names = { Anquimarca Atahualpa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Huáscar Luyes Marcavilca Pachacútec Pascac Pomaguala Ruminavi Sahuaraura Surandaman Taraque Tucuycuyche Viracocha Yupanqui Zambiza Zopahua "Atoc Sopa" "Cayo Topa" "Huayna Cápac" "Inca Roca" "Manco Cápac" "Ninan Cuyuchi" "Orco Varanca" "Pumi Sopa" "Quispe Titu" "Sayri Tupac" "Túpac Amaru" "Túpac Hualpa" "Túpac Yupanqui" "Titu Cusi Yupanqui" "Usca Curiatao" "Villac Umu" "Yahuar Hacuac" "Yamqui Mayta" }
+		female_names = { Ana Axomamma Cavillaca Kantuta Maiara Nina }
+ 
+        from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
 	}
 	aimara = {
 	
@@ -158,7 +261,85 @@ andean = {
 
 		modifier = default_culture_modifier
 		
-	}		
+	}
+	chiribaya = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.16 0.43 0.97 } 
+
+		male_names = { Anquimarca Atoc Cayo Coyllas Curiatao Cusichaca Cuyuchi Guaritopa Huachuri Huaypalcon Luyes Marcavilca Mayta Ninan Orco Pascac Pomaguala Pumi Quispe Ruminavi Sahuaraura Sopa Surandaman Taraque Titu Topa Tucuycuyche Umu Usca Varanca Villac Yamqui Yupanqui Zambiza Zopahua }
+		female_names = { Ana Axomamma Cavillaca Chia China Kantuta Maiara Nina }
+ 
+        from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
+	}	
+	culle = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.75 0.71 0.19 } 
+
+		male_names = { Aiyotechapun Buvaovamu Chumtiku Cuyuchi Docoshamu Draytonamu Ehenymacu Gusmango Ilsayunamu Jotiantikaka Katitika Litun Melantonan Nartamamu Nehuametepun Opolcynamun Orco Pacatmamu Puznaymun Tacaynamo Taracun Troynuremo Urtyantemu Vetsalynun Yetuniamu Zergoetanu "Anco Coyuch" "Caja Cápac" "Caja Cimcim" "Cama Bergu" "Chumun Caur" "Felan Tamuc" "Guaman Chumu" "Guari Cur" "Michan Caman" "Michan Chimor" "Muhton Belan" "Nancen Pico" "Relyen Padnu" "Seran Tugun" "Seton Apac" }
+		female_names = { Ana Axomamma Cavillaca Kantuta Maiara Nina }
+ 
+        from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
+	}
+	nazca = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.12 0.14 0.65 } 
+
+		male_names = { Anquimarca Atahualpa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Huáscar Luyes Marcavilca Pachacútec Pascac Pomaguala Ruminavi Sahuaraura Surandaman Taraque Tucuycuyche Viracocha Yupanqui Zambiza Zopahua "Atoc Sopa" "Cayo Topa" "Huayna Cápac" "Inca Roca" "Manco Cápac" "Ninan Cuyuchi" "Orco Varanca" "Pumi Sopa" "Quispe Titu" "Sayri Tupac" "Túpac Amaru" "Túpac Hualpa" "Túpac Yupanqui" "Titu Cusi Yupanqui" "Usca Curiatao" "Villac Umu" "Yahuar Hacuac" "Yamqui Mayta" }
+		female_names = { Ana Axomamma Cavillaca Kantuta Maiara Nina }
+ 
+        from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
+	}
 	chimuan = {
 	
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
@@ -324,6 +505,35 @@ tupi = {
 je = {
 	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 	
+	charruan = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.83 0.15 0.4 } 
+
+		male_names = { Abayubá Itanú Jasymimbí Perú Senacua Tabaré Tacuabé Vaimaca Vaimaca-Pirú Yrupé Zapicán }
+		female_names = { Azelene Bartira Jougousa Porasy Potira } 
+ 
+ 
+        
+ 
+        from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
+	}
 	ge = {
 	
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }

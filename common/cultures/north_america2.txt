@@ -349,6 +349,43 @@ iroquoian = {
 		modifier = default_culture_modifier
 
 	}
+
+	neutral = {
+
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+
+		color = { 0.45 0.31 0.11 }
+
+
+		male_names = { 
+			Achiout Anachout Aqueia Aupaumut Cageaga Chishekoa Dagaheari Eootenyootauook Gyantwaia Gyasota Hickonquash 			Honayawus Hotoshahen Jishkaaga Joonondauwanonch Kanatsoyh Kannasseee Katarioniecha Kaujeagaonh 			Kaukondanaiya Kaunehshonggoo Kaungyanehquee Kayenthoghke Kendarindgon Kenjauaugus Kenneronkwa 			Kiandogewa Kiantwhauka Kiatulaho Kiondushowa Kiyauhaonh Kodjeote Kohnyeaugaong Konneatorteeooh 			Konneyoowesot Konoohqung Konyootiayoo Kosshishtowau Kussauwatau Neeshonshuk Nondiyauka Oheadanghton 			Onaahhah Oncahye Oneatorleeooh Onecnsetee Oneshauee Onnonghsawenghti Onogwendahonji Ononyeahnee 			Ooduhtsait Oojaugenta Ootaguasso Ootaujeaugenth Oraghoaenendagen Oronhyatekha Otachsaka Otyadonenghti 			Ounnashattakau Owenewa Sauhtakaongyees Sawedowa Sequidonguquee Sessewa Shaguiesa Sicahowa Skenendoa 			Snoachshowa Soaheas Soggooyawauthau Sohhonteoquent Sonhyoowauna Sooayoowau Soonongjoowau 			Soononhquaukau Soonoohshoowau Sooshaoowau Taoundaudeesh Tarondawagon Tauhoondos Tayagonendagighti 			Teeroos Tehongyagauna Tehongyoowush Tehonwaenghrigagi Teiorhenhsere Tekahias Telenemut Tewanias Thaoowaunias 			Thayendanega Theyanoguin Tioohquaottakauna Toheonggo Tokenhyouau Tossonggaulolus Touighnatogon Tuggehshotta 			Twaukewasha 
+		}
+		female_names = { 
+			Alliquippa Genessee Konwatsitiaienni Satékon Tekakwitha Tyonajanegen 
+		}
+
+		from_dynasty_prefix = ""
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+
+		pat_grf_name_chance = 50
+
+		mat_grf_name_chance = 0
+		
+        father_name_chance = 0
+
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 20
+
+		mother_name_chance = 0
+
+
+		modifier = default_culture_modifier
+
+	}
 	
 	susquehannock = {
 
@@ -720,43 +757,88 @@ carribean = {
 
 		modifier = default_culture_modifier
 		
-	}
-	maipurean = {
-	
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		
-		color = { 0.67 0.37 0.85 }	
-		
-		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
-			Wiwakaleme Haubariria Toratora Amorotahe Shoko Laliwa Arah Arata Toruí Mbicy 
-		}
-		female_names = {
-			Hayá Isani Takuiba Twengga
-		}
-
-		from_dynasty_prefix = ""
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-
-		pat_grf_name_chance = 50
-
-		mat_grf_name_chance = 0
-		
-        father_name_chance = 0
-
-
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-
-		pat_grm_name_chance = 20
-		mat_grm_name_chance = 20
-
-		mother_name_chance = 0
-
-
-		modifier = default_culture_modifier
-		
 	}	
+}
+
+maipurean_group = {
+	graphical_culture = { mesoamericangfx mongolgfx muslimgfx} 
+	
+	arawak = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.16 0.43 0.97 } 
+
+		male_names = { Amorotahe Arah Arata Áhari Ebedimu Gunfuli Haubariria Ilumani Kaigouchi Laliwa Mbicy Pirijá Semén Shoko Toratora Toruí Wiwakaleme }
+		female_names = { Hayá Isani Takuiba Twengga }
+		
+		from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
+	}  
+	guajiro = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.16 0.43 0.97 } 
+
+		male_names = { Amorotahe Arah Arata Haubariria Kaigouchi Laliwa Mbicy Pirijá Shoko Toratora Toruí Wiwakaleme }
+		female_names = { Takuiba Twengga }
+ 
+        from_dynasty_prefix = "" 
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
+	}  
+	maipurean = {
+        graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+        color = { 0.16 0.43 0.97 } 
+
+		male_names = { Amorotahe Arah Arata Áhari Ebedimu Gunfuli Haubariria Ilumani Kaigouchi Laliwa Mbicy Pirijá Semén Shoko Toratora Toruí Wiwakaleme }
+		female_names = { Hayá Isani Takuiba Twengga }
+
+        # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.  
+
+        pat_grf_name_chance = 50 
+ 
+        mat_grf_name_chance = 0 
+  
+        father_name_chance = 0 
+
+        # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100. 
+ 
+        pat_grm_name_chance = 25 
+        mat_grm_name_chance = 25
+ 
+        mother_name_chance = 0 
+
+        modifier = default_culture_modifier
+	}  
 }
 
 aridoamerican = {
