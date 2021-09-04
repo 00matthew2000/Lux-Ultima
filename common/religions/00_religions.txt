@@ -382,7 +382,7 @@ anatolian_group = {
 		}
 		
 		can_call_crusade = yes
-		autocephaly = yes
+		pentarchy = yes
 		peace_prestige_loss = yes
 		raised_vassal_opinion_loss = no
 		short_reign_opinion_year_mult = 3 # The default in LI is 5
@@ -475,7 +475,7 @@ east_african_group = {
 		}
 		
 		can_call_crusade = yes
-		autocephaly = yes
+		pentarchy = yes
 		aggression = 2.0
 		allow_looting = yes
 #		allow_viking_invasion = yes
@@ -1413,7 +1413,7 @@ pagan_group = {
 			land_morale = 1.50
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		aggression = 2.0
 		allow_looting = yes
 #		allow_viking_invasion = yes
@@ -7075,13 +7075,13 @@ chinese_group = {
 			land_morale = 0.60
 		}
 		
-		aggression = 1.5
 		can_call_crusade = no
-		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
 		max_consorts = 3
 		priests_can_marry = yes
-		hard_to_convert = yes
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
 		short_reign_opinion_year_mult = 4 # The default in LI is 5
+		hard_to_convert = yes
 		
 		religious_clothing_head = 6
 		religious_clothing_priest = 4
@@ -9957,7 +9957,7 @@ christian = {
 			land_morale = 0.50
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -10145,7 +10145,7 @@ christian = {
 			land_morale = 0.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
@@ -10282,7 +10282,7 @@ christian = {
 			land_morale = 0.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -10473,7 +10473,7 @@ christian = {
 			land_morale = 0.50
 		}
 		
-		autocephaly = yes 
+		pentarchy = yes
 		investiture = yes
 		can_call_crusade = no
 		can_excommunicate = yes
@@ -10575,7 +10575,7 @@ christian = {
 			land_morale = 0.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		investiture = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
@@ -10884,7 +10884,7 @@ christian = {
 		}
 		
 		allow_viking_invasion = yes
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -10960,7 +10960,7 @@ christian = {
 			land_morale = 0.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -11134,7 +11134,7 @@ christian = {
 			land_morale = 0.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		investiture = no
 		can_call_crusade = yes
 		can_excommunicate = yes
@@ -11232,7 +11232,7 @@ christian = {
 			land_morale = 0.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -11330,7 +11330,7 @@ christian = {
 			land_morale = 0.30
 		}
 		
-		autocephaly = yes #Removed, with autocephaly, religious heads are kind of useless - DR / re-introduced following Heads overhaul by FG - Numahr
+		pentarchy = yes
 		investiture = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
@@ -11530,7 +11530,7 @@ christian = {
 			land_morale = 0.50
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -12032,7 +12032,7 @@ christian = {
 			land_morale = 0.30
 		}
 		
-		autocephaly = yes 
+		pentarchy = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -12091,7 +12091,7 @@ christian = {
 			land_morale = 0.30
 		}
 		
-		autocephaly = yes 
+		pentarchy = yes
 		can_call_crusade = yes
 		can_grant_claim = yes
 		can_excommunicate = yes
@@ -14058,7 +14058,7 @@ graecoroman_group = {
 			land_morale = 1.60
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		priests_can_marry = yes
 		raised_vassal_opinion_loss = no
@@ -14138,7 +14138,7 @@ graecoroman_group = {
 			land_morale = 0.50
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		independence_war_score_bonus = 20
@@ -14245,7 +14245,7 @@ graecoroman_group = {
 			land_morale = 1.50
 		}
 		
-		autocephaly = yes 
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -14441,7 +14441,7 @@ graecoroman_group = {
 			land_morale = 1.10
 		}
 		bs_marriage = yes
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
 		investiture = no
@@ -17577,7 +17577,7 @@ mand_group = {
 			church_opinion = 20
 #			general_opinion = -27
 #			same_religion_opinion = 43
-			infidel_opinion = -63
+#			infidel_opinion = -63
 #			heretic_opinion = -53
 			castle_vassal_tax_modifier = 0.10
 			city_vassal_tax_modifier = -0.20
@@ -18412,7 +18412,7 @@ mithra_group = {
 			land_morale = 1.00
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -18494,7 +18494,7 @@ mithra_group = {
 			land_morale = 1.00
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -18527,7 +18527,7 @@ mithra_group = {
 			GOD_EOSPHOROS LIGHTBRINGER THE_LIBERATOR
 		}
 		evil_god_names = {
-			GOD_YAHWEH OPRESSOR_GOD CHRIST
+			GOD_YAHWEH OPPRESSOR_GOD CHRIST
 		}
 		
 		character_modifier = {
@@ -18573,7 +18573,7 @@ mithra_group = {
 			land_morale = 1.00
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = yes
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -20340,7 +20340,7 @@ neoplato_group = {
 			land_morale = 1.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_grant_divorce = yes
 		investiture = no
@@ -20427,7 +20427,7 @@ neoplato_group = {
 			land_morale = 1.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		investiture = no
 		short_reign_opinion_year_mult = 4 # The default in LI is 5
@@ -20508,7 +20508,7 @@ neoplato_group = {
 			land_morale = 1.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		investiture = no
 		short_reign_opinion_year_mult = 4 # The default in LI is 5
@@ -20585,7 +20585,7 @@ neoplato_group = {
 			land_morale = 1.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		investiture = no
 		short_reign_opinion_year_mult = 4 # The default in LI is 5
@@ -20663,7 +20663,7 @@ neoplato_group = {
 			land_morale = 1.30
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		investiture = no
 		short_reign_opinion_year_mult = 4 # The default in LI is 5
@@ -20741,7 +20741,7 @@ neoplato_group = {
 			land_morale = 1.70
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		investiture = no
 		hard_to_convert = yes
@@ -22719,7 +22719,7 @@ sol_group = {
 			land_morale = 1.50
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		aggression = 1.5
 		can_call_crusade = no
 		independence_war_score_bonus = 10
@@ -22839,7 +22839,7 @@ sol_group = {
 			land_morale = 0.50
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		raised_vassal_opinion_loss = no
 		short_reign_opinion_year_mult = 2 # The default in LI is 5
@@ -22966,7 +22966,7 @@ sol_group = {
 			land_morale = 1.55
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		priests_can_marry = yes
 		raised_vassal_opinion_loss = no
@@ -23112,7 +23112,7 @@ sol_group = {
 			land_morale = 1.50
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -23233,7 +23233,7 @@ sol_group = {
 			land_morale = 1.50
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -23350,7 +23350,7 @@ sol_group = {
 			land_morale = 0.75
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -23442,7 +23442,7 @@ sol_group = {
 			land_morale = 1.50
 		}
 		bs_marriage = yes
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		crusade_name = LUMINOUS_MARCH
 		can_excommunicate = yes
@@ -23556,7 +23556,7 @@ sol_group = {
 		}
 		
 		aggression = 1.5
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -23680,7 +23680,7 @@ sol_group = {
 			land_morale = 0.50
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		investiture = no
 		can_call_crusade = no
 		can_excommunicate = yes
@@ -23813,7 +23813,7 @@ sol_group = {
 		allow_looting = yes
 #		allow_viking_invasion = yes
 		allow_rivermovement = yes
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -23945,7 +23945,7 @@ sol_group = {
 		aggression = 2.0
 		allow_looting = yes
 #		allow_viking_invasion = yes
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
@@ -24073,7 +24073,7 @@ sol_group = {
 			land_morale = 0.20
 		}
 		
-		autocephaly = yes
+		pentarchy = yes
 		can_call_crusade = no
 		can_excommunicate = yes
 		can_grant_claim = yes
