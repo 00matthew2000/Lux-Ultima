@@ -1,13 +1,13 @@
 e_consasurplata = {
 
-	color={ 254 223 0 }
+	color={ 41 114 15 }
 	color2={ 220 220 220 }
 
 	capital = 4013 # Santiago
 
 	k_bolivay = { 
 
-		color={ 151 132 0 }
+		color={ 22 122 66 }
 		color2={ 220 220 220 }
 
 		capital = 4249 # canichana
@@ -40,6 +40,30 @@ e_consasurplata = {
 				b_choqueyapu = {
 				}
 			}
+			c_tacana = {
+
+				color={ 75 194 159 }
+				color2={ 220 220 220 }
+				
+				b_uyunitac = {
+				}
+				b_tacapotosi = {
+				}
+				b_tacazon = {
+				}
+			}
+			c_cavineno = {
+
+				color={ 115 144 118 }
+				color2={ 220 220 220 }
+				
+				b_oruro = {
+				}
+				b_lagoopa = {
+				}
+				b_cavineno = {
+				}
+			}
 			c_pandoliva = {
 
 				color={ 35 44 89 }
@@ -49,7 +73,7 @@ e_consasurplata = {
 				}
 				b_coijiba = {
 				}
-				b_pandoliva-iii = {
+				b_dificiles = {
 				}
 			}
 			c_pacayuaca = {
@@ -96,19 +120,6 @@ e_consasurplata = {
 				b_chocomayaya = {
 				}
 			}
-			c_cavineno = {
-
-				color={ 115 144 118 }
-				color2={ 220 220 220 }
-				
-				b_oruro = {
-				}
-				b_lagoopa = {
-				}
-				b_cavineno = {
-				}
-			}
-
 		}
 		d_canichana = {
 
@@ -129,18 +140,6 @@ e_consasurplata = {
 				b_oropeza = {
 				}
 				b_charcus = {
-				}
-			}
-			c_tacana = {
-
-				color={ 75 194 159 }
-				color2={ 220 220 220 }
-				
-				b_uyunitac = {
-				}
-				b_tacapotosi = {
-				}
-				b_tacazon = {
 				}
 			}
 			c_chimortan = {
@@ -167,32 +166,11 @@ e_consasurplata = {
 				b_camtarijaria = {
 				}
 			}
-			c_more = {
-				color = { 87 90 222 }
-				
-				danish = Møre
-				norwegian = Møre
-				
-				b_kalmar = {
-				}
-				b_kalmar_hus = {
-				}
-				b_torsas = {
-				}
-				b_rostocka = {
-				}
-				b_soderakra = {
-				}
-				b_madesjo = {
-				}
-				b_alem = {
-				}
-			}
 		}
    }
 	k_paraguay = {
 
-		color={ 106 85 0 }
+		color={ 136 185 15 }
 		color2={ 220 220 220 }
 
 		capital = 4254 # 
@@ -336,17 +314,11 @@ e_consasurplata = {
 				color={ 52 71 179 }
 				color2={ 220 220 220 }
 				
-				b_sscuncion = {
+				b_ascuncion = {
 				}
 				b_vietelas = {
 				}
 				b_caacube = {
-				}
-				b_sscuncionora = {
-				}
-				b_vietelasla = {
-				}
-				b_caacubia = {
 				}
 			}
 			c_paraguari = {
@@ -377,7 +349,7 @@ e_consasurplata = {
 	}
 	k_uruguay = {
 
-		color={ 88 183 32 }
+		color={ 144 24 6 }
 		color2={ 220 220 220 }
 
 		capital = 3980 # 
@@ -758,7 +730,7 @@ e_consasurplata = {
 				color={ 135 117 43 }
 				color2={ 220 220 220 }
 				
-				b_entreriotina = {
+				b_entreriotrina = {
 				}
 				b_parana = {
 				}
@@ -803,6 +775,20 @@ e_consasurplata = {
 				b_clorinda = {
 				}
 				b_pirane = {
+				}
+			}
+			c_xokleng = {
+
+				color={ 35 224 153 }
+				color2={ 220 220 220 }
+				
+				b_xokleng = {
+				}
+				b_aweikoma = {
+				}
+				b_kaingang = {
+				}
+				b_iguazu = {
 				}
 			}
 		}
@@ -885,16 +871,20 @@ e_consasurplata = {
 				b_bauilules = {
 				}
 			}
-			c_cuenca = {
+			c_cuyo = {
 
 				color={ 165 24 127 }
 				color2={ 220 220 220 }
 				
-				b_santianatuya = {
+				b_huarpes = {
 				}
-				b_choyagrandbanda = {
+				b_diaguitas = {
 				}
-				b_guasyrivadas = {
+				b_capazanes = {
+				}
+				b_olongastas = {
+				}
+				b_yacampis = {
 				}
 			}
 		}
@@ -904,7 +894,7 @@ e_consasurplata = {
 			color2={ 220 220 220 }
 			
 			capital = 4305 # Euairakahakial
-			#Pahimpita
+			
 			c_camamcal = {
 
 				color={ 168 137 61 }
@@ -917,6 +907,20 @@ e_consasurplata = {
 				b_casercastel = {
 				}
 				b_verjavia = {
+				}
+			}
+			c_macaclita = {
+
+				color={ 168 137 61 }
+				color2={ 220 220 220 }
+				
+				b_macaclita = {
+				}
+				b_naure = {
+				}
+				b_siton = {
+				}
+				b_caminigas = {
 				}
 			}
 			c_euairakahakial = {
