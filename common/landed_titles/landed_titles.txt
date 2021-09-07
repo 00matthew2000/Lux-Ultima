@@ -4090,8 +4090,6 @@ e_hre = {                      # Created by special decision only
 			c_koln = {
 				color={ 141 141 141 }
 				color2={ 255 255 255 }
-
-				holy_site = catholic
 				
 				norse = Köln
 				swedish = Köln
@@ -4135,6 +4133,7 @@ e_hre = {                      # Created by special decision only
 			}
 			c_julich = {
 				color = { 138 138 138 }
+				
 				holy_site = catholic
 				holy_site = pelagian
 				holy_site = semipelagian
@@ -29552,8 +29551,6 @@ e_spain = {
 				color = { 243 158 51}
 				color2={ 255 255 255 }
 				
-				holy_site = catholic
-				
 				b_santiago = {
 				}
 				b_vigo = {
@@ -43647,7 +43644,6 @@ e_deccan = {
 			c_balkonda = {
 				color = { 48 202 136 }
 				
-				b_vemulavada = {}
 				b_edurgatla = {}
 				b_shatrajpally = {}
 				b_chekkapally = {}
@@ -44334,7 +44330,6 @@ e_deccan = {
 			c_medak = {
 				color = { 192 97 143 }
 
-				b_kollipake = {}
 				b_secunderabad = {}
 				b_pirzadi_guda = {}
 				b_jeedimetla = {}
@@ -44717,13 +44712,12 @@ e_tibet = {
 				b_reting = {
 					han = "Bakuo"
 				}
-				b_kunggar = {
+				b_kunggar1 = {
 					han = "Dongga"
 				}
 				b_quxu = {
 					han = "Naiqiong"
 				}
-				b_lhunzhub = {}
 			}
 			c_lhunzhub = {
 				color={ 175 15 5 }
@@ -44736,7 +44730,7 @@ e_tibet = {
 					bodpa = "Lhünzhub"
 					han = "Linzhou"
 				}
-				b_reting = { #temple
+				b_reting1 = { #temple
 				}
 				b_codoi = {
 					han = "Chundui"
@@ -46371,7 +46365,7 @@ e_tibet = {
 				}
 				b_heishui = {
 				}
-				b_li = {
+				b_lii = {
 				}
 				b_weizhou = {
 				}
@@ -46486,10 +46480,9 @@ e_tibet = {
 				
 				han = "Jiademandu"
 
-				b_simaramapura = {
+				b_kusinagara1 = {
 					han = "Jiademandu"
 				}
-				b_kusinagara = {}
 				b_mahasone = {		#Kusinara
 				}
 				b_turkhpatti = {}
