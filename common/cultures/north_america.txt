@@ -1,3 +1,13 @@
+eskimo = {
+	graphical_culture = { mesoamericangfx mongolgfx muslimgfx }
+	
+	yupik = {}
+	inuit = {}
+	color = { 0.3 0.2 0.2 }
+
+		male_names = { Nauja Nirliq Nuniq Nuvuk Oki Pamiuq Patuktuq Pauloosie Petuwaq Pimniq Piqqaluyungmik Pittiulak Pukajaak Qajak Qammutiq Qamut Qannik Qaumaniq Qausiqtuk Qimmiabruk Qimmiq Qulitalik Sauri Sighna Siluk Sivoy Sivuugun Taktuq Taliriktug Tikaani Tiqriganiannig Tukkuyummavungga Tulimak Tulimaq Tulugaq Tungajuaq Tupiq Tuuq Ugalik Ujurak Ukiuk Unnuk Usuiituk }
+	female_names = { Adlartok Ahnah Akiak Akna Anana Anernerk Annakpok Aput Ataciare Atka Aukaneck Biisaiyowaq Buniq Chena Chulyin Cikup Corazon Cupun Desna Hey Iluak Iluq Imnek Ipiktok Iqniq Kakrayok Kaskae Kaya Kirima Koko Malina }
+}
 mesoamerican = {
 	graphical_cultures = { mesoamericangfx muslimgfx }
 	alternate_start = { has_alternate_start_parameter = { key = culture value = full_random } has_dlc = "Sunset Invasion" }
@@ -115,48 +125,130 @@ sivullirmiut = {
 
 }
 
-cree_algonquian = {
+west_algonquian = {
 	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 
+	
+	shawnee = {
+		color = { 0.3 0.2 0.2 }
 
+		male_names = { Auonashechla Aweecony Chiachska Cottawamago Cutewecusaw Cutheaweasaw Cutthewekasaw Hahgooseekaw Hokoleskwa Kakawipilathy Kayseaesekah Kishkalwa Koitawaypie Makatewekasha Malunthy Maywathekeha Meanymsecahh Misquacoonacaw Musquaconocah Napawita Neahmemsieeh Nelawachika Nequetaughaw Nianymseka Nihinessicoe Nihipeewa Papamousse Pathecoussa Paxinos Pelmetachemo Pemitacamchika Pemthata Piaseka Pomtha Quamapea Quetawah Quitawepeh Shammothetho Sokutchemah Tacomtequah Tamenetha Teawascoota Tecumseh Waquiwais Waupaucowela Wawelainni Waytheah Wethawakasika Weyapersenwah Weyapiersenwaw Weyapuseawaw Weythapamattha Wyawimon Wynepuechisika Wynepuehsika }
+		female_names = { Kickkesequah Methoataske Moconnoquah Oshawsequah Tacumwah }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	illini = {
+		color = { 0.3 0.2 0.2 }
+
+		male_names = { Allenepeshensha Aramapingea Batticy Chessagouasse Chicagou Keemaranea Keemawassa Keeshammy Kemonsah Kenmahreneah Kitakimawa Koongeepata Mahkattamaweya Mamentouensa Manggonssa Maressa Meshiwiratta Mooyakacke Naynawitwa Ninkanape Pakeeshama Papenegisawa Pemekawai Pemmikawatta Queckaawpeeta Ramisswnoa Shopinna Wackshingga Wahpeshakana Wapamahwhawa Wapesae Wassacanga Wecomakana Whkahpesewah Wissineeaw }
+		female_names = { Kickkesequah Methoataske Moconnoquah Oshawsequah Tacumwah }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	miami = {
+		color = { 0.3 0.2 0.2 }
+
+		male_names = { Allenepeshensha Aramapingea Batticy Chessagouasse Chicagou Keemaranea Keemawassa Keeshammy Kemonsah Kenmahreneah Kitakimawa Koongeepata Mahkattamaweya Mamentouensa Manggonssa Maressa Meshiwiratta Mooyakacke Naynawitwa Ninkanape Pakeeshama Papenegisawa Pemekawai Pemmikawatta Queckaawpeeta Ramisswnoa Shopinna Wackshingga Wahpeshakana Wapamahwhawa Wapesae Wassacanga Wecomakana Whkahpesewah Wissineeaw }
+		female_names = { Kickkesequah Methoataske Moconnoquah Oshawsequah Tacumwah }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	potawatomi = {
+		color = { 0.3 0.2 0.2 }
+
+		male_names = { Allenepeshensha Aramapingea Batticy Chessagouasse Chicagou Keemaranea Keemawassa Keeshammy Kemonsah Kenmahreneah Kitakimawa Koongeepata Mahkattamaweya Mamentouensa Manggonssa Maressa Meshiwiratta Mooyakacke Naynawitwa Ninkanape Pakeeshama Papenegisawa Pemekawai Pemmikawatta Queckaawpeeta Ramisswnoa Shopinna Wackshingga Wahpeshakana Wapamahwhawa Wapesae Wassacanga Wecomakana Whkahpesewah Wissineeaw }
+		female_names = { Kickkesequah Methoataske Moconnoquah Oshawsequah Tacumwah }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}
+north_algonquian = {
+	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+
+	
 	cree = {
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		color = { 0.4 0.8 0.8 }
+		color = { 0.3 0.2 0.2 }
 
-		male_names = {
-			Abooksigun Abukcheech Achachak Ahanu Anakausuen Aranck Askook Askuwheteau Chansomps Chogan Enkoodabaoo Etchemin Etlelooaat Hassun Huritt Keme Kitchi Machk Matchitehew Matunaagd Matwau Megedagik Mekledoodum Mingan Mukki Nixkamich Nootau Pannoowau Powaw Samoset Segenam Sucki Sunukkuhkau Tihkoosue Wematin
-		}
-		female_names = {
-			Alawa Alsoomse Hausis Hurit Kanti Keegsquaw Kimi Nadie Nijlon Numees Nuna Nuttah Oota-dabun Pules Sokanon Sokw Tahki Wapun Wawetseka Wikimak
-		}
+		male_names = { Abishabis Kamiokisihkwew Kapapamahchakwew Katchang Keneswabe Kiwash Kwakigigckewang Matawagan Missabay Mistahi-maskwa Moonias Nahookeesic Odagamea Oombash Ostamas Panacheese Payipwat Pitikwahanapiwiyin Pootoosh Tepastenam Wahwaashkung Wenangasie Yesno }
+		female_names = { Ashenee Astina Echa Elin Kiche Kika Mati Matisa Matisoon Meriy Nichena Osceola Pamoon Paniya Torotiy }
 
 		dynasty_title_names = no
 
 		prefix = no
-		
+
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 0
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
 		father_name_chance = 0
-		
+
 		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 25
-		mat_grm_name_chance = 25
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
 		mother_name_chance = 0
 
 		modifier = default_culture_modifier
 	}
-
 	innu = {
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		color = { 0.7 0.5 0.1 }
+		color = { 0.3 0.2 0.2 }
 
-		male_names = {
-Aissimess Akuaukusht Apinam_Abraham Ashtunishish Atamakaniss Atiku Atshen Emish Kaminaushit Kanishutakashtasht Kaniuekutat Kapapisht Kapinien_Gabriel Kashupasset Katshinukapaut Katshipunasht Kauitshi-Katshinat Kautatikumit Kuekuatsheu Kutshinapess Maikan Manitesh Maniteu Matiu Meshkana Minapakun Minutshinishkuess Mishen Mishta-Etuat Mishta-Napesh Mishtauiapeu Mitshishu Napess Napeutiku Natupaniu Nutamikuesh Pekissiu Pien Pienshak Pikutushan Pipitsheu Pitan_Peter Shakani Shanti Shapatish Shimiu Shinapiu Shinipesht Shuashem Shushep_Joseph Shushepiss Tanien Tshakashue Tshani_John Tshanitshish Tshim_Jacob Tshimushuminu Tshishennish Tshishkuetutsheunnu Tshishpush Tumassat_Thomas Uashaunnu Uatshitshish Uemishtikushiss Uitshikapeu Uitshitshimushish Ukueiau Uniam Uniam_William Unikush Upinau Ussinitshishu Utanukueu Utshimau Utshimauapeu
-			}
-		female_names = {
-Aniet Anishen Anissikutshaushkueu Anitshishkueu Apikushish Ekuanitshishkueu Ishkuess Kanakunash Kanakunau Katinen Kautatshet Manikanetishkueu Manishai Manishan Mestenapeo Nisseushkueu Penash Penenu Shanimen Shanut Shushepin Tshiueianukueu Ukaumau
-			}
+		male_names = { Nauja Nirliq Nuniq Nuvuk Oki Pamiuq Patuktuq Pauloosie Petuwaq Pimniq Piqqaluyungmik Pittiulak Pukajaak Qajak Qammutiq Qamut Qannik Qaumaniq Qausiqtuk Qimmiabruk Qimmiq Qulitalik Sauri Sighna Siluk Sivoy Sivuugun Taktuq Taliriktug Tikaani Tiqriganiannig Tukkuyummavungga Tulimak Tulimaq Tulugaq Tungajuaq Tupiq Tuuq Ugalik Ujurak Ukiuk Unnuk Usuiituk }
+		female_names = { Adlartok Ahnah Akiak Akna Anana Anernerk Annakpok Aput Ataciare Atka Aukaneck Biisaiyowaq Buniq Chena Chulyin Cikup Corazon Cupun Desna Hey Iluak Iluq Imnek Ipiktok Iqniq Kakrayok Kaskae Kaya Kirima Koko Malina }
 
 		dynasty_title_names = no
 
@@ -174,17 +266,11 @@ Aniet Anishen Anissikutshaushkueu Anitshishkueu Apikushish Ekuanitshishkueu Ishk
 
 		modifier = default_culture_modifier
 	}
+	odawa = {
+		color = { 0.3 0.2 0.2 }
 
-	atikamekw = {
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		color = { 0.4 0.78 0.99 }
-
-		male_names = {
-			Atika Etutikueu Kanikuen Kaniuekutat Katshituask Kenussemu Kueskapeu Manish Manteskueu Manuk Mistipinip Muskushish Nashitt Ninitshitau Nuke Petapanu Pineshikan Ponas Shenakuteu Shimish Shinapiu Shushepis Tshenish Tshetshepateu Tshishennish Uapannish Uitshitshimushish Ustinitshu W‚paskw 
-		}
-		female_names = {
-			Ahapiskueu ¬pikusÓs Ashenik Kaiekuskakut Kasseukanit Kauinimishit Keuapakanaskueu Kutesh Kutshake Maniteu Matanueskueu Miniskuesh Mushuau Muskumin Nashape Nenuskueu Neskueu Niakau Pishum Pishumuskuess Shanipiash Sharika Shekau Shunne Skueu Uapan Uapukun Uashamamou Ueuetimiskueu Utshimaskues WÓskac‚n 
-		}
+		male_names = { Allenepeshensha Aramapingea Batticy Chessagouasse Chicagou Keemaranea Keemawassa Keeshammy Kemonsah Kenmahreneah Kitakimawa Koongeepata Mahkattamaweya Mamentouensa Manggonssa Maressa Meshiwiratta Mooyakacke Naynawitwa Ninkanape Pakeeshama Papenegisawa Pemekawai Pemmikawatta Queckaawpeeta Ramisswnoa Shopinna Wackshingga Wahpeshakana Wapamahwhawa Wapesae Wassacanga Wecomakana Whkahpesewah Wissineeaw }
+		female_names = { Kickkesequah Methoataske Moconnoquah Oshawsequah Tacumwah }
 
 		dynasty_title_names = no
 
@@ -202,17 +288,11 @@ Aniet Anishen Anissikutshaushkueu Anitshishkueu Apikushish Ekuanitshishkueu Ishk
 
 		modifier = default_culture_modifier
 	}
+	ojibwa = {
+		color = { 0.3 0.2 0.2 }
 
-	beothuk = {
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		color = { 0.16 0.88 0.21 }
-
-		male_names = {
-A'ss-soyt A-aduth A-enamin Adenishit Adiab Amet Amina Anin Annooce Anun Ashmudyim Badisut Baroodisick Bathuc Begodor Boodowit Borod Bukashaman Bukashamesh Conasoob Dattomeish Deed-rashow Dogajavick Ebautho Edru Eeg Eeshoo Eewa-en Emoethook Gadgemish Gobidin Guashuwit Izzobauth Kannabuch Kius Kosweet Magaraguis Magorun Mamishet Mammadronit Mamshet Mangarewius Mattuis Moidewsee Moisamadrook Mokothut Mozazeosh Newin Nonosabasut Oodrat Osthuk Shawatharott Sosheet Wasemook Washewtch Weshomesh Wieith Woodch Yeech Zathrook
-			}
-		female_names = {
-Abideshook Adobonee Ae-u-eece Ashaboo-uth Ashei Bathue Baubooshrat Bogodoret Bogomot Boobasha Budiseet Corrasoob Debine Demasduit Deyn-yad Ebanthoo Edree Eed Eenoaja Eeshang-eyghth Eesheet Emamoose Emamooset Emoethook Ewinon Gaboweete Gawzadun Haoot Homedich Madabooch Madyna Mamishet Obseet Odensook Odjet Odusweet Osuk Osweet Oubee Sha'poth Shanawdithit Shawwayet Shebohoweet Shedothun Theehone Waunathoake Weenoun Woadthoowin Woas-eeash Woas-sut Yeathun
-			}
+		male_names = { Allenepeshensha Aramapingea Batticy Chessagouasse Chicagou Keemaranea Keemawassa Keeshammy Kemonsah Kenmahreneah Kitakimawa Koongeepata Mahkattamaweya Mamentouensa Manggonssa Maressa Meshiwiratta Mooyakacke Naynawitwa Ninkanape Pakeeshama Papenegisawa Pemekawai Pemmikawatta Queckaawpeeta Ramisswnoa Shopinna Wackshingga Wahpeshakana Wapamahwhawa Wapesae Wassacanga Wecomakana Whkahpesewah Wissineeaw }
+		female_names = { Kickkesequah Methoataske Moconnoquah Oshawsequah Tacumwah }
 
 		dynasty_title_names = no
 
@@ -231,28 +311,10 @@ Abideshook Adobonee Ae-u-eece Ashaboo-uth Ashei Bathue Baubooshrat Bogodoret Bog
 		modifier = default_culture_modifier
 	}
 	anishinabe = {
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		color = { 0.76 0.58 0.34 }
+		color = { 0.3 0.2 0.2 }
 
-		male_names = {
-			Nemekas Puckanese Macquettequet Shimnanaquette Pakenosega Kekenutchega Chimokemow Kekenutchegun 
-			Muskobenense Waubonoosa Wausaquanai Minequet Otauson Tussegua Mixabee Kitchewawashen Neebeenaquin 
-			Anueemaycounbeeme Onewequa Nayokeeman Peshquescum Muckcumcinau Kitcheenoting Waubeekeenew 
-			Sheemaugua Kauguest Kitsheematush Aneuwayba Walkcaykeejugo Autowaynabee Nawgonisee owenisham 
-			Mooksonga Noukonwabe Shingwalk Wawaubequak Meewayson Wepecumgegut Markkenwuwbe Fonegawne Nemetetowwa 
-			Kishkaukou Peenaysee Ogemaunkeketo Reaume Nowkeshuc Mixmunitou Wassau Keneobe Moksauba Mutchwetau 
-			Okumanpinase Meckseonne Paupemiskobe Kogkakeshik Wauwassack Misheneanonquet Okemans Nimeke 
-			Puckwash Waseneso Montons Kennewobe Shawshauwenaubais Okooyousinse Ondottowaugane Amickoneena 
-			Kitcheonundeeyo Saugassauway Okeemanpeenaysee Minggeeseetay Waubishcan Peaypaymanshee Ocanauck 
-			Paymeenoting Naynooautienishkoan Kaujagonaygee Mayneeseno Kakagouryan Kitchmokooman Singgok 
-			Saguhosh Saybo Obwole Aguagonabe Sigonak Kokoosh Pemaw Kawotoktame Sabo Kewageone Metewa Kawgeshequm 
-			Keyacum Atowagesek Mawmawkens Mamawsecuta Penaysewaykesek Kewaytinam Sepewan Shashebak Shaconk 
-			Paymusawtom Endus Aushetayawnekusa Wawapenishik Omikou Pashkobwis Pashkeekou Mayto Wauweeyatam 
-			Nuwagon Mesnakrea Maytwayaushing Ogeebouinse Maneleugobwawaa
-		}
-		female_names = {
-			Aazhawiggizhigokwe Ayasha Keezheekoni Mitena Waawaaskwane Zaagaasage Wiingashk Miigwaans Kiiwedin Kamenna
-		}
+		male_names = { Allenepeshensha Aramapingea Batticy Chessagouasse Chicagou Keemaranea Keemawassa Keeshammy Kemonsah Kenmahreneah Kitakimawa Koongeepata Mahkattamaweya Mamentouensa Manggonssa Maressa Meshiwiratta Mooyakacke Naynawitwa Ninkanape Pakeeshama Papenegisawa Pemekawai Pemmikawatta Queckaawpeeta Ramisswnoa Shopinna Wackshingga Wahpeshakana Wapamahwhawa Wapesae Wassacanga Wecomakana Whkahpesewah Wissineeaw }
+		female_names = { Kickkesequah Methoataske Moconnoquah Oshawsequah Tacumwah }
 
 		dynasty_title_names = no
 
@@ -269,23 +331,12 @@ Abideshook Adobonee Ae-u-eece Ashaboo-uth Ashei Bathue Baubooshrat Bogodoret Bog
 		mother_name_chance = 0
 
 		modifier = default_culture_modifier
-	}	
-	shawnee = {
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		color = { 0.18 0.81 0.29 }
+	}
+	blackfoot = {
+		color = { 0.3 0.2 0.2 }
 
-		male_names = {
-			Hokoleskwa Cottawamago Paxinos Wynepuechisika Weyapersenwah Tecumseh Aweecony Kakawipilathy Malunthy 
-			Musquaconocah Meanymsecahh Waupaucowela Nihipeewa Nihinessicoe Wawelainni Kishkalwa Maywathekeha 
-			Pathecoussa Nelawachika Waquiwais Napawita Papamousse Pemitacamchika Wyawimon Quamapea Pelmetachemo 
-			Neahmemsieeh Makatewekasha Koitawaypie Misquacoonacaw Cutthewekasaw Kayseaesekah Weythapamattha 
-			Waytheah Weyapiersenwaw Nequetaughaw Hahgooseekaw Weyapuseawaw Cutheaweasaw Auonashechla Cutewecusaw 
-			Tamenetha Piaseka Pomtha Shammothetho Pemthata Wethawakasika Quetawah Sokutchemah Wynepuehsika 
-			Quitawepeh Teawascoota Tacomtequah Nianymseka Chiachska
-		}
-		female_names = {
-			Methoataske Tacumwah Moconnoquah Kickkesequah Oshawsequah 
-		}
+		male_names = { Abishabis Kamiokisihkwew Kapapamahchakwew Katchang Keneswabe Kiwash Kwakigigckewang Matawagan Missabay Mistahi-maskwa Moonias Nahookeesic Odagamea Oombash Ostamas Panacheese Payipwat Pitikwahanapiwiyin Pootoosh Tepastenam Wahwaashkung Wenangasie Yesno }
+		female_names = { Ashenee Astina Echa Elin Kiche Kika Mati Matisa Matisoon Meriy Nichena Osceola Pamoon Paniya Torotiy }
 
 		dynasty_title_names = no
 
@@ -302,5 +353,86 @@ Abideshook Adobonee Ae-u-eece Ashaboo-uth Ashei Bathue Baubooshrat Bogodoret Bog
 		mother_name_chance = 0
 
 		modifier = default_culture_modifier
-	}	
+	}
+}
+tonkawan = {
+	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+
+	
+	tonkawa = {
+		color = { 0.3 0.2 0.2 }
+
+		male_names = { Aach Chowabah Hiahidock Kardy Kianhoon Mattan Ossinse Sanninow Sationwnhown Sauninot Soakiantow Sohone Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot }
+		female_names = { Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u Zacado }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}
+atakapan = {
+	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+
+	
+	atakapa = {
+		color = { 0.3 0.2 0.2 }
+
+		male_names = { Aach Chowabah Hiahidock Kardy Kianhoon Mattan Ossinse Sanninow Sationwnhown Sauninot Soakiantow Sohone Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot }
+		female_names = { Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u Zacado }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}
+chetimachan = {
+	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+
+	
+	chitimacha = {
+		color = { 0.3 0.2 0.2 }
+
+		male_names = { Aach Chowabah Hiahidock Kardy Kianhoon Mattan Ossinse Sanninow Sationwnhown Sauninot Soakiantow Sohone Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot }
+		female_names = { Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u Zacado }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
 }
