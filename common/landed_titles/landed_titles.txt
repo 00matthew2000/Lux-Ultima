@@ -22353,8 +22353,6 @@ e_serindia = {
 			
 				color={ 190 120 0 }
 
-				holy_site = bon
-				holy_site = bon_reformed
 				#holy_site = taoist
 				
 				uyghur = "Hotan"
@@ -42368,6 +42366,9 @@ e_india = {
 			c_simaramapura = {
 				color={ 78 178 41 }
 				color2={ 255 255 255 }
+
+				holy_site = bon
+				holy_site = bon_reformed
 				
 				b_simaramapura = {
 				}
@@ -44793,6 +44794,9 @@ e_tibet = {
 				bodpa = "Taktsé"
 				han = "Dazi"
 
+				holy_site = bon
+				holy_site = bon_reformed
+
 				b_taktse = {
 					bodpa = "Taktsé"
 					han = "Dazi"
@@ -45065,8 +45069,6 @@ e_tibet = {
 			}
 			c_gegyai = {
 				color = { 149 48 50 }
-					holy_site = bon
-					holy_site = bon_reformed
 					holy_site = lubu
 					holy_site = lubu_reformed
 				
@@ -45516,6 +45518,9 @@ e_tibet = {
 				
 				han = "Qulong"
 
+				holy_site = bon
+				holy_site = bon_reformed
+
 				b_kyunglung = {
 					han = "Qulong"
 				}
@@ -45542,14 +45547,14 @@ e_tibet = {
 			}
 			c_kangra = {
 				color = { 158 56 67 }
-					holy_site = bon
-					holy_site = bon_reformed
 					holy_site = confucian
 					holy_site = indoh_confucian
 					#holy_site = tao
 					holy_site = lubu
 					holy_site = tao_reformed
 					holy_site = lubu_reformed
+					holy_site = bon
+					holy_site = bon_reformed
 				
 				b_rudok = {}
 				b_nu = {
@@ -46467,8 +46472,6 @@ e_tibet = {
 			c_kathmandu = {
 				color = { 68 99 161 }
 					holy_site = tengri_bud
-					holy_site = bon
-					holy_site = bon_reformed
 					holy_site = bud_sthaviravada
 					holy_site = bud_zor
 					holy_site = bud_zen
@@ -46722,9 +46725,6 @@ e_tibet = {
 			c_gilgit = {
 				color={ 204 170 30 }
 				color2= { 255 255 255 }
-				
-				holy_site = bon
-				holy_site = bon_reformed
 
 				b_gilgit = {
 				}
