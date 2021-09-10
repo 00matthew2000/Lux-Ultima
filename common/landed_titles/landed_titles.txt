@@ -23337,10 +23337,27 @@ e_sassanid = {
 		zoroastrian_group = 4000 # Crusade target weight
 		zun_pagan_reformed = 100 # Crusade target weight
 		
-		d_arya = {
+		d_aria = {
 			color = { 136 169 80 }
 			capital = 637 #Arya
 			
+			c_herat = {
+				color = { 205 224 162 }
+								
+				b_herat = {
+					hellenistic = "Alexandreia en Areiois"
+					greek = "Alexandreia en Areiois"
+					indohellenic = "Alexandreia en Areiois"
+					gandharan = "Alexandreia en Areiois"
+				}
+				b_karukh = {}
+				b_kushk = {}
+				b_gulran = {}
+				b_obe = {}
+				b_zarghun = {}
+				b_farsi = {}
+				b_chishti = {}
+			}
 			c_birjand = {
 				color = { 138 171 82 }
 				
@@ -24514,18 +24531,6 @@ e_sassanid = {
 			
 			capital = 1275 # Zranka
 			
-			c_mandesh = {
-				color = { 205 224 162 }
-				
-				b_herat = {}
-				b_karukh = {}
-				b_kushk = {}
-				b_gulran = {}
-				b_obe = {}
-				b_zarghun = {}
-				b_farsi = {}
-				b_chishti = {}
-			}
 			c_chagai = {
 				color={ 152 185 96 }
 				color2={ 255 255 255 }
@@ -24559,21 +24564,25 @@ e_sassanid = {
 				b_aqa_mosammad_khan = {}
 				b_din_mosammad = {}
 			}
-			c_farrah = {
-				color={ 173 140 84 }
+			c_farah = {
+				color={ 43 81 138 }
 				color2={ 255 255 255 }
 				
-				b_farrah = {
+				b_farah = {
+					hellenistic = "Alexandreia Prophthasia"
+					greek = "Alexandreia Prophthasia"
+					indohellenic = "Alexandreia Prophthasia"
+					gandharan = "Alexandreia Prophthasia"
 				}
 				b_bakwa = {
 				}
 				b_baladuluk = {
 				}
+				b_qalaikah = {
+				}
 				b_anardara = {
 				}
 				b_khakisafed = {
-				}
-				b_qalaikah = {
 				}
 				b_shibkoh = {
 				}
