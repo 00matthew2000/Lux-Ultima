@@ -1924,7 +1924,7 @@ d_white_company = {
 	}
 	
 	# Parent Religion 
-	religion = catholic
+	religion = pelagian
 	
 	mercenary = yes
 
@@ -3606,13 +3606,13 @@ d_ghilman = {
 	
 	# Hire Trigger
 	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
+		OR = {
+			AND = { 
+				religion_group = muslim
+				d_ghilman = { owner = { independent = yes } }
 			}
-			religion_group = muslim
+			has_landed_title = d_ghilman
+			any_vassal = { has_landed_title = d_ghilman }
 		}
 	}
 	
