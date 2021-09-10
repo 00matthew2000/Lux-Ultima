@@ -23338,7 +23338,7 @@ e_sassanid = {
 		zun_pagan_reformed = 100 # Crusade target weight
 		
 		d_aria = {
-			color = { 136 169 80 }
+			color = { 150 120 5 }
 			capital = 637 #Arya
 			
 			c_herat = {
@@ -24368,6 +24368,35 @@ e_sassanid = {
 			
 			zun_pagan_reformed = 300 # Crusade target weight
 			
+			c_bost = {
+				color={ 189 110 60 }
+				color2={ 255 255 255 }
+
+				holy_site = zun_pagan
+				holy_site = zun_pagan_reformed
+				
+				b_kandahar = {
+				}
+				b_bost = {
+					persian = "Lashkargah"
+				}
+				b_sangin = {
+				}
+				b_spin_boldak = {
+					hellenistic = "Lefkeremos"
+					greek = "Lefkeremos"
+					indohellenic = "Lefkeremos"
+					gandharan = "Lefkeremos"
+				}
+				b_gereshk = {
+				}
+				b_chaman = {
+				}
+				b_chora = {
+				}
+				b_panjwai = {
+				}
+			}
 			c_ghazna = {
 				color={ 175 110 50 }
 				color2={ 255 255 255 }
@@ -24379,28 +24408,6 @@ e_sassanid = {
 				b_katawaz = {}
 				b_sharana = {}
 				b_sangar = {}
-			}
-			c_bost = {
-				color={ 189 110 60 }
-				color2={ 255 255 255 }
-
-				holy_site = zun_pagan
-				holy_site = zun_pagan_reformed
-				
-				b_bost = { # Aka Lashgar Gah
-				}
-				b_kandahar = {
-				}
-				b_sangin = {
-				}
-				b_gereshk = {
-				}
-				b_chaman = {
-				}
-				b_chora = {
-				}
-				b_panjwai = {
-				}
 			}
 			c_kalat = {
 				color={ 152 185 96 }
