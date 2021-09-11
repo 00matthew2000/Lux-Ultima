@@ -367,7 +367,7 @@ plain_indians = {
 		modifier = default_culture_modifier
 	}
 	nakota = {
-		color = { 0.32 0.12 0.64 }
+		color = { 0.40 0.27 0.27 }
 
 		male_names = { Belotonkatanga Etaseepa Gleska Hehaka Ite Iyapato Iyotake Keejee Kokomako Luta Mahpiya Makatozaza Maktosabichis Maktowahkeark Maphiya Mascpulochastosh Matowayouwe Mewatanihanska Nakapagigi Oeyakoca Ogle Omagazu Penision Petette Poehapa Sapa Shacope Sinte Takewapa Tarsega Tartunkanasiah Tenchzepart Tetekarmunch Thasunke Thathanka Wabasha Wakauhee Wamadetunka Wannata Wasaota Witko }
 		female_names = { Chapa Chapawee Chumani Dohumme Dowanhowee Ehawee Hantaywee Kimimela Macha Magaskawee Makawee Mika Mina Ojinjintka Ptaysanwee Shappa Skah Tahcawin Talutah Tasinahlahlawin Tasinasapewin Thasinamani Wachiwi Wasula Weayaya Wichahpi Wichapi Winona Zitkala Zonta }
@@ -433,7 +433,7 @@ plain_indians = {
 		modifier = default_culture_modifier
 	}
 	kanza = {
-		color = { 0.23 0.46 0.12 }
+		color = { 0.81 0.44 0.26 }
 
 		male_names = { Aguigueda Amanpasse Bashemindhe Bassechinga Cahapiche Caygache Caygaywachepeche Cayque Chahetonga Channahon Cheganonsas Chingavoisa Chonguehanga Chonmelase Chonnonsogue Chouquemonnon Couchestawasta Cutsagabe Dogachinga Gradamnsa Grinache Harachabe Honencache Hurate Kemanha Lihibi Lisansandhe Lolechinga Mahsa Mandarihi Manguepeemani Manhegare Manhevoi Manilourana Manjaguida Manquesi Mantsa Manyvoile Mechinga Megahe Mekewatanega Mequaque Meyhe Miaasa Mithechinga Naguemani Nangawahaegea Nanlatoho Natanhi Nehizanga Nehudhe Nekaghre Nendogualui Nenonbas Nepaste Nequevoile Nesaque Nicagaris Nicanauthe Nichumali Nicouilbran Ninchagari Nognithechinga Noguinilayque Nonbasocri Nonpevoite Nudhetavoi Nurahague Nuranin Onhehomani Osogahe Ousabe Pachigue Pagranque Pahelagren Pahuroguesie Panenvoiguanda Papuisea Pedhechiga Pedhechinga Pograngue Poneavoitaniga Ponlachinga Ponlavoitasuga Qhihiramaki Quinihonigue Roudanique Savoi Scamani Sindhe Talechiga Talevoile Taslondhe Tavaingare Tavainthere Tavoingare Tavoinhihi Tawangahuh Teshuhimga Thecayque Tonchenanque Vesasche Voibahe Voibalune Voibisandhe Voichinodhe Voichinouthe Voidhadani Voidoguega Voiengran Voinache Voinonpache Voitasean Voithechinga Voithevoihe Wanougpacha Wasabatougga }
 		female_names = { Egraname Misae Niabi Sekaname Shonsegra Wakonsamoie Watoesa }
@@ -1564,7 +1564,7 @@ salishan = {
 		modifier = default_culture_modifier
 	}
 	kalispel = {
-		color = { 0.03 0.20 0.02 }
+		color = { 1.00 0.50 0.06 }
 
 		male_names = { Agi Attakullaculla Boudinot Canoe Dragging It Moytoy Sequoyah Yonaguska "Johan Ross" }
 		female_names = { Chipeta Kahavasooah Ootcakao Sacagawea Tocmetone }
@@ -1728,7 +1728,7 @@ uto_aztecan = {
 	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 	
 	shoshone = {
-		color = { 0.13 0.09 0.07 }
+		color = { 0.81 0.64 0.05 }
 
 		male_names = { Agi Attakullaculla Boudinot Canoe Dragging It Moytoy Sequoyah Yonaguska "Johan Ross" }
 		female_names = { Chipeta Kahavasooah Ootcakao Sacagawea Tocmetone }
@@ -1903,6 +1903,28 @@ uto_aztecan = {
 
 		modifier = default_culture_modifier
 	}
+	paiute = {
+		color = { 0.81 0.15 0.15 }
+
+		male_names = { Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tlilpotonqui Tochtli Topiltzin Totoquihuaztli Tototl Tzompantzin Ueman Xicohtencatl Xihuitl Xipil Xipilli Xiuhpilli Xochipepe Xochipilli Xochitl Yaotl Yayauhqui Yolotli Yolyamanitzin Zipactonal Zolin }
+		female_names = { Acacitlu Citali Citlamina Etapali Ichtaca Icnoyotl Ilhuitl Macuilxochitl Mahuitzic Moyolehuani Moztla Nenetl Nochtli Papan Quiauhxochitl Sacnite Techichpotzin Teoxihuitl Teuicui Tezcatlan Tezozomoc Tlachinolli Tlaco Tlacotl Tlahco Tlahcoehua Tlahutli Tlalli Tlazohtzin Tlazozomizqui Tlexictli Toltecatl Tonalnan Tonatzin Tziquetzalpoztectzin Xihuitl Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Yoltzin Zeltzin Zyanya }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
 	cahuila = {
 		color = { 0.46 0.22 0.29 }
 
@@ -1948,7 +1970,7 @@ uto_aztecan = {
 		modifier = default_culture_modifier
 	}
 	comanche = {
-		color = { 0.17 0.27 0.02 }
+		color = { 0.81 0.11 0.81 }
 
 		male_names = { Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tlilpotonqui Tochtli Topiltzin Totoquihuaztli Tototl Tzompantzin Ueman Xicohtencatl Xihuitl Xipil Xipilli Xiuhpilli Xochipepe Xochipilli Xochitl Yaotl Yayauhqui Yolotli Yolyamanitzin Zipactonal Zolin }
 		female_names = { Acacitlu Citali Citlamina Etapali Ichtaca Icnoyotl Ilhuitl Macuilxochitl Mahuitzic Moyolehuani Moztla Nenetl Nochtli Papan Quiauhxochitl Sacnite Techichpotzin Teoxihuitl Teuicui Tezcatlan Tezozomoc Tlachinolli Tlaco Tlacotl Tlahco Tlahcoehua Tlahutli Tlalli Tlazohtzin Tlazozomizqui Tlexictli Toltecatl Tonalnan Tonatzin Tziquetzalpoztectzin Xihuitl Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Yoltzin Zeltzin Zyanya }
@@ -1975,7 +1997,7 @@ plain_algonquian = {
 
 	
 	cheyenne = {
-		color = { 0.30 0.12 0.69 }
+		color = { 0.16 0.92 1.00 }
 
 		male_names = { Aamanaco Avonaco Chahpacpahha Japu Kohkahywhcumest Matewashena Motavato Nahkkomeien Nahpatonca Nakohaistah Ohkeecheta Oneahaket Shongemonetoeahca Shonggemoneto Tahhiota Takchesca Tatoncahooohcalehpaha Tatoncapa Voisttitoevetz Vokivokamast Wahhanissatta Wechegalla }
 		female_names = { Ameo Ameone Ametane Ami Anaba Aquene Ehyophsta Emona Emonah Maheona Meona Misstanstur Moneva Paveena Shaianne Sheyanne Shian Shiana Shiann Shy Shyanna Tahtahtoisneh }
@@ -1997,7 +2019,7 @@ plain_algonquian = {
 		modifier = default_culture_modifier
 	}
 	arapaho = {
-		color = { 0.81 0.81 0.20 }
+		color = {0.95 1.00 0.21 }
 
 		male_names = { Aamanaco Avonaco Chahpacpahha Japu Kohkahywhcumest Matewashena Motavato Nahkkomeien Nahpatonca Nakohaistah Ohkeecheta Oneahaket Shongemonetoeahca Shonggemoneto Tahhiota Takchesca Tatoncahooohcalehpaha Tatoncapa Voisttitoevetz Vokivokamast Wahhanissatta Wechegalla }
 		female_names = { Ameo Ameone Ametane Ami Anaba Aquene Ehyophsta Emona Emonah Maheona Meona Misstanstur Moneva Paveena Shaianne Sheyanne Shian Shiana Shiann Shy Shyanna Tahtahtoisneh }
