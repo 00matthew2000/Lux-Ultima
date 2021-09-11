@@ -5735,7 +5735,7 @@ e_byzantium = {
 		zal_mani = 2000
 		illuyanka_reformed = 5000
 			
-	d_nikaea = {
+		d_nikaea = {
 			color={ 202 101 167 }
 			color2={ 255 255 20 }
 			
@@ -5883,28 +5883,19 @@ e_byzantium = {
 			color={ 210 140 170 }
 			color2={ 255 255 20 }
 
-			capital = 744 # Abydos
-
-			turkish = "Balakhisar"
+			capital = 744 # Troias
 
 			c_abydos = {
-				color={ 147 55 115 }
+				color={ 168 102 72 }
 				color2={ 255 255 20 }
 				
-				turkish = "Balakhisar"
-				
 				b_abydos = {
-					turkish = "Balakhisar"
-				}
-				b_lampsakos = {
 				}
 				b_alexandriatroas = {
 				}
-				b_pigai = {
+				b_lampsakos = {
 				}
-				b_aegae = {
-				}
-				b_allianoi = {
+				b_adramyttion = {
 				}
 				b_cebrene = {
 				}
@@ -6816,24 +6807,38 @@ e_byzantium = {
 				color={ 237 42 171 }
 				color2={ 255 255 20 }
 				
+				roman = "Ephesus"
 				turkish = "Ayasoluk"
 
 				holy_site = orthodox
 				
 				b_ephesos = {
+					roman = "Ephesus"
 					turkish = "Ayasoluk"
 				}
+				b_halikarnassos = {
+					roman = "Halicarnassus"
+					turkish = "Bodrum"
+				}
 				b_lebedos = {
+					roman = "Lebedus"
+				}
+				b_alinda = {
+					hellenistic = "Alexandreia pros ton Latmon"
+					greek = "Alexandreia pros ton Latmon"
+					roman = "Alexandria ad Latmum"
 				}
 				b_miletos = {
+					roman = "Miletus"
+					turkish = "Milet"
 				}
 				b_tralles = {
+					hellenistic = "Euanthia"
+					greek = "Tralleis"
+					turkish = "Güzelhisar"
 				}
 				b_iassos = {
-				}
-				b_palation = {
-				}
-				b_petron = {
+					roman = "Iasus"
 				}
 			}
 			c_smyrna = {
@@ -6954,15 +6959,12 @@ e_byzantium = {
 				
 				turkish = "Mugla"
 				
-				b_halikarnassos = {
-					turkish = "Bodrum"
-				}
-				b_myra = {
+				b_kibyra = {
 				}
 				b_telmissos = {
 					turkish = "Mugla"
 				}
-				b_kibyra = {
+				b_myra = {
 				}
 				b_patara = {
 				}
