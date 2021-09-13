@@ -30567,89 +30567,105 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 			capital = 798 # Damietta
 			
-			coptic = "Tamiat"
+			hellenistic = "Tamiathis"
 			greek = "Tamiathis"
+			coptic = "Tamiat"
+			egyptian_arabic = "Dumyat"
+			bedouin_arabic = "Dumyat"
+			maghreb_arabic = "Dumyat"
+			levantine_arabic = "Dumyat"
+			andalusian_arabic = "Dumyat"
 			
 			c_delta = {
-				color={ 9 255 80 }
+				color={ 126 51 99 }
 				color2={ 255 255 255 }
 				
 				b_damietta = {
+					hellenistic = "Tamiathis"
+					greek = "Tamiathis"
+					coptic = "Tamiat"
+					egyptian_arabic = "Dumyat"
+					bedouin_arabic = "Dumyat"
+					maghreb_arabic = "Dumyat"
+					levantine_arabic = "Dumyat"
+					andalusian_arabic = "Dumyat"
 				}
-				b_burlus = {
+				b_busiris = {
+					coptic = "Busiri"
 				}
 				b_saramsah = {
 				}
 				b_burah = {
 				}
-				b_fareskur = {
-				}
-				b_baramun = {
-				}
-				b_tanis = {
-				}
-				b_shirbin = {
+				b_mahalla = {
+					hellenistic = "Theodosios"
+					greek = "Theodosios"
+					roman = "Theodosiou Nixis"
+					coptic = "Dishairi"
+			}
+				b_burlus = {
 				}
 				b_xois = {
+					egyptian_arabic = "Sakha"
+					bedouin_arabic = "Sakha"
+					maghreb_arabic = "Sakha"
+					levantine_arabic = "Sakha"
+					andalusian_arabic = "Sakha"
+				}
+				b_samannud = {
+					hellenistic = "Sebennytos"
+					greek = "Sebennytos"
+					roman = "Sebennytus"
+					coptic = "Semnoudi"
 				}
 			}
-			c_pelusia = {
-				color={ 12 255 83 }
+			c_tanis = {
+				color={ 168 24 222 }
 				color2={ 255 255 255 }
 				
-				coptic = "Tamiat"
-				hellenistic = "Tamiathis"
-				egyptian_arabic = "ad-Dingawiya"
-				bedouin_arabic = "ad-Dingawiya"
-				maghreb_arabic = "ad-Dingawiya"
-				levantine_arabic = "ad-Dingawiya"
-				andalusian_arabic = "ad-Dingawiya"
-				
-				b_tjaru = {
-					hellenistic = "Zele" 
-					greek = "Sile" 
-				}
-				b_tinnis = {
-				}
-				b_alsalihiyah = {
-				}
-				b_sile = {
-				}
-				b_ismaillia = {
-				}
-				b_pithom = {
-				}
-				b_serapeum = {
-				}
-			}
-			c_manupura = {
-				color={ 15 255 86 }
-				color2={ 255 255 255 }
-				
-				coptic = "Dishairi"
-				egyptian_arabic = "al-Garbiya"
-				bedouin_arabic = "al-Garbiya"
-				maghreb_arabic = "al-Garbiya"
-				levantine_arabic = "al-Garbiya"
-				andalusian_arabic = "al-Garbiya"
-
 				holy_site = set
 				holy_site = set_reformed
 				
-				b_malhalla = {
-					coptic = "Dishairi"
+				coptic = "Djani"
+				
+				b_tjaru = {
+					hellenistic = "Sele"
+					greek = "Sele"
+					roman = "Sile"
+					coptic = "Sle"
+					egyptian_arabic = "Tajaru"
+					bedouin_arabic = "Tajaru"
+					maghreb_arabic = "Tajaru"
+					levantine_arabic = "Tajaru"
+					andalusian_arabic = "Tajaru"
 				}
-				b_athribis = {
+				b_tanis = {
+					coptic = "Djani"
 				}
-				b_busiris = {
+				b_tinnis = {
+					hellenistic = "Tennis"
+					greek = "Tennis"
+					coptic = "Tennesi"
 				}
 				b_mansoura = {
 				}
-				b_tanta = {
+				b_athrribis = {
+					coptic = "Atribi"
+					egyptian_arabic = "Tell Atrib"
+					bedouin_arabic = "Tell Atrib"
+					maghreb_arabic = "Tell Atrib"
+					levantine_arabic = "Tell Atrib"
+					andalusian_arabic = "Tell Atrib"
 				}
-				b_sais = {
-				}
-				b_samannud = {
+				b_pithom = {
+					hellenistic = "Heroonopolis"
+					greek = "Heroöpolis"
+					roman = "Heroopolis"
+					egyptian_arabic = "Tell El Maskhuta"
+					bedouin_arabic = "Tell El Maskhuta"
+					maghreb_arabic = "Tell El Maskhuta"
+					levantine_arabic = "Tell El Maskhuta"
+					andalusian_arabic = "Tell El Maskhuta"
 				}
 			}
 		}
@@ -30675,6 +30691,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_maadi = {}
 				b_tekkekyahudiyya = {}
 				b_merimdabenisalama = {}
+				b_alsalihiyah = {}
 			}
 			c_quena = {
 				color={ 32 244 127 }

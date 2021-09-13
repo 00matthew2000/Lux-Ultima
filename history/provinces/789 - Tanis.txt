@@ -1,0 +1,26 @@
+# 789 - Tanis
+
+# County Title
+title = c_tanis
+
+# Settlements
+max_settlements = 5
+b_tjaru = castle
+b_tanis = temple
+b_tinnis = city
+#b_mansoura = castle
+#b_athrribis = city
+b_pithom = temple
+
+# Misc
+culture = egyptian_arabic
+religion = ashari
+
+867.1.1 = {
+	b_athrribis = ca_keep_1
+	b_athrribis = ca_training_grounds_1
+	b_athrribis = ca_stable_1
+	b_athrribis = ca_wall_1
+	b_athrribis = ca_wall_2
+	b_athrribis = ca_militia_barracks_1
+}
