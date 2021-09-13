@@ -1743,7 +1743,6 @@ d_sunni_bedouin_company = {
 	mercenary_type = bedouin_company_composition
 }
 
-
 d_shiite_turkic_company = {
 	color = { 135 170 60 }
 	color2 = { 255 255 255 }
@@ -30291,7 +30290,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 			capital = 802 # Alexandria
 			
-			coptic = "Rakote"
+			coptic = "Rakodi"
 			
 			c_alexandria = {
 				color={ 102 221 136 }
@@ -30345,12 +30344,14 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				holy_site = isis_reformed
 				holy_site = set_reformed
 				
-				coptic = "Rakote"
-				egyptian_arabic = "al-Iskandariyya"
-				bedouin_arabic = "al-Iskandariyya"
-				maghreb_arabic = "al-Iskandariyya"
-				levantine_arabic = "al-Iskandariyya"
-				andalusian_arabic = "al-Iskandariyya"
+				coptic = "Rakodi"
+				hellenistic = "Alexandreia"
+				greek = "Alexandreia"
+				egyptian_arabic = "Eskendereyya"
+				bedouin_arabic = "Iskandariyah"
+				maghreb_arabic = "Iskandariyah"
+				levantine_arabic = "Iskandariyah"
+				andalusian_arabic = "Iskandariyah"
 				
 				b_alexandria = {
 					pentarchy = yes
@@ -30387,45 +30388,68 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					pentarchy = sol_boreas_reformed
 					pentarchy = sol_islam_reformed
 					pentarchy = sol_sahara_reformed
-					coptic = "Rakote"
-					egyptian_arabic = "al-Iskandariyya"
-					bedouin_arabic = "al-Iskandariyya"
-					maghreb_arabic = "al-Iskandariyya"
-					levantine_arabic = "al-Iskandariyya"
-					andalusian_arabic = "al-Iskandariyya"
+					
+					coptic = "Rakodi"
+					hellenistic = "Alexandreia"
+					greek = "Alexandreia"
+					egyptian_arabic = "Eskendereyya"
+					bedouin_arabic = "Iskandariyah"
+					maghreb_arabic = "Iskandariyah"
+					levantine_arabic = "Iskandariyah"
+					andalusian_arabic = "Iskandariyah"
 				}
-				b_abukir = {
-				}
-				b_damanhur = {
-				}
-				b_hammam = {
-				}
-				b_naucratis = {
+				b_abuqir = {
+					hellenistic = "Aboukir"
+					greek = "Aboukir"
+					coptic = "Apakyri"
 				}
 				b_burgelarab = {
 				}
-				b_marabout = {
+				b_hammam = {
 				}
-				b_elkanoun = {
+				b_dekheila = {
+				}
+				b_matamir = {
+				}
+				b_kafr_el_dawwar = {
+				}
+				b_sketis = {
+				}
+				b_kellia = {
 				}
 			}
-			c_gabiyaha = {
-				color={ 6 255 77 }
+			c_rosetta = {
+				color={ 168 54 227 }
 				color2={ 255 255 255 }
 				
+				hellenistic = "Bolbitine"
+				greek = "Bolbitine"
 				coptic = "Rashit"
-				egyptian_arabic = "al-Mallidis"
-				bedouin_arabic = "al-Mallidis"
-				maghreb_arabic = "al-Mallidis"
-				levantine_arabic = "al-Mallidis"
-				andalusian_arabic = "al-Mallidis"
+				egyptian_arabic = "Rashid"
+				bedouin_arabic = "Rashid"
+				maghreb_arabic = "Rashid"
+				levantine_arabic = "Rashid"
+				andalusian_arabic = "Rashid"
 				
 				b_rosetta = {
+					hellenistic = "Bolbitine"
+					greek = "Bolbitine"
 					coptic = "Rashit"
+					egyptian_arabic = "Rashid"
+					bedouin_arabic = "Rashid"
+					maghreb_arabic = "Rashid"
+					levantine_arabic = "Rashid"
+					andalusian_arabic = "Rashid"
 				}
 				b_fuwa = {
+					hellenistic = "Metelis"
+					greek = "Metelis"
+					coptic = "Metel"
 				}
 				b_hermopolis = {
+					greek = "Hermopolis Mikra"
+					roman = "Hermopolis Parva"
+					coptic = "Ptiminhor"
 					egyptian_arabic = "Damanhur"
 					bedouin_arabic = "Damanhur"
 					maghreb_arabic = "Damanhur"
@@ -30433,12 +30457,32 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					andalusian_arabic = "Damanhur"
 				}
 				b_buto = {
+					hellenistic = "Buto"
+					greek = "Buto"
+					roman = "Butus"
+					egyptian_arabic = "Ibtu"
+					bedouin_arabic = "Abtu"
+					maghreb_arabic = "Abtu"
+					levantine_arabic = "Abtu"
+					andalusian_arabic = "Abtu"
 				}
 				b_disuq = {
 				}
 				b_mutubis = {
 				}
 				b_edkhou = {
+					hellenistic = "Etko"
+					greek = "Etko"
+					coptic = "Tajo"
+					egyptian_arabic = "Idku"
+					bedouin_arabic = "Edku"
+					maghreb_arabic = "Edku"
+					levantine_arabic = "Edku"
+					andalusian_arabic = "Edku"
+				}
+				b_naucratis = {
+				}
+				b_nitria = {
 				}
 			}
 			c_gizeh = {
@@ -30765,7 +30809,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			}
 		}
 		d_faiyum = {
-			color={ 110 240 145 }
+			color={ 130 220 45 }
 			color2={ 255 255 255 }
 
 			capital = 3432 # Faiyum
@@ -31171,35 +31215,43 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_salqin = {}
 			}
 			c_alexandretta = {
-				color={ 112 197 50 }
+				color={ 126 159 209 }
 				color2={ 255 255 255 }
 				
 				holy_site = shaytana
+				hellenistic = "Alexandreia Katisson"
 				roman = "Alexandria ad Issum"
-				greek = "Alexandria ad Issum"
-				hellenistic = "Alexandria ad Issum"
-				bedouin_arabic = "Iskandarun"
-				maghreb_arabic = "Iskandarun"
-				levantine_arabic = "Iskandarun"
-				egyptian_arabic = "Iskandarun"
-				andalusian_arabic = "Iskandarun"
-				turkish = "Iskandarun"
+				bedouin_arabic = "Iskandaruna"
+				maghreb_arabic = "Iskandaruna"
+				levantine_arabic = "Iskandaruna"
+				egyptian_arabic = "Iskandaruna"
+				andalusian_arabic = "Iskandaruna"
+				turkish = "Iskenderun"
 				armenian = "Hrosos"
 			
 				b_alexandretta = {
-					bedouin_arabic = "Iskandarun"
-					maghreb_arabic = "Iskandarun"
-					levantine_arabic = "Iskandarun"
-					egyptian_arabic = "Iskandarun"
-					andalusian_arabic = "Iskandarun"
-					turkish = "Iskandarun"
+					hellenistic = "Alexandreia Katisson"
 					roman = "Alexandria ad Issum"
-					greek = "Alexandria ad Issum"
-					hellenistic = "Alexandria ad Issum"
+					bedouin_arabic = "Iskandaruna"
+					maghreb_arabic = "Iskandaruna"
+					levantine_arabic = "Iskandaruna"
+					egyptian_arabic = "Iskandaruna"
+					andalusian_arabic = "Iskandaruna"
+					turkish = "Iskenderun"
+					armenian = "Hrosos"
 				}
-				b_rhosus = {}
+				b_rhosus = {
+					roman = "Rhosus"
+					turkish = "Arsuz"
+				}
 				b_myriandros = {}
-				b_belen = {}
+				b_trapessac = {
+					turkish = "Darbi Sak Kalesi"
+				}
+				b_savranda = {
+					turkish = "Savranda Kalesi"
+					armenian = "Sarvandikar"
+				}
 			}
 		}
 		d_tripoli = {
@@ -36465,6 +36517,7 @@ e_britannia = {
 		}
 	}
 }
+
 e_mali = {
 	color = { 140 140 0 }
 	

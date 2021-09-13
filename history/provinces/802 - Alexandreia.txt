@@ -1,19 +1,19 @@
-# 802 - Alexandria
+# 802 - Alexandreia
 
 # County Title
 title = c_alexandria
 
 # Settlements
 max_settlements = 7
-
-b_abukir = castle
+b_abuqir = castle
 b_alexandria = temple
-b_burgelarab = castle
-b_marabout = city
-b_hammam = castle
-b_damanhur = temple
-#b_naucratis = castle
-#b_elkanoun = castle
+#b_burgelarab = castle
+#b_hammam = city
+#b_dekheila = city
+b_matamir = castle
+#b_kafr_el_dawwar = castle
+b_sketis = temple
+#b_kellia = temple
 
 # Misc
 culture = egyptian_arabic
@@ -24,4 +24,3 @@ religion = plato_islam
 	build_wonder = wonder_lighthouse_alexandria
 	set_wonder_stage = 4
 }
-
