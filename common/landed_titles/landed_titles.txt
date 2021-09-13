@@ -30202,19 +30202,32 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_as_sukhnah = {}
 				b_ash_sholah = {}
 			}
-			c_asas = { #Raqqa
-				color = { 87 234 22 }
+			c_raqqah = {
+				color = { 168 210 182 }
 				color2 = { 255 255 255 }
 				
-				greek = Kallinikos
-				hellenistic = Kallinikos
-				roman = Kallinikus
+				hellenistic = "Kallinikos"
+				greek = "Kallinikos"
+				roman = "Callinicum"
 			
-				b_rakka = {}
-				b_tabqa = {}
-				b_resafa = {}
-				b_jazrah = {}
-				b_hamat = {}
+				b_raqqah = {
+					hellenistic = "Kallinikos"
+					greek = "Kallinikos"
+					roman = "Callinicum"
+				}
+				b_tabqah = {}
+				b_resafa = {
+					hellenistic = "Rhesapha"
+					greek = "Rhesapha"
+					roman = "Rosafa"
+				}
+				b_siffin = {
+					bedouin_arabic = "Abu Hureyra"
+					levantine_arabic = "Abu Hureyra"
+					andalusian_arabic = "Abu Hureyra"
+					egyptian_arabic = "Abu Hureyra"
+					maghreb_arabic = "Abu Hureyra"
+				}
 			}
 			c_homs = {
 				color = { 93 240 28 }
