@@ -965,7 +965,7 @@ d_haruriyyah = {
 	
 	graphical_culture = bektashigfx
 	
-	capital = 693 # Bagdad
+	capital = 693 # Baghdad
 	
 	title = "DEDEBABA"
 	foa = "GRANDHEADMASTER_FOA"
@@ -1743,7 +1743,6 @@ d_sunni_bedouin_company = {
 	mercenary_type = bedouin_company_composition
 }
 
-
 d_shiite_turkic_company = {
 	color = { 135 170 60 }
 	color2 = { 255 255 255 }
@@ -1905,47 +1904,6 @@ d_shiite_bedouin_company = {
 	mercenary_type = bedouin_company_composition
 }
 
-d_white_company = {
-	color={ 235 235 235 }
-	color2={ 255 255 255 }
-
-	capital = 72 # Essex
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-		}
-	}
-	
-	# Parent Religion 
-	religion = pelagian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-		
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-
-	mercenary_type = white_company_composition
-	
-}
-
 d_great_company = {
 	color={ 100 100 100 }
 	color2={ 255 255 255 }
@@ -1984,46 +1942,6 @@ d_great_company = {
 	strength_growth_per_century = 1.0
 
 	mercenary_type = great_company_composition
-}
-
-d_company_of_st_george = {
-	color={ 50 50 200 }
-	color2={ 255 255 255 }
-
-	capital = 235 # Lombardia
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	mercenary = yes
-
-	title = "CONDOTTIERO"
-	foa = "CONDOTTIERO_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-
-	mercenary_type = company_of_st_george_composition
 }
 
 d_star_company = {
@@ -2440,35 +2358,6 @@ d_victual_brothers = {
 	strength_growth_per_century = 0.25
 }
 
-d_varangian_guard = {
-	color={ 180 180 180 }
-	color2={ 255 255 255 }
-	
-	graphical_culture = orthodoxholygfx
-
-	capital = 290 # Uppland
-	
-	# Parent Religion 
-	religion = orthodox
-	
-	culture = norse
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	strength_growth_per_century = 0.10
-	
-	mercenary_type = varangian_guard_composition
-}
-
 d_cuman_company = {
 	color = { 160 160 80 }
 	color2 = { 255 255 255 }
@@ -2634,295 +2523,6 @@ d_turkic_company = {
 	mercenary_type = turkic_company_composition
 }
 
-d_lombard_band = {
-	color={ 150 60 60 }
-	color2={ 255 255 255 }
-
-	capital = 235 # Lombardia
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	mercenary = yes
-
-	title = "CONDOTTIERO"
-	foa = "CONDOTTIERO_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-		
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-
-	mercenary_type = lombard_band_composition
-}
-
-d_swiss_band = {
-	color={ 150 40 40 }
-	color2={ 255 255 255 }
-
-	capital = 239 # Geneve
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-		
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-
-	mercenary_type = swiss_band_composition
-}
-
-d_breton_band = {
-	color={ 150 65 65 }
-	color2={ 255 255 255 }
-
-	capital = 102 # Penthievre
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	culture = breton
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-		
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-
-	mercenary_type = breton_band_composition
-}
-
-d_catalan_band = {
-	color={ 230 100 100 }
-	color2={ 255 255 255 }
-
-	capital = 204 # Barcelona
-	
-	mercenary = yes
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-			year = 950
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	culture = catalan
-
-	title = "CONDOTTIERO"
-	foa = "CONDOTTIERO_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-
-	mercenary_type = catalan_band_composition
-}
-
-d_saxon_band = {
-	color={ 220 90 90 }
-	color2={ 255 255 255 }
-
-	capital = 57 # York
-	
-	mercenary = yes
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			OR = {
-				NOT = { year = 1100 }
-				any_independent_ruler = {
-					culture = saxon
-				}
-			}
-			religion_group = christian
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	culture = saxon
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-
-	mercenary_type = saxon_band_composition
-}
-
-d_cuman_band = {
-	color = { 160 160 80 }
-	color2 = { 255 255 255 }
-
-	capital = 616 # Yaik
-	
-	# Parent Religion 
-	religion = orthodox
-	
-	culture = cuman
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = cuman_band_composition
-}
-
-d_rus_band = {
-	color = { 80 80 160 }
-	color2 = { 255 255 255 }
-
-	capital = 547 # Kiev
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			year = 950
-			OR = {
-				religion_group = christian
-				religion_group = pagan_group
-			}
-		}
-	}
-	
-	# Parent Religion 
-	religion = orthodox
-	
-	culture = russian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = rus_band_composition
-}
-
 d_finnish_band = {
 	color = { 131 35 35 }
 	color2 = { 255 255 255 }
@@ -3011,670 +2611,6 @@ d_lappish_band = {
 	strength_growth_per_century = 1.0
 	
 	mercenary_type = lappish_band_composition
-}
-
-d_lithuanian_band = {
-	color = { 169 90 95 }
-	color2 = { 255 255 255 }
-
-	capital = 421 # Lietuva / Zhmud
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			OR = {
-				religion_group = christian
-				religion_group = pagan_group
-			}
-		}
-	}
-	
-	# Parent Religion 
-	religion = baltic_pagan
-	
-	culture = lithuanian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = lithuanian_band_composition
-}
-
-d_abyssinian_band = {
-	color={ 180 135 60 }
-	color2 = { 255 255 255 }
-
-	capital = 875 # Axum
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			OR = {
-				religion_group = christian
-				religion_group = jewish_group
-			}
-		}
-	}
-	
-	# Parent Religion 
-	religion = miaphysite
-	
-	culture = ethiopian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = abyssinian_band_composition
-}
-
-d_nubian_band = {
-	color = { 155 165 80 }
-	color2 = { 255 255 255 }
-
-	capital = 878 # Hayya
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			OR = {
-				religion_group = christian
-				religion_group = jewish_group
-			}
-		}
-	}
-	
-	# Parent Religion 
-	religion = miaphysite
-	
-	culture = nubian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = nubian_band_composition
-}
-
-d_scottish_band = {
-	color = { 30 90 182 }
-	color2 = { 255 255 255 }
-
-	capital = 43 # Gowrie
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			year = 950
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	culture = scottish
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = scottish_band_composition
-}
-
-d_irish_band = {
-	color = { 112 255 70 }
-	color2 = { 255 255 255 }
-
-	capital = 10 # Kildare
-	
-	# Hire Trigger
-	allow = {
-		always = yes
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	culture = irish
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = irish_band_composition
-}
-
-d_alan_band = {
-	color = { 245 210 90 }
-	color2 = { 255 255 255 }
-
-	capital = 603 # Alania
-	
-	# Hire Trigger
-	allow = {
-		always = yes
-	}
-	
-	# Parent Religion 
-	religion = orthodox
-	
-	culture = alan
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = alan_band_composition
-}
-
-d_pecheneg_band = {
-	color = { 100 100 30 }
-	color2 = { 255 255 255 }
-
-	capital = 542 # Olvia
-	
-	# Parent Religion 
-	religion = orthodox
-	
-	culture = pecheneg
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = pecheneg_band_composition
-}
-
-d_bulgarian_band = {
-	color = { 100 50 30 }
-	color2 = { 255 255 255 }
-
-	capital = 508 # Dorostotum
-	
-	# Parent Religion 
-	religion = orthodox
-	
-	culture = bulgarian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = bulgarian_band_composition
-}
-
-d_turkic_band = {
-	color = { 100 50 30 }
-	color2 = { 255 255 255 }
-
-	capital = 621 # Kangly
-	
-	# Parent Religion 
-	religion = orthodox
-	
-	culture = turkish
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = turkic_band_composition
-}
-
-d_mamluks = {
-	color={ 80 160 80 }
-	color2={ 255 255 255 }
-	
-	graphical_culture = bektashigfx
-
-	capital = 796 # Cairo
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = muslim
-		}
-	}
-	
-	# Parent Religion 
-	religion = shiite
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = mamluks_composition
-}
-
-d_venetian_navy = { # Now "Adriatic Galleys"
-	color = { 60  175  170 }
-	color2={ 255 255 255 }
-	
-	short_name = yes
-
-	capital = 356 # Venice
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-			year = 1066
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-		
-	# Cannot be vassalized
-	independent = yes
-
-	mercenary_type = naval_merc_composition
-}
-
-d_genoese_navy = { # Now "Ligurian Galleys"
-	color={ 224 161 120 }
-	color2={ 255 255 255 }
-	
-	short_name = yes
-
-	capital = 233 # Genoa
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-			year = 1066
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-		
-	# Cannot be vassalized
-	independent = yes
-
-	mercenary_type = naval_merc_composition
-}
-
-d_hanseatic_navy = { # Now "Baltic Cogs"
-	color={ 150 150 150 }
-	color2={ 255 255 255 }
-	
-	short_name = yes
-
-	capital = 262 # Lübeck
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-			year = 1066
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-		
-	# Cannot be vassalized
-	independent = yes
-
-	mercenary_type = naval_merc_composition
-}
-
-d_frisian_navy = { # Now "North Sea Cogs"
-	color={ 245 80 20 }
-	color2={ 255 255 255 }
-	
-	short_name = yes
-
-	capital = 80 # Holland
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = christian
-			year = 1066
-		}
-	}
-	
-	# Parent Religion 
-	religion = catholic
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-		
-	# Cannot be vassalized
-	independent = yes
-
-	mercenary_type = naval_merc_composition
-}
-
-d_maghreb_corsairs = {
-	color={ 174 237 125 }
-	color2={ 255 255 255 }
-	
-	short_name = yes
-
-	capital = 816 # Mahdia
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			religion_group = muslim
-			year = 1066
-		}
-	}
-	
-	# Parent Religion 
-	religion = sunni
-	
-	culture = maghreb_arabic
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-		
-	# Cannot be vassalized
-	independent = yes
-
-	mercenary_type = naval_merc_composition
-}
-
-d_ghilman = {
-	color={ 60 165 80 }
-	color2={ 255 255 255 }
-	
-	graphical_culture = bektashigfx
-
-	capital = 627 # Kara-Kum
-	
-	# Hire Trigger
-	allow = {
-		OR = {
-			AND = { 
-				religion_group = muslim
-				d_ghilman = { owner = { independent = yes } }
-			}
-			has_landed_title = d_ghilman
-			any_vassal = { has_landed_title = d_ghilman }
-		}
-	}
-	
-	# Parent Religion 
-	religion = sunni
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = ghilman_composition
-}
-
-d_ghanan_band = {
-	color = { 108 123 48 }
-	color2 = { 255 255 255 }
-
-	capital = 913 # Ghana
-	
-	# Hire Trigger
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				NOT = {
-					is_alternate_start = yes
-				}
-			}
-			culture_group = west_african
-		}
-	}
-	
-	# Parent Religion 
-	religion = west_african_pagan
-	
-	culture = manden
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = ghanan_band_composition
 }
 
 # EMPIRES
@@ -5735,7 +4671,7 @@ e_byzantium = {
 		zal_mani = 2000
 		illuyanka_reformed = 5000
 			
-	d_nikaea = {
+		d_nikaea = {
 			color={ 202 101 167 }
 			color2={ 255 255 20 }
 			
@@ -5883,28 +4819,19 @@ e_byzantium = {
 			color={ 210 140 170 }
 			color2={ 255 255 20 }
 
-			capital = 744 # Abydos
-
-			turkish = "Balakhisar"
+			capital = 744 # Troias
 
 			c_abydos = {
-				color={ 147 55 115 }
+				color={ 168 102 72 }
 				color2={ 255 255 20 }
 				
-				turkish = "Balakhisar"
-				
 				b_abydos = {
-					turkish = "Balakhisar"
-				}
-				b_lampsakos = {
 				}
 				b_alexandriatroas = {
 				}
-				b_pigai = {
+				b_lampsakos = {
 				}
-				b_aegae = {
-				}
-				b_allianoi = {
+				b_adramyttion = {
 				}
 				b_cebrene = {
 				}
@@ -6816,24 +5743,38 @@ e_byzantium = {
 				color={ 237 42 171 }
 				color2={ 255 255 20 }
 				
+				roman = "Ephesus"
 				turkish = "Ayasoluk"
 
 				holy_site = orthodox
 				
 				b_ephesos = {
+					roman = "Ephesus"
 					turkish = "Ayasoluk"
 				}
+				b_halikarnassos = {
+					roman = "Halicarnassus"
+					turkish = "Bodrum"
+				}
 				b_lebedos = {
+					roman = "Lebedus"
+				}
+				b_alinda = {
+					hellenistic = "Alexandreia pros ton Latmon"
+					greek = "Alexandreia pros ton Latmon"
+					roman = "Alexandria ad Latmum"
 				}
 				b_miletos = {
+					roman = "Miletus"
+					turkish = "Milet"
 				}
 				b_tralles = {
+					hellenistic = "Euanthia"
+					greek = "Tralleis"
+					turkish = "Güzelhisar"
 				}
 				b_iassos = {
-				}
-				b_palation = {
-				}
-				b_petron = {
+					roman = "Iasus"
 				}
 			}
 			c_smyrna = {
@@ -6954,15 +5895,12 @@ e_byzantium = {
 				
 				turkish = "Mugla"
 				
-				b_halikarnassos = {
-					turkish = "Bodrum"
-				}
-				b_myra = {
+				b_kibyra = {
 				}
 				b_telmissos = {
 					turkish = "Mugla"
 				}
-				b_kibyra = {
+				b_myra = {
 				}
 				b_patara = {
 				}
@@ -10190,38 +9128,6 @@ e_roman = {
 				}
 			}
 		}		
-	}	
-	
-	k_pisa = {
-		color={ 196 192 140 }
-		color2={ 255 255 255 }
-		
-		capital = 327 # Pisa
-		culture = italian
-		
-		dignity = 200 # Never want the Republic of Pisa to change primary title
-		
-		allow = {
-			is_republic = yes
-			k_pisa = {
-				is_titular = no
-			}
-		}
-	}
-
-	k_naples = {
-		color = { 218 217 242 }
-		capital = 334 # Napoli
-		
-		allow = {
-			FROM = {
-				any_previous_holder = {
-					always = yes # The title has existed before
-				}
-			}
-		}
-		
-		culture = italian
 	}
 
 	k_genoa = {
@@ -12162,11 +11068,11 @@ e_scandinavia = {
 				color = { 50 65 255 }
 				
 				b_aringsas = {}
-				b_nasborg = {}
+				b_nasborg2 = {}
 				b_kronoberg = {}
-				b_jonkoping = {}
+				b_jonkoping2 = {}
 				b_alvesta = {}
-				b_piksborg = {}
+				b_piksborg2 = {}
 			}
 			c_more = {
 				color = { 87 90 222 }
@@ -21467,35 +20373,32 @@ e_serindia = {
 			
 			c_urgench = {
 				color = { 227 173 27 }
-					holy_site = zor_angra
-					holy_site = ahriman_reformed
-					holy_site = zor_angra_reformed
-					holy_site = tengri_ahriman
+				
+				holy_site = zor_angra
+				holy_site = ahriman_reformed
+				holy_site = zor_angra_reformed
+				holy_site = tengri_ahriman
 			
-				b_kassarma = {}
-				b_dawletgirei = {		# Airyanem Vaejah
-				}
-				b_kuljandi = {}
-				b_kaszkarata = {}
-				b_aszczeatrik = {}
-				b_kosbulak = {}
-				b_sokyrbulak = {}
-				b_karakul = {}
+				b_urgench = {}
+				b_urgench1 = {}
+				b_urgench2 = {}
+				b_urgench3 = {}
+				b_urgench4 = {}
+				b_urgench5 = {}
+				b_urgench6 = {}
 			}
 
 			c_gurganj = {
 				color={ 127 210 15 }
 				color2={ 255 255 255 }
 
-				b_urgench = {}
-				b_kyrkmolla = {}
-				b_nukus = {
-				}
-				b_khodjali = {
-				}
-				b_karaoy = {}
-				b_karadepe = {}
-				b_uzynsuv = {}
+				b_darvaza = {}
+				b_beruni = {}
+				b_nukus = {}
+				b_kuskupir = {}
+				b_tagta = {}
+				b_tahta = {}
+				b_kizketken = {}
 			}
 			
 			c_dashhowuz = {
@@ -22096,11 +20999,13 @@ e_serindia = {
 			c_khuiten = {
 				color = { 57 57 80 }
 				
-				b_apaer = {}
-				b_kuldja = {}
-				b_ili = {}
-				b_djideli = {}
-				b_dikankairat = {}
+				b_khuiten = {}
+				b_khuiten1 = {}
+				b_khuiten2 = {}
+				b_khuiten3 = {}
+				b_khuiten4 = {}
+				b_khuiten5 = {}
+				b_khuiten6 = {}
 			}
 		}
 	}
@@ -23318,7 +22223,7 @@ e_turk = {
 				
 				b_birlik_navikat = {}
 				b_navikat = {}
-				b_akzhar = {}
+				b_akzhar1 = {}
 				b_ushzharma = {}
 			}
 		}
@@ -23424,7 +22329,6 @@ e_sassanid = {
 				b_torshiz = {}
 				b_beyhaq = {}
 				b_gonabad = {}
-				b_kalat = {}
 				b_torbatjam = {}
 				b_bardaskan = {}
 				b_mahvalat = {}
@@ -23684,30 +22588,6 @@ e_sassanid = {
 				b_farsan = {
 				}
 			}
-			c_tigris = {
-				color={ 92 174 52 }
-				color2={ 255 255 255 }
-				
-				ashkenazi = "Chideqel"
-				sephardi = "Chideqel"
-				
-				b_majaralkabir = {
-				}
-				b_bismaya = {
-				}
-				b_qalatsjergat = {
-				}
-				b_nuffar = {
-				}
-				b_ishan = {
-				}
-				b_Warka = {
-				}
-				b_samawah = {
-				}
-				b_tellelhiba = {
-				}
-			}
 		}
 	}
 	
@@ -23733,29 +22613,28 @@ e_sassanid = {
 			
 			c_kurdistan = {
 				color = { 11 91 238 }
-					holy_site = tarhunt
-					holy_site = tarhunt_reformed
-					holy_site = illuyanka_reformed
-					holy_site = zoroastrian
-					holy_site = mani
-					holy_site = mani_mithra
-					holy_site = mithra
-					holy_site = zor_angra
-					holy_site = zor_hindu
-					holy_site = ahriman_reformed
-					holy_site = mazdakism_reformed
-					holy_site = zor_angra_reformed
-					holy_site = zurvanism_reformed
-					holy_site = yazdanism
-					holy_site = yazidism
-					holy_site = yazdanism_reformed
+				
+				holy_site = tarhunt
+				holy_site = tarhunt_reformed
+				holy_site = illuyanka_reformed
+				holy_site = zoroastrian
+				holy_site = mani
+				holy_site = mani_mithra
+				holy_site = mithra
+				holy_site = zor_angra
+				holy_site = zor_hindu
+				holy_site = ahriman_reformed
+				holy_site = mazdakism_reformed
+				holy_site = zor_angra_reformed
+				holy_site = zurvanism_reformed
+				holy_site = yazdanism
+				holy_site = yazidism
+				holy_site = yazdanism_reformed
 				
 				b_duhok = {}
 				b_araden = {}
-				b_bebadi = {		# Âdur Gušnasp
-				}
+				b_bebadi = {}
 				b_dehi = {}
-				b_dairodmorhannanyo = {}
 				b_harmashi = {}
 				b_marqayoma = {}
 				b_dawodiya = {}
@@ -23996,22 +22875,13 @@ e_sassanid = {
 				color={ 164 236 24 }
 				color2={ 255 255 255 }
 				
-				b_urmiah = {
-				}
-				b_kapalak = {
-				}
-				b_takhtesuleiman = {
-				}
-				b_bastam = {
-				}
-				b_maku = {
-				} 
-				b_kalaberd = {
-				}
-				b_chaldoran = {
-				}
-				b_deglane = {
-				}
+				b_azerbaijan = {}
+				b_azerbaijan1 = {}
+				b_azerbaijan2 = {}
+				b_azerbaijan3 = {}
+				b_azerbaijan4 = {}
+				b_azerbaijan5 = {}
+				b_azerbaijan6 = {}
 			}
 			c_shemakha = {
 				color={ 168 240 28 }
@@ -24490,9 +23360,7 @@ e_sassanid = {
 				
 				b_meer_gurab = {}
 				b_gwadar = {}
-				b_khash = {}
-				b_pasni = {
-				}
+				b_pasni = {}
 				b_ormara = {}
 				b_asha_pura = {}
 				b_door_ghattee = {}
@@ -24679,7 +23547,7 @@ e_sassanid = {
 			color = { 151 118 30 }
 			capital = 727 #Bostra
 		
-		c_syria = {
+			c_syria = {
 				color = { 37 234 22 }
 			
 				b_amrah2 = {}
@@ -24731,7 +23599,6 @@ e_sassanid = {
 				b_mhaymidah2 = {}
 			}
 		}
-		
 		d_mosul = {
 			color={ 11 205 70 }
 			color2={ 255 255 255 }
@@ -24899,75 +23766,90 @@ e_sassanid = {
 			}
 			c_baghdad = {
 				color = { 129 169 243 }
-					holy_site = almaqah
-					holy_site = shams
-					holy_site = hubal
-					holy_site = attar
-					holy_site = maher
-					holy_site = waaq
-					holy_site = arab_pagan_reformed
-					holy_site = judaism
-					holy_site = jud_zion
-					holy_site = sethian
-					holy_site = jud_ark_reformed
-					holy_site = judaism_reformed
-					holy_site = sethian_reformed
-					holy_site = mandaean
-					holy_site = yahyanism
-					holy_site = yazdanism
-					holy_site = yazidism
-					holy_site = mandaean_reformed
-					holy_site = mand_ruha_reformed
-					holy_site = yazdanism_reformed
-					holy_site = druze
-					holy_site = druze_reformed
-					holy_site = haruri
-					holy_site = ibadi
-					holy_site = muslim_aliite_reformed
-					holy_site = ilm_islam
-					holy_site = muslim_domination_reformed
-					holy_site = marabout
-					holy_site = shiite
-					holy_site = muslim_sufi_reformed
-					holy_site = sunni
-					holy_site = indohelen
-					holy_site = indoh_bud
-					holy_site = indoh_hindu
-					holy_site = indoh_zor
-					holy_site = indohelen_reformed
+				holy_site = almaqah
+				holy_site = shams
+				holy_site = hubal
+				holy_site = attar
+				holy_site = maher
+				holy_site = waaq
+				holy_site = arab_pagan_reformed
+				holy_site = judaism
+				holy_site = jud_zion
+				holy_site = sethian
+				holy_site = jud_ark_reformed
+				holy_site = judaism_reformed
+				holy_site = sethian_reformed
+				holy_site = mandaean
+				holy_site = yahyanism
+				holy_site = yazdanism
+				holy_site = yazidism
+				holy_site = mandaean_reformed
+				holy_site = mand_ruha_reformed
+				holy_site = yazdanism_reformed
+				holy_site = druze
+				holy_site = druze_reformed
+				holy_site = haruri
+				holy_site = ibadi
+				holy_site = muslim_aliite_reformed
+				holy_site = ilm_islam
+				holy_site = muslim_domination_reformed
+				holy_site = marabout
+				holy_site = shiite
+				holy_site = muslim_sufi_reformed
+				holy_site = sunni
+				holy_site = indohelen
+				holy_site = indoh_bud
+				holy_site = indoh_hindu
+				holy_site = indoh_zor
+				holy_site = indohelen_reformed
 				
-				hellenistic = "Seleukia" 
-				greek = "Seleukia" 
-				indohellenic = "Seleukia" 
-				gandharan = "Seleukia" 
-				tocharian = "Seleukia" 
-				sinohellenic = "Seleukia" 
-				viethellenic = "Seleukia" 
-				persian = "Tosbon" 
-				parthian = "Tosbon" 
-				saka = "Tosbon" 
+				hellenistic = "Seleukeia"
+				greek = "Seleukeia"
 				roman = "Ctesiphon"
+				persian = "Tisfon"
+				bedouin_arabic = "Mada'in"
+				levantine_arabic = "Mada'in"
+				andalusian_arabic = "Mada'in"
+				egyptian_arabic = "Mada'in"
+				maghreb_arabic = "Mada'in"
 				
-				b_baqubah = {}
-				b_bagdad = {}
-				b_hillah = {
-
-					hellenistic = "Seleukia on the Tigris" 
-					greek = "Seleukia on the Tigris" 
-					indohellenic = "Seleukia on the Tigris" 
-					gandharan = "Seleukia on the Tigris" 
-					tocharian = "Seleukia on the Tigris" 
-					sinohellenic = "Seleukia on the Tigris" 
-					viethellenic = "Seleukia on the Tigris" 
-					persian = "Tosbon" 
-					parthian = "Tosbon" 
-					saka = "Tosbon" 
-					roman = "Ctesiphon"
+				b_iskandariya = {
+					hellenistic = "Alexandreia"
+					greek = "Alexandreia"
+					roman = "Alexandria"
 				}
-				b_iskandariya = {}
-				b_taji = {}
-				b_babel = {}
-				b_madain = {}
+				b_baghdad = {
+					hellenistic = "Bagdate"
+					greek = "Bagdate"
+					roman = "Bagdatum"
+				}
+				b_hillah = {
+					hellenistic = "Babylon"
+					greek = "Babylon"
+					roman = "Babylon"
+					jewish = "Babel"
+				}
+				b_baqubah = {}
+				b_seleukeia_tigris = {
+					hellenistic = "Seleukeia epi tou Tigre"
+					greek = "Seleukeia epi tou Tigre"
+					roman = "Seleucia ad Tigridem"
+					bedouin_arabic = "Mada'in"
+					levantine_arabic = "Mada'in"
+					andalusian_arabic = "Mada'in"
+					egyptian_arabic = "Mada'in"
+					maghreb_arabic = "Mada'in"
+				}
+				b_ctesiphon = {
+					hellenistic = "Ktesiphon"
+					greek = "Ktesiphon"
+					persian = "Tisfon"
+					bedouin_arabic = "Taysafun"
+					levantine_arabic = "Taysafun"
+					andalusian_arabic = "Taysafun"
+					egyptian_arabic = "Taysafun"
+					maghreb_arabic = "Taysafun"
+				}
 				b_latifiya = {}
 			}
 			c_euphrates = {
@@ -25009,12 +23891,15 @@ e_sassanid = {
 			c_tigris = {
 				color = { 61 121 231 }
 				
+				ashkenazi = "Chideqel"
+				sephardi = "Chideqel"
+				
 				b_majaralkabir = {}
 				b_bismaya = {}
 				b_qalatsjergat = {}
 				b_nuffar = {}
 				b_ishan = {}
-				b_Warka = {}
+				b_warka = {}
 				b_samawah = {}
 				b_tellelhiba = {}
 			}
@@ -25692,7 +24577,7 @@ e_pannonia = {
 				b_bacs = {}
 				b_apatin = {}
 				b_szintarev = {}
-				b_baja = {}
+				b_baja1 = {}
 				b_zombor = {}
 				b_bacsalmas = {}
 				b_pancsova = {}
@@ -25796,11 +24681,11 @@ e_pannonia = {
 				}
 				b_corabia = {
 				}
-				b_caracal = {
+				b_caracal1 = {
 				}
 				b_calafat = {
 				}
-				b_slatina = {
+				b_slatina1 = {
 				}
 				b_resita = {
 				}
@@ -25831,7 +24716,6 @@ e_pannonia = {
 			
 				b_severin = {}
 				b_ursova = {}
-				b_craiova = {}
 				b_ramnic = {}
 				b_tirgujiu = {}
 				b_slatina = {}
@@ -31332,19 +30216,32 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_as_sukhnah = {}
 				b_ash_sholah = {}
 			}
-			c_asas = { #Raqqa
-				color = { 87 234 22 }
+			c_raqqah = {
+				color = { 168 210 182 }
 				color2 = { 255 255 255 }
 				
-				greek = Kallinikos
-				hellenistic = Kallinikos
-				roman = Kallinikus
+				hellenistic = "Kallinikos"
+				greek = "Kallinikos"
+				roman = "Callinicum"
 			
-				b_rakka = {}
-				b_tabqa = {}
-				b_resafa = {}
-				b_jazrah = {}
-				b_hamat = {}
+				b_raqqah = {
+					hellenistic = "Kallinikos"
+					greek = "Kallinikos"
+					roman = "Callinicum"
+				}
+				b_tabqah = {}
+				b_resafa = {
+					hellenistic = "Rhesapha"
+					greek = "Rhesapha"
+					roman = "Rosafa"
+				}
+				b_siffin = {
+					bedouin_arabic = "Abu Hureyra"
+					levantine_arabic = "Abu Hureyra"
+					andalusian_arabic = "Abu Hureyra"
+					egyptian_arabic = "Abu Hureyra"
+					maghreb_arabic = "Abu Hureyra"
+				}
 			}
 			c_homs = {
 				color = { 93 240 28 }
@@ -31420,7 +30317,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 			capital = 802 # Alexandria
 			
-			coptic = "Rakote"
+			coptic = "Rakodi"
 			
 			c_alexandria = {
 				color={ 102 221 136 }
@@ -31474,12 +30371,14 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				holy_site = isis_reformed
 				holy_site = set_reformed
 				
-				coptic = "Rakote"
-				egyptian_arabic = "al-Iskandariyya"
-				bedouin_arabic = "al-Iskandariyya"
-				maghreb_arabic = "al-Iskandariyya"
-				levantine_arabic = "al-Iskandariyya"
-				andalusian_arabic = "al-Iskandariyya"
+				coptic = "Rakodi"
+				hellenistic = "Alexandreia"
+				greek = "Alexandreia"
+				egyptian_arabic = "Eskendereyya"
+				bedouin_arabic = "Iskandariyah"
+				maghreb_arabic = "Iskandariyah"
+				levantine_arabic = "Iskandariyah"
+				andalusian_arabic = "Iskandariyah"
 				
 				b_alexandria = {
 					pentarchy = yes
@@ -31516,45 +30415,68 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					pentarchy = sol_boreas_reformed
 					pentarchy = sol_islam_reformed
 					pentarchy = sol_sahara_reformed
-					coptic = "Rakote"
-					egyptian_arabic = "al-Iskandariyya"
-					bedouin_arabic = "al-Iskandariyya"
-					maghreb_arabic = "al-Iskandariyya"
-					levantine_arabic = "al-Iskandariyya"
-					andalusian_arabic = "al-Iskandariyya"
+					
+					coptic = "Rakodi"
+					hellenistic = "Alexandreia"
+					greek = "Alexandreia"
+					egyptian_arabic = "Eskendereyya"
+					bedouin_arabic = "Iskandariyah"
+					maghreb_arabic = "Iskandariyah"
+					levantine_arabic = "Iskandariyah"
+					andalusian_arabic = "Iskandariyah"
 				}
-				b_abukir = {
-				}
-				b_damanhur = {
-				}
-				b_hammam = {
-				}
-				b_naucratis = {
+				b_abuqir = {
+					hellenistic = "Aboukir"
+					greek = "Aboukir"
+					coptic = "Apakyri"
 				}
 				b_burgelarab = {
 				}
-				b_marabout = {
+				b_hammam = {
 				}
-				b_elkanoun = {
+				b_dekheila = {
+				}
+				b_matamir = {
+				}
+				b_kafr_el_dawwar = {
+				}
+				b_sketis = {
+				}
+				b_kellia = {
 				}
 			}
-			c_gabiyaha = {
-				color={ 6 255 77 }
+			c_rosetta = {
+				color={ 168 54 227 }
 				color2={ 255 255 255 }
 				
+				hellenistic = "Bolbitine"
+				greek = "Bolbitine"
 				coptic = "Rashit"
-				egyptian_arabic = "al-Mallidis"
-				bedouin_arabic = "al-Mallidis"
-				maghreb_arabic = "al-Mallidis"
-				levantine_arabic = "al-Mallidis"
-				andalusian_arabic = "al-Mallidis"
+				egyptian_arabic = "Rashid"
+				bedouin_arabic = "Rashid"
+				maghreb_arabic = "Rashid"
+				levantine_arabic = "Rashid"
+				andalusian_arabic = "Rashid"
 				
 				b_rosetta = {
+					hellenistic = "Bolbitine"
+					greek = "Bolbitine"
 					coptic = "Rashit"
+					egyptian_arabic = "Rashid"
+					bedouin_arabic = "Rashid"
+					maghreb_arabic = "Rashid"
+					levantine_arabic = "Rashid"
+					andalusian_arabic = "Rashid"
 				}
 				b_fuwa = {
+					hellenistic = "Metelis"
+					greek = "Metelis"
+					coptic = "Metel"
 				}
 				b_hermopolis = {
+					greek = "Hermopolis Mikra"
+					roman = "Hermopolis Parva"
+					coptic = "Ptiminhor"
 					egyptian_arabic = "Damanhur"
 					bedouin_arabic = "Damanhur"
 					maghreb_arabic = "Damanhur"
@@ -31562,12 +30484,32 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					andalusian_arabic = "Damanhur"
 				}
 				b_buto = {
+					hellenistic = "Buto"
+					greek = "Buto"
+					roman = "Butus"
+					egyptian_arabic = "Ibtu"
+					bedouin_arabic = "Abtu"
+					maghreb_arabic = "Abtu"
+					levantine_arabic = "Abtu"
+					andalusian_arabic = "Abtu"
 				}
 				b_disuq = {
 				}
 				b_mutubis = {
 				}
 				b_edkhou = {
+					hellenistic = "Etko"
+					greek = "Etko"
+					coptic = "Tajo"
+					egyptian_arabic = "Idku"
+					bedouin_arabic = "Edku"
+					maghreb_arabic = "Edku"
+					levantine_arabic = "Edku"
+					andalusian_arabic = "Edku"
+				}
+				b_naucratis = {
+				}
+				b_nitria = {
 				}
 			}
 			c_gizeh = {
@@ -31652,89 +30594,105 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 			capital = 798 # Damietta
 			
-			coptic = "Tamiat"
+			hellenistic = "Tamiathis"
 			greek = "Tamiathis"
+			coptic = "Tamiat"
+			egyptian_arabic = "Dumyat"
+			bedouin_arabic = "Dumyat"
+			maghreb_arabic = "Dumyat"
+			levantine_arabic = "Dumyat"
+			andalusian_arabic = "Dumyat"
 			
 			c_delta = {
-				color={ 9 255 80 }
+				color={ 126 51 99 }
 				color2={ 255 255 255 }
 				
 				b_damietta = {
+					hellenistic = "Tamiathis"
+					greek = "Tamiathis"
+					coptic = "Tamiat"
+					egyptian_arabic = "Dumyat"
+					bedouin_arabic = "Dumyat"
+					maghreb_arabic = "Dumyat"
+					levantine_arabic = "Dumyat"
+					andalusian_arabic = "Dumyat"
 				}
-				b_burlus = {
+				b_busiris = {
+					coptic = "Busiri"
 				}
 				b_saramsah = {
 				}
 				b_burah = {
 				}
-				b_fareskur = {
-				}
-				b_baramun = {
-				}
-				b_tanis = {
-				}
-				b_shirbin = {
+				b_mahalla = {
+					hellenistic = "Theodosios"
+					greek = "Theodosios"
+					roman = "Theodosiou Nixis"
+					coptic = "Dishairi"
+			}
+				b_burlus = {
 				}
 				b_xois = {
+					egyptian_arabic = "Sakha"
+					bedouin_arabic = "Sakha"
+					maghreb_arabic = "Sakha"
+					levantine_arabic = "Sakha"
+					andalusian_arabic = "Sakha"
+				}
+				b_samannud = {
+					hellenistic = "Sebennytos"
+					greek = "Sebennytos"
+					roman = "Sebennytus"
+					coptic = "Semnoudi"
 				}
 			}
-			c_pelusia = {
-				color={ 12 255 83 }
+			c_tanis = {
+				color={ 168 24 222 }
 				color2={ 255 255 255 }
 				
-				coptic = "Tamiat"
-				hellenistic = "Tamiathis"
-				egyptian_arabic = "ad-Dingawiya"
-				bedouin_arabic = "ad-Dingawiya"
-				maghreb_arabic = "ad-Dingawiya"
-				levantine_arabic = "ad-Dingawiya"
-				andalusian_arabic = "ad-Dingawiya"
-				
-				b_tjaru = {
-					hellenistic = "Zele" 
-					greek = "Sile" 
-				}
-				b_tinnis = {
-				}
-				b_alsalihiyah = {
-				}
-				b_sile = {
-				}
-				b_ismaillia = {
-				}
-				b_pithom = {
-				}
-				b_serapeum = {
-				}
-			}
-			c_manupura = {
-				color={ 15 255 86 }
-				color2={ 255 255 255 }
-				
-				coptic = "Dishairi"
-				egyptian_arabic = "al-Garbiya"
-				bedouin_arabic = "al-Garbiya"
-				maghreb_arabic = "al-Garbiya"
-				levantine_arabic = "al-Garbiya"
-				andalusian_arabic = "al-Garbiya"
-
 				holy_site = set
 				holy_site = set_reformed
 				
-				b_malhalla = {
-					coptic = "Dishairi"
+				coptic = "Djani"
+				
+				b_tjaru = {
+					hellenistic = "Sele"
+					greek = "Sele"
+					roman = "Sile"
+					coptic = "Sle"
+					egyptian_arabic = "Tajaru"
+					bedouin_arabic = "Tajaru"
+					maghreb_arabic = "Tajaru"
+					levantine_arabic = "Tajaru"
+					andalusian_arabic = "Tajaru"
 				}
-				b_athribis = {
+				b_tanis = {
+					coptic = "Djani"
 				}
-				b_busiris = {
+				b_tinnis = {
+					hellenistic = "Tennis"
+					greek = "Tennis"
+					coptic = "Tennesi"
 				}
 				b_mansoura = {
 				}
-				b_tanta = {
+				b_athrribis = {
+					coptic = "Atribi"
+					egyptian_arabic = "Tell Atrib"
+					bedouin_arabic = "Tell Atrib"
+					maghreb_arabic = "Tell Atrib"
+					levantine_arabic = "Tell Atrib"
+					andalusian_arabic = "Tell Atrib"
 				}
-				b_sais = {
-				}
-				b_samannud = {
+				b_pithom = {
+					hellenistic = "Heroonopolis"
+					greek = "Heroöpolis"
+					roman = "Heroopolis"
+					egyptian_arabic = "Tell El Maskhuta"
+					bedouin_arabic = "Tell El Maskhuta"
+					maghreb_arabic = "Tell El Maskhuta"
+					levantine_arabic = "Tell El Maskhuta"
+					andalusian_arabic = "Tell El Maskhuta"
 				}
 			}
 		}
@@ -31760,6 +30718,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_maadi = {}
 				b_tekkekyahudiyya = {}
 				b_merimdabenisalama = {}
+				b_alsalihiyah = {}
 			}
 			c_quena = {
 				color={ 32 244 127 }
@@ -31894,7 +30853,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			}
 		}
 		d_faiyum = {
-			color={ 110 240 145 }
+			color={ 130 220 45 }
 			color2={ 255 255 255 }
 
 			capital = 3432 # Faiyum
@@ -32300,35 +31259,43 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_salqin = {}
 			}
 			c_alexandretta = {
-				color={ 112 197 50 }
+				color={ 126 159 209 }
 				color2={ 255 255 255 }
 				
 				holy_site = shaytana
+				hellenistic = "Alexandreia Katisson"
 				roman = "Alexandria ad Issum"
-				greek = "Alexandria ad Issum"
-				hellenistic = "Alexandria ad Issum"
-				bedouin_arabic = "Iskandarun"
-				maghreb_arabic = "Iskandarun"
-				levantine_arabic = "Iskandarun"
-				egyptian_arabic = "Iskandarun"
-				andalusian_arabic = "Iskandarun"
-				turkish = "Iskandarun"
+				bedouin_arabic = "Iskandaruna"
+				maghreb_arabic = "Iskandaruna"
+				levantine_arabic = "Iskandaruna"
+				egyptian_arabic = "Iskandaruna"
+				andalusian_arabic = "Iskandaruna"
+				turkish = "Iskenderun"
 				armenian = "Hrosos"
 			
 				b_alexandretta = {
-					bedouin_arabic = "Iskandarun"
-					maghreb_arabic = "Iskandarun"
-					levantine_arabic = "Iskandarun"
-					egyptian_arabic = "Iskandarun"
-					andalusian_arabic = "Iskandarun"
-					turkish = "Iskandarun"
+					hellenistic = "Alexandreia Katisson"
 					roman = "Alexandria ad Issum"
-					greek = "Alexandria ad Issum"
-					hellenistic = "Alexandria ad Issum"
+					bedouin_arabic = "Iskandaruna"
+					maghreb_arabic = "Iskandaruna"
+					levantine_arabic = "Iskandaruna"
+					egyptian_arabic = "Iskandaruna"
+					andalusian_arabic = "Iskandaruna"
+					turkish = "Iskenderun"
+					armenian = "Hrosos"
 				}
-				b_rhosus = {}
+				b_rhosus = {
+					roman = "Rhosus"
+					turkish = "Arsuz"
+				}
 				b_myriandros = {}
-				b_belen = {}
+				b_trapessac = {
+					turkish = "Darbi Sak Kalesi"
+				}
+				b_savranda = {
+					turkish = "Savranda Kalesi"
+					armenian = "Sarvandikar"
+				}
 			}
 		}
 		d_tripoli = {
@@ -37594,6 +36561,7 @@ e_britannia = {
 		}
 	}
 }
+
 e_mali = {
 	color = { 140 140 0 }
 	
@@ -38959,7 +37927,6 @@ d_romagna = {
 d_salamanca = {
 	color = { 251 229 34 }
 }
-
 d_sames = {
 	# Actually Samoyeds
 	color = { 101 70 34 }
@@ -47380,218 +46347,6 @@ d_jurchen_corsairs = {
 	independent = yes
 
 	mercenary_type = naval_merc_composition
-}
-
-# INDIAN MERCS
-
-d_tamil_band = {
-	color = { 110 60 30 }
-	color2 = { 255 255 255 }
-
-	capital = 1120 # Tagadur
-	
-	# Parent Religion 
-	religion = hindu
-	
-	culture = tamil
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = tamil_band_composition
-}
-
-d_marathi_company = {
-	color = { 150 80 40 }
-	color2 = { 255 255 255 }
-
-	capital = 1254 # Vairagara
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = marathi
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = marathi_company_composition
-}
-
-d_marathi_band = {
-	color = { 180 80 40 }
-	color2 = { 255 255 255 }
-
-	capital = 1254 # Vairagara
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = marathi
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = marathi_band_composition
-}
-
-d_bengal_company = {
-	color = { 30 150 50 }
-	color2 = { 255 255 255 }
-
-	capital = 1236 # Candradvipa
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = bengali
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = bengal_company_composition
-}
-
-d_bengal_band = {
-	color = { 30 170 50 }
-	color2 = { 255 255 255 }
-
-	capital = 1236 # Candradvipa
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = bengali
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = bengal_band_composition
-}
-
-d_rajput_company = {
-	color = { 180 65 0 }
-	color2 = { 255 255 255 }
-
-	capital = 1130 # Mandavyapura
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = rajput
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = rajput_company_composition
-}
-
-d_rajput_band = {
-	color = { 170 50 0 }
-	color2 = { 255 255 255 }
-
-	capital = 1130 # Mandavyapura
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = rajput
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = rajput_band_composition
 }
 
 # Silk Road Mercs

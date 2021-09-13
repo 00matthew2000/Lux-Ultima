@@ -3965,6 +3965,150 @@ d_charging_bull = {
 	strength_growth_per_century = 0.5
 	mercenary_type = d_charging_bull_composition
 }
+d_chariots_of_fire = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+	capital = 814 # Jerusalem
+
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_chariots_of_fire_composition
+}
+
+d_company_of_st_george = {
+	color={ 50 50 200 }
+	color2={ 255 255 255 }
+	capital = 255 # Lombardia
+	
+	mercenary = yes
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+	}
+	
+	# Parent Religion/Culture 
+	religion = catholic
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_company_of_st_george_composition
+}
+
+d_falling_stone = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+	capital = 755 # Syria
+
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_falling_stone_composition
+}
+
+d_guards_of_baghdad = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+	capital = 731 # Baghdad
+
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	
+	# Parent Religion/Culture
+	culture = levantine_arabic
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_guards_of_baghdad_composition
+}
+
+d_horsemen_of_the_beating_drum = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+	capital = 182 # Sevilla
+
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_horsemen_of_the_beating_drum_composition
+}
+d_horsemen_of_the_burning_stag = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+	capital = 244 # Ulm
+
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Parent Religion/Culture
+	religion = german_pagan
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_horsemen_of_the_burning_stag_composition
+}
 
 d_kerns_of_connacht = {
 	color = { 80 80 160 }
@@ -4015,6 +4159,7 @@ d_knights_of_the_iron_gauntlet = {
 	strength_growth_per_century = 0.5
 	mercenary_type = d_knights_of_the_iron_gauntlet_composition
 }
+
 d_lettigalian_alliance = {
 	color = { 80 80 160 }
 	color2 = { 255 255 255 }
@@ -4314,6 +4459,89 @@ d_varangian_guard = {
 	mercenary_type = d_varangian_guard_composition
 }
 
+d_wall_of_spears = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+	capital = 991 # Tripoli
+	
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = sol_group
+			religion_group = christian
+		}
+	}
+	
+	# Parent Religion/Culture 
+	religion = sol_christ
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_wall_of_spears_composition
+}
+d_wandering_horsemen = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+	capital = 735 # Nisibin
+
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_wandering_horsemen_composition
+}
+d_white_company = {
+	color={ 235 235 235 }
+	color2={ 255 255 255 }
+	capital = 64 # Essex
+		
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+	}
+	
+	# Parent Religion/Culture 
+	religion = pelagian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_white_company_composition
+}
+
 d_wroth_of_tengri = {
 	color = { 80 80 160 }
 	color2 = { 255 255 255 }
@@ -4343,6 +4571,117 @@ d_wroth_of_tengri = {
 	strength_growth_per_century = 0.5
 	mercenary_type = d_wroth_of_tengri_composition
 }
+
+# Independent Mercenary Navies
+d_frisian_navy = { # Now "North Sea Cogs"
+	color={ 245 80 20 }
+	color2={ 255 255 255 }
+	short_name = yes
+	capital = 224 # Holland
+	
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+
+	mercenary_type = d_frisian_navy_composition
+}
+d_genoese_navy = { # Now "Ligurian Galleys"
+	color={ 224 161 120 }
+	color2={ 255 255 255 }
+	short_name = yes
+	capital = 257 # Genoa
+	
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+
+	mercenary_type = d_genoese_navy_composition
+}
+d_hanseatic_navy = { # Now "Baltic Cogs"
+	color={ 150 150 150 }
+	color2={ 255 255 255 }
+	short_name = yes
+	capital = 327 # Lübeck
+	
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+
+	mercenary_type = d_hanseatic_navy_composition
+}
+d_maghreb_corsairs = {
+	color={ 174 237 125 }
+	color2={ 255 255 255 }
+	short_name = yes
+	capital = 962 # Mahdia
+	
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	
+	# Parent Religion/Culture
+	culture = maghreb_arabic
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+
+	mercenary_type = d_maghreb_corsairs_composition
+}
+d_venetian_navy = { # Now "Adriatic Galleys"
+	color = { 60  175  170 }
+	color2={ 255 255 255 }
+	short_name = yes
+	capital = 305 # Venice
+	
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	mercenary_type = d_venetian_navy_composition
+}
+
 
 # VASSAL MERCS
 
@@ -5315,6 +5654,39 @@ d_galatiaelite = {
 	
 	strength_growth_per_century = 0.5
 	mercenary_type = d_daciaelite_composition
+}
+d_ghilman = {
+	color={ 60 165 80 }
+	color2={ 255 255 255 }
+	capital = 731 # Kara-Kum
+	
+	mercenary = yes
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			AND = { 
+				religion_group = muslim
+				d_ghilman = { owner = { independent = yes } }
+			}
+			has_landed_title = d_ghilman
+			any_vassal = { has_landed_title = d_ghilman }
+		}
+	}
+	
+	# Parent Religion/Culture 
+	religion = sunni
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	strength_growth_per_century = 0.5
+	mercenary_type = d_ghilman_composition
 }
 d_gilanelite = {
 	color = { 243 209 23 }
@@ -6559,6 +6931,36 @@ d_dragon_company = {
 	strength_growth_per_century = 0.50
 	
 	mercenary_type = dragon_company_composition
+}
+
+d_tamil_band = {
+	color = { 110 60 30 }
+	color2 = { 255 255 255 }
+
+	capital = 1110 # Chola
+	
+	# Parent Religion 
+	religion = hindu
+	
+	culture = tamilar
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 0.5
+	
+	mercenary_type = tamil_band_composition
 }
 
 d_marathi_company = {

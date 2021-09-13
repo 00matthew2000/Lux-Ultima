@@ -1,0 +1,29 @@
+# 798 - Damietta
+
+# County Title
+title = c_delta
+
+# Settlements
+max_settlements = 5
+b_damietta = castle
+b_busiris = city
+b_saramsah = temple
+#b_burah = castle
+#b_mahalla = castle
+#b_burlus = city
+b_xois = temple
+#b_samannud = temple
+
+# Misc
+culture = egyptian_arabic
+religion = ashari
+
+# History
+867.1.1 = { 
+	b_mahalla = ca_keep_1
+	b_mahalla = ca_training_grounds_1
+	b_mahalla = ca_stable_1
+	b_mahalla = ca_wall_1
+	b_mahalla = ca_wall_2
+	b_mahalla = ca_militia_barracks_1
+}
