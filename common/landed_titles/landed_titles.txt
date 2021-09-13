@@ -965,7 +965,7 @@ d_haruriyyah = {
 	
 	graphical_culture = bektashigfx
 	
-	capital = 693 # Bagdad
+	capital = 693 # Baghdad
 	
 	title = "DEDEBABA"
 	foa = "GRANDHEADMASTER_FOA"
@@ -23547,7 +23547,7 @@ e_sassanid = {
 			color = { 151 118 30 }
 			capital = 727 #Bostra
 		
-		c_syria = {
+			c_syria = {
 				color = { 37 234 22 }
 			
 				b_amrah2 = {}
@@ -23599,7 +23599,6 @@ e_sassanid = {
 				b_mhaymidah2 = {}
 			}
 		}
-		
 		d_mosul = {
 			color={ 11 205 70 }
 			color2={ 255 255 255 }
@@ -23767,75 +23766,90 @@ e_sassanid = {
 			}
 			c_baghdad = {
 				color = { 129 169 243 }
-					holy_site = almaqah
-					holy_site = shams
-					holy_site = hubal
-					holy_site = attar
-					holy_site = maher
-					holy_site = waaq
-					holy_site = arab_pagan_reformed
-					holy_site = judaism
-					holy_site = jud_zion
-					holy_site = sethian
-					holy_site = jud_ark_reformed
-					holy_site = judaism_reformed
-					holy_site = sethian_reformed
-					holy_site = mandaean
-					holy_site = yahyanism
-					holy_site = yazdanism
-					holy_site = yazidism
-					holy_site = mandaean_reformed
-					holy_site = mand_ruha_reformed
-					holy_site = yazdanism_reformed
-					holy_site = druze
-					holy_site = druze_reformed
-					holy_site = haruri
-					holy_site = ibadi
-					holy_site = muslim_aliite_reformed
-					holy_site = ilm_islam
-					holy_site = muslim_domination_reformed
-					holy_site = marabout
-					holy_site = shiite
-					holy_site = muslim_sufi_reformed
-					holy_site = sunni
-					holy_site = indohelen
-					holy_site = indoh_bud
-					holy_site = indoh_hindu
-					holy_site = indoh_zor
-					holy_site = indohelen_reformed
+				holy_site = almaqah
+				holy_site = shams
+				holy_site = hubal
+				holy_site = attar
+				holy_site = maher
+				holy_site = waaq
+				holy_site = arab_pagan_reformed
+				holy_site = judaism
+				holy_site = jud_zion
+				holy_site = sethian
+				holy_site = jud_ark_reformed
+				holy_site = judaism_reformed
+				holy_site = sethian_reformed
+				holy_site = mandaean
+				holy_site = yahyanism
+				holy_site = yazdanism
+				holy_site = yazidism
+				holy_site = mandaean_reformed
+				holy_site = mand_ruha_reformed
+				holy_site = yazdanism_reformed
+				holy_site = druze
+				holy_site = druze_reformed
+				holy_site = haruri
+				holy_site = ibadi
+				holy_site = muslim_aliite_reformed
+				holy_site = ilm_islam
+				holy_site = muslim_domination_reformed
+				holy_site = marabout
+				holy_site = shiite
+				holy_site = muslim_sufi_reformed
+				holy_site = sunni
+				holy_site = indohelen
+				holy_site = indoh_bud
+				holy_site = indoh_hindu
+				holy_site = indoh_zor
+				holy_site = indohelen_reformed
 				
-				hellenistic = "Seleukia" 
-				greek = "Seleukia" 
-				indohellenic = "Seleukia" 
-				gandharan = "Seleukia" 
-				tocharian = "Seleukia" 
-				sinohellenic = "Seleukia" 
-				viethellenic = "Seleukia" 
-				persian = "Tosbon" 
-				parthian = "Tosbon" 
-				saka = "Tosbon" 
+				hellenistic = "Seleukeia"
+				greek = "Seleukeia"
 				roman = "Ctesiphon"
+				persian = "Tisfon"
+				bedouin_arabic = "Mada'in"
+				levantine_arabic = "Mada'in"
+				andalusian_arabic = "Mada'in"
+				egyptian_arabic = "Mada'in"
+				maghreb_arabic = "Mada'in"
 				
-				b_baqubah = {}
-				b_bagdad = {}
-				b_hillah = {
-
-					hellenistic = "Seleukia on the Tigris" 
-					greek = "Seleukia on the Tigris" 
-					indohellenic = "Seleukia on the Tigris" 
-					gandharan = "Seleukia on the Tigris" 
-					tocharian = "Seleukia on the Tigris" 
-					sinohellenic = "Seleukia on the Tigris" 
-					viethellenic = "Seleukia on the Tigris" 
-					persian = "Tosbon" 
-					parthian = "Tosbon" 
-					saka = "Tosbon" 
-					roman = "Ctesiphon"
+				b_iskandariya = {
+					hellenistic = "Alexandreia"
+					greek = "Alexandreia"
+					roman = "Alexandria"
 				}
-				b_iskandariya = {}
-				b_taji = {}
-				b_babel = {}
-				b_madain = {}
+				b_baghdad = {
+					hellenistic = "Bagdate"
+					greek = "Bagdate"
+					roman = "Bagdatum"
+				}
+				b_hillah = {
+					hellenistic = "Babylon"
+					greek = "Babylon"
+					roman = "Babylon"
+					jewish = "Babel"
+				}
+				b_baqubah = {}
+				b_seleukeia_tigris = {
+					hellenistic = "Seleukeia epi tou Tigre"
+					greek = "Seleukeia epi tou Tigre"
+					roman = "Seleucia ad Tigridem"
+					bedouin_arabic = "Mada'in"
+					levantine_arabic = "Mada'in"
+					andalusian_arabic = "Mada'in"
+					egyptian_arabic = "Mada'in"
+					maghreb_arabic = "Mada'in"
+				}
+				b_ctesiphon = {
+					hellenistic = "Ktesiphon"
+					greek = "Ktesiphon"
+					persian = "Tisfon"
+					bedouin_arabic = "Taysafun"
+					levantine_arabic = "Taysafun"
+					andalusian_arabic = "Taysafun"
+					egyptian_arabic = "Taysafun"
+					maghreb_arabic = "Taysafun"
+				}
 				b_latifiya = {}
 			}
 			c_euphrates = {
@@ -37913,7 +37927,6 @@ d_romagna = {
 d_salamanca = {
 	color = { 251 229 34 }
 }
-
 d_sames = {
 	# Actually Samoyeds
 	color = { 101 70 34 }
