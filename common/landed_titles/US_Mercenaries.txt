@@ -1816,46 +1816,6 @@ d_plains_band = {
 	mercenary_type = d_plains_band_composition
 }
 
-d_berber_camel_riders = {
-	color = { 80 80 160 }
-	color2 = { 255 255 255 }
-
-	capital = 843 # Marrakech
-	
-	# Hire Trigger
-	allow = {
-		OR = {
-			religion_group = muslim
-			religion_group = pagan_group
-			religion_group = jewish_group
-			religion_group = zoroastrian_group
-			religion_group = indian_group
-			religion_group = chinese_religion
-		}
-	}
-	
-	# Parent Religion 
-	religion = sunni
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-
-	strength_growth_per_century = 1.00
-	
-	mercenary_type = d_berber_camel_riders_composition
-}
-
 d_disciples_of_johan = {
 	color = { 80 80 160 }
 	color2 = { 255 255 255 }
@@ -2744,46 +2704,6 @@ d_screaming_skull = {
 	strength_growth_per_century = 1.00
 	
 	mercenary_type = d_screaming_skull_composition
-}
-
-d_kurd_company = {
-	color = { 80 80 160 }
-	color2 = { 255 255 255 }
-
-	capital = 685 # Kurdistan
-	
-	# Hire Trigger
-	allow = {
-		OR = {
-			religion_group = muslim
-			religion_group = pagan_group
-			religion_group = jewish_group
-			religion_group = zoroastrian_group
-			religion_group = indian_group
-			religion_group = chinese_religion
-		}
-	}
-	
-	# Parent Religion 
-	religion = sunni
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-
-	strength_growth_per_century = 1.00
-	
-	mercenary_type = d_kurd_company_composition
 }
 
 d_turkmen_company = {
