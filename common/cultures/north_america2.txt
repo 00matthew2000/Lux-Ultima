@@ -1263,6 +1263,92 @@ athabascan_group = {
 	}
 }
 
+sonoran = {
+	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+
+	
+	pueblo = {
+		color = { 0.00 0.30 0.76 }
+
+		male_names = {
+			Popé Ku-htihth Galisteo Xenome Ollito Tagu Bolsas Naranjo Catiti
+		}
+		female_names = {
+			Ootcakao Kahavasooah Sacagawea Chipeta Tocmetone
+		}
+	
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+
+	mogollon = {
+		color = { 1.00 1.00 0.40 }
+
+		male_names = {
+			Popé Ku-htihth Galisteo Xenome Ollito Tagu Bolsas Naranjo Catiti
+		}
+		female_names = {
+			Ootcakao Kahavasooah Sacagawea Chipeta Tocmetone
+		}
+	
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+
+	hohokam = {
+		color = { 0.24 1.00 0.15 }
+
+		male_names = {
+			Popé Ku-htihth Galisteo Xenome Ollito Tagu Bolsas Naranjo Catiti
+		}
+		female_names = {
+			Ootcakao Kahavasooah Sacagawea Chipeta Tocmetone
+		}
+	
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}
+
 caddoan = {
 	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 
