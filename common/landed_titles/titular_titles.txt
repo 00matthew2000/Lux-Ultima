@@ -765,9 +765,6 @@ d_amida = {
 d_aqaba = {
 	color = { 231 192 67 }
 }
-d_aria = {
-	color = { 150 120 5 }
-}
 d_aror = {
 	color = { 140 68 100 }
 }
@@ -893,12 +890,6 @@ d_talaz = {
 }
 d_wagadugu = {
 	color = { 101 56 175 }
-}
-d_yaik = {
-	color = { 180 150 90 }
-}
-d_yarlung = {
-	color = { 15 45 133 }
 }
 
 # TITULAR KINGDOMS
@@ -1268,32 +1259,6 @@ k_jutland = {
 }
 k_kalinga = {
 	color = { 140 55 60 }
-	allow = {
-		war = no
-		ruled_years = 5
-		is_adult = yes
-		NOT = { tier = emperor }
-		OR = {
-			tier = king
-			independent = yes
-		}
-	}
-}
-k_kamarupa = {
-	color = { 95 87 187 }
-	allow = {
-		war = no
-		ruled_years = 5
-		is_adult = yes
-		NOT = { tier = emperor }
-		OR = {
-			tier = king
-			independent = yes
-		}
-	}
-}
-k_kanem = {
-	color = { 140 165 80 }
 	allow = {
 		war = no
 		ruled_years = 5
@@ -2049,18 +2014,6 @@ e_ptolemaic = {
 	}
 }
 
-# Unified Roman Empire
-e_roman_empire = {
-	color = { 102 5 129 }
-	capital = 275 # Rome
-	short_name = yes
-	purple_born_heirs = yes
-	
-	allow = {
-		always = no #Created through special decision
-	}
-}
-
 # Unified Northern China/Korea/Japan
 e_polypercheia = {
 	color = { 17 188 34 }
@@ -2106,15 +2059,6 @@ e_hittite = {
 	}
 }
 
-# INVADING TITLES
-e_mexikha = {
-	color = { 255 127 0 }
-	short_name = yes
-	landless = yes
-	#tribe = yes
-	culture = nahuatl
-	religion = aztec
-}
 #Historical titles
 d_gloucester = {
 	color = { 113 155 233 }

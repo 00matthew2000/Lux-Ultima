@@ -4,15 +4,19 @@
 title = c_maroneia
 
 # Settlements
-max_settlements = 4
-b_xantheia = castle
+max_settlements = 7
+b_komotini = castle
 b_maroneia = city
-b_mosynopolis = temple
+b_philippi = city
+b_drama = city
+b_christoupolis = temple
+#b_xantheia = city
+#b_mosynopolis = city
+#b_peritheorion = city
+#b_anastasiopolis = castle
+#b_anaktoropolis = castle
+#b_abdera = castle
 
 # Misc
 culture = greek
 religion = sol
-
-# History
-
-1181.1.1 = { trade_post = b_dandolo }
