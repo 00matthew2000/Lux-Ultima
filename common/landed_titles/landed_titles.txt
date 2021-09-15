@@ -11656,7 +11656,7 @@ e_scandinavia = {
 			}
 			
 			c_austisland = {
-				ccolor = { 84 6 1 }
+				color = { 84 6 1 }
 				
 				swedish = "Östisland"
 				
@@ -22394,45 +22394,48 @@ e_sassanid = {
 				b_abeshkan = {
 				}
 			}
-			
 			c_hormuz = {
-				color={ 106 126 71 }
+				color={ 42 6 148 }
 				color2={ 255 255 255 }
 				
-				b_gombroon = {
+				b_hormuz = {
 				}
 				b_abarkawan = {
-				}
-				b_jiroth = {
-				}
-				b_abu_musa = {
+					bedouin_arabic = "Qashm"
+					levantine_arabic = "Qashm"
+					andalusian_arabic = "Qashm"
+					egyptian_arabic = "Qashm"
+					maghreb_arabic = "Qashm"
 				}
 				b_minab = {
 				}
-				b_kish = {
-				}
-				b_bam = {
-				}
 				b_fin = {
+				}
+				b_khamir = {
 				}
 			}
 			c_sirjan = {
-				color={ 118 138 83 }
+				color={ 0 3 20 }
 				color2={ 255 255 255 }
 				
 				b_sirjan = {
+					bedouin_arabic = "Sirjan"
+					levantine_arabic = "Sirjan"
+					andalusian_arabic = "Sirjan"
+					egyptian_arabic = "Sirjan"
+					maghreb_arabic = "Sirjan"
 				}
-				b_borougheeyeh = {
+				b_baft = {
+					hellenistic = "Alexandreia he en Karmania"
+					greek = "Alexandreia he en Karmania"
+					indohellenic = "Alexandreia he en Karmania"
+					gandharan = "Alexandreia he en Karmania"
+					roman = "Alexandria Carmania"
 				}
-				b_faragheh = {
+				b_sabzawaran = {
 				}
 				b_shahrbabak = {
-				}
-				b_abarkuh = {
-				}
-				b_dehbid = {
-				}
-				b_mehrabad = {
+					persian = "Shahr-e Babak"
 				}
 			}
 		}
@@ -22442,7 +22445,7 @@ e_sassanid = {
 			
 			capital = 644 # Pârsa
 			
-			c_fars = {		#Laristan
+			c_fars = {	# Laristan
 				color = { 91 130 24 }
 					holy_site = zoroastrian
 					holy_site = mani
@@ -22491,6 +22494,8 @@ e_sassanid = {
 				}
 				b_bandarkhamir = {
 				}
+				b_kish = {
+				}
 			}
 			c_shiraz = {
 				color = { 154 188 96 }
@@ -22531,20 +22536,46 @@ e_sassanid = {
 					holy_site = yazdanism_reformed
 				
 				b_abadan = {
-				}
-				b_izaj = {
+					hellenistic = "Apphadana"
+					greek = "Apphadana"
+					roman = "Appadania"
 				}
 				b_hoveizeh = {
+					bedouin_arabic = "Huwizat"
+					levantine_arabic = "Huwizat"
+					andalusian_arabic = "Huwizat"
+					egyptian_arabic = "Huwizat"
+					maghreb_arabic = "Huwizat"
 				}
 				b_ahvaz = {
+					bedouin_arabic = "Ahwaz"
+					levantine_arabic = "Ahwaz"
+					andalusian_arabic = "Ahwaz"
+					egyptian_arabic = "Ahwaz"
+					maghreb_arabic = "Ahwaz"
 				}
-				b_dora = {
-				}
-				b_fao = {
+				b_faw = {
 				}
 				b_khorramshahr = {
+					bedouin_arabic = "Muhammerah"
+					levantine_arabic = "Muhammerah"
+					andalusian_arabic = "Muhammerah"
+					egyptian_arabic = "Muhammerah"
+					maghreb_arabic = "Muhammerah"
 				}
 				b_shadegan = {
+				}
+				b_charax_spasinu = {
+					hellenistic = "Antiocheia tes Sousianes"
+					greek = "Charax Spasinou"
+					indohellenic = "Charax Spasinou"
+					gandharan = "Charax Spasinou"
+					persian = "Astarabad-Ardašir"
+					bedouin_arabic = "Maysan"
+					levantine_arabic = "Maysan"
+					andalusian_arabic = "Maysan"
+					egyptian_arabic = "Maysan"
+					maghreb_arabic = "Maysan"
 				}
 			}
 			c_hendjan = {
@@ -22576,6 +22607,8 @@ e_sassanid = {
 				b_shushtar = {
 				}
 				b_helen = {
+				}
+				b_izaj = {
 				}
 				b_idhaj = {
 				}
@@ -22742,14 +22775,26 @@ e_sassanid = {
 			capital = 646 #	Esfahan
 			
 			c_esfahan = {
-				color = { 145 179 87 }
+				color = { 42 21 23 }
 				
-				b_esfahan = {}
-				b_zarrinshahr = {}
-				b_khansar = {}
+				b_esfahan = {
+					hellenistic = "Aspadana"
+					greek = "Aspadana"
+					indohellenic = "Aspadana"
+					gandharan = "Aspadana"
+					roman = "Spadanum"
+				}
+				b_alexandria_asiana = {
+					persian = "Eskandari-ye Baraftab"
+				}
+				b_khansar = {
+					persian = "Khwansar"
+					hellenistic = "Xansara"
+					greek = "Xansara"
+					indohellenic = "Xansara"
+					gandharan = "Xansara"
+				}
 				b_kashan = {}
-				b_sedeh = {}
-				b_qomsheh = {}
 				b_abyaneh = {}
 				b_ardestan = {}
 			}
@@ -29277,6 +29322,8 @@ e_arabia = {
 				b_julfar = {
 				}
 				b_sharjah = {
+				}
+				b_abu_musa = {
 				}
 			}
 			c_hajar = { # Suhar/Suhár
