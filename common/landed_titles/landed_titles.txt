@@ -24240,11 +24240,11 @@ e_sassanid = {
 				color={ 103 154 13 }
 				color2={ 255 255 255 }
 				
+				b_tus = {
+				}
 				b_bojnurd = {
 				}
 				b_shervan = {
-				}
-				b_mashhad = {
 				}
 				b_hasanabad = {
 				}
@@ -24255,8 +24255,6 @@ e_sassanid = {
 				b_fagdatdezh = {
 				}
 				b_solak = {
-				}
-				b_tus = {
 				}
 			}
 			c_sarakhs = {
@@ -24282,19 +24280,16 @@ e_sassanid = {
 				color = { 145 244 62 }
 				color2={ 255 255 255 }
 				
-				b_zurabad = {
-				}
-				b_kusuya = {
-				}
-				b_buzgan = {
-				}
 				b_pushang = {
 				}
-				b_malin = {
+				b_mashhad = {
+					hellenistic = "Alexandreia Sousia"
+					greek = "Alexandreia Sousia"
+					indohellenic = "Alexandreia Sousia"
+					gandharan = "Alexandreia Sousia"
+					persian = "Sanaabad"
 				}
-				b_jabal_al_adda = {
-				}
-				b_kuhsim = {
+				b_buzghan = {
 				}
 			}
 			c_lut = { # Mafaza
