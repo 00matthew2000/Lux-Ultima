@@ -20584,7 +20584,7 @@ e_serindia = {
 				color={ 157 201 100 }
 				color2={ 255 255 255 }
 				
-				holy_site = indoh_bud		
+				holy_site = indoh_bud
 				
 				b_afrasiyab = {
 				}
@@ -20602,9 +20602,11 @@ e_serindia = {
 				}
 				b_laish = {
 				}
+				b_panjakent = {
+				}
 			}
 			c_yangikent = {
-				color = {200 40 156 }
+				color = { 200 40 156 }
 				
 				b_kara_seryak = {}
 				b_sutkent = {}
@@ -20618,33 +20620,25 @@ e_serindia = {
 				color = { 170 250 60 }
 
 				b_kyzyl-su = {}
-				b_dzhanga = {
-				}
-				b_awaza = {
-				}
-				b_yangadzha = {
-				}
+				b_dzhanga = {}
+				b_awaza = {}
+				b_yangadzha = {}
 				b_kenar = {}
 				b_akdash = {}
 				b_belek = {}
 			}
-			c_oshrusana = {
+			c_osrushana = {
 				color={ 112 217 30 }
 				color2={ 255 255 255 }
 				
-				b_banjikat = {
-				}
-				b_khujand = {
-				}
-				b_oshrusana = {
+				b_bunjikath = {
 				}
 				b_isfana = {
+					tocharian = "Asbanikat"
 				}
 				b_kurkat = {
 				}
-				b_nau = {
-				}
-				b_bekobod = {
+				b_begovat = {
 				}
 			}
 			c_nakhshab = {
@@ -20691,9 +20685,10 @@ e_serindia = {
 		}
 		
 		d_chach = {
-			color = { 25 220 50 }
+			color = { 130 67 152 }
+			color2 = { 255 255 255 }
 			
-			capital = 1186 #Chach
+			capital = 1186 # Chach
 			
 			c_chach = {
 				color= { 205 155 55 }
@@ -20707,17 +20702,6 @@ e_serindia = {
 				b_kaplanbek = {}
 				b_zhibek_zholy = {}
 				b_kibray = {}
-			}
-			c_tobol = {
-				color = { 177 77 80 }
-				
-				b_asaka = {}
-				b_andijan = {}
-				b_uighur_abad = {}
-				b_langar = {}
-				b_kutarma = {}
-				b_marhamat = {}
-				b_paytug = {}
 			}
 			c_otrar = {
 				color = { 150 105 67 }
@@ -20733,13 +20717,42 @@ e_serindia = {
 			}
 		}
 		
-		d_kokand = { #Ferghana
-			color = { 25 235 70 }
+		d_kokand = { # Ferghana
+			color = { 96 108 100 }
+			color2 = { 255 255 255 }
 			
-			capital = 1423 # Fergana
+			capital = 1546 # Khujand
 			
+			c_khujand = {
+				color={ 43 165 73 }
+				color2={ 255 255 255 }
+				
+				hellenistic = "Alexandreia Eskhate"
+				greek = "Alexandreia Eskhate"
+				indohellenic = "Alexandreia Eskhate"
+				gandharan = "Alexandreia Eskhate"
+				roman = "Alexandria Ultima"
+				persian = "Khojand"
+				
+				b_khujand = {
+					hellenistic = "Alexandreia Eskhate"
+					greek = "Alexandreia Eskhate"
+					indohellenic = "Alexandreia Eskhate"
+					gandharan = "Alexandreia Eskhate"
+					roman = "Alexandria Ultima"
+					persian = "Khojand"
+				}
+				b_khavakand = {
+					persian = "Xuqand"
+				}
+				b_asht = {}
+				b_sokh = {}
+				b_tunkath = {}
+				b_rishtan = {}
+			}
 			c_fergana = {
-				color = { 98 24 200 }
+				color={ 98 24 200 }
+				color2={ 255 255 255 }
 				
 				b_medrese = {}
 				b_osh = {}
@@ -20749,35 +20762,38 @@ e_serindia = {
 				b_jylkeldi = {}
 				b_kyrgyz_chek = {}
 				b_chagyr = {}
-			}
-			c_khojand = {
-				color={ 90 190 45 }
-				color2={ 255 255 255 }
-				
-				b_khojand = {}
-				b_asht = {}
-				b_sokh = {}
-				b_kendibadam = {}
-				b_tunket = {}
-				b_ilaq = {}
-				b_khavakend = {}
-			}
-			c_khaylam = {
-				color = { 100 200 36 }
-				
-				b_kashkaterek = {}
 				b_uzgen = {}
-				b_kenesh = {}
-				b_jylaldy = {}
-				b_krasnyi_mayak = {}
-				b_yangi_yzgen = {}
 				b_kara_dyikan = {}
 				b_myrza_ake = {}
+			}
+			c_khaylam = {
+				color={ 100 200 36 }
+				color2={ 255 255 255 }
+				
+				b_khaylam = {}
+				b_akhsikath = {}
+				b_wankath = {}
+				b_kasan = {}
+				b_miyan_rudhan = {}
+				b_ardalankath = {}
+				b_najm = {}
+			}
+			c_tobol = {
+				color = { 177 77 80 }
+				
+				b_asaka = {}
+				b_andijan = {}
+				b_uighur_abad = {}
+				b_langar = {}
+				b_kutarma = {}
+				b_marhamat = {}
+				b_paytug = {}
 			}
 		}
 		
 		d_taraz = {
 			color = { 200 180 45 }
+			color2 = { 255 255 255 }
 			
 			capital = 1795 #Suyab
 			
@@ -24240,11 +24256,11 @@ e_sassanid = {
 				color={ 103 154 13 }
 				color2={ 255 255 255 }
 				
+				b_tus = {
+				}
 				b_bojnurd = {
 				}
 				b_shervan = {
-				}
-				b_mashhad = {
 				}
 				b_hasanabad = {
 				}
@@ -24255,8 +24271,6 @@ e_sassanid = {
 				b_fagdatdezh = {
 				}
 				b_solak = {
-				}
-				b_tus = {
 				}
 			}
 			c_sarakhs = {
@@ -24282,19 +24296,16 @@ e_sassanid = {
 				color = { 145 244 62 }
 				color2={ 255 255 255 }
 				
-				b_zurabad = {
-				}
-				b_kusuya = {
-				}
-				b_buzgan = {
-				}
 				b_pushang = {
 				}
-				b_malin = {
+				b_mashhad = {
+					hellenistic = "Alexandreia Sousia"
+					greek = "Alexandreia Sousia"
+					indohellenic = "Alexandreia Sousia"
+					gandharan = "Alexandreia Sousia"
+					persian = "Sanaabad"
 				}
-				b_jabal_al_adda = {
-				}
-				b_kuhsim = {
+				b_buzghan = {
 				}
 			}
 			c_lut = { # Mafaza
