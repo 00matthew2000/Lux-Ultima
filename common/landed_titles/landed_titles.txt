@@ -20751,20 +20751,13 @@ e_serindia = {
 				b_rishtan = {}
 			}
 			c_fergana = {
-				color={ 98 24 200 }
+				color={ 127 9 139 }
 				color2={ 255 255 255 }
 				
-				b_medrese = {}
+				b_uzgen = {}
 				b_osh = {}
 				b_nariman = {}
-				b_kashgar_kyshtak = {}
 				b_ak_tash = {}
-				b_jylkeldi = {}
-				b_kyrgyz_chek = {}
-				b_chagyr = {}
-				b_uzgen = {}
-				b_kara_dyikan = {}
-				b_myrza_ake = {}
 			}
 			c_khaylam = {
 				color={ 100 200 36 }
@@ -20778,15 +20771,15 @@ e_serindia = {
 				b_ardalankath = {}
 				b_najm = {}
 			}
-			c_tobol = {
-				color = { 177 77 80 }
+			c_andijan = {
+				color = { 43 51 133 }
+				color2 = { 255 255 255 }
 				
 				b_asaka = {}
-				b_andijan = {}
-				b_uighur_abad = {}
-				b_langar = {}
-				b_kutarma = {}
-				b_marhamat = {}
+				b_andijan = {
+					persian = "Andijan"
+				}
+				b_pakhtaabad = {}
 				b_paytug = {}
 			}
 		}
@@ -23280,16 +23273,18 @@ e_sassanid = {
 				#b_jurm = {}
 				#b_dushanbe = {}
 			}
-			c_vakhan = {
-				color={ 175 95 62 }
+			c_wakhan = {
+				color={ 127 156 199 }
 				color2={ 255 255 255 }
 				
-				b_vakhan = {}
+				b_ai_khanoum = {
+					hellenistic = "Alexandreia epi tou Oxou"
+					greek = "Alexandreia epi tou Oxou"
+					indohellenic = "Eukratideia Baktrias"
+					gandharan = "Eukratideia Baktrias"
+				}
 				b_ishkashim = {}
-				b_daritubat = {}
-				b_sughnan = {}
 				b_khandud = {}
-				b_khorog = {}
 				b_sast = {}
 			}
 			c_chaghaniyan = {
@@ -23297,7 +23292,12 @@ e_sassanid = {
 				color2={ 255 255 255 }
 				
 				b_chaghaniyan = {}
-				b_termez ={}
+				b_termez ={
+					hellenistic = "Alexandreia Thermis"
+					greek = "Alexandreia Thermis"
+					indohellenic = "Alexandreia Thermis"
+					gandharan = "Alexandreia Thermis"
+				}
 				b_kalif = {}
 				b_shuman = {}
 				b_di-l-kifl = {}
