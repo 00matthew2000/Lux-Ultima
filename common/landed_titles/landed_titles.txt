@@ -23135,7 +23135,23 @@ e_sassanid = {
 			c_balkh = {
 				color={ 201 225 158 }
 				color2={ 255 255 255 }
-				
+
+				holy_site = zoroastrian
+				holy_site = mani
+				holy_site = mani_mithra
+				holy_site = zor_angra
+				holy_site = zor_hindu
+				holy_site = ahriman_reformed
+				holy_site = mazdakism_reformed
+				holy_site = zor_angra_reformed
+				holy_site = zurvanism_reformed
+				holy_site = indohelen
+				holy_site = indoh_bud
+				holy_site = indoh_hindu
+				holy_site = indoh_zor
+				holy_site = indohelen_reformed
+				holy_site = bud_zor_reformed
+
 				roman = "Bactria"
 				armenian = "Bactria"
 				greek = "Bactria"
@@ -23144,6 +23160,11 @@ e_sassanid = {
 				assyrian = "Bactria"
 				
 				b_balkh = {}
+				b_alexandriaoxiana = {}
+				b_oxiana = {
+				}
+				b_begram = {}
+				b_eucratideia = {}
 				b_navavihara = {}
 				b_tarmis = {}
 				b_dalverzintepe = {}
@@ -23152,13 +23173,20 @@ e_sassanid = {
 				color={ 179 214 53 }
 				color2={ 255 255 255 }
 				
-				b_talaqan = {}
-				b_jahudan = {}
-				b_faryab = {}
-				b_andkhud = {}
-				b_usbuman = {}
-				b_naryan = {}
-				b_qasrahnaf = {}
+				b_talaqan = {
+				}
+				b_jahudan = {
+				}
+				b_faryab = {
+				}
+				b_andkhud = {
+				}
+				b_usbuman = {
+				}
+				b_naryan = {
+				}
+				b_qasrahnaf = {
+				}
 			}
 		}
 		d_badashan = {
@@ -23193,10 +23221,14 @@ e_sassanid = {
 					greek = "Alexandreia tou Kaukasou"
 					indohellenic = "Alexandreia tou Kaukasou"
 					gandharan = "Alexandreia tou Kaukasou"
+					
 				}
-				b_kapisa = {}
-				b_kharabat = {}
-				b_surobi = {}
+				b_kapisa = {
+				}
+				b_kharabat = {
+				}
+				b_surobi = {
+				}
 			}
 			c_khuttal = {
 				color={ 175 150 45 }
@@ -23219,22 +23251,6 @@ e_sassanid = {
 				color={ 127 156 199 }
 				color2={ 255 255 255 }
 				
-				holy_site = zoroastrian
-				holy_site = mani
-				holy_site = mani_mithra
-				holy_site = zor_angra
-				holy_site = zor_hindu
-				holy_site = ahriman_reformed
-				holy_site = mazdakism_reformed
-				holy_site = zor_angra_reformed
-				holy_site = zurvanism_reformed
-				holy_site = indohelen
-				holy_site = indoh_bud
-				holy_site = indoh_hindu
-				holy_site = indoh_zor
-				holy_site = indohelen_reformed
-				holy_site = bud_zor_reformed
-				
 				b_ai_khanoum = {
 					hellenistic = "Alexandreia epi tou Oxou"
 					greek = "Alexandreia epi tou Oxou"
@@ -23242,7 +23258,6 @@ e_sassanid = {
 					gandharan = "Eukratideia Baktrias"
 				}
 				b_ishkashim = {}
-				b_oxiana = {}
 				b_khandud = {}
 				b_sast = {}
 			}
@@ -23339,12 +23354,7 @@ e_sassanid = {
 				color={ 175 110 50 }
 				color2={ 255 255 255 }
 				
-				b_ghazna = {
-					hellenistic = "Alexandreia Opiane"
-					greek = "Alexandreia Opiane"
-					indohellenic = "Alexandreia Opiane"
-					gandharan = "Alexandreia Opiane"
-				}
+				b_ghazna = {}
 				b_gardez = {}
 				b_khost = {}
 				b_loman = {}
@@ -39957,7 +39967,8 @@ e_india = {
 				}
 			}
 			c_sibi = {
-				color = { 200 145 18 }
+				color={ 200 145 18 }
+				color2={ 255 255 255 }
 				
 				b_sibi = {
 				}
@@ -39976,7 +39987,6 @@ e_india = {
 			}
 			c_kafirkot = {
 				color = { 202 91 86 }
-				
 				holy_site = zz01_vedanta
 				
 				b_khanewal = {}
@@ -39991,6 +40001,7 @@ e_india = {
 			}
 			c_wana = { # Bori
 				color={ 244 80 5 }
+				color2={ 255 255 255 }
 				
 				b_bori = {
 				}
