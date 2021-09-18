@@ -2780,6 +2780,7 @@ e_hre = {                      # Created by special decision only
 		
 		d_brabant = {
 			color={ 200 100 60 }
+			color2={ 255 255 255 }
 			
 			capital = 117 #Brabant
 		
@@ -2844,6 +2845,7 @@ e_hre = {                      # Created by special decision only
 		}
 		d_flanders = {
 			color={ 255 120 0 }
+			color2={ 255 255 255 }
 			
 			capital = 78
 			
@@ -2990,6 +2992,7 @@ e_hre = {                      # Created by special decision only
 			}
 		}
 	}
+	
 	k_austrasia = {
 		color = { 16 42 127 }
 		capital = 90
@@ -3222,7 +3225,7 @@ e_hre = {                      # Created by special decision only
 				}
 			}
 		}
-	}
+
 	k_saxon = {
 		color={ 70 70 70 }
 		color2={ 255 255 255 }
@@ -3290,6 +3293,7 @@ e_hre = {                      # Created by special decision only
 		}
 	}
 }
+}
 
 e_german = {
 
@@ -3311,6 +3315,7 @@ e_german = {
 	
 	k_austria = {
 		color={ 240 240 240 }
+		color2={ 255 255 255 }
 
 		capital = 449
 
@@ -3337,6 +3342,7 @@ e_german = {
 
 	k_eastern_marches = {
 		color={ 240 240 240 }
+		color2={ 255 255 255 }
 
 		capital = 449
 
@@ -3356,6 +3362,7 @@ e_german = {
 
 	k_hansa = {
 		color={ 210 210 210 }
+		color2={ 255 255 255 }
 
 		capital = 262 # Lübeck
 	
@@ -3541,6 +3548,7 @@ e_german = {
 	}
 	k_frisia = {
 		color={ 245 100 20 }
+		color2={ 220 220 20 }		
 		
 		teiwaz_reformed = 2000
 		capital = 80 #Holland
@@ -3665,6 +3673,7 @@ e_german = {
 		}
 		d_gelre = {
 			color={ 200 100 25 }
+			color2={ 255 255 255 }
 			
 			capital = 83 #Gelre
 			
@@ -3720,6 +3729,7 @@ e_german = {
 	
 	k_bavaria = {
 		color={ 91 100 100 }
+		color2={ 220 220 20 }
 		
 		culture = german
 		
@@ -3820,6 +3830,7 @@ e_german = {
 		}
 		d_osterreich = { 
 			color={ 191 182 182 }
+			color2={ 255 255 255 }
 			
 			capital = 449 #Österreich
 
@@ -4024,6 +4035,7 @@ e_german = {
 		
 		d_tyrol = {  
 			color={ 157 154 154 }
+			color2={ 255 255 255 }
 			
 			capital = 316 #Tirol
 		
@@ -4101,6 +4113,7 @@ e_german = {
 	
 	k_germany = {
 		color={ 160 160 160 }
+		color2={ 220 220 20 }
 		
 		dignity = 30 # Counted as having this many more counties than it does
 		
@@ -4116,6 +4129,7 @@ e_german = {
 		
 		d_thuringia = {
 			color={ 207 206 226 }
+			color2={ 255 255 255 }
 		
 			capital = 255 #Thuringen
 			
@@ -4144,6 +4158,7 @@ e_german = {
 			}
 			c_magdeburg = {
 				color={ 160 189 189 }
+				color2={ 255 255 255 }
 
 				pommeranian = Dolomici
 				old_saxon = Suavia
@@ -4182,6 +4197,7 @@ e_german = {
 		}
 		d_franconia = {
 			color={ 100 108 100 }
+			color2={ 255 255 255 }
 			
 			capital = 254 # Würzburg
 		
@@ -4270,6 +4286,7 @@ e_german = {
 		}
 		d_rhine = {
 			color={ 105 135 105 }
+			color2={ 255 255 255 }
 
 			capital = 123 # Mainz
 
@@ -4277,6 +4294,7 @@ e_german = {
 		}
 		d_baden = { 
 			color={ 115 109 109 }
+			color2={ 255 255 255 }
 			
 			capital = 125 #Baden
 		
@@ -4307,8 +4325,10 @@ e_german = {
 		}
 		d_raetia = {
 			color={ 150 240 190 }
+			color2={ 255 255 255 }
 
 			capital = 247 # Chur
+
 
 			german = "Churrätien"
 
@@ -4338,6 +4358,7 @@ e_german = {
 		}
 		d_swabia = {
 			color={ 206 203 203 }
+			color2={ 255 255 255 }
 			
 			capital = 249 #Schwaben
 			
@@ -4480,6 +4501,7 @@ e_german = {
 		}
 		d_mainz = {
 			color={ 129 129 129 }
+			color2={ 255 255 255 }
 
 			capital = 123 # Mainz
 
@@ -4492,6 +4514,7 @@ e_german = {
 
 e_roman_empire = {
 	color={ 143 12 100 }
+	color2={ 255 255 20 }
 	
 	capital = 333 # Rome
 	
@@ -4609,6 +4632,7 @@ e_byzantium = {
 	
 	k_byzantium = {
 		color = { 165 11 111 }
+		color2 = { 255 255 255 }
 		
 		title = AUGUSTUS
 		greek = "Rhomania" 
@@ -4649,6 +4673,7 @@ e_byzantium = {
 			
 		d_nikaea = {
 			color={ 202 101 167 }
+			color2={ 255 255 20 }
 			
 			capital = 750 # Nikaea
 
@@ -4792,6 +4817,7 @@ e_byzantium = {
 
 		d_abydos = {
 			color={ 210 140 170 }
+			color2={ 255 255 20 }
 
 			capital = 744 # Troias
 
@@ -4865,6 +4891,7 @@ e_byzantium = {
 		
 		d_thrace = {
 			color={ 172 76 139 }
+			color2={ 255 255 20 }
 			
 			capital = 496 # Konstantinopolis
 			
@@ -5020,6 +5047,7 @@ e_byzantium = {
 		}
 		d_thessalonika = {
 			color={ 189 19 130 }
+			color2={ 255 255 20 }
 			
 			capital = 490 # Thessalonike
 			
@@ -5270,6 +5298,7 @@ e_byzantium = {
 		}	
 		d_cephalonia = {
 			color={ 222 155 155 }
+			color2={ 255 255 20 }
 
 			c_cephalonia = {
 				color = { 146 75 121 }
@@ -5368,6 +5397,7 @@ e_byzantium = {
 		
 		d_aegean_islands = {
 			color={ 104 8 103 }
+			color2={ 255 255 20 }
 			
 			capital = 484 # Naxos
 			
@@ -5466,6 +5496,7 @@ e_byzantium = {
 		
 		d_achaia = {
 			color={ 190 29 134 }
+			color2={ 255 255 20 }
 			
 			capital = 478 # Lacedaemon
 			
@@ -5535,9 +5566,9 @@ e_byzantium = {
 	k_cyprus = {
 		color = { 85 138 236 }
 		capital = 757 #Famagusta
-		
 		d_cyprus = {
 			color={ 239 109 163 }
+			color2={ 255 255 20 }
 			
 			capital = 757 # Famagusta
 			
@@ -5601,6 +5632,7 @@ e_byzantium = {
 
 		d_dyrrachion = {
 			color={ 137 27 99 }
+			color2={ 255 255 20 }
 			
 			capital = 470 # Dyrrachion
 
@@ -5808,6 +5840,7 @@ e_byzantium = {
 		
 		d_cibyrrhaeot = {
 			color={ 108 29 80 }
+			color2={ 255 255 20 }
 			
 			capital = 755 # Attaleia
 			
@@ -5913,6 +5946,7 @@ e_byzantium = {
 		
 		d_anatolia = {
 			color={ 174 23 122 }
+			color2={ 255 255 20 }
 			
 			capital = 759 # Ikonion
 			
@@ -6014,6 +6048,7 @@ e_byzantium = {
 		
 		d_thracesia = {
 			color={ 154 43 116 }
+			color2={ 255 255 20 }
 			
 			capital = 748 # Laodikeia
 			
@@ -6068,6 +6103,7 @@ e_byzantium = {
 		
 		d_armenia_minor = { # Cilicia in-game
 			color={ 214 140 190 }
+			color2={ 255 255 255 }
 			
 			capital = 761 #Kilikia
 			
@@ -23092,6 +23128,7 @@ e_sassanid = {
 				b_dihekhala = {
 				}
 			}
+			
 			c_zamindawar = {
 				color={ 195 100 65 }
 				color2={ 255 255 255 }
@@ -23111,6 +23148,7 @@ e_sassanid = {
 				b_amandawar = { #Fictional, for prosperity
 				}
 			}
+			
 			c_bamiyan = {
 				color={ 175 140 30 }
 				color2={ 255 255 255 }
@@ -23132,6 +23170,7 @@ e_sassanid = {
 				b_shilif = { #Fictional, for prosperity
 				}
 			}
+			
 			c_balkh = {
 				color={ 201 225 158 }
 				color2={ 255 255 255 }
@@ -23169,6 +23208,7 @@ e_sassanid = {
 				b_tarmis = {}
 				b_dalverzintepe = {}
 			}
+			
 			c_guzgan = {
 				color={ 179 214 53 }
 				color2={ 255 255 255 }
@@ -23201,33 +23241,19 @@ e_sassanid = {
 				holy_site = zun_pagan
 				holy_site = zun_pagan_reformed
 				
-				hellenistic = "Kophene"
-				greek = "Kophene"
-				indohellenic = "Kophes"
-				gandharan = "Kophes"
-				persian = "Kapol"
-				parthian = "Kapul"
-				
 				b_kabul = {
-					hellenistic = "Kophene"
-					greek = "Kophene"
-					indohellenic = "Kophes"
-					gandharan = "Kophes"
-					persian = "Kapol"
-					parthian = "Kapul"
 				}
-				b_bagram = {
-					hellenistic = "Alexandreia tou Kaukasou"
-					greek = "Alexandreia tou Kaukasou"
-					indohellenic = "Alexandreia tou Kaukasou"
-					gandharan = "Alexandreia tou Kaukasou"
-					
+				b_adinapur = {
+				}
+				b_nagarahara = {
 				}
 				b_kapisa = {
 				}
-				b_kharabat = {
+				b_lampara = {
 				}
-				b_surobi = {
+				b_kunar = {
+				}
+				b_kharabat = {
 				}
 			}
 			c_khuttal = {
@@ -23636,6 +23662,7 @@ e_sassanid = {
 		}
 		d_mosul = {
 			color={ 11 205 70 }
+			color2={ 255 255 255 }
 			
 			capital = 697 # Mosul
 			
@@ -24409,40 +24436,27 @@ e_sassanid = {
 			
 			capital = 630 # Merv
 			
-			hellenistic = "Margiane"
-			greek = "Margiane"
-			indohellenic = "Margiane"
-			gandharan = "Margiane"
-			persian = "Marv"
-			
 			c_merv = {
-				color = { 0 186 15 }
-				color2 = { 255 255 255 }
-				
-				holy_site = mani
-				holy_site = tengri_mani
-				holy_site = tengri_mani_reformed
-				
-				hellenistic = "Margiane"
-				greek = "Margiane"
-				indohellenic = "Margiane"
-				gandharan = "Margiane"
-				persian = "Marv"
+				color = { 156 204 73 }
+					holy_site = mani
+					holy_site = tengri_mani
+					holy_site = tengri_mani_reformed
 				
 				b_merv = {
-					hellenistic = "Alexandreia Margiane"
-					greek = "Alexandreia Margiane"
-					indohellenic = "Alexandreia Margiane"
-					gandharan = "Alexandreia Margiane"
-					persian = "Marv"
+				}
+				b_bayramaly = {
+				}
+				b_tagtabazar = {
 				}
 				b_yoloten = {
 				}
-				b_marwir_rawdh = {
+				b_gulanly = {
 				}
-				b_sakarabat = {
+				b_kushka = {
 				}
-				b_oghuzhan = {
+				b_wekilbazar = {
+				}
+				b_sakarcage = {
 				}
 			}
 			c_bukhara = {
@@ -24466,6 +24480,7 @@ e_sassanid = {
 			}
 			c_kanj_rustaq = {
 				color = { 112 200 51 }
+				color2={ 255 255 255 }
 				
 				b_diza = {
 				}
@@ -24477,7 +24492,7 @@ e_sassanid = {
 				}
 				b_nab = {
 				}
-				b_serhetabat = {
+				b_tajarg = { # Fictional, for prosperity
 				}
 				b_fenesk = { # Fictional, for prosperity
 				}
@@ -39933,19 +39948,20 @@ e_india = {
 				b_purusapura = {}
 				b_udabhanda = {}
 				b_taksasila = {
-					hellenistic = "Sirkap"
-					greek = "Sirkap"
-					indohellenic = "Sirkap"
-					gandharan = "Sirkap"
-					tocharian = "Sirkap"
+					hellenistic = "Sirkap" 
+					greek = "Sirkap" 
+					indohellenic = "Sirkap" 
+					gandharan = "Sirkap" 
+					tocharian = "Sirkap" 
+					sinohellenic = "Sirkap" 
+					viethellenic = "Sirkap" 
+					
 				}
 				b_hayatabad = {}
 				b_wadpagga = {}
 				b_jhagra = {}
 				b_mian_gujjar = {}
 				b_pabbi = {}
-				b_adinapur = {}
-				b_nagarahara = {}
 			}
 			c_rajanpur = {
 				color={ 200 115 18 }
@@ -45771,6 +45787,7 @@ e_tibet = {
 				b_traguladar = { #Fictional, for prosperity
 				}
 			}
+			
 			c_udabhanda = {
 				color={ 255 130 31 }
 				color2={ 255 255 255 }
@@ -45791,8 +45808,6 @@ e_tibet = {
 				b_rawal = {
 				}
 				b_ohind = {
-				}
-				b_kunar = {
 				}
 			}
 			
