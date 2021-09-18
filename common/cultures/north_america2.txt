@@ -1359,35 +1359,6 @@ sonoran = {
 
 		modifier = default_culture_modifier
 	}
-
-	hohokam = {
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		
-		color = { 0.24 1.00 0.15 }
-
-		male_names = {
-			Popé Ku-htihth Galisteo Xenome Ollito Tagu Bolsas Naranjo Catiti
-		}
-		female_names = {
-			Ootcakao Kahavasooah Sacagawea Chipeta Tocmetone
-		}
-	
-		dynasty_title_names = no
-
-		prefix = no
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 30
-		mat_grf_name_chance = 30
-		father_name_chance = 0
-
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 30
-		mat_grm_name_chance = 30
-		mother_name_chance = 0
-
-		modifier = default_culture_modifier
-	}
 }
 
 caddoan = {
@@ -1763,6 +1734,190 @@ salishan = {
 		modifier = default_culture_modifier
 	}
 }
+chumash_group = {
+	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+	
+	chumash = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.17 0.86 1.00 }
+
+		male_names = { Alamshalaliw Aliseyu Alow Chnawaway Chukauyon  Mateqai Mupi'ish Pititi Shu'nu Silkiset Talawiyashwit  }
+		female_names = { Leqte Jonata Simi Sisquoc }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}	 
+hokan = {
+	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+
+	salinan = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.85 1.00 0.72 }
+
+		male_names = { Alamshalaliw Aliseyu Alow Chnawaway Chukauyon  Mateqai Mupi'ish Pititi Shu'nu Silkiset Talawiyashwit  }
+		female_names = { Leqte Jonata Simi Sisquoc }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	hohokam = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.24 1.00 0.15 }
+
+		male_names = {
+			Popé Ku-htihth Galisteo Xenome Ollito Tagu Bolsas Naranjo Catiti
+		}
+		female_names = {
+			Ootcakao Kahavasooah Sacagawea Chipeta Tocmetone
+		}
+	
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	yuman = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 1.00 1.00 0.30 }
+
+		male_names = { Alamshalaliw Aliseyu Alow Chnawaway Chukauyon  Mateqai Mupi'ish Pititi Shu'nu Silkiset Talawiyashwit  }
+		female_names = { Leqte Jonata Simi Sisquoc }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	cochimi = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.58 0.71 1.00 }
+
+		male_names = { Alamshalaliw Aliseyu Alow Chnawaway Chukauyon  Mateqai Mupi'ish Pititi Shu'nu Silkiset Talawiyashwit  }
+		female_names = { Leqte Jonata Simi Sisquoc }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	pomoan = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 1.00 0.68 0.68 }
+
+		male_names = { Alamshalaliw Aliseyu Alow Chnawaway Chukauyon  Mateqai Mupi'ish Pititi Shu'nu Silkiset Talawiyashwit  }
+		female_names = { Leqte Jonata Simi Sisquoc }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}
+kutenai_group = {
+	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+
+	kutenai = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.19 1.00 0.80 }
+
+		male_names = { Agi Attakullaculla Boudinot Canoe Dragging It Moytoy Sequoyah Yonaguska "Johan Ross" }
+		female_names = { Chipeta Kahavasooah Ootcakao Sacagawea Tocmetone }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}
 penutian = {
 	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 
@@ -1817,7 +1972,7 @@ penutian = {
 	sahaptian = {
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 		
-		color = { 0.03 0.12 0.12 }
+		color = { 0.36 0.15 0.12 }
 
 		male_names = { Agi Attakullaculla Boudinot Canoe Dragging It Moytoy Sequoyah Yonaguska "Johan Ross" }
 		female_names = { Chipeta Kahavasooah Ootcakao Sacagawea Tocmetone }
@@ -1842,6 +1997,54 @@ penutian = {
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 		
 		color = { 0.12 0.01 0.04 }
+
+		male_names = { Agi Attakullaculla Boudinot Canoe Dragging It Moytoy Sequoyah Yonaguska "Johan Ross" }
+		female_names = { Chipeta Kahavasooah Ootcakao Sacagawea Tocmetone }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	utian = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.62 0.62 0.60 }
+
+		male_names = { Agi Attakullaculla Boudinot Canoe Dragging It Moytoy Sequoyah Yonaguska "Johan Ross" }
+		female_names = { Chipeta Kahavasooah Ootcakao Sacagawea Tocmetone }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	miwok = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.11 0.79 0.20 }
 
 		male_names = { Agi Attakullaculla Boudinot Canoe Dragging It Moytoy Sequoyah Yonaguska "Johan Ross" }
 		female_names = { Chipeta Kahavasooah Ootcakao Sacagawea Tocmetone }
@@ -1895,6 +2098,30 @@ uto_aztecan = {
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 		
 		color = { 0.81 0.64 0.05 }
+
+		male_names = { Agi Attakullaculla Boudinot Canoe Dragging It Moytoy Sequoyah Yonaguska "Johan Ross" }
+		female_names = { Chipeta Kahavasooah Ootcakao Sacagawea Tocmetone }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	mono = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.26 0.22 0.62 }
 
 		male_names = { Agi Attakullaculla Boudinot Canoe Dragging It Moytoy Sequoyah Yonaguska "Johan Ross" }
 		female_names = { Chipeta Kahavasooah Ootcakao Sacagawea Tocmetone }

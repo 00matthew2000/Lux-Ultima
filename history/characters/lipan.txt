@@ -1,2071 +1,246 @@
 1019920543={
 	name=Xiuhpilli
 	dynasty=1009990173
-	dna="ddficifobag"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=7 stewardship=6 intrigue=4 learning=6
-	add_trait=midas_touched add_trait=cruel add_trait=honest 
+	culture=tonkawa
+	religion=algic_pagan 
 	720.2.18={ birth=yes }
 	787.11.2={ death=yes }
 }
 1019920544={
 	name=Xochipilli
 	dynasty=1009990173
-	dna="gniiaaombig"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=6 stewardship=4 intrigue=8 learning=8
-	add_trait=charismatic_negotiator add_trait=brave add_trait=greedy add_trait=chaste add_trait=wroth 
+	culture=tonkawa
+	religion=algic_pagan
 	father=1019920543	#Xiuhpilli
 	746.5.10={ birth=yes }
 	814.11.15={ death=yes }
 }
 1019920545={
-	name=Olli
-	dynasty=1009990173
-	dna="bdficmfnmag"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=6 stewardship=4 intrigue=4 learning=5
-	add_trait=martial_cleric add_trait=cruel add_trait=honest add_trait=diligent add_trait=gregarious 
-	father=1019920543	#Xiuhpilli
-	751.10.25={ birth=yes }
-	816.2.24={ death=yes }
-}
-1019920546={
-	name=Tlalli
-	female=yes
-	dynasty=1009990173
-	dna="nkfighhgbag"
-	culture=lipan religion=algic_pagan
-	father=1019920543	#Xiuhpilli
-	757.6.1={ birth=yes }
-	822.11.9={ death=yes }
-}
-1019920547={
 	name=Topiltzin
 	dynasty=1009990173
-	dna="jfdjehchjif"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=5 stewardship=7 intrigue=8 learning=8
-	add_trait=detached_priest add_trait=gardener add_trait=diligent add_trait=lustful add_trait=deceitful 
-	add_trait=cynical add_trait=craven 
+	culture=tonkawa
+	religion=algic_pagan
 	father=1019920544	#Xochipilli
 	771.1.20={ birth=yes }
 	826.3.22={ death=yes }
 }
-1019920548={
-	name=Zeltzin
-	female=yes
-	dynasty=1009990173
-	dna="cojiaaofmpp"
-	culture=lipan religion=algic_pagan
-	father=1019920544	#Xochipilli
-	774.9.21={ birth=yes }
-	848.1.12={ death=yes }
-}
-1019920549={
-	name=Xochipepe
-	dynasty=1009990173
-	dna="gbbnaaopaig"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=5 stewardship=5 intrigue=4 learning=8
-	add_trait=grey_eminence add_trait=mystic add_trait=brave add_trait=charitable add_trait=gregarious 
-	add_trait=humble 
-	father=1019920544	#Xochipilli
-	780.9.5={ birth=yes }
-	863.6.23={ death=yes }
-}
-1019920550={
-	name=Tlaloc
-	dynasty=1009990173
-	dna="gfpdkkdmblb"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=4 stewardship=5 intrigue=4 learning=4
-	add_trait=detached_priest add_trait=scholar add_trait=envious add_trait=arbitrary add_trait=craven 
-	add_trait=wounded 
-	father=1019920544	#Xochipilli
-	786.3.10={ birth=yes }
-	850.3.23={ death=yes }
-}
-1019920551={
-	name=Zyanya
-	female=yes
-	dynasty=1009990173
-	dna="cnebaaomkig"
-	culture=lipan religion=algic_pagan
-	father=1019920544	#Xochipilli
-	791.2.1={ birth=yes }
-	860.11.14={ death=yes }
-}
-1019920552={
+1019920546={
 	name=Yaotl
 	dynasty=1009990173
-	dna="jfikehchjif"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=7 stewardship=8 intrigue=5 learning=6
-	add_trait=charismatic_negotiator add_trait=deceitful add_trait=arbitrary add_trait=shy add_trait=temperate 
-	father=1019920547	#Topiltzin
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920545	#Topiltzin
 	796.7.2={ birth=yes }
 	845.2.28={ death=yes }
 }
-1019920553={
-	name=Tochtli
-	dynasty=1009990173
-	dna="cfdjmnbppbe"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=5 stewardship=8 intrigue=5 learning=6
-	add_trait=tough_soldier add_trait=lustful add_trait=proud 
-	father=1019920547	#Topiltzin
-	801.1.19={ birth=yes }
-	856.6.8={ death=yes }
-}
-1019920554={
-	name=Olli
-	dynasty=1009990173
-	dna="jfkfedphjdf"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=5 stewardship=7 intrigue=8 learning=7
-	add_trait=midas_touched add_trait=scholar add_trait=just add_trait=greedy add_trait=gluttonous 
-	add_trait=wroth add_trait=paranoid 
-	father=1019920547	#Topiltzin
-	806.10.8={ birth=yes }
-	868.3.18={ death=yes }
-}
-1019920555={
-	name=Xihuitl
-	dynasty=1009990173
-	dna="jpkjemeneif"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=4 stewardship=7 intrigue=5 learning=5
-	add_trait=tough_soldier add_trait=chaste add_trait=envious add_trait=brave add_trait=depressed 
-	father=1019920547	#Topiltzin
-	811.8.1={ birth=yes }
-	878.9.30={ death=yes }
-}
-1019920556={
-	name=Tlahco
-	female=yes
-	dynasty=1009990173
-	dna="hpkjledhjdf"
-	culture=lipan religion=algic_pagan
-	father=1019920547	#Topiltzin
-	816.12.25={ birth=yes }
-	898.7.11={ death=yes }
-}
-1019920557={
+1019920547={
 	name=Tecolotl
 	dynasty=1009990173
-	dna="jfikkhcajif"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=6 stewardship=6 intrigue=6 learning=7
-	add_trait=elusive_shadow add_trait=envious add_trait=charitable add_trait=content add_trait=humble 
-	father=1019920552	#Yaotl
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920546	#Yaotl
 	821.9.7={ birth=yes }
 	896.3.25={ death=yes }
 }
-1019920558={
-	name=Citlamina
-	female=yes
-	dynasty=1009990173
-	dna="cdmkencdjif"
-	culture=lipan religion=algic_pagan
-	father=1019920552	#Yaotl
-	826.10.20={ birth=yes }
-	901.1.24={ death=yes }
-}
-1019920559={
+1019920548={
 	name=Tezozomoc
 	dynasty=1009990173
-	dna="ljnpikcfoif"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=6 stewardship=7 intrigue=6 learning=8
-	add_trait=intricate_webweaver add_trait=arbitrary add_trait=trusting 
-	father=1019920557	#Tecolotl
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920547	#Tecolotl
 	846.1.27={ birth=yes }
 	912.8.28={ death=yes }
 }
-1019920560={
-	name=Tototl
-	dynasty=1009990173
-	dna="ofikhdcajim"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=8 stewardship=5 intrigue=7 learning=6
-	add_trait=charismatic_negotiator add_trait=impaler add_trait=chaste add_trait=deceitful add_trait=craven 
-	father=1019920557	#Tecolotl
-	852.11.20={ birth=yes }
-	908.11.15={ death=yes }
-}
-1019920561={
-	name=Tezozomoc
-	dynasty=1009990173
-	dna="gfolkbcajif"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=6 stewardship=4 intrigue=4 learning=4
-	add_trait=detached_priest add_trait=just add_trait=chaste add_trait=ambitious add_trait=zealous 
-	father=1019920557	#Tecolotl
-	856.6.1={ birth=yes }
-	936.1.16={ death=yes }
-}
-1019920562={
+1019920549={
 	name=Yaotl
 	dynasty=1009990173
-	dna="mjcpdkbjkhf"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=7 stewardship=6 intrigue=5 learning=4
-	add_trait=midas_touched add_trait=kind add_trait=craven add_trait=slothful 
-	father=1019920559	#Tezozomoc
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920548	#Tezozomoc
 	875.7.7={ birth=yes }
 	935.11.23={ death=yes }
 }
-1019920563={
-	name=Ozomatli
-	dynasty=1009990173
-	dna="fjbpffckkih"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=7 stewardship=5 intrigue=5 learning=8
-	add_trait=charismatic_negotiator add_trait=ambitious add_trait=craven add_trait=trusting add_trait=lisp 
-	father=1019920559	#Tezozomoc
-	880.5.13={ birth=yes }
-	943.12.28={ death=yes }
-}
-1019920564={
+1019920550={
 	name=Xiuhpilli
 	dynasty=1009990173
-	dna="efhadabikcf"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=4 stewardship=5 intrigue=4 learning=7
-	add_trait=flamboyant_schemer add_trait=just add_trait=deceitful add_trait=zealous add_trait=craven 
-	add_trait=trusting add_trait=proud 
-	father=1019920562	#Yaotl
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920549	#Yaotl
 	900.1.2={ birth=yes }
 	960.10.11={ death=yes }
 }
-1019920565={
-	name=Xilonen
-	female=yes
-	dynasty=1009990173
-	dna="ejnbdkhjihf"
-	culture=lipan religion=algic_pagan
-	father=1019920562	#Yaotl
-	905.9.21={ birth=yes }
-	991.7.20={ death=yes }
-}
-1019920566={
+1019920551={
 	name=Xipil
 	dynasty=1009990173
-	dna="ephplgbnipf"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=4 stewardship=4 intrigue=6 learning=7
-	add_trait=martial_cleric add_trait=trusting add_trait=cruel 
-	father=1019920564	#Xiuhpilli
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920550	#Xiuhpilli
 	923.2.27={ birth=yes }
 	979.8.26={ death=yes }
 }
-1019920567={
-	name=Xihuitl
-	dynasty=1009990173
-	dna="fdhajablkpi"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=4 stewardship=8 intrigue=4 learning=8
-	add_trait=midas_touched add_trait=just add_trait=greedy add_trait=deceitful add_trait=craven 
-	father=1019920564	#Xiuhpilli
-	928.4.3={ birth=yes }
-	1021.5.10={ death=yes }
-}
-1019920568={
-	name=Xochipilli
-	dynasty=1009990173
-	dna="epbadaceknf"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=8 stewardship=5 intrigue=7 learning=7
-	add_trait=elusive_shadow add_trait=gardener add_trait=craven add_trait=diligent add_trait=charitable 
-	add_trait=ambitious add_trait=trusting add_trait=stressed add_trait=harelip 
-	father=1019920564	#Xiuhpilli
-	934.6.20={ birth=yes }
-	989.7.25={ death=yes }
-}
-1019920569={
+1019920552={
 	name=Yolotli
 	dynasty=1009990173
-	dna="hpopnflhkpd"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=5 stewardship=4 intrigue=7 learning=8
-	add_trait=martial_cleric add_trait=diligent add_trait=cruel add_trait=just add_trait=paranoid 
-	father=1019920566	#Xipil
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920551	#Xipil
 	947.11.12={ birth=yes }
 	1031.4.11={ death=yes }
 }
-1019920570={
-	name=Xicohtencatl
-	dynasty=1009990173
-	dna="lpomlglngpf"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=4 stewardship=7 intrigue=7 learning=7
-	add_trait=misguided_warrior add_trait=chaste add_trait=trusting add_trait=wroth add_trait=ambitious 
-	add_trait=cynical 
-	father=1019920566	#Xipil
-	953.10.8={ birth=yes }
-	1017.1.21={ death=yes }
-}
-1019920571={
-	name=Ichtaca
-	female=yes
-	dynasty=1009990173
-	dna="ephalgcjapl"
-	culture=lipan religion=algic_pagan
-	father=1019920566	#Xipil
-	957.1.15={ birth=yes }
-	1024.9.29={ death=yes }
-}
-1019920572={
+1019920553={
 	name=Tizoc
 	dynasty=1009990173
-	dna="anoplfihppd"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=7 stewardship=8 intrigue=6 learning=4
-	add_trait=intricate_webweaver add_trait=impaler add_trait=gluttonous add_trait=deceitful add_trait=patient 
-	add_trait=trusting 
-	father=1019920569	#Yolotli
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920552	#Yolotli
 	978.8.3={ birth=yes }
 	1061.10.2={ death=yes }
 }
-1019920573={
-	name=Tizocic
-	dynasty=1009990173
-	dna="hpagpllihpn"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=7 stewardship=7 intrigue=4 learning=6
-	add_trait=tough_soldier add_trait=proud add_trait=paranoid add_trait=envious add_trait=just 
-	add_trait=depressed 
-	father=1019920569	#Yolotli
-	986.1.7={ birth=yes }
-	1047.8.9={ death=yes }
-}
-1019920574={
-	name=Tecocoltzin
-	dynasty=1009990173
-	dna="dpoonkmmdod"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=4 stewardship=8 intrigue=7 learning=6
-	add_trait=midas_touched add_trait=hunter add_trait=cruel add_trait=ambitious add_trait=chaste 
-	add_trait=envious 
-	father=1019920569	#Yolotli
-	991.7.10={ birth=yes }
-	1063.12.11={ death=yes }
-}
-1019920575={
-	name=Xiloxoch
-	female=yes
-	dynasty=1009990173
-	dna="ojgpidlhgpf"
-	culture=lipan religion=algic_pagan
-	father=1019920569	#Yolotli
-	995.2.16={ birth=yes }
-	1075.10.5={ death=yes }
-}
-1019920576={
-	name=Yoltzin
-	female=yes
-	dynasty=1009990173
-	dna="adoipfbhdpd"
-	culture=lipan religion=algic_pagan
-	father=1019920572	#Tizoc
-	1006.2.4={ birth=yes }
-	1087.6.5={ death=yes }
-}
-1019920577={
+1019920554={
 	name=Xochitl
 	dynasty=1009990173
-	dna="anoplcihopd"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=8 stewardship=6 intrigue=4 learning=8
-	add_trait=grey_eminence add_trait=brave add_trait=trusting add_trait=slothful add_trait=gregarious 
-	add_trait=kind add_trait=arbitrary 
-	father=1019920572	#Tizoc
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920553	#Tizoc
 	1011.7.5={ birth=yes }
 	1066.7.30={ death=yes }
 }
-1019920578={
-	name=Teuicui
-	female=yes
-	dynasty=1009990173
-	dna="fnfglfdhcmd"
-	culture=lipan religion=algic_pagan
-	father=1019920572	#Tizoc
-	1016.10.16={ birth=yes }
-	1098.3.9={ death=yes }
-}
-1019920579={
-	name=Etapali
-	female=yes
-	dynasty=1009990173
-	dna="knopmfmhhhi"
-	culture=lipan religion=algic_pagan
-	father=1019920572	#Tizoc
-	1019.9.10={ birth=yes }
-	1078.8.31={ death=yes }
-}
-1019920580={
+1019920555={
 	name=Quauhtli
 	dynasty=1009990173
-	dna="eeeoloifljh"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=4 stewardship=7 intrigue=5 learning=6
-	add_trait=grey_eminence add_trait=diligent add_trait=trusting 
-	father=1019920577	#Xochitl
+	culture=tonkawa
+	religion=algic_pagan
+	father=1019920554	#Xochitl
 	1037.1.6={ birth=yes }
 	1121.11.30={ death=yes }
 }
-1019920581={
-	name=Xiuhpilli
-	dynasty=1009990173
-	dna="leoplhinbfo"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=6 stewardship=7 intrigue=4 learning=6
-	add_trait=detached_priest add_trait=temperate add_trait=deceitful add_trait=just add_trait=stressed 
-	father=1019920577	#Xochitl
-	1042.5.6={ birth=yes }
-	1130.12.11={ death=yes }
-}
-1019920582={
-	name=Tlilpotonqui
-	dynasty=1009990173
-	dna="amfngcbmokn"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=4 stewardship=7 intrigue=6 learning=8
-	add_trait=intricate_webweaver add_trait=proud add_trait=trusting add_trait=greedy add_trait=patient 
-	father=1019920577	#Xochitl
-	1047.7.6={ birth=yes }
-	1148.7.31={ death=yes }
-}
-1019920583={
-	name=Tlahcoehua
-	female=yes
-	dynasty=1009990173
-	dna="bnkelkaihpe"
-	culture=lipan religion=algic_pagan
-	father=1019920577	#Xochitl
-	1051.10.10={ birth=yes }
-	1110.7.2={ death=yes }
-}
-1019920584={
-	name=Xiuhtomiyauhtzin
-	female=yes
-	dynasty=1009990173
-	dna="hejolfillfc"
-	culture=lipan religion=algic_pagan
-	father=1019920580	#Quauhtli
-	1065.2.5={ birth=yes }
-	1121.11.27={ death=yes }
-}
-1019920585={
-	name=Tlilpotonqui
-	dynasty=1009990173
-	dna="eieooiadcja"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=7 stewardship=7 intrigue=6 learning=7
-	add_trait=scholarly_theologian add_trait=envious add_trait=ambitious add_trait=cruel add_trait=shy 
-	father=1019920580	#Quauhtli
-	1069.12.7={ birth=yes }
-	1150.9.11={ death=yes }
-}
-1019920586={
-	name=Xipil
-	dynasty=1009990173
-	dna="emelcoilnoa"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=7 stewardship=6 intrigue=6 learning=4
-	add_trait=charismatic_negotiator add_trait=deceitful add_trait=cynical add_trait=greedy add_trait=wounded 
-	father=1019920580	#Quauhtli
-	1072.1.11={ birth=yes }
-	1130.9.22={ death=yes }
-}
-1019920587={
-	name=Tizocic
-	dynasty=1009990173
-	dna="geemmocfmja"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=7 stewardship=4 intrigue=6 learning=6
-	add_trait=intricate_webweaver add_trait=hunter add_trait=gregarious add_trait=gluttonous add_trait=trusting 
-	add_trait=diligent 
-	father=1019920580	#Quauhtli
-	1077.9.25={ birth=yes }
-	1162.8.27={ death=yes }
-}
-1019920588={
-	name=Moyolehuani
-	female=yes
-	dynasty=1009990173
-	dna="ehenbifacja"
-	culture=lipan religion=algic_pagan
-	father=1019920585	#Tlilpotonqui
-	1097.2.12={ birth=yes }
-	1174.7.15={ death=yes }
-}
-1019920589={
-	name=Tecocoltzin
-	dynasty=1009990173
-	dna="eneooiedaba"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=7 stewardship=4 intrigue=6 learning=4
-	add_trait=elusive_shadow add_trait=patient add_trait=diligent add_trait=cynical add_trait=temperate 
-	add_trait=honest 
-	father=1019920585	#Tlilpotonqui
-	1102.10.14={ birth=yes }
-	1189.4.18={ death=yes }
-}
-1019920590={
-	name=Yoltzin
-	female=yes
-	dynasty=1009990173
-	dna="kfpofgcacjl"
-	culture=lipan religion=algic_pagan
-	father=1019920585	#Tlilpotonqui
-	1105.12.12={ birth=yes }
-	1175.12.18={ death=yes }
-}
-1019920591={
-	name=Yolotli
-	dynasty=1009990173
-	dna="liiokiadkpf"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=4 stewardship=4 intrigue=8 learning=6
-	add_trait=mastermind_theologian add_trait=shy add_trait=deceitful 
-	father=1019920585	#Tlilpotonqui
-	1109.10.26={ birth=yes }
-	1188.12.4={ death=yes }
-}
-1019920592={
-	name=Tizoc
-	dynasty=1009990173
-	dna="eieemipnjja"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=7 stewardship=7 intrigue=7 learning=5
-	add_trait=indulgent_wastrel add_trait=poet add_trait=chaste add_trait=brave add_trait=charitable 
-	add_trait=paranoid add_trait=quick 
-	father=1019920585	#Tlilpotonqui
-	1113.8.12={ birth=yes }
-	1187.3.18={ death=yes }
-}
-1019920593={
-	name=Yaotl
-	dynasty=1009990173
-	dna="caeoiicaaea"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=8 stewardship=7 intrigue=5 learning=6
-	add_trait=flamboyant_schemer add_trait=lustful add_trait=gluttonous add_trait=patient add_trait=arbitrary 
-	add_trait=content add_trait=gregarious 
-	father=1019920589	#Tecocoltzin
-	1127.7.1={ birth=yes }
-	1189.12.5={ death=yes }
-}
-1019920594={
-	name=Papan
-	female=yes
-	dynasty=1009990173
-	dna="foeapienaba"
-	culture=lipan religion=algic_pagan
-	father=1019920589	#Tecocoltzin
-	1132.8.8={ birth=yes }
-	1233.7.13={ death=yes }
-}
-1019920595={
-	name=Tizocic
-	dynasty=1009990173
-	dna="jnlelnedabe"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=8 stewardship=4 intrigue=4 learning=8
-	add_trait=flamboyant_schemer add_trait=mystic add_trait=cruel add_trait=wroth add_trait=cynical 
-	add_trait=deceitful add_trait=temperate 
-	father=1019920589	#Tecocoltzin
-	1139.8.11={ birth=yes }
-	1226.5.4={ death=yes }
-}
-1019920596={
-	name=Yaotl
-	dynasty=1009990173
-	dna="enngofpdabl"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=4 stewardship=5 intrigue=6 learning=7
-	add_trait=scholarly_theologian add_trait=gluttonous add_trait=chaste add_trait=proud add_trait=cruel 
-	father=1019920589	#Tecocoltzin
-	1146.11.13={ birth=yes }
-	1216.4.4={ death=yes }
-}
-1019920597={
-	name=Zeltzin
-	female=yes
-	dynasty=1009990173
-	dna="cggbnieggec"
-	culture=lipan religion=algic_pagan
-	father=1019920593	#Yaotl
-	1155.9.15={ birth=yes }
-	1208.12.30={ death=yes }
-}
-1019920598={
-	name=Xipilli
-	dynasty=1009990173
-	dna="leeoimhdpca"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=8 stewardship=6 intrigue=5 learning=6
-	add_trait=flamboyant_schemer add_trait=kind add_trait=trusting add_trait=zealous add_trait=humble 
-	father=1019920593	#Yaotl
-	1160.9.17={ birth=yes }
-	1243.8.18={ death=yes }
-}
-1019920599={
-	name=Tecocoltzin
-	dynasty=1009990173
-	dna="aajoipcigek"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=8 stewardship=5 intrigue=8 learning=5
-	add_trait=naive_appeaser add_trait=gregarious add_trait=brave add_trait=chaste add_trait=cynical 
-	add_trait=arbitrary add_trait=cruel 
-	father=1019920593	#Yaotl
-	1165.3.5={ birth=yes }
-	1201.12.17={ death=yes }
-}
-1019920600={
-	name=Tlacaelel
-	dynasty=1009990173
-	dna="ckioicciaea"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=8 stewardship=8 intrigue=5 learning=5
-	add_trait=charismatic_negotiator add_trait=cynical add_trait=greedy add_trait=shy 
-	father=1019920593	#Yaotl
-	1170.8.11={ birth=yes }
-	1260.11.18={ death=yes }
-}
-1019920601={
-	name=Xiuhpilli
-	dynasty=1009990173
-	dna="llgoomhdpcn"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=6 stewardship=5 intrigue=7 learning=5
-	add_trait=misguided_warrior add_trait=cynical add_trait=wroth add_trait=brave 
-	father=1019920598	#Xipilli
-	1188.4.17={ birth=yes }
-	1268.10.26={ death=yes }
-}
-1019920602={
-	name=Etapali
-	female=yes
-	dynasty=1009990173
-	dna="lenoijldpna"
-	culture=lipan religion=algic_pagan
-	father=1019920598	#Xipilli
-	1192.7.6={ birth=yes }
-	1273.1.29={ death=yes }
-}
-1019920603={
-	name=Tlacotl
-	female=yes
-	dynasty=1009990173
-	dna="nelmichipca"
-	culture=lipan religion=algic_pagan
-	father=1019920598	#Xipilli
-	1197.10.17={ birth=yes }
-	1285.4.2={ death=yes }
-}
-1019920604={
-	name=Tototl
-	dynasty=1009990173
-	dna="lchooebmkcn"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=7 stewardship=6 intrigue=8 learning=4
-	add_trait=martial_cleric add_trait=arbitrary add_trait=temperate add_trait=cynical 
-	father=1019920601	#Xiuhpilli
-	1216.5.2={ birth=yes }
-	1291.4.10={ death=yes }
-}
-1019920605={
-	name=Xihuitl
-	female=yes
-	dynasty=1009990173
-	dna="llgobamdpnn"
-	culture=lipan religion=algic_pagan
-	father=1019920601	#Xiuhpilli
-	1220.1.24={ birth=yes }
-	1286.12.1={ death=yes }
-}
-1019920606={
-	name=Tecolotl
-	dynasty=1009990173
-	dna="llgjokfcppp"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=8 stewardship=5 intrigue=5 learning=4
-	add_trait=thrifty_clerk add_trait=kind add_trait=brave add_trait=shy add_trait=lustful 
-	add_trait=diligent 
-	father=1019920601	#Xiuhpilli
-	1225.1.5={ birth=yes }
-	1263.4.4={ death=yes }
-}
-1019920607={
-	name=Tlahco
-	female=yes
-	dynasty=1009990173
-	dna="glioomedpcn"
-	culture=lipan religion=algic_pagan
-	father=1019920601	#Xiuhpilli
-	1229.5.11={ birth=yes }
-	1304.9.11={ death=yes }
-}
-1019920608={
-	name=Yolyamanitzin
-	dynasty=1009990173
-	dna="lioobifdjcl"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=4 stewardship=4 intrigue=6 learning=5
-	add_trait=detached_priest add_trait=slothful add_trait=cruel add_trait=chaste add_trait=wroth 
-	father=1019920601	#Xiuhpilli
-	1236.5.16={ birth=yes }
-	1318.9.7={ death=yes }
-}
-1019920609={
-	name=Tlilpotonqui
-	dynasty=1009990173
-	dna="glnoimhkkcn"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=8 stewardship=4 intrigue=7 learning=5
-	add_trait=grey_eminence add_trait=craven add_trait=cruel add_trait=lustful add_trait=gluttonous 
-	add_trait=proud 
-	father=1019920601	#Xiuhpilli
-	1241.1.20={ birth=yes }
-	1317.4.28={ death=yes }
-}
-1019920610={
-	name=Xochitl
-	dynasty=1009990173
-	dna="lcioogbekak"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=5 stewardship=8 intrigue=4 learning=7
-	add_trait=detached_priest add_trait=poet add_trait=gregarious add_trait=chaste add_trait=brave 
-	add_trait=cruel add_trait=patient add_trait=drunkard 
-	father=1019920604	#Tototl
-	1242.1.3={ birth=yes }
-	1303.7.15={ death=yes }
-}
-1019920611={
-	name=Citali
-	female=yes
-	dynasty=1009990173
-	dna="lihacmommei"
-	culture=lipan religion=algic_pagan
-	father=1019920604	#Tototl
-	1247.3.2={ birth=yes }
-	1317.8.30={ death=yes }
-}
-1019920612={
-	name=Etapali
-	female=yes
-	dynasty=1009990173
-	dna="blhpgpimkdn"
-	culture=lipan religion=algic_pagan
-	father=1019920604	#Tototl
-	1253.3.15={ birth=yes }
-	1356.5.10={ death=yes }
-}
-1019920613={
-	name=Xiuhpilli
-	dynasty=1009990173
-	dna="jcikogbekak"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=7 stewardship=4 intrigue=7 learning=4
-	add_trait=midas_touched add_trait=poet add_trait=cruel add_trait=craven add_trait=chaste 
-	add_trait=gluttonous add_trait=envious add_trait=humble 
-	father=1019920610	#Xochitl
-	1275.6.22={ birth=yes }
-	1349.5.23={ death=yes }
-}
-1019920614={
-	name=Tecolotl
-	dynasty=1009990173
-	dna="gciiojbeglk"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=6 stewardship=4 intrigue=8 learning=7
-	add_trait=intricate_webweaver add_trait=deceitful add_trait=zealous add_trait=paranoid add_trait=gregarious 
-	add_trait=ambitious 
-	father=1019920610	#Xochitl
-	1281.9.23={ birth=yes }
-	1348.5.22={ death=yes }
-}
-1019920615={
-	name=Tziquetzalpoztectzin
-	female=yes
-	dynasty=1009990173
-	dna="dciefgkekbf"
-	culture=lipan religion=algic_pagan
-	father=1019920610	#Xochitl
-	1286.2.2={ birth=yes }
-	1353.4.11={ death=yes }
-}
-1019920616={
-	name=Quiauhxochitl
-	female=yes
-	dynasty=1009990173
-	dna="lcaoogbekaa"
-	culture=lipan religion=algic_pagan
-	father=1019920610	#Xochitl
-	1290.5.16={ birth=yes }
-	1367.6.10={ death=yes }
-}
-1019920617={
-	name=Tetlepanquetzaltzin
-	dynasty=1009990173
-	dna="jlikghnakfk"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=4 stewardship=5 intrigue=5 learning=4
-	add_trait=grey_eminence add_trait=gregarious add_trait=lustful add_trait=temperate add_trait=trusting 
-	add_trait=brave add_trait=wroth 
-	father=1019920613	#Xiuhpilli
-	1301.12.18={ birth=yes }
-	1361.8.19={ death=yes }
-}
-1019920618={
-	name=Xipil
-	dynasty=1009990173
-	dna="joibmgonnae"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=7 stewardship=6 intrigue=4 learning=5
-	add_trait=intricate_webweaver add_trait=slothful add_trait=lustful add_trait=just 
-	father=1019920613	#Xiuhpilli
-	1305.1.24={ birth=yes }
-	1391.1.28={ death=yes }
-}
-1019920619={
-	name=Etapali
-	female=yes
-	dynasty=1009990173
-	dna="bcikojbepgk"
-	culture=lipan religion=algic_pagan
-	father=1019920613	#Xiuhpilli
-	1309.4.1={ birth=yes }
-	1359.7.11={ death=yes }
-}
-1019920620={
-	name=Tezozomoc
-	dynasty=1009990173
-	dna="jcikaghfeoo"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=4 stewardship=8 intrigue=5 learning=5
-	add_trait=misguided_warrior add_trait=charitable add_trait=patient add_trait=deceitful add_trait=brave 
-	add_trait=cruel add_trait=diligent 
-	father=1019920613	#Xiuhpilli
-	1316.10.1={ birth=yes }
-	1373.8.26={ death=yes }
-}
-1019920621={
-	name=Moyolehuani
-	female=yes
-	dynasty=1009990173
-	dna="cgikobbgkak"
-	culture=lipan religion=algic_pagan
-	father=1019920613	#Xiuhpilli
-	1320.8.8={ birth=yes }
-	1381.1.14={ death=yes }
-}
-1019920622={
-	name=Tezozomoc
-	female=yes
-	dynasty=1009990173
-	dna="jcikmpbckld"
-	culture=lipan religion=algic_pagan
-	father=1019920613	#Xiuhpilli
-	1322.3.8={ birth=yes }
-	1390.3.11={ death=yes }
-}
-1019920623={
-	name=Moztla
-	female=yes
-	dynasty=1009990173
-	dna="hcpkoonecdk"
-	culture=lipan religion=algic_pagan
-	father=1019920613	#Xiuhpilli
-	1327.1.19={ birth=yes }
-	1386.5.18={ death=yes }
-}
-1019920624={
-	name=Yayauhqui
-	dynasty=1009990173
-	dna="jlmddhoaiff"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=7 stewardship=7 intrigue=5 learning=5
-	add_trait=charismatic_negotiator add_trait=lustful add_trait=cruel add_trait=greedy 
-	father=1019920617	#Tetlepanquetzaltzin
-	1326.6.22={ birth=yes }
-	1426.10.2={ death=yes }
-}
-1019920625={
-	name=Xocoh
-	female=yes
-	dynasty=1009990173
-	dna="jjikglcmgmk"
-	culture=lipan religion=algic_pagan
-	father=1019920617	#Tetlepanquetzaltzin
-	1329.4.27={ birth=yes }
-	1388.3.4={ death=yes }
-}
-1019920626={
-	name=Tezcatlan
-	female=yes
-	dynasty=1009990173
-	dna="hpnkghnmidd"
-	culture=lipan religion=algic_pagan
-	father=1019920617	#Tetlepanquetzaltzin
-	1333.1.3={ birth=yes }
-	1412.10.1={ death=yes }
-}
-1019920627={
-	name=Xochitl
-	dynasty=1009990173
-	dna="lfmhdaaciaf"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=4 stewardship=7 intrigue=5 learning=6
-	add_trait=intricate_webweaver add_trait=gardener add_trait=diligent add_trait=kind 
-	father=1019920624	#Yayauhqui
-	1355.4.12={ birth=yes }
-	1411.11.1={ death=yes }
-}
-1019920628={
-	name=Xicohtencatl
-	dynasty=1009990173
-	dna="jlmdhhhocij"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=4 stewardship=8 intrigue=6 learning=5
-	add_trait=scholarly_theologian add_trait=slothful add_trait=honest 
-	father=1019920624	#Yayauhqui
-	1358.12.6={ birth=yes }
-	1462.5.14={ death=yes }
-}
-1019920629={
-	name=Zipactonal
-	dynasty=1009990173
-	dna="jlmdcjdleof"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=8 stewardship=5 intrigue=4 learning=5
-	add_trait=misguided_warrior add_trait=scholar add_trait=patient add_trait=cruel add_trait=craven 
-	add_trait=lustful add_trait=ambitious add_trait=kind add_trait=genius 
-	father=1019920624	#Yayauhqui
-	1365.2.7={ birth=yes }
-	1431.10.30={ death=yes }
-}
-1019920630={
-	name=Yayauhqui
-	dynasty=1009990173
-	dna="jlmongomhkm"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=4 stewardship=8 intrigue=7 learning=7
-	add_trait=flamboyant_schemer add_trait=impaler add_trait=proud add_trait=patient add_trait=cruel 
-	add_trait=clubfooted 
-	father=1019920624	#Yayauhqui
-	1367.9.25={ birth=yes }
-	1432.5.14={ death=yes }
-}
-1019920631={
-	name=Tizoc
-	dynasty=1009990173
-	dna="kffhdjaiihf"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=4 stewardship=4 intrigue=6 learning=5
-	add_trait=flamboyant_schemer add_trait=humble add_trait=diligent 
-	father=1019920627	#Xochitl
-	1384.9.26={ birth=yes }
-	1427.4.24={ death=yes }
-}
-1019920632={
-	name=Acacitlu
-	female=yes
-	dynasty=1009990173
-	dna="dflinnhlmaf"
-	culture=lipan religion=algic_pagan
-	father=1019920627	#Xochitl
-	1388.12.3={ birth=yes }
-	1442.8.24={ death=yes }
-}
-1019920633={
+
+1019920556={
 	name=Bazheech
 	dynasty=1009990174
-	dna="gmcemcdahpb"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=5 stewardship=8 intrigue=7 learning=7
-	add_trait=elusive_shadow add_trait=kind add_trait=cruel add_trait=gluttonous 
+	culture=coahuiltec
+	religion=algic_pagan
 	720.8.3={ birth=yes }
 	772.9.25={ death=yes }
 }
-1019920634={
-	name=Dahteste
-	female=yes
-	dynasty=1009990174
-	dna="hmcnbclahib"
-	culture=lipan religion=algic_pagan
-	father=1019920633	#Bazheech
-	750.9.15={ birth=yes }
-	851.6.8={ death=yes }
-}
-1019920635={
+1019920557={
 	name=Oahtekah
 	dynasty=1009990174
-	dna="gbjeocgijpb"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=8 stewardship=5 intrigue=4 learning=8
-	add_trait=martial_cleric add_trait=shy add_trait=envious add_trait=humble add_trait=lustful 
-	add_trait=honest add_trait=gluttonous 
-	father=1019920633	#Bazheech
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920556	#Bazheech
 	753.5.20={ birth=yes }
 	822.9.18={ death=yes }
 }
-1019920636={
-	name=Ilthgozay
-	female=yes
-	dynasty=1009990174
-	dna="gfjepcdhhgk"
-	culture=lipan religion=algic_pagan
-	father=1019920633	#Bazheech
-	761.9.4={ birth=yes }
-	846.10.4={ death=yes }
-}
-1019920637={
-	name=Juh
-	dynasty=1009990174
-	dna="gdgkgjhakib"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=4 stewardship=6 intrigue=6 learning=8
-	add_trait=flamboyant_schemer add_trait=hunter add_trait=greedy add_trait=paranoid add_trait=slothful 
-	add_trait=chaste 
-	father=1019920633	#Bazheech
-	768.10.8={ birth=yes }
-	818.9.14={ death=yes }
-}
-1019920638={
+1019920558={
 	name=Kootzzah
 	dynasty=1009990174
-	dna="ibjedapijdh"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=8 stewardship=8 intrigue=5 learning=4
-	add_trait=martial_cleric add_trait=deceitful add_trait=proud add_trait=lustful add_trait=arbitrary 
-	add_trait=patient add_trait=drunkard 
-	father=1019920635	#Oahtekah
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920557	#Oahtekah
 	773.1.1={ birth=yes }
 	836.8.16={ death=yes }
 }
-1019920639={
-	name=Gouyen
-	female=yes
-	dynasty=1009990174
-	dna="abdepcgiepf"
-	culture=lipan religion=algic_pagan
-	father=1019920635	#Oahtekah
-	777.10.8={ birth=yes }
-	859.6.10={ death=yes }
-}
-1019920640={
-	name=Tohayea
-	female=yes
-	dynasty=1009990174
-	dna="mbfjbcjippa"
-	culture=lipan religion=algic_pagan
-	father=1019920635	#Oahtekah
-	781.5.14={ birth=yes }
-	850.9.21={ death=yes }
-}
-1019920641={
+1019920559={
 	name=Otoahnisto
 	dynasty=1009990174
-	dna="aameaaphfah"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=6 stewardship=8 intrigue=6 learning=4
-	add_trait=tough_soldier add_trait=gregarious add_trait=just add_trait=humble add_trait=diligent 
-	father=1019920638	#Kootzzah
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920558	#Kootzzah
 	800.9.23={ birth=yes }
 	878.4.16={ death=yes }
 }
-1019920642={
-	name=Ilthgozay
-	female=yes
-	dynasty=1009990174
-	dna="iljecakijdh"
-	culture=lipan religion=algic_pagan
-	father=1019920638	#Kootzzah
-	807.9.3={ birth=yes }
-	860.4.20={ death=yes }
-}
-1019920643={
-	name=Kootzzah
-	dynasty=1009990174
-	dna="lbjejikmgdj"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=4 stewardship=4 intrigue=5 learning=8
-	add_trait=misguided_warrior add_trait=humble add_trait=just add_trait=depressed 
-	father=1019920638	#Kootzzah
-	811.3.24={ birth=yes }
-	887.2.24={ death=yes }
-}
-1019920644={
-	name=Dahteste
-	female=yes
-	dynasty=1009990174
-	dna="fbjefamkcdh"
-	culture=lipan religion=algic_pagan
-	father=1019920638	#Kootzzah
-	815.1.13={ birth=yes }
-	880.9.26={ death=yes }
-}
-1019920645={
-	name=Cochise
-	dynasty=1009990174
-	dna="bejcdkpkidh"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=4 stewardship=8 intrigue=5 learning=7
-	add_trait=grey_eminence add_trait=zealous add_trait=shy add_trait=gluttonous add_trait=wroth 
-	add_trait=charitable 
-	father=1019920638	#Kootzzah
-	819.11.3={ birth=yes }
-	896.9.11={ death=yes }
-}
-1019920646={
+1019920560={
 	name=Bazheech
 	dynasty=1009990174
-	dna="affhlajhjfg"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=7 stewardship=6 intrigue=6 learning=5
-	add_trait=flamboyant_schemer add_trait=just add_trait=trusting add_trait=slothful 
-	father=1019920641	#Otoahnisto
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920559	#Otoahnisto
 	823.8.17={ birth=yes }
 	895.7.27={ death=yes }
 }
-1019920647={
-	name=Dahteste
-	female=yes
-	dynasty=1009990174
-	dna="aepfpaphfih"
-	culture=lipan religion=algic_pagan
-	father=1019920641	#Otoahnisto
-	829.6.15={ birth=yes }
-	904.8.9={ death=yes }
-}
-1019920648={
+1019920561={
 	name=Sitahle
 	dynasty=1009990174
-	dna="lhbhlacbefg"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=4 stewardship=4 intrigue=5 learning=8
-	add_trait=indulgent_wastrel add_trait=temperate add_trait=wroth add_trait=craven add_trait=humble 
-	father=1019920646	#Bazheech
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920560	#Bazheech
 	853.1.26={ birth=yes }
 	928.2.22={ death=yes }
 }
-1019920649={
-	name=Ilthgozay
-	female=yes
-	dynasty=1009990174
-	dna="dhfpjkicjfg"
-	culture=lipan religion=algic_pagan
-	father=1019920646	#Bazheech
-	859.4.22={ birth=yes }
-	943.8.14={ death=yes }
-}
-1019920650={
-	name=Munamenek
-	dynasty=1009990174
-	dna="ilfolajmpfl"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=5 stewardship=7 intrigue=7 learning=5
-	add_trait=charismatic_negotiator add_trait=wroth add_trait=kind 
-	father=1019920646	#Bazheech
-	863.4.19={ birth=yes }
-	920.9.30={ death=yes }
-}
-1019920651={
-	name=Gouyen
-	female=yes
-	dynasty=1009990174
-	dna="cffhielhjmo"
-	culture=lipan religion=algic_pagan
-	father=1019920646	#Bazheech
-	867.9.4={ birth=yes }
-	941.11.3={ death=yes }
-}
-1019920652={
+1019920562={
 	name=Chacon
 	dynasty=1009990174
-	dna="lpkhbaabifa"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=6 stewardship=7 intrigue=7 learning=8
-	add_trait=charismatic_negotiator add_trait=content add_trait=kind add_trait=wroth add_trait=cruel 
-	father=1019920648	#Sitahle
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920561	#Sitahle
 	883.11.25={ birth=yes }
 	984.3.22={ death=yes }
 }
-1019920653={
-	name=Dahteste
-	female=yes
-	dynasty=1009990174
-	dna="hhcalafelfg"
-	culture=lipan religion=algic_pagan
-	father=1019920648	#Sitahle
-	888.3.13={ birth=yes }
-	942.3.4={ death=yes }
-}
-1019920654={
-	name=Dahteste
-	female=yes
-	dynasty=1009990174
-	dna="lolkpackpmg"
-	culture=lipan religion=algic_pagan
-	father=1019920648	#Sitahle
-	894.8.6={ birth=yes }
-	971.8.14={ death=yes }
-}
-1019920655={
+1019920563={
 	name=Mahvipah
 	dynasty=1009990174
-	dna="nhbhlacipfk"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=8 stewardship=7 intrigue=5 learning=8
-	add_trait=midas_touched add_trait=shy add_trait=trusting add_trait=arbitrary add_trait=content 
-	father=1019920648	#Sitahle
-	898.10.5={ birth=yes }
-	982.11.7={ death=yes }
-}
-1019920656={
-	name=Mahvipah
-	dynasty=1009990174
-	dna="ghhalifgifa"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=8 stewardship=6 intrigue=6 learning=5
-	add_trait=midas_touched add_trait=cruel add_trait=greedy add_trait=diligent 
-	father=1019920652	#Chacon
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920562	#Chacon
 	906.8.22={ birth=yes }
 	975.12.21={ death=yes }
 }
-1019920657={
-	name=Cochise
-	dynasty=1009990174
-	dna="fpihfaabikb"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=4 stewardship=5 intrigue=4 learning=7
-	add_trait=intricate_webweaver add_trait=temperate add_trait=honest add_trait=trusting 
-	father=1019920652	#Chacon
-	914.5.11={ birth=yes }
-	991.8.6={ death=yes }
-}
-1019920658={
-	name=Gouyen
-	female=yes
-	dynasty=1009990174
-	dna="lgchbajeifj"
-	culture=lipan religion=algic_pagan
-	father=1019920652	#Chacon
-	918.11.9={ birth=yes }
-	1004.2.9={ death=yes }
-}
-1019920659={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="gnhklifgifa"
-	culture=lipan religion=algic_pagan
-	father=1019920656	#Mahvipah
-	925.10.20={ birth=yes }
-	998.12.14={ death=yes }
-}
-1019920660={
+1019920564={
 	name=Kootzzah
 	dynasty=1009990174
-	dna="gehalcndlom"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=5 stewardship=6 intrigue=7 learning=4
-	add_trait=midas_touched add_trait=gardener add_trait=arbitrary add_trait=deceitful add_trait=paranoid 
-	father=1019920656	#Mahvipah
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920563	#Mahvipah
 	932.1.25={ birth=yes }
 	1013.7.15={ death=yes }
 }
-1019920661={
+1019920565={
 	name=Chacon
 	dynasty=1009990174
-	dna="gmcaekddleg"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=6 stewardship=4 intrigue=4 learning=4
-	add_trait=indulgent_wastrel add_trait=paranoid add_trait=patient add_trait=humble add_trait=greedy 
-	father=1019920660	#Kootzzah
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920564	#Kootzzah
 	956.8.13={ birth=yes }
 	1032.8.8={ death=yes }
 }
-1019920662={
-	name=Gouyen
-	female=yes
-	dynasty=1009990174
-	dna="nlcolahdlpa"
-	culture=lipan religion=algic_pagan
-	father=1019920660	#Kootzzah
-	961.5.6={ birth=yes }
-	1016.1.29={ death=yes }
-}
-1019920663={
-	name=Dasoda-hae
-	dynasty=1009990174
-	dna="gphalbjabnh"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=6 stewardship=8 intrigue=4 learning=8
-	add_trait=detached_priest add_trait=zealous add_trait=gregarious add_trait=content add_trait=just 
-	add_trait=wroth 
-	father=1019920660	#Kootzzah
-	965.3.11={ birth=yes }
-	1020.10.10={ death=yes }
-}
-1019920664={
+1019920566={
 	name=Delshay
 	dynasty=1009990174
-	dna="hdpnekddleg"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=7 stewardship=5 intrigue=5 learning=5
-	add_trait=indulgent_wastrel add_trait=gregarious add_trait=greedy add_trait=cruel add_trait=ambitious 
-	add_trait=slothful 
-	father=1019920661	#Chacon
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920565	#Chacon
 	986.3.5={ birth=yes }
 	1086.7.6={ death=yes }
 }
-1019920665={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="gccogkdhlei"
-	culture=lipan religion=algic_pagan
-	father=1019920661	#Chacon
-	992.8.25={ birth=yes }
-	1061.5.4={ death=yes }
-}
-1019920666={
-	name=Gouyen
-	female=yes
-	dynasty=1009990174
-	dna="fmcahkjnlmb"
-	culture=lipan religion=algic_pagan
-	father=1019920661	#Chacon
-	994.3.15={ birth=yes }
-	1078.9.11={ death=yes }
-}
-1019920667={
-	name=Cochise
-	dynasty=1009990174
-	dna="gcededklneg"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=6 stewardship=5 intrigue=4 learning=4
-	add_trait=naive_appeaser add_trait=lustful add_trait=paranoid add_trait=possessed 
-	father=1019920661	#Chacon
-	1002.6.10={ birth=yes }
-	1041.2.12={ death=yes }
-}
-1019920668={
+1019920567={
 	name=Bazheech
 	dynasty=1009990174
-	dna="hmjhfkiglek"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=4 stewardship=4 intrigue=8 learning=4
-	add_trait=charismatic_negotiator add_trait=arbitrary add_trait=lustful add_trait=ambitious add_trait=honest 
-	add_trait=possessed 
-	father=1019920664	#Delshay
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920566	#Delshay
 	1007.5.17={ birth=yes }
 	1087.2.5={ death=yes }
 }
-1019920669={
-	name=Juh
-	dynasty=1009990174
-	dna="ahpmepohmnp"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=7 stewardship=5 intrigue=7 learning=7
-	add_trait=skilled_tactician add_trait=proud add_trait=gregarious add_trait=lustful 
-	father=1019920664	#Delshay
-	1010.5.22={ birth=yes }
-	1069.7.4={ death=yes }
-}
-1019920670={
+1019920568={
 	name=Nahtan
 	dynasty=1009990174
-	dna="hljhfeianek"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=5 stewardship=7 intrigue=4 learning=7
-	add_trait=naive_appeaser add_trait=impaler add_trait=gregarious add_trait=craven add_trait=wroth 
-	father=1019920668	#Bazheech
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920567	#Bazheech
 	1028.5.13={ birth=yes }
 	1071.11.29={ death=yes }
 }
-1019920671={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="aijhekikaek"
-	culture=lipan religion=algic_pagan
-	father=1019920668	#Bazheech
-	1034.9.23={ birth=yes }
-	1126.3.18={ death=yes }
-}
-1019920672={
-	name=Cochise
-	dynasty=1009990174
-	dna="gmkhfkiglek"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=7 stewardship=7 intrigue=6 learning=6
-	add_trait=mastermind_theologian add_trait=greedy add_trait=envious add_trait=gluttonous 
-	father=1019920668	#Bazheech
-	1037.3.19={ birth=yes }
-	1090.11.9={ death=yes }
-}
-1019920673={
-	name=Dahteste
-	female=yes
-	dynasty=1009990174
-	dna="lmihfkngkek"
-	culture=lipan religion=algic_pagan
-	father=1019920668	#Bazheech
-	1041.9.8={ birth=yes }
-	1114.11.27={ death=yes }
-}
-1019920674={
-	name=Gouyen
-	female=yes
-	dynasty=1009990174
-	dna="felhjkiglmm"
-	culture=lipan religion=algic_pagan
-	father=1019920668	#Bazheech
-	1046.7.23={ birth=yes }
-	1088.12.7={ death=yes }
-}
-1019920675={
+1019920569={
 	name=Bazheech
 	dynasty=1009990174
-	dna="hojhlknbkek"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=7 stewardship=5 intrigue=5 learning=5
-	add_trait=detached_priest add_trait=diligent add_trait=arbitrary add_trait=cruel add_trait=temperate 
-	father=1019920670	#Nahtan
+	culture=coahuiltec 
+	religion=algic_pagan
+	father=1019920568	#Nahtan
 	1052.2.23={ birth=yes }
 	1114.1.29={ death=yes }
 }
-1019920676={
-	name=Tohayea
-	female=yes
-	dynasty=1009990174
-	dna="hljbiekandk"
-	culture=lipan religion=algic_pagan
-	father=1019920670	#Nahtan
-	1059.11.20={ birth=yes }
-	1139.1.1={ death=yes }
-}
-1019920677={
-	name=Nahtan
-	dynasty=1009990174
-	dna="hlhhfeijnem"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=7 stewardship=6 intrigue=7 learning=5
-	add_trait=detached_priest add_trait=kind add_trait=ambitious add_trait=craven 
-	father=1019920670	#Nahtan
-	1064.12.11={ birth=yes }
-	1149.6.15={ death=yes }
-}
-1019920678={
-	name=Tohayea
-	female=yes
-	dynasty=1009990174
-	dna="glmhfecenbk"
-	culture=lipan religion=algic_pagan
-	father=1019920670	#Nahtan
-	1069.11.11={ birth=yes }
-	1124.2.28={ death=yes }
-}
-1019920679={
-	name=Ilthgozay
-	female=yes
-	dynasty=1009990174
-	dna="hlhhfoionea"
-	culture=lipan religion=algic_pagan
-	father=1019920670	#Nahtan
-	1072.4.12={ birth=yes }
-	1154.3.12={ death=yes }
-}
-1019920680={
-	name=Bazheech
-	dynasty=1009990174
-	dna="hoabfeigjef"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=5 stewardship=5 intrigue=7 learning=5
-	add_trait=grey_eminence add_trait=charitable add_trait=chaste add_trait=honest add_trait=cynical 
-	add_trait=slothful 
-	father=1019920670	#Nahtan
-	1077.5.14={ birth=yes }
-	1152.5.28={ death=yes }
-}
-1019920681={
-	name=Ilthgozay
-	female=yes
-	dynasty=1009990174
-	dna="hbjbfdkenpk"
-	culture=lipan religion=algic_pagan
-	father=1019920670	#Nahtan
-	1082.3.11={ birth=yes }
-	1133.4.4={ death=yes }
-}
-1019920682={
-	name=Konzhontaco
-	dynasty=1009990174
-	dna="igjhlknbggk"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=4 stewardship=6 intrigue=4 learning=7
-	add_trait=intricate_webweaver add_trait=envious add_trait=diligent add_trait=temperate add_trait=lustful 
-	add_trait=shy 
-	father=1019920675	#Bazheech
-	1079.4.13={ birth=yes }
-	1147.11.21={ death=yes }
-}
-1019920683={
-	name=Tohayea
-	female=yes
-	dynasty=1009990174
-	dna="gfjllkljaek"
-	culture=lipan religion=algic_pagan
-	father=1019920675	#Bazheech
-	1084.12.4={ birth=yes }
-	1154.8.31={ death=yes }
-}
-1019920684={
-	name=Bazheech
-	dynasty=1009990174
-	dna="hhjhlkebapk"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=6 stewardship=8 intrigue=5 learning=5
-	add_trait=flamboyant_schemer add_trait=content add_trait=charitable add_trait=shy 
-	father=1019920675	#Bazheech
-	1087.12.26={ birth=yes }
-	1169.7.6={ death=yes }
-}
-1019920685={
-	name=Ohtoahnesotowheo
-	dynasty=1009990174
-	dna="hfchakfbkem"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=7 stewardship=5 intrigue=7 learning=8
-	add_trait=grey_eminence add_trait=zealous add_trait=just add_trait=cruel 
-	father=1019920675	#Bazheech
-	1095.12.21={ birth=yes }
-	1165.7.27={ death=yes }
-}
-1019920686={
-	name=Oahtekah
-	dynasty=1009990174
-	dna="igjilfnbfgl"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=4 stewardship=7 intrigue=8 learning=8
-	add_trait=elusive_shadow add_trait=trusting add_trait=cynical add_trait=humble add_trait=shy 
-	add_trait=lustful 
-	father=1019920682	#Konzhontaco
-	1106.5.10={ birth=yes }
-	1194.4.4={ death=yes }
-}
-1019920687={
-	name=Harkkahome
-	dynasty=1009990174
-	dna="okdhadebkgo"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=4 stewardship=8 intrigue=5 learning=6
-	add_trait=indulgent_wastrel add_trait=content add_trait=greedy add_trait=humble add_trait=slothful 
-	add_trait=possessed 
-	father=1019920682	#Konzhontaco
-	1110.11.1={ birth=yes }
-	1179.4.11={ death=yes }
-}
-1019920688={
-	name=Cochise
-	dynasty=1009990174
-	dna="ihjhngfbejk"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=8 stewardship=5 intrigue=6 learning=8
-	add_trait=misguided_warrior add_trait=gardener add_trait=proud add_trait=just add_trait=patient 
-	add_trait=content add_trait=wounded 
-	father=1019920682	#Konzhontaco
-	1115.4.17={ birth=yes }
-	1181.8.1={ death=yes }
-}
-1019920689={
-	name=Chacon
-	dynasty=1009990174
-	dna="bdjhecncpgk"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=4 stewardship=8 intrigue=7 learning=8
-	add_trait=tough_soldier add_trait=shy add_trait=deceitful add_trait=chaste add_trait=depressed 
-	father=1019920682	#Konzhontaco
-	1118.7.5={ birth=yes }
-	1179.8.10={ death=yes }
-}
-1019920690={
-	name=Ohtoahnesotowheo
-	dynasty=1009990174
-	dna="kgjhbccbcgk"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=7 stewardship=4 intrigue=7 learning=7
-	add_trait=intricate_webweaver add_trait=mystic add_trait=content add_trait=lustful add_trait=deceitful 
-	add_trait=wounded 
-	father=1019920682	#Konzhontaco
-	1122.3.9={ birth=yes }
-	1217.2.6={ death=yes }
-}
-1019920691={
-	name=Choseta
-	dynasty=1009990174
-	dna="igchpmcdnkb"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=4 stewardship=6 intrigue=4 learning=4
-	add_trait=grey_eminence add_trait=hunter add_trait=cynical add_trait=trusting add_trait=humble 
-	add_trait=cruel add_trait=charitable add_trait=possessed 
-	father=1019920682	#Konzhontaco
-	1127.8.8={ birth=yes }
-	1207.12.24={ death=yes }
-}
-1019920692={
-	name=Goyaale
-	dynasty=1009990174
-	dna="bhjilknlgeo"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=7 stewardship=6 intrigue=5 learning=8
-	add_trait=midas_touched add_trait=envious add_trait=deceitful add_trait=lustful add_trait=humble 
-	father=1019920682	#Konzhontaco
-	1132.6.8={ birth=yes }
-	1213.3.6={ death=yes }
-}
-1019920693={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="fgjhlfdddnl"
-	culture=lipan religion=algic_pagan
-	father=1019920686	#Oahtekah
-	1134.6.9={ birth=yes }
-	1222.3.22={ death=yes }
-}
-1019920694={
-	name=Otoahnisto
-	dynasty=1009990174
-	dna="ibhicafdcgl"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=6 stewardship=7 intrigue=7 learning=7
-	add_trait=naive_appeaser add_trait=hedonist add_trait=deceitful add_trait=content add_trait=gluttonous 
-	add_trait=greedy 
-	father=1019920686	#Oahtekah
-	1140.2.22={ birth=yes }
-	1215.8.10={ death=yes }
-}
-1019920695={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="ncjldfbbfgp"
-	culture=lipan religion=algic_pagan
-	father=1019920686	#Oahtekah
-	1145.12.21={ birth=yes }
-	1206.12.1={ death=yes }
-}
-1019920696={
-	name=Bazheech
-	dynasty=1009990174
-	dna="ielnknkpcge"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=4 stewardship=5 intrigue=4 learning=5
-	add_trait=misguided_warrior add_trait=zealous add_trait=honest add_trait=craven add_trait=patient 
-	add_trait=slothful 
-	father=1019920694	#Otoahnisto
-	1171.7.17={ birth=yes }
-	1255.11.25={ death=yes }
-}
-1019920697={
-	name=Choseta
-	dynasty=1009990174
-	dna="ipaggafocnm"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=6 stewardship=7 intrigue=5 learning=6
-	add_trait=midas_touched add_trait=honest add_trait=humble 
-	father=1019920694	#Otoahnisto
-	1177.6.7={ birth=yes }
-	1245.3.29={ death=yes }
-}
-1019920698={
-	name=Dahteste
-	female=yes
-	dynasty=1009990174
-	dna="ibghcagecgl"
-	culture=lipan religion=algic_pagan
-	father=1019920694	#Otoahnisto
-	1182.5.7={ birth=yes }
-	1249.6.9={ death=yes }
-}
-1019920699={
-	name=Otoahnisto
-	dynasty=1009990174
-	dna="pmkickldmbb"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=5 stewardship=7 intrigue=5 learning=5
-	add_trait=grey_eminence add_trait=humble add_trait=zealous add_trait=brave add_trait=cruel 
-	father=1019920694	#Otoahnisto
-	1184.6.4={ birth=yes }
-	1285.7.12={ death=yes }
-}
-1019920700={
-	name=Chacon
-	dynasty=1009990174
-	dna="henngobpbgi"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=8 stewardship=5 intrigue=4 learning=4
-	add_trait=grey_eminence add_trait=cruel add_trait=deceitful add_trait=shy add_trait=greedy 
-	father=1019920696	#Bazheech
-	1194.4.8={ birth=yes }
-	1273.7.12={ death=yes }
-}
-1019920701={
-	name=Nahtan
-	dynasty=1009990174
-	dna="iplnonkpcgf"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=8 stewardship=6 intrigue=7 learning=4
-	add_trait=flamboyant_schemer add_trait=arbitrary add_trait=gluttonous add_trait=craven add_trait=trusting 
-	add_trait=gregarious 
-	father=1019920696	#Bazheech
-	1198.8.7={ birth=yes }
-	1262.9.22={ death=yes }
-}
-1019920702={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="nhplkfjiagi"
-	culture=lipan religion=algic_pagan
-	father=1019920696	#Bazheech
-	1202.6.5={ birth=yes }
-	1274.8.14={ death=yes }
-}
-1019920703={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="heenndgabkg"
-	culture=lipan religion=algic_pagan
-	father=1019920700	#Chacon
-	1226.10.23={ birth=yes }
-	1305.9.17={ death=yes }
-}
-1019920704={
-	name=Kootzzah
-	dynasty=1009990174
-	dna="oenngnbpigb"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=8 stewardship=4 intrigue=8 learning=7
-	add_trait=charismatic_negotiator add_trait=hedonist add_trait=slothful add_trait=deceitful 
-	father=1019920700	#Chacon
-	1229.8.9={ birth=yes }
-	1312.4.7={ death=yes }
-}
-1019920705={
-	name=Cochise
-	dynasty=1009990174
-	dna="gennbocpbbi"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=5 stewardship=4 intrigue=6 learning=4
-	add_trait=indulgent_wastrel add_trait=gardener add_trait=humble add_trait=content add_trait=shy 
-	add_trait=envious add_trait=chaste 
-	father=1019920700	#Chacon
-	1235.5.17={ birth=yes }
-	1311.8.8={ death=yes }
-}
-1019920706={
-	name=Munamenek
-	dynasty=1009990174
-	dna="henngeoehgi"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=6 stewardship=6 intrigue=8 learning=5
-	add_trait=mastermind_theologian add_trait=greedy add_trait=slothful add_trait=arbitrary add_trait=humble 
-	add_trait=shy add_trait=brave add_trait=wounded 
-	father=1019920700	#Chacon
-	1243.12.13={ birth=yes }
-	1311.1.10={ death=yes }
-}
-1019920707={
-	name=Dasoda-hae
-	dynasty=1009990174
-	dna="mlnenanfigi"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=7 stewardship=5 intrigue=4 learning=6
-	add_trait=detached_priest add_trait=impaler add_trait=gregarious add_trait=cruel add_trait=gluttonous 
-	add_trait=cynical add_trait=humble 
-	father=1019920704	#Kootzzah
-	1262.9.8={ birth=yes }
-	1332.6.25={ death=yes }
-}
-1019920708={
-	name=Juh
-	dynasty=1009990174
-	dna="gebnmnbpigb"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=7 stewardship=4 intrigue=5 learning=7
-	add_trait=skilled_tactician add_trait=patient add_trait=diligent add_trait=cruel add_trait=ambitious 
-	add_trait=proud add_trait=craven 
-	father=1019920704	#Kootzzah
-	1266.8.3={ birth=yes }
-	1327.6.2={ death=yes }
-}
-1019920709={
-	name=Harkkahome
-	dynasty=1009990174
-	dna="omnnmgopnnm"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=5 stewardship=8 intrigue=5 learning=8
-	add_trait=intricate_webweaver add_trait=paranoid add_trait=charitable add_trait=proud add_trait=envious 
-	father=1019920704	#Kootzzah
-	1271.9.27={ birth=yes }
-	1324.2.4={ death=yes }
-}
-1019920710={
-	name=Moketaveto
-	dynasty=1009990174
-	dna="ojnnbnbpigb"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=4 stewardship=5 intrigue=8 learning=4
-	add_trait=midas_touched add_trait=ambitious add_trait=brave add_trait=temperate add_trait=stressed 
-	father=1019920704	#Kootzzah
-	1278.12.25={ birth=yes }
-	1353.7.31={ death=yes }
-}
-1019920711={
-	name=Moketaveto
-	dynasty=1009990174
-	dna="mlleccjfigi"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=4 stewardship=7 intrigue=4 learning=7
-	add_trait=flamboyant_schemer add_trait=gregarious add_trait=paranoid add_trait=deceitful 
-	father=1019920707	#Dasoda-hae
-	1294.7.21={ birth=yes }
-	1336.12.22={ death=yes }
-}
-1019920712={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="mlfehanfnjh"
-	culture=lipan religion=algic_pagan
-	father=1019920707	#Dasoda-hae
-	1301.3.13={ birth=yes }
-	1405.4.27={ death=yes }
-}
-1019920713={
-	name=Mahvipah
-	dynasty=1009990174
-	dna="mingnagiigi"
-	culture=lipan religion=algic_pagan
-	martial=8 diplomacy=8 stewardship=5 intrigue=6 learning=4
-	add_trait=grey_eminence add_trait=patient add_trait=cruel 
-	father=1019920707	#Dasoda-hae
-	1306.5.24={ birth=yes }
-	1369.12.18={ death=yes }
-}
-1019920714={
-	name=Dahteste
-	female=yes
-	dynasty=1009990174
-	dna="mlbgnfnnbfi"
-	culture=lipan religion=algic_pagan
-	father=1019920707	#Dasoda-hae
-	1310.1.9={ birth=yes }
-	1383.11.29={ death=yes }
-}
-1019920715={
-	name=Sitahle
-	dynasty=1009990174
-	dna="mflcckifagi"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=5 stewardship=6 intrigue=4 learning=6
-	add_trait=midas_touched add_trait=slothful add_trait=cruel add_trait=envious add_trait=ambitious 
-	father=1019920711	#Moketaveto
-	1323.9.10={ birth=yes }
-	1391.8.29={ death=yes }
-}
-1019920716={
-	name=Tohayea
-	female=yes
-	dynasty=1009990174
-	dna="mpbecijfiji"
-	culture=lipan religion=algic_pagan
-	father=1019920711	#Moketaveto
-	1327.10.23={ birth=yes }
-	1395.7.2={ death=yes }
-}
-1019920717={
-	name=Otoahnisto
-	dynasty=1009990174
-	dna="mjlejbaajgn"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=6 stewardship=4 intrigue=8 learning=4
-	add_trait=misguided_warrior add_trait=poet add_trait=charitable add_trait=gregarious add_trait=arbitrary 
-	add_trait=brave 
-	father=1019920711	#Moketaveto
-	1333.5.7={ birth=yes }
-	1396.2.28={ death=yes }
-}
-1019920718={
-	name=Harkkahome
-	dynasty=1009990174
-	dna="cjmepljfela"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=6 stewardship=7 intrigue=4 learning=7
-	add_trait=elusive_shadow add_trait=proud add_trait=greedy add_trait=strong 
-	father=1019920711	#Moketaveto
-	1337.5.20={ birth=yes }
-	1416.4.27={ death=yes }
-}
-1019920719={
-	name=Cochise
-	dynasty=1009990174
-	dna="mgjlhcnflga"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=5 stewardship=7 intrigue=6 learning=7
-	add_trait=skilled_tactician add_trait=proud add_trait=trusting add_trait=zealous add_trait=kind 
-	father=1019920711	#Moketaveto
-	1342.6.5={ birth=yes }
-	1423.2.16={ death=yes }
-}
-1019920720={
-	name=Tillaka
-	dynasty=1009990174
-	dna="mllemojmiie"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=8 stewardship=4 intrigue=7 learning=4
-	add_trait=midas_touched add_trait=slothful add_trait=chaste add_trait=greedy 
-	father=1019920711	#Moketaveto
-	1348.8.9={ birth=yes }
-	1432.11.7={ death=yes }
-}
-1019920721={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="jklncnjjkgk"
-	culture=lipan religion=algic_pagan
-	father=1019920711	#Moketaveto
-	1352.10.25={ birth=yes }
-	1406.1.8={ death=yes }
-}
-1019920722={
-	name=Gouyen
-	female=yes
-	dynasty=1009990174
-	dna="bfjjciicami"
-	culture=lipan religion=algic_pagan
-	father=1019920715	#Sitahle
-	1350.10.11={ birth=yes }
-	1407.5.6={ death=yes }
-}
-1019920723={
-	name=Nahtan
-	dynasty=1009990174
-	dna="mllacgaeakf"
-	culture=lipan religion=algic_pagan
-	martial=6 diplomacy=6 stewardship=7 intrigue=8 learning=5
-	add_trait=midas_touched add_trait=duelist add_trait=envious add_trait=humble add_trait=slothful 
-	add_trait=just add_trait=wroth add_trait=depressed 
-	father=1019920715	#Sitahle
-	1355.12.17={ birth=yes }
-	1404.11.15={ death=yes }
-}
-1019920724={
-	name=Bazheech
-	dynasty=1009990174
-	dna="panekkigahe"
-	culture=lipan religion=algic_pagan
-	martial=5 diplomacy=4 stewardship=7 intrigue=8 learning=4
-	add_trait=misguided_warrior add_trait=shy add_trait=proud add_trait=charitable add_trait=paranoid 
-	add_trait=arbitrary add_trait=slothful 
-	father=1019920715	#Sitahle
-	1357.4.9={ birth=yes }
-	1432.1.10={ death=yes }
-}
-1019920725={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="mfdaalibaen"
-	culture=lipan religion=algic_pagan
-	father=1019920715	#Sitahle
-	1362.11.10={ birth=yes }
-	1457.9.29={ death=yes }
-}
-1019920726={
-	name=Lozen
-	female=yes
-	dynasty=1009990174
-	dna="gkkfcdhgagi"
-	culture=lipan religion=algic_pagan
-	father=1019920715	#Sitahle
-	1366.9.5={ birth=yes }
-	1444.11.29={ death=yes }
-}
-1019920727={
-	name=Ilthgozay
-	female=yes
-	dynasty=1009990174
-	dna="ijbocdibjgh"
-	culture=lipan religion=algic_pagan
-	father=1019920715	#Sitahle
-	1371.3.2={ birth=yes }
-	1436.8.20={ death=yes }
-}
-1019920728={
-	name=Choseta
-	dynasty=1009990174
-	dna="mflcckmfabf"
-	culture=lipan religion=algic_pagan
-	martial=7 diplomacy=4 stewardship=5 intrigue=8 learning=8
-	add_trait=grey_eminence add_trait=paranoid add_trait=humble add_trait=arbitrary add_trait=slothful 
-	add_trait=content add_trait=craven 
-	father=1019920715	#Sitahle
-	1375.9.17={ birth=yes }
-	1448.10.31={ death=yes }
-}
-1019920729={
-	name=Gouyen
-	female=yes
-	dynasty=1009990174
-	dna="mjlacdeafif"
-	culture=lipan religion=algic_pagan
-	father=1019920723	#Nahtan
-	1376.12.4={ birth=yes }
-	1453.6.3={ death=yes }
-}
-1019920730={
-	name=Ohtoahnesotowheo
-	dynasty=1009990174
-	dna="iplcggapalj"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=5 stewardship=6 intrigue=6 learning=8
-	add_trait=elusive_shadow add_trait=cynical add_trait=paranoid add_trait=gregarious add_trait=brave 
-	father=1019920723	#Nahtan
-	1383.6.2={ birth=yes }
-	1441.10.24={ death=yes }
-}
-1019920731={
-	name=Sitahle
-	dynasty=1009990174
-	dna="mfdacgkgajh"
-	culture=lipan religion=algic_pagan
-	martial=4 diplomacy=4 stewardship=7 intrigue=6 learning=4
-	add_trait=thrifty_clerk add_trait=craven add_trait=trusting add_trait=ambitious add_trait=depressed 
-	father=1019920723	#Nahtan
-	1386.12.20={ birth=yes }
-	1468.10.12={ death=yes }
-}
-1019920732={
-	name=Ilthgozay
-	female=yes
-	dynasty=1009990174
-	dna="mllalhhlpgi"
-	culture=lipan religion=algic_pagan
-	father=1019920723	#Nahtan
-	1390.4.23={ birth=yes }
-	1444.12.1={ death=yes }
-}
+
 1019920733={
 	name=Delshay
 	dynasty=1009990175
