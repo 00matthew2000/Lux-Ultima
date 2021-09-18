@@ -4983,8 +4983,7 @@ e_byzantium = {
 
 			c_ochrid = {
 				color = { 141 31 103 }
-				
-				holy_site = orthodox
+					holy_site = orthodox
 				
 				greek = "Lychnidos"
 				arberian = "Ohri"
@@ -5714,6 +5713,8 @@ e_byzantium = {
 				
 				roman = "Ephesus"
 				turkish = "Ayasoluk"
+
+				holy_site = orthodox
 				
 				b_ephesos = {
 					roman = "Ephesus"
@@ -7569,7 +7570,10 @@ e_pontus = {
 			}
 			c_crimea = {
 				color={ 250 210 104 }
-				color2={ 255 255 255 }		
+				color2={ 255 255 255 }
+
+				holy_site = tengri_pagan
+				holy_site = tengri_pagan_reformed				
 				
 				b_bakhchisaray = {
 				}
@@ -9373,6 +9377,8 @@ e_roman = {
 			c_roma = {
 				color = { 242 233 156 }
 
+				holy_site = inuit_pagan
+				holy_site = inuit_pagan_reformed
 				holy_site = arian
 				holy_site = mari_christ_reformed
 				holy_site = priscillian_reformed
@@ -10200,6 +10206,9 @@ e_scandinavia = {
 			
 			c_innse_gall = {
 				color = { 0 105 145 }
+					
+				holy_site = inuit_pagan
+				holy_site = inuit_pagan_reformed
 				
 				norwegian = "Søreyar"
 				danish = "Søreyar"
@@ -10627,6 +10636,8 @@ e_scandinavia = {
 			
 			c_uppland = {
 				color = { 5 215 255 }
+					holy_site = inuit_pagan
+					holy_site = inuit_pagan_reformed
 					holy_site = norse_pagan
 					holy_site = norse_pagan_reformed
 					holy_site = finnish_pagan
@@ -11596,6 +11607,9 @@ e_scandinavia = {
 			c_vestisland = {
 				color = { 42 3 128 }
 				
+				holy_site = inuit_pagan
+				holy_site = inuit_pagan_reformed
+				
 				swedish = "Västisland"
 				
 				b_reykjavik = {}
@@ -12264,6 +12278,8 @@ e_scandinavia = {
 				color = { 135 25 25 }
 					holy_site = finnish_pagan
 					holy_site = finnish_pagan_reformed
+					holy_site = inuit_pagan
+					holy_site = inuit_pagan_reformed
 				
 				finnish = "Viena"
 				lappish = "Viena"
@@ -12291,6 +12307,9 @@ e_scandinavia = {
 				norse = "Kexholm"
 				norwegian = "Kexholm"
 				danish = "Kexholm"
+
+				holy_site = finnish_pagan
+				holy_site = finnish_pagan_reformed
 				
 				b_antrea = {
 					swedish = "St Andree"
@@ -13090,19 +13109,8 @@ e_slavinia = {
 				color={ 194 25 25 }
 				color2={ 255 255 255 }
 
-				holy_site = perun
-				holy_site = dazhbog
 				holy_site = mani_slavic
 				holy_site = mani_slavic_reformed
-				holy_site = rod
-				holy_site = slavic_christian
-				holy_site = slavic_christian_reformed
-				holy_site = slavic_pagan
-				holy_site = slavic_pagan_reformed
-				holy_site = svaroh
-				holy_site = svetovid
-				holy_site = tengri_rod_reformed
-				holy_site = zal
 
 				german = Neutra
 				bohemian = Nitra
@@ -13516,6 +13524,9 @@ e_slavinia = {
 			c_plock = {
 				color={ 127 30 2 }
 				color2={ 255 255 255 }
+
+				holy_site = slavic_pagan
+				holy_site = slavic_pagan_reformed
 				
 				b_plock = {
 				}
@@ -14302,6 +14313,11 @@ e_slavinia = {
 				color2={ 255 255 255 }
 
 				pommeranian = Rana
+
+				holy_site = slavic_pagan
+				holy_site = slavic_pagan_reformed
+				holy_site = baltic_pagan
+				holy_site = baltic_pagan_reformed
 				
 				b_charenza = {}
 				b_arkona = {}
@@ -14355,7 +14371,6 @@ e_slavinia = {
 					holy_site = sowilo
 					holy_site = nott
 					holy_site = dievas
-					holy_site = baltic_pagan
 					holy_site = baltic_pagan_reformed
 					holy_site = peckols
 					holy_site = perkunas
@@ -15449,7 +15464,7 @@ e_russia = {
 				holy_site = rod
 				holy_site = slavic_christian					
 				holy_site = slavic_christian_reformed
-				holy_site = slavic_pagan
+				holy_site = slavic_paga
 				holy_site = slavic_pagan_reformed
 				holy_site = svaroh
 				holy_site = svetovid
@@ -18405,6 +18420,9 @@ e_pontic_steppe = {
 			c_itil = {
 				color={ 155 122 34 }
 				color2={ 255 255 255 }
+
+				holy_site = tengri_pagan
+				holy_site = tengri_pagan_reformed
 				
 				b_itil = {
 				}
@@ -18708,10 +18726,12 @@ e_pontic_steppe = {
 					holy_site = tengri_ahriman
 					holy_site = tengri_bud
 					holy_site = erlik
+					holy_site = tengri_pagan
 					holy_site = tengri_confucian
 					holy_site = tengri_mani
 					holy_site = tengri_rod
 					holy_site = tengri_mani_reformed
+					holy_site = tengri_pagan_reformed
 					holy_site = erlik_reformed
 					holy_site = tengri_confucian_reformed
 			
@@ -19959,18 +19979,6 @@ e_tartaria = {
 			c_om = {
 				color={ 210 170 130 }
 				color2={ 255 255 255 }
-				
-					holy_site = tengri_ahriman
-					holy_site = tengri_bud
-					holy_site = erlik
-					holy_site = tengri_pagan
-					holy_site = tengri_confucian
-					holy_site = tengri_mani
-					holy_site = tengri_rod
-					holy_site = tengri_mani_reformed
-					holy_site = tengri_pagan_reformed
-					holy_site = erlik_reformed
-					holy_site = tengri_confucian_reformed
 
 				b_om = {}
 				b_butovka = {}
@@ -20408,6 +20416,15 @@ e_serindia = {
 			c_aral = {
 				color={ 227 173 27 }
 				color2={ 255 255 255 }
+
+				holy_site = tengri_ahriman
+				holy_site = tengri_bud
+				holy_site = erlik
+				holy_site = tengri_mani
+				holy_site = tengri_mani_reformed
+				holy_site = erlik_reformed
+				holy_site = tengri_confucian
+				holy_site = tengri_confucian_reformed
 			
 				b_kassarma = {
 				}
@@ -20997,6 +21014,7 @@ e_serindia = {
 			
 			c_kashgar = {
 				color = { 145 160 43 }
+					holy_site = confucian
 					holy_site = indoh_confucian
 					holy_site = lubu
 					#holy_site = tao
@@ -21554,9 +21572,6 @@ e_idel_ural = {
 			c_bashkirs = {
 				color={ 209 174 79 }
 				color2={ 255 255 255 }
-				
-					holy_site = tengri_pagan
-					holy_site = tengri_pagan_reformed
 			
 				b_ufa = {
 				}
@@ -22012,11 +22027,12 @@ e_turk = {
 				holy_site = tengri_bud
 				holy_site = erlik
 				holy_site = tengri_pagan
+				holy_site = tengri_confucian
 				holy_site = tengri_mani
+				holy_site = tengri_rod
 				holy_site = tengri_mani_reformed
 				holy_site = tengri_pagan_reformed
 				holy_site = erlik_reformed
-				holy_site = tengri_confucian
 				holy_site = tengri_confucian_reformed
 			
 				b_akdzulpas = {
@@ -22049,6 +22065,9 @@ e_turk = {
 			c_syr_darya = {
 				color={ 236 178 22 }
 				color2={ 255 255 255 }
+
+				holy_site = tengri_pagan
+				holy_site = tengri_pagan_reformed
 				
 				b_syganak = {
 				}
@@ -28688,7 +28707,8 @@ e_spain = {
 				levantine_arabic = "Qurtubah"
 				egyptian_arabic = "Qurtubah"
 				andalusian_arabic = "Qurtubah"
-				
+
+				holy_site = sunni
 				holy_site = ilm_islam
 				
 				b_cordoba = {
@@ -30117,6 +30137,7 @@ e_arabia = {
 			}
 			c_al_mafraq = {
 				color = { 125 255 6 }
+					holy_site = sunni
 			
 				b_qsarbardawil = {}
 				b_daraa = {}
@@ -31200,6 +31221,9 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 		
 			c_antiocheia = { #Antioch
 				color = { 106 191 44 }
+				holy_site = orthodox
+				holy_site = miaphysite
+				holy_site = monophysite
 				holy_site = audianist
 				roman = Antiocheia
 				greek = Antiocheia
@@ -32112,6 +32136,8 @@ e_maghreb = {
 			c_atlas_mnt = { # Askedal
 				color={ 49 196 83 }
 				color2={ 255 255 255 }
+				
+				holy_site = ibadi
 				
 				b_askedal = {
 				}
@@ -40966,6 +40992,8 @@ e_india = {
 				color={ 174 67 10 }
 				color2={ 255 255 255 }
 				
+				holy_site = jain
+				
 				b_candravati = {
 				}
 				b_bhillamala = {
@@ -43721,6 +43749,7 @@ e_tibet = {
 			c_lhasa = {
 				color = { 140 156 54 }
 					
+				holy_site = confucian
 				holy_site = indoh_confucian
 				holy_site = lubu
 				#holy_site = tao
@@ -44580,6 +44609,7 @@ e_tibet = {
 			}
 			c_kangra = {
 				color = { 158 56 67 }
+					holy_site = confucian
 					holy_site = indoh_confucian
 					#holy_site = tao
 					holy_site = lubu
