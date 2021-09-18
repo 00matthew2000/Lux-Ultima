@@ -1359,6 +1359,35 @@ sonoran = {
 
 		modifier = default_culture_modifier
 	}
+
+	hohokam = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.24 1.00 0.15 }
+
+		male_names = {
+			Popé Ku-htihth Galisteo Xenome Ollito Tagu Bolsas Naranjo Catiti
+		}
+		female_names = {
+			Ootcakao Kahavasooah Sacagawea Chipeta Tocmetone
+		}
+	
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
 }
 
 caddoan = {
@@ -1734,9 +1763,9 @@ salishan = {
 		modifier = default_culture_modifier
 	}
 }
-chumash_group = {
+hokan = {
 	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-	
+
 	chumash = {
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 		
@@ -1761,10 +1790,6 @@ chumash_group = {
 
 		modifier = default_culture_modifier
 	}
-}	 
-hokan = {
-	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-
 	salinan = {
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 		
@@ -1773,34 +1798,6 @@ hokan = {
 		male_names = { Alamshalaliw Aliseyu Alow Chnawaway Chukauyon  Mateqai Mupi'ish Pititi Shu'nu Silkiset Talawiyashwit  }
 		female_names = { Leqte Jonata Simi Sisquoc }
 
-		dynasty_title_names = no
-
-		prefix = no
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 30
-		mat_grf_name_chance = 30
-		father_name_chance = 0
-
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 30
-		mat_grm_name_chance = 30
-		mother_name_chance = 0
-
-		modifier = default_culture_modifier
-	}
-	hohokam = {
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		
-		color = { 0.24 1.00 0.15 }
-
-		male_names = {
-			Popé Ku-htihth Galisteo Xenome Ollito Tagu Bolsas Naranjo Catiti
-		}
-		female_names = {
-			Ootcakao Kahavasooah Sacagawea Chipeta Tocmetone
-		}
-	
 		dynasty_title_names = no
 
 		prefix = no
@@ -1841,34 +1838,10 @@ hokan = {
 
 		modifier = default_culture_modifier
 	}
-	cochimi = {
-		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-		
-		color = { 0.58 0.71 1.00 }
-
-		male_names = { Alamshalaliw Aliseyu Alow Chnawaway Chukauyon  Mateqai Mupi'ish Pititi Shu'nu Silkiset Talawiyashwit  }
-		female_names = { Leqte Jonata Simi Sisquoc }
-
-		dynasty_title_names = no
-
-		prefix = no
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 30
-		mat_grf_name_chance = 30
-		father_name_chance = 0
-
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 30
-		mat_grm_name_chance = 30
-		mother_name_chance = 0
-
-		modifier = default_culture_modifier
-	}
 	pomoan = {
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 		
-		color = { 1.00 0.68 0.68 }
+		color = { 1.00 0.21 0.18 }
 
 		male_names = { Alamshalaliw Aliseyu Alow Chnawaway Chukauyon  Mateqai Mupi'ish Pititi Shu'nu Silkiset Talawiyashwit  }
 		female_names = { Leqte Jonata Simi Sisquoc }
