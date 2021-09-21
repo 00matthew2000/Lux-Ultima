@@ -1263,31 +1263,6 @@ west_african = {
 		modifier = default_culture_modifier
 	}
 
-	nigger = {
-		graphical_cultures = { westafricangfx africangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		color = { 0.75 0.25 0.1 }
-
-		male_names = {
-			Abi-Bakr_Abu-Bakr Abubakari_Abu-Bakr Akoi Alayaman Ali_Ali Ali-Fay Ali-Kolon Ali-Zalil Badä Bakr Bakr-Kanbu Bamari Bankanu
-			Bannu Bassarou Bassi Birama Bisi Biyu Bonga Cisse Dankaran Daoud_David Dawud_David Demba Diara Düru
-			Faga-Laye Fatta Fodi Fuluku Fädazu Gane Gao Hargani Harun Igoumou Ishaq_Isaac Ismail_Ismail Kabayo Kalabi Kambine
-			Kanafa Kassa Kasseï Kaya Kayna Kinkin Kisha Kodama Koïzé Kukuray Kusoy Lahiltoul M'Bali Maammarou Maghan
-			Mahmud_Mahmud Majan Malla Mamadi Mamoudou Manding-Bory Mari-Djata Maÿroumfa Missi-Izé Morobani Musa_Moses
-			Nintasanay Nuh Ouali Ouankoÿ Ouati Reidja Sakoura Salman_Solomon Samsou-Béri Samsou-Keïna Sandaki Soumaba
-			Soumaoro Soundiata Sulayman_Solomon Takoi Tib Tomo_Thomas Tunka Umar_Umar Yama Yaqub_Jacob Yasiboy Zakoi Zenku
-		}
-		female_names = {
-			Adja Aichata Aissata Alima Aminata Amita Aoua Barakissa Bintou Deye Djeneba Djenly Djire Fadima
-			Fatim Fatoumata Halima Hawa Ina Kadi Kilia Kolonkan Lorane Mariam Nafissa Namandjé Namiss Nana
-			Safiatou Salimata Sassouma Sidibé Siya Sogolon Tekhaye Youma Zeïnab
-		}
-		
-		founder_named_dynasties = yes
-
-		modifier = default_culture_modifier
-	}
 	cameroonian = {
 		graphical_cultures = { westafricangfx africangfx }
 		secondary_event_pictures = bedouin_arabic
@@ -1497,197 +1472,6 @@ central_african = {
 
 		founder_named_dynasties = yes
 		dukes_called_kings = no
-		modifier = default_culture_modifier
-	}
-}
-west_african = {
-	graphical_cultures = { muslimgfx }
-	
-	manden = {
-		graphical_cultures = { westafricangfx africangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		color = { 0.45 0.45 0.2 }
-
-		male_names = {
-			Abi-Bakr_Abu-Bakr Abubakari_Abu-Bakr Akoi Alayaman Ali_Ali Ali-Fay Ali-Kolon Ali-Zalil Badä Bakr Bakr-Kanbu Bamari Bankanu
-			Bannu Bassarou Bassi Birama Bisi Biyu Bonga Cisse Dankaran Daoud_David Dawud_David Demba Diara Düru
-			Faga-Laye Fatta Fodi Fuluku Fädazu Gane Gao Hargani Harun Igoumou Ishaq_Isaac Ismail_Ismail Kabayo Kalabi Kambine
-			Kanafa Kassa Kasseï Kaya Kayna Kinkin Kisha Kodama Koïzé Kukuray Kusoy Lahiltoul M'Bali Maammarou Maghan
-			Mahmud_Mahmud Majan Malla Mamadi Mamoudou Manding-Bory Mari-Djata Maÿroumfa Missi-Izé Morobani Musa_Moses
-			Nintasanay Nuh Ouali Ouankoÿ Ouati Reidja Sakoura Salman_Solomon Samsou-Béri Samsou-Keïna Sandaki Soumaba
-			Soumaoro Soundiata Sulayman_Solomon Takoi Tib Tomo_Thomas Tunka Umar_Umar Yama Yaqub_Jacob Yasiboy Zakoi Zenku
-		}
-		female_names = {
-			Adja Aichata Aissata Alima Aminata Amita Aoua Barakissa Bintou Deye Djeneba Djenly Djire Fadima
-			Fatim Fatoumata Halima Hawa Ina Kadi Kilia Kolonkan Lorane Mariam Nafissa Namandjé Namiss Nana
-			Safiatou Salimata Sassouma Sidibé Siya Sogolon Tekhaye Youma Zeïnab
-		}
-		
-		founder_named_dynasties = yes
-
-		modifier = default_culture_modifier
-	}
-
-	soninke = {
-		graphical_cultures = { westafricangfx africangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		color = { 0.35 0.35 0.2 }
-		
-		male_names = {
-			Abubakar Akoi Alayaman 
-			Bérété Bathily Bomou Bilali Bunama Badä Bamari Bannu Birama Bisi Biyu 
-			Cissi Diobé Dabo Diakhaba Diawara Daffi Doucouri Dankaran Demba Daoud_David Diara
-			Fissourou Fadiga Fädazu Fuluku Gane Gao Ishaq_Isaac
-			Kaba Kabayo Kalabi Kanafa Kambine Kassa Kaya Kayna Kinkin Kukuray Kusoy
-			Marega M'Bali Maghan Majan Mamadi Mamoudou Mari-Djata Musa_Moses 
-			Niakhaté Nintasanay	Wague Wali Wati
-			Reidja Sy Sylla Sakho Soukhouna Sima Soumaré Sakoura Salman Sandaki Soumaba Soumaoro Soundiata Sulayman 
-			Tandian Tunka Tunka-Menin Tabouri Tounkara Touri Tandi Takoi Tib  
-			Yansané Yatabéri Yama Yasiboy
-			Zakoi Zenku
-		}
-		female_names = {
-			Adja Alima Amita Aoua Aminata Aichata Aissata
-			Barakissa Bintou Deye Djeneba Djenly Djire
-			Fadima Fatim Fatoumata Halima Hawa
-			Ina Kondolon Kadi Kilia Kolonkan 
-			Lorane Mariam Namandjé 
-			Nafissa Namiss Nana
-			Sané Sogolon Safiatou Salimata Sidibé Siya Tekhaye
-			Youma Zeinab
-		}
-	}
-
-	songhay = {
-		color = { 0.5 0.35 0.10 }
-		
-		graphical_cultures = { westafricangfx africangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		male_names = {
-			Abi Abu Adamu_Adam Ahmad Al-Hajj Alayaman Ali Alkamiisa Ammar Ankabi Ar Arabi Aranda
-			Baba Babba Bada Baki Bakr Bani Bano Baru Bassarou Bay Ber Binta Birma Bisi Biya Biyay Biyo Bonkana Borgo Boumi Bukar Buyunbu
-			Daara Dala Dankataya Dao Daouda_David Dari Dawud_David Dum Dunku Duru
-			Fadazaw Falaku Far Fari-Mondzo Fay Fi Fodi
-			Hanga Hargani Harun Hassan Hin Huseini
-			Ibrahim_Abraham Igoumou Ikoi Ishaq_Isaac Is’mail Ize Jim
-			Kaasei Kanafa Kanbu Karaway Karay Karbachi Kayna Keina Kibu’u Kima Kimi Kinba Kinkin Kiray Kisha Kodama Koi Koize Kolon Komi Koy Ku Kukiya Kukura Kuli Kulun Kumay Kun Kur Kusoy Kusur
-			Laraba Maammarou Mahmud Malla Mar Mar-Chindin Mayroumfa Missi Morobani Moussa Muhammed Musa
-			Nari Nuh Nunta Ouankoy
-			Samsou Samsou-Beri Sanay Shams Shinyunbu Silman Sorko-ije Sulayman Sunni
-			Takoi Tib Tomo Uthman Wunka Yama Yaqub_Jacob Yasiboy Yuma Zakoi Zalil Zunku
-		}
-		
-		female_names = {
-			Adama Aisha Alkamiisa Amina Aminah Azzah 
-			Bilqis Chindi Daara Dangey
-			Fanta Fatima_Fatima Fatimah Fitila
-			Gando Geyka Hassana Hawa Huseina Kouton
-			Lambu Layla Mecca Medina Nuru Tarifa Teko Zaynab
-		}
-	}
-
-	ivoir = {
-		graphical_cultures = { westafricangfx africangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		color = { 0.65 0.35 0.3 }
-
-		male_names = {
-			Abi-Bakr_Abu-Bakr Abubakari_Abu-Bakr Akoi Alayaman Ali_Ali Ali-Fay Ali-Kolon Ali-Zalil Badä Bakr Bakr-Kanbu Bamari Bankanu
-			Bannu Bassarou Bassi Birama Bisi Biyu Bonga Cisse Dankaran Daoud_David Dawud_David Demba Diara Düru
-			Faga-Laye Fatta Fodi Fuluku Fädazu Gane Gao Hargani Harun Igoumou Ishaq_Isaac Ismail_Ismail Kabayo Kalabi Kambine
-			Kanafa Kassa Kasseï Kaya Kayna Kinkin Kisha Kodama Koïzé Kukuray Kusoy Lahiltoul M'Bali Maammarou Maghan
-			Mahmud_Mahmud Majan Malla Mamadi Mamoudou Manding-Bory Mari-Djata Maÿroumfa Missi-Izé Morobani Musa_Moses
-			Nintasanay Nuh Ouali Ouankoÿ Ouati Reidja Sakoura Salman_Solomon Samsou-Béri Samsou-Keïna Sandaki Soumaba
-			Soumaoro Soundiata Sulayman_Solomon Takoi Tib Tomo_Thomas Tunka Umar_Umar Yama Yaqub_Jacob Yasiboy Zakoi Zenku
-		}
-		female_names = {
-			Adja Aichata Aissata Alima Aminata Amita Aoua Barakissa Bintou Deye Djeneba Djenly Djire Fadima
-			Fatim Fatoumata Halima Hawa Ina Kadi Kilia Kolonkan Lorane Mariam Nafissa Namandjé Namiss Nana
-			Safiatou Salimata Sassouma Sidibé Siya Sogolon Tekhaye Youma Zeïnab
-		}
-		
-		founder_named_dynasties = yes
-
-		modifier = default_culture_modifier
-	}
-
-	nigger = {
-		graphical_cultures = { westafricangfx africangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		color = { 0.75 0.25 0.1 }
-
-		male_names = {
-			Abi-Bakr_Abu-Bakr Abubakari_Abu-Bakr Akoi Alayaman Ali_Ali Ali-Fay Ali-Kolon Ali-Zalil Badä Bakr Bakr-Kanbu Bamari Bankanu
-			Bannu Bassarou Bassi Birama Bisi Biyu Bonga Cisse Dankaran Daoud_David Dawud_David Demba Diara Düru
-			Faga-Laye Fatta Fodi Fuluku Fädazu Gane Gao Hargani Harun Igoumou Ishaq_Isaac Ismail_Ismail Kabayo Kalabi Kambine
-			Kanafa Kassa Kasseï Kaya Kayna Kinkin Kisha Kodama Koïzé Kukuray Kusoy Lahiltoul M'Bali Maammarou Maghan
-			Mahmud_Mahmud Majan Malla Mamadi Mamoudou Manding-Bory Mari-Djata Maÿroumfa Missi-Izé Morobani Musa_Moses
-			Nintasanay Nuh Ouali Ouankoÿ Ouati Reidja Sakoura Salman_Solomon Samsou-Béri Samsou-Keïna Sandaki Soumaba
-			Soumaoro Soundiata Sulayman_Solomon Takoi Tib Tomo_Thomas Tunka Umar_Umar Yama Yaqub_Jacob Yasiboy Zakoi Zenku
-		}
-		female_names = {
-			Adja Aichata Aissata Alima Aminata Amita Aoua Barakissa Bintou Deye Djeneba Djenly Djire Fadima
-			Fatim Fatoumata Halima Hawa Ina Kadi Kilia Kolonkan Lorane Mariam Nafissa Namandjé Namiss Nana
-			Safiatou Salimata Sassouma Sidibé Siya Sogolon Tekhaye Youma Zeïnab
-		}
-		
-		founder_named_dynasties = yes
-
-		modifier = default_culture_modifier
-	}
-	cameroonian = {
-		graphical_cultures = { westafricangfx africangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		color = { 0.85 0.35 0.2 }
-
-		male_names = {
-			Abi-Bakr_Abu-Bakr Abubakari_Abu-Bakr Akoi Alayaman Ali_Ali Ali-Fay Ali-Kolon Ali-Zalil Badä Bakr Bakr-Kanbu Bamari Bankanu
-			Bannu Bassarou Bassi Birama Bisi Biyu Bonga Cisse Dankaran Daoud_David Dawud_David Demba Diara Düru
-			Faga-Laye Fatta Fodi Fuluku Fädazu Gane Gao Hargani Harun Igoumou Ishaq_Isaac Ismail_Ismail Kabayo Kalabi Kambine
-			Kanafa Kassa Kasseï Kaya Kayna Kinkin Kisha Kodama Koïzé Kukuray Kusoy Lahiltoul M'Bali Maammarou Maghan
-			Mahmud_Mahmud Majan Malla Mamadi Mamoudou Manding-Bory Mari-Djata Maÿroumfa Missi-Izé Morobani Musa_Moses
-			Nintasanay Nuh Ouali Ouankoÿ Ouati Reidja Sakoura Salman_Solomon Samsou-Béri Samsou-Keïna Sandaki Soumaba
-			Soumaoro Soundiata Sulayman_Solomon Takoi Tib Tomo_Thomas Tunka Umar_Umar Yama Yaqub_Jacob Yasiboy Zakoi Zenku
-		}
-		female_names = {
-			Adja Aichata Aissata Alima Aminata Amita Aoua Barakissa Bintou Deye Djeneba Djenly Djire Fadima
-			Fatim Fatoumata Halima Hawa Ina Kadi Kilia Kolonkan Lorane Mariam Nafissa Namandjé Namiss Nana
-			Safiatou Salimata Sassouma Sidibé Siya Sogolon Tekhaye Youma Zeïnab
-		}
-		
-		founder_named_dynasties = yes
-
-		modifier = default_culture_modifier
-	}
-	gabonese = {
-		graphical_cultures = { westafricangfx africangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		color = { 0.35 0.25 0.6 }
-
-		male_names = {
-			Abi-Bakr_Abu-Bakr Abubakari_Abu-Bakr Akoi Alayaman Ali_Ali Ali-Fay Ali-Kolon Ali-Zalil Badä Bakr Bakr-Kanbu Bamari Bankanu
-			Bannu Bassarou Bassi Birama Bisi Biyu Bonga Cisse Dankaran Daoud_David Dawud_David Demba Diara Düru
-			Faga-Laye Fatta Fodi Fuluku Fädazu Gane Gao Hargani Harun Igoumou Ishaq_Isaac Ismail_Ismail Kabayo Kalabi Kambine
-			Kanafa Kassa Kasseï Kaya Kayna Kinkin Kisha Kodama Koïzé Kukuray Kusoy Lahiltoul M'Bali Maammarou Maghan
-			Mahmud_Mahmud Majan Malla Mamadi Mamoudou Manding-Bory Mari-Djata Maÿroumfa Missi-Izé Morobani Musa_Moses
-			Nintasanay Nuh Ouali Ouankoÿ Ouati Reidja Sakoura Salman_Solomon Samsou-Béri Samsou-Keïna Sandaki Soumaba
-			Soumaoro Soundiata Sulayman_Solomon Takoi Tib Tomo_Thomas Tunka Umar_Umar Yama Yaqub_Jacob Yasiboy Zakoi Zenku
-		}
-		female_names = {
-			Adja Aichata Aissata Alima Aminata Amita Aoua Barakissa Bintou Deye Djeneba Djenly Djire Fadima
-			Fatim Fatoumata Halima Hawa Ina Kadi Kilia Kolonkan Lorane Mariam Nafissa Namandjé Namiss Nana
-			Safiatou Salimata Sassouma Sidibé Siya Sogolon Tekhaye Youma Zeïnab
-		}
-		
-		founder_named_dynasties = yes
-
 		modifier = default_culture_modifier
 	}
 }
@@ -4042,41 +3826,6 @@ bantu = {
 		dukes_called_kings = no
 		modifier = default_culture_modifier
 	}
-
-	venda_tsonga = { 
-		graphical_cultures = { westafricangfx africangfx muslimgfx }
-		
-		color = { 0.26 0.72 0.12 }
-
-		male_names = {
-			#venda
-			Mashudu Mulalo Nkhangweleni Rolivhuwa Thikhathali Thilivhali Tshifhiwa Zwanga
-			Alu Aluwanip Arehone Athiambiwied Avhadali Avhapfani Azwihangwisi Azwimmbahvi Azwinaki Azwinndini Dali Dowe Dowelani Fhulufhuwani Funi Hangwani Hulisani Humbe Humbelani
-			Khathu Khathutshelo Khuliso Khumbu Lindelani Livhu Lutendo Luvhengo Mpfareleli Mphedziseni Muwambiwa Mutsutshudzi Ndiyafhi Nduvho Nkhumbudzeni Nkhumbuleni Nnyadzeni
-			Nnyawedzeni Nnyaweleni Ntungufhadzeni Ntshengedzeni Pfunzo Phathutshedzo Phathu Phathutshedzo Rabe Rendi Rotshidzwa Rudzani Rudzi Sei Shandu Shandukani Taki Tanga Tendani
-			Thabelo Thanyani  Thina Thinawanga Tondani Tshanduko Tshiananeo Tshidino Tshinyalani Tungu
-
-			#tshona
-			Ntokoto			
-			Akani Amukelani Elela Eletsa Masana Masingita Minkateko Nsuku Ntsako Ntosvelo Ntsumi Ntwanano Nyeleti Rhandzu Rhulani Shiluva Thirani Unwana Vuthlari
-		}
-		female_names = {
-			#venda
-			Elelwani Mufunwa Washu
-			Alu Aluwanip Arehone Athiambiwied Avhadali Avhapfani Azwihangwisi Azwimmbahvi Azwinaki Azwinndini Dali Dowe Dowelani Fhulufhuwani Funi Hangwani Hulisani Humbe Humbelani
-			Khathu Khathutshelo Khuliso Khumbu Lindelani Livhu Lutendo Luvhengo Mpfareleli Mphedziseni Muwambiwa Mutsutshudzi Ndiyafhi Nduvho Nkhumbudzeni Nkhumbuleni Nnyadzeni
-			Nnyawedzeni Nnyaweleni Ntungufhadzeni Ntshengedzeni Pfunzo Phathutshedzo Phathu Phathutshedzo Rabe Rendi Rotshidzwa Rudzani Rudzi Sei Shandu Shandukani Taki Tanga Tendani
-			Thabelo Thanyani  Thina Thinawanga Tondani Tshanduko Tshiananeo Tshidino Tshinyalani Tungu
-
-			#tshona
-			Dyondzeka Khensani Lelani Xongi			
-			Akani Amukelani Elela Eletsa Masana Masingita Minkateko Nsuku Ntsako Ntosvelo Ntsumi Ntwanano Nyeleti Rhandzu Rhulani Shiluva Thirani Unwana Vuthlari
-		}
-
-		founder_named_dynasties = yes
-		dukes_called_kings = no
-		modifier = default_culture_modifier
-	}
 	kongolese = {
 		graphical_cultures = { westafricangfx }
 		
@@ -4532,6 +4281,24 @@ bantu = {
 			Akani Amukelani Elela Eletsa Masana Masingita Minkateko Nsuku Ntsako Ntosvelo Ntsumi Ntwanano Nyeleti Rhandzu Rhulani Shiluva Thirani Unwana Vuthlari
 		}
 		
+		modifier = default_culture_modifier
+	}
+	wangozi = { 
+		graphical_cultures = { westafricangfx africangfx muslimgfx }
+		
+		color = { 0.2 0.7 0.3 }
+
+		male_names = {
+			Abasi Adhama Anasa Ashon Atieno Ayo Baraka Busar Busara Duma Elea Farijika Hali Hamadi Hodari Ikeno Issa Jafari Jamba Jata Juma Jumaane
+			Keambiroiro Kereenyaga Kiama Kifeda Kito Kitwana Kuende Kwanzaa Maulidi Mbita Mhina Mkubwa Mosi Moyo Msia Musa Njowga Nyo Salene Simba Taji Tian Zahur Zawadi
+		}
+		female_names = {
+			Adia Aleela Busara Chanua Dhamiria Elea Fanaka Gethera Hawa Hodari Inira Kenithia Kiira Koffi Mahiri Majda Maji Maliza Mkiwa Milima Muraty
+			Mwasaa Nadira Nbushe Onyesha Penda Rasheda Risala Safiri Sanura Shauri Tabara Therania Tisa Waseme Zahra Zakia
+		}
+
+		founder_named_dynasties = yes
+		dukes_called_kings = no
 		modifier = default_culture_modifier
 	}
 	zulu = {
@@ -5145,6 +4912,46 @@ ethiopic = {
 			Sisay Tavavich Teru Totit Tsage Wagaye Yehudit Zala Zauditu Zeina Zena Zenia
 		}
 
+		modifier = default_culture_modifier
+	}
+}
+khoi_san_group = {
+	graphical_cultures = { africangfx westafricangfx muslimgfx }
+
+	khoe = { 
+		graphical_cultures = { africangfx westafricangfx muslimgfx }
+		
+		color = { 0.4 0.45 0.35 }
+
+		male_names = {
+			#San
+			Cgose Coexae Gamnqoa Kase Kgakgam Kukama Mangana Ncgabe Ncokgo Ntcoxo Nxaedom Qaetcao Qgam Qgoma Qhomatca Setshogo Sobe Taase Tcuixgao Thama Thamae Xaga Xare Xgaiga Xgaoco Xgoa
+		}
+		female_names = {
+			#San
+			Cgose Coexae Gamnqoa Kase Kgakgam Kukama Mangana Ncgabe Ncokgo Ntcoxo Nxaedom Qaetcao Qgam Qgoma Qhomatca Setshogo Sobe Taase Tcuixgao Thama Thamae Xaga Xare Xgaiga Xgaoco Xgoa
+		}
+
+		founder_named_dynasties = yes
+		dukes_called_kings = yes
+		modifier = default_culture_modifier
+	}
+	san = { 
+		graphical_cultures = { westafricangfx africangfx muslimgfx }
+		
+		color = { 0.26 0.72 0.12 }
+
+		male_names = {
+			#San
+			Cgose Coexae Gamnqoa Kase Kgakgam Kukama Mangana Ncgabe Ncokgo Ntcoxo Nxaedom Qaetcao Qgam Qgoma Qhomatca Setshogo Sobe Taase Tcuixgao Thama Thamae Xaga Xare Xgaiga Xgaoco Xgoa
+		}
+		female_names = {
+			#San
+			Cgose Coexae Gamnqoa Kase Kgakgam Kukama Mangana Ncgabe Ncokgo Ntcoxo Nxaedom Qaetcao Qgam Qgoma Qhomatca Setshogo Sobe Taase Tcuixgao Thama Thamae Xaga Xare Xgaiga Xgaoco Xgoa
+		}
+
+		founder_named_dynasties = yes
+		dukes_called_kings = no
 		modifier = default_culture_modifier
 	}
 }
