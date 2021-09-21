@@ -1012,10 +1012,10 @@
 	add_trait = "ambitious"
 	add_trait = "proud"
 	add_trait = "strategist"
-	add_rival = 1000076144
 	1020.1.1={
 		birth="1020.1.1"
 	}
+	1060.1.1={ effect = { add_rival = 1000076144 } }
 	1080.1.1={
 		death="1080.1.1"
 	}
@@ -1821,10 +1821,10 @@
 	add_trait = "ambitious"
 	add_trait = "proud"
 	add_trait = "patient"
-	add_rival = 1000076141
 	1020.1.1={
 		birth="1020.1.1"
 	}
+	1060.1.1={ effect = { add_rival = 1000076141 } }
 	1080.1.1={
 		death="1080.1.1"
 	}
