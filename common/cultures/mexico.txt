@@ -25,7 +25,7 @@ manguean_group = {
 		modifier = default_culture_modifier
 	}
 	metztitlani = {
-		color = { 0.21 0.19 0.21 }
+		color = { 0.93 1.00 0.35 }
 
 		male_names = { An Beljjw Bibejw Bicu Binech Bzojj Chonna Chsáaxcejj Cháalaxa Cocijocza Cocijoeza Cocijopi Cocijouza Coqui Dao Djoraxa Gwèibóoné Gyazob Gyejj Ipalnemoani Ji Jituh Jzió Lyebe Láxdaóxo Mbalaz Na Naquichinisa Naxiñanguiiu Ngolbex Nguiiu Nisa Nucano Pijje Pwuix Rire Ro Rusiguunda Tobi Veziá Véeni Xolo Yel Zaachilla Zne Zniá Zyrx }
 		female_names = { Nayeli Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Yoltzin Zeltzin Zyanya }
@@ -208,8 +208,6 @@ aztecan_group = {
 		graphical_cultures = { mesoamericangfx }
 		color = { 1.0 0.5 0.0 }
 		
-		horde = yes
-		
 		used_for_random = no
 		
 		male_names = {
@@ -241,10 +239,10 @@ aztecan_group = {
 		allow_looting = yes
 
 		modifier = default_culture_modifier
-	}  
+	}
 	tepanec = {
         graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
-        color = { 0.11 0.63 0.47 } 
+        color = { 0.78 0.16 1.00 } 
 
 		male_names = { Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tlilpotonqui Tochtli Topiltzin Totoquihuaztli Tototl Tzompantzin Ueman Xicohtencatl Xihuitl Xipil Xipilli Xiuhpilli Xochipepe Xochipilli Xochitl Yaotl Yayauhqui Yolotli Yolyamanitzin Zipactonal Zolin }
 		female_names = { Acacitlu Citali Citlamina Etapali Ichtaca Icnoyotl Ilhuitl Macuilxochitl Mahuitzic Moyolehuani Moztla Nenetl Nochtli Papan Quiauhxochitl Sacnite Techichpotzin Teoxihuitl Teuicui Tezcatlan Tezozomoc Tlachinolli Tlaco Tlacotl Tlahco Tlahcoehua Tlahutli Tlalli Tlazohtzin Tlazozomizqui Tlexictli Toltecatl Tonalnan Tonatzin Tziquetzalpoztectzin Xihuitl Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Yoltzin Zeltzin Zyanya }
