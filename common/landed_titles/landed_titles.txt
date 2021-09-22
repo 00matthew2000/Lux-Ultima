@@ -4668,7 +4668,6 @@ e_byzantium = {
 				b_xantheia = {}
 				b_mosynopolis = {}
 				b_peritheorion = {}
-				b_anastasiopolis = {}
 				b_anaktoropolis = {}
 				b_abdera = {}
 			}
@@ -7304,7 +7303,6 @@ e_pontus = {
 				b_pitsunda = {}
 				b_anakopia = {}
 				b_gagra = {}
-				b_egrisi = {}
 				b_bzyb = {}
 				b_zugdidi = {}
 			}
@@ -7820,7 +7818,6 @@ e_roman = {
 				b_bovino = {}
 				b_salapla = {}
 				b_vieste = {}
-				b_termoli = {}
 			}
 		}
 		d_capua = {
@@ -8013,7 +8010,6 @@ e_roman = {
 				b_argentano = {}
 				b_scalea = {}
 				b_cerenzia = {}
-				b_crotone = {}
 			}
 			c_messina = {
 				color = { 242 225 250 }
@@ -8041,7 +8037,7 @@ e_roman = {
 
 				b_crotone = {}
 				b_catanzaro = {}
-				b_belcastro = {}
+				b_belcastro1 = {}
 				b_squillace = {}
 				b_neo_castrum = {}
 				b_girifalco = {}
@@ -8061,7 +8057,6 @@ e_roman = {
 				b_bova = {}
 				b_gerace = {}
 				b_tropea = {}
-				b_squillace = {}
 			}
 		}
 	}	
@@ -8297,11 +8292,10 @@ e_roman = {
 				b_aquileia = {
 					carantanian = "Oglej"
 				}
-				b_udine = {}
+				b_udine1 = {}
 				b_friuli2 = {}
 				b_motta = {}
 				b_concordia = {}
-				b_ciridale = {}
 				b_portoguaro = {}
 				b_sacile = {}
 			}
@@ -8315,8 +8309,6 @@ e_roman = {
 				b_eppan = {
 				}
 				b_bozen = {
-				}
-				b_meran = {
 				}
 				b_st_jacob = {
 				}
@@ -8374,8 +8366,7 @@ e_roman = {
 				b_laibach = {}
 				b_treffen = {}
 				b_sann = {}
-				b_pettau = {}
-				b_wolfsberg = {}
+				b_pettau1 = {}
 			}
 			c_pettau = {
 				color={ 140 200 220 }
@@ -8506,7 +8497,6 @@ e_roman = {
 	
 				b_trento = {}
 				b_brixen = {}
-				b_bozen = {}
 				b_meran = {}
 				b_schlanders = {}
 				b_bruneck = {} 
@@ -8518,7 +8508,6 @@ e_roman = {
 				
 				b_milano = {}
 				b_monza = {}
-				b_como = {}
 				b_lodi = {}
 				b_vigevano = {}
 				b_maggiore = {}
@@ -8637,7 +8626,6 @@ e_roman = {
 				b_ventimiglia = {}
 				b_savona = {}
 				b_chiavari = {}
-				b_albenga = {}
 				b_fosdinovo = {}
 			}
 			c_noli = {
@@ -8645,8 +8633,8 @@ e_roman = {
 				color2={ 255 255 255 }
 
 				b_noli = {}
-				b_savona = {}
-				b_ventimiglia = {}
+				b_savona1 = {}
+				b_ventimiglia1 = {}
 				b_albenga = {}
 				b_oneglia = {}
 				b_sanremo = {}
@@ -8661,7 +8649,6 @@ e_roman = {
 			c_piemonte = {
 				color = { 104 12 38 }
 			
-				b_ivrea = {}
 				b_torino = {}
 				b_settimo = {}
 				b_auriate = {}
@@ -8692,7 +8679,6 @@ e_roman = {
 				b_asti = {}
 				b_acqui = {}
 				b_tortona = {}
-				b_biella = {}
 				b_alba = {}
 				b_canelli = {}
 			}
@@ -8780,7 +8766,6 @@ e_roman = {
 				b_alfonsine = {}
 				b_cesenatico = {}
 				b_gambettola = {}
-				b_gatteo = {}
 			}
 		}
 		d_ancona = {
@@ -8797,8 +8782,7 @@ e_roman = {
 				b_ancona = {
 					greek = "Ankon"
 				}
-				b_pesaro = {}
-				b_rimini = {}
+				b_rimini1 = {}
 				b_matelica = {}
 				b_osimo = {}
 				b_fermo = {}
@@ -8824,7 +8808,6 @@ e_roman = {
 				b_sanseverino = {}
 				b_sanmarino = {}
 				b_montefeltro = {}
-				b_gubbio = {}
 				b_fano = {}
 				b_cittadicastello = {}
 				b_fossombrone = {}
@@ -8839,7 +8822,7 @@ e_roman = {
 				color = { 225 250 235 }
 				
 				b_spoleto = {}
-				b_perugia = {}
+				b_perugia1 = {}
 				b_assisi = {}
 				b_nursia = {}
 				b_todi = {}
@@ -8867,7 +8850,7 @@ e_roman = {
 				
 				b_avezzano = {}
 				b_pescara = {}
-				b_chieti = {}
+				b_chieti1 = {}
 				b_teramo = {}
 				b_atri = {}
 				b_aprutium_penne = {}
@@ -8879,8 +8862,7 @@ e_roman = {
 
 				b_fratta = {}
 				b_perugia = {}
-				b_assisi = {
-				}
+				b_assisi1 = {}
 				b_gubbio = {}
 				b_montone = {}
 				b_marsciano = {}
@@ -9149,7 +9131,6 @@ e_roman = {
 				color = { 243 253 231 }
 					
 				b_siena = {}
-				b_cortona = {}
 				b_pienza = {}
 				b_montepulciano = {}
 				b_montalcino = {}
