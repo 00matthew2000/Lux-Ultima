@@ -15,6 +15,7 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 79;92;sea;973;-1;-1;-1;-1;Zeeland-Breda
 79;93;sea;973;-1;-1;-1;-1;Zeeland-Gent
 81;84;sea;973;-1;-1;-1;-1;Westfriesland-Frisia
+143;149;sea;1785;-1;-1;-1;-1;Saintonge-Bordeaux
 166;839;sea;954;-1;-1;-1;-1;Algeciras-Ceuta
 166;841;sea;954;-1;-1;-1;-1;Algeciras-Tangiers
 259;261;sea;1000;-1;-1;-1;-1;Celle-Hamburg
@@ -68,14 +69,14 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 3540;3607;sea;2991;-1;-1;-1;-1;Chicoutimi-Maliseet
 3873;3876;sea;3073;-1;-1;-1;-1;Maracaibo-Altagracia
 258;261;major_river;1046;-1;-1;-1;-1;Lüneburg-Hamburg			#RIVERS	#ELBE
-260;309;major_river;1047;-1;-1;-1;-1;Mecklenburg-Altmark
 262;309;major_river;1046;-1;-1;-1;-1;Lübeck-Altmark
+260;309;major_river;1047;-1;-1;-1;-1;Mecklenburg-Altmark
 309;1988;major_river;1047;-1;-1;-1;-1;Altmark-Havelberg
 310;1982;major_river;1048;-1;-1;-1;-1;Anhalt-Magdeburg
 310;311;major_river;1049;-1;-1;-1;-1;Anhalt-Plauen
-312;364;major_river;1049;-1;-1;-1;-1;Meissen-Lausitz
 312;365;major_river;1049;-1;-1;-1;-1;Meissen-Brandenburg
-364;1926;major_river;1049;-1;-1;-1;-1;Brandenburg-Zatec
+312;364;major_river;1049;-1;-1;-1;-1;Meissen-Lausitz
+364;1926;major_river;1049;-1;-1;-1;-1;Lausitz-Zatec
 1589;1926;major_river;1050;-1;-1;-1;-1;Gorlitz-Zatec
 80;92;major_river;1043;-1;-1;-1;-1;Holland-Breda		#RHINE
 82;92;major_river;1043;-1;-1;-1;-1;Sticht-Breda
@@ -87,35 +88,46 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 98;99;major_river;1041;-1;-1;-1;-1;Vexin-Evreux
 99;1961;major_river;1042;-1;-1;-1;-1;Evreux-Clermont
 111;112;major_river;1042;-1;-1;-1;-1;Chartres-Ile de France
+112;131;major_river;1042;-1;-1;-1;-1;Ile de France-Sens
 106;1957;major_river;1039;-1;-1;-1;-1;Nantes-Retz		#LOIRE
-107;140;major_river;1040;-1;-1;-1;-1;Anjou-Tourraine
 107;1957;major_river;1039;-1;-1;-1;-1;Anjou-Retz
 107;1959;major_river;1039;-1;-1;-1;-1;Anjou-Saumur
+107;140;major_river;1040;-1;-1;-1;-1;Anjou-Tourraine
 109;140;major_river;1040;-1;-1;-1;-1;Vendome-Tourraine
-368;370;major_river;1051;-1;-1;-1;-1;Gdansk-Marienburg		#VISTULA
-368;369;major_river;1051;-1;-1;-1;-1;Gdansk-Chelmno
-429;428;major_river;1052;-1;-1;-1;-1;Gniezno-Kujawy
-431;428;major_river;1052;-1;-1;-1;-1;Poznan-Kujawy
-432;428;major_river;1052;-1;-1;-1;-1;Kalisz-Kujawy
-528;428;major_river;1053;-1;-1;-1;-1;Sieradzko-Kujawy
-528;529;major_river;1053;-1;-1;-1;-1;Sieradzko-Plock
-528;530;major_river;1054;-1;-1;-1;-1;Sieradzko-Czersk
-527;530;major_river;1054;-1;-1;-1;-1;Krakow-Czersk
-527;531;major_river;1055;-1;-1;-1;-1;Krakow-Sandomierz
-527;532;major_river;1055;-1;-1;-1;-1;Krakow-Sacz
-375;374;major_river;1080;-1;-1;-1;-1;Latgale-Zemgale
-416;374;major_river;1080;-1;-1;-1;-1;Daugava-Zemgale
-416;420;major_river;1081;-1;-1;-1;-1;Daugava-Vilnius
-416;934;major_river;1081;-1;-1;-1;-1;Daugava-Lepiel
+149;216;major_river;1107;-1;-1;-1;-1;Bordeaux-Perigord	#GARONNE
+149;215;major_river;1107;-1;-1;-1;-1;Bordeaux-Agen
+150;215;major_river;1108;-1;-1;-1;-1;Albret-Agen
+368;370;major_river;1051;-1;-1;-1;-1;Danzig-Marienburg		#VISTULA
+368;369;major_river;1051;-1;-1;-1;-1;Danzig-Chelminskie
+429;1581;major_river;1052;-1;-1;-1;-1;Gnieznienskie-Dobrzynska
+432;1581;major_river;1052;-1;-1;-1;-1;Kaliskie-Dobrzynska
+428;1581;major_river;1052;-1;-1;-1;-1;Kujawy-Dobrzynska
+528;529;major_river;1053;-1;-1;-1;-1;SieradzkoLeczyckie-Plock
+528;530;major_river;1054;-1;-1;-1;-1;SieradzkoLeczyckie-Czersk
+530;531;major_river;1054;-1;-1;-1;-1;Czersk-Sandomierskie
+531;1584;major_river;1055;-1;-1;-1;-1;Sandomierskie-Stezycka
+531;1585;major_river;1055;-1;-1;-1;-1;Sandomierskie-Lubelska
+531;532;major_river;1055;-1;-1;-1;-1;Sandomierskie-Sacz
+1592;1596;major_river;1080;-1;-1;-1;-1;Tukums-Riga		#DAUGAVA
+374;1596;major_river;1080;-1;-1;-1;-1;Zemigaliens-Riga
+374;1594;major_river;1080;-1;-1;-1;-1;Zemigaliens-Jersika
+1591;1594;major_river;1081;-1;-1;-1;-1;Selija-Jersika
+416;1591;major_river;1081;-1;-1;-1;-1;WestDvina-Selija
+416;420;major_river;1081;-1;-1;-1;-1;WestDvina-Aukshayts
+416;934;major_river;1081;-1;-1;-1;-1;WestDvina-Lepiel
 419;934;major_river;1081;-1;-1;-1;-1;Polotsk-Lepiel
-419;418;major_river;1082;-1;-1;-1;-1;Polotsk-Orsha
-392;411;major_river;1083;-1;-1;-1;-1;Käkisalmi-Ingria
-411;409;major_river;1085;-1;-1;-1;-1;Ingria-Ladoga
-411;414;major_river;1085;-1;-1;-1;-1;Ingria-Novgorod
-415;414;major_river;1087;-1;-1;-1;-1;Luki-Novgorod
-415;410;major_river;1087;-1;-1;-1;-1;Luki-Toropets
-393;409;major_river;1084;-1;-1;-1;-1;Ääninen-Ladoga
-393;404;major_river;1084;-1;-1;-1;-1;Ääninen-Zaozerye
+418;419;major_river;1082;-1;-1;-1;-1;Orsha-Polotsk
+417;418;major_river;1082;-1;-1;-1;-1;Vitebsk-Orsha
+417;568;major_river;1082;-1;-1;-1;-1;Vitebsk-Smolensk
+392;411;major_river;1083;-1;-1;-1;-1;Kexholm-Vodi		#NEVA & SVIR
+392;409;major_river;1083;-1;-1;-1;-1;Kexholm-BezhetskyVerh
+393;1660;major_river;1084;-1;-1;-1;-1;Onega-Chlisselbourg
+393;404;major_river;1084;-1;-1;-1;-1;Onega-Zaozerye
+409;1660;major_river;1085;-1;-1;-1;-1;BezhetskyVerh-Chlisselbourg	#VOLKHOV & LOVAT
+414;1652;major_river;1085;-1;-1;-1;-1;Novgorod-Borovichi
+1662;1667;major_river;1087;-1;-1;-1;-1;Kholm-Rusa
+410;1662;major_river;1087;-1;-1;-1;-1;Toropets-Rusa
+410;415;major_river;1087;-1;-1;-1;-1;Toropets-VelikiyeLuki
 404;403;major_river;1101;-1;-1;-1;-1;Zaozerye-Romny
 404;405;major_river;1101;-1;-1;-1;-1;Zaozerye-Chud
 408;405;major_river;1101;-1;-1;-1;-1;Beloozero-Chud
