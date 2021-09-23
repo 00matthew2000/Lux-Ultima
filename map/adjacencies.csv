@@ -255,7 +255,7 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 252;315;major_river;1067;-1;-1;-1;-1;Ulm-Kempten
 249;252;major_river;1067;-1;-1;-1;-1;Schwaben-Ulm
 249;251;major_river;1067;-1;-1;-1;-1;Schwaben-Furstenburg
-789;798;major_river;2861;-1;-1;-1;-1;Damietta-Tanis      #NILE
+789;798;major_river;2861;-1;-1;-1;-1;Damietta-Tanis		#NILE
 789;799;major_river;2862;-1;-1;-1;-1;Damietta-Rosetta
 790;798;major_river;2863;-1;-1;-1;-1;Sarqihya-Tanis
 796;798;major_river;2863;-1;-1;-1;-1;Cairo-Tanis
@@ -274,55 +274,52 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 793;1326;major_river;2869;-1;-1;-1;-1;Makuria-Napata
 1326;1994;major_river;2870;-1;-1;-1;-1;Napata-Bayuda
 879;1994;major_river;2871;-1;-1;-1;-1;Atbara-Bayuda
-879;1334;major_river;2872;-1;-1;-1;-1;Atbara-Alodia    #BLUE NILE
+879;1334;major_river;2872;-1;-1;-1;-1;Atbara-Alodia		#BLUE NILE
 877;1334;major_river;2872;-1;-1;-1;-1;Kassala-Alodia
 877;880;major_river;2873;-1;-1;-1;-1;Kassala-Sennar
 880;1993;major_river;2873;-1;-1;-1;-1;Sennar-Gezira
 881;1993;major_river;2873;-1;-1;-1;-1;Asosa-Gezira
-1334;4065;major_river;2874;-1;-1;-1;-1;Alodia-Omdurman     #WHITE NILE
+1334;4065;major_river;2874;-1;-1;-1;-1;Alodia-Omdurman		#WHITE NILE
 1334;1335;major_river;2874;-1;-1;-1;-1;Alodia-Kosti
-1679;587;major_river;1673;-1;-1;-1;-1;Serpukhov-Mozhaysk
-418;417;major_river;1082;-1;-1;-1;-1;Orsha-Vitebsk
-1297;1331;major_river;1307;-1;-1;-1;-1;Debul-Sonda
-1303;1331;major_river;1307;-1;-1;-1;-1;Ranikot-Sonda
-1303;1137;major_river;1307;-1;-1;-1;-1;Ranikot-Mansura
-1303;1333;major_river;1308;-1;-1;-1;-1;Ranikot-Siwistan
+1297;1331;major_river;1307;-1;-1;-1;-1;Darbeji-Patala		#INDUS
+1137;1297;major_river;1307;-1;-1;-1;-1;Mansura-Darbeji
+1137;1303;major_river;1307;-1;-1;-1;-1;Mansura-Ranikot
+1137;1333;major_river;1308;-1;-1;-1;-1;Ranikot-Siwistan
 1138;1333;major_river;1308;-1;-1;-1;-1;Bhakkar-Siwistan
 1138;1175;major_river;1309;-1;-1;-1;-1;Bhakkar-Aror
-1339;1175;major_river;1309;-1;-1;-1;-1;Rajanpur-Aror
-1339;1336;major_river;1309;-1;-1;-1;-1;Rajanpur-Vijnot
-1339;1337;major_river;1310;-1;-1;-1;-1;Rajanpur-Uch
-1375;1337;major_river;1310;-1;-1;-1;-1;Kafirkot-Uch
-1375;1338;major_river;1310;-1;-1;-1;-1;Kafirkot-Multan
-1375;1340;major_river;1310;-1;-1;-1;-1;Kafirkot-Karor
-1191;1340;major_river;1310;-1;-1;-1;-1;Bannu-Karor
-1236;1318;major_river;1311;-1;-1;-1;-1;Candradvipa-Samatata
-1236;1319;major_river;1311;-1;-1;-1;-1;Candradvipa-Bikrampur
-1240;1319;major_river;1311;-1;-1;-1;-1;Kumara Mandala-Bikrampur
-1240;1325;major_river;1312;-1;-1;-1;-1;Kumara Mandala-Madhupur
-1243;1151;major_river;1312;-1;-1;-1;-1;Gauda-Laksmanavati
-1243;1153;major_river;1313;-1;-1;-1;-1;Gauda-Kotivarsa
-1152;1153;major_river;1313;-1;-1;-1;-1;Mudgagiri-Kotivarsa
-1152;1419;major_river;1313;-1;-1;-1;-1;Mudgagiri-Mithila
-1154;1419;major_river;1313;-1;-1;-1;-1;Magadha-Mithila
-1154;1162;major_river;1313;-1;-1;-1;-1;Magadha-Kusinagara
-1251;1162;major_river;1315;-1;-1;-1;-1;Sasaram-Kusinagara
-1251;1166;major_river;1315;-1;-1;-1;-1;Sasaram-Jaunpur
-1251;1163;major_river;1315;-1;-1;-1;-1;Sasaram-Varanasi
-1281;1163;major_river;1315;-1;-1;-1;-1;Chunar-Varanasi
-1328;1163;major_river;1315;-1;-1;-1;-1;Prayaga-Varanasi
-1328;1284;major_river;1315;-1;-1;-1;-1;Prayaga-Bharauli
-1283;1284;major_river;1315;-1;-1;-1;-1;Asni-Bharauli
-1356;1284;major_river;1314;-1;-1;-1;-1;Kanyakubja-Bharauli
-1356;1167;major_river;1314;-1;-1;-1;-1;Kanyakubja-Lakhnau
-1356;1358;major_river;1314;-1;-1;-1;-1;Kanyakubja-Vodamayutja
-1141;1358;major_river;1314;-1;-1;-1;-1;Kol-Vodamayutja
-1141;1173;major_river;1314;-1;-1;-1;-1;Kol-Sambhal
-1365;1173;major_river;1314;-1;-1;-1;-1;Delhi-Sambhal
-1325;1319;major_river;1316;-1;-1;-1;-1;Madhupur-Bikrampur
-1325;1324;major_river;1316;-1;-1;-1;-1;Madhupur-Suvarnagram
-1381;1324;major_river;1316;-1;-1;-1;-1;Pundravardhana-Suvarnagram
-1321;1246;major_river;1317;-1;-1;-1;-1;Kamarupanagara-Goalpara
+1336;1339;major_river;1309;-1;-1;-1;-1;Vijnot-Rajanpur
+1337;1339;major_river;1309;-1;-1;-1;-1;Uch-Rajanpur
+1338;1339;major_river;1309;-1;-1;-1;-1;Multan-Rajanpur
+1340;1375;major_river;1310;-1;-1;-1;-1;Karor-Kafirkot
+1341;1375;major_river;1310;-1;-1;-1;-1;Nandana-Kafirkot
+1191;1341;major_river;1310;-1;-1;-1;-1;Bannu-Nandana
+1236;1319;major_river;1311;-1;-1;-1;-1;Candradvipa-Bikrampur		#GANGES
+1240;1319;major_river;1311;-1;-1;-1;-1;KumaraMandala-Bikrampur
+1240;1324;major_river;1311;-1;-1;-1;-1;KumaraMandala-Suvarnagram
+1240;1325;major_river;1312;-1;-1;-1;-1;KumaraMandala-Madhupur
+1151;1240;major_river;1312;-1;-1;-1;-1;Laksmanavati-KumaraMandala
+1151;1243;major_river;1312;-1;-1;-1;-1;Laksmanavati-Gauda
+1152;1419;major_river;1312;-1;-1;-1;-1;Mudgagiri-Mithila
+1234;1419;major_river;1313;-1;-1;-1;-1;DaminIKoh-Mithila
+1154;1234;major_river;1313;-1;-1;-1;-1;Magadha-DaminIKoh
+1154;1276;major_river;1313;-1;-1;-1;-1;Magadha-Gaya
+1166;1251;major_river;1313;-1;-1;-1;-1;Jaunpur-Sasaram
+1163;1251;major_river;1314;-1;-1;-1;-1;Varanasi-Sasaram
+1163;1281;major_river;1314;-1;-1;-1;-1;Varanasi-Chunar
+1171;1328;major_river;1314;-1;-1;-1;-1;Kalanjara-Prayaga
+1171;1283;major_river;1314;-1;-1;-1;-1;Kalanjara-Asni
+1169;1283;major_river;1314;-1;-1;-1;-1;Kalpi-Asni
+1169;1356;major_river;1315;-1;-1;-1;-1;Kalpi-Kanyakubja
+1356;1359;major_river;1315;-1;-1;-1;-1;Kanyakubja-Mathura
+1141;1359;major_river;1315;-1;-1;-1;-1;Kol-Mathura
+1365;1366;major_river;1315;-1;-1;-1;-1;Delhi-Hisar
+1352;1365;major_river;1315;-1;-1;-1;-1;Sarasvati-Delhi
+1324;1325;major_river;1316;-1;-1;-1;-1;Suvarnagram-Madhupur		#BRAHMAPUTRA
+1324;1381;major_river;1316;-1;-1;-1;-1;Suvarnagram-Pundravardhana
+1246;1606;major_river;1316;-1;-1;-1;-1;Goalpara-Siuntio
+1246;1321;major_river;1317;-1;-1;-1;-1;Goalpara-Kamarupanagara
+1296;1321;major_river;1317;-1;-1;-1;-1;Dimapur-Kamarupanagara
+
 1078;1082;portage;568;-1;-1;-1;-1;Dneiper-Dwina		###PORTAGES
 1089;1093;portage;595;-1;-1;-1;-1;Don-Volga
 1087;1082;portage;419;-1;-1;-1;-1;Lovat-Dwina
