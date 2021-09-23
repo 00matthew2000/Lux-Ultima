@@ -3680,17 +3680,15 @@ e_german = {
 				b_magdeburg = {	
 					pommeranian = Magadoburg			
 				}
-				b_mansfeld = {
+				b_magdeburg1 = {
 				}
-				b_haldensleben = {
-					pommeranian = Hahaldeslevo
+				b_hahaldeslevo = {
 				}
-				b_arnstein = {
+				b_magdeburg2 = {
 				}
-				b_querfurt = {
-					pommeranian = Curnfurt
+				b_curnfurt = {
 				}
-				b_bernburg = {
+				b_magdeburg3 = {
 				}
 				b_kloster_berge = {}
 			}
@@ -13124,7 +13122,6 @@ e_slavinia = {
 				b_cedynia = {}
 				b_pryzyce = {}
 				b_sulecin = {}
-				b_santok = {}
 				b_zielonagora = {}
 			}
 			c_gnieznienskie = {			#Since HF, is now Naklo
@@ -13609,19 +13606,13 @@ e_slavinia = {
 
 				pommeranian = "Lenzen"
 
-				b_werben = {}
-				b_halberstedt = {
-					pommeranian = "Brisanen"
-				}
-				b_walbeck = {
-					pommeranian = "Vysoka"
-				}
-				b_luchow = {
-					pommeranian = "Prignitz"
-				}
-				b_salzwedel = {}
-				b_stendal = {}
-				b_osterburg = {}
+				b_havelberg = {}
+				b_brisanen = {}
+				b_vysoka = { }
+				b_prignitz = { }
+				b_havelberg1 = {}
+				b_havelberg2 = {}
+				b_havelberg3 = {}
 			}
 		}
 		d_meissen = {
@@ -13896,7 +13887,7 @@ e_slavinia = {
 				} 
 				b_bernstein = {
 				}
-				b_dramburg = {
+				b_dramburg1 = {
 				}
 				b_tempelburg = {
 				}
@@ -13994,7 +13985,6 @@ e_slavinia = {
 				}
 				b_colberg = {}
 				b_schlawe = {}
-				b_tempelburg = {}
 				b_dramburg = {}
 				b_ustka = {}
 				b_belgard = {}
@@ -14191,11 +14181,11 @@ e_slavinia = {
 				color={ 135 22 22 }
 				color2={ 255 255 255 }
 			
-				b_utena = {
+				b_nalsia = {
 				}
 				b_svencionys = {
 				}
-				b_kernave = {
+				b_nalsia1 = {
 				}
 				b_nemencine = {
 				}
