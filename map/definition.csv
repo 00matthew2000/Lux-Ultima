@@ -1437,7 +1437,7 @@ province;red;green;blue;x;x;
 1436;43;48;18;Lakomelza;x;
 1437;85;51;146;Tigrinya;x;
 1438;127;54;19;Yarkand;x;
-1439;169;57;147;Kashgar;x ;
+1439;169;57;147;Kashgar;x;
 1440;1;60;20;Khotan;x;
 1441;86;135;186;Cherchen;x;
 1442;128;138;59;Charkliq;x;
@@ -2080,13 +2080,13 @@ province;red;green;blue;x;x;
 2079;43;171;4;Toutswemogala;x
 2080;85;174;132;Dzata;x
 2081;127;177;5;Tulamela;x
-2082;169;180;133;;x
-2083;1;183;6;;x
-2084;127;24;15;;x
-2085;127;51;160;Dartsedo;x
-2086;169;54;32;;x
-2087;44;81;43;;x
-2088;86;84;171;;x
+2082;169;180;133;Connecticut1;x
+2083;1;183;6;Connecticut2;x
+2084;127;24;15;Alabama1;x
+2085;127;51;160;Alabama2;x
+2086;169;54;42;Alabama3;x
+2087;44;81;43;Tombigbee1;x
+2088;86;84;171;Tombigbee2;x
 2089;170;90;172;;x
 2090;2;93;45;;x
 2091;44;96;173;;x
@@ -2095,7 +2095,7 @@ province;red;green;blue;x;x;
 2094;170;105;47;Diexi;x
 2095;2;108;175;Dzoi;x
 2096;44;111;48;Ngawa;x
-2097;86;114;176;;x
+2097;86;114;176;Dartsedo;x
 2098;128;117;49;Sungqu;x
 2099;44;18;68;;x
 2100;86;21;196;;x
@@ -4675,8 +4675,8 @@ province;red;green;blue;x;x;
 4674;172;177;37;Oshadageaohode;x
 4675;4;180;165;Central Peruzion;x #moreamazon
 4676;46;183;38;Upper Peruzion;x #Navigable American Rivers 
-4677;88;186;166;Lower Hudson;x #south hudson
-4678;130;189;39;Hudson River;x #north hudson
+4677;88;186;166;Hudson1;x
+4678;130;189;39;Hudson2;x
 4679;172;192;167;Lower Quachila;x #mississipi basin tulsa
 4680;4;195;40;Upper Quachila;x 
 4681;46;198;168;Lower Louisiana;x #central mississipi
@@ -4712,7 +4712,7 @@ province;red;green;blue;x;x;
 4711;46;75;183;Gajisdaye;x #MoreNYCounties
 4712;88;78;56;Hatgaeosogyoedzadenyo;x
 4713;130;81;184;Bronx;x
-4714;172;84;57;Secaucus;x #newjersey
+4714;172;84;57;Secaucus;x
 4715;4;87;185;Monmouth;x
 4716;46;90;58;Yehymethell;x
 4717;88;93;186;Yekwetsatenyo;x
@@ -4789,7 +4789,7 @@ province;red;green;blue;x;x;
 4788;130;93;94;Wawaswanqa;x #indiana
 4789;172;96;222;Wabaposhie;x #south indiana
 4790;4;99;95;Sangamon;x #central illinois
-4791;46;102;223;Lower Connecticut;x #conneticutriver
+4791;46;102;223;;x
 4792;88;105;96;Quiniyium;x #east missouri
 4793;130;108;224;Chiquiyouri;x #central missouri
 4794;172;111;97;Wahdilonmckdee;x #south missouri
@@ -4824,11 +4824,11 @@ province;red;green;blue;x;x;
 4823;130;198;139;Nankwenakittannook;x #west texas
 4824;172;201;12;Chenango;x #Eerie
 4825;4;204;140;Chittenango;x #Eerie
-4826;46;207;13;Upper Conneticut;x #north conneticutriver #i like rivers
-4827;88;210;141;Upper Hudson;x #north hudson
-4828;130;0;14;Upper Lawerance;x #st lawerance ontario
-4829;172;3;142;Lower Lawerance;x #st lawerance
-4830;4;6;15;Eerie Canal;x #eerie canal
+4826;46;207;13;Niagara1;x
+4827;88;210;141;Richelieu1;x
+4828;130;0;14;StLawrence1;x
+4829;172;3;142;StLawrence2;x
+4830;4;6;15;;x
 4831;46;9;143;Tejas River;x #riogrande
 4832;88;12;16;Lower Rio Grande;x #riogrande upper
 4833;130;15;144;Upper Rio Grande;x #riogrande west
@@ -4839,11 +4839,11 @@ province;red;green;blue;x;x;
 4838;130;30;19;Pinokhiot River;x #pennny ohio
 4839;172;33;147;Nash River;x #nashville river
 4840;4;36;20;Knox River;x #knoxville river
-4841;46;39;148;Knoxisipi;x knoxvissipi river
-4842;88;42;21;Alabama River;x #alabamba river
-4843;130;45;149;Arbassimipi;x #north alabama
-4844;172;48;22;Red River;x west texas river
-4845;4;51;150;Panama Canal;x Panama Canal
+4841;46;39;148;Knoxisipi;x #knoxvissipi river
+4842;88;42;21;;x
+4843;130;45;149;;x
+4844;172;48;22;Red River;x #west texas river
+4845;4;51;150;Panama Canal;x #Panama Canal
 4846;46;54;23;Americanople;x #this is panama city
 4847;88;57;151;Christobean;x
 4848;130;60;24;Chaguinola;x
