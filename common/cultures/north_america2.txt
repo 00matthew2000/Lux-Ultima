@@ -1516,7 +1516,31 @@ chibchan_group = {
 	misumalpan = {
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 		
-		color = { 0.09 0.01 0.02 }
+		color = { 0.99 0.11 0.02 }
+
+		male_names = { Ah Aquimin Aquiminzaque Can Cuba Cuxininegua Guecha Meicuchuca Michua Mico-Chuco Nemequene Quemuenchatocha Sagpipa Saguamanchica Tibacuy Tisquesusa Tomagata Tutazúa Uzathama }
+		female_names = { Ana Axomamma Cavillaca Chia China Kantuta Maiara Nina }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	lenca = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.69 0.22 0.45 }
 
 		male_names = { Ah Aquimin Aquiminzaque Can Cuba Cuxininegua Guecha Meicuchuca Michua Mico-Chuco Nemequene Quemuenchatocha Sagpipa Saguamanchica Tibacuy Tisquesusa Tomagata Tutazúa Uzathama }
 		female_names = { Ana Axomamma Cavillaca Chia China Kantuta Maiara Nina }
