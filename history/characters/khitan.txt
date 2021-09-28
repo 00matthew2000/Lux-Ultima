@@ -454,38 +454,6 @@
 	}
 }
 
-217335 = {
-	name = Dashi # fictional
-	dynasty = 1051111 # Yuzhi
-	religion = buddhist
-	culture = khitan
-	father = 217178
-	
-	1068.4.17 = {
-		birth = yes
-	}
-	
-	1110.6.5 = {
-		death = yes
-	}
-}
-
-217336 = {
-	name = Yanxi # fictional
-	dynasty = 1051111 # Yuzhi
-	religion = buddhist
-	culture = khitan
-	father = 217335
-	
-	1094.10.5 = {
-		birth = yes
-	}
-	
-	1131.4.16 = {
-		death = yes
-	}
-}
-
 217337 = {
 	name = "Duolubu" # fictional
 	dynasty = 1051112 # Wanyan
@@ -494,9 +462,6 @@
 	father = 217185
 	1062.2.4 = {
 		birth = yes
-	}
-	1093.2.17 = {
-		religion = buddhist
 	}
 	1106.6.8 = {
 		death = yes
@@ -1574,33 +1539,7 @@
 		add_claim = d_nangqen
 		add_claim = k_xixia
 	}
-	867.1.1 = {
-		employer = 206811
-	}
 	895.1.1={
-		death=yes
-	}
-}
-
-248238 = {
-	name="Cim Timur"
-	dynasty=1059033
-	religion=buddhist
-	culture=khitan
-	trait=mahayana_buddhist
-	trait="sympathy_christendom"
-	trait="sympathy_islam"
-	trait="sympathy_zoroastrianism"
-	trait="sympathy_judaism"
-	trait="sympathy_indian"
-	trait=thrifty_clerk
-	1190.1.1={
-		birth=yes
-	}
-	1221.1.1 = {
-		employer=125520
-	}
-	1236.1.1={
 		death=yes
 	}
 }
@@ -1656,159 +1595,6 @@
 	}
 }
 
-93258 = {
-	name="Ketuyu"
-	dynasty=214009
-	religion="buddhist"
-	culture="khitan"
-	father=188912
-	trait=mahayana_buddhist
-	trait="sympathy_christendom"
-	trait="sympathy_islam"
-	trait="sympathy_zoroastrianism"
-	trait="sympathy_judaism"
-	trait="sympathy_indian"
-	1180.1.1= {
-		birth="1180.1.1"
-	}
-	1213.1.1= {
-		name="Baraq Hajib"
-		religion="sunni"
-		dynasty=7337
-	}
-	1235.1.1= {
-		death="1235.1.1"
-	}
-}
-
-93259 = {
-name="Qutb ad-Din Muhammad"
-dynasty=7337
-religion="sunni"
-culture="khitan"
-father=93258
-1200.1.1=
-
-{ birth="1200.1.1" }
-1257.1.1=
-
-{ death="1257.1.1" }
-}
-
-93260 = {
-name="Rukh ad-Din Hoja al-Hakk"
-dynasty=7337
-religion="sunni"
-culture="khitan"
-father=93258
-1201.1.1=
-
-{ birth="1201.1.1" }
-1252.1.1=
-
-{ death="1252.1.1" }
-}
-
-93261 = {
-name="Muzzafar ad-Din"
-dynasty=7337
-religion="sunni"
-culture="khitan"
-father=93259
-1220.1.1=
-
-{ birth="1220.1.1" }
-1279.1.1=
-
-{ death="1279.1.1" }
-}
-
-93262 = {
-name="Turkan Hatun"
-female=yes
-dynasty=7337
-religion="sunni"
-culture="khitan"
-father=93261
-1240.1.1=
-
-{ birth="1240.1.1" }
-1282.1.1=
-
-{ death="1282.1.1" }
-}
-
-93263 = {
-name="Djalal ad-Din Abu'l-Muzzafar"
-dynasty=7337
-religion="sunni"
-culture="khitan"
-father=93261
-1266.1.1=
-
-{ birth="1266.1.1" }
-1292.1.1=
-
-{ death="1292.1.1" }
-}
-
-93264 = {
-name="Safvat ad-Din Padishah Hatun"
-female=yes
-dynasty=7337
-religion="sunni"
-culture="khitan"
-father=93261
-1252.1.1=
-
-{ birth="1252.1.1" }
-1295.1.1=
-
-{ death="1295.1.1" }
-}
-
-93265 = {
-name="Yuluq Shah"
-dynasty=7337
-religion="sunni"
-culture="khitan"
-father=93263
-1282.1.1=
-
-{ birth="1282.1.1" }
-1296.1.1=
-
-{ death="1296.1.1" }
-}
-
-93266 = {
-name="Muzzafar ad-Din"
-dynasty=7337
-religion="sunni"
-culture="khitan"
-father=93263
-1283.1.1=
-
-{ birth="1283.1.1" }
-1301.1.1=
-
-{ death="1301.1.1" }
-}
-
-93267 = {
-name="Qutb ad-Din"
-dynasty=7337
-religion="sunni"
-culture="khitan"
-father=93263
-1284.1.1=
-
-{ birth="1284.1.1" }
-1308.1.1=
-
-{ death="1308.1.1" }
-}
-
 258100 = {
 	name="Zhulie"
 	dynasty=1100022
@@ -1824,8 +1610,8 @@ father=93263
 258101 = {
 	name="Qinde"
 	dynasty=1100023
-	religion="buddhist"
-	culture="khitan"
+	culture = xiongnu
+	religion = tengri_pagan
 	1033.1.1={
 		birth=yes
 	}
