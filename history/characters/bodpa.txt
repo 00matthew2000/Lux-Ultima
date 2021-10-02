@@ -1,4 +1,4 @@
-12000 = {
+120001 = {
 	name="Dickey"
 	
 	culture = bodpa
@@ -13,14 +13,14 @@
 	}
 }
 
-12001 = {
+120011 = {
 	name="Kunchen"
 	
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
 	
-	father = 12000
+	father = 120001
 	
 	605.1.1={
 		birth=yes
@@ -30,7 +30,7 @@
 	}
 }
 
-12002 = {
+120021 = {
 	name="Thubten"
 	dynasty=19100 # Poyul
 	
@@ -48,7 +48,7 @@
 	}
 }
 
-12003 = {
+120031 = {
 	name="Mangsong"
 	dynasty=19100 # Poyul
 	
@@ -56,7 +56,7 @@
 	religion = bon
 	trait = vajrayana_bon
 	
-	father = 12002
+	father = 120021
 	
 	642.1.1={
 		birth=yes
@@ -66,7 +66,7 @@
 	}
 }
 
-12004 = {
+120041 = {
 	name="Mangmo"
 	dynasty=19100 # Poyul
 	
@@ -74,7 +74,7 @@
 	religion = bon
 	trait = vajrayana_bon
 	
-	father = 12003
+	father = 120031
 	
 	670.1.1={
 		birth=yes
@@ -84,7 +84,7 @@
 	}
 }
 
-12005 = {
+120051 = {
 	name="Lhamo"
 	dynasty=19100 # Poyul
 	
@@ -92,7 +92,7 @@
 	religion = bon
 	trait = vajrayana_bon
 	
-	father = 12004
+	father = 120041
 	
 	704.3.1={
 		birth=yes
@@ -110,7 +110,7 @@
 	religion = bon
 	trait = vajrayana_bon
 	
-	father = 12005
+	father = 120051
 	
 	742.1.1={
 		birth=yes
@@ -120,7 +120,7 @@
 	}
 }
 
-12007 = {
+120071 = {
 	name="Lhamo"
 	dynasty=19100 # Poyul
 	
@@ -139,7 +139,7 @@
 	}
 }
 
-12008 = {
+120081 = {
 	name="Tashi"
 	dynasty=19100 # Poyul
 	
@@ -158,7 +158,7 @@
 	}
 }
 
-12009 = {
+120091 = {
 	name="Mutik"
 	dynasty=19100 # Poyul
 	
@@ -177,7 +177,7 @@
 	}
 }
 
-12010 = {
+120101 = {
 	name="Chokey"
 	dynasty=19100 # Poyul
 	
@@ -196,7 +196,7 @@
 	}
 }
 
-12012 = {
+120121 = {
 	name="Namdol"
 	dynasty=19100 # Poyul
 	
@@ -204,7 +204,7 @@
 	religion = bon
 	trait = vajrayana_bon
 	
-	father = 12010
+	father = 120101
 	
 	802.1.1={
 		birth=yes
@@ -222,7 +222,7 @@
 	religion = bon
 	trait = vajrayana_bon
 	
-	father = 12010
+	father = 120101
 	
 	799.1.1={
 		birth=yes
@@ -249,7 +249,7 @@
 		death=yes
 	}
 }
-12014 = {
+120141 = {
 	name="Rabgyal"
 	dynasty=19100
 	
@@ -267,7 +267,7 @@
 	}
 }
 
-12015 = {
+120151 = {
 	name="Tsundue"
 	dynasty=19100
 	
@@ -275,7 +275,7 @@
 	religion = bon
 	trait = vajrayana_bon
 	
-	father = 12014
+	father = 120141
 	
 	845.1.1={
 		birth=yes
@@ -285,13 +285,13 @@
 	}
 }
 
-12017 = {
+120171 = {
 	name="Rigzin"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12015
+	father=120151
 	872.1.1={
 		birth=yes
 	}
@@ -300,14 +300,14 @@
 	}
 }
 
-12016 = {
+120161 = {
 	name="Pemba"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
 	
-	father=12015
+	father=120151
 	875.1.1={
 		birth=yes
 	}
@@ -316,14 +316,14 @@
 	}
 }
 
-12018 = {
+120181 = {
 	name="Jampa"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
 	
-	father=12016
+	father=120161
 	913.1.1={
 		birth=yes
 	}
@@ -332,14 +332,14 @@
 	}
 }
 
-12019 = {
+120191 = {
 	name="Jangchup"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
 	
-	father=12016
+	father=120161
 	906.1.1={
 		birth=yes
 	}
@@ -348,14 +348,14 @@
 	}
 }
 
-12020 = {
+120201 = {
 	name="Jungney"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
 	
-	father=12023
+	father=120231
 	1030.1.1={
 		birth=yes
 	}
@@ -364,14 +364,14 @@
 	}
 }
 
-12021 = {
+1202111 = {
 	name="Karma"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
 
-	father=12020
+	father=120201
 	1051.1.1={
 		birth=yes
 	}
@@ -380,13 +380,13 @@
 	}
 }
 
-12022 = {
+120221 = {
 	name="Kunchen"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12021
+	father=120211
 	1085.1.1={
 		birth=yes
 	}
@@ -395,13 +395,13 @@
 	}
 }
 
-12023 = {
+120231 = {
 	name="Kunchok"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12024
+	father=120241
 	993.1.1={
 		birth=yes
 	}
@@ -410,13 +410,13 @@
 	}
 }
 
-12024 = {
+120241 = {
 	name="Kunga"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12019
+	father=120191
 	956.1.1={
 		birth=yes
 	}
@@ -425,13 +425,13 @@
 	}
 }
 
-12025 = {
+120251 = {
 	name="Lekhshey"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12019
+	father=120191
 	948.1.1={
 		birth=yes
 	}
@@ -440,13 +440,13 @@
 	}
 }
 
-12026 = {
+120261 = {
 	name="Lhakpa"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12022
+	father=120221
 	1138.1.1={
 		birth=yes
 	}
@@ -455,13 +455,13 @@
 	}
 }
 
-12027 = {
+120271 = {
 	name="Lhamo"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12026
+	father=120261
 	1199.1.1={
 		birth=yes
 	}
@@ -470,13 +470,13 @@
 	}
 }
 
-12028 = {
+120281 = {
 	name="Lhawang"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12027
+	father=120271
 	1248.1.1={
 		birth=yes
 	}
@@ -485,13 +485,13 @@
 	}
 }
 
-12029 = {
+120291 = {
 	name="Metok"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12028
+	father=120281
 	1272.1.1={
 		birth=yes
 	}
@@ -500,13 +500,13 @@
 	}
 }
 
-12030 = {
+120301 = {
 	name="Namdak"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12026
+	father=120261
 	1186.1.1={
 		birth=yes
 	}
@@ -515,13 +515,13 @@
 	}
 }
 
-12031 = {
+120311 = {
 	name="Namdol"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12029
+	father=120291
 	1315.1.1={
 		birth=yes
 	}
@@ -532,13 +532,13 @@
 
 # Guge
 
-12033 = {
+120331 = {
 	name="Namgyal"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12016
+	father=120161
 	909.1.1={
 		birth=yes
 	}
@@ -547,13 +547,13 @@
 	}
 }
 
-12034 = {
+120341 = {
 	name="Wangchuk"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12033
+	father=120331
 	935.1.1={
 		birth=yes
 	}
@@ -562,13 +562,13 @@
 	}
 }
 
-12035 = {
+120351 = {
 	name="Ngonga"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12033
+	father=120331
 	942.1.1={
 		birth=yes
 	}
@@ -577,13 +577,13 @@
 	}
 }
 
-12036 = {
+120361 = {
 	name="Norbu"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12034
+	father=120341
 	964.1.1={
 		birth=yes
 	}
@@ -592,13 +592,13 @@
 	}
 }
 
-12037 = {
+120371 = {
 	name="Nyima"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12034
+	father=120341
 	965.1.1={
 		birth=yes
 	}
@@ -607,13 +607,13 @@
 	}
 }
 
-12038 = {
+120381 = {
 	name="Palden"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12035
+	father=120351
 	960.1.1={
 		birth=yes
 	}
@@ -622,13 +622,13 @@
 	}
 }
 
-12039 = {
+120391 = {
 	name="Paljor"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12038
+	father=120381
 	981.1.1={
 		birth=yes
 	}
@@ -637,13 +637,13 @@
 	}
 }
 
-12040 = {
+120401 = {
 	name="Passang"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12038
+	father=120381
 	985.1.1={
 		birth=yes
 	}
@@ -652,13 +652,13 @@
 	}
 }
 
-12041 = {
+120411 = {
 	name="Pemba"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12038
+	father=120381
 	1023.1.1={
 		birth=yes
 	}
@@ -667,13 +667,13 @@
 	}
 }
 
-12042 = {
+120421 = {
 	name="Phuntsok"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12040
+	father=120401
 	1033.1.1={
 		birth=yes
 	}
@@ -682,13 +682,13 @@
 	}
 }
 
-12043 = {
+120431 = {
 	name="Rabgyal"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12040
+	father=120401
 	1028.1.1={
 		birth=yes
 	}
@@ -697,13 +697,13 @@
 	}
 }
 
-12044 = {
+120441 = {
 	name="Rabten"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12043
+	father=120431
 	1046.1.1={
 		birth=yes
 	}
@@ -712,503 +712,17 @@
 	}
 }
 
-12045 = {
+120451 = {
 	name="Rangdol"
 	dynasty=19100 #Poyul
 	culture = bodpa
 	religion = bon
 	trait = vajrayana_bon
-	father=12044
+	father=120441
 	1061.1.1={
 		birth=yes
 	}
 	1118.1.1={
-		death=yes
-	}
-}
-
-12046 = {
-	name="Rigsang"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12045
-	1084.1.1={
-		birth=yes
-	}
-	1137.1.1={
-		death=yes
-	}
-}
-
-12047 = {
-	name="Rigzin"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12045
-	1089.1.1={
-		birth=yes
-	}
-	1145.1.1={
-		death=yes
-	}
-}
-
-12048 = {
-	name="Rinchen"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12046
-	1132.1.1={
-		birth=yes
-	}
-	1161.1.1={
-		death=yes
-	}
-}
-
-12049 = {
-	name="Samdup"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12048
-	1150.1.1={
-		birth=yes
-	}
-	1189.1.1={
-		death=yes
-	}
-}
-
-12070 = {
-	name="Samten"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12049
-	1166.1.1={
-		birth=yes
-	}
-	1212.1.1={
-		death=yes
-	}
-}
-
-12071 = {
-	name="Sangyal"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12070
-	1183.1.1={
-		birth=yes
-	}
-	1219.1.1={
-		death=yes
-	}
-}
-
-12072 = {
-	name="Tashi"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12071
-	1198.1.1={
-		birth=yes
-	}
-	1242.1.1={
-		death=yes
-	}
-}
-
-12073 = {
-	name="Tenzin"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12072
-	1217.1.1={
-		birth=yes
-	}
-	1260.1.1={
-		death=yes
-	}
-}
-
-12074 = {
-	name="Thubten"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12073
-	1234.1.1={
-		birth=yes
-	}
-	1265.1.1={
-		death=yes
-	}
-}
-
-12075 = {
-	name="Tritsuk"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12074
-	1252.1.1={
-		birth=yes
-	}
-	1277.1.1={
-		death=yes
-	}
-}
-
-12076 = {
-	name="Tsering"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12075
-	1268.1.1={
-		birth=yes
-	}
-	1306.1.1={
-		death=yes
-	}
-}
-
-12077 = {
-	name="Tsomo"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12076
-	1286.1.1={
-		birth=yes
-	}
-	1333.1.1={
-		death=yes
-	}
-}
-
-12078 = {
-	name="Tsundue"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12077
-	1302.1.1={
-		birth=yes
-	}
-	1347.1.1={
-		death=yes
-	}
-}
-
-12079 = {
-	name="Wangchuk"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12078
-	1320.1.1={
-		birth=yes
-	}
-	1364.1.1={
-		death=yes
-	}
-}
-
-12080 = {
-	name="Wangmo"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12079
-	1336.1.1={
-		birth=yes
-	}
-	1396.1.1={
-		death=yes
-	}
-}
-
-12081 = {
-	name="Wangyag"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12080
-	1355.1.1={
-		birth=yes
-	}
-	1424.1.1={
-		death=yes
-	}
-}
-
-12082 = {
-	name="Woeser"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12042
-	1059.1.1={
-		birth=yes
-	}
-	1116.1.1={
-		death=yes
-	}
-}
-
-12083 = {
-	name="Woeten"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12082
-	1087.1.1={
-		birth=yes
-	}
-	1148.1.1={
-		death=yes
-	}
-}
-
-12084 = {
-	name="Yangkey"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12083
-	1122.1.1={
-		birth=yes
-	}
-	1173.1.1={
-		death=yes
-	}
-}
-
-12085 = {
-	name="Bhuti"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12082
-	1112.1.1={
-		birth=yes
-	}
-	1188.1.1={
-		death=yes
-	}
-}
-
-12086 = {
-	name="Choedon"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12085
-	1158.1.1={
-		birth=yes
-	}
-	1225.1.1={
-		death=yes
-	}
-}
-
-12087 = {
-	name="Choegyal"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12086
-	1215.1.1={
-		birth=yes
-	}
-	1278.1.1={
-		death=yes
-	}
-}
-
-
-12088 = {
-	name="Choenyi"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12087
-	1248.1.1={
-		birth=yes
-	}
-	1293.1.1={
-		death=yes
-	}
-}
-
-12089 = {
-	name="Chokey"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12087
-	1253.1.1={
-		birth=yes
-	}
-	1298.1.1={
-		death=yes
-	}
-}
-
-12090 = {
-	name="Chophel"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12089
-	1270.1.1={
-		birth=yes
-	}
-	1314.1.1={
-		death=yes
-	}
-}
-
-12091 = {
-	name="Damchoe"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12090
-	1288.1.1={
-		birth=yes
-	}
-	1321.1.1={
-		death=yes
-	}
-}
-
-12092 = {
-	name="Dema"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12088
-	1266.1.1={
-		birth=yes
-	}
-	1328.1.1={
-		death=yes
-	}
-}
-
-12093 = {
-	name="Dhundup"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12092
-	1282.1.1={
-		birth=yes
-	}
-	1333.1.1={
-		death=yes
-	}
-}
-
-12094 = {
-	name="Dickey"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12091
-	1305.1.1={
-		birth=yes
-	}
-	1336.1.1={
-		death=yes
-	}
-}
-
-12095 = {
-	name="Dolma"
-	female=yes
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12094
-	1320.1.1={
-		birth=yes
-	}
-	1354.1.1={
-		death=yes
-	}
-}
-
-12096 = {
-	name="Dorje"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12093
-	1315.1.1={
-		birth=yes
-	}
-	1330.1.1={
-		add_spouse=12095
-	}
-	1339.1.1={
-		death=yes
-	}
-}
-
-12097 = {
-	name="Gyaltsen"
-	dynasty=19100 #Poyul
-	culture = bodpa
-	religion = bon
-	trait = vajrayana_bon
-	father=12093
-	mother=12095
-	1333.1.1={
-		birth=yes
-	}
-	1358.1.1={
 		death=yes
 	}
 }
@@ -1364,7 +878,7 @@
 	religion = bon
 	trait = vajrayana_bon
 	
-	father = 12005
+	father = 120051
 	
 	723.1.1={
 		birth=yes
