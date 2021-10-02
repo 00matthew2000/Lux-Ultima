@@ -28663,11 +28663,541 @@ african_pagan_group = {
 }
 
 native_american_group = {
-    graphical_culture = norsegfx
+    graphical_culture = mesoamericangfx
     playable = yes
 	hostile_within_group = yes
 
 	color = { 0.37 0.85 0.85 }
+
+	wakanda_reformed = {
+		graphical_culture = mesoamericangfx
+		alternate_start = { always = no }
+		
+		secondary_event_pictures = mesoamerican
+		
+		icon = 17
+		heresy_icon = 18
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.03 0.44 0.25 }
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_SEVEN_SACRED_RITES
+		priest_title = WICHASA_WAKHAN
+		
+		high_god_name = GOD_WAKANDA
+
+		god_names = {
+			GOD_INYAN GOD_MAKA GOD_ANPO GOD_SKAN GOD_WI GOD_IKTOMI
+		}
+		evil_god_names = {
+			GOD_HAN
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+		short_reign_opinion_year_mult = 1.5
+	
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = algic_pagan
+	}
+	
+	wakanda = {
+		graphical_culture = mesoamericangfx
+		icon = 15
+		heresy_icon = 16
+		color = { 0.44 0.21 0.26 }
+		alternate_start = {
+			OR = {
+				year < 1100
+				has_alternate_start_parameter = { key = religion value = full_random }
+			}
+		}
+
+		secondary_event_pictures = mesoamerican
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_WAMPUMS
+		priest_title = HONUNDENONT
+		
+		high_god_name = GOD_WAKANDA
+
+		god_names = {
+			GOD_TWO_SPIRITS
+		}
+		evil_god_names = {
+			GOD_UNDERWATER_PANTHER GOD_CORN_MOTHER
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = algic_pagan_reformed
+		
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+
+	}
+
+	wakan_tanka_reformed = {
+		graphical_culture = mesoamericangfx
+		alternate_start = { always = no }
+		
+		secondary_event_pictures = mesoamerican
+		
+		icon = 17
+		heresy_icon = 18
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.03 0.44 0.25 }
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_SEVEN_SACRED_RITES
+		priest_title = WICHASA_WAKHAN
+		
+		high_god_name = GOD_WAKHAN_THANKA
+
+		god_names = {
+			GOD_INYAN GOD_MAKA GOD_ANPO GOD_SKAN GOD_WI GOD_IKTOMI
+		}
+		evil_god_names = {
+			GOD_HAN
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+		short_reign_opinion_year_mult = 1.5
+	
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = algic_pagan
+	}
+	
+	wakan_tanka = {
+		graphical_culture = mesoamericangfx
+		icon = 15
+		heresy_icon = 16
+		color = { 0.62 0.33 0.12 }
+		alternate_start = {
+			OR = {
+				year < 1100
+				has_alternate_start_parameter = { key = religion value = full_random }
+			}
+		}
+
+		secondary_event_pictures = mesoamerican
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_WAMPUMS
+		priest_title = HONUNDENONT
+		
+		high_god_name = GOD_WAKHAN_THANKA
+
+		god_names = {
+			GOD_TWO_SPIRITS
+		}
+		evil_god_names = {
+			GOD_UNDERWATER_PANTHER GOD_CORN_MOTHER
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = algic_pagan_reformed
+		
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+
+	}
+
+	mahoma_reformed = {
+		graphical_culture = mesoamericangfx
+		alternate_start = { always = no }
+		
+		secondary_event_pictures = mesoamerican
+		
+		icon = 17
+		heresy_icon = 18
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.22 0.64 0.49 }
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_WAMPUMS
+		priest_title = HONUNDENONT
+		
+		high_god_name = GOD_TOYA
+
+		god_names = {
+			GOD_TWO_SPIRITS
+		}
+		evil_god_names = {
+			GOD_UNDERWATER_PANTHER GOD_CORN_MOTHER
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+		short_reign_opinion_year_mult = 1.5
+	
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = algic_pagan
+	}
+	
+	mahoma = {
+		graphical_culture = mesoamericangfx
+		icon = 15
+		heresy_icon = 16
+		color = { 0.95 0.48 0.4 }
+		alternate_start = {
+			OR = {
+				year < 1100
+				has_alternate_start_parameter = { key = religion value = full_random }
+			}
+		}
+
+		secondary_event_pictures = mesoamerican
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_WAMPUMS
+		priest_title = HONUNDENONT
+		
+		high_god_name = GOD_TOYA
+
+		god_names = {
+			GOD_TWO_SPIRITS
+		}
+		evil_god_names = {
+			GOD_UNDERWATER_PANTHER GOD_CORN_MOTHER
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = algic_pagan_reformed
+		
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+
+	}
+
+	southern_cult_reformed = {
+		graphical_culture = mesoamericangfx
+		alternate_start = { always = no }
+		
+		secondary_event_pictures = mesoamerican
+		
+		icon = 17
+		heresy_icon = 18
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.38 0.38 0.91 }
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_WAMPUMS
+		priest_title = HONUNDENONT
+		
+		high_god_name = GOD_THE_THUNDERER
+
+		god_names = {
+			GOD_RED_HORN
+		}
+		evil_god_names = {
+			GOD_UNDERWATER_PANTHER GOD_CORN_MOTHER
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+		short_reign_opinion_year_mult = 1.5
+	
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = algic_pagan
+	}
+	
+	southern_cult = {
+		graphical_culture = mesoamericangfx
+		icon = 15
+		heresy_icon = 16
+		color = { 0.34 0.51 0.01 }
+		alternate_start = {
+			OR = {
+				year < 1100
+				has_alternate_start_parameter = { key = religion value = full_random }
+			}
+		}
+
+		secondary_event_pictures = mesoamerican
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_WAMPUMS
+		priest_title = HONUNDENONT
+		
+		high_god_name = GOD_THE_THUNDERER
+
+		god_names = {
+			GOD_RED_HORN
+		}
+		evil_god_names = {
+			GOD_UNDERWATER_PANTHER GOD_CORN_MOTHER
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = algic_pagan_reformed
+		
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+
+	}
+
+	orenda_reformed = {
+		graphical_culture = mesoamericangfx
+		alternate_start = { always = no }
+		
+		secondary_event_pictures = mesoamerican
+		
+		icon = 17
+		heresy_icon = 18
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.15 0.63 0.09 }
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_WAMPUMS
+		priest_title = HONUNDENONT
+		
+		high_god_name = GOD_GREAT_SPIRIT
+
+		god_names = {
+			GOD_THE_THUNDERER GOD_THREE_SISTERS GOD_EAGENTCI GOD_TEKAWERAHKWA
+		}
+		evil_god_names = {
+			GOD_TAWISKARON
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+		short_reign_opinion_year_mult = 1.5
+	
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = algic_pagan
+	}
+	
+	orenda = {
+		graphical_culture = mesoamericangfx
+		icon = 15
+		heresy_icon = 16
+		color = { 0.46 0.41 0.6 }
+		alternate_start = {
+			OR = {
+				year < 1100
+				has_alternate_start_parameter = { key = religion value = full_random }
+			}
+		}
+
+		secondary_event_pictures = mesoamerican
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_WAMPUMS
+		priest_title = HONUNDENONT
+		
+		high_god_name = GOD_GREAT_SPIRIT
+
+		god_names = {
+			GOD_THE_THUNDERER GOD_THREE_SISTERS GOD_EAGENTCI GOD_TEKAWERAHKWA
+		}
+		evil_god_names = {
+			GOD_TAWISKARON
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = algic_pagan_reformed
+		
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 0.7 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+
+	}
 
 	algic_pagan_reformed = {
 		graphical_culture = mesoamericangfx
@@ -28719,6 +29249,7 @@ native_american_group = {
 		allow_in_ruler_designer = no
 		intermarry = algic_pagan
 	}	
+
 	algic_pagan = {
 		graphical_culture = mesoamericangfx
 		icon = 15
