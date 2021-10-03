@@ -28683,16 +28683,16 @@ native_american_group = {
 		color = { 0.62 0.41 0.39 }
 
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_POHA
-		priest_title = POHAKANTEN
+		scripture_name = THE_KIVAS
+		priest_title = HAACTITCANI
 		
-		high_god_name = GOD_TAM_APO
+		high_god_name = GOD_TAWA
 
 		god_names = {
-			GOD_ISSA GOD_TEL_APO THE_NINNIMBE THE_PAONA
+			THE_KATSINAM GOD_PAHANA GOD_MASAUWU GOD_SOTUKNANG GOD_KOKYANGWUTI
 		}
 		evil_god_names = {
-			GOD_DZOAVITS
+			THE_POPWAQT
 		}
 		
 		unit_modifier = {
@@ -28735,8 +28735,8 @@ native_american_group = {
 		secondary_event_pictures = mesoamerican
 
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_POHA
-		priest_title = POHAKANTEN
+		scripture_name = THE_KIVAS
+		priest_title = HAACTITCANI
 		
 		high_god_name = GOD_TAWA
 
@@ -28786,7 +28786,7 @@ native_american_group = {
 		
 		ai_convert_other_group = 2 # always try to convert
 		
-		color = { 0.45 0.23 0.16 }
+		color = { 0.25 0.23 0.76 }
 
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_POHA
@@ -28830,7 +28830,7 @@ native_american_group = {
 		graphical_culture = mesoamericangfx
 		icon = 15
 		heresy_icon = 16
-		color = { 0.89 0.15 0.21 }
+		color = { 0.52 0.43 0.3 }
 		alternate_start = {
 			OR = {
 				year < 1100
