@@ -173,25 +173,25 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 547;555;major_river;1072;-1;-1;-1;-1;Kiev-Pereyaslavl
 <<<<<<< HEAD
 547;554;major_river;1072;-1;-1;-1;-1;Kiev-Chernigov
-552;554;major_river;1073;-1;-1;-1;-1;Turov-Chernigov
-553;1659;major_river;1073;-1;-1;-1;-1;Lyubech-Drutsk
-551;1659;major_river;1074;-1;-1;-1;-1;Mstislavl-Drutsk
-418;551;major_river;1074;-1;-1;-1;-1;Orsha-Mstislavl
-551;568;major_river;1075;-1;-1;-1;-1;Mstislavl-Smolensk
-568;933;major_river;1075;-1;-1;-1;-1;Smolensk-Roslavl
+552;554;major_river;1076;-1;-1;-1;-1;Turov-Chernigov
+553;1659;major_river;1076;-1;-1;-1;-1;Lyubech-Drutsk
+551;1659;major_river;1077;-1;-1;-1;-1;Mstislavl-Drutsk
+418;551;major_river;1077;-1;-1;-1;-1;Orsha-Mstislavl
+551;568;major_river;1078;-1;-1;-1;-1;Mstislavl-Smolensk
+568;933;major_river;1078;-1;-1;-1;-1;Smolensk-Roslavl
 547;552;major_river;1626;-1;-1;-1;-1;Kiev-Turov		#PRIPYAT
 1649;552;major_river;1626;-1;-1;-1;-1;Turov-Korosten
 548;552;major_river;1079;-1;-1;-1;-1;Pinsk-Turov
 548;1633;major_river;1079;-1;-1;-1;-1;Pinsk-Lutsk
 1633;1655;major_river;1079;-1;-1;-1;-1;Lutsk-Volkovysk
 549;1633;major_river;1079;-1;-1;-1;-1;Beresty-Lutsk
-554;555;major_river;1076;-1;-1;-1;-1;Chernigov-Pereyaslavl	#DESNA
-554;1675;major_river;1076;-1;-1;-1;-1;Chernigov-Priluk
-554;567;major_river;1076;-1;-1;-1;-1;Chernigov-NovgorodSeversky
-567;1656;major_river;1077;-1;-1;-1;-1;NovgorodSeversky-Starodub
-567;576;major_river;1077;-1;-1;-1;-1;NovgorodSeversky-Bryansk
-576;1676;major_river;1078;-1;-1;-1;-1;Bryansk-Kromy
-933;1676;major_river;1078;-1;-1;-1;-1;Roslavl-Kromy
+554;555;major_river;1073;-1;-1;-1;-1;Chernigov-Pereyaslavl	#DESNA
+554;1675;major_river;1073;-1;-1;-1;-1;Chernigov-Priluk
+554;567;major_river;1073;-1;-1;-1;-1;Chernigov-NovgorodSeversky
+567;1656;major_river;1074;-1;-1;-1;-1;NovgorodSeversky-Starodub
+567;576;major_river;1074;-1;-1;-1;-1;NovgorodSeversky-Bryansk
+576;1676;major_river;1075;-1;-1;-1;-1;Bryansk-Kromy
+933;1676;major_river;1075;-1;-1;-1;-1;Roslavl-Kromy
 596;597;major_river;1088;-1;-1;-1;-1;Tana-Azov		#DON
 596;1811;major_river;1088;-1;-1;-1;-1;Tana-Kalaus
 594;1811;major_river;1088;-1;-1;-1;-1;Sarkel-Kalaus
@@ -398,11 +398,11 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 3623;3655;major_river;4829;-1;-1;-1;-1;Adirondack-Ontario
 3614;3617;major_river;4827;-1;-1;-1;-1;Etchemins-Loup
 907;3670;major_river;4826;-1;-1;-1;-1;Chonnonton-Wenro		#NIAGARA
-3631;4714;major_river;2089;-1;-1;-1;-1;Manhattan-Secaucus		#HUDSON
-3629;3630;major_river;2089;-1;-1;-1;-1;Connecticut-Quinnipiac
-3626;3630;major_river;2089;-1;-1;-1;-1;Nipmuc-Quinnipiac
-3625;3626;major_river;2090;-1;-1;-1;-1;Mahican-Nipmuc
-3622;3625;major_river;2090;-1;-1;-1;-1;Pocumtuk-Mahican
+3631;4714;major_river;4677;-1;-1;-1;-1;Manhattan-Secaucus		#HUDSON
+3629;3630;major_river;4677;-1;-1;-1;-1;Connecticut-Quinnipiac
+3626;3630;major_river;4677;-1;-1;-1;-1;Nipmuc-Quinnipiac
+3625;3626;major_river;4678;-1;-1;-1;-1;Mahican-Nipmuc
+3622;3625;major_river;4678;-1;-1;-1;-1;Pocumtuk-Mahican
 3628;3629;major_river;2082;-1;-1;-1;-1;Narraganset-Connecticut			#CONNECTICUT
 3626;3627;major_river;2082;-1;-1;-1;-1;Nipmuc-Wampanoag
 3620;3626;major_river;2082;-1;-1;-1;-1;Massachusetts-Nipmuc
@@ -418,6 +418,7 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 3801;3802;major_river;2087;-1;-1;-1;-1;Alabama-Tohome
 3802;3803;major_river;2088;-1;-1;-1;-1;Tohome-Napochi
 3803;3804;major_river;2088;-1;-1;-1;-1;Napochi-Chickasaw
+<<<<<<< HEAD
 3788;4859;major_river;4905;-1;-1;-1;-1;Chitimacha-Plaquemines		#MISSISSIPPI
 3788;4801;major_river;4905;-1;-1;-1;-1;Chitimacha-Tehcorriko
 4799;4801;major_river;4905;-1;-1;-1;-1;Tangipahoa-Tehcorriko
@@ -517,6 +518,8 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 3774;4823;major_river;2093;-1;-1;-1;-1;Chichitames-Nankwenakittannook
 =======
 >>>>>>> parent of b29f53fb (more river fixes)
+=======
+>>>>>>> parent of 7f6d8555 (Added most of the Mississippi)
 
 =======
 507;514;major_river;1060;-1;-1;-1;-1;Nikopolis-Turnu
