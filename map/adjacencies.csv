@@ -255,6 +255,7 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 1637;1638;major_river;1057;-1;-1;-1;-1;Ushytsia-Iasi
 545;1637;major_river;1057;-1;-1;-1;-1;Torki-Ushytsia
 545;546;major_river;1057;-1;-1;-1;-1;Torki-Terebovl
+<<<<<<< HEAD
 510;512;major_river;1058;-1;-1;-1;-1;Constantia-Belgorod		#DANUBE
 510;1640;major_river;1058;-1;-1;-1;-1;Constantia-Chilia
 =======
@@ -283,11 +284,14 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 512;513;major_river;1056;-1;-1;-1;-1;Belgorod-Birlad
 541;545;major_river;1057;-1;-1;-1;-1;Peresechen-Torki
 >>>>>>> parent of a1e5682d (major fixes to adjacencies in Russia)
+=======
+418;417;major_river;1082;-1;-1;-1;-1;Orsha-Vitebsk
+>>>>>>> parent of f41fe879 (fixed adjacencies for the Danube and the Nile)
 510;511;major_river;1058;-1;-1;-1;-1;Constantia-Galaz
-510;1642;major_river;1058;-1;-1;-1;-1;Constantia-Calarasi
-509;1642;major_river;1059;-1;-1;-1;-1;Karvuna-Calarasi
-508;1642;major_river;1059;-1;-1;-1;-1;Dorostotum-Calarasi
+510;514;major_river;1058;-1;-1;-1;-1;Constantia-Turnu
+509;514;major_river;1059;-1;-1;-1;-1;Karvuna-Turnu
 508;514;major_river;1059;-1;-1;-1;-1;Dorostotum-Turnu
+<<<<<<< HEAD
 507;514;major_river;1059;-1;-1;-1;-1;Tyrnovo-Turnu
 507;1643;major_river;1060;-1;-1;-1;-1;Tyrnovo-Craiova
 506;1643;major_river;1060;-1;-1;-1;-1;Vidin-Craiova
@@ -508,6 +512,74 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 3775;4823;major_river;2093;-1;-1;-1;-1;Cacaxtes-Nankwenakittannook
 3774;4823;major_river;2093;-1;-1;-1;-1;Chichitames-Nankwenakittannook
 
+=======
+507;514;major_river;1060;-1;-1;-1;-1;Nikopolis-Turnu
+507;516;major_river;1060;-1;-1;-1;-1;Nikopolis-Severin
+506;516;major_river;1061;-1;-1;-1;-1;Vidin-Severin
+505;516;major_river;1061;-1;-1;-1;-1;Beograd-Severin
+505;517;major_river;1063;-1;-1;-1;-1;Beograd-Temes
+505;518;major_river;1063;-1;-1;-1;-1;Beograd-Bacs
+462;518;major_river;1063;-1;-1;-1;-1;Krizevci-Bacs
+452;518;major_river;1065;-1;-1;-1;-1;Pecs-Bacs
+452;521;major_river;1065;-1;-1;-1;-1;Pecs-Csanad
+452;522;major_river;1065;-1;-1;-1;-1;Pecs-Pest
+451;522;major_river;1066;-1;-1;-1;-1;Fejer-Pest
+451;444;major_river;1066;-1;-1;-1;-1;Fejer-Esztergom
+450;444;major_river;1067;-1;-1;-1;-1;Sopron-Esztergom
+450;445;major_river;1067;-1;-1;-1;-1;Sopron-Pressburg
+449;445;major_river;1067;-1;-1;-1;-1;Österreich-Pressburg
+449;446;major_river;1067;-1;-1;-1;-1;Österreich-Znojmo
+448;446;major_river;1068;-1;-1;-1;-1;Salzburg-Znojmo
+448;447;major_river;1068;-1;-1;-1;-1;Salzburg-Passau
+448;361;major_river;1068;-1;-1;-1;-1;Salzburg-Niederbayern
+360;361;major_river;1068;-1;-1;-1;-1;Oberbayern-Niederbayern
+315;361;major_river;1069;-1;-1;-1;-1;Kempten-Niederbayern
+315;314;major_river;1069;-1;-1;-1;-1;Kempten-Nürnberg
+315;252;major_river;1069;-1;-1;-1;-1;Kempten-Ulm
+249;252;major_river;1069;-1;-1;-1;-1;Schwaben-Ulm
+249;251;major_river;1069;-1;-1;-1;-1;Schwaben-Fürstenberg
+1297;1331;major_river;1307;-1;-1;-1;-1;Debul-Sonda
+1303;1331;major_river;1307;-1;-1;-1;-1;Ranikot-Sonda
+1303;1137;major_river;1307;-1;-1;-1;-1;Ranikot-Mansura
+1303;1333;major_river;1308;-1;-1;-1;-1;Ranikot-Siwistan
+1138;1333;major_river;1308;-1;-1;-1;-1;Bhakkar-Siwistan
+1138;1175;major_river;1309;-1;-1;-1;-1;Bhakkar-Aror
+1339;1175;major_river;1309;-1;-1;-1;-1;Rajanpur-Aror
+1339;1336;major_river;1309;-1;-1;-1;-1;Rajanpur-Vijnot
+1339;1337;major_river;1310;-1;-1;-1;-1;Rajanpur-Uch
+1375;1337;major_river;1310;-1;-1;-1;-1;Kafirkot-Uch
+1375;1338;major_river;1310;-1;-1;-1;-1;Kafirkot-Multan
+1375;1340;major_river;1310;-1;-1;-1;-1;Kafirkot-Karor
+1191;1340;major_river;1310;-1;-1;-1;-1;Bannu-Karor
+1236;1318;major_river;1311;-1;-1;-1;-1;Candradvipa-Samatata
+1236;1319;major_river;1311;-1;-1;-1;-1;Candradvipa-Bikrampur
+1240;1319;major_river;1311;-1;-1;-1;-1;Kumara Mandala-Bikrampur
+1240;1325;major_river;1312;-1;-1;-1;-1;Kumara Mandala-Madhupur
+1243;1151;major_river;1312;-1;-1;-1;-1;Gauda-Laksmanavati
+1243;1153;major_river;1313;-1;-1;-1;-1;Gauda-Kotivarsa
+1152;1153;major_river;1313;-1;-1;-1;-1;Mudgagiri-Kotivarsa
+1152;1419;major_river;1313;-1;-1;-1;-1;Mudgagiri-Mithila
+1154;1419;major_river;1313;-1;-1;-1;-1;Magadha-Mithila
+1154;1162;major_river;1313;-1;-1;-1;-1;Magadha-Kusinagara
+1251;1162;major_river;1315;-1;-1;-1;-1;Sasaram-Kusinagara
+1251;1166;major_river;1315;-1;-1;-1;-1;Sasaram-Jaunpur
+1251;1163;major_river;1315;-1;-1;-1;-1;Sasaram-Varanasi
+1281;1163;major_river;1315;-1;-1;-1;-1;Chunar-Varanasi
+1328;1163;major_river;1315;-1;-1;-1;-1;Prayaga-Varanasi
+1328;1284;major_river;1315;-1;-1;-1;-1;Prayaga-Bharauli
+1283;1284;major_river;1315;-1;-1;-1;-1;Asni-Bharauli
+1356;1284;major_river;1314;-1;-1;-1;-1;Kanyakubja-Bharauli
+1356;1167;major_river;1314;-1;-1;-1;-1;Kanyakubja-Lakhnau
+1356;1358;major_river;1314;-1;-1;-1;-1;Kanyakubja-Vodamayutja
+1141;1358;major_river;1314;-1;-1;-1;-1;Kol-Vodamayutja
+1141;1173;major_river;1314;-1;-1;-1;-1;Kol-Sambhal
+1365;1173;major_river;1314;-1;-1;-1;-1;Delhi-Sambhal
+1325;1319;major_river;1316;-1;-1;-1;-1;Madhupur-Bikrampur
+1325;1324;major_river;1316;-1;-1;-1;-1;Madhupur-Suvarnagram
+1381;1324;major_river;1316;-1;-1;-1;-1;Pundravardhana-Suvarnagram
+1321;1246;major_river;1317;-1;-1;-1;-1;Kamarupanagara-Goalpara
+789;797;major_river;4064;-1;-1;-1;-1;Neilos
+>>>>>>> parent of f41fe879 (fixed adjacencies for the Danube and the Nile)
 1078;1082;portage;568;-1;-1;-1;-1;Dneiper-Dwina		###PORTAGES
 1089;1093;portage;595;-1;-1;-1;-1;Don-Volga
 1087;1082;portage;419;-1;-1;-1;-1;Lovat-Dwina
