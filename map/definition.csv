@@ -3562,6 +3562,7 @@ province;red;green;blue;x
 2872;2;129;185;Blue Nile1;x
 2873;44;132;58;Blue Nile2;x
 2874;43;63;148;White Nile1;x
+<<<<<<< HEAD
 2875;85;66;21;;x
 2876;127;69;149;;x
 2877;169;72;22;;x
@@ -3580,6 +3581,13 @@ province;red;green;blue;x
 2877;169;72;22;White Nile5;x
 2878;1;75;150;White Nile6;x
 2879;43;78;23;White Nile7;x
+=======
+2875;85;66;21;White Nile3;x #unused
+2876;127;69;149;White Nile4;x #unused
+2877;169;72;22;White Nile5;x #unused
+2878;1;75;150;White Nile6;x #unused
+2879;43;78;23;White Nile7;x #unused
+>>>>>>> parent of 4a656310 (fixed adjacencies in India, fixed mountain barriers)
 2880;85;81;151;Semliki;x
 2881;127;84;24;Katonga;x
 2882;169;87;152;Kazinga;x
@@ -5325,8 +5333,12 @@ province;red;green;blue;x
 4061;46;42;158;Selima;x;
 4062;88;45;31;Nukheila;x;
 4063;130;48;159;Fuka Lolong;x;
+<<<<<<< HEAD
 4064;138;123;185;Nile11;x
 >>>>>>> parent of f41fe879 (fixed adjacencies for the Danube and the Nile)
+=======
+4064;138;123;185;Unused;x #unused
+>>>>>>> parent of 4a656310 (fixed adjacencies in India, fixed mountain barriers)
 4065;4;54;160;Omdurman;x
 4066;46;57;33;Achagua;x
 4067;88;60;161;Zaparo;x

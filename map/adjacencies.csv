@@ -321,7 +321,7 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 252;315;major_river;1067;-1;-1;-1;-1;Ulm-Kempten
 249;252;major_river;1067;-1;-1;-1;-1;Schwaben-Ulm
 249;251;major_river;1067;-1;-1;-1;-1;Schwaben-Furstenburg
-789;798;major_river;2861;-1;-1;-1;-1;Damietta-Tanis		#NILE
+789;798;major_river;2861;-1;-1;-1;-1;Damietta-Tanis      #NILE
 789;799;major_river;2862;-1;-1;-1;-1;Damietta-Rosetta
 790;798;major_river;2863;-1;-1;-1;-1;Sarqihya-Tanis
 796;798;major_river;2863;-1;-1;-1;-1;Cairo-Tanis
@@ -340,19 +340,22 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 793;1326;major_river;2869;-1;-1;-1;-1;Makuria-Napata
 1326;1994;major_river;2870;-1;-1;-1;-1;Napata-Bayuda
 879;1994;major_river;2871;-1;-1;-1;-1;Atbara-Bayuda
-879;1334;major_river;2872;-1;-1;-1;-1;Atbara-Alodia		#BLUE NILE
+879;1334;major_river;2872;-1;-1;-1;-1;Atbara-Alodia    #BLUE NILE
 877;1334;major_river;2872;-1;-1;-1;-1;Kassala-Alodia
 877;880;major_river;2873;-1;-1;-1;-1;Kassala-Sennar
 880;1993;major_river;2873;-1;-1;-1;-1;Sennar-Gezira
 881;1993;major_river;2873;-1;-1;-1;-1;Asosa-Gezira
-1334;4065;major_river;2874;-1;-1;-1;-1;Alodia-Omdurman		#WHITE NILE
+1334;4065;major_river;2874;-1;-1;-1;-1;Alodia-Omdurman     #WHITE NILE
 1334;1335;major_river;2874;-1;-1;-1;-1;Alodia-Kosti
-1297;1331;major_river;1307;-1;-1;-1;-1;Darbeji-Patala		#INDUS
-1137;1297;major_river;1307;-1;-1;-1;-1;Mansura-Darbeji
-1137;1303;major_river;1307;-1;-1;-1;-1;Mansura-Ranikot
-1137;1333;major_river;1308;-1;-1;-1;-1;Ranikot-Siwistan
+1679;587;major_river;1673;-1;-1;-1;-1;Serpukhov-Mozhaysk
+418;417;major_river;1082;-1;-1;-1;-1;Orsha-Vitebsk
+1297;1331;major_river;1307;-1;-1;-1;-1;Debul-Sonda
+1303;1331;major_river;1307;-1;-1;-1;-1;Ranikot-Sonda
+1303;1137;major_river;1307;-1;-1;-1;-1;Ranikot-Mansura
+1303;1333;major_river;1308;-1;-1;-1;-1;Ranikot-Siwistan
 1138;1333;major_river;1308;-1;-1;-1;-1;Bhakkar-Siwistan
 1138;1175;major_river;1309;-1;-1;-1;-1;Bhakkar-Aror
+<<<<<<< HEAD
 1336;1339;major_river;1309;-1;-1;-1;-1;Vijnot-Rajanpur
 1337;1339;major_river;1309;-1;-1;-1;-1;Uch-Rajanpur
 1338;1339;major_river;1309;-1;-1;-1;-1;Multan-Rajanpur
@@ -544,6 +547,8 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 1303;1333;major_river;1308;-1;-1;-1;-1;Ranikot-Siwistan
 1138;1333;major_river;1308;-1;-1;-1;-1;Bhakkar-Siwistan
 1138;1175;major_river;1309;-1;-1;-1;-1;Bhakkar-Aror
+=======
+>>>>>>> parent of 4a656310 (fixed adjacencies in India, fixed mountain barriers)
 1339;1175;major_river;1309;-1;-1;-1;-1;Rajanpur-Aror
 1339;1336;major_river;1309;-1;-1;-1;-1;Rajanpur-Vijnot
 1339;1337;major_river;1310;-1;-1;-1;-1;Rajanpur-Uch
@@ -578,8 +583,11 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 1325;1324;major_river;1316;-1;-1;-1;-1;Madhupur-Suvarnagram
 1381;1324;major_river;1316;-1;-1;-1;-1;Pundravardhana-Suvarnagram
 1321;1246;major_river;1317;-1;-1;-1;-1;Kamarupanagara-Goalpara
+<<<<<<< HEAD
 789;797;major_river;4064;-1;-1;-1;-1;Neilos
 >>>>>>> parent of f41fe879 (fixed adjacencies for the Danube and the Nile)
+=======
+>>>>>>> parent of 4a656310 (fixed adjacencies in India, fixed mountain barriers)
 1078;1082;portage;568;-1;-1;-1;-1;Dneiper-Dwina		###PORTAGES
 1089;1093;portage;595;-1;-1;-1;-1;Don-Volga
 1087;1082;portage;419;-1;-1;-1;-1;Lovat-Dwina
