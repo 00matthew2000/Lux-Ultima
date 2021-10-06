@@ -2089,9 +2089,9 @@ province;red;green;blue;x;x
 2088;86;84;171;Tombigbee2;x
 2089;170;90;172;Hudson1;x
 2090;2;93;45;Hudson2;x
-2091;44;96;173;RioGrande1;x
-2092;86;99;46;RioGrande2;x
-2093;128;102;174;RioGrande3;x
+2091;44;96;173;;x
+2092;86;99;46;;x
+2093;128;102;174;;x
 2094;170;105;47;Diexi;x
 2095;2;108;175;Dzoi;x
 2096;44;111;48;Ngawa;x
@@ -4062,7 +4062,7 @@ province;red;green;blue;x;x
 4061;46;42;158;Selima;x
 4062;88;45;31;Nukheila;x
 4063;130;48;159;Fuka Lolong;x
-4064;138;123;185;;x
+4064;138;123;185;Plaquemines;x
 4065;4;54;160;Omdurman;x
 4066;46;57;33;Achagua;x
 4067;88;60;161;Zaparo;x
@@ -4074,7 +4074,7 @@ province;red;green;blue;x;x
 4073;130;78;164;Hiiumaa;x
 4074;172;81;37;Gatchina;x
 4075;4;84;165;Vepsia;x
-4076;46;87;38;;x
+4076;46;87;38;Penetskuerako;x
 4077;88;90;166;Yup'ik;x
 4078;130;93;39;Inupiaq;x
 4079;172;96;167;Ogasawara Islands;x
@@ -4113,13 +4113,13 @@ province;red;green;blue;x;x
 4112;88;195;56;Las Vegas;x
 4113;130;198;184;La Paz;x
 4114;172;201;57;Yuma;x
-4115;4;204;185;Šyoltozero;x #russia stuff
+4115;4;204;185;Šyoltozero;x
 4116;46;207;58;Petsamo;x
-4117;88;210;186;;x
-4118;130;0;59;;x
-4119;172;3;187;;x
-4120;4;6;60;;x
-4121;46;9;188;;x
+4117;88;210;186;Tesachaddo;x
+4118;130;0;59;Americanople;x
+4119;172;3;187;Christobean;x
+4120;4;6;60;Chaguinola;x
+4121;46;9;188;Warao;x
 4122;88;12;61;;x
 4123;130;15;189;;x
 4124;172;18;62;;x
@@ -4215,10 +4215,10 @@ province;red;green;blue;x;x
 4214;172;75;7;Awkwala;x
 4215;4;78;135;Asunciocaacu;x #paraguay
 4216;46;81;8;Baja;x
-4217;88;84;136;Lower Amazon;x  #Amazon river
-4218;130;87;9;Santmanazon;x   
-4219;172;90;137;Purmenrigo;x
-4220;4;93;10;Upper Amazon;x
+4217;88;84;136;;x
+4218;130;87;9;;x   
+4219;172;90;137;;x
+4220;4;93;10;;x
 4221;46;96;138;Sucumbios;x   #Ecoralombia
 4222;88;99;11;Huanuco;x
 4223;130;102;139;Loretaru;x
@@ -4546,9 +4546,9 @@ province;red;green;blue;x;x
 4545;4;3;200;;x
 4546;46;6;73;;x
 4547;88;9;201;;x
-4548;130;12;74;Orinoco Delta;x #river
+4548;130;12;74;;x
 4549;172;15;202;Illingban;x
-4550;4;18;75;Lower Orinoco;x #river
+4550;4;18;75;;x
 4551;46;21;203;Yupik;x
 4552;88;24;76;Tafunast;x #northafrica
 4553;130;27;204;Insapiangwichan;x #Estiyukon #Estiyukon
@@ -4673,8 +4673,8 @@ province;red;green;blue;x;x
 4672;88;171;36;Lansing;x #MichiganCont
 4673;130;174;164;Milwaukee;x Wisconsin
 4674;172;177;37;Oshadageaohode;x
-4675;4;180;165;Central Peruzion;x #moreamazon
-4676;46;183;38;Upper Peruzion;x
+4675;4;180;165;;x
+4676;46;183;38;;x
 4677;88;186;166;;x
 4678;130;189;39;;x
 4679;172;192;167;;x
@@ -4834,47 +4834,47 @@ province;red;green;blue;x;x
 4833;130;15;144;Yukon3;x
 4834;172;18;17;Yukon4;x
 4835;4;21;145;Yukon5;x
-4836;46;24;18;;x
-4837;88;27;146;;x
-4838;130;30;19;;x
-4839;172;33;147;;x
-4840;4;36;20;;x
-4841;46;39;148;;x
-4842;88;42;21;;x
-4843;130;45;149;;x
+4836;46;24;18;Panama Canal;x
+4837;88;27;146;Magdalena1;x
+4838;130;30;19;Magdalena2;x
+4839;172;33;147;Magdalena3;x
+4840;4;36;20;Cauca1;x
+4841;46;39;148;Orinoco1;x
+4842;88;42;21;Orinoco2;x
+4843;130;45;149;Orinoco3;x
 4844;172;48;22;;x
-4845;4;51;150;Panama Canal;x #Panama Canal
-4846;46;54;23;Americanople;x #this is panama city
-4847;88;57;151;Christobean;x
-4848;130;60;24;Chaguinola;x
-4849;172;63;152;Suez Canal;x #suezcanal
-4850;4;66;25;Noiazon River;x #black amazon
-4851;46;69;153;Lower Purus;x #southwest amazon
-4852;88;72;26;Upper Purus;x #southwest a
-4853;130;75;154;Tapajos River;x #south amazon
-4854;172;78;27;Lower Paraguay;x #aregentine river
-4855;4;81;155;Upper Paraguay;x #west argentine
-4856;46;84;28;Paraguazon;x #north west argentine
-4857;88;87;156;Telez Perez;x #argasone
-4858;130;90;29;Parana River;x #central south amazon
-4859;172;93;157;Plaquemines;x
-4860;4;96;30;Penetskuerako;x #lousiana
-4861;46;99;158;Tesachaddo;x
-4862;88;102;31;Lower Irrawaddy;x #bangelriv
-4863;130;105;159;Upper Irrawaddy;x #bangelriv
-4864;172;108;32;Salween;x #thairiv
-4865;4;111;160;Upper Orinoco;x #river
-4866;46;114;33;Rmehkama;x #SAHARAN DESERT Egyptian wastes
-4867;88;117;161;Alfur;x
-4868;130;120;34;Chiyodaku;x
-4869;172;123;162;Shinjukku;x
-4870;4;126;35;Musandam;x #oman sultanate Hajar duchy
-4871;46;129;163;Buraimi;x
-4872;88;132;36;Azzahira;x
-4873;130;135;164;Dachiliyya;x
-4874;172;138;37;Albatina;x #
-4875;4;141;165;Sharqiyah;x #muscat duchy
-4876;46;144;38;Giza;x #Cario
+4845;4;51;150;;x
+4846;46;54;23;;x
+4847;88;57;151;;x
+4848;130;60;24;;x
+4849;172;63;152;;x
+4850;4;66;25;;x
+4851;46;69;153;;x
+4852;88;72;26;;x
+4853;130;75;154;;x
+4854;172;78;27;;x
+4855;4;81;155;;x
+4856;46;84;28;;x
+4857;88;87;156;;x
+4858;130;90;29;;x
+4859;172;93;157;;x
+4860;4;96;30;;x
+4861;46;99;158;;x
+4862;88;102;31;;x
+4863;130;105;159;;x
+4864;172;108;32;;x
+4865;4;111;160;;x
+4866;46;114;33;;x
+4867;88;117;161;;x
+4868;130;120;34;;x
+4869;172;123;162;;x
+4870;4;126;35;;x
+4871;46;129;163;;x
+4872;88;132;36;;x
+4873;130;135;164;;x
+4874;172;138;37;;x
+4875;4;141;165;;x
+4876;46;144;38;;x
 4877;88;147;166;Shrubramatariya;x #Cairo
 4878;130;150;39;Fujairah;x #dubai
 4879;172;153;167;Bursaid;x

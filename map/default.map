@@ -50,7 +50,6 @@ sea_zones = { 3159 3165 }
 sea_zones = { 3189 3308 }
 #Nile
 sea_zones = { 2861 2870 }
-sea_zones = { 4064 4064 }
 #Blue Nile
 sea_zones = { 2871 2872 }
 #White Nile
@@ -62,7 +61,7 @@ sea_zones = { 1580 1580 }
 sea_zones = { 1786 1786 }
 sea_zones = { 1855 1855 }
 sea_zones = { 1990 1992 }
-sea_zones = { 2082 2093 }
+sea_zones = { 2082 2090 }
 sea_zones = { 2801 2802 }
 sea_zones = { 2823 2823 }
 sea_zones = { 2883 2941 }
@@ -75,7 +74,7 @@ sea_zones = { 3151 3158 }
 sea_zones = { 3166 3188 }
 sea_zones = { 3557 3567 }
 sea_zones = { 3673 3673 }
-sea_zones = { 4826 4835 }
+sea_zones = { 4826 4840 }
 sea_zones = { 4905 4929 }
 
 
@@ -129,6 +128,19 @@ major_rivers =
 	2082 2083 #Connecticut
 	2084 2085 2086 #Alabama
 	2087 2088 #Tombigbee
+	4905 4906 4907 4908 4909 4910 4911 4912 #Mississippi
+	4913 4914 #Red River
+	4915 4916 #Arkansas
+	4917 4918 4919 4920 #Ohio
+	4921 4922 4923 #Tennessee
+	4924 #Cumberland
+	4925 4926 4927 4928 #Missouri
+	4929 #Illinois
+	4830 #Columbia
+	4831 4832 4833 4834 4835 #Yukon
+	4836 #Panama Canal
+	4837 4838 4839 #Magdalena
+	4840 #Cauca
 }
 
 externals = { 1509 1510 1512 } # Silkroad Paths to china

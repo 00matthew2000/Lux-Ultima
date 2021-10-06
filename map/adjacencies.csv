@@ -348,10 +348,10 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 3801;3802;major_river;2087;-1;-1;-1;-1;Alabama-Tohome
 3802;3803;major_river;2088;-1;-1;-1;-1;Tohome-Napochi
 3803;3804;major_river;2088;-1;-1;-1;-1;Napochi-Chickasaw
-3788;4859;major_river;4905;-1;-1;-1;-1;Chitimacha-Plaquemines		#MISSISSIPPI
+3788;4064;major_river;4905;-1;-1;-1;-1;Chitimacha-Plaquemines		#MISSISSIPPI
 3788;4801;major_river;4905;-1;-1;-1;-1;Chitimacha-Tehcorriko
 4799;4801;major_river;4905;-1;-1;-1;-1;Tangipahoa-Tehcorriko
-4799;4860;major_river;4905;-1;-1;-1;-1;Tangipahoa-Penetskuerako
+4799;4076;major_river;4905;-1;-1;-1;-1;Tangipahoa-Penetskuerako
 3789;4799;major_river;4905;-1;-1;-1;-1;Natchitoches-Tangipahoa
 3789;3793;major_river;4906;-1;-1;-1;-1;Natchitoches-Natchez
 3793;4802;major_river;4906;-1;-1;-1;-1;Natchez-Anknpelofvukukuce
@@ -373,7 +373,7 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 4402;4414;major_river;4912;-1;-1;-1;-1;Souk-Sioux
 4413;4414;major_river;4912;-1;-1;-1;-1;Wahpetan-Sioux
 4411;4414;major_river;4912;-1;-1;-1;-1;Sante-Sioux
-3789;4860;major_river;4913;-1;-1;-1;-1;Natchitoches-Penetskuerako		#RED RIVER
+3789;4076;major_river;4913;-1;-1;-1;-1;Natchitoches-Penetskuerako		#RED RIVER
 3787;3789;major_river;4913;-1;-1;-1;-1;Adai-Natchitoches
 3789;4804;major_river;4913;-1;-1;-1;-1;Natchitoches-Mekkomekusap
 4803;4814;major_river;4914;-1;-1;-1;-1;Ohkopvnetpivnne-Ohmaklomarkanas
@@ -439,12 +439,17 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 4539;4543;major_river;4833;-1;-1;-1;-1;Yukonaska-Yukuk
 4524;4539;major_river;4834;-1;-1;-1;-1;Matayuko-Yukonaska
 4524;4557;major_river;4834;-1;-1;-1;-1;Matayuko-Tutchone
-3770;3777;major_river;2091;-1;-1;-1;-1;Borrado-Coahuilteco		#RIO GRANDE
-3775;4821;major_river;2091;-1;-1;-1;-1;Cacaxtes-Paccittympin
-3775;3776;major_river;2092;-1;-1;-1;-1;Cacaxtes-Tuintsunde
-3775;4091;major_river;2092;-1;-1;-1;-1;Cacaxtes-Manahodesa
-3775;4823;major_river;2093;-1;-1;-1;-1;Cacaxtes-Nankwenakittannook
-3774;4823;major_river;2093;-1;-1;-1;-1;Chichitames-Nankwenakittannook
+3861;4119;major_river;4836;-1;-1;-1;-1;Panama-Christobean		#PANAMA CANAL
+3861;4118;major_river;4836;-1;-1;-1;-1;Panama-Americanople
+3869;3870;major_river;4837;-1;-1;-1;-1;Cartagena-Magdalena		#MAGDALENA & CAUCA
+3870;3908;major_river;4838;-1;-1;-1;-1;Magdalena-Magangue
+3871;3908;major_river;4838;-1;-1;-1;-1;Chimila-Magangue
+3904;3908;major_river;4838;-1;-1;-1;-1;Motilones-Magangue
+3905;3908;major_river;4839;-1;-1;-1;-1;Moniquira-Magangue
+3905;3910;major_river;4839;-1;-1;-1;-1;Moniquira-Mariquita
+3907;3910;major_river;4839;-1;-1;-1;-1;Bogota-Mariquita
+3869;3908;major_river;4840;-1;-1;-1;-1;Cartagena-Magangue
+3868;3908;major_river;4840;-1;-1;-1;-1;Sinu-Magangue
 
 1078;1082;portage;568;-1;-1;-1;-1;Dneiper-Dwina		###PORTAGES
 1089;1093;portage;595;-1;-1;-1;-1;Don-Volga
