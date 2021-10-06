@@ -1272,21 +1272,21 @@ aztec_group = {
 	ai_convert_same_group = 1 # try to convert if ai_zeal is high
 	ai_convert_other_group = 2 # always try to convert
 	
-	aztec = {
+	quetzal = {
 		crusade_name = CRUSADE
 		graphical_culture = mesoamericangfx
 		color = { 255 100 25 }
 		icon = 15
 		heresy_icon = 16
 		
-		high_god_name = GOD_HUITZ
+		high_god_name = GOD_QUETZALCOATL
 		
 		piety_name = PIETY
-		priest_title = PRIEST
+		priest_title = TLAMACAZQUI
 		scripture_name = THE_LEGENDS
 		god_names = {
-			GOD_HUITZ GOD_TLALOC GOD_QUETZALCOATL GOD_FEATHERS GOD_TEZCAT
-			GOD_XIPE_TOTEC GOD_CHALCHIUTLICUE GOD_CENTEOTL
+			GOD_MATLALCUEYE GOD_TLALOC GOD_CITLALLICUE GOD_TEZCAT
+			GOD_XIPE_TOTEC GOD_TONACACIHUATL GOD_MIXCOATL
 			GOD_XIUHTECUHTLI
 		}
 		evil_god_names = {
@@ -29943,6 +29943,342 @@ native_american_group = {
 		max_consorts = 5
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
 		reformed = animism_reformed
+
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 1 # AI aggression factor
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		
+	}
+
+	tupan_reformed = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		secondary_event_pictures = odinane
+
+		icon = 35
+		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.97 0.55 0.27 }
+		alternate_start = { always = no }
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_RITUALS
+		priest_title = KARAI
+		
+		high_god_name = "Nhanderuvucu"
+		
+		god_names = {
+			"Pytajovai" "Angatupyry" "Kurupi" "Monai" "Mboi Tui" 
+		}
+		evil_god_names = {
+			"Tau" "Luison"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		short_reign_opinion_year_mult = 1.5
+
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = inti
+		aggression = 1.3 # AI aggression factor
+	}
+	
+
+	tupan = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 0.31 0.97 0.21 }
+
+		scripture_name = THE_RITUALS
+		priest_title = KARAI
+		
+		high_god_name = "Nhanderuvucu"
+		
+		god_names = {
+			"Pytajovai" "Angatupyry" "Kurupi" "Monai" "Mboi Tui" 
+		}
+		evil_god_names = {
+			"Tau" "Luison"
+		}
+		
+		unit_modifier = {		
+			garrison_size = 0.3
+			levy_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.9
+			light_infantry_defensive = 0.9
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.7
+			knights_defensive = 0.9
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.7
+			camel_cavalry_defensive = 0.7
+			war_elephants_defensive = 0.7
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+	
+		max_consorts = 5
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = inti_reformed
+
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 1 # AI aggression factor
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		
+	}
+
+	chiminigagua_reformed = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		secondary_event_pictures = odinane
+
+		icon = 35
+		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.77 0.25 0.74 }
+		alternate_start = { always = no }
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SUKYA
+		
+		high_god_name = "Lapta"
+		
+		god_names = {
+			"Alwani" "Lidawanka" "Kati" "Sinslakadawanka" "Slilma"  
+		}
+		evil_god_names = {
+			"Lasadawanka" "Pruradawanka"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		short_reign_opinion_year_mult = 1.5
+
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = inti
+		aggression = 1.3 # AI aggression factor
+	}
+	
+
+	chiminigagua = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 0.89 0.77 0.20 }
+
+		scripture_name = THE_OGQUES
+		priest_title = OBGUES
+		
+		high_god_name = "Chiminigagua"
+		
+		god_names = {
+			"Chia" "Bochica" "Nencatacoa" "Chibchacum" "Súe" "Chibafruime"
+		}
+		evil_god_names = {
+			"Guahaioque" 
+		}
+		
+		unit_modifier = {		
+			garrison_size = 0.3
+			levy_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.9
+			light_infantry_defensive = 0.9
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.7
+			knights_defensive = 0.9
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.7
+			camel_cavalry_defensive = 0.7
+			war_elephants_defensive = 0.7
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+	
+		max_consorts = 5
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = inti_reformed
+
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 1 # AI aggression factor
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		
+	}
+
+	lapta_reformed = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		secondary_event_pictures = odinane
+
+		icon = 35
+		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.36 0.12 0.10 }
+		alternate_start = { always = no }
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SUKYA
+		
+		high_god_name = "Lapta"
+		
+		god_names = {
+			"Alwani" "Lidawanka" "Kati" "Sinslakadawanka" "Slilma"  
+		}
+		evil_god_names = {
+			"Lasadawanka" "Pruradawanka"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		short_reign_opinion_year_mult = 1.5
+
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = inti
+		aggression = 1.3 # AI aggression factor
+	}
+	
+
+	lapta = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 0.89 0.15 0.21 }
+
+		scripture_name = THE_LEGENDS
+		priest_title = SUKYA
+		
+		high_god_name = "Lapta"
+		
+		god_names = {
+			"Alwani" "Lidawanka" "Kati" "Sinslakadawanka" "Slilma"  
+		}
+		evil_god_names = {
+			"Lasadawanka" "Pruradawanka"
+		}
+		
+		unit_modifier = {		
+			garrison_size = 0.3
+			levy_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.9
+			light_infantry_defensive = 0.9
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.7
+			knights_defensive = 0.9
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.7
+			camel_cavalry_defensive = 0.7
+			war_elephants_defensive = 0.7
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+	
+		max_consorts = 5
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = inti_reformed
 
 		short_reign_opinion_year_mult = 2
 		
