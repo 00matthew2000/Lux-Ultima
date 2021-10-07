@@ -1,27 +1,16 @@
 1019910001={
 	name=Atkonartok
 	dynasty=1009990067
-	dna="iilnpocnifl"
-	culture=tuniq religion=inuit_pagan
-	martial=7 diplomacy=7 stewardship=6 intrigue=4 learning=4
-	add_trait=charismatic_negotiator add_trait=wroth add_trait=honest add_trait=cynical add_trait=gregarious 
-	add_trait=depressed 
+	culture=tuniq 
+	religion=inuit_pagan
 	719.4.8={ birth=yes }
 	773.10.14={ death=yes }
 }
 1019910002={
 	name=Tupilek
 	dynasty=1009990067
-	dna="kpidpohkijl"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=7 stewardship=8 intrigue=7 learning=6
-	add_trait=flamboyant_schemer add_trait=humble add_trait=just add_trait=zealous add_trait=paranoid 
-	add_trait=kind 
-	father=1019910001	#Atkonart
-	mother=1019917790
-	747.1.1={ #Date is fictional
-		add_spouse=1019917791
-	}
+	culture=tuniq 
+	religion=inuit_pagan
 	741.1.17={ birth=yes }
 	810.12.1={ death=yes }
 }
@@ -29,7 +18,6 @@
 	name=Pamiiruq
 	female=yes
 	dynasty=1009990067
-	dna="ijfnhocogjl"
 	culture=tuniq religion=inuit_pagan
 	father=1019910001	#Atkonartok
 	mother=1019917790
