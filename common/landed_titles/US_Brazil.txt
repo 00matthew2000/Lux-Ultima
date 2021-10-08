@@ -949,29 +949,8 @@ e_brazil = {
 			color={ 45 14 31 }
 			color2={ 220 220 220 }
 			
-			capital = 3980 # Manaus
+			capital = 3978 # Santarem
 			
-			c_manaus = {
-
-				color={ 15 24 189 }
-				color2={ 220 220 220 }
-				
-				holy_site=south_american
-				holy_site=south_american_reformed
-				
-				b_manaus = {
-				}
-				b_manaus-ii = {
-				}
-				b_manaus-iii = {
-				}
-				b_manaus-iv = {
-				}
-				b_manaus-v = {
-				}
-				b_manaus-vi = {
-				}
-			}
 			c_rio_madeira = {
 
 				color={ 65 124 159 }
@@ -1127,8 +1106,7 @@ e_brazil = {
 			}
 		}
 		d_grao_para = {
-
-			color={ 177 68 178 }
+			color={ 140 26 50 }
 			color2={ 220 220 220 }
 			
 			capital = 3979 # Para
@@ -1145,6 +1123,18 @@ e_brazil = {
 				b_para-iii = {
 				}
 				b_para-iv = {
+				}
+			}
+			c_muturu = {
+
+				color={ 29 198 219 }
+				color2={ 220 220 220 }
+				
+				b_muturu = {
+				}
+				b_muturu-ii = {
+				}
+				b_muturu-iii = {
 				}
 			}
 			c_tucurui = {
@@ -1184,8 +1174,54 @@ e_brazil = {
 				}
 			}
 		}
-		d_amapa = {
+		d_manaus = {
+			color = { 52 126 74 }
+			color2 = { 220 220 220 }
+			
+			capital = 3980 # Manaus
+			
+			c_manaus = {
 
+				color={ 98 132 126 }
+				color2={ 220 220 220 }
+				
+				holy_site=south_american
+				holy_site=south_american_reformed
+				
+				b_manaus = {
+				}
+				b_manaus-ii = {
+				}
+				b_manaus-iii = {
+				}
+				b_manaus-iv = {
+				}
+				b_manaus-v = {
+				}
+				b_manaus-vi = {
+				}
+			}
+			c_guyana = {
+
+				color={ 69 88 29 }
+				color2={ 220 220 220 }
+				
+				b_guyana = {
+				}
+				b_guyana-ii = {
+				}
+				b_guyana-iii = {
+				}
+			}
+			c_zoe = {
+				color = { 172 18 62 }
+				
+				b_surubiu = {}
+				b_tumuk_humak = {}
+				b_curua = {}
+			}
+		}
+		d_amapa = {
 			color={ 139 182 126 }
 			color2={ 220 220 220 }
 			
@@ -1217,33 +1253,15 @@ e_brazil = {
 				b_oiapoque-iii = {
 				}
 			}
-			c_muturu = {
-
-				color={ 29 198 219 }
-				color2={ 220 220 220 }
+			c_wayampi = {
+				color = { 88 12 61 }
 				
-				b_muturu = {
-				}
-				b_muturu-ii = {
-				}
-				b_muturu-iii = {
-				}
-			}
-			c_guyana = {
-
-				color={ 69 88 29 }
-				color2={ 220 220 220 }
-				
-				b_guyana = {
-				}
-				b_guyana-ii = {
-				}
-				b_guyana-iii = {
-				}
+				b_takweniwi = {}
+				b_ytuwasu = {}
+				b_pairakae = {}
 			}
 		}
 		d_suriname = {
-
 			color={ 174 166 54 }
 			color2={ 220 220 220 }
 			
@@ -1286,6 +1304,12 @@ e_brazil = {
 				}
 				b_paramaribo-iii = {
 				}
+			}
+			c_kasuela = {
+				color = { 130 15 189 }
+				
+				b_kasuela = {}
+				b_kumaka = {}
 			}
 		}
     }

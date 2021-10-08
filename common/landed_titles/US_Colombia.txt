@@ -404,8 +404,7 @@ e_colombia = {
 				}
 			}
 		}
-              }
-
+	}
 	k_venezuela = {
 
 		color={ 69 220 216 }
@@ -780,16 +779,18 @@ e_colombia = {
 				}
 			}
 			c_orinoco = {
-
-				color={ 189 194 31 }
-				color2={ 220 220 220 }
+				color={ 110 17 0 }
 				
-				b_orinoco = {
-				}
-				b_orinoco-ii = {
-				}
-				b_orinoco-iii = {
-				}
+				b_tucupita = {}
+				b_capure = {}
+				b_guayo = {}
+			}
+			c_warao = {
+				color={ 46 9 188 }
+				
+				b_curiapo = {}
+				b_piacoa = {}
+				b_imataca = {}
 			}
 			c_demerara = {
 
