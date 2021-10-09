@@ -945,14 +945,12 @@ e_brazil = {
 		capital = 3980 # Manaus
 
 		d_eastern_amazon = {
-
 			color={ 45 14 31 }
 			color2={ 220 220 220 }
 			
-			capital = 3978 # Santarem
+			capital = 3973 # Maues
 			
 			c_rio_madeira = {
-
 				color={ 65 124 159 }
 				color2={ 220 220 220 }
 				
@@ -964,7 +962,6 @@ e_brazil = {
 				}
 			}
 			c_juruena = {
-
 				color={ 135 117 43 }
 				color2={ 220 220 220 }
 				
@@ -976,7 +973,6 @@ e_brazil = {
 				}
 			}
 			c_xingu = {
-
 				color={ 75 54 1 }
 				color2={ 220 220 220 }
 				
@@ -987,19 +983,44 @@ e_brazil = {
 				b_xingu-iii = {
 				}
 			}
-			c_santarem = {
-
-				color={ 45 74 86 }
+			c_xipaya = {
+				color = { 127 198 14 }
+				
+				b_tukama = {}
+				b_iriri = {}
+			}
+			c_kuruaya = {
+				color = { 169 201 142 }
+				
+				b_itauba = {}
+				b_bau = {}
+			}
+			c_menkragnoti = {
+				color = { 1 204 15 }
+				
+				b_menkragnotire = {}
+				b_kubenkokre = {}
+				b_matupa = {}
+			}
+			c_muturu = {
+				color={ 29 198 219 }
 				color2={ 220 220 220 }
 				
-				b_santarem1 = {
+				b_itaituba = {
 				}
-				b_santarem-ii = {
+				b_muturu-ii = {
 				}
-				b_santarem-iii = {
+				b_muturu-iii = {
 				}
 			}
-
+			c_mundukuru = {
+				color = { 4 21 190 }
+				
+				b_jacareacanga = {}
+				b_cururu = {}
+				b_coata = {}
+				b_urucurituba = {}
+			}
 		}
 		d_western_amazon = {
 
@@ -1125,16 +1146,16 @@ e_brazil = {
 				b_para-iv = {
 				}
 			}
-			c_muturu = {
+			c_santarem = {
 
-				color={ 29 198 219 }
+				color={ 45 74 86 }
 				color2={ 220 220 220 }
 				
-				b_muturu = {
+				b_santarem1 = {
 				}
-				b_muturu-ii = {
+				b_santarem-ii = {
 				}
-				b_muturu-iii = {
+				b_santarem-iii = {
 				}
 			}
 			c_tucurui = {
