@@ -1025,7 +1025,6 @@ e_brazil = {
 			capital = 3972 # Barcelos
 			
 			c_barcelos = {
-
 				color={ 55 29 85 }
 				color2={ 220 220 220 }
 				
@@ -1038,8 +1037,15 @@ e_brazil = {
 				b_barcelos-iv = {
 				}
 			}
+			c_araca = {
+				color = { 4 93 10 }
+				color2={ 220 220 220 }
+				
+				b_cucui = {}
+				b_uanaraca = {}
+				b_maturaca = {}
+			}
 			c_upper_amazon = {
-
 				color={ 35 224 153 }
 				color2={ 220 220 220 }
 				
@@ -1050,8 +1056,14 @@ e_brazil = {
 				b_upper_amazon-iii = {
 				}
 			}
+			c_yanomami = {
+				color = { 172 90 137 }
+				color2={ 220 220 220 }
+				
+				b_surucucu = {}
+				b_uiaiacas = {}
+			}
 			c_rio_branco = {
-
 				color={ 141 57 89 }
 				color2={ 220 220 220 }
 				
