@@ -30404,6 +30404,341 @@ native_american_group = {
 		
 	}
 
+	aiwamdzu_reformed = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		secondary_event_pictures = odinane
+
+		icon = 35
+		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.25 0.55 0.15 }
+		alternate_start = { always = no }
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		high_god_name = "Aiwamdzu"
+		
+		god_names = {
+			GOD_THE_SPIRITS "The Animals" "Change and Discovery"
+		}
+		evil_god_names = {
+			"Death"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		short_reign_opinion_year_mult = 1.5
+
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = south_american
+		aggression = 0.5 # AI aggression factor
+	}
+	
+
+	aiwamdzu = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 0.89 0.09 0.04 }
+
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		high_god_name = "Aiwamdzu"
+		
+		god_names = {
+			GOD_THE_SPIRITS "The Animals" "Change and Discovery"
+		}
+		evil_god_names = {
+			"Death"
+		}
+		
+		unit_modifier = {		
+			garrison_size = 0.3
+			levy_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.8
+			light_infantry_defensive = 0.8
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.7
+			knights_defensive = 0.8
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.6
+			camel_cavalry_defensive = 0.6
+			war_elephants_defensive = 0.6
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+	
+		max_consorts = 5
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = south_american_reformed
+
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 0.2 # AI aggression factor
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		
+	}
+
+	tsarutama_reformed = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		secondary_event_pictures = odinane
+
+		icon = 35
+		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.79 0.03 0.16 }
+		alternate_start = { always = no }
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = WISHINU
+		
+		high_god_name = "Nungui and Tsungi"
+		
+		god_names = {
+			"Pangi" "Wampang" "Tensak" "Arutam" "Etsa" "Nantu"
+		}
+		evil_god_names = {
+			"The Natema Witches"
+		}
+
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		short_reign_opinion_year_mult = 1.5
+
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = south_american
+		aggression = 0.5 # AI aggression factor
+	}
+	
+
+	tsarutama = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 0.44 0.47 0.49 }
+
+		scripture_name = THE_LEGENDS
+		priest_title = WISHINU
+		
+		high_god_name = "Nungui and Tsungi"
+		
+		god_names = {
+			"Pangi" "Wampang" "Tensak" "Arutam" "Etsa" "Nantu"
+		}
+		evil_god_names = {
+			"The Natema Witches"
+		}
+		
+		unit_modifier = {		
+			garrison_size = 0.3
+			levy_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.8
+			light_infantry_defensive = 0.8
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.7
+			knights_defensive = 0.8
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.6
+			camel_cavalry_defensive = 0.6
+			war_elephants_defensive = 0.6
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+	
+		max_consorts = 5
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = south_american_reformed
+
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 0.2 # AI aggression factor
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		
+	}
+	
+	kaaulayawaa_reformed = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		secondary_event_pictures = odinane
+
+		icon = 35
+		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.15 0.78 0.82 }
+		alternate_start = { always = no }
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_JAYEECHI
+		priest_title = OUTSHI
+		
+		high_god_name = "Maleiwa"
+		
+		god_names = {
+			"Juya" "Wanuluu" "Akalpui" "Juyain" "Keeralia"
+		}
+		evil_god_names = {
+			"Jaguar" "Pulowi" "The Yoluja" "The Oustaa"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		short_reign_opinion_year_mult = 1.5
+
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = south_american
+		aggression = 0.5 # AI aggression factor
+	}
+	
+
+	kaaulayawaa = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 0.71 0.41 0.27 }
+
+		scripture_name = THE_JAYEECHI
+		priest_title = OUTSHI
+		
+		high_god_name = "Maleiwa"
+		
+		god_names = {
+			"Juya" "Wanuluu" "Akalpui" "Juyain" "Keeralia"
+		}
+		evil_god_names = {
+			"Jaguar" "Pulowi" "The Yoluja" "The Oustaa"
+		}
+		
+		unit_modifier = {		
+			garrison_size = 0.3
+			levy_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.8
+			light_infantry_defensive = 0.8
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.7
+			knights_defensive = 0.8
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.6
+			camel_cavalry_defensive = 0.6
+			war_elephants_defensive = 0.6
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+	
+		max_consorts = 5
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = south_american_reformed
+
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 0.2 # AI aggression factor
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		
+	}
+	
 	south_american_reformed = {
 		graphical_culture = mesoamericangfx
 		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
