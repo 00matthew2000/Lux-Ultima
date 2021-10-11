@@ -1,19 +1,16 @@
 e_brazil = {
-
 	color={ 254 223 0 }
 	color2={ 220 220 220 }
 
 	capital = 4013 # Bahia
 
 	k_northern_brazil = {
-
 		color={ 151 132 0 }
 		color2={ 220 220 220 }
 
 		capital = 4013 # Bahia
 
 		d_ceara = {
-
 			color={ 34 46 164 }
 			color2={ 220 220 220 }
 			
@@ -59,7 +56,6 @@ e_brazil = {
 			}
 		}
 		d_pontal = {
-
 			color={ 214 186 81 }
 			color2={ 220 220 220 }
 			
@@ -105,7 +101,6 @@ e_brazil = {
 			}
 		}
 		d_maranhao = {
-
 			color={ 114 176 64 }
 			color2={ 220 220 220 }
 			
@@ -175,7 +170,6 @@ e_brazil = {
 			}
 		}
 		d_piaui = {
-
 			color={ 164 126 64 }
 			color2={ 220 220 220 }
 			
@@ -221,7 +215,6 @@ e_brazil = {
 			}
 		}
 		d_pernambuco = {
-
 			color={ 117 173 21 }
 			color2={ 220 220 220 }
 
@@ -291,7 +284,6 @@ e_brazil = {
 			}
 		}
 		d_sao_francisco = {
-
 			color={ 57 13 92 }
 			color2={ 220 220 220 }
 
@@ -361,7 +353,6 @@ e_brazil = {
 			}
 		}
 		d_bahia = {
-
 			color={ 45 64 71 }
 			color2={ 220 220 220 }
 			
@@ -437,14 +428,12 @@ e_brazil = {
 		}
     }
 	k_southern_brazil = {
-
 		color={ 106 85 0 }
 		color2={ 220 220 220 }
 
 		capital = 4040 # Rio de Janeiro
 
 		d_rio_de_janeiro = {
-
 			color={ 185 58 149 }
 			color2={ 220 220 220 }
 			
@@ -509,7 +498,6 @@ e_brazil = {
 			}
 		}
 		d_diamantina = {
-
 			color={ 195 112 157 }
 			color2={ 220 220 220 }
 			
@@ -555,7 +543,6 @@ e_brazil = {
 			}
 		}
 		d_goias = {
-
 			color={ 155 111 12 }
 			color2={ 220 220 220 }
 			
@@ -625,7 +612,6 @@ e_brazil = {
 			}
 		}
 		d_mato_grosso = {
-
 			color={ 185 232 16 }
 			color2={ 220 220 220 }
 			
@@ -683,7 +669,6 @@ e_brazil = {
 			}
 		}
 		d_ofaie = {
-
 			color={ 125 149 50 }
 			color2={ 220 220 220 }
 			
@@ -729,7 +714,6 @@ e_brazil = {
 			}
 		}
 		d_minas_gerais = {
-
 			color={ 29 42 89 }
 			color2={ 220 220 220 }
 			
@@ -787,7 +771,6 @@ e_brazil = {
 			}
 		}
 		d_sao_paulo = {
-
 			color={ 149 52 79 }
 			color2={ 220 220 220 }
 			
@@ -833,7 +816,6 @@ e_brazil = {
 			}
 		}
 		d_guayra = {
-
 			color={ 149 52 219 }
 			color2={ 220 220 220 }
 			
@@ -879,7 +861,6 @@ e_brazil = {
 			}
 		}
 		d_rio_grande_do_sul = {
-
 			color={ 169 132 69 }
 			color2={ 220 220 220 }
 			
@@ -938,7 +919,6 @@ e_brazil = {
 		}
 	}
 	k_amazonas = {
-
 		color={ 88 183 32 }
 		color2={ 220 220 220 }
 
@@ -960,6 +940,13 @@ e_brazil = {
 				}
 				b_rio_madeira-iii = {
 				}
+			}
+			c_bohura = {
+				color = { 88 84 136 }
+				color2 = { 220 220 220 }
+				
+				b_tapaua = {}
+				b_apipica = {}
 			}
 			c_juruena = {
 				color={ 135 117 43 }
@@ -1015,15 +1002,23 @@ e_brazil = {
 			}
 			c_mundukuru = {
 				color = { 4 21 190 }
+				color2 = { 220 220 220 }
 				
 				b_jacareacanga = {}
 				b_cururu = {}
 				b_coata = {}
 				b_urucurituba = {}
 			}
+			c_apiaka = {
+				color = { 46 24 63 }
+				color2 = { 220 220 220 }
+				
+				b_apiaka = {}
+				b_kayabi = {}
+				b_mairobi = {}
+			}
 		}
 		d_western_amazon = {
-
 			color={ 187 33 93 }
 			color2={ 220 220 220 }
 
@@ -1068,7 +1063,6 @@ e_brazil = {
 				}
 			}
 			c_jurua = {
-
 				color={ 135 132 199 }
 				color2={ 220 220 220 }
 				
@@ -1079,9 +1073,15 @@ e_brazil = {
 				b_jurua-iii = {
 				}
 			}
+			c_ituxi = {
+				color = { 130 87 9 }
+				color2 = { 220 220 220 }
+				
+				b_labrea = {}
+				b_samauma = {}
+			}
 		}
 		d_guapore = {
-
 			color={ 127 193 51 }
 			color2={ 220 220 220 }
 
