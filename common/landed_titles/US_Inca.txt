@@ -148,7 +148,7 @@ e_inca = {
 			color={ 157 43 52 }
 			color2={ 220 220 220 }
 
-			capital = 4233 # iquitos
+			capital = 4233 # Iquitos
 			
 			c_iquitos = {
 
@@ -195,9 +195,17 @@ e_inca = {
 				b_bagazan = {}
 				b_chinganaza = {}
 			}
+			c_puinahua = {
+				color={ 88 162 191 }
+				color2={ 220 220 220 }
+				
+				b_yanayacu = {}
+				b_maipuco = {}
+				b_pucacuru = {}
+				b_arauante = {}
+			}
 		}
 		d_cajamarca = {
-
 			color={ 187 93 181 }
 			color2={ 220 220 220 }
 
@@ -220,8 +228,16 @@ e_inca = {
 				b_qasamarka-iv = {
 				}
 			}
+			c_marcahuamachuco = {
+				color={ 46 174 193 }
+				color2={ 220 220 220 }
+				
+				b_marcahuamachuco = {}
+				b_huiracochapampa = {}
+				b_sartimbamba = {}
+				b_yamobamba = {}
+			}
 			c_pisqupampa = {
-
 				color={ 75 74 149 }
 				color2={ 220 220 220 }
 				
@@ -256,6 +272,14 @@ e_inca = {
 				b_wankapampa-iii = {
 				}
 			}
+			c_bagua = {
+				color={ 4 171 65 }
+				color2={ 220 220 220 }
+				
+				b_bagua = {}
+				b_papayacu = {}
+				b_aramango = {}
+			}
 			c_muyupampa = {
 				color={ 35 125 35 }
 				color2={ 220 220 220 }
@@ -266,15 +290,6 @@ e_inca = {
 				}
 				b_muyupampa-iii = {
 				}
-			}
-			c_puinahua = {
-				color={ 88 162 191 }
-				color2={ 220 220 220 }
-				
-				b_yanayacu = {}
-				b_maipuco = {}
-				b_pucacuru = {}
-				b_arauante = {}
 			}
 		}
 		d_chimor = {
@@ -348,7 +363,6 @@ e_inca = {
 			}
 		}
 		d_huanuco = {
-
 			color={ 149 162 206 }
 			color2={ 220 220 220 }
 			
@@ -392,17 +406,21 @@ e_inca = {
 				b_shawsha-iii = {
 				}
 			}
+			c_tokachi = {
+				color={ 130 180 194 }
+				color2={ 220 220 220 }
+				
+				b_tokachi = {}
+				b_saposoa = {}
+				b_shunte = {}
+			}
 			c_wanuku = {
-
 				color={ 159 58 79 }
 				color2={ 220 220 220 }
 				
-				b_wanuku = {
-				}
-				b_wanuku-ii = {
-				}
-				b_wanuku-iii = {
-				}
+				b_wanuku = {}
+				b_wanuku-ii = {}
+				b_wanuku-iii = {}
 			}
 			c_waraq = {
 
@@ -417,15 +435,65 @@ e_inca = {
 				}
 			}
 		}
+		d_ucayali = {
+			color={ 44 166 24 }
+			color2={ 220 220 220 }
+			
+			capital = 4534 # Inahuaya
+			
+			c_inahuaya = {
+				color={ 172 183 67 }
+				color2={ 220 220 220 }
+				
+				b_inahuaya = {}
+				b_sarayacu = {}
+			}
+			c_shipibo = {
+				color={ 4 186 195 }
+				color2={ 220 220 220 }
+				
+				b_may_ushin = {}
+				b_atalaya = {}
+				b_oventeni = {}
+			}
+			c_contamana = {
+				color={ 46 189 68 }
+				color2={ 220 220 220 }
+				
+				b_contamana = {}
+				b_cumaseba = {}
+				b_pahoyan = {}
+			}
+			c_iskonawa = {
+				color={ 130 195 69 }
+				color2={ 220 220 220 }
+				
+				b_masisea = {}
+				b_anguillal = {}
+			}
+			c_murunahua = {
+				color = { 46 204 198 }
+				color2 = { 220 220 220 }
+				
+				b_sepahua = {}
+				b_mapuyo = {}
+			}
+			c_nauas = {
+				color = { 88 207 71 }
+				color2 = { 220 220 220 }
+				
+				b_nauas = {}
+				b_tatayuba = {}
+				b_botafago = {}
+			}
+		}
 		d_kamana = {
-
 			color={ 164 66 4 }
 			color2={ 220 220 220 }
 			
 			capital = 3941 # Kamana
 			
 			c_kamana = {
-
 				color={ 108 7 175 }
 				color2={ 220 220 220 }
 				
