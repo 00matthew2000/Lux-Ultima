@@ -41442,8 +41442,7 @@ e_bengal = {
 				color = { 213 84 54 }
 				
 				b_ratnapura = {}
-				b_pali = {}
-				b_tummana = {}
+				b_munda = {}
 				b_ghutku = {}
 				b_parsada = {}
 				b_uslapur = {}
@@ -41659,7 +41658,6 @@ e_bengal = {
 				b_peruru = {}
 				b_medaram = {}
 				b_nariapur = {}
-				b_yellandu = {}
 			}
 			c_nandapur = {
 				color = { 209 170 48 }
@@ -41807,7 +41805,7 @@ e_deccan = {
 				color = { 38 212 136 }
 				
 				b_vatsagulma = {}
-				b_parnakheta = {}
+				b_parnakheta1 = {}
 				b_kakandi = {}
 				b_devapur = {}
 				b_amdura = {}
@@ -41851,7 +41849,6 @@ e_deccan = {
 				b_visapur = {}
 				b_chandrapur = {}
 				b_tukum = {}
-				b_rajura = {}
 				b_kothari = {}
 				b_wirur = {}
 				b_lathi = {}
@@ -41896,7 +41893,6 @@ e_deccan = {
 				b_bhor = {}
 				b_vadgaon = {}
 				b_hinjewadi = {}
-				b_khed = {}
 			}
 			c_thana = {
 				color = { 150 232 198 }
@@ -41915,7 +41911,7 @@ e_deccan = {
 			color={ 120 50 90 }
 			color2={ 255 255 255 }
 			
-			capital = 1213 # Kondana
+			capital = 1264 # Nandurbar
 			
 			c_nandurbar = {
 				color={ 120 50 110 }
@@ -42440,7 +42436,7 @@ e_deccan = {
          d_maldives = {
             color = { 120 75 75 }
 			
-			capital = 1114 # Mahoyadapuram
+			capital = 1360 # Maldives
 			
 			c_maldives = {
 				color={ 120 75 75 }
@@ -42591,7 +42587,7 @@ e_deccan = {
 		d_vengi = {
  			color = { 137 65 124 }
 			
-			capital = 1223 #Indrakila
+			capital = 1123 # Vengipura
 			
 			c_vengipura = {
 				color = { 147 65 124 }
@@ -44633,7 +44629,7 @@ e_tibet = {
 	k_nepal = {
  		color = { 140 165 204 }	
 		
-		capital = 1164 #Mithila
+		capital = 1478 # Kathmandu
 
 		bon_reformed = 2000
 		jain = 500
@@ -44890,7 +44886,7 @@ e_tibet = {
 				color2={ 255 255 255 }
 				
 				#holy_site = taoist
-				holy_site = manichean # Site of Mani's first learning trip
+				#holy_site = manichean # Site of Mani's first learning trip
 				
 				b_udabhanda = {
 				}
