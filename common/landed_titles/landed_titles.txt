@@ -25152,17 +25152,17 @@ e_france = {
 				color={ 95 20 240 }
 				color2={ 255 255 255 }
 				
-				b_provins = {
+				b_brie = {
 				}
-				b_meaux = {
+				b_meaux1 = {
 				}
 				b_sezanne = {
 				}
-				b_chateauthierry = {
+				b_chateauthierry1 = {
 				}
-				b_montmirail = {
+				b_montmirail1 = {
 				}
-				b_vertus = {
+				b_vertus1 = {
 				}
 				b_nogent_sur_marne = {
 				}
@@ -25175,17 +25175,16 @@ e_france = {
 
 			c_ile_de_france = {
 				color = { 38 144 211 }
-					holy_site = unctionist
-					holy_site = christian_populist_reformed
+				
+				holy_site = unctionist
+				holy_site = christian_populist_reformed
 				
 				b_paris = {}
 				b_melun = {}
-				b_stdenis = {
-				}
+				b_stdenis = {}
 				b_meaux = {}
 				b_etampes = {}
 				b_montfortlamaury = {}
-				b_senlis = {}
 				b_compiegne = {}
 			}
 			c_vermandois = {
@@ -25205,7 +25204,6 @@ e_france = {
 				
 				b_peronne = {}
 				b_amiens = {}
-				b_beauvais = {}
 				b_soissons = {}
 				b_corbie = {}
 				b_noyon = {}
