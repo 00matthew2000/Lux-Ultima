@@ -4213,28 +4213,6 @@ e_byzantium = {
 				b_sangarius = {}
 				b_pessinus = {}
 			}
-			c_sozopolis = {
-				color={ 158 47 120 }
-				color2={ 255 255 20 }
-				
-				turkish = "Isparta"
-				
-				b_souzopolis = {
-					turkish = "Afyonkarahisar"
-				}
-				b_cadi = {
-				}
-				b_polidorion = {
-				}
-				b_kelainai = {
-				}
-				b_dinar = {
-				}
-				b_isparta = {
-					greek = "Baris"
-				}
-				b_colossae = {}
-			}
 			c_prusa = {
 				color={ 211 110 176 }
 				color2={ 255 255 20 }
@@ -4500,9 +4478,10 @@ e_byzantium = {
 		
 		d_ohrid = {
 			color = { 35 60 110 }
+			
+			capital = 471 # Ochrid
 
 			greek = "Lychnidos"
-			arberian = "Ohri"
 
 			c_ochrid = {
 				color = { 141 31 103 }
@@ -4510,13 +4489,11 @@ e_byzantium = {
 				holy_site = orthodox
 				
 				greek = "Lychnidos"
-				arberian = "Ohri"
 				
 				b_debar = {
 				}
 				b_ohrid = {
 					greek = "Lychnidos"
-					arberian = "Ohri"
 				}
 				b_kicevo = {}
 				b_svetigrad = {}
@@ -5278,8 +5255,6 @@ e_byzantium = {
 				b_pergamon = {
 				}
 				b_phokaia = {
-				}
-				b_adramyttion = {
 				}
 				b_chio = {
 				}
