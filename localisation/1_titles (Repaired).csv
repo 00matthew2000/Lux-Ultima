@@ -219,36 +219,6 @@
 #Kingdom titles;;;;;;;;;;;;;;x
 #Nomadic Berbers
 =======
-ARCHDRUID;Archdruid;Archdruid;Archdruid;;Archdruid;;;;;;;;;;;;;x
-ARCHDRUID_FOA;Your Excellency;Votre Excellence;Eure Exzellenz;;Su Excelencia;;;;;;;;;;;;;x
-BIKKHU;Bikkhu;;;;;;;;;;;;;;;;;x
-CAPTAIN;Captain;Capitaine;Hauptmann;;Capitán;;;;;;;;;;;;;x
-CAPTAIN_FOA;Captain;Capitaine;Hauptmann;;Capitán;;;;;;;;;;;;;x
-CELTICPOPE;Celtic Pope;;;;;;;;;;;;;;;;;x
-CONDOTTIERO;Condottiere;Condottiere;Condottiere;;Condotiero;;;;;;;;;;;;;x
-CONDOTTIERO_FOA;Condottiere;Condottiere;Condottiere;;Condotiero;;;;;;;;;;;;;x
-DIVINE;Divine;;;;;;;;;;;;;;;;;x
-EVTOPTA360009;...;;;;;;;;;;;;;x
-EXARCH;Exarch;;;;;;;;;;;;;x
-GALLUS;Gallus;;;;;;;;;;;;;;;;;x
-GJARL;Great Jarl;;;;;;;;;;;;;x
-GPRINCE;Grand Prince;;;;;;;;;;;;;x
-GRANDLAMA;Grand Lama;;;;;;;;;;;;;;;;;x
-GRANDMASTER;Grandmaster;Grand-Maître;Großmeister;;Gran Maestro;;;;;;;;;;;;;x
-GRANDMASTER_FOA;Your Excellency;Votre Excellence;Eure Exzellenz;;Su Excelencia;;;;;;;;;;;;;x
-HIGHABBESS;High Abbess;;;;;;;;;;;;;;;;;x
-HIGHABBOT;High Abbot;;;;;;;;;;;;;;;;;x
-HIGHVICAR;High Vicar;;;;;;;;;;;;;;;;;x
-HIGH_CHIEF;High Chief;Grand Chef;Oberhäuptling;;Alto mandatario;;;;;;;;;;;;;x
-HIGH_CHIEF_FOA;High Chief;Grand Chef;Oberhäuptling;;Alto mandatario;;;;;;;;;;;;;x
-HOCHMEISTER;Hochmeister;Grand-Maître;Hochmeister;;Hochmeister;;;;;;;;;;;;;x
-HOCHMEISTER_FOA;Your Excellency;Votre Excellence;Eure Exzellenz;;Su Excelencia;;;;;;;;;;;;;x
-LEGATUS;Legatus;;;;;;;;;;;;;x
-MARTIAL_REVOLT;[Root.GetTitledFirstName] Warrior Host;;;;;;;;;;;;;x
-MESSIANIC_REVOLT;[Root.Religion.GetName] Millenarian Radicals;;;;;;;;;;;;;x
-PATRIARCH_IN_THE_EAST;Patriarch of the East;;;;;;;;x
-POPULIST_REVOLT;[Root.GetTitledFirstName] Revolutionaries;;;;;;;;;;;;;x
-PRIMATE;Primate;;;;;;;;;;;;;;;;;x
 PROV1000;Siwa;;;;;;;;;;;;;x
 PROV100;Avranchin;;;;;;;;;;;;;x
 PROV101;Condate;;;;;;;;;;;;;x
@@ -284,7 +254,6 @@ PROV1080;Daugava;;;;;;;;;;;;;x
 PROV1081;Daugava;;;;;;;;;;;;;x
 PROV1082;Daugava;;;;;;;;;;;;;x
 PROV108;Maine;;;;;;;;;;;;;x
-PROV109;Vendôme;;;;;;;;;;;;;x
 PROV1092;Volga;;;;;;;;;;;;;x
 PROV1093;Volga;;;;;;;;;;;;;x
 PROV1094;Volga;;;;;;;;;;;;;x
@@ -293,6 +262,7 @@ PROV1096;Volga;;;;;;;;;;;;;x
 PROV1097;Volga;;;;;;;;;;;;;x
 PROV1098;Volga;;;;;;;;;;;;;x
 PROV1099;Volga;;;;;;;;;;;;;x
+PROV109;Vendôme;;;;;;;;;;;;;x
 PROV10;Cell Darach;;;;;;;;;;;;;x
 PROV1100;Volga;;;;;;;;;;;;;x
 PROV1101;Volga;;;;;;;;;;;;;x
@@ -715,8 +685,8 @@ PROV2090;Mahicannittuk;;;;;;;;;;;;;x
 PROV2091;Posoge;;;;;;;;;;;;;x
 PROV2092;Posoge;;;;;;;;;;;;;x
 PROV2093;Posoge;;;;;;;;;;;;;x
-PROV209;Ausciorum;;;;;;;;;;;;;x
 PROV2097;Dartsedo;;;;;;;;;;;;;x
+PROV209;Ausciorum;;;;;;;;;;;;;x
 PROV210;Fois;;;;;;;;;;;;;x
 PROV211;Ruscino;;;;;;;;;;;;;x
 PROV212;Narbo Martius;;;;;;;;;;;;;x
@@ -813,8 +783,8 @@ PROV274;Bjorgvin;;;;;;;;;;;;;x
 PROV275;Þróndheimr;;;;;;;;;;;;;x
 PROV276;Heiðmork;;;;;;;;;;;;;x
 PROV277;Hlaðir;;;;;;;;;;;;;x
-PROV278;Hálogaland;;;;;;;;;;;;;x
 PROV2789;Kokonor;;;;;;;;;;;;;x
+PROV278;Hálogaland;;;;;;;;;;;;;x
 PROV279;Sameland;;;;;;;;;;;;;x
 PROV27;Durnovaria;;;;;;;;;;;;;x
 PROV280;Vestrbotn;;;;;;;;;;;;;x
@@ -2372,6 +2342,36 @@ PROV97;Rouen;;;;;;;;;;;;;x
 PROV98;Vexin;;;;;;;;;;;;;x
 PROV99;Eburovicorum;;;;;;;;;;;;;x
 PROV9;Connacht;;;;;;;;;;;;;x
+ARCHDRUID;Archdruid;Archdruid;Archdruid;;Archdruid;;;;;;;;;;;;;x
+ARCHDRUID_FOA;Your Excellency;Votre Excellence;Eure Exzellenz;;Su Excelencia;;;;;;;;;;;;;x
+BIKKHU;Bikkhu;;;;;;;;;;;;;;;;;x
+CAPTAIN;Captain;Capitaine;Hauptmann;;Capitán;;;;;;;;;;;;;x
+CAPTAIN_FOA;Captain;Capitaine;Hauptmann;;Capitán;;;;;;;;;;;;;x
+CELTICPOPE;Celtic Pope;;;;;;;;;;;;;;;;;x
+CONDOTTIERO;Condottiere;Condottiere;Condottiere;;Condotiero;;;;;;;;;;;;;x
+CONDOTTIERO_FOA;Condottiere;Condottiere;Condottiere;;Condotiero;;;;;;;;;;;;;x
+DIVINE;Divine;;;;;;;;;;;;;;;;;x
+EVTOPTA360009;...;;;;;;;;;;;;;x
+EXARCH;Exarch;;;;;;;;;;;;;x
+GALLUS;Gallus;;;;;;;;;;;;;;;;;x
+GJARL;Great Jarl;;;;;;;;;;;;;x
+GPRINCE;Grand Prince;;;;;;;;;;;;;x
+GRANDLAMA;Grand Lama;;;;;;;;;;;;;;;;;x
+GRANDMASTER;Grandmaster;Grand-Maître;Großmeister;;Gran Maestro;;;;;;;;;;;;;x
+GRANDMASTER_FOA;Your Excellency;Votre Excellence;Eure Exzellenz;;Su Excelencia;;;;;;;;;;;;;x
+HIGHABBESS;High Abbess;;;;;;;;;;;;;;;;;x
+HIGHABBOT;High Abbot;;;;;;;;;;;;;;;;;x
+HIGHVICAR;High Vicar;;;;;;;;;;;;;;;;;x
+HIGH_CHIEF;High Chief;Grand Chef;Oberhäuptling;;Alto mandatario;;;;;;;;;;;;;x
+HIGH_CHIEF_FOA;High Chief;Grand Chef;Oberhäuptling;;Alto mandatario;;;;;;;;;;;;;x
+HOCHMEISTER;Hochmeister;Grand-Maître;Hochmeister;;Hochmeister;;;;;;;;;;;;;x
+HOCHMEISTER_FOA;Your Excellency;Votre Excellence;Eure Exzellenz;;Su Excelencia;;;;;;;;;;;;;x
+LEGATUS;Legatus;;;;;;;;;;;;;x
+MARTIAL_REVOLT;[Root.GetTitledFirstName] Warrior Host;;;;;;;;;;;;;x
+MESSIANIC_REVOLT;[Root.Religion.GetName] Millenarian Radicals;;;;;;;;;;;;;x
+PATRIARCH_IN_THE_EAST;Patriarch of the East;;;;;;;;x
+POPULIST_REVOLT;[Root.GetTitledFirstName] Revolutionaries;;;;;;;;;;;;;x
+PRIMATE;Primate;;;;;;;;;;;;;;;;;x
 REVEREDMOTHER;Revered Mother;;;;;;;;;;;;;;;;;x
 SCHOLAR;Scholar;;;;;;;;;;;;;;;;;x
 SCHOLARGENERAL;Scholar-General;;;;;;;;;;;;;;;;;x
@@ -2405,8 +2405,8 @@ b_abu_kamal2;Abu Kamal;;;;;;;;;;;;;x
 b_abu_zadad;Abu Zadad;Abu Zadad;Abu Zadad;;Abu Zadad;;;;;;;;;;;;;x
 b_abudis;Abu Dis;Abu Dis;Abu Dis;;Abu Dis;;;;;;;;;;;;;x
 b_abukamal2;Abukamal;;;;;;;;;;;;;;;;;x
-b_abuminqar;Abu Minqar;Abu Minqar;Abu Minqar;;Abu Minqar;;;;;;;;;;;;;x
 b_abuminqar1;Abu Minqar;;;;;;;;;;;x
+b_abuminqar;Abu Minqar;Abu Minqar;Abu Minqar;;Abu Minqar;;;;;;;;;;;;;x
 b_aburuksuqlant;Aburuksuqlant;;;;;;;;;x
 b_abyaneh;Abyaneh;Abyaneh;Abyaneh;;Abyaneh;;;;;;;;;;;;;x
 b_abyuzol;Abyuzol;;;;;;;;;x
@@ -2422,10 +2422,10 @@ b_acenzera;Acenzera;Acenzera;Acenzera;;Acenzera;;;;;;;;;;;;;x
 b_acerno;Acerno;Acerno;Acerno;;Acerno;;;;;;;;;;;;;x
 b_acerra;Acerra;Acerra;Acerra;;Acerra;;;;;;;;;;;;;x
 b_achafalaya;Achafalaya;;;;;;;;;x
-b_achaguas;Achaguas;Achagua;Achagua;;Achagua;;;;;;;;;;;;;x
 b_achaguas-ii;Achaguas-ii;;;;;;;;;x
 b_achaguas-iii;Achaguas-iii;;;;;;;;;x
 b_achaguas-iv;Achaguas-iv;;;;;;;;;x
+b_achaguas;Achaguas;Achagua;Achagua;;Achagua;;;;;;;;;;;;;x
 b_achimulsinkitakim;Achimulsinkitakim;;;;;;;;;x
 b_achit2;Achit;;;;;;;;;;;;;;;;;x
 b_achocallaliz;Achocallaliz;;;;;;;;;x
@@ -2545,11 +2545,12 @@ b_akova;Akova;Akova;Akova;;Akova;;;;;;;;;;;;;x
 b_akpatok;Akpatok;;;;;;;;;x
 b_akronweiy;Akronweiy;;;;;;;;;x
 b_akrotin;Akrotin;Akrotin;Akrotin;;Akrotin;;;;;;;;;;;;;x
+b_akterek;Akterek;;;;;;;;;;;x
 b_akuledu;Akuledu;Akuledu;Akuledu;Akuledu;Akuledu;Akuledu;Akuledu;Akuledu;Akuledu;Akuledu;Akuledu;Akuledu;Akuledu;x
 b_akulivik;Akulivik;;;;;;;;;x
 b_akulliaq;Akulliaq;;;;;;;;;x
-b_akureyri;Akureyri;;;;;;;;;;;;;x
 b_akureyri1;Akureyri;;;;;;;;;;;x
+b_akureyri;Akureyri;;;;;;;;;;;;;x
 b_akvceuehvtkvrakko;Akvceuehvtkvrakko;;;;;;;;;x
 b_akvsvppepette;Akvsvppepette;;;;;;;;;x
 b_akzhar1;Akzhar;;;;;;;;;;;x
@@ -2898,6 +2899,7 @@ b_arvika;Arvika;Arvika;Arvika;;Arvika;;;;;;;;;;;;;x
 b_arwad;Arwad;;;;;;;;;;;;;;;;;x
 b_as_sukhnah;As Sukhnah;;;;;;;;;;;;;;x
 b_asadabad;Asadabad;Asadabad;Asadabad;;Asadabad;;;;;;;;;;;;;x
+b_asaka;Asaka;;;;;;;;;;;x
 b_asas2;Asas;;;;;;;;;;;;;x
 b_asas3;Asas;;;;;;;;;;;;;x
 b_asbabitt;Asbabitt;;;;;;;;;x
@@ -2929,8 +2931,8 @@ b_assemini;Assemini;Assemini;Assemini;;Assemini;;;;;;;;;;;;;x
 b_assens;Assens;Assens;Assens;;Assens;;;;;;;;;;;;;x
 b_assikespispierew;Assikespispierew;;;;;;;;;x
 b_assinibola;Assinibola;;;;;;;;;x
-b_assisi;Assisi;Assise;Assisi;;Assisi;;;;;;;;;;;;;x
 b_assisi1;Assisi;;;;;;;;;;;x
+b_assisi;Assisi;Assise;Assisi;;Assisi;;;;;;;;;;;;;x
 b_assunwvtehoy;Assunwvtehoy;;;;;;;;;x
 b_astara;Astara;Astara;Astara;;Astara;;;;;;;;;;;;;x
 b_asteplenthert;Asteplenthert;;;;;;;;;x
@@ -3085,6 +3087,7 @@ b_bahia;Bahia;;;;;;;;;x
 b_bahianegor;Bahianegor;;;;;;;;;x
 b_bahiokino;Bahiokino;;;;;;;;;x
 b_bahldrador;Bahldrador;;;;;;;;;x
+b_bahu_di;Bahu Di;;;;;;;;;;;x
 b_baielkanteptleb;Baielkanteptleb;;;;;;;;;x
 b_baiji_purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;Baiji Purani;x
 b_baisinga;Baisinga;Baisinga;Baisinga;Baisinga;Baisinga;Baisinga;Baisinga;Baisinga;Baisinga;Baisinga;Baisinga;Baisinga;Baisinga;x
@@ -3203,12 +3206,12 @@ b_bath;Aquae Sulis;;;;;;;;;;;;;x
 b_batna;Batna;Batna;Batna;;Batna;;;;;;;;;;;;;x
 b_batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;Batticaloa;x
 b_battidekhom;Battidekhom;;;;;;;;;x
+b_bau;Baú;;;;;;;;;;;;;;;x
 b_baudpur;Baudpur;Baudpur;Baudpur;Baudpur;Baudpur;Baudpur;Baudpur;Baudpur;Baudpur;Baudpur;Baudpur;Baudpur;Baudpur;x
 b_baugoix;Baugoix;;;;;;;;;x
 b_bauical;Bauical;;;;;;;;;x
 b_bauilules;Bauilules;;;;;;;;;x
 b_bauska;Bauska;Bauska;Bauska;;Bauska;;;;;;;;;;;;;x
-b_bau;Baú;;;;;;;;;;;;;;;x
 b_bayaldyr;Bayaldyr;;;;;;;;;;;;;x
 b_bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;Bayaldyr;x
 b_bayamajuyan;Bayamajuyan;;;;;;;;;x
@@ -3236,6 +3239,7 @@ b_bedacuhwippwh;Bedacuhwippwh;;;;;;;;;x
 b_bedford;Bedasforda;;;;;;;;;;;;;x
 b_beezenlaux;Beezenlaux;;;;;;;;;x
 b_beggileanpik;Beggileanpik;;;;;;;;;x
+b_begovat;Begovat;;;;;;;;;;;x
 b_begram;Begram;Begram;Begram;;Begram;;;;;;;;;;;;;x
 b_behaavikar;Behaavikar;;;;;;;;;x
 b_behraonda;Behraonda;Behraonda;Behraonda;Behraonda;Behraonda;Behraonda;Behraonda;Behraonda;Behraonda;Behraonda;Behraonda;Behraonda;Behraonda;x
@@ -3243,8 +3247,8 @@ b_beiarn;Beiarn;Beiarn;Beiarn;;Beiarn;;;;;;;;;;;;;x
 b_beilitisk;Beilitisk;;;;;;;;;x
 b_belatal;Belatal;Belatal;Belatal;Belatal;Belatal;Belatal;Belatal;Belatal;Belatal;Belatal;Belatal;Belatal;Belatal;x
 b_belavadi;Belavadi;Belavadi;Belavadi;Belavadi;Belavadi;Belavadi;Belavadi;Belavadi;Belavadi;Belavadi;Belavadi;Belavadi;Belavadi;x
-b_belcastro;Belcastro;Belcastro;Belcastro;;Belcastro;;;;;;;;;;;;;x
 b_belcastro1;Belcastro;;;;;;;;;;;x
+b_belcastro;Belcastro;Belcastro;Belcastro;;Belcastro;;;;;;;;;;;;;x
 b_beleiquist;Beleiquist;;;;;;;;;x
 b_belem-ii;Belem-ii;;;;;;;;;x
 b_belem-iii;Belem-iii;;;;;;;;;x
@@ -3441,10 +3445,12 @@ b_bremesburh;Bremesburh;;;;;;;;;;;;;x
 b_brest;Brest;Brest;Brest;;Brest;;;;;;;;;;;;;x
 b_briancon;Briançon;Briançon;Briançon;;Briançon;;;;;;;;;;;;;x
 b_brias;Brias;;;;;;;;;x
+b_brie;Brie;;;;;;;;;;;x
 b_brientriazel;Brientriazel;;;;;;;;;x
 b_brig;Brig;Brig;Brig;;Brig;;;;;;;;;;;;;x
 b_brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;Brihadeeswarar;x
 b_brindas;Brindas;Brindas;Brindas;;Brindas;;;;;;;;;;;;;x
+b_brisanen;Brisanen;;;;;;;;;;;x
 b_brocavum;Brocavum;;;;;;;;;;;;;x
 b_brunnoy;Brunnøy;Brunnøy;Brunnøy;;Brunnøy;;;;;;;;;;;;;x
 b_brycgstow;Brycgstow;;;;;;;;;;;;;x
@@ -3458,17 +3464,18 @@ b_budalur;Budalur;Budalur;Budalur;Budalur;Budalur;Budalur;Budalur;Budalur;Budalu
 b_budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;Budarshingi;x
 b_budaur;Budaur;Budaur;Budaur;Budaur;Budaur;Budaur;Budaur;Budaur;Budaur;Budaur;Budaur;Budaur;Budaur;x
 b_buddu;Buddu;;;;;;;;;;;;;x
+b_budennyy;Budennyy;;;;;;;;;;;x
 b_budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;Budhgaon;x
-b_budhkula;Budhkula;Budhkula;Budhkula;;Budhkula;;;;;;;;;;;;;x
 b_budhkula1;Budhkula;;;;;;;;;;;x
+b_budhkula;Budhkula;Budhkula;Budhkula;;Budhkula;;;;;;;;;;;;;x
 b_budno;Budno;Budno;Budno;;Budno;;;;;;;;;;;;;x
 b_budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;Budugumpa;x
 b_bueno_aires;Bueno_aires;;;;;;;;;x
 b_buesnlanetren;Buesnlanetren;;;;;;;;;x
 b_buggelenmpie;Buggelenmpie;;;;;;;;;x
 b_buggelenmpikuuk;Buggelenmpikuuk;;;;;;;;;x
-b_buhairya;Buhairya;Buhairya;Buhairya;;Buhaira;;;;;;;;;;;;;x
 b_buhairya1;Buhairya;;;;;;;;;;;x
+b_buhairya;Buhairya;Buhairya;Buhairya;;Buhaira;;;;;;;;;;;;;x
 b_bukkaraya_samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;Bukkaraya Samudram;x
 b_bulgar2;Bulgar;;;;;;;;;;;;;;;;;x
 b_buliisa;Buliisa;;;;;;;;;;;;;x
@@ -3501,6 +3508,7 @@ b_bygdeborg;Bygdeborg;Bygdeborg;Bygdeborg;;Bygdeborg;;;;;;;;;;;;;x
 b_bykovskaya2;Bykovskaya;;;;;;;;;;;;;;;;;x
 b_bykovskaya;Bykovskaya;Bykovskaya;Bikowskaja;;Bykovskaya;;;;;;;;;;;;;x
 b_byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;Byrasandra;x
+b_byulkuldek;Byulkuldek;;;;;;;;;;;x
 b_byumba;Byumba;;;;;;;;;;;;;x
 b_caacube;Caacube;;;;;;;;;x
 b_caacubia;Caacubia;;;;;;;;;x
@@ -3797,6 +3805,7 @@ b_chandrapur;Chandrapur;Chandrapur;Chandrapur;Chandrapur;Chandrapur;Chandrapur;C
 b_changara;Changara;;;;;;;;;;;;;x
 b_chapala;Chapala;;;;;;;;;x
 b_chapra;Chapra;Chapra;Chapra;Chapra;Chapra;Chapra;Chapra;Chapra;Chapra;Chapra;Chapra;Chapra;Chapra;x
+b_chaprashty;Chaprashty;;;;;;;;;;;x
 b_charadara;Charadara;;;;;;;;;x
 b_charampa;Charampa;Charampa;Charampa;Charampa;Charampa;Charampa;Charampa;Charampa;Charampa;Charampa;Charampa;Charampa;Charampa;x
 b_charax_spasinu;Charax Spasinu;;;;;;;;;x
@@ -3817,6 +3826,7 @@ b_chateaudun;Châteaudun;Châteaudun;Châteaudun;;Châteaudun;;;;;;;;;;;;;x
 b_chateaulandon;Château-Landon;Château-Landon;Château-Landon;;Château-Landon;;;;;;;;;;;;;x
 b_chateauneufdupape;Châteauneuf-du-Pape;Châteauneuf-Du-Pape;Châteauneuf-du-Pape;;Châteauneuf-du-Pape;;;;;;;;;;;;;x
 b_chateaurenault;Château-Renault;Château-Renault;Château-Renault;;Château-Renault;;;;;;;;;;;;;x
+b_chateauthierry1;Château-Thierry;;;;;;;;;;;
 b_chateauthierry;Château-Thierry;Château-Thierry;Château-Thierry;;Château-Thierry;;;;;;;;;;;;;x
 b_chatigama;Chatigama;Chatigama;Chatigama;Chatigama;Chatigama;Chatigama;Chatigama;Chatigama;Chatigama;Chatigama;Chatigama;Chatigama;Chatigama;x
 b_chatillon;Châtillon;Châtillon;Châtillon;;Châtillon;;;;;;;;;;;;;x
@@ -3895,8 +3905,8 @@ b_chicligstla;Chicligstla;;;;;;;;;x
 b_chicora;Chicora;;;;;;;;;x
 b_chicoutimi;Chicoutimi;;;;;;;;;x
 b_chidzurgwe;Chidzurgwe;;;;;;;;;;;;;x
-b_chieti;Chieti;Chieti;Chieti;;Chieti;;;;;;;;;;;;;x
 b_chieti1;Chieti;;;;;;;;;;;x
+b_chieti;Chieti;Chieti;Chieti;;Chieti;;;;;;;;;;;;;x
 b_chifunde;Chifunde;;;;;;;;;;;;;x
 b_chignecto;Chignecto;;;;;;;;;x
 b_chihuahua;Chihuahua;;;;;;;;;x
@@ -3919,6 +3929,7 @@ b_chiloe;Chiloe;;;;;;;;;x
 b_chimila-ii;Chimila-ii;;;;;;;;;x
 b_chimila-iii;Chimila-iii;;;;;;;;;x
 b_chimila;Chimila;;;;;;;;;x
+b_chimkorgon;Chimkorgon;;;;;;;;;;;x
 b_chimono;Chimono;;;;;;;;;x
 b_chimortan;Chimortan;;;;;;;;;x
 b_chimputi-ii;Chimputi-ii;;;;;;;;;x
@@ -3971,6 +3982,7 @@ b_cholula-v;Cholula-v;;;;;;;;;x
 b_cholula;Cholula;;;;;;;;;x
 b_chomehioux;Chomehioux;;;;;;;;;x
 b_chomu;Chomu;Chomu;Chomu;Chomu;Chomu;Chomu;Chomu;Chomu;Chomu;Chomu;Chomu;Chomu;Chomu;x
+b_chon_jargylchak;Chon Jargylchak;;;;;;;;;;;x
 b_chootwatcha;Chootwatcha;;;;;;;;;x
 b_choptank;Choptank;;;;;;;;;x
 b_choquechaca-ii;Choquechaca-ii;;;;;;;;;x
@@ -4032,6 +4044,7 @@ b_churwalden;Churwalden;Churwalden;Churwalden;;Churwalden;;;;;;;;;;;;;x
 b_chuthamcvpofuce;Chuthamcvpofuce;;;;;;;;;x
 b_chuybuyu;Chuybuyu;;;;;;;;;x
 b_chuyroch;Chuyroch;;;;;;;;;x
+b_chychkan;Chychkan;;;;;;;;;;;x
 b_ciamberi;Ciamberi;Chambéry;Ciamberi;;Ciamberi;;;;;;;;;;;;;x
 b_cibou;Cibou;;;;;;;;;x
 b_ciechanow;Ciechanow;Ciechanow;Ciechanow;;Ciechanow;;;;;;;;;;;;;x
@@ -4418,6 +4431,7 @@ b_dod_ballapur;Dod Ballapur;Dod Ballapur;Dod Ballapur;Dod Ballapur;Dod Ballapur;
 b_doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;Doddasarangi;x
 b_doeg;Doeg;;;;;;;;;x
 b_dolianova;Dolianova;Dolianova;Dolianova;;Dolianova;;;;;;;;;;;;;x
+b_dolona;Dolona;;;;;;;;;;;x
 b_doloresrio;Doloresrio;;;;;;;;;x
 b_dominica-ii;Dominica-ii;;;;;;;;;x
 b_dominica-iii;Dominica-iii;;;;;;;;;x
@@ -4425,6 +4439,7 @@ b_dominica-iv;Dominica-iv;;;;;;;;;x
 b_dominica;Dominica;;;;;;;;;x
 b_dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;Dommasandra;x
 b_domo;Domo;Domo;Domo;;Domo;;;;;;;;;;;;;x
+b_don_aryk;Don Aryk;;;;;;;;;;;x
 b_donegal;Dún na nGall;;;;;;;;;;;;;x
 b_dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;Dongargoan;x
 b_door_ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;Door Ghattee;x
@@ -4437,6 +4452,7 @@ b_downpatrick;Rath Celtair;;;;;;;;;;;;;x
 b_dradate;Dradate;Dradate;Dradate;;Dradate;;;;;;;;;;;;;x
 b_draksarama;Draksarama;Draksarama;Draksarama;Draksarama;Draksarama;Draksarama;Draksarama;Draksarama;Draksarama;Draksarama;Draksarama;Draksarama;Draksarama;x
 b_drama1;Drama;;;;;;;;;;;x
+b_dramburg1;Dramburg;;;;;;;;;;;x
 b_drazdy;Drazdy;Drazdy;Drazdy;;Drazdy;;;;;;;;;;;;;x
 b_drean;Dréan;Dréan;Dréan;;Dréan;;;;;;;;;;;;;x
 b_dreux;Dreux;Dreux;Dreux;;Dreux;;;;;;;;;;;;;x
@@ -4699,6 +4715,7 @@ b_fekhunetvhesse;Fekhunetvhesse;;;;;;;;;x
 b_fekhunetvhesse;Fekhunetvhesse;;;;;;;;;x
 b_felianpaho;Felianpaho;;;;;;;;;x
 b_fellin;Fellin;Fellin;Fellin;;Fellin;;;;;;;;;;;;;x
+b_fengtiancun;Fengtiancun;;;;;;;;;;;x
 b_ferfelluit;Ferfelluit;;;;;;;;;x
 b_fermo;Fermo;Fermo;Fermo;;Fermo;;;;;;;;;;;;;x
 b_ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;Ferozewala;x
@@ -5078,6 +5095,7 @@ b_haffouz;Haffouz;Haffouz;Haffouz;;Haffouz;;;;;;;;;;;;;x
 b_hagenau2;Hagenau;;;;;;;;;;;x
 b_hagowahgo;Hagowahgo;;;;;;;;;x
 b_hagyetleyn;Hagyetleyn;;;;;;;;;x
+b_hahaldeslevo;Hahaldeslevo;;;;;;;;;;;x
 b_hahlo;Hahlo;Hahlo;Hahlo;;Hahlo;;;;;;;;;;;;;x
 b_haiibnena;Haiibnena;;;;;;;;;x
 b_haikonen;Haikonen;Haikonen;Haikonen;;Haikonen;;;;;;;;;;;;;x
@@ -5149,6 +5167,10 @@ b_havana-iii;Havana-iii;;;;;;;;;x
 b_havana-iv;Havana-iv;;;;;;;;;x
 b_havana-v;Havana-v;;;;;;;;;x
 b_havana;Havana;;;;;;;;;x
+b_havelberg1;Havelberg;;;;;;;;;;;x
+b_havelberg2;Havelberg;;;;;;;;;;;x
+b_havelberg3;Havelberg;;;;;;;;;;;x
+b_havelberg;Havelberg;;;;;;;;;;;x
 b_havering;Haueringas;;;;;;;;;;;;;x
 b_haxachasin;Haxachasin;;;;;;;;;x
 b_hayailla;Hayailla;;;;;;;;;x
@@ -5222,8 +5244,8 @@ b_hohipiggilenner;Hohipiggilenner;;;;;;;;;x
 b_hohipiggilenner_adj;Hohipiggilenner;;;;;;;;;x
 b_hokegtongane;Hokegtongane;;;;;;;;;x
 b_hokolesqua;Hokolesqua;;;;;;;;;x
-b_holar;Hólar;;;;;;;;;;;;;x
 b_holar1;Hólar;;;;;;;;;;;;;x
+b_holar;Hólar;;;;;;;;;;;;;x
 b_holokomi;Holokomi;;;;;;;;;x
 b_holt;Holt;Holt;Holt;;Holt;;;;;;;;;;;;;x
 b_hometwol;Hometwol;;;;;;;;;x
@@ -5295,8 +5317,8 @@ b_husan;Husån;Husån;Husån;;Husån;;;;;;;;;;;;;x
 b_husby;Husby;Husby;Husby;;Husby;;;;;;;;;;;;;x
 b_hussuppuwwee;Hussuppuwwee;;;;;;;;;x
 b_huwam;Huwam;;;;;;;;;x
-b_huylentaja;Huylentaja;;;;;;;;;x
 b_huylentaja1;Huylentaja;;;;;;;;;;;x
+b_huylentaja;Huylentaja;;;;;;;;;x
 b_hvamm;Hvamm;;;;;;;;;;;;;x
 b_hvsvhaketet;Hvsvhaketet;;;;;;;;;x
 b_hvtkecefelofaco;Hvtkecefelofaco;;;;;;;;;x
@@ -5633,6 +5655,7 @@ b_kalepadu;Kalepadu;Kalepadu;Kalepadu;Kalepadu;Kalepadu;Kalepadu;Kalepadu;Kalepa
 b_kalevala;Kalevala;Kalevala;Kalevala;;Kalevala;;;;;;;;;;;;;x
 b_kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;Kalinganagara;x
 b_kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;Kalingapattanam;x
+b_kalinino;Kalinino;;;;;;;;;;;x
 b_kalinpal;Kalinpal;;;;;;;;;x
 b_kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;Kalitakuchi;x
 b_kalix;Kalix;Kalix;Kalix;;Kalix;;;;;;;;;;;;;x
@@ -5727,10 +5750,12 @@ b_kapadane;Kapadane;Kapadane;Kapadane;Kapadane;Kapadane;Kapadane;Kapadane;Kapada
 b_kapelusnac;Kapelusnac;;;;;;;;;x
 b_kapikad;Kapikad;Kapikad;Kapikad;Kapikad;Kapikad;Kapikad;Kapikad;Kapikad;Kapikad;Kapikad;Kapikad;Kapikad;Kapikad;x
 b_kapisillit;Kapisillit;;;;;;;;;x
+b_kaplanbek;Kaplanbek;;;;;;;;;;;x
 b_kapuivik;Kapuivik;;;;;;;;;x
 b_kapyl;Kapyl;Kapyl;Kapyl;;Kapyl;;;;;;;;;;;;;x
 b_kara_dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;Kara Dyikan;x
 b_kara_seryak;Kara Seryak;;;;;;;;;x
+b_karagayna;Karagayna;;;;;;;;;;;x
 b_karahataka;Karahataka;Karahataka;Karahataka;Karahataka;Karahataka;Karahataka;Karahataka;Karahataka;Karahataka;Karahataka;Karahataka;Karahataka;Karahataka;x
 b_karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;Karakotakanagara;x
 b_karankawa;Karankawa;;;;;;;;;x
@@ -5805,6 +5830,7 @@ b_kayabi;Kayabi;;;;;;;;;;;x
 b_kayts;Kayts;Kayts;Kayts;Kayts;Kayts;Kayts;Kayts;Kayts;Kayts;Kayts;Kayts;Kayts;Kayts;x
 b_kayuktuknarvak;Kayuktuknarvak;;;;;;;;;x
 b_kazanqi;Kazanqi;;;;;;;;;;;;;x
+b_kazminwody;Kazminwody;;;;;;;;;;;x
 b_keachiteja;Keachiteja;;;;;;;;;x
 b_keagtowaus;Keagtowaus;;;;;;;;;x
 b_kebili;Kébili;Kébili;Kébili;;Kébili;;;;;;;;;;;;;x
@@ -5904,6 +5930,7 @@ b_kianarutuuk;Kianarutuuk;;;;;;;;;x
 b_kiavluktukkigunnik;Kiavluktukkigunnik;;;;;;;;;x
 b_kiavluktuktaliin;Kiavluktuktaliin;;;;;;;;;x
 b_kibaale;Kibaale;;;;;;;;;;;;;x
+b_kibray;Kibray;;;;;;;;;;;x
 b_kichai;Kichai;;;;;;;;;x
 b_kichesipi;Kichesipi;;;;;;;;;x
 b_kickapoo;Kickapoo;;;;;;;;;x
@@ -6019,6 +6046,7 @@ b_kokenois;Kokenois;Kokenois;Kokenois;;Kokenois;;;;;;;;;;;;;x
 b_kokkakhvse;Kokkakhvse;;;;;;;;;x
 b_kola;Kola;Kola;Kola;;Kola;;;;;;;;;;;;;x
 b_kolachi;Kolachi;Kolachi;Kolachi;Kolachi;Kolachi;Kolachi;Kolachi;Kolachi;Kolachi;Kolachi;Kolachi;Kolachi;Kolachi;x
+b_kolba;Kolba;;;;;;;;;;;x
 b_kolding;Kolding;Kolding;Kolding;;Kolding;;;;;;;;;;;;;x
 b_kolkrunkitut;Kolkrunkitut;;;;;;;;;x
 b_kollam;Kollam;Kollam;Kollam;Kollam;Kollam;Kollam;Kollam;Kollam;Kollam;Kollam;Kollam;Kollam;Kollam;x
@@ -6059,6 +6087,7 @@ b_korukonda;Korukonda;Korukonda;Korukonda;Korukonda;Korukonda;Korukonda;Korukond
 b_koryazhma;Koryazhma;Koriajma;Korjaschma;;Koriazhma;;;;;;;;;;;;;x
 b_kosava;Kosava;Kosava;Kosava;;Kosava;;;;;;;;;;;;;x
 b_kosciusko;Kosciusko;;;;;;;;;x
+b_kosh_korgon;Kosh Korgon;;;;;;;;;;;x
 b_koshki2;Koshki;;;;;;;;;;;;;;;;;x
 b_koshrabot;Koshrabot;Koshrabot;Koschrabot;;Koshrabot;;;;;;;;;;;;;x
 b_kosti;Kosti;Kosti;Kosti;;Kosti;;;;;;;;;;;;;x
@@ -6529,6 +6558,9 @@ b_magdalena-ii;Magdalena-ii;;;;;;;;;x
 b_magdalena-iii;Magdalena-iii;;;;;;;;;x
 b_magdalena-iv;Magdalena-iv;;;;;;;;;x
 b_magdalena;Magdalena;;;;;;;;;x
+b_magdeburg1;Magdeburg;;;;;;;;;;;x
+b_magdeburg2;Magdeburg;;;;;;;;;;;x
+b_magdeburg3;Magdeburg;;;;;;;;;;;x
 b_maggakaniruknunaakkik;Maggakaniruknunaakkik;;;;;;;;;x
 b_maghnia2;Maghnia;;;;;;;;;;;;;x
 b_magilros;Magilros;;;;;;;;;;;;;x
@@ -6671,6 +6703,11 @@ b_manzanilla;Manzanilla;;;;;;;;;x
 b_manzanillo;Manzanillo;;;;;;;;;x
 b_mapinhane;Mapinhane;;;;;;;;;;;;;x
 b_mapudungun;Mapudungun;;;;;;;;;x
+b_mapungubwe1;Mapungubwe;;;;;;;;;;;x
+b_mapungubwe2;Mapungubwe;;;;;;;;;;;x
+b_mapungubwe3;Mapungubwe;;;;;;;;;;;x
+b_mapungubwe4;Mapungubwe;;;;;;;;;;;x
+b_mapungubwe5;Mapungubwe;;;;;;;;;;;x
 b_maqatgwig;Maqatgwig;;;;;;;;;x
 b_maqtukwek;Maqtukwek;;;;;;;;;x
 b_maquuvik;Maquuvik;;;;;;;;;x
@@ -6783,6 +6820,7 @@ b_mazyr;Mazyr;Mazyr;Mazyr;;Mazyr;;;;;;;;;;;;;x
 b_mbarara;Mbarara;;;;;;;;;;;;;x
 b_mbiza;M'Biza;;;;;;;;;;;;;x
 b_mdina;Mdina;Mdina;Mdina;;Mdina;;;;;;;;;;;;;x
+b_meaux1;Meaux;;;;;;;;;;;x
 b_mecapaca;Mecapaca;;;;;;;;;x
 b_meccales;Meccales;;;;;;;;;x
 b_meczcalachapa;Meczcalachapa;;;;;;;;;x
@@ -6809,6 +6847,7 @@ b_meijjepket;Meijjepket;;;;;;;;;x
 b_mekhadma;Mekhadma;Mekhadma;Mekhadma;;Mekhadma;;;;;;;;;;;;;x
 b_mekkomekusap;Mekkomekusap;;;;;;;;;x
 b_meknassy;Meknassy;Meknassy;Meknassy;;Meknassy;;;;;;;;;;;;;x
+b_meknes1;Meknes;;;;;;;;;;;x
 b_mekuspkcuklofuce;Mekuspkcuklofuce;;;;;;;;;x
 b_mekvusvpkvcukolv;Mekvusvpkvcukolv;;;;;;;;;x
 b_melacham;Melacham;;;;;;;;;x
@@ -7060,6 +7099,7 @@ b_monthey;Monthey;Monthey;Monthey;;Monthey;;;;;;;;;;;;;x
 b_monticello;Monticello;;;;;;;;;x
 b_montjovet;Montjovet;Montjovet;Montjovet;;Montjovet;;;;;;;;;;;;;x
 b_montkato;Montkato;;;;;;;;;x
+b_montmirail1;Montmirail;;;;;;;;;;;x
 b_montmirail;Montmirail;Montmirail;Montmirail;;Montmirail;;;;;;;;;;;;;x
 b_montoire;Montoire;Montoire;Montoire;;Montoire;;;;;;;;;;;;;x
 b_montpellier;Montpellier;Montpellier;Montpellier;;Montpellier;;;;;;;;;;;;;x
@@ -7131,12 +7171,13 @@ b_mulla_jamal;Mulla Jamal;Mulla Jamal;Mulla Jamal;Mulla Jamal;Mulla Jamal;Mulla 
 b_multanpura;Multanpura;Multanpura;Multanpura;Multanpura;Multanpura;Multanpura;Multanpura;Multanpura;Multanpura;Multanpura;Multanpura;Multanpura;Multanpura;x
 b_multnochin;Multnochin;;;;;;;;;x
 b_multnomah;Multnomah;;;;;;;;;x
+b_munda;Munda;;;;;;;;;;;x
 b_mundra;Mundra;Mundra;Mundra;Mundra;Mundra;Mundra;Mundra;Mundra;Mundra;Mundra;Mundra;Mundra;Mundra;x
 b_munktorp;Munktorp;Munktorp;Munktorp;;Munktorp;;;;;;;;;;;;;x
 b_munsee;Munsee;;;;;;;;;x
 b_muntafiq2;Mutanfiq;;;;;;;;;;;;;x
-b_muravera;Muravera;Muravera;Muravera;;Muravera;;;;;;;;;;;;;x
 b_muravera1;Muravera;;;;;;;;;;;x
+b_muravera;Muravera;Muravera;Muravera;;Muravera;;;;;;;;;;;;;x
 b_muret;Muret;Muret;Muret;;Muret;;;;;;;;;;;;;x
 b_murten;Murten;Murten;Murten;;Murten;;;;;;;;;;;;;x
 b_murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;Murudeshwara;x
@@ -7209,6 +7250,8 @@ b_nakogdokhaes;Nakogdokhaes;;;;;;;;;x
 b_nakuskpku;Nakuskpku;;;;;;;;;x
 b_nakwarpave;Nakwarpave;;;;;;;;;x
 b_nalatale;Nalatale;;;;;;;;;;;;;x
+b_nalsia1;Nalsia;;;;;;;;;;;x
+b_nalsia;Nalsia;;;;;;;;;;;x
 b_namchi;Namchi;;;;;;;;;;;;;x
 b_nampula;Nampula;;;;;;;;;;;;;x
 b_namyslow;Namyslów;Namyslów;Namyslów;;Namyslów;;;;;;;;;;;;;x
@@ -7609,6 +7652,7 @@ b_orestias;Orestias;;;;;;;;;x
 b_oria;Oria;Oria;Oria;;Oria;;;;;;;;;;;;;x
 b_orisaare;Orisaare;Orisaare;Orisaare;;Orisaare;;;;;;;;;;;;;x
 b_oristano;Oristano;Oristano;Oristano;;Oristano;;;;;;;;;;;;;x
+b_orlevka;Orlevka;;;;;;;;;;;x
 b_ormara;Ormara;Ormara;Ormara;Ormara;Ormara;Ormara;Ormara;Ormara;Ormara;Ormara;Ormara;Ormara;Ormara;x
 b_ornskoldsvik;Örnsköldsvik;Örnsköldsvik;Örnsköldsvik;;Örnsköldsvik;;;;;;;;;;;;;x
 b_orokacawenti;Orokacawenti;;;;;;;;;x
@@ -7720,6 +7764,7 @@ b_paiute;Paiute;;;;;;;;;;;;;x
 b_paiutes;Paiutes;;;;;;;;;;;;;x
 b_pajhandala;Pajhandala;;;;;;;;;x
 b_pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;Pakhamela;x
+b_pakhtaabad;Pakhtaabad;;;;;;;;;;;x
 b_pakjekhun;Pakjekhun;;;;;;;;;x
 b_pakoachabe;Pakoachabe;;;;;;;;;x
 b_pakuashipi;Pakuashipi;;;;;;;;;x
@@ -7750,8 +7795,8 @@ b_pamban;Pamban;Pamban;Pamban;Pamban;Pamban;Pamban;Pamban;Pamban;Pamban;Pamban;P
 b_pambu-ii;Pambu-ii;;;;;;;;;x
 b_pambu-iii;Pambu-iii;;;;;;;;;x
 b_pambu;Pambu;;;;;;;;;x
-b_pame;Pame;;;;;;;;;x
 b_pame1;Pame;;;;;;;;;;;x
+b_pame;Pame;;;;;;;;;x
 b_pameria;Pameria;;;;;;;;;x
 b_pamlico;Pamlico;;;;;;;;;x
 b_panaaint;Panaaint;;;;;;;;;x
@@ -7772,6 +7817,7 @@ b_panemune;Panemüne;Panemüné;Übermemel;;Panemüne;;;;;;;;;;;;;x
 b_pangnirtung;Pangnirtung;;;;;;;;;x
 b_panguitch;Panguitch;;;;;;;;;x
 b_panisagar;Panisagar;Panisagar;Panisagar;Panisagar;Panisagar;Panisagar;Panisagar;Panisagar;Panisagar;Panisagar;Panisagar;Panisagar;Panisagar;x
+b_panjakent;Panjakent;;;;;;;;;;;x
 b_panjwai;Panjwai;;;;;;;;;x
 b_pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;Pansarwadi;x
 b_papadsoki;Papadsoki;;;;;;;;;x
@@ -7814,6 +7860,7 @@ b_parnaiba-ii;Parnaiba-ii;;;;;;;;;x
 b_parnaiba-iii;Parnaiba-iii;;;;;;;;;x
 b_parnaiba-iv;Parnaiba-iv;;;;;;;;;x
 b_parnaiba;Parnaiba;;;;;;;;;x
+b_parnakheta1;Parnakheta;;;;;;;;;;;x
 b_parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;Parnakheta;x
 b_parnaw;Parnaw;Parnaw;Parnaw;;Parnaw;;;;;;;;;;;;;x
 b_parnnassus;Parnnassus;;;;;;;;;x
@@ -7835,12 +7882,12 @@ b_passamaquoddy;Passamaquoddy;;;;;;;;;x
 b_passava;Passava;Passava;Passava;;Passava;;;;;;;;;;;;;x
 b_pastavy;Pastavy;Pastavy;Pastavy;;Pastavy;;;;;;;;;;;;;x
 b_pastores;Pastores;;;;;;;;;x
-b_pastos;Pastos;;;;;;;;;x
 b_pastos-ii;Pastos-ii;;;;;;;;;x
 b_pastos-iii;Pastos-iii;;;;;;;;;x
-b_pastos_bons;Pastos_bons;;;;;;;;;x
+b_pastos;Pastos;;;;;;;;;x
 b_pastos_bons-ii;Pastos_bons-ii;;;;;;;;;x
 b_pastos_bons-iii;Pastos_bons-iii;;;;;;;;;x
+b_pastos_bons;Pastos_bons;;;;;;;;;x
 b_patala;Patala;;;;;;;;;x
 b_pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;x
 b_patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;Patansaongi;x
@@ -7871,6 +7918,7 @@ b_pawqar_tampu;Pawqar_tampu;;;;;;;;;x
 b_paxauxa;Paxauxa;;;;;;;;;x
 b_payedaboi;Payedaboi;;;;;;;;;x
 b_paysurgay;Paysurgay;;;;;;;;;x
+b_paytug;Paytug;;;;;;;;;;;x
 b_pechanga;Pechanga;;;;;;;;;x
 b_pechenga;Pechenga;Pechenga;Pechenga;;Pechenga;;;;;;;;;;;;;x
 b_pechichitane;Pechichitane;;;;;;;;;x
@@ -7906,8 +7954,8 @@ b_perquimans;Perquimans;;;;;;;;;x
 b_perrecy2;Perrecy;;;;;;;;;;;;;x
 b_pershore;Pershore;;;;;;;;;;;;;x
 b_perth;Peairt;;;;;;;;;;;;;x
-b_perugia;Perugia;Pérouse;Perugia;;Perugia;;;;;;;;;;;;;x
 b_perugia1;Perugia;;;;;;;;;;;x
+b_perugia;Perugia;Pérouse;Perugia;;Perugia;;;;;;;;;;;;;x
 b_perungulam;Perungulam;Perungulam;Perungulam;Perungulam;Perungulam;Perungulam;Perungulam;Perungulam;Perungulam;Perungulam;Perungulam;Perungulam;Perungulam;x
 b_peruru;Peruru;Peruru;Peruru;Peruru;Peruru;Peruru;Peruru;Peruru;Peruru;Peruru;Peruru;Peruru;Peruru;x
 b_peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;Peruvallur;x
@@ -7926,6 +7974,7 @@ b_petkootkweak;Petkootkweak;;;;;;;;;x
 b_petralia;Petralia;Petralia;Petralia;;Petralia;;;;;;;;;;;;;x
 b_petrozavodsk;Petroskoi;Petroskoi;Petroskoj;;Petroskoi;;;;;;;;;;;;;x
 b_petrykaw;Petrykaw;Petrykaw;Petrykaw;;Petrykaw;;;;;;;;;;;;;x
+b_pettau1;Pettau;;;;;;;;;;;x
 b_phala;Phala;Phala;Phala;Phala;Phala;Phala;Phala;Phala;Phala;Phala;Phala;Phala;Phala;x
 b_phalodi;Phalodi;Phalodi;Phalodi;Phalodi;Phalodi;Phalodi;Phalodi;Phalodi;Phalodi;Phalodi;Phalodi;Phalodi;Phalodi;x
 b_pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;Pharasgaon;x
@@ -8072,8 +8121,8 @@ b_popayan-iii;Popayan-iii;;;;;;;;;x
 b_popayan-iv;Popayan-iv;;;;;;;;;x
 b_popayan;Popayan;;;;;;;;;x
 b_populonia;Populonia;Populonia;Populonia;;Populonia;;;;;;;;;;;;;x
-b_popunlant;Popunlant;;;;;;;;;x
 b_popunlant1;Popunlant;;;;;;;;;;;x
+b_popunlant;Popunlant;;;;;;;;;x
 b_porapontax;Porapontax;;;;;;;;;x
 b_pore-ii;Pore-ii;;;;;;;;;x
 b_pore-iii;Pore-iii;;;;;;;;;x
@@ -8112,6 +8161,7 @@ b_pratisthana;Pratisthana;Pratisthana;Pratisthana;Pratisthana;Pratisthana;Pratis
 b_prato;Prato;Prato;Prato;;Prato;;;;;;;;;;;;;x
 b_prayaga;Prayaga;Prayaga;Prayaga;Prayaga;Prayaga;Prayaga;Prayaga;Prayaga;Prayaga;Prayaga;Prayaga;Prayaga;Prayaga;x
 b_prempura;Prempura;Prempura;Prempura;Prempura;Prempura;Prempura;Prempura;Prempura;Prempura;Prempura;Prempura;Prempura;Prempura;x
+b_prignitz;Prignitz;;;;;;;;;;;x
 b_privas;Provas;Provas;Provas;;Provas;;;;;;;;;;;;;x
 b_provins;Provins;Provins;Provins;;Provins;;;;;;;;;;;;;x
 b_provoi2;Provoi;;;;;;;;;;;;;;;;;x
@@ -8195,8 +8245,8 @@ b_qasamarka;Qasamarka;;;;;;;;;x
 b_qasigialingat;Qasigialingat;;;;;;;;;x
 b_qasigiannguit;Qasigiannguit;;;;;;;;;x
 b_qasmiye2;Qasmiye;;;;;;;;;;;;;x
-b_qasrfarfra;Qasr Farfra;Qasr Farafra;Qasr Farfra;;Qasr Farfra;;;;;;;;;;;;;x
 b_qasrfarfra1;Qasr Farfra;;;;;;;;;;;x
+b_qasrfarfra;Qasr Farfra;Qasr Farafra;Qasr Farfra;;Qasr Farfra;;;;;;;;;;;;;x
 b_qassiarsuk;Qassiarsuk;;;;;;;;;x
 b_qazan;Bulgar;Bulgarie;Bulgarien;;Bulgar;;;;;;;;;;;;;x
 b_qeqertarsuaq;Qeqertarsuaq;;;;;;;;;x
@@ -8365,8 +8415,8 @@ b_reval;Reval;Reval;Reval;;Reval;;;;;;;;;;;;;x
 b_revkaakstok;Revkaakstok;;;;;;;;;x
 b_rewai;Rewai;Rewai;Rewai;Rewai;Rewai;Rewai;Rewai;Rewai;Rewai;Rewai;Rewai;Rewai;Rewai;x
 b_reyesalgado;Reyesalgado;;;;;;;;;x
-b_reykjavik;Reykjarvík;;;;;;;;;;;;;x
 b_reykjavik1;Reykjarvík;;;;;;;;;;;;;x
+b_reykjavik;Reykjarvík;;;;;;;;;;;;;x
 b_rezekne;Rezekne;Rezekne;Rezekne;;Rezekne;;;;;;;;;;;;;x
 b_rhapta;Rhapta;;;;;;;;;;;;;x
 b_rhayader;Rhaeadr Gwy;;;;;;;;;;;;;x
@@ -8380,8 +8430,8 @@ b_riberalta;Riberalta;;;;;;;;;x
 b_ricoayey;Ricoayey;;;;;;;;;x
 b_riga;Riga;Riga;Riga;;Riga;;;;;;;;;;;;;x
 b_rikala;Rikala;Rikala;Rikala;;Rikala;;;;;;;;;;;;;x
-b_rimini;Rimini;Rimini;Rimini;;Rimini;;;;;;;;;;;;;x
 b_rimini1;Rimini;;;;;;;;;;;x
+b_rimini;Rimini;Rimini;Rimini;;Rimini;;;;;;;;;;;;;x
 b_rincoayaguez;Rincoayaguez;;;;;;;;;x
 b_rincolc;Rincolc;;;;;;;;;x
 b_ringkobing;Ringkøbing;Ringkøbing;Ringkøbing;;Ringkøbing;;;;;;;;;;;;;x
@@ -8504,6 +8554,7 @@ b_saissac;Saissac;Saissac;Saissac;;Saissac;;;;;;;;;;;;;x
 b_sajabaus;Sajabaus;;;;;;;;;x
 b_sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;Sajjanpur;x
 b_sajuanarad;Sajuanarad;;;;;;;;;x
+b_saka1;Saka;;;;;;;;;;;x
 b_sakala;Sakala;Sakala;Sakala;Sakala;Sakala;Sakala;Sakala;Sakala;Sakala;Sakala;Sakala;Sakala;Sakala;x
 b_sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;Sakambhari;x
 b_sakami;Sakami;;;;;;;;;x
@@ -8655,11 +8706,13 @@ b_sartene;Sartène;Sartène;Sartène;;Sartène;;;;;;;;;;;;;x
 b_sarum;Sorviodunum;;;;;;;;;;;;;x
 b_sarva;Sarva;Sarva;Sarva;Sarva;Sarva;Sarva;Sarva;Sarva;Sarva;Sarva;Sarva;Sarva;Sarva;x
 b_sarwyacannelo;Sarwyacannelo;;;;;;;;;x
+b_saryagash;Saryagash;;;;;;;;;;;x
 b_saskatchewan;Saskatchewan;;;;;;;;;x
 b_saskatoon;Saskatoon;;;;;;;;;x
 b_sasni;Sasni;Sasni;Sasni;Sasni;Sasni;Sasni;Sasni;Sasni;Sasni;Sasni;Sasni;Sasni;Sasni;x
 b_sassari;Sassari;Sassari;Sassari;;Sassari;;;;;;;;;;;;;x
 b_sassuolo;Sassuolo;Sassuolo;Sassuolo;;Sassuolo;;;;;;;;;;;;;x
+b_sastobe;Sastobe;;;;;;;;;;;x
 b_sater;Säter;Säter;Säter;;Säter;;;;;;;;;;;;;x
 b_sathiya;Sathiya;Sathiya;Sathiya;Sathiya;Sathiya;Sathiya;Sathiya;Sathiya;Sathiya;Sathiya;Sathiya;Sathiya;Sathiya;x
 b_sattiaatteq;Sattiaatteq;;;;;;;;;x
@@ -8670,8 +8723,8 @@ b_savali;Savali;Savali;Savali;Savali;Savali;Savali;Savali;Savali;Savali;Savali;S
 b_savedi;Savedi;Savedi;Savedi;Savedi;Savedi;Savedi;Savedi;Savedi;Savedi;Savedi;Savedi;Savedi;Savedi;x
 b_savigliano;Savigliano;Savigliano;Savigliano;;Savigliano;;;;;;;;;;;;;x
 b_savitaipale;Savitaipale;Savitaipale;Savitaipale;;Savitaipale;;;;;;;;;;;;;x
-b_savona;Savona;Savone;Savona;;Savona;;;;;;;;;;;;;x
 b_savona1;Savona;;;;;;;;;;;x
+b_savona;Savona;Savone;Savona;;Savona;;;;;;;;;;;;;x
 b_savosusa;Shusha;Shusha;Shusha;;Shusha;;;;;;;;;;;;;x
 b_savukoski;Savukoski;Savukoski;Savukoski;;Savukoski;;;;;;;;;;;;;x
 b_sawsupiggent;Sawsupiggent;;;;;;;;;x
@@ -8694,6 +8747,7 @@ b_secunderabad;Secunderabad;Secunderabad;Secunderabad;Secunderabad;Secunderabad;
 b_sedeh;Sedeh;Sedeh;Sedeh;;Sedeh;;;;;;;;;;;;;x
 b_sedwick;Sedwick;;;;;;;;;x
 b_seetharama_puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;Seetharama Puram;x
+b_sefrou1;Sefrou;;;;;;;;;;;x
 b_segezha;Segezha;Segueja;Segescha;;Segezha;;;;;;;;;;;;;x
 b_segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;Segvachhama;x
 b_seiniai;Seiniai;Seiniai;Seiniai;;Seiniai;;;;;;;;;;;;;x
@@ -8759,6 +8813,7 @@ b_shahdara;Shahdara;Shahdara;Shahdara;Shahdara;Shahdara;Shahdara;Shahdara;Shahda
 b_shahrain2;Shahrain;;;;;;;;;;;;;x
 b_shahrbabak;Shahr Babak;;;;;;;;;;;;;x
 b_shakhunya2;Shaykunya;;;;;;;;;;;;;;;;;x
+b_shakpak_baba;Shakpak Baba;;;;;;;;;;;x
 b_shakshukuk;Shakshukuk;;;;;;;;;x
 b_shakti_nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;Shakti Nagar;x
 b_shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;Shaktinagar;x
@@ -8910,8 +8965,8 @@ b_skagen;Skagen;Skagen;Skagen;;Skagen;;;;;;;;;;;;;x
 b_skagitspa;Skagitspa;;;;;;;;;x
 b_skaistkalne;Skaistkalne;Skaistkalne;Skaistkalne;;Skaistkalne;;;;;;;;;;;;;x
 b_skalavagr;Skálavágr;;;;;;;;;;;;;x
-b_skalholt;Skálaholt;;;;;;;;;;;;;x
 b_skalholt1;Skálaholt;;;;;;;;;;;;;x
+b_skalholt;Skálaholt;;;;;;;;;;;;;x
 b_skamarneanta;Skamarneanta;;;;;;;;;x
 b_skaqmk;Skaqmk;;;;;;;;;x
 b_skatelohoski;Skatelohoski;;;;;;;;;x
@@ -8994,6 +9049,7 @@ b_soro;Soro;Soro;Soro;Soro;Soro;Soro;Soro;Soro;Soro;Soro;Soro;Soro;Soro;x
 b_soroka;Soroka;Soroka;Soroka;;Soroka;;;;;;;;;;;;;x
 b_sorrento;Sorrento;Sorrente;Sorrento;;Sorrento;;;;;;;;;;;;;x
 b_sorsele;Sorsele;Sorsele;Sorsele;;Sorsele;;;;;;;;;;;;;x
+b_sortobe;Sortobe;;;;;;;;;;;x
 b_sosavur;Sosavur;Sosavur;Sosavur;Sosavur;Sosavur;Sosavur;Sosavur;Sosavur;Sosavur;Sosavur;Sosavur;Sosavur;Sosavur;x
 b_sosnogorsk2;Sosnogorsk;;;;;;;;;;;;;;;;;x
 b_sosnogorsk;Sosnogorsk;Sosnogorsk;Sosnogorsk;;Sosnogorsk;;;;;;;;;;;;;x
@@ -9204,6 +9260,7 @@ b_talamanca-iii;Talamanca-iii;;;;;;;;;x
 b_talamanca;Talamanca;;;;;;;;;x
 b_talampaychas;Talampaychas;;;;;;;;;x
 b_talapty;Talapty;;;;;;;;;;;;;x
+b_talas_balasagun;Talas Balasagun;;;;;;;;;;;x
 b_talbottom;Talbottom;;;;;;;;;x
 b_talisheek;Talisheek;;;;;;;;;x
 b_tallahasse;Tallahasse;;;;;;;;;x
@@ -9224,6 +9281,7 @@ b_tamaulipas-iv;Tamaulipas-iv;;;;;;;;;x
 b_tamaulipas;Tamaulipas;;;;;;;;;x
 b_tambagama;Tambagama;Tambagama;Tambagama;Tambagama;Tambagama;Tambagama;Tambagama;Tambagama;Tambagama;Tambagama;Tambagama;Tambagama;Tambagama;x
 b_tambala;Tambala;Tambala;Tambala;Tambala;Tambala;Tambala;Tambala;Tambala;Tambala;Tambala;Tambala;Tambala;Tambala;x
+b_tamga;Tamga;;;;;;;;;;;x
 b_tamiat2;Tamiat;;;;;;;;;;;x
 b_tamiat3;Tamiat;;;;;;;;;;;x
 b_tamiat4;Tamiat;;;;;;;;;;;x
@@ -9580,6 +9638,7 @@ b_toulonsurarroux2;Toulonsurraoux;;;;;;;;;;;;;;;;;x
 b_toulouse;Toulouse;Toulouse;Toulouse;;Toulouse;;;;;;;;;;;;;x
 b_tournon;Tournon;Tournon;Tournon;;Tournon;;;;;;;;;;;;;x
 b_tournus;Tournus;Tournus;Tournus;;Tournus;;;;;;;;;;;;;x
+b_toutunhe;Toutunhe;;;;;;;;;;;x
 b_towandaquin;Towandaquin;;;;;;;;;x
 b_tozeur;Tozeur;Tozeur;Tozeur;;Tozeur;;;;;;;;;;;;;x
 b_tpujuyyua;Tpujuyyua;;;;;;;;;x
@@ -9748,6 +9807,7 @@ b_udabhanda;Udabhanda;Udabhanda;Udabhanda;Udabhanda;Udabhanda;Udabhanda;Udabhand
 b_udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;Udayagiri;x
 b_udayavara;Udayavara;Udayavara;Udayavara;Udayavara;Udayavara;Udayavara;Udayavara;Udayavara;Udayavara;Udayavara;Udayavara;Udayavara;Udayavara;x
 b_udhampur;Udhampur;Udhampur;Udhampur;Udhampur;Udhampur;Udhampur;Udhampur;Udhampur;Udhampur;Udhampur;Udhampur;Udhampur;Udhampur;x
+b_udine1;Udine;;;;;;;;;;;x
 b_udkhed;Udkhed;Udkhed;Udkhed;Udkhed;Udkhed;Udkhed;Udkhed;Udkhed;Udkhed;Udkhed;Udkhed;Udkhed;Udkhed;x
 b_udma;Udma;Udma;Udma;Udma;Udma;Udma;Udma;Udma;Udma;Udma;Udma;Udma;Udma;x
 b_udvada;Udvada;Udvada;Udvada;Udvada;Udvada;Udvada;Udvada;Udvada;Udvada;Udvada;Udvada;Udvada;Udvada;x
@@ -9831,11 +9891,13 @@ b_urgench;Urgench;;;;;;;;;;;x
 b_urgiilikuuk;Urgiilikuuk;;;;;;;;;x
 b_urgilikiggikingi;Urgilikiggikingi;;;;;;;;;x
 b_urgut;Urgut;Urgut;Urgut;;Urgut;;;;;;;;;;;;;x
+b_urtaaul;Urtaaul;;;;;;;;;;;x
 b_uru_uru-ii;Uru_uru-ii;;;;;;;;;x
 b_uru_uru-iii;Uru_uru-iii;;;;;;;;;x
 b_uru_uru;Uru_uru;;;;;;;;;x
 b_urucurituba;Urucurituba;;;;;;;;;x
 b_uruguay;Uruguay;;;;;;;;;x
+b_urumqi;Urumqi;;;;;;;;;;;x
 b_urupan;Urupan;;;;;;;;;x
 b_uschiskash;Uschiskash;;;;;;;;;x
 b_usgus;Usgus;;;;;;;;;x
@@ -9874,8 +9936,8 @@ b_uyunitac;Uyunitac;;;;;;;;;x
 b_uzan_bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;Uzan Bazaar;x
 b_uzgen;Uzgen;Uzgen;Uzgen;Uzgen;Uzgen;Uzgen;Uzgen;Uzgen;Uzgen;Uzgen;Uzgen;Uzgen;Uzgen;x
 b_uzun_ata;Uzun Ata;;;;;;;;;;;;;x
-b_uzzalnetio;Uzzalnetio;;;;;;;;;x
 b_uzzalnetio1;Uzzalnetio;;;;;;;;;;;x
+b_uzzalnetio;Uzzalnetio;;;;;;;;;x
 b_vabbejaenee;Vabbejaenee;;;;;;;;;x
 b_vabres;Vabres;Vabres;Vabres;;Vabres;;;;;;;;;;;;;x
 b_vadalur;Vadalur;Vadalur;Vadalur;Vadalur;Vadalur;Vadalur;Vadalur;Vadalur;Vadalur;Vadalur;Vadalur;Vadalur;Vadalur;x
@@ -9964,8 +10026,8 @@ b_vengikkal;Vengikkal;Vengikkal;Vengikkal;Vengikkal;Vengikkal;Vengikkal;Vengikka
 b_vengipura;Vengipura;Vengipura;Vengipura;Vengipura;Vengipura;Vengipura;Vengipura;Vengipura;Vengipura;Vengipura;Vengipura;Vengipura;Vengipura;x
 b_venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;Venkatapura;x
 b_ventava;Ventava;Ventava;Ventava;;Ventava;;;;;;;;;;;;;x
-b_ventimiglia;Ventimiglia;Vintimille;Ventimiglia;;Ventimiglia;;;;;;;;;;;;;x
 b_ventimiglia1;Ventimiglia;;;;;;;;;;;x
+b_ventimiglia;Ventimiglia;Vintimille;Ventimiglia;;Ventimiglia;;;;;;;;;;;;;x
 b_ventispinkeks;Ventispinkeks;;;;;;;;;x
 b_vequkruah;Vequkruah;;;;;;;;;x
 b_veraguas-ii;Veraguas-ii;;;;;;;;;x
@@ -9980,6 +10042,7 @@ b_veringlang;Veringlang;;;;;;;;;x
 b_verjavia;Verjavia;;;;;;;;;x
 b_verkhmgla;Verkh Mgla;Verkh Mgla;Werch Mgla;;Verkh Mgla;;;;;;;;;;;;;x
 b_verteris;Verteris;;;;;;;;;;;;;x
+b_vertus1;Vertus;;;;;;;;;;;x
 b_vertus;Vertus;Vertus;Vertus;;Vertus;;;;;;;;;;;;;x
 b_verulamium;Verulamium;;;;;;;;;;;;;x
 b_verzuolo;Verzuolo;Verzuolo;Verzuolo;;Verzuolo;;;;;;;;;;;;;x
@@ -10094,6 +10157,7 @@ b_vuzelanpuenna;Vuzelanpuenna;;;;;;;;;x
 b_vyagerlash;Vyagerlash;;;;;;;;;x
 b_vyborg;Vyborg;Vyborg;Wyborg;;Vyborg;;;;;;;;;;;;;x
 b_vypin;Vypin;Vypin;Vypin;Vypin;Vypin;Vypin;Vypin;Vypin;Vypin;Vypin;Vypin;Vypin;Vypin;x
+b_vysoka;Vysoka;;;;;;;;;;;x
 b_vysokaya2;Vysokaya;;;;;;;;;;;;;;;;;x
 b_vysokaya;Vysokaya;Vysokaya;Wisokaja;;Vysokaya;;;;;;;;;;;;;x
 b_waba;Waba;;;;;;;;;x
@@ -10331,6 +10395,7 @@ b_xiconaque;Xiconaque;;;;;;;;;x
 b_xingu-ii;Xingu-ii;;;;;;;;;x
 b_xingu-iii;Xingu-iii;;;;;;;;;x
 b_xingu;Xingu;;;;;;;;;x
+b_xinshi;Xinshi;;;;;;;;;;;x
 b_xiu-ii;Xiu-ii;;;;;;;;;x
 b_xiu-iii;Xiu-iii;;;;;;;;;x
 b_xiu;Xiu;;;;;;;;;x
@@ -10370,6 +10435,7 @@ b_yamskygorodok;Yamsky Gorodok;Yamsky Gorodok;Kingisepp;;Yamsky Gorodok;;;;;;;;;
 b_yana;Yana;;;;;;;;;x
 b_yanawat;Yanawat;;;;;;;;;x
 b_yangi_uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;Yangi Uzgen;x
+b_yangiyol;Yangiyol;;;;;;;;;;;x
 b_yanknelant;Yanknelant;;;;;;;;;x
 b_yankota;Yankota;;;;;;;;;x
 b_yanqui;Yanqui;Yanqui;Yanqui;;Yanqui;;;;;;;;;;;;;x
@@ -10458,6 +10524,7 @@ b_yumicalif;Yumicalif;;;;;;;;;x
 b_yurgamysh2;Yurgamysh;;;;;;;;;;;;;;;;;x
 b_yurimaguas;Yurimaguas;;;;;;;;;x
 b_yurok;Yurok;;;;;;;;;x
+b_yuryev;Yuryev;;;;;;;;;;;x
 b_yustaga;Yustaga;;;;;;;;;x
 b_yuumapiti;Yuumapiti;;;;;;;;;x
 b_yuvbititgithey;Yuvbititgithey;;;;;;;;;x
@@ -10502,9 +10569,12 @@ b_zazacatoa;Zazacatoa;;;;;;;;;x
 b_zbalentenk;Zbalentenk;;;;;;;;;x
 b_zebrydowice;Zebrydowice;Zebrydowice;Zebrydowice;;Zebrydowice;;;;;;;;;;;;;x
 b_zemenos;Zemenos;Zéménos;Zemenos;;Zemenos;;;;;;;;;;;;;x
+b_zhabagly;Zhabagly;;;;;;;;;;;x
 b_zharbulak;Zharbulak;;;;;;;;;;;;;x
+b_zhaskeshu;Zhaskeshu;;;;;;;;;;;x
 b_zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;Zhdanov;x
 b_zheshart;Zheshart;Zheshart;Scheschart;;Zheshart;;;;;;;;;;;;;x
+b_zhibek_zholy;Zhibek Zholy;;;;;;;;;;;x
 b_zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;Zhuantobe;x
 b_zhytkavichy;Zhytkavichy;Zhytkavichy;Zhytkavichy;;Zhytkavichy;;;;;;;;;;;;;x
 b_ziadin;Ziadin;Ziadin;Ziadin;;Ziadin;;;;;;;;;;;;;x
@@ -10691,6 +10761,7 @@ c_anasasi_adj;Anasasi;;;;;;;;;x
 c_anchorage;Anchorage;;;;;;;;;x
 c_anchorage_adj;Anchorage;;;;;;;;;x
 c_ancona_adj;Anconian;Ancônitaine;Anconischer;;Anconitano;;;;;;;;;;;;;x
+c_andijan_adj;Andijanian;;;;;;;;;;;x
 c_androscoggin;Androscoggin;;;;;;;;;x
 c_androscoggin_adj;Androscoggin;;;;;;;;;x
 c_angermanland_adj;Ångermanlander;Ångermanienne;Ångermanlander;;Angermanlandés;;;;;;;;;;;;;x
@@ -10722,6 +10793,7 @@ c_apache_adj;Apache;;;;;;;;;x
 c_apagachutchi;Apagachutchi;;;;;;;;;x
 c_apagachutchi_adj;Apagachutchi;;;;;;;;;x
 c_apalachee_adj;Apalachee;;;;;;;;;x
+c_apaporis_adj;Apaporis;;;;;;;;;x
 c_apatzingan_adj;Apatzingan;;;;;;;;;x
 c_apiaka_adj;Apiaká;;;;;;;;;x
 c_apulia_adj;Apulian;Apulienne;Apulischer;;Apulio;;;;;;;;;;;;;x
@@ -10872,6 +10944,7 @@ c_boroborema_adj;Boroborema;;;;;;;;;x
 c_borrado;Borrado;;;;;;;;;x
 c_borrado_adj;Borrado;;;;;;;;;x
 c_bost_adj;Arakhosia;;;;;;;;;;;;;x
+c_brakmrax_adj;Brakmraxite;;;;;;;;;;;x
 c_breifne_adj;Breifnean;;;;;;;;;;;;;x
 c_bronx;Bronx;;;;;;;;;x
 c_bronx_adj;Bronx;;;;;;;;;x
@@ -11344,6 +11417,7 @@ c_gaya_adj;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliputra;Pataliput
 c_geneve_adj;Genevan;Génevoise;Genfer;;Ginebrino;;;;;;;;;;;;;x
 c_genoa_adj;Genoese;Génoise;Genuanischer;;Genovés;;;;;;;;;;;;;x
 c_gezira_adj;Matamman;Matammane;Matamma-;;Matammano;;;;;;;;;;;;;x
+c_ghuan_adj;Ghuanite;;;;;;;;;;;x
 c_gila;Gila;;;;;;;;;x
 c_gila_adj;Gila;;;;;;;;;x
 c_gilan_adj;Gilanian;Gilani;Gilanischer;;Gilaní;;;;;;;;;;;;;x
@@ -11459,6 +11533,7 @@ c_hochunk;Ho-Chunk;;;;;;;;;;;x
 c_hochunk;Hochunk;;;;;;;;;x
 c_hochunk_adj;Ho-Chunk;;;;;;;;;;;x
 c_hochunk_adj;Hochunk;;;;;;;;;x
+c_hoksren_adj;Hoksrenite;;;;;;;;;;;x
 c_honduras;Honduras;;;;;;;;;x
 c_honduras_adj;Honduras;;;;;;;;;x
 c_honniasont;Honniasont;;;;;;;;;x
@@ -11522,6 +11597,7 @@ c_itapuat;Itapuat;;;;;;;;;x
 c_itapuat_adj;Itapuat;;;;;;;;;x
 c_ittoqqortoormiit_adj;Ittoqqortoormiit;;;;;;;;;;;;;x
 c_ituxi_adj;Ituxi;;;;;;;;;;;;;x
+c_iuxsiang_adj;Iuxsiangian;;;;;;;;;;;x
 c_ivittuut;Ivittuut;;;;;;;;;x
 c_ivittuut_adj;Ivittuut;;;;;;;;;x
 c_ivujivik;Ivujivik;;;;;;;;;x
@@ -11532,8 +11608,8 @@ c_jakaltek;Jakaltek;;;;;;;;;x
 c_jakaltek_adj;Jakaltek;;;;;;;;;x
 c_jamaica;Jamaica;;;;;;;;;x
 c_jamaica_adj;Jamaica;;;;;;;;;x
-c_japura_adj;Japurá;;;;;;;;;;;;;;x
 c_jamtland_adj;Jamtlandic;Jamtlandique;Jamtlander;;Jemtiana;;;;;;;;;;;;;x
+c_japura_adj;Japurá;;;;;;;;;;;;;;x
 c_jaunpur;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;x
 c_jaunpur_adj;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;Gokulaghatta;x
 c_jeremoabo;Jeremoabo;;;;;;;;;x
@@ -11650,6 +11726,7 @@ c_kexholm_adj;Kexholmian;Kexholmienne;Kexholmer;;Kexholmianense;;;;;;;;;;;;;x
 c_khijjingakota;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;x
 c_khijjingakota_adj;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;Yajatinagara;x
 c_khorasan_adj;Xwarasani;;;;;;;;;;;;;x
+c_khujand_adj;Khujandite;;;;;;;;;;;x
 c_kichai;Kichai;;;;;;;;;x
 c_kichai_adj;Kichai;;;;;;;;;x
 c_kichesipi;Kichesipi;;;;;;;;;x
@@ -11767,6 +11844,7 @@ c_lilloner;Lilloner;;;;;;;;;x
 c_lilloner_adj;Lilloner;;;;;;;;;x
 c_limaq;Limaq;;;;;;;;;x
 c_limaq_adj;Limaq;;;;;;;;;x
+c_limghuang_adj;Limghuangian;;;;;;;;;;;x
 c_lincoln_adj;Lincylenean;;;;;;;;;;;;;x
 c_lipan;Lipan;;;;;;;;;x
 c_lipan_adj;Lipan;;;;;;;;;x
@@ -12315,6 +12393,7 @@ c_peten;Peten;;;;;;;;;x
 c_peten_adj;Peten;;;;;;;;;x
 c_phiti;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;x
 c_phiti_adj;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;Anuradhapura;x
+c_phiung_adj;Phiungite;;;;;;;;;;;x
 c_pianknono;Pianknono;;;;;;;;;x
 c_pianknono_adj;Pianknono;;;;;;;;;x
 c_picunche;Picunche;;;;;;;;;x
@@ -12640,6 +12719,7 @@ c_siracusa_adj;Siracusian;Syracusienne;Syrakusischer;;Siracusano;;;;;;;;;;;;;x
 c_sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;x
 c_sirindha_adj;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;Sirindha;x
 c_sjaelland_adj;Sjaellander;Sjaellandaise;Sjaelländer;;Zelandés;;;;;;;;;;;;;x
+c_sjingh_adj;Sjinghite;;;;;;;;;;;x
 c_skane_adj;Scanian;Scanienne;Skanischer;;Escanio;;;;;;;;;;;;;x
 c_skitlaw;Skitlaw;;;;;;;;;x
 c_skitlaw_adj;Skitlaw;;;;;;;;
@@ -12805,6 +12885,7 @@ c_thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;
 c_thana_adj;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;Thana;x
 c_thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;x
 c_thatta_adj;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;Thatta;x
+c_thentok_adj;Thentokite;;;;;;;;;;;x
 c_thomond_adj;Tuadh-Mhumhainian;;;;;;;;;;;;;x
 c_tiahuanaco;Tiahuanaco;;;;;;;;;x
 c_tiahuanaco_adj;Tiahuanaco;;;;;;;;;x
@@ -12959,7 +13040,6 @@ c_unamakik;Unamakik;;;;;;;;;x
 c_unamakik_adj;Unamakik;;;;;;;;;x
 c_unamenshipit;Unamenshipit;;;;;;;;;x
 c_unamenshipit_adj;Unamenshipit;;;;;;;;;x
-c_apaporis_adj;Apaporis;;;;;;;;;x
 c_uppland_adj;Upplander;;;;;;;;;;;;;x
 c_urbino_adj;Urbinian;Urbinate;Urbinischer;;Urbinati;;;;;;;;;;;;;x
 c_urflorican;Urflorican;;;;;;;;;x
@@ -13973,6 +14053,7 @@ d_leon;León;León;León;;León;;;;;;;;;;;;;x
 d_leon_adj;Léonian;Léonaise;Léoner;;Leonesa;;;;;;;;;;;;;x
 d_lesser_poland;Vistula;;;;;;;;;;;;;x
 d_lesser_poland_adj;Lesser Polish;Petite-Polonaise;Kleinpolnischer;;Polaca;;;;;;;;;;;;;x
+d_limghuang_adj;Limghuangian;;;;;;;;;;;x
 d_lindsey;Lindesege;;;;;;;;;;;;;x
 d_lindsey_adj;Lindesegean;;;;;;;;;;;;;x
 d_lithuanians;Lithuania;Lithuanie;Litauen;;Lituanos;;;;;;;;;;;;;x
@@ -14576,6 +14657,7 @@ d_thana;Thana;;;;;;;;;;;;;x
 d_thana_adj;Thanaian;;;;;;;;;;;;;x
 d_thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;x
 d_thar_adj;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;Thar;x
+d_thentok_adj;Thentokite;;;;;;;;;;;x
 d_thracesia;Thrakesion;;;;;;;;;;;;;;;;;x
 d_thracesia_adj;Thrakesioi;;;;;;;;;;;;;;;;;x
 d_thuringi;the Thuringians;;;;;;;;;;;;;;;;;x
@@ -15137,8 +15219,8 @@ k_avars;Avaria;;;;;;;;;;;;;x
 k_avars_adj;Avar;;;;;;;;;;;;;x
 k_aydin;Aydin;Aydin;Aydin;;Aydín;;;;;;;;;;;;;x
 k_aztec;Aztec;;;;;;;;;x
-k_aztec_rel;Tlatoani Altepetl;;;;;;;;;;;;;x
 k_aztec_adj;Aztec;;;;;;;;;x
+k_aztec_rel;Tlatoani Altepetl;;;;;;;;;;;;;x
 k_aztec_rel_adj;Tlatoani;;;;;;;;;;;;;x
 k_bactria;Bactria;;;;;;;;;;;;;x
 k_bactria_adj;Bactrian;;;;;;;;;;;;;x
@@ -15346,6 +15428,7 @@ k_kent;Kent;;;;;;;;;;;;;x
 k_kent_adj;Kentish;;;;;;;;;;;;;x
 k_kheroshawnee;Kheroshawnee;;;;;;;;;x
 k_kheroshawnee_adj;Kheroshawnee;;;;;;;;;x
+k_khitans_adj;Khitan;;;;;;;;;;;x
 k_khorasan;Khorasan;;;;;;;;;;;;;x
 k_khorasan_adj;Khorasani;;;;;;;;;;;;;x
 k_khotan;Khotan;;;;;;;;;;;;;x
@@ -15849,86 +15932,3 @@ title_prince_female_indoaryan;Rajkumari;Rajkumari;Radschkumari;;Rajkumarí;;;;;;;
 title_prince_indoaryan;Rajkumar;Rajkumar;Radschkumar;;Rajkumar;;;;;;;;;x;;;;;;;;;;;;
 vice_royalty_duchy_of_sinohellenic;Satrapy of;Satrape de;Satrap von;;Sátrap de;;;;;;;;;x
 vice_royalty_duke_sinohellenic;Satrap;Satrap;Satrap;;Satrap;;;;;;;;;x
-b_pettau1;Pettau;;;;;;;;;;;x
-b_udine1;Udine;;;;;;;;;;;x
-b_nalsia;Nalsia;;;;;;;;;;;x
-b_nalsia1;Nalsia;;;;;;;;;;;x
-b_dramburg1;Dramburg;;;;;;;;;;;x
-b_havelberg;Havelberg;;;;;;;;;;;x
-b_havelberg1;Havelberg;;;;;;;;;;;x
-b_havelberg2;Havelberg;;;;;;;;;;;x
-b_havelberg3;Havelberg;;;;;;;;;;;x
-b_brisanen;Brisanen;;;;;;;;;;;x
-b_vysoka;Vysoka;;;;;;;;;;;x
-b_prignitz;Prignitz;;;;;;;;;;;x
-b_magdeburg1;Magdeburg;;;;;;;;;;;x
-b_magdeburg2;Magdeburg;;;;;;;;;;;x
-b_magdeburg3;Magdeburg;;;;;;;;;;;x
-b_hahaldeslevo;Hahaldeslevo;;;;;;;;;;;x
-b_mapungubwe1;Mapungubwe;;;;;;;;;;;x
-b_mapungubwe2;Mapungubwe;;;;;;;;;;;x
-b_mapungubwe3;Mapungubwe;;;;;;;;;;;x
-b_mapungubwe4;Mapungubwe;;;;;;;;;;;x
-b_mapungubwe5;Mapungubwe;;;;;;;;;;;x
-b_meknes1;Meknes;;;;;;;;;;;x
-b_sefrou1;Sefrou;;;;;;;;;;;x
-b_saka1;Saka;;;;;;;;;;;x
-b_brie;Brie;;;;;;;;;;;x
-b_chateauthierry1;Château-Thierry;;;;;;;;;;;
-b_montmirail1;Montmirail;;;;;;;;;;;x
-b_vertus1;Vertus;;;;;;;;;;;x
-b_meaux1;Meaux;;;;;;;;;;;x
-b_parnakheta1;Parnakheta;;;;;;;;;;;x
-b_munda;Munda;;;;;;;;;;;x
-b_chimkorgon;Chimkorgon;;;;;;;;;;;x
-b_sortobe;Sortobe;;;;;;;;;;;x
-b_don_aryk;Don Aryk;;;;;;;;;;;x
-b_kosh_korgon;Kosh Korgon;;;;;;;;;;;x
-b_toutunhe;Toutunhe;;;;;;;;;;;x
-b_fengtiancun;Fengtiancun;;;;;;;;;;;x
-b_bahu_di;Bahu Di;;;;;;;;;;;x
-b_xinshi;Xinshi;;;;;;;;;;;x
-b_urumqi;Urumqi;;;;;;;;;;;x
-b_karagayna;Karagayna;;;;;;;;;;;x
-b_kalinino;Kalinino;;;;;;;;;;;x
-b_orlevka;Orlevka;;;;;;;;;;;x
-b_budennyy;Budennyy;;;;;;;;;;;x
-b_kolba;Kolba;;;;;;;;;;;x
-b_dolona;Dolona;;;;;;;;;;;x
-b_talas_balasagun;Talas Balasagun;;;;;;;;;;;x
-b_byulkuldek;Byulkuldek;;;;;;;;;;;x
-c_andijan_adj;Andijanian;;;;;;;;;;;x
-b_paytug;Paytug;;;;;;;;;;;x
-b_pakhtaabad;Pakhtaabad;;;;;;;;;;;x
-b_asaka;Asaka;;;;;;;;;;;x
-c_khujand_adj;Khujandite;;;;;;;;;;;x
-b_shakpak_baba;Shakpak Baba;;;;;;;;;;;x
-b_zhabagly;Zhabagly;;;;;;;;;;;x
-b_zhaskeshu;Zhaskeshu;;;;;;;;;;;x
-b_sastobe;Sastobe;;;;;;;;;;;x
-b_chaprashty;Chaprashty;;;;;;;;;;;x
-b_kibray;Kibray;;;;;;;;;;;x
-b_zhibek_zholy;Zhibek Zholy;;;;;;;;;;;x
-b_kaplanbek;Kaplanbek;;;;;;;;;;;x
-b_saryagash;Saryagash;;;;;;;;;;;x
-b_kazminwody;Kazminwody;;;;;;;;;;;x
-b_yangiyol;Yangiyol;;;;;;;;;;;x
-b_urtaaul;Urtaaul;;;;;;;;;;;x
-b_chychkan;Chychkan;;;;;;;;;;;x
-b_akterek;Akterek;;;;;;;;;;;x
-b_chon_jargylchak;Chon Jargylchak;;;;;;;;;;;x
-b_tamga;Tamga;;;;;;;;;;;x
-b_begovat;Begovat;;;;;;;;;;;x
-b_panjakent;Panjakent;;;;;;;;;;;x
-k_khitans_adj;Khitan;;;;;;;;;;;x
-d_limghuang_adj;Limghuangian;;;;;;;;;;;x
-c_limghuang_adj;Limghuangian;;;;;;;;;;;x
-d_thentok_adj;Thentokite;;;;;;;;;;;x
-c_thentok_adj;Thentokite;;;;;;;;;;;x
-c_ghuan_adj;Ghuanite;;;;;;;;;;;x
-c_phiung_adj;Phiungite;;;;;;;;;;;x
-c_sjingh_adj;Sjinghite;;;;;;;;;;;x
-c_iuxsiang_adj;Iuxsiangian;;;;;;;;;;;x
-c_hoksren_adj;Hoksrenite;;;;;;;;;;;x
-c_brakmrax_adj;Brakmraxite;;;;;;;;;;;x
-b_yuryev;Yuryev;;;;;;;;;;;x
