@@ -16,25 +16,16 @@ b_domfront = temple
 #b_villers-bocage
 
 # Misc
-culture = old_frankish
+culture = frankish
 religion = catholic
 
 # History
-790.1.1 = { culture = frankish }
 911.1.1 = { # Viking takeover
-	#remove_settlement = b_bayeux
-	#remove_settlement = b_domfront
 	b_vire = castle
-	#b_bayeux = city
-	#b_domfront = temple
 
 	b_caen = ca_keep_1
-	b_caen = ca_training_grounds_1
-	b_caen = ca_stable_1
 	b_caen = ca_wall_1
 	b_caen = ca_wall_2
-	b_caen = ca_militia_barracks_1
-	b_caen = ca_barracks_1
 	b_caen = ca_town_1
 	b_bayeux = ct_port_1
 }
