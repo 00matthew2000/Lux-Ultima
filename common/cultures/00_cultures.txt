@@ -2188,6 +2188,30 @@ north_germanic = {
 		
 		modifier = default_culture_modifier
 	}
+	vinlandic = {
+		graphical_cultures = { norsegfx }
+		
+		color = { 0.1 0.45 0.55 }
+		
+		male_names = {
+			Åle Åmund Ølver Alv_Alf Arne Arnfinn Arnkjell Arnmod Arnvid Aslak Audun Bård Bjørn_Beorn Eigil_Egil Eilif Einar Eirik_Erik Erlend Erling Eystein_Eysteinn Finn
+			Grim Gudbrand Gudleik Gudmund Gudrød Gunnar Guttorm Håkon_Hakon Håvard Haldor Halfdan Halkjell Harald_Harold Helge_Helge Inge Ivar Jon_John Kåre Kolbein Lodin
+			Magnus_Magnus Ogmund Olav_Olaf Orm Oskar_Oscar Ossor Ottar Pål_Paul Ragnvald Sigurd Skjalg Skofte Skule Svein_Sven Sverre Torbjørn_Torbjörn Tore Torfinn Torgeir Torgil_Torkel
+			Tormod Torstein Trond Tryggve Ulv_Ulf Vigleik Øystein_Eysteinn
+		}
+		female_names = {
+			Åshild Åsta_Asta Astrid_Astrid Brigida_Brigid Cecilia_Cecilia Eldrid Gjertrud_Gertrude Gudrid Gudrun_Gudrun Gunnhild_Gunhild Gyda Gyrid Haldora Homlaug Ingebjørg Ingjerd Ingrid_Ingrid Jorunn
+			Karin_Catherine Kristina_Christina Margrete_Margaret Maria_Maria Ragna Ragnhild Rannveig Sigrid_Sigrid Snøfrid Sunniva Svanhild Thora_Thora Thorborg
+		}
+		
+		from_dynasty_prefix = "av "
+		
+		male_patronym = "sson"
+		female_patronym = "sdatter"
+		prefix = no
+
+		modifier = default_culture_modifier
+	}
 }
 central_germanic = {
 	graphical_cultures = { germangfx }
