@@ -20009,7 +20009,7 @@ e_serindia = {
 				color={ 112 217 30 }
 				color2={ 255 255 255 }
 				
-				b_nakhsab = {}
+				b_nakhshab = {}
 				b_paykand = {}
 				b_firabr = {}
 				b_ukrach = {} # Fictional, for prosperity
@@ -20364,7 +20364,7 @@ e_serindia = {
 				color = { 60 54 81 }
 				
 				b_itokkuztara = {}
-				b_almalik = {}
+				b_almaliq = {}
 				b_gulja = {}
 				b_kazanqi = {}
 				b_gukure = {}
@@ -26193,8 +26193,6 @@ e_gallia = {
 				
 				b_grezes = {
 				}
-				b_mende = {
-				}
 				b_lepuy = {
 				}
 				b_apchier = {
@@ -26913,7 +26911,7 @@ e_spain = {
 				}
 				b_badajoz = {
 				}
-				b_merida = {
+				b_meridaspain = {
 				}
 				b_zafra = {
 				}
@@ -33578,7 +33576,7 @@ e_kush = {
 			c_west_nobatia = {
 				color = { 214 22 52 }
 				
-				b_para = {}
+				b_west_nobatia = {}
 				b_kulb = {}
 			}
 			c_south_nobatia = {
@@ -39873,7 +39871,6 @@ e_india = {
 			c_dhamalpur = {
 				color = { 240 243 105 }
 				
-				b_vardhamana = {}
 				b_dudhrej = {}
 				b_kherali = {}
 				b_wadhwan = {}
@@ -40710,14 +40707,15 @@ e_india = {
 			}
 			c_rajrappa = {
 				color = { 83 136 140 }
-					holy_site = bud_sthaviravada
-					holy_site = bud_pratyeka
-					holy_site = bud_vajrayana
-					holy_site = bud_zen
-					holy_site = bud_zor
-					holy_site = bud_zen_reformed
-					holy_site = bud_zor_reformed
-					holy_site = tengri_bud_reformed
+				
+				holy_site = bud_sthaviravada
+				holy_site = bud_pratyeka
+				holy_site = bud_vajrayana
+				holy_site = bud_zen
+				holy_site = bud_zor
+				holy_site = bud_zen_reformed
+				holy_site = bud_zor_reformed
+				holy_site = tengri_bud_reformed
 				
 				b_khijjinga = {}
 				b_lalpur = {}
@@ -41155,7 +41153,6 @@ e_bengal = {
 			c_kamarupanagara = {
 				color = { 147 31 87 }
 
-				b_goalpara = {}
 				b_agia = {}
 				b_paikan = {}
 				b_kashikhagra = {}
