@@ -430,7 +430,7 @@
 217185 = {
 	name = "Gou'er" # fictional
 	dynasty = 1051112 # Wanyan
-	religion = tengri_pagan
+	religion = bud_zen
 	culture = khitan
 	father = 217181
 	mother = 217182
@@ -457,7 +457,7 @@
 217337 = {
 	name = "Duolubu" # fictional
 	dynasty = 1051112 # Wanyan
-	religion = tengri_pagan
+	religion = bud_zen
 	culture = khitan
 	father = 217185
 	1062.2.4 = {
@@ -468,21 +468,6 @@
 	}
 }
 
-217338 = {
-	name = "Tiande" # fictional
-	dynasty = 1051112 # Wanyan
-	religion = bud_zen
-	culture = khitan
-	father = 217337
-	
-	1089.11.17 = {
-		birth = yes
-	}
-	
-	1130.5.10 = {
-		death = yes
-	}
-}
 247343 = {
 	name="Yesui"
 	female=yes
