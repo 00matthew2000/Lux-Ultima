@@ -1658,8 +1658,8 @@
 	dna="embbidechdk"
 	culture=innu religion=algic_pagan
 	martial=6 diplomacy=4 stewardship=5 intrigue=4 learning=8
-	add_trait=grey_eminence add_trait=impaler add_trait=gregarious add_trait=diligent add_trait=craven 
-	add_trait=greedy add_trait=lunatic 
+	add_trait=midas_touched add_trait=genius add_trait=gregarious add_trait=diligent add_trait=brave
+	add_trait=greedy 
 	father=1019912422	#Apinam
 	999.7.2={ birth=yes }
 	1072.10.28={ death=yes }
@@ -7583,4 +7583,1153 @@
 	father=1019912968	#Mishta-Etuat
 	1345.10.16={ birth=yes }
 	1401.8.26={ death=yes }
+}
+1019914568={
+	name=Ahanu
+	dynasty=1009990113
+	dna="kkobgbopooe"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=8 stewardship=5 intrigue=5 learning=7
+	add_trait=detached_priest add_trait=cynical add_trait=envious add_trait=chaste add_trait=humble 
+	add_trait=wroth 
+	719.7.8={ birth=yes }
+	765.7.14={ death=yes }
+}
+1019914569={
+	name=Askuwheteau
+	dynasty=1009990113
+	dna="eeojmbopoop"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=4 stewardship=4 intrigue=8 learning=4
+	add_trait=charismatic_negotiator add_trait=diligent add_trait=chaste add_trait=cruel add_trait=zealous 
+	add_trait=wroth 
+	father=1019914568	#Ahanu
+	743.1.10={ birth=yes }
+	804.7.21={ death=yes }
+}
+1019914570={
+	name=Mekledoodum
+	dynasty=1009990113
+	dna="nkhbhoopoji"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=6 stewardship=6 intrigue=4 learning=4
+	add_trait=tough_soldier add_trait=hunter add_trait=chaste add_trait=brave add_trait=cruel 
+	father=1019914568	#Ahanu
+	747.8.11={ birth=yes }
+	819.10.28={ death=yes }
+}
+1019914571={
+	name=Segenam
+	dynasty=1009990113
+	dna="lhobflkpooe"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=5 stewardship=5 intrigue=5 learning=6
+	add_trait=elusive_shadow add_trait=greedy add_trait=shy add_trait=arbitrary 
+	father=1019914568	#Ahanu
+	750.9.18={ birth=yes }
+	809.9.29={ death=yes }
+}
+1019914572={
+	name=Tihkoosue
+	dynasty=1009990113
+	dna="kkomapdpcgo"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=7 stewardship=4 intrigue=7 learning=8
+	add_trait=martial_cleric add_trait=deceitful add_trait=paranoid 
+	father=1019914568	#Ahanu
+	753.4.18={ birth=yes }
+	808.11.23={ death=yes }
+}
+1019914573={
+	name=Etchemin
+	dynasty=1009990113
+	dna="eiojmpopokj"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=8 stewardship=5 intrigue=4 learning=4
+	add_trait=mastermind_theologian add_trait=charitable add_trait=cynical add_trait=brave add_trait=cruel 
+	add_trait=trusting add_trait=just add_trait=wounded 
+	father=1019914569	#Askuwheteau
+	770.7.4={ birth=yes }
+	829.5.9={ death=yes }
+}
+1019914574={
+	name=Chogan
+	dynasty=1009990113
+	dna="ecojapiebom"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=5 stewardship=7 intrigue=4 learning=5
+	add_trait=scholarly_theologian add_trait=gardener add_trait=trusting add_trait=kind add_trait=wroth 
+	add_trait=humble add_trait=ambitious add_trait=chaste 
+	father=1019914569	#Askuwheteau
+	775.3.8={ birth=yes }
+	825.12.9={ death=yes }
+}
+1019914575={
+	name=Chansomps
+	dynasty=1009990113
+	dna="egljmkooobb"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=7 stewardship=4 intrigue=5 learning=4
+	add_trait=flamboyant_schemer add_trait=zealous add_trait=craven add_trait=gregarious add_trait=greedy 
+	father=1019914573	#Etchemin
+	795.2.5={ birth=yes }
+	859.10.5={ death=yes }
+}
+1019914576={
+	name=Nijlon
+	female=yes
+	dynasty=1009990113
+	dna="cekpmploekj"
+	culture=innu religion=algic_pagan
+	father=1019914573	#Etchemin
+	796.3.7={ birth=yes }
+	847.7.17={ death=yes }
+}
+1019914577={
+	name=Nuttah
+	female=yes
+	dynasty=1009990113
+	dna="effjhpjpgof"
+	culture=innu religion=algic_pagan
+	father=1019914573	#Etchemin
+	799.10.1={ birth=yes }
+	848.6.23={ death=yes }
+}
+1019914578={
+	name=Sokw
+	female=yes
+	dynasty=1009990113
+	dna="goojeplpokg"
+	culture=innu religion=algic_pagan
+	father=1019914573	#Etchemin
+	802.12.4={ birth=yes }
+	843.7.26={ death=yes }
+}
+1019914579={
+	name=Sucki
+	dynasty=1009990113
+	dna="mjolmoohckj"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=7 stewardship=6 intrigue=8 learning=6
+	add_trait=detached_priest add_trait=temperate add_trait=cruel add_trait=cynical add_trait=slothful 
+	add_trait=proud add_trait=shy 
+	father=1019914573	#Etchemin
+	804.4.11={ birth=yes }
+	868.7.24={ death=yes }
+}
+1019914580={
+	name=Chansomps
+	dynasty=1009990113
+	dna="edodiblaobj"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=4 stewardship=5 intrigue=8 learning=6
+	add_trait=detached_priest add_trait=kind add_trait=greedy add_trait=honest add_trait=content 
+	father=1019914575	#Chansomps
+	821.12.3={ birth=yes }
+	892.10.20={ death=yes }
+}
+1019914581={
+	name=Pules
+	female=yes
+	dynasty=1009990113
+	dna="cgijmkandkb"
+	culture=innu religion=algic_pagan
+	father=1019914575	#Chansomps
+	824.12.21={ birth=yes }
+	897.1.8={ death=yes }
+}
+1019914582={
+	name=Nuna
+	female=yes
+	dynasty=1009990113
+	dna="eiljahgogdj"
+	culture=innu religion=algic_pagan
+	father=1019914575	#Chansomps
+	828.1.24={ birth=yes }
+	893.3.16={ death=yes }
+}
+1019914583={
+	name=Sokanon
+	female=yes
+	dynasty=1009990113
+	dna="egljlkhohbh"
+	culture=innu religion=algic_pagan
+	father=1019914575	#Chansomps
+	831.5.27={ birth=yes }
+	886.5.4={ death=yes }
+}
+1019914584={
+	name=Kanti
+	female=yes
+	dynasty=1009990113
+	dna="mmljhkiffbm"
+	culture=innu religion=algic_pagan
+	father=1019914575	#Chansomps
+	833.2.19={ birth=yes }
+	904.8.2={ death=yes }
+}
+1019914585={
+	name=Wematin
+	dynasty=1009990113
+	dna="cpodioehefa"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=4 stewardship=5 intrigue=6 learning=5
+	add_trait=midas_touched add_trait=diligent add_trait=greedy add_trait=humble add_trait=wroth 
+	add_trait=cruel add_trait=stressed 
+	father=1019914580	#Chansomps
+	847.8.1={ birth=yes }
+	900.2.16={ death=yes }
+}
+1019914586={
+	name=Powaw
+	dynasty=1009990113
+	dna="edodiinijdj"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=7 stewardship=8 intrigue=7 learning=4
+	add_trait=flamboyant_schemer add_trait=slothful add_trait=trusting add_trait=gregarious add_trait=patient 
+	add_trait=just 
+	father=1019914580	#Chansomps
+	851.8.25={ birth=yes }
+	917.4.6={ death=yes }
+}
+1019914587={
+	name=Wapun
+	female=yes
+	dynasty=1009990113
+	dna="dcodiplacbn"
+	culture=innu religion=algic_pagan
+	father=1019914580	#Chansomps
+	854.9.1={ birth=yes }
+	914.6.27={ death=yes }
+}
+1019914588={
+	name=Sucki
+	dynasty=1009990113
+	dna="hpadeieohkc"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=8 stewardship=6 intrigue=7 learning=5
+	add_trait=midas_touched add_trait=cruel add_trait=arbitrary add_trait=hunchback 
+	father=1019914585	#Wematin
+	868.10.23={ birth=yes }
+	928.4.5={ death=yes }
+}
+1019914589={
+	name=Matchitehew
+	dynasty=1009990113
+	dna="gpldimieega"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=5 stewardship=4 intrigue=7 learning=4
+	add_trait=flamboyant_schemer add_trait=brave add_trait=ambitious add_trait=patient add_trait=trusting 
+	add_trait=depressed 
+	father=1019914585	#Wematin
+	871.8.27={ birth=yes }
+	930.11.21={ death=yes }
+}
+1019914590={
+	name=Mukki
+	dynasty=1009990113
+	dna="clfdimoacfa"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=8 stewardship=4 intrigue=8 learning=5
+	add_trait=misguided_warrior add_trait=honest add_trait=charitable add_trait=chaste 
+	father=1019914585	#Wematin
+	875.11.18={ birth=yes }
+	942.3.10={ death=yes }
+}
+1019914591={
+	name=Hausis
+	female=yes
+	dynasty=1009990113
+	dna="dlobigfhebi"
+	culture=innu religion=algic_pagan
+	father=1019914585	#Wematin
+	878.7.3={ birth=yes }
+	915.3.9={ death=yes }
+}
+1019914592={
+	name=Etchemin
+	dynasty=1009990113
+	dna="bmjlbogbeca"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=7 stewardship=7 intrigue=7 learning=5
+	add_trait=intricate_webweaver add_trait=ambitious add_trait=temperate add_trait=proud add_trait=deceitful 
+	add_trait=patient add_trait=arbitrary 
+	father=1019914585	#Wematin
+	881.4.11={ birth=yes }
+	929.9.9={ death=yes }
+}
+1019914593={
+	name=Matwau
+	dynasty=1009990113
+	dna="hpaapiebikc"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=8 stewardship=6 intrigue=7 learning=5
+	add_trait=misguided_warrior add_trait=kind add_trait=arbitrary add_trait=shy add_trait=zealous 
+	father=1019914588	#Sucki
+	892.10.6={ birth=yes }
+	943.2.22={ death=yes }
+}
+1019914594={
+	name=Wematin
+	dynasty=1009990113
+	dna="hcaojdeohnc"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=5 stewardship=8 intrigue=4 learning=4
+	add_trait=grey_eminence add_trait=lustful add_trait=shy add_trait=humble add_trait=temperate 
+	add_trait=arbitrary 
+	father=1019914588	#Sucki
+	897.9.24={ birth=yes }
+	958.2.24={ death=yes }
+}
+1019914595={
+	name=Mingan
+	dynasty=1009990113
+	dna="oelapieeiba"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=5 stewardship=6 intrigue=5 learning=5
+	add_trait=elusive_shadow add_trait=craven add_trait=chaste add_trait=diligent add_trait=wounded 
+	father=1019914593	#Matwau
+	916.5.14={ birth=yes }
+	980.1.21={ death=yes }
+}
+1019914596={
+	name=Etlelooaat
+	dynasty=1009990113
+	dna="hpabjmedida"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=7 stewardship=4 intrigue=7 learning=5
+	add_trait=midas_touched add_trait=shy add_trait=humble add_trait=deceitful add_trait=possessed 
+	father=1019914593	#Matwau
+	921.7.22={ birth=yes }
+	972.7.25={ death=yes }
+}
+1019914597={
+	name=Keegsquaw
+	female=yes
+	dynasty=1009990113
+	dna="hpgapingiah"
+	culture=innu religion=algic_pagan
+	father=1019914593	#Matwau
+	923.3.24={ birth=yes }
+	993.2.21={ death=yes }
+}
+1019914598={
+	name=Nijlon
+	female=yes
+	dynasty=1009990113
+	dna="hpafgcagakc"
+	culture=innu religion=algic_pagan
+	father=1019914593	#Matwau
+	927.9.14={ birth=yes }
+	986.6.10={ death=yes }
+}
+1019914599={
+	name=Aranck
+	dynasty=1009990113
+	dna="hecgfiebikc"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=7 stewardship=7 intrigue=6 learning=5
+	add_trait=scholarly_theologian add_trait=slothful add_trait=just add_trait=zealous 
+	father=1019914593	#Matwau
+	929.11.18={ birth=yes }
+	979.10.5={ death=yes }
+}
+1019914600={
+	name=Etchemin
+	dynasty=1009990113
+	dna="mkfaoheeida"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=6 stewardship=7 intrigue=7 learning=7
+	add_trait=indulgent_wastrel add_trait=duelist add_trait=deceitful add_trait=trusting add_trait=proud 
+	add_trait=chaste 
+	father=1019914595	#Mingan
+	941.11.19={ birth=yes }
+	1015.1.12={ death=yes }
+}
+1019914601={
+	name=Nadie
+	female=yes
+	dynasty=1009990113
+	dna="hoknpipegdb"
+	culture=innu religion=algic_pagan
+	father=1019914595	#Mingan
+	943.2.19={ birth=yes }
+	993.7.2={ death=yes }
+}
+1019914602={
+	name=Huritt
+	dynasty=1009990113
+	dna="oelplclcjjo"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=4 stewardship=4 intrigue=4 learning=7
+	add_trait=midas_touched add_trait=honest add_trait=chaste add_trait=kind 
+	father=1019914595	#Mingan
+	947.12.1={ birth=yes }
+	1026.2.22={ death=yes }
+}
+1019914603={
+	name=Anakausuen
+	dynasty=1009990113
+	dna="kblafieebdj"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=4 stewardship=4 intrigue=6 learning=7
+	add_trait=detached_priest add_trait=proud add_trait=cruel add_trait=kind 
+	father=1019914595	#Mingan
+	949.6.5={ birth=yes }
+	1000.7.13={ death=yes }
+}
+1019914604={
+	name=Keegsquaw
+	female=yes
+	dynasty=1009990113
+	dna="ieeahileibn"
+	culture=innu religion=algic_pagan
+	father=1019914595	#Mingan
+	952.6.14={ birth=yes }
+	1006.8.23={ death=yes }
+}
+1019914605={
+	name=Askuwheteau
+	dynasty=1009990113
+	dna="oplaidefibi"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=4 stewardship=5 intrigue=5 learning=6
+	add_trait=grey_eminence add_trait=hedonist add_trait=arbitrary add_trait=content add_trait=deceitful 
+	add_trait=patient 
+	father=1019914595	#Mingan
+	955.3.14={ birth=yes }
+	998.1.2={ death=yes }
+}
+1019914606={
+	name=Aranck
+	dynasty=1009990113
+	dna="nafdpaneiba"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=4 stewardship=7 intrigue=4 learning=8
+	add_trait=charismatic_negotiator add_trait=honest add_trait=charitable add_trait=just add_trait=cruel 
+	father=1019914595	#Mingan
+	957.12.16={ birth=yes }
+	1005.1.11={ death=yes }
+}
+1019914607={
+	name=Kitchi
+	dynasty=1009990113
+	dna="jkfaogegidf"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=4 stewardship=6 intrigue=4 learning=4
+	add_trait=indulgent_wastrel add_trait=gardener add_trait=patient add_trait=honest add_trait=cynical 
+	add_trait=humble 
+	father=1019914600	#Etchemin
+	962.3.24={ birth=yes }
+	1031.1.22={ death=yes }
+}
+1019914608={
+	name=Sokanon
+	female=yes
+	dynasty=1009990113
+	dna="mjfmmgekifa"
+	culture=innu religion=algic_pagan
+	father=1019914600	#Etchemin
+	966.2.7={ birth=yes }
+	1014.11.5={ death=yes }
+}
+1019914609={
+	name=Wapun
+	female=yes
+	dynasty=1009990113
+	dna="lfomohenlci"
+	culture=innu religion=algic_pagan
+	father=1019914600	#Etchemin
+	969.4.19={ birth=yes }
+	1025.6.8={ death=yes }
+}
+1019914610={
+	name=Megedagik
+	dynasty=1009990113
+	dna="hhnaocagijm"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=4 stewardship=6 intrigue=5 learning=5
+	add_trait=charismatic_negotiator add_trait=humble add_trait=gluttonous add_trait=greedy add_trait=chaste 
+	father=1019914607	#Kitchi
+	985.5.17={ birth=yes }
+	1043.4.2={ death=yes }
+}
+1019914611={
+	name=Pannoowau
+	dynasty=1009990113
+	dna="ckcaogcpbkc"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=5 stewardship=6 intrigue=5 learning=8
+	add_trait=elusive_shadow add_trait=lustful add_trait=paranoid add_trait=envious add_trait=greedy 
+	add_trait=zealous 
+	father=1019914607	#Kitchi
+	990.3.1={ birth=yes }
+	1059.9.15={ death=yes }
+}
+1019914612={
+	name=Sokanon
+	female=yes
+	dynasty=1009990113
+	dna="jkbboddpidf"
+	culture=innu religion=algic_pagan
+	father=1019914607	#Kitchi
+	992.4.5={ birth=yes }
+	1048.2.1={ death=yes }
+}
+1019914613={
+	name=Kanti
+	female=yes
+	dynasty=1009990113
+	dna="jkfaogegdam"
+	culture=innu religion=algic_pagan
+	father=1019914607	#Kitchi
+	995.5.13={ birth=yes }
+	1067.10.29={ death=yes }
+}
+1019914614={
+	name=Abooksigun
+	dynasty=1009990113
+	dna="jgfaogejida"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=8 stewardship=5 intrigue=4 learning=8
+	add_trait=indulgent_wastrel add_trait=temperate add_trait=proud add_trait=lunatic 
+	father=1019914607	#Kitchi
+	999.4.19={ birth=yes }
+	1060.11.25={ death=yes }
+}
+1019914615={
+	name=Nadie
+	female=yes
+	dynasty=1009990113
+	dna="ahhijjdlpgg"
+	culture=innu religion=algic_pagan
+	father=1019914610	#Megedagik
+	1007.11.25={ birth=yes }
+	1085.7.19={ death=yes }
+}
+1019914616={
+	name=Chogan
+	dynasty=1009990113
+	dna="hinaacogejm"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=4 stewardship=4 intrigue=7 learning=8
+	add_trait=flamboyant_schemer add_trait=content add_trait=shy add_trait=cruel add_trait=brave 
+	add_trait=wroth add_trait=humble 
+	father=1019914610	#Megedagik
+	1011.1.5={ birth=yes }
+	1070.11.26={ death=yes }
+}
+1019914617={
+	name=Etchemin
+	dynasty=1009990113
+	dna="hhnaogkgjhn"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=8 stewardship=6 intrigue=5 learning=5
+	add_trait=intricate_webweaver add_trait=trusting add_trait=cruel add_trait=honest add_trait=cynical 
+	add_trait=kind 
+	father=1019914610	#Megedagik
+	1014.12.9={ birth=yes }
+	1069.11.7={ death=yes }
+}
+1019914618={
+	name=Wapun
+	female=yes
+	dynasty=1009990113
+	dna="hinjacigehm"
+	culture=innu religion=algic_pagan
+	father=1019914616	#Chogan
+	1033.9.7={ birth=yes }
+	1120.7.11={ death=yes }
+}
+1019914619={
+	name=Askuwheteau
+	dynasty=1009990113
+	dna="ehndonogdom"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=5 stewardship=8 intrigue=7 learning=5
+	add_trait=martial_cleric add_trait=charitable add_trait=deceitful 
+	father=1019914616	#Chogan
+	1036.2.23={ birth=yes }
+	1094.8.21={ death=yes }
+}
+1019914620={
+	name=Hausis
+	female=yes
+	dynasty=1009990113
+	dna="biphacohafk"
+	culture=innu religion=algic_pagan
+	father=1019914616	#Chogan
+	1040.3.27={ birth=yes }
+	1106.11.22={ death=yes }
+}
+1019914621={
+	name=Anakausuen
+	dynasty=1009990113
+	dna="hinjceooehh"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=6 stewardship=5 intrigue=5 learning=8
+	add_trait=misguided_warrior add_trait=humble add_trait=cynical 
+	father=1019914616	#Chogan
+	1041.6.16={ birth=yes }
+	1087.9.24={ death=yes }
+}
+1019914622={
+	name=Nootau
+	dynasty=1009990113
+	dna="hpndnelgllm"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=5 stewardship=7 intrigue=6 learning=7
+	add_trait=midas_touched add_trait=content add_trait=proud add_trait=wroth add_trait=chaste 
+	add_trait=craven 
+	father=1019914616	#Chogan
+	1045.9.19={ birth=yes }
+	1102.10.17={ death=yes }
+}
+1019914623={
+	name=Pules
+	female=yes
+	dynasty=1009990113
+	dna="hnnaaoopmgm"
+	culture=innu religion=algic_pagan
+	father=1019914616	#Chogan
+	1049.4.7={ birth=yes }
+	1117.11.17={ death=yes }
+}
+1019914624={
+	name=Alsoomse
+	female=yes
+	dynasty=1009990113
+	dna="gindacecfjo"
+	culture=innu religion=algic_pagan
+	father=1019914616	#Chogan
+	1052.6.21={ birth=yes }
+	1083.7.17={ death=yes }
+}
+1019914625={
+	name=Megedagik
+	dynasty=1009990113
+	dna="jannoakfeoe"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=5 stewardship=8 intrigue=7 learning=7
+	add_trait=skilled_tactician add_trait=arbitrary add_trait=charitable add_trait=ill add_trait=strong 
+	father=1019914619	#Askuwheteau
+	1056.3.27={ birth=yes }
+	1129.12.31={ death=yes }
+}
+1019914626={
+	name=Alsoomse
+	female=yes
+	dynasty=1009990113
+	dna="ghndkoonool"
+	culture=innu religion=algic_pagan
+	father=1019914619	#Askuwheteau
+	1059.11.10={ birth=yes }
+	1108.9.4={ death=yes }
+}
+1019914627={
+	name=Pules
+	female=yes
+	dynasty=1009990113
+	dna="ehnhoocghom"
+	culture=innu religion=algic_pagan
+	father=1019914619	#Askuwheteau
+	1062.7.25={ birth=yes }
+	1130.4.13={ death=yes }
+}
+1019914685={
+	name=Etlelooaat
+	dynasty=1009990114
+	dna="adndiiebdme"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=8 stewardship=6 intrigue=7 learning=8
+	add_trait=charismatic_negotiator add_trait=gluttonous add_trait=greedy add_trait=zealous 
+	774.8.7={ birth=yes }
+	847.6.25={ death=yes }
+}
+1019914686={
+	name=Anakausuen
+	dynasty=1009990114
+	dna="ldikfkeomke"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=7 stewardship=5 intrigue=6 learning=4
+	add_trait=tough_soldier add_trait=cruel add_trait=ambitious add_trait=slothful add_trait=lustful 
+	add_trait=envious add_trait=brave add_trait=ill 
+	778.2.22={ birth=yes }
+	828.8.22={ death=yes }
+}
+1019914688={
+	name=Matwau
+	dynasty=1009990114
+	dna="adfpgobfdkj"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=7 stewardship=6 intrigue=4 learning=4
+	add_trait=elusive_shadow add_trait=diligent add_trait=paranoid add_trait=deceitful add_trait=content 
+	father=1019914685	#Etlelooaat
+	800.7.27={ birth=yes }
+	861.2.12={ death=yes }
+}
+1019914689={
+	name=Sunukkuhkau
+	dynasty=1009990114
+	dna="mdmhaplbbme"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=8 stewardship=5 intrigue=7 learning=4
+	add_trait=detached_priest add_trait=mystic add_trait=cynical add_trait=cruel add_trait=trusting 
+	add_trait=gluttonous 
+	father=1019914685	#Etlelooaat
+	803.3.1={ birth=yes }
+	849.6.19={ death=yes }
+}
+1019914690={
+	name=Megedagik
+	dynasty=1009990114
+	dna="koneidaodmi"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=4 stewardship=4 intrigue=4 learning=4
+	add_trait=intricate_webweaver add_trait=ambitious add_trait=deceitful add_trait=arbitrary add_trait=genius 
+	father=1019914685	#Etlelooaat
+	806.11.19={ birth=yes }
+	877.8.9={ death=yes }
+}
+1019914691={
+	name=Pules
+	female=yes
+	dynasty=1009990114
+	dna="adnpicapdme"
+	culture=innu religion=algic_pagan
+	father=1019914685	#Etlelooaat
+	808.3.8={ birth=yes }
+	883.8.9={ death=yes }
+}
+1019914692={
+	name=Askook
+	dynasty=1009990114
+	dna="mhekiifcdoe"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=7 stewardship=8 intrigue=7 learning=7
+	add_trait=detached_priest add_trait=cruel add_trait=chaste add_trait=greedy add_trait=paranoid 
+	add_trait=slothful 
+	father=1019914685	#Etlelooaat
+	812.2.8={ birth=yes }
+	860.5.10={ death=yes }
+}
+1019914693={
+	name=Matwau
+	dynasty=1009990114
+	dna="acgpgobfilo"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=4 stewardship=8 intrigue=6 learning=6
+	add_trait=martial_cleric add_trait=envious add_trait=wroth add_trait=shy add_trait=chaste 
+	father=1019914688	#Matwau
+	823.11.17={ birth=yes }
+	872.11.5={ death=yes }
+}
+1019914694={
+	name=Pules
+	female=yes
+	dynasty=1009990114
+	dna="anfpenblgci"
+	culture=innu religion=algic_pagan
+	father=1019914688	#Matwau
+	826.8.11={ birth=yes }
+	897.2.22={ death=yes }
+}
+1019914695={
+	name=Hassun
+	dynasty=1009990114
+	dna="hnfpaoogdpj"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=7 stewardship=6 intrigue=7 learning=7
+	add_trait=detached_priest add_trait=scholar add_trait=content add_trait=slothful add_trait=chaste 
+	add_trait=envious add_trait=charitable 
+	father=1019914688	#Matwau
+	828.6.26={ birth=yes }
+	884.12.23={ death=yes }
+}
+1019914696={
+	name=Askook
+	dynasty=1009990114
+	dna="mdkpgohfdee"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=4 stewardship=7 intrigue=8 learning=8
+	add_trait=indulgent_wastrel add_trait=hedonist add_trait=patient add_trait=diligent add_trait=content 
+	father=1019914688	#Matwau
+	832.9.9={ birth=yes }
+	907.2.23={ death=yes }
+}
+1019914697={
+	name=Mingan
+	dynasty=1009990114
+	dna="acapgoililc"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=6 stewardship=8 intrigue=4 learning=6
+	add_trait=detached_priest add_trait=greedy add_trait=shy add_trait=humble add_trait=cruel 
+	add_trait=diligent add_trait=gluttonous 
+	father=1019914693	#Matwau
+	845.11.22={ birth=yes }
+	916.2.28={ death=yes }
+}
+1019914698={
+	name=Pannoowau
+	dynasty=1009990114
+	dna="dcgpgobonlf"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=7 stewardship=8 intrigue=6 learning=4
+	add_trait=grey_eminence add_trait=duelist add_trait=wroth add_trait=trusting add_trait=zealous 
+	add_trait=cruel add_trait=gluttonous add_trait=lunatic 
+	father=1019914693	#Matwau
+	847.6.22={ birth=yes }
+	907.11.13={ death=yes }
+}
+1019914699={
+	name=Segenam
+	dynasty=1009990114
+	dna="pdgomiililc"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=6 stewardship=5 intrigue=6 learning=6
+	add_trait=martial_cleric add_trait=paranoid add_trait=shy 
+	father=1019914697	#Mingan
+	870.9.6={ birth=yes }
+	941.10.6={ death=yes }
+}
+1019914700={
+	name=Wikimak
+	female=yes
+	dynasty=1009990114
+	dna="acapghalilc"
+	culture=innu religion=algic_pagan
+	father=1019914697	#Mingan
+	872.6.6={ birth=yes }
+	925.1.30={ death=yes }
+}
+1019914701={
+	name=Pannoowau
+	dynasty=1009990114
+	dna="apafgncfccc"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=7 stewardship=7 intrigue=8 learning=4
+	add_trait=indulgent_wastrel add_trait=temperate add_trait=craven add_trait=diligent add_trait=arbitrary 
+	add_trait=charitable add_trait=hunchback 
+	father=1019914697	#Mingan
+	874.5.2={ birth=yes }
+	909.4.22={ death=yes }
+}
+1019914702={
+	name=Alawa
+	female=yes
+	dynasty=1009990114
+	dna="jbbmcoibifg"
+	culture=innu religion=algic_pagan
+	father=1019914697	#Mingan
+	878.1.27={ birth=yes }
+	950.1.22={ death=yes }
+}
+1019914703={
+	name=Wikimak
+	female=yes
+	dynasty=1009990114
+	dna="fifhaoplcfc"
+	culture=innu religion=algic_pagan
+	father=1019914697	#Mingan
+	883.10.15={ birth=yes }
+	952.7.23={ death=yes }
+}
+1019914704={
+	name=Nuttah
+	female=yes
+	dynasty=1009990114
+	dna="acaogoilkdg"
+	culture=innu religion=algic_pagan
+	father=1019914697	#Mingan
+	886.7.3={ birth=yes }
+	967.1.23={ death=yes }
+}
+1019914705={
+	name=Nixkamich
+	dynasty=1009990114
+	dna="ocakagloilk"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=5 stewardship=5 intrigue=7 learning=8
+	add_trait=midas_touched add_trait=trusting add_trait=gregarious add_trait=cynical add_trait=deceitful 
+	add_trait=just 
+	father=1019914697	#Mingan
+	889.2.7={ birth=yes }
+	953.12.19={ death=yes }
+}
+1019914706={
+	name=Enkoodabaoo
+	dynasty=1009990114
+	dna="ldgpmlhlibc"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=7 stewardship=7 intrigue=6 learning=5
+	add_trait=thrifty_clerk add_trait=greedy add_trait=slothful add_trait=arbitrary add_trait=fair 
+	father=1019914699	#Segenam
+	893.7.8={ birth=yes }
+	960.6.16={ death=yes }
+}
+1019914707={
+	name=Hausis
+	female=yes
+	dynasty=1009990114
+	dna="pdeoliidelc"
+	culture=innu religion=algic_pagan
+	father=1019914699	#Segenam
+	897.2.9={ birth=yes }
+	956.8.13={ death=yes }
+}
+1019914708={
+	name=Nuna
+	female=yes
+	dynasty=1009990114
+	dna="eakomollilc"
+	culture=innu religion=algic_pagan
+	father=1019914699	#Segenam
+	901.6.26={ birth=yes }
+	974.3.31={ death=yes }
+}
+1019914709={
+	name=Sokanon
+	female=yes
+	dynasty=1009990114
+	dna="pjoomaeoalg"
+	culture=innu religion=algic_pagan
+	father=1019914699	#Segenam
+	905.4.5={ birth=yes }
+	975.5.8={ death=yes }
+}
+1019914710={
+	name=Nuttah
+	female=yes
+	dynasty=1009990114
+	dna="llepmbhlkbc"
+	culture=innu religion=algic_pagan
+	father=1019914706	#Enkoodabaoo
+	919.8.18={ birth=yes }
+	964.9.30={ death=yes }
+}
+1019914711={
+	name=Matunaagd
+	dynasty=1009990114
+	dna="edgpkaejljk"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=6 stewardship=5 intrigue=5 learning=6
+	add_trait=indulgent_wastrel add_trait=ambitious add_trait=gluttonous add_trait=kind 
+	father=1019914706	#Enkoodabaoo
+	922.1.11={ birth=yes }
+	982.9.19={ death=yes }
+}
+1019914712={
+	name=Abooksigun
+	dynasty=1009990114
+	dna="mdgpmnmefbe"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=6 stewardship=8 intrigue=4 learning=4
+	add_trait=midas_touched add_trait=arbitrary add_trait=gregarious add_trait=kind add_trait=diligent 
+	add_trait=lustful 
+	father=1019914706	#Enkoodabaoo
+	925.11.2={ birth=yes }
+	974.7.17={ death=yes }
+}
+1019914713={
+	name=Achachak
+	dynasty=1009990114
+	dna="afgooeejbjk"
+	culture=innu religion=algic_pagan
+	martial=4 diplomacy=7 stewardship=7 intrigue=6 learning=8
+	add_trait=indulgent_wastrel add_trait=proud add_trait=lustful add_trait=deceitful add_trait=cynical 
+	add_trait=gregarious add_trait=cruel 
+	father=1019914711	#Matunaagd
+	946.6.26={ birth=yes }
+	997.3.5={ death=yes }
+}
+1019914714={
+	name=Hausis
+	female=yes
+	dynasty=1009990114
+	dna="ekdpgdejlfa"
+	culture=innu religion=algic_pagan
+	father=1019914711	#Matunaagd
+	947.7.20={ birth=yes }
+	1012.7.26={ death=yes }
+}
+1019914715={
+	name=Ahanu
+	dynasty=1009990114
+	dna="eogpoljjlji"
+	culture=innu religion=algic_pagan
+	martial=5 diplomacy=6 stewardship=4 intrigue=7 learning=5
+	add_trait=naive_appeaser add_trait=paranoid add_trait=lustful add_trait=slothful add_trait=just 
+	add_trait=cynical add_trait=wounded 
+	father=1019914711	#Matunaagd
+	951.12.13={ birth=yes }
+	1026.10.25={ death=yes }
+}
+1019914716={
+	name=Numees
+	female=yes
+	dynasty=1009990114
+	dna="ddipkhkmlgk"
+	culture=innu religion=algic_pagan
+	father=1019914711	#Matunaagd
+	954.3.1={ birth=yes }
+	1001.9.7={ death=yes }
+}
+1019914717={
+	name=Hassun
+	dynasty=1009990114
+	dna="bfgoheehdgk"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=4 stewardship=6 intrigue=4 learning=8
+	add_trait=naive_appeaser add_trait=gardener add_trait=ambitious add_trait=lustful add_trait=wroth 
+	add_trait=kind 
+	father=1019914713	#Achachak
+	969.11.5={ birth=yes }
+	1015.9.22={ death=yes }
+}
+1019914718={
+	name=Askuwheteau
+	dynasty=1009990114
+	dna="afgkegejofm"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=7 stewardship=8 intrigue=5 learning=6
+	add_trait=grey_eminence add_trait=hedonist add_trait=cynical add_trait=patient add_trait=charitable 
+	add_trait=cruel add_trait=temperate add_trait=ill 
+	father=1019914713	#Achachak
+	970.12.20={ birth=yes }
+	1039.8.19={ death=yes }
+}
+1019914719={
+	name=Hausis
+	female=yes
+	dynasty=1009990114
+	dna="afkojlgofjk"
+	culture=innu religion=algic_pagan
+	father=1019914713	#Achachak
+	974.9.18={ birth=yes }
+	1030.1.28={ death=yes }
+}
+1019914720={
+	name=Etchemin
+	dynasty=1009990114
+	dna="dfjooneenfd"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=8 stewardship=7 intrigue=7 learning=8
+	add_trait=misguided_warrior add_trait=temperate add_trait=gregarious add_trait=honest add_trait=humble 
+	add_trait=stressed 
+	father=1019914713	#Achachak
+	976.2.16={ birth=yes }
+	1042.4.1={ death=yes }
+}
+1019914721={
+	name=Wematin
+	dynasty=1009990114
+	dna="afcooekgioa"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=5 stewardship=8 intrigue=7 learning=6
+	add_trait=detached_priest add_trait=duelist add_trait=diligent add_trait=charitable add_trait=chaste 
+	father=1019914713	#Achachak
+	978.8.4={ birth=yes }
+	1046.4.27={ death=yes }
+}
+1019914723={
+	name=Tahki
+	female=yes
+	dynasty=1009990114
+	dna="bellhefcagj"
+	culture=innu religion=algic_pagan
+	father=1019914717	#Hassun
+	995.4.14={ birth=yes }
+	1053.12.26={ death=yes }
+}
+1019914724={
+	name=Sunukkuhkau
+	dynasty=1009990114
+	dna="bfgocekhpek"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=4 stewardship=4 intrigue=4 learning=6
+	add_trait=misguided_warrior add_trait=cruel add_trait=slothful add_trait=envious add_trait=proud 
+	add_trait=patient add_trait=greedy 
+	father=1019914717	#Hassun
+	996.5.15={ birth=yes }
+	1045.11.2={ death=yes }
+}
+1019914725={
+	name=Tihkoosue
+	dynasty=1009990114
+	dna="gfgcicehdgc"
+	culture=innu religion=algic_pagan
+	martial=6 diplomacy=8 stewardship=5 intrigue=7 learning=6
+	add_trait=detached_priest add_trait=cruel add_trait=wroth 
+	1011.3.16={ birth=yes }
+	1073.7.24={ death=yes }
+}
+1019914726={
+	name=Wapun
+	female=yes
+	dynasty=1009990114
+	dna="hlmeimbhbbb"
+	culture=innu religion=algic_pagan
+	1014.10.27={ birth=yes }
+	1062.9.7={ death=yes }
+}
+1019914727={
+	name=Oota-dabun
+	female=yes
+	dynasty=1009990114
+	dna="djkeiehhded"
+	culture=innu religion=algic_pagan
+	1019.4.24={ birth=yes }
+	1078.8.26={ death=yes }
+}
+1019914728={
+	name=Hurit
+	female=yes
+	dynasty=1009990114
+	dna="afbkckeecgp"
+	culture=innu religion=algic_pagan
+	father=1019914725	#Tihkoosue
+	1040.4.23={ birth=yes }
+	1104.4.24={ death=yes }
+}
+1019914729={
+	name=Numees
+	female=yes
+	dynasty=1009990114
+	dna="gbpklcnhdnc"
+	culture=innu religion=algic_pagan
+	father=1019914725	#Tihkoosue
+	1044.3.18={ birth=yes }
+	1107.9.18={ death=yes }
+}
+1019914730={
+	name=Matunaagd
+	dynasty=1009990114
+	dna="ompjiceohgk"
+	culture=innu religion=algic_pagan
+	martial=7 diplomacy=8 stewardship=7 intrigue=5 learning=8
+	add_trait=midas_touched add_trait=arbitrary add_trait=cruel add_trait=content add_trait=cynical 
+	father=1019914725	#Tihkoosue
+	1046.7.12={ birth=yes }
+	1116.12.13={ death=yes }
+}
+1019914731={
+	name=Hurit
+	female=yes
+	dynasty=1009990114
+	dna="gfghikplfga"
+	culture=innu religion=algic_pagan
+	father=1019914725	#Tihkoosue
+	1048.12.9={ birth=yes }
+	1136.10.20={ death=yes }
+}
+1019914732={
+	name=Nixkamich
+	dynasty=1009990114
+	dna="kbgciceidgc"
+	culture=innu religion=algic_pagan
+	martial=8 diplomacy=7 stewardship=8 intrigue=8 learning=4
+	add_trait=grey_eminence add_trait=gregarious add_trait=charitable add_trait=slothful add_trait=proud 
+	father=1019914725	#Tihkoosue
+	1051.6.7={ birth=yes }
+	1115.9.25={ death=yes }
 }

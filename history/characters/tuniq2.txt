@@ -23573,14 +23573,14 @@
 }
 1019912170={
 	name=Panik
-	dynasty=1009990089
+	dynasty=1109990089
 	dna="eaomfgdkamn"
 	culture=tuniq religion=inuit_pagan
 	martial=8 diplomacy=5 stewardship=7 intrigue=5 learning=8
-	add_trait=midas_touched add_trait=cruel add_trait=greedy add_trait=envious add_trait=gregarious 
+	add_trait=brilliant_strategist add_trait=cruel add_trait=greedy add_trait=envious add_trait=gregarious 
 	add_trait=chaste 
-	720.3.6={ birth=yes }
-	794.6.16={ death=yes }
+	1042.3.6={ birth=yes }
+	1094.6.16={ death=yes }
 }
 1019912171={
 	name=Igalaq
@@ -23589,7 +23589,6 @@
 	culture=tuniq religion=inuit_pagan
 	martial=4 diplomacy=4 stewardship=8 intrigue=5 learning=7
 	add_trait=elusive_shadow add_trait=diligent add_trait=honest add_trait=brave add_trait=kind 
-	father=1019912170	#Panik
 	744.1.11={ birth=yes }
 	805.10.10={ death=yes }
 }
@@ -23600,7 +23599,6 @@
 	culture=tuniq religion=inuit_pagan
 	martial=7 diplomacy=8 stewardship=5 intrigue=6 learning=4
 	add_trait=indulgent_wastrel add_trait=greedy add_trait=patient 
-	father=1019912170	#Panik
 	747.7.1={ birth=yes }
 	804.7.15={ death=yes }
 }
@@ -23610,7 +23608,6 @@
 	dynasty=1009990089
 	dna="ocfmfgjgnjc"
 	culture=tuniq religion=inuit_pagan
-	father=1019912170	#Panik
 	750.1.4={ birth=yes }
 	797.2.12={ death=yes }
 }
@@ -23987,7 +23984,7 @@
 	name=Biisaiyowaq
 	dynasty=1009990089
 	dna="gpbdmmcgejb"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	martial=8 diplomacy=4 stewardship=8 intrigue=4 learning=7
 	add_trait=indulgent_wastrel add_trait=trusting add_trait=gluttonous add_trait=humble add_trait=cruel 
 	father=1019912206	#Nukka
@@ -24019,7 +24016,7 @@
 	name=Mangokpok
 	dynasty=1009990089
 	dna="ppbmmmcgenb"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	martial=8 diplomacy=8 stewardship=6 intrigue=4 learning=7
 	add_trait=flamboyant_schemer add_trait=paranoid add_trait=humble add_trait=cruel add_trait=chaste 
 	father=1019912208	#Biisaiyowaq
@@ -24074,7 +24071,7 @@
 	female=yes
 	dynasty=1009990089
 	dna="kobmmoccdjb"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	father=1019912211	#Mangokpok
 	1020.7.10={ birth=yes }
 	1064.12.23={ death=yes }
@@ -24083,7 +24080,7 @@
 	name=Tavra
 	dynasty=1009990089
 	dna="pobmmmchhbo"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	martial=8 diplomacy=5 stewardship=4 intrigue=4 learning=5
 	add_trait=charismatic_negotiator add_trait=brave add_trait=shy add_trait=arbitrary add_trait=lustful 
 	father=1019912211	#Mangokpok
@@ -24094,7 +24091,7 @@
 	name=Yakone
 	dynasty=1009990089
 	dna="phcmagkgenk"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	martial=8 diplomacy=4 stewardship=4 intrigue=8 learning=6
 	add_trait=charismatic_negotiator add_trait=cruel add_trait=chaste add_trait=just add_trait=patient 
 	father=1019912211	#Mangokpok
@@ -24105,7 +24102,7 @@
 	name=Tingenek
 	dynasty=1009990089
 	dna="jopmmmchhei"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	martial=6 diplomacy=6 stewardship=8 intrigue=6 learning=7
 	add_trait=detached_priest add_trait=trusting add_trait=just add_trait=gregarious add_trait=temperate 
 	add_trait=diligent add_trait=wroth add_trait=stressed 
@@ -24117,7 +24114,7 @@
 	name=Umiaktorvik
 	dynasty=1009990089
 	dna="pgbmmmcnpbo"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	martial=5 diplomacy=5 stewardship=4 intrigue=5 learning=7
 	add_trait=indulgent_wastrel add_trait=cruel add_trait=envious add_trait=slothful add_trait=chaste 
 	add_trait=gregarious 
@@ -24130,7 +24127,7 @@
 	female=yes
 	dynasty=1009990089
 	dna="bobmmmlahlp"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	father=1019912217	#Tavra
 	1048.2.21={ birth=yes }
 	1094.11.17={ death=yes }
@@ -24139,7 +24136,7 @@
 	name=Oogrooq
 	dynasty=1009990089
 	dna="pnnammchhda"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	martial=8 diplomacy=4 stewardship=8 intrigue=5 learning=4
 	add_trait=mastermind_theologian add_trait=zealous add_trait=proud add_trait=cruel add_trait=trusting 
 	father=1019912217	#Tavra
@@ -24151,7 +24148,7 @@
 	female=yes
 	dynasty=1009990089
 	dna="podmaminhjp"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	father=1019912217	#Tavra
 	1052.6.15={ birth=yes }
 	1130.1.27={ death=yes }
@@ -24161,546 +24158,10 @@
 	female=yes
 	dynasty=1009990089
 	dna="pobmmdcihgp"
-	culture=tuniq religion=inuit_pagan
+	culture=beothuk religion=algic_pagan 
 	father=1019912217	#Tavra
 	1056.12.27={ birth=yes }
 	1142.11.25={ death=yes }
-}
-1019912225={
-	name=Tlate
-	female=yes
-	dynasty=1009990089
-	dna="dbbmgjahjhd"
-	culture=tuniq religion=inuit_pagan
-	father=1019912217	#Tavra
-	1059.1.26={ birth=yes }
-	1104.9.8={ death=yes }
-}
-1019912226={
-	name=Kilaun
-	dynasty=1009990089
-	dna="jopenmehcmi"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=8 stewardship=5 intrigue=5 learning=8
-	add_trait=flamboyant_schemer add_trait=slothful add_trait=gregarious add_trait=lustful add_trait=brave 
-	add_trait=patient add_trait=temperate add_trait=drunkard 
-	father=1019912219	#Tingenek
-	1070.9.16={ birth=yes }
-	1131.11.1={ death=yes }
-}
-1019912227={
-	name=Tiguaq
-	female=yes
-	dynasty=1009990089
-	dna="lbpjlbcehei"
-	culture=tuniq religion=inuit_pagan
-	father=1019912219	#Tingenek
-	1074.11.26={ birth=yes }
-	1115.6.11={ death=yes }
-}
-1019912228={
-	name=Arjalinerk
-	dynasty=1009990089
-	dna="jopmpmnihei"
-	culture=tuniq religion=inuit_pagan
-	martial=5 diplomacy=5 stewardship=8 intrigue=5 learning=7
-	add_trait=mastermind_theologian add_trait=impaler add_trait=cynical add_trait=content add_trait=greedy 
-	add_trait=arbitrary add_trait=clubfooted 
-	father=1019912219	#Tingenek
-	1078.12.26={ birth=yes }
-	1144.3.30={ death=yes }
-}
-1019912229={
-	name=Iyaroak
-	dynasty=1009990089
-	dna="pipmpkhpbei"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=4 stewardship=5 intrigue=4 learning=5
-	add_trait=midas_touched add_trait=diligent add_trait=paranoid add_trait=cruel add_trait=proud 
-	father=1019912219	#Tingenek
-	1081.10.9={ birth=yes }
-	1129.10.7={ death=yes }
-}
-1019912230={
-	name=Kinaktok
-	dynasty=1009990089
-	dna="jonencehdpi"
-	culture=tuniq religion=inuit_pagan
-	martial=5 diplomacy=5 stewardship=5 intrigue=8 learning=7
-	add_trait=martial_cleric add_trait=slothful add_trait=gluttonous add_trait=brave add_trait=paranoid 
-	add_trait=cruel add_trait=kind 
-	father=1019912226	#Kilaun
-	1091.12.18={ birth=yes }
-	1155.1.31={ death=yes }
-}
-1019912231={
-	name=Putyuk
-	dynasty=1009990089
-	dna="bjpbnaebcmb"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=5 stewardship=8 intrigue=5 learning=6
-	add_trait=detached_priest add_trait=content add_trait=wroth add_trait=zealous add_trait=paranoid 
-	add_trait=craven 
-	father=1019912226	#Kilaun
-	1095.2.11={ birth=yes }
-	1159.9.14={ death=yes }
-}
-1019912232={
-	name=Oogrooq
-	dynasty=1009990089
-	dna="jbbenmghcnc"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=4 stewardship=6 intrigue=7 learning=7
-	add_trait=flamboyant_schemer add_trait=celibate add_trait=envious add_trait=cruel add_trait=deceitful 
-	add_trait=chaste add_trait=arbitrary add_trait=brave 
-	father=1019912226	#Kilaun
-	1099.4.20={ birth=yes }
-	1171.2.1={ death=yes }
-}
-1019912233={
-	name=Kannoyak
-	dynasty=1009990089
-	dna="dcegocecfpd"
-	culture=tuniq religion=inuit_pagan
-	martial=8 diplomacy=7 stewardship=6 intrigue=6 learning=5
-	add_trait=grey_eminence add_trait=celibate add_trait=patient add_trait=cruel add_trait=possessed 
-	father=1019912230	#Kinaktok
-	1119.6.12={ birth=yes }
-	1181.12.29={ death=yes }
-}
-1019912234={
-	name=Issudlerk
-	dynasty=1009990089
-	dna="chnenocedai"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=4 stewardship=6 intrigue=7 learning=6
-	add_trait=misguided_warrior add_trait=kind add_trait=lustful add_trait=slothful add_trait=charitable 
-	add_trait=depressed 
-	father=1019912230	#Kinaktok
-	1122.9.12={ birth=yes }
-	1175.11.17={ death=yes }
-}
-1019912235={
-	name=Anuun
-	female=yes
-	dynasty=1009990089
-	dna="gokencegdpi"
-	culture=tuniq religion=inuit_pagan
-	father=1019912230	#Kinaktok
-	1123.11.12={ birth=yes }
-	1182.4.20={ death=yes }
-}
-1019912236={
-	name=Cikuq
-	dynasty=1009990089
-	dna="jklencgdhgb"
-	culture=tuniq religion=inuit_pagan
-	martial=6 diplomacy=7 stewardship=6 intrigue=5 learning=7
-	add_trait=midas_touched add_trait=scholar add_trait=trusting add_trait=chaste add_trait=arbitrary 
-	add_trait=shy add_trait=kind 
-	father=1019912230	#Kinaktok
-	1127.3.15={ birth=yes }
-	1178.2.22={ death=yes }
-}
-1019912237={
-	name=Ataninnuaq
-	dynasty=1009990089
-	dna="jodnncbddho"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=8 stewardship=6 intrigue=4 learning=5
-	add_trait=scholarly_theologian add_trait=greedy add_trait=slothful add_trait=patient add_trait=trusting 
-	add_trait=lustful add_trait=depressed 
-	father=1019912230	#Kinaktok
-	1130.2.5={ birth=yes }
-	1180.11.21={ death=yes }
-}
-1019912238={
-	name=Anuniaq
-	female=yes
-	dynasty=1009990089
-	dna="homkncnkdpo"
-	culture=tuniq religion=inuit_pagan
-	father=1019912230	#Kinaktok
-	1134.5.3={ birth=yes }
-	1192.6.21={ death=yes }
-}
-1019912239={
-	name=Siarut
-	dynasty=1009990089
-	dna="jbhekcphopi"
-	culture=tuniq religion=inuit_pagan
-	martial=7 diplomacy=4 stewardship=7 intrigue=4 learning=6
-	add_trait=charismatic_negotiator add_trait=craven add_trait=kind add_trait=zealous add_trait=ambitious 
-	add_trait=drunkard 
-	father=1019912230	#Kinaktok
-	1135.9.15={ birth=yes }
-	1186.12.27={ death=yes }
-}
-1019912240={
-	name=Qilaq
-	dynasty=1009990089
-	dna="dfegocdogpk"
-	culture=tuniq religion=inuit_pagan
-	martial=8 diplomacy=4 stewardship=5 intrigue=8 learning=5
-	add_trait=detached_priest add_trait=honest add_trait=chaste add_trait=zealous add_trait=temperate 
-	father=1019912233	#Kannoyak
-	1147.11.14={ birth=yes }
-	1202.9.15={ death=yes }
-}
-1019912241={
-	name=Kinguyakkii
-	dynasty=1009990089
-	dna="dopconeclna"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=8 stewardship=6 intrigue=6 learning=8
-	add_trait=flamboyant_schemer add_trait=poet add_trait=arbitrary add_trait=kind add_trait=slothful 
-	add_trait=zealous add_trait=lustful add_trait=trusting 
-	father=1019912233	#Kannoyak
-	1149.2.18={ birth=yes }
-	1181.5.10={ death=yes }
-}
-1019912242={
-	name=Arnaaluk
-	dynasty=1009990089
-	dna="jcenocaonod"
-	culture=tuniq religion=inuit_pagan
-	martial=6 diplomacy=8 stewardship=5 intrigue=5 learning=8
-	add_trait=charismatic_negotiator add_trait=envious add_trait=gregarious add_trait=wroth add_trait=deceitful 
-	father=1019912233	#Kannoyak
-	1153.12.11={ birth=yes }
-	1215.8.24={ death=yes }
-}
-1019912243={
-	name=Tuwawi
-	dynasty=1009990089
-	dna="kbefdcncbed"
-	culture=tuniq religion=inuit_pagan
-	martial=7 diplomacy=8 stewardship=8 intrigue=8 learning=5
-	add_trait=tough_soldier add_trait=content add_trait=charitable add_trait=diligent add_trait=patient 
-	father=1019912233	#Kannoyak
-	1156.6.6={ birth=yes }
-	1208.2.6={ death=yes }
-}
-1019912244={
-	name=Nunataq
-	female=yes
-	dynasty=1009990089
-	dna="dgekbcpclpd"
-	culture=tuniq religion=inuit_pagan
-	father=1019912233	#Kannoyak
-	1159.12.19={ birth=yes }
-	1209.4.14={ death=yes }
-}
-1019912245={
-	name=Tanaraq
-	dynasty=1009990089
-	dna="dcedogckcpe"
-	culture=tuniq religion=inuit_pagan
-	martial=8 diplomacy=5 stewardship=4 intrigue=8 learning=6
-	add_trait=intricate_webweaver add_trait=envious add_trait=greedy add_trait=lustful add_trait=craven 
-	father=1019912233	#Kannoyak
-	1161.9.12={ birth=yes }
-	1217.9.20={ death=yes }
-}
-1019912246={
-	name=Tattilgat
-	dynasty=1009990089
-	dna="dcegocecoph"
-	culture=tuniq religion=inuit_pagan
-	martial=5 diplomacy=7 stewardship=6 intrigue=8 learning=6
-	add_trait=midas_touched add_trait=envious add_trait=humble add_trait=gluttonous add_trait=chaste 
-	add_trait=greedy 
-	father=1019912233	#Kannoyak
-	1166.3.27={ birth=yes }
-	1231.12.22={ death=yes }
-}
-1019912247={
-	name=Issumatar
-	female=yes
-	dynasty=1009990089
-	dna="kbegfcoojpi"
-	culture=tuniq religion=inuit_pagan
-	father=1019912240	#Qilaq
-	1168.11.19={ birth=yes }
-	1257.1.26={ death=yes }
-}
-1019912248={
-	name=Qatiichii
-	dynasty=1009990089
-	dna="njegmndkgck"
-	culture=tuniq religion=inuit_pagan
-	martial=7 diplomacy=6 stewardship=8 intrigue=5 learning=7
-	add_trait=grey_eminence add_trait=patient add_trait=cruel add_trait=gluttonous add_trait=kind 
-	father=1019912240	#Qilaq
-	1173.2.5={ birth=yes }
-	1231.1.18={ death=yes }
-}
-1019912249={
-	name=Tikivik
-	female=yes
-	dynasty=1009990089
-	dna="dfngogdfgda"
-	culture=tuniq religion=inuit_pagan
-	father=1019912240	#Qilaq
-	1176.3.15={ birth=yes }
-	1249.10.6={ death=yes }
-}
-1019912250={
-	name=Kanguyak
-	dynasty=1009990089
-	dna="hmigocmegni"
-	culture=tuniq religion=inuit_pagan
-	martial=6 diplomacy=8 stewardship=5 intrigue=4 learning=5
-	add_trait=martial_cleric add_trait=proud add_trait=content add_trait=envious add_trait=gregarious 
-	father=1019912240	#Qilaq
-	1180.12.25={ birth=yes }
-	1252.11.11={ death=yes }
-}
-1019912251={
-	name=Yakone
-	dynasty=1009990089
-	dna="nfecmndkhgd"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=7 stewardship=4 intrigue=7 learning=5
-	add_trait=mastermind_theologian add_trait=zealous add_trait=deceitful add_trait=chaste add_trait=patient 
-	add_trait=diligent 
-	father=1019912248	#Qatiichii
-	1201.4.13={ birth=yes }
-	1248.11.9={ death=yes }
-}
-1019912252={
-	name=Ublureak
-	dynasty=1009990089
-	dna="njjleodcfcl"
-	culture=tuniq religion=inuit_pagan
-	martial=8 diplomacy=6 stewardship=6 intrigue=4 learning=7
-	add_trait=scholarly_theologian add_trait=lustful add_trait=trusting add_trait=kind 
-	father=1019912248	#Qatiichii
-	1205.9.6={ birth=yes }
-	1257.11.10={ death=yes }
-}
-1019912253={
-	name=Kanut
-	female=yes
-	dynasty=1009990089
-	dna="njegeadkgpk"
-	culture=tuniq religion=inuit_pagan
-	father=1019912248	#Qatiichii
-	1208.2.19={ birth=yes }
-	1281.1.5={ death=yes }
-}
-1019912254={
-	name=Kukuq
-	female=yes
-	dynasty=1009990089
-	dna="mjigenakglk"
-	culture=tuniq religion=inuit_pagan
-	father=1019912248	#Qatiichii
-	1210.8.12={ birth=yes }
-	1261.3.26={ death=yes }
-}
-1019912255={
-	name=Aukaneck
-	dynasty=1009990089
-	dna="ljebidfkgbk"
-	culture=tuniq religion=inuit_pagan
-	martial=5 diplomacy=7 stewardship=4 intrigue=4 learning=5
-	add_trait=grey_eminence add_trait=scholar add_trait=wroth add_trait=charitable add_trait=arbitrary 
-	father=1019912248	#Qatiichii
-	1212.2.15={ birth=yes }
-	1289.12.13={ death=yes }
-}
-1019912256={
-	name=Tungulria
-	dynasty=1009990089
-	dna="mfbbaidkbgn"
-	culture=tuniq religion=inuit_pagan
-	martial=7 diplomacy=4 stewardship=4 intrigue=8 learning=6
-	add_trait=naive_appeaser add_trait=hedonist add_trait=gregarious add_trait=deceitful add_trait=greedy 
-	add_trait=possessed 
-	father=1019912251	#Yakone
-	1225.7.17={ birth=yes }
-	1270.2.8={ death=yes }
-}
-1019912257={
-	name=Amaguq
-	female=yes
-	dynasty=1009990089
-	dna="niecmndgoad"
-	culture=tuniq religion=inuit_pagan
-	father=1019912251	#Yakone
-	1230.8.10={ birth=yes }
-	1284.1.9={ death=yes }
-}
-1019912258={
-	name=Pamiiyok
-	female=yes
-	dynasty=1009990089
-	dna="kfocmfdnhhc"
-	culture=tuniq religion=inuit_pagan
-	father=1019912251	#Yakone
-	1231.2.10={ birth=yes }
-	1290.12.30={ death=yes }
-}
-1019912259={
-	name=Tattilgat
-	female=yes
-	dynasty=1009990089
-	dna="efeclngodgd"
-	culture=tuniq religion=inuit_pagan
-	father=1019912251	#Yakone
-	1234.11.16={ birth=yes }
-	1289.12.9={ death=yes }
-}
-1019912260={
-	name=Tiglikte
-	dynasty=1009990089
-	dna="nfpamfdkhgb"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=5 stewardship=8 intrigue=6 learning=7
-	add_trait=misguided_warrior add_trait=zealous add_trait=patient 
-	father=1019912251	#Yakone
-	1238.5.27={ birth=yes }
-	1290.4.18={ death=yes }
-}
-1019912261={
-	name=Pikatti
-	female=yes
-	dynasty=1009990089
-	dna="nfbcalombnn"
-	culture=tuniq religion=inuit_pagan
-	father=1019912256	#Tungulria
-	1246.2.25={ birth=yes }
-	1313.12.29={ death=yes }
-}
-1019912262={
-	name=Sesi
-	dynasty=1009990089
-	dna="kfbnclolggk"
-	culture=tuniq religion=inuit_pagan
-	martial=8 diplomacy=7 stewardship=8 intrigue=8 learning=4
-	add_trait=elusive_shadow add_trait=cruel add_trait=charitable add_trait=honest add_trait=craven 
-	father=1019912256	#Tungulria
-	1249.7.5={ birth=yes }
-	1323.5.15={ death=yes }
-}
-1019912263={
-	name=Qimukti
-	dynasty=1009990089
-	dna="alloclocgep"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=5 stewardship=5 intrigue=5 learning=5
-	add_trait=midas_touched add_trait=charitable add_trait=honest add_trait=diligent 
-	father=1019912262	#Sesi
-	1277.9.14={ birth=yes }
-	1323.3.13={ death=yes }
-}
-1019912264={
-	name=Pikatti
-	female=yes
-	dynasty=1009990089
-	dna="kognclplggk"
-	culture=tuniq religion=inuit_pagan
-	father=1019912262	#Sesi
-	1280.10.24={ birth=yes }
-	1346.4.15={ death=yes }
-}
-1019912265={
-	name=Oomailiq
-	female=yes
-	dynasty=1009990089
-	dna="jfmlfpolegk"
-	culture=tuniq religion=inuit_pagan
-	father=1019912262	#Sesi
-	1283.4.22={ birth=yes }
-	1356.2.17={ death=yes }
-}
-1019912266={
-	name=Sivudlerk
-	female=yes
-	dynasty=1009990089
-	dna="kiacllblgcl"
-	culture=tuniq religion=inuit_pagan
-	father=1019912262	#Sesi
-	1286.2.19={ birth=yes }
-	1355.7.22={ death=yes }
-}
-1019912267={
-	name=Kinguyakkii
-	dynasty=1009990089
-	dna="kmhocfclnno"
-	culture=tuniq religion=inuit_pagan
-	martial=5 diplomacy=8 stewardship=5 intrigue=7 learning=6
-	add_trait=martial_cleric add_trait=paranoid add_trait=temperate add_trait=gregarious add_trait=envious 
-	father=1019912263	#Qimukti
-	1301.6.12={ birth=yes }
-	1351.10.5={ death=yes }
-}
-1019912268={
-	name=Akkituyok
-	dynasty=1009990089
-	dna="pilocjolgjp"
-	culture=tuniq religion=inuit_pagan
-	martial=8 diplomacy=6 stewardship=4 intrigue=7 learning=7
-	add_trait=scholarly_theologian add_trait=diligent add_trait=arbitrary add_trait=temperate add_trait=wroth 
-	father=1019912263	#Qimukti
-	1306.11.7={ birth=yes }
-	1373.1.11={ death=yes }
-}
-1019912269={
-	name=Kappiataitok
-	female=yes
-	dynasty=1009990089
-	dna="allonlacgep"
-	culture=tuniq religion=inuit_pagan
-	father=1019912263	#Qimukti
-	1310.6.11={ birth=yes }
-	1357.6.7={ death=yes }
-}
-1019912270={
-	name=Nilak
-	female=yes
-	dynasty=1009990089
-	dna="illoofeihcg"
-	culture=tuniq religion=inuit_pagan
-	father=1019912263	#Qimukti
-	1313.9.13={ birth=yes }
-	1358.3.6={ death=yes }
-}
-1019912271={
-	name=Mumk
-	dynasty=1009990089
-	dna="lhhocdllanb"
-	culture=tuniq religion=inuit_pagan
-	martial=7 diplomacy=5 stewardship=6 intrigue=7 learning=5
-	add_trait=scholarly_theologian add_trait=chaste add_trait=brave add_trait=zealous add_trait=honest 
-	add_trait=proud 
-	father=1019912267	#Kinguyakkii
-	1327.10.17={ birth=yes }
-	1372.3.3={ death=yes }
-}
-1019912272={
-	name=Kanut
-	dynasty=1009990089
-	dna="neejcaccnko"
-	culture=tuniq religion=inuit_pagan
-	martial=8 diplomacy=7 stewardship=7 intrigue=5 learning=4
-	add_trait=tough_soldier add_trait=arbitrary add_trait=cynical add_trait=temperate 
-	father=1019912267	#Kinguyakkii
-	1332.10.4={ birth=yes }
-	1387.7.28={ death=yes }
-}
-1019912273={
-	name=Tatkret
-	dynasty=1009990089
-	dna="lfiocbollna"
-	culture=tuniq religion=inuit_pagan
-	martial=4 diplomacy=5 stewardship=6 intrigue=8 learning=7
-	add_trait=mastermind_theologian add_trait=celibate add_trait=wroth add_trait=arbitrary add_trait=trusting 
-	add_trait=chaste 
-	father=1019912267	#Kinguyakkii
-	1334.5.16={ birth=yes }
-	1393.4.25={ death=yes }
 }
 1019914975={
 	name=Kilaun
@@ -25785,4 +25246,134 @@
 	father=1019915066	#Itigiaq
 	1331.4.21={ birth=yes }
 	1395.11.1={ death=yes }
+}
+1019914722={
+	name=Pannoowau
+	dynasty=1109990114
+	dna="dfkeicehdgn"
+	culture=tuniq religion=inuit_pagan
+	martial=7 diplomacy=6 stewardship=7 intrigue=6 learning=4
+	add_trait=flamboyant_schemer add_trait=paranoid add_trait=patient add_trait=depressed 
+	1030.2.16={ birth=yes }
+	1094.4.3={ death=yes }
+}
+1019914681={
+	name=Samoset
+	dynasty=1109990115
+	dna="adfdfiebnke"
+	culture=tuniq religion=inuit_pagan
+	martial=6 diplomacy=7 stewardship=7 intrigue=7 learning=6
+	add_trait=tough_soldier add_trait=honest add_trait=gluttonous add_trait=wroth add_trait=content 
+	add_trait=shy add_trait=quick 
+	1042.4.2={ birth=yes }
+	1106.10.13={ death=yes }
+}
+1019914682={
+	name=Nanuq
+	dynasty=1109990117
+	dna="gofpddhknhp"
+	culture=tuniq religion=inuit_pagan
+	1045.3.9={ birth=yes }
+	1117.4.29={ death=yes }
+}
+1019914683={
+	name=Ataneq
+	dynasty=1109990116
+	dna="adgnlcaekhe"
+	culture=tuniq religion=inuit_pagan
+	add_trait=zealous add_trait=quick 
+	1048.4.1={ birth=yes }
+	1121.5.16={ death=yes }
+}
+1019914684={
+	name=Pukiq
+	dynasty=1109990116
+	dna="gdpdfheinmk"
+	culture=tuniq religion=inuit_pagan
+	add_trait=strong add_trait=brawny 
+	1041.4.19={ birth=yes }
+	1009.3.28={ death=yes }
+}
+1019914680={
+	name=Sucki
+	dynasty=1109990118
+	dna="gofdfihknki"
+	culture=tuniq religion=inuit_pagan
+	martial=4 diplomacy=5 stewardship=7 intrigue=6 learning=5
+	add_trait=intricate_webweaver add_trait=wroth add_trait=chaste add_trait=just add_trait=fair
+	1048.4.20={ birth=yes }
+	1099.9.27={ death=yes }
+}
+1019914685={
+	name=Etlelooaat
+	dynasty=1109990119
+	dna="adndiiebdme"
+	culture=tuniq religion=inuit_pagan
+	martial=14 diplomacy=8 stewardship=6 intrigue=7 learning=8
+	add_trait=charismatic_negotiator add_trait=gluttonous add_trait=greedy add_trait=zealous 
+	1044.8.7={ birth=yes }
+	1105.6.25={ death=yes }
+}
+1019914686={
+	name=Anakausuen
+	dynasty=1109990120
+	dna="ldikfkeomke"
+	culture=tuniq religion=inuit_pagan
+	martial=6 diplomacy=7 stewardship=5 intrigue=6 learning=4
+	add_trait=tough_soldier add_trait=ambitious add_trait=slothful add_trait=lustful 
+	add_trait=proud add_trait=brave
+	1040.2.12={ birth=yes }
+	1128.8.22={ death=yes }
+}
+1019917593={
+	name=Nashitt
+	dynasty=1109990143
+	dna="mjibcdacbin"
+	culture=tuniq religion=inuit_pagan
+	martial=7 diplomacy=5 stewardship=5 intrigue=7 learning=8
+	add_trait=misguided_warrior add_trait=poet add_trait=trusting add_trait=slothful add_trait=gregarious 
+	add_trait=just 
+	1048.10.26={ birth=yes }
+	1127.9.4={ death=yes }
+}
+1019917594={
+	name=Akkikiktok
+	dynasty=1109990145
+	dna="coblbpchbib"
+	culture=tuniq religion=inuit_pagan
+	1036.4.5={ birth=yes }
+	1102.4.28={ death=yes }
+}
+1019917590={
+	name=Ahapiskueu
+	dynasty=1109990148
+	dna="eoibbccibin"
+	culture=yupik religion=inuit_pagan
+	martial=5 diplomacy=5 stewardship=4 intrigue=7 learning=7
+	add_trait=brilliant_strategist add_trait=scholar add_trait=trusting add_trait=kind add_trait=zealous 
+	add_trait=lustful 
+	1044.4.8={ birth=yes }
+	1108.6.7={ death=yes }
+}
+1019917591={
+	name=Nashitt
+	dynasty=1109990146
+	dna="jilbbceimmn"
+	culture=tuniq religion=inuit_pagan
+	martial=4 diplomacy=7 stewardship=6 intrigue=7 learning=6
+	add_trait=midas_touched add_trait=mystic add_trait=temperate add_trait=diligent add_trait=gregarious 
+	add_trait=hedonist
+	1041.12.17={ birth=yes }
+	1097.7.24={ death=yes }
+}
+1019917592={
+	name=Tshishennish
+	dynasty=1109990147
+	dna="chhdbocebdk"
+	culture=tuniq religion=inuit_pagan
+	martial=8 diplomacy=7 stewardship=7 intrigue=5 learning=8
+	add_trait=martial_cleric add_trait=craven add_trait=kind add_trait=proud add_trait=chaste 
+	father=1019917590	#
+	1048.10.1={ birth=yes }
+	1099.7.31={ death=yes }
 }
