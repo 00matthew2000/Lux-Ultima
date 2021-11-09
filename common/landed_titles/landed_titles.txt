@@ -20009,7 +20009,7 @@ e_serindia = {
 				color={ 112 217 30 }
 				color2={ 255 255 255 }
 				
-				b_nakhsab = {}
+				b_nakhshab = {}
 				b_paykand = {}
 				b_firabr = {}
 				b_ukrach = {} # Fictional, for prosperity
@@ -20364,7 +20364,7 @@ e_serindia = {
 				color = { 60 54 81 }
 				
 				b_itokkuztara = {}
-				b_almalik = {}
+				b_almaliq = {}
 				b_gulja = {}
 				b_kazanqi = {}
 				b_gukure = {}
@@ -26193,8 +26193,6 @@ e_gallia = {
 				
 				b_grezes = {
 				}
-				b_mende = {
-				}
 				b_lepuy = {
 				}
 				b_apchier = {
@@ -26913,7 +26911,7 @@ e_spain = {
 				}
 				b_badajoz = {
 				}
-				b_merida = {
+				b_meridaspain = {
 				}
 				b_zafra = {
 				}
@@ -33578,7 +33576,7 @@ e_kush = {
 			c_west_nobatia = {
 				color = { 214 22 52 }
 				
-				b_para = {}
+				b_west_nobatia = {}
 				b_kulb = {}
 			}
 			c_south_nobatia = {
@@ -33712,7 +33710,6 @@ e_ireland = { # dejure empire for Ireland
 		catholic = 300 # Crusade target weight
 		norse_pagan_reformed = 200 # Crusade target weight
 		
-		norwegian = "Vestmennland" 
 		hellenistic = "Ierne" 
 		roman = "Hibernia"
 		swedish = Irland
@@ -33722,7 +33719,6 @@ e_ireland = { # dejure empire for Ireland
 		pictish = Iuerthon
 		welsh = Iwerddon
 		breton = Iwerzhon
-		roman = Hibernia
 		
 		d_ulaid = {
 			color={ 5 222 31 }
@@ -33858,9 +33854,6 @@ e_ireland = { # dejure empire for Ireland
 				b_moville = {
 					irish = "Magh Bhile"
 				}
-				b_fahan = {
-					irish = "Fathain"
-				}
 				b_ballymacswiney = {
 					irish = "Baile Mhic Suibhne"
 				}
@@ -33948,8 +33941,10 @@ e_ireland = { # dejure empire for Ireland
 
 				irish = "Uí Maine"
 
-				b_cruachu = {}
-				b_delbna = {}
+				b_hy_many = {
+					irish = "Uí Maine"
+				}
+				b_hy_many1 = {}
 				b_rathmore = {}
 				b_rathnadarve = {
 					irish = "Rath na dTarbh"
@@ -34052,9 +34047,6 @@ e_ireland = { # dejure empire for Ireland
 				b_trim = {
 					irish = "Baile Átha Troim"
 				}
-				b_wicklow = {
-					irish = "Cill Mhantáin"
-				}
 			}
 		}
 		d_leinster = {
@@ -34079,7 +34071,8 @@ e_ireland = { # dejure empire for Ireland
 				irish = Laigin
 	
 				b_wicklow = {
-					norwegian = "Vikinglo" 
+					norwegian = "Vikinglo"
+					irish = "Cill Mhantáin"
 				}
 				b_fearna = {
 					irish = "Fearna Mór Maedhóg"
@@ -34328,7 +34321,6 @@ e_ireland = { # dejure empire for Ireland
 				color2={ 255 255 255 }
 				
 				irish = "Iarmhumhain"
-				english = Kerry
 		
 				b_cahersiveen = {
 				}
@@ -34378,7 +34370,7 @@ e_britannia = {
 
 	k_rheged = {
 		color = { 246 212 26 }
-		capital = 38 #Reghed
+		capital = 53 #Reghed
 		
 		d_cumbria = {
 			color = { 120 45 166 }
@@ -34446,11 +34438,7 @@ e_britannia = {
 					saxon = "Bebbanburgh" 
 				}
 				b_mitford = {}
-				b_lindisfarne = {
-					roman = "Medicata Insula" 
-					romanobrython = "Insula Sacra" 
-					welsh = "Medcaut" 
-				}
+				b_northumberland = {}
 				b_morpeth = {}
 				b_wilfrith = {}
 				b_coria = {}
@@ -34465,6 +34453,9 @@ e_britannia = {
 				welsh = "Medcaut" 
 							
 				b_lindisfarne = {
+					roman = "Medicata Insula" 
+					romanobrython = "Insula Sacra" 
+					welsh = "Medcaut" 
 				}
 				b_yeavering = {
 				}
@@ -34560,9 +34551,7 @@ e_britannia = {
 					romanobrython = "Eburacum" 
 				}
 				b_scarborough = {}
-				b_beverley = {
-					saxon = "Bevreli" 
-				}
+				b_bevreli = {}
 				b_pontefract = {}
 				b_conisbrough = {}
 				b_cataractonium = {
@@ -34608,13 +34597,9 @@ e_britannia = {
 				}
 				b_sheffield = {
 				}
-				b_pontefract = {
+				b_pontefract1 = {
 				}
-				b_conisbrough = {
-					norwegian = "Kungsborg"
-					danish = "Kungsborg"
-					swedish = "Kungsborg"
-					# norse = "Kungsborg"
+				b_kungsborg = {
 				}
 			}
 			c_yoredale = {
@@ -34908,7 +34893,6 @@ e_britannia = {
 			capital = 70 # Norfolk
 			
 			norman = "Norfolk"
-			english = "Norfolk"
 			
 			c_norfolk = {
 				color = { 0 210 35 }
@@ -35093,15 +35077,15 @@ e_britannia = {
 	
 	k_wessex = {
 		color = { 169 35 75 }
-		capital = 69 #Wintancaester
+		capital = 26 #Wintancaester
 		
 		d_belgarum = {
 			color = { 120 46 177 }
-			saxon = "Wintanceaster" 
-			capital = 26 # Winchester
 			
+			saxon = "Wintanceaster"
 			norman="Hampshire"
-			english="Hampshire"
+			
+			capital = 26 # Winchester
 			
 			c_winchester = {
 				color = { 42 78 13 }
@@ -35136,7 +35120,7 @@ e_britannia = {
 				}
 				b_newport_wight = {
 				}
-				b_yarmouth = {
+				b_wight = {
 				}
 				b_sandown = {
 				}
@@ -35204,7 +35188,6 @@ e_britannia = {
 			capital = 28 # Somerset
 			
 			norman="Somerset"
-			english="Somerset"
 			welsh = "Lloegyr"
 			
 			c_somerset = {		#Aquae Sulis
@@ -35216,10 +35199,9 @@ e_britannia = {
 				holy_site = celtic_christ_reformed
 				holy_site = endovellico
 				holy_site = iberian_pagan_reformed
-				holy_site = shaytana
 				
 				b_lindinis = {}
-				b_bath = {
+				b_bath1 = {
 					welsh = "Caer Baddan" 
 					saxon = "Baðum" 
 				}
@@ -35230,10 +35212,6 @@ e_britannia = {
 				}
 				b_taunton = {}
 				b_muchelney = {}
-				b_wells = {
-					roman = "Fontanetum" 
-					romanobrython = "Fontanensis Ecclesia" 
-				}
 				b_willetun = {}
 			}
 			c_bath = {
@@ -35250,6 +35228,8 @@ e_britannia = {
 				b_bristol = {
 				}
 				b_wells = {
+					roman = "Fontanetum" 
+					romanobrython = "Fontanensis Ecclesia" 
 				}
 				b_cleeve = {
 				}
@@ -35350,10 +35330,8 @@ e_britannia = {
 			c_anglesey = {
 				color = { 1 180 30 }
 				
-				b_aberffraw = {
+				b_anglesey = {
 					norwegian = Ongullsøy
-					english = Anglesey
-					saxon = Anglesey
 				}
 				b_llanfaes = {
 				}
@@ -35449,7 +35427,7 @@ e_britannia = {
 				color={ 155 84 20 }
 				color2={ 255 255 255 }
 			
-				b_cardigan = {
+				b_ceredigion = {
 				}
 				b_llanbadarn = {
 				}
@@ -39873,7 +39851,6 @@ e_india = {
 			c_dhamalpur = {
 				color = { 240 243 105 }
 				
-				b_vardhamana = {}
 				b_dudhrej = {}
 				b_kherali = {}
 				b_wadhwan = {}
@@ -40710,14 +40687,15 @@ e_india = {
 			}
 			c_rajrappa = {
 				color = { 83 136 140 }
-					holy_site = bud_sthaviravada
-					holy_site = bud_pratyeka
-					holy_site = bud_vajrayana
-					holy_site = bud_zen
-					holy_site = bud_zor
-					holy_site = bud_zen_reformed
-					holy_site = bud_zor_reformed
-					holy_site = tengri_bud_reformed
+				
+				holy_site = bud_sthaviravada
+				holy_site = bud_pratyeka
+				holy_site = bud_vajrayana
+				holy_site = bud_zen
+				holy_site = bud_zor
+				holy_site = bud_zen_reformed
+				holy_site = bud_zor_reformed
+				holy_site = tengri_bud_reformed
 				
 				b_khijjinga = {}
 				b_lalpur = {}
@@ -41155,7 +41133,6 @@ e_bengal = {
 			c_kamarupanagara = {
 				color = { 147 31 87 }
 
-				b_goalpara = {}
 				b_agia = {}
 				b_paikan = {}
 				b_kashikhagra = {}
