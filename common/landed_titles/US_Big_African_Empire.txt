@@ -77,12 +77,9 @@ e_big_african_empire = {
 
 				holy_site=khoi_san_mythology
 				holy_site=khoi_san_mythology_reformed
-				holy_site=andrianerinerinan
-				holy_site=andrianerinerinan_reformed
 				holy_site=animism
 				holy_site=animism_reformed
 				holy_site = bukongo
-				holy_site = bukongo_reformed
 
 				color = { 203 67 40 }
 				color2 = { 250 250 250 }
@@ -164,7 +161,7 @@ e_big_african_empire = {
 
 				b_menawashel = {
 				}
-				b_zalingei = {
+				b_menawashel1 = {
 				}
 				b_muhagiriya = {
 				}
@@ -215,7 +212,6 @@ e_big_african_empire = {
 				color2 = { 250 250 250 }
 
 				holy_site = bukongo
-				holy_site = bukongo_reformed
 
 				b_khartoum = {
 				}
@@ -260,7 +256,7 @@ e_big_african_empire = {
 			color = { 163 60 15 }
 			color2 = { 250 250 250 }
 
-			capital = 3360 #Kassala
+			capital = 3482 # Malawiya
 
 			c_malawiya= {
 
@@ -311,9 +307,7 @@ e_big_african_empire = {
 				color={ 122 185 151 }
 				color2={ 255 255 255 }
 					holy_site = byeri
-					holy_site = byeri_reformed
 					holy_site = bukongo
-					holy_site = bukongo_reformed
 
 				b_gentill = {
 				}
@@ -448,7 +442,6 @@ e_big_african_empire = {
 				color2={ 255 255 255 }
 
 				holy_site = bukongo
-				holy_site = bukongo_reformed
 
 				b_malange = {
 				}
@@ -566,7 +559,6 @@ e_big_african_empire = {
 				color2={ 255 255 255 }
 
 				holy_site = bukongo
-				holy_site = bukongo_reformed
 
 				b_oshakati = {
 				}
@@ -618,14 +610,14 @@ e_khoisan = {
 		color={ 69 243 66 }
 		color2={ 255 255 255 }
 
-		capital = 3377 #
+		capital = 3378 # Khorixas
 
 		d_khorwind = { #
 
 			color={ 29 250 12 }
 			color2={ 255 255 255 }
 
-			capital = 3377 #
+			capital = 3378 # Khorixas
 
 			c_brakwater = {
 
@@ -690,7 +682,7 @@ e_khoisan = {
 		color={ 244 25 6 }
 		color2={ 255 255 255 }
 
-		capital = 3390 #
+		capital = 3377 # Windhoek
 
 		d_windhoek = { #
 
@@ -706,8 +698,6 @@ e_khoisan = {
 
 				holy_site=khoi_san_mythology
 				holy_site=khoi_san_mythology_reformed
-				holy_site=andrianerinerinan
-				holy_site=andrianerinerinan_reformed
 				holy_site=animism
 				holy_site=animism_reformed
 
@@ -1033,8 +1023,6 @@ e_nguni = {
 				holy_site=malagasy_religion_reformed
 				holy_site=khoi_san_mythology
 				holy_site=khoi_san_mythology_reformed
-				holy_site=andrianerinerinan
-				holy_site=andrianerinerinan_reformed
 				holy_site=animism
 				holy_site=animism_reformed
 
