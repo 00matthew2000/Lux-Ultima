@@ -2520,6 +2520,7 @@ e_hre = {                      # Created by special decision only
 	}
 	k_austrasia = {
 		color = { 16 42 127 }
+		
 		capital = 90
 
 		catholic = 100
@@ -2528,7 +2529,6 @@ e_hre = {                      # Created by special decision only
 		cathar_reformed = 100
 		christian_populist_reformed = 100
 		teiwaz_reformed = 10000
-		capital = 222
 		
 		d_koln = {
 			color = { 213 216 212 }
@@ -2546,7 +2546,6 @@ e_hre = {                      # Created by special decision only
 			dutch = Keulen
 			frisian = Keulen
 			saxon = Köln
-			old_saxon = Köln
 			
 			c_koln = {
 				color={ 141 141 141 }
@@ -2563,7 +2562,6 @@ e_hre = {                      # Created by special decision only
 				dutch = Keulen
 				frisian = Keulen
 				saxon = Köln
-				old_saxon = Köln
 				
 				b_brauweiler = {
 				}
@@ -2579,7 +2577,6 @@ e_hre = {                      # Created by special decision only
 					dutch = Keulen
 					frisian = Keulen
 					saxon = Köln
-					old_saxon = Köln
 				}
 				b_mark = {
 				}
@@ -2832,7 +2829,6 @@ e_german = {
 			OR = {
 				ai = no
 				culture_group = central_germanic
-				culture = old_saxon
 			}
 		}
 	}
@@ -2906,7 +2902,8 @@ e_german = {
 
 	k_saxony = {
 		color={ 120 25 25 }
-		culture = old_saxon
+		
+		culture = saxon
 
 		capital = 257 # Brunswick
 
@@ -2914,7 +2911,6 @@ e_german = {
 			hidden_tooltip = {
 				OR = {
 					ai = no
-					culture = old_saxon
 					culture = saxon
 				}
 			}
@@ -2928,12 +2924,12 @@ e_german = {
 			
 			capital = 257 # Brunswick
 
-			old_saxon = Ostfalia
+			saxon = Ostfalia
 
 			c_luneburg = {
 				color = { 195 195 195 }
 
-				old_saxon = Bardengawi
+				saxon = Bardengawi
 				
 				b_luneburg = {}
 				b_bardowick = {}
@@ -2971,7 +2967,7 @@ e_german = {
 			c_celle = {
 				color = { 198 198 198 }
 
-				old_saxon = Wigmodia
+				saxon = Wigmodia
 
 				b_celle = {}
 				b_hannover = {}
@@ -2986,13 +2982,13 @@ e_german = {
 				color={ 214 214 190 }
 				color2={ 255 255 255 }
 
-				old_saxon = Derve
+				saxon = Derve
 
 				b_minden = {
-					old_saxon = Derve
+					saxon = Derve
 				}
 				b_hockeleve = {
-					old_saxon = Huculvi
+					saxon = Huculvi
 				}
 				b_petershagen = {}
 				b_diepholz = {}
@@ -3031,7 +3027,7 @@ e_german = {
 				color={ 170 192 192 }
 				color2={ 255 255 255 }
 
-				old_saxon = "Sturmi"
+				saxon = "Sturmi"
 
 				b_verden = {}
 				b_rotenburg_verden = {}
@@ -3046,7 +3042,7 @@ e_german = {
 				color2={ 255 255 255 }
 
 				pommeranian = Laczyn
-				old_saxon = Osterwalde
+				saxon = Osterwalde
 				
 				b_werben = {
 				}
@@ -3093,7 +3089,7 @@ e_german = {
 				color={ 214 214 214 }
 				color2={ 255 255 255 }
 
-				old_saxon = Lara
+				saxon = Lara
 				
 				b_oldenburg = {
 				}
@@ -3429,7 +3425,7 @@ e_german = {
 				color2={ 255 255 255 }
 
 				german = Krems
-				old_saxon = Krems
+				saxon = Krems
 
 				b_krems = {}
 				b_gars = {}
@@ -3461,7 +3457,6 @@ e_german = {
 					dutch = Wenen
 					frisian = Wenen
 					saxon = Wien
-					old_saxon = Wien
 					carantanian = "Dunaj"
 					bohemian = "Víden"
 					croatian = "Bec"
@@ -3674,7 +3669,7 @@ e_german = {
 				color={ 160 189 189 }
 
 				pommeranian = Dolomici
-				old_saxon = Suavia
+				saxon = Suavia
 
 				b_magdeburg = {	
 					pommeranian = Magadoburg			
@@ -3834,7 +3829,7 @@ e_german = {
 		d_raetia = {
 			color={ 150 240 190 }
 
-			capital = 247 # Chur
+			capital = 246 # Schwyz
 
 			german = "Churrätien"
 
@@ -4769,6 +4764,8 @@ e_byzantium = {
 		}	
 		d_cephalonia = {
 			color={ 222 155 155 }
+			
+			capital = 474 # Cephalonia
 
 			c_cephalonia = {
 				color = { 146 75 121 }
@@ -4823,7 +4820,7 @@ e_byzantium = {
 		d_athens = {
 			color = { 100 9 170 }
 			
-			capital = 475 # Thebes
+			capital = 482 # Athens
 			
 			c_atheniai = {
 				color = { 215 75 167 }
@@ -5183,11 +5180,11 @@ e_byzantium = {
 				color={ 154 79 125 }
 				color2={ 255 255 20 }
 
-				b_naupaktos = {}
-				b_paravola = {}
+				b_naupactus = {}
+				b_paravola1 = {}
 				b_agrinio = {}
 				b_mesolongi = {}
-				b_lidoriki = {}
+				b_lidoriki1 = {}
 				b_alyzeia = {}
 				b_sollion = {}
 			}
@@ -8913,7 +8910,6 @@ e_roman = {
 				old_frankish = Rom
 				suebi = Rom
 				saxon = Rom
-				old_saxon = Rom
 				
 				b_roma = {
 					pentarchy = yes
@@ -8968,7 +8964,6 @@ e_roman = {
 					old_frankish = Rom
 					suebi = Rom
 					saxon = Rom
-					old_saxon = Rom
 				}
 				b_viterbo = {
 				}
@@ -9058,7 +9053,6 @@ e_roman = {
 				old_frankish = Florens
 				suebi = Florens
 				saxon = Florens
-				old_saxon = Florens
 					
 				b_firenze = {
 					italian = Firenze
@@ -9075,7 +9069,6 @@ e_roman = {
 					old_frankish = Florens
 					suebi = Florens
 					saxon = Florens
-					old_saxon = Florens
 				}
 				b_prato = {
 				}
@@ -10910,7 +10903,7 @@ e_scandinavia = {
 		
 			capital = 263 #Holstein
 
-			old_saxon = Albingia
+			saxon = Albingia
 		
 			c_hamburg = {
 				color = { 225 225 225 }
@@ -10919,7 +10912,7 @@ e_scandinavia = {
 				swedish = "Hamborg"
 				norwegian = "Hamborg"
 				# norse = "Hamborg"
-				old_saxon = "Sturmaria"
+				saxon = "Sturmaria"
 			
 				b_hamburg = {
 					danish = "Hamborg"
@@ -10951,7 +10944,7 @@ e_scandinavia = {
 				polish = "Liubice"
 				bohemian = "Liubice"
 				prussian = "Liubice"
-				old_saxon = "Liubice"
+				saxon = "Liubice"
 				
 				b_lubeck = {
 					danish = "Lybæk"
@@ -10962,7 +10955,7 @@ e_scandinavia = {
 					polish = "Liubice"
 					bohemian = "Liubice"
 					prussian = "Liubice"
-					old_saxon = "Liubice"
+					saxon = "Liubice"
 				}
 				b_ratzeburg = {
 					danish = "Ratseborg"
@@ -10991,7 +10984,7 @@ e_scandinavia = {
 				swedish = "Holsten"
 				norwegian = "Holsten"
 
-				old_saxon = Albingia
+				saxon = Albingia
 
 				b_kiel = {}
 				b_gottorp = {}
@@ -11007,7 +11000,7 @@ e_scandinavia = {
 				color={ 240 180 200 }
 				color2={ 255 255 255 }
 
-				old_saxon = "Thietmaresca"
+				saxon = "Thietmaresca"
 
 				b_heide = {}
 				b_dithmarschen = {}
@@ -12783,7 +12776,6 @@ e_slavinia = {
                 danish = "Sudböhmen"
                 norwegian = "Sudböhmen"
                 old_frankish = "Sudböhmen"
-                old_saxon = "Sudböhmen"
                 saxon = "Sudböhmen"
                 suebi = "Sudböhmen"
                 
@@ -12808,7 +12800,6 @@ e_slavinia = {
 				old_frankish = Prag
 				suebi = Prag
 				saxon = Prag
-				old_saxon = Prag
 				pommeranian = Praha
 				bohemian = Praha
 				polish = Praha
@@ -12831,7 +12822,6 @@ e_slavinia = {
 					old_frankish = Prag
 					suebi = Prag
 					saxon = Prag
-					old_saxon = Prag
 					pommeranian = Praha
 					bohemian = Praha
 					polish = Praha
@@ -12852,7 +12842,6 @@ e_slavinia = {
 					swedish = Kuttenberg
 					danish = Kuttenberg
 					saxon = Kuttenberg
-					old_saxon = Kuttenberg
 					bohemian = "Kutna Hora"
                 }
                 b_karlstein = {}
@@ -25777,13 +25766,12 @@ e_france = {
 				color={ 95 70 75 }
 				color2={ 255 255 255 }
 				
-				b_zurich = {
+				b_zurichgau = {
 					german = "Zürich"
 					frankish = "Turic"
 					italian = "Turigo"
 				}
-				b_winterthur = {
-					frankish = "Wintertour"
+				b_wintertour = {
 					italian = "Vinterduro"
 				}
 				b_swiss_baden = {
@@ -25797,9 +25785,6 @@ e_france = {
 					frankish = "Kybourg"
 				}
 				b_toggenburg = {
-				}
-				b_zug = {
-					frankish = "Zoug"
 				}
 				b_rapperswil = {
 				}
@@ -31231,7 +31216,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					suebi = "Mirabel"
 					english = "Mirabel"
 					saxon = "Mirabel"
-					old_saxon = "Mirabel"
 					frisian = "Mirabel"
 					dutch = "Mirabel"
 					frankish = "Mirabel"
