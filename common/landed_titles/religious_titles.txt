@@ -4574,21 +4574,21 @@ d_yazdanism_reformed = {
 
 ### Other Religious Titles ###
 
-c_vesta_temple = {
-	color={ 10 145 120 }
-	color2={ 255 255 255 }
+# c_vesta_temple = {
+	# color={ 10 145 120 }
+	# color2={ 255 255 255 }
 
-	title = "VESTALIS_MAXIMA"
-	title_female = "VESTALIS_MAXIMA"
-	foa = "HEAD_PRIEST_FOA"
-	short_name = yes
+	# title = "VESTALIS_MAXIMA"
+	# title_female = "VESTALIS_MAXIMA"
+	# foa = "HEAD_PRIEST_FOA"
+	# short_name = yes
 
-	# Always exists
-	landless = yes
+	# # Always exists
+	# landless = yes
 	
-	# Cannot be held as a secondary title
-	primary = yes
-}
+	# # Cannot be held as a secondary title
+	# primary = yes
+# }
 
 # d_bud_vajrayana = {
 	# color = { 150 75 160 }
