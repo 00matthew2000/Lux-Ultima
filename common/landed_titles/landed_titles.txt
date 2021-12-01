@@ -23086,7 +23086,7 @@ e_sassanid = {
 				color={ 9 236 89 }
 				color2={ 255 255 255 }
 				
-				holy_site = yazidi
+				holy_site = yazidism
 				
 				assyrian = "Niniveh"
 				
@@ -24917,7 +24917,7 @@ e_france = {
 				
 				b_saumur = {
 				}
-				b_cholet = {
+				b_cholet1 = {
 				}
 				b_fontevraud-l_abbaye = {
 				}
@@ -24938,7 +24938,6 @@ e_france = {
 				b_bourges = {}
 				b_issoudun = {}
 				b_stsatur = {}
-				b_sancerre = {}
 				b_mehun = {}
 				b_vierzon = {}
 			}
@@ -24974,7 +24973,6 @@ e_france = {
 				b_vihiers = {}
 				b_angers = {}
 				b_fontevraud = {}
-				b_saumur = {}
 				b_montsoreau = {}
 				b_cholet = {}
 				b_treves = {}
@@ -25141,7 +25139,6 @@ e_france = {
 				b_coucy = {}
 				b_stquentin = {}
 				b_laon = {}
-				b_crepy = {}
 				b_montaigu = {}
 				b_rethel = {}
 				b_guise = {}
@@ -25166,7 +25163,7 @@ e_france = {
 				}
 				b_beaumont_IdF = {
 				}
-				b_compiegne = {
+				b_compiegne1 = {
 				}
 				b_crepy = {
 				}
@@ -25453,7 +25450,6 @@ e_france = {
 				b_chateauchinon = {}
 				b_vandenesse = {}
 				b_clamecy = {}
-				b_cosne = {}
 			}
 			c_charolais = {
 				color={ 36 174 238 }
@@ -25489,7 +25485,6 @@ e_france = {
 				b_savosusa = {}
 				b_tarentaise = {}
 				b_ciamberi = {}
-				b_aosta = {}
 				b_pombia = {}
 				b_montjovet = {}
 				b_vercelli = {}
@@ -25524,7 +25519,6 @@ e_france = {
 				b_romainmotier = {}
 				b_nyon = {}
 				b_lausanne = {}
-				b_echallens = {}
 				b_aubonne = {}
 				b_orbe = {}
 				b_thonon = {}			
@@ -25758,6 +25752,7 @@ e_france = {
 					frankish = "Morat"
 				}
 				b_kyburg = {
+                    frankish = "Kybourg"
 				}
 				b_sursee = {
 				}
@@ -25780,9 +25775,6 @@ e_france = {
 				}
 				b_kappel = {
 					frankish = "Chapel"
-				}
-				b_kyburg = {
-					frankish = "Kybourg"
 				}
 				b_toggenburg = {
 				}
@@ -25818,15 +25810,16 @@ e_france = {
 				}
 			}
 			c_vaud = {
-				b_lausanne = {
-					german = "Losanen"
+                color = { 95 30 75 }
+                
+				b_losanen = {
 				}
 				b_echallens = {
 				}
 				b_yverdon = {
 					german = "Ifferten"
 				}
-				b_romainmotier = {
+				b_welschmunster = {
 					german = "Welschmünster"
 				}
 				b_gruyere = {
@@ -25839,11 +25832,7 @@ e_france = {
 				}
 				b_chillon = {
 				}
-				b_orbe = {
-				}
 				b_grandson = {
-				}
-				b_chateaudoex = {
 				}
 			}
 		}
@@ -26030,7 +26019,7 @@ e_gallia = {
 			color={ 170 54 26 }
 			color2={ 255 255 255 }
 			
-			capital = 104 # Penthievre
+			capital = 102 # Penthievre
 			
 			culture = breton
 			
@@ -26070,16 +26059,13 @@ e_gallia = {
 				color={ 185 56 30 }
 				color2={ 255 255 255 }
 								
-				b_guingamp = {
-					breton = "Gwengamp"
+				b_gwengamp = {
 				}
-				b_treguier = {
-					breton = "Landreger"
+				b_landreger = {
 				}
-				b_plougonven = {
+				b_plougonven1 = {
 				}
-				b_plourivo = {
-					breton = "Plourivoù"
+				b_plourivou = {
 				}
 				b_lannion = {
 				}
@@ -26904,6 +26890,7 @@ e_spain = {
 				b_fuentedelmaestre = {
 				}
 			}
+        }
 		d_leon = {
 			color = { 253 158 51 }
 			color2={ 255 255 255 }
@@ -26986,7 +26973,6 @@ e_spain = {
 				}
 			}
 		}
-	}
 	}
 
 	k_portugal = {
