@@ -8,6 +8,7 @@ replace_path = common/artifacts
 replace_path = common/artifact_spawns
 replace_path = "history/characters"
 replace_path = "history/technology"
+replace_path = "history/provinces"
 replace_path = "history/titles"
 replace_path = "map"
 replace_path = "decisions"
