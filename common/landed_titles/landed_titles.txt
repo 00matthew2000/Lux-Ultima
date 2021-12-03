@@ -4042,88 +4042,6 @@ e_byzantium = {
 	
 	purple_born_heirs = yes
 	
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				e_roman_empire = {
-					has_holder = yes
-				}
-			}
-			e_roman_empire = {
-				has_holder = no
-			}
-		}
-		conditional_tooltip = {
-			trigger = {
-				e_latin_empire = {
-					has_holder = yes
-				}
-			}
-			e_latin_empire = {
-				has_holder = no
-			}
-		}
-		OR = {
-			religion = orthodox
-			religion_openly_hellenic_or_reformed_trigger = yes
-		}
-	}
-
-	k_saruhan = {
-		color = { 144 171 225 }
-		culture = turkish
-	}
-	
-	k_trinacria = {
-		color={ 249 232 247 }
-	#	capital = 340 #	Palermo
-	
-		allow = {
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-			}
-		}
-	}
-	
-	k_tekke = {
-		color={ 244 153 189 }
-	}
-
-	k_ottoman = {
-		color = { 247 145 30 }
-		culture = turkish
-	}
-
-	k_rum = {
-		color = { 144 182 161 }
-		culture = turkish
-		dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-	}
-
-	k_mentese = {
-		color = { 60 130 20 }
-		culture = turkish
-	}
-
-	k_karaman = {
-		color = { 120 41 92 }
-		culture = turkish
-	}
-
-	k_germiyan = {
-		color = { 255 180 180 }
-	}
-	
-	k_aydin = {
-		color = { 238 43 172 }
-	}
-
-	k_candar = {
-		color = { 238 79 182 }
-		culture = turkish
-	}
-	
 	k_byzantium = {
 		color = { 165 11 111 }
 		
@@ -5121,7 +5039,6 @@ e_byzantium = {
 				}
 				b_elbasan = {}
 				b_geziq = {}
-				b_spinarizza = {}
 				b_beat = {}
 				b_petrela = {}
 			}
@@ -5941,7 +5858,6 @@ e_byzantium = {
 				b_alaverdi = {}
 				b_khorvirap = {}
 				b_matsnaberd = {}
-				b_sanahin = {}
 			}
 			c_ani = {
 				color={ 168 87 50 }
@@ -6024,8 +5940,7 @@ e_byzantium = {
 				levantine_arabic = "Halab"
 				egyptian_arabic = "Halab"
 				andalusian_arabic = "Halab"
-				ashkenazi = "Chalpe"
-				sephardi = "Chalpe"
+				jewish = "Chalpe"
 				greek = Beroea
 				roman = Beroea
 				hellenistic = Beroea
@@ -6357,8 +6272,6 @@ e_byzantium = {
 				}
 				b_anchilios = {
 				}
-				b_aetos = {
-				}
 				b_sozopolis = {
 				}
 				b_odessos = {
@@ -6503,7 +6416,7 @@ e_byzantium = {
 			color={ 129 94 13 }
 			color2={ 255 255 255 }
 			
-			capital = 468 # Ragusa
+			capital = 469 # Zeta
 			
 			serbian = "Duklja"
 			croatian = "Duklja"
@@ -6800,7 +6713,6 @@ e_byzantium = {
 				b_bocac = {}
 				b_kuljc = {}
 				b_prijedor = {}
-				b_blagaj = {}
 			}
 			c_soli = {
 				color={ 198 115 115 }
@@ -6918,7 +6830,6 @@ e_byzantium = {
 				roman = "Kyrikon"
 				dalmatian = "Kyrikon"
 				german = "Vegl"
-				dalmatian = "Vicla"
 	
 				b_veglia = {
 					greek = "Kyrikon"
@@ -6950,19 +6861,6 @@ e_pontus = {
 		voipel_reformed = 500
 
 		slavic_christian_reformed = 1000
-		
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture = khazar
-					culture = alan
-					culture = crimean_gothic
-				}
-			}
-		}
-
-		crimean_gothic = "Gothia"
 		
 		d_crimea = {
 			color={ 210 160 80 }
@@ -7043,8 +6941,6 @@ e_pontus = {
 				color={ 246 206 100 }
 				color2={ 255 255 255 }
 			
-				b_oleshye = {
-				}
 				b_kairy = {
 				}
 				b_kyzylyar = {
@@ -7482,8 +7378,6 @@ e_pontus = {
 			color = { 188 91 154 }
 			
 			capital = 560 # Cherson
-
-			crimean_gothic = "Theodoro"
 			
 			c_theodosia = {
 				color={ 190 93 156 }
@@ -45502,31 +45396,6 @@ e_china_west_governor = { #placeholder for the Chinese Empire Western Governor
 }
 k_sakya_trizin = {
 	color = { 95 190 50 }
-}
-
-d_manichean = {
-	color={ 180 137 97 }
-	color2={ 220 220 0 }
-	
-	capital = 903 # Samarkand
-	
-	title = "YAMAG"
-	foa = "POPE_FOA" # needs new graphics
-	
-	short_name = yes
-
-	# Always exists
-	landless = yes
-	
-	# Controls a religion
-	controls_religion = manichean
-	
-	religion = manichean
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 	
 d_army_light = {
