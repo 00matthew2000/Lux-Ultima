@@ -1,143 +1,40 @@
-1019918114={
-	name=Ilumani
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	720.11.7={ birth=yes }
-	763.10.23={ death=yes }
-}
-1019918115={
-	name=Kaigouchi
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918114	#Ilumani
-	739.4.7={ birth=yes }
-	818.12.11={ death=yes }
-}
-1019918116={
-	name=Laliwa
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918115	#Kaigouchi
-	760.8.25={ birth=yes }
-	827.10.25={ death=yes }
-}
-1019918117={
-	name=Amorotahe
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918116	#Laliwa
-	787.6.16={ birth=yes }
-	852.5.2={ death=yes }
-}
-1019918118={
-	name=Arah
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918117	#Amorotahe
-	811.1.27={ birth=yes }
-	892.8.18={ death=yes }
-}
-1019918119={
-	name=Pirijá
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918118	#Arah
-	834.7.26={ birth=yes }
-	918.11.24={ death=yes }
-}
-1019918120={
-	name=Shoko
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918119	#Pirijá
-	860.4.15={ birth=yes }
-	944.3.23={ death=yes }
-}
-1019918121={
-	name=Laliwa
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918120	#Shoko
-	889.1.5={ birth=yes }
-	950.12.18={ death=yes }
-}
-1019918122={
-	name=Shoko
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918121	#Laliwa
-	911.9.14={ birth=yes }
-	965.1.19={ death=yes }
-}
-1019918123={
-	name=Ilumani
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918122	#Shoko
-	937.4.27={ birth=yes }
-	985.6.10={ death=yes }
-}
 1019918124={
 	name=Toruí
-	dynasty=1009990148
+	dynasty=1109990232
 	culture=calusa
 	religion=mahoma
-	father=1019918123	#Ilumani
-	962.9.11={ birth=yes }
-	1015.6.28={ death=yes }
+	1042.9.11={ birth=yes }
+	1115.6.28={ death=yes }
+}
+1019921924={
+	name=Caltora
+	dynasty=1109990233
+	culture=calusa
+	religion=mahoma
+	1042.12.28={ birth=yes }
+	1106.10.17={ death=yes }
 }
 1019918125={
-	name=Pirijá
+	name=Goyja
 	dynasty=1009990148
 	culture=calusa
 	religion=mahoma
-	father=1019918124	#Toruí
-	987.12.8={ birth=yes }
-	1048.9.5={ death=yes }
+	1017.12.8={ birth=yes }
+	1058.9.5={ death=yes }
 }
 1019918126={
-	name=Gunfuli
+	name=Toya
 	dynasty=1009990148
 	culture=calusa
 	religion=mahoma
-	father=1019918125	#Pirijá
-	1017.6.8={ birth=yes }
-	1069.8.7={ death=yes }
-}
-1019918127={
-	name=Haubariria
-	dynasty=1009990148
-	culture=calusa
-	religion=mahoma
-	father=1019918126	#Gunfuli
-	1043.5.15={ birth=yes }
-	1123.7.5={ death=yes }
-}
-
-1019921924={
-	name=Pirijá
-	dynasty=1009990187
-	culture=taino 
-	religion=zemiist
-	719.8.15={ birth=yes }
-	802.4.23={ death=yes }
+	1037.6.8={ birth=yes }
+	1099.8.7={ death=yes }
 }
 1019921925={
 	name=Toratora
 	dynasty=1009990187
 	culture=taino 
 	religion=zemiist
-	father=1019921924	#Pirijá
 	748.3.3={ birth=yes }
 	806.7.15={ death=yes }
 }
