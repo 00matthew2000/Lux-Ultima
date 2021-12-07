@@ -1,3135 +1,344 @@
 1019926274={
 	name=Tibiriçá
 	dynasty=1009990231
-	dna="kjlbijcafcn"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=5 intrigue=4 learning=8
-	add_trait=tough_soldier add_trait=shy add_trait=patient add_trait=kind add_trait=chaste 
+	culture=tupinamba 
+	religion=tupan
 	719.11.4={ birth=yes }
 	772.6.23={ death=yes }
 }
 1019926275={
 	name=Ramalho
 	dynasty=1009990231
-	dna="hmknijcakan"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=8 intrigue=8 learning=5
-	add_trait=scholarly_theologian add_trait=impaler add_trait=gregarious add_trait=arbitrary add_trait=paranoid 
+	culture=tupinamba 
+	religion=tupan
 	father=1019926274	#Tibiriçá
 	743.11.13={ birth=yes }
 	814.9.17={ death=yes }
 }
 1019926276={
-	name=Jougousa
-	female=yes
-	dynasty=1009990231
-	dna="kclbijchmhf"
-	culture=tupinamba religion=south_american
-	father=1019926274	#Tibiriçá
-	748.12.8={ birth=yes }
-	828.10.23={ death=yes }
-}
-1019926277={
-	name=Toruí
-	dynasty=1009990231
-	dna="cildijpkipn"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=7 stewardship=8 intrigue=5 learning=7
-	add_trait=mastermind_theologian add_trait=cruel add_trait=envious add_trait=gregarious add_trait=temperate 
-	father=1019926274	#Tibiriçá
-	754.4.25={ birth=yes }
-	796.10.24={ death=yes }
-}
-1019926278={
-	name=Ramalho
-	dynasty=1009990231
-	dna="kmgbfeiafen"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=5 stewardship=8 intrigue=7 learning=7
-	add_trait=misguided_warrior add_trait=just add_trait=deceitful add_trait=gregarious 
-	father=1019926274	#Tibiriçá
-	759.1.22={ birth=yes }
-	829.6.11={ death=yes }
-}
-1019926279={
-	name=Toruí
-	dynasty=1009990231
-	dna="kjlkijhhian"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=7 intrigue=4 learning=5
-	add_trait=detached_priest add_trait=celibate add_trait=honest add_trait=trusting add_trait=cruel 
-	father=1019926274	#Tibiriçá
-	763.11.11={ birth=yes }
-	837.4.17={ death=yes }
-}
-1019926280={
-	name=Azelene
-	female=yes
-	dynasty=1009990231
-	dna="fglbejcakcn"
-	culture=tupinamba religion=south_american
-	father=1019926274	#Tibiriçá
-	767.8.14={ birth=yes }
-	826.8.16={ death=yes }
-}
-1019926281={
-	name=Bartira
-	female=yes
-	dynasty=1009990231
-	dna="ojlbdfcjfpn"
-	culture=tupinamba religion=south_american
-	father=1019926274	#Tibiriçá
-	772.10.22={ birth=yes }
-	817.4.22={ death=yes }
-}
-1019926282={
 	name=Caiubi
 	dynasty=1009990231
-	dna="gmjpljcadon"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=7 stewardship=7 intrigue=5 learning=7
-	add_trait=mastermind_theologian add_trait=poet add_trait=diligent add_trait=greedy add_trait=cruel 
-	add_trait=patient add_trait=shy add_trait=proud 
+	culture=tupinamba 
+	religion=tupan
 	father=1019926275	#Ramalho
 	773.3.10={ birth=yes }
 	851.3.26={ death=yes }
 }
-1019926283={
+1019926277={
+	name=Pirijá
+	dynasty=1009990231
+	culture=tupinamba 
+	religion=tupan
+	father=1019926276	#Caiubi
+	796.9.24={ birth=yes }
+	862.1.5={ death=yes }
+}
+1019926278={
 	name=Toruí
 	dynasty=1009990231
-	dna="hhjnojcakac"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=8 stewardship=6 intrigue=8 learning=8
-	add_trait=detached_priest add_trait=temperate add_trait=diligent add_trait=envious add_trait=gregarious 
-	add_trait=cynical 
-	father=1019926275	#Ramalho
-	777.4.24={ birth=yes }
-	832.9.12={ death=yes }
+	culture=tupinamba 
+	religion=tupan
+	father=1019926277	#Pirijá
+	826.9.16={ birth=yes }
+	889.11.1={ death=yes }
+}
+1019926279={
+	name=Arata
+	dynasty=1009990231
+	culture=tupinamba 
+	religion=tupan
+	father=1019926278	#Toruí
+	853.9.12={ birth=yes }
+	931.10.1={ death=yes }
+}
+1019926280={
+	name=Caiubi
+	dynasty=1009990231
+	culture=tupinamba 
+	religion=tupan
+	father=1019926279	#Arata
+	884.5.4={ birth=yes }
+	981.1.9={ death=yes }
+}
+1019926281={
+	name=Tibiriçá
+	dynasty=1009990231
+	culture=tupinamba 
+	religion=tupan
+	father=1019926280	#Caiubi
+	915.5.3={ birth=yes }
+	980.3.17={ death=yes }
+}
+1019926282={
+	name=Arah
+	dynasty=1009990231
+	culture=tupinamba 
+	religion=tupan
+	father=1019926281	#Tibiriçá
+	942.3.6={ birth=yes }
+	1013.6.25={ death=yes }
+}
+1019926283={
+	name=Mbicy
+	dynasty=1009990231
+	culture=tupinamba 
+	religion=tupan
+	father=1019926282	#Arah
+	969.8.12={ birth=yes }
+	1057.5.13={ death=yes }
 }
 1019926284={
 	name=Mbicy
 	dynasty=1009990231
-	dna="hiangjeemac"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=4 intrigue=5 learning=8
-	add_trait=tough_soldier add_trait=patient add_trait=lustful add_trait=craven add_trait=cruel 
-	add_trait=greedy add_trait=depressed 
-	father=1019926275	#Ramalho
-	781.11.1={ birth=yes }
-	854.5.14={ death=yes }
-}
-1019926285={
-	name=Italo
-	dynasty=1009990231
-	dna="hkboikpakkp"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=8 stewardship=7 intrigue=5 learning=7
-	add_trait=tough_soldier add_trait=poet add_trait=shy add_trait=honest add_trait=temperate 
-	add_trait=slothful add_trait=genius 
-	father=1019926275	#Ramalho
-	786.10.8={ birth=yes }
-	874.5.20={ death=yes }
-}
-1019926286={
-	name=Caiubi
-	dynasty=1009990231
-	dna="dmpniaaakan"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=7 intrigue=4 learning=6
-	add_trait=charismatic_negotiator add_trait=ambitious add_trait=slothful add_trait=shy add_trait=humble 
-	father=1019926275	#Ramalho
-	789.2.18={ birth=yes }
-	862.1.13={ death=yes }
-}
-1019926287={
-	name=Arah
-	dynasty=1009990231
-	dna="hhkoijilaab"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=7 stewardship=6 intrigue=5 learning=4
-	add_trait=flamboyant_schemer add_trait=wroth add_trait=lustful add_trait=temperate add_trait=content 
-	add_trait=humble 
-	father=1019926275	#Ramalho
-	792.3.9={ birth=yes }
-	875.1.9={ death=yes }
-}
-1019926288={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="lajgojcobln"
-	culture=tupinamba religion=south_american
-	father=1019926282	#Caiubi
-	793.8.22={ birth=yes }
-	862.3.16={ death=yes }
-}
-1019926289={
-	name=Pirijá
-	dynasty=1009990231
-	dna="gmbikjhaohf"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=8 stewardship=8 intrigue=6 learning=4
-	add_trait=misguided_warrior add_trait=proud add_trait=just add_trait=kind add_trait=craven 
-	add_trait=zealous add_trait=depressed 
-	father=1019926282	#Caiubi
-	796.9.24={ birth=yes }
-	862.1.5={ death=yes }
-}
-1019926290={
-	name=Toruí
-	dynasty=1009990231
-	dna="imbikjgadcp"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=8 intrigue=7 learning=7
-	add_trait=flamboyant_schemer add_trait=poet add_trait=gregarious add_trait=ambitious add_trait=brave 
-	add_trait=charitable add_trait=possessed 
-	father=1019926289	#Pirijá
-	826.9.16={ birth=yes }
-	889.11.1={ death=yes }
-}
-1019926291={
-	name=Arata
-	dynasty=1009990231
-	dna="bmfimjhaoai"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=8 stewardship=7 intrigue=8 learning=6
-	add_trait=elusive_shadow add_trait=envious add_trait=honest add_trait=patient 
-	father=1019926289	#Pirijá
-	828.8.8={ birth=yes }
-	896.4.15={ death=yes }
-}
-1019926292={
-	name=Porasy
-	female=yes
-	dynasty=1009990231
-	dna="bonmenooahb"
-	culture=tupinamba religion=south_american
-	father=1019926289	#Pirijá
-	836.9.13={ birth=yes }
-	894.4.11={ death=yes }
-}
-1019926293={
-	name=Arata
-	dynasty=1009990231
-	dna="cbmikdcadcp"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=5 stewardship=6 intrigue=7 learning=8
-	add_trait=misguided_warrior add_trait=deceitful add_trait=temperate add_trait=cruel 
-	father=1019926290	#Toruí
-	853.9.12={ birth=yes }
-	931.10.1={ death=yes }
-}
-1019926294={
-	name=Tibiriçá
-	dynasty=1009990231
-	dna="nmchihganpn"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=5 stewardship=6 intrigue=6 learning=7
-	add_trait=mastermind_theologian add_trait=paranoid add_trait=humble add_trait=cruel add_trait=cynical 
-	father=1019926290	#Toruí
-	861.11.17={ birth=yes }
-	942.5.23={ death=yes }
-}
-1019926295={
-	name=Caiubi
-	dynasty=1009990231
-	dna="cbjilgcadgp"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=7 intrigue=4 learning=7
-	add_trait=martial_cleric add_trait=patient add_trait=zealous add_trait=cruel add_trait=ambitious 
-	add_trait=gluttonous 
-	father=1019926293	#Arata
-	884.5.4={ birth=yes }
-	981.1.9={ death=yes }
-}
-1019926296={
-	name=Mbicy
-	dynasty=1009990231
-	dna="fbmifdcalfc"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=5 stewardship=5 intrigue=7 learning=7
-	add_trait=skilled_tactician add_trait=gregarious add_trait=cruel add_trait=just add_trait=zealous 
-	add_trait=gluttonous add_trait=diligent add_trait=drunkard 
-	father=1019926293	#Arata
-	891.5.26={ birth=yes }
-	966.4.25={ death=yes }
-}
-1019926297={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="jbiineafdhl"
-	culture=tupinamba religion=south_american
-	father=1019926295	#Caiubi
-	909.1.15={ birth=yes }
-	989.11.27={ death=yes }
-}
-1019926298={
-	name=Tibiriçá
-	dynasty=1009990231
-	dna="kojhlgladnp"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=4 stewardship=5 intrigue=7 learning=7
-	add_trait=martial_cleric add_trait=trusting add_trait=kind add_trait=just add_trait=temperate 
-	father=1019926295	#Caiubi
-	915.5.3={ birth=yes }
-	980.3.17={ death=yes }
-}
-1019926299={
-	name=Azelene
-	female=yes
-	dynasty=1009990231
-	dna="ceojgccahnp"
-	culture=tupinamba religion=south_american
-	father=1019926295	#Caiubi
-	918.6.23={ birth=yes }
-	977.8.4={ death=yes }
-}
-1019926300={
-	name=Arah
-	dynasty=1009990231
-	dna="cjjiljfadga"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=8 stewardship=5 intrigue=8 learning=8
-	add_trait=detached_priest add_trait=proud add_trait=zealous add_trait=brave 
-	father=1019926295	#Caiubi
-	921.2.19={ birth=yes }
-	996.8.26={ death=yes }
-}
-1019926301={
-	name=Arah
-	dynasty=1009990231
-	dna="kcnmigfakap"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=8 stewardship=7 intrigue=7 learning=6
-	add_trait=midas_touched add_trait=kind add_trait=temperate add_trait=trusting 
-	father=1019926298	#Tibiriçá
-	942.3.6={ birth=yes }
-	1013.6.25={ death=yes }
-}
-1019926302={
-	name=Bartira
-	female=yes
-	dynasty=1009990231
-	dna="khjhlclagnp"
-	culture=tupinamba religion=south_american
-	father=1019926298	#Tibiriçá
-	949.10.7={ birth=yes }
-	990.6.18={ death=yes }
-}
-1019926303={
-	name=Mbicy
-	dynasty=1009990231
-	dna="kcgiigfpenp"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=7 stewardship=7 intrigue=6 learning=4
-	add_trait=elusive_shadow add_trait=content add_trait=chaste add_trait=brave add_trait=ill 
-	father=1019926301	#Arah
-	969.8.12={ birth=yes }
-	1057.5.13={ death=yes }
-}
-1019926304={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="hgjmibpikai"
-	culture=tupinamba religion=south_american
-	father=1019926301	#Arah
-	976.2.11={ birth=yes }
-	1060.8.6={ death=yes }
-}
-1019926305={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="kjmnimfnnnc"
-	culture=tupinamba religion=south_american
-	father=1019926301	#Arah
-	980.5.15={ birth=yes }
-	1053.2.12={ death=yes }
-}
-1019926306={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="bmnmngcnoap"
-	culture=tupinamba religion=south_american
-	father=1019926301	#Arah
-	986.10.9={ birth=yes }
-	1045.5.12={ death=yes }
-}
-1019926307={
-	name=Mbicy
-	dynasty=1009990231
-	dna="cigiibfpeib"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=7 stewardship=5 intrigue=7 learning=4
-	add_trait=flamboyant_schemer add_trait=ambitious add_trait=slothful add_trait=wroth add_trait=arbitrary 
-	father=1019926303	#Mbicy
+	culture=tupinamba 
+	religion=tupan
+	father=1019926283	#Mbicy
 	994.7.25={ birth=yes }
 	1055.5.12={ death=yes }
 }
-1019926308={
-	name=Piquerobi
-	dynasty=1009990231
-	dna="ecgioejlenj"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=6 stewardship=4 intrigue=8 learning=5
-	add_trait=charismatic_negotiator add_trait=honest add_trait=gregarious add_trait=craven add_trait=content 
-	add_trait=greedy 
-	father=1019926303	#Mbicy
-	998.8.3={ birth=yes }
-	1059.10.17={ death=yes }
-}
-1019926309={
-	name=Azelene
-	female=yes
-	dynasty=1009990231
-	dna="kcglipfbpom"
-	culture=tupinamba religion=south_american
-	father=1019926303	#Mbicy
-	1005.12.5={ birth=yes }
-	1072.3.9={ death=yes }
-}
-1019926310={
+1019926285={
 	name=Caiubi
 	dynasty=1009990231
-	dna="iidiibmbeij"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=7 stewardship=7 intrigue=4 learning=6
-	add_trait=skilled_tactician add_trait=honest add_trait=ambitious add_trait=temperate add_trait=paranoid 
-	father=1019926307	#Mbicy
+	culture=tupinamba 
+	religion=tupan
+	father=1019926284	#Mbicy
 	1021.6.5={ birth=yes }
 	1075.4.8={ death=yes }
 }
-1019926311={
-	name=Jougousa
-	female=yes
-	dynasty=1009990231
-	dna="cfliibkpkhb"
-	culture=tupinamba religion=south_american
-	father=1019926307	#Mbicy
-	1028.1.7={ birth=yes }
-	1087.11.24={ death=yes }
-}
-1019926312={
-	name=Azelene
-	female=yes
-	dynasty=1009990231
-	dna="oihickhgibb"
-	culture=tupinamba religion=south_american
-	father=1019926307	#Mbicy
-	1032.6.13={ birth=yes }
-	1116.4.28={ death=yes }
-}
-1019926313={
-	name=Azelene
-	female=yes
-	dynasty=1009990231
-	dna="nodgjhpfeij"
-	culture=tupinamba religion=south_american
-	father=1019926310	#Caiubi
-	1051.4.5={ birth=yes }
-	1131.9.19={ death=yes }
-}
-1019926314={
+1019926286={
 	name=Arata
 	dynasty=1009990231
-	dna="iednebmbcbk"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=7 stewardship=6 intrigue=5 learning=6
-	add_trait=skilled_tactician add_trait=honest add_trait=cynical add_trait=patient add_trait=craven 
-	add_trait=proud add_trait=ambitious 
-	father=1019926310	#Caiubi
+	culture=tupinamba 
+	religion=tupan
+	father=1019926285	#Caiubi
 	1058.10.6={ birth=yes }
 	1138.4.2={ death=yes }
 }
-1019926315={
-	name=Caiubi
-	dynasty=1009990231
-	dna="pieiibmfgnk"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=4 stewardship=5 intrigue=7 learning=5
-	add_trait=elusive_shadow add_trait=shy add_trait=paranoid 
-	father=1019926310	#Caiubi
-	1063.5.21={ birth=yes }
-	1144.3.19={ death=yes }
-}
-1019926316={
-	name=Tibiriçá
-	dynasty=1009990231
-	dna="ofdiiphbpic"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=4 stewardship=4 intrigue=5 learning=6
-	add_trait=flamboyant_schemer add_trait=charitable add_trait=trusting 
-	father=1019926310	#Caiubi
-	1068.4.1={ birth=yes }
-	1122.7.5={ death=yes }
-}
-1019926317={
-	name=Ramalho
-	dynasty=1009990231
-	dna="iedbmbjhcha"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=4 intrigue=6 learning=7
-	add_trait=grey_eminence add_trait=chaste add_trait=wroth add_trait=honest add_trait=gluttonous 
-	father=1019926314	#Arata
-	1079.11.15={ birth=yes }
-	1141.3.11={ death=yes }
-}
-1019926318={
-	name=Jougousa
-	female=yes
-	dynasty=1009990231
-	dna="ieinkobocjk"
-	culture=tupinamba religion=south_american
-	father=1019926314	#Arata
-	1083.12.12={ birth=yes }
-	1131.1.3={ death=yes }
-}
-1019926319={
-	name=Tibiriçá
-	dynasty=1009990231
-	dna="iddiebmpcba"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=4 stewardship=4 intrigue=5 learning=7
-	add_trait=misguided_warrior add_trait=zealous add_trait=envious add_trait=wroth 
-	father=1019926314	#Arata
-	1085.1.25={ birth=yes }
-	1157.8.2={ death=yes }
-}
-1019926320={
-	name=Tibiriçá
-	dynasty=1009990231
-	dna="ihfgebmejak"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=8 stewardship=5 intrigue=4 learning=6
-	add_trait=indulgent_wastrel add_trait=trusting add_trait=chaste add_trait=temperate 
-	father=1019926314	#Arata
-	1090.8.25={ birth=yes }
-	1190.11.3={ death=yes }
-}
-1019926321={
-	name=Jougousa
-	female=yes
-	dynasty=1009990231
-	dna="ifdpedbknbm"
-	culture=tupinamba religion=south_american
-	father=1019926314	#Arata
-	1092.9.19={ birth=yes }
-	1183.5.24={ death=yes }
-}
-1019926322={
-	name=Piquerobi
-	dynasty=1009990231
-	dna="npjeahjhjha"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=7 stewardship=4 intrigue=6 learning=6
-	add_trait=charismatic_negotiator add_trait=hunter add_trait=kind add_trait=chaste add_trait=honest 
-	father=1019926317	#Ramalho
-	1106.3.8={ birth=yes }
-	1179.8.7={ death=yes }
-}
-1019926323={
-	name=Toruí
-	dynasty=1009990231
-	dna="aeajhjjhcjp"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=4 stewardship=7 intrigue=8 learning=5
-	add_trait=flamboyant_schemer add_trait=deceitful add_trait=charitable 
-	father=1019926317	#Ramalho
-	1111.11.4={ birth=yes }
-	1165.6.28={ death=yes }
-}
-1019926324={
-	name=Ramalho
-	dynasty=1009990231
-	dna="iegbmbolbhb"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=5 stewardship=6 intrigue=4 learning=4
-	add_trait=intricate_webweaver add_trait=kind add_trait=cruel add_trait=ambitious add_trait=possessed 
-	father=1019926317	#Ramalho
-	1116.6.11={ birth=yes }
-	1198.3.17={ death=yes }
-}
-1019926325={
-	name=Pirijá
-	dynasty=1009990231
-	dna="lcdbagihjhn"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=5 stewardship=6 intrigue=4 learning=5
-	add_trait=indulgent_wastrel add_trait=kind add_trait=paranoid add_trait=slothful add_trait=deceitful 
-	father=1019926322	#Piquerobi
-	1136.5.14={ birth=yes }
-	1214.12.18={ death=yes }
-}
-1019926326={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="acjdaachjha"
-	culture=tupinamba religion=south_american
-	father=1019926322	#Piquerobi
-	1141.6.27={ birth=yes }
-	1225.4.19={ death=yes }
-}
-1019926327={
-	name=Bartira
-	female=yes
-	dynasty=1009990231
-	dna="njgddhpipga"
-	culture=tupinamba religion=south_american
-	father=1019926322	#Piquerobi
-	1146.4.23={ birth=yes }
-	1203.5.23={ death=yes }
-}
-1019926328={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="ngjeahpocia"
-	culture=tupinamba religion=south_american
-	father=1019926322	#Piquerobi
-	1151.6.3={ birth=yes }
-	1204.12.4={ death=yes }
-}
-1019926329={
-	name=Mbicy
-	dynasty=1009990231
-	dna="nakeoephjja"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=6 stewardship=8 intrigue=5 learning=5
-	add_trait=midas_touched add_trait=craven add_trait=humble add_trait=deceitful add_trait=envious 
-	father=1019926322	#Piquerobi
-	1154.5.20={ birth=yes }
-	1222.7.8={ death=yes }
-}
-1019926330={
-	name=Toruí
-	dynasty=1009990231
-	dna="efolahmliok"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=6 stewardship=6 intrigue=4 learning=4
-	add_trait=grey_eminence add_trait=patient add_trait=charitable add_trait=ambitious add_trait=just 
-	father=1019926322	#Piquerobi
-	1159.2.11={ birth=yes }
-	1236.12.25={ death=yes }
-}
-1019926331={
-	name=Caiubi
-	dynasty=1009990231
-	dna="podbagmhajn"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=7 stewardship=5 intrigue=5 learning=5
-	add_trait=grey_eminence add_trait=gluttonous add_trait=proud add_trait=chaste add_trait=just 
-	add_trait=content 
-	father=1019926325	#Pirijá
-	1163.10.16={ birth=yes }
-	1219.7.20={ death=yes }
-}
-1019926332={
-	name=Toruí
-	dynasty=1009990231
-	dna="lcdpglghjhn"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=7 stewardship=7 intrigue=5 learning=4
-	add_trait=indulgent_wastrel add_trait=brave add_trait=kind add_trait=gluttonous add_trait=proud 
-	father=1019926325	#Pirijá
-	1169.12.9={ birth=yes }
-	1249.2.24={ death=yes }
-}
-1019926333={
-	name=Tibiriçá
-	dynasty=1009990231
-	dna="accbadbkppn"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=5 stewardship=4 intrigue=5 learning=7
-	add_trait=indulgent_wastrel add_trait=brave add_trait=envious add_trait=cruel add_trait=paranoid 
-	add_trait=slothful add_trait=shy 
-	father=1019926325	#Pirijá
-	1174.7.8={ birth=yes }
-	1234.5.14={ death=yes }
-}
-1019926334={
-	name=Mbicy
-	dynasty=1009990231
-	dna="cjjclgimjge"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=7 stewardship=4 intrigue=5 learning=4
-	add_trait=midas_touched add_trait=wroth add_trait=humble add_trait=brave add_trait=content 
-	father=1019926325	#Pirijá
-	1178.10.4={ birth=yes }
-	1244.12.10={ death=yes }
-}
-1019926335={
-	name=Italo
-	dynasty=1009990231
-	dna="pjmeadighnn"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=5 stewardship=8 intrigue=4 learning=7
-	add_trait=charismatic_negotiator add_trait=hedonist add_trait=paranoid add_trait=cruel add_trait=envious 
-	add_trait=just add_trait=shy add_trait=wounded 
-	father=1019926331	#Caiubi
-	1188.1.10={ birth=yes }
-	1240.1.12={ death=yes }
-}
-1019926336={
-	name=Arata
-	dynasty=1009990231
-	dna="locbagmlacf"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=7 stewardship=8 intrigue=7 learning=5
-	add_trait=midas_touched add_trait=proud add_trait=shy add_trait=chaste add_trait=just 
-	father=1019926331	#Caiubi
-	1193.11.18={ birth=yes }
-	1253.8.29={ death=yes }
-}
-1019926337={
-	name=Tibiriçá
-	dynasty=1009990231
-	dna="hogbbgmhaen"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=4 stewardship=4 intrigue=6 learning=4
-	add_trait=elusive_shadow add_trait=just add_trait=honest add_trait=content 
-	father=1019926331	#Caiubi
-	1197.5.7={ birth=yes }
-	1264.12.15={ death=yes }
-}
-1019926338={
-	name=Tibiriçá
-	dynasty=1009990231
-	dna="pedbanloekp"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=7 stewardship=6 intrigue=4 learning=4
-	add_trait=tough_soldier add_trait=gardener add_trait=honest add_trait=wroth add_trait=craven 
-	add_trait=shy add_trait=envious add_trait=chaste 
-	father=1019926331	#Caiubi
-	1201.6.24={ birth=yes }
-	1299.3.27={ death=yes }
-}
-1019926339={
-	name=Caiubi
-	dynasty=1009990231
-	dna="oplbanmhoje"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=6 intrigue=5 learning=7
-	add_trait=flamboyant_schemer add_trait=slothful add_trait=charitable add_trait=temperate 
-	father=1019926331	#Caiubi
-	1207.11.21={ birth=yes }
-	1288.3.29={ death=yes }
-}
-1019926340={
-	name=Italo
-	dynasty=1009990231
-	dna="pnhbaaljdng"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=4 intrigue=6 learning=5
-	add_trait=naive_appeaser add_trait=duelist add_trait=patient add_trait=honest 
-	father=1019926335	#Italo
-	1217.12.16={ birth=yes }
-	1273.6.2={ death=yes }
-}
-1019926341={
-	name=Azelene
-	female=yes
-	dynasty=1009990231
-	dna="ojbaadilhnc"
-	culture=tupinamba religion=south_american
-	father=1019926335	#Italo
-	1222.11.13={ birth=yes }
-	1281.12.2={ death=yes }
-}
-1019926342={
-	name=Ramalho
-	dynasty=1009990231
-	dna="aojbaaljdnf"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=7 intrigue=4 learning=6
-	add_trait=grey_eminence add_trait=just add_trait=envious add_trait=zealous add_trait=chaste 
-	father=1019926340	#Italo
-	1244.4.16={ birth=yes }
-	1325.2.20={ death=yes }
-}
-1019926343={
-	name=Jougousa
-	female=yes
-	dynasty=1009990231
-	dna="pahcaglcdng"
-	culture=tupinamba religion=south_american
-	father=1019926340	#Italo
-	1247.11.7={ birth=yes }
-	1310.3.2={ death=yes }
-}
-1019926344={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="pndbaagobnh"
-	culture=tupinamba religion=south_american
-	father=1019926340	#Italo
-	1251.4.24={ birth=yes }
-	1336.5.22={ death=yes }
-}
-1019926345={
-	name=Ramalho
-	dynasty=1009990231
-	dna="pgdboafidng"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=8 stewardship=7 intrigue=6 learning=8
-	add_trait=tough_soldier add_trait=trusting add_trait=content add_trait=cruel add_trait=patient 
-	add_trait=proud 
-	father=1019926340	#Italo
-	1255.12.27={ birth=yes }
-	1340.8.21={ death=yes }
-}
-1019926346={
-	name=Ramalho
-	dynasty=1009990231
-	dna="plhbaablinm"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=7 intrigue=8 learning=8
-	add_trait=midas_touched add_trait=charitable add_trait=deceitful add_trait=patient add_trait=ambitious 
-	add_trait=humble 
-	father=1019926340	#Italo
-	1258.6.4={ birth=yes }
-	1310.11.11={ death=yes }
-}
-1019926347={
-	name=Bartira
-	female=yes
-	dynasty=1009990231
-	dna="hnheidpjdfl"
-	culture=tupinamba religion=south_american
-	father=1019926340	#Italo
-	1264.6.2={ birth=yes }
-	1323.10.17={ death=yes }
-}
-1019926348={
-	name=Jougousa
-	female=yes
-	dynasty=1009990231
-	dna="pbheejlnmng"
-	culture=tupinamba religion=south_american
-	father=1019926340	#Italo
-	1270.12.18={ birth=yes }
-	1370.1.3={ death=yes }
-}
-1019926349={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="edjnnlllknd"
-	culture=tupinamba religion=south_american
-	father=1019926342	#Ramalho
-	1274.8.18={ birth=yes }
-	1331.5.22={ death=yes }
-}
-1019926350={
-	name=Bartira
-	female=yes
-	dynasty=1009990231
-	dna="acfbfalnnhk"
-	culture=tupinamba religion=south_american
-	father=1019926342	#Ramalho
-	1277.10.5={ birth=yes }
-	1352.4.5={ death=yes }
-}
-1019926351={
-	name=Piquerobi
-	dynasty=1009990231
-	dna="akjeaajjflf"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=7 stewardship=7 intrigue=5 learning=6
-	add_trait=detached_priest add_trait=charitable add_trait=trusting add_trait=temperate add_trait=brave 
-	father=1019926342	#Ramalho
-	1284.7.18={ birth=yes }
-	1362.9.12={ death=yes }
-}
-1019926352={
-	name=Arata
-	dynasty=1009990231
-	dna="adjbmkjjfff"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=6 intrigue=4 learning=4
-	add_trait=grey_eminence add_trait=honest add_trait=ambitious add_trait=just add_trait=ill 
-	father=1019926342	#Ramalho
-	1289.4.13={ birth=yes }
-	1375.8.29={ death=yes }
-}
-1019926353={
-	name=Mbicy
-	dynasty=1009990231
-	dna="afjbaacjdif"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=8 stewardship=7 intrigue=8 learning=4
-	add_trait=intricate_webweaver add_trait=celibate add_trait=gregarious add_trait=brave add_trait=patient 
-	add_trait=envious 
-	father=1019926342	#Ramalho
-	1293.7.14={ birth=yes }
-	1382.10.29={ death=yes }
-}
-1019926354={
-	name=Piquerobi
-	dynasty=1009990231
-	dna="akjeadjoolb"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=6 intrigue=4 learning=5
-	add_trait=flamboyant_schemer add_trait=scholar add_trait=brave add_trait=arbitrary add_trait=greedy 
-	father=1019926351	#Piquerobi
-	1316.9.9={ birth=yes }
-	1393.7.26={ death=yes }
-}
-1019926355={
-	name=Caiubi
-	dynasty=1009990231
-	dna="anfeabjjmha"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=5 stewardship=5 intrigue=7 learning=7
-	add_trait=indulgent_wastrel add_trait=temperate add_trait=humble add_trait=arbitrary add_trait=greedy 
-	add_trait=drunkard 
-	father=1019926351	#Piquerobi
-	1320.2.23={ birth=yes }
-	1381.3.17={ death=yes }
-}
-1019926356={
-	name=Pirijá
-	dynasty=1009990231
-	dna="afjneaajfla"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=4 stewardship=4 intrigue=8 learning=8
-	add_trait=midas_touched add_trait=diligent add_trait=craven add_trait=deceitful add_trait=paranoid 
-	father=1019926351	#Piquerobi
-	1327.1.19={ birth=yes }
-	1407.5.7={ death=yes }
-}
-1019926357={
-	name=Pirijá
-	dynasty=1009990231
-	dna="fedhfaljfof"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=8 stewardship=8 intrigue=5 learning=6
-	add_trait=elusive_shadow add_trait=craven add_trait=trusting 
-	father=1019926351	#Piquerobi
-	1332.10.12={ birth=yes }
-	1401.11.24={ death=yes }
-}
-1019926358={
-	name=Pirijá
-	dynasty=1009990231
-	dna="gkjmanjoacb"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=4 stewardship=5 intrigue=8 learning=5
-	add_trait=intricate_webweaver add_trait=hedonist add_trait=temperate add_trait=just add_trait=wroth 
-	add_trait=deceitful 
-	father=1019926354	#Piquerobi
-	1338.6.8={ birth=yes }
-	1408.6.4={ death=yes }
-}
-1019926359={
-	name=Mbicy
-	dynasty=1009990231
-	dna="akjfhdjmojb"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=7 stewardship=4 intrigue=8 learning=5
-	add_trait=charismatic_negotiator add_trait=shy add_trait=cruel add_trait=slothful add_trait=lunatic 
-	father=1019926354	#Piquerobi
-	1344.1.16={ birth=yes }
-	1402.6.30={ death=yes }
-}
-1019926360={
-	name=Arah
-	dynasty=1009990231
-	dna="ajjeadaoolb"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=5 stewardship=5 intrigue=4 learning=8
-	add_trait=intricate_webweaver add_trait=zealous add_trait=diligent add_trait=humble add_trait=shy 
-	add_trait=cruel add_trait=gluttonous add_trait=genius 
-	father=1019926354	#Piquerobi
-	1351.2.22={ birth=yes }
-	1430.9.25={ death=yes }
-}
-1019926361={
-	name=Arah
-	dynasty=1009990231
-	dna="ibnendkohmb"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=4 stewardship=5 intrigue=6 learning=8
-	add_trait=indulgent_wastrel add_trait=slothful add_trait=zealous add_trait=ambitious 
-	father=1019926354	#Piquerobi
-	1354.11.18={ birth=yes }
-	1423.4.20={ death=yes }
-}
-1019926362={
-	name=Caiubi
-	dynasty=1009990231
-	dna="jkemmpjojcg"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=6 intrigue=6 learning=6
-	add_trait=elusive_shadow add_trait=temperate add_trait=kind add_trait=diligent 
-	father=1019926358	#Pirijá
-	1368.1.8={ birth=yes }
-	1444.10.3={ death=yes }
-}
-1019926363={
-	name=Azelene
-	female=yes
-	dynasty=1009990231
-	dna="gpipdnndbcb"
-	culture=tupinamba religion=south_american
-	father=1019926358	#Pirijá
-	1374.6.23={ birth=yes }
-	1430.1.18={ death=yes }
-}
-1019926364={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="pkafdnjmagb"
-	culture=tupinamba religion=south_american
-	father=1019926358	#Pirijá
-	1377.12.26={ birth=yes }
-	1463.11.20={ death=yes }
-}
-1019926365={
-	name=Azelene
-	female=yes
-	dynasty=1009990231
-	dna="oajmanjbacb"
-	culture=tupinamba religion=south_american
-	father=1019926358	#Pirijá
-	1382.10.17={ birth=yes }
-	1461.10.15={ death=yes }
-}
-1019926366={
-	name=Arata
-	dynasty=1009990231
-	dna="bjjmaojolmh"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=8 intrigue=8 learning=6
-	add_trait=misguided_warrior add_trait=deceitful add_trait=greedy add_trait=ambitious add_trait=kind 
-	father=1019926358	#Pirijá
-	1387.6.10={ birth=yes }
-	1467.11.1={ death=yes }
-}
-1019926367={
-	name=Mbicy
-	dynasty=1009990231
-	dna="ikpmmpjbjcd"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=8 intrigue=6 learning=8
-	add_trait=tough_soldier add_trait=just add_trait=craven add_trait=chaste add_trait=charitable 
-	father=1019926362	#Caiubi
-	1398.2.17={ birth=yes }
-	1478.11.4={ death=yes }
-}
-1019926368={
-	name=Potira
-	female=yes
-	dynasty=1009990231
-	dna="dkegmpjohce"
-	culture=tupinamba religion=south_american
-	father=1019926362	#Caiubi
-	1403.2.2={ birth=yes }
-	1474.10.15={ death=yes }
-}
-1019926369={
+1019926287={
 	name=Caiubi
 	dynasty=1009990232
-	dna="eplkagbkjpm"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=4 stewardship=5 intrigue=4 learning=8
-	add_trait=charismatic_negotiator add_trait=gluttonous add_trait=charitable add_trait=trusting 
+	culture=guajiro 
+	religion=kaaulayawaa
 	719.3.13={ birth=yes }
 	773.3.22={ death=yes }
 }
-1019926370={
+1019926288={
 	name=Arata
 	dynasty=1009990232
-	dna="ophkdobhjpj"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=5 intrigue=7 learning=7
-	add_trait=detached_priest add_trait=envious add_trait=ambitious add_trait=cruel add_trait=trusting 
-	add_trait=lustful 
-	father=1019926369	#Caiubi
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926287	#Caiubi
 	745.9.6={ birth=yes }
 	827.4.12={ death=yes }
 }
-1019926371={
-	name=Jougousa
-	female=yes
-	dynasty=1009990232
-	dna="eacoagkkjgm"
-	culture=tupinamba religion=south_american
-	father=1019926369	#Caiubi
-	749.12.18={ birth=yes }
-	805.8.3={ death=yes }
-}
-1019926372={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="gplkakbkcpm"
-	culture=tupinamba religion=south_american
-	father=1019926369	#Caiubi
-	752.4.4={ birth=yes }
-	847.8.10={ death=yes }
-}
-1019926373={
-	name=Jougousa
-	female=yes
-	dynasty=1009990232
-	dna="npblagbkooj"
-	culture=tupinamba religion=south_american
-	father=1019926369	#Caiubi
-	757.9.24={ birth=yes }
-	828.3.23={ death=yes }
-}
-1019926374={
-	name=Jougousa
-	female=yes
-	dynasty=1009990232
-	dna="ophkdobhjfj"
-	culture=tupinamba religion=south_american
-	father=1019926370	#Arata
-	765.5.2={ birth=yes }
-	833.9.4={ death=yes }
-}
-1019926375={
+1019926289={
 	name=Italo
 	dynasty=1009990232
-	dna="gphcfobippj"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=8 stewardship=4 intrigue=6 learning=6
-	add_trait=charismatic_negotiator add_trait=duelist add_trait=charitable add_trait=shy add_trait=kind 
-	father=1019926370	#Arata
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926288	#Arata
 	770.10.26={ birth=yes }
 	846.1.29={ death=yes }
 }
-1019926376={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="pchgfnohfpj"
-	culture=tupinamba religion=south_american
-	father=1019926370	#Arata
-	776.2.8={ birth=yes }
-	814.9.6={ death=yes }
-}
-1019926377={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="oohknojbjhe"
-	culture=tupinamba religion=south_american
-	father=1019926370	#Arata
-	781.5.8={ birth=yes }
-	847.12.26={ death=yes }
-}
-1019926378={
-	name=Porasy
-	female=yes
-	dynasty=1009990232
-	dna="opehdhahfpm"
-	culture=tupinamba religion=south_american
-	father=1019926370	#Arata
-	786.2.7={ birth=yes }
-	852.10.14={ death=yes }
-}
-1019926379={
+1019926290={
 	name=Tibiriçá
 	dynasty=1009990232
-	dna="hlhifodaege"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=4 intrigue=5 learning=4
-	add_trait=detached_priest add_trait=kind add_trait=gluttonous add_trait=just add_trait=trusting 
-	add_trait=cruel add_trait=humble 
-	father=1019926375	#Italo
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926289	#Italo
 	794.11.18={ birth=yes }
 	851.4.3={ death=yes }
 }
-1019926380={
-	name=Arata
-	dynasty=1009990232
-	dna="gcceobcipfj"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=6 stewardship=8 intrigue=8 learning=8
-	add_trait=midas_touched add_trait=impaler add_trait=zealous add_trait=gregarious add_trait=humble 
-	add_trait=chaste 
-	father=1019926375	#Italo
-	799.10.22={ birth=yes }
-	873.9.7={ death=yes }
-}
-1019926381={
-	name=Arata
-	dynasty=1009990232
-	dna="hejhbkbiobj"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=6 stewardship=5 intrigue=5 learning=7
-	add_trait=martial_cleric add_trait=arbitrary add_trait=wroth add_trait=zealous add_trait=greedy 
-	father=1019926375	#Italo
-	804.11.17={ birth=yes }
-	865.5.28={ death=yes }
-}
-1019926382={
-	name=Porasy
-	female=yes
-	dynasty=1009990232
-	dna="gphcmobepnn"
-	culture=tupinamba religion=south_american
-	father=1019926375	#Italo
-	808.8.12={ birth=yes }
-	879.12.8={ death=yes }
-}
-1019926383={
+1019926291={
 	name=Italo
 	dynasty=1009990232
-	dna="klhhalebnge"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=4 stewardship=8 intrigue=8 learning=4
-	add_trait=flamboyant_schemer add_trait=just add_trait=honest add_trait=charitable add_trait=content 
-	add_trait=wroth add_trait=cynical 
-	father=1019926379	#Tibiriçá
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926290	#Tibiriçá
 	816.11.4={ birth=yes }
 	861.6.24={ death=yes }
 }
-1019926384={
-	name=Tibiriçá
-	dynasty=1009990232
-	dna="hbhiibeieel"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=4 stewardship=6 intrigue=5 learning=8
-	add_trait=flamboyant_schemer add_trait=zealous add_trait=paranoid add_trait=wroth add_trait=arbitrary 
-	add_trait=diligent add_trait=gluttonous 
-	father=1019926379	#Tibiriçá
-	820.9.14={ birth=yes }
-	876.10.14={ death=yes }
-}
-1019926385={
-	name=Arah
-	dynasty=1009990232
-	dna="hlhiaadbeoh"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=4 intrigue=4 learning=8
-	add_trait=elusive_shadow add_trait=mystic add_trait=humble add_trait=trusting add_trait=wroth 
-	add_trait=deceitful add_trait=quick 
-	father=1019926379	#Tibiriçá
-	825.6.27={ birth=yes }
-	893.5.3={ death=yes }
-}
-1019926386={
+1019926292={
 	name=Toruí
 	dynasty=1009990232
-	dna="lnhlalnbngg"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=7 intrigue=5 learning=7
-	add_trait=intricate_webweaver add_trait=proud add_trait=gregarious add_trait=charitable add_trait=deceitful 
-	father=1019926383	#Italo
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926291	#Italo
 	844.3.2={ birth=yes }
 	905.8.21={ death=yes }
 }
-1019926387={
-	name=Porasy
-	female=yes
-	dynasty=1009990232
-	dna="kdmhaleonkg"
-	culture=tupinamba religion=south_american
-	father=1019926383	#Italo
-	849.9.10={ birth=yes }
-	909.12.20={ death=yes }
-}
-1019926388={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="klhjaleonpe"
-	culture=tupinamba religion=south_american
-	father=1019926383	#Italo
-	856.9.26={ birth=yes }
-	941.9.21={ death=yes }
-}
-1019926389={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="kclhagnongp"
-	culture=tupinamba religion=south_american
-	father=1019926383	#Italo
-	860.5.19={ birth=yes }
-	937.1.1={ death=yes }
-}
-1019926390={
+1019926293={
 	name=Caiubi
 	dynasty=1009990232
-	dna="llhdabndnmg"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=5 stewardship=5 intrigue=7 learning=7
-	add_trait=charismatic_negotiator add_trait=shy add_trait=just add_trait=charitable add_trait=content 
-	father=1019926386	#Toruí
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926292	#Toruí
 	876.6.25={ birth=yes }
 	961.10.13={ death=yes }
 }
-1019926391={
-	name=Porasy
-	female=yes
-	dynasty=1009990232
-	dna="ldhpfbadndd"
-	culture=tupinamba religion=south_american
-	father=1019926386	#Toruí
-	882.9.11={ birth=yes }
-	935.4.17={ death=yes }
-}
-1019926392={
-	name=Italo
-	dynasty=1009990232
-	dna="pnalpgngngp"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=4 stewardship=6 intrigue=8 learning=4
-	add_trait=charismatic_negotiator add_trait=zealous add_trait=diligent add_trait=shy add_trait=greedy 
-	father=1019926386	#Toruí
-	885.8.22={ birth=yes }
-	984.7.26={ death=yes }
-}
-1019926393={
-	name=Jougousa
-	female=yes
-	dynasty=1009990232
-	dna="gmheajobdgo"
-	culture=tupinamba religion=south_american
-	father=1019926386	#Toruí
-	890.1.24={ birth=yes }
-	959.3.3={ death=yes }
-}
-1019926394={
+1019926294={
 	name=Toruí
 	dynasty=1009990232
-	dna="fjhdobadlmo"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=6 stewardship=5 intrigue=7 learning=6
-	add_trait=scholarly_theologian add_trait=greedy add_trait=gluttonous add_trait=chaste add_trait=cynical 
-	add_trait=lunatic 
-	father=1019926390	#Caiubi
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926293	#Caiubi
 	899.4.19={ birth=yes }
 	971.12.29={ death=yes }
 }
-1019926395={
-	name=Caiubi
-	dynasty=1009990232
-	dna="flndbbgdnmg"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=8 stewardship=6 intrigue=7 learning=4
-	add_trait=flamboyant_schemer add_trait=ambitious add_trait=brave add_trait=gluttonous add_trait=honest 
-	father=1019926390	#Caiubi
-	904.3.1={ birth=yes }
-	957.6.22={ death=yes }
-}
-1019926396={
-	name=Azelene
-	female=yes
-	dynasty=1009990232
-	dna="llndapdhnmg"
-	culture=tupinamba religion=south_american
-	father=1019926390	#Caiubi
-	908.4.5={ birth=yes }
-	985.9.29={ death=yes }
-}
-1019926397={
-	name=Jougousa
-	female=yes
-	dynasty=1009990232
-	dna="llhdanbdngg"
-	culture=tupinamba religion=south_american
-	father=1019926390	#Caiubi
-	914.2.12={ birth=yes }
-	976.8.11={ death=yes }
-}
-1019926398={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="llhdmbnjnmm"
-	culture=tupinamba religion=south_american
-	father=1019926390	#Caiubi
-	917.8.2={ birth=yes }
-	981.6.9={ death=yes }
-}
-1019926399={
+1019926295={
 	name=Piquerobi
 	dynasty=1009990232
-	dna="fjebobkdmio"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=4 stewardship=6 intrigue=5 learning=8
-	add_trait=midas_touched add_trait=hunter add_trait=zealous add_trait=proud 
-	father=1019926394	#Toruí
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926294	#Toruí
 	930.5.17={ birth=yes }
 	995.3.23={ death=yes }
 }
-1019926400={
+1019926296={
 	name=Mbicy
 	dynasty=1009990232
-	dna="fjhmgjadlmh"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=7 intrigue=8 learning=6
-	add_trait=midas_touched add_trait=craven add_trait=gregarious add_trait=wroth add_trait=temperate 
-	add_trait=kind add_trait=cruel 
-	father=1019926394	#Toruí
-	936.3.26={ birth=yes }
-	1001.4.2={ death=yes }
-}
-1019926401={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="ffmbobkdnij"
-	culture=tupinamba religion=south_american
-	father=1019926399	#Piquerobi
-	953.5.24={ birth=yes }
-	1023.3.14={ death=yes }
-}
-1019926402={
-	name=Mbicy
-	dynasty=1009990232
-	dna="ggebokgddib"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=6 intrigue=6 learning=4
-	add_trait=tough_soldier add_trait=hedonist add_trait=shy add_trait=arbitrary add_trait=temperate 
-	add_trait=proud 
-	father=1019926399	#Piquerobi
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926295	#Piquerobi
 	959.3.11={ birth=yes }
 	1016.6.8={ death=yes }
 }
-1019926403={
-	name=Jougousa
-	female=yes
-	dynasty=1009990232
-	dna="jfmbohkpnio"
-	culture=tupinamba religion=south_american
-	father=1019926399	#Piquerobi
-	961.10.15={ birth=yes }
-	1038.9.7={ death=yes }
-}
-1019926404={
-	name=Potira
-	female=yes
-	dynasty=1009990232
-	dna="kaeiobkemio"
-	culture=tupinamba religion=south_american
-	father=1019926399	#Piquerobi
-	967.7.17={ birth=yes }
-	1030.9.13={ death=yes }
-}
-1019926405={
-	name=Tibiriçá
-	dynasty=1009990232
-	dna="fbebobkdmio"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=4 stewardship=5 intrigue=6 learning=8
-	add_trait=indulgent_wastrel add_trait=paranoid add_trait=humble add_trait=deceitful add_trait=cynical 
-	add_trait=depressed add_trait=lunatic 
-	father=1019926399	#Piquerobi
-	973.6.27={ birth=yes }
-	1038.9.24={ death=yes }
-}
-1019926406={
-	name=Jougousa
-	female=yes
-	dynasty=1009990232
-	dna="lgfddkedigc"
-	culture=tupinamba religion=south_american
-	father=1019926402	#Mbicy
-	987.11.1={ birth=yes }
-	1072.10.12={ death=yes }
-}
-1019926407={
+1019926297={
 	name=Caiubi
 	dynasty=1009990232
-	dna="bgebokmnkig"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=6 stewardship=8 intrigue=8 learning=6
-	add_trait=flamboyant_schemer add_trait=craven add_trait=cruel add_trait=shy add_trait=drunkard 
-	father=1019926402	#Mbicy
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926296	#Mbicy
 	994.7.6={ birth=yes }
 	1067.3.31={ death=yes }
 }
-1019926408={
-	name=Potira
-	female=yes
-	dynasty=1009990232
-	dna="egoofkcddbb"
-	culture=tupinamba religion=south_american
-	father=1019926402	#Mbicy
-	1000.2.6={ birth=yes }
-	1083.4.9={ death=yes }
-}
-1019926409={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="emepoegjklb"
-	culture=tupinamba religion=south_american
-	father=1019926402	#Mbicy
-	1004.10.3={ birth=yes }
-	1080.11.22={ death=yes }
-}
-1019926410={
+1019926298={
 	name=Italo
 	dynasty=1009990232
-	dna="golndkankme"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=8 stewardship=7 intrigue=7 learning=8
-	add_trait=intricate_webweaver add_trait=zealous add_trait=diligent add_trait=humble add_trait=patient 
-	add_trait=envious add_trait=ill 
-	father=1019926407	#Caiubi
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926297	#Caiubi
 	1023.7.14={ birth=yes }
 	1096.6.7={ death=yes }
 }
-1019926411={
-	name=Mbicy
-	dynasty=1009990232
-	dna="ggjghllnoig"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=4 stewardship=5 intrigue=4 learning=7
-	add_trait=flamboyant_schemer add_trait=charitable add_trait=lustful add_trait=trusting add_trait=wroth 
-	add_trait=honest 
-	father=1019926407	#Caiubi
-	1028.9.20={ birth=yes }
-	1109.8.18={ death=yes }
-}
-1019926412={
-	name=Potira
-	female=yes
-	dynasty=1009990232
-	dna="bfjbffmkoig"
-	culture=tupinamba religion=south_american
-	father=1019926407	#Caiubi
-	1033.6.5={ birth=yes }
-	1093.2.22={ death=yes }
-}
-1019926413={
-	name=Azelene
-	female=yes
-	dynasty=1009990232
-	dna="agfbokmkhig"
-	culture=tupinamba religion=south_american
-	father=1019926407	#Caiubi
-	1038.10.9={ birth=yes }
-	1110.11.22={ death=yes }
-}
-1019926414={
-	name=Porasy
-	female=yes
-	dynasty=1009990232
-	dna="gogndjgambd"
-	culture=tupinamba religion=south_american
-	father=1019926410	#Italo
-	1048.3.6={ birth=yes }
-	1113.5.26={ death=yes }
-}
-1019926415={
+1019926299={
 	name=Toruí
 	dynasty=1009990232
-	dna="gmjadkangno"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=7 stewardship=8 intrigue=6 learning=4
-	add_trait=martial_cleric add_trait=honest add_trait=brave add_trait=patient add_trait=trusting 
-	add_trait=lustful add_trait=zealous 
-	father=1019926410	#Italo
+	culture=guajiro 
+	religion=kaaulayawaa
+	father=1019926298	#Italo
 	1055.10.11={ birth=yes }
 	1136.11.20={ death=yes }
 }
-1019926416={
-	name=Pirijá
-	dynasty=1009990232
-	dna="dohgdkinkme"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=8 stewardship=4 intrigue=8 learning=4
-	add_trait=scholarly_theologian add_trait=charitable add_trait=arbitrary 
-	father=1019926410	#Italo
-	1059.7.21={ birth=yes }
-	1114.9.30={ death=yes }
-}
-1019926417={
-	name=Tibiriçá
-	dynasty=1009990232
-	dna="dpikbhanbnb"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=5 intrigue=5 learning=5
-	add_trait=midas_touched add_trait=honest add_trait=gluttonous add_trait=shy add_trait=greedy 
-	add_trait=content 
-	father=1019926415	#Toruí
-	1076.3.7={ birth=yes }
-	1141.5.24={ death=yes }
-}
-1019926418={
-	name=Pirijá
-	dynasty=1009990232
-	dna="flmadkangpo"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=6 intrigue=8 learning=6
-	add_trait=scholarly_theologian add_trait=cruel add_trait=honest add_trait=kind 
-	father=1019926415	#Toruí
-	1079.2.17={ birth=yes }
-	1146.10.17={ death=yes }
-}
-1019926419={
-	name=Tibiriçá
-	dynasty=1009990232
-	dna="nmjahkclbcl"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=6 intrigue=6 learning=5
-	add_trait=detached_priest add_trait=charitable add_trait=kind add_trait=humble 
-	father=1019926415	#Toruí
-	1081.2.10={ birth=yes }
-	1138.11.24={ death=yes }
-}
-1019926420={
-	name=Arata
-	dynasty=1009990232
-	dna="fmcpdgamggo"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=5 intrigue=4 learning=4
-	add_trait=indulgent_wastrel add_trait=cruel add_trait=lustful add_trait=trusting add_trait=arbitrary 
-	father=1019926415	#Toruí
-	1085.9.12={ birth=yes }
-	1170.6.22={ death=yes }
-}
-1019926421={
-	name=Porasy
-	female=yes
-	dynasty=1009990232
-	dna="gmjadcahjnp"
-	culture=tupinamba religion=south_american
-	father=1019926415	#Toruí
-	1091.10.15={ birth=yes }
-	1155.11.14={ death=yes }
-}
-1019926422={
-	name=Potira
-	female=yes
-	dynasty=1009990232
-	dna="bgjakkmihno"
-	culture=tupinamba religion=south_american
-	father=1019926415	#Toruí
-	1095.1.26={ birth=yes }
-	1152.9.8={ death=yes }
-}
-1019926423={
-	name=Piquerobi
-	dynasty=1009990232
-	dna="fmbfdkalgae"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=4 stewardship=6 intrigue=4 learning=6
-	add_trait=midas_touched add_trait=hedonist add_trait=gregarious add_trait=envious add_trait=temperate 
-	add_trait=cruel add_trait=chaste 
-	father=1019926415	#Toruí
-	1100.1.19={ birth=yes }
-	1163.7.12={ death=yes }
-}
-1019926424={
-	name=Caiubi
-	dynasty=1009990232
-	dna="hpikbhjnbji"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=6 stewardship=8 intrigue=6 learning=5
-	add_trait=scholarly_theologian add_trait=just add_trait=proud add_trait=brave 
-	father=1019926417	#Tibiriçá
-	1102.3.18={ birth=yes }
-	1182.7.8={ death=yes }
-}
-1019926425={
-	name=Italo
-	dynasty=1009990232
-	dna="dpelfhanbnb"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=7 stewardship=5 intrigue=4 learning=7
-	add_trait=skilled_tactician add_trait=just add_trait=cruel add_trait=content 
-	father=1019926417	#Tibiriçá
-	1105.11.4={ birth=yes }
-	1185.3.15={ death=yes }
-}
-1019926426={
-	name=Azelene
-	female=yes
-	dynasty=1009990232
-	dna="hpdnbdjdbnb"
-	culture=tupinamba religion=south_american
-	father=1019926417	#Tibiriçá
-	1110.10.15={ birth=yes }
-	1159.12.17={ death=yes }
-}
-1019926427={
-	name=Toruí
-	dynasty=1009990232
-	dna="hpimehgpbjn"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=6 stewardship=8 intrigue=5 learning=8
-	add_trait=martial_cleric add_trait=scholar add_trait=honest add_trait=wroth add_trait=craven 
-	add_trait=arbitrary add_trait=diligent 
-	father=1019926424	#Caiubi
-	1122.1.22={ birth=yes }
-	1180.8.16={ death=yes }
-}
-1019926428={
-	name=Azelene
-	female=yes
-	dynasty=1009990232
-	dna="cjdkbijnijf"
-	culture=tupinamba religion=south_american
-	father=1019926424	#Caiubi
-	1125.12.14={ birth=yes }
-	1186.9.14={ death=yes }
-}
-1019926429={
-	name=Jougousa
-	female=yes
-	dynasty=1009990232
-	dna="knlkbpcnbji"
-	culture=tupinamba religion=south_american
-	father=1019926424	#Caiubi
-	1129.2.15={ birth=yes }
-	1215.8.11={ death=yes }
-}
-1019926430={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="hdchbhlnbji"
-	culture=tupinamba religion=south_american
-	father=1019926424	#Caiubi
-	1134.3.24={ birth=yes }
-	1193.3.31={ death=yes }
-}
-1019926431={
-	name=Caiubi
-	dynasty=1009990232
-	dna="hiikihdlkhi"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=7 stewardship=7 intrigue=5 learning=4
-	add_trait=indulgent_wastrel add_trait=poet add_trait=honest add_trait=charitable add_trait=lustful 
-	father=1019926424	#Caiubi
-	1140.10.18={ birth=yes }
-	1209.6.3={ death=yes }
-}
-1019926432={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="ajimbjkpfjl"
-	culture=tupinamba religion=south_american
-	father=1019926427	#Toruí
-	1152.9.22={ birth=yes }
-	1217.12.28={ death=yes }
-}
-1019926433={
-	name=Azelene
-	female=yes
-	dynasty=1009990232
-	dna="hknaghgehgn"
-	culture=tupinamba religion=south_american
-	father=1019926427	#Toruí
-	1158.6.9={ birth=yes }
-	1243.5.14={ death=yes }
-}
-1019926434={
-	name=Arah
-	dynasty=1009990232
-	dna="ogpmjacpbjn"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=5 stewardship=4 intrigue=8 learning=7
-	add_trait=charismatic_negotiator add_trait=temperate add_trait=trusting add_trait=shy add_trait=zealous 
-	add_trait=chaste add_trait=ill 
-	father=1019926427	#Toruí
-	1164.10.1={ birth=yes }
-	1247.9.19={ death=yes }
-}
-1019926435={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="dipmamgpojn"
-	culture=tupinamba religion=south_american
-	father=1019926434	#Arah
-	1184.10.27={ birth=yes }
-	1277.5.5={ death=yes }
-}
-1019926436={
-	name=Piquerobi
-	dynasty=1009990232
-	dna="ocemjacpbjn"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=7 stewardship=5 intrigue=7 learning=7
-	add_trait=martial_cleric add_trait=envious add_trait=trusting add_trait=depressed 
-	father=1019926434	#Arah
-	1190.5.5={ birth=yes }
-	1259.6.20={ death=yes }
-}
-1019926437={
-	name=Italo
-	dynasty=1009990232
-	dna="oephjocdbkn"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=4 stewardship=8 intrigue=4 learning=7
-	add_trait=intricate_webweaver add_trait=paranoid add_trait=honest 
-	father=1019926434	#Arah
-	1196.6.14={ birth=yes }
-	1267.10.9={ death=yes }
-}
-1019926438={
-	name=Jougousa
-	female=yes
-	dynasty=1009990232
-	dna="kbpdjaogijg"
-	culture=tupinamba religion=south_american
-	father=1019926434	#Arah
-	1199.9.6={ birth=yes }
-	1254.3.4={ death=yes }
-}
-1019926439={
-	name=Arah
-	dynasty=1009990232
-	dna="ogpmhacpogg"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=6 stewardship=4 intrigue=6 learning=5
-	add_trait=intricate_webweaver add_trait=diligent add_trait=patient add_trait=lustful add_trait=kind 
-	add_trait=just 
-	father=1019926434	#Arah
-	1204.9.3={ birth=yes }
-	1274.11.29={ death=yes }
-}
-1019926440={
-	name=Tibiriçá
-	dynasty=1009990232
-	dna="ocemjpmpbjn"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=5 stewardship=6 intrigue=4 learning=6
-	add_trait=flamboyant_schemer add_trait=shy add_trait=paranoid 
-	father=1019926436	#Piquerobi
-	1212.2.9={ birth=yes }
-	1301.8.5={ death=yes }
-}
-1019926441={
-	name=Azelene
-	female=yes
-	dynasty=1009990232
-	dna="ofamhncjbjg"
-	culture=tupinamba religion=south_american
-	father=1019926436	#Piquerobi
-	1215.1.12={ birth=yes }
-	1294.12.20={ death=yes }
-}
-1019926442={
-	name=Arata
-	dynasty=1009990232
-	dna="ocecjbckbfd"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=6 stewardship=6 intrigue=7 learning=6
-	add_trait=detached_priest add_trait=ambitious add_trait=paranoid add_trait=brave add_trait=slothful 
-	father=1019926436	#Piquerobi
-	1219.7.24={ birth=yes }
-	1275.11.26={ death=yes }
-}
-1019926443={
-	name=Azelene
-	female=yes
-	dynasty=1009990232
-	dna="oceljdcbbjn"
-	culture=tupinamba religion=south_american
-	father=1019926436	#Piquerobi
-	1224.12.26={ birth=yes }
-	1310.4.23={ death=yes }
-}
-1019926444={
-	name=Caiubi
-	dynasty=1009990232
-	dna="ocmmjgbbbgn"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=6 intrigue=5 learning=6
-	add_trait=grey_eminence add_trait=arbitrary add_trait=chaste add_trait=deceitful add_trait=ill 
-	father=1019926440	#Tibiriçá
-	1236.3.15={ birth=yes }
-	1319.12.20={ death=yes }
-}
-1019926445={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="oceejbdaknn"
-	culture=tupinamba religion=south_american
-	father=1019926440	#Tibiriçá
-	1239.2.4={ birth=yes }
-	1315.11.12={ death=yes }
-}
-1019926446={
-	name=Piquerobi
-	dynasty=1009990232
-	dna="icemjilabhn"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=7 intrigue=4 learning=4
-	add_trait=indulgent_wastrel add_trait=just add_trait=envious add_trait=chaste add_trait=craven 
-	father=1019926440	#Tibiriçá
-	1245.4.16={ birth=yes }
-	1305.7.19={ death=yes }
-}
-1019926447={
-	name=Porasy
-	female=yes
-	dynasty=1009990232
-	dna="opmnfgbibon"
-	culture=tupinamba religion=south_american
-	father=1019926444	#Caiubi
-	1264.1.4={ birth=yes }
-	1347.4.4={ death=yes }
-}
-1019926448={
-	name=Mbicy
-	dynasty=1009990232
-	dna="ocamngfbbgn"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=6 stewardship=5 intrigue=5 learning=8
-	add_trait=misguided_warrior add_trait=cynical add_trait=patient add_trait=honest add_trait=greedy 
-	father=1019926444	#Caiubi
-	1271.10.22={ birth=yes }
-	1365.6.9={ death=yes }
-}
-1019926449={
-	name=Piquerobi
-	dynasty=1009990232
-	dna="occmlgjkbin"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=7 stewardship=7 intrigue=4 learning=5
-	add_trait=scholarly_theologian add_trait=proud add_trait=just add_trait=wroth add_trait=trusting 
-	father=1019926444	#Caiubi
-	1277.4.23={ birth=yes }
-	1339.12.21={ death=yes }
-}
-1019926450={
-	name=Piquerobi
-	dynasty=1009990232
-	dna="ncamagjhbkh"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=5 stewardship=7 intrigue=5 learning=5
-	add_trait=midas_touched add_trait=charitable add_trait=content add_trait=cynical add_trait=diligent 
-	add_trait=gluttonous 
-	father=1019926448	#Mbicy
-	1293.3.18={ birth=yes }
-	1380.2.3={ death=yes }
-}
-1019926451={
-	name=Pirijá
-	dynasty=1009990232
-	dna="ocaeggijjje"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=4 stewardship=7 intrigue=8 learning=5
-	add_trait=detached_priest add_trait=patient add_trait=arbitrary add_trait=shy add_trait=trusting 
-	father=1019926448	#Mbicy
-	1300.5.13={ birth=yes }
-	1366.9.29={ death=yes }
-}
-1019926452={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="icamnffbbhn"
-	culture=tupinamba religion=south_american
-	father=1019926448	#Mbicy
-	1303.3.19={ birth=yes }
-	1374.12.26={ death=yes }
-}
-1019926453={
-	name=Tibiriçá
-	dynasty=1009990232
-	dna="acanabjdbdo"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=6 stewardship=6 intrigue=5 learning=7
-	add_trait=charismatic_negotiator add_trait=cruel add_trait=lustful add_trait=gregarious add_trait=patient 
-	add_trait=diligent add_trait=clubfooted 
-	father=1019926450	#Piquerobi
-	1319.2.20={ birth=yes }
-	1372.1.5={ death=yes }
-}
-1019926454={
-	name=Ramalho
-	dynasty=1009990232
-	dna="dcihagknohi"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=4 intrigue=8 learning=4
-	add_trait=intricate_webweaver add_trait=envious add_trait=zealous add_trait=diligent add_trait=chaste 
-	add_trait=proud 
-	father=1019926450	#Piquerobi
-	1323.10.7={ birth=yes }
-	1390.12.10={ death=yes }
-}
-1019926455={
-	name=Mbicy
-	dynasty=1009990232
-	dna="dcamfmbhbkh"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=4 stewardship=6 intrigue=4 learning=7
-	add_trait=martial_cleric add_trait=celibate add_trait=cruel add_trait=gregarious add_trait=greedy 
-	add_trait=humble add_trait=ill 
-	father=1019926450	#Piquerobi
-	1330.9.10={ birth=yes }
-	1375.12.12={ death=yes }
-}
-1019926456={
-	name=Pirijá
-	dynasty=1009990232
-	dna="accikmffjcj"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=5 stewardship=7 intrigue=5 learning=7
-	add_trait=naive_appeaser add_trait=greedy add_trait=shy add_trait=wroth add_trait=lunatic 
-	father=1019926453	#Tibiriçá
-	1343.12.8={ birth=yes }
-	1426.1.19={ death=yes }
-}
-1019926457={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="ecaebcjdkko"
-	culture=tupinamba religion=south_american
-	father=1019926453	#Tibiriçá
-	1348.5.5={ birth=yes }
-	1440.7.26={ death=yes }
-}
-1019926458={
-	name=Porasy
-	female=yes
-	dynasty=1009990232
-	dna="acankboebdf"
-	culture=tupinamba religion=south_american
-	father=1019926453	#Tibiriçá
-	1351.9.22={ birth=yes }
-	1409.7.7={ death=yes }
-}
-1019926459={
-	name=Mbicy
-	dynasty=1009990232
-	dna="bhonmdodbdd"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=4 intrigue=8 learning=8
-	add_trait=charismatic_negotiator add_trait=proud add_trait=patient add_trait=cruel add_trait=honest 
-	father=1019926453	#Tibiriçá
-	1357.9.22={ birth=yes }
-	1421.3.2={ death=yes }
-}
-1019926460={
-	name=Potira
-	female=yes
-	dynasty=1009990232
-	dna="npgkiindbbo"
-	culture=tupinamba religion=south_american
-	father=1019926453	#Tibiriçá
-	1361.6.24={ birth=yes }
-	1413.12.17={ death=yes }
-}
-1019926461={
-	name=Toruí
-	dynasty=1009990232
-	dna="hpcbabjdgno"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=7 stewardship=4 intrigue=5 learning=4
-	add_trait=detached_priest add_trait=gardener add_trait=gluttonous add_trait=ambitious 
-	father=1019926453	#Tibiriçá
-	1366.10.10={ birth=yes }
-	1442.3.4={ death=yes }
-}
-1019926462={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="bganabfdmga"
-	culture=tupinamba religion=south_american
-	father=1019926453	#Tibiriçá
-	1369.2.6={ birth=yes }
-	1416.4.18={ death=yes }
-}
-1019926463={
-	name=Pirijá
-	dynasty=1009990232
-	dna="acfikcffeda"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=5 stewardship=4 intrigue=4 learning=8
-	add_trait=misguided_warrior add_trait=kind add_trait=charitable add_trait=arbitrary add_trait=cruel 
-	add_trait=wroth add_trait=temperate 
-	father=1019926456	#Pirijá
-	1371.4.1={ birth=yes }
-	1431.7.19={ death=yes }
-}
-1019926464={
-	name=Potira
-	female=yes
-	dynasty=1009990232
-	dna="pcbpkmnhjmj"
-	culture=tupinamba religion=south_american
-	father=1019926456	#Pirijá
-	1376.5.23={ birth=yes }
-	1432.1.20={ death=yes }
-}
-1019926465={
-	name=Bartira
-	female=yes
-	dynasty=1009990232
-	dna="acaokmffjhl"
-	culture=tupinamba religion=south_american
-	father=1019926456	#Pirijá
-	1380.8.9={ birth=yes }
-	1436.4.21={ death=yes }
-}
-1019926466={
-	name=Tibiriçá
-	dynasty=1009990232
-	dna="cocifkdejpj"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=8 stewardship=8 intrigue=8 learning=6
-	add_trait=tough_soldier add_trait=just add_trait=cruel add_trait=deceitful add_trait=proud 
-	add_trait=slow 
-	father=1019926456	#Pirijá
-	1385.10.18={ birth=yes }
-	1457.4.14={ death=yes }
-}
-1019926467={
-	name=Piquerobi
-	dynasty=1009990232
-	dna="adoikmffjlc"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=8 stewardship=4 intrigue=6 learning=6
-	add_trait=detached_priest add_trait=temperate add_trait=kind add_trait=lustful add_trait=wounded 
-	father=1019926456	#Pirijá
-	1388.1.19={ birth=yes }
-	1459.8.9={ death=yes }
-}
+
 1019926468={
 	name=Pirijá
 	dynasty=1009990233
-	dna="ebbpedapeib"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=5 intrigue=6 learning=4
-	add_trait=skilled_tactician add_trait=kind add_trait=trusting add_trait=proud add_trait=cynical 
+	culture=tupinamba 
+	religion=south_american
 	719.6.22={ birth=yes }
 	789.9.16={ death=yes }
 }
 1019926469={
 	name=Tibiriçá
 	dynasty=1009990233
-	dna="enmpcdbpmla"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=5 stewardship=5 intrigue=6 learning=7
-	add_trait=elusive_shadow add_trait=humble add_trait=slothful add_trait=paranoid add_trait=charitable 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926468	#Pirijá
 	750.5.25={ birth=yes }
 	805.12.25={ death=yes }
 }
-1019926470={
-	name=Azelene
-	female=yes
-	dynasty=1009990233
-	dna="mbbaedekeib"
-	culture=tupinamba religion=south_american
-	father=1019926468	#Pirijá
-	755.2.1={ birth=yes }
-	819.6.4={ death=yes }
-}
-1019926471={
-	name=Azelene
-	female=yes
-	dynasty=1009990233
-	dna="eabpidppehi"
-	culture=tupinamba religion=south_american
-	father=1019926468	#Pirijá
-	760.10.24={ birth=yes }
-	831.7.16={ death=yes }
-}
 1019926472={
 	name=Arah
 	dynasty=1009990233
-	dna="enmlcdcpmal"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=4 stewardship=8 intrigue=8 learning=6
-	add_trait=charismatic_negotiator add_trait=proud add_trait=just add_trait=honest add_trait=lunatic 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926469	#Tibiriçá
 	772.5.16={ birth=yes }
 	827.1.22={ death=yes }
 }
-1019926473={
-	name=Jougousa
-	female=yes
-	dynasty=1009990233
-	dna="encldmbcmga"
-	culture=tupinamba religion=south_american
-	father=1019926469	#Tibiriçá
-	777.12.22={ birth=yes }
-	830.7.13={ death=yes }
-}
-1019926474={
-	name=Mbicy
-	dynasty=1009990233
-	dna="edpjcdcpfla"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=4 intrigue=4 learning=7
-	add_trait=intricate_webweaver add_trait=trusting add_trait=just add_trait=chaste 
-	father=1019926469	#Tibiriçá
-	783.6.21={ birth=yes }
-	869.8.7={ death=yes }
-}
-1019926475={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="enbgckbpnia"
-	culture=tupinamba religion=south_american
-	father=1019926469	#Tibiriçá
-	787.7.1={ birth=yes }
-	843.2.9={ death=yes }
-}
 1019926476={
 	name=Mbicy
 	dynasty=1009990233
-	dna="enalmdcpnai"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=5 stewardship=8 intrigue=6 learning=6
-	add_trait=mastermind_theologian add_trait=craven add_trait=patient add_trait=honest add_trait=content 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926472	#Arah
 	798.3.27={ birth=yes }
 	869.7.28={ death=yes }
 }
-1019926477={
-	name=Toruí
-	dynasty=1009990233
-	dna="enjlcdjmmej"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=7 intrigue=7 learning=5
-	add_trait=naive_appeaser add_trait=humble add_trait=honest add_trait=envious 
-	father=1019926472	#Arah
-	806.5.25={ birth=yes }
-	886.8.19={ death=yes }
-}
-1019926478={
-	name=Porasy
-	female=yes
-	dynasty=1009990233
-	dna="cnlfcgcplaa"
-	culture=tupinamba religion=south_american
-	father=1019926472	#Arah
-	813.4.5={ birth=yes }
-	886.12.2={ death=yes }
-}
-1019926479={
-	name=Mbicy
-	dynasty=1009990233
-	dna="encmhecpoam"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=7 stewardship=4 intrigue=5 learning=5
-	add_trait=indulgent_wastrel add_trait=deceitful add_trait=ambitious add_trait=arbitrary add_trait=gregarious 
-	father=1019926472	#Arah
-	817.8.7={ birth=yes }
-	885.1.28={ death=yes }
-}
-1019926480={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="dnclmdeinnd"
-	culture=tupinamba religion=south_american
-	father=1019926476	#Mbicy
-	821.12.15={ birth=yes }
-	899.8.15={ death=yes }
-}
 1019926481={
 	name=Caiubi
 	dynasty=1009990233
-	dna="enllfdcppai"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=7 stewardship=4 intrigue=4 learning=6
-	add_trait=misguided_warrior add_trait=humble add_trait=deceitful add_trait=cruel add_trait=chaste 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926476	#Mbicy
 	827.1.5={ birth=yes }
 	891.9.26={ death=yes }
 }
-1019926482={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="eglenicanai"
-	culture=tupinamba religion=south_american
-	father=1019926476	#Mbicy
-	832.8.11={ birth=yes }
-	891.5.3={ death=yes }
-}
-1019926483={
-	name=Arata
-	dynasty=1009990233
-	dna="enaimfopgcn"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=6 stewardship=7 intrigue=5 learning=8
-	add_trait=martial_cleric add_trait=deceitful add_trait=ambitious add_trait=gluttonous add_trait=humble 
-	add_trait=arbitrary add_trait=kind 
-	father=1019926476	#Mbicy
-	838.4.27={ birth=yes }
-	896.5.17={ death=yes }
-}
 1019926484={
 	name=Arah
 	dynasty=1009990233
-	dna="onllcfcfeai"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=4 stewardship=5 intrigue=5 learning=8
-	add_trait=naive_appeaser add_trait=paranoid add_trait=gluttonous add_trait=deceitful 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926481	#Caiubi
 	852.11.23={ birth=yes }
 	912.1.16={ death=yes }
 }
-1019926485={
-	name=Pirijá
-	dynasty=1009990233
-	dna="bblifjnppbi"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=7 stewardship=7 intrigue=6 learning=6
-	add_trait=indulgent_wastrel add_trait=arbitrary add_trait=ambitious add_trait=greedy add_trait=deceitful 
-	father=1019926481	#Caiubi
-	857.10.12={ birth=yes }
-	940.8.21={ death=yes }
-}
-1019926486={
-	name=Toruí
-	dynasty=1009990233
-	dna="kcdlmdchpac"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=7 intrigue=4 learning=6
-	add_trait=naive_appeaser add_trait=greedy add_trait=zealous add_trait=brave add_trait=humble 
-	add_trait=lisp 
-	father=1019926481	#Caiubi
-	861.2.16={ birth=yes }
-	927.8.11={ death=yes }
-}
-1019926487={
-	name=Arata
-	dynasty=1009990233
-	dna="eelaadcnpec"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=6 stewardship=5 intrigue=4 learning=4
-	add_trait=skilled_tactician add_trait=gluttonous add_trait=slothful add_trait=wroth add_trait=brave 
-	father=1019926481	#Caiubi
-	866.12.16={ birth=yes }
-	932.3.18={ death=yes }
-}
-1019926488={
-	name=Mbicy
-	dynasty=1009990233
-	dna="enlldacpoai"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=4 stewardship=7 intrigue=5 learning=8
-	add_trait=misguided_warrior add_trait=cruel add_trait=cynical add_trait=content add_trait=just 
-	father=1019926481	#Caiubi
-	870.5.14={ birth=yes }
-	927.3.15={ death=yes }
-}
 1019926489={
 	name=Tibiriçá
 	dynasty=1009990233
-	dna="molacfcbpai"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=4 stewardship=6 intrigue=7 learning=6
-	add_trait=scholarly_theologian add_trait=gluttonous add_trait=gregarious add_trait=content add_trait=deceitful 
-	add_trait=proud add_trait=wounded add_trait=possessed 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926484	#Arah
 	879.3.24={ birth=yes }
 	953.2.20={ death=yes }
 }
-1019926490={
-	name=Porasy
-	female=yes
-	dynasty=1009990233
-	dna="lnllcfkfefi"
-	culture=tupinamba religion=south_american
-	father=1019926484	#Arah
-	886.4.3={ birth=yes }
-	955.11.27={ death=yes }
-}
 1019926491={
 	name=Tibiriçá
 	dynasty=1009990233
-	dna="mocihfbbpal"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=5 stewardship=5 intrigue=5 learning=7
-	add_trait=charismatic_negotiator add_trait=duelist add_trait=gregarious add_trait=wroth add_trait=chaste 
-	add_trait=cynical 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926489	#Tibiriçá
 	911.3.17={ birth=yes }
 	983.10.12={ death=yes }
 }
-1019926492={
-	name=Jougousa
-	female=yes
-	dynasty=1009990233
-	dna="modaphcbeaj"
-	culture=tupinamba religion=south_american
-	father=1019926489	#Tibiriçá
-	916.5.10={ birth=yes }
-	972.1.15={ death=yes }
-}
-1019926493={
-	name=Porasy
-	female=yes
-	dynasty=1009990233
-	dna="nolagjcbpai"
-	culture=tupinamba religion=south_american
-	father=1019926489	#Tibiriçá
-	924.3.5={ birth=yes }
-	1006.12.15={ death=yes }
-}
-1019926494={
-	name=Porasy
-	female=yes
-	dynasty=1009990233
-	dna="mjdgpdcbcai"
-	culture=tupinamba religion=south_american
-	father=1019926489	#Tibiriçá
-	928.4.26={ birth=yes }
-	997.11.3={ death=yes }
-}
-1019926495={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="mohghalakao"
-	culture=tupinamba religion=south_american
-	father=1019926491	#Tibiriçá
-	939.10.23={ birth=yes }
-	1000.6.14={ death=yes }
-}
 1019926496={
 	name=Arah
 	dynasty=1009990233
-	dna="mfcindbbphh"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=6 stewardship=7 intrigue=8 learning=7
-	add_trait=midas_touched add_trait=wroth add_trait=lustful add_trait=cynical add_trait=craven 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926491	#Tibiriçá
 	945.1.5={ birth=yes }
 	1021.7.1={ death=yes }
 }
-1019926497={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="lobfhfibpeg"
-	culture=tupinamba religion=south_american
-	father=1019926491	#Tibiriçá
-	950.2.2={ birth=yes }
-	1012.3.4={ death=yes }
-}
-1019926498={
-	name=Caiubi
-	dynasty=1009990233
-	dna="mnciijdbpal"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=5 stewardship=4 intrigue=4 learning=6
-	add_trait=midas_touched add_trait=paranoid add_trait=cruel add_trait=kind add_trait=lustful 
-	father=1019926491	#Tibiriçá
-	955.9.15={ birth=yes }
-	1039.4.7={ death=yes }
-}
-1019926499={
-	name=Arata
-	dynasty=1009990233
-	dna="locohafcpip"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=7 intrigue=6 learning=4
-	add_trait=misguided_warrior add_trait=temperate add_trait=shy add_trait=zealous 
-	father=1019926491	#Tibiriçá
-	960.9.6={ birth=yes }
-	1025.10.5={ death=yes }
-}
 1019926500={
 	name=Arata
 	dynasty=1009990233
-	dna="pimihdblpcp"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=5 stewardship=4 intrigue=5 learning=6
-	add_trait=elusive_shadow add_trait=cruel add_trait=kind add_trait=diligent add_trait=paranoid 
-	add_trait=arbitrary add_trait=stressed 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926496	#Arah
 	969.6.13={ birth=yes }
 	1035.1.12={ death=yes }
 }
-1019926501={
-	name=Ramalho
-	dynasty=1009990233
-	dna="mhkinnbgphi"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=4 stewardship=7 intrigue=5 learning=7
-	add_trait=grey_eminence add_trait=hunter add_trait=ambitious add_trait=zealous add_trait=lustful 
-	add_trait=slothful 
-	father=1019926496	#Arah
-	977.10.22={ birth=yes }
-	1042.11.22={ death=yes }
-}
-1019926502={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="gphigdajpgh"
-	culture=tupinamba religion=south_american
-	father=1019926496	#Arah
-	983.7.8={ birth=yes }
-	1047.1.14={ death=yes }
-}
-1019926503={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="pmmlidblpbp"
-	culture=tupinamba religion=south_american
-	father=1019926500	#Arata
-	1000.4.12={ birth=yes }
-	1075.9.10={ death=yes }
-}
 1019926504={
 	name=Pirijá
 	dynasty=1009990233
-	dna="pimihdblppg"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=4 stewardship=5 intrigue=6 learning=6
-	add_trait=charismatic_negotiator add_trait=content add_trait=envious add_trait=slothful 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926500	#Arata
 	1003.12.5={ birth=yes }
 	1071.12.1={ death=yes }
 }
-1019926505={
-	name=Caiubi
-	dynasty=1009990233
-	dna="dihiidbphpp"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=4 stewardship=7 intrigue=5 learning=5
-	add_trait=tough_soldier add_trait=content add_trait=trusting add_trait=shy add_trait=slothful 
-	father=1019926500	#Arata
-	1008.11.7={ birth=yes }
-	1075.4.21={ death=yes }
-}
-1019926506={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="epmihgblccp"
-	culture=tupinamba religion=south_american
-	father=1019926500	#Arata
-	1012.2.8={ birth=yes }
-	1096.2.27={ death=yes }
-}
-1019926507={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="lnlehfblpcp"
-	culture=tupinamba religion=south_american
-	father=1019926500	#Arata
-	1014.10.11={ birth=yes }
-	1088.12.28={ death=yes }
-}
-1019926508={
-	name=Azelene
-	female=yes
-	dynasty=1009990233
-	dna="cijcidflpfg"
-	culture=tupinamba religion=south_american
-	father=1019926504	#Pirijá
-	1035.6.17={ birth=yes }
-	1119.11.27={ death=yes }
-}
-1019926509={
-	name=Porasy
-	female=yes
-	dynasty=1009990233
-	dna="mimihdlljmg"
-	culture=tupinamba religion=south_american
-	father=1019926504	#Pirijá
-	1042.8.9={ birth=yes }
-	1145.2.23={ death=yes }
-}
 1019926510={
 	name=Toruí
 	dynasty=1009990233
-	dna="apgihdblppg"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=7 intrigue=5 learning=7
-	add_trait=naive_appeaser add_trait=hedonist add_trait=deceitful add_trait=diligent add_trait=patient 
-	add_trait=craven add_trait=ambitious 
+	culture=tupinamba 
+	religion=south_american
 	father=1019926504	#Pirijá
 	1050.2.27={ birth=yes }
 	1122.2.10={ death=yes }
 }
-1019926511={
-	name=Piquerobi
-	dynasty=1009990233
-	dna="apgdhdblaml"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=7 stewardship=7 intrigue=6 learning=8
-	add_trait=indulgent_wastrel add_trait=mystic add_trait=gregarious add_trait=brave add_trait=honest 
-	add_trait=humble add_trait=patient 
-	father=1019926510	#Toruí
-	1078.7.27={ birth=yes }
-	1161.6.12={ death=yes }
-}
-1019926512={
-	name=Arata
-	dynasty=1009990233
-	dna="nleiibbghpc"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=8 stewardship=8 intrigue=8 learning=6
-	add_trait=skilled_tactician add_trait=mystic add_trait=gluttonous add_trait=charitable add_trait=chaste 
-	father=1019926510	#Toruí
-	1084.7.10={ birth=yes }
-	1183.7.5={ death=yes }
-}
-1019926513={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="cpgipgbippg"
-	culture=tupinamba religion=south_american
-	father=1019926510	#Toruí
-	1088.11.19={ birth=yes }
-	1155.6.9={ death=yes }
-}
-1019926514={
-	name=Pirijá
-	dynasty=1009990233
-	dna="dkcigcplpag"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=4 stewardship=6 intrigue=5 learning=6
-	add_trait=indulgent_wastrel add_trait=envious add_trait=patient add_trait=deceitful add_trait=greedy 
-	add_trait=depressed 
-	father=1019926510	#Toruí
-	1091.3.11={ birth=yes }
-	1144.5.10={ death=yes }
-}
-1019926515={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="jbgihljinfp"
-	culture=tupinamba religion=south_american
-	father=1019926510	#Toruí
-	1096.11.26={ birth=yes }
-	1165.4.28={ death=yes }
-}
-1019926516={
-	name=Jougousa
-	female=yes
-	dynasty=1009990233
-	dna="dpgihdonacl"
-	culture=tupinamba religion=south_american
-	father=1019926511	#Piquerobi
-	1099.10.10={ birth=yes }
-	1159.5.11={ death=yes }
-}
-1019926517={
-	name=Piquerobi
-	dynasty=1009990233
-	dna="gpndhkbcafe"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=5 stewardship=6 intrigue=7 learning=8
-	add_trait=charismatic_negotiator add_trait=patient add_trait=content add_trait=slothful add_trait=depressed 
-	father=1019926511	#Piquerobi
-	1105.7.11={ birth=yes }
-	1168.2.14={ death=yes }
-}
-1019926518={
-	name=Azelene
-	female=yes
-	dynasty=1009990233
-	dna="npjihdbfnnl"
-	culture=tupinamba religion=south_american
-	father=1019926511	#Piquerobi
-	1108.8.5={ birth=yes }
-	1185.7.22={ death=yes }
-}
-1019926519={
-	name=Jougousa
-	female=yes
-	dynasty=1009990233
-	dna="ahgdhdbpagm"
-	culture=tupinamba religion=south_american
-	father=1019926511	#Piquerobi
-	1115.9.16={ birth=yes }
-	1188.5.9={ death=yes }
-}
-1019926520={
-	name=Caiubi
-	dynasty=1009990233
-	dna="gpkghkbcafe"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=4 stewardship=6 intrigue=4 learning=6
-	add_trait=scholarly_theologian add_trait=honest add_trait=cynical add_trait=temperate add_trait=craven 
-	add_trait=strong 
-	father=1019926517	#Piquerobi
-	1126.8.18={ birth=yes }
-	1209.8.18={ death=yes }
-}
-1019926521={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="fonmmkocafg"
-	culture=tupinamba religion=south_american
-	father=1019926517	#Piquerobi
-	1131.12.5={ birth=yes }
-	1214.10.9={ death=yes }
-}
-1019926522={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="gpkdjgolefk"
-	culture=tupinamba religion=south_american
-	father=1019926517	#Piquerobi
-	1137.7.25={ birth=yes }
-	1179.11.1={ death=yes }
-}
-1019926523={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="higdhjlicpa"
-	culture=tupinamba religion=south_american
-	father=1019926517	#Piquerobi
-	1140.2.12={ birth=yes }
-	1215.11.18={ death=yes }
-}
-1019926524={
-	name=Mbicy
-	dynasty=1009990233
-	dna="epndhgdcffd"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=6 stewardship=6 intrigue=7 learning=5
-	add_trait=mastermind_theologian add_trait=kind add_trait=honest add_trait=gluttonous 
-	father=1019926517	#Piquerobi
-	1144.11.8={ birth=yes }
-	1230.11.4={ death=yes }
-}
-1019926525={
-	name=Pirijá
-	dynasty=1009990233
-	dna="cpfdpkbcaoe"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=6 stewardship=5 intrigue=4 learning=6
-	add_trait=mastermind_theologian add_trait=gregarious add_trait=slothful add_trait=patient add_trait=lustful 
-	father=1019926520	#Caiubi
-	1149.1.8={ birth=yes }
-	1219.9.23={ death=yes }
-}
-1019926526={
-	name=Caiubi
-	dynasty=1009990233
-	dna="ppaghaclabe"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=5 stewardship=4 intrigue=4 learning=6
-	add_trait=charismatic_negotiator add_trait=envious add_trait=chaste add_trait=slothful add_trait=zealous 
-	father=1019926520	#Caiubi
-	1157.10.12={ birth=yes }
-	1221.12.7={ death=yes }
-}
-1019926527={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="gakghoimjfe"
-	culture=tupinamba religion=south_american
-	father=1019926520	#Caiubi
-	1160.3.25={ birth=yes }
-	1232.5.23={ death=yes }
-}
-1019926528={
-	name=Piquerobi
-	dynasty=1009990233
-	dna="gpkghkbpafe"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=8 intrigue=5 learning=5
-	add_trait=charismatic_negotiator add_trait=greedy add_trait=slothful add_trait=deceitful add_trait=temperate 
-	add_trait=possessed 
-	father=1019926520	#Caiubi
-	1163.3.22={ birth=yes }
-	1220.11.19={ death=yes }
-}
-1019926529={
-	name=Tibiriçá
-	dynasty=1009990233
-	dna="lpbdekkcloh"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=4 stewardship=6 intrigue=5 learning=6
-	add_trait=elusive_shadow add_trait=trusting add_trait=cynical add_trait=depressed add_trait=slow 
-	father=1019926525	#Pirijá
-	1173.10.27={ birth=yes }
-	1237.11.30={ death=yes }
-}
-1019926530={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="cpnapafgale"
-	culture=tupinamba religion=south_american
-	father=1019926525	#Pirijá
-	1177.2.17={ birth=yes }
-	1256.1.22={ death=yes }
-}
-1019926531={
-	name=Piquerobi
-	dynasty=1009990233
-	dna="cebgdkbbcoi"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=5 stewardship=5 intrigue=6 learning=8
-	add_trait=charismatic_negotiator add_trait=greedy add_trait=chaste add_trait=humble add_trait=arbitrary 
-	add_trait=shy add_trait=ill 
-	father=1019926525	#Pirijá
-	1183.7.24={ birth=yes }
-	1262.8.8={ death=yes }
-}
-1019926532={
-	name=Caiubi
-	dynasty=1009990233
-	dna="lmhldkkjgfh"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=5 stewardship=5 intrigue=4 learning=8
-	add_trait=elusive_shadow add_trait=paranoid add_trait=cynical 
-	father=1019926529	#Tibiriçá
-	1200.6.3={ birth=yes }
-	1255.7.17={ death=yes }
-}
-1019926533={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="knbdekkcpoh"
-	culture=tupinamba religion=south_american
-	father=1019926529	#Tibiriçá
-	1204.11.9={ birth=yes }
-	1281.10.26={ death=yes }
-}
-1019926534={
-	name=Porasy
-	female=yes
-	dynasty=1009990233
-	dna="gpedjckomhi"
-	culture=tupinamba religion=south_american
-	father=1019926529	#Tibiriçá
-	1208.12.24={ birth=yes }
-	1284.7.29={ death=yes }
-}
-1019926535={
-	name=Jougousa
-	female=yes
-	dynasty=1009990233
-	dna="apbmehfamom"
-	culture=tupinamba religion=south_american
-	father=1019926529	#Tibiriçá
-	1214.3.25={ birth=yes }
-	1275.11.10={ death=yes }
-}
-1019926536={
-	name=Caiubi
-	dynasty=1009990233
-	dna="lbhmdkdjgoh"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=6 stewardship=7 intrigue=7 learning=4
-	add_trait=mastermind_theologian add_trait=patient add_trait=deceitful add_trait=content add_trait=depressed 
-	father=1019926532	#Caiubi
-	1221.1.15={ birth=yes }
-	1293.4.6={ death=yes }
-}
-1019926537={
-	name=Caiubi
-	dynasty=1009990233
-	dna="lllldcdhbfh"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=4 stewardship=5 intrigue=5 learning=5
-	add_trait=misguided_warrior add_trait=poet add_trait=honest add_trait=temperate add_trait=lustful 
-	add_trait=content add_trait=brave add_trait=humble 
-	father=1019926532	#Caiubi
-	1227.5.7={ birth=yes }
-	1282.9.26={ death=yes }
-}
-1019926538={
-	name=Tibiriçá
-	dynasty=1009990233
-	dna="lhdldndjgfe"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=4 stewardship=7 intrigue=5 learning=4
-	add_trait=martial_cleric add_trait=gluttonous add_trait=content add_trait=craven add_trait=cruel 
-	add_trait=humble add_trait=deceitful 
-	father=1019926532	#Caiubi
-	1230.9.21={ birth=yes }
-	1310.6.30={ death=yes }
-}
-1019926539={
-	name=Italo
-	dynasty=1009990233
-	dna="lmelokkpgfh"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=6 stewardship=5 intrigue=7 learning=7
-	add_trait=misguided_warrior add_trait=greedy add_trait=proud add_trait=cynical add_trait=shy 
-	add_trait=ill 
-	father=1019926532	#Caiubi
-	1235.8.23={ birth=yes }
-	1299.1.9={ death=yes }
-}
-1019926540={
-	name=Arata
-	dynasty=1009990233
-	dna="lchededddok"
-	culture=tupinamba religion=south_american
-	martial=5 diplomacy=8 stewardship=8 intrigue=5 learning=8
-	add_trait=tough_soldier add_trait=gregarious add_trait=kind add_trait=gluttonous add_trait=zealous 
-	father=1019926536	#Caiubi
-	1251.8.10={ birth=yes }
-	1333.8.16={ death=yes }
-}
-1019926541={
-	name=Pirijá
-	dynasty=1009990233
-	dna="clbmefdfgnh"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=4 stewardship=8 intrigue=8 learning=8
-	add_trait=martial_cleric add_trait=envious add_trait=cruel add_trait=cynical add_trait=charitable 
-	add_trait=gregarious 
-	father=1019926536	#Caiubi
-	1256.8.14={ birth=yes }
-	1317.9.7={ death=yes }
-}
-1019926542={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="jbhbdkdkioa"
-	culture=tupinamba religion=south_american
-	father=1019926536	#Caiubi
-	1263.5.16={ birth=yes }
-	1325.5.2={ death=yes }
-}
-1019926543={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="lchidejodoo"
-	culture=tupinamba religion=south_american
-	father=1019926540	#Arata
-	1278.4.14={ birth=yes }
-	1340.7.22={ death=yes }
-}
-1019926544={
-	name=Caiubi
-	dynasty=1009990233
-	dna="pchpdeppdpa"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=5 stewardship=7 intrigue=8 learning=4
-	add_trait=intricate_webweaver add_trait=hedonist add_trait=gluttonous add_trait=cruel add_trait=shy 
-	add_trait=honest 
-	father=1019926540	#Arata
-	1282.9.11={ birth=yes }
-	1342.4.6={ death=yes }
-}
-1019926545={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="lcajdepmjok"
-	culture=tupinamba religion=south_american
-	father=1019926540	#Arata
-	1286.5.18={ birth=yes }
-	1346.10.26={ death=yes }
-}
-1019926546={
-	name=Bartira
-	female=yes
-	dynasty=1009990233
-	dna="enmelfdddok"
-	culture=tupinamba religion=south_american
-	father=1019926540	#Arata
-	1292.12.25={ birth=yes }
-	1360.9.25={ death=yes }
-}
-1019926547={
-	name=Toruí
-	dynasty=1009990233
-	dna="pchpdjmpppc"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=4 stewardship=8 intrigue=6 learning=5
-	add_trait=detached_priest add_trait=hunter add_trait=ambitious add_trait=patient add_trait=envious 
-	add_trait=gregarious add_trait=slothful add_trait=greedy 
-	father=1019926544	#Caiubi
-	1304.7.9={ birth=yes }
-	1355.9.17={ death=yes }
-}
-1019926548={
-	name=Porasy
-	female=yes
-	dynasty=1009990233
-	dna="pmhpdedjjie"
-	culture=tupinamba religion=south_american
-	father=1019926544	#Caiubi
-	1310.2.21={ birth=yes }
-	1382.4.28={ death=yes }
-}
-1019926549={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="pihpofokmph"
-	culture=tupinamba religion=south_american
-	father=1019926544	#Caiubi
-	1314.10.27={ birth=yes }
-	1391.8.27={ death=yes }
-}
-1019926550={
-	name=Italo
-	dynasty=1009990233
-	dna="pahfjedadpa"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=4 stewardship=8 intrigue=8 learning=8
-	add_trait=intricate_webweaver add_trait=mystic add_trait=deceitful add_trait=proud add_trait=paranoid 
-	add_trait=cruel add_trait=zealous add_trait=lunatic 
-	father=1019926544	#Caiubi
-	1317.4.12={ birth=yes }
-	1389.6.27={ death=yes }
-}
-1019926551={
-	name=Azelene
-	female=yes
-	dynasty=1009990233
-	dna="pmhccgepdph"
-	culture=tupinamba religion=south_american
-	father=1019926544	#Caiubi
-	1322.12.25={ birth=yes }
-	1389.11.22={ death=yes }
-}
-1019926552={
-	name=Jougousa
-	female=yes
-	dynasty=1009990233
-	dna="pclpdlmoppf"
-	culture=tupinamba religion=south_american
-	father=1019926547	#Toruí
-	1330.12.27={ birth=yes }
-	1415.9.27={ death=yes }
-}
-1019926553={
-	name=Porasy
-	female=yes
-	dynasty=1009990233
-	dna="kchpojonppc"
-	culture=tupinamba religion=south_american
-	father=1019926547	#Toruí
-	1336.9.3={ birth=yes }
-	1414.9.3={ death=yes }
-}
-1019926554={
-	name=Jougousa
-	female=yes
-	dynasty=1009990233
-	dna="pahbljhaphc"
-	culture=tupinamba religion=south_american
-	father=1019926547	#Toruí
-	1340.1.10={ birth=yes }
-	1408.2.3={ death=yes }
-}
-1019926555={
-	name=Porasy
-	female=yes
-	dynasty=1009990233
-	dna="pcipnfjlpbj"
-	culture=tupinamba religion=south_american
-	father=1019926547	#Toruí
-	1348.6.16={ birth=yes }
-	1435.10.26={ death=yes }
-}
-1019926556={
-	name=Jougousa
-	female=yes
-	dynasty=1009990233
-	dna="pahpcemldpc"
-	culture=tupinamba religion=south_american
-	father=1019926547	#Toruí
-	1351.8.15={ birth=yes }
-	1411.10.30={ death=yes }
-}
-1019926557={
-	name=Caiubi
-	dynasty=1009990233
-	dna="jihpdemkgpc"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=4 intrigue=8 learning=4
-	add_trait=charismatic_negotiator add_trait=gardener add_trait=cruel add_trait=arbitrary add_trait=charitable 
-	add_trait=envious 
-	father=1019926547	#Toruí
-	1355.4.1={ birth=yes }
-	1440.9.19={ death=yes }
-}
-1019926558={
-	name=Arata
-	dynasty=1009990233
-	dna="jihhhemkgpb"
-	culture=tupinamba religion=south_american
-	martial=7 diplomacy=6 stewardship=6 intrigue=6 learning=8
-	add_trait=detached_priest add_trait=craven add_trait=temperate add_trait=gregarious add_trait=wroth 
-	add_trait=diligent 
-	father=1019926557	#Caiubi
-	1379.7.19={ birth=yes }
-	1456.6.6={ death=yes }
-}
-1019926559={
-	name=Tibiriçá
-	dynasty=1009990233
-	dna="jimddncigpi"
-	culture=tupinamba religion=south_american
-	martial=8 diplomacy=6 stewardship=8 intrigue=5 learning=7
-	add_trait=midas_touched add_trait=hunter add_trait=greedy add_trait=humble add_trait=kind 
-	add_trait=trusting add_trait=cruel add_trait=shy 
-	father=1019926557	#Caiubi
-	1384.1.4={ birth=yes }
-	1460.6.7={ death=yes }
-}
-1019926560={
-	name=Potira
-	female=yes
-	dynasty=1009990233
-	dna="jphpdhckmfc"
-	culture=tupinamba religion=south_american
-	father=1019926557	#Caiubi
-	1388.11.20={ birth=yes }
-	1457.9.5={ death=yes }
-}
-1019926561={
-	name=Arah
-	dynasty=1009990233
-	dna="jbhfffmkjlf"
-	culture=tupinamba religion=south_american
-	martial=6 diplomacy=8 stewardship=8 intrigue=5 learning=7
-	add_trait=tough_soldier add_trait=cruel add_trait=trusting 
-	father=1019926558	#Arata
-	1411.7.26={ birth=yes }
-	1463.10.9={ death=yes }
-}
-1019926562={
-	name=Jougousa
-	female=yes
-	dynasty=1009990233
-	dna="cahkhehmdnp"
-	culture=tupinamba religion=south_american
-	father=1019926558	#Arata
-	1414.12.22={ birth=yes }
-	1472.11.2={ death=yes }
-}
-1019926563={
-	name=Mbicy
-	dynasty=1009990233
-	dna="jmhhfemmgpb"
-	culture=tupinamba religion=south_american
-	martial=4 diplomacy=8 stewardship=5 intrigue=7 learning=8
-	add_trait=intricate_webweaver add_trait=slothful add_trait=cruel add_trait=lustful add_trait=trusting 
-	add_trait=just add_trait=brave 
-	father=1019926558	#Arata
-	1422.6.24={ birth=yes }
-	1491.12.23={ death=yes }
-}
+
 1019926564={
 	name=Italo
 	dynasty=1009990234
