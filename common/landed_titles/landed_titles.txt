@@ -36951,26 +36951,11 @@ d_balearic = {
 d_belgrade = {
 	color = { 151 125 62 }
 }
-d_bergen = {
-	color = { 47 27 255 }
-}
-d_bordeaux = {
-	color = { 59 15 248 }
-}
-d_braganza = {
-	color = { 219 195 35 }
-}
-d_butrinto = {
-	color = { 148 68 154 }
-}
 d_campania = {
 	color = { 226 204 228 }
 }
 d_catalonia = {
 	color = { 255 210 57 }
-}
-d_chaldea = {
-	color = { 107 159 41 }
 }
 d_cumberland = {
 	color = { 31 186 244 }
@@ -37074,9 +37059,6 @@ d_krakow = {
 d_laodikeia = {
 	color = { 163 52 125 }
 }
-d_luristan = {
-	color = { 77 114 183 }
-}
 d_lut = {
 	color = { 119 170 29 }
 }
@@ -37112,20 +37094,6 @@ d_muromians = {
 d_nikomedeia = {
 	color = { 209 108 174 }
 }
-d_pechenegs = {
-	# OBSOLETE
-	color = { 173 150 43 }
-	color2 = { 0 128 128 }
-	
-	capital = 542 # Olvia
-	
-#	tribe = yes
-	culture = pecheneg
-	
-	allow = {
-		always = no
-	}
-}
 
 d_kimak = {
 	color={ 151 114 58 }
@@ -37143,21 +37111,6 @@ d_pressburg = {
 d_pronsk = {
 	color = { 23 132 81 }
 }
-d_pruthenians = {
-	color = { 159 195 75 }
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	capital	= 370 # Marienburg
-	culture = prussian
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-	
-}
 d_qom = {
 	color = { 188 229 116 }
 }
@@ -37167,36 +37120,8 @@ d_romagna = {
 d_salamanca = {
 	color = { 251 229 34 }
 }
-d_sames = {
-	# Actually Samoyeds
-	color = { 101 70 34 }
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = samoyed
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
 d_sandomiersk = {
 	color = { 253 137 137 }
-}
-d_satakunta = {
-	color = { 117 47 47 }
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = finnish
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-	
 }
 d_shiraz = {
 	color = { 155 189 97 }
@@ -37240,19 +37165,6 @@ d_swiss = {
 			}
 		}
 	}
-}
-d_tavasts = {
-	color = { 131 21 21 }
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = finnish
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
 }
 d_meryas = {
 	color = { 131 41 41 }
@@ -37318,43 +37230,14 @@ d_varna = {
 d_wielkopolska = {
 	color = { 252 144 144 }
 }
-d_vlachs = {
-	color = { 239 193 70 }
-}
 d_volga = {
 	color = { 168 135 47 }
-}
-d_votes = {
-	color = { 0 193 119 }
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = finnish
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-	
 }
 d_zara = {
 	color = { 203 217 255 }
 }
 d_zaragoza = {
 	color = { 80 220 10 }
-}
-d_zemigalians = {
-	color = { 183 21 21 }
-	culture = lettigallish
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
 }
 
 d_lendians = { # aka Ledzianie or Lechs
@@ -37483,23 +37366,6 @@ d_glomacze = { # Aka Dolomici
 #	tribe = yes
 	
 	capital = 312 # Meissen
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
-d_sorbs = {
-	color={ 170 205 110 }
-	color2={ 255 255 255 }
-	
-	culture = pommeranian
-#	tribe = yes
-	
-	capital = 364 # Luzycka
 	
 	allow = {
 		always = no
@@ -38863,7 +38729,6 @@ e_india = {
 				viethellenic = "Sirkap" 
 				
 				b_purusapura = {}
-				b_udabhanda = {}
 				b_taksasila = {
 					hellenistic = "Sirkap"
 					greek = "Sirkap"
@@ -40148,7 +40013,6 @@ e_india = {
 			c_asirgarh = {
 				color = { 195 203 101 }
 
-				b_acalapura = {}
 				b_dattawadi = {}
 				b_beltarodi = {}
 				b_kamthi = {}
@@ -40793,7 +40657,6 @@ e_bengal = {
 				color = { 33 168 207 }
 
 				b_somapura = {}
-				b_pundravardhana = {}
 				b_ambaria = {}
 				b_jalchatro = {}
 				b_chunia = {}
@@ -40953,7 +40816,6 @@ e_bengal = {
 				b_navadvipa = {}
 				b_krishnanagar = {}
 				b_purbasthali = {}
-				b_chapra = {}
 				b_hanskhali = {}
 				b_krishnaganj = {}
 				b_santipur = {}
@@ -41255,11 +41117,10 @@ e_bengal = {
 			c_midnapore = {
 				color = { 237 203 30 }
 				
-				b_tamralipti = {}
+				b_midnapore = {}
 				b_baleshwar = {}
 				b_chandipur = {}
 				b_baisinga = {}
-				b_digha = {}
 				b_shipur = {}
 				b_mandarmoni = {}
 				b_contai = {}
@@ -44764,7 +44625,6 @@ e_tibet = {
 				b_mirai_malli = {}
 				b_bhimtal = {}
 				b_nainital = {}
-				b_danya = {}
 				b_rungri = {}
 			}
 			c_naimisa = {
