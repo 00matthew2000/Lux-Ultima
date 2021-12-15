@@ -240,3136 +240,353 @@
 1019922118={
 	name=Kaigouchi
 	dynasty=1009990189
-	dna="eaphngpdpgn"
-	culture=taino religion=animism
-	martial=5 diplomacy=5 stewardship=8 intrigue=6 learning=4
-	add_trait=grey_eminence add_trait=ambitious add_trait=kind add_trait=greedy add_trait=arbitrary 
+	culture=taino 
+	religion=zemiist
 	720.1.16={ birth=yes }
 	799.12.10={ death=yes }
 }
 1019922119={
 	name=Kaigouchi
 	dynasty=1009990189
-	dna="eignpopapgl"
-	culture=taino religion=animism
-	martial=5 diplomacy=4 stewardship=8 intrigue=6 learning=4
-	add_trait=misguided_warrior add_trait=deceitful add_trait=just add_trait=envious add_trait=cruel 
-	add_trait=genius 
+	culture=taino 
+	religion=zemiist
 	father=1019922118	#Kaigouchi
 	744.10.12={ birth=yes }
 	798.12.31={ death=yes }
 }
 1019922120={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="kaaanghongd"
-	culture=taino religion=animism
-	father=1019922118	#Kaigouchi
-	748.6.25={ birth=yes }
-	826.12.13={ death=yes }
-}
-1019922121={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="kfecnihapli"
-	culture=taino religion=animism
-	father=1019922118	#Kaigouchi
-	753.2.11={ birth=yes }
-	823.2.2={ death=yes }
-}
-1019922122={
-	name=Mbicy
-	dynasty=1009990189
-	dna="ekpmngplpgn"
-	culture=taino religion=animism
-	martial=4 diplomacy=4 stewardship=4 intrigue=7 learning=8
-	add_trait=misguided_warrior add_trait=mystic add_trait=ambitious add_trait=honest add_trait=zealous 
-	add_trait=gluttonous add_trait=drunkard add_trait=lisp 
-	father=1019922118	#Kaigouchi
-	759.1.8={ birth=yes }
-	812.6.27={ death=yes }
-}
-1019922123={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="damaaipbjgn"
-	culture=taino religion=animism
-	father=1019922118	#Kaigouchi
-	764.2.2={ birth=yes }
-	845.4.25={ death=yes }
-}
-1019922124={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="eapfjcpcppp"
-	culture=taino religion=animism
-	father=1019922118	#Kaigouchi
-	768.3.19={ birth=yes }
-	846.12.9={ death=yes }
-}
-1019922125={
-	name=Haubariria
-	dynasty=1009990189
-	dna="eappngpckjb"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=8 intrigue=6 learning=8
-	add_trait=thrifty_clerk add_trait=gardener add_trait=cruel add_trait=diligent add_trait=brave 
-	add_trait=kind add_trait=gluttonous 
-	father=1019922118	#Kaigouchi
-	774.6.15={ birth=yes }
-	843.10.4={ death=yes }
-}
-1019922126={
 	name=Pirijá
 	dynasty=1009990189
-	dna="eigdmmocpgl"
-	culture=taino religion=animism
-	martial=5 diplomacy=5 stewardship=5 intrigue=8 learning=5
-	add_trait=mastermind_theologian add_trait=charitable add_trait=lustful add_trait=shy add_trait=temperate 
+	culture=taino 
+	religion=zemiist
 	father=1019922119	#Kaigouchi
 	775.11.7={ birth=yes }
 	835.12.3={ death=yes }
 }
-1019922127={
-	name=Toratora
-	dynasty=1009990189
-	dna="eignpohackk"
-	culture=taino religion=animism
-	martial=4 diplomacy=6 stewardship=8 intrigue=5 learning=6
-	add_trait=detached_priest add_trait=content add_trait=chaste add_trait=envious add_trait=arbitrary 
-	add_trait=proud 
-	father=1019922119	#Kaigouchi
-	779.4.23={ birth=yes }
-	826.3.30={ death=yes }
-}
-1019922128={
-	name=Pirijá
-	dynasty=1009990189
-	dna="bimgaanokal"
-	culture=taino religion=animism
-	martial=8 diplomacy=7 stewardship=4 intrigue=7 learning=4
-	add_trait=detached_priest add_trait=lustful add_trait=humble add_trait=arbitrary add_trait=wroth 
-	add_trait=deceitful 
-	father=1019922119	#Kaigouchi
-	782.9.24={ birth=yes }
-	838.8.16={ death=yes }
-}
-1019922129={
-	name=Toruí
-	dynasty=1009990189
-	dna="himlfbkaogl"
-	culture=taino religion=animism
-	martial=7 diplomacy=8 stewardship=8 intrigue=8 learning=8
-	add_trait=detached_priest add_trait=zealous add_trait=paranoid add_trait=content add_trait=patient 
-	add_trait=wounded 
-	father=1019922119	#Kaigouchi
-	789.8.26={ birth=yes }
-	848.12.26={ death=yes }
-}
-1019922130={
+1019922121={
 	name=Amorotahe
 	dynasty=1009990189
-	dna="ebgebkkcahl"
-	culture=taino religion=animism
-	martial=7 diplomacy=6 stewardship=5 intrigue=8 learning=7
-	add_trait=misguided_warrior add_trait=proud add_trait=just add_trait=slothful add_trait=deceitful 
-	add_trait=kind add_trait=trusting 
-	father=1019922126	#Pirijá
+	culture=taino 
+	religion=zemiist
+	father=1019922120	#Pirijá
 	805.6.19={ birth=yes }
 	851.2.3={ death=yes }
 }
-1019922131={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="nbcjapodpob"
-	culture=taino religion=animism
-	father=1019922126	#Pirijá
-	809.6.5={ birth=yes }
-	871.10.27={ death=yes }
-}
-1019922132={
-	name=Hayá
-	female=yes
-	dynasty=1009990189
-	dna="eigokmocmgd"
-	culture=taino religion=animism
-	father=1019922126	#Pirijá
-	816.7.15={ birth=yes }
-	895.2.21={ death=yes }
-}
-1019922133={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="lfgfmmjmofn"
-	culture=taino religion=animism
-	father=1019922126	#Pirijá
-	820.5.18={ birth=yes }
-	903.7.1={ death=yes }
-}
-1019922134={
-	name=Hayá
-	female=yes
-	dynasty=1009990189
-	dna="dhdebbkcdeh"
-	culture=taino religion=animism
-	father=1019922130	#Amorotahe
-	837.6.13={ birth=yes }
-	893.11.24={ death=yes }
-}
-1019922135={
+1019922122={
 	name=Amorotahe
 	dynasty=1009990189
-	dna="ekgebpccplp"
-	culture=taino religion=animism
-	martial=6 diplomacy=4 stewardship=6 intrigue=7 learning=5
-	add_trait=detached_priest add_trait=hedonist add_trait=cruel add_trait=paranoid add_trait=gluttonous 
-	add_trait=honest 
-	father=1019922130	#Amorotahe
+	culture=taino 
+	religion=zemiist
+	father=1019922121	#Amorotahe
 	841.10.4={ birth=yes }
 	921.4.30={ death=yes }
 }
-1019922136={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="oeegbkkcahe"
-	culture=taino religion=animism
-	father=1019922130	#Amorotahe
-	848.11.14={ birth=yes }
-	926.11.21={ death=yes }
-}
-1019922137={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="ebgelgocbcm"
-	culture=taino religion=animism
-	father=1019922130	#Amorotahe
-	851.11.7={ birth=yes }
-	930.2.16={ death=yes }
-}
-1019922138={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="fbogbjkcage"
-	culture=taino religion=animism
-	father=1019922130	#Amorotahe
-	855.1.8={ birth=yes }
-	939.2.5={ death=yes }
-}
-1019922139={
+1019922123={
 	name=Laliwa
 	dynasty=1009990189
-	dna="ekgebphmopb"
-	culture=taino religion=animism
-	martial=6 diplomacy=8 stewardship=4 intrigue=5 learning=6
-	add_trait=grey_eminence add_trait=just add_trait=craven add_trait=ambitious add_trait=kind 
-	add_trait=possessed 
-	father=1019922135	#Amorotahe
+	culture=taino 
+	religion=zemiist
+	father=1019922122	#Amorotahe
 	863.1.25={ birth=yes }
 	948.11.2={ death=yes }
 }
-1019922140={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="hkaebpbcfod"
-	culture=taino religion=animism
-	father=1019922135	#Amorotahe
-	870.4.13={ birth=yes }
-	913.10.27={ death=yes }
-}
-1019922141={
-	name=Hayá
-	female=yes
-	dynasty=1009990189
-	dna="bggeahcmclp"
-	culture=taino religion=animism
-	father=1019922135	#Amorotahe
-	875.6.7={ birth=yes }
-	915.9.10={ death=yes }
-}
-1019922142={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="eklebjclalp"
-	culture=taino religion=animism
-	father=1019922135	#Amorotahe
-	882.1.21={ birth=yes }
-	954.1.29={ death=yes }
-}
-1019922143={
+1019922124={
 	name=Gunfuli
 	dynasty=1009990189
-	dna="gbgebhhmopb"
-	culture=taino religion=animism
-	martial=8 diplomacy=6 stewardship=7 intrigue=7 learning=4
-	add_trait=misguided_warrior add_trait=greedy add_trait=envious add_trait=paranoid add_trait=cynical 
-	add_trait=shy 
-	father=1019922139	#Laliwa
+	culture=taino 
+	religion=zemiist
+	father=1019922123	#Laliwa
 	891.11.3={ birth=yes }
 	986.7.8={ death=yes }
 }
-1019922144={
-	name=Haubariria
-	dynasty=1009990189
-	dna="lkgelpjjoib"
-	culture=taino religion=animism
-	martial=4 diplomacy=5 stewardship=8 intrigue=8 learning=5
-	add_trait=indulgent_wastrel add_trait=cruel add_trait=paranoid add_trait=content add_trait=temperate 
-	add_trait=just add_trait=zealous 
-	father=1019922139	#Laliwa
-	895.1.20={ birth=yes }
-	956.3.26={ death=yes }
-}
-1019922145={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="dkgdgchmjpb"
-	culture=taino religion=animism
-	father=1019922139	#Laliwa
-	899.8.1={ birth=yes }
-	957.4.22={ death=yes }
-}
-1019922146={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="gkeenpjpapm"
-	culture=taino religion=animism
-	father=1019922139	#Laliwa
-	904.8.16={ birth=yes }
-	982.1.26={ death=yes }
-}
-1019922147={
+1019922125={
 	name=Mbicy
 	dynasty=1009990189
-	dna="amgpahamobk"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=5 intrigue=4 learning=5
-	add_trait=intricate_webweaver add_trait=honest add_trait=proud add_trait=trusting 
-	father=1019922143	#Gunfuli
+	culture=taino 
+	religion=zemiist
+	father=1019922124	#Gunfuli
 	909.9.25={ birth=yes }
 	979.8.21={ death=yes }
 }
-1019922148={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="gbeebffaopb"
-	culture=taino religion=animism
-	father=1019922143	#Gunfuli
-	914.5.8={ birth=yes }
-	992.4.3={ death=yes }
-}
-1019922149={
+1019922126={
 	name=Mbicy
 	dynasty=1009990189
-	dna="mpcpchagddk"
-	culture=taino religion=animism
-	martial=5 diplomacy=8 stewardship=7 intrigue=4 learning=4
-	add_trait=flamboyant_schemer add_trait=envious add_trait=honest add_trait=shy add_trait=lisp 
-	father=1019922147	#Mbicy
+	culture=taino 
+	religion=zemiist
+	father=1019922125	#Mbicy
 	936.9.16={ birth=yes }
 	1007.2.11={ death=yes }
 }
-1019922150={
-	name=Amorotahe
-	dynasty=1009990189
-	dna="oappabidomo"
-	culture=taino religion=animism
-	martial=8 diplomacy=4 stewardship=5 intrigue=4 learning=5
-	add_trait=intricate_webweaver add_trait=greedy add_trait=cynical add_trait=kind add_trait=content 
-	father=1019922147	#Mbicy
-	942.9.11={ birth=yes }
-	1022.8.3={ death=yes }
-}
-1019922151={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="dacakhajdod"
-	culture=taino religion=animism
-	father=1019922149	#Mbicy
-	964.8.24={ birth=yes }
-	1042.8.18={ death=yes }
-}
-1019922152={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="dohpchagmgb"
-	culture=taino religion=animism
-	father=1019922149	#Mbicy
-	966.6.3={ birth=yes }
-	1050.11.14={ death=yes }
-}
-1019922153={
+1019922127={
 	name=Kaigouchi
 	dynasty=1009990189
-	dna="mnhpicadddm"
-	culture=taino religion=animism
-	martial=7 diplomacy=4 stewardship=5 intrigue=8 learning=4
-	add_trait=skilled_tactician add_trait=duelist add_trait=cynical add_trait=chaste add_trait=deceitful 
-	add_trait=trusting add_trait=drunkard 
-	father=1019922149	#Mbicy
+	culture=taino 
+	religion=zemiist
+	father=1019922126	#Mbicy
 	974.1.17={ birth=yes }
 	1027.7.4={ death=yes }
 }
-1019922154={
+1019922128={
 	name=Kaigouchi
 	dynasty=1009990189
-	dna="elmdphacddm"
-	culture=taino religion=animism
-	martial=7 diplomacy=4 stewardship=8 intrigue=8 learning=7
-	add_trait=indulgent_wastrel add_trait=honest add_trait=kind add_trait=humble add_trait=greedy 
-	add_trait=zealous add_trait=ambitious add_trait=wounded 
-	father=1019922153	#Kaigouchi
+	culture=taino 
+	religion=zemiist
+	father=1019922127	#Kaigouchi
 	1004.6.17={ birth=yes }
 	1061.4.22={ death=yes }
 }
-1019922155={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="mnhpicadddm"
-	culture=taino religion=animism
-	father=1019922153	#Kaigouchi
-	1007.3.21={ birth=yes }
-	1092.1.25={ death=yes }
-}
-1019922156={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="piemobdkoge"
-	culture=taino religion=animism
-	father=1019922153	#Kaigouchi
-	1011.5.21={ birth=yes }
-	1069.8.20={ death=yes }
-}
-1019922157={
+1019922129={
 	name=Gunfuli
 	dynasty=1009990189
-	dna="mphpicaodbm"
-	culture=taino religion=animism
-	martial=5 diplomacy=4 stewardship=6 intrigue=6 learning=6
-	add_trait=intricate_webweaver add_trait=zealous add_trait=kind add_trait=chaste add_trait=trusting 
-	add_trait=charitable add_trait=drunkard 
-	father=1019922153	#Kaigouchi
-	1013.5.26={ birth=yes }
-	1075.9.1={ death=yes }
-}
-1019922158={
-	name=Arata
-	dynasty=1009990189
-	dna="mnhpiciddem"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=7 intrigue=8 learning=5
-	add_trait=indulgent_wastrel add_trait=diligent add_trait=greedy add_trait=humble add_trait=gluttonous 
-	father=1019922153	#Kaigouchi
-	1019.4.23={ birth=yes }
-	1083.9.11={ death=yes }
-}
-1019922159={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="eloigfbocda"
-	culture=taino religion=animism
-	father=1019922154	#Kaigouchi
-	1034.11.23={ birth=yes }
-	1105.4.16={ death=yes }
-}
-1019922160={
-	name=Gunfuli
-	dynasty=1009990189
-	dna="omindaacdde"
-	culture=taino religion=animism
-	martial=6 diplomacy=5 stewardship=4 intrigue=4 learning=5
-	add_trait=charismatic_negotiator add_trait=humble add_trait=zealous add_trait=trusting add_trait=temperate 
-	add_trait=envious add_trait=clubfooted 
-	father=1019922154	#Kaigouchi
+	culture=taino 
+	religion=zemiist
+	father=1019922128	#Kaigouchi
 	1037.10.11={ birth=yes }
 	1102.4.6={ death=yes }
 }
-1019922161={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="elminhchmdm"
-	culture=taino religion=animism
-	father=1019922154	#Kaigouchi
-	1041.12.14={ birth=yes }
-	1094.1.5={ death=yes }
-}
-1019922162={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="mmgniakcdje"
-	culture=taino religion=animism
-	father=1019922160	#Gunfuli
-	1063.11.9={ birth=yes }
-	1122.8.16={ death=yes }
-}
-1019922163={
-	name=Laliwa
-	dynasty=1009990189
-	dna="fmmndkacjde"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=8 intrigue=5 learning=6
-	add_trait=midas_touched add_trait=hedonist add_trait=chaste add_trait=trusting add_trait=just 
-	father=1019922160	#Gunfuli
-	1066.9.1={ birth=yes }
-	1129.5.1={ death=yes }
-}
-1019922164={
-	name=Hayá
-	female=yes
-	dynasty=1009990189
-	dna="aoigmoakkle"
-	culture=taino religion=animism
-	father=1019922160	#Gunfuli
-	1071.9.15={ birth=yes }
-	1140.5.5={ death=yes }
-}
-1019922165={
-	name=Kaigouchi
-	dynasty=1009990189
-	dna="omnndmakdde"
-	culture=taino religion=animism
-	martial=4 diplomacy=6 stewardship=7 intrigue=7 learning=5
-	add_trait=martial_cleric add_trait=diligent add_trait=lustful add_trait=content add_trait=patient 
-	add_trait=possessed 
-	father=1019922160	#Gunfuli
-	1076.7.17={ birth=yes }
-	1147.11.18={ death=yes }
-}
-1019922166={
-	name=Kaigouchi
-	dynasty=1009990189
-	dna="amgnkkagjfi"
-	culture=taino religion=animism
-	martial=8 diplomacy=7 stewardship=5 intrigue=5 learning=7
-	add_trait=detached_priest add_trait=humble add_trait=arbitrary add_trait=gregarious add_trait=chaste 
-	add_trait=content 
-	father=1019922163	#Laliwa
-	1094.6.25={ birth=yes }
-	1169.9.29={ death=yes }
-}
-1019922167={
-	name=Toruí
-	dynasty=1009990189
-	dna="fcmndjacbne"
-	culture=taino religion=animism
-	martial=6 diplomacy=4 stewardship=5 intrigue=5 learning=8
-	add_trait=tough_soldier add_trait=chaste add_trait=zealous add_trait=brave add_trait=greedy 
-	add_trait=humble add_trait=just 
-	father=1019922163	#Laliwa
-	1100.11.2={ birth=yes }
-	1181.11.7={ death=yes }
-}
-1019922168={
-	name=Ilumani
-	dynasty=1009990189
-	dna="lmacdhadjdd"
-	culture=taino religion=animism
-	martial=4 diplomacy=4 stewardship=6 intrigue=4 learning=5
-	add_trait=indulgent_wastrel add_trait=lustful add_trait=charitable add_trait=cynical add_trait=diligent 
-	add_trait=paranoid add_trait=envious 
-	father=1019922163	#Laliwa
-	1105.2.15={ birth=yes }
-	1162.1.23={ death=yes }
-}
-1019922169={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="bmggkjaojli"
-	culture=taino religion=animism
-	father=1019922166	#Kaigouchi
-	1125.3.18={ birth=yes }
-	1203.6.28={ death=yes }
-}
-1019922170={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="imgnkkmgmfi"
-	culture=taino religion=animism
-	father=1019922166	#Kaigouchi
-	1130.9.3={ birth=yes }
-	1205.3.5={ death=yes }
-}
-1019922171={
-	name=Arah
-	dynasty=1009990189
-	dna="aogkkkaijkk"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=6 intrigue=5 learning=6
-	add_trait=grey_eminence add_trait=mystic add_trait=paranoid add_trait=greedy add_trait=brave 
-	add_trait=gregarious 
-	father=1019922166	#Kaigouchi
-	1136.2.9={ birth=yes }
-	1231.3.21={ death=yes }
-}
-1019922172={
-	name=Kaigouchi
-	dynasty=1009990189
-	dna="bmeokkagjei"
-	culture=taino religion=animism
-	martial=5 diplomacy=7 stewardship=8 intrigue=7 learning=7
-	add_trait=thrifty_clerk add_trait=gluttonous add_trait=gregarious add_trait=charitable add_trait=arbitrary 
-	father=1019922166	#Kaigouchi
-	1142.5.16={ birth=yes }
-	1204.5.31={ death=yes }
-}
-1019922173={
-	name=Arah
-	dynasty=1009990189
-	dna="ndgnkpcgjfi"
-	culture=taino religion=animism
-	martial=4 diplomacy=6 stewardship=4 intrigue=6 learning=4
-	add_trait=flamboyant_schemer add_trait=ambitious add_trait=lustful add_trait=gregarious 
-	father=1019922166	#Kaigouchi
-	1144.6.2={ birth=yes }
-	1208.1.5={ death=yes }
-}
-1019922174={
-	name=Gunfuli
-	dynasty=1009990189
-	dna="abgkpkainkg"
-	culture=taino religion=animism
-	martial=5 diplomacy=6 stewardship=5 intrigue=5 learning=6
-	add_trait=martial_cleric add_trait=trusting add_trait=kind add_trait=chaste add_trait=cruel 
-	add_trait=just add_trait=temperate 
-	father=1019922171	#Arah
-	1159.1.15={ birth=yes }
-	1230.8.11={ death=yes }
-}
-1019922175={
-	name=Haubariria
-	dynasty=1009990189
-	dna="iogmkkaifkd"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=8 intrigue=5 learning=7
-	add_trait=thrifty_clerk add_trait=hunter add_trait=cynical add_trait=ambitious add_trait=brave 
-	add_trait=paranoid add_trait=cruel add_trait=stressed 
-	father=1019922171	#Arah
-	1163.8.3={ birth=yes }
-	1208.6.28={ death=yes }
-}
-1019922176={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="deihkkjfjkk"
-	culture=taino religion=animism
-	father=1019922171	#Arah
-	1166.6.5={ birth=yes }
-	1225.12.6={ death=yes }
-}
-1019922177={
-	name=Hayá
-	female=yes
-	dynasty=1009990189
-	dna="lkgkdmoijkg"
-	culture=taino religion=animism
-	father=1019922171	#Arah
-	1172.9.6={ birth=yes }
-	1241.10.1={ death=yes }
-}
-1019922178={
-	name=Hayá
-	female=yes
-	dynasty=1009990189
-	dna="cogogmahlkb"
-	culture=taino religion=animism
-	father=1019922171	#Arah
-	1174.6.14={ birth=yes }
-	1253.5.19={ death=yes }
-}
-1019922179={
-	name=Arata
-	dynasty=1009990189
-	dna="hggkkkaijmk"
-	culture=taino religion=animism
-	martial=6 diplomacy=8 stewardship=7 intrigue=4 learning=8
-	add_trait=grey_eminence add_trait=impaler add_trait=kind add_trait=greedy add_trait=just 
-	father=1019922171	#Arah
-	1180.8.21={ birth=yes }
-	1251.7.9={ death=yes }
-}
-1019922180={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="abjagkefccd"
-	culture=taino religion=animism
-	father=1019922174	#Gunfuli
-	1187.8.18={ birth=yes }
-	1228.12.26={ death=yes }
-}
-1019922181={
-	name=Kaigouchi
-	dynasty=1009990189
-	dna="ajgkfebidhp"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=4 intrigue=6 learning=5
-	add_trait=martial_cleric add_trait=shy add_trait=craven add_trait=kind 
-	father=1019922174	#Gunfuli
-	1192.1.14={ birth=yes }
-	1260.2.6={ death=yes }
-}
-1019922182={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="mohkpoackkg"
-	culture=taino religion=animism
-	father=1019922174	#Gunfuli
-	1198.5.2={ birth=yes }
-	1258.10.28={ death=yes }
-}
-1019922183={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="aggppgaimki"
-	culture=taino religion=animism
-	father=1019922174	#Gunfuli
-	1204.2.17={ birth=yes }
-	1285.4.24={ death=yes }
-}
-1019922184={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="ajgkfeibnkp"
-	culture=taino religion=animism
-	father=1019922181	#Kaigouchi
-	1223.5.13={ birth=yes }
-	1283.3.1={ death=yes }
-}
-1019922185={
-	name=Amorotahe
-	dynasty=1009990189
-	dna="gjckaeblkhc"
-	culture=taino religion=animism
-	martial=5 diplomacy=6 stewardship=6 intrigue=6 learning=7
-	add_trait=elusive_shadow add_trait=craven add_trait=envious add_trait=greedy add_trait=proud 
-	father=1019922181	#Kaigouchi
-	1227.5.26={ birth=yes }
-	1293.2.22={ death=yes }
-}
-1019922186={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="cjilfebijlp"
-	culture=taino religion=animism
-	father=1019922181	#Kaigouchi
-	1232.8.7={ birth=yes }
-	1288.8.3={ death=yes }
-}
-1019922187={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="aomnlliedkb"
-	culture=taino religion=animism
-	father=1019922181	#Kaigouchi
-	1235.9.27={ birth=yes }
-	1313.10.10={ death=yes }
-}
-1019922188={
-	name=Toruí
-	dynasty=1009990189
-	dna="ojokaeohbeh"
-	culture=taino religion=animism
-	martial=7 diplomacy=8 stewardship=8 intrigue=8 learning=4
-	add_trait=tough_soldier add_trait=deceitful add_trait=ambitious add_trait=cruel 
-	father=1019922185	#Amorotahe
-	1252.12.24={ birth=yes }
-	1326.11.5={ death=yes }
-}
-1019922189={
-	name=Gunfuli
-	dynasty=1009990189
-	dna="akckaodokac"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=6 intrigue=5 learning=8
-	add_trait=intricate_webweaver add_trait=gluttonous add_trait=greedy add_trait=cynical add_trait=content 
-	father=1019922185	#Amorotahe
-	1259.12.10={ birth=yes }
-	1329.7.9={ death=yes }
-}
-1019922190={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="gfcoaebokoc"
-	culture=taino religion=animism
-	father=1019922185	#Amorotahe
-	1262.6.15={ birth=yes }
-	1348.4.2={ death=yes }
-}
-1019922191={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="gccgpfolaph"
-	culture=taino religion=animism
-	father=1019922185	#Amorotahe
-	1268.7.8={ birth=yes }
-	1326.8.10={ death=yes }
-}
-1019922192={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="gjcbdlelpib"
-	culture=taino religion=animism
-	father=1019922185	#Amorotahe
-	1271.5.2={ birth=yes }
-	1348.11.27={ death=yes }
-}
-1019922193={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="gjjjaeblchc"
-	culture=taino religion=animism
-	father=1019922185	#Amorotahe
-	1276.1.18={ birth=yes }
-	1338.6.11={ death=yes }
-}
-1019922194={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="gjlgpebjehc"
-	culture=taino religion=animism
-	father=1019922185	#Amorotahe
-	1282.6.20={ birth=yes }
-	1355.6.14={ death=yes }
-}
-1019922195={
-	name=Áhari
-	dynasty=1009990189
-	dna="kjnkoeohcop"
-	culture=taino religion=animism
-	martial=6 diplomacy=8 stewardship=6 intrigue=6 learning=8
-	add_trait=elusive_shadow add_trait=diligent add_trait=greedy add_trait=kind 
-	father=1019922188	#Toruí
-	1277.12.12={ birth=yes }
-	1352.1.2={ death=yes }
-}
-1019922196={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="jfgcaclnboh"
-	culture=taino religion=animism
-	father=1019922188	#Toruí
-	1282.7.2={ birth=yes }
-	1344.6.23={ death=yes }
-}
-1019922197={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="lepiaeohejc"
-	culture=taino religion=animism
-	father=1019922188	#Toruí
-	1289.5.8={ birth=yes }
-	1354.9.21={ death=yes }
-}
-1019922198={
-	name=Haubariria
-	dynasty=1009990189
-	dna="kjebieohchp"
-	culture=taino religion=animism
-	martial=8 diplomacy=6 stewardship=8 intrigue=5 learning=5
-	add_trait=flamboyant_schemer add_trait=envious add_trait=brave add_trait=gluttonous add_trait=shy 
-	add_trait=greedy add_trait=lunatic 
-	father=1019922195	#Áhari
-	1309.12.15={ birth=yes }
-	1385.9.5={ death=yes }
-}
-1019922199={
-	name=Shoko
-	dynasty=1009990189
-	dna="pjdkekfhlmp"
-	culture=taino religion=animism
-	martial=5 diplomacy=7 stewardship=5 intrigue=6 learning=6
-	add_trait=indulgent_wastrel add_trait=proud add_trait=paranoid add_trait=just add_trait=wounded 
-	father=1019922195	#Áhari
-	1314.12.8={ birth=yes }
-	1400.3.22={ death=yes }
-}
-1019922200={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="koneoehkcop"
-	culture=taino religion=animism
-	father=1019922195	#Áhari
-	1322.10.11={ birth=yes }
-	1387.3.13={ death=yes }
-}
-1019922201={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="bjnageokpop"
-	culture=taino religion=animism
-	father=1019922195	#Áhari
-	1326.12.14={ birth=yes }
-	1407.9.25={ death=yes }
-}
-1019922202={
-	name=Pirijá
-	dynasty=1009990189
-	dna="kjlcieghphp"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=5 intrigue=6 learning=6
-	add_trait=martial_cleric add_trait=temperate add_trait=wroth add_trait=craven add_trait=envious 
-	father=1019922198	#Haubariria
-	1331.9.25={ birth=yes }
-	1402.10.4={ death=yes }
-}
-1019922203={
-	name=Amorotahe
-	dynasty=1009990189
-	dna="cjebpefhnhj"
-	culture=taino religion=animism
-	martial=5 diplomacy=4 stewardship=5 intrigue=7 learning=7
-	add_trait=elusive_shadow add_trait=just add_trait=diligent add_trait=ambitious 
-	father=1019922198	#Haubariria
-	1337.2.5={ birth=yes }
-	1423.4.18={ death=yes }
-}
-1019922204={
-	name=Ebedimu
-	dynasty=1009990189
-	dna="hkeoiflhjhp"
-	culture=taino religion=animism
-	martial=8 diplomacy=6 stewardship=7 intrigue=6 learning=6
-	add_trait=misguided_warrior add_trait=deceitful add_trait=gluttonous add_trait=greedy add_trait=wroth 
-	add_trait=arbitrary add_trait=lustful 
-	father=1019922198	#Haubariria
-	1341.1.25={ birth=yes }
-	1424.10.19={ death=yes }
-}
-1019922205={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="ljegieohchp"
-	culture=taino religion=animism
-	father=1019922198	#Haubariria
-	1345.3.19={ birth=yes }
-	1429.4.9={ death=yes }
-}
-1019922206={
-	name=Mbicy
-	dynasty=1009990189
-	dna="kjlpnfgkjkf"
-	culture=taino religion=animism
-	martial=4 diplomacy=4 stewardship=5 intrigue=4 learning=6
-	add_trait=naive_appeaser add_trait=zealous add_trait=kind add_trait=gluttonous add_trait=arbitrary 
-	add_trait=shy 
-	father=1019922202	#Pirijá
-	1362.10.15={ birth=yes }
-	1432.3.30={ death=yes }
-}
-1019922207={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="kklhfeghghe"
-	culture=taino religion=animism
-	father=1019922202	#Pirijá
-	1369.8.17={ birth=yes }
-	1436.7.26={ death=yes }
-}
-1019922208={
-	name=Pirijá
-	dynasty=1009990189
-	dna="kjlpdekhphp"
-	culture=taino religion=animism
-	martial=6 diplomacy=8 stewardship=5 intrigue=8 learning=4
-	add_trait=tough_soldier add_trait=slothful add_trait=content add_trait=paranoid add_trait=kind 
-	add_trait=cynical add_trait=brave add_trait=fair 
-	father=1019922202	#Pirijá
-	1373.12.21={ birth=yes }
-	1467.12.12={ death=yes }
-}
-1019922209={
-	name=Amorotahe
-	dynasty=1009990189
-	dna="kmlpdegbjlp"
-	culture=taino religion=animism
-	martial=7 diplomacy=8 stewardship=4 intrigue=7 learning=7
-	add_trait=charismatic_negotiator add_trait=envious add_trait=greedy add_trait=paranoid add_trait=cynical 
-	add_trait=ugly 
-	father=1019922202	#Pirijá
-	1380.1.12={ birth=yes }
-	1436.11.6={ death=yes }
-}
-1019922210={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="jkjobegkjkf"
-	culture=taino religion=animism
-	father=1019922206	#Mbicy
-	1391.1.12={ birth=yes }
-	1445.5.18={ death=yes }
-}
-1019922211={
-	name=Wiwakaleme
-	dynasty=1009990189
-	dna="kflcglgkokf"
-	culture=taino religion=animism
-	martial=4 diplomacy=7 stewardship=8 intrigue=7 learning=4
-	add_trait=flamboyant_schemer add_trait=ambitious add_trait=gregarious add_trait=humble add_trait=patient 
-	father=1019922206	#Mbicy
-	1397.2.24={ birth=yes }
-	1471.1.22={ death=yes }
-}
-1019922212={
-	name=Twengga
-	female=yes
-	dynasty=1009990189
-	dna="kokanfgkjkj"
-	culture=taino religion=animism
-	father=1019922206	#Mbicy
-	1405.8.8={ birth=yes }
-	1479.11.26={ death=yes }
-}
-1019922213={
-	name=Takuiba
-	female=yes
-	dynasty=1009990189
-	dna="ojlhkfgklko"
-	culture=taino religion=animism
-	father=1019922206	#Mbicy
-	1408.2.13={ birth=yes }
-	1490.4.28={ death=yes }
-}
-1019922214={
-	name=Mbicy
-	dynasty=1009990189
-	dna="idlcgldaokf"
-	culture=taino religion=animism
-	martial=7 diplomacy=4 stewardship=8 intrigue=8 learning=4
-	add_trait=martial_cleric add_trait=ambitious add_trait=brave add_trait=honest add_trait=trusting 
-	add_trait=gregarious add_trait=arbitrary add_trait=possessed 
-	father=1019922211	#Wiwakaleme
-	1427.5.3={ birth=yes }
-	1484.10.19={ death=yes }
-}
-1019922215={
-	name=Arah
-	dynasty=1009990189
-	dna="kfkdglgkobf"
-	culture=taino religion=animism
-	martial=5 diplomacy=8 stewardship=4 intrigue=6 learning=6
-	add_trait=martial_cleric add_trait=gardener add_trait=cruel add_trait=content add_trait=wroth 
-	add_trait=envious 
-	father=1019922211	#Wiwakaleme
-	1431.2.22={ birth=yes }
-	1505.9.7={ death=yes }
-}
-1019922216={
-	name=Isani
-	female=yes
-	dynasty=1009990189
-	dna="nfllgancefl"
-	culture=taino religion=animism
-	father=1019922211	#Wiwakaleme
-	1436.11.19={ birth=yes }
-	1512.8.8={ death=yes }
-}
-1019922217={
+1019922130={
 	name=Pirijá
 	dynasty=1009990190
-	dna="fbalgjlkpbp"
-	culture=taino religion=animism
-	martial=5 diplomacy=7 stewardship=4 intrigue=4 learning=6
-	add_trait=misguided_warrior add_trait=cruel add_trait=brave add_trait=just add_trait=content 
+	culture=taino 
+	religion=zemiist
 	719.4.9={ birth=yes }
 	798.1.23={ death=yes }
 }
-1019922218={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="lbelgcldpcp"
-	culture=taino religion=animism
-	father=1019922217	#Pirijá
-	742.3.20={ birth=yes }
-	802.2.9={ death=yes }
-}
-1019922219={
+1019922131={
 	name=Toratora
 	dynasty=1009990190
-	dna="fbaleopohca"
-	culture=taino religion=animism
-	martial=6 diplomacy=8 stewardship=5 intrigue=8 learning=8
-	add_trait=martial_cleric add_trait=charitable add_trait=wroth add_trait=kind add_trait=arbitrary 
-	father=1019922217	#Pirijá
+	culture=taino 
+	religion=zemiist
+	father=1019922130	#Pirijá
 	747.5.17={ birth=yes }
 	799.7.26={ death=yes }
 }
-1019922220={
-	name=Pirijá
-	dynasty=1009990190
-	dna="fgalgjmkpkp"
-	culture=taino religion=animism
-	martial=8 diplomacy=5 stewardship=8 intrigue=8 learning=7
-	add_trait=midas_touched add_trait=cruel add_trait=trusting add_trait=charitable add_trait=envious 
-	add_trait=depressed 
-	father=1019922217	#Pirijá
-	749.2.13={ birth=yes }
-	817.8.23={ death=yes }
-}
-1019922221={
-	name=Isani
-	female=yes
-	dynasty=1009990190
-	dna="lbalhkfgfmj"
-	culture=taino religion=animism
-	father=1019922217	#Pirijá
-	754.11.24={ birth=yes }
-	848.9.15={ death=yes }
-}
-1019922222={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="fcjlkilkpkp"
-	culture=taino religion=animism
-	father=1019922217	#Pirijá
-	760.10.27={ birth=yes }
-	815.9.14={ death=yes }
-}
-1019922223={
+1019922132={
 	name=Mbicy
 	dynasty=1009990190
-	dna="hfafeemopce"
-	culture=taino religion=animism
-	martial=4 diplomacy=5 stewardship=6 intrigue=7 learning=7
-	add_trait=charismatic_negotiator add_trait=zealous add_trait=temperate add_trait=gregarious add_trait=cruel 
-	father=1019922219	#Toratora
+	culture=taino 
+	religion=zemiist
+	father=1019922131	#Toratora
 	767.3.18={ birth=yes }
 	841.5.7={ death=yes }
 }
-1019922224={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="fboldonodcp"
-	culture=taino religion=animism
-	father=1019922219	#Toratora
-	772.5.16={ birth=yes }
-	820.10.19={ death=yes }
-}
-1019922225={
-	name=Pirijá
-	dynasty=1009990190
-	dna="mbjlfphkhca"
-	culture=taino religion=animism
-	martial=8 diplomacy=5 stewardship=6 intrigue=4 learning=7
-	add_trait=midas_touched add_trait=content add_trait=just add_trait=diligent add_trait=charitable 
-	father=1019922219	#Toratora
-	778.11.21={ birth=yes }
-	855.2.1={ death=yes }
-}
-1019922226={
-	name=Toratora
-	dynasty=1009990190
-	dna="dloljopbhpa"
-	culture=taino religion=animism
-	martial=8 diplomacy=4 stewardship=6 intrigue=7 learning=4
-	add_trait=flamboyant_schemer add_trait=scholar add_trait=slothful add_trait=chaste add_trait=wroth 
-	add_trait=content add_trait=deceitful add_trait=just 
-	father=1019922219	#Toratora
-	782.1.27={ birth=yes }
-	839.4.14={ death=yes }
-}
-1019922227={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="fkaleppohbg"
-	culture=taino religion=animism
-	father=1019922219	#Toratora
-	785.3.25={ birth=yes }
-	841.11.19={ death=yes }
-}
-1019922228={
+1019922133={
 	name=Gunfuli
 	dynasty=1009990190
-	dna="beefegkipik"
-	culture=taino religion=animism
-	martial=4 diplomacy=7 stewardship=7 intrigue=6 learning=8
-	add_trait=intricate_webweaver add_trait=gregarious add_trait=ambitious add_trait=diligent add_trait=charitable 
-	add_trait=cruel 
-	father=1019922223	#Mbicy
+	culture=taino 
+	religion=zemiist
+	father=1019922132	#Mbicy
 	791.7.14={ birth=yes }
 	843.12.2={ death=yes }
 }
-1019922229={
-	name=Wiwakaleme
-	dynasty=1009990190
-	dna="hfaaaepbncm"
-	culture=taino religion=animism
-	martial=6 diplomacy=8 stewardship=5 intrigue=8 learning=8
-	add_trait=tough_soldier add_trait=ambitious add_trait=cruel 
-	father=1019922223	#Mbicy
-	798.10.1={ birth=yes }
-	885.9.21={ death=yes }
-}
-1019922230={
-	name=Shoko
-	dynasty=1009990190
-	dna="hfbfeemobco"
-	culture=taino religion=animism
-	martial=6 diplomacy=7 stewardship=8 intrigue=7 learning=8
-	add_trait=misguided_warrior add_trait=arbitrary add_trait=ambitious add_trait=trusting add_trait=envious 
-	father=1019922223	#Mbicy
-	804.7.4={ birth=yes }
-	863.8.10={ death=yes }
-}
-1019922231={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="oglobeflpik"
-	culture=taino religion=animism
-	father=1019922228	#Gunfuli
-	823.9.27={ birth=yes }
-	895.11.21={ death=yes }
-}
-1019922232={
+1019922134={
 	name=Laliwa
 	dynasty=1009990190
-	dna="ocelembnpok"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=6 intrigue=5 learning=4
-	add_trait=flamboyant_schemer add_trait=impaler add_trait=temperate add_trait=diligent add_trait=content 
-	father=1019922228	#Gunfuli
+	culture=taino 
+	religion=zemiist
+	father=1019922133	#Gunfuli
 	830.4.16={ birth=yes }
 	902.12.6={ death=yes }
 }
-1019922233={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="bmefegkibik"
-	culture=taino religion=animism
-	father=1019922228	#Gunfuli
-	834.1.21={ birth=yes }
-	924.12.11={ death=yes }
-}
-1019922234={
-	name=Haubariria
-	dynasty=1009990190
-	dna="beefpgnieik"
-	culture=taino religion=animism
-	martial=4 diplomacy=7 stewardship=6 intrigue=5 learning=4
-	add_trait=mastermind_theologian add_trait=gregarious add_trait=lustful add_trait=content add_trait=humble 
-	father=1019922228	#Gunfuli
-	838.10.14={ birth=yes }
-	927.2.14={ death=yes }
-}
-1019922235={
+1019922135={
 	name=Gunfuli
 	dynasty=1009990190
-	dna="chbbkilnlod"
-	culture=taino religion=animism
-	martial=7 diplomacy=6 stewardship=8 intrigue=6 learning=4
-	add_trait=scholarly_theologian add_trait=diligent add_trait=zealous add_trait=content add_trait=ill 
-	father=1019922232	#Laliwa
+	culture=taino 
+	religion=zemiist
+	father=1019922134	#Laliwa
 	855.3.24={ birth=yes }
 	933.5.8={ death=yes }
 }
-1019922236={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="dcelfmbmpoa"
-	culture=taino religion=animism
-	father=1019922232	#Laliwa
-	860.4.2={ birth=yes }
-	942.6.18={ death=yes }
-}
-1019922237={
-	name=Takuiba
-	female=yes
-	dynasty=1009990190
-	dna="khbbknanlhk"
-	culture=taino religion=animism
-	father=1019922235	#Gunfuli
-	882.2.13={ birth=yes }
-	942.6.19={ death=yes }
-}
-1019922238={
+1019922136={
 	name=Haubariria
 	dynasty=1009990190
-	dna="chbbjiklloo"
-	culture=taino religion=animism
-	martial=8 diplomacy=8 stewardship=5 intrigue=6 learning=6
-	add_trait=detached_priest add_trait=slothful add_trait=content add_trait=honest add_trait=chaste 
-	add_trait=kind add_trait=wounded 
-	father=1019922235	#Gunfuli
+	culture=taino 
+	religion=zemiist
+	father=1019922135	#Gunfuli
 	886.12.9={ birth=yes }
 	961.5.9={ death=yes }
 }
-1019922239={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="cebbjilnaog"
-	culture=taino religion=animism
-	father=1019922235	#Gunfuli
-	891.5.8={ birth=yes }
-	950.4.3={ death=yes }
-}
-1019922240={
+1019922137={
 	name=Ebedimu
 	dynasty=1009990190
-	dna="obdognfblof"
-	culture=taino religion=animism
-	martial=5 diplomacy=5 stewardship=8 intrigue=5 learning=8
-	add_trait=detached_priest add_trait=gardener add_trait=gluttonous add_trait=kind add_trait=slothful 
-	add_trait=deceitful add_trait=brave 
-	father=1019922238	#Haubariria
+	culture=taino 
+	religion=zemiist
+	father=1019922136	#Haubariria
 	918.5.10={ birth=yes }
 	994.10.18={ death=yes }
 }
-1019922241={
-	name=Takuiba
-	female=yes
-	dynasty=1009990190
-	dna="jhbbdniblmp"
-	culture=taino religion=animism
-	father=1019922238	#Haubariria
-	923.5.4={ birth=yes }
-	992.1.13={ death=yes }
-}
-1019922242={
-	name=Takuiba
-	female=yes
-	dynasty=1009990190
-	dna="ipiamfelloo"
-	culture=taino religion=animism
-	father=1019922238	#Haubariria
-	931.9.6={ birth=yes }
-	976.11.4={ death=yes }
-}
-1019922243={
+1019922138={
 	name=Kaigouchi
 	dynasty=1009990190
-	dna="ccamgndbloi"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=6 intrigue=5 learning=4
-	add_trait=midas_touched add_trait=brave add_trait=envious add_trait=cruel add_trait=just 
-	father=1019922240	#Ebedimu
+	culture=taino 
+	religion=zemiist
+	father=1019922137	#Ebedimu
 	944.2.12={ birth=yes }
 	1027.5.17={ death=yes }
 }
-1019922244={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="cbdjilfblof"
-	culture=taino religion=animism
-	father=1019922240	#Ebedimu
-	950.12.1={ birth=yes }
-	1034.6.29={ death=yes }
-}
-1019922245={
-	name=Gunfuli
-	dynasty=1009990190
-	dna="obdagmnblob"
-	culture=taino religion=animism
-	martial=5 diplomacy=6 stewardship=5 intrigue=6 learning=6
-	add_trait=intricate_webweaver add_trait=patient add_trait=deceitful add_trait=proud add_trait=gregarious 
-	father=1019922240	#Ebedimu
-	955.11.16={ birth=yes }
-	1025.9.18={ death=yes }
-}
-1019922246={
+1019922139={
 	name=Amorotahe
 	dynasty=1009990190
-	dna="ccnipfdbkjc"
-	culture=taino religion=animism
-	martial=6 diplomacy=5 stewardship=5 intrigue=4 learning=6
-	add_trait=naive_appeaser add_trait=envious add_trait=content add_trait=gregarious add_trait=craven 
-	add_trait=honest add_trait=temperate 
-	father=1019922243	#Kaigouchi
+	culture=taino 
+	religion=zemiist
+	father=1019922138	#Kaigouchi
 	964.2.2={ birth=yes }
 	1048.12.31={ death=yes }
 }
-1019922247={
-	name=Isani
-	female=yes
-	dynasty=1009990190
-	dna="hiakpjdblol"
-	culture=taino religion=animism
-	father=1019922243	#Kaigouchi
-	972.1.2={ birth=yes }
-	1047.11.28={ death=yes }
-}
-1019922248={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="chalgnibloi"
-	culture=taino religion=animism
-	father=1019922243	#Kaigouchi
-	974.7.13={ birth=yes }
-	1041.9.4={ death=yes }
-}
-1019922249={
+1019922140={
 	name=Ebedimu
 	dynasty=1009990190
-	dna="chnmpflocje"
-	culture=taino religion=animism
-	martial=8 diplomacy=6 stewardship=6 intrigue=5 learning=8
-	add_trait=naive_appeaser add_trait=shy add_trait=patient add_trait=lustful 
-	father=1019922246	#Amorotahe
+	culture=taino 
+	religion=zemiist
+	father=1019922139	#Amorotahe
 	989.8.26={ birth=yes }
 	1044.8.18={ death=yes }
 }
-1019922250={
+1019922141={
 	name=Haubariria
 	dynasty=1009990190
-	dna="donbpndbkjp"
-	culture=taino religion=animism
-	martial=8 diplomacy=4 stewardship=6 intrigue=7 learning=4
-	add_trait=intricate_webweaver add_trait=charitable add_trait=zealous add_trait=gluttonous add_trait=humble 
-	father=1019922246	#Amorotahe
-	994.9.26={ birth=yes }
-	1060.3.7={ death=yes }
-}
-1019922251={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="ccganhgbbek"
-	culture=taino religion=animism
-	father=1019922246	#Amorotahe
-	999.8.7={ birth=yes }
-	1045.6.28={ death=yes }
-}
-1019922252={
-	name=Áhari
-	dynasty=1009990190
-	dna="copmpfdbjfc"
-	culture=taino religion=animism
-	martial=6 diplomacy=7 stewardship=5 intrigue=8 learning=8
-	add_trait=flamboyant_schemer add_trait=scholar add_trait=brave add_trait=cynical add_trait=slothful 
-	father=1019922246	#Amorotahe
-	1001.8.10={ birth=yes }
-	1077.1.22={ death=yes }
-}
-1019922253={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="amkikfdbkfl"
-	culture=taino religion=animism
-	father=1019922246	#Amorotahe
-	1006.7.6={ birth=yes }
-	1073.7.8={ death=yes }
-}
-1019922254={
-	name=Haubariria
-	dynasty=1009990190
-	dna="cedmkjlbjbc"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=4 intrigue=8 learning=7
-	add_trait=detached_priest add_trait=humble add_trait=gregarious add_trait=content add_trait=greedy 
-	father=1019922249	#Ebedimu
+	culture=taino 
+	religion=zemiist
+	father=1019922140	#Ebedimu
 	1012.9.24={ birth=yes }
 	1095.7.8={ death=yes }
 }
-1019922255={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="cknahoioojf"
-	culture=taino religion=animism
-	father=1019922249	#Ebedimu
-	1015.9.14={ birth=yes }
-	1071.7.30={ death=yes }
-}
-1019922256={
-	name=Isani
-	female=yes
-	dynasty=1009990190
-	dna="conahojbnjm"
-	culture=taino religion=animism
-	father=1019922249	#Ebedimu
-	1020.11.5={ birth=yes }
-	1079.8.18={ death=yes }
-}
-1019922257={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="ohhmpnlanbe"
-	culture=taino religion=animism
-	father=1019922249	#Ebedimu
-	1022.7.12={ birth=yes }
-	1101.11.11={ death=yes }
-}
-1019922258={
-	name=Takuiba
-	female=yes
-	dynasty=1009990190
-	dna="bfdihbgbpbc"
-	culture=taino religion=animism
-	father=1019922254	#Haubariria
-	1036.10.18={ birth=yes }
-	1107.1.13={ death=yes }
-}
-1019922259={
+1019922142={
 	name=Áhari
 	dynasty=1009990190
-	dna="cedakjlbpij"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=8 intrigue=7 learning=7
-	add_trait=charismatic_negotiator add_trait=honest add_trait=arbitrary add_trait=charitable add_trait=slothful 
-	add_trait=proud add_trait=content 
-	father=1019922254	#Haubariria
+	culture=taino 
+	religion=zemiist
+	father=1019922141	#Haubariria
 	1039.4.24={ birth=yes }
 	1125.8.8={ death=yes }
 }
-1019922260={
-	name=Isani
-	female=yes
-	dynasty=1009990190
-	dna="jffmklibinc"
-	culture=taino religion=animism
-	father=1019922254	#Haubariria
-	1042.8.17={ birth=yes }
-	1129.4.20={ death=yes }
-}
-1019922261={
-	name=Wiwakaleme
-	dynasty=1009990190
-	dna="cellkhbfmbe"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=7 intrigue=5 learning=8
-	add_trait=flamboyant_schemer add_trait=gregarious add_trait=zealous add_trait=charitable 
-	father=1019922254	#Haubariria
-	1047.11.5={ birth=yes }
-	1131.8.22={ death=yes }
-}
-1019922262={
-	name=Arata
-	dynasty=1009990190
-	dna="hgdlkjmbjcc"
-	culture=taino religion=animism
-	martial=4 diplomacy=5 stewardship=5 intrigue=4 learning=5
-	add_trait=scholarly_theologian add_trait=cynical add_trait=patient add_trait=gregarious add_trait=ambitious 
-	father=1019922254	#Haubariria
-	1052.9.25={ birth=yes }
-	1095.6.22={ death=yes }
-}
-1019922263={
-	name=Toratora
-	dynasty=1009990190
-	dna="cfdaijlfpid"
-	culture=taino religion=animism
-	martial=5 diplomacy=8 stewardship=6 intrigue=8 learning=8
-	add_trait=midas_touched add_trait=arbitrary add_trait=trusting add_trait=temperate add_trait=wroth 
-	add_trait=deceitful add_trait=lunatic add_trait=clubfooted 
-	father=1019922259	#Áhari
-	1070.5.2={ birth=yes }
-	1127.7.14={ death=yes }
-}
-1019922264={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="endagglbpik"
-	culture=taino religion=animism
-	father=1019922259	#Áhari
-	1075.2.7={ birth=yes }
-	1154.3.25={ death=yes }
-}
-1019922265={
-	name=Pirijá
-	dynasty=1009990190
-	dna="iepjkjkbpnj"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=6 intrigue=7 learning=8
-	add_trait=flamboyant_schemer add_trait=hedonist add_trait=patient add_trait=ambitious add_trait=cruel 
-	add_trait=temperate 
-	father=1019922259	#Áhari
-	1078.7.17={ birth=yes }
-	1139.9.26={ death=yes }
-}
-1019922266={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="cedakblnpaj"
-	culture=taino religion=animism
-	father=1019922259	#Áhari
-	1085.7.13={ birth=yes }
-	1169.4.2={ death=yes }
-}
-1019922267={
-	name=Pirijá
-	dynasty=1009990190
-	dna="ciomjdafpil"
-	culture=taino religion=animism
-	martial=5 diplomacy=5 stewardship=5 intrigue=5 learning=4
-	add_trait=charismatic_negotiator add_trait=kind add_trait=cruel add_trait=trusting add_trait=gluttonous 
-	father=1019922263	#Toratora
-	1095.10.10={ birth=yes }
-	1175.8.9={ death=yes }
-}
-1019922268={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="jfdaodpfloe"
-	culture=taino religion=animism
-	father=1019922263	#Toratora
-	1100.8.6={ birth=yes }
-	1177.4.9={ death=yes }
-}
-1019922269={
-	name=Áhari
-	dynasty=1009990190
-	dna="ciomjdajpdk"
-	culture=taino religion=animism
-	martial=8 diplomacy=4 stewardship=6 intrigue=6 learning=8
-	add_trait=intricate_webweaver add_trait=greedy add_trait=trusting add_trait=lustful 
-	father=1019922267	#Pirijá
-	1121.8.11={ birth=yes }
-	1171.11.20={ death=yes }
-}
-1019922270={
-	name=Takuiba
-	female=yes
-	dynasty=1009990190
-	dna="chocjfjjkdl"
-	culture=taino religion=animism
-	father=1019922267	#Pirijá
-	1124.9.1={ birth=yes }
-	1197.8.11={ death=yes }
-}
-1019922271={
-	name=Kaigouchi
-	dynasty=1009990190
-	dna="kioofegfpia"
-	culture=taino religion=animism
-	martial=8 diplomacy=6 stewardship=6 intrigue=6 learning=8
-	add_trait=flamboyant_schemer add_trait=brave add_trait=content add_trait=kind add_trait=slothful 
-	add_trait=ill 
-	father=1019922267	#Pirijá
-	1128.3.19={ birth=yes }
-	1201.7.22={ death=yes }
-}
-1019922272={
-	name=Mbicy
-	dynasty=1009990190
-	dna="ciomjhdfccl"
-	culture=taino religion=animism
-	martial=5 diplomacy=7 stewardship=7 intrigue=8 learning=4
-	add_trait=elusive_shadow add_trait=arbitrary add_trait=trusting add_trait=deceitful add_trait=zealous 
-	add_trait=possessed 
-	father=1019922267	#Pirijá
-	1133.9.6={ birth=yes }
-	1227.7.3={ death=yes }
-}
-1019922273={
-	name=Takuiba
-	female=yes
-	dynasty=1009990190
-	dna="cdimjdefpin"
-	culture=taino religion=animism
-	father=1019922267	#Pirijá
-	1139.1.27={ birth=yes }
-	1210.10.1={ death=yes }
-}
-1019922274={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="ciofmdfffii"
-	culture=taino religion=animism
-	father=1019922267	#Pirijá
-	1143.7.25={ birth=yes }
-	1206.10.29={ death=yes }
-}
-1019922275={
-	name=Arah
-	dynasty=1009990190
-	dna="cejmjnojida"
-	culture=taino religion=animism
-	martial=4 diplomacy=5 stewardship=5 intrigue=8 learning=4
-	add_trait=charismatic_negotiator add_trait=charitable add_trait=craven add_trait=cruel add_trait=deceitful 
-	father=1019922269	#Áhari
-	1149.10.11={ birth=yes }
-	1233.9.12={ death=yes }
-}
-1019922276={
-	name=Pirijá
-	dynasty=1009990190
-	dna="gkoigdajpdk"
-	culture=taino religion=animism
-	martial=8 diplomacy=6 stewardship=8 intrigue=8 learning=6
-	add_trait=detached_priest add_trait=humble add_trait=chaste add_trait=ambitious add_trait=trusting 
-	add_trait=honest add_trait=cynical add_trait=ill 
-	father=1019922269	#Áhari
-	1153.4.14={ birth=yes }
-	1207.8.20={ death=yes }
-}
-1019922277={
-	name=Mbicy
-	dynasty=1009990190
-	dna="chgnjhanpdk"
-	culture=taino religion=animism
-	martial=8 diplomacy=5 stewardship=8 intrigue=8 learning=5
-	add_trait=charismatic_negotiator add_trait=zealous add_trait=gluttonous add_trait=chaste add_trait=craven 
-	add_trait=stutter 
-	father=1019922269	#Áhari
-	1158.12.2={ birth=yes }
-	1228.7.16={ death=yes }
-}
-1019922278={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="haajpdihplk"
-	culture=taino religion=animism
-	father=1019922269	#Áhari
-	1161.4.23={ birth=yes }
-	1214.11.22={ death=yes }
-}
-1019922279={
-	name=Gunfuli
-	dynasty=1009990190
-	dna="cioojdpjpik"
-	culture=taino religion=animism
-	martial=6 diplomacy=7 stewardship=6 intrigue=7 learning=8
-	add_trait=charismatic_negotiator add_trait=celibate add_trait=arbitrary add_trait=cynical add_trait=wroth 
-	add_trait=humble add_trait=deceitful add_trait=paranoid 
-	father=1019922269	#Áhari
-	1166.3.11={ birth=yes }
-	1219.6.24={ death=yes }
-}
-1019922280={
-	name=Pirijá
-	dynasty=1009990190
-	dna="cejnolhjija"
-	culture=taino religion=animism
-	martial=5 diplomacy=6 stewardship=7 intrigue=8 learning=8
-	add_trait=grey_eminence add_trait=gluttonous add_trait=cruel add_trait=ambitious add_trait=patient 
-	add_trait=charitable 
-	father=1019922275	#Arah
-	1177.4.5={ birth=yes }
-	1242.9.13={ death=yes }
-}
-1019922281={
-	name=Wiwakaleme
-	dynasty=1009990190
-	dna="mekmjnpjjdf"
-	culture=taino religion=animism
-	martial=5 diplomacy=5 stewardship=4 intrigue=4 learning=7
-	add_trait=scholarly_theologian add_trait=brave add_trait=proud add_trait=honest 
-	father=1019922275	#Arah
-	1180.10.16={ birth=yes }
-	1258.10.17={ death=yes }
-}
-1019922282={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="peimjngjiml"
-	culture=taino religion=animism
-	father=1019922275	#Arah
-	1186.5.13={ birth=yes }
-	1261.8.26={ death=yes }
-}
-1019922283={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="kfnmjnhjinp"
-	culture=taino religion=animism
-	father=1019922275	#Arah
-	1191.8.7={ birth=yes }
-	1251.1.14={ death=yes }
-}
-1019922284={
-	name=Shoko
-	dynasty=1009990190
-	dna="cdeopnfjada"
-	culture=taino religion=animism
-	martial=4 diplomacy=5 stewardship=8 intrigue=5 learning=7
-	add_trait=thrifty_clerk add_trait=slothful add_trait=wroth add_trait=just add_trait=humble 
-	add_trait=lustful 
-	father=1019922275	#Arah
-	1198.3.13={ birth=yes }
-	1254.2.8={ death=yes }
-}
-1019922285={
-	name=Isani
-	female=yes
-	dynasty=1009990190
-	dna="lfhmanoppea"
-	culture=taino religion=animism
-	father=1019922275	#Arah
-	1203.7.16={ birth=yes }
-	1257.1.11={ death=yes }
-}
-1019922286={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="kejbenofioa"
-	culture=taino religion=animism
-	father=1019922275	#Arah
-	1205.8.23={ birth=yes }
-	1279.4.22={ death=yes }
-}
-1019922287={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="decnclhdpka"
-	culture=taino religion=animism
-	father=1019922280	#Pirijá
-	1200.9.17={ birth=yes }
-	1289.9.11={ death=yes }
-}
-1019922288={
-	name=Amorotahe
-	dynasty=1009990190
-	dna="cmdnolhgija"
-	culture=taino religion=animism
-	martial=4 diplomacy=4 stewardship=8 intrigue=6 learning=7
-	add_trait=detached_priest add_trait=deceitful add_trait=shy add_trait=paranoid 
-	father=1019922280	#Pirijá
-	1206.3.9={ birth=yes }
-	1263.5.17={ death=yes }
-}
-1019922289={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="cfdnolhnijj"
-	culture=taino religion=animism
-	father=1019922288	#Amorotahe
-	1237.11.24={ birth=yes }
-	1304.2.24={ death=yes }
-}
-1019922290={
-	name=Ilumani
-	dynasty=1009990190
-	dna="ckmlolddipa"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=8 intrigue=8 learning=4
-	add_trait=grey_eminence add_trait=greedy add_trait=temperate add_trait=trusting add_trait=drunkard 
-	father=1019922288	#Amorotahe
-	1242.3.19={ birth=yes }
-	1329.11.4={ death=yes }
-}
-1019922291={
-	name=Mbicy
-	dynasty=1009990190
-	dna="gkldoladiia"
-	culture=taino religion=animism
-	martial=5 diplomacy=6 stewardship=5 intrigue=7 learning=4
-	add_trait=elusive_shadow add_trait=cruel add_trait=honest add_trait=greedy add_trait=lustful 
-	add_trait=kind 
-	father=1019922290	#Ilumani
-	1265.11.23={ birth=yes }
-	1313.2.2={ death=yes }
-}
-1019922292={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="edmhjlajijo"
-	culture=taino religion=animism
-	father=1019922290	#Ilumani
-	1272.1.21={ birth=yes }
-	1354.2.24={ death=yes }
-}
-1019922293={
-	name=Arata
-	dynasty=1009990190
-	dna="ekmlblpdiea"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=7 intrigue=6 learning=7
-	add_trait=charismatic_negotiator add_trait=proud add_trait=trusting add_trait=just add_trait=deceitful 
-	add_trait=brave 
-	father=1019922290	#Ilumani
-	1275.7.24={ birth=yes }
-	1349.10.9={ death=yes }
-}
-1019922294={
-	name=Isani
-	female=yes
-	dynasty=1009990190
-	dna="ckdjidddmbg"
-	culture=taino religion=animism
-	father=1019922290	#Ilumani
-	1279.3.5={ birth=yes }
-	1357.11.27={ death=yes }
-}
-1019922295={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="ckclolfdipg"
-	culture=taino religion=animism
-	father=1019922290	#Ilumani
-	1284.8.5={ birth=yes }
-	1348.1.10={ death=yes }
-}
-1019922296={
-	name=Pirijá
-	dynasty=1009990190
-	dna="nmldllakpib"
-	culture=taino religion=animism
-	martial=8 diplomacy=5 stewardship=5 intrigue=8 learning=6
-	add_trait=scholarly_theologian add_trait=slothful add_trait=cynical add_trait=patient add_trait=temperate 
-	add_trait=clubfooted 
-	father=1019922291	#Mbicy
-	1286.4.8={ birth=yes }
-	1361.5.26={ death=yes }
-}
-1019922297={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="okldgebdica"
-	culture=taino religion=animism
-	father=1019922291	#Mbicy
-	1294.11.6={ birth=yes }
-	1357.8.25={ death=yes }
-}
-1019922298={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="geljliaehea"
-	culture=taino religion=animism
-	father=1019922291	#Mbicy
-	1299.1.26={ birth=yes }
-	1371.1.16={ death=yes }
-}
-1019922299={
-	name=Arata
-	dynasty=1009990190
-	dna="jfolilakplb"
-	culture=taino religion=animism
-	martial=6 diplomacy=4 stewardship=7 intrigue=6 learning=5
-	add_trait=charismatic_negotiator add_trait=scholar add_trait=cynical add_trait=gluttonous add_trait=cruel 
-	add_trait=paranoid add_trait=charitable add_trait=slothful 
-	father=1019922296	#Pirijá
-	1305.3.26={ birth=yes }
-	1360.1.26={ death=yes }
-}
-1019922300={
-	name=Shoko
-	dynasty=1009990190
-	dna="mhadflakmib"
-	culture=taino religion=animism
-	martial=5 diplomacy=7 stewardship=5 intrigue=4 learning=5
-	add_trait=intricate_webweaver add_trait=shy add_trait=diligent add_trait=zealous add_trait=humble 
-	father=1019922296	#Pirijá
-	1309.2.16={ birth=yes }
-	1384.6.7={ death=yes }
-}
-1019922301={
-	name=Gunfuli
-	dynasty=1009990190
-	dna="nhlclllkgcb"
-	culture=taino religion=animism
-	martial=5 diplomacy=7 stewardship=4 intrigue=7 learning=6
-	add_trait=misguided_warrior add_trait=celibate add_trait=just add_trait=greedy add_trait=ill 
-	add_trait=lunatic 
-	father=1019922296	#Pirijá
-	1315.6.27={ birth=yes }
-	1374.5.7={ death=yes }
-}
-1019922302={
-	name=Takuiba
-	female=yes
-	dynasty=1009990190
-	dna="cmplllhknol"
-	culture=taino religion=animism
-	father=1019922296	#Pirijá
-	1320.2.3={ birth=yes }
-	1406.1.5={ death=yes }
-}
-1019922303={
-	name=Kaigouchi
-	dynasty=1009990190
-	dna="ecglibaeple"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=7 intrigue=4 learning=8
-	add_trait=martial_cleric add_trait=temperate add_trait=deceitful add_trait=gregarious add_trait=diligent 
-	add_trait=trusting add_trait=chaste add_trait=stressed add_trait=lunatic 
-	father=1019922299	#Arata
-	1324.2.15={ birth=yes }
-	1389.9.9={ death=yes }
-}
-1019922304={
-	name=Twengga
-	female=yes
-	dynasty=1009990190
-	dna="jgfiidakpjj"
-	culture=taino religion=animism
-	father=1019922299	#Arata
-	1327.11.8={ birth=yes }
-	1411.2.2={ death=yes }
-}
-1019922305={
-	name=Isani
-	female=yes
-	dynasty=1009990190
-	dna="ploaikdkpmc"
-	culture=taino religion=animism
-	father=1019922299	#Arata
-	1331.6.3={ birth=yes }
-	1405.7.17={ death=yes }
-}
-1019922306={
-	name=Hayá
-	female=yes
-	dynasty=1009990190
-	dna="ifolihkkmle"
-	culture=taino religion=animism
-	father=1019922299	#Arata
-	1338.12.21={ birth=yes }
-	1402.6.24={ death=yes }
-}
-1019922307={
-	name=Wiwakaleme
-	dynasty=1009990190
-	dna="hccfabaepae"
-	culture=taino religion=animism
-	martial=7 diplomacy=4 stewardship=5 intrigue=5 learning=6
-	add_trait=charismatic_negotiator add_trait=gluttonous add_trait=patient add_trait=trusting 
-	father=1019922303	#Kaigouchi
-	1355.1.5={ birth=yes }
-	1431.11.19={ death=yes }
-}
-1019922308={
-	name=Arata
-	dynasty=1009990190
-	dna="kcgjicdepap"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=8 intrigue=6 learning=7
-	add_trait=flamboyant_schemer add_trait=deceitful add_trait=shy add_trait=slothful add_trait=genius 
-	father=1019922303	#Kaigouchi
-	1359.4.9={ birth=yes }
-	1411.1.7={ death=yes }
-}
+
 1019922309={
 	name=Pirijá
 	dynasty=1009990191
-	dna="flngjnhneee"
-	culture=taino religion=animism
-	martial=8 diplomacy=4 stewardship=6 intrigue=7 learning=8
-	add_trait=flamboyant_schemer add_trait=cruel add_trait=arbitrary add_trait=wroth add_trait=charitable 
-	add_trait=lunatic 
+	culture=taino 
+	religion=animism
 	720.4.6={ birth=yes }
 	788.12.28={ death=yes }
 }
 1019922310={
 	name=Laliwa
 	dynasty=1009990191
-	dna="glndjnhbmek"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=5 intrigue=6 learning=5
-	add_trait=naive_appeaser add_trait=temperate add_trait=trusting 
+	culture=taino 
+	religion=animism
 	father=1019922309	#Pirijá
 	746.5.21={ birth=yes }
 	825.5.29={ death=yes }
 }
-1019922311={
-	name=Hayá
-	female=yes
-	dynasty=1009990191
-	dna="jcngjnhnpeh"
-	culture=taino religion=animism
-	father=1019922309	#Pirijá
-	749.2.27={ birth=yes }
-	821.11.5={ death=yes }
-}
-1019922312={
-	name=Arata
-	dynasty=1009990191
-	dna="fdnkpdhifme"
-	culture=taino religion=animism
-	martial=7 diplomacy=5 stewardship=4 intrigue=7 learning=8
-	add_trait=misguided_warrior add_trait=impaler add_trait=honest add_trait=diligent add_trait=paranoid 
-	add_trait=kind add_trait=content add_trait=craven 
-	father=1019922309	#Pirijá
-	753.7.7={ birth=yes }
-	811.5.19={ death=yes }
-}
-1019922313={
-	name=Áhari
-	dynasty=1009990191
-	dna="ngnejnhneee"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=7 intrigue=8 learning=6
-	add_trait=intricate_webweaver add_trait=content add_trait=patient add_trait=trusting add_trait=slothful 
-	father=1019922309	#Pirijá
-	760.8.1={ birth=yes }
-	817.4.13={ death=yes }
-}
-1019922314={
-	name=Takuiba
-	female=yes
-	dynasty=1009990191
-	dna="mpcfjnhbmek"
-	culture=taino religion=animism
-	father=1019922310	#Laliwa
-	778.10.24={ birth=yes }
-	863.5.24={ death=yes }
-}
 1019922315={
 	name=Toratora
 	dynasty=1009990191
-	dna="gjnljgjbele"
-	culture=taino religion=animism
-	martial=5 diplomacy=5 stewardship=5 intrigue=8 learning=8
-	add_trait=flamboyant_schemer add_trait=kind add_trait=deceitful add_trait=temperate add_trait=charitable 
+	culture=taino 
+	religion=animism
 	father=1019922310	#Laliwa
 	782.7.16={ birth=yes }
 	845.3.7={ death=yes }
 }
-1019922316={
-	name=Takuiba
-	female=yes
-	dynasty=1009990191
-	dna="clnbdnognak"
-	culture=taino religion=animism
-	father=1019922310	#Laliwa
-	786.6.16={ birth=yes }
-	854.8.22={ death=yes }
-}
-1019922317={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="pdndjnflmne"
-	culture=taino religion=animism
-	father=1019922310	#Laliwa
-	791.6.15={ birth=yes }
-	872.10.16={ death=yes }
-}
 1019922318={
 	name=Haubariria
 	dynasty=1009990191
-	dna="ghfgjpjbmkk"
-	culture=taino religion=animism
-	martial=6 diplomacy=5 stewardship=5 intrigue=5 learning=7
-	add_trait=skilled_tactician add_trait=greedy add_trait=shy add_trait=craven add_trait=arbitrary 
-	add_trait=deceitful add_trait=ill add_trait=possessed 
+	culture=taino 
+	religion=animism
 	father=1019922315	#Toratora
 	805.5.6={ birth=yes }
 	862.11.25={ death=yes }
 }
-1019922319={
-	name=Amorotahe
-	dynasty=1009990191
-	dna="ojnloggbelp"
-	culture=taino religion=animism
-	martial=6 diplomacy=5 stewardship=8 intrigue=4 learning=5
-	add_trait=misguided_warrior add_trait=cruel add_trait=kind add_trait=humble add_trait=cynical 
-	add_trait=wroth 
-	father=1019922315	#Toratora
-	809.4.19={ birth=yes }
-	871.6.8={ death=yes }
-}
-1019922320={
-	name=Wiwakaleme
-	dynasty=1009990191
-	dna="gjpljljbelm"
-	culture=taino religion=animism
-	martial=7 diplomacy=5 stewardship=5 intrigue=5 learning=7
-	add_trait=martial_cleric add_trait=content add_trait=just add_trait=diligent add_trait=envious 
-	add_trait=brave 
-	father=1019922315	#Toratora
-	815.7.4={ birth=yes }
-	884.10.5={ death=yes }
-}
-1019922321={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="gepcfpjbelf"
-	culture=taino religion=animism
-	father=1019922315	#Toratora
-	818.2.17={ birth=yes }
-	874.2.19={ death=yes }
-}
-1019922322={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="gjnldbfjeld"
-	culture=taino religion=animism
-	father=1019922315	#Toratora
-	821.9.14={ birth=yes }
-	888.11.23={ death=yes }
-}
-1019922323={
-	name=Wiwakaleme
-	dynasty=1009990191
-	dna="ojnhjgobebe"
-	culture=taino religion=animism
-	martial=4 diplomacy=5 stewardship=5 intrigue=5 learning=8
-	add_trait=charismatic_negotiator add_trait=kind add_trait=paranoid add_trait=shy add_trait=greedy 
-	add_trait=honest add_trait=temperate add_trait=stressed 
-	father=1019922315	#Toratora
-	827.11.18={ birth=yes }
-	894.9.15={ death=yes }
-}
-1019922324={
-	name=Isani
-	female=yes
-	dynasty=1009990191
-	dna="genligegefe"
-	culture=taino religion=animism
-	father=1019922315	#Toratora
-	833.1.3={ birth=yes }
-	910.10.11={ death=yes }
-}
 1019922325={
 	name=Gunfuli
 	dynasty=1009990191
-	dna="ghmojpjbmdk"
-	culture=taino religion=animism
-	martial=6 diplomacy=4 stewardship=7 intrigue=7 learning=7
-	add_trait=flamboyant_schemer add_trait=temperate add_trait=trusting add_trait=shy 
+	culture=taino 
+	religion=animism
 	father=1019922318	#Haubariria
 	827.8.23={ birth=yes }
 	884.9.3={ death=yes }
 }
-1019922326={
-	name=Isani
-	female=yes
-	dynasty=1009990191
-	dna="mhogjpjmjgk"
-	culture=taino religion=animism
-	father=1019922318	#Haubariria
-	834.6.4={ birth=yes }
-	904.4.16={ death=yes }
-}
-1019922327={
-	name=Arah
-	dynasty=1009990191
-	dna="focggpmbmkk"
-	culture=taino religion=animism
-	martial=4 diplomacy=6 stewardship=8 intrigue=4 learning=8
-	add_trait=intricate_webweaver add_trait=proud add_trait=kind add_trait=greedy add_trait=diligent 
-	father=1019922318	#Haubariria
-	840.2.3={ birth=yes }
-	905.11.6={ death=yes }
-}
-1019922328={
-	name=Takuiba
-	female=yes
-	dynasty=1009990191
-	dna="gkfbjelgmkk"
-	culture=taino religion=animism
-	father=1019922318	#Haubariria
-	848.5.19={ birth=yes }
-	903.11.20={ death=yes }
-}
 1019922329={
 	name=Ilumani
 	dynasty=1009990191
-	dna="ghmokpobmmk"
-	culture=taino religion=animism
-	martial=5 diplomacy=6 stewardship=8 intrigue=4 learning=6
-	add_trait=intricate_webweaver add_trait=gluttonous add_trait=charitable 
+	culture=taino 
+	religion=animism
 	father=1019922325	#Gunfuli
 	859.9.14={ birth=yes }
 	924.2.8={ death=yes }
 }
-1019922330={
-	name=Toratora
-	dynasty=1009990191
-	dna="afmbjpjpmdk"
-	culture=taino religion=animism
-	martial=4 diplomacy=4 stewardship=8 intrigue=7 learning=6
-	add_trait=naive_appeaser add_trait=poet add_trait=lustful add_trait=arbitrary add_trait=charitable 
-	add_trait=envious add_trait=cruel 
-	father=1019922325	#Gunfuli
-	865.4.19={ birth=yes }
-	945.2.10={ death=yes }
-}
-1019922331={
-	name=Takuiba
-	female=yes
-	dynasty=1009990191
-	dna="ihaojpjijik"
-	culture=taino religion=animism
-	father=1019922325	#Gunfuli
-	869.2.15={ birth=yes }
-	938.1.9={ death=yes }
-}
-1019922332={
-	name=Arata
-	dynasty=1009990191
-	dna="nhnodljbmki"
-	culture=taino religion=animism
-	martial=6 diplomacy=5 stewardship=4 intrigue=7 learning=5
-	add_trait=grey_eminence add_trait=content add_trait=lustful 
-	father=1019922325	#Gunfuli
-	876.5.21={ birth=yes }
-	950.7.1={ death=yes }
-}
-1019922333={
-	name=Isani
-	female=yes
-	dynasty=1009990191
-	dna="ahonnooclmf"
-	culture=taino religion=animism
-	father=1019922329	#Ilumani
-	880.5.23={ birth=yes }
-	955.4.8={ death=yes }
-}
 1019922334={
 	name=Kaigouchi
 	dynasty=1009990191
-	dna="gjmlkfmimcm"
-	culture=taino religion=animism
-	martial=5 diplomacy=7 stewardship=6 intrigue=5 learning=6
-	add_trait=intricate_webweaver add_trait=cruel add_trait=just add_trait=humble 
+	culture=taino 
+	religion=animism
 	father=1019922329	#Ilumani
 	884.3.26={ birth=yes }
 	962.10.7={ death=yes }
 }
-1019922335={
-	name=Takuiba
-	female=yes
-	dynasty=1009990191
-	dna="khfokeobnho"
-	culture=taino religion=animism
-	father=1019922329	#Ilumani
-	888.7.9={ birth=yes }
-	960.11.24={ death=yes }
-}
-1019922336={
-	name=Kaigouchi
-	dynasty=1009990191
-	dna="oelokpnbmnd"
-	culture=taino religion=animism
-	martial=6 diplomacy=7 stewardship=5 intrigue=8 learning=6
-	add_trait=intricate_webweaver add_trait=content add_trait=cruel add_trait=greedy add_trait=diligent 
-	add_trait=stressed 
-	father=1019922329	#Ilumani
-	895.7.3={ birth=yes }
-	963.1.17={ death=yes }
-}
 1019922337={
 	name=Kaigouchi
 	dynasty=1009990191
-	dna="gfhllnmimeb"
-	culture=taino religion=animism
-	martial=7 diplomacy=4 stewardship=8 intrigue=7 learning=7
-	add_trait=grey_eminence add_trait=mystic add_trait=craven add_trait=charitable add_trait=gluttonous 
+	culture=taino 
+	religion=animism
 	father=1019922334	#Kaigouchi
 	907.10.1={ birth=yes }
 	985.9.30={ death=yes }
 }
-1019922338={
-	name=Laliwa
-	dynasty=1009990191
-	dna="glclmfgimcm"
-	culture=taino religion=animism
-	martial=5 diplomacy=5 stewardship=6 intrigue=6 learning=4
-	add_trait=flamboyant_schemer add_trait=humble add_trait=chaste add_trait=temperate add_trait=diligent 
-	add_trait=cruel 
-	father=1019922334	#Kaigouchi
-	909.12.14={ birth=yes }
-	985.4.3={ death=yes }
-}
-1019922339={
-	name=Arata
-	dynasty=1009990191
-	dna="efndjfklncd"
-	culture=taino religion=animism
-	martial=8 diplomacy=8 stewardship=5 intrigue=8 learning=8
-	add_trait=midas_touched add_trait=diligent add_trait=greedy add_trait=arbitrary add_trait=wroth 
-	father=1019922334	#Kaigouchi
-	917.11.7={ birth=yes }
-	1005.1.25={ death=yes }
-}
 1019922340={
 	name=Mbicy
 	dynasty=1009990191
-	dna="gcilanmhmeb"
-	culture=taino religion=animism
-	martial=8 diplomacy=7 stewardship=7 intrigue=6 learning=6
-	add_trait=charismatic_negotiator add_trait=diligent add_trait=gregarious add_trait=charitable add_trait=humble 
-	add_trait=honest 
+	culture=taino 
+	religion=animism
 	father=1019922337	#Kaigouchi
 	929.1.18={ birth=yes }
 	1003.1.29={ death=yes }
 }
-1019922341={
-	name=Isani
-	female=yes
-	dynasty=1009990191
-	dna="ijcdlnjipeb"
-	culture=taino religion=animism
-	father=1019922337	#Kaigouchi
-	933.3.17={ birth=yes }
-	1005.11.1={ death=yes }
-}
 1019922342={
 	name=Gunfuli
 	dynasty=1009990191
-	dna="gailanmomeb"
-	culture=taino religion=animism
-	martial=5 diplomacy=5 stewardship=7 intrigue=6 learning=5
-	add_trait=flamboyant_schemer add_trait=hedonist add_trait=gluttonous add_trait=paranoid add_trait=diligent 
-	add_trait=ambitious add_trait=wroth 
+	culture=taino 
+	religion=animism
 	father=1019922340	#Mbicy
 	954.8.15={ birth=yes }
 	1008.1.22={ death=yes }
 }
-1019922343={
-	name=Gunfuli
-	dynasty=1009990191
-	dna="ncljanmhaen"
-	culture=taino religion=animism
-	martial=7 diplomacy=8 stewardship=4 intrigue=5 learning=6
-	add_trait=grey_eminence add_trait=paranoid add_trait=diligent add_trait=ambitious add_trait=arbitrary 
-	add_trait=shy add_trait=depressed 
-	father=1019922340	#Mbicy
-	961.11.4={ birth=yes }
-	1048.10.16={ death=yes }
-}
 1019922344={
 	name=Semén
 	dynasty=1009990191
-	dna="glicacmaabn"
-	culture=taino religion=animism
-	martial=4 diplomacy=7 stewardship=7 intrigue=5 learning=4
-	add_trait=midas_touched add_trait=cynical add_trait=paranoid add_trait=wroth add_trait=envious 
+	culture=taino 
+	religion=animism
 	father=1019922342	#Gunfuli
 	985.4.23={ birth=yes }
 	1070.11.27={ death=yes }
 }
-1019922345={
-	name=Toratora
-	dynasty=1009990191
-	dna="gjilbnjhkck"
-	culture=taino religion=animism
-	martial=5 diplomacy=5 stewardship=6 intrigue=4 learning=7
-	add_trait=grey_eminence add_trait=kind add_trait=brave add_trait=deceitful add_trait=depressed 
-	add_trait=stutter 
-	father=1019922342	#Gunfuli
-	990.6.27={ birth=yes }
-	1091.3.12={ death=yes }
-}
-1019922346={
-	name=Áhari
-	dynasty=1009990191
-	dna="gaahfngembg"
-	culture=taino religion=animism
-	martial=7 diplomacy=5 stewardship=7 intrigue=7 learning=5
-	add_trait=charismatic_negotiator add_trait=content add_trait=lustful add_trait=deceitful add_trait=envious 
-	father=1019922342	#Gunfuli
-	997.7.18={ birth=yes }
-	1074.4.12={ death=yes }
-}
-1019922347={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="gailanlomli"
-	culture=taino religion=animism
-	father=1019922342	#Gunfuli
-	1002.11.12={ birth=yes }
-	1083.7.25={ death=yes }
-}
 1019922348={
 	name=Laliwa
 	dynasty=1009990191
-	dna="mlipachaakn"
-	culture=taino religion=animism
-	martial=7 diplomacy=8 stewardship=7 intrigue=8 learning=5
-	add_trait=thrifty_clerk add_trait=paranoid add_trait=wroth add_trait=possessed 
+	culture=taino 
+	religion=animism
 	father=1019922344	#Semén
 	1010.7.14={ birth=yes }
 	1085.7.20={ death=yes }
 }
-1019922349={
-	name=Áhari
-	dynasty=1009990191
-	dna="ginohclombk"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=4 intrigue=8 learning=8
-	add_trait=flamboyant_schemer add_trait=lustful add_trait=humble add_trait=brave 
-	father=1019922344	#Semén
-	1016.1.5={ birth=yes }
-	1083.7.9={ death=yes }
-}
-1019922350={
-	name=Isani
-	female=yes
-	dynasty=1009990191
-	dna="glicabmlibn"
-	culture=taino religion=animism
-	father=1019922344	#Semén
-	1019.3.22={ birth=yes }
-	1103.7.4={ death=yes }
-}
 1019922351={
 	name=Haubariria
 	dynasty=1009990191
-	dna="alijaabalkn"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=6 intrigue=5 learning=8
-	add_trait=flamboyant_schemer add_trait=chaste add_trait=temperate add_trait=cynical 
+	culture=taino 
+	religion=animism
 	father=1019922348	#Laliwa
 	1034.1.16={ birth=yes }
 	1086.5.18={ death=yes }
 }
-1019922352={
-	name=Pirijá
-	dynasty=1009990191
-	dna="mcipechaapn"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=6 intrigue=4 learning=6
-	add_trait=charismatic_negotiator add_trait=diligent add_trait=lustful add_trait=greedy add_trait=proud 
-	father=1019922348	#Laliwa
-	1040.5.19={ birth=yes }
-	1121.6.16={ death=yes }
-}
-1019922353={
-	name=Hayá
-	female=yes
-	dynasty=1009990191
-	dna="mlllhchjfan"
-	culture=taino religion=animism
-	father=1019922348	#Laliwa
-	1044.9.19={ birth=yes }
-	1122.8.25={ death=yes }
-}
 1019922354={
 	name=Arah
 	dynasty=1009990191
-	dna="igijgalalkn"
-	culture=taino religion=animism
-	martial=6 diplomacy=7 stewardship=5 intrigue=6 learning=5
-	add_trait=flamboyant_schemer add_trait=cruel add_trait=trusting 
+	culture=taino 
+	religion=animism
 	father=1019922351	#Haubariria
 	1059.11.26={ birth=yes }
 	1117.6.4={ death=yes }
 }
-1019922355={
-	name=Haubariria
-	dynasty=1009990191
-	dna="alificbpken"
-	culture=taino religion=animism
-	martial=8 diplomacy=5 stewardship=6 intrigue=8 learning=4
-	add_trait=martial_cleric add_trait=hedonist add_trait=chaste add_trait=cruel add_trait=charitable 
-	add_trait=slothful add_trait=paranoid add_trait=gregarious add_trait=hunchback 
-	father=1019922351	#Haubariria
-	1065.5.26={ birth=yes }
-	1152.10.26={ death=yes }
-}
-1019922356={
-	name=Shoko
-	dynasty=1009990191
-	dna="aaiaofmhlhn"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=4 intrigue=6 learning=6
-	add_trait=mastermind_theologian add_trait=gregarious add_trait=honest add_trait=envious add_trait=temperate 
-	add_trait=cruel 
-	father=1019922351	#Haubariria
-	1070.12.20={ birth=yes }
-	1138.10.5={ death=yes }
-}
-1019922357={
-	name=Shoko
-	dynasty=1009990191
-	dna="alifaabmfkj"
-	culture=taino religion=animism
-	martial=6 diplomacy=5 stewardship=6 intrigue=4 learning=6
-	add_trait=thrifty_clerk add_trait=cruel add_trait=greedy add_trait=envious add_trait=arbitrary 
-	father=1019922351	#Haubariria
-	1076.3.3={ birth=yes }
-	1155.8.4={ death=yes }
-}
-1019922358={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="ihjjillalgm"
-	culture=taino religion=animism
-	father=1019922354	#Arah
-	1088.11.4={ birth=yes }
-	1145.5.29={ death=yes }
-}
-1019922359={
-	name=Wiwakaleme
-	dynasty=1009990191
-	dna="beljgplcfkb"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=8 intrigue=6 learning=8
-	add_trait=tough_soldier add_trait=gregarious add_trait=arbitrary add_trait=charitable 
-	father=1019922354	#Arah
-	1091.8.8={ birth=yes }
-	1143.9.8={ death=yes }
-}
-1019922360={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="idijgpoaopn"
-	culture=taino religion=animism
-	father=1019922354	#Arah
-	1097.8.18={ birth=yes }
-	1170.5.17={ death=yes }
-}
-1019922361={
-	name=Mbicy
-	dynasty=1009990191
-	dna="ogiegdldlln"
-	culture=taino religion=animism
-	martial=5 diplomacy=4 stewardship=8 intrigue=6 learning=5
-	add_trait=tough_soldier add_trait=cruel add_trait=temperate add_trait=charitable add_trait=envious 
-	add_trait=paranoid add_trait=ambitious 
-	father=1019922354	#Arah
-	1100.10.25={ birth=yes }
-	1182.4.9={ death=yes }
-}
-1019922362={
-	name=Kaigouchi
-	dynasty=1009990191
-	dna="lmiegaldbpb"
-	culture=taino religion=animism
-	martial=4 diplomacy=7 stewardship=7 intrigue=5 learning=7
-	add_trait=flamboyant_schemer add_trait=lustful add_trait=slothful 
-	father=1019922354	#Arah
-	1104.6.27={ birth=yes }
-	1180.11.27={ death=yes }
-}
-1019922363={
-	name=Amorotahe
-	dynasty=1009990191
-	dna="egiagbcolkn"
-	culture=taino religion=animism
-	martial=8 diplomacy=8 stewardship=4 intrigue=4 learning=4
-	add_trait=intricate_webweaver add_trait=poet add_trait=zealous add_trait=content add_trait=shy 
-	add_trait=lustful 
-	father=1019922354	#Arah
-	1107.2.27={ birth=yes }
-	1177.7.31={ death=yes }
-}
-1019922364={
-	name=Arata
-	dynasty=1009990191
-	dna="mmdfjplinkm"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=4 intrigue=5 learning=6
-	add_trait=tough_soldier add_trait=paranoid add_trait=wroth add_trait=arbitrary add_trait=zealous 
-	add_trait=shy add_trait=diligent 
-	father=1019922354	#Arah
-	1113.10.1={ birth=yes }
-	1217.1.5={ death=yes }
-}
-1019922365={
-	name=Kaigouchi
-	dynasty=1009990191
-	dna="bophgmlcakj"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=5 intrigue=8 learning=6
-	add_trait=flamboyant_schemer add_trait=content add_trait=cynical add_trait=gregarious add_trait=temperate 
-	father=1019922359	#Wiwakaleme
-	1114.4.7={ birth=yes }
-	1180.7.4={ death=yes }
-}
-1019922366={
-	name=Hayá
-	female=yes
-	dynasty=1009990191
-	dna="cnajglhkcgb"
-	culture=taino religion=animism
-	father=1019922359	#Wiwakaleme
-	1118.8.11={ birth=yes }
-	1175.11.4={ death=yes }
-}
-1019922367={
-	name=Toratora
-	dynasty=1009990191
-	dna="bklagepiajl"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=6 intrigue=5 learning=8
-	add_trait=scholarly_theologian add_trait=hunter add_trait=wroth add_trait=honest add_trait=brave 
-	add_trait=proud 
-	father=1019922359	#Wiwakaleme
-	1125.6.19={ birth=yes }
-	1183.1.17={ death=yes }
-}
-1019922368={
-	name=Pirijá
-	dynasty=1009990191
-	dna="bhlegmbffkb"
-	culture=taino religion=animism
-	martial=5 diplomacy=8 stewardship=6 intrigue=8 learning=7
-	add_trait=naive_appeaser add_trait=cynical add_trait=ambitious add_trait=paranoid add_trait=greedy 
-	add_trait=stressed 
-	father=1019922359	#Wiwakaleme
-	1128.11.19={ birth=yes }
-	1191.5.8={ death=yes }
-}
-1019922369={
-	name=Amorotahe
-	dynasty=1009990191
-	dna="gegpgpddfnl"
-	culture=taino religion=animism
-	martial=4 diplomacy=6 stewardship=4 intrigue=8 learning=8
-	add_trait=charismatic_negotiator add_trait=gluttonous add_trait=lustful add_trait=trusting add_trait=envious 
-	add_trait=honest add_trait=depressed 
-	father=1019922359	#Wiwakaleme
-	1132.6.25={ birth=yes }
-	1189.8.31={ death=yes }
-}
-1019922370={
-	name=Pirijá
-	dynasty=1009990191
-	dna="beobnflcbia"
-	culture=taino religion=animism
-	martial=4 diplomacy=7 stewardship=8 intrigue=7 learning=7
-	add_trait=detached_priest add_trait=diligent add_trait=humble add_trait=greedy add_trait=craven 
-	add_trait=patient 
-	father=1019922359	#Wiwakaleme
-	1137.1.20={ birth=yes }
-	1198.1.4={ death=yes }
-}
-1019922371={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="jeljgjlcogk"
-	culture=taino religion=animism
-	father=1019922359	#Wiwakaleme
-	1143.5.25={ birth=yes }
-	1206.1.30={ death=yes }
-}
-1019922372={
-	name=Arata
-	dynasty=1009990191
-	dna="gepafeocoka"
-	culture=taino religion=animism
-	martial=4 diplomacy=7 stewardship=6 intrigue=8 learning=5
-	add_trait=mastermind_theologian add_trait=diligent add_trait=envious add_trait=cruel add_trait=temperate 
-	add_trait=gregarious add_trait=arbitrary 
-	father=1019922365	#Kaigouchi
-	1140.9.14={ birth=yes }
-	1220.8.28={ death=yes }
-}
-1019922373={
-	name=Takuiba
-	female=yes
-	dynasty=1009990191
-	dna="bolpimjiaia"
-	culture=taino religion=animism
-	father=1019922365	#Kaigouchi
-	1145.6.7={ birth=yes }
-	1213.9.5={ death=yes }
-}
-1019922374={
-	name=Arah
-	dynasty=1009990191
-	dna="gaahggacdej"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=5 intrigue=6 learning=6
-	add_trait=elusive_shadow add_trait=craven add_trait=just add_trait=paranoid add_trait=humble 
-	add_trait=patient add_trait=gluttonous 
-	father=1019922365	#Kaigouchi
-	1151.6.16={ birth=yes }
-	1212.2.5={ death=yes }
-}
-1019922375={
-	name=Laliwa
-	dynasty=1009990191
-	dna="gikiooidkpa"
-	culture=taino religion=animism
-	martial=5 diplomacy=6 stewardship=8 intrigue=5 learning=8
-	add_trait=grey_eminence add_trait=impaler add_trait=slothful add_trait=gluttonous add_trait=cruel 
-	add_trait=just add_trait=drunkard 
-	father=1019922372	#Arata
-	1162.11.27={ birth=yes }
-	1254.12.21={ death=yes }
-}
-1019922376={
-	name=Haubariria
-	dynasty=1009990191
-	dna="ecpgkedpdam"
-	culture=taino religion=animism
-	martial=5 diplomacy=6 stewardship=7 intrigue=5 learning=5
-	add_trait=scholarly_theologian add_trait=brave add_trait=lustful add_trait=ill 
-	father=1019922372	#Arata
-	1169.2.12={ birth=yes }
-	1243.10.28={ death=yes }
-}
-1019922377={
-	name=Wiwakaleme
-	dynasty=1009990191
-	dna="gkkpfeiajko"
-	culture=taino religion=animism
-	martial=7 diplomacy=8 stewardship=7 intrigue=8 learning=8
-	add_trait=flamboyant_schemer add_trait=gluttonous add_trait=slothful add_trait=lunatic 
-	father=1019922372	#Arata
-	1174.7.18={ birth=yes }
-	1244.7.26={ death=yes }
-}
-1019922378={
-	name=Amorotahe
-	dynasty=1009990191
-	dna="aioiooldkia"
-	culture=taino religion=animism
-	martial=7 diplomacy=5 stewardship=4 intrigue=6 learning=8
-	add_trait=martial_cleric add_trait=just add_trait=envious add_trait=paranoid add_trait=stressed 
-	add_trait=lunatic 
-	father=1019922375	#Laliwa
-	1194.4.8={ birth=yes }
-	1280.4.10={ death=yes }
-}
-1019922379={
-	name=Toratora
-	dynasty=1009990191
-	dna="gdjieofkmpi"
-	culture=taino religion=animism
-	martial=8 diplomacy=4 stewardship=4 intrigue=8 learning=7
-	add_trait=martial_cleric add_trait=gluttonous add_trait=arbitrary add_trait=brave add_trait=ill 
-	father=1019922375	#Laliwa
-	1200.1.1={ birth=yes }
-	1283.12.8={ death=yes }
-}
-1019922380={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="cbkdobjddoa"
-	culture=taino religion=animism
-	father=1019922375	#Laliwa
-	1207.3.25={ birth=yes }
-	1282.9.15={ death=yes }
-}
-1019922381={
-	name=Pirijá
-	dynasty=1009990191
-	dna="aehhohadmil"
-	culture=taino religion=animism
-	martial=8 diplomacy=5 stewardship=6 intrigue=5 learning=4
-	add_trait=intricate_webweaver add_trait=cruel add_trait=paranoid add_trait=deceitful add_trait=brave 
-	father=1019922378	#Amorotahe
-	1222.8.1={ birth=yes }
-	1286.3.12={ death=yes }
-}
-1019922382={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="ciimeoackom"
-	culture=taino religion=animism
-	father=1019922378	#Amorotahe
-	1228.1.24={ birth=yes }
-	1292.5.7={ death=yes }
-}
-1019922383={
-	name=Isani
-	female=yes
-	dynasty=1009990191
-	dna="aifiobgddgo"
-	culture=taino religion=animism
-	father=1019922378	#Amorotahe
-	1233.7.22={ birth=yes }
-	1329.4.20={ death=yes }
-}
-1019922384={
-	name=Hayá
-	female=yes
-	dynasty=1009990191
-	dna="ccoeomodige"
-	culture=taino religion=animism
-	father=1019922378	#Amorotahe
-	1236.3.7={ birth=yes }
-	1313.3.7={ death=yes }
-}
-1019922385={
-	name=Mbicy
-	dynasty=1009990191
-	dna="kidieolneka"
-	culture=taino religion=animism
-	martial=5 diplomacy=7 stewardship=4 intrigue=6 learning=7
-	add_trait=detached_priest add_trait=content add_trait=shy add_trait=craven add_trait=gluttonous 
-	add_trait=wroth 
-	father=1019922378	#Amorotahe
-	1240.4.17={ birth=yes }
-	1308.9.12={ death=yes }
-}
-1019922386={
-	name=Laliwa
-	dynasty=1009990191
-	dna="emhhohpfmgl"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=7 intrigue=6 learning=8
-	add_trait=flamboyant_schemer add_trait=gregarious add_trait=trusting add_trait=lustful add_trait=proud 
-	add_trait=patient 
-	father=1019922381	#Pirijá
-	1253.11.11={ birth=yes }
-	1307.10.28={ death=yes }
-}
-1019922387={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="nddhohfdmhl"
-	culture=taino religion=animism
-	father=1019922381	#Pirijá
-	1258.6.5={ birth=yes }
-	1336.1.24={ death=yes }
-}
-1019922388={
-	name=Arah
-	dynasty=1009990191
-	dna="aehhhjadmhi"
-	culture=taino religion=animism
-	martial=6 diplomacy=8 stewardship=6 intrigue=7 learning=6
-	add_trait=intricate_webweaver add_trait=hedonist add_trait=wroth add_trait=honest add_trait=paranoid 
-	father=1019922381	#Pirijá
-	1262.7.2={ birth=yes }
-	1328.1.27={ death=yes }
-}
-1019922389={
-	name=Kaigouchi
-	dynasty=1009990191
-	dna="emmhoihfmgn"
-	culture=taino religion=animism
-	martial=4 diplomacy=5 stewardship=6 intrigue=5 learning=5
-	add_trait=detached_priest add_trait=duelist add_trait=temperate add_trait=cynical add_trait=cruel 
-	add_trait=arbitrary 
-	father=1019922386	#Laliwa
-	1275.3.13={ birth=yes }
-	1337.3.29={ death=yes }
-}
-1019922390={
-	name=Twengga
-	female=yes
-	dynasty=1009990191
-	dna="kehholphkkl"
-	culture=taino religion=animism
-	father=1019922386	#Laliwa
-	1280.10.5={ birth=yes }
-	1370.8.2={ death=yes }
-}
-1019922391={
-	name=Hayá
-	female=yes
-	dynasty=1009990191
-	dna="emndooonngl"
-	culture=taino religion=animism
-	father=1019922386	#Laliwa
-	1285.8.27={ birth=yes }
-	1378.11.11={ death=yes }
-}
-1019922392={
-	name=Gunfuli
-	dynasty=1009990191
-	dna="gmehojpfmpl"
-	culture=taino religion=animism
-	martial=7 diplomacy=8 stewardship=5 intrigue=6 learning=4
-	add_trait=midas_touched add_trait=wroth add_trait=craven add_trait=zealous add_trait=paranoid 
-	add_trait=stressed 
-	father=1019922386	#Laliwa
-	1289.9.23={ birth=yes }
-	1331.8.7={ death=yes }
-}
-1019922393={
-	name=Pirijá
-	dynasty=1009990191
-	dna="ekhkhgnfacl"
-	culture=taino religion=animism
-	martial=7 diplomacy=7 stewardship=7 intrigue=4 learning=5
-	add_trait=scholarly_theologian add_trait=honest add_trait=diligent add_trait=craven add_trait=just 
-	add_trait=lunatic 
-	father=1019922386	#Laliwa
-	1295.2.21={ birth=yes }
-	1364.9.27={ death=yes }
-}
-1019922394={
-	name=Kaigouchi
-	dynasty=1009990191
-	dna="pohadihgggg"
-	culture=taino religion=animism
-	martial=6 diplomacy=6 stewardship=6 intrigue=7 learning=5
-	add_trait=mastermind_theologian add_trait=wroth add_trait=slothful add_trait=envious add_trait=humble 
-	father=1019922389	#Kaigouchi
-	1294.5.3={ birth=yes }
-	1354.12.20={ death=yes }
-}
-1019922395={
-	name=Amorotahe
-	dynasty=1009990191
-	dna="amjhonhfmpc"
-	culture=taino religion=animism
-	martial=7 diplomacy=5 stewardship=5 intrigue=6 learning=7
-	add_trait=martial_cleric add_trait=patient add_trait=gregarious 
-	father=1019922389	#Kaigouchi
-	1299.6.3={ birth=yes }
-	1381.9.14={ death=yes }
-}
-1019922396={
-	name=Gunfuli
-	dynasty=1009990191
-	dna="jmkioihpmgn"
-	culture=taino religion=animism
-	martial=6 diplomacy=4 stewardship=8 intrigue=7 learning=5
-	add_trait=misguided_warrior add_trait=impaler add_trait=cynical add_trait=content 
-	father=1019922389	#Kaigouchi
-	1304.10.10={ birth=yes }
-	1369.10.12={ death=yes }
-}
-1019922397={
-	name=Takuiba
-	female=yes
-	dynasty=1009990191
-	dna="eomobghfego"
-	culture=taino religion=animism
-	father=1019922389	#Kaigouchi
-	1309.10.26={ birth=yes }
-	1385.12.17={ death=yes }
-}
-1019922398={
-	name=Hayá
-	female=yes
-	dynasty=1009990191
-	dna="poffjmhgggg"
-	culture=taino religion=animism
-	father=1019922394	#Kaigouchi
-	1313.1.4={ birth=yes }
-	1379.6.14={ death=yes }
-}
-1019922399={
-	name=Shoko
-	dynasty=1009990191
-	dna="pghabchgdpg"
-	culture=taino religion=animism
-	martial=4 diplomacy=6 stewardship=4 intrigue=4 learning=4
-	add_trait=indulgent_wastrel add_trait=chaste add_trait=wroth add_trait=temperate add_trait=slothful 
-	add_trait=paranoid add_trait=drunkard 
-	father=1019922394	#Kaigouchi
-	1318.11.10={ birth=yes }
-	1385.9.29={ death=yes }
-}
-1019922400={
-	name=Hayá
-	female=yes
-	dynasty=1009990191
-	dna="pdbegcoeghg"
-	culture=taino religion=animism
-	father=1019922394	#Kaigouchi
-	1324.6.10={ birth=yes }
-	1390.10.19={ death=yes }
-}
-1019922401={
-	name=Arah
-	dynasty=1009990191
-	dna="nbledihjadg"
-	culture=taino religion=animism
-	martial=7 diplomacy=4 stewardship=6 intrigue=6 learning=4
-	add_trait=misguided_warrior add_trait=just add_trait=patient add_trait=content add_trait=slothful 
-	add_trait=lunatic 
-	father=1019922394	#Kaigouchi
-	1329.2.26={ birth=yes }
-	1385.9.3={ death=yes }
-}
-1019922402={
-	name=Áhari
-	dynasty=1009990191
-	dna="polhmihggjg"
-	culture=taino religion=animism
-	martial=4 diplomacy=8 stewardship=7 intrigue=7 learning=8
-	add_trait=detached_priest add_trait=deceitful add_trait=arbitrary add_trait=charitable add_trait=zealous 
-	add_trait=craven add_trait=lunatic add_trait=quick 
-	father=1019922394	#Kaigouchi
-	1335.9.26={ birth=yes }
-	1390.9.28={ death=yes }
-}
-1019922403={
-	name=Áhari
-	dynasty=1009990191
-	dna="djhfbdhgabn"
-	culture=taino religion=animism
-	martial=7 diplomacy=8 stewardship=5 intrigue=8 learning=7
-	add_trait=midas_touched add_trait=ambitious add_trait=envious add_trait=slothful 
-	father=1019922399	#Shoko
-	1348.5.6={ birth=yes }
-	1418.6.11={ death=yes }
-}
-1019922404={
-	name=Takuiba
-	female=yes
-	dynasty=1009990191
-	dna="pgngbcghdfa"
-	culture=taino religion=animism
-	father=1019922399	#Shoko
-	1351.7.10={ birth=yes }
-	1434.11.2={ death=yes }
-}
-1019922405={
-	name=Hayá
-	female=yes
-	dynasty=1009990191
-	dna="pglcbchghmg"
-	culture=taino religion=animism
-	father=1019922399	#Shoko
-	1359.12.4={ birth=yes }
-	1429.9.30={ death=yes }
-}
-1019922406={
-	name=Amorotahe
-	dynasty=1009990191
-	dna="pbhflphgghl"
-	culture=taino religion=animism
-	martial=7 diplomacy=8 stewardship=7 intrigue=6 learning=4
-	add_trait=thrifty_clerk add_trait=cynical add_trait=proud add_trait=chaste add_trait=cruel 
-	father=1019922399	#Shoko
-	1365.7.14={ birth=yes }
-	1415.4.21={ death=yes }
-}
+
 1019922407={
 	name=Kaigouchi
 	dynasty=1009990192
