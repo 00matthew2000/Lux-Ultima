@@ -1,343 +1,36 @@
-1019923898={
-	name=Sagpipa
-	dynasty=1009990207
-	culture=muisca 
-	religion=animism
-	719.12.4={ birth=yes }
-	776.1.19={ death=yes }
+1019923939={
+	name=Tomagata
+	dynasty=1109991351
+	dna="jphbgmhpddk"
+	culture=dulegaya religion=chiminigagua
+	1043.8.26={ birth=yes }
+	1094.12.3={ death=yes }
 }
-1019923899={
-	name=Uzathama
-	dynasty=1009990207
-	culture=muisca 
-	religion=animism
-	father=1019923898	#Sagpipa
-	749.4.19={ birth=yes }
-	820.11.19={ death=yes }
-}
-1019923903={
-	name=Uzathama
-	dynasty=1009990207
-	culture=muisca 
-	religion=animism
-	father=1019923899	#Uzathama
-	776.6.8={ birth=yes }
-	840.4.16={ death=yes }
-}
-1019923910={
+1019923943={
 	name=Meicuchuca
-	dynasty=1009990207
-	culture=muisca 
-	religion=animism
-	father=1019923903	#Uzathama
-	807.3.22={ birth=yes }
-	868.11.13={ death=yes }
-}
-1019923912={
-	name=Tutazúa
-	dynasty=1009990207
-	culture=muisca 
-	religion=animism
-	father=1019923910	#Meicuchuca
-	832.5.20={ birth=yes }
-	887.8.4={ death=yes }
-}
-1019923913={
-	name=Tomagata
-	dynasty=1009990207
-	dna="hdgliielpih"
-	culture=muisca religion=animism
-	martial=8 diplomacy=8 stewardship=6 intrigue=5 learning=8
-	add_trait=detached_priest add_trait=mystic add_trait=gregarious add_trait=paranoid add_trait=just 
-	add_trait=cynical add_trait=cruel 
-	father=1019923910	#Meicuchuca
-	837.5.19={ birth=yes }
-	896.7.23={ death=yes }
-}
-1019923914={
-	name=Chia
-	female=yes
-	dynasty=1009990207
-	dna="aohlgielmik"
-	culture=muisca religion=animism
-	father=1019923910	#Meicuchuca
-	839.11.1={ birth=yes }
-	909.8.10={ death=yes }
-}
-1019923915={
-	name=Michua
-	dynasty=1009990207
-	dna="gfghdpdbpif"
-	culture=muisca religion=animism
-	martial=7 diplomacy=4 stewardship=8 intrigue=4 learning=7
-	add_trait=charismatic_negotiator add_trait=wroth add_trait=kind add_trait=content add_trait=gluttonous 
-	father=1019923910	#Meicuchuca
-	843.11.2={ birth=yes }
-	915.4.30={ death=yes }
-}
-1019923916={
-	name=Quemuenchatocha
-	dynasty=1009990207
-	dna="hfmnlkdphie"
-	culture=muisca religion=animism
-	martial=5 diplomacy=4 stewardship=8 intrigue=5 learning=5
-	add_trait=midas_touched add_trait=scholar add_trait=cynical add_trait=charitable add_trait=gluttonous 
-	add_trait=shy add_trait=diligent add_trait=cruel 
-	father=1019923910	#Meicuchuca
-	847.2.19={ birth=yes }
-	919.4.14={ death=yes }
-}
-1019923917={
-	name=Kantuta
-	female=yes
-	dynasty=1009990207
-	dna="bfhngdhlpmk"
-	culture=muisca religion=animism
-	father=1019923912	#Tutazúa
-	858.5.27={ birth=yes }
-	930.11.21={ death=yes }
-}
-1019923918={
-	name=Can
-	dynasty=1009990207
-	dna="gfhnlcdppml"
-	culture=muisca religion=animism
-	martial=6 diplomacy=6 stewardship=6 intrigue=7 learning=7
-	add_trait=misguided_warrior add_trait=gregarious add_trait=cruel add_trait=content add_trait=zealous 
-	add_trait=paranoid 
-	father=1019923912	#Tutazúa
-	862.8.23={ birth=yes }
-	930.7.24={ death=yes }
-}
-1019923919={
-	name=Axomamma
-	female=yes
-	dynasty=1009990207
-	dna="iojochopppd"
-	culture=muisca religion=animism
-	father=1019923912	#Tutazúa
-	867.6.10={ birth=yes }
-	904.11.2={ death=yes }
-}
-1019923920={
-	name=Axomamma
-	female=yes
-	dynasty=1009990207
-	dna="ffpniholpme"
-	culture=muisca religion=animism
-	father=1019923912	#Tutazúa
-	872.12.11={ birth=yes }
-	928.10.24={ death=yes }
-}
-1019923921={
-	name=Cavillaca
-	female=yes
-	dynasty=1009990207
-	dna="dfhbdhdlaei"
-	culture=muisca religion=animism
-	father=1019923912	#Tutazúa
-	878.7.27={ birth=yes }
-	917.6.20={ death=yes }
-}
-1019923922={
-	name=Tomagata
-	dynasty=1009990207
-	dna="eflnkiplhfl"
-	culture=muisca religion=animism
-	martial=4 diplomacy=5 stewardship=4 intrigue=4 learning=6
-	add_trait=charismatic_negotiator add_trait=cruel add_trait=paranoid add_trait=gregarious add_trait=craven 
-	father=1019923912	#Tutazúa
-	880.3.22={ birth=yes }
-	969.3.1={ death=yes }
-}
-1019923923={
-	name=Ana
-	female=yes
-	dynasty=1009990207
-	dna="gfinlhdlebm"
-	culture=muisca religion=animism
-	father=1019923912	#Tutazúa
-	885.11.13={ birth=yes }
-	947.11.19={ death=yes }
-}
-1019923924={
-	name=Cavillaca
-	female=yes
-	dynasty=1009990207
-	dna="ockcciihhdd"
-	culture=muisca religion=animism
-	father=1019923918	#Can
-	892.10.15={ birth=yes }
-	952.8.19={ death=yes }
-}
-1019923925={
-	name=Tutazúa
-	dynasty=1009990207
-	dna="ffanfcdppgl"
-	culture=muisca religion=animism
-	martial=6 diplomacy=5 stewardship=5 intrigue=4 learning=7
-	add_trait=charismatic_negotiator add_trait=paranoid add_trait=slothful add_trait=content add_trait=craven 
-	add_trait=arbitrary 
-	father=1019923918	#Can
-	898.4.15={ birth=yes }
-	977.8.17={ death=yes }
-}
-1019923926={
-	name=China
-	female=yes
-	dynasty=1009990207
-	dna="pflnlpdglme"
-	culture=muisca religion=animism
-	father=1019923918	#Can
-	904.10.2={ birth=yes }
-	977.3.3={ death=yes }
-}
-1019923927={
-	name=Mico-Chuco
-	dynasty=1009990207
-	dna="ffanakfepnl"
-	culture=muisca religion=animism
-	martial=5 diplomacy=4 stewardship=6 intrigue=4 learning=5
-	add_trait=naive_appeaser add_trait=ambitious add_trait=proud add_trait=envious 
-	father=1019923925	#Tutazúa
-	925.5.14={ birth=yes }
-	1014.10.19={ death=yes }
-}
-1019923928={
-	name=Tutazúa
-	dynasty=1009990207
-	dna="ihbnjcdfpgl"
-	culture=muisca religion=animism
-	martial=6 diplomacy=6 stewardship=6 intrigue=5 learning=7
-	add_trait=midas_touched add_trait=cruel add_trait=envious add_trait=zealous 
-	father=1019923925	#Tutazúa
-	927.1.2={ birth=yes }
-	998.7.7={ death=yes }
-}
-1019923929={
-	name=Axomamma
-	female=yes
-	dynasty=1009990207
-	dna="foanccfaigl"
-	culture=muisca religion=animism
-	father=1019923925	#Tutazúa
-	933.7.12={ birth=yes }
-	1011.8.16={ death=yes }
-}
-1019923930={
-	name=China
-	female=yes
-	dynasty=1009990207
-	dna="lfeifcdcnle"
-	culture=muisca religion=animism
-	father=1019923925	#Tutazúa
-	936.2.18={ birth=yes }
-	997.3.4={ death=yes }
-}
-1019923931={
-	name=Tomagata
-	dynasty=1009990207
-	dna="afhcamfeadl"
-	culture=muisca religion=animism
-	martial=4 diplomacy=6 stewardship=7 intrigue=8 learning=5
-	add_trait=charismatic_negotiator add_trait=mystic add_trait=honest add_trait=patient add_trait=cynical 
-	add_trait=proud 
-	father=1019923927	#Mico-Chuco
-	951.4.20={ birth=yes }
-	1012.3.28={ death=yes }
-}
-1019923932={
-	name=China
-	female=yes
-	dynasty=1009990207
-	dna="gfanabgjpcl"
-	culture=muisca religion=animism
-	father=1019923927	#Mico-Chuco
-	957.8.11={ birth=yes }
-	1014.11.19={ death=yes }
-}
-1019923933={
-	name=China
-	female=yes
-	dynasty=1009990207
-	dna="ipanbhfhpnl"
-	culture=muisca religion=animism
-	father=1019923927	#Mico-Chuco
-	962.9.22={ birth=yes }
-	1037.10.10={ death=yes }
+	dynasty=1109991352
+	dna="bgkkfapegbl"
+	culture=ngabe religion=chiminigagua
+	1052.9.4={ birth=yes }
+	1130.6.11={ death=yes }
 }
 1019923934={
-	name=Aquiminzaque
-	dynasty=1009990207
+	name=Itikan
+	dynasty=1109991353
 	dna="oghbgmheadl"
-	culture=muisca religion=animism
+	culture=ngabe religion=chiminigagua
 	martial=5 diplomacy=5 stewardship=7 intrigue=6 learning=5
 	add_trait=thrifty_clerk add_trait=zealous add_trait=brave 
-	father=1019923931	#Tomagata
-	977.10.14={ birth=yes }
-	1031.9.25={ death=yes }
-}
-1019923935={
-	name=Uzathama
-	dynasty=1009990207
-	dna="hfhcenneadm"
-	culture=muisca religion=animism
-	martial=7 diplomacy=6 stewardship=6 intrigue=7 learning=5
-	add_trait=tough_soldier add_trait=deceitful add_trait=zealous add_trait=craven add_trait=arbitrary 
-	father=1019923931	#Tomagata
-	981.1.2={ birth=yes }
-	1040.10.10={ death=yes }
-}
-1019923936={
-	name=Meicuchuca
-	dynasty=1009990207
-	dna="apdcamgeall"
-	culture=muisca religion=animism
-	martial=5 diplomacy=8 stewardship=4 intrigue=6 learning=7
-	add_trait=flamboyant_schemer add_trait=just add_trait=diligent add_trait=brave add_trait=gregarious 
-	add_trait=deceitful 
-	father=1019923931	#Tomagata
-	983.6.5={ birth=yes }
-	1067.5.15={ death=yes }
-}
-1019923937={
-	name=Maiara
-	female=yes
-	dynasty=1009990207
-	dna="nfhllffepil"
-	culture=muisca religion=animism
-	father=1019923931	#Tomagata
-	987.12.18={ birth=yes }
-	1070.9.6={ death=yes }
-}
-1019923938={
-	name=Cavillaca
-	female=yes
-	dynasty=1009990207
-	dna="ahdbbhmaedl"
-	culture=muisca religion=animism
-	father=1019923931	#Tomagata
-	993.9.26={ birth=yes }
-	1058.1.20={ death=yes }
-}
-1019923939={
-	name=Cavillaca
-	female=yes
-	dynasty=1009990207
-	dna="jphbgmhpddk"
-	culture=muisca religion=animism
-	father=1019923934	#Aquiminzaque
-	1003.8.26={ birth=yes }
-	1084.12.3={ death=yes }
+	1047.5.19={ birth=yes }
+	1131.9.25={ death=yes }
 }
 1019923940={
 	name=Sagpipa
 	dynasty=1009990207
 	dna="bgkanapegbl"
-	culture=muisca religion=animism
+	culture=dulegaya religion=chiminigagua
 	martial=7 diplomacy=8 stewardship=4 intrigue=7 learning=6
 	add_trait=detached_priest add_trait=gregarious add_trait=kind add_trait=paranoid add_trait=ambitious 
-	father=1019923934	#Aquiminzaque
 	1006.1.8={ birth=yes }
 	1083.1.17={ death=yes }
 }
@@ -345,7 +38,7 @@
 	name=Quemuenchatocha
 	dynasty=1009990207
 	dna="cggdnhpegbl"
-	culture=muisca religion=animism
+	culture=dulegaya religion=chiminigagua
 	martial=7 diplomacy=8 stewardship=5 intrigue=7 learning=7
 	add_trait=martial_cleric add_trait=duelist add_trait=slothful add_trait=cruel add_trait=humble 
 	add_trait=shy add_trait=depressed 
@@ -358,38 +51,38 @@
 	female=yes
 	dynasty=1009990207
 	dna="bfkajapegoa"
-	culture=muisca religion=animism
+	culture=dulegaya religion=chiminigagua
 	father=1019923940	#Sagpipa
 	1045.7.10={ birth=yes }
 	1142.1.29={ death=yes }
 }
-1019923943={
-	name=Chia
-	female=yes
-	dynasty=1009990207
-	dna="bgkkfapegbl"
-	culture=muisca religion=animism
-	father=1019923940	#Sagpipa
-	1052.9.4={ birth=yes }
-	1130.6.11={ death=yes }
-}
-
 1019923990={
-	name=Michua
-	dynasty=1009990208
+	name=Hunzahua
+	dynasty=1109991354
 	dna="jjkpildcmcf"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=5 stewardship=7 intrigue=5 learning=4
 	add_trait=skilled_tactician add_trait=ambitious add_trait=envious add_trait=gluttonous add_trait=cruel 
 	add_trait=lustful 
-	720.7.1={ birth=yes }
-	789.4.29={ death=yes }
+	1040.7.1={ birth=yes }
+	1089.4.29={ death=yes }
+}
+1019923992={
+	name=Tunja
+	dynasty=1109991355
+	dna="jjkpilicoch"
+	culture=muisca religion=chiminigagua
+	martial=6 diplomacy=6 stewardship=8 intrigue=7 learning=7
+	add_trait=detached_priest add_trait=greedy add_trait=deceitful add_trait=brave add_trait=gregarious 
+	add_trait=temperate add_trait=arbitrary 
+	1044.3.9={ birth=yes }
+	1103.2.12={ death=yes }
 }
 1019923991={
 	name=Michua
 	dynasty=1009990208
 	dna="jiapiaiimcf"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=5 stewardship=8 intrigue=4 learning=5
 	add_trait=naive_appeaser add_trait=hedonist add_trait=lustful add_trait=humble add_trait=honest 
 	add_trait=just 
@@ -397,23 +90,11 @@
 	748.3.18={ birth=yes }
 	828.6.26={ death=yes }
 }
-1019923992={
-	name=Tomagata
-	dynasty=1009990208
-	dna="jjkpilicoch"
-	culture=muisca religion=animism
-	martial=6 diplomacy=6 stewardship=8 intrigue=7 learning=7
-	add_trait=detached_priest add_trait=greedy add_trait=deceitful add_trait=brave add_trait=gregarious 
-	add_trait=temperate add_trait=arbitrary 
-	father=1019923990	#Michua
-	754.3.9={ birth=yes }
-	803.2.12={ death=yes }
-}
 1019923993={
 	name=Meicuchuca
 	dynasty=1009990208
 	dna="jikkiodcmcf"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=6 stewardship=4 intrigue=4 learning=5
 	add_trait=flamboyant_schemer add_trait=brave add_trait=wroth add_trait=deceitful add_trait=ambitious 
 	father=1019923990	#Michua
@@ -425,7 +106,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jjnliedhmib"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019923990	#Michua
 	766.8.15={ birth=yes }
 	841.10.7={ death=yes }
@@ -435,7 +116,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="mibpcdcikof"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019923991	#Michua
 	771.6.20={ birth=yes }
 	829.5.4={ death=yes }
@@ -444,7 +125,7 @@
 	name=Tisquesusa
 	dynasty=1009990208
 	dna="fiogilikhci"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=7 stewardship=5 intrigue=7 learning=5
 	add_trait=martial_cleric add_trait=trusting add_trait=brave add_trait=diligent add_trait=gluttonous 
 	add_trait=gregarious add_trait=depressed 
@@ -457,7 +138,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="piapkalmmcf"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019923991	#Michua
 	781.8.5={ birth=yes }
 	861.11.3={ death=yes }
@@ -466,7 +147,7 @@
 	name=Quemuenchatocha
 	dynasty=1009990208
 	dna="jmakkmiinhn"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=5 stewardship=5 intrigue=5 learning=6
 	add_trait=midas_touched add_trait=kind add_trait=humble add_trait=paranoid add_trait=slothful 
 	add_trait=quick 
@@ -479,7 +160,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jgapiaiambm"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019923991	#Michua
 	790.2.5={ birth=yes }
 	877.6.26={ death=yes }
@@ -489,7 +170,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jiapiddnmcf"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019923991	#Michua
 	793.4.19={ birth=yes }
 	873.2.11={ death=yes }
@@ -498,7 +179,7 @@
 	name=Aquiminzaque
 	dynasty=1009990208
 	dna="hgopackgjfo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=8 diplomacy=8 stewardship=8 intrigue=7 learning=5
 	add_trait=thrifty_clerk add_trait=proud add_trait=gregarious add_trait=brave add_trait=diligent 
 	father=1019923991	#Michua
@@ -509,7 +190,7 @@
 	name=Cuba
 	dynasty=1009990208
 	dna="niohedlkhjl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=7 stewardship=8 intrigue=4 learning=7
 	add_trait=intricate_webweaver add_trait=envious add_trait=shy add_trait=arbitrary 
 	father=1019923996	#Tisquesusa
@@ -521,7 +202,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="fgofilgbhhi"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019923996	#Tisquesusa
 	812.11.21={ birth=yes }
 	890.3.16={ death=yes }
@@ -531,7 +212,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="gijgnniolcb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019923996	#Tisquesusa
 	816.2.14={ birth=yes }
 	899.7.17={ death=yes }
@@ -540,7 +221,7 @@
 	name=Tibacuy
 	dynasty=1009990208
 	dna="giomnfooafn"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=6 stewardship=7 intrigue=6 learning=6
 	add_trait=mastermind_theologian add_trait=content add_trait=slothful add_trait=craven add_trait=paranoid 
 	add_trait=deceitful add_trait=humble 
@@ -552,7 +233,7 @@
 	name=Tomagata
 	dynasty=1009990208
 	dna="iiclmdlkail"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=8 diplomacy=5 stewardship=6 intrigue=5 learning=7
 	add_trait=naive_appeaser add_trait=impaler add_trait=craven add_trait=humble add_trait=honest 
 	father=1019924002	#Cuba
@@ -564,7 +245,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="nboaedhnhad"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924002	#Cuba
 	845.8.11={ birth=yes }
 	920.1.28={ death=yes }
@@ -573,7 +254,7 @@
 	name=Guecha
 	dynasty=1009990208
 	dna="difgeblknjl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=8 stewardship=5 intrigue=8 learning=5
 	add_trait=tough_soldier add_trait=honest add_trait=proud add_trait=diligent add_trait=greedy 
 	add_trait=lustful add_trait=envious 
@@ -585,7 +266,7 @@
 	name=Quemuenchatocha
 	dynasty=1009990208
 	dna="fjofediehnl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=4 stewardship=6 intrigue=8 learning=4
 	add_trait=intricate_webweaver add_trait=ambitious add_trait=wroth add_trait=charitable add_trait=kind 
 	add_trait=zealous 
@@ -598,7 +279,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="nioidlfdkjl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924002	#Cuba
 	863.2.26={ birth=yes }
 	942.7.10={ death=yes }
@@ -607,7 +288,7 @@
 	name=Cuba
 	dynasty=1009990208
 	dna="ndhhebohhjl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=4 stewardship=7 intrigue=4 learning=6
 	add_trait=martial_cleric add_trait=slothful add_trait=shy add_trait=zealous add_trait=charitable 
 	father=1019924002	#Cuba
@@ -619,7 +300,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="omkhedlknjp"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924002	#Cuba
 	871.7.2={ birth=yes }
 	957.2.18={ death=yes }
@@ -628,7 +309,7 @@
 	name=Tisquesusa
 	dynasty=1009990208
 	dna="ibmlmajdhcl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=8 diplomacy=4 stewardship=8 intrigue=6 learning=7
 	add_trait=midas_touched add_trait=temperate add_trait=lustful add_trait=greedy add_trait=deceitful 
 	add_trait=lunatic 
@@ -640,7 +321,7 @@
 	name=Guecha
 	dynasty=1009990208
 	dna="minlbdfkmhb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=7 stewardship=6 intrigue=8 learning=4
 	add_trait=mastermind_theologian add_trait=scholar add_trait=patient add_trait=charitable add_trait=deceitful 
 	add_trait=slothful add_trait=depressed 
@@ -653,7 +334,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="idcllpckail"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924006	#Tomagata
 	872.10.12={ birth=yes }
 	951.2.25={ death=yes }
@@ -662,7 +343,7 @@
 	name=Cuba
 	dynasty=1009990208
 	dna="iiclmddbaip"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=8 stewardship=6 intrigue=6 learning=6
 	add_trait=flamboyant_schemer add_trait=shy add_trait=brave add_trait=chaste add_trait=content 
 	add_trait=proud 
@@ -675,7 +356,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="iblbodlkbdl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924006	#Tomagata
 	882.3.23={ birth=yes }
 	957.3.20={ death=yes }
@@ -685,7 +366,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="lgmfmiodoci"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924013	#Tisquesusa
 	887.11.15={ birth=yes }
 	947.9.9={ death=yes }
@@ -694,7 +375,7 @@
 	name=Saguamanchica
 	dynasty=1009990208
 	dna="epjbdajdhjl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=6 stewardship=4 intrigue=5 learning=6
 	add_trait=charismatic_negotiator add_trait=arbitrary add_trait=gregarious 
 	father=1019924013	#Tisquesusa
@@ -706,7 +387,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="ocolmjjohkl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924013	#Tisquesusa
 	899.1.21={ birth=yes }
 	986.5.29={ death=yes }
@@ -716,7 +397,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="hbmlgaldhcl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924013	#Tisquesusa
 	905.5.18={ birth=yes }
 	970.1.13={ death=yes }
@@ -726,7 +407,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="kpjbdajdhjc"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924019	#Saguamanchica
 	912.9.14={ birth=yes }
 	1000.8.8={ death=yes }
@@ -735,7 +416,7 @@
 	name=Sagpipa
 	dynasty=1009990208
 	dna="bpjkdijdhbo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=7 stewardship=7 intrigue=7 learning=4
 	add_trait=tough_soldier add_trait=envious add_trait=humble add_trait=ambitious 
 	father=1019924019	#Saguamanchica
@@ -747,7 +428,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="npjhagiomkl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924019	#Saguamanchica
 	921.12.13={ birth=yes }
 	997.8.22={ death=yes }
@@ -756,7 +437,7 @@
 	name=Uzathama
 	dynasty=1009990208
 	dna="eljbdajpljj"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=4 stewardship=4 intrigue=6 learning=7
 	add_trait=flamboyant_schemer add_trait=humble add_trait=envious add_trait=temperate 
 	father=1019924019	#Saguamanchica
@@ -767,7 +448,7 @@
 	name=Uzathama
 	dynasty=1009990208
 	dna="bpccdijcibo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=6 stewardship=7 intrigue=7 learning=6
 	add_trait=intricate_webweaver add_trait=brave add_trait=envious add_trait=patient 
 	father=1019924023	#Sagpipa
@@ -779,7 +460,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="lojndihbhho"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924023	#Sagpipa
 	943.5.24={ birth=yes }
 	1000.1.8={ death=yes }
@@ -788,7 +469,7 @@
 	name=Aquimin
 	dynasty=1009990208
 	dna="bifkdpjbdbo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=5 stewardship=6 intrigue=5 learning=5
 	add_trait=detached_priest add_trait=cruel add_trait=content add_trait=brave add_trait=chaste 
 	father=1019924023	#Sagpipa
@@ -799,7 +480,7 @@
 	name=Meicuchuca
 	dynasty=1009990208
 	dna="bajddibohif"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=8 stewardship=6 intrigue=7 learning=7
 	add_trait=indulgent_wastrel add_trait=chaste add_trait=gluttonous 
 	father=1019924023	#Sagpipa
@@ -811,7 +492,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="bgjkdhidhmn"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924023	#Sagpipa
 	956.3.11={ birth=yes }
 	1043.10.19={ death=yes }
@@ -820,7 +501,7 @@
 	name=Tibacuy
 	dynasty=1009990208
 	dna="bpjalgcdlbi"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=8 stewardship=8 intrigue=4 learning=7
 	add_trait=naive_appeaser add_trait=hedonist add_trait=zealous add_trait=deceitful add_trait=cruel 
 	add_trait=arbitrary add_trait=lunatic 
@@ -832,7 +513,7 @@
 	name=Meicuchuca
 	dynasty=1009990208
 	dna="iohcnihmhbo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=5 stewardship=8 intrigue=7 learning=7
 	add_trait=misguided_warrior add_trait=zealous add_trait=proud add_trait=wroth add_trait=trusting 
 	father=1019924023	#Sagpipa
@@ -844,7 +525,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="blomikocipc"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924026	#Uzathama
 	964.7.13={ birth=yes }
 	1045.10.16={ death=yes }
@@ -854,7 +535,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="iaccdijeibo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924026	#Uzathama
 	971.7.3={ birth=yes }
 	1058.5.13={ death=yes }
@@ -863,7 +544,7 @@
 	name=Ah
 	dynasty=1009990208
 	dna="cpchdpjciia"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=8 stewardship=4 intrigue=7 learning=7
 	add_trait=tough_soldier add_trait=gardener add_trait=cynical add_trait=cruel add_trait=slothful 
 	add_trait=strong 
@@ -875,7 +556,7 @@
 	name=Aquiminzaque
 	dynasty=1009990208
 	dna="cdbhcaociia"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=7 stewardship=4 intrigue=4 learning=5
 	add_trait=grey_eminence add_trait=impaler add_trait=craven add_trait=cruel add_trait=ambitious 
 	father=1019924035	#Ah
@@ -886,7 +567,7 @@
 	name=Tutazúa
 	dynasty=1009990208
 	dna="clchphkiofa"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=8 stewardship=6 intrigue=8 learning=5
 	add_trait=flamboyant_schemer add_trait=slothful add_trait=patient add_trait=chaste add_trait=humble 
 	add_trait=harelip 
@@ -898,7 +579,7 @@
 	name=Tibacuy
 	dynasty=1009990208
 	dna="clcghpbnhpd"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=8 stewardship=6 intrigue=5 learning=4
 	add_trait=martial_cleric add_trait=humble add_trait=ambitious add_trait=envious 
 	father=1019924035	#Ah
@@ -910,7 +591,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="cjchhmpcagd"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924035	#Ah
 	1007.5.19={ birth=yes }
 	1086.9.24={ death=yes }
@@ -920,7 +601,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="ckjpfpjbpia"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924035	#Ah
 	1013.11.8={ birth=yes }
 	1064.5.18={ death=yes }
@@ -929,7 +610,7 @@
 	name=Tutazúa
 	dynasty=1009990208
 	dna="gbijdpjcipo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=4 stewardship=5 intrigue=8 learning=6
 	add_trait=intricate_webweaver add_trait=hedonist add_trait=brave add_trait=slothful add_trait=chaste 
 	add_trait=gluttonous add_trait=cruel 
@@ -942,7 +623,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="hpihdpbchip"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924035	#Ah
 	1020.8.14={ birth=yes }
 	1058.12.11={ death=yes }
@@ -951,7 +632,7 @@
 	name=Aquiminzaque
 	dynasty=1009990208
 	dna="hdhnmkoeioa"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=7 stewardship=4 intrigue=4 learning=4
 	add_trait=misguided_warrior add_trait=craven add_trait=charitable add_trait=shy add_trait=proud 
 	add_trait=content 
@@ -964,7 +645,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="cdohcipjiie"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924036	#Aquiminzaque
 	1024.8.24={ birth=yes }
 	1099.6.7={ death=yes }
@@ -974,7 +655,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jejfdabggjl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924036	#Aquiminzaque
 	1028.9.2={ birth=yes }
 	1083.8.21={ death=yes }
@@ -983,7 +664,7 @@
 	name=Meicuchuca
 	dynasty=1009990208
 	dna="cnnkielcioa"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=8 diplomacy=7 stewardship=8 intrigue=8 learning=5
 	add_trait=charismatic_negotiator add_trait=charitable add_trait=craven add_trait=lustful add_trait=trusting 
 	father=1019924036	#Aquiminzaque
@@ -994,7 +675,7 @@
 	name=Can
 	dynasty=1009990208
 	dna="ndohcnofiia"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=8 stewardship=6 intrigue=8 learning=8
 	add_trait=detached_priest add_trait=just add_trait=patient add_trait=depressed 
 	father=1019924036	#Aquiminzaque
@@ -1005,7 +686,7 @@
 	name=Guecha
 	dynasty=1009990208
 	dna="ndhdfjoeibo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=8 stewardship=5 intrigue=7 learning=6
 	add_trait=grey_eminence add_trait=slothful add_trait=gregarious add_trait=craven add_trait=wounded 
 	father=1019924043	#Aquiminzaque
@@ -1017,7 +698,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="hdbngkoeiob"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924043	#Aquiminzaque
 	1051.4.14={ birth=yes }
 	1120.5.1={ death=yes }
@@ -1026,7 +707,7 @@
 	name=Cuxininegua
 	dynasty=1009990208
 	dna="ipkeakoeaon"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=6 stewardship=7 intrigue=7 learning=6
 	add_trait=midas_touched add_trait=paranoid add_trait=deceitful add_trait=zealous add_trait=proud 
 	add_trait=kind 
@@ -1038,7 +719,7 @@
 	name=Cuxininegua
 	dynasty=1009990208
 	dna="npaamjolnoc"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=8 diplomacy=6 stewardship=6 intrigue=6 learning=5
 	add_trait=detached_priest add_trait=greedy add_trait=craven 
 	father=1019924043	#Aquiminzaque
@@ -1049,7 +730,7 @@
 	name=Tomagata
 	dynasty=1009990208
 	dna="hmnngmaejoa"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=8 diplomacy=4 stewardship=7 intrigue=5 learning=5
 	add_trait=martial_cleric add_trait=gardener add_trait=ambitious add_trait=patient add_trait=just 
 	add_trait=brave add_trait=wounded add_trait=harelip 
@@ -1062,7 +743,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jdhnmcoeioo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924043	#Aquiminzaque
 	1070.3.13={ birth=yes }
 	1130.8.21={ death=yes }
@@ -1072,7 +753,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="kdlpcfeeiod"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924043	#Aquiminzaque
 	1074.7.6={ birth=yes }
 	1155.4.16={ death=yes }
@@ -1081,7 +762,7 @@
 	name=Quemuenchatocha
 	dynasty=1009990208
 	dna="naejfjopibm"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=8 stewardship=7 intrigue=7 learning=7
 	add_trait=midas_touched add_trait=cruel add_trait=shy add_trait=paranoid 
 	father=1019924048	#Guecha
@@ -1092,7 +773,7 @@
 	name=Meicuchuca
 	dynasty=1009990208
 	dna="jihjkeojlmo"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=4 stewardship=4 intrigue=6 learning=4
 	add_trait=mastermind_theologian add_trait=arbitrary add_trait=gregarious add_trait=kind add_trait=charitable 
 	add_trait=slothful add_trait=depressed 
@@ -1104,7 +785,7 @@
 	name=Quemuenchatocha
 	dynasty=1009990208
 	dna="jcoimacpblb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=7 stewardship=7 intrigue=6 learning=5
 	add_trait=midas_touched add_trait=gregarious add_trait=cynical add_trait=brave add_trait=diligent 
 	father=1019924055	#Quemuenchatocha
@@ -1116,7 +797,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="djnjhlmfded"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924055	#Quemuenchatocha
 	1102.5.5={ birth=yes }
 	1179.4.25={ death=yes }
@@ -1125,7 +806,7 @@
 	name=Michua
 	dynasty=1009990208
 	dna="ngfjafopojm"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=6 stewardship=4 intrigue=8 learning=5
 	add_trait=midas_touched add_trait=cruel add_trait=just add_trait=shy add_trait=ambitious 
 	add_trait=stressed 
@@ -1138,7 +819,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="cpenefoppbm"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924055	#Quemuenchatocha
 	1112.6.15={ birth=yes }
 	1186.9.3={ death=yes }
@@ -1147,7 +828,7 @@
 	name=Guecha
 	dynasty=1009990208
 	dna="jccimampbdb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=8 diplomacy=7 stewardship=5 intrigue=4 learning=5
 	add_trait=elusive_shadow add_trait=slothful add_trait=greedy add_trait=deceitful add_trait=patient 
 	add_trait=trusting add_trait=drunkard 
@@ -1160,7 +841,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="hbmmdipoapb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924057	#Quemuenchatocha
 	1130.9.8={ birth=yes }
 	1200.6.30={ death=yes }
@@ -1169,7 +850,7 @@
 	name=Uzathama
 	dynasty=1009990208
 	dna="nhonmajpdlb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=6 stewardship=5 intrigue=7 learning=5
 	add_trait=midas_touched add_trait=gluttonous add_trait=honest add_trait=brave add_trait=lustful 
 	father=1019924057	#Quemuenchatocha
@@ -1181,7 +862,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jhomminnbjb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924057	#Quemuenchatocha
 	1142.3.17={ birth=yes }
 	1196.11.23={ death=yes }
@@ -1191,7 +872,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jccimhcmgdi"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924061	#Guecha
 	1154.4.23={ birth=yes }
 	1223.5.10={ death=yes }
@@ -1200,7 +881,7 @@
 	name=Meicuchuca
 	dynasty=1009990208
 	dna="jcgimamghgi"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=5 stewardship=8 intrigue=7 learning=6
 	add_trait=intricate_webweaver add_trait=content add_trait=wroth add_trait=trusting add_trait=kind 
 	father=1019924061	#Guecha
@@ -1212,7 +893,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jmoialbpffg"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924061	#Guecha
 	1162.12.8={ birth=yes }
 	1217.12.30={ death=yes }
@@ -1222,7 +903,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="afchpcipkdf"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924061	#Guecha
 	1168.2.5={ birth=yes }
 	1249.6.12={ death=yes }
@@ -1232,7 +913,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="ecglbjjiced"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924061	#Guecha
 	1171.4.21={ birth=yes }
 	1237.10.29={ death=yes }
@@ -1241,7 +922,7 @@
 	name=Meicuchuca
 	dynasty=1009990208
 	dna="klgdmaeilci"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=4 stewardship=4 intrigue=4 learning=6
 	add_trait=flamboyant_schemer add_trait=charitable add_trait=humble add_trait=craven add_trait=cruel 
 	add_trait=chaste add_trait=wounded 
@@ -1253,7 +934,7 @@
 	name=Saguamanchica
 	dynasty=1009990208
 	dna="ocmiidciifp"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=5 stewardship=6 intrigue=7 learning=4
 	add_trait=naive_appeaser add_trait=cruel add_trait=ambitious add_trait=humble add_trait=deceitful 
 	add_trait=just add_trait=clubfooted 
@@ -1266,7 +947,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="mccnmoegdjk"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924066	#Meicuchuca
 	1192.9.15={ birth=yes }
 	1254.5.19={ death=yes }
@@ -1276,7 +957,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="mladfaepkce"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924070	#Meicuchuca
 	1204.3.25={ birth=yes }
 	1260.12.19={ death=yes }
@@ -1285,7 +966,7 @@
 	name=Cuba
 	dynasty=1009990208
 	dna="edfimcahlci"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=7 stewardship=4 intrigue=4 learning=6
 	add_trait=flamboyant_schemer add_trait=diligent add_trait=cruel 
 	father=1019924070	#Meicuchuca
@@ -1297,7 +978,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="blgdiaccflb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924070	#Meicuchuca
 	1215.1.16={ birth=yes }
 	1296.1.21={ death=yes }
@@ -1306,7 +987,7 @@
 	name=Mico-Chuco
 	dynasty=1009990208
 	dna="klgmmaeilcb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=5 stewardship=7 intrigue=8 learning=8
 	add_trait=elusive_shadow add_trait=kind add_trait=lustful add_trait=brave add_trait=content 
 	father=1019924070	#Meicuchuca
@@ -1317,7 +998,7 @@
 	name=Mico-Chuco
 	dynasty=1009990208
 	dna="hfiimhjoncl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=4 stewardship=6 intrigue=7 learning=6
 	add_trait=tough_soldier add_trait=charitable add_trait=diligent add_trait=just add_trait=cruel 
 	add_trait=gregarious add_trait=chaste add_trait=possessed 
@@ -1329,7 +1010,7 @@
 	name=Tisquesusa
 	dynasty=1009990208
 	dna="edkhmfehfco"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=4 stewardship=4 intrigue=6 learning=6
 	add_trait=midas_touched add_trait=envious add_trait=paranoid add_trait=deceitful add_trait=gregarious 
 	add_trait=gluttonous add_trait=chaste 
@@ -1341,7 +1022,7 @@
 	name=Aquimin
 	dynasty=1009990208
 	dna="edcdbcahicn"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=8 stewardship=7 intrigue=4 learning=7
 	add_trait=martial_cleric add_trait=proud add_trait=cruel add_trait=ambitious add_trait=patient 
 	add_trait=chaste add_trait=harelip 
@@ -1354,7 +1035,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="edfibbmelgd"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924074	#Cuba
 	1249.2.21={ birth=yes }
 	1328.11.5={ death=yes }
@@ -1364,7 +1045,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="edfjkcahkli"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924074	#Cuba
 	1256.12.26={ birth=yes }
 	1342.1.4={ death=yes }
@@ -1373,7 +1054,7 @@
 	name=Meicuchuca
 	dynasty=1009990208
 	dna="mdfimcahlci"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=8 stewardship=6 intrigue=6 learning=8
 	add_trait=tough_soldier add_trait=hedonist add_trait=craven add_trait=just add_trait=ill 
 	add_trait=quick 
@@ -1385,7 +1066,7 @@
 	name=Ah
 	dynasty=1009990208
 	dna="ehdijcellca"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=5 stewardship=6 intrigue=7 learning=8
 	add_trait=martial_cleric add_trait=wroth add_trait=honest add_trait=lustful add_trait=craven 
 	father=1019924074	#Cuba
@@ -1396,7 +1077,7 @@
 	name=Nemequene
 	dynasty=1009990208
 	dna="hhiiihjokcl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=8 diplomacy=4 stewardship=5 intrigue=8 learning=8
 	add_trait=scholarly_theologian add_trait=gardener add_trait=zealous add_trait=proud add_trait=temperate 
 	add_trait=lustful add_trait=arbitrary 
@@ -1409,7 +1090,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="hfinmhkoncl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924077	#Mico-Chuco
 	1275.12.1={ birth=yes }
 	1362.1.28={ death=yes }
@@ -1419,7 +1100,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="hfiioajobcl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924077	#Mico-Chuco
 	1281.1.5={ birth=yes }
 	1373.7.28={ death=yes }
@@ -1428,7 +1109,7 @@
 	name=Tutazúa
 	dynasty=1009990208
 	dna="jadbihdkmlm"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=4 stewardship=7 intrigue=5 learning=8
 	add_trait=detached_priest add_trait=brave add_trait=gluttonous add_trait=zealous add_trait=slothful 
 	add_trait=drunkard 
@@ -1441,7 +1122,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="hhjelaaokcl"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924084	#Nemequene
 	1304.5.26={ birth=yes }
 	1374.9.8={ death=yes }
@@ -1451,7 +1132,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="dhmfihjbeab"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924084	#Nemequene
 	1309.4.11={ birth=yes }
 	1372.12.16={ death=yes }
@@ -1460,7 +1141,7 @@
 	name=Ah
 	dynasty=1009990208
 	dna="epeimcmcccg"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=8 stewardship=8 intrigue=5 learning=7
 	add_trait=midas_touched add_trait=shy add_trait=chaste add_trait=kind add_trait=greedy 
 	father=1019924084	#Nemequene
@@ -1472,7 +1153,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="idojijjokcj"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924084	#Nemequene
 	1320.12.24={ birth=yes }
 	1397.11.5={ death=yes }
@@ -1481,7 +1162,7 @@
 	name=Guecha
 	dynasty=1009990208
 	dna="dhioiojhkcm"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=4 stewardship=6 intrigue=7 learning=4
 	add_trait=tough_soldier add_trait=wroth add_trait=kind add_trait=cruel 
 	father=1019924084	#Nemequene
@@ -1493,7 +1174,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="hdlkijjokpc"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924084	#Nemequene
 	1329.10.18={ birth=yes }
 	1372.11.27={ death=yes }
@@ -1503,7 +1184,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="mogiiafkmme"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924087	#Tutazúa
 	1323.11.8={ birth=yes }
 	1385.7.6={ death=yes }
@@ -1512,7 +1193,7 @@
 	name=Quemuenchatocha
 	dynasty=1009990208
 	dna="jadbbihfmlb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=4 diplomacy=6 stewardship=6 intrigue=6 learning=5
 	add_trait=midas_touched add_trait=cynical add_trait=craven add_trait=gregarious add_trait=wroth 
 	add_trait=drunkard 
@@ -1524,7 +1205,7 @@
 	name=Uzathama
 	dynasty=1009990208
 	dna="kadbkhgemdm"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=4 stewardship=6 intrigue=5 learning=6
 	add_trait=detached_priest add_trait=shy add_trait=craven add_trait=zealous add_trait=temperate 
 	father=1019924087	#Tutazúa
@@ -1536,7 +1217,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jadkbnhakgb"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924095	#Quemuenchatocha
 	1356.1.7={ birth=yes }
 	1418.4.11={ death=yes }
@@ -1545,7 +1226,7 @@
 	name=Cuba
 	dynasty=1009990208
 	dna="oadbkipfkng"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=6 diplomacy=5 stewardship=8 intrigue=6 learning=4
 	add_trait=misguided_warrior add_trait=chaste add_trait=envious add_trait=wroth add_trait=content 
 	add_trait=cruel add_trait=depressed 
@@ -1558,7 +1239,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="jcfboihlmln"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924095	#Quemuenchatocha
 	1362.2.18={ birth=yes }
 	1433.11.29={ death=yes }
@@ -1567,7 +1248,7 @@
 	name=Tomagata
 	dynasty=1009990208
 	dna="nadjdipfong"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=7 diplomacy=4 stewardship=6 intrigue=4 learning=6
 	add_trait=indulgent_wastrel add_trait=greedy add_trait=wroth add_trait=kind add_trait=lunatic 
 	father=1019924098	#Cuba
@@ -1579,7 +1260,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="nidbjiffpbg"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924098	#Cuba
 	1389.9.26={ birth=yes }
 	1454.10.12={ death=yes }
@@ -1589,7 +1270,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="oacakjkfkfk"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924098	#Cuba
 	1394.10.20={ birth=yes }
 	1479.12.10={ death=yes }
@@ -1599,7 +1280,7 @@
 	female=yes
 	dynasty=1009990208
 	dna="ohjdekjaeng"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	father=1019924098	#Cuba
 	1398.7.22={ birth=yes }
 	1466.5.23={ death=yes }
@@ -1608,7 +1289,7 @@
 	name=Quemuenchatocha
 	dynasty=1009990208
 	dna="oaempnpfilg"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=8 stewardship=6 intrigue=6 learning=7
 	add_trait=martial_cleric add_trait=humble add_trait=cruel add_trait=brave 
 	father=1019924098	#Cuba
@@ -1619,7 +1300,7 @@
 	name=Ah
 	dynasty=1009990208
 	dna="iljbgbdfkng"
-	culture=muisca religion=animism
+	culture=muisca religion=chiminigagua
 	martial=5 diplomacy=8 stewardship=6 intrigue=4 learning=6
 	add_trait=midas_touched add_trait=deceitful add_trait=cruel add_trait=proud add_trait=slothful 
 	add_trait=content 
@@ -3079,653 +2760,4 @@
 	father=1019928526	#Cuxininegua
 	1051.6.12={ birth=yes }
 	1112.1.6={ death=yes }
-}
-1019928532={
-	name=Ah
-	dynasty=1009990253
-	dna="lafjioefcff"
-	culture=muisca religion=south_american
-	martial=6 diplomacy=8 stewardship=4 intrigue=7 learning=7
-	add_trait=misguided_warrior add_trait=zealous add_trait=craven add_trait=shy add_trait=patient 
-	add_trait=stutter 
-	father=1019928531	#Tibacuy
-	1078.5.27={ birth=yes }
-	1149.5.4={ death=yes }
-}
-1019928533={
-	name=Axomamma
-	female=yes
-	dynasty=1009990253
-	dna="lafkaohfmea"
-	culture=muisca religion=south_american
-	father=1019928531	#Tibacuy
-	1081.9.6={ birth=yes }
-	1146.1.12={ death=yes }
-}
-1019928534={
-	name=Maiara
-	female=yes
-	dynasty=1009990253
-	dna="cdckaohlcmm"
-	culture=muisca religion=south_american
-	father=1019928531	#Tibacuy
-	1086.2.1={ birth=yes }
-	1139.2.23={ death=yes }
-}
-1019928535={
-	name=Axomamma
-	female=yes
-	dynasty=1009990253
-	dna="aamknohnffg"
-	culture=muisca religion=south_american
-	father=1019928531	#Tibacuy
-	1091.8.1={ birth=yes }
-	1164.7.14={ death=yes }
-}
-1019928536={
-	name=Axomamma
-	female=yes
-	dynasty=1009990253
-	dna="ebdoaohfifg"
-	culture=muisca religion=south_american
-	father=1019928531	#Tibacuy
-	1095.7.5={ birth=yes }
-	1182.5.8={ death=yes }
-}
-1019928537={
-	name=Cavillaca
-	female=yes
-	dynasty=1009990253
-	dna="ladeaocjcbe"
-	culture=muisca religion=south_american
-	father=1019928531	#Tibacuy
-	1099.2.14={ birth=yes }
-	1165.2.28={ death=yes }
-}
-1019928538={
-	name=Maiara
-	female=yes
-	dynasty=1009990253
-	dna="hpdkaohndfi"
-	culture=muisca religion=south_american
-	father=1019928531	#Tibacuy
-	1104.7.4={ birth=yes }
-	1161.10.10={ death=yes }
-}
-1019928539={
-	name=Guecha
-	dynasty=1009990253
-	dna="fcijiheakha"
-	culture=muisca religion=south_american
-	martial=8 diplomacy=4 stewardship=4 intrigue=7 learning=4
-	add_trait=skilled_tactician add_trait=shy add_trait=gluttonous add_trait=wounded add_trait=clubfooted 
-	father=1019928532	#Ah
-	1105.12.5={ birth=yes }
-	1191.1.25={ death=yes }
-}
-1019928540={
-	name=Ana
-	female=yes
-	dynasty=1009990253
-	dna="abajioefjfg"
-	culture=muisca religion=south_american
-	father=1019928532	#Ah
-	1110.6.4={ birth=yes }
-	1188.5.13={ death=yes }
-}
-1019928541={
-	name=Cavillaca
-	female=yes
-	dynasty=1009990253
-	dna="kmkeihldkff"
-	culture=muisca religion=south_american
-	father=1019928532	#Ah
-	1117.6.24={ birth=yes }
-	1183.9.8={ death=yes }
-}
-1019928542={
-	name=Tomagata
-	dynasty=1009990253
-	dna="lgcjjoenfgc"
-	culture=muisca religion=south_american
-	martial=6 diplomacy=8 stewardship=5 intrigue=5 learning=4
-	add_trait=midas_touched add_trait=envious add_trait=lustful add_trait=lunatic 
-	father=1019928532	#Ah
-	1123.2.10={ birth=yes }
-	1208.10.7={ death=yes }
-}
-1019928543={
-	name=Cavillaca
-	female=yes
-	dynasty=1009990253
-	dna="fcijhhmmkhp"
-	culture=muisca religion=south_american
-	father=1019928539	#Guecha
-	1133.7.27={ birth=yes }
-	1218.3.18={ death=yes }
-}
-1019928544={
-	name=Michua
-	dynasty=1009990253
-	dna="ncijahhakbg"
-	culture=muisca religion=south_american
-	martial=4 diplomacy=6 stewardship=4 intrigue=8 learning=4
-	add_trait=midas_touched add_trait=gregarious add_trait=craven add_trait=cynical add_trait=paranoid 
-	add_trait=ambitious add_trait=cruel 
-	father=1019928539	#Guecha
-	1139.1.17={ birth=yes }
-	1219.2.14={ death=yes }
-}
-1019928545={
-	name=Saguamanchica
-	dynasty=1009990253
-	dna="piiliheania"
-	culture=muisca religion=south_american
-	martial=4 diplomacy=5 stewardship=5 intrigue=8 learning=8
-	add_trait=grey_eminence add_trait=ambitious add_trait=zealous add_trait=patient add_trait=arbitrary 
-	add_trait=chaste 
-	father=1019928539	#Guecha
-	1142.5.8={ birth=yes }
-	1198.12.29={ death=yes }
-}
-1019928546={
-	name=China
-	female=yes
-	dynasty=1009990253
-	dna="hcgoajhakbg"
-	culture=muisca religion=south_american
-	father=1019928544	#Michua
-	1171.12.10={ birth=yes }
-	1234.3.3={ death=yes }
-}
-1019928547={
-	name=Ana
-	female=yes
-	dynasty=1009990253
-	dna="gcgbamhnkdf"
-	culture=muisca religion=south_american
-	father=1019928544	#Michua
-	1174.12.25={ birth=yes }
-	1258.10.31={ death=yes }
-}
-1019928548={
-	name=Kantuta
-	female=yes
-	dynasty=1009990253
-	dna="nfijhhllkcg"
-	culture=muisca religion=south_american
-	father=1019928544	#Michua
-	1179.10.27={ birth=yes }
-	1257.1.21={ death=yes }
-}
-1019928549={
-	name=Ana
-	female=yes
-	dynasty=1009990253
-	dna="jcfkaofbkmd"
-	culture=muisca religion=south_american
-	father=1019928544	#Michua
-	1183.1.11={ birth=yes }
-	1240.7.15={ death=yes }
-}
-1019928550={
-	name=Kantuta
-	female=yes
-	dynasty=1009990253
-	dna="inpjakpabjk"
-	culture=muisca religion=south_american
-	father=1019928544	#Michua
-	1190.1.25={ birth=yes }
-	1254.9.1={ death=yes }
-}
-1019928551={
-	name=China
-	female=yes
-	dynasty=1009990253
-	dna="kcnachhakhj"
-	culture=muisca religion=south_american
-	father=1019928544	#Michua
-	1193.1.15={ birth=yes }
-	1263.5.28={ death=yes }
-}
-1019928552={
-	name=Meicuchuca
-	dynasty=1009990253
-	dna="ndijghhkkhb"
-	culture=muisca religion=south_american
-	martial=7 diplomacy=8 stewardship=5 intrigue=4 learning=4
-	add_trait=charismatic_negotiator add_trait=paranoid add_trait=kind add_trait=slothful add_trait=stressed 
-	father=1019928544	#Michua
-	1198.2.16={ birth=yes }
-	1276.7.28={ death=yes }
-}
-1019928553={
-	name=Guecha
-	dynasty=1009990253
-	dna="nbbagaidkcg"
-	culture=muisca religion=south_american
-	martial=5 diplomacy=8 stewardship=5 intrigue=6 learning=8
-	add_trait=flamboyant_schemer add_trait=honest add_trait=just add_trait=paranoid add_trait=proud 
-	add_trait=chaste add_trait=wounded 
-	father=1019928552	#Meicuchuca
-	1232.2.16={ birth=yes }
-	1316.8.25={ death=yes }
-}
-1019928554={
-	name=Sagpipa
-	dynasty=1009990253
-	dna="hjdhicjkkhb"
-	culture=muisca religion=south_american
-	martial=8 diplomacy=7 stewardship=6 intrigue=6 learning=7
-	add_trait=flamboyant_schemer add_trait=gardener add_trait=honest add_trait=kind add_trait=slothful 
-	add_trait=gregarious add_trait=drunkard 
-	father=1019928552	#Meicuchuca
-	1236.3.25={ birth=yes }
-	1318.7.9={ death=yes }
-}
-1019928555={
-	name=Tutazúa
-	dynasty=1009990253
-	dna="idojbhdbibb"
-	culture=muisca religion=south_american
-	martial=6 diplomacy=5 stewardship=5 intrigue=6 learning=7
-	add_trait=flamboyant_schemer add_trait=just add_trait=slothful add_trait=lustful add_trait=cynical 
-	add_trait=ambitious add_trait=temperate 
-	father=1019928552	#Meicuchuca
-	1241.8.14={ birth=yes }
-	1331.7.26={ death=yes }
-}
-1019928556={
-	name=Nina
-	female=yes
-	dynasty=1009990253
-	dna="mdijdlcfkal"
-	culture=muisca religion=south_american
-	father=1019928552	#Meicuchuca
-	1248.12.10={ birth=yes }
-	1317.11.24={ death=yes }
-}
-1019928557={
-	name=Cuba
-	dynasty=1009990253
-	dna="mjcflkabkcm"
-	culture=muisca religion=south_american
-	martial=5 diplomacy=6 stewardship=4 intrigue=6 learning=7
-	add_trait=misguided_warrior add_trait=patient add_trait=chaste add_trait=cruel add_trait=trusting 
-	add_trait=envious add_trait=content 
-	father=1019928553	#Guecha
-	1253.10.12={ birth=yes }
-	1322.7.5={ death=yes }
-}
-1019928558={
-	name=Tibacuy
-	dynasty=1009990253
-	dna="nbccboidkcg"
-	culture=muisca religion=south_american
-	martial=6 diplomacy=5 stewardship=4 intrigue=8 learning=5
-	add_trait=misguided_warrior add_trait=temperate add_trait=paranoid add_trait=proud add_trait=content 
-	father=1019928553	#Guecha
-	1258.8.25={ birth=yes }
-	1334.8.24={ death=yes }
-}
-1019928559={
-	name=Guecha
-	dynasty=1009990253
-	dna="niigpaidaod"
-	culture=muisca religion=south_american
-	martial=7 diplomacy=4 stewardship=8 intrigue=6 learning=5
-	add_trait=detached_priest add_trait=shy add_trait=greedy add_trait=honest add_trait=kind 
-	add_trait=cruel add_trait=humble 
-	father=1019928553	#Guecha
-	1263.7.24={ birth=yes }
-	1337.1.5={ death=yes }
-}
-1019928560={
-	name=Aquiminzaque
-	dynasty=1009990253
-	dna="mjnfhelpabf"
-	culture=muisca religion=south_american
-	martial=5 diplomacy=5 stewardship=5 intrigue=6 learning=8
-	add_trait=martial_cleric add_trait=chaste add_trait=temperate add_trait=kind add_trait=cynical 
-	father=1019928557	#Cuba
-	1283.6.23={ birth=yes }
-	1358.10.14={ death=yes }
-}
-1019928561={
-	name=Axomamma
-	female=yes
-	dynasty=1009990253
-	dna="jccglkabece"
-	culture=muisca religion=south_american
-	father=1019928557	#Cuba
-	1288.8.6={ birth=yes }
-	1362.5.19={ death=yes }
-}
-1019928562={
-	name=Maiara
-	female=yes
-	dynasty=1009990253
-	dna="ljcblkaojcm"
-	culture=muisca religion=south_american
-	father=1019928557	#Cuba
-	1294.7.11={ birth=yes }
-	1379.11.2={ death=yes }
-}
-1019928563={
-	name=Saguamanchica
-	dynasty=1009990253
-	dna="nhcfliabklg"
-	culture=muisca religion=south_american
-	martial=6 diplomacy=8 stewardship=6 intrigue=4 learning=5
-	add_trait=misguided_warrior add_trait=just add_trait=honest add_trait=chaste add_trait=gluttonous 
-	add_trait=cynical add_trait=envious 
-	father=1019928557	#Cuba
-	1297.2.10={ birth=yes }
-	1378.9.9={ death=yes }
-}
-1019928564={
-	name=Maiara
-	female=yes
-	dynasty=1009990253
-	dna="ojlikkaband"
-	culture=muisca religion=south_american
-	father=1019928557	#Cuba
-	1301.11.7={ birth=yes }
-	1368.10.29={ death=yes }
-}
-1019928565={
-	name=Saguamanchica
-	dynasty=1009990253
-	dna="fjfmhelpmdf"
-	culture=muisca religion=south_american
-	martial=7 diplomacy=6 stewardship=4 intrigue=5 learning=6
-	add_trait=grey_eminence add_trait=craven add_trait=patient add_trait=honest add_trait=cynical 
-	add_trait=diligent 
-	father=1019928560	#Aquiminzaque
-	1304.11.5={ birth=yes }
-	1386.8.23={ death=yes }
-}
-1019928566={
-	name=Chia
-	female=yes
-	dynasty=1009990253
-	dna="jjnfhnhhkdo"
-	culture=muisca religion=south_american
-	father=1019928560	#Aquiminzaque
-	1309.3.20={ birth=yes }
-	1375.3.21={ death=yes }
-}
-1019928567={
-	name=Ana
-	female=yes
-	dynasty=1009990253
-	dna="pjlfhegpadf"
-	culture=muisca religion=south_american
-	father=1019928560	#Aquiminzaque
-	1312.2.14={ birth=yes }
-	1384.10.30={ death=yes }
-}
-1019928568={
-	name=Aquimin
-	dynasty=1009990253
-	dna="ojjnhfhpjmf"
-	culture=muisca religion=south_american
-	martial=6 diplomacy=7 stewardship=8 intrigue=7 learning=6
-	add_trait=misguided_warrior add_trait=ambitious add_trait=slothful add_trait=deceitful 
-	father=1019928560	#Aquiminzaque
-	1317.4.11={ birth=yes }
-	1394.11.25={ death=yes }
-}
-1019928569={
-	name=Cuxininegua
-	dynasty=1009990253
-	dna="mjnfheepabp"
-	culture=muisca religion=south_american
-	martial=8 diplomacy=8 stewardship=8 intrigue=4 learning=4
-	add_trait=skilled_tactician add_trait=diligent add_trait=patient add_trait=honest add_trait=greedy 
-	father=1019928560	#Aquiminzaque
-	1321.9.13={ birth=yes }
-	1405.11.19={ death=yes }
-}
-1019928570={
-	name=China
-	female=yes
-	dynasty=1009990253
-	dna="mnihblapamf"
-	culture=muisca religion=south_american
-	father=1019928560	#Aquiminzaque
-	1327.5.20={ birth=yes }
-	1403.5.16={ death=yes }
-}
-1019928571={
-	name=Maiara
-	female=yes
-	dynasty=1009990253
-	dna="ajndhelphnf"
-	culture=muisca religion=south_american
-	father=1019928560	#Aquiminzaque
-	1331.7.3={ birth=yes }
-	1391.10.21={ death=yes }
-}
-1019928572={
-	name=Chia
-	female=yes
-	dynasty=1009990253
-	dna="efjmlmaplgf"
-	culture=muisca religion=south_american
-	father=1019928565	#Saguamanchica
-	1332.4.16={ birth=yes }
-	1421.6.9={ death=yes }
-}
-1019928573={
-	name=Tomagata
-	dynasty=1009990253
-	dna="ejfbhelpmph"
-	culture=muisca religion=south_american
-	martial=7 diplomacy=6 stewardship=8 intrigue=6 learning=7
-	add_trait=tough_soldier add_trait=patient add_trait=ambitious add_trait=honest add_trait=gluttonous 
-	father=1019928565	#Saguamanchica
-	1337.12.12={ birth=yes }
-	1394.11.14={ death=yes }
-}
-1019928574={
-	name=Saguamanchica
-	dynasty=1009990253
-	dna="fjfjhjlcmog"
-	culture=muisca religion=south_american
-	martial=7 diplomacy=6 stewardship=7 intrigue=6 learning=4
-	add_trait=detached_priest add_trait=honest add_trait=shy add_trait=trusting 
-	father=1019928565	#Saguamanchica
-	1344.3.23={ birth=yes }
-	1427.11.29={ death=yes }
-}
-1019928575={
-	name=China
-	female=yes
-	dynasty=1009990253
-	dna="fkjmnlblkim"
-	culture=muisca religion=south_american
-	father=1019928565	#Saguamanchica
-	1349.11.18={ birth=yes }
-	1414.11.16={ death=yes }
-}
-1019928576={
-	name=Quemuenchatocha
-	dynasty=1009990253
-	dna="ehcbhelpeoa"
-	culture=muisca religion=south_american
-	martial=4 diplomacy=4 stewardship=7 intrigue=4 learning=8
-	add_trait=midas_touched add_trait=chaste add_trait=gluttonous add_trait=craven add_trait=wroth 
-	add_trait=shy 
-	father=1019928573	#Tomagata
-	1360.5.5={ birth=yes }
-	1416.5.6={ death=yes }
-}
-1019928577={
-	name=Mico-Chuco
-	dynasty=1009990253
-	dna="ejkphelpmph"
-	culture=muisca religion=south_american
-	martial=8 diplomacy=6 stewardship=4 intrigue=4 learning=7
-	add_trait=grey_eminence add_trait=trusting add_trait=greedy add_trait=gregarious add_trait=craven 
-	add_trait=kind 
-	father=1019928573	#Tomagata
-	1363.4.1={ birth=yes }
-	1460.7.12={ death=yes }
-}
-1019928578={
-	name=Kantuta
-	female=yes
-	dynasty=1009990253
-	dna="ejlkaecpjpc"
-	culture=muisca religion=south_american
-	father=1019928573	#Tomagata
-	1366.4.21={ birth=yes }
-	1415.9.22={ death=yes }
-}
-1019928579={
-	name=China
-	female=yes
-	dynasty=1009990253
-	dna="bkfjhekpmmh"
-	culture=muisca religion=south_american
-	father=1019928573	#Tomagata
-	1371.3.15={ birth=yes }
-	1455.8.11={ death=yes }
-}
-1019928580={
-	name=Tibacuy
-	dynasty=1009990253
-	dna="hleojemfjpk"
-	culture=muisca religion=south_american
-	martial=4 diplomacy=8 stewardship=7 intrigue=6 learning=6
-	add_trait=midas_touched add_trait=craven add_trait=envious add_trait=deceitful add_trait=humble 
-	father=1019928573	#Tomagata
-	1374.6.6={ birth=yes }
-	1443.2.7={ death=yes }
-}
-1019928581={
-	name=Michua
-	dynasty=1009990253
-	dna="ehabhelpeoa"
-	culture=muisca religion=south_american
-	martial=5 diplomacy=7 stewardship=6 intrigue=6 learning=6
-	add_trait=misguided_warrior add_trait=slothful add_trait=kind add_trait=cruel add_trait=cynical 
-	father=1019928576	#Quemuenchatocha
-	1387.12.25={ birth=yes }
-	1446.7.7={ death=yes }
-}
-1019928582={
-	name=Nina
-	female=yes
-	dynasty=1009990253
-	dna="cpckabopknd"
-	culture=muisca religion=south_american
-	father=1019928576	#Quemuenchatocha
-	1393.8.3={ birth=yes }
-	1479.4.9={ death=yes }
-}
-1019928583={
-	name=Ana
-	female=yes
-	dynasty=1009990253
-	dna="jhcbhempkpa"
-	culture=muisca religion=south_american
-	father=1019928576	#Quemuenchatocha
-	1397.10.11={ birth=yes }
-	1454.7.4={ death=yes }
-}
-1019928584={
-	name=China
-	female=yes
-	dynasty=1009990253
-	dna="ehcihpkheoa"
-	culture=muisca religion=south_american
-	father=1019928576	#Quemuenchatocha
-	1402.4.14={ birth=yes }
-	1478.7.3={ death=yes }
-}
-1019928585={
-	name=Maiara
-	female=yes
-	dynasty=1009990253
-	dna="cocdgelpmep"
-	culture=muisca religion=south_american
-	father=1019928576	#Quemuenchatocha
-	1407.7.13={ birth=yes }
-	1474.2.11={ death=yes }
-}
-1019928586={
-	name=Tisquesusa
-	dynasty=1009990253
-	dna="ebpbhkfpkmf"
-	culture=muisca religion=south_american
-	martial=6 diplomacy=4 stewardship=7 intrigue=7 learning=7
-	add_trait=grey_eminence add_trait=honest add_trait=patient add_trait=ambitious 
-	father=1019928581	#Michua
-	1411.3.17={ birth=yes }
-	1495.9.14={ death=yes }
-}
-1019928587={
-	name=Aquimin
-	dynasty=1009990253
-	dna="lhablilpfoa"
-	culture=muisca religion=south_american
-	martial=4 diplomacy=8 stewardship=8 intrigue=4 learning=7
-	add_trait=misguided_warrior add_trait=mystic add_trait=diligent add_trait=temperate add_trait=humble 
-	father=1019928581	#Michua
-	1414.5.13={ birth=yes }
-	1487.6.4={ death=yes }
-}
-1019928588={
-	name=Maiara
-	female=yes
-	dynasty=1009990253
-	dna="klcchgljela"
-	culture=muisca religion=south_american
-	father=1019928581	#Michua
-	1417.5.12={ birth=yes }
-	1504.1.22={ death=yes }
-}
-1019928589={
-	name=Ana
-	female=yes
-	dynasty=1009990253
-	dna="chdbbeggdoa"
-	culture=muisca religion=south_american
-	father=1019928581	#Michua
-	1422.2.20={ birth=yes }
-	1497.5.31={ death=yes }
-}
-1019928590={
-	name=Maiara
-	female=yes
-	dynasty=1009990253
-	dna="ohjbffnpeof"
-	culture=muisca religion=south_american
-	father=1019928581	#Michua
-	1428.5.27={ birth=yes }
-	1497.10.15={ death=yes }
-}
-1019928591={
-	name=Kantuta
-	female=yes
-	dynasty=1009990253
-	dna="khobbelpemg"
-	culture=muisca religion=south_american
-	father=1019928581	#Michua
-	1432.5.4={ birth=yes }
-	1495.6.4={ death=yes }
-}
-1019928592={
-	name=Aquimin
-	dynasty=1009990253
-	dna="edfedidpjia"
-	culture=muisca religion=south_american
-	martial=4 diplomacy=8 stewardship=4 intrigue=8 learning=8
-	add_trait=detached_priest add_trait=gregarious add_trait=proud add_trait=envious add_trait=slothful 
-	add_trait=brave add_trait=cruel 
-	father=1019928581	#Michua
-	1437.8.3={ birth=yes }
-	1514.1.15={ death=yes }
 }
