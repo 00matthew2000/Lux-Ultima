@@ -1,6 +1,6 @@
 e_mexikha = {
 
-	color={ 25 44 177 }
+	color={ 114 222 110 }
 	color2={ 220 220 220 }
 
 	capital = 3723 # Tenochtitlan
@@ -160,13 +160,13 @@ e_mexikha = {
 			}
 
 		}
-		d_aztec1 = {
+		d_tenochtitlan = {
 
-			color={ 44 184 159 }
+			color={ 173 255 57 }
 			color2={ 220 220 220 }
 			
 			capital = 3723 # Tenochtitlan
-			
+
 			c_tenochtitlan = {
 
 				color={ 85 24 119 }
@@ -190,6 +190,98 @@ e_mexikha = {
 				b_tenochtitlan-vi = {
 				}
 			}
+			c_acatic = {
+
+				color={ 180 60 80 }
+				color2={ 146 175 215 }
+				
+				b_acatic = {
+				}
+				b_tepacatic = {
+				}
+				b_tonacatic = {
+				}
+				b_yaualititlan = {
+				}
+				b_randastic = {
+				}
+				b_zunigatic = {
+				}
+				b_actoton = {
+				}
+			}
+			c_guachinago = {
+
+				color={ 88 78 80 }
+				color2={ 116 115 15 }
+				
+				b_guachinago = {
+				}
+				b_xaulauchin = {
+				}
+				b_amontanxi = {
+				}
+			}
+		}
+		d_metztitlan = {
+
+			color={ 100 231 65 }
+			color2={ 220 220 220 }
+			
+			capital = 3717 # Tlapacoyan
+
+			c_tlapacoyan = {
+
+				color={ 85 144 169 }
+				color2={ 220 220 220 }
+				
+				b_tlapacoyan = {
+				}
+				b_tlapacoyan-ii = {
+				}
+				b_tlapacoyan-iii = {
+				}
+			}
+			c_metztitlan = {
+
+				color={ 225 134 49 }
+				color2={ 220 220 220 }
+				
+				b_metztitlan = {
+				}
+				b_metztitlan-ii = {
+				}
+				b_metztitlan-iii = {
+				}
+			}
+		}
+		d_huaxtepec = {
+
+			color={ 140 31 189 }
+			color2={ 220 220 220 }
+			
+			capital = 4183 # Huaxtepec
+
+			c_xalostotititian = {
+
+				color={ 180 60 80 }
+				color2={ 136 180 177 }
+				
+				b_xalostotititian = {
+				}
+				b_tecuexe = {
+				}
+				b_caxica = {
+				}
+				b_jalostit = {
+				}
+				b_xacostaj = {
+				}
+				b_quincena = {
+				}
+				b_stititian = {
+				}
+			}
 			c_cuauhnahuac = {
 
 				color={ 145 204 129 }
@@ -200,6 +292,18 @@ e_mexikha = {
 				b_cuauhnahuac-ii = {
 				}
 				b_cuauhnahuac-iii = {
+				}
+			}
+			c_amecan = {
+
+				color={ 88 78 80 }
+				color2={ 116 115 15 }
+				
+				b_amecan = {
+				}
+				b_aymecaguach = {
+				}
+				b_amentanc = {
 				}
 			}
 			c_malinalco = {
@@ -214,6 +318,14 @@ e_mexikha = {
 				b_malinalco-iii = {
 				}
 			}
+		}
+		d_aztec1 = {
+
+			color={ 44 184 159 }
+			color2={ 220 220 220 }
+			
+			capital = 3718 # Tula
+			
 			c_tullucan = {
 
 				color={ 85 94 149 }
@@ -238,16 +350,42 @@ e_mexikha = {
 				b_tulax-iii = {
 				}
 			}
-			c_tlapacoyan = {
+			c_cutzallan = {
 
-				color={ 85 144 169 }
-				color2={ 220 220 220 }
+				color={ 180 60 80 }
+				color2={ 146 70 45 }
 				
-				b_tlapacoyan = {
+				b_cutzallan = {
 				}
-				b_tlapacoyan-ii = {
+				b_totonahyu = {
 				}
-				b_tlapacoyan-iii = {
+				b_brias = {
+				}
+				b_yohualichan = {
+				}
+				b_puebala = {
+				}
+				b_alpazat = {
+				}
+			}
+			c_ayahualican = {
+
+				color={ 180 60 80 }
+				color2={ 116 185 95 }
+				
+				b_yahyalica = {
+				}
+				b_acasico = {
+				}
+				b_zaoitullo = {
+				}
+				b_pastores = {
+				}
+				b_riacongesaal = {
+				}
+				b_ekqyraznon = {
+				}
+				b_huaclilica = {
 				}
 			}
 		}
