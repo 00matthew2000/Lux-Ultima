@@ -1230,10 +1230,10 @@
 	name="Wencheng"
 	female=yes
 	dynasty = 1051150 # Li - ruling Tang dynasty
-	religion="buddhist"
+	religion="indoh_confucian"
 	culture="han"
 	father= 247772 #Li Daozong
-	trait="mahayana_buddhist"
+	trait="mahayana_indoh_confucian"
 	623.1.1={
 		birth=yes
 	}
@@ -1246,10 +1246,10 @@
 	name="Jincheng"
 	female=yes
 	dynasty = 1051150 # Li - ruling Tang dynasty
-	religion="buddhist"
+	religion="indoh_confucian"
 	culture="han"
 	father = 247916 # Li Shouli, Prince of Bin
-	trait="mahayana_buddhist"
+	trait="mahayana_indoh_confucian"
 	698.1.1={
 		birth=yes
 	}
@@ -1262,10 +1262,10 @@
 	name="Jiangchizun"
 	female=yes
 	dynasty=105823 #Meng - Rulers of Nanzhou
-	religion="buddhist"
+	religion="indoh_confucian"
 	culture="han" #bai
 	#father = #Meng Shengluopi, King of Nanzhao
-	trait="mahayana_buddhist"
+	trait="mahayana_indoh_confucian"
 	710.1.1={
 		birth=yes
 	}
@@ -1439,13 +1439,13 @@
 248148 = {
 	name="Yuanzhong"
 	dynasty=1055016  
-	religion="buddhist"
+	religion="indoh_confucian"
 	culture="sogdian"
 	trait=tough_soldier
 	trait=desert_terrain_leader
 	trait=brave
 	martial = 10
-	trait="mahayana_buddhist"
+	trait="mahayana_indoh_confucian"
 	730.1.1={
 		birth=yes
 	}
@@ -7248,7 +7248,7 @@
 1059718 = {
 	name="Yuanzhong" 
 	dynasty=1055036
-	religion="buddhist"
+	religion="indoh_confucian"
 	culture="han"
 	father=1059714
 	trait=charismatic_negotiator
@@ -7256,7 +7256,7 @@
 	trait=sympathy_zoroastrianism
 	trait=sympathy_islam
 	trait=sympathy_christendom
-	trait=theravada_buddhist
+	trait=theravada_indoh_confucian
 	920.1.1={
 		birth=yes # maybe
 	}
