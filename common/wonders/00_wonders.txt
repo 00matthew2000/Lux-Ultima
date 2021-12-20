@@ -459,12 +459,12 @@ wonder_temple_pagan = {
 	picture = GFX_wonder_strip_temple
 	model = wonder_temple
 	potential = {
-		religion_group = pagan_group
+		LI_pagan_trigger = yes
 		is_reformed_religion = yes
 	}
 	active = {
 		ROOT = {
-			religion_group = pagan_group
+			LI_pagan_trigger = yes
 			is_reformed_religion = yes
 		}
 	}
@@ -573,11 +573,11 @@ wonder_temple_pagan = {
 wonder_temple_buddhist = {
 	picture = GFX_wonder_strip_buddhist_temple
 	potential = {
-		religion = buddhist
+		religion_group = bud_group
 	}
 	active = {
 		ROOT = {
-			religion = buddhist
+			religion_group = bud_group
 		}
 	}
 	flags = {
@@ -804,7 +804,6 @@ wonder_statue_ruler = {
 		NOT = {
 			trait = humble
 		}
-		NOT = { religion = iconoclast }
 		trigger_if = {
 			limit = {
 				religion_group = muslim
@@ -814,7 +813,6 @@ wonder_statue_ruler = {
 	}
 	active = {
 		ROOT = {
-			NOT = { religion = iconoclast }
 			trigger_if = {
 				limit = {
 					religion_group = muslim
@@ -934,7 +932,6 @@ wonder_statue_horse = {
 			culture = horse
 			government = nomadic_government
 		}
-		NOT = { religion = iconoclast }
 		trigger_if = {
 			limit = {
 				religion_group = muslim
@@ -949,7 +946,6 @@ wonder_statue_horse = {
 				culture = horse
 				government = nomadic_government
 			}
-			NOT = { religion = iconoclast }
 			trigger_if = {
 				limit = {
 					religion_group = muslim
@@ -1676,11 +1672,8 @@ wonder_amphitheater = {
 	picture = GFX_wonder_strip_amphitheatre
 	potential = {
 		OR = {
-			culture = roman
-			culture = italian
-			culture = greek
-			religion = hellenic_pagan
-			religion = hellenic_pagan_reformed
+			culture_group = latin
+			culture_group = byzantine
 			has_religion_feature = religion_ritual_sacrifice
 		}
 		NOT = {
@@ -2034,12 +2027,12 @@ wonder_university = {
 			religion_group = muslim
 			religion_group = jewish_group
 			religion_group = zoroastrian_group
-			religion_group = indian_group
-			religion_group = pagan_group
+			religion_group = bud_group
+			LI_pagan_trigger = yes
 		}
 		trigger_if = {
 			limit = {
-				religion_group = pagan_group
+				LI_pagan_trigger = yes
 			}
 			is_reformed_religion = yes
 		}
@@ -2047,7 +2040,7 @@ wonder_university = {
 	active = {
 		trigger_if = {
 			limit = {
-				religion_group = pagan_group
+				LI_pagan_trigger = yes
 			}
 			ROOT = {
 				is_reformed_religion = yes
@@ -2185,12 +2178,12 @@ wonder_library = {
 			religion_group = muslim
 			religion_group = jewish_group
 			religion_group = zoroastrian_group
-			religion_group = indian_group
-			religion_group = pagan_group
+			religion_group = bud_group
+			LI_pagan_trigger = yes
 		}
 		trigger_if = {
 			limit = {
-				religion_group = pagan_group
+				LI_pagan_trigger = yes
 			}
 			ROOT = {
 				is_reformed_religion = yes
@@ -2200,7 +2193,7 @@ wonder_library = {
 	active = {
 		trigger_if = {
 			limit = {
-				religion_group = pagan_group
+				LI_pagan_trigger = yes
 			}
 			ROOT = {
 				is_reformed_religion = yes
@@ -2430,8 +2423,7 @@ wonder_pyramid = {
 	model = wonder_pyramid
 	potential = {
 		OR = {
-			culture = egyptian_arabic
-			culture = coptic
+			culture_group = arabic
 			trait = lunatic
 			has_religion_feature = religion_feature_pyramids
 		}
@@ -2542,11 +2534,11 @@ wonder_pyramid = {
 wonder_pagan_stones = {
 	picture = GFX_wonder_strip_pagan_stones
 	potential = {
-		religion_group = pagan_group
+		LI_pagan_trigger = yes
 	}
 	active = {
 		ROOT = {
-			religion_group = pagan_group
+			LI_pagan_trigger = yes
 		}
 	}
 	flags = {
@@ -2886,8 +2878,7 @@ wonder_pyramid_giza = {
 	active = {
 		ROOT = {
 			OR = {
-				culture = egyptian_arabic
-				culture = coptic
+				culture_group = arabic
 				trait = lunatic
 				has_religion_feature = religion_feature_pyramids
 			}
@@ -2998,7 +2989,7 @@ wonder_pagan_stones_stonehenge = {
 	}
 	active = {
 		ROOT = {
-			religion_group = pagan_group
+			LI_pagan_trigger = yes
 		}
 	}
 	flags = {
@@ -3531,13 +3522,13 @@ wonder_house_of_wisdom = {
 	active = {
 		trigger_if = {
 			limit = {
-				religion_group = pagan_group
+				LI_pagan_trigger = yes
 				is_reformed_religion = no
 			}
 			ROOT = {
 				OR = {
 					is_reformed_religion = yes
-					NOT = { religion_group = pagan_group }
+					NOT = { LI_pagan_trigger = yes }
 				}
 			}
 		}

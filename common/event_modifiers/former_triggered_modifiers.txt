@@ -629,7 +629,7 @@ vestigial_empire = {
 	monthly_character_prestige = -0.25
 	#vassal_opinion = 10
 	#general_opinion = -10
-	ai_ambition = 100
+	##ai_ambition = 100
 	
 	icon = 28
 }
@@ -747,9 +747,9 @@ administration_B0 = {
 	city_vassal_tax_modifier = -0.025
 	castle_vassal_tax_modifier = -0.025
 	temple_vassal_tax_modifier = -0.025
-	monthly_character_prestige = 0.5
-	general_opinion = -2
-	ai_ambition = -4
+	monthly_character_prestige = 0.05
+	general_opinion = -1
+	#ai_ambition = -4
 }
 administration_B1 = {
 	icon = 27
@@ -759,9 +759,9 @@ administration_B1 = {
 	city_vassal_tax_modifier = -0.05
 	castle_vassal_tax_modifier = -0.05
 	temple_vassal_tax_modifier = -0.05
-	monthly_character_prestige = 0.4
-	general_opinion = -4
-	ai_ambition = -8
+	monthly_character_prestige = 0.04
+	general_opinion = -2
+	#ai_ambition = -8
 }
 administration_B2 = {
 	icon = 27
@@ -771,9 +771,9 @@ administration_B2 = {
 	city_vassal_tax_modifier = -0.075
 	castle_vassal_tax_modifier = -0.075
 	temple_vassal_tax_modifier = -0.075
-	monthly_character_prestige = 0.3
-	general_opinion = -6
-	ai_ambition = -12
+	monthly_character_prestige = 0.03
+	general_opinion = -3
+	#ai_ambition = -12
 }
 administration_B3 = {
 	icon = 27
@@ -783,9 +783,9 @@ administration_B3 = {
 	city_vassal_tax_modifier = -0.1
 	castle_vassal_tax_modifier = -0.1
 	temple_vassal_tax_modifier = -0.1
-	monthly_character_prestige = 0.25
-	general_opinion = -8
-	ai_ambition = -16
+	monthly_character_prestige = 0.02
+	general_opinion = -4
+	#ai_ambition = -16
 }
 administration_B4 = {
 	icon = 27
@@ -795,9 +795,9 @@ administration_B4 = {
 	city_vassal_tax_modifier = -0.125
 	castle_vassal_tax_modifier = -0.125
 	temple_vassal_tax_modifier = -0.125
-	monthly_character_prestige = 0.2
-	general_opinion = -10
-	ai_ambition = -20
+	monthly_character_prestige = 0.02
+	general_opinion = -5
+	#ai_ambition = -20
 }
 administration_B5 = {
 	icon = 27
@@ -807,9 +807,9 @@ administration_B5 = {
 	city_vassal_tax_modifier = -0.15
 	castle_vassal_tax_modifier = -0.15
 	temple_vassal_tax_modifier = -0.15
-	monthly_character_prestige = 0.15
-	general_opinion = -12
-	ai_ambition = -24
+	monthly_character_prestige = 0.01
+	general_opinion = -6
+	#ai_ambition = -24
 }
 administration_B6 = {
 	icon = 27
@@ -819,9 +819,8 @@ administration_B6 = {
 	city_vassal_tax_modifier = -0.175
 	castle_vassal_tax_modifier = -0.175
 	temple_vassal_tax_modifier = -0.175
-	monthly_character_prestige = 0.1
-	general_opinion = -14
-	ai_ambition = -28
+	general_opinion = -7
+	#ai_ambition = -28
 }
 administration_B7 = {
 	icon = 27
@@ -831,9 +830,9 @@ administration_B7 = {
 	city_vassal_tax_modifier = -0.2
 	castle_vassal_tax_modifier = -0.2
 	temple_vassal_tax_modifier = -0.2
-	monthly_character_prestige = 0.05
-	general_opinion = -16
-	ai_ambition = -32
+	monthly_character_prestige = -0.02
+	general_opinion = -8
+	#ai_ambition = -32
 }
 
 #Imperial Administration
@@ -845,9 +844,10 @@ administration_C0 = {
 	city_vassal_tax_modifier = -0.225
 	castle_vassal_tax_modifier = -0.225
 	temple_vassal_tax_modifier = -0.225
-	land_morale = -0.05
-	general_opinion = -20
-	ai_ambition = -40
+	monthly_character_prestige = -0.04
+	land_morale = -0.02
+	general_opinion = -10
+	#ai_ambition = -40
 }
 administration_C1 = {
 	icon = 27
@@ -857,9 +857,10 @@ administration_C1 = {
 	city_vassal_tax_modifier = -0.25
 	castle_vassal_tax_modifier = -0.25
 	temple_vassal_tax_modifier = -0.25
-	land_morale = -0.1
-	general_opinion = -23
-	ai_ambition = -48
+	monthly_character_prestige = -0.08
+	land_morale = -0.05
+	general_opinion = -11
+	#ai_ambition = -48
 }
 administration_C2 = {
 	icon = 27
@@ -869,9 +870,10 @@ administration_C2 = {
 	city_vassal_tax_modifier = -0.275
 	castle_vassal_tax_modifier = -0.275
 	temple_vassal_tax_modifier = -0.275
-	land_morale = -0.15
-	general_opinion = -26
-	ai_ambition = -52
+	monthly_character_prestige = -0.16
+	land_morale = -0.08
+	general_opinion = -13
+	#ai_ambition = -52
 }
 administration_C3 = {
 	icon = 27
@@ -881,9 +883,10 @@ administration_C3 = {
 	city_vassal_tax_modifier = -0.3
 	castle_vassal_tax_modifier = -0.3
 	temple_vassal_tax_modifier = -0.3
-	land_morale = -0.2
-	general_opinion = -29
-	ai_ambition = -60
+	monthly_character_prestige = -0.32
+	land_morale = -0.1
+	general_opinion = -15
+	#ai_ambition = -60
 }
 administration_C4 = {
 	icon = 27
@@ -893,9 +896,10 @@ administration_C4 = {
 	city_vassal_tax_modifier = -0.325
 	castle_vassal_tax_modifier = -0.325
 	temple_vassal_tax_modifier = -0.325
-	land_morale = -0.25
-	general_opinion = -32
-	ai_ambition = -68
+	monthly_character_prestige = -0.50
+	land_morale = -0.12
+	general_opinion = -16
+	#ai_ambition = -68
 }
 administration_C5 = {
 	icon = 27
@@ -905,9 +909,10 @@ administration_C5 = {
 	city_vassal_tax_modifier = -0.35
 	castle_vassal_tax_modifier = -0.35
 	temple_vassal_tax_modifier = -0.35
-	land_morale = -0.3
-	general_opinion = -35
-	ai_ambition = -76
+	monthly_character_prestige = -0.70
+	land_morale = -0.15
+	general_opinion = -17
+	#ai_ambition = -76
 }
 administration_C6 = {
 	icon = 27
@@ -917,9 +922,10 @@ administration_C6 = {
 	city_vassal_tax_modifier = -0.375
 	castle_vassal_tax_modifier = -0.375
 	temple_vassal_tax_modifier = -0.375
-	land_morale = -0.35
-	general_opinion = -38
-	ai_ambition = -84
+	monthly_character_prestige = -1
+	land_morale = -0.17
+	general_opinion = -19
+	#ai_ambition = -84
 }
 administration_C7 = {
 	icon = 27
@@ -929,9 +935,10 @@ administration_C7 = {
 	city_vassal_tax_modifier = -0.4
 	castle_vassal_tax_modifier = -0.4
 	temple_vassal_tax_modifier = -0.4
-	land_morale = -0.4
-	general_opinion = -41
-	ai_ambition = -92
+	monthly_character_prestige = -1.30
+	land_morale = -0.2
+	general_opinion = -20
+	#ai_ambition = -92
 }
 administration_C8 = {
 	icon = 27
@@ -941,9 +948,10 @@ administration_C8 = {
 	city_vassal_tax_modifier = -0.425
 	castle_vassal_tax_modifier = -0.425
 	temple_vassal_tax_modifier = -0.425
-	land_morale = -0.45
-	general_opinion = -44
-	ai_ambition = -100
+	monthly_character_prestige = -1.5
+	land_morale = -0.22
+	general_opinion = -22
+	#ai_ambition = -100
 }
 administration_C9 = {
 	icon = 27
@@ -953,9 +961,10 @@ administration_C9 = {
 	city_vassal_tax_modifier = -0.45
 	castle_vassal_tax_modifier = -0.45
 	temple_vassal_tax_modifier = -0.45
-	land_morale = -0.475
-	general_opinion = -47
-	ai_ambition = -108
+	monthly_character_prestige = -1.7
+	land_morale = -0.24
+	general_opinion = -24
+	#ai_ambition = -108
 }
 administration_C10 = {
 	icon = 27
@@ -965,9 +974,10 @@ administration_C10 = {
 	city_vassal_tax_modifier = -0.5
 	castle_vassal_tax_modifier = -0.5
 	temple_vassal_tax_modifier = -0.5
-	land_morale = -0.5
-	general_opinion = -50
-	ai_ambition = -116
+	monthly_character_prestige = -2
+	land_morale = -0.25
+	general_opinion = -25
+	#ai_ambition = -116
 }
 administration_C11 = {
 	icon = 27
@@ -977,9 +987,10 @@ administration_C11 = {
 	city_vassal_tax_modifier = -0.525
 	castle_vassal_tax_modifier = -0.525
 	temple_vassal_tax_modifier = -0.525
-	land_morale = -0.525
-	general_opinion = -54
-	ai_ambition = -124
+	monthly_character_prestige = -2.3
+	land_morale = -0.26
+	general_opinion = -26
+	#ai_ambition = -124
 }	
 administration_C12 = {
 	icon = 27
@@ -989,9 +1000,10 @@ administration_C12 = {
 	city_vassal_tax_modifier = -0.55
 	castle_vassal_tax_modifier = -0.55
 	temple_vassal_tax_modifier = -0.55
-	land_morale = -0.55
-	general_opinion = -57	
-	ai_ambition = -132
+	monthly_character_prestige = -2.5
+	land_morale = -0.27
+	general_opinion = -27	
+	#ai_ambition = -132
 }
 administration_C13 = {
 	icon = 27
@@ -1001,9 +1013,10 @@ administration_C13 = {
 	city_vassal_tax_modifier = -0.575
 	castle_vassal_tax_modifier = -0.575
 	temple_vassal_tax_modifier = -0.575
-	land_morale = -0.575
-	general_opinion = -60
-	ai_ambition = -140
+	monthly_character_prestige = -2.7
+	land_morale = -0.28
+	general_opinion = -30
+	#ai_ambition = -140
 }
 administration_C14 = {
 	icon = 27
@@ -1013,9 +1026,10 @@ administration_C14 = {
 	city_vassal_tax_modifier = -0.6
 	castle_vassal_tax_modifier = -0.6
 	temple_vassal_tax_modifier = -0.6
-	land_morale = -0.6
-	general_opinion = -63
-	ai_ambition = -148
+	monthly_character_prestige = -3
+	land_morale = -0.3
+	general_opinion = -31
+	#ai_ambition = -148
 }
 
 #Price of Power
@@ -1027,75 +1041,12 @@ administration_D = {
 	city_vassal_tax_modifier = -0.7
 	castle_vassal_tax_modifier = -0.7
 	temple_vassal_tax_modifier = -0.7
-	land_morale = -0.7
-	general_opinion = -70
-	ai_ambition = -160
-}###############################################################
-### VIET MODIFIERS ##############################################
-###############################################################
-
-#West Africa
-no_griot = {
-	icon = 36
-
-	land_morale = -0.05
-	monthly_character_prestige = -0.1	
-	general_opinion = -10
-	castle_vassal_max_levy = -0.2
-	temple_vassal_max_levy = -0.2
-	city_vassal_max_levy = -0.2
-	
+	monthly_character_prestige = -3.3
+	land_morale = -0.35
+	general_opinion = -35
+	#ai_ambition = -160
 }
-adequate_griot_diplomacy = {
-	icon = 18
 
-	land_morale = 0.02
-	#castle_vassal_max_levy = 0.1
-	#temple_vassal_max_levy = 0.1
-	#city_vassal_max_levy = 0.1		
-	
-}
-good_griot_diplomacy = {
-	icon = 18
-
-	land_morale = 0.05	
-	castle_vassal_max_levy = 0.05
-	temple_vassal_max_levy = 0.05
-	city_vassal_max_levy = 0.05	
-	
-}
-great_griot_diplomacy = {
-	icon = 18
-
-	land_morale = 0.1
-	castle_vassal_max_levy = 0.15
-	temple_vassal_max_levy = 0.15
-	city_vassal_max_levy = 0.15	
-	
-}
-adequate_griot_learning = {
-	icon = 18
-
-	monthly_character_prestige = 0.05	
-	#general_opinion = 10
-	#local_revolt_risk = -0.05	
-	
-}
-good_griot_learning = {
-	icon = 18
-
-	monthly_character_prestige = 0.1	
-	general_opinion = 5
-#	local_revolt_risk = -0.05	# I think this only works in province modifiers
-}
-great_griot_learning = {
-	icon = 18
-
-	monthly_character_prestige = 0.25	
-	general_opinion = 10
-#	local_revolt_risk = -0.1	#I think this works only in province modifiers
-	
-}
 ###############################################################
 # Pagan Leadership System #
 # part of SELIN's "Tribal authority-based politics" #
@@ -1374,13 +1325,6 @@ ruler_bud_zen = {
 ruler_bud_zor = {
 	icon = 15
 	monthly_character_prestige = -0.2
-	monthly_character_piety = -0.2
-}
-
-# byeri Triggered Modifiers
-ruler_byeri = {
-	icon = 15
-	monthly_character_prestige = 0.1
 	monthly_character_piety = -0.2
 }
 
@@ -2314,20 +2258,6 @@ ruler_sol_slav = {
 	monthly_character_piety = -0.2
 }
 
-# sol_taoist Triggered Modifiers
-ruler_sol_taoist = {
-	icon = 15
-	monthly_character_prestige = -2
-	monthly_character_piety = -0.2
-}
-
-# sol_taoist low prestige Triggered Modifiers
-ruler_sol_taoist_b = {
-	icon = 15
-	monthly_character_prestige = 0
-	monthly_character_piety = 4.8
-}
-
 # sol_tsahay Triggered Modifiers
 ruler_sol_tsahay = {
 	icon = 15
@@ -2696,13 +2626,6 @@ ruler_bud_zen_reformed = {
 ruler_bud_zor_reformed = {
 	icon = 15
 	monthly_character_prestige = 1.2
-	monthly_character_piety = 0
-}
-
-# byeri_reformed Triggered Modifiers
-ruler_byeri_reformed = {
-	icon = 15
-	monthly_character_prestige = 1.1
 	monthly_character_piety = 0
 }
 
