@@ -1114,9 +1114,6 @@ obj_have_a_daughter = {
 	}
 	effect = {
 		piety = 10
-		character_event = {
-			id = VIETmisc.2
-		}
 	}
 }
 
@@ -1208,9 +1205,6 @@ obj_have_a_son = {
 	}
 	effect = {
 		piety = 10
-		character_event = {
-			id = VIETmisc.2
-		}
 	}
 }
 
@@ -1488,7 +1482,6 @@ obj_improve_martial = {
 		clr_character_flag = toy_army_prepare
 		clr_character_flag = toy_army
 		clr_character_flag = street_ruffians
-		clr_character_flag = midstat
 	}
 	effect = {
 		prestige = 100
