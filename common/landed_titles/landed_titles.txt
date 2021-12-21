@@ -7486,17 +7486,6 @@ e_roman = {
 		}
 		conditional_tooltip = {
 			trigger = {
-				k_trinacria = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			has_landed_title = k_trinacria
-		}
-		conditional_tooltip = {
-			trigger = {
 				k_italy = {
 					is_titular = no
 					NOT = {
@@ -7566,20 +7555,6 @@ e_roman = {
 				}
 			}
 			k_naples = {
-				show_scope_change = no
-				de_jure_liege = e_italy
-			}
-		}
-		if = {
-			limit = {
-				k_trinacria = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			k_trinacria = {
 				show_scope_change = no
 				de_jure_liege = e_italy
 			}
