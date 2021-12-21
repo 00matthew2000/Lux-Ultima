@@ -181,7 +181,7 @@ d_monothelite = {
 
 k_papal_state = {
 	color={ 255 249 198 }
-	capital = 275 # Rome
+	capital = 333 # Rome
 	dignity = 100 # Counted as having this many more counties than it does
 	
 	title = "POPE_catholic"
@@ -817,7 +817,7 @@ k_orthodox = {
 }
 k_sol = {
 	color={ 243 209 23 }
-	capital = 517 # Konstantinoúpolis
+	capital = 496 # Konstantinoúpolis
 	dignity = 100 # Counted as having this many more counties than it does
 	
 	title = "PONTIFEX_MAXIMUS"
@@ -836,7 +836,7 @@ k_sol = {
 }
 k_zoroastrian = {
 	color={ 243 209 23 }
-	capital = 666 # Shiraz
+	capital = 644 # Shiraz
 	dignity = 100 # Counted as having this many more counties than it does
 	
 	title = "HEAD_MOABADAN_MOABAD" # To my knowledge "Moabadan-Moabad" was an actual title in the Sassanian Zoroastrian priesthood
@@ -858,7 +858,7 @@ k_zoroastrian = {
 
 d_unctionist = {
 	color={ 0 0 255 }
-	capital = 89 # Paris
+	capital = 112 # Paris
 	dignity = 100 # Counted as having this many more counties than it does
 	
 	title = "ARCHBISHOP"
@@ -895,7 +895,7 @@ d_iconoclast = {
 	color={ 153 50 125 }
 	color2={ 220 220 0 }
 	
-	capital = 774 # Abydos
+	capital = 744 # Abydos
 	
 	title = "ECUMENICAL_PATRIARCH"
 	foa = "ECUMENICAL_PATRIARCH_FOA"
@@ -927,7 +927,7 @@ d_iconoclast = {
 }
 d_indoh_confucian = {
 	color = { 180 76 67 }
-	capital = 1255 # Panchekanth?
+	capital = 903 # Samarkand
 	dignity = 100 # Counted as having this many more counties than it does
 	
 	title = "SCHOLAROFFICIAL"
@@ -1342,7 +1342,7 @@ e_shiite = {
 							}
 						}
 					}
-					809 = { # Damascus
+					728 = { # Damascus
 						owner = {
 							OR = {
 								is_liege_or_above = ROOT
@@ -1421,7 +1421,7 @@ e_sunni = {
 							}
 						}
 					}
-					809 = { # Damascus
+					728 = { # Damascus
 						owner = {
 							OR = {
 								is_liege_or_above = ROOT
@@ -1574,7 +1574,7 @@ d_athari = {
 							}
 						}
 					}
-					809 = { # Damascus
+					728 = { # Damascus
 						owner = {
 							OR = {
 								is_liege_or_above = ROOT
@@ -1656,7 +1656,7 @@ d_ashari = {
 							}
 						}
 					}
-					809 = { # Damascus
+					728 = { # Damascus
 						owner = {
 							OR = {
 								is_liege_or_above = ROOT
@@ -1738,7 +1738,7 @@ d_haruri_caliphate = {
 							}
 						}
 					}
-					809 = { # Damascus
+					728 = { # Damascus
 						owner = {
 							OR = {
 								is_liege_or_above = ROOT
@@ -1820,7 +1820,7 @@ d_maturidi = {
 							}
 						}
 					}
-					809 = { # Damascus
+					728 = { # Damascus
 						owner = {
 							OR = {
 								is_liege_or_above = ROOT
@@ -1902,7 +1902,7 @@ d_murjiah = {
 							}
 						}
 					}
-					809 = { # Damascus
+					728 = { # Damascus
 						owner = {
 							OR = {
 								is_liege_or_above = ROOT
@@ -1984,7 +1984,7 @@ d_mutazil = {
 							}
 						}
 					}
-					809 = { # Damascus
+					728 = { # Damascus
 						owner = {
 							OR = {
 								is_liege_or_above = ROOT
@@ -2066,7 +2066,7 @@ d_zahiri = {
 							}
 						}
 					}
-					809 = { # Damascus
+					728 = { # Damascus
 						owner = {
 							OR = {
 								is_liege_or_above = ROOT
@@ -2149,7 +2149,7 @@ d_roman_imperial = {
 		custom_tooltip = {
 			text = controls_rome_constantinople
 			hidden_tooltip = {
-				275 = { # Rome
+				333 = { # Rome
 					owner = {
 						OR = {
 							is_liege_or_above = ROOT
@@ -2157,7 +2157,7 @@ d_roman_imperial = {
 						}
 					}
 				}
-				517 = { # Constantinople
+				496 = { # Constantinople
 					owner = {
 						OR = {
 							is_liege_or_above = ROOT
