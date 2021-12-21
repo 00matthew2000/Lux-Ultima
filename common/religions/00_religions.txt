@@ -30347,16 +30347,16 @@ native_american_group = {
 		
 		color = { 0.11 0.22 0.33 }
 
-		scripture_name = THE_LEGENDS
-		priest_title = NANGA
+		scripture_name = THE_QUIPUS
+		priest_title = UMU_MAMAKUNA
 		
-		high_god_name = "Inti"
+		high_god_name = "Tiqsi Wiraqutra"
 		
 		god_names = {
-			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+			"Inti" "Mama Killa" "Pachamama" "Manco Capac" "Mama Uqllu" "Mama Qucha" "Illapa" "Apus" "Imaymana and Tocapo"
 		}
 		evil_god_names = {
-			THE_ZIMWI
+			"Supay"
 		}
 		
 		unit_modifier = {		
@@ -31057,7 +31057,119 @@ native_american_group = {
 	
 		max_consorts = 5
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		reformed = south_american_reformed
+		reformed = kaaulayawaa_reformed
+
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 0.2 # AI aggression factor
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		
+	}
+
+	baniwa_reformed = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		secondary_event_pictures = odinane
+
+		icon = 35
+		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.51 0.59 0.53 }
+		alternate_start = { always = no }
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_KALIDZAMAI
+		priest_title = MALIIRI
+		
+		high_god_name = "Nhiaperikuli"
+		
+		god_names = {
+			"Nhiaperikunai" "Amaru" "Kuwai"
+		}
+		evil_god_names = {
+			"Maatchikwe" "Kaiwikwe" "Ekukwe" 
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		short_reign_opinion_year_mult = 1.5
+
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = south_american
+		aggression = 0.5 # AI aggression factor
+	}
+	
+
+	baniwa = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 0.65 0.10 0.12 }
+
+		scripture_name = THE_KALIDZAMAI
+		priest_title = MALIIRI
+		
+		high_god_name = "Nhiaperikuli"
+		
+		god_names = {
+			"Nhiaperikunai" "Amaru" "Kuwai"
+		}
+		evil_god_names = {
+			"Maatchikwe" "Kaiwikwe" "Ekukwe" 
+		}
+		
+		unit_modifier = {		
+			garrison_size = 0.3
+			levy_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.8
+			light_infantry_defensive = 0.8
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.7
+			knights_defensive = 0.8
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.6
+			camel_cavalry_defensive = 0.6
+			war_elephants_defensive = 0.6
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+	
+		max_consorts = 5
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = baniwa_reformed
 
 		short_reign_opinion_year_mult = 2
 		
