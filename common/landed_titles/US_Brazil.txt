@@ -5,56 +5,11 @@ e_brazil = {
 	capital = 4013 # Bahia
 
 	k_northern_brazil = {
-		color={ 151 132 0 }
+		color={ 255 8 8 }
 		color2={ 220 220 220 }
 
 		capital = 4013 # Bahia
 
-		d_ceara = {
-			color={ 34 46 164 }
-			color2={ 220 220 220 }
-			
-			capital = 3998 # Ceara
-			
-			c_ceara = {
-
-				color={ 168 147 65 }
-				color2={ 220 220 220 }
-				
-				b_ceara = {
-				}
-				b_ceara-ii = {
-				}
-				b_ceara-iii = {
-				}
-				b_ceara-iv = {
-				}
-			}
-			c_rio_grande = {
-
-				color={ 145 49 123 }
-				color2={ 220 220 220 }
-				
-				b_rio_grande = {
-				}
-				b_rio_grande-ii = {
-				}
-				b_rio_grande-iii = {
-				}
-			}
-			c_crato = {
-
-				color={ 199 58 139 }
-				color2={ 220 220 220 }
-				
-				b_crato1 = {
-				}
-				b_crato-ii = {
-				}
-				b_crato-iii = {
-				}
-			}
-		}
 		d_pontal = {
 			color={ 214 186 81 }
 			color2={ 220 220 220 }
@@ -100,60 +55,22 @@ e_brazil = {
 				}
 			}
 		}
-		d_maranhao = {
-			color={ 114 176 64 }
+		d_piaui = {
+			color={ 164 126 64 }
 			color2={ 220 220 220 }
 			
-			capital = 3991 # Maranhao
+			capital = 3997 # Parnagua
 			
-			c_maranhao = {
+			c_oeiras = {
 
-				color={ 188 147 125 }
+				color={ 195 24 6 }
 				color2={ 220 220 220 }
 				
-				b_maranhao = {
+				b_oeiras = {
 				}
-				b_maranhao-ii = {
+				b_oeiras-ii = {
 				}
-				b_maranhao-iii = {
-				}
-				b_maranhao-iv = {
-				}
-			}
-			c_alcantara1 = {
-
-				color={ 19 139 105 }
-				color2={ 220 220 220 }
-				
-				b_alcantara1 = {
-				}
-				b_alcantara-ii = {
-				}
-				b_alcantara-iii = {
-				}
-			}
-			c_timon = {
-
-				color={ 149 18 39 }
-				color2={ 220 220 220 }
-				
-				b_timon = {
-				}
-				b_timon-ii = {
-				}
-				b_timon-iii = {
-				}
-			}
-			c_grajau = {
-
-				color={ 219 58 89 }
-				color2={ 220 220 220 }
-				
-				b_grajau = {
-				}
-				b_grajau-ii = {
-				}
-				b_grajau-iii = {
+				b_oeiras-iii = {
 				}
 			}
 			c_pastos_bons = {
@@ -168,39 +85,6 @@ e_brazil = {
 				b_pastos_bons-iii = {
 				}
 			}
-		}
-		d_piaui = {
-			color={ 164 126 64 }
-			color2={ 220 220 220 }
-			
-			capital = 3995 # Parnaiba
-			
-			c_parnaiba = {
-
-				color={ 98 17 163 }
-				color2={ 220 220 220 }
-				
-				b_parnaiba = {
-				}
-				b_parnaiba-ii = {
-				}
-				b_parnaiba-iii = {
-				}
-				b_parnaiba-iv = {
-				}
-			}
-			c_oeiras = {
-
-				color={ 195 24 6 }
-				color2={ 220 220 220 }
-				
-				b_oeiras = {
-				}
-				b_oeiras-ii = {
-				}
-				b_oeiras-iii = {
-				}
-			}
 			c_parnagua = {
 
 				color={ 198 154 211 }
@@ -211,75 +95,6 @@ e_brazil = {
 				b_parnagua-ii = {
 				}
 				b_parnagua-iii = {
-				}
-			}
-		}
-		d_pernambuco = {
-			color={ 117 173 21 }
-			color2={ 220 220 220 }
-
-			capital = 4003 # Itamaraca
-			
-			c_itamaraca = {
-
-				color={ 145 79 125 }
-				color2={ 220 220 220 }
-				
-				b_itamaraca = {
-				}
-				b_itamaraca-ii = {
-				}
-				b_itamaraca-iii = {
-				}
-				b_itamaraca-iv = {
-				}
-			}
-			c_paraiba = {
-
-				color={ 5 94 139 }
-				color2={ 220 220 220 }
-				
-				b_paraiba = {
-				}
-				b_paraiba-ii = {
-				}
-				b_paraiba-iii = {
-				}
-			}
-			c_boroborema = {
-
-				color={ 191 27 79 }
-				color2={ 220 220 220 }
-				
-				b_boroborema = {
-				}
-				b_boroborema-ii = {
-				}
-				b_boroborema-iii = {
-				}
-			}
-			c_alagoas = {
-
-				color={ 175 84 39 }
-				color2={ 220 220 220 }
-				
-				b_alagoas = {
-				}
-				b_alagoas-ii = {
-				}
-				b_alagoas-iii = {
-				}
-			}
-			c_sergipe = {
-
-				color={ 95 115 55 }
-				color2={ 220 220 220 }
-				
-				b_sergipe = {
-				}
-				b_sergipe-ii = {
-				}
-				b_sergipe-iii = {
 				}
 			}
 		}
@@ -349,196 +164,6 @@ e_brazil = {
 				b_paratinga-ii = {
 				}
 				b_paratinga-iii = {
-				}
-			}
-		}
-		d_bahia = {
-			color={ 45 64 71 }
-			color2={ 220 220 220 }
-			
-			capital = 4013 # Bahia
-			
-			c_bahia = {
-
-				color={ 85 44 169 }
-				color2={ 220 220 220 }
-				
-				b_bahia = {
-				}
-				b_bahia-ii = {
-				}
-				b_bahia-iii = {
-				}
-				b_bahia-iv = {
-				}
-				b_bahia-v = {
-				}
-				b_bahia-vi = {
-				}
-			}
-			c_inhambupe = {
-
-				color={ 35 44 89 }
-				color2={ 220 220 220 }
-				
-				b_inhambupe = {
-				}
-				b_inhambupe-ii = {
-				}
-				b_inhambupe-iii = {
-				}
-			}
-			c_rio_contas = {
-
-				color={ 125 177 143 }
-				color2={ 220 220 220 }
-				
-				b_rio_contas = {
-				}
-				b_rio_contas-ii = {
-				}
-				b_rio_contas-iii = {
-				}
-			}
-			c_ilheus = {
-
-				color={ 135 124 218 }
-				color2={ 220 220 220 }
-				
-				b_ilheus = {
-				}
-				b_ilheus-ii = {
-				}
-				b_ilheus-iii = {
-				}
-			}
-			c_porto_seguro = {
-
-				color={ 115 144 118 }
-				color2={ 220 220 220 }
-				
-				b_porto_seguro = {
-				}
-				b_porto_seguro-ii = {
-				}
-				b_porto_seguro-iii = {
-				}
-			}
-
-		}
-    }
-	k_southern_brazil = {
-		color={ 106 85 0 }
-		color2={ 220 220 220 }
-
-		capital = 4040 # Rio de Janeiro
-
-		d_rio_de_janeiro = {
-			color={ 185 58 149 }
-			color2={ 220 220 220 }
-			
-			capital = 4040 # Rio de Janeiro
-			
-			c_rio_de_janeiro = {
-
-				color={ 177 64 161 }
-				color2={ 220 220 220 }
-				
-				holy_site=south_american
-				holy_site=south_american_reformed
-				
-				b_rio_de_janeiro = {
-				}
-				b_rio_de_janeiro-ii = {
-				}
-				b_rio_de_janeiro-iii = {
-				}
-				b_rio_de_janeiro-iv = {
-				}
-				b_rio_de_janeiro-v = {
-				}
-				b_rio_de_janeiro-vi = {
-				}
-			}
-			c_espirito_santo = {
-
-				color={ 125 191 134 }
-				color2={ 220 220 220 }
-				
-				b_espirito_santo = {
-				}
-				b_espirito_santo-ii = {
-				}
-				b_espirito_santo-iii = {
-				}
-			}
-			c_sao_tome = {
-
-				color={ 135 89 43 }
-				color2={ 220 220 220 }
-				
-				b_sao_tome = {
-				}
-				b_sao_tome-ii = {
-				}
-				b_sao_tome-iii = {
-				}
-			}
-			c_santo_amaro = {
-
-				color={ 15 134 112 }
-				color2={ 220 220 220 }
-				
-				b_santo_amaro = {
-				}
-				b_santo_amaro-ii = {
-				}
-				b_santo_amaro-iii = {
-				}
-			}
-		}
-		d_diamantina = {
-			color={ 195 112 157 }
-			color2={ 220 220 220 }
-			
-			capital = 4017 # Diamentina
-			
-			c_diamentina = {
-
-				color={ 87 67 76 }
-				color2={ 220 220 220 }
-				
-				b_diamentina = {
-				}
-				b_diamentina-ii = {
-				}
-				b_diamentina-iii = {
-				}
-				b_diamentina-iv = {
-				}
-			}
-			c_serro = {
-
-				color={ 55 189 135 }
-				color2={ 220 220 220 }
-				
-				b_serro = {
-				}
-				b_serro-ii = {
-				}
-				b_serro-iii = {
-				}
-			}
-			c_santo_antonio_da_manga = {
-
-				color={ 149 18 183 }
-				color2={ 220 220 220 }
-				
-				b_santo_antonio_da_manga = {
-				}
-				b_santo_antonio_da_manga-ii = {
-				}
-				b_santo_antonio_da_manga-iii = {
 				}
 			}
 		}
@@ -770,51 +395,6 @@ e_brazil = {
 				}
 			}
 		}
-		d_sao_paulo = {
-			color={ 149 52 79 }
-			color2={ 220 220 220 }
-			
-			capital = 4043 # Sao Vicente
-			
-			c_sao_vicente = {
-
-				color={ 172 37 46 }
-				color2={ 220 220 220 }
-				
-				b_sao_vicente = {
-				}
-				b_sao_vicente-ii = {
-				}
-				b_sao_vicente-iii = {
-				}
-				b_sao_vicente-iv = {
-				}
-			}
-			c_campinas = {
-
-				color={ 79 44 61 }
-				color2={ 220 220 220 }
-				
-				b_campinas = {
-				}
-				b_campinas-ii = {
-				}
-				b_campinas-iii = {
-				}
-			}
-			c_curitiba = {
-
-				color={ 14 74 133 }
-				color2={ 220 220 220 }
-				
-				b_curitiba = {
-				}
-				b_curitiba-ii = {
-				}
-				b_curitiba-iii = {
-				}
-			}
-		}
 		d_guayra = {
 			color={ 149 52 219 }
 			color2={ 220 220 220 }
@@ -857,6 +437,426 @@ e_brazil = {
 				b_araquara-ii = {
 				}
 				b_araquara-iii = {
+				}
+			}
+		}
+		d_diamantina = {
+			color={ 195 112 157 }
+			color2={ 220 220 220 }
+			
+			capital = 4017 # Diamentina
+			
+			c_diamentina = {
+
+				color={ 87 67 76 }
+				color2={ 220 220 220 }
+				
+				b_diamentina = {
+				}
+				b_diamentina-ii = {
+				}
+				b_diamentina-iii = {
+				}
+				b_diamentina-iv = {
+				}
+			}
+			c_serro = {
+
+				color={ 55 189 135 }
+				color2={ 220 220 220 }
+				
+				b_serro = {
+				}
+				b_serro-ii = {
+				}
+				b_serro-iii = {
+				}
+			}
+			c_santo_antonio_da_manga = {
+
+				color={ 149 18 183 }
+				color2={ 220 220 220 }
+				
+				b_santo_antonio_da_manga = {
+				}
+				b_santo_antonio_da_manga-ii = {
+				}
+				b_santo_antonio_da_manga-iii = {
+				}
+			}
+		}
+  	}
+	k_southern_brazil = {
+		color={ 255 118 13 }
+		color2={ 220 220 220 }
+
+		capital = 4040 # Rio de Janeiro
+
+		d_ceara = {
+			color={ 34 46 164 }
+			color2={ 220 220 220 }
+			
+			capital = 3998 # Ceara
+			
+			c_ceara = {
+
+				color={ 168 147 65 }
+				color2={ 220 220 220 }
+				
+				b_ceara = {
+				}
+				b_ceara-ii = {
+				}
+				b_ceara-iii = {
+				}
+				b_ceara-iv = {
+				}
+			}
+			c_parnaiba = {
+
+				color={ 98 17 163 }
+				color2={ 220 220 220 }
+				
+				b_parnaiba = {
+				}
+				b_parnaiba-ii = {
+				}
+				b_parnaiba-iii = {
+				}
+				b_parnaiba-iv = {
+				}
+			}
+			c_rio_grande = {
+
+				color={ 145 49 123 }
+				color2={ 220 220 220 }
+				
+				b_rio_grande = {
+				}
+				b_rio_grande-ii = {
+				}
+				b_rio_grande-iii = {
+				}
+			}
+			c_crato = {
+
+				color={ 199 58 139 }
+				color2={ 220 220 220 }
+				
+				b_crato1 = {
+				}
+				b_crato-ii = {
+				}
+				b_crato-iii = {
+				}
+			}
+		}
+		d_maranhao = {
+			color={ 114 176 64 }
+			color2={ 220 220 220 }
+			
+			capital = 3991 # Maranhao
+			
+			c_maranhao = {
+
+				color={ 188 147 125 }
+				color2={ 220 220 220 }
+				
+				b_maranhao = {
+				}
+				b_maranhao-ii = {
+				}
+				b_maranhao-iii = {
+				}
+				b_maranhao-iv = {
+				}
+			}
+			c_alcantara1 = {
+
+				color={ 19 139 105 }
+				color2={ 220 220 220 }
+				
+				b_alcantara1 = {
+				}
+				b_alcantara-ii = {
+				}
+				b_alcantara-iii = {
+				}
+			}
+			c_timon = {
+
+				color={ 149 18 39 }
+				color2={ 220 220 220 }
+				
+				b_timon = {
+				}
+				b_timon-ii = {
+				}
+				b_timon-iii = {
+				}
+			}
+			c_grajau = {
+
+				color={ 219 58 89 }
+				color2={ 220 220 220 }
+				
+				b_grajau = {
+				}
+				b_grajau-ii = {
+				}
+				b_grajau-iii = {
+				}
+			}
+		}
+		d_pernambuco = {
+			color={ 117 173 21 }
+			color2={ 220 220 220 }
+
+			capital = 4003 # Itamaraca
+			
+			c_itamaraca = {
+
+				color={ 145 79 125 }
+				color2={ 220 220 220 }
+				
+				b_itamaraca = {
+				}
+				b_itamaraca-ii = {
+				}
+				b_itamaraca-iii = {
+				}
+				b_itamaraca-iv = {
+				}
+			}
+			c_paraiba = {
+
+				color={ 5 94 139 }
+				color2={ 220 220 220 }
+				
+				b_paraiba = {
+				}
+				b_paraiba-ii = {
+				}
+				b_paraiba-iii = {
+				}
+			}
+			c_boroborema = {
+
+				color={ 191 27 79 }
+				color2={ 220 220 220 }
+				
+				b_boroborema = {
+				}
+				b_boroborema-ii = {
+				}
+				b_boroborema-iii = {
+				}
+			}
+			c_alagoas = {
+
+				color={ 175 84 39 }
+				color2={ 220 220 220 }
+				
+				b_alagoas = {
+				}
+				b_alagoas-ii = {
+				}
+				b_alagoas-iii = {
+				}
+			}
+			c_sergipe = {
+
+				color={ 95 115 55 }
+				color2={ 220 220 220 }
+				
+				b_sergipe = {
+				}
+				b_sergipe-ii = {
+				}
+				b_sergipe-iii = {
+				}
+			}
+		}
+		d_bahia = {
+			color={ 45 64 71 }
+			color2={ 220 220 220 }
+			
+			capital = 4013 # Bahia
+			
+			c_bahia = {
+
+				color={ 85 44 169 }
+				color2={ 220 220 220 }
+				
+				b_bahia = {
+				}
+				b_bahia-ii = {
+				}
+				b_bahia-iii = {
+				}
+				b_bahia-iv = {
+				}
+				b_bahia-v = {
+				}
+				b_bahia-vi = {
+				}
+			}
+			c_inhambupe = {
+
+				color={ 35 44 89 }
+				color2={ 220 220 220 }
+				
+				b_inhambupe = {
+				}
+				b_inhambupe-ii = {
+				}
+				b_inhambupe-iii = {
+				}
+			}
+			c_rio_contas = {
+
+				color={ 125 177 143 }
+				color2={ 220 220 220 }
+				
+				b_rio_contas = {
+				}
+				b_rio_contas-ii = {
+				}
+				b_rio_contas-iii = {
+				}
+			}
+			c_ilheus = {
+
+				color={ 135 124 218 }
+				color2={ 220 220 220 }
+				
+				b_ilheus = {
+				}
+				b_ilheus-ii = {
+				}
+				b_ilheus-iii = {
+				}
+			}
+			c_porto_seguro = {
+
+				color={ 115 144 118 }
+				color2={ 220 220 220 }
+				
+				b_porto_seguro = {
+				}
+				b_porto_seguro-ii = {
+				}
+				b_porto_seguro-iii = {
+				}
+			}
+
+		}
+		d_rio_de_janeiro = {
+			color={ 185 58 149 }
+			color2={ 220 220 220 }
+			
+			capital = 4040 # Rio de Janeiro
+			
+			c_rio_de_janeiro = {
+
+				color={ 177 64 161 }
+				color2={ 220 220 220 }
+				
+				holy_site=south_american
+				holy_site=south_american_reformed
+				
+				b_rio_de_janeiro = {
+				}
+				b_rio_de_janeiro-ii = {
+				}
+				b_rio_de_janeiro-iii = {
+				}
+				b_rio_de_janeiro-iv = {
+				}
+				b_rio_de_janeiro-v = {
+				}
+				b_rio_de_janeiro-vi = {
+				}
+			}
+			c_espirito_santo = {
+
+				color={ 125 191 134 }
+				color2={ 220 220 220 }
+				
+				b_espirito_santo = {
+				}
+				b_espirito_santo-ii = {
+				}
+				b_espirito_santo-iii = {
+				}
+			}
+			c_sao_tome = {
+
+				color={ 135 89 43 }
+				color2={ 220 220 220 }
+				
+				b_sao_tome = {
+				}
+				b_sao_tome-ii = {
+				}
+				b_sao_tome-iii = {
+				}
+			}
+			c_santo_amaro = {
+
+				color={ 15 134 112 }
+				color2={ 220 220 220 }
+				
+				b_santo_amaro = {
+				}
+				b_santo_amaro-ii = {
+				}
+				b_santo_amaro-iii = {
+				}
+			}
+		}
+		d_sao_paulo = {
+			color={ 149 52 79 }
+			color2={ 220 220 220 }
+			
+			capital = 4043 # Sao Vicente
+			
+			c_sao_vicente = {
+
+				color={ 172 37 46 }
+				color2={ 220 220 220 }
+				
+				b_sao_vicente = {
+				}
+				b_sao_vicente-ii = {
+				}
+				b_sao_vicente-iii = {
+				}
+				b_sao_vicente-iv = {
+				}
+			}
+			c_campinas = {
+
+				color={ 79 44 61 }
+				color2={ 220 220 220 }
+				
+				b_campinas = {
+				}
+				b_campinas-ii = {
+				}
+				b_campinas-iii = {
+				}
+			}
+			c_curitiba = {
+
+				color={ 14 74 133 }
+				color2={ 220 220 220 }
+				
+				b_curitiba = {
+				}
+				b_curitiba-ii = {
+				}
+				b_curitiba-iii = {
 				}
 			}
 		}

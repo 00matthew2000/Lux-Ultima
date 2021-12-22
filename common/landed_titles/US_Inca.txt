@@ -4,75 +4,16 @@ e_inca = {
 
 	capital = 3936 # Qusqu
 
-	k_peru = {
-		color={ 40 95 135 }
+	k_chimu = {
+
+		color={ 235 255 135 }
 		color2={ 220 220 220 }
 
-		capital = 3936 # Qusqu
-
-		d_kuntisuyu = {
-			color={ 35 204 41 }
-			color2={ 220 220 220 }
-			
-			capital = 3936 # Qusqu
-			
-			c_qusqu = {
-				color={ 85 194 89 }
-				color2={ 220 220 220 }
-
-				holy_site=inti
-				holy_site=inti_reformed
-				
-				b_qusqu = {
-				}
-				b_qusqu-ii = {
-				}
-				b_qusqu-iii = {
-				}
-				b_qusqu-iv = {
-				}
-				b_qusqu-v = {
-				}
-				b_qusqu-vi = {
-				}
-			}
-			c_pawqar_tampu = {
-				color={ 55 24 59 }
-				color2={ 220 220 220 }
-				
-				b_pawqar_tampu = {
-				}
-				b_pawqar_tampu-ii = {
-				}
-				b_pawqar_tampu-iii = {
-				}
-			}
-			c_ayawiri = {
-				color={ 115 197 113 }
-				color2={ 220 220 220 }
-				
-				b_ayawiri = {
-				}
-				b_ayawiri-ii = {
-				}
-				b_ayawiri-iii = {
-				}
-			}
-			c_awankay = {
-				color={ 25 124 28 }
-				color2={ 220 220 220 }
-				
-				b_awankay = {
-				}
-				b_awankay-ii = {
-				}
-				b_awankay-iii = {
-				}
-			}
-		}
+		capital = 3925 # Qasamarka
+		
 		d_quito = {
 
-			color={ 157 43 52 }
+			color={ 255 249 69 }
 			color2={ 220 220 220 }
 
 			capital = 3918 # Kitu
@@ -296,7 +237,7 @@ e_inca = {
 		}
 		d_chimor = {
 
-			color={ 77 78 138 }
+			color={ 87 255 227 }
 			color2={ 220 220 220 }
 			
 			capital = 3921 # Tumpis
@@ -361,6 +302,73 @@ e_inca = {
 				b_piwra-ii = {
 				}
 				b_piwra-iii = {
+				}
+			}
+		}
+	}
+	k_peru = {
+		color={ 40 95 135 }
+		color2={ 220 220 220 }
+
+		capital = 3936 # Qusqu
+
+		d_kuntisuyu = {
+			color={ 35 204 41 }
+			color2={ 220 220 220 }
+			
+			capital = 3936 # Qusqu
+			
+			c_qusqu = {
+				color={ 85 194 89 }
+				color2={ 220 220 220 }
+
+				holy_site=inti
+				holy_site=inti_reformed
+				
+				b_qusqu = {
+				}
+				b_qusqu-ii = {
+				}
+				b_qusqu-iii = {
+				}
+				b_qusqu-iv = {
+				}
+				b_qusqu-v = {
+				}
+				b_qusqu-vi = {
+				}
+			}
+			c_pawqar_tampu = {
+				color={ 55 24 59 }
+				color2={ 220 220 220 }
+				
+				b_pawqar_tampu = {
+				}
+				b_pawqar_tampu-ii = {
+				}
+				b_pawqar_tampu-iii = {
+				}
+			}
+			c_ayawiri = {
+				color={ 115 197 113 }
+				color2={ 220 220 220 }
+				
+				b_ayawiri = {
+				}
+				b_ayawiri-ii = {
+				}
+				b_ayawiri-iii = {
+				}
+			}
+			c_awankay = {
+				color={ 25 124 28 }
+				color2={ 220 220 220 }
+				
+				b_awankay = {
+				}
+				b_awankay-ii = {
+				}
+				b_awankay-iii = {
 				}
 			}
 		}
