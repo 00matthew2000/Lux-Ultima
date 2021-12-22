@@ -229,6 +229,7 @@ republic_governments = {
 	}
 	
 	confucian_bureaucracy = {
+		offmap_power = offmap_china
 		preferred_holdings = { CASTLE CITY }
 		allowed_holdings = {
 			CASTLE
@@ -255,6 +256,9 @@ republic_governments = {
 			tribal_government
 		}
 		frame_suffix = "_confucian"
+		potential = {
+			is_offmap_tag = offmap_china
+		}
 		
 		color = { 94 187 185 }
 		
