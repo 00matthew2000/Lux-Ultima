@@ -127,7 +127,7 @@
 	name=Oahtekah
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920556	#Bazheech
 	753.5.20={ birth=yes }
 	822.9.18={ death=yes }
@@ -136,7 +136,7 @@
 	name=Kootzzah
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920557	#Oahtekah
 	773.1.1={ birth=yes }
 	836.8.16={ death=yes }
@@ -145,7 +145,7 @@
 	name=Otoahnisto
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920558	#Kootzzah
 	800.9.23={ birth=yes }
 	878.4.16={ death=yes }
@@ -154,7 +154,7 @@
 	name=Bazheech
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920559	#Otoahnisto
 	823.8.17={ birth=yes }
 	895.7.27={ death=yes }
@@ -163,7 +163,7 @@
 	name=Sitahle
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920560	#Bazheech
 	853.1.26={ birth=yes }
 	928.2.22={ death=yes }
@@ -172,7 +172,7 @@
 	name=Chacon
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920561	#Sitahle
 	883.11.25={ birth=yes }
 	984.3.22={ death=yes }
@@ -181,7 +181,7 @@
 	name=Mahvipah
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920562	#Chacon
 	906.8.22={ birth=yes }
 	975.12.21={ death=yes }
@@ -190,7 +190,7 @@
 	name=Kootzzah
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920563	#Mahvipah
 	932.1.25={ birth=yes }
 	1013.7.15={ death=yes }
@@ -199,10 +199,10 @@
 	name=Chacon
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920564	#Kootzzah
-	956.8.13={ birth=yes }
-	1032.8.8={ death=yes }
+	966.8.13={ birth=yes }
+	1042.8.8={ death=yes }
 }
 1019920566={
 	name=Delshay
@@ -210,23 +210,23 @@
 	culture=coahuiltec 
 	religion=wakan_tanka
 	father=1019920565	#Chacon
-	986.3.5={ birth=yes }
+	1036.3.5={ birth=yes }
 	1086.7.6={ death=yes }
 }
 1019920567={
 	name=Bazheech
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920566	#Delshay
-	1007.5.17={ birth=yes }
-	1087.2.5={ death=yes }
+	1057.5.17={ birth=yes }
+	1127.2.5={ death=yes }
 }
 1019920568={
 	name=Nahtan
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920567	#Bazheech
 	1028.5.13={ birth=yes }
 	1071.11.29={ death=yes }
@@ -235,7 +235,7 @@
 	name=Bazheech
 	dynasty=1009990174
 	culture=coahuiltec 
-	religion=southern_cult
+	religion=wakan_tanka
 	father=1019920568	#Nahtan
 	1052.2.23={ birth=yes }
 	1114.1.29={ death=yes }
@@ -460,7 +460,7 @@
 	name=Kardy
 	dynasty=1009990177
 	dna="jionlphhfmj"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=6 diplomacy=4 stewardship=8 intrigue=8 learning=7
 	add_trait=charismatic_negotiator add_trait=charitable add_trait=patient add_trait=gluttonous add_trait=chaste 
 	 add_trait=stressed 
@@ -472,7 +472,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="ciohldlhfmd"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920923	#Kardy
 	744.4.27={ birth=yes }
 	818.2.6={ death=yes }
@@ -481,7 +481,7 @@
 	name=Kianhoon
 	dynasty=1009990177
 	dna="hionljhjfgi"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=7 diplomacy=5 stewardship=4 intrigue=8 learning=8
 	add_trait=flamboyant_schemer add_trait=diligent add_trait=brave add_trait=gluttonous add_trait=proud 
 	 
@@ -494,7 +494,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="jinnlpjhffj"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920923	#Kardy
 	754.1.22={ birth=yes }
 	816.2.14={ death=yes }
@@ -503,7 +503,7 @@
 	name=Tehowawinow
 	dynasty=1009990177
 	dna="hkpngjhjfcj"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=6 diplomacy=5 stewardship=5 intrigue=8 learning=8
 	add_trait=intricate_webweaver add_trait=poet add_trait=brave add_trait=cynical add_trait=just 
 	father=1019920925	#Kianhoon
@@ -515,7 +515,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="hpkdmjfifoi"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920925	#Kianhoon
 	784.10.12={ birth=yes }
 	853.3.6={ death=yes }
@@ -524,7 +524,7 @@
 	name=Chowabah
 	dynasty=1009990177
 	dna="hieoldhofgi"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=4 diplomacy=6 stewardship=6 intrigue=6 learning=5
 	add_trait=grey_eminence add_trait=charitable add_trait=trusting add_trait=proud 
 	add_trait=wroth 
@@ -537,7 +537,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="ekfjgbmjpfn"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920927	#Tehowawinow
 	803.7.8={ birth=yes }
 	857.5.6={ death=yes }
@@ -546,7 +546,7 @@
 	name=Sohone
 	dynasty=1009990177
 	dna="mkhogdfjocd"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=5 diplomacy=6 stewardship=7 intrigue=8 learning=7
 	add_trait=midas_touched add_trait=diligent add_trait=cynical add_trait=just 
 	father=1019920927	#Tehowawinow
@@ -558,7 +558,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="ddpnhjhjnlj"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920927	#Tehowawinow
 	811.5.21={ birth=yes }
 	878.3.12={ death=yes }
@@ -568,7 +568,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="mclnafhjfgi"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920927	#Tehowawinow
 	816.6.18={ birth=yes }
 	896.5.27={ death=yes }
@@ -577,7 +577,7 @@
 	name=Sauninot
 	dynasty=1009990177
 	dna="kkpkgdnjffj"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=7 diplomacy=6 stewardship=4 intrigue=6 learning=7
 	add_trait=misguided_warrior add_trait=chaste add_trait=gregarious add_trait=cynical add_trait=slothful 
 	add_trait=greedy add_trait=temperate 
@@ -590,7 +590,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="mloopofjocg"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920931	#Sohone
 	831.8.2={ birth=yes }
 	917.12.26={ death=yes }
@@ -599,7 +599,7 @@
 	name=Tinnowin
 	dynasty=1009990177
 	dna="okhokndddcd"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=7 diplomacy=7 stewardship=4 intrigue=5 learning=5
 	add_trait=misguided_warrior add_trait=humble add_trait=cynical add_trait=honest 
 	father=1019920931	#Sohone
@@ -611,7 +611,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="fkhkpdaakck"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920931	#Sohone
 	839.1.1={ birth=yes }
 	921.3.22={ death=yes }
@@ -621,7 +621,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="mkhjgifjpcd"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920931	#Sohone
 	844.11.7={ birth=yes }
 	929.12.25={ death=yes }
@@ -631,7 +631,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="jkiocdfoomn"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920931	#Sohone
 	850.5.3={ birth=yes }
 	929.6.1={ death=yes }
@@ -641,7 +641,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="ekjoldfjoca"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920931	#Sohone
 	853.3.22={ birth=yes }
 	930.7.1={ death=yes }
@@ -651,7 +651,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="mmhondffecd"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920931	#Sohone
 	858.8.17={ birth=yes }
 	923.2.5={ death=yes }
@@ -660,7 +660,7 @@
 	name=Hiahidock
 	dynasty=1009990177
 	dna="jklbnnndjcn"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=5 diplomacy=5 stewardship=8 intrigue=8 learning=7
 	add_trait=charismatic_negotiator add_trait=brave add_trait=gregarious add_trait=patient 
 	father=1019920936	#Tinnowin
@@ -671,7 +671,7 @@
 	name=Sohone
 	dynasty=1009990177
 	dna="okgokkdddco"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=4 diplomacy=5 stewardship=5 intrigue=7 learning=4
 	add_trait=detached_priest add_trait=cynical add_trait=chaste add_trait=charitable 
 	add_trait=craven 
@@ -684,7 +684,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="okhoknddccl"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920936	#Tinnowin
 	875.3.26={ birth=yes }
 	936.12.21={ death=yes }
@@ -693,7 +693,7 @@
 	name=Kianhoon
 	dynasty=1009990177
 	dna="okhnkddijlm"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=6 diplomacy=6 stewardship=7 intrigue=4 learning=8
 	add_trait=detached_priest add_trait=trusting add_trait=gluttonous add_trait=just add_trait=charitable 
 	add_trait=chaste add_trait=envious 
@@ -706,7 +706,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="ckeokidfdkd"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920936	#Tinnowin
 	881.11.21={ birth=yes }
 	950.11.28={ death=yes }
@@ -715,7 +715,7 @@
 	name=Tehawahinno
 	dynasty=1009990177
 	dna="okcokpdggpp"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=4 diplomacy=5 stewardship=4 intrigue=4 learning=8
 	add_trait=mastermind_theologian add_trait=honest add_trait=charitable add_trait=diligent 
 	father=1019920936	#Tinnowin
@@ -727,7 +727,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="bmpnnnbdjen"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920942	#Hiahidock
 	899.7.13={ birth=yes }
 	976.8.2={ death=yes }
@@ -737,7 +737,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="jklblfeddhp"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920942	#Hiahidock
 	903.1.18={ birth=yes }
 	981.10.13={ death=yes }
@@ -747,7 +747,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="hklejdajian"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920942	#Hiahidock
 	907.8.8={ birth=yes }
 	988.12.30={ death=yes }
@@ -756,7 +756,7 @@
 	name=Tinnehinan
 	dynasty=1009990177
 	dna="jdlkinnecgc"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=7 diplomacy=7 stewardship=4 intrigue=7 learning=4
 	add_trait=tough_soldier add_trait=charitable add_trait=stressed 
 	father=1019920942	#Hiahidock
@@ -767,7 +767,7 @@
 	name=Aach
 	dynasty=1009990177
 	dna="jclpbnndjjm"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=4 diplomacy=7 stewardship=8 intrigue=6 learning=7
 	add_trait=flamboyant_schemer add_trait=humble add_trait=just add_trait=chaste 
 	 add_trait=stressed 
@@ -779,7 +779,7 @@
 	name=Soakiantow
 	dynasty=1009990177
 	dna="jklfnnpljgp"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=6 diplomacy=8 stewardship=7 intrigue=8 learning=7
 	add_trait=intricate_webweaver add_trait=arbitrary add_trait=shy add_trait=proud 
 	father=1019920942	#Hiahidock
@@ -791,7 +791,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="jaloonppjko"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920942	#Hiahidock
 	926.10.8={ birth=yes }
 	1000.1.30={ death=yes }
@@ -800,7 +800,7 @@
 	name=Tiohtow
 	dynasty=1009990177
 	dna="jdlbimnemne"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=8 diplomacy=5 stewardship=8 intrigue=7 learning=4
 	add_trait=midas_touched add_trait=diligent add_trait=envious  
 	add_trait=greedy 
@@ -812,7 +812,7 @@
 	name=Kardy
 	dynasty=1009990177
 	dna="gnecgcnidni"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=6 diplomacy=6 stewardship=4 intrigue=7 learning=8
 	add_trait=misguided_warrior add_trait=just add_trait=brave add_trait=honest 
 	add_trait=ill 
@@ -825,7 +825,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="jdlkpfkecgc"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920951	#Tinnehinan
 	951.11.18={ birth=yes }
 	1030.1.31={ death=yes }
@@ -834,7 +834,7 @@
 	name=Aach
 	dynasty=1009990177
 	dna="jdgkfnnhcfc"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=8 diplomacy=5 stewardship=4 intrigue=7 learning=4
 	add_trait=intricate_webweaver add_trait=shy add_trait=ambitious add_trait=slothful  
 	father=1019920951	#Tinnehinan
@@ -845,7 +845,7 @@
 	name=Toackooch
 	dynasty=1009990177
 	dna="iddjdijedae"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=5 diplomacy=6 stewardship=4 intrigue=6 learning=5
 	add_trait=midas_touched add_trait=hedonist add_trait=brave 
 	 add_trait=wroth add_trait=shy 
@@ -857,7 +857,7 @@
 	name=Kardy
 	dynasty=1009990177
 	dna="ephlkbieabe"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=6 diplomacy=6 stewardship=4 intrigue=7 learning=7
 	add_trait=charismatic_negotiator add_trait=celibate add_trait=gregarious add_trait=wroth add_trait=honest 
 	 add_trait=proud 
@@ -869,7 +869,7 @@
 	name=Chowabah
 	dynasty=1009990177
 	dna="jdojmmnofpe"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=8 diplomacy=6 stewardship=6 intrigue=7 learning=8
 	add_trait=elusive_shadow add_trait=gregarious add_trait=honest add_trait=wroth 
 	 
@@ -882,7 +882,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="jflbemnngpe"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920955	#Tiohtow
 	988.4.1={ birth=yes }
 	1064.1.11={ death=yes }
@@ -892,7 +892,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="aoedlidedap"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920959	#Toackooch
 	1000.1.1={ birth=yes }
 	1069.10.31={ death=yes }
@@ -901,7 +901,7 @@
 	name=Tinnehinan
 	dynasty=1009990177
 	dna="hphhjijndae"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=8 diplomacy=6 stewardship=7 intrigue=5 learning=7
 	add_trait=flamboyant_schemer add_trait=brave add_trait=proud add_trait=just add_trait=diligent 
 	add_trait=patient 
@@ -913,7 +913,7 @@
 	name=Kardy
 	dynasty=1009990177
 	dna="gpdjdlkgdfm"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=5 diplomacy=6 stewardship=8 intrigue=7 learning=5
 	add_trait=mastermind_theologian add_trait=mystic add_trait=arbitrary add_trait=diligent 
 	add_trait=wounded 
@@ -925,7 +925,7 @@
 	name=Soakiantow
 	dynasty=1009990177
 	dna="ialjlmkedlj"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=8 diplomacy=4 stewardship=6 intrigue=8 learning=5
 	add_trait=misguided_warrior add_trait=celibate add_trait=humble add_trait=lustful add_trait=greedy 
 	father=1019920959	#Toackooch
@@ -937,7 +937,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="mhmehefndke"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920964	#Tinnehinan
 	1027.2.1={ birth=yes }
 	1097.12.10={ death=yes }
@@ -946,7 +946,7 @@
 	name=Chowabah
 	dynasty=1009990177
 	dna="epbmjiandal"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=7 diplomacy=5 stewardship=6 intrigue=5 learning=6
 	add_trait=naive_appeaser add_trait=wroth add_trait=greedy add_trait=arbitrary 
 	 
@@ -959,7 +959,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="hphhebjndae"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920964	#Tinnehinan
 	1038.9.3={ birth=yes }
 	1135.1.9={ death=yes }
@@ -968,7 +968,7 @@
 	name=Tehawahinno
 	dynasty=1009990177
 	dna="npnhjjdnjhe"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=6 diplomacy=4 stewardship=6 intrigue=4 learning=6
 	add_trait=intricate_webweaver add_trait=slothful add_trait=charitable add_trait=arbitrary add_trait=humble 
 	add_trait=harelip 
@@ -980,7 +980,7 @@
 	name=Kardy
 	dynasty=1009990177
 	dna="dmhnjinnjjl"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=7 diplomacy=4 stewardship=5 intrigue=7 learning=7
 	add_trait=grey_eminence add_trait=mystic add_trait=lustful add_trait=proud add_trait=ambitious 
 	father=1019920968	#Chowabah
@@ -991,7 +991,7 @@
 	name=Chowabah
 	dynasty=1009990177
 	dna="epehpoaodkl"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	martial=5 diplomacy=6 stewardship=4 intrigue=7 learning=8
 	add_trait=midas_touched add_trait=diligent add_trait=zealous add_trait=trusting add_trait=greedy 
 	add_trait=ambitious add_trait=just 
@@ -1004,7 +1004,7 @@
 	female=yes
 	dynasty=1009990177
 	dna="lpimhohgdep"
-	culture=tonkawa religion=wakan_tanka
+	culture=tonkawa religion=southern_cult
 	father=1019920968	#Chowabah
 	1063.12.21={ birth=yes }
 	1148.4.18={ death=yes }

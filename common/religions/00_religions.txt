@@ -28665,6 +28665,7 @@ african_pagan_group = {
 native_american_group = {
     graphical_culture = mesoamericangfx
     playable = yes
+	has_coa_on_barony_only = no
 	hostile_within_group = yes
 
 	color = { 0.37 0.85 0.85 }
@@ -31410,12 +31411,11 @@ native_american_group = {
 	
 	}
 }
-
-
 	
 eastern_folk_group = {
     graphical_culture = indiangfx
     playable = yes
+	has_coa_on_barony_only = no
 	hostile_within_group = yes
 
 	nat = { #Burman-Pyu folk religion

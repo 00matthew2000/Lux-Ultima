@@ -326,81 +326,9 @@ e_tejas = {
 				}
 			}
 		}
-		d_querecho = {
-
-			color={ 56 24 102 }
-			color2={ 220 220 220 }
-
-			capital = 3782 # Querecho
-			
-			c_querecho = {
-
-				color={ 195 104 199 }
-				color2={ 220 220 220 }
-				
-				b_querecho = {
-				}
-				b_querektankesk = {
-				}
-				b_quetanktantejas = {
-				}
-			}
-			c_lubbock = {
-
-				color={ 95 94 99 }
-				color2={ 220 220 220 }
-				
-				b_lubbock = {
-				}
-				b_lubtahoka = {
-				}
-				b_denihanigwapliha = {
-				}
-				b_tokrbrulubok = {
-				}
-				b_tukummuingkuun = {
-				}
-				b_luinotejankanas = {
-				}
-			}
-			c_elpas = {
-
-				color={ 135 154 103 }
-				color2={ 220 220 220 }
-				
-				b_elpas = {
-				}
-				b_elpas-ii = {
-				}
-				b_elpas-iii = {
-				}
-			}
-			c_manahodesa = {
-
-				color={ 138 69 79 }
-				color2={ 220 220 220 }
-				
-				b_manahodesa = {
-				}
-				b_goohoondahahikku = {
-				}
-			}
-			c_nankwenakittannook = {
-
-				color={ 138 69 79 }
-				color2={ 220 220 220 }
-				
-				b_nankwenakittannook = {
-				}
-				b_wahshoobekwippy = {
-				}
-				b_teringtejahuahu = {
-				}
-			}
-		}
 		d_tejas_plains = {
 
-			color={ 94 114 198 }
+			color={ 19 119 64 }
 			color2={ 220 220 220 }
 			
 			capital = 3779 # Lipan
@@ -576,7 +504,7 @@ e_tejas = {
 		}
 		d_skupreckemvpe = {
 
-			color={ 94 114 198 }
+			color={ 171 196 173 }
 			color2={ 220 220 220 }
 			
 			capital = 4809 # skupreckemvpe
@@ -780,7 +708,7 @@ e_mississippi = {
 
 	capital = 3780 # Atakapa
 
-	k_mississippi = {
+	k_plaquemine = {
 
 		color={ 145 36 166 }
 		color2={ 220 220 220 }
@@ -1005,106 +933,6 @@ e_mississippi = {
 				}
 			}
 		}
-		d_arkansas = {
-
-			color={ 56 24 102 }
-			color2={ 220 220 220 }
-
-			capital = 3782 # cadda
-			
-			c_cadda = {
-
-				color={ 195 104 199 }
-				color2={ 220 220 220 }
-				
-				b_cadda = {
-				}
-				b_cadda-ii = {
-				}
-				b_cadda-iii = {
-				}
-			}
-			c_caddo = {
-
-				color={ 15 144 187 }
-				color2={ 220 220 220 }
-				
-				b_caddo = {
-				}
-				b_caddo-ii = {
-				}
-				b_caddo-iii = {
-				}
-				b_caddo-iv = {
-				}
-			}
-			c_chakchiuma = {
-
-				color={ 95 94 99 }
-				color2={ 220 220 220 }
-				
-				b_chakchiuma = {
-				}
-				b_chakchiuma-ii = {
-				}
-				b_chakchiuma-iii = {
-				}
-				b_chakchiuma-iv = {
-				}
-				b_chakchiuma-v = {
-				}
-				b_chakchiuma-vi = {
-				}
-			}
-			c_chicasaw = {
-
-				color={ 105 104 70 }
-				color2={ 220 220 220 }
-				
-				b_chicasaw = {
-				}
-				b_chicasaw-ii = {
-				}
-				b_chicasaw-iii = {
-				}
-			}
-			c_arkansas = {
-
-				color={ 135 154 103 }
-				color2={ 220 220 220 }
-				
-				b_arkansas = {
-				}
-				b_ticknormerisash = {
-				}
-				b_tappamooinktour = {
-				}
-			}
-			c_woooson = {
-
-				color={ 105 104 70 }
-				color2={ 220 220 220 }
-				
-				b_woooson = {
-				}
-				b_woohosowompo = {
-				}
-				b_shwooserri = {
-				}
-			}
-			c_ozaquaahata = {
-
-				color={ 135 154 103 }
-				color2={ 220 220 220 }
-				
-				b_ozaquarkansa = {
-				}
-				b_ozaquaahata = {
-				}
-				b_quawooston = {
-				}
-			}
-		}
 		d_yazoo = {
 
 			color={ 175 151 59 }
@@ -1288,21 +1116,50 @@ e_mississippi = {
 			}
 		}
 	}
-	k_kheroshawnee = {
+	k_mississippi = {
 
-		color={ 20 122 173 }
+		color={ 238 85 60 }
 		color2={ 220 220 220 }
 
-		capital = 4387 # chuckamauya
+		capital = 4398 #Cahokia
 
+		cahokian = "Cahokia"
 
-	d_kentucky = {
+		d_obion = {
 
-			color={ 15 54 199 }
+			color={ 22 120 59 }
 			color2={ 220 220 220 }
-			
-			capital = 4245 # owesobor
-			
+
+			capital = 4272 # Obion
+
+			c_tennessee = {
+
+				color={ 126 23 131 }
+				color2={ 220 220 220 }
+				
+				b_tennessee = {
+				}
+				b_ganundalegi = {
+				}
+				b_skatelohoski = {
+				}
+			}
+			c_kakowatcheky = {
+
+				color={ 155 173 93 }
+				color2={ 220 220 220 }
+				
+				b_kakowatcheky = {
+				}
+				b_hokolesqua = {
+				}
+				b_nonhelema = {
+				}
+				b_chiungaka = {
+				}
+				b_khilicotha = {
+				}
+			}
 			c_owesobor = {
 
 				color={ 65 177 86 }
@@ -1335,6 +1192,368 @@ e_mississippi = {
 				b_pilotoak = {
 				}
 			}
+			c_chuckamauya = {
+
+				color={ 95 94 99 }
+				color2={ 220 220 220 }
+				
+				b_chuckamauya = {
+				}
+				b_ustanakwa = {
+				}
+				b_skiagustakat = {
+				}
+				b_oconostoganstat = {
+				}
+				b_tsiyugunsini = {
+				}
+				b_chickamauketuck = {
+				}
+			}
+			c_padcunnesse = {
+
+				color={ 95 94 99 }
+				color2={ 220 220 220 }
+				
+				b_padcunnesse = {
+				}
+				b_padcunnesse-ii = {
+				}
+				b_padcunnesse-iii = {
+				}
+			}
+		}
+		d_illinois = {
+
+			color={ 60 140 40 }
+			color2={ 220 220 220 }
+			
+			capital = 4398 # Cahokia
+			
+			c_peoria = {
+
+				color={ 65 177 86 }
+				color2={ 220 220 220 }
+				
+				b_wabalaw = {
+				}
+				b_effingheim = {
+				}
+				b_hwaeniyoagatodetganueoa = {
+				}
+				b_ogwahsoshashoogeo = {
+				}
+			}
+			c_tamaroa = {
+
+				color={ 248 193 135 }
+				color2={ 220 220 220 }
+				
+				b_tamaroa = {
+				}
+				b_tomorioa = {
+				}
+				b_tomorhio = {
+				}
+			}
+			c_illinois = {
+
+				color={ 65 177 86 }
+				color2={ 220 220 220 }
+				
+				b_illinois = {
+				}
+				b_maupusagna = {
+				}
+				b_macoupin = {
+				}
+			}
+			c_sangamon = {
+
+				color={ 65 177 86 }
+				color2={ 220 220 220 }
+				
+				b_sangamon = {
+				}
+				b_kaskasangamon = {
+				}
+				b_maukinaw = {
+				}
+			}
+			c_ploingwena = {
+
+				color={ 32 140 216 }
+				color2={ 220 220 220 }
+				
+				b_ploingwena = {
+				}
+				b_plognminnes = {
+				}
+				b_weasota = {
+				}
+				b_weiowa = {
+				}
+			}
+			c_cahokia = {
+
+				color={ 227 240 15 }
+				color2={ 220 220 220 }
+				
+				b_cahokia = {
+				}
+				b_nodoshawnee = {
+				}
+				b_illiniwek = {
+				}
+				b_cahomonka = {
+				}
+				b_cahilliniwek = {
+				}
+				b_cahoshosoaw = {
+				}
+				b_missisicahok = {
+				}
+			}
+		}
+		d_arkansas = {
+
+			color={ 56 24 102 }
+			color2={ 220 220 220 }
+
+			capital = 3782 # cadda
+			
+			c_cadda = {
+
+				color={ 195 104 199 }
+				color2={ 220 220 220 }
+				
+				b_cadda = {
+				}
+				b_cadda-ii = {
+				}
+				b_cadda-iii = {
+				}
+			}
+			c_caddo = {
+
+				color={ 15 144 187 }
+				color2={ 220 220 220 }
+				
+				b_caddo = {
+				}
+				b_caddo-ii = {
+				}
+				b_caddo-iii = {
+				}
+				b_caddo-iv = {
+				}
+			}
+			c_chakchiuma = {
+
+				color={ 95 94 99 }
+				color2={ 220 220 220 }
+				
+				b_chakchiuma = {
+				}
+				b_chakchiuma-ii = {
+				}
+				b_chakchiuma-iii = {
+				}
+				b_chakchiuma-iv = {
+				}
+				b_chakchiuma-v = {
+				}
+				b_chakchiuma-vi = {
+				}
+			}
+			c_chicasaw = {
+
+				color={ 105 104 70 }
+				color2={ 220 220 220 }
+				
+				b_chicasaw = {
+				}
+				b_chicasaw-ii = {
+				}
+				b_chicasaw-iii = {
+				}
+			}
+			c_arkansas = {
+
+				color={ 135 154 103 }
+				color2={ 220 220 220 }
+				
+				b_arkansas = {
+				}
+				b_ticknormerisash = {
+				}
+				b_tappamooinktour = {
+				}
+			}
+			c_woooson = {
+
+				color={ 105 104 70 }
+				color2={ 220 220 220 }
+				
+				b_woooson = {
+				}
+				b_woohosowompo = {
+				}
+				b_shwooserri = {
+				}
+			}
+			c_ozaquaahata = {
+
+				color={ 135 154 103 }
+				color2={ 220 220 220 }
+				
+				b_ozaquarkansa = {
+				}
+				b_ozaquaahata = {
+				}
+				b_quawooston = {
+				}
+			}
+		}
+		d_missouri = {
+
+			color={ 215 71 163 }
+			color2={ 220 220 220 }
+			
+			capital = 4378 # omahokanas
+			
+			c_nodshawcoh = {
+
+				color={ 95 137 96 }
+				color2={ 220 220 220 }
+				
+				b_nodshawcoh = {
+				}
+				b_cauzuri = {
+				}
+				b_bihujantee = {
+				}
+				b_chicahok = {
+				}
+				b_uruthercaw = {
+				}
+				b_sailouroucaw = {
+				}
+				b_heffercaw = {
+				}
+			}
+			c_missouri = {
+
+				color={ 166 193 114 }
+				color2={ 220 220 220 }
+				
+				b_missouri = {
+				}
+				b_osaghoke = {
+				}
+				b_licossuir = {
+				}
+				b_klinsour = {
+				}
+				b_tehorke = {
+				}
+			}
+			c_quapaw = {
+
+				color={ 166 193 114 }
+				color2={ 220 220 220 }
+				
+				b_quapaw = {
+				}
+				b_quapochachok = {
+				}
+				b_quapashosh = {
+				}
+				b_quapanock = {
+				}
+			}
+			c_ocago = {
+
+				color={ 188 14 68 }
+				color2={ 220 220 220 }
+				
+				b_ocago = {
+				}
+				b_acogowich = {
+				}
+				b_wikuil = {
+				}
+				b_sonocago = {
+				}
+			}
+			c_omahokansas = {
+
+				color={ 195 94 137 }
+				color2={ 220 220 220 }
+				
+				b_omahokansas = {
+				}
+				b_omahokosho = {
+				}
+				b_tenkwatawa = {
+				}
+				b_missoursha = {
+				}
+				b_auchkaomo = {
+				}
+			}
+			c_quiniyium = {
+
+				color={ 195 94 137 }
+				color2={ 220 220 220 }
+				
+				b_quiniyium = {
+				}
+				b_khillikotcha = {
+				}
+				b_asgratrindall = {
+				}
+			}
+			c_chiquiyouri = {
+
+				color={ 195 94 137 }
+				color2={ 220 220 220 }
+				
+				b_chuquiyouri = {
+				}
+				b_missiquiyu = {
+				}
+			}
+			c_wahdilonimckdee = {
+
+				color={ 195 94 137 }
+				color2={ 220 220 220 }
+				
+				b_wahdilonimckdee = {
+				}
+				b_mickeldeyehas = {
+				}
+				b_aneoshastahan = {
+				}
+				b_sarxheihixa = {
+				}
+			}
+		}
+	}
+	k_kheroshawnee = {
+
+		color={ 20 122 173 }
+		color2={ 220 220 220 }
+
+		capital = 4387 # chuckamauya
+
+		d_kentucky = {
+
+			color={ 15 54 199 }
+			color2={ 220 220 220 }
+			
+			capital = 4245 # owesobor
+			
 			c_sudshawnee = {
 
 				color={ 65 177 86 }
@@ -1415,60 +1634,14 @@ e_mississippi = {
 				b_wacanackshina = {
 				}
 			}
-			c_kakowatcheky = {
-
-				color={ 155 173 93 }
-				color2={ 220 220 220 }
-				
-				b_kakowatcheky = {
-				}
-				b_hokolesqua = {
-				}
-				b_nonhelema = {
-				}
-				b_chiungaka = {
-				}
-				b_khilicotha = {
-				}
-			}
-		}	
-	d_tennessee = {
+		}
+		d_tennessee = {
 
 			color={ 56 24 102 }
 			color2={ 220 220 220 }
 
-			capital = 3782 # cadda
+			capital = 3782 # Cadda
 			
-			c_tennessee = {
-
-				color={ 126 23 131 }
-				color2={ 220 220 220 }
-				
-				b_tennessee = {
-				}
-				b_ganundalegi = {
-				}
-				b_skatelohoski = {
-				}
-			}
-			c_chuckamauya = {
-
-				color={ 95 94 99 }
-				color2={ 220 220 220 }
-				
-				b_chuckamauya = {
-				}
-				b_ustanakwa = {
-				}
-				b_skiagustakat = {
-				}
-				b_oconostoganstat = {
-				}
-				b_tsiyugunsini = {
-				}
-				b_chickamauketuck = {
-				}
-			}
 			c_cherokee = {
 
 				color={ 105 104 70 }
@@ -1491,18 +1664,6 @@ e_mississippi = {
 				b_spemiclawba = {
 				}
 				b_tenskwatawa = {
-				}
-			}
-			c_padcunnesse = {
-
-				color={ 95 94 99 }
-				color2={ 220 220 220 }
-				
-				b_padcunnesse = {
-				}
-				b_padcunnesse-ii = {
-				}
-				b_padcunnesse-iii = {
 				}
 			}
 			c_cumberennese = {

@@ -235,7 +235,7 @@
 	name=Pirijá
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	719.6.22={ birth=yes }
 	789.9.16={ death=yes }
 }
@@ -243,7 +243,7 @@
 	name=Tibiriçá
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926468	#Pirijá
 	750.5.25={ birth=yes }
 	805.12.25={ death=yes }
@@ -252,7 +252,7 @@
 	name=Arah
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926469	#Tibiriçá
 	772.5.16={ birth=yes }
 	827.1.22={ death=yes }
@@ -261,7 +261,7 @@
 	name=Mbicy
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926472	#Arah
 	798.3.27={ birth=yes }
 	869.7.28={ death=yes }
@@ -270,7 +270,7 @@
 	name=Caiubi
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926476	#Mbicy
 	827.1.5={ birth=yes }
 	891.9.26={ death=yes }
@@ -279,7 +279,7 @@
 	name=Arah
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926481	#Caiubi
 	852.11.23={ birth=yes }
 	912.1.16={ death=yes }
@@ -288,7 +288,7 @@
 	name=Tibiriçá
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926484	#Arah
 	879.3.24={ birth=yes }
 	953.2.20={ death=yes }
@@ -297,7 +297,7 @@
 	name=Tibiriçá
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926489	#Tibiriçá
 	911.3.17={ birth=yes }
 	983.10.12={ death=yes }
@@ -306,7 +306,7 @@
 	name=Arah
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926491	#Tibiriçá
 	945.1.5={ birth=yes }
 	1021.7.1={ death=yes }
@@ -315,7 +315,7 @@
 	name=Arata
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926496	#Arah
 	969.6.13={ birth=yes }
 	1035.1.12={ death=yes }
@@ -324,7 +324,7 @@
 	name=Pirijá
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926500	#Arata
 	1003.12.5={ birth=yes }
 	1071.12.1={ death=yes }
@@ -333,7 +333,7 @@
 	name=Toruí
 	dynasty=1009990233
 	culture=tupinamba 
-	religion=south_american
+	religion=tupan
 	father=1019926504	#Pirijá
 	1050.2.27={ birth=yes }
 	1122.2.10={ death=yes }
@@ -3268,4 +3268,1173 @@
 	add_trait=humble
 	1047.12.25={ birth=yes }
 	1094.7.23={ death=yes }
+}
+1019928593={
+	name=Ninan
+	dynasty=1009990254
+	dna="bhmdjolkhea"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=8 stewardship=4 intrigue=4 learning=6
+	add_trait=charismatic_negotiator add_trait=zealous   
+	add_trait=stressed 
+	719.11.25={ birth=yes }
+	806.4.20={ death=yes }
+}
+1019928594={
+	name=Ruminavi
+	dynasty=1009990254
+	dna="phbdgmlkabg"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=5 stewardship=6 intrigue=6 learning=7
+	add_trait=intricate_webweaver add_trait=lustful add_trait=craven add_trait=ambitious  
+	add_trait=trusting 
+	father=1019928593	#Ninan
+	742.8.27={ birth=yes }
+	806.7.8={ death=yes }
+}
+1019928595={
+	name=Axomamma
+	female=yes
+	dynasty=1009990254
+	dna="mimkjjpahpb"
+	culture=tupinamba religion=tupan
+	father=1019928593	#Ninan
+	746.6.27={ birth=yes }
+	821.10.16={ death=yes }
+}
+1019928596={
+	name=Coyllas
+	dynasty=1009990254
+	dna="khldfgnkhea"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=6 stewardship=7 intrigue=8 learning=8
+	add_trait=mastermind_theologian add_trait=gregarious add_trait=honest 
+	father=1019928593	#Ninan
+	751.2.1={ birth=yes }
+	808.3.25={ death=yes }
+}
+1019928597={
+	name=Cavillaca
+	female=yes
+	dynasty=1009990254
+	dna="bphbjggkhan"
+	culture=tupinamba religion=tupan
+	father=1019928593	#Ninan
+	756.4.8={ birth=yes }
+	848.1.7={ death=yes }
+}
+1019928598={
+	name=Surandaman
+	dynasty=1009990254
+	dna="bhmdjoomhdd"
+	culture=tupinamba religion=tupan
+	martial=6 diplomacy=4 stewardship=6 intrigue=8 learning=6
+	add_trait=mastermind_theologian add_trait=chaste add_trait=envious  
+	add_trait=diligent 
+	father=1019928593	#Ninan
+	763.8.11={ birth=yes }
+	836.12.14={ death=yes }
+}
+1019928599={
+	name=China
+	female=yes
+	dynasty=1009990254
+	dna="lpmdmogkijo"
+	culture=tupinamba religion=tupan
+	father=1019928593	#Ninan
+	768.3.24={ birth=yes }
+	834.7.22={ death=yes }
+}
+1019928600={
+	name=China
+	female=yes
+	dynasty=1009990254
+	dna="hhbhgbeklbg"
+	culture=tupinamba religion=tupan
+	father=1019928594	#Ruminavi
+	771.7.4={ birth=yes }
+	831.4.20={ death=yes }
+}
+1019928601={
+	name=Kantuta
+	female=yes
+	dynasty=1009990254
+	dna="pjbhomdkmgg"
+	culture=tupinamba religion=tupan
+	father=1019928594	#Ruminavi
+	775.12.26={ birth=yes }
+	850.10.20={ death=yes }
+}
+1019928602={
+	name=Kantuta
+	female=yes
+	dynasty=1009990254
+	dna="kibdgjbkajh"
+	culture=tupinamba religion=tupan
+	father=1019928594	#Ruminavi
+	781.10.21={ birth=yes }
+	839.11.26={ death=yes }
+}
+1019928603={
+	name=Orco
+	dynasty=1009990254
+	dna="iicohpgannl"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=5 stewardship=8 intrigue=6 learning=7
+	add_trait=misguided_warrior add_trait=greedy add_trait=diligent add_trait=arbitrary 
+	father=1019928594	#Ruminavi
+	785.7.8={ birth=yes }
+	867.10.14={ death=yes }
+}
+1019928604={
+	name=Cavillaca
+	female=yes
+	dynasty=1009990254
+	dna="dhgmcoakakg"
+	culture=tupinamba religion=tupan
+	father=1019928594	#Ruminavi
+	789.7.24={ birth=yes }
+	851.12.26={ death=yes }
+}
+1019928605={
+	name=Nina
+	female=yes
+	dynasty=1009990254
+	dna="afcojmgadbl"
+	culture=tupinamba religion=tupan
+	father=1019928603	#Orco
+	807.2.13={ birth=yes }
+	893.5.10={ death=yes }
+}
+1019928606={
+	name=Chia
+	female=yes
+	dynasty=1009990254
+	dna="bihohagannb"
+	culture=tupinamba religion=tupan
+	father=1019928603	#Orco
+	809.3.14={ birth=yes }
+	882.9.26={ death=yes }
+}
+1019928607={
+	name=China
+	female=yes
+	dynasty=1009990254
+	dna="oicbhpgagkb"
+	culture=tupinamba religion=tupan
+	father=1019928603	#Orco
+	814.9.23={ birth=yes }
+	883.9.29={ death=yes }
+}
+1019928608={
+	name=Zambiza
+	dynasty=1009990254
+	dna="aecokkoeioj"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=6 stewardship=4 intrigue=7 learning=6
+	add_trait=grey_eminence add_trait=greedy add_trait=humble add_trait=ambitious 
+	father=1019928603	#Orco
+	820.6.5={ birth=yes }
+	891.12.12={ death=yes }
+}
+1019928609={
+	name=Usca
+	dynasty=1009990254
+	dna="ahckkkdnido"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=6 stewardship=5 intrigue=8 learning=5
+	add_trait=charismatic_negotiator add_trait=lustful add_trait=brave add_trait=cynical add_trait=envious 
+	father=1019928608	#Zambiza
+	840.3.20={ birth=yes }
+	921.5.30={ death=yes }
+}
+1019928610={
+	name=Coyllas
+	dynasty=1009990254
+	dna="decjakhhinj"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=6 stewardship=8 intrigue=7 learning=7
+	add_trait=indulgent_wastrel add_trait=scholar add_trait=envious add_trait=proud 
+	add_trait=temperate add_trait=ill 
+	father=1019928608	#Zambiza
+	844.4.9={ birth=yes }
+	929.3.29={ death=yes }
+}
+1019928611={
+	name=Ruminavi
+	dynasty=1009990254
+	dna="iebdbkcbiob"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=6 stewardship=4 intrigue=8 learning=8
+	add_trait=indulgent_wastrel add_trait=charitable add_trait=arbitrary add_trait=lustful 
+	 
+	father=1019928608	#Zambiza
+	851.2.4={ birth=yes }
+	917.8.21={ death=yes }
+}
+1019928612={
+	name=Guaritopa
+	dynasty=1009990254
+	dna="heconcieipj"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=5 stewardship=4 intrigue=6 learning=5
+	add_trait=grey_eminence add_trait=mystic add_trait=gluttonous 
+	father=1019928608	#Zambiza
+	854.6.23={ birth=yes }
+	917.12.13={ death=yes }
+}
+1019928613={
+	name=China
+	female=yes
+	dynasty=1009990254
+	dna="aecohkoiioe"
+	culture=tupinamba religion=tupan
+	father=1019928608	#Zambiza
+	858.6.10={ birth=yes }
+	929.8.27={ death=yes }
+}
+1019928614={
+	name=Nina
+	female=yes
+	dynasty=1009990254
+	dna="aecokkoeioj"
+	culture=tupinamba religion=tupan
+	father=1019928608	#Zambiza
+	863.11.12={ birth=yes }
+	942.3.29={ death=yes }
+}
+1019928615={
+	name=Huachuri
+	dynasty=1009990254
+	dna="mfhdlbajioe"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=7 stewardship=6 intrigue=6 learning=8
+	add_trait=thrifty_clerk add_trait=greedy add_trait=humble add_trait=gregarious add_trait=envious 
+	 
+	father=1019928608	#Zambiza
+	867.1.7={ birth=yes }
+	935.7.19={ death=yes }
+}
+1019928616={
+	name=Kantuta
+	female=yes
+	dynasty=1009990254
+	dna="mjckkbknkdo"
+	culture=tupinamba religion=tupan
+	father=1019928609	#Usca
+	866.11.16={ birth=yes }
+	945.4.13={ death=yes }
+}
+1019928617={
+	name=Yupanqui
+	dynasty=1009990254
+	dna="ancekjdgcig"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=7 stewardship=6 intrigue=8 learning=5
+	add_trait=grey_eminence add_trait=trusting add_trait=just add_trait=patient 
+	add_trait=diligent add_trait=greedy 
+	father=1019928609	#Usca
+	872.4.16={ birth=yes }
+	931.12.1={ death=yes }
+}
+1019928618={
+	name=Cayo
+	dynasty=1009990254
+	dna="gbbkkbbbibd"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=5 stewardship=6 intrigue=5 learning=5
+	add_trait=scholarly_theologian add_trait=greedy add_trait=lustful add_trait=slothful 
+	father=1019928609	#Usca
+	880.11.12={ birth=yes }
+	955.10.12={ death=yes }
+}
+1019928619={
+	name=Pascac
+	dynasty=1009990254
+	dna="anceiidccil"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=4 stewardship=6 intrigue=5 learning=8
+	add_trait=intricate_webweaver add_trait=gregarious add_trait=just add_trait=craven add_trait=gluttonous 
+	add_trait=trusting add_trait=patient 
+	father=1019928617	#Yupanqui
+	898.3.19={ birth=yes }
+	965.4.19={ death=yes }
+}
+1019928620={
+	name=Atoc
+	dynasty=1009990254
+	dna="cacekkdhcim"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=4 stewardship=7 intrigue=5 learning=6
+	add_trait=detached_priest add_trait=shy add_trait=charitable add_trait=craven add_trait=zealous 
+	add_trait=wroth  
+	father=1019928617	#Yupanqui
+	905.12.26={ birth=yes }
+	976.4.30={ death=yes }
+}
+1019928621={
+	name=Ana
+	female=yes
+	dynasty=1009990254
+	dna="bocigcjgcjg"
+	culture=tupinamba religion=tupan
+	father=1019928617	#Yupanqui
+	907.7.18={ birth=yes }
+	977.1.2={ death=yes }
+}
+1019928622={
+	name=Pascac
+	dynasty=1009990254
+	dna="ancgkedocma"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=4 stewardship=8 intrigue=8 learning=8
+	add_trait=thrifty_clerk add_trait=honest add_trait=slothful add_trait=chaste 
+	father=1019928617	#Yupanqui
+	912.10.23={ birth=yes }
+	991.3.20={ death=yes }
+}
+1019928623={
+	name=Sopa
+	dynasty=1009990254
+	dna="anlehpeccil"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=4 stewardship=5 intrigue=8 learning=4
+	add_trait=flamboyant_schemer add_trait=gardener add_trait=gregarious add_trait=trusting 
+	add_trait=envious  
+	father=1019928619	#Pascac
+	921.4.3={ birth=yes }
+	1006.10.28={ death=yes }
+}
+1019928624={
+	name=Maiara
+	female=yes
+	dynasty=1009990254
+	dna="aljeiidccil"
+	culture=tupinamba religion=tupan
+	father=1019928619	#Pascac
+	926.11.8={ birth=yes }
+	981.7.16={ death=yes }
+}
+1019928625={
+	name=Varanca
+	dynasty=1009990254
+	dna="aapdoddejhl"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=4 stewardship=7 intrigue=6 learning=8
+	add_trait=grey_eminence add_trait=humble add_trait=zealous  
+	 
+	father=1019928619	#Pascac
+	930.9.26={ birth=yes }
+	998.11.28={ death=yes }
+}
+1019928626={
+	name=Chia
+	female=yes
+	dynasty=1009990254
+	dna="lnbjfihebil"
+	culture=tupinamba religion=tupan
+	father=1019928619	#Pascac
+	935.12.3={ birth=yes }
+	1033.3.10={ death=yes }
+}
+1019928627={
+	name=Ana
+	female=yes
+	dynasty=1009990254
+	dna="jnceaicfccg"
+	culture=tupinamba religion=tupan
+	father=1019928619	#Pascac
+	937.9.5={ birth=yes }
+	1014.2.21={ death=yes }
+}
+1019928628={
+	name=Huachuri
+	dynasty=1009990254
+	dna="anaehpegcfm"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=8 stewardship=8 intrigue=8 learning=5
+	add_trait=midas_touched add_trait=slothful add_trait=wroth add_trait=temperate 
+	father=1019928623	#Sopa
+	949.1.3={ birth=yes }
+	1004.6.27={ death=yes }
+}
+1019928629={
+	name=Tucuycuyche
+	dynasty=1009990254
+	dna="anlejpcclil"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=6 stewardship=7 intrigue=7 learning=8
+	add_trait=martial_cleric add_trait=poet add_trait=humble add_trait=envious add_trait=temperate 
+	 add_trait=patient add_trait=trusting 
+	father=1019928623	#Sopa
+	956.6.12={ birth=yes }
+	1027.1.18={ death=yes }
+}
+1019928630={
+	name=Ana
+	female=yes
+	dynasty=1009990254
+	dna="annlhleimia"
+	culture=tupinamba religion=tupan
+	father=1019928623	#Sopa
+	961.11.19={ birth=yes }
+	1018.1.19={ death=yes }
+}
+1019928631={
+	name=Nina
+	female=yes
+	dynasty=1009990254
+	dna="edfdcgbbcpo"
+	culture=tupinamba religion=tupan
+	father=1019928623	#Sopa
+	966.2.15={ birth=yes }
+	1025.11.1={ death=yes }
+}
+1019928632={
+	name=Huaypalcon
+	dynasty=1009990254
+	dna="adnehpinbam"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=5 stewardship=6 intrigue=4 learning=8
+	add_trait=midas_touched add_trait=envious 
+	father=1019928628	#Huachuri
+	980.2.5={ birth=yes }
+	1051.1.17={ death=yes }
+}
+1019928633={
+	name=Axomamma
+	female=yes
+	dynasty=1009990254
+	dna="mbfehjegcdm"
+	culture=tupinamba religion=tupan
+	father=1019928628	#Huachuri
+	987.4.2={ birth=yes }
+	1073.12.3={ death=yes }
+}
+1019928634={
+	name=Axomamma
+	female=yes
+	dynasty=1009990254
+	dna="nnabhpjgcbm"
+	culture=tupinamba religion=tupan
+	father=1019928628	#Huachuri
+	992.9.4={ birth=yes }
+	1060.10.1={ death=yes }
+}
+1019928635={
+	name=Cavillaca
+	female=yes
+	dynasty=1009990254
+	dna="aemgohekcfj"
+	culture=tupinamba religion=tupan
+	father=1019928628	#Huachuri
+	998.11.11={ birth=yes }
+	1062.7.14={ death=yes }
+}
+1019928636={
+	name=Sopa
+	dynasty=1009990254
+	dna="ennicilnblm"
+	culture=tupinamba religion=tupan
+	martial=6 diplomacy=4 stewardship=7 intrigue=6 learning=7
+	add_trait=martial_cleric  add_trait=ambitious 
+	add_trait=just add_trait=humble 
+	father=1019928632	#Huaypalcon
+	1014.11.1={ birth=yes }
+	1096.5.23={ death=yes }
+}
+1019928637={
+	name=Curiatao
+	dynasty=1009990254
+	dna="konehcipnmb"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=7 stewardship=7 intrigue=8 learning=6
+	add_trait=charismatic_negotiator add_trait=humble add_trait=patient add_trait=charitable 
+	add_trait=weak 
+	father=1019928632	#Huaypalcon
+	1016.8.11={ birth=yes }
+	1061.9.3={ death=yes }
+}
+1019928638={
+	name=Axomamma
+	female=yes
+	dynasty=1009990254
+	dna="adfbeaipbhm"
+	culture=tupinamba religion=tupan
+	father=1019928632	#Huaypalcon
+	1019.4.4={ birth=yes }
+	1098.10.25={ death=yes }
+}
+1019928639={
+	name=Tucuycuyche
+	dynasty=1009990254
+	dna="eplipblobkm"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=5 stewardship=5 intrigue=8 learning=8
+	add_trait=martial_cleric add_trait=duelist add_trait=lustful add_trait=trusting 
+	father=1019928636	#Sopa
+	1033.1.18={ birth=yes }
+	1122.8.13={ death=yes }
+}
+1019928640={
+	name=Pascac
+	dynasty=1009990254
+	dna="eanicddnhll"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=5 stewardship=4 intrigue=6 learning=5
+	add_trait=martial_cleric add_trait=arbitrary add_trait=proud add_trait=slothful  
+	add_trait=lustful add_trait=cynical 
+	father=1019928636	#Sopa
+	1038.12.3={ birth=yes }
+	1119.10.8={ death=yes }
+}
+1019928641={
+	name=China
+	female=yes
+	dynasty=1009990254
+	dna="egnjccikblf"
+	culture=tupinamba religion=tupan
+	father=1019928636	#Sopa
+	1044.4.11={ birth=yes }
+	1106.7.1={ death=yes }
+}
+1019928642={
+	name=Kantuta
+	female=yes
+	dynasty=1009990254
+	dna="enoecgmlbnm"
+	culture=tupinamba religion=tupan
+	father=1019928636	#Sopa
+	1046.12.5={ birth=yes }
+	1115.6.21={ death=yes }
+}
+1019928643={
+	name=Atoc
+	dynasty=1009990254
+	dna="ongieelnbgh"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=6 stewardship=8 intrigue=6 learning=4
+	add_trait=grey_eminence add_trait=trusting add_trait=charitable add_trait=brave 
+	father=1019928636	#Sopa
+	1050.3.13={ birth=yes }
+	1135.8.17={ death=yes }
+}
+1019928644={
+	name=Axomamma
+	female=yes
+	dynasty=1009990254
+	dna="emliplhjmhm"
+	culture=tupinamba religion=tupan
+	father=1019928639	#Tucuycuyche
+	1057.1.17={ birth=yes }
+	1123.5.20={ death=yes }
+}
+1019928645={
+	name=China
+	female=yes
+	dynasty=1009990254
+	dna="eieoebbobdk"
+	culture=tupinamba religion=tupan
+	father=1019928639	#Tucuycuyche
+	1063.5.17={ birth=yes }
+	1138.6.5={ death=yes }
+}
+1019928295={
+	name=Toruí
+	dynasty=1009990251
+	dna="lcjfjoibadj"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=5 stewardship=4 intrigue=7 learning=5
+	add_trait=charismatic_negotiator add_trait=just add_trait=honest add_trait=humble add_trait=wounded 
+	720.3.19={ birth=yes }
+	784.5.28={ death=yes }
+}
+1019928296={
+	name=Áhari
+	dynasty=1009990251
+	dna="cgkciogbhaj"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=6 stewardship=4 intrigue=5 learning=5
+	add_trait=charismatic_negotiator add_trait=zealous add_trait=gregarious add_trait=just add_trait=proud 
+	add_trait=slothful 
+	father=1019928295	#Toruí
+	751.11.22={ birth=yes }
+	828.3.18={ death=yes }
+}
+1019928297={
+	name=Hayá
+	female=yes
+	dynasty=1009990251
+	dna="ncfofkgpieg"
+	culture=tupinamba religion=tupan
+	father=1019928295	#Toruí
+	755.4.11={ birth=yes }
+	822.5.9={ death=yes }
+}
+1019928298={
+	name=Twengga
+	female=yes
+	dynasty=1009990251
+	dna="mcjcjogoadf"
+	culture=tupinamba religion=tupan
+	father=1019928295	#Toruí
+	760.8.18={ birth=yes }
+	828.6.12={ death=yes }
+}
+1019928299={
+	name=Takuiba
+	female=yes
+	dynasty=1009990251
+	dna="mcifnmifadc"
+	culture=tupinamba religion=tupan
+	father=1019928295	#Toruí
+	765.8.26={ birth=yes }
+	848.10.15={ death=yes }
+}
+1019928300={
+	name=Ebedimu
+	dynasty=1009990251
+	dna="lcjjhoibhdi"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=7 stewardship=7 intrigue=6 learning=6
+	add_trait=detached_priest add_trait=honest add_trait=shy add_trait=humble add_trait=diligent 
+	add_trait=arbitrary add_trait=chaste 
+	father=1019928295	#Toruí
+	770.11.15={ birth=yes }
+	830.1.17={ death=yes }
+}
+1019928301={
+	name=Ilumani
+	dynasty=1009990251
+	dna="dhlcfogdmdj"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=4 stewardship=5 intrigue=4 learning=7
+	add_trait=indulgent_wastrel add_trait=hedonist add_trait=chaste add_trait=patient add_trait=charitable 
+	add_trait=zealous 
+	father=1019928296	#Áhari
+	781.11.6={ birth=yes }
+	850.8.14={ death=yes }
+}
+1019928302={
+	name=Pirijá
+	dynasty=1009990251
+	dna="dgaciocbafj"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=8 stewardship=7 intrigue=7 learning=5
+	add_trait=grey_eminence add_trait=hunter add_trait=just add_trait=humble add_trait=envious 
+	 add_trait=honest 
+	father=1019928296	#Áhari
+	786.10.27={ birth=yes }
+	843.6.15={ death=yes }
+}
+1019928303={
+	name=Shoko
+	dynasty=1009990251
+	dna="kedklogiobk"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=5 stewardship=7 intrigue=5 learning=7
+	add_trait=skilled_tactician add_trait=charitable add_trait=ambitious add_trait=possessed 
+	father=1019928296	#Áhari
+	791.12.2={ birth=yes }
+	868.3.12={ death=yes }
+}
+1019928304={
+	name=Áhari
+	dynasty=1009990251
+	dna="cdklbhpahaa"
+	culture=tupinamba religion=tupan
+	martial=6 diplomacy=5 stewardship=7 intrigue=6 learning=4
+	add_trait=flamboyant_schemer add_trait=gardener add_trait=temperate add_trait=zealous  
+	add_trait=honest add_trait=depressed 
+	father=1019928296	#Áhari
+	795.3.22={ birth=yes }
+	882.1.22={ death=yes }
+}
+1019928305={
+	name=Hayá
+	female=yes
+	dynasty=1009990251
+	dna="cndcengbigc"
+	culture=tupinamba religion=tupan
+	father=1019928296	#Áhari
+	800.6.24={ birth=yes }
+	901.11.13={ death=yes }
+}
+1019928306={
+	name=Pirijá
+	dynasty=1009990251
+	dna="fokcaomebpj"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=5 stewardship=8 intrigue=5 learning=6
+	add_trait=midas_touched add_trait=hunter add_trait=humble add_trait=shy add_trait=slothful 
+	add_trait=arbitrary add_trait=greedy 
+	father=1019928296	#Áhari
+	805.3.6={ birth=yes }
+	867.9.2={ death=yes }
+}
+1019928307={
+	name=Laliwa
+	dynasty=1009990251
+	dna="cgccioggfjk"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=4 stewardship=7 intrigue=6 learning=7
+	add_trait=martial_cleric add_trait=craven add_trait=temperate add_trait=ambitious 
+	father=1019928296	#Áhari
+	810.12.24={ birth=yes }
+	878.2.23={ death=yes }
+}
+1019928308={
+	name=Takuiba
+	female=yes
+	dynasty=1009990251
+	dna="fhlcepgfmdj"
+	culture=tupinamba religion=tupan
+	father=1019928301	#Ilumani
+	808.4.27={ birth=yes }
+	888.10.11={ death=yes }
+}
+1019928309={
+	name=Isani
+	female=yes
+	dynasty=1009990251
+	dna="dllcajadbdi"
+	culture=tupinamba religion=tupan
+	father=1019928301	#Ilumani
+	813.11.12={ birth=yes }
+	908.11.14={ death=yes }
+}
+1019928310={
+	name=Isani
+	female=yes
+	dynasty=1009990251
+	dna="omlllfpemnj"
+	culture=tupinamba religion=tupan
+	father=1019928301	#Ilumani
+	818.4.12={ birth=yes }
+	905.3.29={ death=yes }
+}
+1019928311={
+	name=Shoko
+	dynasty=1009990251
+	dna="dhlcfogdjdh"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=7 stewardship=5 intrigue=6 learning=8
+	add_trait=naive_appeaser add_trait=temperate add_trait=greedy add_trait=ambitious 
+	add_trait=patient add_trait=depressed 
+	father=1019928301	#Ilumani
+	821.4.27={ birth=yes }
+	909.3.17={ death=yes }
+}
+1019928312={
+	name=Takuiba
+	female=yes
+	dynasty=1009990251
+	dna="delcfnmemfj"
+	culture=tupinamba religion=tupan
+	father=1019928301	#Ilumani
+	825.5.17={ birth=yes }
+	891.4.18={ death=yes }
+}
+1019928313={
+	name=Haubariria
+	dynasty=1009990251
+	dna="dhfjfobccdh"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=6 stewardship=5 intrigue=4 learning=8
+	add_trait=intricate_webweaver add_trait=ambitious add_trait=gluttonous add_trait=just 
+	add_trait=wroth 
+	father=1019928311	#Shoko
+	854.10.18={ birth=yes }
+	920.8.21={ death=yes }
+}
+1019928314={
+	name=Áhari
+	dynasty=1009990251
+	dna="dkhlfoggjda"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=8 stewardship=8 intrigue=8 learning=8
+	add_trait=martial_cleric add_trait=celibate add_trait=chaste   
+	add_trait=harelip 
+	father=1019928311	#Shoko
+	857.9.15={ birth=yes }
+	939.4.13={ death=yes }
+}
+1019928315={
+	name=Takuiba
+	female=yes
+	dynasty=1009990251
+	dna="doccjgadebf"
+	culture=tupinamba religion=tupan
+	father=1019928311	#Shoko
+	861.12.9={ birth=yes }
+	941.1.21={ death=yes }
+}
+1019928316={
+	name=Kaigouchi
+	dynasty=1009990251
+	dna="ahfdhokccdh"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=6 stewardship=6 intrigue=5 learning=6
+	add_trait=naive_appeaser add_trait=arbitrary add_trait=wroth add_trait=craven add_trait=gregarious 
+	add_trait=chaste  
+	father=1019928313	#Haubariria
+	877.10.13={ birth=yes }
+	950.3.7={ death=yes }
+}
+1019928317={
+	name=Gunfuli
+	dynasty=1009990251
+	dna="dhkifoddddh"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=5 stewardship=8 intrigue=5 learning=4
+	add_trait=grey_eminence add_trait=slothful add_trait=just add_trait=envious add_trait=genius 
+	father=1019928313	#Haubariria
+	882.11.13={ birth=yes }
+	967.12.3={ death=yes }
+}
+1019928318={
+	name=Semén
+	dynasty=1009990251
+	dna="ecfpicbcfdh"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=4 stewardship=8 intrigue=4 learning=7
+	add_trait=detached_priest add_trait=humble add_trait=chaste add_trait=gregarious 
+	add_trait=trusting add_trait=ill 
+	father=1019928313	#Haubariria
+	885.1.27={ birth=yes }
+	967.4.7={ death=yes }
+}
+1019928319={
+	name=Twengga
+	female=yes
+	dynasty=1009990251
+	dna="dhijlolcglo"
+	culture=tupinamba religion=tupan
+	father=1019928313	#Haubariria
+	889.10.14={ birth=yes }
+	960.10.15={ death=yes }
+}
+1019928320={
+	name=Takuiba
+	female=yes
+	dynasty=1009990251
+	dna="lhfoglmbndh"
+	culture=tupinamba religion=tupan
+	father=1019928313	#Haubariria
+	892.8.3={ birth=yes }
+	976.5.25={ death=yes }
+}
+1019928321={
+	name=Arah
+	dynasty=1009990251
+	dna="eefjfmneedm"
+	culture=tupinamba religion=tupan
+	martial=6 diplomacy=5 stewardship=4 intrigue=5 learning=5
+	add_trait=flamboyant_schemer add_trait=slothful add_trait=zealous add_trait=craven 
+	father=1019928313	#Haubariria
+	897.2.23={ birth=yes }
+	939.8.9={ death=yes }
+}
+1019928322={
+	name=Haubariria
+	dynasty=1009990251
+	dna="ehddhohdbdh"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=6 stewardship=8 intrigue=6 learning=7
+	add_trait=grey_eminence add_trait=diligent add_trait=depressed 
+	father=1019928316	#Kaigouchi
+	900.12.7={ birth=yes }
+	975.6.25={ death=yes }
+}
+1019928323={
+	name=Hayá
+	female=yes
+	dynasty=1009990251
+	dna="bcfedoncckg"
+	culture=tupinamba religion=tupan
+	father=1019928316	#Kaigouchi
+	905.9.16={ birth=yes }
+	957.5.6={ death=yes }
+}
+1019928324={
+	name=Laliwa
+	dynasty=1009990251
+	dna="fhoahikbded"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=7 stewardship=7 intrigue=6 learning=8
+	add_trait=martial_cleric add_trait=humble add_trait=lustful add_trait=ill 
+	father=1019928316	#Kaigouchi
+	913.3.19={ birth=yes }
+	992.10.17={ death=yes }
+}
+1019928325={
+	name=Wiwakaleme
+	dynasty=1009990251
+	dna="bccdhhkcjie"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=8 stewardship=6 intrigue=6 learning=7
+	add_trait=detached_priest add_trait=arbitrary add_trait=brave add_trait=ambitious add_trait=diligent 
+	father=1019928316	#Kaigouchi
+	919.1.14={ birth=yes }
+	984.11.11={ death=yes }
+}
+1019928326={
+	name=Ilumani
+	dynasty=1009990251
+	dna="eidehlhdmdf"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=4 stewardship=5 intrigue=7 learning=7
+	add_trait=detached_priest add_trait=duelist add_trait=shy add_trait=envious add_trait=arbitrary 
+	add_trait=zealous add_trait=patient add_trait=diligent 
+	father=1019928322	#Haubariria
+	931.11.25={ birth=yes }
+	1000.12.16={ death=yes }
+}
+1019928327={
+	name=Isani
+	female=yes
+	dynasty=1009990251
+	dna="ghdaoledbjf"
+	culture=tupinamba religion=tupan
+	father=1019928322	#Haubariria
+	936.9.19={ birth=yes }
+	1023.1.26={ death=yes }
+}
+1019928328={
+	name=Takuiba
+	female=yes
+	dynasty=1009990251
+	dna="klcdhomdpdh"
+	culture=tupinamba religion=tupan
+	father=1019928322	#Haubariria
+	943.9.12={ birth=yes }
+	1015.2.18={ death=yes }
+}
+1019928329={
+	name=Semén
+	dynasty=1009990251
+	dna="ehkkhihdndb"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=7 stewardship=7 intrigue=6 learning=8
+	add_trait=charismatic_negotiator add_trait=hedonist add_trait=craven add_trait=cynical 
+	add_trait=just 
+	father=1019928322	#Haubariria
+	950.9.23={ birth=yes }
+	1010.5.9={ death=yes }
+}
+1019928330={
+	name=Toratora
+	dynasty=1009990251
+	dna="egdjieddman"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=6 stewardship=6 intrigue=4 learning=5
+	add_trait=indulgent_wastrel add_trait=just add_trait=slothful add_trait=charitable add_trait=lustful 
+	father=1019928326	#Ilumani
+	955.12.23={ birth=yes }
+	1053.1.30={ death=yes }
+}
+1019928331={
+	name=Isani
+	female=yes
+	dynasty=1009990251
+	dna="eijlhbhdmnf"
+	culture=tupinamba religion=tupan
+	father=1019928326	#Ilumani
+	961.5.9={ birth=yes }
+	1025.9.4={ death=yes }
+}
+1019928332={
+	name=Twengga
+	female=yes
+	dynasty=1009990251
+	dna="emdhmlijmdp"
+	culture=tupinamba religion=tupan
+	father=1019928326	#Ilumani
+	966.5.17={ birth=yes }
+	1022.7.31={ death=yes }
+}
+1019928333={
+	name=Takuiba
+	female=yes
+	dynasty=1009990251
+	dna="mibkghldijf"
+	culture=tupinamba religion=tupan
+	father=1019928326	#Ilumani
+	969.10.24={ birth=yes }
+	1054.10.20={ death=yes }
+}
+1019928334={
+	name=Toruí
+	dynasty=1009990251
+	dna="oafpiedmlhn"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=5 stewardship=6 intrigue=5 learning=7
+	add_trait=detached_priest add_trait=mystic add_trait=shy add_trait=craven add_trait=chaste 
+	add_trait=ambitious add_trait=diligent 
+	father=1019928330	#Toratora
+	987.1.16={ birth=yes }
+	1054.9.10={ death=yes }
+}
+1019928335={
+	name=Twengga
+	female=yes
+	dynasty=1009990251
+	dna="hdcjipkdikn"
+	culture=tupinamba religion=tupan
+	father=1019928330	#Toratora
+	990.3.10={ birth=yes }
+	1044.12.16={ death=yes }
+}
+1019928336={
+	name=Hayá
+	female=yes
+	dynasty=1009990251
+	dna="dpdeielfmln"
+	culture=tupinamba religion=tupan
+	father=1019928330	#Toratora
+	995.3.22={ birth=yes }
+	1050.10.31={ death=yes }
+}
+1019928337={
+	name=Hayá
+	female=yes
+	dynasty=1009990251
+	dna="efbjifdpjim"
+	culture=tupinamba religion=tupan
+	father=1019928330	#Toratora
+	999.9.18={ birth=yes }
+	1094.4.21={ death=yes }
+}
+1019928338={
+	name=Twengga
+	female=yes
+	dynasty=1009990251
+	dna="eidmifddpan"
+	culture=tupinamba religion=tupan
+	father=1019928330	#Toratora
+	1001.9.14={ birth=yes }
+	1055.9.28={ death=yes }
+}
+1019928339={
+	name=Haubariria
+	dynasty=1009990251
+	dna="oafpibdmocc"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=4 stewardship=7 intrigue=4 learning=4
+	add_trait=detached_priest add_trait=temperate add_trait=shy add_trait=brave add_trait=lustful 
+	add_trait=wroth add_trait=envious 
+	father=1019928334	#Toruí
+	1011.3.14={ birth=yes }
+	1092.3.20={ death=yes }
+}
+1019928340={
+	name=Takuiba
+	female=yes
+	dynasty=1009990251
+	dna="ojfpiglmlho"
+	culture=tupinamba religion=tupan
+	father=1019928334	#Toruí
+	1016.10.13={ birth=yes }
+	1077.7.22={ death=yes }
+}
+1019928341={
+	name=Laliwa
+	dynasty=1009990251
+	dna="ocijjdomhln"
+	culture=tupinamba religion=tupan
+	martial=5 diplomacy=7 stewardship=8 intrigue=7 learning=7
+	add_trait=detached_priest add_trait=diligent add_trait=brave add_trait=zealous 
+	father=1019928334	#Toruí
+	1022.8.26={ birth=yes }
+	1080.7.21={ death=yes }
+}
+1019928342={
+	name=Semén
+	dynasty=1009990251
+	dna="onepcedelhj"
+	culture=tupinamba religion=tupan
+	martial=4 diplomacy=5 stewardship=8 intrigue=6 learning=8
+	add_trait=grey_eminence add_trait=poet add_trait=charitable add_trait=just 
+	father=1019928334	#Toruí
+	1026.10.6={ birth=yes }
+	1095.2.2={ death=yes }
+}
+1019928343={
+	name=Toruí
+	dynasty=1009990251
+	dna="oaolieeaahp"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=4 stewardship=5 intrigue=5 learning=6
+	add_trait=scholarly_theologian add_trait=honest add_trait=chaste add_trait=temperate 
+	add_trait=brave 
+	father=1019928334	#Toruí
+	1033.10.15={ birth=yes }
+	1111.3.17={ death=yes }
+}
+1019928344={
+	name=Laliwa
+	dynasty=1009990251
+	dna="oafkaeomhcg"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=4 stewardship=8 intrigue=5 learning=7
+	add_trait=skilled_tactician add_trait=humble add_trait=shy add_trait=chaste  
+	add_trait=depressed 
+	father=1019928334	#Toruí
+	1038.8.27={ birth=yes }
+	1120.7.17={ death=yes }
+}
+1019928345={
+	name=Wiwakaleme
+	dynasty=1009990251
+	dna="oaffmmldclp"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=5 stewardship=7 intrigue=7 learning=6
+	add_trait=martial_cleric add_trait=lustful add_trait=envious   
+	add_trait=depressed 
+	father=1019928339	#Haubariria
+	1038.9.11={ birth=yes }
+	1115.3.8={ death=yes }
+}
+1019928346={
+	name=Pirijá
+	dynasty=1009990251
+	dna="ealjibdpcpg"
+	culture=tupinamba religion=tupan
+	martial=8 diplomacy=6 stewardship=5 intrigue=6 learning=4
+	add_trait=midas_touched add_trait=proud add_trait=gregarious add_trait=chaste 
+	 
+	father=1019928339	#Haubariria
+	1043.2.16={ birth=yes }
+	1110.7.10={ death=yes }
+}
+1019928347={
+	name=Isani
+	female=yes
+	dynasty=1009990251
+	dna="kpbpnldofch"
+	culture=tupinamba religion=tupan
+	father=1019928339	#Haubariria
+	1047.10.21={ birth=yes }
+	1123.2.1={ death=yes }
+}
+1019928348={
+	name=Takuiba
+	female=yes
+	dynasty=1009990251
+	dna="oaffomonlhc"
+	culture=tupinamba religion=tupan
+	father=1019928345	#Wiwakaleme
+	1059.9.17={ birth=yes }
+	1126.1.15={ death=yes }
+}
+1019928349={
+	name=Guacanagari
+	dynasty=1009990251
+	dna="oahopkldglp"
+	culture=tupinamba religion=tupan
+	martial=7 diplomacy=5 stewardship=5 intrigue=7 learning=8
+	add_trait=martial_cleric add_trait=impaler add_trait=gregarious add_trait=trusting add_trait=temperate 
+	father=1019928345	#Wiwakaleme
+	1063.10.12={ birth=yes }
+	1139.12.16={ death=yes }
 }

@@ -1395,9 +1395,33 @@ sonoran = {
 	}
 }
 
-caddoan = {
+mississippian = {
 	graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 	
+	cahokian = {
+		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
+		
+		color = { 0.39 0.23 0.17 }
+
+		male_names = { Aach Chowabah Hiahidock Kardy Kianhoon Mattan Ossinse Sanninow Sationwnhown Sauninot Soakiantow Sohone Tashar Tchowainin Tehawahinno Tehowawinow Tewinnun Tiatesun Tinnehinan Tinnowin Tiohtow Toackooch Towahinnek Tsauninot }
+		female_names = { Tsaktahiraas Tskusaski Tstaka Tstakurriwax Tstapittarius Tstarahuxtu Tstaruri'u Zacado }
+
+		dynasty_title_names = no
+
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 30
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
 	caddo = {
 		graphical_cultures = { mesoamericangfx mongolgfx muslimgfx }
 		

@@ -50,7 +50,7 @@ e_purepechtarrahum = {
 				color2={ 136 110 5 }
 				
 				inuit = "Acambaro"
-				tuniit = "Acambaro"
+				tuniq = "Acambaro"
 				roman = "Acambaro"
 				norwegian = "Acambaro"
 				danish = "Acambaro"
@@ -58,7 +58,7 @@ e_purepechtarrahum = {
 				
 				b_acambaro = {
 					inuit = "Acambaro"
-					tuniit = "Acambaro"
+					tuniq = "Acambaro"
 					roman = "Acambaro"
 					norwegian = "Acambaro"
 					danish = "Acambaro"
@@ -379,7 +379,7 @@ e_purepechtarrahum = {
 			color2={ 130 20 5 }
 
 			inuit = "Tonallan"
-			tuniit = "Tonallan"
+			tuniq = "Tonallan"
 			phoenician = "Tonallan"
 			innu = "Tonallan"
 			roman = "Tonallan"
@@ -401,7 +401,7 @@ e_purepechtarrahum = {
 				color2={ 146 120 25 }
 				
 				inuit = "Chapallan"
-				tuniit = "Chapallan"
+				tuniq = "Chapallan"
 				roman = "Chapallan"
 				norwegian = "Chapallan"
 				danish = "Chapallan"
@@ -409,7 +409,7 @@ e_purepechtarrahum = {
 				
 				b_chapala = {
 					inuit = "Chapallan"
-					tuniit = "Chapallan"
+					tuniq = "Chapallan"
 					roman = "Chapallan"
 					norwegian = "Chapallan"
 					danish = "Chapallan"
@@ -663,7 +663,7 @@ e_purepechtarrahum = {
 			color2={ 130 20 5 }
 
 			inuit = "Xalisco"
-			tuniit = "Xalisco"
+			tuniq = "Xalisco"
 			phoenician = "Xalisco"
 			innu = "Xalisco"
 			roman = "Xalisco"
@@ -685,7 +685,7 @@ e_purepechtarrahum = {
 				color2={ 136 110 5 }
 				
 				inuit = "Xalisco"
-				tuniit = "Xalisco"
+				tuniq = "Xalisco"
 				roman = "Xalisco"
 				norwegian = "Xalisco"
 				danish = "Xalisco"
@@ -693,7 +693,7 @@ e_purepechtarrahum = {
 				
 				b_xalisco = {
 					inuit = "Xalisco"
-					tuniit = "Xalisco"
+					tuniq = "Xalisco"
 					roman = "Xalisco"
 					norwegian = "Xalisco"
 					danish = "Xalisco"
@@ -899,7 +899,7 @@ e_purepechtarrahum = {
 				color={ 130 220 190 }
 				color2={ 252 123 145 }
 			
-			capital = 4167 # colliman
+			capital = 4197 #Azatatlan
 			
 			c_azatatlan = {
 
@@ -995,81 +995,15 @@ e_purepechtarrahum = {
 		old_saxon = "Chihuahua"
 		german = "Chihuahua"
 
-		capital = 4211 # Chihuahua
+		capital = 4204 # Korian
 
-		d_chihuahua = {
+		d_korian = {
 
-			color={ 167 100 5 }
-			color2={ 130 20 5 }
-
-			inuit = "Chihuahua"
-			tuniit = "Chihuahua"
-			phoenician = "Chihuahua"
-			innu = "Chihuahua"
-			roman = "Chihuahua"
-			norwegian = "Chihuahua"
-			danish = "Chihuahua"
-			swedish = "Chihuahua"
-			greek = "Chihuahua"
-			frankish = "Chihuahua"
-			irish = "Chihuahua"
-			scottish = "Chihuahua"
-			portuguese = "Chihuahua"
-			persian = "Chihuahua"
+			color={ 96 10 15 }
+			color2={ 220 220 220 }
 			
-			capital = 4156 # Chihuahua
-			
-			c_chihuahua = {
+			capital = 4204 #Durango
 
-				color={ 88 39 39 }
-				color2={ 136 110 5 }
-				
-				inuit = "Chihuahua"
-				tuniit = "Chihuahua"
-				roman = "Chihuahua"
-				norwegian = "Chihuahua"
-				danish = "Chihuahua"
-				swedish = "Chihuahua"
-				
-				b_chitjiua = {
-					inuit = "Chihuahua"
-					tuniit = "Chihuahua"
-					roman = "Chihuahua"
-					norwegian = "Chihuahua"
-					danish = "Chihuahua"
-					swedish = "Chihuahua"
-				}
-				b_chihuahua = {
-				}
-				b_pimbaguarjio = {
-				}
-				b_guadalupe = {
-				}
-				b_alamedas = {
-				}
-				b_zootecnia = {
-				}
-			}
-			c_conchos = {
-
-				color={ 88 39 80 }
-				color2={ 136 110 5 }
-				
-				b_conchos = {
-				}
-				b_chadajuar = {
-				}
-				b_delicias = {
-				}
-				b_moctezuma = {
-				}
-				b_yachurachic = {
-				}
-				b_sacreel  = {
-				}
-				b_riogra = {
-				}
-			}
 			c_durango = {
 
 				color={ 130 39 80 }
@@ -1248,26 +1182,6 @@ e_purepechtarrahum = {
 				b_mukiomugi = {
 				}
 				b_mogollo = {
-				}
-			}
-			c_chihuahuan = {
-
-				color={ 126 172 97 }
-				color2={ 136 110 5 }
-				
-				b_chihuahuan = {
-				}
-				b_noglaci = {
-				}
-				b_canbavispa = {
-				}
-				b_mosillo = {
-				}
-				b_semboeue = {
-				}
-				b_enaventa = {
-				}
-				b_tuchochi = {
 				}
 			}
 			c_cahitan = {

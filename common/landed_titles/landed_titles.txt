@@ -29390,7 +29390,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 		isis_reformed = 10000
 		set_reformed = 10000
 		
-		coptic = "Kemet"
+		nilo_saharan = "Kemet"
 
 		d_alexandria = {
 			color={ 100 219 134 }
@@ -29398,7 +29398,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 			capital = 802 # Alexandria
 			
-			coptic = "Rakodi"
+			nilo_saharan = "Rakodi"
 			
 			c_alexandria = {
 				color={ 102 221 136 }
@@ -29452,7 +29452,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				holy_site = isis_reformed
 				holy_site = set_reformed
 				
-				coptic = "Rakodi"
+				nilo_saharan = "Rakodi"
 				hellenistic = "Alexandreia"
 				greek = "Alexandreia"
 				egyptian_arabic = "Eskendereyya"
@@ -29497,7 +29497,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					pentarchy = sol_islam_reformed
 					pentarchy = sol_sahara_reformed
 					
-					coptic = "Rakodi"
+					nilo_saharan = "Rakodi"
 					hellenistic = "Alexandreia"
 					greek = "Alexandreia"
 					egyptian_arabic = "Eskendereyya"
@@ -29509,7 +29509,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_abuqir = {
 					hellenistic = "Aboukir"
 					greek = "Aboukir"
-					coptic = "Apakyri"
+					nilo_saharan = "Apakyri"
 				}
 				b_burgelarab = {
 				}
@@ -29532,7 +29532,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				
 				hellenistic = "Bolbitine"
 				greek = "Bolbitine"
-				coptic = "Rashit"
+				nilo_saharan = "Rashit"
 				egyptian_arabic = "Rashid"
 				bedouin_arabic = "Rashid"
 				maghreb_arabic = "Rashid"
@@ -29542,7 +29542,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_rosetta = {
 					hellenistic = "Bolbitine"
 					greek = "Bolbitine"
-					coptic = "Rashit"
+					nilo_saharan = "Rashit"
 					egyptian_arabic = "Rashid"
 					bedouin_arabic = "Rashid"
 					maghreb_arabic = "Rashid"
@@ -29552,12 +29552,12 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_fuwa = {
 					hellenistic = "Metelis"
 					greek = "Metelis"
-					coptic = "Metel"
+					nilo_saharan = "Metel"
 				}
 				b_hermopolis = {
 					greek = "Hermopolis Mikra"
 					roman = "Hermopolis Parva"
-					coptic = "Ptiminhor"
+					nilo_saharan = "Ptiminhor"
 					egyptian_arabic = "Damanhur"
 					bedouin_arabic = "Damanhur"
 					maghreb_arabic = "Damanhur"
@@ -29581,7 +29581,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_edkhou = {
 					hellenistic = "Etko"
 					greek = "Etko"
-					coptic = "Tajo"
+					nilo_saharan = "Tajo"
 					egyptian_arabic = "Idku"
 					bedouin_arabic = "Edku"
 					maghreb_arabic = "Edku"
@@ -29602,7 +29602,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				maghreb_arabic = "al-Giziya"
 				levantine_arabic = "al-Giziya"
 				andalusian_arabic = "al-Giziya"
-				coptic = "Tiperses"
+				nilo_saharan = "Tiperses"
 				
 				b_gizeh = {
 					egyptian_arabic = "al-Giziya"
@@ -29610,7 +29610,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					maghreb_arabic = "al-Giziya"
 					levantine_arabic = "al-Giziya"
 					andalusian_arabic = "al-Giziya"
-					coptic = "Tiperses"
+					nilo_saharan = "Tiperses"
 				}
 				b_aburowash = {
 				}
@@ -29636,7 +29636,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				maghreb_arabic = "al-Badaqun"
 				levantine_arabic = "al-Badaqun"
 				andalusian_arabic = "al-Badaqun"
-				coptic = "Arbat"
+				nilo_saharan = "Arbat"
 
 				b_kharibta = {
 					egyptian_arabic = "Khiribta"
@@ -29644,7 +29644,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					maghreb_arabic = "Khiribta"
 					levantine_arabic = "Khiribta"
 					andalusian_arabic = "Khiribta"
-					coptic = "Arbat"
+					nilo_saharan = "Arbat"
 				}
 				b_scetis = {
 					egyptian_arabic = "Wadi El Natrun"
@@ -29652,7 +29652,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					maghreb_arabic = "Wadi El Natrun"
 					levantine_arabic = "Wadi El Natrun"
 					andalusian_arabic = "Wadi El Natrun"
-					coptic = "Sihet"
+					nilo_saharan = "Sihet"
 				}
 				b_naucratis_egypt = {
 					egyptian_arabic = "Piemro"
@@ -29662,7 +29662,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					andalusian_arabic = "Piemro"
 				}
 				b_atfih = {
-					coptic = "Petpeh"
+					nilo_saharan = "Petpeh"
 				}
 				b_nikiou = {}
 				b_merimda = {}
@@ -29677,7 +29677,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 			hellenistic = "Tamiathis"
 			greek = "Tamiathis"
-			coptic = "Tamiat"
+			nilo_saharan = "Tamiat"
 			egyptian_arabic = "Dumyat"
 			bedouin_arabic = "Dumyat"
 			maghreb_arabic = "Dumyat"
@@ -29691,7 +29691,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_damietta = {
 					hellenistic = "Tamiathis"
 					greek = "Tamiathis"
-					coptic = "Tamiat"
+					nilo_saharan = "Tamiat"
 					egyptian_arabic = "Dumyat"
 					bedouin_arabic = "Dumyat"
 					maghreb_arabic = "Dumyat"
@@ -29699,7 +29699,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					andalusian_arabic = "Dumyat"
 				}
 				b_busiris = {
-					coptic = "Busiri"
+					nilo_saharan = "Busiri"
 				}
 				b_saramsah = {
 				}
@@ -29709,7 +29709,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					hellenistic = "Theodosios"
 					greek = "Theodosios"
 					roman = "Theodosiou Nixis"
-					coptic = "Dishairi"
+					nilo_saharan = "Dishairi"
 			}
 				b_burlus = {
 				}
@@ -29724,7 +29724,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					hellenistic = "Sebennytos"
 					greek = "Sebennytos"
 					roman = "Sebennytus"
-					coptic = "Semnoudi"
+					nilo_saharan = "Semnoudi"
 				}
 			}
 			c_tanis = {
@@ -29734,13 +29734,13 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				holy_site = set
 				holy_site = set_reformed
 				
-				coptic = "Djani"
+				nilo_saharan = "Djani"
 				
 				b_tjaru = {
 					hellenistic = "Sele"
 					greek = "Sele"
 					roman = "Sile"
-					coptic = "Sle"
+					nilo_saharan = "Sle"
 					egyptian_arabic = "Tajaru"
 					bedouin_arabic = "Tajaru"
 					maghreb_arabic = "Tajaru"
@@ -29748,17 +29748,17 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					andalusian_arabic = "Tajaru"
 				}
 				b_tanis = {
-					coptic = "Djani"
+					nilo_saharan = "Djani"
 				}
 				b_tinnis = {
 					hellenistic = "Tennis"
 					greek = "Tennis"
-					coptic = "Tennesi"
+					nilo_saharan = "Tennesi"
 				}
 				b_mansoura = {
 				}
 				b_athrribis = {
-					coptic = "Atribi"
+					nilo_saharan = "Atribi"
 					egyptian_arabic = "Tell Atrib"
 					bedouin_arabic = "Tell Atrib"
 					maghreb_arabic = "Tell Atrib"
@@ -29785,7 +29785,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 			zun_pagan_reformed = 50 # Crusade target weight
 			
-			coptic = "Kahiree"
+			nilo_saharan = "Kahiree"
 			
 			c_cairo = {
 				color = { 24 236 119 }
@@ -29805,7 +29805,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 32 244 127 }
 				color2={ 255 255 255 }
 				
-				coptic = "Ena"
+				nilo_saharan = "Ena"
 				egyptian_arabic = "al-Qusiya"
 				bedouin_arabic = "al-Qusiya"
 				maghreb_arabic = "al-Qusiya"
@@ -29813,7 +29813,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				andalusian_arabic = "al-Qusiya"
 				
 				b_quena = {
-					coptic = "Ena"
+					nilo_saharan = "Ena"
 				}
 				b_qus = {
 				}
@@ -29833,7 +29833,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color2={ 255 255 255 }
 
 				greek = "Leucus Limen"
-				coptic = "Leucus Limen"
+				nilo_saharan = "Leucus Limen"
 				
 				b_kosseir = {}
 				b_safaga = {}
@@ -29847,7 +29847,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 28 240 123 }
 				color2={ 255 255 255 }
 				
-				coptic = "Phelbes"
+				nilo_saharan = "Phelbes"
 				egyptian_arabic = "al-Sarqiya"
 				bedouin_arabic = "al-Sarqiya"
 				maghreb_arabic = "al-Sarqiya"
@@ -29855,7 +29855,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				andalusian_arabic = "al-Sarqiya"
 				
 				b_sarqinya = {
-					coptic = "Phelbes"
+					nilo_saharan = "Phelbes"
 				}
 				b_bubastis = {
 				}
@@ -29873,7 +29873,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 32 244 105 }
 				color2={ 255 255 255 }
 
-				coptic = "Khmin"
+				nilo_saharan = "Khmin"
 				egyptian_arabic = "al-Ihmimiya"
 				bedouin_arabic = "al-Ihmimiya"
 				maghreb_arabic = "al-Ihmimiya"
@@ -29881,7 +29881,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				andalusian_arabic = "al-Ihmimiya"
 
 				b_akhmim = {
-					coptic = "Khmin"
+					nilo_saharan = "Khmin"
 					egyptian_arabic = "al-Ihmimiya"
 					bedouin_arabic = "al-Ihmimiya"
 					maghreb_arabic = "al-Ihmimiya"
@@ -29897,10 +29897,10 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					andalusian_arabic = "El Kays"
 				}
 				b_antinoe = {
-					coptic = "Antinow"
+					nilo_saharan = "Antinow"
 				}
 				b_hibeh = {
-					coptic = "Teudjo"
+					nilo_saharan = "Teudjo"
 				}
 				b_besa = {}
 				b_sharuna = {}
@@ -29939,14 +29939,14 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 
 			capital = 3432 # Faiyum
 
-			coptic = "Phiom"
+			nilo_saharan = "Phiom"
 			roman = "Arsinoe"
 
 			c_faiyum = {
 				color={ 115 224 142 }
 				color2={ 255 255 255 }
 
-				coptic = "Phiom"
+				nilo_saharan = "Phiom"
 				roman = "Arsinoe"
 				egyptian_arabic = "al-Fayyumiya"
 				bedouin_arabic = "al-Fayyumiya"
@@ -29955,7 +29955,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				andalusian_arabic = "al-Fayyumiya"
 
 				b_faiyum = {
-					coptic = "Phiom"
+					nilo_saharan = "Phiom"
 					egyptian_arabic = "al-Fayyumiya"
 					bedouin_arabic = "al-Fayyumiya"
 					maghreb_arabic = "al-Fayyumiya"
@@ -29963,7 +29963,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					andalusian_arabic = "al-Fayyumiya"
 				}
 				b_ahnas = {
-					coptic = "Ahnes"
+					nilo_saharan = "Ahnes"
 				}
 				b_bahnasa = {
 					egyptian_arabic = "al-Bahnasa"
@@ -29971,10 +29971,10 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					maghreb_arabic = "al-Bahnasa"
 					levantine_arabic = "al-Bahnasa"
 					andalusian_arabic = "al-Bahnasa"
-					coptic = "Pemdje"
+					nilo_saharan = "Pemdje"
 				}
 				b_beni_suef = {
-					coptic = "Panisof"
+					nilo_saharan = "Panisof"
 				}
 				b_heracleus = {}
 				b_arsinoe_faiyum = {}
@@ -29984,10 +29984,10 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 108 227 142 }
 				color2={ 255 255 255 }
 				
-				coptic = "Ptimenhour"
+				nilo_saharan = "Ptimenhour"
 				
 				b_buhairya = {
-					coptic = "Ptimenhour"
+					nilo_saharan = "Ptimenhour"
 				}
 				b_budhkula = {
 				}
@@ -30006,14 +30006,14 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 			capital = 794 #Aswan
 
-			coptic = "Sioout"
+			nilo_saharan = "Sioout"
 			greek = "Lycopolis"
 			roman = "Oasis Magna"
 
 			c_asyut = {
 				color = { 43 190 122 }
 				
-				coptic = "Sioout"
+				nilo_saharan = "Sioout"
 				greek = "Lycopolis"
 				roman = "Lycopolis"
 				egyptian_arabic = "al-Asyutiya"
@@ -30023,7 +30023,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				andalusian_arabic = "al-Asyutiya"
 				
 				b_asyut = {
-					coptic = "Sioout"
+					nilo_saharan = "Sioout"
 					greek = "Lycopolis"
 					roman = "Lycopolis"
 					egyptian_arabic = "al-Asyutiya"
@@ -30057,10 +30057,10 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				holy_site = isis_reformed
 				holy_site = set_reformed
 				
-				coptic = "Sowan"
+				nilo_saharan = "Sowan"
 				
 				b_aswan = {
-					coptic = "Sowan"
+					nilo_saharan = "Sowan"
 					nubian = "Karnak" 
 					sao = "Karnak" 
 					fur = "Karnak" 
@@ -30083,10 +30083,10 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 104 234 148 }
 				color2={ 255 255 255 }
 
-				coptic = "Trinitheos"
+				nilo_saharan = "Trinitheos"
 
 				b_farafra = {
-					coptic = "Trinitheos"
+					nilo_saharan = "Trinitheos"
 				}
 				b_mut = {}
 				b_ain_della = {}
@@ -30100,7 +30100,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			c_kharga = {
 				color = { 108 227 142 }
 
-				coptic = "Wah Empsoy"
+				nilo_saharan = "Wah Empsoy"
 				roman = "Oasis Magna"
 			
 				b_buhairya1 = {}
@@ -30115,7 +30115,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 33 242 122 }
 				color2={ 255 255 255 }
 
-				coptic = "Sne"
+				nilo_saharan = "Sne"
 				greek = "Latopolis"
 				roman = "Latopolis"
 				egyptian_arabic = "Isna"
@@ -30125,7 +30125,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				andalusian_arabic = "Isna"
 
 				b_esna = {
-					coptic = "Sne"
+					nilo_saharan = "Sne"
 					greek = "Latopolis"
 					roman = "Latopolis"
 					egyptian_arabic = "Isna"
@@ -30142,7 +30142,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_egypthebes = {
 				}
 				b_egypabydos = {
-					coptic = "Ebot"
+					nilo_saharan = "Ebot"
 				}
 				b_khnum = {}
 			}
@@ -30159,7 +30159,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			levantine_arabic = "al-Baretoun"
 			andalusian_arabic = "al-Baretoun"
 			greek = "Paraitonion"
-			coptic = "Paraitonion"
+			nilo_saharan = "Paraitonion"
 
 			c_paraetonium = {
 				color={ 40 240 40 }
@@ -30171,7 +30171,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				levantine_arabic = "al-Baretoun"
 				andalusian_arabic = "al-Baretoun"
 				greek = "Paraitonion"
-				coptic = "Paraitonion"
+				nilo_saharan = "Paraitonion"
 
 				b_paraetonium = {
 					egyptian_arabic = "al-Baretoun"
@@ -30180,7 +30180,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					levantine_arabic = "al-Baretoun"
 					andalusian_arabic = "al-Baretoun"
 					greek = "Paraitonion"
-					coptic = "Paraitonion"
+					nilo_saharan = "Paraitonion"
 				}
 				b_apis = {}
 				b_zygis = {}
@@ -30216,7 +30216,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				maghreb_arabic = "Isiwan"
 				levantine_arabic = "Siwah"
 				andalusian_arabic = "Siwah"
-				coptic = "Sesamu"
+				nilo_saharan = "Sesamu"
 				
 				b_siwa = {
 					egyptian_arabic = "Siwah"
@@ -30224,10 +30224,10 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					maghreb_arabic = "Isiwan"
 					levantine_arabic = "Siwah"
 					andalusian_arabic = "Siwah"
-					coptic = "Sesamu"
+					nilo_saharan = "Sesamu"
 				}
 				b_quattara = {
-					coptic = "Attara"
+					nilo_saharan = "Attara"
 				}
 				b_caraoasis = {
 				}
@@ -30509,13 +30509,13 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 			capital = 788 # Farama
 			
-			coptic = "Mafkat"
+			nilo_saharan = "Mafkat"
 			
 			c_farama = {
 				color={ 141 198 5 }
 				color2={ 255 255 255 }
 				
-				coptic = "Peremoun"
+				nilo_saharan = "Peremoun"
 				egyptian_arabic = "al-Farama"
 				maghreb_arabic = "al-Farama"
 				levantine_arabic = "al-Farama"
@@ -30526,7 +30526,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				greek = "Pelousion"
 				
 				b_farama = {
-					coptic = "Peremoun"
+					nilo_saharan = "Peremoun"
 					egyptian_arabic = "al-Farama"
 					maghreb_arabic = "al-Farama"
 					levantine_arabic = "al-Farama"
@@ -30558,7 +30558,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				holy_site = karaite
 				holy_site = jud_zion
 				
-				coptic = "Mafkat"
+				nilo_saharan = "Mafkat"
 				
 				b_attur = {
 				}
@@ -30581,7 +30581,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 145 203 10 }
 				color2={ 255 255 255 }
 				
-				coptic = "Rashrash"
+				nilo_saharan = "Rashrash"
 				
 				b_eilat = {
 				}
@@ -30604,7 +30604,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 147 205 12 }
 				color2={ 255 255 255 }
 				
-				coptic = "Tjaru"
+				nilo_saharan = "Tjaru"
 				
 				b_arish = {
 				}
