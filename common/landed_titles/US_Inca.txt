@@ -322,8 +322,10 @@ e_inca = {
 				color={ 85 194 89 }
 				color2={ 220 220 220 }
 
-				holy_site=inti
-				holy_site=inti_reformed
+				holy_site = inti
+				holy_site = inti_reformed
+				holy_site = baniwa
+				holy_site = baniwa_reformed
 				
 				b_qusqu = {
 				}
@@ -454,6 +456,9 @@ e_inca = {
 			c_inahuaya = {
 				color={ 172 183 67 }
 				color2={ 220 220 220 }
+				
+				holy_site = baniwa
+				holy_site = baniwa_reformed
 				
 				b_inahuaya = {}
 				b_sarayacu = {}

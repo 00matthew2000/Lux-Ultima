@@ -7172,6 +7172,13 @@ e_pontus = {
 				color={ 192 95 158 }
 				color2={ 255 255 20 }
 				
+				holy_site = sol_boreas
+				holy_site = sol_boreas_reformed
+				holy_site = slavic_christian
+				holy_site = slavic_christian_reformed
+				holy_site = voipel
+				holy_site = voipel_reformed
+				
 				b_bosphoros = {
 				}
 				b_panticapea = {
@@ -8325,8 +8332,10 @@ e_roman = {
 			c_roma = {
 				color = { 242 233 156 }
 
+				holy_site = adoptionist
 				holy_site = arian
 				holy_site = mari_christ_reformed
+				holy_site = priscillian
 				holy_site = priscillian_reformed
 				holy_site = catholic
 				holy_site = pelagian				
@@ -8377,14 +8386,14 @@ e_roman = {
 				portuguese = Roma
 				visigothic = Roma
 				roman = Roma
-				# norse = Rom
+				varangian = Rom
 				swedish = Rom
 				danish = Rom
 				norwegian = Rom
 				german = Rom
 				lombard = Rom
-				old_frankish = Rom
-				suebi = Rom
+				frankish = Rom
+				teutonic = Rom
 				saxon = Rom
 				
 				b_roma = {
@@ -21624,6 +21633,8 @@ e_sassanid = {
 			c_esfahan = {
 				color = { 42 21 23 }
 				
+				holy_site = mand_ruha
+				
 				b_esfahan = {
 					hellenistic = "Aspadana"
 					greek = "Aspadana"
@@ -22723,6 +22734,7 @@ e_sassanid = {
 				holy_site = judaism
 				holy_site = jud_zion
 				holy_site = sethian
+				holy_site = jud_ark
 				holy_site = jud_ark_reformed
 				holy_site = judaism_reformed
 				holy_site = sethian_reformed
@@ -22749,6 +22761,7 @@ e_sassanid = {
 				holy_site = indoh_hindu
 				holy_site = indoh_zor
 				holy_site = indohelen_reformed
+				holy_site = mand_ruha
 				
 				hellenistic = "Seleukeia"
 				greek = "Seleukeia"
@@ -22839,7 +22852,7 @@ e_sassanid = {
 				color = { 61 121 231 }
 				
 				ashkenazi = "Chideqel"
-				sephardi = "Chideqel"
+				jewish = "Chideqel"
 				
 				b_majaralkabir = {}
 				b_bismaya = {}
@@ -22977,6 +22990,8 @@ e_sassanid = {
 			}
 			c_basra = {
 				color = { 100 153 251 }
+				
+				holy_site = allat
 				
 				b_basra = {}
 				b_ummqasr = {}
@@ -23217,6 +23232,7 @@ e_sassanid = {
 					holy_site = mazdakism_reformed
 					holy_site = zor_angra_reformed
 					holy_site = zurvanism_reformed
+					holy_site = mand_ruha
 				
 				b_nishapur = {
 				}
@@ -23242,6 +23258,8 @@ e_sassanid = {
 			c_tabaristan = {
 				color={ 98 68 152 }
 				color2={ 255 255 255 }
+				
+				holy_site = mand_ruha
 				
 				b_firuzkuh = {
 				}
@@ -23335,6 +23353,7 @@ e_sassanid = {
 				holy_site = mani
 				holy_site = tengri_mani
 				holy_site = tengri_mani_reformed
+				holy_site = mand_ruha
 				
 				hellenistic = "Margiane"
 				greek = "Margiane"
@@ -26824,6 +26843,7 @@ e_spain = {
 				andalusian_arabic = "Barshiluna"
 				
 				holy_site = arian
+				holy_site = adoptionist
 				
 				b_berga = {
 				}
@@ -27095,6 +27115,9 @@ e_spain = {
 			c_valladolid = {
 				color = { 248 202 18 }
 				color2={ 255 255 255 }
+				
+				holy_site = priscillian
+				holy_site = priscillian_reformed
 				
 				b_valladolid = {
 				}
@@ -27588,7 +27611,10 @@ e_spain = {
 				egyptian_arabic = "Qurtubah"
 				andalusian_arabic = "Qurtubah"
 				
+				holy_site = arian
 				holy_site = ilm_islam
+				holy_site = priscillian
+				holy_site = priscillian_reformed
 				
 				b_cordoba = {
 					bedouin_arabic = "Qurtubah"
@@ -27979,6 +28005,7 @@ e_arabia = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
 				
+				holy_site = allat
 				holy_site = druze
 				holy_site = druze_reformed
 				holy_site = haruri
@@ -28012,6 +28039,7 @@ e_arabia = {
 				color2={ 255 255 255 }
 
 				holy_site = almaqah
+				holy_site = allat
 				holy_site = shams
 				holy_site = hubal
 				holy_site = attar
@@ -28319,6 +28347,8 @@ e_arabia = {
 			c_hajr = {
 				color={ 182 253 75 }
 				color2={ 255 255 255 }
+				
+				holy_site = allat
 			
 				b_alhudaydah = {
 				}
@@ -28499,6 +28529,7 @@ e_arabia = {
 			c_negev = {
 				color = { 133 208 14 }
 					holy_site = arab_pagan_reformed
+					holy_site = allat
 					holy_site = beelshamen
 					holy_site = palmyran_pagan
 					holy_site = hadad
@@ -28563,7 +28594,7 @@ e_arabia = {
 				color2={ 255 255 255 }
 				
 				ashkenazi = "Meidvo"
-				sephardi = "Meidva"
+				jewish = "Meidva"
 				
 				b_madaba = {
 				}
@@ -28675,7 +28706,7 @@ e_arabia = {
 		capital = 860 # Sana'a
 		
 		ashkenazi = "Himyar"
-		sephardi = "Himyar"
+		jewish = "Himyar"
 		
 		almaqah = 10000
 		
@@ -28966,7 +28997,7 @@ e_arabia = {
 			egyptian_arabic = "Damashq"
 			andalusian_arabic = "Damashq"
 			ashkenazi = "Damesheq"
-			sephardi = "Damesheq"				
+			jewish = "Damesheq"				
 			
 			capital = 726 # Ash-Sham
 		
@@ -28979,7 +29010,7 @@ e_arabia = {
 				egyptian_arabic = "Al-Mafraq"
 				andalusian_arabic = "Al-Mafraq"
 				ashkenazi = "Al-Mafraq"
-				sephardi = "Al-Mafraq"	
+				jewish = "Al-Mafraq"	
 				roman = "Al-Mafraq"
 
 				holy_site = sunni
@@ -29234,6 +29265,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 102 221 136 }
 				color2={ 255 255 255 }
 
+				holy_site = adoptionist
 				holy_site = orthodox
 				holy_site = nestorian
 				holy_site = monophysite
@@ -29245,6 +29277,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				holy_site = judaism
 				holy_site = jud_zion
 				holy_site = sethian
+				holy_site = jud_ark
 				holy_site = jud_ark_reformed
 				holy_site = judaism_reformed
 				holy_site = sethian_reformed
@@ -29277,6 +29310,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				holy_site = amun
 				holy_site = isis
 				holy_site = set
+				holy_site = aten
 				holy_site = amun_reformed
 				holy_site = aten_reformed
 				holy_site = isis_reformed
@@ -29620,6 +29654,15 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			c_cairo = {
 				color = { 24 236 119 }
 				color2 = { 255 255 255 }
+				
+				holy_site = amun
+				holy_site = aten
+				holy_site = isis
+				holy_site = set
+				holy_site = amun_reformed
+				holy_site = aten_reformed
+				holy_site = isis_reformed
+				holy_site = set_reformed
 			
 				b_cairo = {}
 				b_fustat = {}
@@ -29880,6 +29923,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color2={ 255 255 255 }
 				
 				holy_site = amun
+				holy_site = aten
 				holy_site = isis
 				holy_site = set
 				holy_site = amun_reformed
@@ -30040,6 +30084,10 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			c_quattara = {
 				color={ 106 225 140 }
 				color2={ 255 255 255 }
+				
+				holy_site = alexandros
+				holy_site = aten
+				holy_site = aten_reformed
 				
 				egyptian_arabic = "Siwah"
 				bedouin_arabic = "Siwah"
@@ -30287,7 +30335,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 		capital = 774 # Jerusalem
 		
 		ashkenazi = "Yerusholaim"
-		sephardi = "Yerushalaim"
+		jewish = "Yerushalaim"
 		roman = "Philistia"
 		armenian = "Philistia"
 		greek = "Philistia"
@@ -30352,7 +30400,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				bedouin_arabic = "al-Farama"
 				andalusian_arabic = "al-Farama"
 				ashkenazi = "Sin"
-				sephardi = "Sin"
+				jewish = "Sin"
 				greek = "Pelousion"
 				
 				b_farama = {
@@ -30383,10 +30431,13 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 143 201 8 }
 				color2={ 255 255 255 }
 
-				holy_site = jewish
+				holy_site = judaism
+				holy_site = judaism_reformed
 				holy_site = samaritan
 				holy_site = karaite
 				holy_site = jud_zion
+				holy_site = jud_ark
+				holy_site = jud_ark_reformed
 				
 				nubian = "Mafkat"
 				
@@ -30461,7 +30512,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			capital = 780 # Ascalon
 			
 			ashkenazi = "Ashqelon"
-			sephardi = "Ashqelon"
+			jewish = "Ashqelon"
 		
 			c_darum = {
 				color={ 167 165 190 }
@@ -30494,7 +30545,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				egyptian_arabic = "Arsuf"
 				andalusian_arabic = "Arsuf"
 				ashkenazi = "Yophoi"
-				sephardi = "Yapho"
+				jewish = "Yapho"
 			
 				b_jaffa = {
 					bedouin_arabic = "Arsuf"
@@ -30528,7 +30579,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				egyptian_arabic = "Asqalan"
 				andalusian_arabic = "Asqalan"
 				ashkenazi = "Ashqelon"
-				sephardi = "Ashqelon"
+				jewish = "Ashqelon"
 			
 				b_ascalon = {
 					bedouin_arabic = "Asqalan"
@@ -30559,7 +30610,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			capital = 774 # Jerusalem
 			
 			ashkenazi = "Yerusholaim"
-			sephardi = "Yerushalaim"
+			jewish = "Yerushalaim"
 			
 			christian = 250 # Crusade target weight
 			muslim = 250 # Crusade target weight
@@ -30569,86 +30620,89 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color2={ 255 255 255 }
 				
 				ashkenazi = "Yerusholaim"
-				sephardi = "Yerushalaim"
+				jewish = "Yerushalaim"
 				
 				christian = 250 # Crusade target weight
 				muslim = 250 # Crusade target weight
 
 				holy_site = arian
-					holy_site = mari_christ_reformed
-					holy_site = priscillian_reformed
-					holy_site = catholic
-					holy_site = pelagian
-					holy_site = semipelagian
-					holy_site = unctionist
-					holy_site = cathar_reformed
-					holy_site = christian_populist_reformed
-					holy_site = orthodox
-					holy_site = nestorian
-					holy_site = monophysite 
-					holy_site = audianist
-					holy_site = marcionist
-					holy_site = solomonic_christ
-					holy_site = montanist_reformed
-					holy_site = almaqah
-					holy_site = shams
-					holy_site = hubal
-					holy_site = attar
-					holy_site = maher
-					holy_site = waaq
-					holy_site = arab_pagan_reformed
-					holy_site = beelshamen
-					holy_site = palmyran_pagan
-					holy_site = hadad
-					holy_site = kothar
-					holy_site = baal_monotheistic_reformed
-					holy_site = judaism
-					holy_site = jud_zion
-					holy_site = sethian
-					holy_site = jud_ark_reformed
-					holy_site = judaism_reformed
-					holy_site = sethian_reformed
-					holy_site = mandaean
-					holy_site = yahyanism
-					holy_site = mandaean_reformed
-					holy_site = druze
-					holy_site = druze_reformed
-					holy_site = haruri
-					holy_site = ibadi
-					holy_site = muslim_aliite_reformed
-					holy_site = ilm_islam
-					holy_site = muslim_domination_reformed
-					holy_site = marabout
-					holy_site = shiite
-					holy_site = muslim_sufi_reformed
-					holy_site = sunni
-					holy_site = graeco_roman
-					holy_site = graeco_roman_reformed
-					holy_site = mithra
-					holy_site = neoplato
-					holy_site = sol
-					holy_site = alexandros
-					holy_site = solomonic_alexandros
-					holy_site = cybele
-					holy_site = cybele_reformed
-					holy_site = mithra_sol
-					holy_site = plato_christ
-					holy_site = plato_islam
-					holy_site = porphyryan
-					holy_site = roman_imperial
-					holy_site = sol_apollo 
-					holy_site = sol_boreas
-					holy_site = sol_boreas_reformed
-					holy_site = sol_islam
-					holy_site = sol_islam_reformed 
-					holy_site = sol_norse
-					holy_site = northern_sun_reformed
-					holy_site = sol_slav
-					holy_site = sol_tsahay
-					holy_site = sol_sahara
-					holy_site = sol_sahara_reformed
-					holy_site = ethiopian_war_reformed
-					holy_site = luwian
+				holy_site = adoptionist
+				holy_site = mari_christ_reformed
+				holy_site = priscillian
+				holy_site = priscillian_reformed
+				holy_site = catholic
+				holy_site = pelagian
+				holy_site = semipelagian
+				holy_site = unctionist
+				holy_site = cathar_reformed
+				holy_site = christian_populist_reformed
+				holy_site = orthodox
+				holy_site = nestorian
+				holy_site = monophysite 
+				holy_site = audianist
+				holy_site = marcionist
+				holy_site = solomonic_christ
+				holy_site = montanist_reformed
+				holy_site = almaqah
+				holy_site = shams
+				holy_site = hubal
+				holy_site = attar
+				holy_site = maher
+				holy_site = waaq
+				holy_site = arab_pagan_reformed
+				holy_site = beelshamen
+				holy_site = palmyran_pagan
+				holy_site = hadad
+				holy_site = kothar
+				holy_site = baal_monotheistic_reformed
+				holy_site = judaism
+				holy_site = jud_zion
+				holy_site = sethian
+				holy_site = jud_ark
+				holy_site = jud_ark_reformed
+				holy_site = judaism_reformed
+				holy_site = sethian_reformed
+				holy_site = mandaean
+				holy_site = yahyanism
+				holy_site = mandaean_reformed
+				holy_site = druze
+				holy_site = druze_reformed
+				holy_site = haruri
+				holy_site = ibadi
+				holy_site = muslim_aliite_reformed
+				holy_site = ilm_islam
+				holy_site = muslim_domination_reformed
+				holy_site = marabout
+				holy_site = shiite
+				holy_site = muslim_sufi_reformed
+				holy_site = sunni
+				holy_site = graeco_roman
+				holy_site = graeco_roman_reformed
+				holy_site = mithra
+				holy_site = neoplato
+				holy_site = sol
+				holy_site = alexandros
+				holy_site = solomonic_alexandros
+				holy_site = cybele
+				holy_site = cybele_reformed
+				holy_site = mithra_sol
+				holy_site = plato_christ
+				holy_site = plato_islam
+				holy_site = porphyryan
+				holy_site = roman_imperial
+				holy_site = sol_apollo 
+				holy_site = sol_boreas
+				holy_site = sol_boreas_reformed
+				holy_site = sol_islam
+				holy_site = sol_islam_reformed 
+				holy_site = sol_norse
+				holy_site = northern_sun_reformed
+				holy_site = sol_slav
+				holy_site = sol_tsahay
+				holy_site = sol_sahara
+				holy_site = sol_sahara_reformed
+				holy_site = ethiopian_war_reformed
+				holy_site = luwian
 				
 				b_mirabel = { # Base name changed to "Majdal Yaba"
 					german = "Mirabel"
@@ -30729,7 +30783,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color = { 15 208 46 }
 				
 				ashkenazi = "Beir-Sheva"
-				sephardi = "Ber-Sheva"
+				jewish = "Ber-Sheva"
 			
 				b_beersheb = {
 				}
@@ -30752,7 +30806,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color = { 49 255 73 }
 				
 				ashkenazi = "Hevron"
-				sephardi = "Hevron"
+				jewish = "Hevron"
 		
 				b_hebron = {
 				}
@@ -30828,7 +30882,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color2={ 255 255 255 }
 				
 				ashkenazi = "Akkoi"
-				sephardi = "Akko"
+				jewish = "Akko"
 		
 				b_acre = {
 				}
@@ -31092,16 +31146,17 @@ e_maghreb = {
 		
 			c_fes = {
 				color = { 24 236 59 }
-					holy_site = marabout
-					holy_site = amanai
-					holy_site = berber_pagan
-					holy_site = gurzil
-					holy_site = berber_pagan_reformed
-					holy_site = anansi
-					holy_site = nyame
-					holy_site = mande_pagan
-					holy_site = yoruba
-					holy_site = serer_reformed
+				holy_site = marabout
+				holy_site = amanai
+				holy_site = amanai_reformed
+				holy_site = berber_pagan
+				holy_site = gurzil
+				holy_site = berber_pagan_reformed
+				holy_site = anansi
+				holy_site = nyame
+				holy_site = mande_pagan
+				holy_site = yoruba
+				holy_site = serer_reformed
 			
 				b_fes = {}
 				b_meknes1 = {}
@@ -31577,8 +31632,10 @@ e_maghreb = {
 				color = { 23 235 98 }
 				color2 = { 255 255 255 }
 				
+					holy_site = adoptionist
 					holy_site = arian
 					holy_site = mari_christ_reformed
+					holy_site = priscillian
 					holy_site = priscillian_reformed
 					holy_site = catholic
 					holy_site = pelagian
@@ -31618,6 +31675,7 @@ e_maghreb = {
 					holy_site = sol_sahara_reformed
 					holy_site = ethiopian_war_reformed
 					holy_site = amanai
+					holy_site = amanai_reformed
 					holy_site = berber_pagan
 					holy_site = gurzil
 					holy_site = berber_pagan_reformed
@@ -31877,6 +31935,9 @@ e_maghreb = {
 				color2={ 255 255 255 }
 				
 				roman = "Oea" 
+				
+				holy_site = amanai
+				holy_site = amanai_reformed
 			
 				b_libtripoli = {
 				}
@@ -32024,6 +32085,7 @@ e_abyssinia = {
 				color = { 200 32 95 }
 					holy_site = solomonic_christ
 					holy_site = solomonic_alexandros
+					holy_site = jud_ark
 					holy_site = jud_ark_reformed
 					holy_site = sol_tsahay
 					holy_site = ethiopian_war_reformed
@@ -33062,6 +33124,7 @@ e_kush = {
 			c_atbara = {
 				color = { 208 40 103 }
 					holy_site = amun
+					holy_site = aten
 					holy_site = isis
 					holy_site = set
 					holy_site = amun_reformed
@@ -35467,6 +35530,9 @@ e_mali = {
 
 				color = { 64 174 133 }
 				color2 = { 250 250 250 }
+				
+				holy_site = anansi
+				holy_site = nyame
 
 				b_korhogo = {
 				}
@@ -35863,15 +35929,16 @@ e_mali = {
 		
 			c_timbuktu = {
 				color = { 240 245 100 }
-					holy_site = amanai
-					holy_site = berber_pagan
-					holy_site = gurzil
-					holy_site = berber_pagan_reformed
-					holy_site = anansi
-					holy_site = mande_pagan
-					holy_site = nyame
-					holy_site = yoruba
-					holy_site = serer_reformed
+				holy_site = amanai
+				holy_site = amanai_reformed
+				holy_site = berber_pagan
+				holy_site = gurzil
+				holy_site = berber_pagan_reformed
+				holy_site = anansi
+				holy_site = mande_pagan
+				holy_site = nyame
+				holy_site = yoruba
+				holy_site = serer_reformed
 			
 				b_timbuktu = {}
 				b_alafia = {}
@@ -36203,6 +36270,9 @@ e_central_africa = {
 			c_djado = {
 				color={ 27 197 173 }
 				color2={ 255 255 255 }
+				
+				holy_site = amanai
+				holy_site = amanai_reformed
 				
 				b_djado = {}
 				b_tummo = {}

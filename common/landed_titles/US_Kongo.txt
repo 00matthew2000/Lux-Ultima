@@ -19,22 +19,25 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 			
 			c_mogadishu = {
 				color = { 24 50 177 }
+				
 				roman = "Serapium" 
 				greek = "Sarapion" 
 				hellenistic = "Sarapion" 
-					holy_site = batembuzi
-					holy_site = imana
-					holy_site = kintu
-					holy_site = makonde_pagan
-					holy_site = mwari
-					holy_site = nyasaye
-					holy_site = nyau
-					holy_site = zande_pagan
-					holy_site = zulu_pagan
-					holy_site = bantu_pagan_reformed
-					holy_site = nyakalagan_reformed
-					holy_site = zande_pagan_reformed
-					holy_site = zulu_pagan_reformed
+				
+				holy_site = akuj
+				holy_site = batembuzi
+				holy_site = imana
+				holy_site = kintu
+				holy_site = makonde_pagan
+				holy_site = mwari
+				holy_site = nyasaye
+				holy_site = nyau
+				holy_site = zande_pagan
+				holy_site = zulu_pagan
+				holy_site = bantu_pagan_reformed
+				holy_site = nyakalagan_reformed
+				holy_site = zande_pagan_reformed
+				holy_site = zulu_pagan_reformed
 			
 				b_mogadishu = {
 				}
@@ -298,6 +301,20 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 
 				color = { 240 250 99 }
 				color2 = { 250 250 250 }
+				
+				holy_site = batembuzi
+				holy_site = imana
+				holy_site = kintu
+				holy_site = makonde_pagan
+				holy_site = mwari
+				holy_site = nyasaye
+				holy_site = nyau
+				holy_site = zande_pagan
+				holy_site = zulu_pagan
+				holy_site = bantu_pagan_reformed
+				holy_site = nyakalagan_reformed
+				holy_site = zande_pagan_reformed
+				holy_site = zulu_pagan_reformed
 
 				b_unguja = {
 				}
@@ -500,7 +517,10 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 			c_ujiji = {
 				color = { 20 21 21 }
 
+				holy_site = baluba
+				holy_site = baluba_reformed
 				holy_site = imana
+				holy_site = nyasaye
 				holy_site = bantu_pagan_reformed
 
 				b_usina = {
@@ -523,6 +543,7 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 			c_mwanza = {
 				color = { 18 18 18 }
 
+				holy_site = akuj
 				holy_site = nyasaye
 				holy_site = nyakalagan_reformed
 
@@ -574,6 +595,8 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 			c_buganda = {
 
 				color = { 140 126 245 }
+					holy_site = akuj
+					holy_site = baluba
 					holy_site = batembuzi
 					holy_site = imana
 					holy_site = kintu
@@ -583,6 +606,7 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 					holy_site = nyau
 					holy_site = zande_pagan
 					holy_site = zulu_pagan
+					holy_site = baluba_reformed
 					holy_site = bantu_pagan_reformed
 					holy_site = nyakalagan_reformed
 					holy_site = zande_pagan_reformed
@@ -706,6 +730,8 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 
 				color = { 113 191 141 }
 				color2 = { 250 250 250 }
+				
+				holy_site = akuj
 				
 				b_dambikoe = {
 				}
@@ -1064,6 +1090,8 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 				color = { 126 128 10 }
 				color2 = { 250 250 250 }
 
+				holy_site = akuj
+				holy_site = nyasaye
 				holy_site=south_bantu_mythology
 				holy_site=south_bantu_mythology_reformed
 				holy_site=east_bantu_mythology
