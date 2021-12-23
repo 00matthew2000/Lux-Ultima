@@ -1233,7 +1233,6 @@
 	religion="indoh_confucian"
 	culture="han"
 	father= 247772 #Li Daozong
-	trait="mahayana_indoh_confucian"
 	623.1.1={
 		birth=yes
 	}
@@ -1249,27 +1248,10 @@
 	religion="indoh_confucian"
 	culture="han"
 	father = 247916 # Li Shouli, Prince of Bin
-	trait="mahayana_indoh_confucian"
 	698.1.1={
 		birth=yes
 	}
 	739.1.1={
-		death=yes
-	}
-}
-
-247101 = {
-	name="Jiangchizun"
-	female=yes
-	dynasty=105823 #Meng - Rulers of Nanzhou
-	religion="indoh_confucian"
-	culture="han" #bai
-	#father = #Meng Shengluopi, King of Nanzhao
-	trait="mahayana_indoh_confucian"
-	710.1.1={
-		birth=yes
-	}
-	757.1.1={
 		death=yes
 	}
 }
@@ -1445,16 +1427,6 @@
 	trait=desert_terrain_leader
 	trait=brave
 	martial = 10
-	trait="mahayana_indoh_confucian"
-	730.1.1={
-		birth=yes
-	}
-	768.1.1={
-		culture=han # imperial surname awarded
-	}
-	790.1.1={
-		death=yes
-	}
 }
 
 248149 = {
@@ -1473,46 +1445,6 @@
 		add_claim = c_maqen 
 	}
 	790.1.1={
-		death=yes
-	}
-}
-
-248150 = {
-	name="Xigu"
-	dynasty=1053301
-	religion="tao"
-	culture="han"
-	trait=tough_soldier
-	trait=brave
-	martial = 10
-	732.1.1={
-		birth=yes
-	}
-	769.1.1={
-		employer=166731
-		add_claim = c_kara_khoja # Jiedushi
-	}
-	789.1.1={
-		death=yes
-	}
-}
-
-248151 = {
-	name="Quan"
-	dynasty=1053302
-	religion="tao"
-	culture="han"
-	trait=tough_soldier
-	trait=patient
-	martial = 10
-	731.1.1={
-		birth=yes
-	}
-	769.1.1={
-		employer=166725
-		add_claim = c_luntai # Jiedushi
-	}
-	787.1.1={
 		death=yes
 	}
 }
@@ -1566,24 +1498,6 @@
 	769.1.1={
 		employer=166703
 		add_claim = c_aksu # Jiedushi
-	}
-	787.1.1={
-		death=yes
-	}
-}
-248155 = {
-	name="Riyou"
-	dynasty=1053304
-	religion="tao"
-	culture="han"
-	trait=tough_soldier
-	martial = 10
-	731.1.1={
-		birth=yes
-	}
-	769.1.1={
-		employer=166713
-		add_claim = c_kucha # Jiedushi
 	}
 	787.1.1={
 		death=yes
@@ -5933,21 +5847,6 @@
 		death = { death_reason = death_in_china_historic }
 	}
 }
-247993 = { # Consort Wu (Suzong)
-	female = yes
-	dynasty = 1051208 # Wu (different from Wu Zetian's surname)
-	name = "Shi"
-	religion = tao
-	culture = han
-	# father =  # Wu Linggui
-	# spouse = # Emperor Suzong
-	709.1.1 = {
-		birth = yes
-	} # real dob 713
-	740.1.1 = {
-		death = { death_reason = death_in_china_historic }
-	}
-}
 247994 = { # Consort Shen (Daizong)
 	female = yes
 	dynasty = 1055026 # Shen
@@ -7093,70 +6992,6 @@
 		death=yes
 	}
 }
-261132 = {
-	name = "Li Keyong"
-	dynasty = 1062562
-	religion = tao
-	culture = han
-	851.1.1 = {
-		birth = yes
-	}
-	908.1.1 = {
-		death = { death_reason = death_offmap }
-	}
-}
-261133 = {
-	name = "Zhuangzong"
-	dynasty = 1062562
-	religion = tao
-	culture = han
-	father = 261132
-	885.1.1 = {
-		birth = yes
-	}
-	926.1.1 = {
-		death = { death_reason = death_offmap }
-	}
-}
-261134 = {
-	name = "Mingzong"
-	dynasty = 1062562
-	religion = tao
-	culture = han
-	father = 261132
-	867.1.1 = {
-		birth = yes
-	}
-	933.1.1 = {
-		death = { death_reason = death_offmap }
-	}
-}
-261135 = {
-	name = "Min"
-	dynasty = 1062562
-	religion = tao
-	culture = han
-	father = 261134
-	914.1.1 = {
-		birth = yes
-	}
-	934.1.1 = {
-		death = { death_reason = death_offmap }
-	}
-}
-261136 = {
-	name = "Mo"
-	dynasty = 1062562
-	religion = tao
-	culture = han
-	father = 261134
-	885.1.1 = {
-		birth = yes
-	}
-	937.1.1 = {
-		death = { death_reason = death_offmap }
-	}
-}
 # Cao family
 1059714 = {
 	name="Yijin"
@@ -7256,7 +7091,6 @@
 	trait=sympathy_zoroastrianism
 	trait=sympathy_islam
 	trait=sympathy_christendom
-	trait=theravada_indoh_confucian
 	920.1.1={
 		birth=yes # maybe
 	}
