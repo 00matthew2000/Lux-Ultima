@@ -7223,154 +7223,6 @@ e_roman = {
 	
 	culture = roman
 	
-	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture=italian
-			}
-		}
-		conditional_tooltip = {
-			trigger = {
-				k_sicily = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			has_landed_title = k_sicily
-		}
-		conditional_tooltip = {
-			trigger = {
-				k_naples = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			has_landed_title = k_naples
-		}
-		conditional_tooltip = {
-			trigger = {
-				k_italy = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			has_landed_title = k_italy
-		}
-		conditional_tooltip = {
-			trigger = {
-				k_sardinia = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			has_landed_title = k_sardinia
-		}
-		conditional_tooltip = {
-			trigger = {
-				k_romagna = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			has_landed_title = k_romagna
-		}
-		conditional_tooltip = {
-			trigger = {
-				k_venice = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			has_landed_title = k_venice
-		}
-	}
-
-	gain_effect = {
-		if = {
-			limit = {
-				k_sicily = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			k_sicily = {
-				show_scope_change = no
-				de_jure_liege = e_italy
-			}
-		}
-		if = {
-			limit = {
-				k_naples = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			k_naples = {
-				show_scope_change = no
-				de_jure_liege = e_italy
-			}
-		}
-		if = {
-			limit = {
-				k_italy = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			k_italy = {
-				show_scope_change = no
-				de_jure_liege = e_italy
-			}
-		}
-		if = {
-			limit = {
-				k_sardinia = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			k_sardinia = {
-				show_scope_change = no
-				de_jure_liege = e_italy
-			}
-		}
-		if = {
-			limit = {
-				k_romagna = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_italy
-					}
-				}
-			}
-			k_romagna = {
-				show_scope_change = no
-				de_jure_liege = e_italy
-			}
-		}
-	}
-	
 	k_sicily = {
 		color = { 58 41 188 }
 		
@@ -7381,19 +7233,6 @@ e_roman = {
 		catholic = 500 # Crusade target weight
 		orthodox = 50
 		muslim = 10
-
-		allow = {
-			conditional_tooltip = {
-				trigger = {
-					k_sicily = {
-						is_titular = yes
-					}
-				}
-				k_sicily = {
-					is_titular = no
-				}
-			}
-		}
 		
 		d_benevento = {
 			color = { 105 45 142 }
@@ -8924,7 +8763,7 @@ e_roman = {
 			}
 		}	
 		d_corsica = {
-			color={ 210 233 278 }
+			color={ 210 233 251 }
 			color2={ 255 255 255 }
 			
 			capital = 324 # Corsica
