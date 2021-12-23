@@ -1,5 +1,6 @@
 # HOLY ORDERS AUTOMATICALLY GENERATED AND MAINTAINED BY THE SELIN PARSER v0.23 - Do not edit by hand!!! If a change is required, change the python code or the source Matrix !!!
 
+
 d_holyadoptionist = {
 	color = { 255 143 51 }
 	color2 = { 255 255 255 }
@@ -13,6 +14,8 @@ d_holyadoptionist = {
 
 	# Always exists
 	landless = yes
+
+	culture = visigothic
 
 	# Parent Religion/Culture
 	religion = adoptionist
@@ -37,6 +40,8 @@ d_holyalexandros = {
 	# Always exists
 	landless = yes
 
+	culture = hellenistic
+
 	# Parent Religion/Culture
 	religion = alexandros
 
@@ -59,6 +64,8 @@ d_holyalmaqah = {
 
 	# Always exists
 	landless = yes
+
+	culture = sabaean
 
 	# Parent Religion/Culture
 	religion = almaqah
@@ -83,6 +90,8 @@ d_holyapollinarist = {
 	# Always exists
 	landless = yes
 
+	culture = greek
+
 	# Parent Religion/Culture
 	religion = apollinarist
 
@@ -105,6 +114,8 @@ d_holyarian = {
 
 	# Always exists
 	landless = yes
+
+	culture = romanogothic
 
 	# Parent Religion/Culture
 	religion = arian
@@ -129,6 +140,8 @@ d_holyashari = {
 	# Always exists
 	landless = yes
 
+	culture = egyptian_arabic
+
 	# Parent Religion/Culture
 	religion = ashari
 
@@ -152,6 +165,8 @@ d_holyathari = {
 	# Always exists
 	landless = yes
 
+	culture = bedouin_arabic
+
 	# Parent Religion/Culture
 	religion = athari
 
@@ -174,6 +189,8 @@ d_holyaudianist = {
 
 	# Always exists
 	landless = yes
+	
+	culture = greek
 
 	# Parent Religion/Culture
 	religion = audianist
@@ -197,6 +214,8 @@ d_holyaztec = {
 
 	# Always exists
 	landless = yes
+	
+	culture = nahuatl
 
 	# Parent Religion/Culture
 	religion = aztec
@@ -221,6 +240,8 @@ d_holybud_bahusrutiya = {
 	# Always exists
 	landless = yes
 
+	culture = maghada
+
 	# Parent Religion/Culture
 	religion = bud_bahusrutiya
 
@@ -244,6 +265,8 @@ d_holybud_mahayana = {
 	# Always exists
 	landless = yes
 
+	culture = hindavi
+
 	# Parent Religion/Culture
 	religion = bud_mahayana
 
@@ -266,6 +289,8 @@ d_holybud_pratyeka = {
 
 	# Always exists
 	landless = yes
+	
+	culture = indohellenic
 
 	# Parent Religion/Culture
 	religion = bud_pratyeka
@@ -289,6 +314,8 @@ d_holybud_pureland = {
 
 	# Always exists
 	landless = yes
+	
+	culture = tocharian
 
 	# Parent Religion/Culture
 	religion = bud_pureland
@@ -312,6 +339,8 @@ d_holybud_sthaviravada = {
 
 	# Always exists
 	landless = yes
+	
+	culture = maghada
 
 	# Parent Religion/Culture
 	religion = bud_sthaviravada
@@ -335,6 +364,8 @@ d_holybud_vajrayana = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bodpa
 
 	# Parent Religion/Culture
 	religion = bud_vajrayana
@@ -358,6 +389,8 @@ d_holybyeri_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = fang
 
 	# Parent Religion/Culture
 	religion = byeri_reformed
@@ -381,6 +414,8 @@ d_holycatholic = {
 
 	# Always exists
 	landless = yes
+	
+	culture = roman
 
 	# Parent Religion/Culture
 	religion = catholic
@@ -404,6 +439,8 @@ d_holydonatist = {
 
 	# Always exists
 	landless = yes
+	
+	culture = berber
 
 	# Parent Religion/Culture
 	religion = donatist
@@ -427,6 +464,8 @@ d_holyharuri = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bedouin_arabic
 
 	# Parent Religion/Culture
 	religion = haruri
@@ -450,6 +489,8 @@ d_holyhindu = {
 
 	# Always exists
 	landless = yes
+	
+	culture = telugu
 
 	# Parent Religion/Culture
 	religion = hindu
@@ -473,6 +514,8 @@ d_holyhurufi = {
 
 	# Always exists
 	landless = yes
+	
+	culture = alan
 
 	# Parent Religion/Culture
 	religion = hurufi
@@ -496,6 +539,8 @@ d_holyiconoclast = {
 
 	# Always exists
 	landless = yes
+	
+	culture = kurdish
 
 	# Parent Religion/Culture
 	religion = iconoclast
@@ -519,6 +564,8 @@ d_holyilm_islam = {
 
 	# Always exists
 	landless = yes
+	
+	culture = andalusian_arabic
 
 	# Parent Religion/Culture
 	religion = ilm_islam
@@ -542,6 +589,8 @@ d_holyindoh_bud = {
 
 	# Always exists
 	landless = yes
+	
+	culture = indohellenic
 
 	# Parent Religion/Culture
 	religion = indoh_bud
@@ -565,6 +614,8 @@ d_holyindoh_confucian = {
 
 	# Always exists
 	landless = yes
+	
+	culture = sinohellenic
 
 	# Parent Religion/Culture
 	religion = indoh_confucian
@@ -588,6 +639,8 @@ d_holyindoh_hindu = {
 
 	# Always exists
 	landless = yes
+	
+	culture = saka
 
 	# Parent Religion/Culture
 	religion = indoh_hindu
@@ -611,6 +664,8 @@ d_holyindoh_zor = {
 
 	# Always exists
 	landless = yes
+	
+	culture = indohellenic
 
 	# Parent Religion/Culture
 	religion = indoh_zor
@@ -634,6 +689,8 @@ d_holyjain = {
 
 	# Always exists
 	landless = yes
+	
+	culture = saurashtra
 
 	# Parent Religion/Culture
 	religion = jain
@@ -657,6 +714,8 @@ d_holyjud_zion = {
 
 	# Always exists
 	landless = yes
+	
+	culture = jewish
 
 	# Parent Religion/Culture
 	religion = jud_zion
@@ -680,6 +739,8 @@ d_holyjupiter = {
 
 	# Always exists
 	landless = yes
+	
+	culture = roman
 
 	# Parent Religion/Culture
 	religion = jupiter
@@ -703,6 +764,8 @@ d_holyluwian = {
 
 	# Always exists
 	landless = yes
+	
+	culture = greek
 
 	# Parent Religion/Culture
 	religion = luwian
@@ -726,6 +789,8 @@ d_holymani = {
 
 	# Always exists
 	landless = yes
+	
+	culture = uyghur
 
 	# Parent Religion/Culture
 	religion = mani
@@ -749,6 +814,8 @@ d_holymani_mithra = {
 
 	# Always exists
 	landless = yes
+	
+	culture = aghbanian
 
 	# Parent Religion/Culture
 	religion = mani_mithra
@@ -772,6 +839,8 @@ d_holymaturidi = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bedouin_arabic
 
 	# Parent Religion/Culture
 	religion = maturidi
@@ -795,6 +864,8 @@ d_holymelkite = {
 
 	# Always exists
 	landless = yes
+	
+	culture = armenian
 
 	# Parent Religion/Culture
 	religion = melkite
@@ -818,6 +889,8 @@ d_holymithra = {
 
 	# Always exists
 	landless = yes
+	
+	culture = roman
 
 	# Parent Religion/Culture
 	religion = mithra
@@ -841,6 +914,8 @@ d_holymithra_christ = {
 
 	# Always exists
 	landless = yes
+	
+	culture = roman
 
 	# Parent Religion/Culture
 	religion = mithra_christ
@@ -864,6 +939,8 @@ d_holymithra_sol = {
 
 	# Always exists
 	landless = yes
+	
+	culture = galatian
 
 	# Parent Religion/Culture
 	religion = mithra_sol
@@ -887,6 +964,8 @@ d_holymonophysite = {
 
 	# Always exists
 	landless = yes
+	
+	culture = nubian
 
 	# Parent Religion/Culture
 	religion = monophysite
@@ -910,6 +989,8 @@ d_holymonothelite = {
 
 	# Always exists
 	landless = yes
+	
+	culture = armenian
 
 	# Parent Religion/Culture
 	religion = monothelite
@@ -933,6 +1014,8 @@ d_holymurjiah = {
 
 	# Always exists
 	landless = yes
+	
+	culture = syroaramean
 
 	# Parent Religion/Culture
 	religion = murjiah
@@ -956,6 +1039,8 @@ d_holymutazil = {
 
 	# Always exists
 	landless = yes
+	
+	culture = berber
 
 	# Parent Religion/Culture
 	religion = mutazil
@@ -982,6 +1067,8 @@ d_holymwari = {
 
 	# Parent Religion/Culture
 	religion = mwari
+	
+	culture = shona
 
 	# Cannot be held as a secondary title
 	primary = yes
@@ -1002,6 +1089,8 @@ d_holyneoplato = {
 
 	# Always exists
 	landless = yes
+	
+	culture = hellenistic
 
 	# Parent Religion/Culture
 	religion = neoplato
@@ -1025,6 +1114,8 @@ d_holynestorian = {
 
 	# Always exists
 	landless = yes
+	
+	culture = tocharian
 
 	# Parent Religion/Culture
 	religion = nestorian
@@ -1048,6 +1139,8 @@ d_holynyau = {
 
 	# Always exists
 	landless = yes
+	
+	culture = amaravi
 
 	# Parent Religion/Culture
 	religion = nyau
@@ -1071,6 +1164,8 @@ d_holyorthodox = {
 
 	# Always exists
 	landless = yes
+	
+	culture = greek
 
 	# Parent Religion/Culture
 	religion = orthodox
@@ -1094,6 +1189,8 @@ d_holypelagian = {
 
 	# Always exists
 	landless = yes
+	
+	culture = brython
 
 	# Parent Religion/Culture
 	religion = pelagian
@@ -1117,6 +1214,8 @@ d_holyplato_christ = {
 
 	# Always exists
 	landless = yes
+	
+	culture = hellenistic
 
 	# Parent Religion/Culture
 	religion = plato_christ
@@ -1140,6 +1239,8 @@ d_holyplato_islam = {
 
 	# Always exists
 	landless = yes
+	
+	culture = levantine_arabic
 
 	# Parent Religion/Culture
 	religion = plato_islam
@@ -1163,6 +1264,8 @@ d_holyroman_imperial = {
 
 	# Always exists
 	landless = yes
+	
+	culture = roman
 
 	# Parent Religion/Culture
 	religion = roman_imperial
@@ -1186,6 +1289,8 @@ d_holysabellianist = {
 
 	# Always exists
 	landless = yes
+	
+	culture = greek
 
 	# Parent Religion/Culture
 	religion = sabellianist
@@ -1209,6 +1314,8 @@ d_holysemipelagian = {
 
 	# Always exists
 	landless = yes
+	
+	culture = frankish
 
 	# Parent Religion/Culture
 	religion = semipelagian
@@ -1232,6 +1339,8 @@ d_holyshiite = {
 
 	# Always exists
 	landless = yes
+	
+	culture = berber
 
 	# Parent Religion/Culture
 	religion = shiite
@@ -1255,6 +1364,8 @@ d_holysol = {
 
 	# Always exists
 	landless = yes
+	
+	culture = greek
 
 	# Parent Religion/Culture
 	religion = sol
@@ -1278,6 +1389,8 @@ d_holysol_apollo = {
 
 	# Always exists
 	landless = yes
+	
+	culture = hellenistic
 
 	# Parent Religion/Culture
 	religion = sol_apollo
@@ -1301,6 +1414,8 @@ d_holysol_christ = {
 
 	# Always exists
 	landless = yes
+	
+	culture = burgundian
 
 	# Parent Religion/Culture
 	religion = sol_christ
@@ -1324,6 +1439,8 @@ d_holysol_mani = {
 
 	# Always exists
 	landless = yes
+	
+	culture = slovene
 
 	# Parent Religion/Culture
 	religion = sol_mani
@@ -1347,6 +1464,8 @@ d_holysolomonic_alexandros = {
 
 	# Always exists
 	landless = yes
+	
+	culture = ethiopian
 
 	# Parent Religion/Culture
 	religion = solomonic_alexandros
@@ -1370,6 +1489,8 @@ d_holysolomonic_christ = {
 
 	# Always exists
 	landless = yes
+	
+	culture = ethiopian
 
 	# Parent Religion/Culture
 	religion = solomonic_christ
@@ -1393,6 +1514,8 @@ d_holysunni = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bedouin_arabic
 
 	# Parent Religion/Culture
 	religion = sunni
@@ -1416,6 +1539,8 @@ d_holyunctionist = {
 
 	# Always exists
 	landless = yes
+	
+	culture = frankish
 
 	# Parent Religion/Culture
 	religion = unctionist
@@ -1439,6 +1564,8 @@ d_holyyoruba = {
 
 	# Always exists
 	landless = yes
+	
+	culture = hausa
 
 	# Parent Religion/Culture
 	religion = yoruba
@@ -1462,6 +1589,8 @@ d_holyzahiri = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bedouin_arabic
 
 	# Parent Religion/Culture
 	religion = zahiri
@@ -1485,6 +1614,8 @@ d_holyzal = {
 
 	# Always exists
 	landless = yes
+	
+	culture = dacian
 
 	# Parent Religion/Culture
 	religion = zal
@@ -1508,6 +1639,8 @@ d_holyzal_christ = {
 
 	# Always exists
 	landless = yes
+	
+	culture = sarmatobrython
 
 	# Parent Religion/Culture
 	religion = zal_christ
@@ -1531,6 +1664,8 @@ d_holyzal_mani = {
 
 	# Always exists
 	landless = yes
+	
+	culture = sarmatian
 
 	# Parent Religion/Culture
 	religion = zal_mani
@@ -1554,6 +1689,8 @@ d_holyzor_hindu = {
 
 	# Always exists
 	landless = yes
+	
+	culture = saurashtra
 
 	# Parent Religion/Culture
 	religion = zor_hindu
@@ -1577,6 +1714,8 @@ d_holyzoroastrian = {
 
 	# Always exists
 	landless = yes
+	
+	culture = persian
 
 	# Parent Religion/Culture
 	religion = zoroastrian
@@ -1600,6 +1739,8 @@ d_holyahriman_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = hunnic
 
 	# Parent Religion/Culture
 	religion = ahriman_reformed
@@ -1623,6 +1764,8 @@ d_holyamun_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = nubian
 
 	# Parent Religion/Culture
 	religion = amun_reformed
@@ -1646,6 +1789,8 @@ d_holyarab_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bedouin_arabic
 
 	# Parent Religion/Culture
 	religion = arab_pagan_reformed
@@ -1669,6 +1814,8 @@ d_holyaten_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = nubian
 
 	# Parent Religion/Culture
 	religion = aten_reformed
@@ -1692,6 +1839,8 @@ d_holybaal_monotheistic_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = levantine_arabic
 
 	# Parent Religion/Culture
 	religion = baal_monotheistic_reformed
@@ -1715,6 +1864,8 @@ d_holybaltic_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = lithuanian
 
 	# Parent Religion/Culture
 	religion = baltic_pagan_reformed
@@ -1738,6 +1889,8 @@ d_holybantu_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = zulu
 
 	# Parent Religion/Culture
 	religion = bantu_pagan_reformed
@@ -1761,6 +1914,8 @@ d_holyberber_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = berber
 
 	# Parent Religion/Culture
 	religion = berber_pagan_reformed
@@ -1784,6 +1939,8 @@ d_holybon_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bodpa
 
 	# Parent Religion/Culture
 	religion = bon_reformed
@@ -1807,6 +1964,8 @@ d_holybud_zen_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = tocharian
 
 	# Parent Religion/Culture
 	religion = bud_zen_reformed
@@ -1830,6 +1989,8 @@ d_holybud_zor_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = parthian
 
 	# Parent Religion/Culture
 	religion = bud_zor_reformed
@@ -1853,6 +2014,8 @@ d_holycathar_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = romanogothic
 
 	# Parent Religion/Culture
 	religion = cathar_reformed
@@ -1876,6 +2039,8 @@ d_holyceltic_christ_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = irish
 
 	# Parent Religion/Culture
 	religion = celtic_christ_reformed
@@ -1899,6 +2064,8 @@ d_holyceltic_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = breton
 
 	# Parent Religion/Culture
 	religion = celtic_pagan_reformed
@@ -1922,6 +2089,8 @@ d_holychristian_populist_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = roman
 
 	# Parent Religion/Culture
 	religion = christian_populist_reformed
@@ -1945,6 +2114,8 @@ d_holychumbylat_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bulgar
 
 	# Parent Religion/Culture
 	religion = chumbylat_reformed
@@ -1968,6 +2139,8 @@ d_holycybele_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = hellenistic
 
 	# Parent Religion/Culture
 	religion = cybele_reformed
@@ -1991,6 +2164,8 @@ d_holydruze_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = syroaramean
 
 	# Parent Religion/Culture
 	religion = druze_reformed
@@ -2014,6 +2189,8 @@ d_holyerlik_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = hunnic
 
 	# Parent Religion/Culture
 	religion = erlik_reformed
@@ -2037,6 +2214,8 @@ d_holyethiopian_war_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = ethiopian
 
 	# Parent Religion/Culture
 	religion = ethiopian_war_reformed
@@ -2060,6 +2239,8 @@ d_holyfinnish_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = finnish
 
 	# Parent Religion/Culture
 	religion = finnish_pagan_reformed
@@ -2083,6 +2264,8 @@ d_holygerman_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = teutonic
 
 	# Parent Religion/Culture
 	religion = german_pagan_reformed
@@ -2106,6 +2289,8 @@ d_holygraeco_roman_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = roman
 
 	# Parent Religion/Culture
 	religion = graeco_roman_reformed
@@ -2129,6 +2314,8 @@ d_holyiberian_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = lusitanian
 
 	# Parent Religion/Culture
 	religion = iberian_pagan_reformed
@@ -2152,6 +2339,8 @@ d_holyilluyanka_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = greek
 
 	# Parent Religion/Culture
 	religion = illuyanka_reformed
@@ -2175,6 +2364,8 @@ d_holyindohelen_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = indohellenic
 
 	# Parent Religion/Culture
 	religion = indohelen_reformed
@@ -2198,6 +2389,8 @@ d_holyinuit_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = innu
 
 	# Parent Religion/Culture
 	religion = inuit_pagan_reformed
@@ -2221,6 +2414,8 @@ d_holyisis_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = nubian
 
 	# Parent Religion/Culture
 	religion = isis_reformed
@@ -2244,6 +2439,8 @@ d_holyjud_ark_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = ethiopian
 
 	# Parent Religion/Culture
 	religion = jud_ark_reformed
@@ -2267,6 +2464,8 @@ d_holyjudaism_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = jewish
 
 	# Parent Religion/Culture
 	religion = judaism_reformed
@@ -2290,6 +2489,8 @@ d_holykubera_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = tamilar
 
 	# Parent Religion/Culture
 	religion = kubera_reformed
@@ -2313,6 +2514,8 @@ d_holylubu_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = han
 
 	# Parent Religion/Culture
 	religion = lubu_reformed
@@ -2336,6 +2539,8 @@ d_holymand_ruha_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = persian
 
 	# Parent Religion/Culture
 	religion = mand_ruha_reformed
@@ -2359,6 +2564,8 @@ d_holymandaean_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = persian
 
 	# Parent Religion/Culture
 	religion = mandaean_reformed
@@ -2382,6 +2589,8 @@ d_holymani_germanic_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bavarian
 
 	# Parent Religion/Culture
 	religion = mani_germanic_reformed
@@ -2405,6 +2614,8 @@ d_holymani_slavic_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bohemian
 
 	# Parent Religion/Culture
 	religion = mani_slavic_reformed
@@ -2428,6 +2639,8 @@ d_holymari_christ_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = basque
 
 	# Parent Religion/Culture
 	religion = mari_christ_reformed
@@ -2451,6 +2664,8 @@ d_holymazdakism_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = parthian
 
 	# Parent Religion/Culture
 	religion = mazdakism_reformed
@@ -2474,6 +2689,8 @@ d_holymontanist_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = greek
 
 	# Parent Religion/Culture
 	religion = montanist_reformed
@@ -2497,6 +2714,8 @@ d_holymurugan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = tamilar
 
 	# Parent Religion/Culture
 	religion = murugan_reformed
@@ -2521,6 +2740,8 @@ d_holymuslim_aliite_reformed = {
 	# Always exists
 	landless = yes
 
+	culture = andalusian_arabic
+
 	# Parent Religion/Culture
 	religion = muslim_aliite_reformed
 
@@ -2543,6 +2764,8 @@ d_holymuslim_domination_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bedouin_arabic
 
 	# Parent Religion/Culture
 	religion = muslim_domination_reformed
@@ -2566,6 +2789,8 @@ d_holymuslim_sufi_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = egyptian_arabic
 
 	# Parent Religion/Culture
 	religion = muslim_sufi_reformed
@@ -2589,6 +2814,8 @@ d_holynasrani_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = kannada
 
 	# Parent Religion/Culture
 	religion = nasrani_reformed
@@ -2612,6 +2839,8 @@ d_holynorse_christ_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = geat
 
 	# Parent Religion/Culture
 	religion = norse_christ_reformed
@@ -2635,6 +2864,8 @@ d_holynorse_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = swedish
 
 	# Parent Religion/Culture
 	religion = norse_pagan_reformed
@@ -2658,6 +2889,8 @@ d_holynorthern_sun_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = danish
 
 	# Parent Religion/Culture
 	religion = northern_sun_reformed
@@ -2681,6 +2914,8 @@ d_holynyakalagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = hausa
 
 	# Parent Religion/Culture
 	religion = nyakalagan_reformed
@@ -2704,6 +2939,8 @@ d_holypriscillian_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = romanogothic
 
 	# Parent Religion/Culture
 	religion = priscillian_reformed
@@ -2727,6 +2964,8 @@ d_holyragnarok_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = varangian
 
 	# Parent Religion/Culture
 	religion = ragnarok_reformed
@@ -2750,6 +2989,8 @@ d_holysaura_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = saurashtra
 
 	# Parent Religion/Culture
 	religion = saura_reformed
@@ -2773,6 +3014,8 @@ d_holyserer_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = serer
 
 	# Parent Religion/Culture
 	religion = serer_reformed
@@ -2793,6 +3036,8 @@ d_holyset_reformed = {
 	monthly_income = 6 # (Must be an integer between 1 and 512)
 	title = "GRANDMASTER"
 	foa = "GRANDMASTER_FOA"
+	
+	culture = nubian
 
 	# Always exists
 	landless = yes
@@ -2819,6 +3064,8 @@ d_holysethian_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = levantine_arabic
 
 	# Parent Religion/Culture
 	religion = sethian_reformed
@@ -2842,6 +3089,8 @@ d_holyslavic_christian_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = russian
 
 	# Parent Religion/Culture
 	religion = slavic_christian_reformed
@@ -2865,6 +3114,8 @@ d_holyslavic_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = russian
 
 	# Parent Religion/Culture
 	religion = slavic_pagan_reformed
@@ -2888,6 +3139,8 @@ d_holysol_boreas_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = hellenistic
 
 	# Parent Religion/Culture
 	religion = sol_boreas_reformed
@@ -2911,6 +3164,8 @@ d_holysol_islam_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = nabatean
 
 	# Parent Religion/Culture
 	religion = sol_islam_reformed
@@ -2934,6 +3189,8 @@ d_holysol_sahara_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = fur
 
 	# Parent Religion/Culture
 	religion = sol_sahara_reformed
@@ -2957,6 +3214,8 @@ d_holytao_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = zhongyuan
 
 	# Parent Religion/Culture
 	religion = tao_reformed
@@ -2980,6 +3239,8 @@ d_holytarhunt_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = greek
 
 	# Parent Religion/Culture
 	religion = tarhunt_reformed
@@ -3003,6 +3264,8 @@ d_holyteiwaz_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = visigothic
 
 	# Parent Religion/Culture
 	religion = teiwaz_reformed
@@ -3026,6 +3289,8 @@ d_holytengri_bud_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = turkish
 
 	# Parent Religion/Culture
 	religion = tengri_bud_reformed
@@ -3049,6 +3314,8 @@ d_holytengri_confucian_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = khitan
 
 	# Parent Religion/Culture
 	religion = tengri_confucian_reformed
@@ -3072,6 +3339,8 @@ d_holytengri_mani_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = avar
 
 	# Parent Religion/Culture
 	religion = tengri_mani_reformed
@@ -3095,6 +3364,8 @@ d_holytengri_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = xiongnu
 
 	# Parent Religion/Culture
 	religion = tengri_pagan_reformed
@@ -3118,6 +3389,8 @@ d_holytengri_rod_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = russian
 
 	# Parent Religion/Culture
 	religion = tengri_rod_reformed
@@ -3141,6 +3414,8 @@ d_holyvattisenyaly_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = bulgar
 
 	# Parent Religion/Culture
 	religion = vattisenyaly_reformed
@@ -3164,6 +3439,8 @@ d_holyvidharma_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = telugu
 
 	# Parent Religion/Culture
 	religion = vidharma_reformed
@@ -3187,6 +3464,8 @@ d_holyvoipel_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = komi
 
 	# Parent Religion/Culture
 	religion = voipel_reformed
@@ -3210,6 +3489,8 @@ d_holyyazdanism_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = kurdish
 
 	# Parent Religion/Culture
 	religion = yazdanism_reformed
@@ -3233,6 +3514,8 @@ d_holyzande_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = zande
 
 	# Parent Religion/Culture
 	religion = zande_pagan_reformed
@@ -3256,6 +3539,8 @@ d_holyzor_angra_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = parthian
 
 	# Parent Religion/Culture
 	religion = zor_angra_reformed
@@ -3279,6 +3564,8 @@ d_holyzulu_pagan_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = zulu
 
 	# Parent Religion/Culture
 	religion = zulu_pagan_reformed
@@ -3302,6 +3589,8 @@ d_holyzurvanism_reformed = {
 
 	# Always exists
 	landless = yes
+	
+	culture = persian
 
 	# Parent Religion/Culture
 	religion = zurvanism_reformed
