@@ -967,6 +967,9 @@ e_nunavut = {
 				color={ 105 24 109 }
 				color2={ 220 220 220 }
 				
+				holy_site = sgaanaang
+				holy_site = sgaanaang_reformed
+				
 				b_aleutian = {
 				}
 				b_aleuxlaxa = {
@@ -1248,6 +1251,9 @@ e_saskatchewan = {
 			c_nuga = {
 				color={ 86 196 234 }
 				color2={ 220 220 220 }
+				
+				holy_site = sgaanaang
+				holy_site = sgaanaang_reformed
 
 				innu = "Nuga"
 				
@@ -1429,6 +1435,9 @@ e_saskatchewan = {
 				color={ 142 101 124 }
 				color2={ 220 220 220 }
 				
+				holy_site = sgaanaang
+				holy_site = sgaanaang_reformed
+				
 				b_shuowap = {
 				}
 				b_kuunniikuliksak = {
@@ -1464,6 +1473,9 @@ e_saskatchewan = {
 			c_dakotan = {
 				color={ 12 145 165 }
 				color2={ 220 220 220 }
+				
+				holy_site = wakan_tanka
+				holy_site = wakan_tanka_reformed
 				
 				b_dakotan = {
 				}
@@ -1524,6 +1536,9 @@ e_saskatchewan = {
 			c_manitoba = {
 				color={ 71 116 213 }
 				color2={ 220 220 220 }
+				
+				holy_site = sgaanaang
+				holy_site = sgaanaang_reformed
 				
 				b_manitoba = {
 				}
@@ -1972,7 +1987,7 @@ e_cree = {
 			
 			capital = 3540 # Chicoutimi
 
-			atikamekw = "Nitaskinan"
+			tuniq = "Nitaskinan"
 
 			c_uashat = {
 				color={ 11 66 99 }
@@ -2040,7 +2055,7 @@ e_cree = {
 				color2={ 220 220 220 }
 				
 				b_obedjiwan = {
-					atikamekw = "Opitciwan"
+					tuniq = "Opitciwan"
 				}
 				b_manawan = {
 				}
@@ -2049,12 +2064,12 @@ e_cree = {
 				b_ushabatshuan = {
 				}
 				b_coucoucache = {
-					atikamekw = "Kôkôkachi"
+					tuniq = "Kôkôkachi"
 				}
 				b_matawin = {
 				}
 				b_oskelaneo = {
-					atikamekw = "Oskélanéo"
+					tuniq = "Oskélanéo"
 				}
 			}
 			c_stadacona = {
@@ -2408,6 +2423,9 @@ e_cree = {
 				color={ 182 214 59 }
 				color2={ 220 220 220 }
 				
+				holy_site = orenda
+				holy_site = orenda_reformed
+				
 				b_niagara = {
 				}
 				b_senigoamos = {
@@ -2448,7 +2466,7 @@ e_cree = {
 		swedish = "Vinland"
 		greek = "Vinland"
 		saxon = "Winland"
-		old_saxon = "Winland"
+		saxon = "Winland"
 		german = "Winland"
 
 		capital = 3547 # Unama'kik
