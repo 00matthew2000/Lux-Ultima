@@ -58,28 +58,6 @@ e_outremer = {
 	}
 }
 
-e_lechczechrus = {
-	color={ 0 90 30 }
-	color2={ 255 255 255 }
-	short_name = yes
-
-	capital = 547	#Kiev
-
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				e_lechczechrus = {
-					is_titular = yes
-				}
-			}
-			e_lechczechrus = {
-				is_titular = no
-			}
-		}
-	}
-}
-
-
 d_papal_guards = {
 	color={ 255 240 240 }
 	color2 = { 220 220 0}
@@ -26210,60 +26188,6 @@ e_spain = {
 	capital = 197 # Toledo
 	
 	culture = castillan
-
-	allow = {
-		conditional_tooltip = {
-			trigger = {
-				e_spain = {
-					any_direct_de_jure_vassal_title = {
-						owner = {
-							NOT = {
-								religion_group = ROOT
-							}
-						}
-					}
-				}
-				has_dlc = "Holy Fury"
-			}
-
-			custom_tooltip = {
-				text = e_spain_allow_TT
-
-				always = no
-			}
-		}
-		conditional_tooltip = {
-			trigger = {
-				has_global_flag = active_reconquista
-			}
-
-			custom_tooltip = {
-				text = active_reconquista_condition_TT
-
-				always = no
-			}
-		}
-	}
-
-	gain_effect = {
-		if = {
-			limit = {
-				NOT = {
-					has_global_flag = reconquista_finished
-				}
-			}
-
-			any_playable_ruler = {
-				narrative_event = { id = HF.49451 }
-			}
-
-			ROOT = {
-				narrative_event = { id = HF.49451 }
-			}
-
-			set_global_flag = reconquista_finished
-		}
-	}
 	
 	k_asturias = {
 		color = { 10 162 241 }
@@ -36650,15 +36574,6 @@ e_central_africa = {
 
 # TITULAR DUCHIES
 
-d_oxford = { # Obsolete
-	color={ 255 108 0 }
-	color2={ 255 255 255 }
-	capital = 22 # Oxford
-	allow = {
-		always = no
-	}
-}
-
 d_assassin = {
 	color = { 58 97 57 }
 }
@@ -36673,23 +36588,6 @@ d_catalonia = {
 }
 d_cumberland = {
 	color = { 31 186 244 }
-}
-
-# Pagan proto-Denmark
-d_danes = {
-	color={ 247 77 54 }
-	
-#	tribe = yes
-	
-	dignity = 10
-	
-	capital	= 266 # Sjaelland
-	
-	allow = {
-		always = no
-	}
-	
-	culture = norse
 }
 d_don = {
 	color = { 247 211 116 }
@@ -36709,39 +36607,8 @@ d_galatia = {
 d_georgia = {
 	color = { 251 184 184 }
 }
-#d_gilan = {
-#	color = { 65 90 137 }
-#}
-d_geats = {
-	color={ 35 57 180 }
-
-#	tribe = yes
-	
-	dignity = 8
-	
-	capital	= 297 # Västergötland
-	
-	allow = {
-		always = no
-	}
-	
-	culture = norse
-}
 d_ikonion = {
 	color = { 179 28 127 }
-}
-d_ingers = {
-	color={ 125 125 40 }
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = finnish
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
 }
 d_karnten = {
 	color = { 229 254 242 }
@@ -36749,19 +36616,6 @@ d_karnten = {
 
 d_kirkuk = {
 	color = { 142 182 255 }
-}
-d_sami = {
-	color = { 101 99 35 }
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = lappish
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
 }
 
 d_krakow = {
@@ -36781,25 +36635,6 @@ d_mar = {
 }
 d_milano = {
 	color = { 252 238 227 }
-}
-#d_minsk = {
-#	color = { 175 44 44 }
-#}
-
-d_muromians = {
-	color = { 160 120 75 }
-	
-	capital = 581 # Murom
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = mordvin
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
 }
 
 d_nikomedeia = {
@@ -36836,64 +36671,6 @@ d_sinope = {
 }
 d_slovakia = {
 	color = { 209 61 61 }
-}
-d_sweden = {
-	color={ 55 112 170 }
-
-#	tribe = yes
-	
-	dignity = 10
-	
-	capital	= 290 # Uppland
-	
-	allow = {
-		always = no
-	}
-	
-	culture = norse
-}
-d_meryas = {
-	color = { 131 41 41 }
-	
-	capital = 574 # Rostov / Merya
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = mordvin
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-d_veps = {
-	color = { 120 90 40 }
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = mordvin
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-d_meshcheras = {
-	color = { 151 71 41 }
-	
-	capital = 580 # Ryazan
-	
-#	tribe = yes
-	
-	allow = {
-		always = no
-	}
-	
-	culture = mordvin
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
 }		  
 d_varna = {
 	color = { 208 93 251 }
@@ -36911,187 +36688,10 @@ d_zaragoza = {
 	color = { 80 220 10 }
 }
 
-d_lendians = { # aka Ledzianie or Lechs
-	color={ 245 163 176 }
-	color2={ 255 255 255 }
-	culture = polish
-#	tribe = yes
-	
-	capital = 527 # Krakowskie
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
-d_kryvians = { # aka Krivichi
-	color = { 128 133 104 }
-	color2={ 255 255 255 }
-	
-	culture = russian
-#	tribe = yes
-	
-	capital = 419 # Polotsk
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
-d_ilmenians = { # aka Ilmen Slavs
-	color = { 70 120 40 }
-	color2={ 255 255 255 }
-	
-	culture = russian
-#	tribe = yes
-	
-	capital = 414 # Novgorod
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
-d_severians = { # aka Severiane
-	color = { 120 155 40 }
-	color2={ 255 255 255 }
-	
-	culture = russian
-#	tribe = yes
-	
-	capital = 567 # Novgorod Seversky
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
-d_vyatichi = {
-	color={ 169 183 125 }
-	color2={ 255 255 255 }
-	
-	culture = russian
-#	tribe = yes
-	
-	capital = 570 # Tver
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
-d_dregovichi = { 
-	color={ 100 100 20 }
-	color2={ 255 255 255 }
-	
-	culture = russian
-#	tribe = yes
-	
-	capital = 548 # Pinsk
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
-d_radimichi = { 
-	color={ 110 136 68 }
-	color2={ 255 255 255 }
-	
-	culture = russian
-#	tribe = yes
-	
-	capital = 551 # Mstislavl
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
-d_glomacze = { # Aka Dolomici
-	color={ 215 143 156 }
-	color2={ 255 255 255 }
-	
-	culture = pommeranian
-#	tribe = yes
-	
-	capital = 312 # Meissen
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
-d_obotrites = {
-	color={ 100 110 20 }
-	color2={ 255 255 255 }
-	
-	culture = pommeranian
-#	tribe = yes
-	
-	capital = 260 # Mecklenburg
-	
-	allow = {
-		always = no
-	}
-	
-	title = "HIGH_CHIEF"
-	foa = "HIGH_CHIEF_FOA"
-}
-
 # TITULAR KINGDOMS
-
-k_pechenegs = {
-	color = { 173 150 43 }
-	color2 = { 0 128 128 }
-	
-	capital = 543 # Oleshye
-	
-#	tribe = yes
-	culture = pecheneg
-	
-	allow = {
-		always = no
-	}
-}
 
 k_beni_helal = {
 	color = { 128 163 56 }
-}
-k_fatimids = {
-	# OBSOLETE
-	color={ 10 140 4 }
-	color2={ 200 200 0 }
-#	capital	= 796 # Cairo
-	culture = egyptian_arabic
-	
-	allow = {
-		always = no
-	}
 }
 k_hammadid = {
 	color = { 149 180 17 }
@@ -37102,48 +36702,11 @@ k_kafsid = {
 k_marinid = {
 	color = { 46 255 5 }
 }
-
-e_seljuk_turks = { # Seljuk Turks
-	color={ 99 168 74 }
-	
-	short_name = yes
-	
-	capital = 646 # Esfahan
-	culture = turkish
-	
-#	tribe = yes
-	
-#	landless = yes
-	
-	allow = {
-		always = no
-	}
-}
 k_zirid = {
 	color = { 90 195 49 }
 }
 k_ziyanids = {
 	color = { 5 76 194 }
-}
-k_avaria = {
-	color={ 250 120 90 }  # Only for the CoA
-	culture = avar
-	
-	capital = 444 # Anhalt
-	
-	allow = {
-		always = no
-	}
-}
-k_lombardy = {
-	color={ 234 217 110 }  # Only for the CoA
-	culture = lombard
-	
-	capital = 234 # Anhalt
-	
-	allow = {
-		always = no
-	}
 }
 
 d_amalfi = {
@@ -44782,54 +44345,11 @@ d_african_tiny = { # Tiny Merc
 	mercenary_type = african_tiny_composition_1
 }
 
-
-# OBSOLETE TITLES IN THE MIDDLE EAST SINCE 2.8
-
-d_burtas = {
-	color = { 173 121 176 }
-	color2 = { 0 128 128 }
-	
-	capital = 592 # Burtasy
-	
-	culture = alan
-	
-	allow = {
-		always = no
-	}
-}
-
-# OBSOLETE TITLES HRE
-
-e_russian_empire = {	
-	color={ 220 60 70 }
-	color2={ 255 255 255 }
-	
-	capital = 582 # Vladimir
-	
-	culture = russian
-	
-	allow = {
-		always = no # Only created through special event
-	}
-}
-
 k_liao = {
 	color = { 33 202 156 }
 	color2= { 255 255 255 }
 
 	culture = khitan
-}
-d_guiyi = { # 
-	color={ 202 26 26 }
-	color2={ 255 255 255 }
-	
-	capital = 1448 # Dunhuang
-	
-	dignity = 200
-	
-	allow = {
-		always = no
-	}
 }
 
 ###################################
