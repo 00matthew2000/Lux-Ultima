@@ -5,7 +5,6 @@
 	culture=innu religion=algic_pagan
 	martial=5 diplomacy=7 stewardship=8 intrigue=7 learning=4
 	add_trait=thrifty_clerk add_trait=diligent add_trait=charitable add_trait=gregarious 
-	father=1019912318	#Tshishkuetutsheunnu
 	995.3.18={ birth=yes }
 	1060.7.11={ death=yes }
 }
@@ -16,8 +15,7 @@
 	culture=innu religion=algic_pagan
 	martial=6 diplomacy=6 stewardship=4 intrigue=6 learning=4
 	add_trait=flamboyant_schemer add_trait=celibate add_trait=gregarious add_trait=trusting add_trait=temperate 
-	add_trait=just add_trait=zealous 
-	father=1019912318	#Tshishkuetutsheunnu
+	add_trait=just add_trait=zealous 	
 	997.1.10={ birth=yes }
 	1069.12.31={ death=yes }
 }
@@ -28,39 +26,8 @@
 	culture=innu religion=algic_pagan
 	martial=8 diplomacy=6 stewardship=7 intrigue=7 learning=5
 	add_trait=midas_touched add_trait=gregarious add_trait=humble add_trait=patient add_trait=charitable 
-	father=1019912322	#Matiu
 	1013.7.27={ birth=yes }
 	1058.9.21={ death=yes }
-}
-1019912327={
-	name=Shushepin
-	female=yes
-	dynasty=1009990090
-	dna="iaeomiegadj"
-	culture=innu religion=algic_pagan
-	father=1019912322	#Matiu
-	1015.10.22={ birth=yes }
-	1064.3.15={ death=yes }
-}
-1019912328={
-	name=Ekuanitshishkueu
-	female=yes
-	dynasty=1009990090
-	dna="dmedpfaopnd"
-	culture=innu religion=algic_pagan
-	father=1019912322	#Matiu
-	1019.8.14={ birth=yes }
-	1073.4.17={ death=yes }
-}
-1019912329={
-	name=Apikushish
-	female=yes
-	dynasty=1009990090
-	dna="bniomgeddno"
-	culture=innu religion=algic_pagan
-	father=1019912322	#Matiu
-	1023.2.9={ birth=yes }
-	1082.3.4={ death=yes }
 }
 1019912330={
 	name=Shushepin
@@ -250,7 +217,6 @@
 	martial=6 diplomacy=4 stewardship=7 intrigue=5 learning=8
 	add_trait=charismatic_negotiator add_trait=greedy add_trait=temperate add_trait=zealous  
 	add_trait=gregarious 
-	father=1019912480	#Atiku
 	772.5.26={ birth=yes }
 	817.6.18={ death=yes }
 }
@@ -261,32 +227,8 @@
 	culture=innu religion=algic_pagan
 	martial=7 diplomacy=7 stewardship=4 intrigue=5 learning=7
 	add_trait=thrifty_clerk add_trait=proud add_trait=diligent add_trait=craven add_trait=temperate 
-	 
-	father=1019912480	#Atiku
 	775.1.12={ birth=yes }
 	833.5.31={ death=yes }
-}
-1019912486={
-	name=Natupaniu
-	dynasty=1009990092
-	dna="mfnhilafaco"
-	culture=innu religion=algic_pagan
-	martial=4 diplomacy=6 stewardship=7 intrigue=6 learning=6
-	add_trait=midas_touched add_trait=honest add_trait=patient add_trait=chaste add_trait=shy 
-	add_trait=ambitious add_trait=slothful add_trait=possessed add_trait=ugly 
-	father=1019912480	#Atiku
-	777.4.23={ birth=yes }
-	851.2.28={ death=yes }
-}
-1019912487={
-	name=Anitshishkueu
-	female=yes
-	dynasty=1009990092
-	dna="kanipjncibp"
-	culture=innu religion=algic_pagan
-	father=1019912480	#Atiku
-	782.4.26={ birth=yes }
-	823.12.6={ death=yes }
 }
 1019912488={
 	name=Shushep

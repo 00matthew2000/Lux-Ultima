@@ -23,8 +23,7 @@
 	dna="eighblpdjnd"
 	culture=delaware religion=algic_pagan
 	martial=6 diplomacy=5 stewardship=4 intrigue=7 learning=6
-	add_trait=tough_soldier add_trait=shy add_trait=just add_trait=cynical 
-	 
+	add_trait=tough_soldier add_trait=shy add_trait=just add_trait=cynical  
 	1043.5.17={ birth=yes }
 	1124.12.25={ death=yes }
 }
@@ -42,17 +41,15 @@
 	dynasty=1009990122
 	dna="epaholmfjak"
 	culture=delaware religion=algic_pagan
-	father=1019915471	#Nanotetauxien
 	751.1.19={ birth=yes }
 	806.1.19={ death=yes }
 }
 1019915476={
-	name=Awowas
+	name=Awowase
 	female=yes
 	dynasty=1009990122
 	dna="jpdlinmdjek"
 	culture=delaware religion=algic_pagan
-	father=1019915471	#Nanotetauxien
 	756.9.4={ birth=yes }
 	813.6.23={ death=yes }
 }
@@ -64,7 +61,6 @@
 	martial=4 diplomacy=5 stewardship=7 intrigue=4 learning=7
 	add_trait=misguided_warrior add_trait=brave add_trait=humble add_trait=zealous 
 	add_trait=lustful add_trait=greedy add_trait=possessed add_trait=harelip 
-	father=1019915473	#Pondoxy
 	765.1.22={ birth=yes }
 	836.3.10={ death=yes }
 }
@@ -74,39 +70,8 @@
 	dynasty=1009990122
 	dna="fidmmlpfaoo"
 	culture=delaware religion=algic_pagan
-	father=1019915473	#Pondoxy
 	771.2.8={ birth=yes }
 	828.11.5={ death=yes }
-}
-1019915479={
-	name=Cholena
-	female=yes
-	dynasty=1009990122
-	dna="eilhblpdjnd"
-	culture=delaware religion=algic_pagan
-	father=1019915473	#Pondoxy
-	777.7.15={ birth=yes }
-	844.5.27={ death=yes }
-}
-1019915480={
-	name=Cholena
-	female=yes
-	dynasty=1009990122
-	dna="elghckedkpf"
-	culture=delaware religion=algic_pagan
-	father=1019915473	#Pondoxy
-	780.7.21={ birth=yes }
-	862.12.2={ death=yes }
-}
-1019915481={
-	name=Moconnoquah
-	female=yes
-	dynasty=1009990122
-	dna="kiehblpfjfb"
-	culture=delaware religion=algic_pagan
-	father=1019915473	#Pondoxy
-	786.8.27={ birth=yes }
-	889.4.15={ death=yes }
 }
 1019915482={
 	name=Tamaqua
