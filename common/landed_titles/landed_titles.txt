@@ -6163,7 +6163,7 @@ e_roman = {
 				b_ventimiglia1 = {}
 				b_albenga = {}
 				b_oneglia = {}
-				b_sanremo = {}
+				b_albingaunum = {}
 				b_alaxio = {}
 			}
 		}	
@@ -8692,7 +8692,7 @@ e_scandinavia = {
 				}
 				b_kvamsoy = {
 				}
-				b_vik = {
+				b_vik1 = {
 				}
 			}
 			c_agder = {
@@ -8789,8 +8789,6 @@ e_scandinavia = {
 				color={ 80 40 200 }
 				color2 = { 255 255 255 }
 
-				b_eidsvoll = {
-				}
 				b_jessheim = {
 				}
 				b_sorumsand = {
@@ -8842,7 +8840,7 @@ e_scandinavia = {
 				b_eidsvoll = {}
 				b_nes = {}
 				b_isegran = {}
-				b_jessheim = {}
+				b_fornebu = {}
 				b_baerum = {}
 			}
 		}
@@ -8928,8 +8926,6 @@ e_scandinavia = {
 
 				# norse = "Sunnmære"
 
-				b_borgund = {
-				}
 				b_borgundkaupangen = {
 				}
 				b_giske = {
@@ -8941,6 +8937,8 @@ e_scandinavia = {
 				b_aheim = {
 				}
 				b_haram = {
+				}
+				b_borgund1 = {
 				}
 			}
 			c_romsdal = {
@@ -9283,7 +9281,6 @@ e_scandinavia = {
 				b_sordavala = {}
 				b_kalevala = {
 				}
-				b_soroka = {}
 				b_loukhi = {}
 				b_kostomuksha = {}
 				b_muezersky = {}
@@ -9825,7 +9822,7 @@ e_scandinavia = {
 					norwegian = "Kervo"
 					danish = "Kervo"
 				}
-				b_bodom = {			#lake
+				b_bodom = {
 				}
 			}
 		}
@@ -10027,7 +10024,6 @@ e_scandinavia = {
 				holy_site = jumala
 				holy_site = finnish_pagan_reformed
 				holy_site = dievas
-				holy_site = baltic_pagan_reformed
 				holy_site = peckols
 				holy_site = perkunas
 				holy_site = veles
@@ -10456,7 +10452,7 @@ e_slavinia = {
 				b_litomysl = {}
 				b_zamberk = {}
 				b_policka = {}
-				b_jihlava = {}
+				b_holice = {}
 				b_pelhrimov = {}
 				b_chrudim = {}
 			}
@@ -10508,7 +10504,6 @@ e_slavinia = {
 				color={ 214 145 111 }
 				color2={ 255 255 255 }
 
-				holy_site = baltic_pagan_reformed
 				holy_site = veles
 				
 				b_drohiczyn = {
@@ -14299,8 +14294,6 @@ e_russia = {
 						
 				holy_site = slavic_pagan
 				holy_site = slavic_pagan_reformed
-				holy_site = finnish_pagan
-				holy_site = finnish_pagan_reformed
 				holy_site = sol_norse
 				holy_site = saule
 				holy_site = northern_sun_reformed
@@ -14310,9 +14303,7 @@ e_russia = {
 				holy_site = mani_slavic_reformed
 				holy_site = rod
 				holy_site = slavic_christian
-				holy_site = slavic_christian_reformed
-				holy_site = slavic_pagan
-				holy_site = slavic_pagan_reformed
+				holy_site = slavic_christian_reformeds
 				holy_site = svaroh
 				holy_site = svetovid
 				holy_site = tengri_rod_reformed
@@ -22387,7 +22378,7 @@ e_france = {
 				b_mantes = {}
 				b_pontoise = {}
 				b_harcourt = {}
-				b_gisors = {}
+				b_authevernes = {}
 				b_andely = {}
 				b_ivry = {}
 				b_abbayedemortemer = {}
@@ -22416,14 +22407,14 @@ e_france = {
 			c_avranches = {
 				color = { 77 30 232 }
 				
-				b_caen = {}
+				b_cherbourg = {}
+				b_reville = {}
 				b_coutances = {}
 				b_bayeux = {}
 				b_avranches = {}
 				b_mortain = {}
 				b_domfront = {}
 				b_barfleur = {}
-				b_cherbourg = {}
 			}
 			c_caen = {	#NEW
 				color={ 90 27 240 }
@@ -22431,7 +22422,7 @@ e_france = {
 				
 				b_caen = {
 				}
-				b_domfront = {
+				b_cabourg = {
 				}
 				b_vire = {
 				}
@@ -22440,6 +22431,8 @@ e_france = {
 				b_jurques = {
 				}
 				b_villers-bocage = {
+				}
+				b_argences = {
 				}
 			}
 		}
@@ -22494,14 +22487,13 @@ e_france = {
 			c_chartres = {
 				color = { 98 36 238 }
 				
-				b_chateaudun = {}
 				b_chartres = {}
+				b_bonneval = {}
 				b_dreux = {}
 				b_nogent = {}
 				b_gallardon = {}
 				b_epernon = {}
-				b_bonneval = {}
-				b_tiron = {}
+				b_luisant = {}
 			}
 			c_dunois = {	#NEW
 				color={ 83 45 215 }
@@ -22509,17 +22501,17 @@ e_france = {
 				
 				b_chateaudun = {
 				}
-				b_freteval = {
+				b_moleans = {
 				}
 				b_tiron = {
 				}
 				b_cloyes = {
 				}
-				b_bonneval = {
-				}
 				b_patay = {
 				}
 				b_marchenoir = {
+				}
+				b_brou = {
 				}
 			}
 		}
@@ -22586,7 +22578,7 @@ e_france = {
 				
 				b_sancerre = {
 				}
-				b_gien = {
+				b_boulleret = {
 				}
 				b_cosne = {
 				}
@@ -22652,7 +22644,7 @@ e_france = {
 				}
 				b_senonches = {
 				}
-				b_verneuil = {
+				b_mayenne = {
 				}
 				b_longny = {
 				}
@@ -22662,7 +22654,7 @@ e_france = {
 				
 				b_lavardin = {}
 				b_vendome = {}
-				b_cloyes = {}
+				b_crucheray = {}
 				b_freteval = {}
 				b_chateaurenault = {}
 				b_montoire = {}
@@ -24687,7 +24679,7 @@ e_spain = {
 
 				b_almada = {}
 				b_palmela = {}
-				b_setubal = {}
+				b_batalha = {}
 				b_sesimbra = {}
 				b_alcochete = {}
 				b_pegoes = {}
@@ -25783,7 +25775,7 @@ e_spain = {
 			c_granada = {
 				color = { 127 248 10 }
 				
-				b_jaen = {}
+				b_martos = {}
 				b_granada = {}
 				b_elvira = {}
 				b_baeza = {}
@@ -26057,8 +26049,8 @@ e_spain = {
 				color2={ 255 255 255 }
 
 				b_alcala = {}
-				b_siguenza = {}
-				b_guadalajara = {}
+				b_siguenza1 = {}
+				b_montequinto = {}
 				b_burgo_de_santiuste = {}
 				b_villavieja = {}
 				b_segontia = {}
@@ -26317,8 +26309,6 @@ e_arabia = {
 			c_hajar = { # Suhar/Suhár
 				color={ 98 201 7 }
 				color2={ 255 255 255 }
-				
-				holy_site = ibadi
 				
 				b_suhar = {
 				}
@@ -26634,7 +26624,6 @@ e_arabia = {
 					holy_site = baal_monotheistic_reformed
 					holy_site = sol_islam
 					holy_site = sol_islam_reformed
-					holy_site = nyame
 			
 				b_tophel = {}
 				b_petra = {
@@ -27489,6 +27478,60 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_kellia = {
 				}
 			}
+			c_taposiris_megale = {
+				color={ 10 147 63 }
+				color2={ 255 255 255 }
+				
+				hellenistic = "Taposiris Megale"
+				greek = "Taposiris Megale"
+				roman = "Taposiris Magna"
+				nubian = "Per-Wesir"
+				egyptian_arabic = "Abousir"
+				bedouin_arabic = "Abousir"
+				maghreb_arabic = "Abousir"
+				levantine_arabic = "Abousir"
+				andalusian_arabic = "Abousir"
+				
+				b_skiathis = {
+				}
+				b_taposiris = {
+					hellenistic = "Taposiris Megale"
+					greek = "Taposiris Megale"
+					roman = "Taposiris Magna"
+					nubian = "Per-Wesir"
+					egyptian_arabic = "Abousir"
+					bedouin_arabic = "Abousir"
+					maghreb_arabic = "Abousir"
+					levantine_arabic = "Abousir"
+					andalusian_arabic = "Abousir"
+				}
+				b_osiris = {
+				}
+				b_maroetisium = {
+					hellenistic = "Buto"
+					greek = "Buto"
+					roman = "Butus"
+					egyptian_arabic = "Ibtu"
+					bedouin_arabic = "Abtu"
+					maghreb_arabic = "Abtu"
+					levantine_arabic = "Abtu"
+					andalusian_arabic = "Abtu"
+				}
+				b_abusir = {
+				}
+				b_cleopatria = {
+				}
+				b_khoiak = {
+					hellenistic = "Etko"
+					greek = "Etko"
+					nubian = "Tajo"
+					egyptian_arabic = "Idku"
+					bedouin_arabic = "Edku"
+					maghreb_arabic = "Edku"
+					levantine_arabic = "Edku"
+					andalusian_arabic = "Edku"
+				}
+			}
 			c_rosetta = {
 				color={ 168 54 227 }
 				color2={ 255 255 255 }
@@ -27702,9 +27745,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			c_tanis = {
 				color={ 168 24 222 }
 				color2={ 255 255 255 }
-				
-				holy_site = set
-				holy_site = set_reformed
 				
 				nubian = "Djani"
 				
@@ -29151,7 +29191,7 @@ e_maghreb = {
 				
 				b_biskra = {}
 				b_batna = {}
-				b_khenchela = {}
+				b_kais = {}
 				b_sidiokba = {}
 				b_nebka = {}
 				b_bigou = {}
@@ -29165,7 +29205,7 @@ e_maghreb = {
 				b_asir_yasir = {}
 				b_asir_banya = {}
 				b_sidiheg = {}
-				b_roumana = {}
+				b_dimmidi = {}
 				b_sidinhar = {}
 				b_mouddat = {} # Fictional, for prosperity
 				b_iboutarene = {} # Fictional, for prosperity
@@ -29699,7 +29739,7 @@ e_maghreb = {
 				b_tala = {}
 				b_maydara = {}
 				b_maskiyana = {}
-				b_kasserine = {}
+				b_pupput = {}
 				b_khenchela = {}
 			}
 		}
@@ -29872,8 +29912,7 @@ e_maghreb = {
 				color2 = { 255 255 255 }
 			
 				b_kairouan = {}
-				b_gafsa = {}
-				b_tozeur = {}
+				b_jimah = {}
 				b_sidibouzid = {}
 				b_haffouz = {}
 				b_chebika = {}
@@ -30070,10 +30109,9 @@ e_maghreb = {
 				
 				b_tubirett = {}
 				b_msila = {}
-				b_sidiheg = {}
 				b_roumana = {}
 				b_ainzia = {}
-				b_sidinhar = {}
+				b_bousaada = {}
 				b_beneldir = {}
 				b_bordjelcaid = {}
 			}
@@ -31058,16 +31096,6 @@ e_kush = {
 				b_ad_dukaydik = {} # Fictional - For Prosperity
 				b_masalat = {} # Fictional - For Prosperity
 			}
-			c_bayuda = {
-				color = { 78 152 99 }
-			
-				b_bayuda = {}
-				b_marawi = {}
-				b_ghazali = {}
-				b_korti = {}
-				b_keheilli = {}
-				b_karima = {}
-			}
 		}
 	}
 	
@@ -31130,13 +31158,13 @@ e_kush = {
 
 				b_napata = {
 				}
-				b_marawi = {
+				b_marawi1 = {
 				}
-				b_ghazali = {
+				b_timinar = {
 				}
 				b_kanisah = {
 				}
-				b_korti = {
+				b_korti1 = {
 				}
 				b_keheilli = {
 				}
@@ -31254,9 +31282,9 @@ e_kush = {
 			c_hayya = {
 				color = { 206 38 101 }
 			
-				b_kanisah = {}
+				b_haiya = {}
+				b_derudeb = {}
 				b_affat = {}
-				b_gabriya = {}
 				b_abudis = {}
 				b_ummmardi = {}
 			}
@@ -31276,8 +31304,8 @@ e_kush = {
 				b_marawi = {}
 				b_ghazali = {}
 				b_korti = {}
-				b_keheilli = {}
-				b_karima = {}
+				b_kereiti = {}
+				b_sanam = {}
 			}
 		}			
 	}
@@ -32035,7 +32063,7 @@ e_britannia = {
 				b_northumberland = {}
 				b_morpeth = {}
 				b_wilfrith = {}
-				b_coria = {}
+				b_coria1 = {}
 				b_newcastle = {}
 			}
 			c_lindisfarne = {
@@ -35654,7 +35682,7 @@ e_india = {
 				b_kalra_kalan = {}
 				b_sheikh_pur = {}
 				b_sook_kalan = {}
-				b_daudpur = {}
+				b_mansehra = {}
 				b_ranewal_syedan = {}
 				b_jalalpur_jattan = {}
 				b_lakhanwal_khas = {}
@@ -35792,7 +35820,7 @@ e_india = {
 				color={ 190 100 41 }
 				color2={ 255 255 255 }
 				
-				b_pancapura = {
+				b_hakrra = {
 				}
 				b_dipalpur = {
 				}
@@ -35813,7 +35841,7 @@ e_india = {
 				
 				b_bhera = {
 				}
-				b_rampur = {
+				b_ubhandapura = {
 				}
 				b_katasraj = {
 				}
@@ -36062,7 +36090,7 @@ e_india = {
 				b_jacobabad = {}
 				b_sukkur = {}
 				b_baiji_purani = {}
-				b_ghotki = {}
+				b_sindhigrama = {}
 				b_khandh_kot = {}
 			}
 			c_aror = {
@@ -36488,7 +36516,7 @@ e_india = {
 				}
 				b_bhadran = {
 				}
-				b_sanand = {
+				b_satrunavha = {
 				}
 			}
 			c_sarasvata_mandala = {
@@ -36536,7 +36564,7 @@ e_india = {
 				color = { 240 253 95 }
 					holy_site = jain
 				
-				b_khetaka = {}
+				b_hastakavapra = {}
 				b_stambhatirtha = {}
 				b_shatrunjaya = {
 				}
@@ -36583,7 +36611,7 @@ e_india = {
 				b_bhrgukaccha = {}
 				b_anand = {}
 				b_bharuch = {}
-				b_godhra = {}
+				b_minnagara = {}
 				b_dabhoi = {}
 				b_naswadi = {}
 				b_dediapada = {}
@@ -36706,7 +36734,7 @@ e_india = {
 				}
 				b_ghaneraov = {
 				}
-				b_naddula = {
+				b_lanida = {
 				}
 			}
 			c_godwad = {
@@ -36819,7 +36847,7 @@ e_india = {
 					holy_site = bud_zor
 				
 				b_ajayameru = {}
-				b_mandavyapura = {}
+				b_didwana = {}
 				b_pushkar = {
 				}
 				b_kanas = {}
@@ -37080,7 +37108,7 @@ e_india = {
 				color = { 195 172 121 }
 
 				b_dhara = {}
-				b_dadhipadra = {}
+				b_bhal = {}
 				b_tirla = {}
 				b_deendayalpuram = {}
 				b_banderi = {}
@@ -37526,7 +37554,7 @@ e_bengal = {
 			c_bikrampur = {
 				color = { 33 178 197 }
 
-				b_vikramapura = {}
+				b_akanagar = {}
 				b_dhaka = {}
 				b_kamrangirchar = {}
 				b_shyampur = {}
@@ -37557,7 +37585,7 @@ e_bengal = {
 			c_nabadwipa = {
 				color = { 43 168 197 }
 
-				b_candradvipa = {}
+				b_gongi = {}
 				b_suvarnagram = {}
 				b_arambag = {}
 				b_sonadanga = {}
@@ -37750,7 +37778,7 @@ e_bengal = {
 				}
 				b_kahalgaon = {
 				}
-				b_campa = {
+				b_tarapith = {
 				}
 				b_vikramasila = {
 				}
