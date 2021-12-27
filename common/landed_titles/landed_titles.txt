@@ -8690,8 +8690,6 @@ e_scandinavia = {
 				}
 				b_fortun = {
 				}
-				b_aurland = {
-				}
 				b_kvamsoy = {
 				}
 				b_vik = {
@@ -8890,8 +8888,6 @@ e_scandinavia = {
 					# norse = "Filðir"
 				}
 				b_kinn = {
-				}
-				b_audunborg = {
 				}
 				b_dale = {
 				}
@@ -12234,6 +12230,73 @@ e_russia = {
 		tengri_confucian_reformed = 500
 		tengri_mani_reformed = 1000
 		
+		d_turov = {
+			color = { 166 85 87 }
+			
+			capital = 552 # Turov
+			
+			# ilmenian = "Dregovichia"
+			
+			c_turov = {
+				color={ 135 160 100 }
+				color2={ 255 255 255 }
+				
+				b_turov = {
+				}
+				b_davyd-haradok = {
+				}
+				b_stolin = {
+				}
+				b_alsany = {
+				}
+				b_stachava = {
+				}
+				b_fiadory = {
+				}
+				b_sarny = {
+				}
+			}
+			
+			c_pinsk = {
+				color={ 120 155 80 }
+				color2={ 255 255 255 }
+				
+				b_pinsk = {
+				}
+				b_ivanava = {
+				}
+				b_luninets = {
+				}
+				b_drahichyn = {
+				}
+				b_biaroza = {
+				}
+				b_hantsavichy = {
+				}
+				b_motal = {
+				}
+			}
+			
+			c_korosten = {
+				color={ 111 111 31 }
+				color2={ 255 255 255 }
+				
+				b_korosten = {
+				}
+				b_olevsk = {
+				}
+				b_ovruch = {
+				}
+				b_malyn = {
+				}
+				b_chernobyl = {
+				}
+				b_narodytchi = {
+				}
+				b_louhyny = {
+				}
+			}
+		}
 		d_volhynia = {
 			color = { 204 155 121 }
 			
@@ -12408,6 +12471,69 @@ e_russia = {
 				b_rivne = {
 				}
 				b_pochaiv = {
+				}
+			}
+		}
+		d_pereyaslavl = {
+			color = { 66 166 201 }
+			
+			capital = 555 # Pereyaslavl
+		
+			c_pereyaslavl = {
+				color={ 235 205 118 }
+				color2={ 255 255 255 }
+				
+				b_pereyaslavl = {
+				}
+				b_boryspil = {
+				}
+				b_kozelets = {
+				}
+				b_baryshivka = {
+				}
+				b_yahotyn = {
+				}
+				b_velyka_dymerka = {
+				}
+				b_berezan = {
+				}
+			}
+			c_voin = {
+				color={ 230 200 110 }
+				color2={ 255 255 255 }
+				
+				b_voin = {
+				}
+				b_zolotonosha = {
+				}
+				b_drabiv = {
+				}
+				b_chornobai = {
+				}
+				b_irkliiv = {
+				}
+				b_bohodukhivka = {
+				}
+				b_pishchane = {
+				}
+			}
+			c_hradyzk = {
+				color={ 225 195 105 }
+				color2={ 255 255 255 }
+				
+				b_hradyzk = {
+				}
+				b_poltava = {
+				}
+				b_khorol = {
+				}
+				b_lubny = {
+				}
+				b_kremenchuk = {
+				}
+				b_myrhorod = {
+				}
+				b_kobeliaky = {
 				}
 			}
 		}
@@ -13151,74 +13277,6 @@ e_russia = {
 			}
 		}
 		
-		d_turov = {
-			color = { 166 85 87 }
-			
-			capital = 552 # Turov
-			
-			# ilmenian = "Dregovichia"
-			
-			c_turov = {
-				color={ 135 160 100 }
-				color2={ 255 255 255 }
-				
-				b_turov = {
-				}
-				b_davyd-haradok = {
-				}
-				b_stolin = {
-				}
-				b_alsany = {
-				}
-				b_stachava = {
-				}
-				b_fiadory = {
-				}
-				b_sarny = {
-				}
-			}
-			
-			c_pinsk = {
-				color={ 120 155 80 }
-				color2={ 255 255 255 }
-				
-				b_pinsk = {
-				}
-				b_ivanava = {
-				}
-				b_luninets = {
-				}
-				b_drahichyn = {
-				}
-				b_biaroza = {
-				}
-				b_hantsavichy = {
-				}
-				b_motal = {
-				}
-			}
-			
-			c_korosten = {
-				color={ 111 111 31 }
-				color2={ 255 255 255 }
-				
-				b_korosten = {
-				}
-				b_olevsk = {
-				}
-				b_ovruch = {
-				}
-				b_malyn = {
-				}
-				b_chernobyl = {
-				}
-				b_narodytchi = {
-				}
-				b_louhyny = {
-				}
-			}
-		}
-		
 		d_vitebsk = {
 			color = { 196 33 55 }
 			
@@ -13507,69 +13565,6 @@ e_russia = {
 				b_ploskosh = {
 				}
 				b_okhvat = {
-				}
-			}
-		}
-		d_pereyaslavl = {
-			color = { 66 166 201 }
-			
-			capital = 555 # Pereyaslavl
-		
-			c_pereyaslavl = {
-				color={ 235 205 118 }
-				color2={ 255 255 255 }
-				
-				b_pereyaslavl = {
-				}
-				b_boryspil = {
-				}
-				b_kozelets = {
-				}
-				b_baryshivka = {
-				}
-				b_yahotyn = {
-				}
-				b_velyka_dymerka = {
-				}
-				b_berezan = {
-				}
-			}
-			c_voin = {
-				color={ 230 200 110 }
-				color2={ 255 255 255 }
-				
-				b_voin = {
-				}
-				b_zolotonosha = {
-				}
-				b_drabiv = {
-				}
-				b_chornobai = {
-				}
-				b_irkliiv = {
-				}
-				b_bohodukhivka = {
-				}
-				b_pishchane = {
-				}
-			}
-			c_hradyzk = {
-				color={ 225 195 105 }
-				color2={ 255 255 255 }
-				
-				b_hradyzk = {
-				}
-				b_poltava = {
-				}
-				b_khorol = {
-				}
-				b_lubny = {
-				}
-				b_kremenchuk = {
-				}
-				b_myrhorod = {
-				}
-				b_kobeliaky = {
 				}
 			}
 		}
@@ -22436,8 +22431,6 @@ e_france = {
 				
 				b_caen = {
 				}
-				b_bayeux = {
-				}
 				b_domfront = {
 				}
 				b_vire = {
@@ -25809,7 +25802,6 @@ e_spain = {
 				b_segura = {}
 				b_tiscar = {}
 				b_andujar = {}
-				b_baeza = {}
 			}
 			c_almeria = {
 				color = { 248 245 18 }
@@ -31123,8 +31115,6 @@ e_kush = {
 				}
 				b_kawa = {
 				}
-				b_affat = {
-				}
 				b_qubban = {
 				}
 				b_gabriya = {
@@ -36406,8 +36396,6 @@ e_india = {
 				color2={ 255 255 255 }
 				
 				b_sripatha = {
-				}
-				b_bayana = {
 				}
 				b_dhavalapuri = {
 				}
