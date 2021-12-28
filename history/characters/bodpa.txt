@@ -318,9 +318,6 @@
 	576.1.1={
 		birth=yes
 	}
-	604.1.1={
-		add_spouse=247074
-	}
 	619.1.1={
 		death=yes
 	}
@@ -335,13 +332,6 @@
 	mother=247074
 	605.1.1={
 		birth=yes
-	}
-	622.1.1={
-		add_spouse=247080
-		create_bloodline = {
-			type = songtsen_gampo
-			has_dlc = "Holy Fury"
-		}
 	}
 	625.1.1={
 		effect={ROOT={add_consort=c_247078}}
@@ -522,9 +512,6 @@
 		religion="bon"
 		
 	}
-	684.1.1={
-		add_spouse = 247093
-	}
 	685.1.1={
 		effect={ROOT={add_consort=c_247094}}
 	}
@@ -650,9 +637,6 @@
 	}
 	755.1.1={
 		name = "Trisong Detsen"
-	}
-	758.1.1={
-		add_spouse = 247106
 	}
 	760.1.1={
 		effect={ROOT={add_consort=c_247108}}
@@ -813,9 +797,6 @@
 	}
 	799.6.1={
 		name="Tridé Songtsen"
-	}
-	786.1.1={
-		add_spouse = 252020
 	}
 	807.1.1={
 		effect={ROOT={add_consort=c_247121}}

@@ -10378,7 +10378,6 @@ e_slavinia = {
 				russian = Praga
 				# ilmenian = Praha
 				# severian = Praha
-				volhynian = Praha
                 
                 b_praha = {
 					# norse = Prag
@@ -10400,7 +10399,6 @@ e_slavinia = {
 					russian = Praha
 					# ilmenian = Praha
 					# severian = Praha
-					volhynian = Praha
                 }
                 b_brevnov = {
                 }
@@ -14303,7 +14301,7 @@ e_russia = {
 				holy_site = mani_slavic_reformed
 				holy_site = rod
 				holy_site = slavic_christian
-				holy_site = slavic_christian_reformeds
+				holy_site = slavic_christian_reformed
 				holy_site = svaroh
 				holy_site = svetovid
 				holy_site = tengri_rod_reformed
@@ -21842,8 +21840,6 @@ e_pannonia = {
 			
 			capital = 1638 # Iasi
 			
-			volhynian = "Tivertsians"
-			
 			c_iasi = {
 				color={ 203 222 145 }
 				color2={ 255 255 255 }
@@ -27477,6 +27473,44 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_kellia = {
 				}
 			}
+			c_skiathis = {
+				color={ 192 201 155 }
+				color2={ 255 255 255 }
+				
+				hellenistic = "Skiathis"
+				greek = "Skiathis"
+				roman = "Skiathum"
+				nubian = "Skiathis"
+				egyptian_arabic = "Sadat"
+				bedouin_arabic = "Sadat"
+				maghreb_arabic = "Sadat"
+				levantine_arabic = "Sadat"
+				andalusian_arabic = "Sadat"
+				
+				b_skiathis1 = {
+				}
+				b_letopolis = {
+					hellenistic = "Taposiris Megale"
+					greek = "Taposiris Megale"
+					roman = "Taposiris Magna"
+					nubian = "Per-Wesir"
+					egyptian_arabic = "Abousir"
+					bedouin_arabic = "Abousir"
+					maghreb_arabic = "Abousir"
+					levantine_arabic = "Abousir"
+					andalusian_arabic = "Abousir"
+				}
+				b_marwah = {
+				}
+				b_nubariyah = {
+				}
+				b_nasif = {
+				}
+				b_shaghanibah = {
+				}
+				b_tabarani = {
+				}
+			}
 			c_taposiris_megale = {
 				color={ 10 147 63 }
 				color2={ 255 255 255 }
@@ -27507,28 +27541,12 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_osiris = {
 				}
 				b_maroetisium = {
-					hellenistic = "Buto"
-					greek = "Buto"
-					roman = "Butus"
-					egyptian_arabic = "Ibtu"
-					bedouin_arabic = "Abtu"
-					maghreb_arabic = "Abtu"
-					levantine_arabic = "Abtu"
-					andalusian_arabic = "Abtu"
 				}
 				b_abusir = {
 				}
 				b_cleopatria = {
 				}
 				b_khoiak = {
-					hellenistic = "Etko"
-					greek = "Etko"
-					nubian = "Tajo"
-					egyptian_arabic = "Idku"
-					bedouin_arabic = "Edku"
-					maghreb_arabic = "Edku"
-					levantine_arabic = "Edku"
-					andalusian_arabic = "Edku"
 				}
 			}
 			c_rosetta = {
@@ -27974,13 +27992,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_ahnas = {
 					nubian = "Ahnes"
 				}
-				b_bahnasa = {
-					egyptian_arabic = "al-Bahnasa"
-					bedouin_arabic = "al-Bahnasa"
-					maghreb_arabic = "al-Bahnasa"
-					levantine_arabic = "al-Bahnasa"
-					andalusian_arabic = "al-Bahnasa"
-					nubian = "Pemdje"
+				b_karanis = {
 				}
 				b_beni_suef = {
 					nubian = "Panisof"
@@ -28007,6 +28019,43 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_ibshawai = { # Fictional, for prosperity
 				}
 				b_sineita = { # Fictional, for prosperity
+				}
+			}
+			c_oxyrhynchos = {
+				color={ 44 22 209 }
+				color2={ 255 255 255 }
+				
+				greek = "Oxyrhynchos"
+				hellenistic = "Oxyrrhynchoupolis"
+				roman = "Oxyrhynchos"
+				egyptian_arabic = "al-Bahnasa"
+				bedouin_arabic = "al-Bahnasa"
+				maghreb_arabic = "al-Bahnasa"
+				levantine_arabic = "al-Bahnasa"
+				andalusian_arabic = "al-Bahnasa"
+				nubian = "Ptimenhour"
+				
+				b_oxyrhynchos = {
+					greek = "Oxyrhynchos"
+					hellenistic = "Oxyrrhynchoupolis"
+					roman = "Oxyrhynchos"
+					nubian = "Ptimenhour"
+				}
+				b_bahnasa = {
+					egyptian_arabic = "al-Bahnasa"
+					bedouin_arabic = "al-Bahnasa"
+					maghreb_arabic = "al-Bahnasa"
+					levantine_arabic = "al-Bahnasa"
+					andalusian_arabic = "al-Bahnasa"
+					nubian = "Pemdje"
+				}
+				b_qays = {
+				}
+				b_baqi = {}
+				b_bani_mazar = {}
+				b_matay = {
+				}
+				b_dahrut = {
 				}
 			}
 		}
@@ -31282,7 +31331,7 @@ e_kush = {
 				color = { 206 38 101 }
 			
 				b_haiya = {}
-				b_derudeb = {}
+				b_darudeb = {}
 				b_affat = {}
 				b_abudis = {}
 				b_ummmardi = {}
@@ -36676,7 +36725,7 @@ e_india = {
 				color={ 144 47 20 }
 				color2={ 255 255 255 }
 				
-				b_vikramapura = {
+				b_akanagar = {
 				}
 				b_kolayat = {
 				}
@@ -37553,7 +37602,7 @@ e_bengal = {
 			c_bikrampur = {
 				color = { 33 178 197 }
 
-				b_akanagar = {}
+				b_vikramapura = {}
 				b_dhaka = {}
 				b_kamrangirchar = {}
 				b_shyampur = {}
@@ -37777,7 +37826,7 @@ e_bengal = {
 				}
 				b_kahalgaon = {
 				}
-				b_tarapith = {
+				b_tarapith1 = {
 				}
 				b_vikramasila = {
 				}

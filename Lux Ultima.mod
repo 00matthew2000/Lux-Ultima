@@ -6,6 +6,7 @@ replace_path = common/buildings
 replace_path = common/societies
 replace_path = common/artifacts
 replace_path = common/artifact_spawns
+replace_path = common/scripted_triggers
 replace_path = "history/characters"
 replace_path = "history/technology"
 replace_path = "history/provinces"

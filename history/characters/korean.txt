@@ -1516,7 +1516,7 @@
 	religion="shingyo"
 	culture="silla"
 	add_trait="seonggol"
-#            real_father=1000450209
+#            	real_father=1000450209
 	mother=1000450066
 	47.1.1={
 		birth=yes
@@ -3836,6 +3836,23 @@
 		birth=yes
 	}
 	102.1.1={
+		death=yes
+	}
+}
+1000450212 = {
+	name="Hemavati"
+	female=yes
+	religion="hindu"
+	culture="hindustani"
+	32.1.1={
+		birth=yes
+	}
+	48.1.1={
+		name="Hwangok"
+		dynasty=1000155013 #Gimhae Heo
+		religion="shingyo"
+	}
+	123.1.1={
 		death=yes
 	}
 }
