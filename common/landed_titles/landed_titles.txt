@@ -20139,7 +20139,6 @@ e_sassanid = {
 				color={ 175 140 30 }
 				color2={ 255 255 255 }
 				
-				holy_site = buddhist
 				
 				b_bamiyan = {
 				}
@@ -41929,38 +41928,6 @@ d_jurchen_band = { # Mid-Low Merc
 	mercenary_type = jurchen_band_composition
 }
 
-d_tangut_low = { # Small Merc
-	color = { 30 170 50 }
-	color2 = { 255 255 255 }
-
-	capital = 1503 # Jyekundo
-	hire_range = 800
-	
-	# Parent Religion 
-	religion = buddhist
-	
-	# Parent Culture
-	culture = tangut
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = tangut_low_composition
-}
-
 d_bodpa_low = { # Small Merc
 	color = { 30 170 50 }
 	color2 = { 255 255 255 }
@@ -42114,62 +42081,6 @@ d_persian_caravan_guards = {
 	strength_growth_per_century = 1.00
 	
 	mercenary_type = persian_caravan_guards_composition
-}
-
-d_silk_road_sentinels = {
-	color = { 167 125 135 }
-	color2 = { 255 255 255 }
-
-	capital = 1180 # Udabhanda
-	
-	religion = buddhist
-	culture = panjabi
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.00
-	
-	mercenary_type = silk_road_sentinels_composition
-}
-
-d_turkic_guard = {
-	color = { 167 125 135 }
-	color2 = { 255 255 255 }
-
-	capital = 900 # Syr Darya
-	
-	religion = khurmazta
-	culture = turkish
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.00
-	
-	mercenary_type = turkic_guards_composition
 }
 
 e_china_west_governor = { #placeholder for the Chinese Empire Western Governor
