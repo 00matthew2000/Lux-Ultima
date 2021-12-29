@@ -639,7 +639,6 @@ evaluate_extra_duel_result_score_effect = { # [SPECIAL CIRCUMSTANCES - OPTIONAL]
 				OR = {
 					ROOT = { has_religion_feature = religion_feature_zun }
 					ROOT = { has_religion_feature = religion_holy_family }
-					# ROOT = { religion = messalian }
 					ROOT = { religion = zoroastrian }
 					NOT = { is_close_relative = ROOT }
 				}
