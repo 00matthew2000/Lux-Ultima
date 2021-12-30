@@ -771,14 +771,14 @@ k_aztec_rel = {
 	title = HUEI_TLAMACAZQUI
 	foa = "HEAD_PRIEST_FOA"
 	short_name = yes
-	religion = aztec
+	religion = quetzal
 	culture =  nahuatl
 	
 	# Always exists
 	landless = yes
 	
 	# Controls a religion
-	controls_religion = aztec
+	controls_religion = quetzal
 	
 	# Cannot be held as a secondary title
 	primary = yes
