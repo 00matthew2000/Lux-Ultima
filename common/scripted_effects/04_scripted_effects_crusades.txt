@@ -417,18 +417,6 @@ setting_up_the_crusader_kingdom_effect = {
 			40 = { give_nickname = nick_the_sword_of_god }
 		}
 	}
-	if = {
-		limit = {
-			is_female = no
-		}
-		add_trait = crusader_king
-	}
-	if = {
-		limit = {
-			is_female = yes
-		}
-		add_trait = crusader_queen
-	}
 	character_event = { id = HFP.41090 days = 1 }
 	character_event = { id = HFP.41090 days = 3 }
 

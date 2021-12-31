@@ -521,7 +521,7 @@ character_event = { # Sympathy for founder group
 			}
 			event_target:target_bloodline_founder = {
 				NOR = {
-					religion = pagan
+					religion = norse_pagan
 					religion = hellenic_pagan
 				}
 			}
@@ -4928,7 +4928,7 @@ narrative_event = {
 				}		
 			}
 		}
-		set_bloodline_founder_religion_flag_effect = yes
+		
 		ai_chance = { 
 			factor = 100
 		}
@@ -5587,7 +5587,7 @@ narrative_event = {
 				}		
 			}
 		}
-		set_bloodline_founder_religion_flag_effect = yes
+		
 		ai_chance = { 
 			factor = 100
 		}

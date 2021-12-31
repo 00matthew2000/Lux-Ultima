@@ -99,7 +99,7 @@ roman_emperor_male = {
 	active = {
 		OR = {
 			religion_group = christian
-			religion_openly_hellenic_or_reformed_trigger = yes
+			##religion_openly_hellenic_or_reformed_trigger = yes = yes = yes
 		}
 	}
 }
@@ -117,7 +117,7 @@ roman_emperor_female = {
 	active = {
 		OR = {
 			religion_group = christian
-			religion_openly_hellenic_or_reformed_trigger = yes
+			##religion_openly_hellenic_or_reformed_trigger = yes = yes = yes
 		}
 	}
 }
@@ -136,7 +136,7 @@ phalaris_male = {
 		OR = {
 			culture_group = byzantine
 			culture_group = latin
-			religion_openly_hellenic_or_reformed_trigger = yes
+			##religion_openly_hellenic_or_reformed_trigger = yes = yes = yes
 		}
 	}
 }
@@ -160,7 +160,7 @@ teuta_female = {
 		NOR = {
 			culture_group = byzantine
 			culture = roman
-			religion_openly_hellenic_or_reformed_trigger = yes
+			##religion_openly_hellenic_or_reformed_trigger = yes = yes = yes
 		}
 	}
 }
