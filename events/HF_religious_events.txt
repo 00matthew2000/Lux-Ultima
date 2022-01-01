@@ -94,8 +94,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -105,8 +105,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -797,8 +797,8 @@ character_event = {
 	trigger = { 
 		OR = { 
 			has_religion_feature = religion_haruspicy 
-			#religion = hellenic_pagan
-			#religion = hellenic_pagan_reformed
+			religion_group = graecoroman_group
+			religion_group = indohelen_group
 		} 
 		NOR = {
 			has_character_modifier = divination_crit_success
@@ -869,8 +869,8 @@ character_event = {
 	trigger = { 
 		OR = { 
 			has_religion_feature = religion_haruspicy 
-			#religion = hellenic_pagan
-			#religion = hellenic_pagan_reformed
+			religion_group = graecoroman_group
+			religion_group = indohelen_group
 		} 
 		NOR = {
 			has_character_modifier = divination_crit_success
@@ -911,8 +911,8 @@ character_event = {
 		war = yes
 		OR = { 
 			has_religion_feature = religion_haruspicy 
-			#religion = hellenic_pagan
-			#religion = hellenic_pagan_reformed
+			religion_group = graecoroman_group
+			religion_group = indohelen_group
 		} 
 		NOR = {
 			has_character_modifier = divination_crit_success
@@ -1991,7 +1991,7 @@ narrative_event = {
 	option = {
 		name = EVTOPTA_HO_100
 		trigger = {
-			#religion = bon_reformed
+			religion = bon_reformed
 		}
 	}
 	option = {
@@ -2899,10 +2899,10 @@ character_event = {
 		# name = EVTOPTCHF23028
 		# trigger = { 
 			# OR = { 
-				# #religion = hellenic_pagan
-				# #religion = hellenic_pagan_reformed
-				# secret_#religion = hellenic_pagan
-				# secret_#religion = hellenic_pagan_reformed
+				# religion_group = graecoroman_group
+				# religion_group = indohelen_group
+				# secret_religion_group = graecoroman_group
+				# secret_religion_group = indohelen_group
 			# }  
 		# } 
 		# tiered_piety_reward_effect = yes
@@ -4219,7 +4219,7 @@ character_event = {
 	option = {
 		name = EVTOPTAHF23207
 		trigger = { 
-			OR = { #religion = aztec #religion = aztec_reformed has_religion_feature = religion_ritual_sacrifice } 
+			OR = { religion = quetzal religion = quetzal_reformed has_religion_feature = religion_ritual_sacrifice } 
 			FROM = { location = { NOT = { religion = ROOT } } } #Only if province is of some other religion.
 		}
 		hidden_tooltip = { FROM = { owner = { character_event = { id = HF.23208 } } } } #Notify owner
@@ -4738,8 +4738,8 @@ narrative_event = {
 			is_female = no
 			is_alternate_start = no
 			OR = {
-				#religion = norse_pagan 
-				#religion = norse_pagan_reformed
+				religion = norse_pagan 
+				religion = norse_pagan_reformed
 			}
 		}
 		text = EVTDESCAHF23212
@@ -4749,8 +4749,8 @@ narrative_event = {
 			is_female = yes
 			is_alternate_start = no
 			OR = {
-				#religion = norse_pagan 
-				#religion = norse_pagan_reformed
+				religion = norse_pagan 
+				religion = norse_pagan_reformed
 			}
 		}
 		text = EVTDESCBHF23212
@@ -4760,8 +4760,8 @@ narrative_event = {
 			OR = {
 				is_alternate_start = yes
 				NOR = {
-					#religion = norse_pagan 
-					#religion = norse_pagan_reformed
+					religion = norse_pagan 
+					religion = norse_pagan_reformed
 				}
 			}
 		}
@@ -4849,7 +4849,7 @@ narrative_event = {
 			}
 			
 			if = { 
-				limit = { OR = { #religion = norse_pagan religion  = norse_pagan_reformed } }
+				limit = { OR = { religion = norse_pagan religion  = norse_pagan_reformed } }
 				new_bloodline = {
 					set_description = "bloodline_desc_seaking_bloodline_viking"
 					random_list = { 
@@ -4861,7 +4861,7 @@ narrative_event = {
 				}		
 			}
 			if = { 
-				limit = { NOR = { #religion = norse_pagan religion  = norse_pagan_reformed } }
+				limit = { NOR = { religion = norse_pagan religion  = norse_pagan_reformed } }
 				new_bloodline = {
 					set_description = "bloodline_desc_seaking_bloodline_pirate"
 					random_list = { 
@@ -4880,7 +4880,7 @@ narrative_event = {
 			}
 			
 			if = { 
-				limit = { OR = { #religion = norse_pagan religion  = norse_pagan_reformed } }
+				limit = { OR = { religion = norse_pagan religion  = norse_pagan_reformed } }
 				new_bloodline = {
 					set_description = "bloodline_desc_seaking_bloodline_viking"
 					random_list = { 
@@ -4892,7 +4892,7 @@ narrative_event = {
 				}		
 			}
 			if = { 
-				limit = { NOR = { #religion = norse_pagan religion  = norse_pagan_reformed } }
+				limit = { NOR = { religion = norse_pagan religion  = norse_pagan_reformed } }
 				new_bloodline = {
 					set_description = "bloodline_desc_seaking_bloodline_pirate"
 					random_list = { 
@@ -4961,8 +4961,8 @@ narrative_event = {
 		name = EVTOPTAHF23213
 		trigger = { 
 			OR = { 
-				#religion = norse_pagan 
-				#religion = norse_pagan_reformed
+				religion = norse_pagan 
+				religion = norse_pagan_reformed
 				AND = { 
 					has_religion_feature = religion_adventuring 
 					has_religion_feature = religion_seafaring
@@ -4974,8 +4974,8 @@ narrative_event = {
 		name = EVTOPTBHF23213
 		trigger = { 
 			NOR = { 
-				#religion = norse_pagan 
-				#religion = norse_pagan_reformed
+				religion = norse_pagan 
+				religion = norse_pagan_reformed
 				AND = { 
 					has_religion_feature = religion_adventuring 
 					has_religion_feature = religion_seafaring
@@ -6263,7 +6263,7 @@ narrative_event = {
 				has_religion_feature = religion_astrology 
 			}
 			AND = {
-				#religion = hellenic_pagan_reformed #Part of their features.
+				religion_group = indohelen_group #Part of their features.
 				is_alternate_start = no
 			}
 		}
@@ -6700,7 +6700,7 @@ narrative_event = {
 				has_religion_feature = religion_no_leader 
 			}
 			AND = {
-				#religion = hellenic_pagan_reformed #Part of their features.
+				religion_group = indohelen_group #Part of their features.
 				is_alternate_start = no
 				has_religion_feature = religion_no_leader 
 			}
@@ -6938,13 +6938,13 @@ character_event = {
 			NOT = { trait = incapable }
 			OR = { 
 				has_religion_feature = religion_ritual_sacrifice
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 			}
 			OR = { 
 				has_religion_feature = religion_haruspicy
-				#religion = hellenic_pagan
-				#religion = hellenic_pagan_reformed
+				religion_group = graecoroman_group
+				religion_group = indohelen_group
 			}
 		}
 	}
@@ -6965,8 +6965,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -6976,8 +6976,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7387,8 +7387,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7398,8 +7398,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7425,8 +7425,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7436,8 +7436,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7463,8 +7463,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7474,8 +7474,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7501,8 +7501,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7512,8 +7512,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7539,8 +7539,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7550,8 +7550,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7573,8 +7573,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7584,8 +7584,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7611,8 +7611,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7622,8 +7622,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7663,8 +7663,8 @@ character_event = {
 			NOT = { trait = incapable }
 			OR = { 
 				has_religion_feature = religion_ritual_sacrifice
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 			}
 		}
 	}
@@ -7719,8 +7719,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7730,8 +7730,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7745,8 +7745,8 @@ character_event = {
 		NOT = { trait = bloodthirsty_gods_1 }
 		OR = { 
 			has_religion_feature = religion_ritual_sacrifice
-			#religion = aztec
-			#religion = aztec_reformed
+			religion = quetzal
+			religion = quetzal_reformed
 		}
 	}
 
@@ -7788,8 +7788,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7799,8 +7799,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7813,8 +7813,8 @@ character_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_ritual_sacrifice
-			#religion = aztec
-			#religion = aztec_reformed
+			religion = quetzal
+			religion = quetzal_reformed
 		}
 		NOR = { 
 			trait = bloodthirsty_gods_2 
@@ -7867,8 +7867,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7878,8 +7878,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7892,8 +7892,8 @@ character_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_ritual_sacrifice
-			#religion = aztec
-			#religion = aztec_reformed
+			religion = quetzal
+			religion = quetzal_reformed
 		}
 		NOT = { 
 			trait = bloodthirsty_gods_3
@@ -7942,8 +7942,8 @@ narrative_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7953,8 +7953,8 @@ narrative_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -7968,8 +7968,8 @@ narrative_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_ritual_sacrifice
-			#religion = aztec
-			#religion = aztec_reformed
+			religion = quetzal
+			religion = quetzal_reformed
 		}
 		NOT = { 
 			any_owned_bloodline = { # Not already has a Bloodthirsty bloodline.
@@ -8085,8 +8085,8 @@ narrative_event = {
 			OR = {
 				religion = FROM
 				has_religion_feature = religion_ritual_sacrifice
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 			}
 		}
 		text = EVTDESCAHF23435
@@ -8096,8 +8096,8 @@ narrative_event = {
 			NOR = {
 				religion = FROM
 				has_religion_feature = religion_ritual_sacrifice
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 			}
 		}
 		text = EVTDESCBHF23435
@@ -8106,8 +8106,8 @@ narrative_event = {
 		trigger = { 
 			FROM = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -8117,8 +8117,8 @@ narrative_event = {
 		trigger = { 
 			FROM = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -8134,8 +8134,8 @@ narrative_event = {
 			OR = {
 				religion = FROM
 				has_religion_feature = religion_ritual_sacrifice
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 			}
 		}
 	}
@@ -8145,8 +8145,8 @@ narrative_event = {
 			NOR = {
 				religion = FROM
 				has_religion_feature = religion_ritual_sacrifice
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 			}
 		}
 	}
@@ -9761,8 +9761,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -9772,8 +9772,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -9819,8 +9819,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -9830,8 +9830,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -9913,8 +9913,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -9924,8 +9924,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -9985,8 +9985,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -9996,8 +9996,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10013,8 +10013,8 @@ character_event = {
 	trigger = {
 		NOR = {
 			has_religion_feature = religion_ritual_sacrifice
-			#religion = aztec
-			#religion = aztec_reformed
+			religion = quetzal
+			religion = quetzal_reformed
 		}
 	}
 	immediate = {
@@ -10046,8 +10046,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10057,8 +10057,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10074,8 +10074,8 @@ character_event = {
 		trigger  = {  
 			OR = {
 				has_religion_feature = religion_ritual_sacrifice
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 			}
 		}
 		hidden_tooltip  = {  
@@ -10087,8 +10087,8 @@ character_event = {
 		trigger  = {  
 			NOR = {
 				has_religion_feature = religion_ritual_sacrifice
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 			}
 		}
 		hidden_tooltip  = {  
@@ -10162,8 +10162,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10173,8 +10173,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10230,8 +10230,8 @@ character_event = {
 					higher_tier_than = BARON 
 					NOR = { 
 						religion = ROOT  
-						#religion = aztec
-						#religion = aztec_reformed
+						religion = quetzal
+						religion = quetzal_reformed
 						has_religion_feature = religion_ritual_sacrifice
 					}
 				} 
@@ -10331,8 +10331,8 @@ character_event = {
 					higher_tier_than = BARON 
 					NOR = { 
 						religion = ROOT  
-						#religion = aztec
-						#religion = aztec_reformed
+						religion = quetzal
+						religion = quetzal_reformed
 						has_religion_feature = religion_ritual_sacrifice
 					}
 				} 
@@ -10392,11 +10392,11 @@ character_event = {
 					NOR = { 
 						religion = ROOT  
 						AND = { 
-							#religion = aztec
+							religion = quetzal
 							NOT = { has_religion_feature = religion_peaceful }
 						}
 						AND = { 
-							#religion = aztec_reformed
+							religion = quetzal_reformed
 							NOT = { has_religion_feature = religion_peaceful }
 						}
 						has_religion_feature = religion_ritual_sacrifice
@@ -10430,8 +10430,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10441,8 +10441,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10469,8 +10469,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10480,8 +10480,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10508,8 +10508,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				OR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10519,8 +10519,8 @@ character_event = {
 		trigger = { 
 			ROOT = { 
 				NOR = {  
-					#religion = aztec
-					#religion = aztec_reformed
+					religion = quetzal
+					religion = quetzal_reformed
 				}
 			} 
 		} 
@@ -10534,8 +10534,8 @@ character_event = {
 		name = EVTOPTAHF23465
 		trigger = { 
 			OR = {
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 				has_religion_feature = religion_ritual_sacrifice
 			}
 		}
@@ -10555,8 +10555,8 @@ character_event = {
 		name = EVTOPTBHF23465
 		trigger = { 
 			NOR = {
-				#religion = aztec
-				#religion = aztec_reformed
+				religion = quetzal
+				religion = quetzal_reformed
 				has_religion_feature = religion_ritual_sacrifice
 			}
 		}
@@ -10573,61 +10573,61 @@ character_event = {
 	title = EVTTITLEHF23470
 	desc = { 
 		trigger = { 
-			#religion = norse_pagan
+			religion = norse_pagan
 		} 
 		text = EVTDESCAHF23470
 	}
 	desc = { 
 		trigger = { 
-			#religion = tengri_pagan
+			religion = tengri_pagan
 		} 
 		text = EVTDESCBHF23470
 	}
 	desc = { 
 		trigger = { 
-			#religion = slavic_pagan
+			religion_group = slavic_group
 		} 
 		text = EVTDESCCHF23470
 	}
 	desc = { 
 		trigger = { 
-			#religion = baltic_pagan
+			religion_group = baltic_group
 		} 
 		text = EVTDESCDHF23470
 	}
 	desc = { 
 		trigger = { 
-			#religion = finnish_pagan
+			religion_group = finnish_group
 		} 
 		text = EVTDESCEHF23470
 	}
 	desc = { 
 		trigger = { 
-			#religion = west_african_pagan
+			religion_group = serer_group
 		} 
 		text = EVTDESCFHF23470
 	}
 	desc = { 
 		trigger = { 
-			#religion = aztec
+			religion = quetzal
 		} 
 		text = EVTDESCGHF23470
 	}
 	desc = { 
 		trigger = { 
-			#religion = bon
+			religion = bon
 		} 
 		text = EVTDESCHHF23470
 	}
 	desc = { 
 		trigger = { 
-			#religion = zun_pagan
+			religion = indoh_zor
 		} 
 		text = EVTDESCIHF23470
 	}
 	desc = { 
 		trigger = { 
-			#religion = hellenic_pagan
+			religion_group = graecoroman_group
 		} 
 		text = EVTDESCLHF23470
 	}
@@ -10686,7 +10686,7 @@ character_event = {
 		is_alternate_start = no 
 		NOT = { year = 774 }
 		has_landed_title = k_saxony
-		#religion = norse_pagan #Could be ruler-designed.
+		religion = norse_pagan #Could be ruler-designed.
 	}
 	immediate = { 
 		120 = { 
@@ -10844,7 +10844,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_norse_pillar } }
-				#religion = norse_pagan
+				religion = norse_pagan
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -10869,7 +10869,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_tengri_pillar } }
-				#religion = tengri_pagan
+				religion = tengri_pagan
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -10894,7 +10894,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_slavic_pillar } }
-				#religion = slavic_pagan
+				religion_group = slavic_group
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -10919,7 +10919,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_baltic_pillar } }
-				#religion = baltic_pagan
+				religion_group = baltic_group
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -10944,7 +10944,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_finnish_pillar } }
-				#religion = finnish_pagan
+				religion_group = finnish_group
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -10969,7 +10969,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_west_african_pillar } }
-				#religion = west_african_pagan
+				religion_group = serer_group
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -10994,7 +10994,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_aztec_pillar } }
-				#religion = aztec
+				religion = quetzal
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -11019,7 +11019,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_bon_pillar } }
-				#religion = bon
+				religion = bon
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -11044,7 +11044,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_zun_pillar } }
-				#religion = zun_pagan
+				religion = indoh_zor
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -11069,7 +11069,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_hellenic_pillar } }
-				#religion = hellenic_pagan
+				religion_group = graecoroman_group
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -13521,8 +13521,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			OR = { 
-				#religion = west_african_pagan
-				#religion = west_african_pagan_reformed
+				religion_group = serer_group
+				religion_group = serer_group_reformed
 			} 
 		} 
 		picture = GFX_evt_west_african_ruler
@@ -13531,8 +13531,8 @@ character_event = {
 		trigger = { 
 			has_dlc = "Mystics"
 			NOR = { 
-				#religion = west_african_pagan
-				#religion = west_african_pagan_reformed
+				religion_group = serer_group
+				religion_group = serer_group_reformed
 			} 
 			has_religion_feature = religion_animistic 
 		} 
@@ -13556,8 +13556,8 @@ character_event = {
 			dynasty = none
 		}
 		OR = {
-			#religion = west_african_pagan
-			#religion = west_african_pagan_reformed
+			religion_group = serer_group
+			religion_group = serer_group_reformed
 			has_religion_feature = religion_animistic 
 		}
 	}
@@ -13708,8 +13708,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			OR = { 
-				#religion = west_african_pagan
-				#religion = west_african_pagan_reformed
+				religion_group = serer_group
+				religion_group = serer_group_reformed
 			} 
 		} 
 		picture = GFX_evt_west_african_ruler
@@ -13718,8 +13718,8 @@ character_event = {
 		trigger = { 
 			has_dlc = "Mystics"
 			NOR = { 
-				#religion = west_african_pagan
-				#religion = west_african_pagan_reformed
+				religion_group = serer_group
+				religion_group = serer_group_reformed
 			} 
 			has_religion_feature = religion_animistic 
 		} 
@@ -13771,8 +13771,8 @@ character_event = {
 				10 = { 
 					trigger = { 
 						NOR = {
-							#religion = west_african_pagan
-							#religion = west_african_pagan_reformed
+							religion_group = serer_group
+							religion_group = serer_group_reformed
 						}
 					}
 					add_trait = slavic_tattoo_6
@@ -13843,8 +13843,8 @@ character_event = {
 				10 = { 
 					trigger = { 
 						NOR = {
-							#religion = west_african_pagan
-							#religion = west_african_pagan_reformed
+							religion_group = serer_group
+							religion_group = serer_group_reformed
 						}
 					}
 					add_trait = norse_tattoo_6
@@ -13915,8 +13915,8 @@ character_event = {
 				10 = { 
 					trigger = { 
 						NOR = {
-							#religion = west_african_pagan
-							#religion = west_african_pagan_reformed
+							religion_group = serer_group
+							religion_group = serer_group_reformed
 						}
 					}
 					add_trait = norse_tattoo_3
@@ -13987,8 +13987,8 @@ character_event = {
 				10 = { 
 					trigger = { 
 						NOR = {
-							#religion = west_african_pagan
-							#religion = west_african_pagan_reformed
+							religion_group = serer_group
+							religion_group = serer_group_reformed
 						}
 					}
 					add_trait = norse_tattoo_4
@@ -14047,8 +14047,8 @@ character_event = {
 			dynasty = none
 		}
 		OR = {
-			#religion = west_african_pagan
-			#religion = west_african_pagan_reformed
+			religion_group = serer_group
+			religion_group = serer_group_reformed
 			has_religion_feature = religion_animistic 
 		}
 	}
@@ -14073,8 +14073,8 @@ character_event = {
 		ai = yes
 		is_save_game = no
 		OR = { 
-			#religion = west_african_pagan
-			#religion = west_african_pagan_reformed
+			religion_group = serer_group
+			religion_group = serer_group_reformed
 			has_religion_feature = religion_animistic
 		}
 	}
@@ -14351,7 +14351,7 @@ character_event = {
 		}
 		has_religion_feature = religion_dogmatic
 		has_religion_feature = religion_temporal_head
-		#religion = FROMFROM
+		religion = FROMFROM
 		controls_religion = yes
 	}
 	
