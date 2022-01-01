@@ -2018,8 +2018,8 @@ character_event = {
 	
 	trigger = {
 		OR = {
-			#religion = hellenic_pagan
-			#religion = hellenic_pagan_reformed
+			religion_group = graecoroman_group
+			religion_group = indohelen_group
 			has_religion_feature = religion_astrology
 		}
 	}
@@ -2223,8 +2223,8 @@ character_event = {
 		name = EVTOPTAHF23022
 		trigger = { 
 			NOR = {
-				#religion = hellenic_pagan
-				#religion = hellenic_pagan_reformed
+				religion_group = graecoroman_group
+				religion_group = indohelen_group
 				has_religion_feature = religion_astrology  
 			} 
 		}
@@ -2328,8 +2328,8 @@ character_event = {
 		}
 		trigger = { 
 			OR = {
-				#religion = hellenic_pagan
-				#religion = hellenic_pagan_reformed
+				religion_group = graecoroman_group
+				religion_group = indohelen_group
 				has_religion_feature = religion_astrology  
 			} 
 		}
@@ -2450,8 +2450,8 @@ character_event = {
 		}
 		trigger = { 
 			OR = {
-				#religion = hellenic_pagan
-				#religion = hellenic_pagan_reformed
+				religion_group = graecoroman_group
+				religion_group = indohelen_group
 				has_religion_feature = religion_astrology  
 			} 
 		}
