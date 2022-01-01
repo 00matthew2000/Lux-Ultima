@@ -14836,13 +14836,13 @@ character_event = { # Mystic character arrives
 			else = {
 				random_list = {
 					25 = {
-						religion = zun_pagan
+						religion_group = finnish_group
 					}
 					25 = {
-						religion = baltic_pagan
+						religion_group = baltic_group
 					}
 					25 = {
-						religion = slavic_pagan
+						religion_group = slavic_group
 					}
 					25 = {
 					}
