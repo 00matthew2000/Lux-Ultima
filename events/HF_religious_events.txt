@@ -2,6 +2,7 @@
 
 namespace = HF
 namespace = HFP
+
 # Ritual Sacrifice Prisoner
 character_event = {
 	id = HF.23001
@@ -1997,7 +1998,7 @@ narrative_event = {
 		name = EVTOPTB_HO_100
 		trigger = {
 			religion_group = indian_group
-			NOT = { #religion = bon_reformed }
+			NOT = { religion = bon_reformed }
 		}
 	}
 	option = {
