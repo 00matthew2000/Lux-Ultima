@@ -2425,24 +2425,6 @@ settlement_decisions = {
 			}
 			
 			# Change name of Avaria to Hungary if relevant.
-			if = {
-				limit = {
-					random_realm_province = {
-						limit = {
-							NOT = { culture = FROM }
-							num_of_settlements = 1
-							any_neighbor_province = {
-								culture = FROM
-								religion = FROM
-							}
-						}
-						culture = FROM
-						religion = FROM
-					}
-				}
-			}
-			
-			# Change name of Avaria to Hungary if relevant.
 #			if = {
 #				limit = {
 #					FROM = {
