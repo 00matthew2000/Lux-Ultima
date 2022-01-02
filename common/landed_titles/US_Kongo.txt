@@ -12,6 +12,79 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 		zande_pagan_reformed = 1000
 		zulu_pagan_reformed = 1000
 
+		d_manda = {
+
+			color = { 81 211 114 }
+			color2 = { 250 250 250 }
+
+			capital = 2351 #Manda
+
+			c_manda = {
+
+				color = { 81 221 124 }
+				color2 = { 250 250 250 }
+
+				b_manda_manda = {
+				}
+				b_lamu = {
+				}
+				b_kililana = {
+				}
+				b_mokowe = {
+				}
+				b_jipe = {
+				}
+				b_hidio = {
+				}
+				b_shela = {
+				}
+				b_matondoni = {
+				}
+			}
+			c_pate = {
+
+				color = { 81 221 134 }
+				color2 = { 250 250 250 }
+
+				b_pate = {
+				}
+				b_faza = {
+				}
+				b_siyu = {
+				}
+				b_kiwayu = {
+				}
+				b_kizingitini = {
+				}
+				b_kiangwe = {
+				}
+				b_dodori = {
+				}
+				b_ankish = {
+				}
+			}
+			c_kismaayo = {
+				color={ 196 225 159 }
+				color2={ 255 255 255 }
+			
+				b_kismaayo = {
+				}
+				b_goobweyn = {
+				}
+				b_yoontoy = {
+				}
+				b_rassini = {
+				}
+				b_kaambooni = {
+				}
+				b_kolbio = {
+				}
+				b_turdo = {
+				}
+				b_jamaane = {
+				}
+			}
+		}
 		d_mogadishu = {
 			color = { 140 83 200 }
 			roman = "Erythrea Adalia" 
@@ -1232,79 +1305,6 @@ e_deep_africa = { # dejure empire for 7 African Kingdoms south of the Sahara
 				b_quantakahha = {
 				}
 				b_ucubucubulu = {
-				}
-			}
-		}
-		d_manda = {
-
-			color = { 81 211 114 }
-			color2 = { 250 250 250 }
-
-			capital = 2351 #Manda
-
-			c_manda = {
-
-				color = { 81 221 124 }
-				color2 = { 250 250 250 }
-
-				b_manda_manda = {
-				}
-				b_lamu = {
-				}
-				b_kililana = {
-				}
-				b_mokowe = {
-				}
-				b_jipe = {
-				}
-				b_hidio = {
-				}
-				b_shela = {
-				}
-				b_matondoni = {
-				}
-			}
-			c_pate = {
-
-				color = { 81 221 134 }
-				color2 = { 250 250 250 }
-
-				b_pate = {
-				}
-				b_faza = {
-				}
-				b_siyu = {
-				}
-				b_kiwayu = {
-				}
-				b_kizingitini = {
-				}
-				b_kiangwe = {
-				}
-				b_dodori = {
-				}
-				b_ankish = {
-				}
-			}
-			c_kismaayo = {
-				color={ 196 225 159 }
-				color2={ 255 255 255 }
-			
-				b_kismaayo = {
-				}
-				b_goobweyn = {
-				}
-				b_yoontoy = {
-				}
-				b_rassini = {
-				}
-				b_kaambooni = {
-				}
-				b_kolbio = {
-				}
-				b_turdo = {
-				}
-				b_jamaane = {
 				}
 			}
 		}
