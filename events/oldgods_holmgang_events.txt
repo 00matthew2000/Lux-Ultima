@@ -51,7 +51,6 @@ character_event = {
 				has_character_flag = holmgang_challenger
 			}
 			LI_norse_pagan_trigger = yes
-			is_inaccessible_trigger = no
 			NOT = { is_inaccessible_trigger = yes }
 			NOT = {
 				reverse_has_opinion_modifier = {  #checks if target is actually already loyal (thus not suitable for challening)
@@ -79,7 +78,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.6
-			combat_rating = 5
+			combat_rating = 50
 		}
 		modifier = {
 			factor = 0.6
@@ -99,7 +98,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { combat_rating = 1 }
+			NOT = { combat_rating = 10 }
 		}
 		modifier = {
 			factor = 2.0
@@ -206,7 +205,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.6
-			combat_rating = 5
+			combat_rating = 50
 		}
 		modifier = {
 			factor = 0.6
@@ -226,7 +225,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { combat_rating = 1 }
+			NOT = { combat_rating = 10 }
 		}
 		modifier = {
 			factor = 2.0
@@ -360,7 +359,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.6
-			combat_rating = 5
+			combat_rating = 50
 		}
 		modifier = {
 			factor = 0.6
@@ -380,7 +379,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { combat_rating = 1 }
+			NOT = { combat_rating = 10 }
 		}
 		modifier = {
 			factor = 2.0
@@ -505,95 +504,6 @@ character_event = {
 		FROM = {
 			clr_character_flag = holmgang_target
 			clr_character_flag = do_not_disturb
-		}
-	}
-}
-
-# Challenge received
-character_event = {
-	id = TOG.5001
-	desc = EVTDESC_TOG_5001
-	picture = GFX_evt_viking_throneroom_oldgods
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_TOG_5001
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 10
-				trait = brave
-			}
-			modifier = {
-				factor = 10
-				trait = berserker
-			}
-			modifier = {
-				factor = 30
-				trait = duelist
-			}
-			modifier = {
-				factor = 10
-				trait = wroth
-			}
-			modifier = {
-				factor = 15
-				has_focus = focus_war
-			}
-		}
-		FROM = {
-			character_event = { id = TOG.5002 days = 2 tooltip = EVTTOOLTIP_TOG_5002 }
-		}
-	}
-	option = {
-		name = EVTOPTB_TOG_5001
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 30
-				trait = craven
-			}
-			modifier = {
-				factor = 10
-				trait = kind
-			}
-			modifier = {
-				factor = 10
-				trait = slothful
-			}
-			modifier = {
-				factor = 10
-				trait = patient
-			}
-		}
-		FROM = {
-			character_event = { id = TOG.5003 days = 2 tooltip = EVTTOOLTIP_TOG_5003 }
-		}
-		prestige = -100
-		if = {
-			limit = { trait = brave }
-			random = {
-				chance = 33
-				remove_trait = brave
-			}
-		}
-		if = {
-			limit = { 
-				NOT = { trait = brave }
-				NOT = { trait = craven }
-				NOT = { trait = berserker }
-			}
-			random = {
-				chance = 33
-				add_trait = craven
-				hidden_tooltip = {
-					character_event = {
-						id = 38257 #Notify Craven
-					}
-				}
-			}
 		}
 	}
 }
@@ -1094,24 +1004,24 @@ character_event = {
 		name = EVTOPTA_TOG_5004
 		if = {
 			limit = {
-				combat_rating_diff = { who = FROM value = 5 }
+				combat_rating_diff = { who = FROM value = 50 }
 			}
 			custom_tooltip = { text = holmgang_chances_great }
 		}
 		if = {
 			limit = {
-				combat_rating_diff = { who = FROM value = 3 }
+				combat_rating_diff = { who = FROM value = 30 }
 				NOT = {
-					combat_rating_diff = { who = FROM value = 5 }
+					combat_rating_diff = { who = FROM value = 50 }
 				}
 			}
 			custom_tooltip = { text = holmgang_chances_very_good }
 		}
 		if = {
 			limit = {
-				combat_rating_diff = { who = FROM value = 1 }
+				combat_rating_diff = { who = FROM value = 10 }
 				NOT = {
-					combat_rating_diff = { who = FROM value = 3 }
+					combat_rating_diff = { who = FROM value = 30 }
 				}
 			}
 			custom_tooltip = { text = holmgang_chances_good }
@@ -1119,9 +1029,9 @@ character_event = {
 		if = {
 			limit = {
 				NOT = {
-					combat_rating_diff = { who = FROM value = 1 }
+					combat_rating_diff = { who = FROM value = 10 }
 					FROM = {
-						combat_rating_diff = { who = ROOT value = 1 }
+						combat_rating_diff = { who = ROOT value = 10 }
 					}
 				}
 			}
@@ -1130,11 +1040,11 @@ character_event = {
 		if = {
 			limit = {
 				FROM = {
-					combat_rating_diff = { who = ROOT value = 1 }
+					combat_rating_diff = { who = ROOT value = 10 }
 				}
 				NOT = {
 					FROM = {
-						combat_rating_diff = { who = ROOT value = 3 }
+						combat_rating_diff = { who = ROOT value = 30 }
 					}
 				}
 			}
@@ -1143,11 +1053,11 @@ character_event = {
 		if = {
 			limit = {
 				FROM = {
-					combat_rating_diff = { who = ROOT value = 3 }
+					combat_rating_diff = { who = ROOT value = 30 }
 				}
 				NOT = {
 					FROM = {
-						combat_rating_diff = { who = ROOT value = 5 }
+						combat_rating_diff = { who = ROOT value = 50 }
 					}
 				}
 			}
@@ -1156,7 +1066,7 @@ character_event = {
 		if = {
 			limit = {
 				FROM = {
-					combat_rating_diff = { who = ROOT value = 5 }
+					combat_rating_diff = { who = ROOT value = 50 }
 				}
 			}
 			custom_tooltip = { text = holmgang_chances_terrible }
@@ -1165,676 +1075,645 @@ character_event = {
 }
 
 # The Fight Begins!
-#character_event = {
-#	id = TOG.5018
-#	desc = EVTDESC_TOG_5018
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5004
-#		if = {
-#			limit = {
-#				attribute_diff = {
-#					character = FROMFROM
-#					attribute = martial
-#					value = 9
-#				}
-#			}
-#			custom_tooltip = { text = holmgang_chances_great }
-#		}
-#		if = {
-#			limit = {
-#				attribute_diff = {
-#					character = FROMFROM
-#					attribute = martial
-#					value = 6
-#				}
-#				NOT = {
-#					attribute_diff = {
-#						character = FROMFROM
-#						attribute = martial
-#						value = 9
-#					}
-#				}
-#			}
-#			custom_tooltip = { text = holmgang_chances_very_good }
-#		}
-#		if = {
-#			limit = {
-#				attribute_diff = {
-#					character = FROMFROM
-#					attribute = martial
-#					value = 3
-#				}
-#				NOT = {
-#					attribute_diff = {
-#						character = FROMFROM
-#						attribute = martial
-#						value = 6
-#					}
-#				}
-#			}
-#			custom_tooltip = { text = holmgang_chances_good }
-#		}
-#		if = {
-#			limit = {
-#				NOT = {
-#					attribute_diff = {
-#						character = FROMFROM
-#						attribute = martial
-#						value = 3
-#					}
-#					FROMFROM = {
-#						attribute_diff = {
-#							character = ROOT
-#							attribute = martial
-#							value = 3
-#						}
-#					}
-#				}
-#			}
-#			custom_tooltip = { text = holmgang_chances_even }
-#		}
-#		if = {
-#			limit = {
-#				FROMFROM = {
-#					attribute_diff = {
-#						character = ROOT
-#						attribute = martial
-#						value = 3
-#					}
-#				}
-#				NOT = {
-#					FROMFROM = {
-#						attribute_diff = {
-#							character = ROOT
-#							attribute = martial
-#							value = 6
-#						}
-#					}
-#				}
-#			}
-#			custom_tooltip = { text = holmgang_chances_poor }
-#		}
-#		if = {
-#			limit = {
-#				FROMFROM = {
-#					attribute_diff = {
-#						character = ROOT
-#						attribute = martial
-#						value = 6
-#					}
-#				}
-#				NOT = {
-#					FROMFROM = {
-#						attribute_diff = {
-#							character = ROOT
-#							attribute = martial
-#							value = 9
-#						}
-#					}
-#				}
-#			}
-#			custom_tooltip = { text = holmgang_chances_very_poor }
-#		}
-#		if = {
-#			limit = {
-#				FROMFROM = {
-#					attribute_diff = {
-#						character = ROOT
-#						attribute = martial
-#						value = 9
-#					}
-#				}
-#			}
-#			custom_tooltip = { text = holmgang_chances_terrible }
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5018
+	desc = EVTDESC_TOG_5018
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5004
+		if = {
+			limit = {
+				combat_rating_diff = { who = FROMFROM value = 50 }
+			}
+			custom_tooltip = { text = holmgang_chances_great }
+		}
+		if = {
+			limit = {
+				combat_rating_diff = { who = FROMFROM value = 30 }
+				NOT = {
+					combat_rating_diff = { who = FROMFROM value = 50 }
+				}
+			}
+			custom_tooltip = { text = holmgang_chances_very_good }
+		}
+		if = {
+			limit = {
+				combat_rating_diff = { who = FROMFROM value = 10 }
+				NOT = {
+					combat_rating_diff = { who = FROMFROM value = 30 }
+				}
+			}
+			custom_tooltip = { text = holmgang_chances_good }
+		}
+		if = {
+			limit = {
+				NOT = {
+					combat_rating_diff = { who = FROMFROM value = 10 }
+					FROMFROM = {
+						combat_rating_diff = { who = ROOT value = 10 }
+					}
+				}
+			}
+			custom_tooltip = { text = holmgang_chances_even }
+		}
+		if = {
+			limit = {
+				FROMFROM = {
+					combat_rating_diff = { who = ROOT value = 10 }
+				}
+				NOT = {
+					FROMFROM = {
+						combat_rating_diff = { who = ROOT value = 30 }
+					}
+				}
+			}
+			custom_tooltip = { text = holmgang_chances_poor }
+		}
+		if = {
+			limit = {
+				FROMFROM = {
+					combat_rating_diff = { who = ROOT value = 30 }
+				}
+				NOT = {
+					FROMFROM = {
+						combat_rating_diff = { who = ROOT value = 50 }
+					}
+				}
+			}
+			custom_tooltip = { text = holmgang_chances_very_poor }
+		}
+		if = {
+			limit = {
+				FROMFROM = {
+					combat_rating_diff = { who = ROOT value = 50 }
+				}
+			}
+			custom_tooltip = { text = holmgang_chances_terrible }
+		}
+	}
+}
 
 # Wins (Scarred)
-#character_event = {
-#	id = TOG.5005
-#	desc = EVTDESC_TOG_5005
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		add_trait = scarred
-#		prestige = 200
-#		tooltip = {
-#			FROMFROM = { prestige = -200 }
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5005
+	desc = EVTDESC_TOG_5005
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		hidden_tooltip = {
+			FROMFROM = {
+				random_list = {
+					50 = { character_event = { id = TOG.5027 } }
+					50 = { character_event = { id = TOG.5028 } }
+				}
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		add_scarred_tiered_effect = yes
+		prestige = 200
+		tooltip = {
+			FROMFROM = { prestige = -200 }
+		}
+	}
+}
 
 # Wins (Scarred, Opponent Dies)
-#character_event = {
-#	id = TOG.5006
-#	desc = EVTDESC_TOG_5006
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		hidden_tooltip = {
-#			FROMFROM = {
-#				character_event = { id = TOG.5029 }
-#			}
-#		}
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		prestige = 200
-#		add_trait = scarred
-#		tooltip = {
-#			FROMFROM = {
-#				death = {
-#					death_reason = death_duel
-#					killer = ROOT
-#				}
-#			}
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5006
+	desc = EVTDESC_TOG_5006
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		hidden_tooltip = {
+			FROMFROM = {
+				character_event = { id = TOG.5029 }
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		prestige = 200
+		add_scarred_tiered_effect = yes
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_duel
+					killer = ROOT
+				}
+			}
+		}
+	}
+}
 
 # Wins
-#character_event = {
-#	id = TOG.5007
-#	desc = EVTDESC_TOG_5007
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		prestige = 200
-#		tooltip = {
-#			FROMFROM = { prestige = -200 }
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5007
+	desc = EVTDESC_TOG_5007
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		hidden_tooltip = {
+			FROMFROM = {
+				random_list = {
+					50 = { character_event = { id = TOG.5027 } }
+					50 = { character_event = { id = TOG.5028 } }
+				}
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		prestige = 200
+		tooltip = {
+			FROMFROM = { prestige = -200 }
+		}
+	}
+}
 
 # Wins (Opponent Dies)
-#character_event = {
-#	id = TOG.5008
-#	desc = EVTDESC_TOG_5008
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		hidden_tooltip = {
-#			FROMFROM = {
-#				character_event = { id = TOG.5029 }
-#			}
-#		}
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		prestige = 200
-#		tooltip = {
-#			FROMFROM = {
-#				death = {
-#					death_reason = death_duel
-#					killer = ROOT
-#				}
-#			}
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5008
+	desc = EVTDESC_TOG_5008
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		hidden_tooltip = {
+			FROMFROM = {
+				character_event = { id = TOG.5029 }
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		prestige = 200
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_duel
+					killer = ROOT
+				}
+			}
+		}
+	}
+}
 
 # Wins (Opponent Flees)
-#character_event = {
-#	id = TOG.5009
-#	desc = EVTDESC_TOG_5009
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		hidden_tooltip = {
-#			FROMFROM = {
-#				character_event = { id = TOG.5026 }
-#			}
-#		}
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		prestige = 200
-#		tooltip = {
-#			FROMFROM = { prestige = -400 }
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5009
+	desc = EVTDESC_TOG_5009
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		hidden_tooltip = {
+			FROMFROM = {
+				character_event = { id = TOG.5026 }
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		prestige = 200
+		tooltip = {
+			FROMFROM = { prestige = -400 }
+		}
+	}
+}
 
 # Draw (Both Wounded)
-#character_event = {
-#	id = TOG.5010
-#	desc = EVTDESC_TOG_5010
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5010
-#		hidden_tooltip = {
-#			FROMFROM = {
-#				character_event = { id = TOG.5025 }
-#			}
-#		}
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		prestige = 50
-#		add_trait = wounded
-#		tooltip = {
-#			FROMFROM = { 
-#				prestige = 50 
-#				add_trait = wounded
-#				opinion = {
-#					modifier = opinion_mutual_respect
-#					who = ROOT
-#				}
-#			}
-#		}
-#		opinion = {
-#			modifier = opinion_mutual_respect
-#			who = FROMFROM
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5010
+	desc = EVTDESC_TOG_5010
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5010
+		hidden_tooltip = {
+			FROMFROM = {
+				character_event = { id = TOG.5025 }
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		prestige = 50
+		add_trait = wounded
+		tooltip = {
+			FROMFROM = { 
+				prestige = 50 
+				add_trait = wounded
+				opinion = {
+					modifier = opinion_mutual_respect
+					who = ROOT
+				}
+			}
+		}
+		opinion = {
+			modifier = opinion_mutual_respect
+			who = FROMFROM
+		}
+	}
+}
 
 # Loses (Flees in Disgrace)
-#character_event = {
-#	id = TOG.5011
-#	desc = EVTDESC_TOG_5011
-#	picture = GFX_evt_bloody_man
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5011
-#		hidden_tooltip = {
-#			FROMFROM = {
-#				character_event = { id = TOG.5024 }
-#			}
-#		}
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		tooltip = {
-#			FROMFROM = { prestige = 200 }
-#		}
-#		prestige = -400
-#	}
-#}
+character_event = {
+	id = TOG.5011
+	desc = EVTDESC_TOG_5011
+	picture = GFX_evt_bloody_man
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5011
+		hidden_tooltip = {
+			FROMFROM = {
+				character_event = { id = TOG.5024 }
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		tooltip = {
+			FROMFROM = { prestige = 200 }
+		}
+		prestige = -400
+	}
+}
 
 # Loses (Wounded)
-#character_event = {
-#	id = TOG.5012
-#	desc = EVTDESC_TOG_5012
-#	picture = GFX_evt_bloody_man
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5012
-#		hidden_tooltip = {
-#			FROMFROM = {
-#				random_list = {
-#					50 = { character_event = { id = TOG.5020 } }
-#					50 = { character_event = { id = TOG.5022 } }
-#				}
-#			}
-#		}
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		tooltip = {
-#			FROMFROM = { prestige = 200 }
-#		}
-#		prestige = -200
-#		add_trait = wounded
-#	}
-#}
+character_event = {
+	id = TOG.5012
+	desc = EVTDESC_TOG_5012
+	picture = GFX_evt_bloody_man
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5012
+		hidden_tooltip = {
+			FROMFROM = {
+				random_list = {
+					50 = { character_event = { id = TOG.5020 } }
+					50 = { character_event = { id = TOG.5022 } }
+				}
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		tooltip = {
+			FROMFROM = { prestige = 200 }
+		}
+		prestige = -200
+		add_trait = wounded
+	}
+}
 
 # Loses (Maimed)
-#character_event = {
-#	id = TOG.5013
-#	desc = EVTDESC_TOG_5013
-#	picture = GFX_evt_bloody_man
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5012
-#		hidden_tooltip = {
-#			FROMFROM = {
-#				random_list = {
-#					50 = { character_event = { id = TOG.5020 } }
-#					50 = { character_event = { id = TOG.5022 } }
-#				}
-#			}
-#		}
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		tooltip = {
-#			FROMFROM = { prestige = 200 }
-#		}
-#		prestige = -200
-#		add_trait = maimed
-#	}
-#}
+character_event = {
+	id = TOG.5013
+	desc = EVTDESC_TOG_5013
+	picture = GFX_evt_bloody_man
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5012
+		hidden_tooltip = {
+			FROMFROM = {
+				random_list = {
+					50 = { character_event = { id = TOG.5020 } }
+					50 = { character_event = { id = TOG.5022 } }
+				}
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		tooltip = {
+			FROMFROM = { prestige = 200 }
+		}
+		prestige = -200
+		add_maimed_trait_effect = yes
+	}
+}
 
 # Loses (Dies)
-#character_event = {
-#	id = TOG.5014
-#	desc = EVTDESC_TOG_5014
-#	picture = GFX_evt_bloody_man
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	hide_from = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5014
-#		hidden_tooltip = {
-#			FROMFROM = {
-#				random_list = {
-#					50 = { character_event = { id = TOG.5021 } }
-#					50 = { character_event = { id = TOG.5023 } }
-#				}
-#			}
-#		}
-#		clr_character_flag = holmgang_challenger
-#		clr_character_flag = do_not_disturb
-#		FROMFROM = {
-#			clr_character_flag = holmgang_target
-#			clr_character_flag = do_not_disturb
-#		}
-#		death = {
-#			death_reason = death_duel
-#			killer = FROMFROM
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5014
+	desc = EVTDESC_TOG_5014
+	picture = GFX_evt_bloody_man
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5014
+		hidden_tooltip = {
+			FROMFROM = {
+				random_list = {
+					50 = { character_event = { id = TOG.5021 } }
+					50 = { character_event = { id = TOG.5023 } }
+				}
+			}
+		}
+		clr_character_flag = holmgang_challenger
+		clr_character_flag = do_not_disturb
+		FROMFROM = {
+			clr_character_flag = holmgang_target
+			clr_character_flag = do_not_disturb
+		}
+		death = {
+			death_reason = death_duel
+			killer = FROMFROM
+		}
+	}
+}
 
 # Wins (Scarred) Opponent
-#character_event = {
-#	id = TOG.5020
-#	desc = EVTDESC_TOG_5020
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		add_trait = scarred
-#		prestige = 200
-#		tooltip = {
-#			FROM = { prestige = -200 }
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5020
+	desc = EVTDESC_TOG_5020
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		add_scarred_tiered_effect = yes
+		prestige = 200
+		tooltip = {
+			FROM = { prestige = -200 }
+		}
+	}
+}
 
 # Wins (Scarred, Opponent Dies) Opponent
-#character_event = {
-#	id = TOG.5021
-#	desc = EVTDESC_TOG_5021
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		add_trait = scarred
-#		prestige = 200
-#		tooltip = {
-#			FROM = {
-#				death = {
-#					death_reason = death_duel
-#					killer = ROOT
-#				}
-#			}
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5021
+	desc = EVTDESC_TOG_5021
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		add_scarred_tiered_effect = yes
+		prestige = 200
+		tooltip = {
+			FROM = {
+				death = {
+					death_reason = death_duel
+					killer = ROOT
+				}
+			}
+		}
+	}
+}
 
 # Wins Opponent
-#character_event = {
-#	id = TOG.5022
-#	desc = EVTDESC_TOG_5022
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		prestige = 200
-#		tooltip = {
-#			FROM = { prestige = -200 }
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5022
+	desc = EVTDESC_TOG_5022
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		prestige = 200
+		tooltip = {
+			FROM = { prestige = -200 }
+		}
+	}
+}
 
 # Wins (Opponent Dies) Opponent
-#character_event = {
-#	id = TOG.5023
-#	desc = EVTDESC_TOG_5023
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		prestige = 200
-#		tooltip = {
-#			FROM = {
-#				death = {
-#					death_reason = death_duel
-#					killer = ROOT
-#				}
-#			}
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5023
+	desc = EVTDESC_TOG_5023
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		prestige = 200
+		tooltip = {
+			FROM = {
+				death = {
+					death_reason = death_duel
+					killer = ROOT
+				}
+			}
+		}
+	}
+}
 
 # Wins (Opponent Flees) Opponent
-#character_event = {
-#	id = TOG.5024
-#	desc = EVTDESC_TOG_5024
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5005
-#		prestige = 200
-#		tooltip = {
-#			FROM = { prestige = -400 }
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5024
+	desc = EVTDESC_TOG_5024
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5005
+		prestige = 200
+		tooltip = {
+			FROM = { prestige = -400 }
+		}
+	}
+}
 
 # Draw (Both Wounded) Opponent
-#character_event = {
-#	id = TOG.5025
-#	desc = EVTDESC_TOG_5010
-#	picture = GFX_evt_melee
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5010
-#		prestige = 50
-#		tooltip = {
-#			FROM = { 
-#				prestige = 50
-#				opinion = {
-#					modifier = opinion_mutual_respect
-#					who = ROOT
-#				}
-#			}
-#		}
-#		opinion = {
-#			modifier = opinion_mutual_respect
-#			who = FROM
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5025
+	desc = EVTDESC_TOG_5010
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5010
+		prestige = 50
+		tooltip = {
+			FROM = { 
+				prestige = 50
+				opinion = {
+					modifier = opinion_mutual_respect
+					who = ROOT
+				}
+			}
+		}
+		opinion = {
+			modifier = opinion_mutual_respect
+			who = FROM
+		}
+		add_trait = wounded
+	}
+}
 
 # Loses (Flees in Disgrace) Opponent
-#character_event = {
-#	id = TOG.5026
-#	desc = EVTDESC_TOG_5026
-#	picture = GFX_evt_bloody_man
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5011
-#		tooltip = {
-#			FROM = { prestige = 200 }
-#		}
-#		prestige = -400
-#	}
-#}
+character_event = {
+	id = TOG.5026
+	desc = EVTDESC_TOG_5026
+	picture = GFX_evt_bloody_man
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5011
+		tooltip = {
+			FROM = { prestige = 200 }
+		}
+		prestige = -400
+	}
+}
 
 # Loses (Wounded) Opponent
-#character_event = {
-#	id = TOG.5027
-#	desc = EVTDESC_TOG_5027
-#	picture = GFX_evt_bloody_man
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5012
-#		tooltip = {
-#			FROM = { prestige = 200 }
-#		}
-#		prestige = -200
-#		add_trait = wounded
-#	}
-#}
+character_event = {
+	id = TOG.5027
+	desc = EVTDESC_TOG_5027
+	picture = GFX_evt_bloody_man
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5012
+		tooltip = {
+			FROM = { prestige = 200 }
+		}
+		prestige = -200
+		add_trait = wounded
+	}
+}
 
 # Loses (Maimed) Opponent
-#character_event = {
-#	id = TOG.5028
-#	desc = EVTDESC_TOG_5028
-#	picture = GFX_evt_bloody_man
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5012
-#		tooltip = {
-#			FROM = { prestige = 200 }
-#		}
-#		prestige = -200
-#		add_trait = maimed
-#	}
-#}
+character_event = {
+	id = TOG.5028
+	desc = EVTDESC_TOG_5028
+	picture = GFX_evt_bloody_man
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5012
+		tooltip = {
+			FROM = { prestige = 200 }
+		}
+		prestige = -200
+		add_maimed_trait_effect = yes
+	}
+}
 
 # Loses (Dies) Opponent
-#character_event = {
-#	id = TOG.5029
-#	desc = EVTDESC_TOG_5029
-#	picture = GFX_evt_bloody_man
-#	border = GFX_event_normal_frame_war
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTA_TOG_5014
-#		death = {
-#			death_reason = death_duel
-#			killer = FROM
-#		}
-#	}
-#}
+character_event = {
+	id = TOG.5029
+	desc = EVTDESC_TOG_5029
+	picture = GFX_evt_bloody_man
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_TOG_5014
+		death = {
+			death_reason = death_duel
+			killer = FROM
+		}
+	}
+}
 
 ###########################################
 # Flag management                         #
