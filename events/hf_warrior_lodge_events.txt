@@ -20,7 +20,7 @@ character_event = {
     trigger = {
         NOT = { has_character_flag = is_being_recruited_to_warrior_lodge_by_parent }
         NOT = { has_character_flag = awaiting_initiation_trial }
-        FROM = { leader = { is_member_of_any_warrior_lodge_trigger = yes } }
+        #FROM = { leader = { is_member_of_any_warrior_lodge_trigger = yes } }
     }
 
     immediate = {
@@ -755,7 +755,6 @@ character_event = { #Fires for the adult child (from decision)
             }
         }
         trigger = { # Kids only say yes if they not already a secret member of some kind...
-            is_secret_religious_society_member_trigger = no
             is_devil_worshiper_trigger = no
             NOT = { society_member_of = the_assassins }
         }
@@ -785,7 +784,6 @@ character_event = { #Fires for the adult child (from decision)
                         quest_target = { character = ROOT }
                     }
                 }
-                is_secret_religious_society_member_trigger = yes
                 is_devil_worshiper_trigger = yes
                 society_member_of = the_assassins
             }
@@ -2970,103 +2968,101 @@ character_event = {
 ### Maintenance: Warrior Lodge Society spawns if it died (fired from on_society_destroyed)
 # Root = Character
 # From = Society
-character_event = {
-    id = HF.10053
-    is_triggered_only = yes
-    has_dlc = "Holy Fury"
-    hide_window = yes
-    hide_from = yes
-    
-    trigger = {
-        FROM = { this_society_is_a_warrior_lodge_trigger = yes }
-    }
-
-    immediate = {
-        FROM = { save_event_target_as = warrior_lodge_to_revive }   
-
-        if = {
-            limit = {
-                is_landed = yes
-            }
-            #Pick someone under you to lead the warrior lodge...
-            any_courtier_or_vassal = {
-                limit = {
-                    ai = yes
-                    OR = {
-                        has_religion_matching_warrior_lodge_to_revive_trigger = yes
-                        special_join_warrior_lodge_trigger = yes
-                        NOT = { trait = zealous }
-                        has_tribal_or_nomadic_government_trigger = yes
-                    }
-                    has_secret_religion_trait_trigger = no
-                    is_in_society = no
-                    age = 16
-                    NOT = { block_general_event_trigger = yes }
-                }
-                score_value = { #Prioritizes selecting some kind of warrior...
-                    value = 10
-                    warrior_recruit_score = yes
-                    warrior_lodge_revival_selection_score = yes
-                }
-                join_society = event_target:warrior_lodge_to_revive
-                if = {
-                    limit = {
-                        NOT = {
-                            society = {
-                                any_society_member = {
-                                    is_society_grandmaster = yes
-                                }
-                            }
-                        }
-                    }
-                    set_society_grandmaster = yes # Set character as Grand Master
-                    add_society_currency_massive_effect = yes
-                }
-                add_society_currency_massive_effect = yes
-            }
-        }
-        else = {
-            liege = {
-                #Pick someone under your *liege* to lead the warrior lodge...
-                any_courtier_or_vassal = {
-                    limit = {
-                        ai = yes
-                        OR = {
-                            has_religion_matching_warrior_lodge_to_revive_trigger = yes
-                            special_join_warrior_lodge_trigger = yes      
-                            NOT = { trait = zealous }
-                            has_tribal_or_nomadic_government_trigger = yes
-                        }
-                        has_secret_religion_trait_trigger = no
-                        is_in_society = no
-                        age = 16
-                        NOT = { block_general_event_trigger = yes }
-                    }
-                    score_value = { #Prioritizes selecting some kind of warrior...
-                        value = 10
-                        warrior_recruit_score = yes
-                        warrior_lodge_revival_selection_score = yes
-                    }
-                    join_society = event_target:warrior_lodge_to_revive
-                    if = {
-                        limit = {
-                            NOT = {
-                                society = {
-                                    any_society_member = {
-                                        is_society_grandmaster = yes
-                                    }
-                                }
-                            }
-                        }
-                        set_society_grandmaster = yes # Set character as Grand Master
-                        add_society_currency_massive_effect = yes
-                    }
-                }
-            }
-        }
-         log = "The revive event fired for [From.GetName]."
-    }
-}
+#character_event = {
+#    id = HF.10053
+#    is_triggered_only = yes
+#    has_dlc = "Holy Fury"
+#    hide_window = yes
+#    hide_from = yes
+#   
+#    trigger = {
+#        FROM = { this_society_is_a_warrior_lodge_trigger = yes }
+#    }
+#
+#    immediate = {
+#        FROM = { save_event_target_as = warrior_lodge_to_revive }   
+#
+#        if = {
+#            limit = {
+#                is_landed = yes
+#            }
+#            #Pick someone under you to lead the warrior lodge...
+#            any_courtier_or_vassal = {
+#               limit = {
+#                   ai = yes
+#                   OR = {
+#                        has_religion_matching_warrior_lodge_to_revive_trigger = yes
+#                        NOT = { trait = zealous }
+#                        has_tribal_or_nomadic_government_trigger = yes
+#                    }
+#                    has_secret_religion_trait_trigger = no
+#                    is_in_society = no
+#                    age = 16
+#                    NOT = { block_general_event_trigger = yes }
+#                }
+#                score_value = { #Prioritizes selecting some kind of warrior...
+#                    value = 10
+#                    warrior_recruit_score = yes
+#                    warrior_lodge_revival_selection_score = yes
+#                }
+#                join_society = event_target:warrior_lodge_to_revive
+#                if = {
+#                    limit = {
+#                        NOT = {
+#                            society = {
+#                               any_society_member = {
+#                                   is_society_grandmaster = yes
+#                                }
+#                            }
+#                        }
+#                    }
+#                  set_society_grandmaster = yes # Set character as Grand Master
+#                   add_society_currency_massive_effect = yes
+#               }
+#               add_society_currency_massive_effect = yes
+#           }
+#       }
+#       else = {
+#           liege = {
+#               #Pick someone under your *liege* to lead the warrior lodge...
+#               any_courtier_or_vassal = {
+#                   limit = {
+#                       ai = yes
+#                       OR = {
+#                           has_religion_matching_warrior_lodge_to_revive_trigger = yes 
+#                           NOT = { trait = zealous }
+#                           has_tribal_or_nomadic_government_trigger = yes
+#                       }
+#                       has_secret_religion_trait_trigger = no
+#                       is_in_society = no
+#                       age = 16
+#                       NOT = { block_general_event_trigger = yes }
+#                   }
+#                   score_value = { #Prioritizes selecting some kind of warrior...
+#                       value = 10
+#                       warrior_recruit_score = yes
+#                       warrior_lodge_revival_selection_score = yes
+#                   }
+#                   join_society = event_target:warrior_lodge_to_revive
+#                    if = {
+#                        limit = {
+#                            NOT = {
+#                                society = {
+#                                    any_society_member = {
+#                                        is_society_grandmaster = yes
+#                                    }
+#                                }
+#                            }
+#                        }
+#                        set_society_grandmaster = yes # Set character as Grand Master
+#                        add_society_currency_massive_effect = yes
+#                    }
+#                }
+#            }
+#       }
+#         log = "The revive event fired for [From.GetName]."
+#    }
+#}
 
 ### Maintenance: Rank up event (AI only)
 character_event = {
@@ -3079,7 +3075,7 @@ character_event = {
 	is_in_society = yes
     
     trigger = { 
-        is_member_of_any_warrior_lodge_trigger = yes
+        #is_member_of_any_warrior_lodge_trigger = yes
 		is_inaccessible_or_incapable_trigger = no
 		society_can_rank_up = yes
 		has_society_currency_minor_trigger = yes

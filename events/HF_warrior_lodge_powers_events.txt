@@ -1231,20 +1231,13 @@ character_event = {
 		trigger = { 
 			event_target:scoped_war_sacrifice = { is_alive = yes } 
 			OR = { 
-				religion = norse_pagan 
-				religion = norse_pagan_reformed
-				religion = slavic_pagan
-				religion = slavic_pagan_reformed
-				religion = baltic_pagan
-				religion = baltic_pagan_reformed
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
-				religion = finnish_pagan
-				religion = finnish_pagan_reformed
-				religion = zun_pagan
-				religion = zun_pagan_reformed
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
+				religion_group = norsegerman_group
+				religion_group = slavic_group
+				religion_group = baltic_group
+				religion_group = tengri_group
+				religion_group = finnish_group
+				religion_group = serer_group
+				religion_group = african_pagan_group
 				has_religion_feature = religion_ritual_sacrifice
 			} 
 		}
@@ -1309,20 +1302,13 @@ character_event = {
 				is_alive = yes 
 			} 
 			OR = { 
-				religion = norse_pagan 
-				religion = norse_pagan_reformed
-				religion = slavic_pagan
-				religion = slavic_pagan_reformed
-				religion = baltic_pagan
-				religion = baltic_pagan_reformed
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
-				religion = finnish_pagan
-				religion = finnish_pagan_reformed
-				religion = zun_pagan
-				religion = zun_pagan_reformed
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
+				religion_group = norsegerman_group
+				religion_group = slavic_group
+				religion_group = baltic_group
+				religion_group = tengri_group
+				religion_group = finnish_group
+				religion_group = serer_group
+				religion_group = african_pagan_group
 				has_religion_feature = religion_ritual_sacrifice
 			} 
 		}
@@ -1345,7 +1331,7 @@ character_event = {
 						NOR = {
 							trait = impaler
 							trait = cruel
-							is_member_of_any_warrior_lodge_trigger = yes
+							#is_member_of_any_warrior_lodge_trigger = yes
 						} 
 					}
 					opinion = {
@@ -2440,10 +2426,8 @@ narrative_event = {
 		trigger = {
 			OR = { 
 				society_member_of = warrior_lodge_hellenic 
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
-				secret_religion = hellenic_pagan
-				secret_religion = hellenic_pagan_reformed
+				religion_group = indohelen_group
+				religion_group = graecoroman_group
 				can_join_society = warrior_lodge_hellenic
 			}
 		}
@@ -2460,10 +2444,8 @@ narrative_event = {
 		trigger = {
 			NOR = { 
 				society_member_of = warrior_lodge_hellenic 
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
-				secret_religion = hellenic_pagan
-				secret_religion = hellenic_pagan_reformed
+				religion_group = indohelen_group
+				religion_group = graecoroman_group
 			}
 		}
 	}
@@ -2503,7 +2485,7 @@ character_event = {
 					is_at_sea = no
 					war = yes
 					has_character_modifier = call_to_glory
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					society_rank = 4
 					NOT = { check_variable = { which = "call_to_glory_variable" value = 20 } } #Stop after a while.
 				}
@@ -2517,7 +2499,7 @@ character_event = {
 					}
 					war = yes
 					has_character_modifier = call_to_glory
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					society_rank = 4
 					NOT = { check_variable = { which = "call_to_glory_variable" value = 20 } }
 				}
@@ -2527,12 +2509,9 @@ character_event = {
 			100 = { 
 				trigger = {
 					OR = { 
-						is_member_of_any_warrior_lodge_trigger = no
+						#is_member_of_any_warrior_lodge_trigger = no
 						war = no 
-						AND = {
-							is_member_of_any_warrior_lodge_trigger = yes
-							NOT = { society_rank = 4 }
-						}
+						NOT = { society_rank = 4 }
 						NOT = { has_character_modifier = call_to_glory }
 					}
 				}
@@ -2548,7 +2527,7 @@ character_event = {
 					is_at_sea = no
 					war = yes
 					has_character_modifier = call_to_glory
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					society_rank = 4
 					check_variable = { which = "call_to_glory_variable" value = 20 }
 				}
@@ -2560,7 +2539,7 @@ character_event = {
 					is_at_sea = no
 					war = yes
 					has_character_modifier = call_to_glory
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					society_rank = 4
 					has_earmarked_regiments = call_to_glory_rowdy #should have at least some rowdy troops.
 					check_variable = { which = "call_to_glory_variable" value = 5 } #Shouldn't happen immediately after firing the power.
@@ -2575,7 +2554,7 @@ character_event = {
 					is_at_sea = no
 					war = yes
 					has_character_modifier = call_to_glory
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					society_rank = 4
 					check_variable = { which = "call_to_glory_variable" value = 5 } #Shouldn't happen immediately after firing the power.
 				}
@@ -2601,7 +2580,7 @@ character_event = {
 		in_command = yes
 		is_at_sea = no
 		war = yes
-		is_member_of_any_warrior_lodge_trigger = yes
+		#is_member_of_any_warrior_lodge_trigger = yes
 		society_rank = 4
 		NOT = { check_variable = { which = "call_to_glory_variable" value = 20 } }
 	}
@@ -2610,12 +2589,9 @@ character_event = {
 		if = { 
 			limit = { 
 				OR = { 
-					is_member_of_any_warrior_lodge_trigger = no
+					#is_member_of_any_warrior_lodge_trigger = no
 					war = no 
-					AND = {
-						is_member_of_any_warrior_lodge_trigger = yes
-						NOT = { society_rank = 4 }
-					}
+					NOT = { society_rank = 4 }
 					NOT = { has_character_modifier = call_to_glory }
 				}
 			}
@@ -3792,7 +3768,7 @@ character_event = {
 	trigger = { 
 		has_character_modifier = call_to_glory
 		war = yes
-		is_member_of_any_warrior_lodge_trigger = yes
+		#is_member_of_any_warrior_lodge_trigger = yes
 		society_rank = 4
 		NOT = { check_variable = { which = "call_to_glory_variable" value = 20 } }
 	}
@@ -3801,12 +3777,9 @@ character_event = {
 		if = { 
 			limit = { 
 				OR = { 
-					is_member_of_any_warrior_lodge_trigger = no
+					#is_member_of_any_warrior_lodge_trigger = no
 					war = no 
-					AND = {
-						is_member_of_any_warrior_lodge_trigger = yes
-						NOT = { society_rank = 4 }
-					}
+					is_member_of_any_warrior_lodge_trigger = yes
 					NOT = { has_character_modifier = call_to_glory }
 				}
 			}
@@ -3864,7 +3837,7 @@ character_event = {
 	trigger = { 
 		has_character_modifier = call_to_glory
 		war = yes
-		is_member_of_any_warrior_lodge_trigger = yes
+		#is_member_of_any_warrior_lodge_trigger = yes
 		society_rank = 4
 		NOT = { check_variable = { which = "call_to_glory_variable" value = 20 } }
 	}
@@ -3873,12 +3846,9 @@ character_event = {
 		if = { 
 			limit = { 
 				OR = { 
-					is_member_of_any_warrior_lodge_trigger = no
+					#is_member_of_any_warrior_lodge_trigger = no
 					war = no 
-					AND = {
-						is_member_of_any_warrior_lodge_trigger = yes
-						NOT = { society_rank = 4 }
-					}
+					#is_member_of_any_warrior_lodge_trigger = yes
 					NOT = { has_character_modifier = call_to_glory }
 				}
 			}
@@ -3931,7 +3901,7 @@ character_event = {
 	trigger = { 
 		has_character_modifier = call_to_glory
 		war = yes
-		is_member_of_any_warrior_lodge_trigger = yes
+		#is_member_of_any_warrior_lodge_trigger = yes
 		society_rank = 4
 		NOT = { check_variable = { which = "call_to_glory_variable" value = 20 } }
 	}
@@ -3940,12 +3910,9 @@ character_event = {
 		if = { 
 			limit = { 
 				OR = { 
-					is_member_of_any_warrior_lodge_trigger = no
+					#is_member_of_any_warrior_lodge_trigger = no
 					war = no 
-					AND = {
-						is_member_of_any_warrior_lodge_trigger = yes
-						NOT = { society_rank = 4 }
-					}
+					NOT = { society_rank = 4 }
 					NOT = { has_character_modifier = call_to_glory }
 				}
 			}
@@ -4052,11 +4019,8 @@ character_event = {
 				has_character_modifier = call_to_glory
 					OR = { 
 						war = no 
-						is_member_of_any_warrior_lodge_trigger = no
-						AND = { #Switched to another Warrior Lodge.
-							is_member_of_any_warrior_lodge_trigger = yes
-							NOT = { society_rank = 4 }
-						}
+						#is_member_of_any_warrior_lodge_trigger = no
+						NOT = { society_rank = 4 }
 					}
 				}
 				remove_character_modifier = call_to_glory

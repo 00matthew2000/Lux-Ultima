@@ -154,7 +154,7 @@ character_event = {
 		NOT = { trait = incapable }
 		NOT = { has_character_flag = do_not_disturb }
 		NOT = { has_character_flag = flag_WL_had_ritual_hunt_event }
-		is_member_of_any_warrior_lodge_trigger = yes
+		#is_member_of_any_warrior_lodge_trigger = yes
 		any_society_member = { #Make sure there are enough friends to pick from.
 			same_society_as = ROOT
 			is_adult = yes

@@ -200,7 +200,7 @@ character_event = {
 			10 = {
 				trigger = {
 					has_dlc = "Holy Fury"
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					NOT = { any_artifact = { has_artifact_flag = battlefield_loot } }
 				}
 				good_soldier_outcome_score = yes
@@ -210,7 +210,7 @@ character_event = {
 			10 = {
 				trigger = {
 					has_dlc = "Holy Fury"
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					has_nickname = no
 				}
 				good_soldier_outcome_score = yes
@@ -220,7 +220,7 @@ character_event = {
 			5 = {
 				trigger = {
 					has_dlc = "Holy Fury"
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					event_target:enemy_commander = { always = yes } #There has to be an opponent...
 					NOT = { has_character_modifier = battle_events_1_cooldown }
 				}
@@ -232,7 +232,7 @@ character_event = {
 			10 = {
 				trigger = {
 					has_dlc = "Holy Fury"
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					NOT = { trait = robust }
 				}
 				good_soldier_outcome_score = yes
@@ -241,7 +241,7 @@ character_event = {
 			10 = {
 				trigger = {
 					has_dlc = "Holy Fury"
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					any_unit_leader = {
 			       		always = yes
 			       		NOT = { character = ROOT }
@@ -257,7 +257,7 @@ character_event = {
 			10 = {
 				trigger = {
 					has_dlc = "Holy Fury"
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					event_target:home_capital_province = { #If something cool happened at your capital once and you haven't already addressed it...
 						OR = {
 							AND = {
@@ -283,7 +283,7 @@ character_event = {
 			3 = {
 				trigger = {
 					has_dlc = "Holy Fury"
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					OR = {
 						has_nickname = no
 						trait = depressed
@@ -637,7 +637,7 @@ character_event = {
 					OR = {
 						religion = norse_pagan
 						religion = norse_pagan_reformed
-						liege = { is_member_of_any_warrior_lodge_trigger = yes }
+						#liege = { #is_member_of_any_warrior_lodge_trigger = yes }
 					}
 					trait = shieldmaiden
 
@@ -664,7 +664,7 @@ character_event = {
 					OR = {
 						religion = norse_pagan
 						religion = norse_pagan_reformed
-						is_member_of_any_warrior_lodge_trigger = yes
+						#is_member_of_any_warrior_lodge_trigger = yes
 					}
 					age = 16
 					NOT = { trait = incapable }
@@ -1033,7 +1033,7 @@ character_event = {
 		if = { #This is currently a little too common maybe?
 			limit = {
 				is_landed = yes
-				is_member_of_any_warrior_lodge_trigger = yes
+				#is_member_of_any_warrior_lodge_trigger = yes
 			}
 			event_target:home_capital_province = {
 				show_scope_change = no
@@ -2108,7 +2108,7 @@ character_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					event_target:enemy_commander = { is_member_of_any_warrior_lodge_trigger = yes }
 				}
 				save_persistent_event_target = {
@@ -2794,14 +2794,6 @@ character_event = {
 					id = 38288 #Notify Depressed
 				}
 			}
-		}
-	}
-	option = { #For WL members only: comfort hunting
-		name = EVTOPTE_HFP_11019 #Enough of these nonsense FEELINGS
-		tooltip_info_custom = available_due_to_warrior_lodge
-		piety =-5
-		trigger = {
-			is_member_of_any_warrior_lodge_trigger = yes
 		}
 	}
 	after = {
@@ -5496,8 +5488,8 @@ character_event = {
 				limit = {
 					OR = {
 						has_religion_feature = religion_ritual_sacrifice
-						religion = aztec
-						religion = aztec_reformed
+						religion = quetzal
+						religion = quetzal_reformed
 					}
 				}
 				if = { #A foreign religious head is also quite good.
@@ -5550,46 +5542,8 @@ character_event = {
 
 		trigger = {
 			has_dlc = "Holy Fury"
-			is_member_of_any_warrior_lodge_trigger = yes
+			#is_member_of_any_warrior_lodge_trigger = yes
 			has_religion_matching_joined_warrior_lodge_trigger = yes
-		}
-	}
-	# Non-Warrior Lodge members only...
-	option = {
-		name = EVTOPTC_HFP_11046 #I think I prefer you dead.
-
-		hidden_effect = {
-			event_target:captured_commander = { character_event = { id = HFP.11047 } } #"They took one look at me and then I was toast"-event.
-		}
-
-		tooltip = {
-			FROM = {
-				show_scope_change = no
-				death = {
-		            death_reason = death_duel
-		            killer = ROOT
-		        }
-			}
-		}
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 2
-				event_target:captured_commander = { is_rival = ROOT }
-			}
-			modifier = {
-				factor = 0.01
-				trait = kind
-			}
-			modifier = {
-				factor = 1.5
-				is_evil_trigger = yes
-			}
-		}
-
-		trigger = {
-			is_member_of_any_warrior_lodge_trigger = no
 		}
 	}
 	option = {

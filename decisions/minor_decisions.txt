@@ -113,8 +113,7 @@ decisions = {
 			is_playable = yes
 			OR = {
 				religion_group = christian
-				religion = mazdaki
-				religion = manichean
+				religion_group = mani_group
 			}
 			prisoner = no
 			NOT = {

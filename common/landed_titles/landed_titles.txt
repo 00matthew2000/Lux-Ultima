@@ -22161,17 +22161,12 @@ e_pannonia = {
 		color = { 187 70 70 }
 		
 		capital	= 522 # Pest
-
-		allow = {
-			OR = {
-				culture_group = magyar
-				culture = avar
-			}
-		}
 		
 		culture = hungarian
 		
-		catholic = 500 # Crusade target weight
+		zal = 5000
+		zal_christ = 5000
+		zal_mani = 5000
 		
 		d_ungvar = {
 			color={ 156 15 15 }

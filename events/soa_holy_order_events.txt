@@ -104,7 +104,7 @@ character_event = {
 					save_event_target_as = holy_order
 				}
 			}
-			aztec = {
+			quetzal = {
 				d_holyaztec = {
 					save_event_target_as = holy_order
 				}
@@ -1045,7 +1045,7 @@ province_event = {
 						save_event_target_as = holy_order
 					}
 				}
-				aztec = {
+				quetzal = {
 					d_holyaztec = {
 						save_event_target_as = holy_order
 					}
@@ -2036,7 +2036,7 @@ character_event = {
 					save_event_target_as = holy_order
 				}
 			}
-			aztec = {
+			quetzal = {
 				d_holyaztec = {
 					save_event_target_as = holy_order
 				}
@@ -2835,7 +2835,7 @@ province_event = {
 						save_event_target_as = holy_order
 					}
 				}
-				aztec = {
+				quetzal = {
 					d_holyaztec = {
 						save_event_target_as = holy_order
 					}
@@ -3810,9 +3810,9 @@ character_event = {
 			OR = {
 				religion_group = muslim
 				religion_group = zoroastrian_group
-				religion_group = berberpagan_group
-				religion_group = arabpagan_group
-				religion_group = palmyranpagan_group
+				religion_group = berberafrican_pagan_group
+				religion_group = arabafrican_pagan_group
+				religion_group = palmyranafrican_pagan_group
 				religion_group = yazd_group
 				religion_group = mand_group
 				religion_group = mani_group
@@ -3827,7 +3827,7 @@ character_event = {
 				religion_group = baltic_group
 				religion_group = finnish_group
 				religion_group = norsegerman_group
-				religion_group = pagan_group
+				religion_group = african_pagan_group
 				religion_group = mithra_group
 				religion_group = slavic_group
 				religion_group = zal_group
@@ -3849,7 +3849,7 @@ character_event = {
 	}
 	desc = {
 		trigger = {
-			religion = aztec
+			religion = quetzal
 		}
 		text = EVTDESC_SOA_2990
 		picture = "GFX_evt_battle_mesoamerican"
@@ -4288,10 +4288,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyiconoclast = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyiconoclast
@@ -4305,10 +4302,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyilm_islam = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyilm_islam
@@ -4322,10 +4316,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyindoh_bud = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyindoh_bud
@@ -4339,10 +4330,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyindoh_confucian = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyindoh_confucian
@@ -4356,10 +4344,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyindoh_hindu = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyindoh_hindu
@@ -4373,10 +4358,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyindoh_zor = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyindoh_zor
@@ -4390,10 +4372,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyjain = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyjain
@@ -4407,10 +4386,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyjud_zion = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyjud_zion
@@ -4424,10 +4400,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyjupiter = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyjupiter
@@ -4441,10 +4414,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyluwian = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyluwian
@@ -4458,10 +4428,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymani = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymani
@@ -4475,10 +4442,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymani_mithra = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymani_mithra
@@ -4492,10 +4456,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymaturidi = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymaturidi
@@ -4509,10 +4470,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymelkite = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymelkite
@@ -4526,10 +4484,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymithra = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymithra
@@ -4543,10 +4498,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymithra_christ = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymithra_christ
@@ -4560,10 +4512,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymithra_sol = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymithra_sol
@@ -4577,10 +4526,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymonophysite = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymonophysite
@@ -4594,10 +4540,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymonothelite = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymonothelite
@@ -4611,10 +4554,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymurjiah = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymurjiah
@@ -4628,10 +4568,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymutazil = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymutazil
@@ -4645,10 +4582,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymwari = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymwari
@@ -4662,10 +4596,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyneoplato = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyneoplato
@@ -4679,10 +4610,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holynestorian = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holynestorian
@@ -4696,10 +4624,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holynyau = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holynyau
@@ -4713,10 +4638,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyorthodox = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyorthodox
@@ -4730,10 +4652,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holypelagian = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holypelagian
@@ -4747,10 +4666,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyplato_christ = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyplato_christ
@@ -4764,10 +4680,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyplato_christ = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyplato_christ
@@ -4781,10 +4694,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysabellianist = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysabellianist
@@ -4798,10 +4708,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysemipelagian = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysemipelagian
@@ -4815,10 +4722,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyshiite = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyshiite
@@ -4832,10 +4736,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysol = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysol
@@ -4849,10 +4750,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysol_apollo = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysol_apollo
@@ -4866,10 +4764,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysol_christ = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysol_christ
@@ -4883,10 +4778,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysol_mani = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysol_mani
@@ -4900,10 +4792,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysolomonic_alexandros = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysolomonic_alexandros
@@ -4917,10 +4806,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysolomonic_christ = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysolomonic_christ
@@ -4934,10 +4820,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysunni = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysunni
@@ -4951,10 +4834,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyunctionist = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyunctionist
@@ -4968,10 +4848,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyyoruba = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyyoruba
@@ -4985,10 +4862,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzahiri = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzahiri
@@ -5002,10 +4876,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzal = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzal
@@ -5019,10 +4890,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzal_christ = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzal_christ
@@ -5036,10 +4904,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzal_mani = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzal_mani
@@ -5053,10 +4918,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzor_hindu = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzor_hindu
@@ -5070,10 +4932,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzoroastrian = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzoroastrian
@@ -5087,10 +4946,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyahriman_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyahriman_reformed
@@ -5104,10 +4960,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyamun_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyamun_reformed
@@ -5121,10 +4974,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyarab_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyarab_pagan_reformed
@@ -5138,10 +4988,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyaten_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyaten_reformed
@@ -5155,10 +5002,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holybaal_monotheistic_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holybaal_monotheistic_reformed
@@ -5172,10 +5016,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holybaltic_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holybaltic_pagan_reformed
@@ -5189,10 +5030,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holybantu_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holybantu_pagan_reformed
@@ -5206,10 +5044,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyberber_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyberber_pagan_reformed
@@ -5223,10 +5058,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holybon_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holybon_reformed
@@ -5240,10 +5072,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holybud_zen_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holybud_zen_reformed
@@ -5257,10 +5086,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holybud_zor_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holybud_zor_reformed
@@ -5274,10 +5100,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holybyeri_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holybyeri_reformed
@@ -5291,10 +5114,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holycathar_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holycathar_reformed
@@ -5308,10 +5128,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyceltic_christ_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyceltic_christ_reformed
@@ -5325,10 +5142,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyceltic_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyceltic_pagan_reformed
@@ -5342,10 +5156,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holychristian_populist_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holychristian_populist_reformed
@@ -5359,10 +5170,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holychumbylat_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holychumbylat_reformed
@@ -5376,10 +5184,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holycybele_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holycybele_reformed
@@ -5393,10 +5198,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holydruze_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holydruze_reformed
@@ -5410,10 +5212,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyerlik_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyerlik_reformed
@@ -5427,10 +5226,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyethiopian_war_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyethiopian_war_reformed
@@ -5444,10 +5240,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyfinnish_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyfinnish_pagan_reformed
@@ -5461,10 +5254,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holygerman_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holygerman_pagan_reformed
@@ -5478,10 +5268,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holygraeco_roman_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holygraeco_roman_reformed
@@ -5495,10 +5282,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyiberian_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyiberian_pagan_reformed
@@ -5512,10 +5296,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyilluyanka_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyilluyanka_reformed
@@ -5529,10 +5310,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyindohelen_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyindohelen_reformed
@@ -5546,10 +5324,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyinuit_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyinuit_pagan_reformed
@@ -5563,10 +5338,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyisis_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyisis_reformed
@@ -5580,10 +5352,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyjud_ark_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyjud_ark_reformed
@@ -5597,10 +5366,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyjudaism_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyjudaism_reformed
@@ -5614,10 +5380,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holykubera_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holykubera_reformed
@@ -5631,10 +5394,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holylubu_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holylubu_reformed
@@ -5648,10 +5408,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymand_ruha_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymand_ruha_reformed
@@ -5665,10 +5422,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymandaean_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymandaean_reformed
@@ -5682,10 +5436,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymani_germanic_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymani_germanic_reformed
@@ -5699,10 +5450,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymani_slavic_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymani_slavic_reformed
@@ -5716,10 +5464,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymari_christ_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymari_christ_reformed
@@ -5733,10 +5478,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymazdakism_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymazdakism_reformed
@@ -5750,10 +5492,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymontanist_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymontanist_reformed
@@ -5767,10 +5506,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymurugan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymurugan_reformed
@@ -5784,10 +5520,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymuslim_aliite_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymuslim_aliite_reformed
@@ -5801,10 +5534,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymuslim_domination_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymuslim_domination_reformed
@@ -5818,10 +5548,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holymuslim_sufi_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymuslim_sufi_reformed
@@ -5835,10 +5562,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holynasrani_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holymuslim_sufi_reformed
@@ -5852,10 +5576,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holynorse_christ_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holynorse_christ_reformed
@@ -5869,10 +5590,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holynorse_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holynorse_pagan_reformed
@@ -5886,10 +5604,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holynorthern_sun_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holynorthern_sun_reformed
@@ -5903,10 +5618,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holynyakalagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holynyakalagan_reformed
@@ -5920,10 +5632,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holypriscillian_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holypriscillian_reformed
@@ -5937,10 +5646,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyragnarok_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyragnarok_reformed
@@ -5954,10 +5660,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysaura_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysaura_reformed
@@ -5971,10 +5674,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyserer_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyserer_reformed
@@ -5988,10 +5688,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyset_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyset_reformed
@@ -6005,10 +5702,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysethian_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysethian_reformed
@@ -6022,10 +5716,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyslavic_christian_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyslavic_christian_reformed
@@ -6039,10 +5730,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyslavic_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyslavic_pagan_reformed
@@ -6056,10 +5744,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysol_boreas_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysol_boreas_reformed
@@ -6073,10 +5758,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysol_islam_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysol_islam_reformed
@@ -6090,10 +5772,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holysol_sahara_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holysol_sahara_reformed
@@ -6107,10 +5786,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holytao_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holytao_reformed
@@ -6124,10 +5800,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holytarhunt_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holytarhunt_reformed
@@ -6141,10 +5814,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyteiwaz_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyteiwaz_reformed
@@ -6158,10 +5828,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holytengri_bud_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holytengri_bud_reformed
@@ -6175,10 +5842,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holytengri_confucian_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holytengri_confucian_reformed
@@ -6192,10 +5856,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holytengri_mani_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holytengri_mani_reformed
@@ -6209,10 +5870,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holytengri_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holytengri_pagan_reformed
@@ -6226,10 +5884,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holytengri_rod_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holytengri_rod_reformed
@@ -6243,10 +5898,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyvattisenyaly_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyvattisenyaly_reformed
@@ -6260,10 +5912,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyvidharma_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyvidharma_reformed
@@ -6277,10 +5926,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyvoipel_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyvoipel_reformed
@@ -6294,10 +5940,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyyazdanism_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyyazdanism_reformed
@@ -6311,10 +5954,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzande_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzande_pagan_reformed
@@ -6328,10 +5968,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzor_angra_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzor_angra_reformed
@@ -6345,10 +5982,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzulu_pagan_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzulu_pagan_reformed
@@ -6362,10 +5996,7 @@ character_event = {
 				hidden_tooltip = {
 					d_holyzurvanism_reformed = {
 						holder_scope = {
-							character_event = {
-								id = CM.4012
-							}
-						}
+}
 					}
 					add_character_modifier = {
 						name = expelled_d_holyzurvanism_reformed

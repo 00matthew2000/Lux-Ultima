@@ -5612,7 +5612,7 @@ character_event = {
 	id = former_triggered_modifiers.217
 	hide_window = yes
 	only_playable = yes
-	religion = aztec
+	religion = quetzal
 	trigger = {
 		NOT = {
 			has_character_flag = ruler_aztec
@@ -5638,7 +5638,7 @@ character_event = {
 			is_playable = no
 			is_landed = no
 			NOT = {
-				religion = aztec	
+				religion = quetzal	
 			}
 		}
 	}

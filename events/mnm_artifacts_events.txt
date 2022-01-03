@@ -1342,7 +1342,7 @@ character_event = {
 						NOR = { 
 							religion_group = zoroastrian_group 
 							culture_group = iranian
-							has_landed_title = e_persia
+							has_landed_title = e_sassanid
 							has_landed_title = k_persia
 						} 
 					}
@@ -1454,7 +1454,7 @@ character_event = {
 					modifier = { 
 						factor = 0.5
 						NOT = {
-							religion = buddhist
+							religion_group = bud_group
 						}
 					}
 					modifier = {
@@ -1479,7 +1479,7 @@ character_event = {
 					modifier = { 
 						factor = 0.5
 						NOT = {
-							religion = buddhist
+							religion_group = bud_group
 						}
 					}
 					modifier = {
@@ -11985,7 +11985,7 @@ character_event = {
 				modifier = {
 					factor = 0.5 # if the sieger was a warrior lodge member
 					FROM = {
-						is_member_of_any_warrior_lodge_trigger = yes
+						#is_member_of_any_warrior_lodge_trigger = yes
 						society_rank > 1 #Must be rank 2 or higher
 					}
 				}

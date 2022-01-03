@@ -2643,15 +2643,15 @@ wonder_aztec_pyramid = {
 	picture = GFX_wonder_strip_aztec_pyramid
 	potential = {
 		OR = {
-			religion = aztec_reformed
-			religion = aztec
+			religion = quetzal_reformed
+			religion = quetzal
 		}
 	}
 	active = {
 		ROOT = {
 			OR = {
-				religion = aztec_reformed
-				religion = aztec
+				religion = quetzal_reformed
+				religion = quetzal
 			}
 		}
 	}

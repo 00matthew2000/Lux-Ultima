@@ -38,7 +38,6 @@ character_event = {
 				prisoner = no
 				is_adult = yes #Never kill kids
 				OR = { #Aren't important people
-					dynasty = 0
 					NOT = {
 						any_dynasty_member = {
 							higher_tier_than = baron

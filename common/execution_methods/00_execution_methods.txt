@@ -38,7 +38,7 @@ execution_method = {
 				# Only available to the following:
 				trait = cruel
 				trait = wroth
- 				religion = aztec
+ 				religion = quetzal
 			}
 		}
 	}
@@ -56,7 +56,7 @@ execution_method = {
 	trigger = {
 		FROM = {
 			# Only available to the following:
-			religion = aztec
+			religion = quetzal
 		}
 	}
 }
@@ -156,7 +156,7 @@ execution_method = {
 				is_tribal = yes
 			}
 			NOT = {
-				religion = aztec
+				religion = quetzal
 			}
 		}
 	}
@@ -245,7 +245,7 @@ execution_method = {
 			OR = {
 				trait = cruel
 				trait = wroth
- 				religion = aztec
+ 				religion = quetzal
 			}
 			NOT = { is_nomadic = yes }
 		}
@@ -354,7 +354,7 @@ execution_method = {
 		FROM = {
 			NOT = { is_nomadic = yes }
 			NOR = {
-				religion = aztec
+				religion = quetzal
 			}
 		}
 	}
@@ -441,7 +441,7 @@ execution_method = {
 					trait = drunkard
 				}
 				NOR = {
-					religion = aztec
+					religion = quetzal
 				}
 			}
 			is_lowborn = no
@@ -590,7 +590,7 @@ execution_method = {
 	trigger = {
 		FROM = {
 			OR = {
-				religion = aztec
+				religion = quetzal
 				religion_group = christian
 				religion_group = muslim
 			}

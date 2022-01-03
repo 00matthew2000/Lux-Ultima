@@ -521,8 +521,8 @@ character_event = { # Sympathy for founder group
 			}
 			event_target:target_bloodline_founder = {
 				NOR = {
-					religion = norse_pagan
-					religion = hellenic_pagan
+					religion_group = norsegerman_group
+					religion_group = graceoroman_group
 				}
 			}
 		}
@@ -948,8 +948,8 @@ character_event = {
 					religion_group = pagan_group
 					NOT = { realm_size = 120 }
 					NOR = { 
-						religion = hellenic_pagan
-						religion = hellenic_pagan_reformed
+						religion_group = graceoroman_group
+						religion_group = indohelen_group
 						culture = roman
 					}
 					OR = { 
@@ -979,8 +979,8 @@ character_event = {
 					religion_group = pagan_group
 					NOT = { realm_size = 120 }
 					NOR = { 
-						religion = hellenic_pagan
-						religion = hellenic_pagan_reformed
+						religion_group = graceoroman_group
+						religion_group = indohelen_group
 						culture = roman
 					}
 					OR = { 
@@ -1016,8 +1016,8 @@ character_event = {
 					religion_group = pagan_group
 					NOT = { realm_size = 120 }
 					NOR = { 
-						religion = hellenic_pagan
-						religion = hellenic_pagan_reformed
+						religion_group = graceoroman_group
+						religion_group = indohelen_group
 						culture = roman
 					}
 					OR = { 
@@ -1051,8 +1051,8 @@ character_event = {
 					religion_group = pagan_group
 					NOT = { realm_size = 120 }
 					NOR = { 
-						religion = hellenic_pagan
-						religion = hellenic_pagan_reformed
+						religion_group = graceoroman_group
+						religion_group = indohelen_group
 						culture = roman
 					}
 					OR = { 
@@ -1197,8 +1197,8 @@ narrative_event = {
 			OR = {
 				culture_group = byzantine
 				culture = roman
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				religion_group = graceoroman_group
+				religion_group = indohelen_group
 			}
 		}
 		ai_chance = { 
@@ -1213,8 +1213,8 @@ narrative_event = {
 				has_landed_title = e_roman_empire
 				culture_group = byzantine
 				culture = roman
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				religion_group = graceoroman_group
+				religion_group = indohelen_group
 			}
 		}
 		ai_chance = { 
@@ -11440,8 +11440,8 @@ narrative_event = {
 			NOR = {
 				religion_group = christian
 				religion_group = muslim
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				religion_group = graceoroman_group
+				religion_group = indohelen_group
 			}
 		}
 		modifier = {
@@ -11454,11 +11454,11 @@ narrative_event = {
 		}
 		modifier = {
 			factor = 3
-			religion = hellenic_pagan_reformed
+			religion_group = indohelen_group
 		}
 		modifier = {
 			factor = 2
-			religion = hellenic_pagan
+			religion_group = graceoroman_group
 		}
 		modifier = {
 			factor = 3
@@ -11576,24 +11576,24 @@ narrative_event = {
 			factor = 1.5
 			piety = 1000
 			OR = {
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				religion_group = graceoroman_group
+				religion_group = indohelen_group
 			}
 		}
 		modifier = {
 			factor = 1.5
 			piety = 1500
 			OR = {
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				religion_group = graceoroman_group
+				religion_group = indohelen_group
 			}
 		}
 		modifier = {
 			factor = 1.75
 			piety = 2000
 			OR = {
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				religion_group = graceoroman_group
+				religion_group = indohelen_group
 			}
 		}
 		modifier = {
@@ -14836,13 +14836,13 @@ character_event = { # Mystic character arrives
 			else = {
 				random_list = {
 					25 = {
-						religion_group = finnish_group
+						religion = catholic
 					}
 					25 = {
-						religion_group = baltic_group
+						religion = orthodox
 					}
 					25 = {
-						religion_group = slavic_group
+						religion = sol_christ
 					}
 					25 = {
 					}

@@ -13,7 +13,7 @@ targetted_decisions = {
 			is_playable = yes
 			has_religion_feature = religion_ritual_sacrifice
 			NOT = { #Already have their special decision.
-				religion = aztec
+				religion = quetzal
 			}
 		}
 	
@@ -47,7 +47,7 @@ targetted_decisions = {
 					limit = {
 						controls_religion = yes
 						NOT = {
-							religion = aztec
+							religion = quetzal
 						}
 						FROM = { ai = no }
 					}
@@ -1102,7 +1102,7 @@ decisions = {
 			NOT = { has_any_opinion_modifier = opinion_blood_games_guest }
 			NOT = { has_religion_feature = religion_peaceful }
 			OR = { 
-				religion = aztec
+				religion = quetzal
 				has_religion_feature = religion_ritual_sacrifice
 			}
 		}
@@ -1201,7 +1201,7 @@ decisions = {
 			independent = yes
 			NOT = { has_religion_feature = religion_peaceful } #Aztecs could reform as Peaceful.
 			OR = { 
-				religion = aztec
+				religion = quetzal
 				has_religion_feature = religion_ritual_sacrifice
 			}
 		}

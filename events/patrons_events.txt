@@ -1279,7 +1279,7 @@ character_event = {
 			trait = possessed
 		}
 		OR = {
-			religion = aztec
+			religion = quetzal
 			religion = norse_pagan
 			religion = norse_pagan_reformed
 			religion = norse_war
@@ -1315,7 +1315,7 @@ character_event = {
 	option = {
 		if = {
 			limit = {
-				religion = aztec
+				religion = quetzal
 			}
 			character_event = { id = PATRONS_AZT.1 }
 		}

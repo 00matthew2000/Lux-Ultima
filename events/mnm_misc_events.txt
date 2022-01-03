@@ -106,18 +106,10 @@ character_event = {
 
 	trigger = {
 		is_in_society = no
-		OR = {
-			interested_in_society = the_assassins
-			interested_in_society = the_trollcrafters
-			interested_in_society = the_cult_of_kali
-			interested_in_society = the_cold_ones
-			interested_in_society = the_plaguebringers
-			interested_in_society = secret_religious_cult
-		}
 	}
 
 	immediate = {
-		character_event = { id = MNM.10011 days = 90 random = 640 }
+		character_event = { id = MNM.10011 days = 90000 random = 640 }
 	}
 }
 
@@ -127,121 +119,6 @@ character_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		is_in_society = no
-		OR = {
-			interested_in_society = the_assassins
-			interested_in_society = the_trollcrafters
-			interested_in_society = the_cult_of_kali
-			interested_in_society = the_cold_ones
-			interested_in_society = the_plaguebringers
-			interested_in_society = secret_religious_cult		
-		}
-	}
-
-	immediate = {
-		if = {
-			limit = { prisoner = yes }
-			repeat_event = { id = MNM.10011 days = 90 random = 640 }
-			break = yes
-		}
-		#Assassins
-		if = {
-			limit = {
-				interested_in_society = the_assassins
-				NOT = { has_character_flag = ongoing_recruitment }
-			}
-
-			random_society_member = {
-				limit = {
-					society_member_of = the_assassins
-					#is_within_diplo_range = ROOT
-					is_society_grandmaster = no
-				}
-				save_event_target_as = assassins_recruiter
-				character_event = { id = MNM.10012 }
-			}
-		}
-		#Satanists
-		if = {
-			limit = {
-				interested_in_society = the_satanists
-				NOT = { has_character_flag = being_recruited_by_the_satanists }
-			}
-			random_society_member = {
-				limit = {
-					society_member_of = the_satanists
-					#is_within_diplo_range = ROOT
-					is_society_grandmaster = no
-				}
-				save_event_target_as = satanists_recruiter
-				character_event = { id = MNM.10013 }
-			}
-		}
-		#Trollcrafters
-		if = {
-			limit = {
-				interested_in_society = the_trollcrafters
-				NOT = { has_character_flag = being_recruited_by_the_trollcrafters }
-			}
-			random_society_member = {
-				limit = {
-					society_member_of = the_trollcrafters
-					#is_within_diplo_range = ROOT
-					is_society_grandmaster = no
-				}
-				save_event_target_as = satanists_recruiter
-				character_event = { id = MNM.10014 }
-			}
-		}
-		#Cult of Kali
-		if = {
-			limit = {
-				interested_in_society = the_cult_of_kali
-				NOT = { has_character_flag = being_recruited_by_the_cult_of_kali }
-			}
-			random_society_member = {
-				limit = {
-					society_member_of = the_cult_of_kali
-					#is_within_diplo_range = ROOT
-					is_society_grandmaster = no
-				}
-				save_event_target_as = satanists_recruiter
-				character_event = { id = MNM.10015 }
-			}
-		}
-		#Cold ones
-		if = {
-			limit = {
-				interested_in_society = the_cold_ones
-				NOT = { has_character_flag = being_recruited_by_the_cold_ones }
-			}
-			random_society_member = {
-				limit = {
-					society_member_of = the_cold_ones
-					#is_within_diplo_range = ROOT
-					is_society_grandmaster = no
-				}
-				save_event_target_as = satanists_recruiter
-				character_event = { id = MNM.10016 }
-			}
-		}
-		#Plaguebringers
-		if = {
-			limit = {
-				interested_in_society = the_plaguebringers
-				NOT = { has_character_flag = being_recruited_by_the_plaguebringers }
-			}
-			random_society_member = {
-				limit = {
-					society_member_of = the_plaguebringers
-					#is_within_diplo_range = ROOT
-					is_society_grandmaster = no
-				}
-				save_event_target_as = satanists_recruiter
-				character_event = { id = MNM.10017 }
-			}
-		}
 		#Secret religious society
 		if = {
 			limit = {

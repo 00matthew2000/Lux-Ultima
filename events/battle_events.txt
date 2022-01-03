@@ -4571,7 +4571,7 @@ character_event = {
 		modifier = {
 			factor = 3 # if the enemy leader was a warrior lodge member
 			FROM = {
-				is_member_of_any_warrior_lodge_trigger = yes
+				#is_member_of_any_warrior_lodge_trigger = yes
 				society_rank > 1 #Must be rank 2 or higher
 			}
 		}

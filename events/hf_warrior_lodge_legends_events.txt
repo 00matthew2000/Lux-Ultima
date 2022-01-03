@@ -68,31 +68,31 @@ namespace = HF
 #From on_action "on_society_progress_full"
 # Root = The affected society grandmaster
 # From = The affected society
-character_event = {
-    id = HF.11999
-    hide_window = yes
-    is_triggered_only = yes
-
-    trigger = {
-        FROM = { this_society_is_a_warrior_lodge_trigger = yes }
-        #log = "LEGENDARY JOURNEY: legend triggered!"
-    }
-
-    immediate = {
-    	#log = "LEGENDARY JOURNEY: legend *actually* triggered"
-        FROM = {
-        	set_flag = block_society_progress #So progress is halted for members...
-        	save_event_target_as = legendary_society
-        }
-        random_province = { #Because societies cannot process events...! D: 
-            limit = { is_land = yes }
-            #log = "LEGENDARY JOURNEY: [This.GetName] is the province"
-			set_province_flag = initiating_legendary_journey
-			province_event = { id = HF.12000 days = 5 random = 7 } #Checks status of society...
-			holder_scope = { save_event_target_as = province_holder }
-		}
-    }
-}
+#character_event = {
+#   id = HF.11999
+#	hide_window = yes
+#    is_triggered_only = yes
+#
+#    trigger = {
+#        FROM = { this_society_is_a_warrior_lodge_trigger = yes }
+#        #log = "LEGENDARY JOURNEY: legend triggered!"
+#    }
+#
+#    immediate = {
+#    	#log = "LEGENDARY JOURNEY: legend *actually* triggered"
+#        FROM = {
+#        	set_flag = block_society_progress #So progress is halted for members...
+#        	save_event_target_as = legendary_society
+#        }
+#        random_province = { #Because societies cannot process events...! D: 
+#            limit = { is_land = yes }
+#            #log = "LEGENDARY JOURNEY: [This.GetName] is the province"
+#			set_province_flag = initiating_legendary_journey
+#			province_event = { id = HF.12000 days = 5 random = 7 } #Checks status of society...
+#			holder_scope = { save_event_target_as = province_holder }
+#		}
+#    }
+#}
 
 # Sent from event_target:legendary_society (above)
 province_event = {
@@ -166,197 +166,197 @@ province_event = {
 
 
 #LEGEND START: Our warrior lodge is *legendary*. My brothers and sisters are saying we have a name to live up to! Or to make for ourselves!
-character_event = {
-    id = HF.12001
-    title = legendary_prep_title
-    desc = EVTDESC_HF_12001
-    sound = rowdy_banter_short
-    picture = GFX_evt_camaraderie
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-
-    trigger = {
-        is_member_of_any_warrior_lodge_trigger = yes
-        NOT = { is_inaccessible_trigger = yes }
-
-        #There has to be at least two members at rank 4.
-        any_society_member = {
-            society_rank == 4
-            same_society_as = ROOT
-            count = 2
-        }
-    }
-
-    portrait = event_target:target_ruler
-
-    immediate = {
-        #event_targets set here:
+#character_event = {
+#    id = HF.12001
+#    title = legendary_prep_title
+#    desc = EVTDESC_HF_12001
+#    sound = rowdy_banter_short
+#    picture = GFX_evt_camaraderie
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#
+#    trigger = {
+#        is_member_of_any_warrior_lodge_trigger = yes
+#        NOT = { is_inaccessible_trigger = yes }
+#
+#        #There has to be at least two members at rank 4.
+#        any_society_member = {
+#          society_rank == 4
+#           same_society_as = ROOT
+#            count = 2
+#        }
+#    }
+#
+#   portrait = event_target:target_ruler
+#
+#    immediate = {
+#        #event_targets set here:
         # original_hero
         # fellow_hero_1
         # fellow_hero_2 (if applicable)
         # fellow_hero_3 (if applicable)
 
         # For loc purposes, to have somewhere to refer to, and also for choosing a target...
-        if = {
-            limit = { is_landed = yes }
-            capital_scope = { save_event_target_as = home_capital }
-        }
-        else_if = {
-            limit = { liege = { is_landed = yes } }
-            liege = { capital_scope = { save_event_target_as = home_capital } }
-        }
-        else = {
-            random_society_member = {
-                limit = { is_landed = yes }
-                capital_scope = { save_event_target_as = home_capital }
-            }
-        }
-
-        #select target realm...
-        any_independent_ruler = {
-            limit = {
-                NOT = { religion_group = ROOT }
-                distance = { where = event_target:home_capital distance < 1000 }
-            }
-            score_value = { #Prioritizes selecting some Emperor, if it can...
-                value = 10
-                title_tier_increase_score = yes
-            }
-            score_value = { #Prioritizes selecting some Emperor, if it can...
-                value = 10
-                nomad_reduction_score = yes
-            }
-            save_event_target_as = target_ruler
-            primary_title = {
-                save_event_target_as = target_title
-            }
-        }
-        save_persistent_event_target = { #also saves the same as a persistent target, for safety (on_death)
-            name = target_title
-            scope = event_target:target_title
-        }
-
-        save_event_target_as = original_hero
-        set_character_flag = call_to_legend_active
-        hidden_effect = {
-            society = { #Find and save your fellow heroes (can be other players)...
-                random_society_member = {
-                    limit = {
-                        society_rank == 4
-                        NOT = { character = ROOT }
-                    }
-                    set_character_flag = do_not_disturb
-                    set_character_flag = call_to_legend_active
-                    save_event_target_as = fellow_hero_1
-                }
-                random_society_member = {
-                    limit = {
-                        society_rank == 4
-                        NOT = { character = ROOT }
-                        NOT = { character = event_target:fellow_hero_1 }
-                    }
-                    set_character_flag = do_not_disturb
-                    set_character_flag = call_to_legend_active
-                    save_event_target_as = fellow_hero_2
-                }
-                random_society_member = {
-                    limit = {
-                        society_rank == 4
-                        NOT = { character = ROOT }
-                        NOT = { character = event_target:fellow_hero_1 }
-                        NOT = { character = event_target:fellow_hero_2 }
-                    }
-                    set_character_flag = do_not_disturb
-                    set_character_flag = call_to_legend_active
-                    save_event_target_as = fellow_hero_3
-                }
-            }
-        }
-    }
-
-    option = {      
-        name = EVTOPTA_HF_12001 #Start the whole thing
-
-        show_portrait = event_target:province_holder
-
-        hidden_effect = {
-            set_variable = {
-                which = legendary_event_progress
-                value = 0
-            }
-        }
-        hidden_effect = { add_1_point_to_legendary_progress_effect = yes }
-        evaluate_legendary_progress_effect = yes
-
-        hidden_effect = {
-            #Other heroes, they get the choice to back out...
-            any_society_member = {
-                limit = {
-                    same_society_as = ROOT
-                    has_character_flag = call_to_legend_active
-                    NOT = { character = ROOT }
-                }
-                character_event = { id = HF.12002 } # Give them the choice to back out...
-            }
-            any_society_member = {
-                limit = {
-                    same_society_as = ROOT
-                    NOT = { has_character_flag = call_to_legend_active }
-                    NOT = { character = ROOT }
-                }
-                character_event = { id = HF.12011 } # Let other society members know what is going on
-            }
-        }
-
-        custom_tooltip = { text = EVTOPTA_HF_12001_TT }        
-        hidden_effect = { character_event = { id = HF.12003 days = 5 } } #Hidden tombola...
-    }
-    option = { # (AI's don't get this option)
-        name = EVTOPTB_HF_12001 #I'd rather not start anything...
-        set_character_flag = rank_up_blocked
-        clr_character_flag = call_to_legend_active
-        society_rank_down = 1
-        custom_tooltip = { text = EVTOPTB_HF_12002_TT }
-
-        if = {
-            limit = {
-                # If there are no adventures left (because you're in a weird MP where everyone is in this lodge and at rank 4 and you all decided to turn this epic chain down for some reason)
-                NOT = {
-                    any_society_member = {
-                        society_rank == 4
-                        same_society_as = ROOT
-                        has_character_flag = call_to_legend_active
-                        NOT = { character = ROOT }
-                    }
-                }
-            }
-            stop_society_progress = yes # To prevent things from breaking
-        }
-
-        hidden_effect = {
-            if = {
-                limit = { is_society_grandmaster = yes }
-                set_society_grandmaster = no
-            }
-        }
-
-        hidden_effect = {
-            #Other heroes get the choice to continue without you...
-            any_society_member = {
-                limit = {
-                    same_society_as = ROOT
-                    has_character_flag = call_to_legend_active
-                    NOT = { character = ROOT }
-                }
-                character_event = { id = HF.12002 } # Give them the choice to back out...
-            }
-        }
-
-        trigger = {
-            ai = no #Because the ai will never refuse...
-        }
-    }
-}
+#        if = {
+#            limit = { is_landed = yes }
+#            capital_scope = { save_event_target_as = home_capital }
+#        }
+#        else_if = {
+#            limit = { liege = { is_landed = yes } }
+#            liege = { capital_scope = { save_event_target_as = home_capital } }
+#        }
+#        else = {
+#            random_society_member = {
+#                limit = { is_landed = yes }
+#                capital_scope = { save_event_target_as = home_capital }
+#            }
+#        }
+#
+#        #select target realm...
+#        any_independent_ruler = {
+#            limit = {
+#                NOT = { religion_group = ROOT }
+#                distance = { where = event_target:home_capital distance < 1000 }
+#            }
+#            score_value = { #Prioritizes selecting some Emperor, if it can...
+#                value = 10
+#                title_tier_increase_score = yes
+#            }
+#            score_value = { #Prioritizes selecting some Emperor, if it can...
+#                value = 10
+#                nomad_reduction_score = yes
+#            }
+#            save_event_target_as = target_ruler
+#            primary_title = {
+#                save_event_target_as = target_title
+#            }
+#        }
+#        save_persistent_event_target = { #also saves the same as a persistent target, for safety (on_death)
+#            name = target_title
+#            scope = event_target:target_title
+#        }
+#
+#        save_event_target_as = original_hero
+#        set_character_flag = call_to_legend_active
+#        hidden_effect = {
+#            society = { #Find and save your fellow heroes (can be other players)...
+#                random_society_member = {
+#                    limit = {
+#                        society_rank == 4
+#                        NOT = { character = ROOT }
+#                    }
+#                    set_character_flag = do_not_disturb
+#                    set_character_flag = call_to_legend_active
+#                    save_event_target_as = fellow_hero_1
+#                }
+#                random_society_member = {
+#                    limit = {
+#                        society_rank == 4
+#                        NOT = { character = ROOT }
+#                        NOT = { character = event_target:fellow_hero_1 }
+#                    }
+#                    set_character_flag = do_not_disturb
+#                    set_character_flag = call_to_legend_active
+#                    save_event_target_as = fellow_hero_2
+#                }
+#                random_society_member = {
+#                    limit = {
+#                        society_rank == 4
+#                        NOT = { character = ROOT }
+#                        NOT = { character = event_target:fellow_hero_1 }
+#                        NOT = { character = event_target:fellow_hero_2 }
+#                    }
+#                    set_character_flag = do_not_disturb
+#                    set_character_flag = call_to_legend_active
+#                    save_event_target_as = fellow_hero_3
+#                }
+#            }
+#        }
+#    }
+#
+#    option = {      
+#        name = EVTOPTA_HF_12001 #Start the whole thing
+#
+#        show_portrait = event_target:province_holder
+#
+#        hidden_effect = {
+#            set_variable = {
+#                which = legendary_event_progress
+#                value = 0
+#            }
+#        }
+#        hidden_effect = { add_1_point_to_legendary_progress_effect = yes }
+#        evaluate_legendary_progress_effect = yes
+#
+#        hidden_effect = {
+#            #Other heroes, they get the choice to back out...
+#            any_society_member = {
+#                limit = {
+#                    same_society_as = ROOT
+#                    has_character_flag = call_to_legend_active
+#                    NOT = { character = ROOT }
+#                }
+#                character_event = { id = HF.12002 } # Give them the choice to back out...
+#            }
+#            any_society_member = {
+#                limit = {
+#                    same_society_as = ROOT
+#                    NOT = { has_character_flag = call_to_legend_active }
+#                    NOT = { character = ROOT }
+#                }
+#                character_event = { id = HF.12011 } # Let other society members know what is going on
+#            }
+#        }
+#
+#        custom_tooltip = { text = EVTOPTA_HF_12001_TT }        
+#        hidden_effect = { character_event = { id = HF.12003 days = 5 } } #Hidden tombola...
+#    }
+#    option = { # (AI's don't get this option)
+#        name = EVTOPTB_HF_12001 #I'd rather not start anything...
+#        set_character_flag = rank_up_blocked
+#        clr_character_flag = call_to_legend_active
+#        society_rank_down = 1
+#        custom_tooltip = { text = EVTOPTB_HF_12002_TT }
+#
+#        if = {
+#            limit = {
+#                # If there are no adventures left (because you're in a weird MP where everyone is in this lodge and at rank 4 and you all decided to turn this epic chain down for some reason)
+#                NOT = {
+#                    any_society_member = {
+#                        society_rank == 4
+#                        same_society_as = ROOT
+#                        has_character_flag = call_to_legend_active
+#                        NOT = { character = ROOT }
+#                    }
+#                }
+#            }
+#            stop_society_progress = yes # To prevent things from breaking
+#        }
+#
+#        hidden_effect = {
+#            if = {
+#                limit = { is_society_grandmaster = yes }
+#                set_society_grandmaster = no
+#            }
+#        }
+#
+#        hidden_effect = {
+#            #Other heroes get the choice to continue without you...
+#            any_society_member = {
+#                limit = {
+#                    same_society_as = ROOT
+#                    has_character_flag = call_to_legend_active
+#                    NOT = { character = ROOT }
+#                }
+#                character_event = { id = HF.12002 } # Give them the choice to back out...
+#            }
+#        }
+#
+#        trigger = {
+#            ai = no #Because the ai will never refuse...
+#        }
+#    }
+#}
 
 #Potential follow-up, for OTHER HEROES only (if there were more heroes at rank 4).
 character_event = {
@@ -750,12 +750,6 @@ character_event = {
                         has_character_flag = call_it_a_day
                     }
                 }
-                if = {
-                    limit = { is_member_of_any_warrior_lodge_trigger = yes }
-                    society = {
-                        save_event_target_as = target_society
-                    }
-                }
                 if = { #You died, but reached the end...
                     limit = {  
                         is_dying = yes
@@ -807,7 +801,7 @@ character_event = {
     hide_window = yes
     
     trigger = {
-        is_member_of_any_warrior_lodge_trigger = yes
+        #is_member_of_any_warrior_lodge_trigger = yes
         has_character_flag = call_to_legend_active
     }
 

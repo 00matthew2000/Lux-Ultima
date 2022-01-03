@@ -243,7 +243,7 @@
 # 			religion = aglibol
 # 			religion = antinomian
 # 			religion = aten
-# 			religion = aztec
+# 			religion = quetzal
 # 			religion = bogomilist
 # 			religion = bud_mahayana
 # 			religion = bud_vajrayana
@@ -310,7 +310,7 @@
 # 				religion = aglibol
 # 				religion = antinomian
 # 				religion = aten
-# 				religion = aztec
+# 				religion = quetzal
 # 				religion = bogomilist
 # 				religion = bud_mahayana
 # 				religion = bud_vajrayana
@@ -770,7 +770,7 @@ province_event = {
 		#aztec flagging
 		if = {
 			limit = {
-				religion = aztec
+				religion = quetzal
 				NOT = { has_province_modifier = province_aztec }
 			}
 			add_province_modifier = {
@@ -781,7 +781,7 @@ province_event = {
 		#aztec cleansing
 		if = {
 			limit = {
-				NOT = { religion = aztec }
+				NOT = { religion = quetzal }
 				has_province_modifier = province_aztec
 			}
 			remove_province_modifier = province_aztec
