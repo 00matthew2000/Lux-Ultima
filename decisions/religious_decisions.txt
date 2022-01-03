@@ -112,9 +112,9 @@ decisions = {
 					years = 20
 				}
 			}
-			hidden_effect = {
-				long_character_event = { id = 39704 }
-			}
+			#hidden_effect = {
+				#long_character_event = { id = 39704 }
+			#}
 			piety = 1000
 		}
 		
@@ -329,9 +329,9 @@ decisions = {
 					wealth = 500
 				}
 			}
-			hidden_effect = {
-				long_character_event = { id = 39706 }
-			}
+			#hidden_effect = {
+				#long_character_event = { id = 39706 }
+			#}
 		}
 	}	
 }

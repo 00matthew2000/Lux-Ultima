@@ -492,7 +492,7 @@ character_event = {
     hide_window = yes
 
     trigger = {
-        is_member_of_any_warrior_lodge_trigger = yes
+       #is_member_of_any_warrior_lodge_trigger = yes
         has_character_flag = call_to_legend_active
         #NOT = { is_inaccessible_trigger = yes }
     }

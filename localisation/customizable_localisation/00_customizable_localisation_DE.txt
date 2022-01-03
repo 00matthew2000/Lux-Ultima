@@ -1840,7 +1840,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Pagan_eineine
-		trigger = { religion_group = pagan_group }
+		trigger = { religion_group = bantu_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Zoroastrian_eineine
@@ -1852,11 +1852,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Hindu_eineine
-		trigger = { religion = hindu }
+		trigger = { religion_group = indian_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Buddhist_eineine
-		trigger = { religion = buddhist }
+		trigger = { religion_group = bud_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Jain_eineine
@@ -1864,7 +1864,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Taoist_eineine
-		trigger = { religion = taoist }
+		trigger = { religion = tao }
 	}
 	fallback_text = {
 		localisation_key = string_DE_FB_GetHouseOfWorshipeineine
@@ -1884,7 +1884,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Pagan_EinEine
-		trigger = { religion_group = pagan_group }
+		trigger = { religion_group = bantu_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Zoroastrian_EinEine
@@ -1896,11 +1896,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Hindu_EinEine
-		trigger = { religion = hindu }
+		trigger = { religion_group = indian_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Buddhist_EinEine
-		trigger = { religion = buddhist }
+		trigger = { religion_group = bud_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Jain_EinEine
@@ -1908,7 +1908,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Taoist_EinEine
-		trigger = { religion = taoist }
+		trigger = { religion = tao }
 	}
 	fallback_text = {
 		localisation_key = string_DE_FB_GetHouseOfWorshipEinEine
@@ -1928,7 +1928,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Pagan_eineneine
-		trigger = { religion_group = pagan_group }
+		trigger = { religion_group = bantu_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Zoroastrian_eineneine
@@ -1940,11 +1940,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Hindu_eineneine
-		trigger = { religion = hindu }
+		trigger = { religion_group = indian_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Buddhist_eineneine
-		trigger = { religion = buddhist }
+		trigger = { religion_group = bud_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Jain_eineneine
@@ -1952,7 +1952,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Taoist_eineneine
-		trigger = { religion = taoist }
+		trigger = { religion = tao }
 	}
 	fallback_text = {
 		localisation_key = string_DE_FB_GetHouseOfWorshipeineneine
@@ -1972,7 +1972,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Pagan_einemeiner
-		trigger = { religion_group = pagan_group }
+		trigger = { religion_group = bantu_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Zoroastrian_einemeiner
@@ -1984,11 +1984,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Hindu_einemeiner
-		trigger = { religion = hindu }
+		trigger = { religion_group = indian_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Buddhist_einemeiner
-		trigger = { religion = buddhist }
+		trigger = { religion_group = bud_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Jain_einemeiner
@@ -1996,7 +1996,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Taoist_einemeiner
-		trigger = { religion = taoist }
+		trigger = { religion = tao }
 	}
 	fallback_text = {
 		localisation_key = string_DE_FB_GetHouseOfWorshipeinemeiner
@@ -2016,7 +2016,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Pagan_zumzur
-		trigger = { religion_group = pagan_group }
+		trigger = { religion_group = bantu_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Zoroastrian_zumzur
@@ -2028,11 +2028,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Hindu_zumzur
-		trigger = { religion = hindu }
+		trigger = { religion_group = indian_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Buddhist_zumzur
-		trigger = { religion = buddhist }
+		trigger = { religion_group = bud_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Jain_zumzur
@@ -2040,7 +2040,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Taoist_zumzur
-		trigger = { religion = taoist }
+		trigger = { religion = tao }
 	}
 	fallback_text = {
 		localisation_key = string_DE_FB_GetHouseOfWorshipzumzur
@@ -2060,7 +2060,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Pagan_iminder
-		trigger = { religion_group = pagan_group }
+		trigger = { religion_group = bantu_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Zoroastrian_iminder
@@ -2072,11 +2072,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Hindu_iminder
-		trigger = { religion = hindu }
+		trigger = { religion_group = indian_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Buddhist_iminder
-		trigger = { religion = buddhist }
+		trigger = { religion_group = bud_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Jain_iminder
@@ -2084,7 +2084,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Taoist_iminder
-		trigger = { religion = taoist }
+		trigger = { religion = tao }
 	}
 	fallback_text = {
 		localisation_key = string_DE_FB_GetHouseOfWorshipiminder
@@ -2104,7 +2104,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Pagan_desder
-		trigger = { religion_group = pagan_group }
+		trigger = { religion_group = bantu_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Zoroastrian_desder
@@ -2116,11 +2116,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Hindu_desder
-		trigger = { religion = hindu }
+		trigger = { religion_group = indian_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Buddhist_desder
-		trigger = { religion = buddhist }
+		trigger = { religion_group = bud_group }
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Jain_desder
@@ -2128,7 +2128,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_GetHouseOfWorship_Taoist_desder
-		trigger = { religion = taoist }
+		trigger = { religion = tao }
 	}
 	fallback_text = {
 		localisation_key = string_DE_FB_GetHouseOfWorshipdesder

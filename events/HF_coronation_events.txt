@@ -914,7 +914,7 @@ letter_event = {
 					factor = 0.25
 					trait = cynical
 				}
-				FROM = { letter_event = { id = HF.20207 } } #Send son to holy order.
+				#FROM = { letter_event = { id = HF.20207 } } #Send son to holy order.
 			} 
 			10 = { 
 				trigger = {
@@ -1027,7 +1027,7 @@ letter_event = {
 					factor = 1.25
 					trait = gregarious
 				}
-				FROM = { letter_event = { id = HF.20210 } } #Join my Monastic Order.
+				#FROM = { letter_event = { id = HF.20210 } } #Join my Monastic Order.
 			}
 			10 = { 
 				modifier = {
@@ -1166,7 +1166,7 @@ letter_event = {
 						value = 100 
 					} 
 				}
-				FROM = { letter_event = { id = HF.20211 } } #I want to be independent.
+				#FROM = { letter_event = { id = HF.20211 } } #I want to be independent.
 			}
 			20 = {
 				modifier = {
@@ -1667,7 +1667,7 @@ letter_event = {
 							trait = possessed
 						}
 					} 
-					FROM = { letter_event = { id = HF.20225 } } #Calls for Donation of Constantine.
+					#FROM = { letter_event = { id = HF.20225 } } #Calls for Donation of Constantine.
 				}
 			}
 			10 = { 
@@ -1772,7 +1772,7 @@ letter_event = {
 						modifier = opinion_requested_land_holyorder 
 					}
 				}
-				FROM = { letter_event = { id = HF.20217 } } #Give lands to the Holy Orders.
+				#FROM = { letter_event = { id = HF.20217 } } #Give lands to the Holy Orders.
 			}
 			15 = {  
 				modifier = {
@@ -1991,7 +1991,7 @@ letter_event = {
 					completely_controls = d_ferrara
 					completely_controls = d_benevento
 				}
-				FROM = { letter_event = { id = HF.20221 } } #Holy war Italy for me.
+				#FROM = { letter_event = { id = HF.20221 } } #Holy war Italy for me.
 			}
 		}
 	}
@@ -12286,27 +12286,9 @@ character_event = {
 				} 
 			}
 			AND =  { 
-				has_landed_title = d_west_african_pagan_reformed 
-				any_artifact = { artifact_type = crown_west_african_fylkir }
-				d_west_african_pagan_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND =  { 
-				has_landed_title = d_zun_pagan_reformed 
-				any_artifact = { artifact_type = crown_zun_fylkir }
-				d_zun_pagan_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
-			AND =  { 
-				has_landed_title = k_hellenic_pagan
+				has_landed_title = d_graeco_roman_reformed
 				any_artifact = { artifact_type = scepter_hellenic_fylkir }
-				k_hellenic_pagan = { 
+				d_graeco_roman_reformed = { 
 					current_heir = { 
 						NOT = { dynasty = ROOT }
 					} 
@@ -12438,21 +12420,6 @@ character_event = {
 		}
 		if = { 
 			limit = { 
-				has_landed_title = d_west_african_pagan_reformed
-				any_artifact = { artifact_type = crown_west_african_fylkir }
-			}
-			d_west_african_pagan_reformed = { 
-				current_heir = { save_event_target_as = worthy_west_african_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_west_african_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_west_african_fylkir }
-				save_event_target_as = inheriting_artifact_west_africancrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
 				has_landed_title = d_slavic_pagan_reformed
 				any_artifact = { artifact_type = crown_slavic_fylkir }
 			}
@@ -12498,25 +12465,10 @@ character_event = {
 		}
 		if = { 
 			limit = { 
-				has_landed_title = d_zun_pagan_reformed
-				any_artifact = { artifact_type = crown_zun_fylkir }
-			}
-			d_zun_pagan_reformed = { 
-				current_heir = { save_event_target_as = worthy_zun_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_zun_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = crown_zun_fylkir }
-				save_event_target_as = inheriting_artifact_zuncrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
-		if = { 
-			limit = { 
-				has_landed_title = k_hellenic_pagan
+				has_landed_title = d_graeco_roman_reformed
 				any_artifact = { artifact_type = scepter_hellenic_fylkir }
 			}
-			k_hellenic_pagan = { 
+			d_graeco_roman_reformed = { 
 				current_heir = { save_event_target_as = worthy_hellenic_fylkir_crown }
 			}
 			player_heir = { save_event_target_as = unworthy_hellenic_fylkir_crown }
@@ -13837,154 +13789,5 @@ character_event = {
 
 	immediate = {
 		clr_character_flag = flag_pepin_for_coronation
-	}
-}
-
-#On_title_usurped: move special crowns to new holder. FROMFROM = old holder, FROM = title, ROOT = new holder.
-character_event = {
-	id = HF.20414
-	hide_window = yes
-
-	trigger = {
-		OR = {	
-			AND = {
-				FROM = { title = e_hre } 
-				FROMFROM = { any_artifact = { artifact_type = crown_hre } } 
-			} 
-			AND = {
-				FROM = { title = e_sassanid } 
-				FROMFROM = { any_artifact = { artifact_type = crown_pahlavi } } 
-			} 
-			AND = {
-				FROM = { title = e_byzantium } 
-				FROMFROM = { any_artifact = { artifact_type = crown_byzantine } } 
-			} 
-			AND = {
-				FROM = { title = d_norse_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
-			} 
-			AND = {
-				FROM = { title = d_tengri_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
-			} 
-			AND = {
-				FROM = { title = d_finnish_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
-			} 
-		}
-	}
-
-	is_triggered_only = yes
-
-	immediate = {
-
-		if = {
-			limit = {
-				FROM = { title = e_hre } 
-				FROMFROM = { any_artifact = { artifact_type = crown_hre } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_hre }
-					save_event_target_as = inheriting_artifact_1
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = e_sassanid } 
-				FROMFROM = { any_artifact = { artifact_type = crown_pahlavi } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_pahlavi }
-					save_event_target_as = inheriting_artifact_4
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = e_byzantium } 
-				FROMFROM = { any_artifact = { artifact_type = crown_byzantine } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_byzantine }
-					save_event_target_as = inheriting_artifact_2
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = d_norse_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_fylkir }
-					save_event_target_as = inheriting_artifact_3
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = d_tengri_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_tengri_fylkir }
-					save_event_target_as = inheriting_artifact_tengricrown 
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = d_finnish_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_finnish_fylkir }
-					save_event_target_as = inheriting_artifact_finnishcrown
-				}
-			}
-		}
-		event_target:inheriting_artifact_1 = {
-			transfer_artifact = {
-				from = FROMFROM
-				to = ROOT
- 			} 
- 		} 
-		event_target:inheriting_artifact_2 = {
-			transfer_artifact = {
-				from = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_3 = {
-			transfer_artifact = {
-				from = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_tengricrown = {
-			transfer_artifact = {
-				from = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_finnishcrown = {
-			transfer_artifact = {
-				from = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_4 = {
-			transfer_artifact = {
-				from = FROMFROM
-				to = ROOT
- 			} 
- 		} 
 	}
 }

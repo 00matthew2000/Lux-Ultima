@@ -4635,20 +4635,14 @@ character_event = {
 		text = EVTDESCHFPB20503
 		picture = GFX_evt_comet
 		trigger = {
-			OR = { 
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			} 
+			religion_group = norsegerman_group
 		}
 	}
 	desc = {
 		text = EVTDESCHFPC20503
 		picture = GFX_evt_wolf
 		trigger = {
-			OR = { 
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
-			} 
+			religion_group = tengri_group
 		}
 	}
 	picture = GFX_evt_comet
@@ -4670,20 +4664,14 @@ character_event = {
 	option = { 
 		name = EVTOPTBHFP20503
 		trigger = { 
-			OR = { 
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			} 
+			religion_group = norsegerman_group 
 		}
 		set_character_flag = thor_baby
 	}
 	option = { 
 		name = EVTOPTCHFP20503
 		trigger = { 
-			OR = { 
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
-			} 
+			religion_group = tengri_group 
 		}
 		set_character_flag = tengri_baby
 	}
@@ -4709,21 +4697,15 @@ character_event = {
 	desc = {
 		text = EVTDESCHFPC20504
 		picture = GFX_evt_torture
-		trigger = {
-			OR = { 
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			} 
+		trigger = { 
+			religion_group = norsegerman_group
 		}
 	}
 	desc = {
 		text = EVTDESCHFPD20504
 		picture = GFX_evt_illness
 		trigger = {
-			OR = { 
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
-			} 
+			religion_group = tengri_group 
 		}
 	}
 	picture = GFX_evt_illness
@@ -4748,21 +4730,15 @@ character_event = {
 	}
 	option = { 
 		name = EVTOPTCHFP20504
-		trigger = { 
-			OR = { 
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			} 
+		trigger = {  
+			religion_group = norsegerman_group 
 		}
 		set_character_flag = loki_baby
 	}
 	option = { 
 		name = EVTOPTDHFP20504
-		trigger = { 
-			OR = { 
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
-			} 
+		trigger = {  
+			religion_group = tengri_group 
 		}
 		set_character_flag = erlik_baby
 	}
@@ -14843,12 +14819,9 @@ character_event = {
 			is_alive = yes
 			is_married = ROOT
 			OR = { #Can be of different but similar religion.
-				religion = baltic_pagan
 				religion = baltic_pagan_reformed
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-				religion = finnish_pagan
-				religion = finnish_pagan_reformed
+				religion_group = norsegerman_group
+				religion_group = finnish_group
 			}
 			NOR = {
 				trait = incapable
@@ -14865,12 +14838,9 @@ character_event = {
 			} 
 		}
 		OR = {
-			religion = baltic_pagan
 			religion = baltic_pagan_reformed
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-			religion = finnish_pagan
-			religion = finnish_pagan_reformed
+			religion_group = norsegerman_group
+			religion_group = finnish_group
 		}
 	}
 

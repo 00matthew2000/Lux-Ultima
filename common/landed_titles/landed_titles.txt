@@ -28063,10 +28063,12 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color2={ 255 255 255 }
 
 				greek = "Leucus Limen"
+				hellenistic = "Leucus Limen"
+				roman = "Leucus Limen"
 				nubian = "Leucus Limen"
 				
 				b_kosseir = {}
-				b_safaga = {}
+				b_alqusair = {}
 				b_abughusun = {}
 				b_ummrus = {}
 				b_asfoun = {} # Fictional, for prosperity
@@ -28108,7 +28110,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				}
 				b_karanis1 = {
 				}
-				b_beni_suef = {
+				b_bani_effan = {
 					nubian = "Panisof"
 				}
 				b_heracleus = {}
@@ -42268,7 +42270,7 @@ d_han_junks = {
 	# Cannot be vassalized
 	independent = yes
 
-	mercenary_type = naval_merc_composition
+	mercenary_type = treasure_fleet_composition
 }
 
 d_jurchen_corsairs = {
@@ -42300,7 +42302,7 @@ d_jurchen_corsairs = {
 	# Cannot be vassalized
 	independent = yes
 
-	mercenary_type = naval_merc_composition
+	mercenary_type = treasure_fleet_composition
 }
 
 # Silk Road Mercs

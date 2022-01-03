@@ -26959,100 +26959,6 @@ asian_religion_group = {
     graphical_culture = indiangfx
     playable = yes
 	hostile_within_group = yes
-    
-	jurchen_pagan_reformed = { # Jurchens
-		graphical_culture = mongolgfx	
-		secondary_event_pictures = tengri_pagan
-
-		icon = 29
-		heresy_icon = 30
-		
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		ai_convert_other_group = 2 # always try to convert
-		
-		color = { 0.6 0.2 0.85 }
-		alternate_start = { always = no }
-		
-		high_god_name = GOD_ABKA_HEHE
-		
-		god_names = {
-			GOD_ABKA_HEHE GOD_BANAMU_HEHE GOD_ULDEN_HEHE GOD_SONGKORO_HEHE GOD_ABKA_ENDURI
-		}
-		evil_god_names = {
-			ERLIK
-		}
-		
-		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
-		priest_title = SHAMAN
-		
-		priests_can_marry = yes
-		allow_looting = yes
-		max_consorts = 3
-		
-		aggression = 2.0 # AI aggression factor
-		
-		religious_clothing_head = 6
-		religious_clothing_priest = 4
-		
-		allow_in_ruler_designer = no
-		
-		intermarry = bud_group
-		intermarry = zoroastrian_group
-	}
-	
-	jurchen_pagan = { #Jurchens
-		graphical_culture = mongolgfx	
-
-		icon = 28
-		heresy_icon = 30
-		
-		color = { 0.6 0.2 0.8 }
-		
-		high_god_name = GOD_ABKA_HEHE
-		
-		god_names = {
-			GOD_ABKA_HEHE GOD_BANAMU_HEHE GOD_ULDEN_HEHE GOD_SONGKORO_HEHE GOD_ABKA_ENDURI
-		}
-		evil_god_names = {
-			ERLIK
-		}
-		
-		unit_modifier = {
-			levy_size = 0.3
-			
-			light_cavalry_offensive = 0.3
-			light_cavalry_defensive = 0.3
-			
-			key = "tengri_pagan"
-		}
-	
-		scripture_name = THE_LEGENDS
-		priest_title = SHAMAN
-		
-		priests_can_marry = yes
-		allow_looting = yes
-		peace_prestige_loss = yes # Lose Prestige while at peace
-		raised_vassal_opinion_loss = no
-		max_consorts = 3
-		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		reformed = jurchen_pagan_reformed
-		ignores_defensive_attrition = yes
-		
-		short_reign_opinion_year_mult = 1.5
-		
-		aggression = 2.0 # AI aggression factor
-		
-		religious_clothing_head = 6
-		religious_clothing_priest = 4
-		
-		dislike_tribal_organization = yes
-		
-		intermarry = bud_group
-		intermarry = zoroastrian_group
-		intermarry = shingyo
-	}
 
 	melanesian_religion_reformed = {
 		graphical_culture = hindugfx
@@ -28014,95 +27920,7 @@ asian_religion_group = {
 		dislike_tribal_organization = yes
 		
 		intermarry = indian_group
-	}
-	
-	ainu_pantheism_reformed = {
-		graphical_culture = mongolgfx	
-		secondary_event_pictures = tengri_pagan
-
-		icon = 64
-		
-		color = { 0.75 0.5 0.35 }
-		alternate_start = { always = no }
-		
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		ai_convert_other_group = 2 # always try to convert
-		
-		high_god_name = GOD_KANDAKORO
-		god_names = {
-			GOD_KAMUY GOD_FUCHI GOD_KANNA GOD_HASH-INAU-UK GOD_KANDAKORO GOD_WAKA-USH GOD_MINTAKORO GOD_RUKORO GOD_CHIKAP
-			GOD_MOSHIRIKARA GOD_REPUN GOD_KIM-UN
-		}
-		evil_god_names = {
-			PAUCHI
-		}
-
-		scripture_name =THE_KAMUY_YUKAR
-		priest_title = SHAMAN
-
-		priests_can_marry = yes
-		defensive_attrition = yes
-		can_grant_divorce = yes
-		priests_can_inherit = no
-		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
-		female_temple_holders = yes
-		max_consorts = 3
-
-		religious_clothing_head = 6
-		religious_clothing_priest = 4
-
-		allow_in_ruler_designer = no
-	}
-	
-	ainu_pantheism = {
-		graphical_culture = mongolgfx
-		alternate_start = {
-			OR = {
-				year < 1100
-				has_alternate_start_parameter = { key = religion value = full_random }
-			}
-		}
-
-		icon = 64
-
-		color = { 0.8 0.4 0.1 }
-		
-		high_god_name = GOD_KANDAKORO
-		god_names = {
-			GOD_KAMUY GOD_FUCHI GOD_KANNA GOD_HASH-INAU-UK GOD_KANDAKORO GOD_WAKA-USH GOD_MINTAKORO GOD_RUKORO GOD_CHIKAP
-			GOD_MOSHIRIKARA GOD_REPUN GOD_KIM-UN
-		}
-		evil_god_names = {
-			PAUCHI
-		}
-
-		scripture_name =THE_KAMUY_YUKAR
-		priest_title = SHAMAN
-
-		unit_modifier = {
-			levy_size = 0.3
-			
-			heavy_infantry_offensive = 0.2
-			heavy_infantry_defensive = 0.2
-			
-			key = "OFF_RELIGION"
-		}
-		
-		priests_can_marry = yes
-		defensive_attrition = yes
-		can_grant_divorce = yes
-		priests_can_inherit = no
-		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
-		female_temple_holders = yes
-		max_consorts = 3
-		reformed = ainu_pantheism_reformed
-		
-		religious_clothing_head = 6
-		religious_clothing_priest = 4
-		
-		dislike_tribal_organization = yes
-	}
+	}	
 }
 
 african_pagan_group = {
@@ -31490,6 +31308,186 @@ eastern_folk_group = {
 	has_coa_on_barony_only = no
 	hostile_within_group = yes
 
+	ainu_pantheism_reformed = {
+		graphical_culture = mongolgfx	
+		secondary_event_pictures = tengri_pagan
+
+		icon = 64
+		
+		color = { 0.75 0.5 0.35 }
+		alternate_start = { always = no }
+		
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		ai_convert_other_group = 2 # always try to convert
+		
+		high_god_name = GOD_KANDAKORO
+		god_names = {
+			GOD_KAMUY GOD_FUCHI GOD_KANNA GOD_HASH-INAU-UK GOD_KANDAKORO GOD_WAKA-USH GOD_MINTAKORO GOD_RUKORO GOD_CHIKAP
+			GOD_MOSHIRIKARA GOD_REPUN GOD_KIM-UN
+		}
+		evil_god_names = {
+			PAUCHI
+		}
+
+		scripture_name =THE_KAMUY_YUKAR
+		priest_title = SHAMAN
+
+		priests_can_marry = yes
+		defensive_attrition = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		max_consorts = 3
+
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+
+		allow_in_ruler_designer = no
+	}
+	
+	ainu_pantheism = {
+		graphical_culture = mongolgfx
+		alternate_start = {
+			OR = {
+				year < 1100
+				has_alternate_start_parameter = { key = religion value = full_random }
+			}
+		}
+
+		icon = 64
+
+		color = { 0.8 0.4 0.1 }
+		
+		high_god_name = GOD_KANDAKORO
+		god_names = {
+			GOD_KAMUY GOD_FUCHI GOD_KANNA GOD_HASH-INAU-UK GOD_KANDAKORO GOD_WAKA-USH GOD_MINTAKORO GOD_RUKORO GOD_CHIKAP
+			GOD_MOSHIRIKARA GOD_REPUN GOD_KIM-UN
+		}
+		evil_god_names = {
+			PAUCHI
+		}
+
+		scripture_name =THE_KAMUY_YUKAR
+		priest_title = SHAMAN
+
+		unit_modifier = {
+			levy_size = 0.3
+			
+			heavy_infantry_offensive = 0.2
+			heavy_infantry_defensive = 0.2
+			
+			key = "OFF_RELIGION"
+		}
+		
+		priests_can_marry = yes
+		defensive_attrition = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		max_consorts = 3
+		reformed = ainu_pantheism_reformed
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+		
+		dislike_tribal_organization = yes
+	}
+	jurchen_pagan_reformed = { # Jurchens
+		graphical_culture = mongolgfx	
+		secondary_event_pictures = tengri_pagan
+
+		icon = 29
+		heresy_icon = 30
+		
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.6 0.2 0.85 }
+		alternate_start = { always = no }
+		
+		high_god_name = GOD_ABKA_HEHE
+		
+		god_names = {
+			GOD_ABKA_HEHE GOD_BANAMU_HEHE GOD_ULDEN_HEHE GOD_SONGKORO_HEHE GOD_ABKA_ENDURI
+		}
+		evil_god_names = {
+			ERLIK
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		priests_can_marry = yes
+		allow_looting = yes
+		max_consorts = 3
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+		
+		allow_in_ruler_designer = no
+		
+		intermarry = bud_group
+		intermarry = zoroastrian_group
+	}
+	
+	jurchen_pagan = { #Jurchens
+		graphical_culture = mongolgfx	
+
+		icon = 28
+		heresy_icon = 30
+		
+		color = { 0.6 0.2 0.8 }
+		
+		high_god_name = GOD_ABKA_HEHE
+		
+		god_names = {
+			GOD_ABKA_HEHE GOD_BANAMU_HEHE GOD_ULDEN_HEHE GOD_SONGKORO_HEHE GOD_ABKA_ENDURI
+		}
+		evil_god_names = {
+			ERLIK
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			light_cavalry_offensive = 0.3
+			light_cavalry_defensive = 0.3
+			
+			key = "tengri_pagan"
+		}
+	
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		priests_can_marry = yes
+		allow_looting = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = jurchen_pagan_reformed
+		ignores_defensive_attrition = yes
+		
+		short_reign_opinion_year_mult = 1.5
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+		
+		dislike_tribal_organization = yes
+		
+		intermarry = bud_group
+		intermarry = zoroastrian_group
+		intermarry = shingyo
+	}
 	nat = { #Burman-Pyu folk religion
 		has_coa_on_barony_only = yes
 		graphical_culture = buddhistgfx

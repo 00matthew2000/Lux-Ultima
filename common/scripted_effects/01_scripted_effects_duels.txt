@@ -187,7 +187,7 @@ apply_any_applicable_harsh_penalties_effect = {
 		if = { #If BOTH a female target and a priest...!
 			limit = {
 				is_female = yes #She's a woman
-				NOT = { is_member_of_roots_warrior_lodge_trigger = yes } #She is not a warrior
+				#NOT = { is_member_of_roots_warrior_lodge_trigger = yes } #She is not a warrior
 		                            
 	            #FROM and ROOT do NOT have gender equality in some form
 	            NAND = {
@@ -226,7 +226,7 @@ apply_any_applicable_harsh_penalties_effect = {
 		else_if = { #If you're fighting a woman, and it'd be frowned upon within your religion/culture/laws because patriarchy
 			limit = {
 				is_female = yes #She's a woman
-				NOT = { is_member_of_roots_warrior_lodge_trigger = yes } #She is not a warrior
+				#NOT = { is_member_of_roots_warrior_lodge_trigger = yes } #She is not a warrior
 		                            
 	            #FROM and ROOT do NOT have gender equality in some form
 	            NAND = {
@@ -261,7 +261,7 @@ apply_any_applicable_harsh_penalties_effect = {
 		}
 		else = { #If they are a priest of some kind, while challenger is not pagan (as pagans don't care), fighting priests is frowned upon...
 			limit = {
-				is_member_of_any_warrior_lodge_trigger = no #They are not a warrior
+				#is_member_of_any_warrior_lodge_trigger = no #They are not a warrior
 	            is_priest = yes #They are a priest
 	            NOT = { event_target:combatant_1 = { LI_pagan_trigger = yes } } #Attacker is NOT pagan
 			}
@@ -854,7 +854,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 				}
 				OR = {
 					has_character_flag = is_battlefield_duel
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					has_focus = focus_war
 					event_target:combatant_1 = { has_character_flag = flag_duel_no_draws } #Special triggered event duels.
 					event_target:combatant_2 = { has_character_flag = flag_duel_no_draws } 
@@ -916,7 +916,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 				OR = {
 					has_character_flag = claim_duel@event_target:combatant_2
 					has_character_flag = is_battlefield_duel
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					has_focus = focus_war
 					event_target:combatant_1 = { has_character_flag = flag_duel_no_draws } #Special triggered event duels.
 					event_target:combatant_2 = { has_character_flag = flag_duel_no_draws } 
@@ -991,7 +991,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 				OR = {
 					has_character_flag = claim_duel@event_target:combatant_2
 					has_character_flag = is_battlefield_duel
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					has_focus = focus_war
 					event_target:combatant_1 = { has_character_flag = flag_duel_no_draws } #Special triggered event duels.
 					event_target:combatant_2 = { has_character_flag = flag_duel_no_draws } 
@@ -1646,7 +1646,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 				NOT = { has_character_flag = is_legendary_duel }
 				NOT = { has_character_flag = claim_duel@event_target:combatant_2 }
 				OR = {
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes
 					has_focus = focus_war
 					event_target:combatant_1 = { has_character_flag = flag_duel_no_draws } #Special triggered event duels.
 					event_target:combatant_2 = { has_character_flag = flag_duel_no_draws } 
@@ -1681,7 +1681,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 		
 		10 = { #LEGENDARY BLOODLINES: LETHAL for attacker...
 			trigger = {
-				is_member_of_any_warrior_lodge_trigger = yes
+				#is_member_of_any_warrior_lodge_trigger = yes
 				has_character_flag = is_legendary_duel
 				has_dlc = "Holy Fury"
 
@@ -1767,7 +1767,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 
 		10 = { #LEGENDARY BLOODLINES: LETHAL for defender...
 			trigger = {
-				is_member_of_any_warrior_lodge_trigger = yes
+				#is_member_of_any_warrior_lodge_trigger = yes
 				has_character_flag = is_legendary_duel
 				has_dlc = "Holy Fury"
 				
@@ -1853,7 +1853,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 		}
 		1 = { #LEGENDARY BLOODLINES: LETHAL for both...
 			trigger = {
-				is_member_of_any_warrior_lodge_trigger = yes
+				#is_member_of_any_warrior_lodge_trigger = yes
 				has_character_flag = is_legendary_duel
 				has_dlc = "Holy Fury"
 				

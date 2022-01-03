@@ -1383,38 +1383,38 @@ defined_text = {
 	text = {
 		trigger = {
             is_priest = yes #They are a priest
-			is_member_of_any_warrior_lodge_trigger = no #They are not a warrior
-            NOT = { event_target:combatant_1 = { religion_group = pagan_group } } #Attacker is NOT pagan
+			#is_member_of_any_warrior_lodge_trigger = no #They are not a warrior
+            NOT = { event_target:combatant_1 = { religion_group = bantu_group } } #Attacker is NOT pagan
 		}
 		localisation_key = String_priest_title
 	}
 	text = {
 		trigger = {
             is_female = yes #She's a woman
-			NOT = { is_member_of_roots_warrior_lodge_trigger = yes } #She is not a warrior
+			#NOT = { is_member_of_roots_warrior_lodge_trigger = yes } #She is not a warrior
 	                            
             #FROM and ROOT do NOT have gender equality in some form
             NAND = {
                 OR = {
                     trait = brave #She is brave
                     gender_equality_trigger = yes
-                    religion_group = pagan_group
+                    religion_group = bantu_group
                     is_nomadic = yes
-                    religion = buddhist
+                    religion_group = bud_group
                     religion = bogomilist
                 }
                 event_target:combatant_1 = { #Same as "FROM" in this case
                     OR = {
                         gender_equality_trigger = yes
-                        religion_group = pagan_group
+                        religion_group = bantu_group
                         is_nomadic = yes
-                        religion = buddhist
+                        religion_group = bud_group
                         religion = bogomilist
                     }
                 }
             }
             is_priest = yes #They are a priest
-            NOT = { event_target:combatant_1 = { religion_group = pagan_group } } #Attacker is NOT pagan
+            NOT = { event_target:combatant_1 = { religion_group = bantu_group } } #Attacker is NOT pagan
 		}
 		localisation_key = String_priest_woman
 	}

@@ -1,10 +1,10 @@
 setting_up_saintly_burial_site_effect = {
-	save_persistent_event_target = {
-		name = province_saint
-		scope = event_target:saint_person
-	}
-	province_event = { id = HF.40099 }
-	province_event = { id = HF.40021 }
+#	save_persistent_event_target = {
+#		name = province_saint
+#		scope = event_target:saint_person
+#	}
+#	province_event = { id = HF.40099 }
+#	province_event = { id = HF.40021 }
 }
 
 deciding_upon_saint_effect = {
@@ -93,9 +93,6 @@ deciding_upon_saint_effect = {
                 }
                 event_target:saint_person = {
                     religion = nestorian
-                }
-                event_target:saint_person = {
-                    religion = miaphysite
                 }
                 event_target:saint_person = {
                     religion = monophysite
@@ -327,12 +324,6 @@ deciding_upon_saint_effect = {
                     }
                 }
                 AND = {
-                    religion = miaphysite
-                    NOT = {
-                        has_global_flag = miaphysite_saint
-                    }
-                }
-                AND = {
                     religion = monophysite
                     NOT = {
                         has_global_flag = monophysite_saint
@@ -350,10 +341,9 @@ deciding_upon_saint_effect = {
             fraticelli = { set_global_flag = fraticelli_saint }
             orthodox = { set_global_flag = orthodox_saint }
             iconoclast = { set_global_flag = iconoclast_saint }
-            # paulician = { set_global_flag = paulician_saint }
+            #paulician = { set_global_flag = paulician_saint }
             monothelite = { set_global_flag = monothelite_saint }
             nestorian = { set_global_flag = nestorian_saint }
-            miaphysite = { set_global_flag = miaphysite_saint }
             monophysite = { set_global_flag = monophysite_saint }
         }
     }

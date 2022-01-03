@@ -522,7 +522,7 @@ character_event = { # Sympathy for founder group
 			event_target:target_bloodline_founder = {
 				NOR = {
 					religion_group = norsegerman_group
-					religion_group = graceoroman_group
+					religion_group = graecoroman_group
 				}
 			}
 		}
@@ -948,7 +948,7 @@ character_event = {
 					religion_group = pagan_group
 					NOT = { realm_size = 120 }
 					NOR = { 
-						religion_group = graceoroman_group
+						religion_group = graecoroman_group
 						religion_group = indohelen_group
 						culture = roman
 					}
@@ -979,7 +979,7 @@ character_event = {
 					religion_group = pagan_group
 					NOT = { realm_size = 120 }
 					NOR = { 
-						religion_group = graceoroman_group
+						religion_group = graecoroman_group
 						religion_group = indohelen_group
 						culture = roman
 					}
@@ -1016,7 +1016,7 @@ character_event = {
 					religion_group = pagan_group
 					NOT = { realm_size = 120 }
 					NOR = { 
-						religion_group = graceoroman_group
+						religion_group = graecoroman_group
 						religion_group = indohelen_group
 						culture = roman
 					}
@@ -1051,7 +1051,7 @@ character_event = {
 					religion_group = pagan_group
 					NOT = { realm_size = 120 }
 					NOR = { 
-						religion_group = graceoroman_group
+						religion_group = graecoroman_group
 						religion_group = indohelen_group
 						culture = roman
 					}
@@ -1197,7 +1197,7 @@ narrative_event = {
 			OR = {
 				culture_group = byzantine
 				culture = roman
-				religion_group = graceoroman_group
+				religion_group = graecoroman_group
 				religion_group = indohelen_group
 			}
 		}
@@ -1213,7 +1213,7 @@ narrative_event = {
 				has_landed_title = e_roman_empire
 				culture_group = byzantine
 				culture = roman
-				religion_group = graceoroman_group
+				religion_group = graecoroman_group
 				religion_group = indohelen_group
 			}
 		}
@@ -11440,7 +11440,7 @@ narrative_event = {
 			NOR = {
 				religion_group = christian
 				religion_group = muslim
-				religion_group = graceoroman_group
+				religion_group = graecoroman_group
 				religion_group = indohelen_group
 			}
 		}
@@ -11458,7 +11458,7 @@ narrative_event = {
 		}
 		modifier = {
 			factor = 2
-			religion_group = graceoroman_group
+			religion_group = graecoroman_group
 		}
 		modifier = {
 			factor = 3
@@ -11576,7 +11576,7 @@ narrative_event = {
 			factor = 1.5
 			piety = 1000
 			OR = {
-				religion_group = graceoroman_group
+				religion_group = graecoroman_group
 				religion_group = indohelen_group
 			}
 		}
@@ -11584,7 +11584,7 @@ narrative_event = {
 			factor = 1.5
 			piety = 1500
 			OR = {
-				religion_group = graceoroman_group
+				religion_group = graecoroman_group
 				religion_group = indohelen_group
 			}
 		}
@@ -11592,7 +11592,7 @@ narrative_event = {
 			factor = 1.75
 			piety = 2000
 			OR = {
-				religion_group = graceoroman_group
+				religion_group = graecoroman_group
 				religion_group = indohelen_group
 			}
 		}
@@ -12875,7 +12875,7 @@ narrative_event = {
 		}
 		modifier = {
 			factor = 3
-			religion = buddhist
+			religion_group = bud_group
 		}
 		modifier = {
 			factor = 0.5
@@ -12976,17 +12976,17 @@ narrative_event = {
 		modifier = {
 			factor = 1.5
 			piety = 1000
-			religion = buddhist
+			religion_group = bud_group
 		}
 		modifier = {
 			factor = 1.5
 			piety = 1500
-			religion = buddhist
+			religion_group = bud_group
 		}
 		modifier = {
 			factor = 1.75
 			piety = 2000
-			religion = buddhist
+			religion_group = bud_group
 		}
 		modifier = {
 			factor = 1.75

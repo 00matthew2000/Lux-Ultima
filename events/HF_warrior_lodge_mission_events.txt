@@ -1276,6 +1276,15 @@ society_quest_event = {
 		NOT = { is_inaccessible_trigger = yes }
 		is_landed = yes
 	}
+	
+	#desc = {
+		#text = EVTDESCHF10511_A #default
+		#trigger = { event_target:duel_target = { is_member_of_any_warrior_lodge_trigger = yes } }
+	#}
+	desc = {
+		text = EVTDESCHF10511_B #if target is not in a warrior lodge...
+		#trigger = { event_target:duel_target = { is_member_of_any_warrior_lodge_trigger = no } }
+	}
 
 	immediate = {
 		if = { #Best case... (a society member of *another* warrior lodge, who matches or is below your PCS)
