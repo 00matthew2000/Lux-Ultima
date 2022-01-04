@@ -479,9 +479,9 @@
 			factor = 0
 			NOT = { has_landed_title = k_papal_state }
 			NOT = { has_landed_title = d_graeco_roman_reformed }
-			NOT = { #has_landed_title = d_fraticelli }
+			#NOT = { has_landed_title = d_fraticelli }
 			NOT = { has_claim = k_papal_state }
-			NOT = { #has_claim = d_fraticelli }
+			#NOT = { has_claim = d_fraticelli }
 		}
 	}
 
@@ -6522,13 +6522,6 @@
 				}
 			}
 		}
-		modifier = {
-			factor = 0
-			NOR = {
-				has_landed_#title = d_knights_hospitaler 
-				liege = { has_landed_#title = d_knights_hospitaler }
-			}
-		}
 	}
 	5 = {  #Teuton special headgear.
 		factor = 100
@@ -6549,15 +6542,6 @@
 					name = martial_headgear
 					value = on
 				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				has_landed_#title = d_teutonic_order 
-				has_landed_#title = k_teutonic_state 
-				liege = { has_landed_#title = d_teutonic_order }
-				liege = { has_landed_#title = k_teutonic_state }
 			}
 		}
 	}
@@ -6853,13 +6837,6 @@
 36 = {
 	0 = { # blank
 		factor = 100
-		#modifier = {
-		#	factor = 0
-		#	OR = {
-		#		#trait = dead_scepter_bon_fylkir
-		#		#trait = dead_scepter_hellenic_fylkir
-		#	}
-		#}
 		modifier = {
 			factor = 0
 			OR = {
@@ -6870,10 +6847,6 @@
 				}
 			}
 			any_artifact = {
-				OR = {
-					#artifact_type = scepter_bon_fylkir
-					#artifact_type = scepter_hellenic_fylkir
-				}
 				is_artifact_equipped = yes 
 			}
 		}
@@ -6893,10 +6866,8 @@
 			factor = 0
 			NOR = { 
 				any_artifact = {
-					#artifact_type = scepter_bon_fylkir
 					is_artifact_equipped = yes 
 				}
-				##trait = dead_scepter_bon_fylkir
 			}
 		}
 	}
