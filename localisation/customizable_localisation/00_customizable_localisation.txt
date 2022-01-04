@@ -1144,7 +1144,7 @@ defined_text = {
 	text = {
 		trigger = { 
 			interesting_face_trigger = no
-			graphical_culture_group = north_germanicgfx 
+			graphical_culture = germangfx 
 		}
 		localisation_key = String_ruddy
 	}
@@ -3361,7 +3361,7 @@ defined_text = {
 					OR = {
 						culture_group = north_germanic
 						culture = saxon
-						culture = old_saxon
+						culture = teutonic
 					}
 					is_tribal = yes
 				}
@@ -3434,7 +3434,7 @@ defined_text = {
 					OR = {
 						culture_group = north_germanic
 						culture = saxon
-						culture = old_saxon
+						culture = teutonic
 					}
 					is_tribal = yes
 				}
@@ -16843,7 +16843,7 @@ defined_text =
 		trigger = 
 		{
 			OR = {
-				culture = english
+				culture = brython
 				culture = welsh
 			}
 		}
@@ -16931,7 +16931,7 @@ defined_text =
 	{
 		trigger = 
 		{
-			culture_group = israelite
+			culture = jewish
 		}
 		localisation_key = Culture_Army_Israelite
 	}
@@ -16949,7 +16949,6 @@ defined_text =
 		{
 			OR = {
 				culture_group = north_germanic
-				culture = old_saxon
 				culture = saxon 
 				culture = frisian
 			}
@@ -16976,7 +16975,7 @@ defined_text =
 	{
 		trigger = 
 		{
-			culture = somali
+			culture = macrobian
 		}
 		localisation_key = Culture_Army_Somali
 	}	
@@ -16992,7 +16991,7 @@ defined_text =
 	{
 		trigger = 
 		{
-			culture = suebi
+			culture = teutonic
 		}
 		localisation_key = Culture_Army_Suebi
 	}

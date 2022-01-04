@@ -4494,7 +4494,7 @@ minor_soul_corruption_effect = {
 		}
 		#random_list = { #Risk of getting weaker
 			#15 = {
-				trigger = { NOT = { trait = stressed } }
+				#trigger = { NOT = { trait = stressed } }
 				#character_event = { id = MNM.7051 days = 32 random = 5 }
 			#}
 			#5 = {
