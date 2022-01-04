@@ -903,8 +903,8 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 				set_character_flag = injury_kills
 			}
 
-			character_event = { id = HFP.10101 } #double death event (attacker)
-			event_target:combatant_2 = { character_event = { id = HFP.10102 days = 1 } } #double death event (defender)
+			#character_event = { id = HFP.10101 } #double death event (attacker)
+			#event_target:combatant_2 = { character_event = { id = HFP.10102 days = 1 } } #double death event (defender)
 		}
 
 		5 = { #LETHAL for attacker...
@@ -977,7 +977,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 
 				event_target:combatant_2 = {
 					set_character_flag = someone_died
-					character_event = { id = HFP.10103 days = 1 } #"I decapitated someone!" event sent to winner...
+					#character_event = { id = HFP.10103 days = 1 } #"I decapitated someone!" event sent to winner...
 				}
 			}
 		}
@@ -1046,7 +1046,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 				set_character_flag = injury_kills
 			}
 
-			character_event = { id = HFP.10103 } #"I decapitated someone!" event sent to winner...
+			#character_event = { id = HFP.10103 } #"I decapitated someone!" event sent to winner...
 		}
 
 		10 = { #Attacker wounded someone...
@@ -1171,10 +1171,10 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 			
 			if = {
 				limit = { has_character_flag = mock_duel } #Room for future variation :)
-				character_event = { id = HFP.10105 } #"I wounded someone!" event
+				#character_event = { id = HFP.10105 } #"I wounded someone!" event
 			}
 			else = {
-				character_event = { id = HFP.10105 } #"I wounded someone!" event
+				#character_event = { id = HFP.10105 } #"I wounded someone!" event
 			}
 		}
 
@@ -1291,7 +1291,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 				}
 			}
 			
-			event_target:combatant_2 = { character_event = { id = HFP.10105 } } #"I wounded someone" event
+			#event_target:combatant_2 = { character_event = { id = HFP.10105 } } #"I wounded someone" event
 		}
 		
 		10 = { # combatant_2 (defender) runs away...
@@ -1358,8 +1358,8 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 					limit = { has_character_flag = claim_duel@event_target:combatant_2 }
 					set_character_flag = use_tribal_victory_pic
 				}
-				character_event = { id = HFP.10107 } #"They ran away - I won!" event
-				event_target:combatant_2 = { character_event = { id = HFP.10108 days = 1 } } #"I ran away and - I lost" event
+				#character_event = { id = HFP.10107 } #"They ran away - I won!" event
+				#event_target:combatant_2 = { character_event = { id = HFP.10108 days = 1 } } #"I ran away and - I lost" event
 			}
 		}
 		
@@ -1416,10 +1416,10 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 					}
 					set_character_flag = use_tribal_victory_pic
 				}
-				character_event = { id = HFP.10107 days = 1 } #"They ran away - I won" event
+				#character_event = { id = HFP.10107 days = 1 } #"They ran away - I won" event
 			}
 			
-			character_event = { id = HFP.10108 } #"I ran away - I lost!" event
+			#character_event = { id = HFP.10108 } #"I ran away - I lost!" event
 		}
 
 		5 = { #Both wounded... (attacker wins?) -- "stalemates"
@@ -1540,7 +1540,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 				}
 			}
 			
-			character_event = { id = HFP.10109 } #"Both wounded - I won!" event
+			#character_event = { id = HFP.10109 } #"Both wounded - I won!" event
 		}
 		
 		5 = { #Both wounded... (defender wins?) -- "stalemates"
@@ -1634,7 +1634,7 @@ send_duel_result_event_effect = { # Runs via the attacker/combatant_1
 				}
 			}
 			
-			event_target:combatant_2 = { character_event = { id = HFP.10109 days = 1 } } #"Both wounded - I won!" event
+			#event_target:combatant_2 = { character_event = { id = HFP.10109 days = 1 } } #"Both wounded - I won!" event
 		}
 
 		5 = { #LETHAL/PRISON for defender (BATTLE ONLY)...
@@ -2153,7 +2153,7 @@ apply_generic_duel_victory_effect = {
 			modifier = recent_duel_victory
 			months = 12 #also clears upon new duel!
 		}
-		hidden_effect = { character_event = { id = 720 } } # Bring it On achievement check event
+		#hidden_effect = { character_event = { id = 720 } } # Bring it On achievement check event
 	}
 }
 
@@ -3131,9 +3131,9 @@ spread_cowardice_trait_effect = { # Send an event to random subject, where they 
             interesting_courtier_selection_score = yes
         }
 		set_character_flag = reacting_to_craven_duelist
-		character_event = {
-			id = HF.16000 days = 10 random = 5
-		}
+		#character_event = {
+			#id = HF.16000 days = 10 random = 5
+		#}
 	}
 }
 
@@ -3655,7 +3655,7 @@ duel_enemy_commander_effect = {
 	    		
 				set_dueling_weapon_effect = yes
 				reset_duel_timers_effect = yes
-				character_event = { id = HFP.10100 } #Actual Duel evaluation and result...
+				#character_event = { id = HFP.10100 } #Actual Duel evaluation and result...
 				if = {
 		    		limit = { ROOT = { ai = no } }
 					log = "BATTLE EVENT: [commander_to_the_rescue.GetBestName] took a duel for [Root.GetTitledFirstName]."

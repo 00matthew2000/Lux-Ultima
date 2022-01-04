@@ -255,13 +255,13 @@ decisions = {
 					destroy_landed_title = THIS
 				}
 			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				character_event = { id = 60530 } # ai reinforcements
-				population = 50000
-			}
+			#if = {
+				#limit = {
+					#ai = yes
+				#}
+				#character_event = { id = 60530 } # ai reinforcements
+				#population = 50000
+			#}
 			#hidden_tooltip = {
 				#any_playable_ruler = {
 					#narrative_event = { id = 60520 } # notify the world
@@ -330,12 +330,12 @@ decisions = {
 					destroy_landed_title = THIS
 				}
 			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				character_event = { id = 60530 } # ai reinforcements
-			}
+			#if = {
+				#limit = {
+					#ai = yes
+				#}
+				#character_event = { id = 60530 } # ai reinforcements
+			#}
 			#hidden_tooltip = {
 				#any_playable_ruler = {
 					#narrative_event = { id = 60520 } # notify the world

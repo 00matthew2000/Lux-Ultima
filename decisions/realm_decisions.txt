@@ -1951,7 +1951,7 @@ targetted_decisions = {
 		
 		effect = {
 			add_trait = mutazilite
-			character_event = { id = SoA.600 tooltip = EVTTOOLTIP_SoA_600 }
+			#character_event = { id = SoA.600 tooltip = EVTTOOLTIP_SoA_600 }
 		}
 		
 		revoke_allowed = {
@@ -2008,7 +2008,7 @@ targetted_decisions = {
 		
 		effect = {
 			add_trait = ashari
-			character_event = { id = SoA.601 tooltip = EVTTOOLTIP_SoA_601 }
+			#character_event = { id = SoA.601 tooltip = EVTTOOLTIP_SoA_601 }
 		}
 		
 		revoke_allowed = {

@@ -7025,90 +7025,90 @@ province_event = {
 					}
 				}
 			}
-			modifier = {
-				factor = 1.25
-				owner = {
-					any_war = {
-						defender = event_target:province_owner
-						any_attacker = {
-							event_target:province_owner = {
-								relative_power = {
-									who = PREV
-									power = 1.5
-								}
-							}
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				owner = {
-					any_war = {
-						defender = event_target:province_owner
-						any_attacker = {
-							event_target:province_owner = {
-								relative_power = {
-									who = PREV
-									power = 2.0
-								}
-							}
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 2.0
-				owner = {
-					any_war = {
-						defender = event_target:province_owner
-						any_attacker = {
-							event_target:province_owner = {
-								relative_power = {
-									who = PREV
-									power = 3.0
-								}
-							}
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 3.0
-				owner = {
-					any_war = {
-						defender = event_target:province_owner
-						any_attacker = {
-							event_target:province_owner = {
-								relative_power = {
-									who = PREV
-									power = 4.0
-								}
-							}
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 5.0
-				owner = {
-					any_war = {
-						defender = event_target:province_owner
-						any_attacker = {
-							event_target:province_owner = {
-								relative_power = {
-									who = PREV
-									power = 5.0
-								}
-							}
-						}
-					}
-				}
-			}
+			#modifier = {
+			#	factor = 1.25
+			#	owner = {
+			#		any_war = {
+			#			defender = event_target:province_owner
+			#			any_attacker = {
+			#				event_target:province_owner = {
+			#					relative_power = {
+			#						who = PREV
+			#						power = 1.5
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
+			#modifier = {
+			#	factor = 1.5
+			#	owner = {
+			#		any_war = {
+			#			defender = event_target:province_owner
+			#			any_attacker = {
+			#				event_target:province_owner = {
+			#					relative_power = {
+			#						who = PREV
+			#						power = 2.0
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
+			#modifier = {
+			#	factor = 2.0
+			#	owner = {
+			#		any_war = {
+			#			defender = event_target:province_owner
+			#			any_attacker = {
+			#				event_target:province_owner = {
+			#					relative_power = {
+			#						who = PREV
+			#						power = 3.0
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
+			#modifier = {
+			#	factor = 3.0
+			#	owner = {
+			#		any_war = {
+			#			defender = event_target:province_owner
+			#			any_attacker = {
+			#				event_target:province_owner = {
+			#					relative_power = {
+			#						who = PREV
+			#						power = 4.0
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
+			#modifier = {
+			#	factor = 5.0
+			#	owner = {
+			#		any_war = {
+			#			defender = event_target:province_owner
+			#			any_attacker = {
+			#				event_target:province_owner = {
+			#					relative_power = {
+			#						who = PREV
+			#						power = 5.0
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
 		}
-		owner = {
-			prestige = 20
-			clr_character_flag = clanic_defense.3
-		}
+		#owner = {
+			#prestige = 20
+			#clr_character_flag = clanic_defense.3
+		#}
 	}
 }

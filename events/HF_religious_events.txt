@@ -2813,7 +2813,7 @@ character_event = {
 				} 
 				20 = { #Success studying religion.
 					trigger = { has_character_flag = flag_studying_classics_religion } 
-					character_event = { id = HF.23028 days = 100 random = 100 }
+					#character_event = { id = HF.23028 days = 100 random = 100 }
 				} 
 				20 = { #Success studying war.
 					trigger = { has_character_flag = flag_studying_military_war } 
@@ -5241,7 +5241,7 @@ character_event = {
 	        hidden = yes
 	    }
 	    hidden_tooltip = {
-	        event_target:scoped_pirate_mercenary = { character_event = { id = HFP.10095 } }
+	        #event_target:scoped_pirate_mercenary = { character_event = { id = HFP.10095 } }
 	    }
 		ai_chance = { 
 			factor = 20 

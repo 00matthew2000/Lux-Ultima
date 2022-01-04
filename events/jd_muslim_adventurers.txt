@@ -200,10 +200,10 @@ character_event = {
 				}
 			}
 			50 = {
-				modifier = {
-					factor = 2
-					culture = afghan
-				}
+				#modifier = {
+					#factor = 2
+					#culture = afghan
+				#}
 				modifier = {
 					factor = 2
 					has_character_flag = flag_denied_title

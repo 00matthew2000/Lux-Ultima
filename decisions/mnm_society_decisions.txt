@@ -3650,7 +3650,7 @@ targeted_decisions = {
 						modifier = opinion_abducting
 						months = 12000
 					}
-					character_event = { id = MNM.20070 days = 1 }
+					#character_event = { id = MNM.20070 days = 1 }
 				}
 			}
 		}
@@ -3687,7 +3687,7 @@ targeted_decisions = {
 					}
 				}
 				save_event_target_as = target_abduction
-				ROOT = { character_event = { id = MNM.20100 tooltip = stop_abduct_decision_tt } }
+				#ROOT = { character_event = { id = MNM.20100 tooltip = stop_abduct_decision_tt } }
 			}
 		}
 		
@@ -3725,7 +3725,7 @@ targeted_decisions = {
 		effect = {
 			save_event_target_as = target_abduction
 			hidden_tooltip = {
-				FROM = { character_event = { id = MNM.20100 } }
+				#FROM = { character_event = { id = MNM.20100 } }
 			}
 		}
 		

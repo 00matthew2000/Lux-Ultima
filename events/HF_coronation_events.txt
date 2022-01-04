@@ -10231,7 +10231,7 @@ character_event = {
 							trait = excommunicated
 							trait = possessed 
 							NOT = { religion_head = { has_landed_title = k_papal_state } }
-							has_landed_title = e_latin_empire #Disavowed historically.
+							#has_landed_title = e_latin_empire #Disavowed historically.
 						}
 					}
 					modifier = { #More distant/Less powerful Kingdom less likely to be crowned by the Pope.
@@ -10301,7 +10301,7 @@ character_event = {
 						factor = 0
 						NOT = { trait = excommunicated }
 						NOT = { trait = possessed }
-						NOT = { has_landed_title = e_latin_empire }
+						#NOT = { has_landed_title = e_latin_empire }
 						tier = EMPEROR
 					}
 					modifier = { #Respectable Kings are crowned by Bishops.
@@ -12285,15 +12285,15 @@ character_event = {
 					} 
 				} 
 			}
-			AND =  { 
-				has_landed_title = d_graeco_roman_reformed
-				any_artifact = { artifact_type = scepter_hellenic_fylkir }
-				d_graeco_roman_reformed = { 
-					current_heir = { 
-						NOT = { dynasty = ROOT }
-					} 
-				} 
-			}
+			#AND =  { 
+				#has_landed_title = d_graeco_roman_reformed
+				#any_artifact = { artifact_type = scepter_hellenic_fylkir }
+				#d_graeco_roman_reformed = { 
+					#current_heir = { 
+						#NOT = { dynasty = ROOT }
+					#} 
+				#} 
+			#}
 			AND =  { 
 				has_landed_title = d_slavic_pagan_reformed 
 				any_artifact = { artifact_type = crown_slavic_fylkir }
@@ -12463,21 +12463,21 @@ character_event = {
 			}
 			current_heir = { character_event = { id = HF.20407 days = 1 } }
 		}
-		if = { 
-			limit = { 
-				has_landed_title = d_graeco_roman_reformed
-				any_artifact = { artifact_type = scepter_hellenic_fylkir }
-			}
-			d_graeco_roman_reformed = { 
-				current_heir = { save_event_target_as = worthy_hellenic_fylkir_crown }
-			}
-			player_heir = { save_event_target_as = unworthy_hellenic_fylkir_crown }
-			any_artifact = { 
-				limit = { artifact_type = scepter_hellenic_fylkir }
-				save_event_target_as = inheriting_artifact_helleniccrown
-			}
-			current_heir = { character_event = { id = HF.20407 days = 1 } }
-		}
+		#if = { 
+			#limit = { 
+				#has_landed_title = d_graeco_roman_reformed
+				#any_artifact = { artifact_type = scepter_hellenic_fylkir }
+			#}
+			#d_graeco_roman_reformed = { 
+				#current_heir = { save_event_target_as = worthy_hellenic_fylkir_crown }
+			#}
+			#player_heir = { save_event_target_as = unworthy_hellenic_fylkir_crown }
+			#any_artifact = { 
+				#limit = { artifact_type = scepter_hellenic_fylkir }
+				#save_event_target_as = inheriting_artifact_helleniccrown
+			#}
+			#current_heir = { character_event = { id = HF.20407 days = 1 } }
+		#}
 		if = { 
 			limit = { 
 				has_landed_title = d_aztec_reformed

@@ -140,7 +140,7 @@ province_event = {
 	                }
 	                preferred_limit = { ai = no } #We'd rather it was a player...
 
-	                character_event = { id = HF.12001 } #START: Sends event to a warrior lodge member/hero...
+	                #character_event = { id = HF.12001 } #START: Sends event to a warrior lodge member/hero...
                     #log = "[LEGENDARY JOURNEY]: Event HF.12000 fired and [This.GetTitledFirstName] is the original hero, who starts it all!"
                 }
             }
@@ -2027,7 +2027,7 @@ character_event = {
             set_character_flag = add_duel_xp
             set_character_flag = is_legendary_duel
             save_event_target_as = combatant_1  #the person issuing the duel...
-            character_event = { id = HFP.10100 }
+            #character_event = { id = HFP.10100 }
         }
         ai_chance = {
             factor = 90

@@ -443,40 +443,40 @@ character_event = {
 				}
 				event_target:chinese_envoy = { character_event = { id = HL.5015 } }
 			}
-			30 = { # trade an artifact
-				trigger = { 
-					has_dlc = "Jade Dragon"
-				}
-				modifier = {
-					factor = 0.1
-					any_artifact = { has_artifact_flag = chinese }
-				}
-		        modifier = {
-		            offmap_china = { has_status = china_unrest }
-		            factor = 0.6
-		        }
-		        modifier = {
-		            offmap_china = { has_status = china_mongol_invasion }
-		            factor = 0.3
-		        }
-		        modifier = {
-		            offmap_china = { has_status = china_jurchen_invasion }
-		            factor = 0.3
-		        }
-		        modifier = {
-		            offmap_china = { has_status = china_famine }
-		            factor = 0.3
-		        }
-		        modifier = {
-		            offmap_china = { has_status = china_golden_age }
-		            factor = 3
-		        }
-		        modifier = {
-		            offmap_china = { has_policy = china_expansionist }
-		            factor = 2
-		        }
-				event_target:chinese_envoy = { character_event = { id = JD.60001 } }
-			}
+			#30 = { # trade an artifact - disabled for now
+				#trigger = { 
+				#	has_dlc = "Jade Dragon"
+				#}
+				#modifier = {
+				#	factor = 0.1
+				#	any_artifact = { has_artifact_flag = chinese }
+				#}
+		        #modifier = {
+		        #    offmap_china = { has_status = china_unrest }
+		        #    factor = 0.6
+		        #}
+		        #modifier = {
+		        #    offmap_china = { has_status = china_mongol_invasion }
+		        #    factor = 0.3
+		        #}
+		        #modifier = {
+		        #    offmap_china = { has_status = china_jurchen_invasion }
+		        #    factor = 0.3
+		        #}
+		        #modifier = {
+		        #    offmap_china = { has_status = china_famine }
+		        #    factor = 0.3
+		        #}
+		        #modifier = {
+		        #    offmap_china = { has_status = china_golden_age }
+		        #    factor = 3
+		        #}
+		        #modifier = {
+		        #    offmap_china = { has_policy = china_expansionist }
+		        #    factor = 2
+		        #}
+				#event_target:chinese_envoy = { character_event = { id = JD.60001 } }
+			#}
 			10 = { # resignation
 				modifier = {
 					factor = 0

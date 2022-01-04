@@ -4087,13 +4087,13 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-		add_character_modifier = {
-			name = no_griot
-			days = -1
-		}
-		set_character_flag = no_griot
-	}
+	#immediate = {
+		#add_character_modifier = {
+			#name = no_griot
+			#days = -1
+		#}
+		#set_character_flag = no_griot
+	#}
 }
 character_event = {
 	id = former_triggered_modifiers.162
@@ -4122,7 +4122,7 @@ character_event = {
 		days = 1
 	}
 	immediate = {
-		remove_character_modifier = no_griot
+		#remove_character_modifier = no_griot
 		clr_character_flag = no_griot
 	}
 }
@@ -4161,13 +4161,13 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-		add_character_modifier = {
-			name = adequate_griot_diplomacy
-			days = -1
-		}
-		set_character_flag = adequate_griot_diplomacy
-	}
+	#immediate = {
+		#add_character_modifier = {
+			#name = adequate_griot_diplomacy
+			#days = -1
+		#}
+		#set_character_flag = adequate_griot_diplomacy
+	#}
 }
 character_event = {
 	id = former_triggered_modifiers.164
@@ -4204,7 +4204,7 @@ character_event = {
 		days = 1
 	}
 	immediate = {
-		remove_character_modifier = adequate_griot_diplomacy
+		#remove_character_modifier = adequate_griot_diplomacy
 		clr_character_flag = adequate_griot_diplomacy
 	}
 }
@@ -4245,13 +4245,13 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-		add_character_modifier = {
-			name = good_griot_diplomacy
-			days = -1
-		}
-		set_character_flag = good_griot_diplomacy
-	}
+	#immediate = {
+		#add_character_modifier = {
+			#name = good_griot_diplomacy
+			#days = -1
+		#}
+		#set_character_flag = good_griot_diplomacy
+	#}
 }
 character_event = {
 	id = former_triggered_modifiers.166
@@ -4290,7 +4290,7 @@ character_event = {
 		days = 1
 	}
 	immediate = {
-		remove_character_modifier = good_griot_diplomacy
+		#remove_character_modifier = good_griot_diplomacy
 		clr_character_flag = good_griot_diplomacy
 	}
 }
@@ -4325,13 +4325,13 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-		add_character_modifier = {
-			name = great_griot_diplomacy
-			days = -1
-		}
-		set_character_flag = great_griot_diplomacy
-	}
+	#immediate = {
+		#add_character_modifier = {
+			#name = great_griot_diplomacy
+			#days = -1
+		#}
+		#set_character_flag = great_griot_diplomacy
+	#}
 }
 character_event = {
 	id = former_triggered_modifiers.168
@@ -4364,7 +4364,7 @@ character_event = {
 		days = 1
 	}
 	immediate = {
-		remove_character_modifier = great_griot_diplomacy
+		#remove_character_modifier = great_griot_diplomacy
 		clr_character_flag = great_griot_diplomacy
 	}
 }
@@ -4403,13 +4403,13 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-		add_character_modifier = {
-			name = adequate_griot_learning
-			days = -1
-		}
-		set_character_flag = adequate_griot_learning
-	}
+	#immediate = {
+		#add_character_modifier = {
+			#name = adequate_griot_learning
+			#days = -1
+		#}
+		#set_character_flag = adequate_griot_learning
+	#}
 }
 character_event = {
 	id = former_triggered_modifiers.170
@@ -4446,7 +4446,7 @@ character_event = {
 		days = 1
 	}
 	immediate = {
-		remove_character_modifier = adequate_griot_learning
+		#remove_character_modifier = adequate_griot_learning
 		clr_character_flag = adequate_griot_learning
 	}
 }
@@ -4487,13 +4487,13 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-		add_character_modifier = {
-			name = good_griot_learning
-			days = -1
-		}
-		set_character_flag = good_griot_learning
-	}
+	#immediate = {
+		#add_character_modifier = {
+			#name = good_griot_learning
+			#days = -1
+		#}
+		#set_character_flag = good_griot_learning
+	#}
 }
 character_event = {
 	id = former_triggered_modifiers.172
@@ -4532,7 +4532,7 @@ character_event = {
 		days = 1
 	}
 	immediate = {
-		remove_character_modifier = good_griot_learning
+		#remove_character_modifier = good_griot_learning
 		clr_character_flag = good_griot_learning
 	}
 }
@@ -4567,13 +4567,13 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-		add_character_modifier = {
-			name = great_griot_learning
-			days = -1
-		}
-		set_character_flag = great_griot_learning
-	}
+	#immediate = {
+		#add_character_modifier = {
+			#name = great_griot_learning
+			#days = -1
+		#}
+		#set_character_flag = great_griot_learning
+	#}
 }
 character_event = {
 	id = former_triggered_modifiers.174
@@ -4606,7 +4606,7 @@ character_event = {
 		days = 1
 	}
 	immediate = {
-		remove_character_modifier = great_griot_learning
+		#remove_character_modifier = great_griot_learning
 		clr_character_flag = great_griot_learning
 	}
 }
@@ -16749,13 +16749,13 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-		add_character_modifier = {
-			name = ruler_byeri
-			days = -1
-		}
-		set_character_flag = ruler_byeri
-	}
+	#immediate = {
+		#add_character_modifier = {
+			#name = ruler_byeri
+			#days = -1
+		#}
+		#set_character_flag = ruler_byeri
+	#}
 }
 character_event = {
 	id = former_triggered_modifiers.746
@@ -16774,7 +16774,7 @@ character_event = {
 		days = 1
 	}
 	immediate = {
-		remove_character_modifier = ruler_byeri
+		#remove_character_modifier = ruler_byeri
 		clr_character_flag = ruler_byeri
 	}
 }
@@ -16791,13 +16791,13 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-		add_character_modifier = {
-			name = ruler_byeri_reformed
-			days = -1
-		}
-		set_character_flag = ruler_byeri_reformed
-	}
+	#immediate = {
+		#add_character_modifier = {
+			#name = ruler_byeri_reformed
+			#days = -1
+		#}
+		#set_character_flag = ruler_byeri_reformed
+	#}
 }
 character_event = {
 	id = former_triggered_modifiers.748
@@ -16816,7 +16816,7 @@ character_event = {
 		days = 1
 	}
 	immediate = {
-		remove_character_modifier = ruler_byeri_reformed
+		#remove_character_modifier = ruler_byeri_reformed
 		clr_character_flag = ruler_byeri_reformed
 	}
 }

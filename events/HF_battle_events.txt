@@ -2105,18 +2105,18 @@ character_event = {
 
 		add_battle_PTSD_effect = yes #sends delayed follow-up event
 
-		hidden_effect = {
+		#hidden_effect = {
 			if = {
-				limit = {
+				#limit = {
 					#is_member_of_any_warrior_lodge_trigger = yes
-					event_target:enemy_commander = { is_member_of_any_warrior_lodge_trigger = yes }
-				}
-				save_persistent_event_target = {
-					name = maimed_me_in_battle_target			#Hook-in: Warrior Lodges (disliked_target_selection_score)
-					scope = event_target:enemy_commander
-				}
-			}
-		}
+					#event_target:enemy_commander = { is_member_of_any_warrior_lodge_trigger = yes }
+				#}
+				#save_persistent_event_target = {
+					#name = maimed_me_in_battle_target			#Hook-in: Warrior Lodges (disliked_target_selection_score)
+					#scope = event_target:enemy_commander
+				#}
+			#}
+		#}
 
 		allow_new_battle_events_effect = yes
 
@@ -5387,7 +5387,7 @@ character_event = {
 
 		event_target:combatant_1 = {
 			set_character_flag = someone_died
-			character_event = { id = HFP.10103 }
+			#character_event = { id = HFP.10103 }
 		}
 
         ai_chance = {
@@ -5483,7 +5483,7 @@ character_event = {
 
 
 		hidden_effect = {
-			event_target:captured_commander = { character_event = { id = 50021 } } #"They took one look at me and then I was toast"-event.
+			#event_target:captured_commander = { character_event = { id = 50021 } } #"They took one look at me and then I was toast"-event.
 			if = {
 				limit = {
 					OR = {
