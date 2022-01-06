@@ -134,7 +134,6 @@ society_decisions = { # Society decisions are only evaluated by members of socie
 							trait = slothful
 							trait = envious
 							trait = wroth
-							trait = cruel
 							trait = proud
 						}
 					}
@@ -207,10 +206,10 @@ society_decisions = { # Society decisions are only evaluated by members of socie
 				text = must_have_multiple_rank_4 #Society must allow multiple characters at Rank 4
 				NAND = {
 					society_rank == 3
-					OR = {
-						society_member_of = the_assassins
+					#OR = {
+						#society_member_of = the_assassins
 						is_devil_worshiper_trigger = yes
-					}
+					#}
 				}
 			}
 		}
@@ -272,9 +271,9 @@ society_decisions = { # Society decisions are only evaluated by members of socie
 			}
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -322,9 +321,9 @@ society_decisions = {
 			custom_tooltip = { text = start_constructing_laboratory_tooltip }
 			hidden_tooltip = { character_event = { id = MNM.1100 } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 			
@@ -373,9 +372,9 @@ society_decisions = {
 			hidden_effect = { character_event = { id = MNM.4403 } }
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 0.1
@@ -433,9 +432,9 @@ society_decisions = {
 			hidden_effect = { character_event = { id = MNM.4403 } }
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 0.1
@@ -488,7 +487,7 @@ society_decisions = {
 			piety = -100
 		}
 
-		revoke_allowed = { always = no }
+		#revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 0
@@ -3413,7 +3412,7 @@ targeted_decisions = {
 			}
 		}
 
-		revoke_allowed = { always = no }
+		#revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 0.01
@@ -3496,7 +3495,7 @@ targeted_decisions = {
 			}
 		}
 
-		revoke_allowed = { always = no }
+		#revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 0.1
@@ -3519,10 +3518,10 @@ targeted_decisions = {
 		
 		from_potential = {
 			ai = no
-			OR = {
+			#OR = {
 				is_devil_worshiper_trigger = yes
-				society_member_of = the_assassins
-			}
+				#society_member_of = the_assassins
+			#}
 			NOT = { trait = incapable }
 			prisoner = no
 			NOT = { has_any_opinion_modifier = opinion_abducting }
@@ -3655,9 +3654,9 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0 		# 1 = 100% chance every month (for each allowed target!)
 		}
@@ -3669,10 +3668,10 @@ targeted_decisions = {
 	
 		potential = {
 			ai = no
-			OR = {
+			#OR = {
 				is_devil_worshiper_trigger = yes
-				society_member_of = the_assassins
-			}
+				#society_member_of = the_assassins
+			#}
 			has_any_opinion_modifier = opinion_abducting
 		}
 		
@@ -3691,9 +3690,9 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 0
@@ -3706,10 +3705,10 @@ targeted_decisions = {
 	
 		from_potential = {
 			ai = no
-			OR = {
+			#OR = {
 				is_devil_worshiper_trigger = yes
-				society_member_of = the_assassins
-			}
+				#society_member_of = the_assassins
+			#}
 			has_any_opinion_modifier = opinion_abducting
 		}
 		
@@ -3729,9 +3728,9 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 0
@@ -3822,9 +3821,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 			modifier = {

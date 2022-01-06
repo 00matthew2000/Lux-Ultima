@@ -181,7 +181,7 @@ patrons_lux = {
 			character_event = { id = PATRONS_ARA.1 }
 		}
 	}
-	revoke_allowed = {
+	#revoke_allowed = {
 		always = no
 	}
 	ai_will_do = {
@@ -202,6 +202,4 @@ patrons_lux = {
 			trait = zealous
 		}
 	}
-}
-
 }

@@ -955,7 +955,6 @@ fetish_of_souls = {
 	monthly_character_prestige = 0.1
 	monthly_character_piety = 0.5
 	intrigue = 3
-	monthly_character_piety = 1
 	same_religion_opinion = 10
 	quality = 5
 	active = {
@@ -1318,7 +1317,6 @@ crown_hre = {
 		}
 	}
 	flags = { religious christian unique crown jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_crown_hre"
 	slot = crown
 	stacking = no
@@ -1338,7 +1336,6 @@ crown_byzantine = {
 		has_landed_title = e_byzantium
 	}
 	flags = { religious unique crown jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_crown_byzantine"
 	slot = crown
 	stacking = no
@@ -1360,7 +1357,6 @@ crown_pahlavi = {
 		is_feudal = yes
 	}
 	flags = { unique crown jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_crown_pahlavi"
 	slot = crown
 	stacking = no
@@ -1381,7 +1377,6 @@ crown_fylkir = {
 		has_landed_title = d_norse_pagan_reformed
 	}
 	flags = { religious unique crown jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_crown_fylkir"
 	slot = crown
 	stacking = no
@@ -1402,7 +1397,6 @@ crown_tengri_fylkir = {
 		has_landed_title = d_tengri_pagan_reformed
 	}
 	flags = { religious unique crown jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_crown_tengri_fylkir"
 	slot = crown
 	stacking = no
@@ -1422,7 +1416,6 @@ crown_finnish_fylkir = {
 		has_landed_title = d_finnish_pagan_reformed
 	}
 	flags = { religious unique crown jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_crown_finnish_fylkir"
 	slot = crown
 	stacking = no
@@ -1442,7 +1435,6 @@ crown_slavic_fylkir = {
 		has_landed_title = d_slavic_pagan_reformed
 	}
 	flags = { religious unique crown jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_crown_slavic_fylkir"
 	slot = crown
 	stacking = no
@@ -1462,7 +1454,6 @@ crown_romuva_fylkir = {
 		has_landed_title = d_baltic_pagan_reformed
 	}
 	flags = { religious unique crown jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_crown_slavic_fylkir"
 	slot = crown
 	stacking = no
@@ -1482,7 +1473,6 @@ crown_aztec_fylkir = {
 		has_landed_title = d_aztec_reformed
 	}
 	flags = { religious unique crown jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_crown_aztec_fylkir"
 	slot = crown
 	stacking = no
@@ -1502,7 +1492,6 @@ scepter_bon_fylkir = {
 		has_landed_title = d_bon_reformed
 	}
 	flags = { religious scepter unique jewelry crown_jewel }
-	stacking = no
 	picture = "GFX_scepter_bon_fylkir"
 	slot = scepter
 	stacking = no

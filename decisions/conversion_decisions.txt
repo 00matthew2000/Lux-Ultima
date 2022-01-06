@@ -81,9 +81,9 @@ targetted_decisions = {
 				add_trait = pagan_branch_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 		}
@@ -172,9 +172,9 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 		}
@@ -204,9 +204,9 @@ targetted_decisions = {
 				culture = ROOT
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 		}
@@ -235,9 +235,9 @@ targetted_decisions = {
 				reverse_culture = ROOT
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 		}
@@ -285,9 +285,9 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -377,35 +377,35 @@ targetted_decisions = {
 			OR = {
 				AND = {
 					prestige = 500
-					capital_scope = {
-						true_religion_group = ROOT
-					}
+					#capital_scope = {
+						#true_religion_group = ROOT
+					#}
 				}
 				AND = {
 					prestige = 1000
-					capital_scope = {
-						NOT = { true_religion_group = ROOT }
-					}
+					#capital_scope = {
+						#NOT = { true_religion_group = ROOT }
+					#}
 				}
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = { true_religion_group = ROOT }
-					}
-				}
-				prestige = -1000
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						true_religion_group = ROOT
-					}
-				}
+			#if = {
+				#limit = {
+					#capital_scope = {
+						#NOT = { true_religion_group = ROOT }
+					#}
+				#}
+				#prestige = -1000
+			#}
+			#if = {
+				#limit = {
+					#capital_scope = {
+						#true_religion_group = ROOT
+					#}
+				#}
 				prestige = -500
-			}
+			#}
 			piety = 250
 			religion_authority = {
 				modifier = ruler_converted_from
@@ -415,9 +415,9 @@ targetted_decisions = {
 				limit = {
 					religion_group = christian
 					NOT = { trait = sympathy_christendom }
-					capital_scope = {
-						NOT = { true_religion_group = ROOT }
-					}
+					#capital_scope = {
+						#NOT = { true_religion_group = ROOT }
+					#}
 				}
 				random = {
 					chance = 60
@@ -428,9 +428,9 @@ targetted_decisions = {
 				limit = {
 					religion_group = muslim
 					NOT = { trait = sympathy_islam }
-					capital_scope = {
-						NOT = { true_religion_group = ROOT }
-					}
+					#capital_scope = {
+						#NOT = { true_religion_group = ROOT }
+					#}
 				}
 				random = {
 					chance = 60
@@ -449,9 +449,9 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 		}
@@ -495,9 +495,9 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 		}
@@ -537,9 +537,9 @@ targetted_decisions = {
 				character_event = { id = RoI.117 } # Confirm conversion
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 		}
@@ -706,9 +706,9 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 0
@@ -717,7 +717,7 @@ targetted_decisions = {
 }
 
 decisions = {
-	# tsf4 - too crazy to update... assume it works for now
+	# x
 	# Weak or unreformed religions are allowed to convert to the attacker's religion when under Holy War
 	convert_to_attacker_religion = {
 		only_playable = yes
@@ -738,31 +738,33 @@ decisions = {
 			war = yes
 		}
 		potential = {
-			any_war = {
-				defender = { character = FROM }
-				attacker = {
-					character = ROOT
-					NOT = { religion = ROOT }
-					custom_tooltip = {
-						text = proselyte_religion_tooltip
-						hidden_tooltip = {
-							proselyte_religion_trigger = yes
-						}
-					}
+		any_war = {
+			#defender = { character = FROM }
+			defender = {
+			NOT = { religion = ROOT }
+			}
+			attacker = { 
+			character = ROOT 
+			}
+		}
+		custom_tooltip = {
+			text = proselyte_religion_tooltip
+			hidden_tooltip = {
+				ROOT = {
+				proselyte_religion_trigger = yes
 				}
-				OR = {
-					holy_war_trigger = yes
-					crusade_trigger = yes
-					#using_cb = sacred_war
-				}
+			}
+		}
+		OR = {
+			holy_war_trigger = yes
+			crusade_trigger = yes
+			#using_cb = sacred_war
 			}
 		}
 		
 		allow = {
-			FROM = {
-				NOT = { trait = zealous }
-				prestige = 500
-			}
+			NOT = { trait = zealous }
+			prestige = 500
 		}
 		
 		effect = {
@@ -813,9 +815,9 @@ decisions = {
 			#piety = 100
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -837,14 +839,13 @@ decisions = {
 							#using_cb = sacred_war
 						}
 						war_score = 50
-						thirdparty_title_scope = {
-							FROM = {
-								primary_title = {
-									title = PREVPREV
-								}
-							}
-						}
-					}
+						#thirdparty_title_scope = {
+#						FROM = {
+#							primary_title = {
+#								title = PREVPREV
+#							}
+#						}
+#					}
 				}
 			}
 			modifier = {
@@ -868,4 +869,5 @@ decisions = {
 			}
 		}
 	}
+}
 }

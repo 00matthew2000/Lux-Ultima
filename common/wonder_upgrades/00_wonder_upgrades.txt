@@ -308,7 +308,6 @@ upgrade_tower = {
 
 	potential = { }
 	allow = { }
-	allow = { }
 	active = { }
 
 	flags = {
@@ -3157,15 +3156,9 @@ upgrade_soaring_fortresses = { # Soaring Fortresses
 	gold_cost_flat = 500
 	gold_cost_ticking = 1
 
-	owner_modifier = {
-	}
-	
 	local_modifier = {
 		heavy_infantry = 100
 		siege_defence = 0.05
-	}
-	local_modifier = {
-	
 	}
 	owner_modifier = {
 		custom_modifier_text = castellan_custom_modifier_tt
@@ -3588,7 +3581,7 @@ upgrade_automata_throne = { # Automata Throne
 	picture = GFX_upgrade_icon_stones
 	potential = {
 		OR = {
-			government = roman_imperial_government
+			government = classical_government
 			TECH_CONSTRUCTION = 5
 		}	
 	}

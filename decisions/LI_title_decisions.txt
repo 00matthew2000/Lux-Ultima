@@ -27,8 +27,8 @@ decisions = {
 			prestige = 500
 			activate_title = { title = k_saxons status = yes }
 			hidden_tooltip = {
-				d_bernicia = { de_jure_liege = k_saxons }
-				d_derenrice = { de_jure_liege = k_saxons }
+				d_northumberland = { de_jure_liege = k_saxons }
+				d_york = { de_jure_liege = k_saxons }
 				d_hwicce = { de_jure_liege = k_saxons }
 				d_magonsaete = { de_jure_liege = k_saxons }
 				d_lindsey = { de_jure_liege = k_saxons }
@@ -129,9 +129,9 @@ decisions = {
 			set_global_flag = englaland_unified
 			narrative_event = { id = li_titular.1 tooltip = become_bretwalda_tooltip }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 		}
@@ -227,9 +227,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -292,9 +292,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -352,9 +352,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -410,9 +410,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -468,9 +468,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -528,9 +528,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -594,9 +594,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -658,9 +658,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -719,9 +719,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -783,9 +783,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -843,9 +843,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -904,9 +904,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -967,9 +967,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}
@@ -1030,9 +1030,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 100
 		}

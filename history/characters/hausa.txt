@@ -105,7 +105,7 @@
 	960.1.1 = {
 		birth=yes
 	}
-	1015.1.1 = {
+	1027.1.1 = {
 		death=yes
 	}
 }
@@ -144,7 +144,6 @@
 	dynasty=1060028 #Daura
 	religion="yoruba"
 	culture="hausa"
-	father=1228658
 	1066.1.1 = {
 		birth=yes
 	}
@@ -200,12 +199,6 @@
 	}
 	866.2.2={
 		add_spouse=251180
-	}
-	867.1.1 = {
-		create_bloodline = {
-			type = bayajidda_and_magajiva
-			has_dlc = "Holy Fury"
-		}
 	}
 	910.1.1 = {
 		death=yes

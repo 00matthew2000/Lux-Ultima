@@ -69,9 +69,9 @@ targetted_decisions = {
 				character_event = { id = li_sonevents.0 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 			# modifier = {
@@ -139,9 +139,9 @@ targetted_decisions = {
 				character_event = { id = li_sonevents.2 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 			# modifier = {
@@ -195,9 +195,9 @@ targetted_decisions = {
 				character_event = { id = li_sonevents.4 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 			# modifier = {

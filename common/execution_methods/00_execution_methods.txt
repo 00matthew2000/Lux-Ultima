@@ -259,16 +259,14 @@ execution_method = {
 	}
 	trigger = {
 		FROM = {
-			AND = {
-				capital_scope = {
-					OR = {
-	 					region = world_europe			
-	 					region = world_india
-	 				}
+			capital_scope = {
+				OR = {
+					region = world_europe			
+					region = world_india
 				}
-				trait = cruel
-				NOT = { is_nomadic = yes }
 			}
+			trait = cruel
+			NOT = { is_nomadic = yes }
 		}
 	}
 }
@@ -434,18 +432,16 @@ execution_method = {
 		factor = 250
 	}
 	trigger = {
-		AND = {
-			FROM = {
-				OR = {
-					trait = hedonist
-					trait = drunkard
-				}
-				NOR = {
-					religion = quetzal
-				}
+		FROM = {
+			OR = {
+				trait = hedonist
+				trait = drunkard
 			}
-			is_lowborn = no
+			NOR = {
+				religion = quetzal
+			}
 		}
+		is_lowborn = no
 	}
 }
 
@@ -462,16 +458,14 @@ execution_method = {
 	}
 	trigger = {
 		FROM = {
-			AND = {
-				OR = {
-					trait = hunter
-					trait = cruel
-				}
-				NOT = {
-					trait = kind
-				}
-				NOT = { is_nomadic = yes }
+			OR = {
+				trait = hunter
+				trait = cruel
 			}
+			NOT = {
+				trait = kind
+			}
+			NOT = { is_nomadic = yes }
 		}
 	}
 }
@@ -553,14 +547,12 @@ execution_method = {
 	}
 	trigger = {
 		FROM = {
-			AND = {
-				OR = {
-					trait = cruel
-					trait = wroth
-				}
-				capital_scope = {
-					region = world_india
-				}
+			OR = {
+				trait = cruel
+				trait = wroth
+			}
+			capital_scope = {
+				region = world_india
 			}
 		}
 	}
@@ -605,13 +597,11 @@ execution_method = {
 	}
 	trigger = {
 		FROM = {
-			AND = {
-				OR = {
-					culture = persian
-					religion_group = muslim
-				}
-				NOT = { religion_group = christian }
+			OR = {
+				culture = persian
+				religion_group = muslim
 			}
+			NOT = { religion_group = christian }
 		}
 	}
 }

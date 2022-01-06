@@ -168,7 +168,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_province_capital_settlement_frame_chinesegfx"
-		texturefile = "gfx\\interface\\province_capital_settlement_frame_chinese.dds"
+		texturefile = "gfx\\interface\\province_settlement_frame_chinese.dds"
 	}
 	spriteType = {
 		name = "GFX_province_capital_settlement_frame_byzantinegfx"
@@ -468,7 +468,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_settlement_tribal_empty_chinesegfx"
-		texturefile = "gfx\\interface\\placeholder_empty_tribal_chinese.dds"
+		texturefile = "gfx\\interface\\placeholder_empty_tribal_china.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
@@ -482,7 +482,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_settlement_tribal_chinesegfx"
-		texturefile = "gfx\\interface\\placeholder_tribal_chinese.tga"
+		texturefile = "gfx\\interface\\placeholder_tribal_china.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
@@ -2045,7 +2045,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_settlement_tribal_chinesegfx_looted"
-		texturefile = "gfx\\interface\\placeholder_tribal_chinese_looted.tga"
+		texturefile = "gfx\\interface\\placeholder_tribal_china_looted.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}

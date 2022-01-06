@@ -19,10 +19,10 @@ targeted_decisions = {
 	        		has_focus = focus_war
 		    		has_dlc = "Way of Life"
 	        	}
-	        	AND = {
+	        	#AND = {
 	        		has_dlc = "Holy Fury"
 					#is_member_of_any_warrior_lodge_trigger = yes
-	        	}
+	        	#}
 				AND = {
 	        		has_dlc = "Holy Fury"
 					any_bloodline = {
@@ -84,10 +84,10 @@ targeted_decisions = {
 								}
 							}
 						}
-						has_game_rule = {
-							name = dueling
-							value = restricted
-						}
+						#has_game_rule = {
+							#name = dueling
+							#value = restricted
+						#}
 					}
 					OR = {
 						is_female = no
@@ -338,9 +338,9 @@ targeted_decisions = {
 	        #}
 	    }
 	    
-	    revoke_allowed = {
-	        always = no
-	    }
+	    #revoke_allowed = {
+	        #always = no
+	    #}
 	    ai_will_do = {
 	        factor = 1
 	        modifier = {

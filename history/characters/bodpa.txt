@@ -329,18 +329,8 @@
 	religion="bon"
 	culture="bodpa"
 	father=247073
-	mother=247074
 	605.1.1={
 		birth=yes
-	}
-	625.1.1={
-		effect={ROOT={add_consort=c_247078}}
-	}
-	629.1.1={
-		effect={ROOT={add_consort=c_247079}}
-	}
-	634.1.1={
-		effect={ROOT={add_consort=c_247003}}
 	}
 	636.1.1={
 		effect={ROOT={add_consort=c_247343}}
@@ -362,7 +352,6 @@
 	religion="bon"
 	culture="bodpa"
 	father=247073
-	mother=247074
 	607.1.1={
 		birth=yes
 	}
@@ -377,7 +366,6 @@
 	religion="bon"
 	culture="bodpa"
 	father=247073
-	mother=247074
 	610.1.1={
 		birth=yes
 	}
@@ -450,7 +438,6 @@
 	culture="bodpa"
 	trait="child_of_consort"
 	father=247075
-	mother=247078
 	631.1.1={
 		birth=yes
 	}
@@ -512,12 +499,6 @@
 		religion="bon"
 		
 	}
-	685.1.1={
-		effect={ROOT={add_consort=c_247094}}
-	}
-	690.1.1={
-		effect={ROOT={add_consort=c_247095}}
-	}
 	704.6.1={
 		death=yes
 	}
@@ -545,7 +526,6 @@
 	religion="bon"
 	culture="bodpa"
 	father=247091
-	mother=247093
 	685.1.1={
 		birth=yes
 	}
@@ -560,7 +540,6 @@
 	religion="bon"
 	culture="bodpa"
 	father=247091
-	mother=247094
 	trait="child_of_consort"
 	704.1.1={
 		birth=yes
@@ -575,12 +554,6 @@
 	}
 	720.1.1={
 		add_spouse = 247099 #Princess Jincheng of Tang
-	}
-	722.1.1={
-		effect={ROOT={add_consort=c_247101}}
-	}
-	740.1.1={
-		effect={ROOT={add_consort=c_247100}}
 	}
 	742.1.1={
 		religion="bon"
@@ -599,7 +572,6 @@
 	culture="bodpa"
 	trait="child_of_consort"
 	father=247091
-	mother=247095
 	705.1.1={
 		birth=yes
 	}
@@ -630,7 +602,6 @@
 	
 	culture="bodpa"
 	father=247097
-	mother=247100
 	trait="child_of_consort"
 	742.1.1={
 		birth=yes
@@ -642,14 +613,8 @@
 		effect={ROOT={add_consort=c_247108}}
 		add_trait = zealous
 	}
-	762.1.1={
-		effect={c_247110={add_friend=ROOT}}
-	}
 	763.1.1={
 		effect={ROOT={add_consort=c_247109}}
-	}
-	767.1.1={
-		effect={ROOT={add_consort=c_247114}}
 	}
 	769.1.1 = {
 		# Some extra troops for Tibet
@@ -677,9 +642,6 @@
 			}
 		}
 	}
-	770.1.1={
-		effect={ROOT={add_consort=c_247107}}
-	}
 	797.1.1={
 		death=yes
 	}
@@ -706,8 +668,6 @@
 	dynasty=105802 #Khön
 	religion="bon"
 	culture="bodpa"
-	
-	father=247212
 	747.1.1={
 		birth=yes
 	}
@@ -722,7 +682,6 @@
 	religion="bon"
 	culture="bodpa"
 	father=247105
-	mother=247106
 	759.1.1={
 		birth=yes
 	}
@@ -738,7 +697,6 @@
 	
 	culture="bodpa"
 	father=247105
-	mother=247106
 	762.1.1={
 		birth=yes
 	}
@@ -775,7 +733,6 @@
 	culture="bodpa"
 	trait=zealous
 	father=247105
-	mother=247106
 	765.1.1={
 		birth=yes
 	}
@@ -791,7 +748,6 @@
 	
 	culture="bodpa"
 	father=247105
-	mother=247106
 	768.1.1={
 		birth=yes
 	}
@@ -803,9 +759,6 @@
 	}
 	808.1.1={
 		effect={ROOT={add_consort=c_247122}}
-	}
-	811.1.1={
-		effect={ROOT={add_consort=c_247123}}
 	}
 	815.1.1={
 		death=yes
@@ -821,7 +774,6 @@
 	culture="bodpa"
 	trait="child_of_consort"
 	father=247105
-	mother=247114
 	773.1.1={
 		birth=yes
 	}
@@ -866,7 +818,6 @@
 	
 	culture="bodpa"
 	father=247119
-	mother=252020
 	804.1.1={
 		birth=yes
 	}
@@ -886,7 +837,6 @@
 	culture="bodpa"
 	trait=zealous
 	father=247119
-	mother=252020
 	806.1.1={
 		birth=yes
 	}
@@ -905,7 +855,6 @@
 	culture="bodpa"
 	trait=zealous
 	father=247119
-	mother=252020
 	808.1.1={
 		birth=yes
 	}
@@ -947,7 +896,6 @@
 	culture="bodpa"
 	trait="child_of_consort"
 	father=247119
-	mother=247123
 	813.1.1={
 		birth=yes
 	}
@@ -1541,9 +1489,7 @@
 	name="Jekundag"
 	dynasty=105802 #Khön
 	religion="bon"
-	
 	culture="bodpa"
-	father=247212
 	740.1.1={
 		birth=yes
 	}

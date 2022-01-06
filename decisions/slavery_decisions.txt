@@ -899,9 +899,9 @@ targetted_decisions = {
 			}
 			hidden_tooltip = { FROM = { character_event = { id = slavery.249 } } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 0
 		}

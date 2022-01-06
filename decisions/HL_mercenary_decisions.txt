@@ -149,9 +149,9 @@ targetted_decisions = {
 			add_trait = adventurer
 			add_character_modifier = { modifier = started_mercenary_company months = 30 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -292,9 +292,9 @@ targetted_decisions = {
 			move_character = FROM
 			clr_character_flag = is_mercenary_leader
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 			
@@ -410,9 +410,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 
@@ -517,9 +517,9 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 

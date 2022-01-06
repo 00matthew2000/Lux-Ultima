@@ -561,3 +561,827 @@ world_africa = {
 #		d_qikiqtaaluk d_nunavik d_nunatsiavut d_eeyou_istchee d_nitassinan d_neenoilno d_kespek d_beothuk d_akadie d_epekwitk
 #	}
 #}
+
+###########################################################################
+# Crusading Regions
+#	These groups are defined as crusade targets
+###########################################################################
+
+# 1. Geographical Crusade Regions
+
+custom_crusade_constantinople = {
+	duchies = {
+		d_thrace d_nikaea
+	}	
+}
+
+custom_crusade_jerusalem = {
+	duchies = {
+		d_jerusalem d_ascalon d_sinai d_galilee d_antioch d_tripoli
+	}
+}
+
+custom_crusade_egypt = {
+	duchies = {
+		d_alexandria d_damietta d_cairo
+	}
+}
+
+custom_crusade_roma = {
+	duchies = {
+		d_latium d_ancona d_spoleto d_ferrara d_pisa d_toscana d_sardinia d_sicily d_benevento d_capua d_apulia d_salerno d_calabria
+	}
+}
+
+custom_crusade_north_italy = {
+	duchies = {
+		d_lombardia d_modena d_venice d_carinthia d_verona d_genoa d_pedemontium
+	}
+}
+
+custom_crusade_central_italy = {
+	duchies = {
+		d_latium d_ancona d_spoleto d_ferrara d_pisa d_toscana d_sardinia
+	}
+}
+
+custom_crusade_wchristian = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_egypt custom_crusade_roma
+	}
+	duchies = { d_tunis d_koln d_luxembourg }
+}
+
+custom_crusade_echristian = {
+	regions = {
+		custom_crusade_constantinople custom_crusade_jerusalem custom_crusade_egypt custom_crusade_roma
+	}
+}
+
+custom_crusade_ichristian = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_roma
+	}
+	duchies = { d_tunis d_cordoba d_granada d_sevilla }
+}
+
+custom_crusade_pentarchy = { #The old classical world
+	regions = {
+		custom_crusade_constantinople custom_crusade_jerusalem custom_crusade_egypt custom_crusade_roma
+	}
+	duchies = { d_makedonia d_thessalonika d_athens d_hellas d_aegean_islands d_cephalonia d_achaia d_krete d_samos d_cyprus d_dyrrachion d_nikopolis d_tunis }
+}
+
+custom_crusade_macedonia = {
+	duchies = {
+		d_makedonia d_thessalonika d_lychnidos
+	}	
+}
+
+custom_crusade_greece = {
+	duchies = {
+		d_athens d_hellas d_aegean_islands d_cephalonia
+	}	
+}
+
+custom_crusade_venice = { #k_venice
+	duchies = {
+		d_venice d_carinthia d_verona
+	}	
+}
+
+custom_crusade_central_anatolia = { #Isauria Galatia Cilicia
+	duchies = {
+		d_anatolia d_cibyrrhaeot d_thracesia d_seleukia d_charsianon d_kappadokia d_armenia_minor
+	}	
+}
+
+custom_crusade_western_anatolia = { #k_pergamon
+	duchies = {
+		d_samos
+	}	
+}
+
+custom_crusade_armenia = { 
+	duchies = {
+		d_vaspurakan d_armenia d_provincia_mesopotamia d_edessa 
+	}	
+}
+
+custom_crusade_mesopotamia = { 
+	duchies = {
+		d_tigris d_basra d_syria d_baghdad d_mosul  
+	}	
+}
+
+custom_crusade_middle_east = {
+	duchies = { 
+		d_arabia_felix d_damascus d_aleppo
+	}	
+}
+
+custom_crusade_iran = { #Parsa Media
+	duchies = { 
+		d_kurdistan d_kermanshah d_dailam d_mazandaran d_hamadan d_esfahan d_sistan d_susa d_fars d_arya
+	}	
+}
+
+custom_crusade_great_persia = { #e-sassanid minus Iran Sogdiana Mesopotamia Armenia
+	duchies = { 
+		d_azerbaijan d_arakhosia d_badashan d_baktria d_gedrosia d_zarangiana d_merv d_khorasan d_verkana
+	}	
+}
+
+custom_crusade_sogdiana = { #k_kokand
+	duchies = { 
+		d_chach d_kokand d_marakanda d_taraz d_tianshan
+	}	
+}
+
+custom_crusade_bactria = { # k_baktria
+	duchies = {
+		d_arakhosia d_badashan d_baktria d_gedrosia d_zarangiana
+	}	
+}
+
+custom_crusade_nile = { #Kush Aksum
+	duchies = { 
+		d_aswan d_napata d_dongola d_aydhab d_meroe d_axum d_gondar d_shewa d_harer d_punt d_urgoma
+	}	
+}
+
+custom_crusade_hre = { #e_hre
+	duchies = { 
+		d_koln d_luxembourg d_brabant d_flanders d_holland d_gelre d_nordmark d_upper_lorraine d_lower_lorraine d_alsace 
+	}	
+}
+
+custom_crusade_francia = { #e_france
+	duchies = { 
+		d_rouen d_normandy d_savoie d_upper_burgundy d_burgundy d_orleans d_berry d_anjou d_provence d_dauphine d_champagne d_valois 
+	}	
+}
+
+custom_crusade_germania = { #e_german
+	duchies = { 
+		d_brunswick d_thuringia d_franconia d_baden d_swabia d_bavaria d_osterreich d_tyrol 
+	}	
+}
+
+custom_crusade_toundra = { #k_finland k_gardariki k_perm 
+	duchies = { 
+		d_estonia d_lapland d_karelia d_finland d_bjarmia d_beloozero d_yaroslavl d_vladimir d_novgorod d_rostov d_hlynov d_perm d_komiland
+	}	
+}
+
+custom_crusade_siberia = { #k_yugra k_altai 
+	duchies = { 
+		d_tyumen d_oral d_altai d_yugh
+	}	
+}
+
+custom_crusade_itil = { #k_alania k_bulgar k_khazaria  
+	duchies = { 
+		d_alania d_sarkel d_bulgar d_bashkiria d_cheremisa d_itil d_aktobe
+	}	
+}
+
+custom_crusade_tanais = { #k_rus k_taurica  
+	duchies = { 
+		d_vitebsk d_tver d_ryazan d_kipchak d_moskva d_smolensk d_chernigov d_novgorod-seversk d_azov d_crimea
+	}	
+}
+
+custom_crusade_aral = { #k_khwarezm k_sakastan  
+	duchies = {
+		d_garagum d_khwarizmian d_aral d_syr_darya
+	}	
+}
+
+custom_crusade_tianshan = { #k_djeti_su k_urumqi  
+	duchies = {
+		d_almatu d_balkhash d_urumqi d_tengri_tagh
+	}	
+}
+
+custom_crusade_europesteppe = { #k_ruthenia k_dacia k_hungary k_avars
+	duchies = {
+		d_turov d_pereyaslavl d_kiev d_galich d_volhynia d_wallachia d_moldau d_temes d_transylvania d_ungvar d_pest d_pecs d_esztergom 
+	}	
+}
+
+custom_crusade_yougoslavia = {
+	duchies = { #k_croatia k_serbia
+		d_slavonia d_bosnia d_croatia d_dalmatia d_rashka d_dioclea
+	}	
+}
+
+custom_crusade_bulgaria = {
+	duchies = { #k_bulgaria
+		d_vidin d_turnovo d_karvuna 
+	}	
+}
+
+custom_crusade_tarim = { #k_tarim
+	duchies = { d_kashgar d_yarkand d_miran d_loulan
+	}	
+}
+
+custom_crusade_maghreb = { # k_africa k_carthage k_numidia k_mauretania
+	duchies = { d_tripolitania d_tunis d_kabylia d_marrakech d_tangiers d_alger d_fes d_sijilmasa d_tlemcen d_ouadane d_canarias
+	}	
+}
+
+custom_crusade_sahel = { # k_songhay k_garama k_chad
+	duchies = { d_songhay d_timbuktu d_ghana d_mali d_garama d_chad
+	}	
+}
+
+custom_crusade_western_africa = { # k_jolof k_baoule
+	duchies = { d_jolof d_kaabu d_aboisso d_accra d_sataspes
+	}	
+}
+
+custom_crusade_darfur = { # k_darfur
+	duchies = { d_darfur d_khordofan d_malakal
+	}	
+}
+
+custom_crusade_east_africa = { # k_zanzibar k_buganda k_malawi k_madagascar k_zimbabwe k_zulu k_makonde
+	duchies = { d_zanzibar d_mogadishu d_mombasa d_buganda d_omusoma d_rwanda d_rukwa d_malawi d_niassa d_madagascar d_comoros d_zimbabwe d_zulu d_rhapta d_makonde d_sofala
+	}	
+}
+
+custom_crusade_tibet = { # e_tibet
+	duchies = { d_ngari d_nagqu d_lhasa d_shigatse d_srinagara d_pamir d_leh 
+	}	
+}
+
+custom_crusade_himalaya = { # k_uttarakhand k_nepal
+	duchies = { d_kumaon d_garhwal d_kathmandu d_jumla 
+	}	
+}
+
+custom_crusade_ganges = { # k_delhi k_magadha k_bengal
+	duchies = { d_kuru d_haritanaka d_mathura d_kannauj d_vatsa d_anga d_gauda d_kamapa d_vanga d_radha d_tripura
+	}	
+}
+
+custom_crusade_central_india = { # k_sindhia k_malwa k_rajputana k_orissa k_maharastra k_gujarat
+	duchies = { d_sindh d_sakala d_pentapotamia d_taxila d_avanti d_tripuri d_khajuraho d_ajayameru d_citrakuta d_kotah d_thar d_kataka d_tamralipti d_daksina_kosala d_utkala d_dandaka d_konkana d_thana d_vidarbha d_sarasvatamandala d_saurashtra d_lata 
+	}	
+}
+
+custom_crusade_south_india = { # k_tamilakam k_andhra k_karnataka k_ceylon
+	duchies = { d_chola_nadu d_pandya_nadu d_chera_nadu d_maldives d_vengi d_orugallu d_tondaimandalam d_idaturainadu d_alupa d_mahishaka d_mysore d_kotthasara d_ruhuna d_nagadipa
+	}	
+}
+
+# 2. Religious Crusade Regions
+
+custom_crusade_catholic = {
+	regions = {
+		custom_crusade_wchristian custom_crusade_constantinople
+	}	
+}
+
+custom_crusade_pelagian = {
+	regions = {
+		custom_crusade_wchristian
+	}	
+	duchies = {
+		d_canterbury d_belgarum
+	}	
+}
+
+custom_crusade_semipelagian = {
+	regions = {
+		custom_crusade_wchristian
+	}	
+	duchies = {
+		d_canterbury d_belgarum
+	}	
+}
+
+custom_crusade_cathar_reformed = {
+	regions = {
+		custom_crusade_wchristian
+	}	
+	duchies = {
+		d_septimania d_auvergne d_toulouse d_gascogne d_provence
+	}	
+}
+
+custom_crusade_christian_populist_reformed = {
+	regions = {
+		custom_crusade_wchristian
+	}	
+	duchies = {
+		d_champagne d_valois d_orleans d_berry d_anjou d_dauphine
+	}	
+}
+
+custom_crusade_apollinarist = {
+	regions = {
+		custom_crusade_echristian custom_crusade_central_anatolia
+	}	
+	duchies = {
+		d_armeniacon d_paphlagonia d_trebizond d_cherson
+	}	
+}
+
+custom_crusade_iconoclast = {
+	regions = {
+		custom_crusade_echristian custom_crusade_central_anatolia
+	}	
+}
+
+custom_crusade_melkite = {
+	regions = {
+		custom_crusade_echristian custom_crusade_macedonia custom_crusade_middle_east custom_crusade_armenia
+	}	
+}
+
+custom_crusade_monophysite = {
+	regions = {
+		custom_crusade_echristian custom_crusade_macedonia
+	}	
+}
+
+custom_crusade_monothelite = {
+	regions = {
+		custom_crusade_echristian custom_crusade_macedonia
+	}	
+}
+
+custom_crusade_nestorian = {
+	regions = {
+		custom_crusade_echristian custom_crusade_mesopotamia custom_crusade_central_anatolia custom_crusade_armenia custom_crusade_iran
+	}	
+}
+
+custom_crusade_sabellianist = {
+	regions = {
+		custom_crusade_echristian custom_crusade_macedonia
+	}	
+}
+
+custom_crusade_islam = {
+	regions = {
+		custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran
+	}	
+}
+
+custom_crusade_adoptionist = {
+	regions = {
+		custom_crusade_ichristian
+	}	
+	duchies = {
+		d_barcelona d_valencia d_murcia d_mallorca
+	}	
+}
+
+custom_crusade_mari_christ_reformed = {
+	regions = {
+		custom_crusade_ichristian
+	}	
+	duchies = {
+		d_navarra 
+	}	
+}
+
+custom_crusade_priscillian_reformed = {
+	regions = {
+		custom_crusade_ichristian
+	}	
+	duchies = {
+		d_castilla 
+	}	
+}
+
+custom_crusade_almaqah = { #k_arabia
+	duchies = {
+		d_oman d_amman d_nefoud d_arabia_felix d_tigris d_basra d_syria d_baghdad d_mosul d_damascus d_arabia_petrae d_sanaa d_mahra d_socotra
+	}	
+}
+
+custom_crusade_mani = {
+	regions = {
+		custom_crusade_iran custom_crusade_great_persia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_armenia world_steppe
+	}	
+}
+
+custom_crusade_mani_mithra = {
+	regions = {
+		custom_crusade_iran custom_crusade_great_persia custom_crusade_mesopotamia custom_crusade_armenia
+	}	
+	duchies = { #Caucasus
+		d_albania d_derbent d_kartli d_abkhazia
+	}	
+}
+
+custom_crusade_zoroastrian = {
+	regions = {
+		custom_crusade_mesopotamia custom_crusade_iran custom_crusade_great_persia custom_crusade_sogdiana
+	}	
+	duchies = { #Khwarezm, home of the Angra Mainyui archenemy
+		d_garagum d_khwarizmian
+	}	
+}
+
+custom_crusade_ahriman_reformed = {
+	regions = {
+		custom_crusade_mesopotamia custom_crusade_iran custom_crusade_great_persia custom_crusade_sogdiana custom_crusade_armenia
+	}	
+	duchies = { #Khwarezm
+		d_garagum d_khwarizmian
+	}	
+}
+
+custom_crusade_mazdakism_reformed = {
+	regions = {
+		custom_crusade_mesopotamia custom_crusade_iran custom_crusade_great_persia custom_crusade_sogdiana custom_crusade_armenia
+	}	
+}
+
+custom_crusade_zor_angra_reformed = {
+	regions = {
+		custom_crusade_mesopotamia custom_crusade_iran custom_crusade_great_persia custom_crusade_sogdiana custom_crusade_armenia
+	}	
+	duchies = { #Khwarezm
+		d_garagum d_khwarizmian
+	}	
+}
+
+custom_crusade_zurvanism_reformed = {
+	regions = {
+		custom_crusade_mesopotamia custom_crusade_iran custom_crusade_great_persia custom_crusade_sogdiana
+	}	
+}
+
+custom_crusade_mand_ruha_reformed = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran
+	}	
+}
+
+custom_crusade_mandaean_reformed = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran
+	}	
+}
+
+custom_crusade_ashari = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran custom_crusade_central_anatolia custom_crusade_constantinople custom_crusade_egypt
+	}	
+}
+
+custom_crusade_athari = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran custom_crusade_central_anatolia custom_crusade_constantinople custom_crusade_egypt
+	}	
+}
+
+custom_crusade_haruri = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran custom_crusade_central_anatolia custom_crusade_constantinople custom_crusade_egypt
+	}	
+}
+
+custom_crusade_maturidi = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran custom_crusade_central_anatolia custom_crusade_constantinople custom_crusade_egypt
+	}	
+}
+
+custom_crusade_mutazil = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran custom_crusade_central_anatolia custom_crusade_constantinople custom_crusade_egypt
+	}	
+}
+
+custom_crusade_shiite = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran custom_crusade_central_anatolia custom_crusade_constantinople custom_crusade_egypt
+	}	
+}
+
+custom_crusade_zahiri = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran custom_crusade_central_anatolia custom_crusade_constantinople custom_crusade_egypt
+	}	
+}
+
+custom_crusade_muslim_aliite_reformed = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran custom_crusade_central_anatolia custom_crusade_constantinople custom_crusade_egypt
+	}	
+}
+
+custom_crusade_muslim_domination_reformed = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran custom_crusade_central_anatolia custom_crusade_constantinople custom_crusade_egypt
+	}	
+}
+
+custom_crusade_alexandros = {
+	regions = {
+		custom_crusade_pentarchy custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran
+	}	
+}
+
+custom_crusade_mithra = {
+	regions = {
+		custom_crusade_pentarchy custom_crusade_middle_east custom_crusade_mesopotamia custom_crusade_iran
+	}	
+}
+
+custom_crusade_mithra_christ = {
+	regions = {
+		custom_crusade_pentarchy custom_crusade_north_italy
+	}	
+	duchies = {
+		d_septimania d_auvergne d_toulouse d_gascogne d_provence d_barcelona d_valencia d_murcia d_mallorca
+	}	
+}
+
+custom_crusade_mithra_sol = {
+	regions = {
+		custom_crusade_pentarchy custom_crusade_central_anatolia custom_crusade_armenia custom_crusade_middle_east custom_crusade_mesopotamia  custom_crusade_iran
+	}	
+}
+
+custom_crusade_solomonic_alexandros = {
+	regions = {
+		custom_crusade_pentarchy custom_crusade_nile
+	}	
+}
+
+custom_crusade_cybele_reformed = {
+	regions = {
+		custom_crusade_pentarchy custom_crusade_central_anatolia custom_crusade_armenia
+	}	
+}
+
+custom_crusade_ethiopian_war_reformed = {
+	regions = {
+		custom_crusade_pentarchy custom_crusade_nile
+	}	
+}
+
+custom_crusade_teiwaz_reformed = {
+	regions = {
+		custom_crusade_hre custom_crusade_germania custom_crusade_francia
+	}	
+}
+
+custom_crusade_ragnarok_reformed = {
+	regions = {
+		world_europe_north
+	}	
+}
+
+custom_crusade_voipel_reformed = {
+	regions = {
+		custom_crusade_toundra custom_crusade_siberia custom_crusade_itil custom_crusade_tanais
+	}	
+}
+
+custom_crusade_slavic_christian_reformed = {
+	regions = {
+		world_europe_east
+	}	
+}
+
+custom_crusade_erlik_reformed = {
+	regions = {
+		custom_crusade_siberia custom_crusade_aral custom_crusade_tianshan custom_crusade_itil custom_crusade_tanais custom_crusade_europesteppe
+	}	
+}
+
+custom_crusade_tengri_confucian_reformed = {
+	regions = {
+		custom_crusade_siberia custom_crusade_aral custom_crusade_tianshan custom_crusade_itil custom_crusade_tanais custom_crusade_europesteppe custom_crusade_tarim
+	}	
+}
+
+custom_crusade_tengri_mani_reformed = {
+	regions = {
+		custom_crusade_siberia custom_crusade_aral custom_crusade_tianshan custom_crusade_itil custom_crusade_tanais custom_crusade_europesteppe custom_crusade_tarim custom_crusade_sogdiana
+	}	
+}
+
+custom_crusade_zal = {
+	regions = {
+		custom_crusade_europesteppe custom_crusade_yougoslavia custom_crusade_macedonia custom_crusade_greece custom_crusade_bulgaria custom_crusade_constantinople
+	}	
+}
+
+custom_crusade_zal_christ = {
+	regions = {
+		custom_crusade_europesteppe custom_crusade_yougoslavia custom_crusade_macedonia custom_crusade_greece custom_crusade_bulgaria custom_crusade_constantinople custom_crusade_north_italy custom_crusade_central_italy
+	}	
+}
+
+custom_crusade_zal_mani = {
+	regions = {
+		custom_crusade_europesteppe custom_crusade_yougoslavia custom_crusade_macedonia custom_crusade_greece custom_crusade_bulgaria custom_crusade_constantinople custom_crusade_north_italy custom_crusade_central_italy
+	}	
+}
+
+custom_crusade_illuyanka_reformed = {
+	regions = {
+		custom_crusade_jerusalem custom_crusade_central_anatolia custom_crusade_western_anatolia custom_crusade_armenia
+	}	
+}
+
+custom_crusade_berber_pagan_reformed = {
+	regions = {
+		custom_crusade_maghreb custom_crusade_sahel
+	}	
+}
+
+custom_crusade_yoruba = {
+	regions = {
+		custom_crusade_maghreb custom_crusade_sahel custom_crusade_darfur
+	}	
+}
+
+custom_crusade_aten_reformed = {
+	regions = {
+		custom_crusade_egypt custom_crusade_nile
+	}	
+}
+
+custom_crusade_isis_reformed = {
+	regions = {
+		custom_crusade_egypt custom_crusade_nile
+	}	
+}
+
+custom_crusade_set_reformed = {
+	regions = {
+		custom_crusade_egypt custom_crusade_nile
+	}	
+}
+
+custom_crusade_nyau = {
+	regions = {
+		custom_crusade_east_africa custom_crusade_darfur
+	}	
+}
+
+custom_crusade_zande_pagan_reformed = {
+	regions = {
+		custom_crusade_east_africa custom_crusade_darfur
+	}	
+}
+
+custom_crusade_zulu_pagan_reformed = {
+	regions = {
+		custom_crusade_east_africa custom_crusade_darfur
+	}	
+}
+
+custom_crusade_bon_reformed = {
+	regions = {
+		custom_crusade_tibet custom_crusade_himalaya custom_crusade_ganges
+	}	
+}
+
+custom_crusade_jain = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_ganges custom_crusade_central_india custom_crusade_south_india
+	}	
+}
+
+custom_crusade_murugan_reformed = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_ganges custom_crusade_central_india custom_crusade_south_india
+	}	
+}
+
+custom_crusade_vidharma_reformed = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_ganges custom_crusade_central_india custom_crusade_south_india
+	}	
+}
+
+custom_crusade_bud_mahayana = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_ganges custom_crusade_sogdiana custom_crusade_bactria custom_crusade_tibet custom_crusade_tarim
+	}	
+	duchies = { #Sindhia
+		d_sindh d_sakala d_pentapotamia d_taxila
+	}
+}
+
+custom_crusade_bud_pureland = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_ganges custom_crusade_sogdiana custom_crusade_bactria custom_crusade_tibet custom_crusade_tarim
+	}	
+	duchies = { #Sindhia
+		d_sindh d_sakala d_pentapotamia d_taxila
+	}
+}
+
+custom_crusade_bud_sthaviravada = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_ganges custom_crusade_sogdiana custom_crusade_bactria custom_crusade_tibet custom_crusade_tarim
+	}	
+	duchies = { #Sindhia
+		d_sindh d_sakala d_pentapotamia d_taxila
+	}
+}
+
+custom_crusade_bud_vajrayana = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_ganges custom_crusade_sogdiana custom_crusade_bactria custom_crusade_tibet custom_crusade_tarim
+	}	
+	duchies = { #Sindhia
+		d_sindh d_sakala d_pentapotamia d_taxila
+	}
+}
+
+custom_crusade_bud_zen_reformed = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_ganges custom_crusade_sogdiana custom_crusade_bactria custom_crusade_tibet custom_crusade_tarim
+	}	
+	duchies = { #Sindhia
+		d_sindh d_sakala d_pentapotamia d_taxila
+	}
+}
+
+custom_crusade_tengri_bud_reformed = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_ganges custom_crusade_sogdiana custom_crusade_bactria custom_crusade_tibet custom_crusade_tarim
+	}	
+	duchies = { #Sindhia
+		d_sindh d_sakala d_pentapotamia d_taxila
+	}
+}
+
+custom_crusade_lubu_reformed = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_sogdiana custom_crusade_tibet custom_crusade_tarim
+	}	
+}
+
+custom_crusade_tao_reformed = {
+	regions = {
+		custom_crusade_himalaya custom_crusade_sogdiana custom_crusade_tibet custom_crusade_tarim
+	}	
+}
+
+custom_crusade_aztec = {
+	regions = {
+		custom_crusade_pentarchy
+	}	
+}
+
+custom_crusade_inuit_pagan_reformed = {
+	regions = {
+		custom_crusade_roma custom_crusade_toundra
+	}
+	duchies = {
+		d_sudreyjar
+#		world_europe_north not included in custom_crusade_toundra
+		#Sweden
+		d_uppland d_ostergotland d_vastergotland d_norrland d_bergslagen d_smaland
+		#Norway
+		d_iceland d_orkney d_vestlandet d_ostlandet d_trondelag d_jamtland
+		#Denmark
+		d_skane d_sjaelland d_slesvig d_holstein
+	}
+}
+
+custom_crusade_shaytana = {
+	regions = {
+		custom_crusade_pentarchy
+	}	
+}
+custom_historical_plague_free_zone = {
+	duchies = {
+		d_lombardia d_lesser_poland d_kuyavia d_mazovia d_lithuanians d_yatviags d_turov d_volhynia d_iceland
+	}
+	counties = {
+		c_valais c_alto_aragon c_urgell c_bearn c_faereyar c_lepiel c_orsha c_minsk c_peremyshl c_armagnac c_foix c_chur
+	}
+}
+custom_eastern_edge_of_map = {
+	duchies = {
+		d_loulan d_yugh d_altai d_urumqi d_ngari d_nagqu d_lhasa d_shigatse d_kamapa d_tripuri
+	}
+}
+custom_chinese_invasion_target_region = {
+	regions = {
+		world_india_bengal world_steppe_tarim world_steppe_east
+	}
+}
+
+custom_eastern_access = {
+	duchies = {
+		d_loulan d_yugh d_altai d_urumqi d_ngari d_nagqu d_lhasa d_shigatse d_kamapa d_tripuri
+	}
+}

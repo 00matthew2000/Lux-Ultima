@@ -69,10 +69,10 @@ zealot = {
 				religion = ROOT
 				NOT = {
 					any_war = {
-						OR = {
+						#OR = {
 							using_cb = crusade
-							using_cb = new_crusade
-						}
+							#using_cb = new_crusade
+						#}
 					}
 				}
 			}

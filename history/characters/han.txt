@@ -261,10 +261,6 @@
 	711.2.21 = {
 		birth = yes
 	}
-	725.1.1 = {
-		name = "Jun"
-		effect={ROOT={add_consort=c_247993}}
-	} # Consort Wu
 	728.1.1 = {
 			add_spouse = 247992
 	}# Crown Princess Wei
@@ -297,7 +293,6 @@
 	religion = tao
 	culture = han
 	father = 217707 # Emperor Suzong
-	mother = 247993 # Consort Wu
 	# spouses = # Consort Shen, Consort Cui and Consort Dugu
 	trait = child_of_consort
 	727.1.9 = {
@@ -416,7 +411,7 @@
 	809.7.22 = {
 		birth = yes
 	}
-	824.2.29 = {
+	824.2.23 = {
 		name = "Jingzong"
 	}
 	827.1.9 = {
@@ -834,20 +829,6 @@
 
 	730.7.28 = {
 		birth = yes
-	}
-	769.1.1 = {
-		add_claim = d_kumul
-		add_claim = c_yungguan
-		add_claim = c_kumtag
-		add_claim = c_lopnor
-		add_claim = c_loulan
-		add_claim = c_yuni
-		add_claim = c_charkliq
-		add_claim = c_cherchen
-		add_claim = c_cadota
-		add_claim = c_mingoi
-		add_claim = c_karashar
-		add_claim = c_yumen
 	}
 	787.9.16 = {
 		death = yes
@@ -1318,104 +1299,6 @@
 	}
 }
 
-#Qocho
-
-248079 = {
-	name="Kongzhi"
-	dynasty=1055042
-	religion="tao"
-	culture="han"
-	trait=tough_soldier
-	trait=adventurer
-	trait=organizer
-	1240.1.1={
-		birth=yes
-	}
-	1282.1.1={
-		trait=brilliant_strategist # new supplies
-		remove_trait=tough_soldier
-		trait=wroth  # authority to punish
-	}
-	1286.1.1={
-		death=yes # captured in battle, fate unknown
-	}
-}
-
-242100 = {
-	name="Puyo" 
-	dynasty=1055042
-	religion="tao"
-	culture="han"
-	trait=skilled_tactician
-	trait=brave
-	trait=sympathy_pagans
-	trait=sympathy_christendom
-	1150.1.1={
-		birth=yes
-	}
-	1215.1.1 = {
-		employer = 125501
-	}
-	1218.1.1={
-		death=yes
-	}
-}
-
-242101 = {
-	name="Chengsi" # unknown
-	dynasty=1055001
-	religion="tao"
-	culture="han"
-	trait=skilled_tactician
-	trait=brave
-	trait=sympathy_pagans
-	trait=sympathy_christendom
-	father=242100
-	1170.1.1={
-		birth=yes
-	}
-	1215.1.1 = {
-		employer = 125501
-	}
-	1228.1.1 = {
-		employer = 172005
-	}
-	1236.1.1={
-		death=yes 
-	}
-}
-
-242102 = {
-	name="Kan"
-	dynasty=1055001
-	religion="tao"
-	culture="han"
-	trait=brilliant_strategist
-	trait=brave
-	trait=sympathy_pagans
-	trait=sympathy_christendom
-	trait=siege_leader
-	father=242101 
-	1217.1.1={
-		birth=yes
-	}
-	1234.1.1 = {
-		employer = 172005
-	}
-	1239.1.1 = {
-		employer = 34850
-	}
-	1242.1.1 = {
-		employer = 478011
-	}
-	1243.1.1={
-     effect={add_friend=478011}
-   }
-	1259.8.11={
-		death=yes # went to court of Kublai and conquered China
-	}
-}
-
 #Governors and military advisors in 769 start
 
 248149 = {
@@ -1428,10 +1311,6 @@
 	martial = 10
 	730.1.1={
 		birth=yes
-	}
-	769.1.1={
-		add_claim = c_fuqi
-		add_claim = c_maqen 
 	}
 	790.1.1={
 		death=yes
@@ -1450,7 +1329,6 @@
 		birth=yes
 	}
 	769.1.1={
-		employer=166665
 	}
 	770.1.1={
 		death=yes
@@ -1504,7 +1382,6 @@
 		birth=yes
 	}
 	769.1.1={
-		employer=166665
 	}
 	787.1.1={
 		death=yes
@@ -1521,7 +1398,6 @@
 		birth=yes
 	}
 	769.1.1={
-		employer=166665
 	}
 	790.1.1={
 		death=yes
@@ -6654,11 +6530,11 @@
 	1000.1.1={
 		birth=yes
 	}
-	1066.1.1 = {
-		employer=242300
-	}
 	1060.1.1={
 		death=yes
+	}
+	1066.1.1 = {
+		employer=242300
 	}
 }
 

@@ -72,9 +72,9 @@ decisions = {
 				province_event = { id = rebuild_chattousa.1 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 			
@@ -420,9 +420,9 @@ decisions = {
 			province_event = { id = rebuild_memphis.1 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 			
