@@ -1,3 +1,4 @@
+#last bracket needed, do not delete
 decisions = {
 
 patrons_lux = {
@@ -182,8 +183,8 @@ patrons_lux = {
 		}
 	}
 	#revoke_allowed = {
-		always = no
-	}
+	#	always = no
+	#}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -202,4 +203,5 @@ patrons_lux = {
 			trait = zealous
 		}
 	}
+}
 }
