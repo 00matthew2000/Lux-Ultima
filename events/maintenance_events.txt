@@ -1004,22 +1004,22 @@ character_event = {
 #				add_trait = sectarian_heavy
 #			}
 #		}
-		any_independent_ruler = {
-			any_demesne_title = {
-				limit = {
-					tier = count
-					location = {
-						region = custom_syrian_desert
-					}
-				}
-				location = {
-					add_province_modifier = {
-						name = syrian_desert
-						duration = -1
-					}
-				}
-			}
-		}
+#		any_independent_ruler = {
+#			any_demesne_title = {
+#				limit = {
+#					tier = count
+#					location = {
+#						region = custom_syrian_desert
+#					}
+#				}
+#				location = {
+#					add_province_modifier = {
+#						name = syrian_desert
+#						duration = -1
+#					}
+#				}
+#			}
+#		}
 		set_global_flag = scenario_initialised
 	}
 }

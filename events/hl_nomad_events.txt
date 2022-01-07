@@ -294,7 +294,7 @@ character_event = { # Notification event that a holding is destroyed
 	desc = {
 		text = EVTDESC_HL_4814
 		trigger = {
-			owner = {
+			holder_scope = {
 				is_nomadic = yes
 			}
 		}
@@ -302,7 +302,7 @@ character_event = { # Notification event that a holding is destroyed
 	desc = {
 		text = EVTDESC_HL_4814_NON_NOMAD
 		trigger = {
-			owner = {
+			holder_scope = {
 				is_nomadic = no
 			}
 		}
@@ -432,7 +432,7 @@ character_event = { # Notification event that a holding is destroyed
 		ai_chance = {
 			factor = 5
 		}
-		owner = { prestige = 5 }
+		holder_scope = { prestige = 5 }
 	}
 }
 

@@ -91,7 +91,7 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA920"
-		liege = { letter_event = { id = 20200 tooltip = "EVTTOOLTIP20200" } }
+		liege = { character_event = { id = 20200 tooltip = "EVTTOOLTIP20200" } }
 	}
 }
 
@@ -201,7 +201,7 @@ character_event = {
 			50 = {
 				character_event = { id = 20211 tooltip = "EVTTOOLTIP20211" }
 				hidden_tooltip = {
-					liege = { letter_event = { id = 20212 } }
+					liege = { character_event = { id = 20212 } }
 				}
 			}
 			25 = {
@@ -226,7 +226,7 @@ character_event = {
 			50 = {
 				character_event = { id = 20211 tooltip = "EVTTOOLTIP20211" }
 				hidden_tooltip = {
-					liege = { letter_event = { id = 20212 } }
+					liege = { character_event = { id = 20212 } }
 				}
 			}
 			15 = {
@@ -250,7 +250,7 @@ character_event = {
 			40 = {
 				character_event = { id = 20211 tooltip = "EVTTOOLTIP20211" }
 				hidden_tooltip = {
-					liege = { letter_event = { id = 20212 } }
+					liege = { character_event = { id = 20212 } }
 				}
 			}
 			10 = {

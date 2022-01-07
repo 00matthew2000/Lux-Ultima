@@ -111,10 +111,6 @@ character_event = { # Giant trait flavor - gain brawny or frail depending on lif
 				}
 				modifier = {
 					factor = 1.5
-					trait = brave
-				}
-				modifier = {
-					factor = 1.5
 					OR = {
 						trait = duelist
 						trait = strategist
@@ -667,23 +663,23 @@ character_event = { #Event where your court physician offers you a potion to mak
 					
 						event_target:physician = {
 							learning = 15
+							factor = 1.2
 						}
-						factor = 1.2
 					
 						event_target:physician = {
 							learning = 15
-						}
-						factor = 1.5
+							factor = 1.5
+						}						
 						
 						event_target:physician = {
 							learning = 20
-						}
-						factor = 2
+							factor = 2
+						}						
 						
 						event_target:physician = {
 							trait = physician
-						}
-						factor = 2
+							factor = 2
+						}						
 					}
 					remove_trait = depressed
 					hidden_tooltip = {

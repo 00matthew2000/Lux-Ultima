@@ -2242,8 +2242,8 @@ character_event = {
 #Penance/meditation success
 letter_event = {
 	id = MNM.4428
-	border = GFX_event_letter_frame_religion
-	desc = EVTDESC_MNM_4428
+	#border = GFX_event_letter_frame_religion
+	#desc = EVTDESC_MNM_4428
 	is_triggered_only = yes
 	
 	trigger = {
@@ -2300,8 +2300,8 @@ letter_event = {
 #Penance/meditation failure
 letter_event = {
 	id = MNM.4429
-	border = GFX_event_letter_frame_religion
-	desc = EVTDESC_MNM_4429
+	#border = GFX_event_letter_frame_religion
+	#desc = EVTDESC_MNM_4429
 	is_triggered_only = yes
 
 	trigger = {
@@ -2613,7 +2613,7 @@ character_event = {
 
 	immediate = {
 		FROM = {
-			character_event = {
+			letter_event = {
 				id = MNM.4022
 			}
 		}
@@ -2762,7 +2762,7 @@ character_event = {
 
 	immediate = {
 		FROM = {
-			character_event = {
+			letter_event = {
 				id = MNM.8099
 			}
 		}
@@ -2863,7 +2863,7 @@ character_event = {
 
 	immediate = {
 		FROM = {
-			character_event = {
+			letter_event = {
 				id = MNM.4026
 			}
 		}
@@ -3360,33 +3360,33 @@ character_event = {
     	            }
     	        }
     	    }
-    	    random_society_member = {
-    	        limit = {
-    	            society_member_of = monastic_order_benedictine
-    	            ai = yes
-    	            NOT = { trait = diligent }
-    	            NOT = { character = ROOT }
-    	        }
+#    	    random_society_member = {
+#    	        limit = {
+#    	            society_member_of = monastic_order_benedictine
+#    	            ai = yes
+#    	            NOT = { trait = diligent }
+#    	            NOT = { character = ROOT }
+#    	        }
     	        add_trait = diligent
-    	    }
+    	    #}
     	}
-		random_society_member = {
-    	    limit = {
-    	        society_member_of = monastic_order_benedictine
-    	        trait = diligent
-    	        NOT = { character = ROOT }
-    	    }
-    	    save_event_target_as = benedictines_diligent_mentor
-    	}
-   		random_society_member = {
-    	    limit = {
-    	        society_member_of = monastic_order_benedictine
-    	        society_rank = { rank == 4 }
-    	        trait = diligent
-    	        NOT = { character = ROOT }
-    	    }
-    	    save_event_target_as = benedictines_diligent_mentor
-    	}
+#		random_society_member = {
+#    	    limit = {
+#    	        society_member_of = monastic_order_benedictine
+#    	        trait = diligent
+#    	        NOT = { character = ROOT }
+#    	    }
+#    	    save_event_target_as = benedictines_diligent_mentor
+#    	}
+#   		random_society_member = {
+#    	    limit = {
+#    	        #society_member_of = monastic_order_benedictine
+#    	        society_rank = { rank == 4 }
+#    	        trait = diligent
+#    	        NOT = { character = ROOT }
+#    	    }
+#    	    save_event_target_as = benedictines_diligent_mentor
+#    	}
     	event_target:benedictines_diligent_mentor = { character_event = { id = MNM.4601 } }
 	}
 }
@@ -3426,7 +3426,7 @@ character_event = {
 		custom_tooltip = { text = EVTOPTA_MNM_4601_TOOLTIP }
 		hidden_effect = {
 			event_target:benedictines_diligent_mentee = {
-				character_event = { id = MNM.4603 days = 7 random = 7 }
+				letter_event = { id = MNM.4603 days = 7 random = 7 }
 			}
 		}
 		event_target:benedictines_diligent_mentee = {
@@ -3465,7 +3465,7 @@ letter_event = {
 		name = EVTOPTA_MNM_4603
 		hidden_effect = {
 			event_target:benedictines_diligent_mentor = {
-				character_event = { id = MNM.4604 days = 7 random = 7 }
+				letter_event = { id = MNM.4604 days = 7 random = 7 }
 			}
 		}
 		transfer_scaled_wealth = {
@@ -3482,7 +3482,7 @@ letter_event = {
 		hidden_effect = {
 			event_target:benedictines_diligent_mentor = {
 				set_character_flag = MNM_4603_rejected_help_outraged
-				character_event = { id = MNM.4608 days = 7 random = 7 }
+				letter_event = { id = MNM.4608 days = 7 random = 7 }
 			}
 		}
 		opinion = {
@@ -3510,7 +3510,7 @@ letter_event = {
 		hidden_effect = {
 			event_target:benedictines_diligent_mentor = {
 				set_character_flag = MNM_4603_rejected_help_normal
-				character_event = { id = MNM.4608 days = 7 random = 7 }
+				letter_event = { id = MNM.4608 days = 7 random = 7 }
 			}
 		}
 		prestige = 25
@@ -6662,8 +6662,8 @@ character_event = {
 letter_event = {
 	id = MNM.4624
 	desc = EVTDESC_MNM_4624
-    picture = GFX_evt_shady_meeting
-    border = GFX_event_letter_frame_religion
+    #picture = GFX_evt_shady_meeting
+    #border = GFX_event_letter_frame_religion
 
     is_triggered_only = yes
 
@@ -6939,7 +6939,7 @@ character_event = {
 
 	immediate = {
 		event_target:monastic_artifact_stealer = {
-			letter_event = { id = MNM.4626 days = 5 random = 10 }
+			character_event = { id = MNM.4626 days = 5 random = 10 }
 		}
 	}
 }
@@ -7409,7 +7409,6 @@ character_event = { #clean up event
     	clr_character_flag = suggestion_B_flag
 		clr_character_flag = 3264_publish_flag
 		clr_character_flag = 3264_preserve_flag
-		clr_character_flag = 3264_depressed_flag
 		clr_character_flag = 3264_depressed_flag
     }
 }

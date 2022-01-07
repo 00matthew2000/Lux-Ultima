@@ -781,8 +781,9 @@ character_event = {
 		}
 		if = { 
 			limit = { 
-				OR = { trait = crusader 
-				}
+				#OR = { 
+					trait = crusader 
+				#}
 				check_variable = { which = physique_variable value = 1 }
 			}
 			change_variable = { which = physique_variable value = -2 }
@@ -2859,9 +2860,9 @@ character_event = {
 		tooltip_info = is_fat
 		if = { 
 			limit = {	
-				OR = {
+				#OR = {
 					has_character_modifier = stress_relief
-				}
+				#}
 			}
 			remove_character_modifier = stress_relief
 		}
@@ -2908,9 +2909,9 @@ character_event = {
 		tooltip_info = is_fat
 		if = { 
 			limit = {
-				OR = {
+				#OR = {
 					has_character_modifier = anti_depression
-				}
+				#}
 			}
 			remove_character_modifier = anti_depression
 		}
@@ -3061,7 +3062,7 @@ character_event = {
 		OR = { 	
 			AND = { #Must still have children.
 				is_female = yes
-				num_of_children = yes
+				num_of_children >= 3
 			}
 			AND = { #Must still be married.
 				is_female = no
@@ -5025,9 +5026,9 @@ character_event = {
 		tooltip_info = is_malnourished
 		if = { 
 			limit = {
-				OR = {
+				#OR = {
 					has_character_modifier = stress_relief
-				}
+				#}
 			}
 			remove_character_modifier = stress_relief
 		}

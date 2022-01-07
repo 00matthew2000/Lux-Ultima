@@ -544,32 +544,30 @@ crusader_commander_counter_positive_effect = {
 	if = {
 		limit = {
 			OR = {
-				AND = {
-					any_war = {
-						using_cb = new_crusade
-					}
+				#AND = {
+					#any_war = {
+						#using_cb = new_crusade
+					#}
 					has_pledged_crusade_participation = yes
-				}
+				#}
 				any_liege = {
-					AND = {
-						any_war = {
-							using_cb = new_crusade
-						}
-						has_pledged_crusade_participation = yes
-					}
+					#any_war = {
+						#using_cb = new_crusade
+					#}
+					has_pledged_crusade_participation = yes
 				}
 			}
 			event_target:enemy_commander = {
-				OR = {
-					any_war = {
-						using_cb = new_crusade
-					}
-					any_liege = {
-						any_war = {
-							using_Cb = new_crusade
-						}
-					}
-				}
+				#OR = {
+					#any_war = {
+						#using_cb = new_crusade
+					#}
+					#any_liege = {
+						#any_war = {
+							#using_cb = new_crusade
+						#}
+					#}
+				#}
 				NOT = {
 					religion = ROOT
 				}
@@ -583,32 +581,32 @@ crusader_commander_counter_positive_effect = {
 	else_if = {
 		limit = {
 			OR = {
-				AND = {
-					any_war = {
-						using_cb = new_crusade
-					}
+				#AND = {
+					#any_war = {
+						#using_cb = new_crusade
+					#}
 					has_pledged_crusade_participation = yes
-				}
+				#}
 				any_liege = {
-					AND = {
-						any_war = {
-							using_cb = new_crusade
-						}
+					#AND = {
+						#any_war = {
+							#using_cb = new_crusade
+						#}
 						has_pledged_crusade_participation = yes
-					}
+					#}
 				}
 			}
 			event_target:enemy_commander = {
-				OR = {
-					any_war = {
-						using_cb = new_crusade
-					}
-					any_liege = {
-						any_war = {
-							using_Cb = new_crusade
-						}
-					}
-				}
+				#OR = {
+					#any_war = {
+						#using_cb = new_crusade
+					#}
+					#any_liege = {
+						#any_war = {
+							#using_cb = new_crusade
+						#}
+					#}
+				#}
 				NOT = {
 					religion = ROOT
 				}
@@ -637,32 +635,32 @@ crusader_commander_counter_negative_effect = {
 	if = {
 		limit = {
 			OR = {
-				AND = {
-					any_war = {
-						using_cb = new_crusade
-					}
+				#AND = {
+					#any_war = {
+						#using_cb = new_crusade
+					#}
 					has_pledged_crusade_participation = yes
-				}
+				#}
 				any_liege = {
-					AND = {
-						any_war = {
-							using_cb = new_crusade
-						}
+					#AND = {
+						#any_war = {
+							#using_cb = new_crusade
+						#}
 						has_pledged_crusade_participation = yes
-					}
+					#}
 				}
 			}
 			event_target:enemy_commander = {
-				OR = {
-					any_war = {
-						using_cb = new_crusade
-					}
-					any_liege = {
-						any_war = {
-							using_Cb = new_crusade
-						}
-					}
-				}
+				#OR = {
+					#any_war = {
+						#using_cb = new_crusade
+					#}
+					#any_liege = {
+						#any_war = {
+							#using_cb = new_crusade
+						#}
+					#}
+				#}
 				NOT = {
 					religion = ROOT
 				}

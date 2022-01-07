@@ -999,7 +999,7 @@ character_event = {
 
 							#Family grievances
 							family_grievance_trigger = yes
-							location = { character = ROOT }
+							at_location = ROOT
 						}
 					}
 				}
@@ -3454,14 +3454,14 @@ character_event = {
 		text = EVTDESCAHFP21033_COURT
 		trigger = { 
 			has_character_flag = flag_appease_discuss_strategy
-			NOT = { FROM = { location = { character = ROOT } } }
+			NOT = { FROM = { at_location = ROOT } }
 		}
 	}
 	desc = {
 		text = EVTDESCAHFP21033
 		trigger = { 
 			has_character_flag = flag_appease_discuss_strategy
-			FROM = { location = { character = ROOT } }
+			FROM = { at_location = ROOT }
 		}
 	}
 	desc = {
@@ -3512,14 +3512,14 @@ character_event = {
 		text = EVTDESCAHFP21034
 		trigger = { 
 			has_character_flag = flag_appease_discuss_strategy
-			NOT = { FROM = { location = { character = ROOT } } }
+			NOT = { FROM = { at_location = ROOT } }
 		}
 	}
 	desc = {
 		text = EVTDESCAHFP21034_COURT
 		trigger = { 
 			has_character_flag = flag_appease_discuss_strategy
-			FROM = { location = { character = ROOT } }
+			FROM = { at_location = ROOT }
 		}
 	}
 	desc = {
@@ -8847,13 +8847,13 @@ character_event = {
 	desc = {
 		text = EVTDESCHFP21098
 		trigger = { 
-			FROM = { location = { character = ROOT } }
+			FROM = { at_location = ROOT }
 		}
 	}
 	desc = {
 		text = EVTDESCHFPB21098
 		trigger = { 
-			NOT = { FROM = { location = { character = ROOT } } }
+			NOT = { FROM = { at_location = ROOT } } 
 		}
 	}
 	picture = GFX_evt_diplomat_hf
@@ -8874,9 +8874,7 @@ character_event = {
 			duration = 2000
 		}
 	}
-
 	is_triggered_only = yes
-
 	option = { #Invite him to court for a while.
 		name = EVTOPTAHFP21098
 		custom_tooltip = { text = tooltip_21098_A }
@@ -10359,19 +10357,19 @@ character_event = {
 						}
 					}
 				}
-				modifier = { 
-					factor = 2
-					OR = {
-						AND = {
-							trait = cynical
-							persistent_event_target:sway_target = { trait = zealous }
-						}
-						AND = {
-							trait = zealous
-							persistent_event_target:sway_target = { trait = cynical }
-						}
-					}
-				}
+#				modifier = { 
+#					factor = 2
+#					OR = {
+#						AND = {
+#							trait = cynical
+#							persistent_event_target:sway_target = { trait = zealous }
+#						}
+#						AND = {
+#							trait = zealous
+#							persistent_event_target:sway_target = { trait = cynical }
+#						}
+#					}
+#				}
 				modifier = { 
 					factor = 2
 					OR = {
@@ -15618,7 +15616,6 @@ character_event = {
 		clr_character_flag = flag_sway_turned_gluttonous
 		clr_character_flag = flag_sway_turned_greedy
 		clr_character_flag = flag_sway_turned_slothful
-		clr_character_flag = flag_sway_turned_chaste
 		clr_character_flag = flag_sway_turned_wroth
 		clr_character_flag = flag_sway_turned_envious
 		clr_character_flag = flag_sway_turned_proud
@@ -17025,10 +17022,10 @@ character_event = {
 			trait = kind
 			any_war = {
 				NOT = { 
-					OR = {
+					#OR = {
 						using_cb = crusade
-						using_cb = new_crusade
-					}
+						#using_cb = new_crusade
+					#}
 				}
 				OR = { 
 					attacker = { character = FROM }
@@ -17275,10 +17272,10 @@ character_event = {
 			any_war = {
 				limit = {
 					NOT = { 
-						OR = {
+						#OR = {
 							using_cb = crusade
-							using_cb = new_crusade
-						}
+							#using_cb = new_crusade
+						#}
 					}
 					OR = { 
 						attacker = { character = FROM }

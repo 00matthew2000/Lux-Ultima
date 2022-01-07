@@ -65,9 +65,9 @@ de_jure_laws = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -424,9 +424,9 @@ de_jure_laws = {
 			
 		}
 		
-		ai_will_revoke = {
-			factor = 0
-		}
+		#ai_will_revoke = {
+			#factor = 0
+		#}
 		
 		effect = {
 			hidden_tooltip = {
@@ -544,12 +544,12 @@ de_jure_laws = {
 			always = no # Indentured Servitude can only exist as the result of an anti-slavery CB
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = { factor = 0 }
-		ai_will_revoke = { factor = 0 }
+		#ai_will_revoke = { factor = 0 }
 		
 		effect = {
 			hidden_tooltip = {
@@ -618,9 +618,9 @@ de_jure_laws = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -1009,7 +1009,7 @@ de_jure_laws = {
 			
 		}
 		
-		ai_will_revoke = { factor = 0 }
+		#ai_will_revoke = { factor = 0 }
 			
 		effect = {
 			if = {
@@ -1125,9 +1125,9 @@ de_jure_laws = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -1536,7 +1536,7 @@ de_jure_laws = {
 			
 		}
 		
-		ai_will_revoke = { factor = 0 }
+		#ai_will_revoke = { factor = 0 }
 		
 		
 		effect = {
@@ -1631,7 +1631,7 @@ de_jure_laws = {
 		allow = { always = no }
 		revoke_allowed = { always = no }
 		ai_will_do = { factor = 0 }
-		ai_will_revoke = { factor = 0 }
+		#ai_will_revoke = { factor = 0 }
 		
 		effect = { hidden_tooltip = { holder_scope = { clr_character_flag = flag_slavery_treaty_breach } } }
 	}
@@ -1652,7 +1652,7 @@ de_jure_laws = {
 		allow = { always = no }
 		revoke_allowed = { always = no }
 		ai_will_do = { factor = 0 }
-		ai_will_revoke = { factor = 0 }
+		#ai_will_revoke = { factor = 0 }
 		
 		effect = { hidden_tooltip = { holder_scope = { clr_character_flag = flag_slavery_treaty_breach } } }
 	}

@@ -231,19 +231,17 @@ character_event = {
     		prisoner = no
     		is_adult = yes
     		count = 2
-    		AND = {
-    			has_lover = no
-    			NOT = {
-    				any_rival = {
-        				always = yes
-        			}
-    			}
-    			NOT = {
-    				any_friend = {
-        				always = yes
-        			}
-    			}
-    		}
+			has_lover = no
+			NOT = {
+				any_rival = {
+					always = yes
+				}
+			}
+			NOT = {
+				any_friend = {
+					always = yes
+				}
+			}
     	}
     }
 
@@ -257,19 +255,17 @@ character_event = {
 		    		prisoner = no
 		    		is_adult = yes
 		    		count = 4 #More courtiers that are lonely
-		    		AND = {
-		    			has_lover = no
-		    			NOT = {
-		    				any_rival = {
-		        				always = yes
-		        			}
-		    			}
-		    			NOT = {
-		    				any_friend = {
-		        				always = yes
-		        			}
-		    			}
-		    		}
+					has_lover = no
+					NOT = {
+						any_rival = {
+							always = yes
+						}
+					}
+					NOT = {
+						any_friend = {
+							always = yes
+						}
+					}
 		    	}
 			}
     		break = yes
@@ -279,19 +275,17 @@ character_event = {
     			is_landed = no
 	    		prisoner = no
 	    		is_adult = yes
-	    		AND = {
-        			has_lover = no
-        			NOT = {
-        				any_rival = {
-	        				always = yes
-	        			}
-        			}
-        			NOT = {
-        				any_friend = {
-	        				always = yes
-	        			}
-        			}
-        		}
+				has_lover = no
+				NOT = {
+					any_rival = {
+						always = yes
+					}
+				}
+				NOT = {
+					any_friend = {
+						always = yes
+					}
+				}
     		}
             preferred_limit = {
                 trait = lustful
@@ -316,23 +310,21 @@ character_event = {
     	}
     	any_courtier = {
     		limit = {
-    			NOT = { CHARACTER = event_target:courtier_1 }
+    			NOT = { character = event_target:courtier_1 }
     			is_landed = no
 	    		prisoner = no
                 is_adult = yes
-	    		AND = {
-        			has_lover = no
-        			NOT = {
-        				any_rival = {
-	        				always = yes
-	        			}
-        			}
-        			NOT = {
-        				any_friend = {
-	        				always = yes
-	        			}
-        			}
-        		}
+				has_lover = no
+				NOT = {
+					any_rival = {
+						always = yes
+					}
+				}
+				NOT = {
+					any_friend = {
+						always = yes
+					}
+				}
     		}
             preferred_limit = {
                 trait = lustful
@@ -821,7 +813,7 @@ character_event = {
 		    			}
 		    		}
 		    	}
-	    		NOT = { event_target:courtier_1 = { CHARACTER = PREV } }
+	    		NOT = { event_target:courtier_1 = { character = PREV } }
     		}
     		preferred_limit = {
 	    		has_nickname = no
@@ -852,8 +844,8 @@ character_event = {
 		    		}
 		    	}
 	    		NOR = {
-	    			event_target:courtier_1 = { CHARACTER = PREV }
-	    			event_target:courtier_2 = { CHARACTER = PREV }
+	    			event_target:courtier_1 = { character = PREV }
+	    			event_target:courtier_2 = { character = PREV }
 	    		}
     		}
     		preferred_limit = {
@@ -889,9 +881,9 @@ character_event = {
 			    	}
 			    	is_unimportant_trigger = yes
 			    	NOR = {
-			    		event_target:courtier_1 = { CHARACTER = PREV }
-	    				event_target:courtier_2 = { CHARACTER = PREV }
-	    				event_target:courtier_3 = { CHARACTER = PREV }
+			    		event_target:courtier_1 = { character = PREV }
+	    				event_target:courtier_2 = { character = PREV }
+	    				event_target:courtier_3 = { character = PREV }
 			    	}
 		    	}
     		}
@@ -919,9 +911,9 @@ character_event = {
 			    	}
 		    		is_unimportant_trigger = yes
 		    		NOR = {
-		    			event_target:courtier_1 = { CHARACTER = PREV }
-		    			event_target:courtier_2 = { CHARACTER = PREV }
-		    			event_target:courtier_3 = { CHARACTER = PREV }
+		    			event_target:courtier_1 = { character = PREV }
+		    			event_target:courtier_2 = { character = PREV }
+		    			event_target:courtier_3 = { character = PREV }
 		    		}
 	    		}
 	    		save_event_target_as = courtier_4
@@ -953,10 +945,10 @@ character_event = {
 			    	}
 			    	is_unimportant_trigger = yes
 			    	NOR = {
-			    		event_target:courtier_1 = { CHARACTER = PREV }
-	    				event_target:courtier_2 = { CHARACTER = PREV }
-	    				event_target:courtier_3 = { CHARACTER = PREV }
-	    				event_target:courtier_4 = { CHARACTER = PREV }
+			    		event_target:courtier_1 = { character = PREV }
+	    				event_target:courtier_2 = { character = PREV }
+	    				event_target:courtier_3 = { character = PREV }
+	    				event_target:courtier_4 = { character = PREV }
 			    	}
 		    	}
     		}
@@ -984,10 +976,10 @@ character_event = {
 			    	}
 		    		is_unimportant_trigger = yes
 		    		NOR = {
-		    			event_target:courtier_1 = { CHARACTER = PREV }
-		    			event_target:courtier_2 = { CHARACTER = PREV }
-		    			event_target:courtier_3 = { CHARACTER = PREV }
-		    			event_target:courtier_4 = { CHARACTER = PREV }
+		    			event_target:courtier_1 = { character = PREV }
+		    			event_target:courtier_2 = { character = PREV }
+		    			event_target:courtier_3 = { character = PREV }
+		    			event_target:courtier_4 = { character = PREV }
 		    		}
 	    		}
 	    		save_event_target_as = courtier_5

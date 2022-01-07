@@ -2011,11 +2011,11 @@ character_event = {
 				NOT = { trait = craven }
 				NOT = { trait = humble }
 			}
-			opinion = {
-				modifier = remove_kebal_insult
-				who = ROOT
-				years = 2
-			}
+#			opinion = {
+#				modifier = remove_kebal_insult
+#				who = ROOT
+#				years = 2
+#			}
 		}
 	}
 	option = {
@@ -2034,11 +2034,11 @@ character_event = {
 				NOT = { trait = just }
 				NOT = { trait = kind }
 			}
-			opinion = {
-				modifier = remove_kebal_insult
-				who = ROOT
-				years = 2
-			}
+#			opinion = {
+#				modifier = remove_kebal_insult
+#				who = ROOT
+#				years = 2
+#			}
 		}					
 	}
 }

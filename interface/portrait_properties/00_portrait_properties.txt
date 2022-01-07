@@ -705,7 +705,7 @@
 				is_married = yes
 				higher_tier_than = duke
 			}
-			graphical_culture = croat_southslavicgfx
+			graphical_culture = croatsouthslavicgfx
 			culture = croatian
 		}
 		modifier = { 
@@ -716,7 +716,7 @@
 				higher_tier_than = duke
 			}
 			OR = {
-				graphical_culture = serb_southslavicgfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = magyargfx
 			}
 			OR = {
@@ -789,7 +789,7 @@
 				is_married = yes
 				higher_tier_than = duke
 			}
-			graphical_culture = croat_southslavicgfx
+			graphical_culture = croatsouthslavicgfx
 			culture = croatian
 		}
 		modifier = { 
@@ -800,7 +800,7 @@
 				higher_tier_than = duke
 			}
 			OR = {
-				graphical_culture = serb_southslavicgfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = magyargfx
 			}
 			OR = {
@@ -849,7 +849,7 @@
 				is_married = yes
 				higher_tier_than = duke
 			}
-			graphical_culture = croat_southslavicgfx
+			graphical_culture = croatsouthslavicgfx
 			culture = croatian
 		}
 		modifier = { 
@@ -860,7 +860,7 @@
 				higher_tier_than = duke
 			}
 			OR = {
-				graphical_culture = serb_southslavicgfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = magyargfx
 			}
 			OR = {
@@ -1054,7 +1054,7 @@
 				is_married = yes
 				higher_tier_than = duke
 			}
-			graphical_culture = croat_southslavicgfx
+			graphical_culture = croatsouthslavicgfx
 			culture = croatian
 		}
 		modifier = { 
@@ -1065,7 +1065,7 @@
 				higher_tier_than = duke
 			}
 			OR = {
-				graphical_culture = serb_southslavicgfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = magyargfx
 			}
 			OR = {
@@ -1112,7 +1112,7 @@
 				is_married = yes
 				higher_tier_than = duke
 			}
-			graphical_culture = croat_southslavicgfx
+			graphical_culture = croatsouthslavicgfx
 			culture = croatian
 		}
 		modifier = { 
@@ -1123,7 +1123,7 @@
 				higher_tier_than = duke
 			}
 			OR = {
-				graphical_culture = serb_southslavicgfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = magyargfx
 			}
 			OR = {
@@ -1261,7 +1261,7 @@
 			OR = {
 				trait = peasant_leader
 				trait = heresiarch
-				government = order_government
+				#government = order_government
 			}
 			NOT = { is_offmap_tag_including_dead = offmap_china }
 		}
@@ -1298,7 +1298,7 @@
 			OR = {
 				trait = peasant_leader
 				trait = heresiarch
-				government = order_government
+				#government = order_government
 			}
 			NOT = { is_offmap_tag_including_dead = offmap_china }
 		}
@@ -1335,7 +1335,7 @@
 			OR = {
 				trait = peasant_leader
 				trait = heresiarch
-				government = order_government
+				#government = order_government
 			}
 			NOT = { is_offmap_tag_including_dead = offmap_china }
 		}
@@ -1372,7 +1372,7 @@
 			OR = {
 				trait = peasant_leader
 				trait = heresiarch
-				government = order_government
+				#government = order_government
 			}
 		}
 		modifier = {
@@ -1409,7 +1409,7 @@
 			OR = {
 				trait = peasant_leader
 				trait = heresiarch
-				government = order_government
+				#government = order_government
 			}
 		}
 		modifier = {
@@ -1446,7 +1446,7 @@
 			OR = {
 				trait = peasant_leader
 				trait = heresiarch
-				government = order_government
+				#government = order_government
 			}
 		}
 		modifier = {
@@ -1484,7 +1484,7 @@
 			NOT = { trait = heresiarch }
 			OR = {
 				is_ruler = yes
-				government = order_government
+				#government = order_government
 				has_minor_title = title_prince
 				spouse = { real_tier = emperor }
 				spouse = { real_tier = king }
@@ -1520,7 +1520,7 @@
 			NOT = { trait = peasant_leader }
 			NOT = { trait = heresiarch }
 			OR = {
-				government = order_government
+				#government = order_government
 				is_or_was_offmap_power_ruler = yes
 				is_ruler = yes
 				has_minor_title = title_prince
@@ -1553,7 +1553,7 @@
 			NOT = { trait = peasant_leader }
 			NOT = { trait = heresiarch }
 			OR = {
-				government = order_government
+				#government = order_government
 				is_or_was_offmap_power_ruler = yes
 				is_ruler = yes
 				has_minor_title = title_prince
@@ -1580,7 +1580,7 @@
 		modifier = {
 			factor = 0
 			OR = {
-				government = order_government
+				#government = order_government
 				real_tier = king
 				real_tier = emperor
 				AND = {
@@ -1597,7 +1597,7 @@
 			factor = 0
 			NOT = { has_job_title = job_spymaster }
 			OR = {
-				government = order_government
+				#government = order_government
 				real_tier = duke
 				NOT = { intrigue = 10 }
 			}
@@ -1624,7 +1624,7 @@
 				}
 			}
 			NOT = {
-				government = order_government
+				#government = order_government
 			}
 		}
 		modifier = {
@@ -1645,7 +1645,7 @@
 			#	real_tier = king
 			#	real_tier = emperor
 				AND = {
-					NOT = { government = order_government }
+					#NOT = { #government = order_government }
 					real_tier = duke
 					NAND = { 
 						in_command = yes 
@@ -2636,7 +2636,7 @@
 		modifier = {
 			factor = 2
 			is_female = yes
-			graphical_culture = croat_southslavicgfx
+			graphical_culture = croatsouthslavicgfx
 			culture = croatian
 			is_married = no
 		}
@@ -2644,7 +2644,7 @@
 			factor = 2
 			is_female = yes
 			OR = {
-				graphical_culture = serb_southslavicgfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = magyargfx
 			}
 			OR = {
@@ -2830,7 +2830,7 @@
 		modifier = {
 			factor = 0
 			is_female = yes
-			graphical_culture = croat_southslavicgfx
+			graphical_culture = croatsouthslavicgfx
 			culture = croatian
 			is_married = yes
 		}
@@ -2838,7 +2838,7 @@
 			factor = 0
 			is_female = yes
 			OR = {
-				graphical_culture = serb_southslavicgfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = magyargfx
 			}
 			OR = {
@@ -2863,7 +2863,7 @@
 		modifier = {
 			factor = 2
 			is_female = yes
-			graphical_culture = croat_southslavicgfx
+			graphical_culture = croatsouthslavicgfx
 			culture = croatian
 			is_married = no
 		}
@@ -2871,7 +2871,7 @@
 			factor = 2
 			is_female = yes
 			OR = {
-				graphical_culture = serb_southslavicgfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = magyargfx
 			}
 			OR = {
@@ -3010,7 +3010,7 @@
 		#modifier = {
 		#	factor = 20000
 		#	OR = { 
-		#		government = order_government 
+		#		#government = order_government 
 		#		primary_title = { #Holy Orders in peace time should wear martial clothes, but not the helmet.
 		#			OR = {
 						#title = d_knights_hospitaler
@@ -3035,7 +3035,7 @@
 			factor = 0
 			NOT = { trait = saint }
 			NOT = { is_republic = yes }
-			NOT = { government = order_government }
+			#NOT = { #government = order_government }
 			OR = {
 				real_tier = emperor
 				real_tier = king
@@ -3069,7 +3069,7 @@
 		modifier = {
 			factor = 4
 			is_female = yes
-			graphical_culture = croat_southslavicgfx
+			graphical_culture = croatsouthslavicgfx
 			culture = croatian
 			is_married = no
 		}
@@ -3077,7 +3077,7 @@
 			factor = 4
 			is_female = yes
 			OR = {
-				graphical_culture = serb_southslavicgfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = magyargfx
 			}
 			OR = {
@@ -3366,8 +3366,8 @@
 		factor = 100
 		modifier = {
 			factor = 0
-			OR = {
-				NOT = {
+			NOT = {
+				OR = {
 					trait = has_measles
 					trait = has_small_pox
 				}
@@ -3383,9 +3383,9 @@
 		factor = 100
 		modifier = {
 			factor = 0
-			OR = {
+			#OR = {
 				trait = has_bubonic_plague
-			}
+			#}
 		}
  	}
 
@@ -3393,11 +3393,11 @@
 		factor = 100
 		modifier = {
 			factor = 0
-			OR = {
+			#OR = {
 				NOT = {
 					trait = has_bubonic_plague
 				}
-			}
+			#}
 		}
  	}
  	
@@ -3430,10 +3430,8 @@
 		factor = 100
 		modifier = {
 			factor = 0
-			AND = {
-				ai = no
-				multiplayer = yes
-			}
+			ai = no
+			multiplayer = yes
 		}
 	}
 
@@ -3631,8 +3629,8 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
+				religion_group = serer_group
+				religion_group = bantu_group
 				culture = manden
 			}
 		}
@@ -3668,10 +3666,10 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
+				religion_group = serer_group
+				religion_group = bantu_group
 				culture = manden
-				culture_group = east_african
+				culture_group = bantu
 			}
 		}
 	}
@@ -3949,10 +3947,8 @@
 		}
 		modifier = {
 			factor = 3
-			AND = {
-				religion = catholic
-				is_theocracy = yes
-			}
+			religion = catholic
+			is_theocracy = yes
 		}
 	}
 	
@@ -4196,20 +4192,20 @@
 					value = on
 				}
 			}
-			OR = {
-				trait = dead_crown_hre #Dead kings don't have artifacts
-				trait = dead_crown_byzantine #Dead kings don't have artifacts
-				trait = dead_crown_pahlavi #Dead kings don't have artifacts
-				trait = dead_crown_fylkir #Dead kings don't have artifacts
-				trait = dead_crown_tengri_fylkir #Dead kings don't have artifacts
-				trait = dead_crown_finnish_fylkir #Dead kings don't have artifacts
-				trait = dead_crown_slavic_fylkir
-				trait = dead_crown_romuva_fylkir
-				trait = dead_crown_zun_fylkir
-				trait = dead_crown_west_african_fylkir
-				trait = dead_crown_aztec_fylkir
+			#OR = {
+				#trait = dead_crown_hre #Dead kings don't have artifacts
+				#trait = dead_crown_byzantine #Dead kings don't have artifacts
+				#trait = dead_crown_pahlavi #Dead kings don't have artifacts
+				#trait = dead_crown_fylkir #Dead kings don't have artifacts
+				#trait = dead_crown_tengri_fylkir #Dead kings don't have artifacts
+				#trait = dead_crown_finnish_fylkir #Dead kings don't have artifacts
+				#trait = dead_crown_slavic_fylkir
+				#trait = dead_crown_romuva_fylkir
+				#trait = dead_crown_zun_fylkir
+				#trait = dead_crown_west_african_fylkir
+				#trait = dead_crown_aztec_fylkir
 				trait = augustus # Laurels
-			}
+			#}
 		}
 		modifier = {
 			factor = 0
@@ -4222,17 +4218,17 @@
 			}
 			any_artifact = {
 				OR = {
-					artifact_type = crown_hre
-					artifact_type = crown_byzantine
-					artifact_type = crown_pahlavi
-					artifact_type = crown_fylkir
-					artifact_type = crown_tengri_fylkir
-					artifact_type = crown_finnish_fylkir
-					artifact_type = crown_slavic_fylkir
-					artifact_type = crown_romuva_fylkir
-					artifact_type = crown_zun_fylkir
-					artifact_type = crown_west_african_fylkir
-					artifact_type = crown_aztec_fylkir
+#					artifact_type = crown_hre
+#					artifact_type = crown_byzantine
+#					artifact_type = crown_pahlavi
+#					artifact_type = crown_fylkir
+#					artifact_type = crown_tengri_fylkir
+#					artifact_type = crown_finnish_fylkir
+#					artifact_type = crown_slavic_fylkir
+#					artifact_type = crown_romuva_fylkir
+#					artifact_type = crown_zun_fylkir
+#					artifact_type = crown_west_african_fylkir
+#					artifact_type = crown_aztec_fylkir
 					artifact_type = iron_crown_of_lombardy
 					artifact_type = cursed_diamond_crown
 				}
@@ -4370,20 +4366,20 @@
 					value = on
 				}
 			}
-			OR = {
-				trait = dead_crown_hre #Dead kings don't have artifacts
-				trait = dead_crown_byzantine #Dead kings don't have artifacts
-				trait = dead_crown_pahlavi #Dead kings don't have artifacts
-				trait = dead_crown_fylkir #Dead kings don't have artifacts
-				trait = dead_crown_tengri_fylkir #Dead kings don't have artifacts
-				trait = dead_crown_finnish_fylkir #Dead kings don't have artifacts
-				trait = dead_crown_slavic_fylkir
-				trait = dead_crown_romuva_fylkir
-				trait = dead_crown_zun_fylkir
-				trait = dead_crown_west_african_fylkir
-				trait = dead_crown_aztec_fylkir
+			#OR = {
+				#trait = dead_crown_hre #Dead kings don't have artifacts
+				#trait = dead_crown_byzantine #Dead kings don't have artifacts
+				#trait = dead_crown_pahlavi #Dead kings don't have artifacts
+				#trait = dead_crown_fylkir #Dead kings don't have artifacts
+				#trait = dead_crown_tengri_fylkir #Dead kings don't have artifacts
+				#trait = dead_crown_finnish_fylkir #Dead kings don't have artifacts
+				#trait = dead_crown_slavic_fylkir
+				#trait = dead_crown_romuva_fylkir
+				#trait = dead_crown_zun_fylkir
+				#trait = dead_crown_west_african_fylkir
+				#trait = dead_crown_aztec_fylkir
 				trait = augustus # Laurels
-			}
+			#}
 		}
 		modifier = {
 			factor = 0
@@ -4404,8 +4400,8 @@
 					artifact_type = crown_finnish_fylkir
 					artifact_type = crown_slavic_fylkir
 					artifact_type = crown_romuva_fylkir
-					artifact_type = crown_zun_fylkir
-					artifact_type = crown_west_african_fylkir
+					#artifact_type = crown_zun_fylkir
+					#artifact_type = crown_west_african_fylkir
 					artifact_type = crown_aztec_fylkir
 					artifact_type = iron_crown_of_lombardy
 					artifact_type = cursed_diamond_crown
@@ -4433,7 +4429,7 @@
 					artifact_type = crown_hre
 					is_artifact_equipped = yes 
 				}
-				trait = dead_crown_hre
+				#trait = dead_crown_hre
 			}
 		}
 	}
@@ -4456,7 +4452,7 @@
 					artifact_type = crown_byzantine
 					is_artifact_equipped = yes 
 				}
-				trait = dead_crown_byzantine
+				#trait = dead_crown_byzantine
 			}
 		}
 	}
@@ -4479,7 +4475,7 @@
 					artifact_type = cursed_diamond_crown
 					is_artifact_equipped = yes 
 				}
-				trait = dead_cursed_diamond_crown
+				#trait = dead_cursed_diamond_crown
 			}
 		}
 	}
@@ -4501,7 +4497,7 @@
 					artifact_type = iron_crown_of_lombardy
 					is_artifact_equipped = yes 
 				}
-				trait = dead_iron_crown_lombardy
+				#trait = dead_iron_crown_lombardy
 			}
 		}
 	}
@@ -4539,7 +4535,7 @@
 					artifact_type = crown_pahlavi
 					is_artifact_equipped = yes 
 				}
-				trait = dead_crown_pahlavi
+				#trait = dead_crown_pahlavi
 			}
 		}
 	}
@@ -4561,7 +4557,7 @@
 					artifact_type = crown_fylkir
 					is_artifact_equipped = yes 
 				}
-				trait = dead_crown_fylkir
+				#trait = dead_crown_fylkir
 			}
 		}
 	}
@@ -4583,7 +4579,7 @@
 					artifact_type = crown_tengri_fylkir
 					is_artifact_equipped = yes 
 				}
-				trait = dead_crown_tengri_fylkir
+				#trait = dead_crown_tengri_fylkir
 			}
 		}
 	}
@@ -4605,7 +4601,7 @@
 					artifact_type = crown_finnish_fylkir
 					is_artifact_equipped = yes 
 				}
-				trait = dead_crown_finnish_fylkir
+				#trait = dead_crown_finnish_fylkir
 			}
 		}
 	}
@@ -4620,16 +4616,16 @@
 				value = on
 			}
 		}
-		modifier = { #West-African Fylkir Crown
-			factor = 0
-			NOR = { 
-				any_artifact = {
-					artifact_type = crown_west_african_fylkir
-					is_artifact_equipped = yes 
-				}
-				trait = dead_crown_west_african_fylkir
-			}
-		}
+		#modifier = { #West-African Fylkir Crown
+			#factor = 0
+			#NOR = { 
+				#any_artifact = {
+					#artifact_type = crown_west_african_fylkir
+					#is_artifact_equipped = yes 
+				#}
+				#trait = dead_crown_west_african_fylkir
+			#}
+		#}
 	}
 	11 = { 
 		factor = 100
@@ -4653,24 +4649,24 @@
 					artifact_type = crown_romuva_fylkir
 					is_artifact_equipped = yes 
 				}
-				trait = dead_crown_slavic_fylkir
-				trait = dead_crown_romuva_fylkir
+				#trait = dead_crown_slavic_fylkir
+				#trait = dead_crown_romuva_fylkir
 			}
 		}
 	}
 	12 = { 
 		factor = 100
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		modifier = { #Zunist Fylkir Crown
-			factor = 0
-			NOR = { 
-				any_artifact = {
-					artifact_type = crown_zun_fylkir
-					is_artifact_equipped = yes 
-				}
-				trait = dead_crown_zun_fylkir
-			}
-		}
+		#modifier = { #Zunist Fylkir Crown
+			#factor = 0
+			#NOR = { 
+				#any_artifact = {
+					#artifact_type = crown_zun_fylkir
+					#is_artifact_equipped = yes 
+				#}
+				#trait = dead_crown_zun_fylkir
+			#}
+		#}
 	}
 	13 = { 
 		factor = 100
@@ -4682,7 +4678,7 @@
 					artifact_type = crown_aztec_fylkir
 					is_artifact_equipped = yes 
 				}
-				trait = dead_crown_aztec_fylkir
+				#trait = dead_crown_aztec_fylkir
 			}
 		}
 	}

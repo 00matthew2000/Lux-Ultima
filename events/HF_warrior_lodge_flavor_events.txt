@@ -1887,27 +1887,8 @@ character_event = { # Warrior Lodge members with high PCS might go out and duel 
 			has_symptom_trigger = yes
 			has_character_modifier = recent_duel_timer
 		}
-		OR = {
-			top_liege = {
-				any_neighbor_independent_ruler = {
-					any_realm_character = {
-						is_inaccessible_or_incapable_trigger = no
-						ai = yes
-						is_adult = yes
-						liege = { ai = yes }
-						NOR = {
-							has_character_modifier = bedridden_illness
-							has_character_modifier = severe_illness
-							any_spouse = { character = ROOT }
-							same_society_as = ROOT
-							religion = ROOT
-							higher_tier_than = DUKE
-							spouse = { higher_tier_than = DUKE }
-							father = { higher_tier_than = DUKE }
-							mother = { higher_tier_than = DUKE }
-						}
-					}
-				}
+		top_liege = {
+			any_neighbor_independent_ruler = {
 				any_realm_character = {
 					is_inaccessible_or_incapable_trigger = no
 					ai = yes
@@ -1924,6 +1905,23 @@ character_event = { # Warrior Lodge members with high PCS might go out and duel 
 						father = { higher_tier_than = DUKE }
 						mother = { higher_tier_than = DUKE }
 					}
+				}
+			}
+			any_realm_character = {
+				is_inaccessible_or_incapable_trigger = no
+				ai = yes
+				is_adult = yes
+				liege = { ai = yes }
+				NOR = {
+					has_character_modifier = bedridden_illness
+					has_character_modifier = severe_illness
+					any_spouse = { character = ROOT }
+					same_society_as = ROOT
+					religion = ROOT
+					higher_tier_than = DUKE
+					spouse = { higher_tier_than = DUKE }
+					father = { higher_tier_than = DUKE }
+					mother = { higher_tier_than = DUKE }
 				}
 			}
 		}
@@ -2035,7 +2033,6 @@ character_event = { # Warrior Lodge members with high PCS might go out and duel 
 					}
 					any_realm_character = {
 						limit = {
-							is_inaccessible_or_incapable_trigger = no
 							is_inaccessible_or_incapable_trigger = no
 							ai = yes
 							is_adult = yes
@@ -2961,17 +2958,17 @@ character_event = {
         	on_trigger = has_character_flag
         	learning_bravery@event_target:teacher = {
         		add_trait_silently_brave_effect = yes
-        		event_target:teacher = { set_character_flag = they_gained_brave }
-        		break = yes
+        		event_target:teacher = { set_character_flag = they_gained_brave }        		
         		remove_trait_silently_craven_effect = yes
         		event_target:teacher = { set_character_flag = they_lost_craven }
+				break = yes
         	}
         	learning_ambition@event_target:teacher = {
         		add_trait_silently_ambitious_effect = yes
         		event_target:teacher = { set_character_flag = they_gained_ambitious }
-        		break = yes
         		remove_trait_silently_content_effect = yes
         		event_target:teacher = { set_character_flag = they_lost_content }
+				break = yes
         	}
         	learning_patience@event_target:teacher = {
         		#because Wroth isn't necessarily *bad*, compared to Patient, we skip the in-between state
@@ -2980,10 +2977,10 @@ character_event = {
         	}
         	learning_diligence@event_target:teacher = {
         		add_trait_silently_diligent_effect = yes
-        		event_target:teacher = { set_character_flag = they_gained_diligent }
-        		break = yes
+        		event_target:teacher = { set_character_flag = they_gained_diligent }       		
         		remove_trait_silently_slothful_effect = yes
         		event_target:teacher = { set_character_flag = they_lost_slothful }
+				break = yes
         	}
         }
 
@@ -3062,17 +3059,17 @@ character_event = {
 				set_character_flag = disease_not_serious
 				hidden_effect = { character_event = { id = HFP.14005 days = 10 random = 30 } } #remove vomiting
         		add_trait_silently_craven_effect = yes
-        		event_target:teacher = { set_character_flag = they_gained_craven }
-        		break = yes
+        		event_target:teacher = { set_character_flag = they_gained_craven }        		
         		remove_trait_silently_brave_effect = yes
         		event_target:teacher = { set_character_flag = they_lost_brave }
+				break = yes
         	}
         	learning_ambition@event_target:teacher = {
         		add_trait_silently_content_effect = yes
-        		event_target:teacher = { set_character_flag = they_gained_content }
-        		break = yes
+        		event_target:teacher = { set_character_flag = they_gained_content }        		
         		remove_trait_silently_ambitious_effect = yes
         		event_target:teacher = { set_character_flag = they_lost_ambitious }
+				break = yes
         	}
         	learning_patience@event_target:teacher = {
         		if = {
@@ -3093,10 +3090,10 @@ character_event = {
         	}
         	learning_diligence@event_target:teacher = {
         		add_trait_silently_slothful_effect = yes
-        		event_target:teacher = { set_character_flag = they_gained_slothful }
-        		break = yes
+        		event_target:teacher = { set_character_flag = they_gained_slothful }     		
         		remove_trait_silently_diligent_effect = yes
         		event_target:teacher = { set_character_flag = they_lost_diligent }
+				break = yes
         	}
         }
     }
@@ -3120,17 +3117,17 @@ character_event = {
         	learning_bravery@event_target:teacher = {
         		hidden_effect = { character_event = { id = HFP.14005 days = 10 random = 30 } } #remove vomiting
         		add_trait_silently_craven_effect = yes
-        		event_target:teacher = { set_character_flag = they_gained_craven }
-        		break = yes
+        		event_target:teacher = { set_character_flag = they_gained_craven }    		
         		remove_trait_silently_brave_effect = yes
         		event_target:teacher = { set_character_flag = they_lost_brave }
+				break = yes
         	}
         	learning_ambition@event_target:teacher = {
         		add_trait_silently_content_effect = yes
-        		event_target:teacher = { set_character_flag = they_gained_content }
-        		break = yes
+        		event_target:teacher = { set_character_flag = they_gained_content }      		
         		remove_trait_silently_ambitious_effect = yes
         		event_target:teacher = { set_character_flag = they_lost_ambitious }
+				break = yes
         	}
         	learning_patience@event_target:teacher = {
         		if = {
@@ -3151,10 +3148,10 @@ character_event = {
         	}
         	learning_diligence@event_target:teacher = {
         		add_trait_silently_slothful_effect = yes
-        		event_target:teacher = { set_character_flag = they_gained_slothful }
-        		break = yes
+        		event_target:teacher = { set_character_flag = they_gained_slothful }       		
         		remove_trait_silently_diligent_effect = yes
         		event_target:teacher = { set_character_flag = they_lost_diligent }
+				break = yes
         	}
         }
     }
@@ -3551,7 +3548,6 @@ character_event = {
     					has_minor_title = title_lawspeaker
     					has_minor_title = title_court_skald
     					has_minor_title = title_venerable_elder
-    					has_minor_title = title_lawspeaker
     					learning = 18
     				}
     		}
@@ -3610,7 +3606,6 @@ character_event = {
     					has_minor_title = title_lawspeaker
     					has_minor_title = title_court_skald
     					has_minor_title = title_venerable_elder
-    					has_minor_title = title_lawspeaker
     					learning = 18
     				}
     			}
@@ -3904,7 +3899,6 @@ character_event = {
     				has_minor_title = title_lawspeaker
     				has_minor_title = title_court_skald
     				has_minor_title = title_venerable_elder
-    				has_minor_title = title_lawspeaker
     				learning = 18
     			}
     		}
@@ -3929,7 +3923,6 @@ character_event = {
 	    					has_minor_title = title_lawspeaker
 	    					has_minor_title = title_court_skald
 	    					has_minor_title = title_venerable_elder
-	    					has_minor_title = title_lawspeaker
 	    					learning = 18
 	    				}
 	    			}
@@ -4041,7 +4034,6 @@ character_event = {
 	    				has_minor_title = title_lawspeaker
 	    				has_minor_title = title_court_skald
 	    				has_minor_title = title_venerable_elder
-	    				has_minor_title = title_lawspeaker
 	    				learning = 18
 	    			}
 	    		}
@@ -4123,7 +4115,6 @@ character_event = {
 	    				has_minor_title = title_lawspeaker
 	    				has_minor_title = title_court_skald
 	    				has_minor_title = title_venerable_elder
-	    				has_minor_title = title_lawspeaker
 	    				learning = 18
 	    			}
 	    		}
@@ -4263,7 +4254,6 @@ character_event = {
 	    				has_minor_title = title_lawspeaker
 	    				has_minor_title = title_court_skald
 	    				has_minor_title = title_venerable_elder
-	    				has_minor_title = title_lawspeaker
 	    				learning = 18
 	    			}
 	    		}
@@ -4357,7 +4347,6 @@ character_event = {
 	    				has_minor_title = title_lawspeaker
 	    				has_minor_title = title_court_skald
 	    				has_minor_title = title_venerable_elder
-	    				has_minor_title = title_lawspeaker
 	    				learning = 18
 	    			}
 	    		}
@@ -4455,7 +4444,6 @@ character_event = {
 	    				has_minor_title = title_lawspeaker
 	    				has_minor_title = title_court_skald
 	    				has_minor_title = title_venerable_elder
-	    				has_minor_title = title_lawspeaker
 	    				learning = 18
 	    			}
 	    		}
@@ -4538,7 +4526,7 @@ character_event = {
 	    				has_minor_title = title_lawspeaker
 	    				has_minor_title = title_court_skald
 	    				has_minor_title = title_venerable_elder
-	    				has_minor_title = title_lawspeaker
+
 	    				learning = 18
 	    			}
 	    		}

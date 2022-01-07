@@ -177,42 +177,42 @@ character_event = {
 		hidden_tooltip = { 
 			set_character_flag = flag_WL_had_ritual_hunt_event #Fires once per character.
 			WL_ritual_hunt_cleanup_effect = yes #Safety cleanup.
-			if = { 
-				limit = { society_member_of = warrior_lodge_norse } 
-				set_character_flag = flag_hunting_wolf_norse
-			}
-			if = { 
-				limit = { society_member_of = warrior_lodge_baltic } 
-				set_character_flag = flag_hunting_wolf_baltic
-			}
-			if = { 
-				limit = { society_member_of = warrior_lodge_hellenic } 
-				set_character_flag = flag_hunting_wolf_hellenic
-			}
-			if = { 
-				limit = { society_member_of = warrior_lodge_slavic } 
-				set_character_flag = flag_hunting_eagle_slavic
-			}
-			if = { 
-				limit = { society_member_of = warrior_lodge_tengri } 
-				set_character_flag = flag_hunting_eagle_tengri
-			}
-			if = { 
-				limit = { society_member_of = warrior_lodge_bon } 
-				set_character_flag = flag_hunting_eagle_bon
-			}
-			if = { 
-				limit = { society_member_of = warrior_lodge_finnish } 
-				set_character_flag = flag_hunting_bear_finnish
-			}
-			if = { 
-				limit = { society_member_of = warrior_lodge_west_african } 
-				set_character_flag = flag_hunting_lion_west_african
-			}
-			if = { 
-				limit = { society_member_of = warrior_lodge_zun } 
-				set_character_flag = flag_hunting_lion_zun
-			}
+			#if = { 
+				#limit = { society_member_of = warrior_lodge_norse } 
+				#set_character_flag = flag_hunting_wolf_norse
+			#}
+			#if = { 
+				#limit = { society_member_of = warrior_lodge_baltic } 
+				#set_character_flag = flag_hunting_wolf_baltic
+			#}
+			#if = { 
+				#limit = { society_member_of = warrior_lodge_hellenic } 
+				#set_character_flag = flag_hunting_wolf_hellenic
+			#}
+			#if = { 
+				#limit = { society_member_of = warrior_lodge_slavic } 
+				#set_character_flag = flag_hunting_eagle_slavic
+			#}
+			#if = { 
+				#limit = { society_member_of = warrior_lodge_tengri } 
+				#set_character_flag = flag_hunting_eagle_tengri
+			#}
+			#if = { 
+				#limit = { society_member_of = warrior_lodge_bon } 
+				#set_character_flag = flag_hunting_eagle_bon
+			#}
+			#if = { 
+				#limit = { society_member_of = warrior_lodge_finnish } 
+				#set_character_flag = flag_hunting_bear_finnish
+			#}
+			#if = { 
+				#limit = { society_member_of = warrior_lodge_west_african } 
+				#set_character_flag = flag_hunting_lion_west_african
+			#}
+			#if = { 
+				#limit = { society_member_of = warrior_lodge_zun } 
+				#set_character_flag = flag_hunting_lion_zun
+			#}
 
 			random_list = { 
 				33 = { sound_effect = pagan_cheering_01 } 
@@ -600,7 +600,7 @@ character_event = {
 			add_blood_splatter_effect = yes
 			if = { 
 				limit = { 
-					society_member_of = warrior_lodge_norse
+					#society_member_of = warrior_lodge_norse
 					NOR = { 
 						trait = african_tattoo_1
 						trait = african_tattoo_2
@@ -635,7 +635,7 @@ character_event = {
 			}
 			if = { 
 				limit = { 
-					society_member_of = warrior_lodge_west_african
+					#society_member_of = warrior_lodge_west_african
 					NOR = { 
 						trait = african_tattoo_1
 						trait = african_tattoo_2
@@ -673,8 +673,8 @@ character_event = {
 			if = { 
 				limit = { 
 					OR = { 
-						society_member_of = warrior_lodge_slavic
-						society_member_of = warrior_lodge_baltic
+						#society_member_of = warrior_lodge_slavic
+						#society_member_of = warrior_lodge_baltic
 					}
 					NOR = { 
 						trait = african_tattoo_1
@@ -710,7 +710,7 @@ character_event = {
 			}
 			if = { 
 				limit = { 
-					society_member_of = warrior_lodge_tengri
+					#society_member_of = warrior_lodge_tengri
 				}
 				remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
 				remove_character_modifier = tengri_warpaint_2
@@ -739,7 +739,7 @@ character_event = {
 			}
 			if = { 
 				limit = { 
-					society_member_of = warrior_lodge_finnish
+					#society_member_of = warrior_lodge_finnish
 				}
 				remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
 				remove_character_modifier = tengri_warpaint_2
@@ -768,7 +768,7 @@ character_event = {
 			}
 			if = { 
 				limit = { 
-					society_member_of = warrior_lodge_zun
+					#society_member_of = warrior_lodge_zun
 				}
 				remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
 				remove_character_modifier = tengri_warpaint_2
@@ -801,7 +801,7 @@ character_event = {
 				add_blood_splatter_effect = yes
 				if = { 
 					limit = { 
-						society_member_of = warrior_lodge_norse
+						#society_member_of = warrior_lodge_norse
 						NOR = { 
 							trait = african_tattoo_1
 							trait = african_tattoo_2
@@ -836,7 +836,7 @@ character_event = {
 				}
 				if = { 
 					limit = { 
-						society_member_of = warrior_lodge_west_african
+						#society_member_of = warrior_lodge_west_african
 						NOR = { 
 							trait = african_tattoo_1
 							trait = african_tattoo_2
@@ -874,8 +874,8 @@ character_event = {
 				if = { 
 					limit = { 
 						OR = { 
-							society_member_of = warrior_lodge_slavic
-							society_member_of = warrior_lodge_baltic
+							#society_member_of = warrior_lodge_slavic
+							#society_member_of = warrior_lodge_baltic
 						}
 						NOR = { 
 							trait = african_tattoo_1
@@ -911,7 +911,7 @@ character_event = {
 				}
 				if = { 
 					limit = { 
-						society_member_of = warrior_lodge_tengri
+						#society_member_of = warrior_lodge_tengri
 					}
 					remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
 					remove_character_modifier = tengri_warpaint_2
@@ -940,7 +940,7 @@ character_event = {
 				}
 				if = { 
 					limit = { 
-						society_member_of = warrior_lodge_finnish
+						#society_member_of = warrior_lodge_finnish
 					}
 					remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
 					remove_character_modifier = tengri_warpaint_2
@@ -969,7 +969,7 @@ character_event = {
 				}
 				if = { 
 					limit = { 
-						society_member_of = warrior_lodge_zun
+						#society_member_of = warrior_lodge_zun
 					}
 					remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
 					remove_character_modifier = tengri_warpaint_2
@@ -1533,7 +1533,7 @@ character_event = {
 		name = EVTOPTBHF25605
 		opinion = {  
 			who = event_target:scoped_WL_co_hunter
-			modifier = left_me_to_die
+			modifier = opinion_left_me_to_die
 		} 
 		hidden_tooltip = { 
 			change_variable = { which = wl_ritual_hunting value = -1 } 

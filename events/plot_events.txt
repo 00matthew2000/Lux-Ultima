@@ -126,7 +126,7 @@ character_event = {
 letter_event = {
 	id = 7255
 	desc = "EVTDESC7255"
-	picture = GFX_evt_whispers
+	#picture = GFX_evt_whispers
 	
 	hide_from = yes
 	
@@ -20692,7 +20692,7 @@ character_event = {
 			limit = {
 				has_character_flag = helped_win_war
 			}
-			character_event = { id = 8225 days = 1 }
+			letter_event = { id = 8225 days = 1 }
 			tooltip = {
 				opinion = {
 					who = ROOT

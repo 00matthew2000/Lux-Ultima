@@ -310,7 +310,7 @@ character_event = {
 		has_focus = focus_war
 		can_have_more_leadership_traits = yes
 		OR = {
-			culture_group = chinese_group
+			culture_group = chinese
 			has_artifact = art_of_war
 			AND = {
 				learning = 10
@@ -322,23 +322,21 @@ character_event = {
 			AND = {
 				learning = 15
 				martial = 20
-				OR = {
-					any_realm_province = {
-						OR = {
-							region = world_korea
-							region = world_japan
-							region = world_north_china
-							region = world_south_china
-							region = world_far_east
-							region = world_indochina
-							region = world_himalayas
-							region = world_steppe_east
-							region = world_steppe_kashgar
-						}
-						trade_route = silk_road
+				any_realm_province = {
+					OR = {
+						region = world_korea
+						region = world_japan
+						region = world_north_china
+						region = world_south_china
+						region = world_far_east
+						region = world_indochina
+						region = world_himalayas
+						region = world_steppe_east
+						region = world_steppe_tarim
 					}
+					trade_route = silk_road
 				}
-				has_acceptable_chinese_culture_no_gamerule_trigger = yes
+				#has_acceptable_chinese_culture_no_gamerule_trigger = yes
 			}
 			AND = {
 				learning = 20
@@ -354,11 +352,11 @@ character_event = {
 							region = world_indochina
 							region = world_himalayas
 							region = world_steppe_east
-							region = world_steppe_kashgar
+							region = world_steppe_tarim
 						}
 						trade_route = silk_road
 					}
-					has_acceptable_chinese_culture_no_gamerule_trigger = yes
+					#has_acceptable_chinese_culture_no_gamerule_trigger = yes
 				}
 			}
 		}
@@ -476,7 +474,7 @@ character_event = {
 	trigger = {
 		can_have_more_leadership_traits = yes
 		OR = {
-			culture_group = chinese_group
+			culture_group = chinese
 			has_artifact = art_of_war
 			AND = {
 				learning = 10
@@ -488,41 +486,37 @@ character_event = {
 			AND = {
 				learning = 15
 				martial = 20
-				OR = {
-					any_realm_province = {
-						OR = {
-							region = world_korea
-							region = world_japan
-							region = world_north_china
-							region = world_south_china
-							region = world_far_east
-							region = world_indochina
-							region = world_himalayas
-							region = world_steppe_east
-							region = world_steppe_kashgar
-						}
-						trade_route = silk_road
+				any_realm_province = {
+					OR = {
+						region = world_korea
+						region = world_japan
+						region = world_north_china
+						region = world_south_china
+						region = world_far_east
+						region = world_indochina
+						region = world_himalayas
+						region = world_steppe_east
+						region = world_steppe_tarim
 					}
+					trade_route = silk_road
 				}
-				OR = {
-					culture_group = chinese
-					culture_group = tibetan_group
-					culture_group = vietic
-					culture_group = chamic
-					culture_group = burman
-					culture_group = mon_khmer
-					culture_group = tai_kadai
-					culture_group = far_east
-					culture_group = korean_group
-					culture_group = yue
-					culture = jurchen
-					culture = khitan
-					culture = mongol
-					culture = xiongnu
-					culture = xianbei
-					culture = uyghur
-					culture = zhao
-				}
+				culture_group = chinese
+				culture_group = tibetan_group
+				culture_group = vietic
+				culture_group = chamic
+				culture_group = burman
+				culture_group = mon_khmer
+				culture_group = tai_kadai
+				culture_group = far_east
+				culture_group = korean_group
+				culture_group = yue
+				culture = jurchen
+				culture = khitan
+				culture = mongol
+				culture = xiongnu
+				culture = xianbei
+				culture = uyghur
+				culture = zhao
 			}
 			AND = {
 				learning = 20
@@ -538,7 +532,7 @@ character_event = {
 							region = world_indochina
 							region = world_himalayas
 							region = world_steppe_east
-							region = world_steppe_kashgar
+							region = world_steppe_tarim
 						}
 						trade_route = silk_road
 					}

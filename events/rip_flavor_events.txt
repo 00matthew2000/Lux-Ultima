@@ -6609,16 +6609,16 @@ character_event = {
 				character_event = { id = RIP.29401 }
 			} 
 			#Prosthesis
-			10 = {
-				modifier = {
-					factor = 0
-					OR = {	
-						has_artifact = prosthetic_leg
-						has_character_modifier = peg_leg
-					}
-				}
-				character_event = { id = RIP.29404 }
-			}
+			#10 = {
+				#modifier = {
+					#factor = 0
+					#OR = {	
+						#has_artifact = prosthetic_leg
+						#has_character_modifier = peg_leg
+					#}
+				#}
+				#character_event = { id = RIP.29404 }
+			#}
 			#Phantom pain
 			10 = {
 				modifier = {
@@ -7793,7 +7793,7 @@ character_event = {
 		character_event = {
 			days = 20
 			id = RIP.29802
-			TOOLTIP = EVTOPTA_RIP_29801_TOOLTIP
+			tooltip = EVTOPTA_RIP_29801_TOOLTIP
 		}
 	}
 
@@ -8408,7 +8408,7 @@ letter_event = {
 		}
 		
 		FROM = {
-			character_event = { id = RIP.30004 }
+			letter_event = { id = RIP.30004 }
 			any_war = {
 				limit = {
 					defender = { character = event_target:target_defender }
@@ -8428,7 +8428,7 @@ letter_event = {
 			factor = 1
 		}
 		FROM = {
-			character_event = { id = RIP.30005 }
+			letter_event = { id = RIP.30005 }
 		}
 	}
 }
@@ -8536,7 +8536,7 @@ letter_event = {
 		}
 		
 		FROM = {
-			character_event = { id = RIP.30008 }
+			letter_event = { id = RIP.30008 }
 			any_war = {
 				limit = {
 					defender = { character = event_target:target_defender }
@@ -8557,7 +8557,7 @@ letter_event = {
 		}
 		
 		FROM = {
-			character_event = { id = RIP.30009 }
+			letter_event = { id = RIP.30009 }
 		}
 	}
 }
@@ -8964,7 +8964,7 @@ letter_event = {
 		}
 		
 		FROM = {
-			character_event = { id = RIP.30024 }
+			letter_event = { id = RIP.30024 }
 			any_war = {
 				limit = {
 					attacker = { character = event_target:target_attacker }
@@ -8981,7 +8981,7 @@ letter_event = {
 			factor = 1
 		}
 		FROM = {
-			character_event = { id = RIP.30025 }
+			letter_event = { id = RIP.30025 }
 		}
 	}
 }
@@ -9090,7 +9090,7 @@ letter_event = {
 		}
 		
 		FROM = {
-			character_event = { id = RIP.30028 }
+			letter_event = { id = RIP.30028 }
 			any_war = {
 				limit = {
 					attacker = { character = event_target:target_attacker }
@@ -9108,7 +9108,7 @@ letter_event = {
 		}
 		
 		FROM = {
-			character_event = { id = RIP.30029 }
+			letter_event = { id = RIP.30029 }
 		}
 	}
 }
@@ -9486,7 +9486,7 @@ letter_event = {
 		}
 		
 		FROM = {
-			character_event = { id = RIP.30044 }
+			letter_event = { id = RIP.30044 }
 			primary_title = {
 				add_law_w_cooldown = succ_gavelkind
 			}
@@ -9500,7 +9500,7 @@ letter_event = {
 			factor = 1
 		}
 		FROM = {
-			character_event = { id = RIP.30045 }
+			letter_event = { id = RIP.30045 }
 		}
 	}
 }
@@ -9605,7 +9605,7 @@ letter_event = {
 		}
 		
 		FROM = {
-			character_event = { id = RIP.30048 }
+			letter_event = { id = RIP.30048 }
 			primary_title = {
 				add_law_w_cooldown = succ_gavelkind
 			}
@@ -9620,7 +9620,7 @@ letter_event = {
 		}
 		
 		FROM = {
-			character_event = { id = RIP.30049 }
+			letter_event = { id = RIP.30049 }
 		}
 	}
 }
@@ -13647,7 +13647,7 @@ character_event = { # suspicions spread
 	}
 
 	option = {
-		name = RIP.30302.a	
+		#name = RIP.30302.a	
 		random_list = {
 			90 = {
 				event_target:immortal_suspector = {

@@ -712,10 +712,10 @@ character_event = {
 			limit = {
 				is_alive = yes
 				event_target:emissary = { is_alive = yes }
-				OR = { 
+				#OR = { 
 					is_inaccessible_trigger = yes
 					#war = yes
-				}
+				#}
 			}
 			repeat_event = { id = LT.20020 days = 100 random = 10 }
 		}
@@ -881,10 +881,10 @@ character_event = {
 			limit = {
 				is_alive = yes
 				event_target:emissary = { is_alive = yes }
-				OR = { 
+				#OR = { 
 					is_inaccessible_trigger = yes
 					#war = yes
-				}
+				#}
 			}
 			repeat_event = { id = LT.20035 days = 200 random = 10 }
 		}
@@ -971,10 +971,10 @@ character_event = {
 			limit = {
 				is_alive = yes
 				event_target:emissary = { is_alive = yes }
-				OR = { 
+				#OR = { 
 					is_inaccessible_trigger = yes
 					#war = yes
-				}
+				#}
 			}
 			repeat_event = { id = LT.20035 days = 20 random = 2 }
 		}
@@ -1325,10 +1325,10 @@ character_event = {
 		if = {
 			limit = {
 				is_alive = yes
-				OR = { 
+				#OR = { 
 					is_inaccessible_trigger = yes
 					#war = yes
-				}
+				#}
 			}
 			repeat_event = { id = LT.20055 days = 100 random = 10 }
 		}
@@ -1785,9 +1785,9 @@ character_event = {
 	option = { #compensate the families
 		name = EVTOPTF_LT_20110
 		trigger = { 
-			OR = {
+			#OR = {
 				has_character_flag = tomb_found_accident
-			}
+			#}
 		}
 		scaled_wealth = { value = -0.4 min = -40 max = -100}
 		if = {
@@ -2862,10 +2862,10 @@ character_event = { #Seduction reaction
 			}
 			modifier = { 
 				factor = 0.1 
-				OR = {
+				#OR = {
 					#trait = celibate
 					trait = chaste
-				}
+				#}
 			}
 		}
 		trigger = {
@@ -3512,9 +3512,9 @@ character_event = {
 		name = {
 			text = EVTOPTA_LT_20520_muslim
 			trigger = {
-				OR = {
+				#OR = {
 					religion_group = muslim
-				}
+				#}
 			}
 		}
 		custom_tooltip = { text = EVTOPTA_LT_20520_TT }
@@ -3539,7 +3539,7 @@ character_event = {
 				}
 			}
 		}
-		else_if = {
+		else = {
 			prestige = 50
 			piety = 100
 			hidden_effect = {
@@ -4218,6 +4218,7 @@ character_event = {
 		is_allowed_to_loot = no # A little bit of a too harsh block. Could be expanded upon.
 	}
 	weight_multiplier = {
+		days = 1
 		modifier = {
 			factor = 0
 			has_character_modifier = strong_leader_modifier

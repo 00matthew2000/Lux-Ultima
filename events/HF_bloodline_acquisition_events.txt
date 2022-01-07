@@ -2829,12 +2829,12 @@ character_event = { # Player - Choose Destiny, inwards or outwards
 				show_scope_change = no
 				event_target:child_of_destiny = {
 					show_scope_change = no
-					unsafe_war = {
-						target = PREVPREV
-						casus_belli = kingdom_adventure
-						thirdparty_title = PREV
-						tier = KING
-					}
+					#unsafe_war = {
+						#target = PREVPREV
+						#casus_belli = kingdom_adventure
+						#thirdparty_title = PREV
+						#tier = KING
+					#}
 				}
 			}
 		}
@@ -3666,30 +3666,6 @@ character_event = { # Child of Destiny launches Adventure
 				NOT = {
 					distance_from_realm = { who = PREV value = 800 }
 				}
-				NOT = {
-					any_realm_character = {
-						ai = no
-					}
-				}
-				is_nomadic = no
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 800 }
-				}
-				NOT = {
-					any_realm_character = {
-						ai = no
-					}
-				}
-				is_nomadic = no
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 800 }
-				}
 				is_nomadic = no
 			}
 			preferred_limit = {
@@ -3885,7 +3861,7 @@ character_event = { # Child of Destiny launches Adventure
 							}
 							unsafe_war = {
 								target = PREVPREV
-								casus_belli = kingdom_adventure
+								#casus_belli = kingdom_adventure
 								thirdparty_title = PREV
 								tier = KING
 							}
@@ -3898,7 +3874,7 @@ character_event = { # Child of Destiny launches Adventure
 		if = { # If the war starts
 			limit = {
 				any_war = {
-					using_cb = kingdom_adventure
+					#using_cb = kingdom_adventure
 				}
 			}
 			# Create some fantastic commander characters
@@ -3927,7 +3903,7 @@ character_event = { # Child of Destiny launches Adventure
 			limit = {
 				NOT = {
 					any_war = {
-						using_cb = kingdom_adventure
+						#using_cb = kingdom_adventure
 					}
 				}
 			}

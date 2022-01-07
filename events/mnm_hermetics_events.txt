@@ -1036,8 +1036,8 @@ character_event = {
 #Work is done
 character_event = {
 	id = MNM.1107
-	picture = GFX_evt_experiment
-	border = GFX_event_normal_frame_religion
+	#picture = GFX_evt_experiment
+	#border = GFX_event_normal_frame_religion
 	
 	hide_window = yes
 	is_triggered_only = yes
@@ -1705,7 +1705,7 @@ character_event = {
 		NOT = { is_dying = yes } 
 	}
 	
-    immediate = { FROM = { character_event = { id = MNM.1418 } } }
+    immediate = { FROM = { society_quest_event = { id = MNM.1418 } } }
 }
 
 
@@ -7900,10 +7900,6 @@ character_event = {
 		trigger = { }
 		text = EVTDESC_MNM_1903
 	}
-	desc = {
-		trigger = { }
-		text = EVTDESC_MNM_1903
-	}
 	option = {
 		name = EVTOPTA_MNM_1903
 		
@@ -9912,7 +9908,7 @@ character_event = {
 	
 	immediate = {
 		destroy_random_ingredients_effect = yes
-		FROM = { character_event = { id = MNM.1624 days = 15 random = 15  } }
+		FROM = { narrative_event = { id = MNM.1624 days = 15 random = 15  } }
 	}
 }
 
@@ -11761,7 +11757,7 @@ character_event = {
 						which = peer_review_score
 						value = 1
 					}
-					character_event = { id = MNM.1642 }
+					letter_event = { id = MNM.1642 }
 				}
 			}
 		}
@@ -11781,7 +11777,7 @@ character_event = {
 			hidden_effect = {
 				set_character_flag = refuted_paper_@FROM
 				FROM = {
-					character_event = { id = MNM.1643 }
+					letter_event = { id = MNM.1643 }
 				}
 			}
 		}
@@ -12130,7 +12126,7 @@ character_event = { #quest ping
 	}
 	
 	immediate = {
-		FROM = { character_event = { id = MNM.1802 } }
+		FROM = { society_quest_event = { id = MNM.1802 } }
 	}
 }
 
@@ -13508,10 +13504,6 @@ character_event = {
 		
 		ai_chance = {
 			factor = 10
-			modifier = {
-				factor = 2
-				trait = gardener
-			}
 			modifier = {
 				factor = 2
 				trait = gardener
@@ -15583,7 +15575,7 @@ character_event = { # ending event tombola
 				character_event = { id = MNM.1848 }
 			}
 			30 = { # Observe zodiac stars
-				character_event = { id = MNM.1850 }
+				#character_event = { id = MNM.1850 }
 			}
 			120 = { # Fail to observe anything of interest
 				modifier = {

@@ -3665,7 +3665,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_zeus
-			add_building = tp_shrine_zeus 
+			#add_building = tp_shrine_zeus 
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -3697,7 +3697,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_poseidon
-			add_building = tp_shrine_poseidon
+			#add_building = tp_shrine_poseidon
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -3729,7 +3729,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_hades
-			add_building = tp_shrine_hades
+			#add_building = tp_shrine_hades
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -3780,7 +3780,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_athena
-			add_building = tp_shrine_athena
+			#add_building = tp_shrine_athena
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -3815,7 +3815,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_ares
-			add_building = tp_shrine_ares
+			#add_building = tp_shrine_ares
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -3850,7 +3850,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_ephaestus
-			add_building = tp_shrine_ephaestus
+			#add_building = tp_shrine_ephaestus
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -3901,7 +3901,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_hestia
-			add_building = tp_shrine_hestia
+			#add_building = tp_shrine_hestia
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -3936,7 +3936,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_demeter
-			add_building = tp_shrine_demeter
+			#add_building = tp_shrine_demeter
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -3971,7 +3971,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_aphrodite
-			add_building = tp_shrine_aphrodite
+			#add_building = tp_shrine_aphrodite
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -4022,7 +4022,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_apollo
-			add_building = tp_shrine_apollo
+			#add_building = tp_shrine_apollo
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -4057,7 +4057,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_arthemis
-			add_building = tp_shrine_arthemis
+			#add_building = tp_shrine_arthemis
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -4092,7 +4092,7 @@ character_event = {
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_hermes
-			add_building = tp_shrine_hermes
+			#add_building = tp_shrine_hermes
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
@@ -4496,10 +4496,10 @@ character_event = {
 					port = yes 
 					TECH_NAVAL = 1
 					OR = { 
-						has_building = tb_shipyard_1
-						has_building = ca_shipyard_1
+						has_building = ct_port_1
+						has_building = ct_shipw_1
 						has_building = tp_shipyard_1
-						has_building = ct_shipyard_1
+						has_building = pp_shipyard_1
 					} 
 					can_naval_path_to = PREVPREV
 				} 
@@ -4580,7 +4580,7 @@ character_event = {
 				}
 				hidden_tooltip = {
 					location = {
-						province_event = { id = HF.23211 days = 1 } #Inform owner that his holding has been destroyed.
+						character_event = { id = HF.23211 days = 1 } #Inform owner that his holding has been destroyed.
 					}
 				}
 				FROM = { destroy_settlement = THIS }
@@ -4961,10 +4961,10 @@ character_event = {
 					port = yes 
 					TECH_NAVAL = 1
 					OR = { 
-						has_building = tb_shipyard_1
-						has_building = ca_shipyard_1
+						has_building = ct_port_1
+						has_building = ct_shipw_1
 						has_building = tp_shipyard_1
-						has_building = ct_shipyard_1
+						has_building = pp_shipyard_1
 					} 
 					can_naval_path_to = PREVPREV
 				} 
@@ -5642,10 +5642,10 @@ character_event = {
 					port = yes 
 					TECH_NAVAL = 1
 					OR = { 
-						has_building = tb_shipyard_1
-						has_building = ca_shipyard_1
+						has_building = ct_port_1
+						has_building = ct_shipw_1
 						has_building = tp_shipyard_1
-						has_building = ct_shipyard_1
+						has_building = pp_shipyard_1
 					} 
 					can_naval_path_to = PREVPREV
 				} 
@@ -12196,7 +12196,7 @@ character_event = {
 			}
 			remove_trait = groomed
 		}
-		else_if = { 
+		else = { 
 			add_trait = uncouth
 		}
 		ai_chance = { 

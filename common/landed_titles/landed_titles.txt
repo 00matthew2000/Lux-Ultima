@@ -16617,47 +16617,21 @@ e_tartaria = {
 		tengri_confucian_reformed = 10000
 		tengri_mani_reformed = 10000
 		
-		d_ob = {
-			color={ 140 130 50 }
-			color2={ 255 255 255 }
-
-			capital = 1873 # Ob
-
-			c_ob = {
-				color={ 135 125 45 }
-				color2={ 255 255 255 }
-
-				b_ob = {}
-				b_akutikha = {}
-				b_odintsovka = {}
-				b_chekanikha = {}
-				b_volodarka = {}
-				b_buranovo = {}
-				b_barnaul = {}
-			}
-			c_narim = {
-				color={ 216 175 140 }
-				color2={ 255 255 255 }
+		d_altay = {
+			color = { 120 180 20 }
 			
-				b_narim = {}
-				b_kolta = {}
-				b_yag = {}
-				b_askiz = {}
-				b_aziz = {} #Fictional, for prosperity
-				b_aruz = {} #Fictional, for prosperity
-				b_uros = {} #Fictional, for prosperity
-			}
-			c_katun = {
-				color={ 130 120 40 }
-				color2={ 255 255 255 }
+			capital = 1226 #Zaysan
+			
+			c_belukha = {
+				color={ 140 180 250 }
 
-				b_katun = {}
-				b_mayma = {}
-				b_aya = {}
-				b_souzga = {}
-				b_turbaza = {}
-				b_karlushka = {}
-				b_manzherok = {}
+				b_belukha = {}
+				b_inya = {}
+				b_multa = {}
+				b_tyungur = {}
+				b_yustik = {}
+				b_aktach = {}
+				b_kuray = {}
 			}
 			c_ket = {
 				color={ 125 115 35 }
@@ -16670,6 +16644,18 @@ e_tartaria = {
 				b_chachamga = {}
 				b_ketino = {} #Fictional, for prosperity
 				b_alchach = {} #Fictional, for prosperity
+			}
+			c_kirghiz = {
+				color={ 175 150 80 }
+				color2={ 255 255 255 }
+				
+				b_irtysh = {}
+				b_telengit = {}
+				b_tele = {}
+				b_osinniki = {}
+				b_kurchatov = {}
+				b_sinnele = {} #Fictional, for prosperity
+				b_kanbale = {} #Fictional, for prosperity
 			}
 			c_zaysan = {
 				color = { 150 46 76 }
@@ -16693,30 +16679,22 @@ e_tartaria = {
 				b_shoktal = {}
 			}
 		}
-		d_irtysh = {
-			color={ 150 100 50 }
-			color2={ 255 255 255 }
+		d_abakan = {
+			color={ 215 175 240 }
 
-			capital = 1132 # Irtysh
+			capital = 1899 # Abakan
 
-			c_kirghiz = {
-				color={ 175 150 80 }
-				color2={ 255 255 255 }
-				
-				b_irtysh = {}
-				b_telengit = {}
-				b_tele = {}
-				b_osinniki = {}
-				b_kurchatov = {}
-				b_sinnele = {} #Fictional, for prosperity
-				b_kanbale = {} #Fictional, for prosperity
+			c_abakan = {
+				color={ 220 160 240 }
+
+				b_abakan = {}
+				b_berenzhak = {}
+				b_tuim = {}
+				b_shira = {}
+				b_kommunar = {}
+				b_biskamzha = {}
+				b_birikchul = {}
 			}
-		}
-		d_altay = {
-			color = { 220 220 255 }
-			
-			capital = 1895 # Belukha
-			
 			c_muztau = {
 				color = { 125 160 240 }
 				
@@ -16734,34 +16712,6 @@ e_tartaria = {
 				}
 				b_khokh_khot = { # Fictional - For Prosperity
 				}
-			}
-			c_belukha = {
-				color={ 140 180 250 }
-
-				b_belukha = {}
-				b_inya = {}
-				b_multa = {}
-				b_tyungur = {}
-				b_yustik = {}
-				b_aktach = {}
-				b_kuray = {}
-			}
-		}
-		d_abakan = {
-			color={ 215 175 240 }
-
-			capital = 1899 # Abakan
-
-			c_abakan = {
-				color={ 220 160 240 }
-
-				b_abakan = {}
-				b_berenzhak = {}
-				b_tuim = {}
-				b_shira = {}
-				b_kommunar = {}
-				b_biskamzha = {}
-				b_birikchul = {}
 			}
 			c_tom = {
 				color={ 225 165 245 }
@@ -16784,6 +16734,18 @@ e_tartaria = {
 				b_medvezhka_kuznetsk = {}
 				b_naryk = {}
 				b_belogorsk = {}
+			}
+			c_katun = {
+				color={ 130 120 40 }
+				color2={ 255 255 255 }
+
+				b_katun = {}
+				b_mayma = {}
+				b_aya = {}
+				b_souzga = {}
+				b_turbaza = {}
+				b_karlushka = {}
+				b_manzherok = {}
 			}
 			c_erchis = {
 				color = { 130 128 230 }
@@ -17165,6 +17127,19 @@ e_tartaria = {
 				b_keyzes = {}
 				b_nizovoye = {}
 				b_chernovka = {}
+			}
+
+			c_narim = {
+				color={ 216 175 140 }
+				color2={ 255 255 255 }
+			
+				b_narim = {}
+				b_kolta = {}
+				b_yag = {}
+				b_askiz = {}
+				b_aziz = {} #Fictional, for prosperity
+				b_aruz = {} #Fictional, for prosperity
+				b_uros = {} #Fictional, for prosperity
 			}
 			
 			c_vasyugan = {
@@ -17883,12 +17858,31 @@ e_serindia = {
 				b_shawan = {}
 			}
 		}
-		d_tarbagatai = {
-			color={ 170 100 100 }
-			color2={ 255 255 255 }
+		d_ili = {
+			color = { 46 50 76 }
 
-			capital = 1876 # Tarbagatai
+			capital = 1896 #Suidun
 
+			c_almaliq = {
+				color = { 60 54 81 }
+				
+				b_itokkuztara = {}
+				b_almaliq = {}
+				b_gulja = {}
+				b_kazanqi = {}
+				b_gukure = {}
+			}
+			c_khuiten = {
+				color = { 57 57 80 }
+				
+				b_khuiten = {}
+				b_khuiten1 = {}
+				b_khuiten2 = {}
+				b_khuiten3 = {}
+				b_khuiten4 = {}
+				b_khuiten5 = {}
+				b_khuiten6 = {}
+			}
 			c_tarbagatai = {
 				color={ 165 95 95 }
 				color2={ 255 255 255 }
@@ -17925,44 +17919,6 @@ e_serindia = {
 				b_kensay = {}
 				b_dair = {}
 				b_kogeday = {}
-			}
-		}
-		d_ili = {
-			color = { 46 50 76 }
-
-			capital = 1425 # Ili
-
-			c_ili = {
-				color = { 140 56 35 }
-				
-				b_balasagun = {}
-				b_suyab = {}
-				b_sadovoe = {}
-				b_kosh_korgon = {}
-				b_tokmok = {}
-				b_don_aryk = {}
-				b_sortobe = {}
-				b_chimkorgon = {}
-			}
-			c_almaliq = {
-				color = { 60 54 81 }
-				
-				b_itokkuztara = {}
-				b_almaliq = {}
-				b_gulja = {}
-				b_kazanqi = {}
-				b_gukure = {}
-			}
-			c_khuiten = {
-				color = { 57 57 80 }
-				
-				b_khuiten = {}
-				b_khuiten1 = {}
-				b_khuiten2 = {}
-				b_khuiten3 = {}
-				b_khuiten4 = {}
-				b_khuiten5 = {}
-				b_khuiten6 = {}
 			}
 		}
 	}
@@ -34285,6 +34241,30 @@ e_mali = {
 				b_gabero = {}
 				b_anchawadi = {}
 			}
+			c_dendi = {
+				color={ 186 106 114 }
+				color2={ 255 255 255 }
+				
+				b_niamey = {}
+				b_bura = {}
+				b_say = {}
+				b_jidu = {} #Fictional, for prosperity
+				b_kimtir = {} #Fictional, for prosperity
+				b_isuachara = {} #Fictional, for prosperity
+				b_langay = {} #Fictional, for prosperity
+			}
+			c_dyamare = {
+				color={ 148 67 172 }
+				color2={ 255 255 255 }
+				
+				b_dyamare = {}
+				b_dosso = {}
+				b_gaya_songhay = {}
+				b_sabarumowa = {} #Fictional, for prosperity
+				b_barakin_mari = {} #Fictional, for prosperity
+				b_aondaka = {} #Fictional, for prosperity
+				b_aletu = {} #Fictional, for prosperity
+			}
 			c_mzab = { # Ghardaia
 				color={ 39 157 50 }
 				color2={ 255 255 255 }
@@ -34477,18 +34457,6 @@ e_mali = {
 				b_serne = {} # Fictional, for prosperity
 				b_kassiola = {} # Fictional, for prosperity
 			}
-			c_wagadougou = {
-				color={ 138 186 27 }
-				color2={ 255 255 255 }
-				
-				b_wagadougou = {}
-				b_po = {}
-				b_gursi = {}
-				b_boboye = {} # Fictional, for prosperity
-				b_balangoka = {} # Fictional, for prosperity
-				b_niamalo = {} # Fictional, for prosperity
-				b_diba = {} # Fictional, for prosperity
-			}
 			c_bobo_dyulasso = {
 				color={ 95 171 21 }
 				color2={ 255 255 255 }
@@ -34512,18 +34480,6 @@ e_mali = {
 				b_bakara = {} #Fictional, for prosperity
 				b_sadiabougouda = {} #Fictional, for prosperity
 				b_perge = {} #Fictional, for prosperity
-			}
-			c_kurumba = {
-				color={ 187 77 98 }
-				color2={ 255 255 255 }
-				
-				b_kissi = {}
-				b_aribinda = {}
-				b_dori = {}
-				b_douentza = {}
-				b_ouario_ouario = {} # Fictional, for prosperity
-				b_gourel_bassirou = {} # Fictional, for prosperity
-				b_seriwala = {} # Fictional, for prosperity
 			}
 			c_dodugu = {
 				color={ 158 200 84 }
@@ -34572,17 +34528,29 @@ e_mali = {
 				b_wagulo = {} #Fictional, for prosperity
 				b_zenande = {} #Fictional, for prosperity
 			}
-			c_dendi = {
-				color={ 186 106 114 }
+			c_kurumba = {
+				color={ 187 77 98 }
 				color2={ 255 255 255 }
 				
-				b_niamey = {}
-				b_bura = {}
-				b_say = {}
-				b_jidu = {} #Fictional, for prosperity
-				b_kimtir = {} #Fictional, for prosperity
-				b_isuachara = {} #Fictional, for prosperity
-				b_langay = {} #Fictional, for prosperity
+				b_kissi = {}
+				b_aribinda = {}
+				b_dori = {}
+				b_douentza = {}
+				b_ouario_ouario = {} # Fictional, for prosperity
+				b_gourel_bassirou = {} # Fictional, for prosperity
+				b_seriwala = {} # Fictional, for prosperity
+			}
+			c_wagadougou = {
+				color={ 138 186 27 }
+				color2={ 255 255 255 }
+				
+				b_wagadougou = {}
+				b_po = {}
+				b_gursi = {}
+				b_boboye = {} # Fictional, for prosperity
+				b_balangoka = {} # Fictional, for prosperity
+				b_niamalo = {} # Fictional, for prosperity
+				b_diba = {} # Fictional, for prosperity
 			}
 		}
 	}
@@ -34816,6 +34784,61 @@ e_central_africa = {
 				b_gamaja = {} # Fictional - For Prosperity
 				b_labozhi = {} # Fictional - For Prosperity
 			}
+			c_katsina = {
+				color={ 148 69 248 }
+				color2={ 255 255 255 }
+				
+				b_katsina = {}
+				b_zaria = {}
+				b_kaduna = {}
+				b_furana = {} # Fictional - For Prosperity
+				b_asani = {} # Fictional - For Prosperity
+				b_ogunde = {} # Fictional - For Prosperity
+				b_gausambe = {} # Fictional - For Prosperity
+			}
+			c_zarma = { # Yauri
+				color={ 135 41 156 }
+				color2={ 255 255 255 }
+				
+				b_zuru = {}
+				b_ouallam = {}
+				b_tera = {}
+				b_obora = {} #Fictional, for prosperity
+				b_tora = {} #Fictional, for prosperity
+				b_mangalam = {} #Fictional, for prosperity
+				b_abetam = {} #Fictional, for prosperity
+			}
+		}
+		d_kebbi = {
+			color={ 139 51 149 }
+			color2={ 255 255 255 }
+			
+			capital = 1752 # Kebbi
+			
+			c_kebbi = {
+				color={ 124 41 134 }
+				color2={ 255 255 255 }
+				
+				b_kebbi = {}
+				b_argungu = {}
+				b_sokoto = {}
+				b_digira = {} #Fictional, for prosperity
+				b_tunga_yakana = {} #Fictional, for prosperity
+				b_gidan_ardo = {} #Fictional, for prosperity
+				b_ungwan_deri = {} #Fictional, for prosperity
+			}
+			c_zamfara = {
+				color={ 192 94 229 }
+				color2={ 255 255 255 }
+				
+				b_datsi = {}
+				b_anka2 = {}
+				b_gusau2 = {}
+				b_horo_majakai = {} # Fictional - For Prosperity
+				b_kori = {} # Fictional - For Prosperity
+				b_jagbada = {} # Fictional - For Prosperity
+				b_uburukiti = {} # Fictional - For Prosperity
+			}
 			c_daura = {
 				color={ 185 105 205 }
 				color2={ 255 255 255 }
@@ -34843,49 +34866,6 @@ e_central_africa = {
 				b_esuk_mesembe = {} # Fictional - For Prosperity
 				b_waja = {} # Fictional - For Prosperity
 			}
-			c_katsina = {
-				color={ 148 69 248 }
-				color2={ 255 255 255 }
-				
-				b_katsina = {}
-				b_zaria = {}
-				b_kaduna = {}
-				b_furana = {} # Fictional - For Prosperity
-				b_asani = {} # Fictional - For Prosperity
-				b_ogunde = {} # Fictional - For Prosperity
-				b_gausambe = {} # Fictional - For Prosperity
-			}
-			c_zamfara = {
-				color={ 192 94 229 }
-				color2={ 255 255 255 }
-				
-				b_datsi = {}
-				b_anka2 = {}
-				b_gusau2 = {}
-				b_horo_majakai = {} # Fictional - For Prosperity
-				b_kori = {} # Fictional - For Prosperity
-				b_jagbada = {} # Fictional - For Prosperity
-				b_uburukiti = {} # Fictional - For Prosperity
-			}
-		}
-		d_kebbi = {
-			color={ 139 51 149 }
-			color2={ 255 255 255 }
-			
-			capital = 1752 # Kebbi
-			
-			c_kebbi = {
-				color={ 124 41 134 }
-				color2={ 255 255 255 }
-				
-				b_kebbi = {}
-				b_argungu = {}
-				b_sokoto = {}
-				b_digira = {} #Fictional, for prosperity
-				b_tunga_yakana = {} #Fictional, for prosperity
-				b_gidan_ardo = {} #Fictional, for prosperity
-				b_ungwan_deri = {} #Fictional, for prosperity
-			}
 			c_tahoua = {
 				color={ 119 35 148 }
 				color2={ 255 255 255 }
@@ -34897,30 +34877,6 @@ e_central_africa = {
 				b_gurumi = {} #Fictional, for prosperity
 				b_ago_adewale = {} #Fictional, for prosperity
 				b_okuaro = {} #Fictional, for prosperity
-			}
-			c_dyamare = {
-				color={ 148 67 172 }
-				color2={ 255 255 255 }
-				
-				b_dyamare = {}
-				b_dosso = {}
-				b_gaya_songhay = {}
-				b_sabarumowa = {} #Fictional, for prosperity
-				b_barakin_mari = {} #Fictional, for prosperity
-				b_aondaka = {} #Fictional, for prosperity
-				b_aletu = {} #Fictional, for prosperity
-			}
-			c_zarma = { # Yauri
-				color={ 135 41 156 }
-				color2={ 255 255 255 }
-				
-				b_zuru = {}
-				b_ouallam = {}
-				b_tera = {}
-				b_obora = {} #Fictional, for prosperity
-				b_tora = {} #Fictional, for prosperity
-				b_mangalam = {} #Fictional, for prosperity
-				b_abetam = {} #Fictional, for prosperity
 			}
 		}
 		d_air = {

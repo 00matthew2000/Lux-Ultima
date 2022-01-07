@@ -370,32 +370,32 @@ letter_event = {
 	#	trigger = { is_devil_worshiper_trigger = yes }
 	#	text = EVTDESC_MNM_10023_DW #Not written because currently there is no potential
 	#}
-	desc = {
-		trigger = { society_member_of = the_assassins }
-		text = EVTDESC_MNM_10023_ASSASSINS
-	}
-	desc = {
-		trigger = { is_monastic_member_trigger = yes }
-		text = EVTDESC_MNM_10023_MO
-	}
-	desc = {
-		trigger = { 
-			society_member_of = secret_religious_cult
-			#FROM = { ROOT = { is_openly_of_prevs_secret_religion_trigger = yes } }
-		}
-		text = EVTDESC_MNM_10023_SR_A
-	}
-	desc = {
-		trigger = { 
-			society_member_of = secret_religious_cult 
-			#FROM = { ROOT = { is_openly_of_prevs_secret_religion_trigger = no } }
-		}
-		text = EVTDESC_MNM_10023_SR_B
-	}
-	desc = {
-		trigger = { always = no }
-		text = EVTDESC_MNM_10023_HERMETICS
-	}
+#	desc = {
+#		#trigger = { society_member_of = the_assassins }
+#		text = EVTDESC_MNM_10023_ASSASSINS
+#	}
+#	desc = {
+#		trigger = { is_monastic_member_trigger = yes }
+#		text = EVTDESC_MNM_10023_MO
+#	}
+#	desc = {
+#		trigger = { 
+#			society_member_of = secret_religious_cult
+#			#FROM = { ROOT = { is_openly_of_prevs_secret_religion_trigger = yes } }
+#		}
+#		text = EVTDESC_MNM_10023_SR_A
+#	}
+#	desc = {
+#		trigger = { 
+#			society_member_of = secret_religious_cult 
+#			#FROM = { ROOT = { is_openly_of_prevs_secret_religion_trigger = no } }
+#		}
+#		text = EVTDESC_MNM_10023_SR_B
+#	}
+#	desc = {
+#		trigger = { always = no }
+#		text = EVTDESC_MNM_10023_HERMETICS
+#	}
 	
 	desc = { #Generic fallback
 		trigger = {
@@ -406,8 +406,6 @@ letter_event = {
 		}
 		text = EVTDESC_MNM_10023_fallback
 	}
-
-	is_triggered_only = yes
 	
 	option = {
 		name = {
@@ -1804,49 +1802,49 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
     desc = {
-    	trigger = { 
-    		NOR = {
-    			is_devil_worshiper_trigger = yes
-    			society_member_of = hermetics
-    			society_member_of = secret_religious_cult
-    			society_member_of = the_assassins
-    			is_dharmic_monastic_member_trigger = yes
-    			is_christian_monastic_member_trigger = yes
-    		}
-    	}
+#    	trigger = { 
+#    		NOR = {
+#    			is_devil_worshiper_trigger = yes
+#    			society_member_of = hermetics
+#    			society_member_of = secret_religious_cult
+#    			society_member_of = the_assassins
+#    			is_dharmic_monastic_member_trigger = yes
+#    			is_christian_monastic_member_trigger = yes
+#    		}
+#    	}
     	text = EVTDESC_MNM_10045
     	picture = GFX_evt_rival_rulers
     }
-    desc = {
-    	trigger = { is_devil_worshiper_trigger = yes }
-    	text = EVTDESC_MNM_10045
-    	picture = GFX_evt_magic_ritual
-    }
-    desc = {
-    	trigger = { society_member_of = hermetics }
-    	text = EVTDESC_MNM_10045
-    	picture = GFX_evt_experiment
-    }
-    desc = {
-    	trigger = { society_member_of = secret_religious_cult }
-    	text = EVTDESC_MNM_10045
-    	picture = GFX_evt_secret_ceremony
-    }
-    desc = {
-    	trigger = { society_member_of = the_assassins }
-    	text = EVTDESC_MNM_10045
-    	picture = GFX_evt_council_arabic
-    }
-    desc = {
-    	trigger = { is_dharmic_monastic_member_trigger = yes }
-    	text = EVTDESC_MNM_10045
-    	picture = GFX_evt_bishop_hindu
-    }
-    desc = {
-    	trigger = { is_christian_monastic_member_trigger = yes }
-    	text = EVTDESC_MNM_10045
-    	picture = GFX_evt_monastery_monks
-    }
+#    desc = {
+#    	#trigger = { is_devil_worshiper_trigger = yes }
+#    	text = EVTDESC_MNM_10045
+#    	picture = GFX_evt_magic_ritual
+#    }
+#    desc = {
+#    	#trigger = { society_member_of = hermetics }
+#    	text = EVTDESC_MNM_10045
+#    	picture = GFX_evt_experiment
+#    }
+#    desc = {
+#    	#trigger = { society_member_of = secret_religious_cult }
+#    	text = EVTDESC_MNM_10045
+#    	picture = GFX_evt_secret_ceremony
+#    }
+#    desc = {
+#    	#trigger = { society_member_of = the_assassins }
+#    	text = EVTDESC_MNM_10045
+#    	picture = GFX_evt_council_arabic
+#    }
+#    desc = {
+#    	#trigger = { is_dharmic_monastic_member_trigger = yes }
+#    	text = EVTDESC_MNM_10045
+#    	picture = GFX_evt_bishop_hindu
+#    }
+#    desc = {
+#    	#trigger = { is_christian_monastic_member_trigger = yes }
+#    	text = EVTDESC_MNM_10045
+#    	picture = GFX_evt_monastery_monks
+#    }
 
     is_triggered_only = yes
     
@@ -2028,7 +2026,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EXCELLENT
+		#name = EXCELLENT
 		add_mission_succeed_influence_effect = yes
 	}
 }
@@ -2045,7 +2043,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ALAS
+		#name = ALAS
 		add_mission_fail_influence_effect = yes
 	}
 }

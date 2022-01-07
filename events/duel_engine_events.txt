@@ -1545,7 +1545,7 @@ character_event = {
 	option = {
 		name = "EVTOPTADUEL109"
 		if = {
-			limit = { FROM = { is_close_relative = yes } }
+			limit = { FROM = { is_close_relative = ROOT } }
 			FROM = { add_trait = kinslayer }
 		}
 		death = {
@@ -1701,7 +1701,7 @@ character_event = {
 	option = {
 		name = "EVTOPTADUEL202"
 		if = {
-			limit = { FROM = { is_close_relative = yes } }
+			limit = { FROM = { is_close_relative = ROOT } }
 			FROM = { add_trait = kinslayer }
 		}
 		death = {

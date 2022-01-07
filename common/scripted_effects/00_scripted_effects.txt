@@ -1501,10 +1501,8 @@ add_maimed_trait_effect = {
 	}
 	if = {
 		limit = {
-			AND = {
-				has_dlc = "Reapers"
-				NOT = { trait = severely_injured }
-			}
+			has_dlc = "Reapers"
+			NOT = { trait = severely_injured }
 		}
 		add_trait = severely_injured
 		hidden_tooltip = {
@@ -5266,66 +5264,66 @@ monastic_order_purity_effect = {
 }
 
 join_prev_monastic_order_society = {
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_orthodox } }
-		join_society = monastic_order_orthodox
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_benedictine } }
-		join_society = monastic_order_benedictine
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_dominican } }
-		join_society = monastic_order_dominican
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_nestorian } }
-		join_society = monastic_order_nestorian
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_monophysite } }
-		join_society = monastic_order_monophysite
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_hindu } }
-		join_society = monastic_order_hindu
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_buddhist } }
-		join_society = monastic_order_buddhist
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_jain } }
-		join_society = monastic_order_jain
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_adoptionist } }
-		join_society = monastic_order_adoptionist
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_apollinarist } }
-		join_society = monastic_order_apollinarist
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_iconoclast } }
-		join_society = monastic_order_iconoclast
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_melkite } }
-		join_society = monastic_order_melkite
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_monothelite } }
-		join_society = monastic_order_monothelite
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_montanist } }
-		join_society = monastic_order_montanist
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_pelagian } }
-		join_society = monastic_order_pelagian
-	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_orthodox } }
+#		join_society = monastic_order_orthodox
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_benedictine } }
+#		join_society = monastic_order_benedictine
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_dominican } }
+#		join_society = monastic_order_dominican
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_nestorian } }
+#		join_society = monastic_order_nestorian
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_monophysite } }
+#		join_society = monastic_order_monophysite
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_hindu } }
+#		join_society = monastic_order_hindu
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_buddhist } }
+#		join_society = monastic_order_buddhist
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_jain } }
+#		join_society = monastic_order_jain
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_adoptionist } }
+#		join_society = monastic_order_adoptionist
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_apollinarist } }
+#		join_society = monastic_order_apollinarist
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_iconoclast } }
+#		join_society = monastic_order_iconoclast
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_melkite } }
+#		join_society = monastic_order_melkite
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_monothelite } }
+#		join_society = monastic_order_monothelite
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_montanist } }
+#		join_society = monastic_order_montanist
+#	}
+#	if = {
+#		limit = { PREV = { society_member_of = monastic_order_pelagian } }
+#		join_society = monastic_order_pelagian
+#	}
 }
 
 clr_artifact_flagsmodifiers_effect = {
@@ -9171,9 +9169,9 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-    					OR = {
+    					#OR = {
     						has_character_flag = character_was_antinomian
-    					}
+    					#}
     				}
     				religion = antinomian
     			}
@@ -12755,66 +12753,66 @@ add_grace_medium_effect = {
 }
 
 add_grace_major_effect = {
-	add_offmap_currency = {
-		offmap = offmap_china
-		value = 500
-	}
+#	add_offmap_currency = {
+#		offmap = offmap_china
+#		value = 500
+#	}
 }
 
 add_grace_massive_effect = {
-	add_offmap_currency = {
-		offmap = offmap_china
-		value = 1000
-	}
+#	add_offmap_currency = {
+#		offmap = offmap_china
+#		value = 1000
+#	}
 }
 
 add_grace_super_huge_effect = {
-	add_offmap_currency = {
-		offmap = offmap_china
-		value = 2000
-	}
+#	add_offmap_currency = {
+#		offmap = offmap_china
+#		value = 2000
+#	}
 }
 
 detract_grace_trivial_effect = {
-	add_offmap_currency = {
-		offmap = offmap_china
-		value = -100
-	}
+#	add_offmap_currency = {
+#		offmap = offmap_china
+#		value = -100
+#	}
 }
 
 detract_grace_minor_effect = {
-	add_offmap_currency = {
-		offmap = offmap_china
-		value = -200
-	}
+#	add_offmap_currency = {
+#		offmap = offmap_china
+#		value = -200
+#	}
 }
 
 detract_grace_medium_effect = {
-	add_offmap_currency = {
-		offmap = offmap_china
-		value = -300
-	}
+#	add_offmap_currency = {
+#		offmap = offmap_china
+#		value = -300
+#	}
 }
 
 detract_grace_major_effect = {
-	add_offmap_currency = {
-		offmap = offmap_china
-		value = -500
-	}
+#	add_offmap_currency = {
+#		offmap = offmap_china
+#		value = -500
+#	}
 }
 
 detract_grace_massive_effect = {
-	add_offmap_currency = {
-		offmap = offmap_china
-		value = -1000
-	}
+#	add_offmap_currency = {
+#		offmap = offmap_china
+#		value = -1000
+#	}
 }
 
 detract_grace_super_huge_effect = {
-	add_offmap_currency = {
-		offmap = offmap_china
-		value = -2000
-	}
+#	add_offmap_currency = {
+#		offmap = offmap_china
+#		value = -2000
+#	}
 }
 
 set_china_boon_cd_effect = {  #added via tribute to China decisions... Always one year.
@@ -14338,7 +14336,6 @@ add_chinese_artifact_effect = { #Used in event JD.15016 (possible to use elsewhe
 				new_artifact = {
 					set_name = chinese_tapestry_grand_name
 				}
-				trigger = { ROOT = { NOT = { has_artifact = chinese_tapestry_grand } } }
 			}
 		}
 		new_artifact = {
@@ -16603,12 +16600,10 @@ troubled_pregnancy_variable_hard_effect = {
 tiered_prestige_reward_effect = {
 	if = {
 		limit = {
-			AND = { 
-				is_ruler = no
-				spouse = { is_ruler = no }
-				father_even_if_dead = { is_ruler = no }
-				mother_even_if_dead = { is_ruler = no }
-			}
+			is_ruler = no
+			spouse = { is_ruler = no }
+			father_even_if_dead = { is_ruler = no }
+			mother_even_if_dead = { is_ruler = no }
 		}
 		prestige = 5
 	}
@@ -16831,12 +16826,10 @@ tiered_prestige_reward_effect = {
 tiered_piety_reward_effect = {
 	if = {
 		limit = {
-			AND = { 
-				is_ruler = no
-				spouse = { is_ruler = no }
-				father_even_if_dead = { is_ruler = no }
-				mother_even_if_dead = { is_ruler = no }
-			}
+			is_ruler = no
+			spouse = { is_ruler = no }
+			father_even_if_dead = { is_ruler = no }
+			mother_even_if_dead = { is_ruler = no }
 		}
 		piety = 5
 	}
@@ -17059,12 +17052,10 @@ tiered_piety_reward_effect = {
 tiered_prestige_negative_effect = {
 	if = {
 		limit = {
-			AND = { 
-				is_ruler = no
-				spouse = { is_ruler = no }
-				mother_even_if_dead = { is_ruler = no }
-				father_even_if_dead = { is_ruler = no }
-			}
+			is_ruler = no
+			spouse = { is_ruler = no }
+			mother_even_if_dead = { is_ruler = no }
+			father_even_if_dead = { is_ruler = no }
 		}
 		prestige = -5
 	}
@@ -17287,12 +17278,10 @@ tiered_prestige_negative_effect = {
 tiered_piety_negative_effect = {
 	if = {
 		limit = {
-			AND = { 
-				is_ruler = no
-				spouse = { is_ruler = no }
-				father_even_if_dead = { is_ruler = no }
-				mother_even_if_dead = { is_ruler = no }
-			}
+			is_ruler = no
+			spouse = { is_ruler = no }
+			father_even_if_dead = { is_ruler = no }
+			mother_even_if_dead = { is_ruler = no }
 		}
 		piety = -5
 	}
@@ -17515,12 +17504,10 @@ tiered_piety_negative_effect = {
 tiered_high_piety_negative_effect = {
 	if = {
 		limit = {
-			AND = { 
-				is_ruler = no
-				spouse = { is_ruler = no }
-				father_even_if_dead = { is_ruler = no }
-				mother_even_if_dead = { is_ruler = no }
-			}
+			is_ruler = no
+			spouse = { is_ruler = no }
+			father_even_if_dead = { is_ruler = no }
+			mother_even_if_dead = { is_ruler = no }
 		}
 		piety = -25
 	}
@@ -19619,7 +19606,7 @@ bloodthirsty_tiered_traits_effect = {
 					}
 				}
 			}
-			character_event = { id = HF.23434 days = 6 } #Notify and assign trait.
+			#character_event = { id = HF.23434 days = 6 } #Notify and assign trait.
 			add_character_modifier = { name = bloodthirsty_gods_exp_cooldown days = 12 hidden = yes } #Prevent event cascade.
 		}
 	}
@@ -22065,7 +22052,7 @@ change_rain_effect = { # Needs a province scope...
 		}
 	}
 	else = {
-		limit = { has_province_modifier = africa_drought }
+		#limit = { has_province_modifier = africa_drought }
 		random_list = {
 			10 = { # Make it better (heavy rain)...
 				modifier = { #More likely if have suffered long enough...
@@ -23418,8 +23405,6 @@ give_random_character_modifier_effect = {
 		100 = {
 			trigger = {
 				NOT = { has_character_modifier = comfort_of_lover }
-			}
-			trigger = {
 				has_lover = yes
 			}
 			add_character_modifier = {
@@ -23637,9 +23622,9 @@ give_random_character_modifier_effect = {
 			}
 			apply_random_minor_injury_effect = yes
 		}
-		0.001 = {
+		#1 = {
 			#fallback
-		}
+		#}
 	}
 }
 
