@@ -2,6 +2,7 @@
 #;;;;;;;;;;;;;;x
 ### RELIGION GROUP NAMES ###;;;;;;;;;;;;;;x
 abrahamic_group;Abrahamic;;;;;;;;;;;;;x
+african_pagan_group;African;;;;;;;;;;;;;x
 anatolian_group;Anatolian;;;;;;;;;;;;;x
 arabpagan_group;Arabo-Sabaean;;;;;;;;;;;;;x
 asian_religion_group;Southeast Asian;;;;;;;;;;;;;x
@@ -260,6 +261,7 @@ priscillian;Priscillian;;;;;;;;;;;;;x
 priscillian_reformed;Apologetic;;;;;;;;;;;;;x
 qarmatian;Qarmatian;;;;;;;;;;;;;x
 quetzal;Quetzalcoatl;;;;;;;;;;;;;x
+quetzal_reformed;Huitzilopochtli;;;;;;;;;;;;;x
 ragnarok;Ragnarökic;;;;;;;;;;;;;x
 ragnarok_reformed;Røkkatrúar;;;;;;;;;;;;;x
 rod;Rodic;;;;;;;;;;;;;x
@@ -360,6 +362,7 @@ AHREMANUS;Arimanio;;;;;;;;;;;;;x
 AITE_MARA;Aite-Mara;;;;;;;;;;;;;x
 AKERBELTZ;Akerbeltz;;;;;;;;;;;;;x
 AMAGUQ;Amaguq;;;;;;;;;;;;;x
+ANIMISTIC_RELIGION;Animistic Religion;;;;;;;;;;;;;x
 ARIAMANUS;Ariamanus;;;;;;;;;;;;;x
 AVERNUS;Avernus;;;;;;;;;;;;;x
 AZYREN;Azyren;;;;;;;;;;;;;x
@@ -377,8 +380,11 @@ COSMIC_GODS;The Cosmic Gods;;;;;;;;;;;;;x
 DARKNESS;Darkness;;;;;;;;;;;;;x
 DEATH;Death;;;;;;;;;;;;;x
 DEMONS_OF_DARKNESS;The Demons of Darkness;;;;;;;;;;;;;x
+DEMON_KING;Demon King;;;;;;;;;;;;;x
 DISCORDIA;Discordia;;;;;;;;;;;;;x
 DONN;Donn;;;;;;;;;;;;;x
+EKIPE;Ekipe;;;;;;;;;;;;;x
+ENGAI_NA_NYOKIE;Engai Na Nyokie;;;;;;;;;;;;;x
 EREBOS;Erebos;;;;;;;;;;;;;x
 ERIS;Eris;;;;;;;;;;;;;x
 ESU;Esu;;;;;;;;;;;;;x
@@ -395,6 +401,7 @@ GOD_AHRIMAN;Ahriman;;;;;;;;;;;;;x
 GOD_AHRIMANTENGRI;Ahriman-Tengri;;;;;;;;;;;;;x
 GOD_AHURA_MAZDA;Ahura Mazda;;;;;;;;;;;;;x
 GOD_AKAMANAH;Aka Manah;;;;;;;;;;;;;x
+GOD_AKUJ;Akuj;;;;;;;;;;;;;x
 GOD_ALEXAMON;Alexandros-Amon;;;;;;;;;;;;;x
 GOD_ALEXANDROS;Megas Alexandros;;;;;;;;;;;;;x
 GOD_ALLAH;Allah;Allah;Allah;;Alá;;;;;;;;;x
@@ -407,6 +414,7 @@ GOD_AMONRA;Amon-Ra;;;;;;;;;;;;;x
 GOD_ANAHITA;Anahita;;;;;;;;;;;;;x
 GOD_ANANSI;Anansi;;;;;;;;;;;;;x
 GOD_ANGRA_MAINYU;Angra Mainyu;;;;;;;;;;;;;x
+GOD_ANPO;Anpo;;;;;;;;;;;;;x
 GOD_ANUBIS;Anubis;;;;;;;;;;;;;x
 GOD_ANZAR;Anzar;;;;;;;;;;;;;x
 GOD_APEP;Apep;;;;;;;;;;;;;x
@@ -423,6 +431,7 @@ GOD_ARUNA;Aruna;;;;;;;;;;;;;x
 GOD_ASASEYA;Asase Ya;;;;;;;;;;;;;x
 GOD_ASHTAR;Ashtar;;;;;;;;;;;;;x
 GOD_ASHTART;Ashtart;;;;;;;;;;;;;x
+GOD_ATABEY;Atabey;;;;;;;;;;;;;x
 GOD_ATEN;Aten;;;;;;;;;;;;;x
 GOD_ATHENABUDDHA;Athenaswasti;;;;;;;;;;;;;x
 GOD_ATHENANANAIYA;Athena-Nanaiya;;;;;;;;;;;;;x
@@ -444,6 +453,7 @@ GOD_BURKHAN;Ata Burkhan;;;;;;;;;;;;;x
 GOD_CAESAR;Jupiter Julius;;;;;;;;;;;;;x
 GOD_CAILLEACH;Cailleach;;;;;;;;;;;;;x
 GOD_CELT;Lugh;;;;;;;;;;;;;x
+GOD_CEMI_BOINAYEL;Cemi Boinayel;;;;;;;;;;;;;x
 GOD_CENTEOTL;Centeotl;;;;;;;;;;;;;x
 GOD_CERNUNNOS;Cernunnos;;;;;;;;;;;;;x
 GOD_CHALCHIUTLICUE;Chalchiuhtlicue;;;;;;;;;;;;;x
@@ -454,6 +464,8 @@ GOD_CHRISTHUMAN;Christ the Human;;;;;;;;;;;;;x
 GOD_CHRISTSOL;Christ, Sol Incarnate;;;;;;;;;;;;;x,,,,,
 GOD_CHRISTZAL;Zalmoxis-Christos;;;;;;;;;;;;;x
 GOD_CHUMBYLAT;Chumbylat;;;;;;;;;;;;;x
+GOD_CITLALLICUE;Citlallicue;;;;;;;;;;;;;x
+GOD_CORN_MOTHER;Corn Mother;;;;;;;;;;;;;x
 GOD_CRONUS;Cronus;;;;;;;;;;;;;x
 GOD_CYBELE;Cybele;;;;;;;;;;;;;x
 GOD_DAGON;Dagon;;;;;;;;;;;;;x
@@ -465,9 +477,12 @@ GOD_DHARMA;Dharma;;;;;;;;;;;;;x
 GOD_DIEVAS;Dievas;;;;;;;;;;;;;x
 GOD_DIONYSUS;Dionysus;;;;;;;;;;;;;x
 GOD_DYONISOSSHIVA;Dyonisos Shiva;;;;;;;;;;;;;x
+GOD_DZOAVITS;Dzoavits;;;;;;;;;;;;;x
+GOD_EAGENTCI;Eagentci;;;;;;;;;;;;;x
 GOD_ELOHIM;Elohim;;;;;;;;;;;;;x
 GOD_EMPEROR;The Emperor;;;;;;;;;;;;;x
 GOD_ENDOVELICUS;Endovelicus;;;;;;;;;;;;;x
+GOD_ENKAI;Enkai;;;;;;;;;;;;;x
 GOD_EOSPHOROS;Eosphoros;;;;;;;;;;;;;x
 GOD_EPONA;Epona;;;;;;;;;;;;;x
 GOD_EQUATIONS;The Great Equations;;;;;;;;;;;;;x
@@ -485,15 +500,18 @@ GOD_FREYJA;Freya;;;;;;;;;;;;;x
 GOD_FRIIJO;Friijo;;;;;;;;;;;;;x
 GOD_GABIJA;Gabija;Gabija;Gabija;;Gabija;;;;;;;;;x
 GOD_GGULU;Ggulu;;;;;;;;;;;;;x
+GOD_GIIZHIGOOKWE;Giizhigookwe;;;;;;;;;;;;;x
 GOD_GOD;God;Dieu;Gott;;Dios;;;;;;;;;x
 GOD_GODEMPEROR;The God-Emperor;;;;;;;;;;;;;x
 GOD_GOPATSHAH;Gopatshah;;;;;;;;;;;;;x
 GOD_GREATDRAGON;The Great Dragon;;;;;;;;;;;;;x
 GOD_GREATPILLAR;The Great Pillar That Supports All;;;;;;;;;;;;;x
 GOD_GREATWOLF;The Great Wolf;;;;;;;;;;;;;x
+GOD_GREAT_SPIRIT;Great Spirit;;;;;;;;;;;;;x
 GOD_GUN_ANA;Gun Ana;;;;;;;;;;;;;x
 GOD_GURZIL;Gurzil;;;;;;;;;;;;;x
 GOD_HADES;Hades;;;;;;;;;;;;;x
+GOD_HAN;Han;;;;;;;;;;;;;x
 GOD_HEAVENLY;The Heavenly Father;;;;;;;;;;;;;x
 GOD_HELEN;The Divine;;;;;;;;;;;;;x
 GOD_HELIOS;Helios;;;;;;;;;;;;;x
@@ -511,11 +529,16 @@ GOD_HUITZ;Huitzilopochtli;;;;;;;;;;;;;x
 GOD_HUMANGOD;God Incarnate;;;;;;;;;;;;;x
 GOD_HURMUZ;Hurmuz;;;;;;;;;;;;;x
 GOD_IGALUK;Igaluk;;;;;;;;;;;;;x
+GOD_IKTOMI;Iktomi;;;;;;;;;;;;;x
 GOD_ILLUYANKA;Illuyanka;;;;;;;;;;;;;x
 GOD_ILLUYANKATYPHON;Illuyanka-Typhon;;;;;;;;;;;;;x
 GOD_ILMATAR;Ilmatar;;;;;;;;;;;;;x
+GOD_INYAN;Inyan;;;;;;;;;;;;;x
 GOD_IRMIN;The Irminsul;;;;;;;;;;;;;x
 GOD_ISIS;Isis;;;;;;;;;;;;;x
+GOD_ISSA;Issa;;;;;;;;;;;;;x
+GOD_ITIVA_TAHUVAVA;Itiva Tahuvava;;;;;;;;;;;;;x
+GOD_JADEEMPEROR;The Jade Emperor;;;;;;;;;;;;;x
 GOD_JARILO;Jarilo;;;;;;;;;;;;;x
 GOD_JESUS;Jesus;Jésus;Jesus;;Jesús;;;;;;;;;x
 GOD_JUMALA;Jumala;;;;;;;;;;;;;x
@@ -523,10 +546,13 @@ GOD_JUMI;Jumi;;;;;;;;;;;;;x
 GOD_JUNO;Juno;;;;;;;;;;;;;x
 GOD_JUPITER;Jupiter;;;;;;;;;;;;;x
 GOD_JUPITEROPTIMUSMAXIMUS;Iovis Optimus Maximus;;;;;;;;;;;;;x
+GOD_KABEZYA_MPUNGU;Kabezya Mpungu;;;;;;;;;;;;;x
+GOD_KALUNGA;Kalunga;;;;;;;;;;;;;x
 GOD_KARMA;The Karma;;;;;;;;;;;;;x
 GOD_KARTIKEYA;Kartikeya;;;;;;;;;;;;;x
 GOD_KINGOFDARKNESS;The King of Darkness;;;;;;;;;;;;;x
 GOD_KINTO;Kinto;;;;;;;;;;;;;x
+GOD_KOKYANGWUTI;Kokyangwuti;;;;;;;;;;;;;x
 GOD_KOTHAR;Kothar-wa-Khasis;;;;;;;;;;;;;x
 GOD_KRISHNAHERAKLES;Kresnerakles;;;;;;;;;;;;;x
 GOD_KRISTUR;Baldr Kristr;;;;;;;;;;;;;x
@@ -540,10 +566,12 @@ GOD_LOLCAT;Lolcat the Divine;;;;;;;;;;;;;x
 GOD_LORDOFHOSTS;The Lord of Hosts;;;;;;;;;;;;;x
 GOD_LORDOFLIGHT;The Lord of Light;;;;;;;;;;;;;x
 GOD_LUBU;Lu Bu;;;;;;;;;;;;;x
+GOD_MABOYAS;Maboyas;;;;;;;;;;;;;x
 GOD_MACHA;Macha;;;;;;;;;;;;;x
 GOD_MAHER;Maher;;;;;;;;;;;;;x
 GOD_MAHREM;Mahrem;;;;;;;;;;;;;x
 GOD_MAITREYA;Maitreya the Saviour;;;;;;;;;;;;;x
+GOD_MAKA;Maka;;;;;;;;;;;;;x
 GOD_MALAKBEL;Malakbel;;;;;;;;;;;;;x
 GOD_MAN;The Light of Humanity;;;;;;;;;;;;;x
 GOD_MANAH;Manah;Manah;Manah;;Manat;;;;;;;;;x
@@ -552,21 +580,28 @@ GOD_MANI;The Father of Greatness;;;;;;;;;;;;;x
 GOD_MARI;Mari;;;;;;;;;;;;;x
 GOD_MARIURRACA;Mari Urraca;;;;;;;;;;;;;x
 GOD_MARS;Mars;;;;;;;;;;;;;x
+GOD_MASAUWU;Masauwu;;;;;;;;;;;;;x
 GOD_MASTOR_AVA;Mastor Ava;;;;;;;;;;;;;x
+GOD_MATLALCUEYE;Matlalcueye;;;;;;;;;;;;;x
 GOD_MEHNUT;Mehnut;;;;;;;;;;;;;x
 GOD_MELQART;Melqart;;;;;;;;;;;;;x
 GOD_MERCURYHANUMAN;Hermanumanes;;;;;;;;;;;;;x
 GOD_MICTLANTECUHTLI;Mictlantecuhtli;;;;;;;;;;;;;x
+GOD_MINERVA;Minerva;;;;;;;;;;;;;x
 GOD_MITHRA;Mithras;;;;;;;;;;;;;x
 GOD_MITHRACHRIST;Mithras Christos;;;;;;;;;;;;;x
 GOD_MITRA;Mitra;;;;;;;;;;;;;x
+GOD_MIXCOATL;Mixcoatl;;;;;;;;;;;;;x
 GOD_MONAD;Monad;;;;;;;;;;;;;x
 GOD_MONTANINCARNATION;Montanus, God-Incarnate;;;;;;;;;;;;;x,,,,,
+GOD_MUDJEKEEWIS;Mudjekeewis;;;;;;;;;;;;;x
 GOD_MWARI;Mwari;;;;;;;;;;;;;x
 GOD_NABIA;Nabia;;;;;;;;;;;;;x
 GOD_NAMALANGO;Namalango;;;;;;;;;;;;;x
+GOD_NANABOZHO;Nanabozho;;;;;;;;;;;;;x
 GOD_NEPTUNE;Neptune;;;;;;;;;;;;;x
 GOD_NETO;Neto;;;;;;;;;;;;;x
+GOD_NJAMBI;Njambi;;;;;;;;;;;;;x
 GOD_NKYA;Nkya;;;;;;;;;;;;;x
 GOD_NORSE_SOL;Sunna;;;;;;;;;;;;;x
 GOD_NOTT;Nótt;;;;;;;;;;;;;x
@@ -583,6 +618,7 @@ GOD_OMOL;Omol;;;;;;;;;;;;;x
 GOD_OROMASDES;Oromasdes;;;;;;;;;;;;;x
 GOD_ORUNMILA;Orunmila;;;;;;;;;;;;;x
 GOD_OSIRIS;Osiris;;;;;;;;;;;;;x
+GOD_PAHANA;Pahana;;;;;;;;;;;;;x
 GOD_PAL;Shamayim;;;;;;;;;;;;;x
 GOD_PATOLLO;Patollo;;;;;;;;;;;;;x
 GOD_PECKOLS;Peckols;;;;;;;;;;;;;x
@@ -598,6 +634,7 @@ GOD_PROJECTIONJESUS;The Projection of Christ;;;;;;;;;;;;;x
 GOD_QUETZALCOATL;Quetzalcoatl;;;;;;;;;;;;;x
 GOD_RADEGAST;Radegast;;;;;;;;;;;;;x
 GOD_REALMOFLIGHT;The Realm of Light;;;;;;;;;;;;;x
+GOD_RED_HORN;Red Horn;;;;;;;;;;;;;x
 GOD_ROD;Rod;;;;;;;;;;;;;x
 GOD_RODTENGRI;Rod-Tanri;;;;;;;;;;;;;x
 GOD_ROOG;Roog;;;;;;;;;;;;;x
@@ -611,31 +648,41 @@ GOD_SEHUL;Sehul;;;;;;;;;;;;;x
 GOD_SET;Set;;;;;;;;;;;;;x
 GOD_SETH;Seth;;;;;;;;;;;;;x
 GOD_SHAMS;Shamash;;;;;;;;;;;;;x
+GOD_SHANGDI;Shangdi;;;;;;;;;;;;;x
 GOD_SHAYTANA;Shaytana Invictus;;;;;;;;;;;;;x
 GOD_SHENLA_OKAR;Shenla Okar;;;;;;;;;;;;;x
 GOD_SHIVA;Shiva;;;;;;;;;;;;;x
+GOD_SINSSGANAGWAI;Sinssganagwai;;;;;;;;;;;;;x
+GOD_SKAN;Skan;;;;;;;;;;;;;x
 GOD_SOL;Sol Invictus;;;;;;;;;;;;;x
 GOD_SOLAR_GOD;The Solar God;;;;;;;;;;;;;x
 GOD_SOPHIA;Sophia;;;;;;;;;;;;;x
+GOD_SOTUKNANG;Sotuknang;;;;;;;;;;;;;x
 GOD_SOWILO;Sowilo;;;;;;;;;;;;;x
-GOD_STTYR;Saint Tyr;;;;;;;;;;;;;x
-GOD_STTHOR;Saint Thor;;;;;;;;;;;;;x
+GOD_SPENTA_MAINYU;Spenta Mainyu;;;;;;;;;;;;;x
 GOD_STFREY;Saint Frey;;;;;;;;;;;;;x
 GOD_STFREYJA;Saint Freyja;;;;;;;;;;;;;x
-GOD_SPENTA_MAINYU;Spenta Mainyu;;;;;;;;;;;;;x
+GOD_STTHOR;Saint Thor;;;;;;;;;;;;;x
+GOD_STTYR;Saint Tyr;;;;;;;;;;;;;x
 GOD_SUNEMPEROR;The Sol-Imperator;;;;;;;;;;;;;x
 GOD_SUNINCARNATE;Sol Incarnate;;;;;;;;;;;;;x
 GOD_SVAROG;Svarog;;;;;;;;;;;;;x
 GOD_SVETOVID;Svetovid;;;;;;;;;;;;;x
 GOD_TAKHAR;Takhar;;;;;;;;;;;;;x
 GOD_TALAB;Ta'lab;;;;;;;;;;;;;x
+GOD_TAM_APO;Tam Apo;;;;;;;;;;;;;x
 GOD_TANNIT;Tannit;;;;;;;;;;;;;x
 GOD_TAPIO;Tapio;;;;;;;;;;;;;x
 GOD_TARANIS;Taranis;;;;;;;;;;;;;x
 GOD_TARHUNT;Tarhunt;;;;;;;;;;;;;x
 GOD_TARHUNTZEUS;Tarhunt-Zeus;;;;;;;;;;;;;x
+GOD_TAWA;Tawa;;;;;;;;;;;;;x
+GOD_TAWISKARON;Tawiskaron;;;;;;;;;;;;;x
 GOD_TAWUSEMELEK;Tawuse Melek;;;;;;;;;;;;;x
+GOD_TAXET;Taxet;;;;;;;;;;;;;x
 GOD_TEIWAZ;Teiwaz;;;;;;;;;;;;;x
+GOD_TEKAWERAHKWA;Tekawerahkwa;;;;;;;;;;;;;x
+GOD_TEL_APO;Tel Apo;;;;;;;;;;;;;x
 GOD_TENGRI;Tengri;Tengri;Tengri;;Tengri;;;;;;;;;x
 GOD_TEUTATIS;Teutatis;;;;;;;;;;;;;x
 GOD_TEZCAT;Tezcatlipoca;;;;;;;;;;;;;x
@@ -646,6 +693,7 @@ GOD_THE_BLESSED_VIRGIN;The Blessed Virgin;la Vierge Marie;die gesegnete Jungfrau
 GOD_THE_FOUR_CORRELATES;The Four Correlates;Les Quatre Corrélats;die Vier Korrelate;;Cuatro de los Correlatos;;;;;;;;;x
 GOD_THE_GREATEST;The Greatest;Le Plus grand;der Größte;;El Altísimo;;;;;;;;;x
 GOD_THE_GREAT_BEAR;The Great Bear;Le Grand Ours;der Große Bär;;El Gran Oso;;;;;;;;;x
+GOD_THE_GUARDIAN_SPIRITS;The Popwaqt;;;;;;;;;;;;;x
 GOD_THE_HEAVEN;The Heavens;;;;;;;;;;;;;x
 GOD_THE_LORD;The Lord;Le Seigneur;der Herr;;El Señor;;;;;;;;;x
 GOD_THE_ODIN;Odin;Odin;Odin;;Odín;;;;;;;;;x
@@ -655,28 +703,41 @@ GOD_THE_THUNDERER;The Thunderer;Le Tonnant;der Donnerer;;Dios del Trueno;;;;;;;;
 GOD_THE_TWELVE_PHILOSOPHERS;The Twelve Philosophers;Les Douze Philosophes;Die Zwölf Philosophen;;Los Doce Filósofos;;;;;;;;;x
 GOD_THE_YAZDANI;The Yazdani;;;;;;;;;;;;;x
 GOD_THOUSAND;The Thousand Gods;;;;;;;;;;;;;x
+GOD_THREE_PURE_ONES;The Three Pure Ones;;;;;;;;;;;;;x
+GOD_THREE_SISTERS;Three Sisters;;;;;;;;;;;;;x
 GOD_THUNARAZ;Thunaraz;;;;;;;;;;;;;x
+GOD_TIA;Tia;;;;;;;;;;;;;x
 GOD_TIURAKH;Tiurakh;;;;;;;;;;;;;x
 GOD_TLALOC;Tlaloc;;;;;;;;;;;;;x
+GOD_TOYA;Toya;;;;;;;;;;;;;x
 GOD_TRIGLAV;Triglav;;;;;;;;;;;;;x
+GOD_TRIGONOLITO;Trigonolito;;;;;;;;;;;;;x
 GOD_TRIMURTI;The Trimurti;;;;;;;;;;;;;x
 GOD_TSAHAYMAHREM;Ts'ähäy Mahrem;;;;;;;;;;;;;x
 GOD_TURA;Tura;;;;;;;;;;;;;x
 GOD_TWELVE;The Twelve Patriarchs;;;;;;;;;;;;;x
+GOD_TWO_SPIRITS;Two Spirits;;;;;;;;;;;;;x
 GOD_TYR;Týr;;;;;;;;;;;;;x
 GOD_UKKO;Ukko;;;;;;;;;;;;;x
 GOD_UMAY;Umay;;;;;;;;;;;;;x
+GOD_UNDERWATER_PANTHER;Underwater Panther;;;;;;;;;;;;;x
 GOD_UNKNOWN_GOD;The Unknown God;;;;;;;;;;;;;x
 GOD_UNKULUNKULU;Unkulunkulu;;;;;;;;;;;;;x
 GOD_VARUN;Varun;;;;;;;;;;;;;x
 GOD_VELES;Veles;;;;;;;;;;;;;x
 GOD_VERETHRAGNA;Verethragna;;;;;;;;;;;;;x
+GOD_VESTA;Vesta;;;;;;;;;;;;;x
 GOD_VISHNU;Vishnu;;;;;;;;;;;;;x
 GOD_VOIPEL;Voipel';;;;;;;;;;;;;x
 GOD_WAAQ;Waaq;;;;;;;;;;;;;x
+GOD_WAKANDA;Wakanda;;;;;;;;;;;;;x
+GOD_WAKHAN_THANKA;Wakhan Thanka;;;;;;;;;;;;;x
+GOD_WI;Wi;;;;;;;;;;;;;x
 GOD_WODANAZ;Wodanaz;;;;;;;;;;;;;x
+GOD_XIHE;Xihe;;;;;;;;;;;;;x
 GOD_XIPE_TOTEC;Xipe Totec;;;;;;;;;;;;;x
 GOD_XIUHTECUHTLI;Xiuhtecuhtli;;;;;;;;;;;;;x
+GOD_YAAHL;Yaahl;;;;;;;;;;;;;x
 GOD_YAHWEH;Yahweh;;;;;;;;;;;;;x
 GOD_YAHWEHS;Yahweh Sabaoth;;;;;;;;;;;;;x
 GOD_YAHYA;Yahya;;;;;;;;;;;;;x
@@ -700,8 +761,10 @@ HYLE;Mwari;;;;;;;;;;;;;x
 HYPERCOSMIC_GODS;The Hypercosmic Gods;;;;;;;;;;;;;x
 IGNORANCE;Ignorance;;;;;;;;;;;;;x
 INCARNATION_ALEXANDROS;Alekjendara, 11th Avatar of Vishnu;;;;;;;;;;;;;x,,,,,
+JIIBAYAABOOZ;Jiibayaabooz;;;;;;;;;;;;;x
 KAKIA_MARA;Kakia-Mara;;;;;;;;;;;;;x
 KAKODAIMONES;the Kakodaimones;;;;;;;;;;;;;x
+KAMINCHU;Kaminchu;;;;;;;;;;;;;x
 KARASHKHAN;Karash Khan;;;;;;;;;;;;;x
 KERES;the Keres;;;;;;;;;;;;;x
 KUK;Kuk;;;;;;;;;;;;;x
@@ -715,14 +778,19 @@ MARABOUTS;The Marabouts;;;;;;;;;;;;;x
 MATER;Magna Mater;;;;;;;;;;;;;x
 MAYA;Mâyâ;;;;;;;;;;;;;x
 MAYA_HINDU;Maya;;;;;;;;;;;;;x
+MIDEW;Midew;;;;;;;;;;;;;x
+MISHIGINEBIG;Mishiginebig;;;;;;;;;;;;;x
+MISHIPESHU;Mishipeshu;;;;;;;;;;;;;x
 MORS;Mors;;;;;;;;;;;;;x
 MOTHER_LIGHT;The Mother of Light;;;;;;;;;;;;;x
+MU;Mu;;;;;;;;;;;;;x
 MUTHSPELL;Muþspell;;;;;;;;;;;;;x
 NEO_ZION;The new land of Zion;;;;;;;;;;;;;x
 NOTUS;Notus;;;;;;;;;;;;;x
 OPPRESSOR_GOD;The Oppressor God;;;;;;;;;;;;;x
 ORACLE_FIRES;The Oracle of Fires;;;;;;;;;;;;;x
 PARA_BRAHMAN;Nigurna Brahman;;;;;;;;;;;;;x
+PAUCHI;Pauchi;;;;;;;;;;;;;x
 PROHPET_ISKANDAR;Al-Iskandar Al-Akbar;;;;;;;;;;;;;x
 PROHPET_MUHAMMAD;Prophet Muhammad;;;;;;;;;;;;;x
 PROHPET_PELIAGIUS;Pelagius;;;;;;;;;;;;;x
@@ -760,33 +828,37 @@ RAGA;Raga;;;;;;;;;;;;;x
 REVERED_ANCESTORS;The Revered Ancestors;;;;;;;;;;;;;x
 SHINMU;Shinmu;;;;;;;;;;;;;x
 SON_OF_THE_SUN;The Son of the Sun;;;;;;;;;;;;;x
+SUKYA;Sukya;;;;;;;;;;;;;x
+SÃºe;Sãe;;;;;;;;;;;;;x
 TANHA;Tanha;;;;;;;;;;;;;x
+THE_AADIZOOKAAN_SCROLLS;The Aadizookaan Scrolls;;;;;;;;;;;;;x
 THE_BAHAMUT;Bahamut;;;;;;;;;;;;;x
 THE_DEMIURGE;The Demiurge;;;;;;;;;;;;;x
 THE_FOMORIANS;The Fomorians;;;;;;;;;;;;;x
 THE_GHOULS;Ghouls;;;;;;;;;;;;;x
 THE_IFRIT;The Ifrit;;;;;;;;;;;;;x
+THE_KATSINAM;The Guardian Spirits;;;;;;;;;;;;;x
 THE_KING_OF_DARKNESS;The King of Darkness;;;;;;;;;;;;;x
 THE_LIBERATOR;The Liberator;;;;;;;;;;;;;x
 THE_MOTHER_OF_LIFE;The Mother of Light;;;;;;;;;;;;;x
 THE_NASNAS;Nasnas;;;;;;;;;;;;;x
+THE_NINNIMBE;The Katsinam;;;;;;;;;;;;;x
+THE_PAONA;The Ninnimbe;;;;;;;;;;;;;x
+THE_POPWAQT;The Paona;;;;;;;;;;;;;x
 THE_WHITE_RIDER;The White Rider;;;;;;;;;;;;;x
+TLAMACAZQUI;Tlamacazqui;;;;;;;;;;;;;x
 TULE;Tule;;;;;;;;;;;;;x
 VINAYAKAS_KERES;the Vinakeres;;;;;;;;;;;;;x
 VINE_GIVER;The Vine Giver;;;;;;;;;;;;;x
 XIAOREN;Xiaoren;;;;;;;;;;;;;x
 YAMA;Yama;;;;;;;;;;;;;x
+YAMAYANA;Yamayana;;;;;;;;;;;;;x
 YANGUOWANG;Yanguowang;;;;;;;;;;;;;x
+YANLOWANG;Yanlowang;;;;;;;;;;;;;x
 YAOGUAI;The Yaoguai;;;;;;;;;;;;;x
 YIN;Yin;;;;;;;;;;;;;x
 ZEPHYRUS;Zephyrus;;;;;;;;;;;;;x
 ZMEY;Zmey;;;;;;;;;;;;;x
-GOD_THREE_PURE_ONES;The Three Pure Ones;;;;;;;;;;;;;x
-YANLOWANG;Yanlowang;;;;;;;;;;;;;x
-GOD_SHANGDI;Shangdi;;;;;;;;;;;;;x
-GOD_JADEEMPEROR;The Jade Emperor;;;;;;;;;;;;;x
-GOD_VESTA;Vesta;;;;;;;;;;;;;x
-GOD_MINERVA;Minerva;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 ### HOLY BOOK NAMES ###;;;;;;;;;;;;;;x
 ALEXANDRIAD;the Alexiandrad;;;;;;;;;;;;;x
@@ -1108,3 +1180,7 @@ secret_religious_community_antinomian;Secret Antinomian Community;;;;;;;;;;;;;x
 secret_antinomian_community;Secret Antinomian Community;;;;;;;;;;;;;x
 secret_antinomian_community_desc;In secret, Antinomian faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
 secret_religious_society_antinomian_leader_desc;A High Priest in the Hidden Antinomian society;;;;;;;;;x
+#PIETY
+STAT_PIETY_XIAO;Xiao;Xiao;Xiao;;Xiao;;;;;;;;;x
+STAT_PIETY_DESC_XIAO;Xiao;Xiao;Xiao;;Xiao;;;;;;;;;x
+MONTHLY_PIETY_XIAO;Xiao;Xiao;Xiao;;Xiao;;;;;;;;;x

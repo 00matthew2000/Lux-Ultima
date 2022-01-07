@@ -162,11 +162,6 @@ killed_vassal = {
 	execute_reason = yes # This one gives righteous cause to revoke ONE title	
 }
 
-opinion_outraged = {
-	opinion = -50
-	months = 120
-}
-
 opinion_attended_ceremony = {
 	opinion = 10
 }
@@ -278,12 +273,6 @@ opinion_recent_civil_war = {
 #	prison_reason = yes # This one gives righteous cause to imprison a character
 #	revoke_reason = yes # This one gives righteous cause to revoke ONE title	
 #}
-
-devious_plotter = {
-	opinion = -50
-	prison_reason = yes # This one gives righteous cause to imprison a character
-	execute_reason = yes # This one gives righteous cause to revoke ONE title		
-}
 
 #attempted_kidnapping = {
 #	opinion = -100
