@@ -1906,22 +1906,18 @@ female_can_hold_minor_title_trigger = {
 		OR = {
 			custom_tooltip = {
 				text = tooltip_feminist_liege_vanilla_religion
-				AND = {
-					feminist_religions_trigger = yes
-					liege = { religion = ROOT }
-				}
+				feminist_religions_trigger = yes
+				liege = { religion = ROOT }
 			}
 			custom_tooltip = {
 				text = tooltip_feminist_liege_religion_feature
-				AND = {
-					OR = {
-						has_religion_feature = religion_equal
-						has_religion_feature = religion_matriarchal
-					}
-					liege = {
-						has_religion_feature = religion_equal
-						has_religion_feature = religion_matriarchal
-					}
+				OR = {
+					has_religion_feature = religion_equal
+					has_religion_feature = religion_matriarchal
+				}
+				liege = {
+					has_religion_feature = religion_equal
+					has_religion_feature = religion_matriarchal
 				}
 			}
 			primary_title = {

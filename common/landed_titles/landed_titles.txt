@@ -661,72 +661,6 @@ e_hre = {                      # Created by special decision only
 			}
 		}
 	}
-	k_saxon = {
-		color={ 70 70 70 }
-		color2={ 255 255 255 }
-
-		capital = 257
-
-		title_prefix = "GRAND_DUCHY_PREFIX"
-		title = "GRAND_DUCHY_RULER"
-		title_female = "GRAND_DUCHY_RULER_FEMALE"
-
-		allow = {
-			conditional_tooltip = {
-				k_saxon = {
-					is_titular = yes
-				}
-			}
-			k_saxon = {
-				is_titular = no
-			}
-		}
-
-		catholic = 3000 # Crusade target weight
-		norse_pagan_reformed = 500 # Crusade target weight
-	}
-	k_franconia = {
-		color={ 100 108 100 }
-		color2={ 255 255 255 }
-		
-		capital = 254 # Würzburg
-
-		title_prefix = "GRAND_DUCHY_PREFIX"
-		title = "GRAND_DUCHY_RULER"
-		title_female = "GRAND_DUCHY_RULER_FEMALE"
-
-		allow = {
-			conditional_tooltip = {
-				k_franconia = {
-					is_titular = yes
-				}
-			}
-			k_franconia = {
-				is_titular = no
-			}
-		}
-	}
-	k_swabia = {
-		color={ 206 203 203 }
-		color2={ 255 255 255 }
-		
-		capital = 249 #Schwaben
-
-		title_prefix = "GRAND_DUCHY_PREFIX"
-		title = "GRAND_DUCHY_RULER"
-		title_female = "GRAND_DUCHY_RULER_FEMALE"
-
-		allow = {
-			conditional_tooltip = {
-				k_swabia = {
-					is_titular = yes
-				}
-			}
-			k_swabia = {
-				is_titular = no
-			}
-		}
-	}
 }
 
 e_german = {
@@ -19643,7 +19577,7 @@ e_sassanid = {
 		}
 		d_dailam = {
 			color = { 130 100 15 }
-			capital = 679 #Daylam
+			capital = 715 #Daylam
 			
 			c_zanjan_abhar = {
 				color = { 72 109 178 }
@@ -19678,7 +19612,7 @@ e_sassanid = {
 		}
 		d_mazandaran = { #Rhagae
 			color = { 109 149 39 }
-			capital = 664 #Arsakia Rhagae
+			capital = 663 #Arsakia Rhagae
 			
 			c_rayy = {
 				color = { 193 234 121 }
@@ -20936,7 +20870,6 @@ e_sassanid = {
 				color = { 61 121 231 }
 				
 				jewish = "Chideqel"
-				jewish = "Chideqel"
 				
 				b_majaralkabir = {}
 				b_bismaya = {}
@@ -22030,7 +21963,6 @@ e_pannonia = {
 				bosnian = "Pecuh"
 				german = Fünfkirchen
 				bohemian = Balaton
-				carantanian = Balaton
 				carantanian = Balaton
 				
 				b_pecs = {}
@@ -26617,7 +26549,6 @@ e_arabia = {
 				color2={ 255 255 255 }
 				
 				jewish = "Meidvo"
-				jewish = "Meidva"
 				
 				b_madaba = {
 				}
@@ -26728,7 +26659,6 @@ e_arabia = {
 		
 		capital = 860 # Sana'a
 		
-		jewish = "Himyar"
 		jewish = "Himyar"
 		
 		almaqah = 10000
@@ -27017,8 +26947,8 @@ e_arabia = {
 			levantine_arabic = "Damashq"
 			egyptian_arabic = "Damashq"
 			andalusian_arabic = "Damashq"
-			jewish = "Damesheq"
-			jewish = "Damesheq"				
+			jewish = "Damesheq"		
+			roman = "Demetrias"
 			
 			capital = 726 # Ash-Sham
 		
@@ -27030,9 +26960,8 @@ e_arabia = {
 				levantine_arabic = "Al-Mafraq"
 				egyptian_arabic = "Al-Mafraq"
 				andalusian_arabic = "Al-Mafraq"
-				jewish = "Al-Mafraq"
-				jewish = "Al-Mafraq"	
-				roman = "Al-Mafraq"
+				jewish = "Damesheq"	
+				roman = "Demetrias"
 
 				holy_site = sunni
 			
@@ -27821,7 +27750,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_al_kuddaya = {}
 				b_al_wasta = {}
 				b_al_quturi = {}
-				b_hipponon = {}
+				b_hipponon1 = {}
 				b_itwab = {}
 			}
 			c_sarqihya = {
@@ -28003,7 +27932,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_hibeh = {
 					nubian = "Teudjo"
 				}
-				b_besa = {}
+				b_besa1 = {}
 				b_sharuna = {}
 			}
 			c_alqusair = {
@@ -28246,6 +28175,47 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_suhaj = {
 				}
 			}
+			c_dotawo = {
+				color = { 160 130 85 }
+				color2={ 255 255 255 }
+			
+				b_dotawo = {
+				}
+				b_jebeladda = {
+				}
+				b_faras = {
+				}
+				b_qasribrim = {
+				}
+				b_ballana = {
+				}
+				b_buhen = {
+				}
+				b_premnis = {
+				}
+			}
+			c_qasr_ibrim = {
+				color = { 119 134 74 }
+				
+				b_ukhta2 = {}
+				b_sosnogorsk2 = {}
+				b_yarega2 = {}
+				b_vodnyy2 = {}
+				b_nizhodes2 = {}
+				b_vuktyl2 = {}
+				b_kadzherom2 = {}
+				b_voyvozh2 = {}
+			}
+			c_nechesia = {
+				color = { 122 4 16 }
+				
+				b_nechesia = {}
+				b_safaga = {}
+				b_hurghada = {}
+				b_jiftun = {}
+				b_pentedactylus = {}
+				b_karejat = {}
+			}
 			c_aswan = {
 				color={ 43 190 122 }
 				color2={ 255 255 255 }
@@ -28263,7 +28233,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				
 				b_aswan = {
 					nubian = "Sowan"
-					nubian = "Karnak" 
 					sao = "Karnak" 
 					fur = "Karnak" 
 					luo = "Karnak"
@@ -28669,8 +28638,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 		capital = 774 # Jerusalem
 		
 		jewish = "Yerusholaim"
-		jewish = "Yerushalaim"
-		roman = "Philistia"
+		hellenistic = "Philistia"
 		armenian = "Philistia"
 		greek = "Philistia"
 		alan = "Philistia"
@@ -28733,7 +28701,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				levantine_arabic = "al-Farama"
 				bedouin_arabic = "al-Farama"
 				andalusian_arabic = "al-Farama"
-				jewish = "Sin"
 				jewish = "Sin"
 				greek = "Pelousion"
 				
@@ -28847,7 +28814,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			capital = 780 # Ascalon
 			
 			jewish = "Ashqelon"
-			jewish = "Ashqelon"
 		
 			c_darum = {
 				color={ 167 165 190 }
@@ -28882,7 +28848,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				levantine_arabic = "Arsuf"
 				egyptian_arabic = "Arsuf"
 				andalusian_arabic = "Arsuf"
-				jewish = "Yophoi"
+				greek = "Yophoi"
 				jewish = "Yapho"
 			
 				b_jaffa = {
@@ -28917,7 +28883,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				egyptian_arabic = "Asqalan"
 				andalusian_arabic = "Asqalan"
 				jewish = "Ashqelon"
-				jewish = "Ashqelon"
 			
 				b_ascalon = {
 					bedouin_arabic = "Asqalan"
@@ -28948,7 +28913,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			capital = 774 # Jerusalem
 			
 			jewish = "Yerusholaim"
-			jewish = "Yerushalaim"
 			
 			christian = 250 # Crusade target weight
 			muslim = 250 # Crusade target weight
@@ -28958,7 +28922,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color2={ 255 255 255 }
 				
 				jewish = "Yerusholaim"
-				jewish = "Yerushalaim"
 				
 				christian = 250 # Crusade target weight
 				muslim = 250 # Crusade target weight
@@ -29053,7 +29016,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					saxon = "Mirabel"
 					frisian = "Mirabel"
 					dutch = "Mirabel"
-					frankish = "Mirabel"
 					norman = "Mirabel"
 					italian = "Mirabel"
 					occitan = "Mirabel"
@@ -29123,7 +29085,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color = { 15 208 46 }
 				
 				jewish = "Beir-Sheva"
-				jewish = "Ber-Sheva"
 			
 				b_beersheb = {
 				}
@@ -29145,7 +29106,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			c_hebron = {
 				color = { 49 255 73 }
 				
-				jewish = "Hevron"
 				jewish = "Hevron"
 		
 				b_hebron = {
@@ -29221,7 +29181,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color={ 230 190 154 }
 				color2={ 255 255 255 }
 				
-				jewish = "Akkoi"
+				greek = "Akkoi"
 				jewish = "Akko"
 		
 				b_acre = {
@@ -29379,21 +29339,20 @@ e_maghreb = {
 				color = { 231 178 35 }
 				color2 = { 255 255 255 }
 				
-				b_kurgan = {}
-				b_vagay = {}
-				b_kyzalyar = {}
-				b_lebyazhe = {}
-				b_yurgamysh = {}
-				b_shumikha = {}
-				b_mishkino = {}
-				b_makushino = {}
+				b_kurgan1 = {}
+				b_kyzalyar1 = {}
+				b_lebyazhe1 = {}
+				b_yurgamysh1 = {}
+				b_shumikha1 = {}
+				b_mishkino1 = {}
+				b_makushino1 = {}
 			}
 		}
 		d_mzab = {
 			color={ 74 242 62 }
 			color2={ 255 255 255 }
 			
-			capital = 822 # Laghouat/Ouled Nail
+			capital = 1734 # Laghouat/Ouled Nail
 			
 			c_biskra = {
 				color = { 47 253 104 }
@@ -29506,7 +29465,6 @@ e_maghreb = {
 				color = { 24 236 59 }
 				holy_site = marabout
 				holy_site = amanai
-				holy_site = amanai_reformed
 				holy_site = berber_pagan
 				holy_site = gurzil
 				holy_site = berber_pagan_reformed
@@ -29813,7 +29771,7 @@ e_maghreb = {
 		}
 		d_ouadane = {
 			color = { 158 168 25 }
-			capital = 944
+			capital = 921
 			
 			c_arigh = {
 				color={ 51 255 108 }
@@ -30033,7 +29991,6 @@ e_maghreb = {
 					holy_site = sol_sahara_reformed
 					holy_site = ethiopian_war_reformed
 					holy_site = amanai
-					holy_site = amanai_reformed
 					holy_site = berber_pagan
 					holy_site = gurzil
 					holy_site = berber_pagan_reformed
@@ -30274,7 +30231,7 @@ e_maghreb = {
 		color = { 70 105 208 }
 		color2 = { 255 255 255 }
 		
-		title = Exarch
+		title = "Exarch"
 		title_prefix = "Exarchate Of" 
 		capital = 811
 
@@ -30294,7 +30251,6 @@ e_maghreb = {
 				roman = "Oea" 
 				
 				holy_site = amanai
-				holy_site = amanai_reformed
 			
 				b_libtripoli = {
 				}
@@ -31324,25 +31280,6 @@ e_kush = {
 
 			capital = 793 # Dotawo
 
-			c_dotawo = {
-				color = { 160 130 85 }
-				color2={ 255 255 255 }
-			
-				b_dotawo = {
-				}
-				b_jebeladda = {
-				}
-				b_faras = {
-				}
-				b_qasribrim = {
-				}
-				b_ballana = {
-				}
-				b_buhen = {
-				}
-				b_premnis = {
-				}
-			}
 			c_makuria = {
 				color = { 140 155 75 }
 				color2={ 255 255 255 }
@@ -31412,18 +31349,6 @@ e_kush = {
 				
 				b_ibrim = {}
 			}
-			c_qasr_ibrim = {
-				color = { 119 134 74 }
-				
-				b_ukhta2 = {}
-				b_sosnogorsk2 = {}
-				b_yarega2 = {}
-				b_vodnyy2 = {}
-				b_nizhodes2 = {}
-				b_vuktyl2 = {}
-				b_kadzherom2 = {}
-				b_voyvozh2 = {}
-			}
 		}
 		d_aydhab = {
 			color = { 75 230 80 }
@@ -31439,16 +31364,6 @@ e_kush = {
 				b_shalateen = {}
 				b_siyal = {}
 				b_gebel_elba = {}
-			}
-			c_nechesia = {
-				color = { 122 4 16 }
-				
-				b_nechesia = {}
-				b_safaga = {}
-				b_hurghada = {}
-				b_jiftun = {}
-				b_pentedactylus = {}
-				b_karejat = {}
 			}
 			c_suakin = {
 				color = { 210 63 77 }
@@ -33540,8 +33455,6 @@ e_britannia = {
 		}
 		d_labhdaidh = {
 			color = { 10 164 243 }
-			norwegian = "Loðen" 
-			brython = "Lleuddiniawn" 
 			
 			capital = 48 # Lothian
 			
@@ -34310,7 +34223,6 @@ e_mali = {
 			c_timbuktu = {
 				color = { 240 245 100 }
 				holy_site = amanai
-				holy_site = amanai_reformed
 				holy_site = berber_pagan
 				holy_site = gurzil
 				holy_site = berber_pagan_reformed
@@ -34572,7 +34484,7 @@ e_central_africa = {
 	color = { 140 136 34 }
 	color2 = { 255 255 255 }
 	
-	capital = 1739
+	capital = 1725
 	
 	k_garama = {
 		color = { 140 56 84 }
@@ -34638,7 +34550,6 @@ e_central_africa = {
 				color2={ 255 255 255 }
 				
 				holy_site = amanai
-				holy_site = amanai_reformed
 				holy_site = berber_pagan
 				holy_site = gurzil
 				holy_site = berber_pagan_reformed
@@ -35075,37 +34986,37 @@ d_ragusa = {
 	}
 }
 
-d_miaphysite = {
-	color={ 217 155 177 }
-	color2={ 220 220 0 }
-	
-	capital = 802 # Alexandria
-	
-	title = "POPE"
-	foa = "POPE_FOA"
-	
-	short_name = yes
-
-	# Always exists
-	landless = yes
-	
-	# Controls a religion
-	controls_religion = miaphysite
-	
-	religion = miaphysite
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-	
-	# Regnal names
-	male_names = {
-		Abraham Alexandros Alexios Agatho Anastasios Andronikos Athanasios Benjamin Christodolos Cosmas Kyril Damian 
-		Demetrius Dioscorus Gabriel Yohannes Iosephos Isaakios Iakobos Makarios Markianos Markos Matheos Khail Mina 
-		Petros Philotheos Shenouda Simeon Theodoros Theophilus Timotheos Zacharias
-	}
-}
+#d_miaphysite = {
+#	color={ 217 155 177 }
+#	color2={ 220 220 0 }
+#	
+#	capital = 802 # Alexandria
+#	
+#	title = "POPE"
+#	foa = "POPE_FOA"
+#	
+#	short_name = yes
+#
+#	# Always exists
+#	landless = yes
+#	
+#	# Controls a religion
+#	controls_religion = miaphysite
+#	
+#	religion = miaphysite
+#	
+#	# Cannot be held as a secondary title
+#	primary = yes
+#	
+#	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+#	
+#	# Regnal names
+#	male_names = {
+#		Abraham Alexandros Alexios Agatho Anastasios Andronikos Athanasios Benjamin Christodolos Cosmas Kyril Damian 
+#		Demetrius Dioscorus Gabriel Yohannes Iosephos Isaakios Iakobos Makarios Markianos Markos Matheos Khail Mina 
+#		Petros Philotheos Shenouda Simeon Theodoros Theophilus Timotheos Zacharias
+#	}
+#}
 
 d_monophysite = {
 	color={ 200 115 167 }
@@ -35139,40 +35050,40 @@ d_monophysite = {
 	}
 }
 
-d_paulician = {
-	color={ 195 130 157 }
-	color2={ 255 255 255 }
-	
-	capital = 496 # Constantinople
-	
-	title = "PATRIARCH_CAP"
-	foa = "ECUMENICAL_PATRIARCH_FOA"
-	
-	short_name = yes
-
-	# Always exists
-	landless = yes
-	
-	# Controls a religion
-	controls_religion = paulician
-	
-	religion = paulician
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-	
-	# Regnal names
-	male_names = {
-		Alexios Alexandros Anastasios Anthimos Athanasios Antonios Basileios Dionysios Dositheos 
-		Eustathios Eustratios Euthymios Gabriel Gennadios Georgios Gerasimos Germanos Gregorios Ieremias 
-		Ignatios Ioakeim Ioannes Ioseph Isidoros Kallinikos Kallistos Konstantinos Kosmas Kyrillos Leon 
-		Leontios Loukas Makarios Manuel Markos Matthaios Maximos Meletios Methodios Metrophanes Michael 
-		Neophytos Nephon Nikephoros Niketas Nikolaos Pavlos Petros Photios Polykarpos Sergios Stephanos 
-		Sophronios Theodoros Theodosios Theodotos Theophylaktos Thomas Timotheos
-	}
-}
+#d_paulician = {
+#	color={ 195 130 157 }
+#	color2={ 255 255 255 }
+#	
+#	capital = 496 # Constantinople
+#	
+#	title = "PATRIARCH_CAP"
+#	foa = "ECUMENICAL_PATRIARCH_FOA"
+#	
+#	short_name = yes
+#
+#	# Always exists
+#	landless = yes
+#	
+#	# Controls a religion
+#	controls_religion = paulician
+#	
+#	religion = paulician
+#	
+#	# Cannot be held as a secondary title
+#	primary = yes
+#	
+#	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+#	
+#	# Regnal names
+#	male_names = {
+#		Alexios Alexandros Anastasios Anthimos Athanasios Antonios Basileios Dionysios Dositheos 
+#		Eustathios Eustratios Euthymios Gabriel Gennadios Georgios Gerasimos Germanos Gregorios Ieremias 
+#		Ignatios Ioakeim Ioannes Ioseph Isidoros Kallinikos Kallistos Konstantinos Kosmas Kyrillos Leon 
+#		Leontios Loukas Makarios Manuel Markos Matthaios Maximos Meletios Methodios Metrophanes Michael 
+#		Neophytos Nephon Nikephoros Niketas Nikolaos Pavlos Petros Photios Polykarpos Sergios Stephanos 
+#		Sophronios Theodoros Theodosios Theodotos Theophylaktos Thomas Timotheos
+#	}
+#}
 
 d_fraticelli = {
 	color={ 198 249 255 }
@@ -35223,10 +35134,10 @@ d_yazidi = {
 	foa = "CALIPH_FOA"
 	short_name = yes
 	
-	religion=yazidi
+	religion=yazidism
 	
 	# Controls a religion
-	controls_religion = yazidi
+	controls_religion = yazidism
 	
 	allow = {
 		piety = 1000
@@ -35758,9 +35669,9 @@ d_aztec_reformed = {
 	landless = yes
 	
 	# Controls a religion
-	controls_religion = aztec_reformed
+	controls_religion = quetzal_reformed
 	
-	religion = aztec_reformed
+	religion = quetzal_reformed
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -35807,9 +35718,9 @@ d_jewish = {
 	landless = yes	
 	
 	# Controls a religion
-	controls_religion = jewish
+	controls_religion = judaism
 	
-	religion = jewish
+	religion = judaism
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -36659,7 +36570,7 @@ e_india = {
 	k_gujarat = {
  		color = { 231 224 107 }
 		
-		capital = 1038 #Varodaros
+		capital = 1135 #Varodaros
 
 		jain = 5000
 		murugan_reformed = 2000
@@ -37351,7 +37262,7 @@ e_india = {
 	k_magadha = {
  		color = { 149 143 171 }
 		
-		capital = 1168 #Phragos
+		capital = 1163 #Phragos
 		
 		bon_reformed = 500
 		jain = 2000
@@ -41850,7 +41761,7 @@ d_han_massive = { # Massive Merc
 	hire_range = 1300
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -41884,7 +41795,7 @@ d_han_large = { # Large Merc
 	hire_range = 1300
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -41918,7 +41829,7 @@ d_han_mid = { # Mid Merc
 	hire_range = 1300
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -41952,7 +41863,7 @@ d_han_mid_low = { # Mid-Low Merc
 	hire_range = 1300
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -41986,7 +41897,7 @@ d_outlaws_of_the_marsh = { # Big merc
 	hire_range = 1300
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -42020,7 +41931,7 @@ d_han_low = { # Small Merc
 	hire_range = 1300
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -42054,7 +41965,7 @@ d_han_tiny_1 = { # Tiny Merc
 	hire_range = 1300
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -42088,7 +41999,7 @@ d_han_tiny_2 = { # Tiny Merc
 	hire_range = 1300
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -42122,7 +42033,7 @@ d_jurchen_band = { # Mid-Low Merc
 	hire_range = 1300
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = jurchen
@@ -42186,7 +42097,7 @@ d_treasure_fleet = {
 	hire_range = 1200
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -42218,7 +42129,7 @@ d_han_junks = {
 	hire_range = 1000
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = han
@@ -42250,7 +42161,7 @@ d_jurchen_corsairs = {
 	hire_range = 1000
 	
 	# Parent Religion 
-	religion = taoist
+	religion = tao
 	
 	# Parent Culture
 	culture = jurchen
@@ -42351,7 +42262,7 @@ d_army_light = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = manichean
+	religion = mani
 	
 	culture = persian
 	
@@ -42377,7 +42288,7 @@ d_african_massive = { # Massive Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = yoruba
 	
 	# Parent Culture
 	culture = manden
@@ -42409,7 +42320,7 @@ d_african_large = { # Large Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = yoruba
 	
 	# Parent Culture
 	culture = soninke
@@ -42444,7 +42355,7 @@ d_african_mid = { # Mid Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = yoruba
 	
 	# Parent Culture
 	culture = nubian
@@ -42476,7 +42387,7 @@ d_african_mid_low_1 = { # Mid-Low Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = yoruba
 	
 	# Parent Culture
 	culture = soninke
@@ -42508,7 +42419,7 @@ d_african_mid_low_2 = { # Big merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = yoruba
 	
 	# Parent Culture
 	culture = hausa
@@ -42540,7 +42451,7 @@ d_african_low = { # Small Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = yoruba
 	
 	# Parent Culture
 	culture = songhay
@@ -42572,7 +42483,7 @@ d_african_tiny = { # Tiny Merc
 	hire_range = 900
 	
 	# Parent Religion 
-	religion = west_african_pagan
+	religion = yoruba
 	
 	# Parent Culture
 	culture = maghreb_arabic

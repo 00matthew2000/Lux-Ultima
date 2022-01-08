@@ -201,25 +201,22 @@ title_commander = {
 			AND = {
 				OR = {
 					is_female = no
-					AND = {
-						OR = {
-							custom_tooltip = {
-								text = FEMINIST_RELIGION_TOOLTIP
-								hidden_tooltip = {
-									feminist_religions_trigger = yes
-									liege = {
-										religion = ROOT
-									}
-								}
-							}
-							liege = {
-								primary_title = {
-									has_law = status_of_women_4
+					OR = {
+						custom_tooltip = {
+							text = FEMINIST_RELIGION_TOOLTIP
+							hidden_tooltip = {
+								feminist_religions_trigger = yes
+								liege = {
+									religion = ROOT
 								}
 							}
 						}
+						liege = {
+							primary_title = {
+								has_law = status_of_women_4
+							}
+						}
 					}
-
 				}
 				OR = {
 					NOT = { religion = hindu }
@@ -3135,25 +3132,25 @@ title_guru = {
 
 	message = yes
 }
-title_genghis = {
-	dignity = 10
-	revoke_allowed = no
-	
-	realm_in_name = no
-	show_as_title = yes
-	
-	replace_order = yes
-	
-	monthly_salary = 0
-	monthly_prestige = 1.50
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-	
-	message = yes
-}
+#title_genghis = {
+	#dignity = 10
+	#revoke_allowed = no
+	#
+	#realm_in_name = no
+	#show_as_title = yes
+	#
+	#replace_order = yes
+	#
+	#monthly_salary = 0
+	#monthly_prestige = 1.50
+	#
+	#gain_effect = {
+	#}
+	#lose_effect = {
+	#}
+	#
+	#message = yes
+#}
 
 title_councilmember_king = {
 	is_high_prio = yes
