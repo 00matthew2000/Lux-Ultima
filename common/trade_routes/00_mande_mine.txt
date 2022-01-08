@@ -1,10 +1,10 @@
 mande_mine = {
 	wealth = 15			# 
 	trade_post_display_trigger = {
-		OR = {
+		#OR = {
 			#province_id = 914
 			province_id = 911
-		}
+		#}
 	}
 
 	modifier = {			# How the trade route modifies the provinces it passes
@@ -27,6 +27,5 @@ mande_mine = {
 	# Northern Silk Route
 	path = {	# Jiuquan-Anxi-Dunhuang
                 914 911
-                911 914
 	}
 }
