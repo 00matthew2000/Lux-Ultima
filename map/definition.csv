@@ -899,7 +899,7 @@ province;red;green;blue;x;x
 898;43;51;133;Andijan;x
 899;1;93;140;Tis;x
 900;127;57;134;Syr Darya;x
-901;169;60;7;Nechesia;x
+901;169;60;7;;x
 902;1;63;135;Dashhowuz;x
 903;43;66;8;Samarkand;x
 904;85;69;136;Balkh;x
@@ -1141,7 +1141,7 @@ province;red;green;blue;x;x
 1140;1;12;70;Banavasi;x
 1141;43;15;198;Kol;x
 1142;85;18;71;Pratishthana;x
-1143;127;21;199;Karanis;x
+1143;127;21;199;Kalyani;x
 1144;169;24;72;Kollipake;x
 1145;1;27;200;Devagiri;x
 1146;43;30;73;Naldurg;x
@@ -1162,7 +1162,7 @@ province;red;green;blue;x;x
 1161;43;75;208;Kasmira;x
 1162;85;78;81;Kusinagara;x
 1163;127;81;209;Varanasi;x
-1164;169;84;82;Atfih;x
+1164;169;84;82;Chauragarh;x
 1165;1;87;210;Bandhugadha;x
 1166;43;90;83;Jaunpur;x
 1167;85;93;211;Lakhnau;x
@@ -1174,7 +1174,7 @@ province;red;green;blue;x;x
 1173;127;111;214;Sambhal;x
 1174;169;114;87;Godwad;x
 1175;1;117;215;Aror;x
-1176;43;120;88;Hiba;x
+1176;43;120;88;Medantaka;x
 1177;85;123;216;Kundina;x
 1178;127;126;89;Karur;x
 1179;169;129;217;Sakala;x
@@ -1227,7 +1227,7 @@ province;red;green;blue;x;x
 1226;43;57;13;Nandapur;x
 1227;85;60;141;Cakrakuta;x
 1228;127;63;14;Swetaka Mandala;x
-1229;169;66;142;Beni Suef;x
+1229;169;66;142;Khinjali Mandala;x
 1230;1;69;15;Suvarnapura;x
 1231;43;72;143;Viraja;x
 1232;85;75;16;Midnapore;x
@@ -1282,9 +1282,9 @@ province;red;green;blue;x;x
 1281;43;9;168;Chunar;x
 1282;85;12;41;Dotawo;x
 1283;127;15;169;Asni;x
-1284;169;18;42;Minya;x
+1284;169;18;42;Bharauli;x
 1285;1;21;170;Acalapura;x
-1286;43;24;43;Yap;x
+1286;43;24;43;Kherla;x
 1287;85;27;171;Asirgarh;x
 1288;127;30;44;Ujjayini;x
 1289;169;33;172;Dadhipadra;x
@@ -1345,8 +1345,8 @@ province;red;green;blue;x;x
 1344;169;198;72;Zeila;x
 1345;1;201;200;Medapata;x
 1346;43;204;73;Ajayameru;x
-1347;85;207;201;Irrawaddy;x
-1348;127;210;74;Irrawaddy;x
+1347;85;207;201;;x
+1348;127;210;74;;x
 1349;169;0;202;Vikramapura;x
 1350;1;3;75;Reni;x
 1351;169;54;182;Nagchu;x
@@ -1807,7 +1807,7 @@ province;red;green;blue;x;x
 1806;43;93;3;Egrisi;x
 1807;85;96;131;Klarjeti;x
 1808;127;99;4;Mtskheta;x
-1809;169;102;132;Satti;x
+1809;169;102;132;;x
 1810;1;105;5;Terek;x
 1811;43;108;133;Kalaus;x
 1812;85;111;6;Saqsin;x
@@ -4064,8 +4064,8 @@ province;red;green;blue;x;x
 4063;130;48;159;Fuka Lolong;x
 4064;138;123;185;Plaquemines;x
 4065;4;54;160;Omdurman;x
-4066;46;57;33;Kuril;x
-4067;52;128;192;Zaparo;x
+4066;46;57;33;;x
+4067;88;60;161;;x
 4068;130;63;34;;x
 4069;172;66;162;;x
 4070;4;69;35;;x
@@ -4485,8 +4485,8 @@ province;red;green;blue;x;x
 4484;172;33;42;Ukitiyummiktukt;x
 4485;4;36;170;Anishinabeg;x
 4486;46;39;43;Kallularukpuvia;x #
-4487;38;164;32;Whangarei;x
-4488;90;190;207;Rekohu;x
+4487;88;42;171;;x
+4488;130;45;44;;x
 4489;172;48;172;Amurkanal;x #chicanal
 4490;4;51;45;Winnipeg;x
 4491;46;54;173;Oijibus;x
@@ -4550,10 +4550,10 @@ province;red;green;blue;x;x
 4549;172;15;202;Illingban;x
 4550;4;18;75;Mbaya;x
 4551;46;21;203;Yupik;x
-4552;88;24;76;Smoky River;x #river
+4552;88;24;76;;x
 4553;130;27;204;Insapiangwichan;x
 4554;172;30;77;Yukonaska;x
-4555;4;33;205;Mekong River;x
+4555;4;33;205;;x
 4556;46;36;78;Kaskayukuuk;x
 4557;88;39;206;Tutchone;x
 4558;130;42;79;Bataine;x
@@ -4928,28 +4928,28 @@ province;red;green;blue;x;x
 4927;88;84;191;Missouri3;x
 4928;130;87;64;Missouri4;x
 4929;172;90;192;Illinois1;x
-4930;4;93;65;Fraser River;x
-4931;46;96;193;Fraser River;x
-4932;88;99;66;Sacajawea River;x
-4933;130;102;194;Wallula River;x
-4934;172;105;67;Tejas River;x
-4935;4;108;195;Lower Rio Grande;x
-4936;46;111;68;Upper Rio Grande;x
-4937;88;114;196;Lower Congo;x 
-4938;130;117;69;Congo River;x 
-4939;172;120;197;Upper Congo;x 
-4940;4;123;70;Kasai River;x
-4941;46;126;198;Tanganyiko;x
-4942;88;129;71;Rusizi River;x  
-4943;130;132;199;Salween;x 
-4944;172;135;72;Salween;x 
-4945;4;138;200;Menam;x 
-4946;46;141;73;Guizgou River;x 
-4947;88;144;201;Guandong River;x
-4948;130;147;74;Yellow River;x
-4949;172;150;202;Yellow River;x
-4950;4;153;75;Yellow River;x
-4951;46;156;203;Ratak;x
+4930;4;93;65;;x
+4931;46;96;193;;x
+4932;88;99;66;;x
+4933;130;102;194;;x
+4934;172;105;67;;x
+4935;4;108;195;;x
+4936;46;111;68;;x
+4937;88;114;196;;x
+4938;130;117;69;;x
+4939;172;120;197;;x
+4940;4;123;70;;x
+4941;46;126;198;;x
+4942;88;129;71;;x
+4943;130;132;199;;x
+4944;172;135;72;;x
+4945;4;138;200;;x
+4946;46;141;73;;x
+4947;88;144;201;;x
+4948;130;147;74;;x
+4949;172;150;202;;x
+4950;4;153;75;;x
+4951;46;156;203;;x
 4952;88;159;76;;x
 4953;130;162;204;;x
 4954;172;165;77;;x
