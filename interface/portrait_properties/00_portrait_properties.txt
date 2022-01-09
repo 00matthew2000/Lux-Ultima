@@ -3634,6 +3634,7 @@
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
 				culture = manden
+				culture_group = east_african
 			}
 		}
 	}
@@ -4697,7 +4698,7 @@
 			factor = 0
 			NOR = {
 				has_minor_title = title_cardinal
-				#has_minor_title = title_fraticelli_cardinal
+				has_minor_title = title_fraticelli_cardinal
 			}
 		}
 	}
@@ -4715,7 +4716,7 @@
 			factor = 0
 			NOR = {
 				has_minor_title = title_cardinal
-				#has_minor_title = title_fraticelli_cardinal
+				has_minor_title = title_fraticelli_cardinal
 			}
 		}
 	}
@@ -5794,7 +5795,7 @@
 				is_theocracy = yes
 				is_merchant_republic = yes
 				has_job_title = job_spiritual
-				#french_overlayer_special_crown_trigger = yes
+				french_overlayer_special_crown_trigger = yes
 				NOR = {
 					#has_portrait_property = { layer = 5 index = 0 }
 					#has_portrait_property = { layer = 5 index = 1 }
@@ -5939,7 +5940,7 @@
 				is_theocracy = yes
 				is_merchant_republic = yes
 				has_job_title = job_spiritual
-				#french_overlayer_special_crown_trigger = yes
+				french_overlayer_special_crown_trigger = yes
 				NOR = {
 					#has_portrait_property = { layer = 5 index = 0 }
 					#has_portrait_property = { layer = 5 index = 1 }
@@ -6192,7 +6193,7 @@
 				is_theocracy = yes
 				is_merchant_republic = yes
 				has_job_title = job_spiritual
-				#french_overlayer_special_crown_trigger = yes
+				french_overlayer_special_crown_trigger = yes
 				NOR = {
 					#has_portrait_property = { layer = 5 index = 0 }
 					#has_portrait_property = { layer = 5 index = 1 }
@@ -6595,6 +6596,15 @@
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_landed_title = d_knights_santiago 
+				has_landed_title = d_knights_calatrava 
+				liege = { has_landed_title = d_knights_santiago }
+				liege = { has_landed_title = d_knights_calatrava }
+			}
+		}
 	}
 	8 = { #Wearable Wrapped Helmet
 		factor = 100
@@ -6645,6 +6655,13 @@
 					name = martial_headgear
 					value = on
 				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_landed_title = d_livonian_order 
+				liege = { has_landed_title = d_livonian_order }
 			}
 		}
 	}
