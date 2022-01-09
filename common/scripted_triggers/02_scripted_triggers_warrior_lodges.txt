@@ -1,24 +1,24 @@
 
-####################################################
-#### Warrior Lodge work...
-####################################################
+#####################################################
+##### Warrior Lodge work...
+#####################################################
 
 
-# is_member_of_roots_#warrior_lodge_trigger = {
-	# custom_tooltip = {
-		# text = is_member_of_roots_#warrior_lodge_tt
-		# hidden_trigger = {
-			# is_member_of_any_#warrior_lodge_trigger = yes
-			# same_society_as = ROOT
-		# }
-	# }
-# }
+is_member_of_roots_#warrior_lodge_trigger = {
+	custom_tooltip = {
+		text = is_member_of_roots_#warrior_lodge_tt
+		hidden_trigger = {
+			is_member_of_any_#warrior_lodge_trigger = yes
+			same_society_as = ROOT
+		}
+	}
+}
 
-# is_member_of_any_#warrior_lodge_trigger = {
-	# custom_tooltip = {
-		# text = is_member_of_any_#warrior_lodge_tt
-		# hidden_trigger = {
-			# OR = {
+is_member_of_any_#warrior_lodge_trigger = {
+	custom_tooltip = {
+		text = is_member_of_any_#warrior_lodge_tt
+		hidden_trigger = {
+			OR = {
 				# society_member_of = #warrior_lodge_norse
 				# society_member_of = #warrior_lodge_tengri
 				# society_member_of = #warrior_lodge_baltic
@@ -28,14 +28,14 @@
 				# society_member_of = #warrior_lodge_zun
 				# society_member_of = #warrior_lodge_bon
 				# society_member_of = #warrior_lodge_hellenic
-			# }
-		# }
-	# }
-# }
+			}
+		}
+	}
+}
 
 
-# has_any_#warrior_lodge_training_trait_trigger = {
-	# OR = {
+has_any_#warrior_lodge_training_trait_trigger = {
+	OR = {
 		# trait = norse_leader
 		# trait = tengri_leader
 		# trait = baltic_leader
@@ -45,13 +45,13 @@
 		# trait = zun_leader
 		# trait = bon_leader
 		# trait = hellenic_leader
-	# }
-# }
+	}
+}
 
-# has_current_#warrior_lodge_leader_trait_trigger = {
-	# custom_tooltip = {
-		# text = has_warrior_training_with_current_society_tt
-		# OR = {
+has_current_#warrior_lodge_leader_trait_trigger = {
+	custom_tooltip = {
+		text = has_warrior_training_with_current_society_tt
+		OR = {
 			# AND = {
 				# trait = norse_leader
 				# society_member_of = #warrior_lodge_norse
@@ -88,14 +88,14 @@
 				# trait = hellenic_leader
 				# society_member_of = #warrior_lodge_hellenic
 			# }
-		# }
-	# }
-# }
+		}
+	}
+}
 
-# has_religion_matching_joined_#warrior_lodge_trigger = {
-	# custom_tooltip = {
-		# text = has_religion_matching_joined_#warrior_lodge_tt
-		# OR = {
+has_religion_matching_joined_#warrior_lodge_trigger = {
+	custom_tooltip = {
+		text = has_religion_matching_joined_#warrior_lodge_tt
+		OR = {
 			# AND = {
 				# #religion_openly_norse_or_reformed_trigger = yes
 				# society_member_of = #warrior_lodge_norse
@@ -132,12 +132,12 @@
 				# ##religion_openly_hellenic_or_reformed_trigger = yes = yes
 				# society_member_of = #warrior_lodge_hellenic
 			# }
-		# }
-	# }
-# }
+		}
+	}
+}
 
-# has_religion_matching_available_#warrior_lodge_trigger = {
-	# OR = {
+has_religion_matching_available_#warrior_lodge_trigger = {
+	OR = {
 		# AND = {
 			# #religion_openly_norse_or_reformed_trigger = yes
 			# #warrior_lodge_norse = { society_has_members = yes }
@@ -174,54 +174,54 @@
 			# ##religion_openly_hellenic_or_reformed_trigger = yes = yes
 			# #warrior_lodge_hellenic = { society_has_members = yes }
 		# }
-	# }
-# }
+	}
+}
 
-# has_religion_matching_#warrior_lodge_in_need_of_members_trigger = {
-	# OR = {
-		# AND = {
-			# religion_openly_norse_or_reformed_trigger = yes
-			# warrior_lodge_norse = { num_of_society_members < 30 }
-		# }
-		# AND = {
-			# religion_openly_baltic_or_reformed_trigger = yes
-			# warrior_lodge_baltic = { num_of_society_members < 30 }
-		# }
-		# AND = {
-			# religion_openly_finnish_or_reformed_trigger = yes
-			# warrior_lodge_finnish = { num_of_society_members < 30 }
-		# }
-		# AND = {
-			# religion_openly_slavic_or_reformed_trigger = yes
-			# warrior_lodge_slavic = { num_of_society_members < 30 }
-		# }
-		# AND = {
-			# religion_openly_west_african_or_reformed_trigger = yes
-			# warrior_lodge_west_african = { num_of_society_members < 30 }
-		# }
-		# AND = {
-			# religion_openly_zun_or_reformed_trigger = yes
-			# warrior_lodge_zun = { num_of_society_members < 30 }
-		# }
-		# AND = {
-			# #religion_openly_bon_or_reformed_trigger = yes
-			# warrior_lodge_bon = { num_of_society_members < 30 }
-		# }
-		# AND = {
-			# #religion_openly_hellenic_or_reformed_trigger = yes = yes
-			# warrior_lodge_hellenic = { num_of_society_members < 30 }
-		# }
-		# AND = {
-			# OR = {
-				# religion_openly_tengri_or_reformed_trigger = yes
-				# is_nomadic = yes
-			# }
-			# warrior_lodge_tengri = { num_of_society_members < 30 }
-		# }
-	# }
-# }
-# has_religion_matching_empty_#warrior_lodge_trigger = {
-	# OR = {
+has_religion_matching_#warrior_lodge_in_need_of_members_trigger = {
+	OR = {
+		AND = {
+			#religion_openly_norse_or_reformed_trigger = yes
+			#warrior_lodge_norse = { num_of_society_members < 30 }
+		}
+		AND = {
+			#religion_openly_baltic_or_reformed_trigger = yes
+			#warrior_lodge_baltic = { num_of_society_members < 30 }
+		}
+		AND = {
+			#religion_openly_finnish_or_reformed_trigger = yes
+			#warrior_lodge_finnish = { num_of_society_members < 30 }
+		}
+		AND = {
+			#religion_openly_slavic_or_reformed_trigger = yes
+			#warrior_lodge_slavic = { num_of_society_members < 30 }
+		}
+		AND = {
+			#religion_openly_west_african_or_reformed_trigger = yes
+			#warrior_lodge_west_african = { num_of_society_members < 30 }
+		}
+		AND = {
+			#religion_openly_zun_or_reformed_trigger = yes
+			#warrior_lodge_zun = { num_of_society_members < 30 }
+		}
+		AND = {
+			##religion_openly_bon_or_reformed_trigger = yes
+			#warrior_lodge_bon = { num_of_society_members < 30 }
+		}
+		AND = {
+			##religion_openly_hellenic_or_reformed_trigger = yes = yes
+			#warrior_lodge_hellenic = { num_of_society_members < 30 }
+		}
+		AND = {
+			OR = {
+				#religion_openly_tengri_or_reformed_trigger = yes
+				is_nomadic = yes
+			}
+			#warrior_lodge_tengri = { num_of_society_members < 30 }
+		}
+	}
+}
+has_religion_matching_empty_#warrior_lodge_trigger = {
+	OR = {
 		# AND = {
 			# #religion_openly_norse_or_reformed_trigger = yes
 			# NOT = { #warrior_lodge_norse = { society_has_members = yes } }
@@ -258,12 +258,12 @@
 			# ##religion_openly_hellenic_or_reformed_trigger = yes = yes
 			# NOT = { #warrior_lodge_hellenic = { society_has_members = yes } }
 		# }
-	# }
-# }
+	}
+}
 
-# Can be used on a character too -- will then default to look at the society a character is member of.
-# this_society_is_a_#warrior_lodge_trigger = {
-	# OR = {
+#Can be used on a character too -- will then default to look at the society a character is member of.
+this_society_is_a_#warrior_lodge_trigger = {
+	OR = {
 	    # is_society = #warrior_lodge_norse
 	    # is_society = #warrior_lodge_tengri
 	    # is_society = #warrior_lodge_baltic
@@ -273,25 +273,25 @@
 	    # is_society = #warrior_lodge_zun
 	    # is_society = #warrior_lodge_bon
 	    # is_society = #warrior_lodge_hellenic
-	# }
-# }
+	}
+}
 
-# has_religion_matching_any_#warrior_lodge_trigger = {
-	# OR = {
-		# religion_openly_norse_or_reformed_trigger = yes
-		# religion_openly_tengri_or_reformed_trigger = yes
-		# religion_openly_baltic_or_reformed_trigger = yes
-		# religion_openly_finnish_or_reformed_trigger = yes
-		# religion_openly_slavic_or_reformed_trigger = yes
-		# religion_openly_west_african_or_reformed_trigger = yes
+has_religion_matching_any_#warrior_lodge_trigger = {
+	OR = {
+		#religion_openly_norse_or_reformed_trigger = yes
+		#religion_openly_tengri_or_reformed_trigger = yes
+		#religion_openly_baltic_or_reformed_trigger = yes
+		#religion_openly_finnish_or_reformed_trigger = yes
+		#religion_openly_slavic_or_reformed_trigger = yes
+		#religion_openly_west_african_or_reformed_trigger = yes
 		# #religion_openly_zun_or_reformed_trigger = yes
 		# #religion_openly_bon_or_reformed_trigger = yes
 		# ##religion_openly_hellenic_or_reformed_trigger = yes = yes
-	# }
-# }
+	}
+}
 
-# has_religion_matching_#warrior_lodge_to_revive_trigger = {
-	# OR = {
+has_religion_matching_#warrior_lodge_to_revive_trigger = {
+	OR = {
 		# AND = {
 			# #religion_openly_norse_or_reformed_trigger = yes
 			# event_target:#warrior_lodge_to_revive = {
@@ -346,13 +346,13 @@
 				# is_society = #warrior_lodge_hellenic
 			# }
 		# }
-	# }
-# }
+	}
+}
 
-# special_join_#warrior_lodge_trigger = {
-	# custom_tooltip = {
-		# text = special_join_#warrior_lodge_trigger_tt
-		# OR = {
+special_join_#warrior_lodge_trigger = {
+	custom_tooltip = {
+		text = special_join_#warrior_lodge_trigger_tt
+		OR = {
 			# AND = {
 				# FROM = { is_society = #warrior_lodge_norse }
 				# custom_tooltip = {
@@ -470,9 +470,9 @@
 					# }
 				# }
 			# }
-		# }
-	# }
-# }
+		}
+	}
+}
 
 is_available_fellow_society_member_trigger = {
 	same_society_as = ROOT

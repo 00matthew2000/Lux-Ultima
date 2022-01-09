@@ -2852,67 +2852,67 @@ character_event = {
 }
 
 #Chance to secretly become hellenic.
-# character_event = {
-	# id = HF.23028
-	# desc = EVTDESCAHF23028
+character_event = {
+	id = HF.23028
+	desc = EVTDESCAHF23028
 
-	# picture = GFX_evt_library
-	# border = GFX_event_normal_frame_religion
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
 	
-	# is_triggered_only = yes
+	is_triggered_only = yes
 	
-	# option = { 
-		# name = EVTOPTAHF23028
-		# trigger = { 
-			# NOR = { 
-				# religion = hellenic_pagan
-				# religion = hellenic_pagan_reformed
-				# secret_religion = hellenic_pagan
-				# secret_religion = hellenic_pagan_reformed
-			# }  
-		# } 
-		# if = { 
-			# limit = { trait = zealous } 
-			# remove_trait = zealous
-		# } 
-		# if = {
-			# limit = {
-				# has_game_rule = {
-					# name = secret_cults
-					# value = default
-				# }
-			# }
-			# set_secret_religion = hellenic_pagan
-		# }
-		# if = {
-			# limit = {
-				# has_game_rule = {
-					# name = secret_cults
-					# value = none
-				# }
-			# }
-			# religion = hellenic_pagan
-		# }
-		# ai_chance = { factor = 2 } 
-	# }
-	# option = { 
-		# name = EVTOPTCHF23028
-		# trigger = { 
-			# OR = { 
-				# #religion = hellenic_pagan
-				# #religion = hellenic_pagan_reformed
-				# secret_#religion = hellenic_pagan
-				# secret_#religion = hellenic_pagan_reformed
-			# }  
-		# } 
-		# tiered_piety_reward_effect = yes
-		# ai_chance = { factor = 0 } 
-	# }
-	# option = { 
-		# name = EVTOPTBHF23028
-		# ai_chance = { factor = 98 } 
-	# }
-# }
+	option = { 
+		name = EVTOPTAHF23028
+		trigger = { 
+			NOR = { 
+				#religion = hellenic_pagan
+				#religion = hellenic_pagan_reformed
+				secret_#religion = hellenic_pagan
+				secret_#religion = hellenic_pagan_reformed
+			}  
+		} 
+		if = { 
+			limit = { trait = zealous } 
+			remove_trait = zealous
+		} 
+		if = {
+			limit = {
+				has_game_rule = {
+					name = secret_cults
+					value = default
+				}
+			}
+			set_secret_#religion = hellenic_pagan
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					name = secret_cults
+					value = none
+				}
+			}
+			#religion = hellenic_pagan
+		}
+		ai_chance = { factor = 2 } 
+	}
+	option = { 
+		name = EVTOPTCHF23028
+		trigger = { 
+			OR = { 
+				#religion = hellenic_pagan
+				#religion = hellenic_pagan_reformed
+				secret_#religion = hellenic_pagan
+				secret_#religion = hellenic_pagan_reformed
+			}  
+		} 
+		tiered_piety_reward_effect = yes
+		ai_chance = { factor = 0 } 
+	}
+	option = { 
+		name = EVTOPTBHF23028
+		ai_chance = { factor = 98 } 
+	}
+}
 #Studied military.
 character_event = {
 	id = HF.23029
