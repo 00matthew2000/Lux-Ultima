@@ -108,9 +108,9 @@ title_decisions = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
@@ -163,9 +163,9 @@ title_decisions = {
 				remove_province_modifier = nomad_agitation
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -211,7 +211,7 @@ title_decisions = {
 				}
 			}
 
-			holder_scope = {
+			location = {
 				capital_holding = {
 					NOR = {
 						has_siege = yes
@@ -241,7 +241,7 @@ title_decisions = {
 						OR = {
 							is_merchant_republic = yes
 							is_republic = yes
-							#government = order_government
+							government = order_government
 						}
 					}
 				}
@@ -260,9 +260,9 @@ title_decisions = {
 			location = { set_province_flag = crown_focus_province }
 		}
 
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -307,7 +307,7 @@ title_decisions = {
 				}
 			}
 
-			holder_scope = {
+			location = {
 				capital_holding = {
 					NOR = {
 						has_siege = yes
@@ -355,9 +355,9 @@ title_decisions = {
 			location = { set_province_flag = crown_focus_province }
 		}
 
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 1

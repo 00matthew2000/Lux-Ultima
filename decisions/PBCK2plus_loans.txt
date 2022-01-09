@@ -635,9 +635,9 @@ decisions = {
 			}
 			add_character_modifier = { name = "loan_timer" duration = -1 }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1			
 		}

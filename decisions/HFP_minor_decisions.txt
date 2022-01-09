@@ -263,9 +263,9 @@ decisions = {
 			character_event = { id = HF.15000 } #send storytelling-choice event...
 		}
 		
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 1

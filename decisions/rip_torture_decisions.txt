@@ -250,9 +250,9 @@ targetted_decisions = {
 			}
 		}
 
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 0.01
@@ -262,7 +262,7 @@ targetted_decisions = {
 				OR = {
 					reverse_opinion = { who = FROM value = 40 }
 					FROM = { NOT = { piety = 100 } }
-					FROM = { liege = { dynasty = ROOT } }
+					FROM = { LIEGE = { dynasty = ROOT } }
 				}
 			}
 			modifier = {
@@ -322,17 +322,19 @@ targetted_decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
-			OR = {
-				trait = cruel
-				trait = impaler
-				trait = wroth
-				trait = arbitrary
-				AND = {
-					trait = envious
-					trait = ugly
+			AND = {
+				OR = {
+					trait = cruel
+					trait = impaler
+					trait = wroth
+					trait = arbitrary
+					AND = {
+						trait = envious
+						trait = ugly
+					}
 				}
+				NOT = { trait = kind }
 			}
-			NOT = { trait = kind }
 		}
 
 		potential = {
@@ -538,9 +540,9 @@ targetted_decisions = {
 
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 0.4
@@ -550,7 +552,7 @@ targetted_decisions = {
 				OR = {
 					reverse_opinion = { who = FROM value = 40 }
 					FROM = { NOT = { piety = 100 } }
-					FROM = { liege = { dynasty = ROOT } }
+					FROM = { LIEGE = { dynasty = ROOT } }
 				}
 			}
 			modifier = {
@@ -645,9 +647,9 @@ targetted_decisions = {
 			
 			hidden_effect = { FROM = { clear_prison_reasons = ROOT } }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 0.01
@@ -876,9 +878,9 @@ targetted_decisions = {
 			}
 			hidden_effect = { FROM = { clear_prison_reasons = ROOT } }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0.01
 			

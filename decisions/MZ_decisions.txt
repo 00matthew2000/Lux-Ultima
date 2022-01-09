@@ -27,9 +27,9 @@ decisions = {
 			set_character_flag = made_sacrifice_1
 			narrative_event = { id = li_zoroastrian.220 }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -80,9 +80,9 @@ decisions = {
 				666 = { set_province_flag = reb_pers_1 }
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -122,9 +122,9 @@ decisions = {
 			scaled_wealth = -0.3
 			narrative_event = { id = li_zoroastrian.225 }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {

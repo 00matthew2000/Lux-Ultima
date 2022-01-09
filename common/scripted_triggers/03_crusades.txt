@@ -134,12 +134,12 @@ check_if_crusader_trigger = {
 		trigger = {
 			ROOT = {
 				religion = catholic
-				#OR = {
+				OR = {
 					has_pledged_crusade_participation = yes
-					#any_war = {
-						#using_cb = new_crusade
-					#}
-				#}
+					any_war = {
+						using_cb = new_crusade
+					}
+				}
 			}
 		}
 		custom_tooltip = {
@@ -152,14 +152,14 @@ check_if_crusader_trigger = {
 						has_pledged_crusade_participation = yes
 					}
 					catholic = {
-						#OR = {
+						OR = {
 							is_preparing_crusade = yes
-							#ROOT = {
-								#any_war = {
-									#using_cb = new_crusade
-								#}
-							#}
-						#}
+							ROOT = {
+								any_war = {
+									using_cb = new_crusade
+								}
+							}
+						}
 					}
 					FROM = {
 						religion = catholic

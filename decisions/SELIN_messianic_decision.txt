@@ -30,9 +30,9 @@ decisions = {
 				add_law_w_cooldown = messianic_power_3
 			}
 		}
-		#revoke_allowed = {
-			#always = yes
-		#}
+		revoke_allowed = {
+			always = yes
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -110,9 +110,9 @@ decisions = {
 				add_law_w_cooldown = messianic_power_4
 			}
 		}
-		#revoke_allowed = {
-			#always = yes
-		#}
+		revoke_allowed = {
+			always = yes
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {

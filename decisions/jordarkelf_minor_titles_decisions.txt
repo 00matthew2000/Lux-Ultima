@@ -445,14 +445,14 @@ decisions = {
 							has_minor_title = title_sebastokrator
 							has_minor_title = title_caesar
 							has_minor_title = title_kouropalates
-							#has_minor_title = title_kanikleios
-							#has_minor_title = title_protospatharios
+							has_minor_title = title_kanikleios
+							has_minor_title = title_protospatharios
 							has_minor_title = title_anthypatos
 							has_minor_title = title_court_musician
 							has_minor_title = title_lawspeaker
-							#has_minor_title = title_lique_mekwas
-							#has_minor_title = title_belen_tigui
-							#has_minor_title = title_nagid
+							has_minor_title = title_lique_mekwas
+							has_minor_title = title_belen_tigui
+							has_minor_title = title_nagid
 						}
 					}
 					give_minor_title = title_keeper_of_swans
@@ -493,14 +493,14 @@ decisions = {
 							has_minor_title = title_sebastokrator
 							has_minor_title = title_caesar
 							has_minor_title = title_kouropalates
-							#has_minor_title = title_kanikleios
-							#has_minor_title = title_protospatharios
+							has_minor_title = title_kanikleios
+							has_minor_title = title_protospatharios
 							has_minor_title = title_anthypatos
 							has_minor_title = title_court_musician
 							has_minor_title = title_lawspeaker
-							#has_minor_title = title_lique_mekwas
-							#has_minor_title = title_belen_tigui
-							#has_minor_title = title_nagid
+							has_minor_title = title_lique_mekwas
+							has_minor_title = title_belen_tigui
+							has_minor_title = title_nagid
 						}
 						is_adult = yes
 						is_female = no
@@ -542,14 +542,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						is_female = no
 						NOT = { trait = craven }
@@ -589,14 +589,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						NOT = { trait = cynical }
 					}
@@ -628,14 +628,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						is_female = no
 					}
@@ -667,14 +667,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						is_female = no
 					}
@@ -709,14 +709,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_close_relative = ROOT
 						NOT = { religion_group = muslim }
 					}
@@ -751,14 +751,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 					}
 					give_minor_title = title_caesar
 				}
@@ -790,14 +790,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						is_female = no
 						NOT = { religion_group = muslim }
@@ -859,14 +859,14 @@ decisions = {
 							has_minor_title = title_sebastokrator
 							has_minor_title = title_caesar
 							has_minor_title = title_kouropalates
-							#has_minor_title = title_kanikleios
-							#has_minor_title = title_protospatharios
+							has_minor_title = title_kanikleios
+							has_minor_title = title_protospatharios
 							has_minor_title = title_anthypatos
 							has_minor_title = title_court_musician
 							has_minor_title = title_lawspeaker
-							#has_minor_title = title_lique_mekwas
-							#has_minor_title = title_belen_tigui
-							#has_minor_title = title_nagid
+							has_minor_title = title_lique_mekwas
+							has_minor_title = title_belen_tigui
+							has_minor_title = title_nagid
 							trait = temperate
 						}
 					}
@@ -906,14 +906,14 @@ decisions = {
 							has_minor_title = title_sebastokrator
 							has_minor_title = title_caesar
 							has_minor_title = title_kouropalates
-							#has_minor_title = title_kanikleios
-							#has_minor_title = title_protospatharios
+							has_minor_title = title_kanikleios
+							has_minor_title = title_protospatharios
 							has_minor_title = title_anthypatos
 							has_minor_title = title_court_musician
 							has_minor_title = title_lawspeaker
-							#has_minor_title = title_lique_mekwas
-							#has_minor_title = title_belen_tigui
-							#has_minor_title = title_nagid
+							has_minor_title = title_lique_mekwas
+							has_minor_title = title_belen_tigui
+							has_minor_title = title_nagid
 							trait = lefthanded
 						}
 					}
@@ -955,14 +955,14 @@ decisions = {
 							has_minor_title = title_sebastokrator
 							has_minor_title = title_caesar
 							has_minor_title = title_kouropalates
-							#has_minor_title = title_kanikleios
-							#has_minor_title = title_protospatharios
+							has_minor_title = title_kanikleios
+							has_minor_title = title_protospatharios
 							has_minor_title = title_anthypatos
 							has_minor_title = title_court_musician
 							has_minor_title = title_lawspeaker
-							#has_minor_title = title_lique_mekwas
-							#has_minor_title = title_belen_tigui
-							#has_minor_title = title_nagid
+							has_minor_title = title_lique_mekwas
+							has_minor_title = title_belen_tigui
+							has_minor_title = title_nagid
 							trait = deaf
 						}
 					}
@@ -999,14 +999,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						is_female = no
 						NOT = { trait = deaf }
@@ -1042,14 +1042,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						is_female = no
 					}
@@ -1080,14 +1080,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						is_female = no
 						NOT = { trait = arbitrary }
@@ -1122,14 +1122,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						is_female = no
 						NOT = { trait = craven }
@@ -1160,14 +1160,14 @@ decisions = {
 						NOT = { has_minor_title = title_sebastokrator }
 						NOT = { has_minor_title = title_caesar }
 						NOT = { has_minor_title = title_kouropalates }
-						#NOT = { has_minor_title = title_kanikleios }
-						#NOT = { has_minor_title = title_protospatharios }
+						NOT = { has_minor_title = title_kanikleios }
+						NOT = { has_minor_title = title_protospatharios }
 						NOT = { has_minor_title = title_anthypatos }
 						NOT = { has_minor_title = title_court_musician }
 						NOT = { has_minor_title = title_lawspeaker }
-						#NOT = { has_minor_title = title_lique_mekwas }
-						#NOT = { has_minor_title = title_belen_tigui }
-						#NOT = { has_minor_title = title_nagid }
+						NOT = { has_minor_title = title_lique_mekwas }
+						NOT = { has_minor_title = title_belen_tigui }
+						NOT = { has_minor_title = title_nagid }
 						is_adult = yes
 						is_female = no
 						NOT = { trait = arbitrary }

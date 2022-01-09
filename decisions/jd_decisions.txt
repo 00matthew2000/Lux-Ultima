@@ -87,7 +87,7 @@ decisions = {
 						}
 					}
 				}
-				#character_event = { id = HF.24240 tooltip = tooltip_evt_hf_24240 }
+				character_event = { id = HF.24240 tooltip = tooltip_evt_hf_24240 }
 			}
 			custom_tooltip = {
 				text = adopt_chinese_imperialism_tt
@@ -570,7 +570,10 @@ decisions = {
 									tier = DUKE
 									AND = {
 										is_nomadic = yes
-										num_of_count_titles_in_realm > 8
+										AND = {
+											is_nomadic = yes
+											num_of_count_titles_in_realm > 8
+										}
 									}
 								}
 							}
@@ -984,18 +987,18 @@ decisions = {
 				}
 			}
 
-			#if = {
-				#limit = {
-					#FROM = {
-						#capital_scope = {
-							#NOT = { region = world_india }
-						#}
-					#}
-				#}
-				#1513 = { # Jiuquan
-					#save_event_target_as = spawn_province
-				#}
-			#}
+			if = {
+				limit = {
+					FROM = {
+						capital_scope = {
+							NOT = { region = world_india }
+						}
+					}
+				}
+				1513 = { # Jiuquan
+					save_event_target_as = spawn_province
+				}
+			}
 			else = {
 				offmap_china = { set_offmap_flag = troop_spawn_india_temp }
 				1318 = { # Samatata
@@ -1043,9 +1046,9 @@ decisions = {
 			# variable: china_war_troop_quality
 			# variable: china_war_troop_quantity
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1134,9 +1137,9 @@ decisions = {
 			character_event = { id = JD.10060 }
 		}
 		
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -1267,13 +1270,13 @@ targeted_decisions = {
 									NOT = {
 										has_province_modifier = nomad_agitation
 									}
-									NOT = { port = yes }
 									OR = {
 										AND = {
 											ROOT = { is_seafarer = yes }
 											port = yes
 										}
 										ROOT = { is_seafarer = no }
+										NOT = { any_demesne_province = { port = yes } }
 									}
 								}
 							}
@@ -1305,7 +1308,7 @@ targeted_decisions = {
 			}
 		}
 
-		#revoke_allowed = { always = no }
+		revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 0

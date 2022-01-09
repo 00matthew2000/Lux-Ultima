@@ -37,9 +37,9 @@ decisions = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			
@@ -189,9 +189,9 @@ decisions = {
 			}
 			wealth = -200
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			
@@ -207,12 +207,12 @@ decisions = {
 			
 			modifier = {
 				factor = 0
-				NOT = { opinion = { who = liege value =  25 } }
+				NOT = { opinion = { who = LIEGE value =  25 } }
 			}
 			
 			modifier = {
 				factor = 0
-				is_rival = liege
+				is_rival = LIEGE
 			}
 			
 			modifier = {
@@ -247,7 +247,7 @@ decisions = {
 			
 			modifier = {
 				factor = 10
-				is_friend = liege
+				is_friend = LIEGE
 			}
 		}
 	}

@@ -205,7 +205,7 @@
 	culture="japanese"
 	add_trait="naive_appeaser"
 	father=1000075008
-	584.1.1={
+	593.1.1={
 		birth="593.1.1"
 	}
 	621.1.1={
@@ -226,6 +226,7 @@
 	culture="japanese"
 	add_trait="naive_appeaser"
 #	father=1000075008
+	father=0
 	560.1.1={
 		birth="560.1.1"
 	}
@@ -301,8 +302,8 @@
 	add_trait="intricate_webweaver"
 	father=1000075009
 	mother=1000075011
-	626.1.1={
-		birth="626.1.1"
+	596.1.1={
+		birth="596.1.1"
 	}
 	643.1.1={
 		add_spouse=1000075122
@@ -483,7 +484,7 @@
 	701.1.1={
 		birth="701.1.1"
 	}
-	717.1.1={
+	707.1.1={
 		add_spouse=1000075125
 	}
 	721.12.29={
@@ -540,7 +541,7 @@
 	religion="nihon_shinto"
 	culture="japanese"
 	add_trait="naive_appeaser"
-	father=1000075023
+	father=1000075015
 	733.1.1={
 		birth="733.1.1"
 	}
@@ -982,7 +983,7 @@
 	1016.3.24={
 		name = "Go-Ichijo"
 	}
-	1022.3.1={
+	1018.3.1={
 		add_spouse=1000075088
 	}
 	1036.5.15={
@@ -1080,6 +1081,528 @@
 	}
 	1129.7.24={
 		death="1129.7.24"
+	}
+}
+
+1000075351 = {
+	name="Yoshihito"
+	# Emperor Horikawa
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="naive_appeaser"
+	add_trait="poet"
+	father=1000075049
+	1079.8.8={
+		birth="1079.8.8"
+	}
+	1086.12.16={
+		name = "Horikawa"
+	}
+	1107.8.9={
+		death="1107.8.9"
+	}
+}
+
+1000075352 = {
+	name="Munehito"
+	# Emperor Toba
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="flamboyant_schemer"
+	add_trait="poet"
+	father=1000075351
+	1103.2.24={
+		birth="1103.2.24"
+	}
+	1107.8.9={
+		name = "Toba"
+	}
+	1156.7.20={
+		death="1156.7.20"
+	}
+}
+
+1000075353 = {
+	name="Akihito"
+	# Emperor Sutoku
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	add_trait="poet"
+	add_trait="envious"
+	father=1000075352
+	1119.7.7={
+		birth="1119.7.7"
+	}
+	1123.2.19={
+		name = "Sutoku"
+	}
+	1164.9.14={
+		death="1164.9.14"
+	}
+}
+
+1000075354 = {
+	name="Masahito"
+	# Emperor Go-Shirakawa
+	dynasty=1000027000 # Yamato (Imperial Family)
+	martial=4
+	diplomacy=9
+	intrigue=8
+	stewardship=7
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="elusive_shadow"
+	add_trait="quick"
+	father=1000075352
+	1127.8.23={
+		birth="1127.8.23"
+	}
+	1155.8.23={
+		name = "Go-Shirakawa"
+	}
+	1192.4.26={
+		death="1192.4.26"
+	}
+}
+
+1000075355 = {
+	name="Narihito"
+	# Emperor Konoe
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="naive_appeaser"
+	father=1000075352
+	1139.6.16={
+		birth="1127.8.23"
+	}
+	1142.1.5={
+		name = "Konoe"
+	}
+	1155.8.22={
+		death="1155.8.22"
+	}
+}
+
+1000075356 = {
+	name="Morihito"
+	# Emperor Nijo
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="indulgent_wastrel"
+	add_trait="fair"
+	father=1000075354
+	1143.7.31={
+		birth="1143.7.31"
+	}
+	1158.9.5={
+		name = "Nijo"
+	}
+	1165.9.5={
+		death="1165.9.5"
+	}
+}
+
+1000075357 = {
+	name="Nobuhito"
+	# Emperor Rokujo
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="indulgent_wastrel"
+	add_trait="fair"
+	father=1000075356
+	1165.8.3={
+		birth="1165.8.3"
+	}
+	1165.8.3={
+		name = "Rokujo"
+	}
+	1176.8.23={
+		death="1176.8.23"
+	}
+}
+
+1000075358 = {
+	name="Norihito"
+	# Emperor Takakura
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="naive_appeaser"
+	father=1000075354
+	1161.9.23={
+		birth="1161.9.23"
+	}
+	1168.3.30={
+		name = "Takakura"
+	}
+	1181.2.6={
+		death="1181.2.6"
+	}
+}
+
+1000075359 = {
+	name="Tokihito"
+	# Emperor Antoku
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	father=1000075358
+	1178.12.22={
+		birth="1178.12.22"
+	}
+	1180.5.18={
+		name = "Antoku"
+	}
+	1185.4.25={
+		death="1185.4.25"
+	}
+}
+
+1000075360 = {
+	name="Takanari"
+	# Emperor Go-Toba
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="intricate_webweaver"
+	add_trait="poet"
+	add_trait="arbitrary"
+	add_trait="ambitious"
+	add_trait="wroth"
+	father=1000075358
+	1180.8.6={
+		birth="1180.8.6"
+	}
+	1183.9.8={
+		name = "Go-Toba"
+	}
+	1239.3.28={
+		death="1239.3.28"
+	}
+}
+
+1000075361 = {
+	name="Tamehito"
+	# Emperor Tsuchimikado
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="naive_appeaser"
+	add_trait="content"
+	add_trait="kind"
+	father=1000075360
+	1196.1.3={
+		birth="1196.1.3"
+	}
+	1198.2.18={
+		name = "Tsuchimikado"
+	}
+	1231.11.16={
+		death="1231.11.16"
+	}
+}
+
+1000075362 = {
+	name="Morinari"
+	# Emperor Juntoku
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	add_trait="wroth"
+	add_trait="scholar"
+	father=1000075360
+	1197.10.22={
+		birth="1197.10.22"
+	}
+	1210.12.12={
+		name = "Juntoku"
+	}
+	1242.10.7={
+		death="1242.10.7"
+	}
+}
+
+1000075363 = {
+	name="Kanenari"
+	# Emperor Chukyo
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	father=1000075362
+	1218.10.30={
+		birth="1197.10.22"
+	}
+	1221.5.13={
+		name = "Chukyo"
+	}
+	1234.6.18={
+		death="1234.6.18"
+	}
+}
+
+1000075364 = {
+	name="Morisada"
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="detached_priest"
+	father=1000075358
+	1179.4.6={
+		birth="1179.4.6"
+	}
+	1223.6.14={
+		death="1223.6.14"
+	}
+}
+
+1000075365 = {
+	name="Toyohito"
+	# Emperor Go-Horikawa
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	father=1000075364
+	1212.3.22={
+		birth="1212.3.22"
+	}
+	1221.7.29={
+		name = "Go-Horikawa"
+	}
+	1234.8.31={
+		death="1234.8.31"
+	}
+}
+
+1000075366 = {
+	name="Mitsuhito"
+	# Emperor Shijo
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="naive_appeaser"
+	father=1000075365
+	1231.3.17={
+		birth="1231.3.17"
+	}
+	1232.11.17={
+		name = "Shijo"
+	}
+	1242.2.10={
+		death="1242.2.10"
+	}
+}
+
+1000075367 = {
+	name="Kunihito"
+	# Emperor Go-Saga
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="naive_appeaser"
+	father=1000075361
+	1220.2.26={
+		birth="1220.2.26"
+	}
+	1242.2.21={
+		name = "Go-Saga"
+	}
+	1272.2.17={
+		death="1272.2.17"
+	}
+}
+
+1000075368 = {
+	name="Hisahito"
+	# Emperor Go-Fukakusa
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	father=1000075367
+	1243.6.10={
+		birth="1243.6.10"
+	}
+	1246.2.16={
+		name = "Go-Fukakusa"
+	}
+	1304.7.16={
+		death="1304.7.16"
+	}
+}
+
+1000075369 = {
+	name="Tsunehito"
+	# Emperor Kameyama
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	father=1000075367
+	1249.7.9={
+		birth="1249.7.9"
+	}
+	1260.1.9={
+		name = "Kameyama"
+	}
+	1305.10.4={
+		death="1305.10.4"
+	}
+}
+
+1000075370 = {
+	name="Yohito"
+	# Emperor Go-Uda
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	father=1000075369
+	1267.12.17={
+		birth="1267.12.17"
+	}
+	1274.3.6={
+		name = "Go-Uda"
+	}
+	1324.7.16={
+		death="1324.7.16"
+	}
+}
+
+1000075371 = {
+	name="Hirohito"
+	# Emperor Fushimi
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="naive_appeaser"
+	add_trait="poet"
+	father=1000075368
+	1265.5.10={
+		birth="1265.5.10"
+	}
+	1287.11.27={
+		name = "Fushimi"
+	}
+	1317.10.8={
+		death="1317.10.8"
+	}
+}
+
+1000075372 = {
+	name="Tanehito"
+	# Emperor Go-Fushimi
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	father=1000075371
+	1288.4.5={
+		birth="1288.4.5"
+	}
+	1298.8.30={
+		name = "Go-Fushimi"
+	}
+	1336.5.17={
+		death="1336.5.17"
+	}
+}
+
+1000075373 = {
+	name="Kuniharu"
+	# Emperor Go-Nijo
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="naive_appeaser"
+	father=1000075370
+	1285.3.9={
+		birth="1285.3.9"
+	}
+	1301.3.2={
+		name = "Go-Nijo"
+	}
+	1308.9.10={
+		death="1308.9.10"
+	}
+}
+
+1000075374 = {
+	name="Tomihito"
+	# Emperor Hanazono
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	father=1000075371
+	1297.8.14={
+		birth="1297.8.14"
+	}
+	1308.12.28={
+		name = "Hanazono"
+	}
+	1348.12.2={
+		death="1348.12.2"
+	}
+}
+
+1000075375 = {
+	name="Takaharu"
+	# Emperor Go-Daigo
+	dynasty=1000027000 # Yamato (Imperial Family)
+	martial=6
+	diplomacy=7
+	intrigue=10
+	stewardship=10
+	learning=7
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="charismatic_negotiator"
+	add_trait="ambitious"
+	add_trait="arbitrary"
+	add_trait="diligent"
+	add_trait="proud"
+	add_trait="gregarious"
+	add_trait="hedonist"
+	father=1000075370
+	1288.11.26={
+		birth="1288.11.26"
+	}
+	1318.4.30={
+		name = "Go-Daigo"
+	}
+	1339.9.19={
+		death="1339.9.19"
+	}
+}
+
+1000075376 = {
+	name="Kazuhito"
+	# Emperor Kogon
+	dynasty=1000027000 # Yamato (Imperial Family)
+	religion="nihon_shinto"
+	culture="japanese"
+	add_trait="amateurish_plotter"
+	add_trait="poet"
+	father=1000075372
+	1313.8.1={
+		birth="1313.8.1"
+	}
+	1331.10.22={
+		name = "Kogon"
+	}
+	1364.8.5={
+		death="1364.8.5"
 	}
 }
 
@@ -1621,7 +2144,7 @@
 		add_spouse=1000075095 # Takahime
 	}
 	1074.3.2={
-		death="1074.3.2"
+		death="1082.1.3"
 	}
 }
 
@@ -2237,7 +2760,7 @@
 	culture="japanese"
 	add_trait="naive_appeaser"
 	father=1000075118
-	576.1.1={
+	584.1.1={
 		birth="584.1.1"
 	}
 	643.10.28={
@@ -2285,6 +2808,7 @@
 	culture="japanese"
 	add_trait="naive_appeaser"
 #	father=1000075021
+	father=0
 	623.1.1={
 		birth="623.1.1"
 	}
@@ -3869,6 +4393,7 @@
 	culture="japanese"
 	add_trait="amateurish_plotter"
 #	father=1000075223
+	father=0
 	752.1.1={
 		birth="752.1.1"
 	}
@@ -3884,6 +4409,7 @@
 	culture="japanese"
 	add_trait="amateurish_plotter"
 #	father=1000075223
+	father=0
 	776.1.1={
 		birth="776.1.1"
 	}

@@ -461,9 +461,9 @@ decisions = {
 			set_global_flag = rome_restored
 			narrative_event = { id = LoR.20 tooltip = EVTTOOLTIPLoR.20 }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -821,10 +821,12 @@ decisions = {
 			
 			conditional_tooltip = {
 				trigger = {
-					is_alternate_start = yes
-					has_alternate_start_parameter = {
-						key = dejure_kingdoms
-						value = none
+					AND = {
+						is_alternate_start = yes
+						has_alternate_start_parameter = {
+							key = dejure_kingdoms
+							value = none
+						}
 					}
 				}
 				prestige = 250
@@ -966,10 +968,12 @@ decisions = {
 			}
 			if = {
 				limit = {
-					is_alternate_start = yes
-					has_alternate_start_parameter = {
-						key = dejure_kingdoms
-						value = none
+					AND = {
+						is_alternate_start = yes
+						has_alternate_start_parameter = {
+							key = dejure_kingdoms
+							value = none
+						}
 					}
 				}
 				wealth = -50
@@ -992,9 +996,9 @@ decisions = {
 				portrait = [Root.GetID]
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1070,10 +1074,12 @@ decisions = {
 			
 			conditional_tooltip = {
 				trigger = {
-					is_alternate_start = yes
-					has_alternate_start_parameter = {
-						key = dejure_empires
-						value = none
+					AND = {
+						is_alternate_start = yes
+						has_alternate_start_parameter = {
+							key = dejure_empires
+							value = none
+						}
 					}
 				}
 				prestige = 2000
@@ -1167,10 +1173,12 @@ decisions = {
 			
 			if = {
 				limit = {
-					is_alternate_start = yes
-					has_alternate_start_parameter = {
-						key = dejure_empires
-						value = none
+					AND = {
+						is_alternate_start = yes
+						has_alternate_start_parameter = {
+							key = dejure_empires
+							value = none
+						}
 					}
 				}
 				wealth = -200
@@ -1194,9 +1202,9 @@ decisions = {
 				portrait = [Root.GetID]
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1240,9 +1248,9 @@ decisions = {
 			set_character_flag = do_not_disturb
 			hidden_tooltip = { character_event = { id = HL.7000 } }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -1363,7 +1371,7 @@ decisions = {
 						tier = baron
 						holding_type = tribal
 					}
-					convert_to = castle
+					convert_to = CASTLE
 					refill_holding_levy = yes
 					location = { #Clear Tribal Great Pillars
 						clr_province_flag = flag_great_pillar_norse
@@ -1580,7 +1588,7 @@ decisions = {
 							}
 						}
 					}
-					convert_to = castle
+					convert_to = CASTLE
 					refill_holding_levy = yes
 					location = { #Clear Tribal Great Pillars
 						clr_province_flag = flag_great_pillar_norse
@@ -1762,7 +1770,7 @@ decisions = {
 										tier = baron
 										holding_type = tribal
 									}
-									convert_to = city
+									convert_to = CITY
 									refill_holding_levy = yes
 									location = { #Clear Tribal Great Pillars
 										clr_province_flag = flag_great_pillar_norse
@@ -1830,7 +1838,7 @@ decisions = {
 						tier = baron
 						holding_type = tribal
 					}
-					convert_to = city
+					convert_to = CITY
 					refill_holding_levy = yes
 					location = { #Clear Tribal Great Pillars
 						clr_province_flag = flag_great_pillar_norse
@@ -1946,9 +1954,9 @@ targetted_decisions = {
 			#character_event = { id = SoA.600 tooltip = EVTTOOLTIP_SoA_600 }
 		}
 		
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -2003,9 +2011,9 @@ targetted_decisions = {
 			#character_event = { id = SoA.601 tooltip = EVTTOOLTIP_SoA_601 }
 		}
 		
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		
 		ai_will_do = {
 			factor = 1

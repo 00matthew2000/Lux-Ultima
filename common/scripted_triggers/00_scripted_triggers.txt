@@ -1089,9 +1089,9 @@ can_be_marshal_trigger = {
 				AND = {
 					liege = {
 						primary_title = {
-							#OR = {
+							OR = {
 								has_law = status_of_women_3
-							#}
+							}
 						}
 					}
 					OR = {
@@ -1401,44 +1401,46 @@ can_be_councilmember_king_trigger = {
 			}
 		} 
 	}
-	OR = {
-		AND = { #Patriarchal religions can only hire males. Matriarchal religions can only hire females.
-			is_female = no 
-			NOT = { liege = { has_religion_feature = religion_matriarchal } } 
-		}
-		AND = {
-			is_female = yes 
-			NOT = { liege = { has_religion_feature = religion_patriarchal } } 
-		}
-		AND = {
-			feminist_religions_trigger = yes
-			liege = { religion = ROOT }
-		}
-		AND = {
-			is_female = yes
-			liege = {
-				primary_title = {
-					OR = {
-						has_law = status_of_women_1
-						has_law = status_of_women_2
-						has_law = status_of_women_3
+	AND = {
+		OR = {
+			AND = { #Patriarchal religions can only hire males. Matriarchal religions can only hire females.
+				is_female = no 
+				NOT = { liege = { has_religion_feature = religion_matriarchal } } 
+			}
+			AND = {
+				is_female = yes 
+				NOT = { liege = { has_religion_feature = religion_patriarchal } } 
+			}
+			AND = {
+				feminist_religions_trigger = yes
+				liege = { religion = ROOT }
+			}
+			AND = {
+				is_female = yes
+				liege = {
+					primary_title = {
+						OR = {
+							has_law = status_of_women_1
+							has_law = status_of_women_2
+							has_law = status_of_women_3
+						}
 					}
 				}
+				is_landed = yes
 			}
-			is_landed = yes
+			OR = {
+				AND = { 
+					is_female = yes
+					liege = { primary_title = { has_law = status_of_women_4 } } 
+				}
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
 		}
-		OR = {
-			AND = { 
-				is_female = yes
-				liege = { primary_title = { has_law = status_of_women_4 } } 
-			}
-			has_game_rule = {
-				name = gender
-				value = all
-			}
-		}
+		is_adult = yes
 	}
-	is_adult = yes
 }
 
 can_be_councilmember_emperor_trigger = {
@@ -5023,6 +5025,7 @@ silk_road_trade_post_trigger = {
 			province_id = 1220
 			province_id = 1221
 			province_id = 1288
+			province_id = 1297
 			province_id = 1297
 			province_id = 1318
 			province_id = 1338

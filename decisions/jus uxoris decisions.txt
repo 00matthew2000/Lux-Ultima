@@ -63,9 +63,9 @@ plot_decisions = {
 				activate_plot = yes
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {

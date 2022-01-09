@@ -21,7 +21,7 @@ decisions = {
 			NOT = { trait = crowned_by_priest_rd }
 			NOT = { trait = crowned_by_bishop_rd }
 			NOT = { trait = crowned_by_pope_rd }
-			#NOT = { government = order_government }
+			NOT = { government = order_government }
 		} 
 		allow = { 
 			OR = { 
@@ -51,34 +51,38 @@ decisions = {
 				OR = { #Either is an adult, or the child is liked by the regent and has assertive traits.
 					is_adult = yes
 					conditional_tooltip = {
-					trigger = { NOT = { age = 16 } }
-						age = 11
-						custom_tooltip = {
-							text = TT_CHILD_IS_ASSERTIVE
-							hidden_tooltip = {  
-								OR = {
-								trait = ambitious
-								trait = quick
-								trait = genius
-								trait = willful
-								}
-							}
-						}
-						conditional_tooltip = {
-							trigger = { has_regent = yes }
+						trigger = { NOT = { age = 16 } }
+						AND = { 
+							age = 11
 							custom_tooltip = {
-								text = TT_REGENT_LIKES_CHILD
+								text = TT_CHILD_IS_ASSERTIVE
 								hidden_tooltip = {  
 									OR = {
-										has_regent = no
-										any_vassal = { 
-											has_minor_title = title_regent
-											opinion = { who = liege value = 0 } 
-										} 
-										any_courtier = { 
-											has_minor_title = title_regent
-											opinion = { who = liege value = 0 } 
-										} 
+									trait = ambitious
+									trait = quick
+									trait = genius
+									trait = willful
+									}
+								}
+							}
+							conditional_tooltip = {
+								trigger = { has_regent = yes }
+								custom_tooltip = {
+									text = TT_REGENT_LIKES_CHILD
+									hidden_tooltip = {  
+										AND = { 
+											OR = {
+												has_regent = no
+												any_vassal = { 
+													has_minor_title = title_regent
+													opinion = { who = liege value = 0 } 
+												} 
+												any_courtier = { 
+													has_minor_title = title_regent
+													opinion = { who = liege value = 0 } 
+												} 
+											}
+										}
 									}
 								}
 							}
@@ -159,10 +163,10 @@ decisions = {
 		}
 		effect = {
 			custom_tooltip = { text = begin_coronation_tooltip }
-			#hidden_effect = {
+			hidden_effect = {
 				#set_character_flag = flag_preparing_coronation
-				#long_character_event = { id = HF.20200 }
-			#}
+				long_character_event = { id = HF.20200 }
+			}
 			hidden_tooltip = {
 				add_character_modifier = {
 					name = coronation_request_cooldown

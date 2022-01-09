@@ -1794,6 +1794,14 @@ liberate_religion = { # New6
 			}
 		}
 	}
+	
+	is_valid_title = {
+		FROM = {
+			any_realm_province = {
+				de_jure_liege_or_above = PREVPREV
+			}
+		}
+	}
 
 	on_fail = {
 		ROOT = { 
@@ -3383,17 +3391,19 @@ tributary_nomad_cb = { # New9
 		factor = 1
 		
 		modifier = { # In general, Nomads only want to make smaller nomads their tributaries
-		factor = 0.1
-			ROOT = {
-				NOT = {
-					relative_realm_size = {
-						who = FROM 
-						size > 1.1
+			factor = 0.1
+			AND = {
+				ROOT = {
+					NOT = {
+						relative_realm_size = {
+							who = FROM 
+							size > 1.1
+						}
 					}
 				}
-			}
-			FROM = {
-				is_nomadic = yes
+				FROM = {
+					is_nomadic = yes
+				}
 			}
 		}
 		# modifier = { # The Mongol Empire just wants to take land
@@ -4998,35 +5008,35 @@ truebelievers_bid_for_independence = {
 			}
 		}
 
-		#FROM = {
-#			any_demesne_title = { #All titles
-#				limit = {
-#					OR = {
-#						tier = duke
-#						tier = king
-#						tier = emperor
-#					}
-#					#is_titular = no
-#					NOT = {	has_law = tribal_organization_0	}
-#				}
-#				if = {
-#					limit = { has_law = tribal_organization_1 }
-#					add_law = tribal_organization_0
-#				}
-#				if = {
-#					limit = { has_law = tribal_organization_2 }
-#					add_law = tribal_organization_0
-#				}
-#				if = {
-#					limit = { has_law = tribal_organization_3 }
-#					add_law = tribal_organization_1
-#				}
-#				if = {
-#					limit = { has_law = tribal_organization_4 }
-#					add_law = tribal_organization_2
-#				}
-#			}
-#		}
+		FROM = {
+			any_demesne_title = { #All titles
+				limit = {
+					OR = {
+						tier = duke
+						tier = king
+						tier = emperor
+					}
+					#is_titular = no
+					NOT = {	has_law = tribal_organization_0	}
+				}
+				if = {
+					limit = { has_law = tribal_organization_1 }
+					add_law = tribal_organization_0
+				}
+				if = {
+					limit = { has_law = tribal_organization_2 }
+					add_law = tribal_organization_0
+				}
+				if = {
+					limit = { has_law = tribal_organization_3 }
+					add_law = tribal_organization_1
+				}
+				if = {
+					limit = { has_law = tribal_organization_4 }
+					add_law = tribal_organization_2
+				}
+			}
+		}
 	}
 
 	on_fail = {
