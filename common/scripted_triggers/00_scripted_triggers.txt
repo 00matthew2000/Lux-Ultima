@@ -2152,6 +2152,24 @@ is_widow_or_widower_trigger = {
 	# }
 	# trigger_if = {
 		# limit = {
+			# FROM = { 
+				# OR = {
+					# religion = taoist
+					# religion = khurmazta 
+				# }
+			# }
+			# NOT = { has_dlc = "Jade Dragon" }
+		# }
+		# AND = {
+			# OR = {
+				# religion = taoist
+				# religion = khurmazta 
+			# }
+			# has_dlc = "Jade Dragon" 
+		# }
+	# }
+	# trigger_if = {
+		# limit = {
 			# FROM = { religion_group  = pagan_group }
 			# NOR = { 
 				# has_dlc = "The Old Gods" 
@@ -2237,6 +2255,22 @@ is_widow_or_widower_trigger = {
 	# }
 	# trigger_if = {
 		# limit = {
+			# OR = {
+				# religion = taoist
+				# religion = khurmazta 
+			# }
+			# NOT = { has_dlc = "Jade Dragon" }
+		# }
+		# AND = {
+			# OR = {
+				# religion = taoist
+				# religion = khurmazta 
+			# }
+			# has_dlc = "Jade Dragon" 
+		# }
+	# }
+	# trigger_if = {
+		# limit = {
 			# religion_group  = pagan_group
 			# NOR = { 
 				# has_dlc = "The Old Gods" 
@@ -2269,6 +2303,13 @@ is_widow_or_widower_trigger = {
 			# AND = {
 				# secret_religion_group  = indian_group
 				# has_dlc = "Rajas of India" 
+			# }
+			# AND = {
+				# OR = {
+					# secret_religion = taoist
+					# secret_religion = khurmazta 
+				# }
+				# has_dlc = "Jade Dragon" 
 			# }
 			# AND = {
 				# secret_religion_group = pagan_group
@@ -2315,7 +2356,18 @@ is_widow_or_widower_trigger = {
 		# }
 	# }
 	# trigger_if = {
+		# limit = {
+			# OR = {
+				# secret_religion = taoist
+				# secret_religion = khurmazta 
+			# }
+			# NOT = { has_dlc = "Jade Dragon" }
+		# }
 		# AND = {
+			# OR = {
+				# secret_religion = taoist
+				# secret_religion = khurmazta 
+			# }
 			# has_dlc = "Jade Dragon" 
 		# }
 	# }
@@ -2696,6 +2748,24 @@ print_scope_trigger = {
 	log = "------------------------------"
 }
 
+is_secret_religious_society_member_trigger = {
+	society_member_of = secret_religious_cult
+}
+
+# template
+# is_christian_secret_religious_society_member_trigger = {
+	# society_member_of = secret_religious_cult
+	# secret_religion_group = christian
+# }
+
+is_openly_of_prevs_secret_religion_trigger = {
+	religion = { target = PREV target_type = secret }
+}
+
+is_openly_of_roots_secret_religion_trigger = {
+	religion = { target = ROOT target_type = secret }
+}
+
 # template
 # has_sympathy_for_true_religion_of_prev_trigger = { 
 	# OR = {
@@ -2724,7 +2794,10 @@ ok_sr_induction_mission_target_trigger = {
 	NOT = { trait = incapable }
 	is_inaccessible_trigger = no
 	NOT = { has_character_modifier = secret_religion_sympathy_timer }
-	religion_group = { target_type = secret target = ROOT }
+	OR = {
+		religion_group = { target_type = secret target = ROOT }
+		has_sympathy_for_true_religion_of_root_trigger = yes
+	}
 }
 
 ok_sr_sympathy_mission_target_trigger = {
@@ -2919,7 +2992,7 @@ has_vodouns_prerequisites = {
 has_bacchants_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 	OR = { 
-		##religion_openly_hellenic_or_reformed_trigger = yes = yes = yes
+		religion_openly_hellenic_or_reformed_trigger = yes
 		culture = roman #Historically fashionable thrill for bored patricians.
 		AND = { 
 			has_global_flag = flag_started_roman_renaissance
@@ -4280,6 +4353,73 @@ is_romantic_zodiac_mismatch_with_root = {
 	}
 }
 
+# has_unsafe_secret_religion = {
+	# NOT = { is_nomadic = yes }
+	# OR = {
+		# AND = {
+			# NOT = { has_dlc = "The Sword of Islam" }
+			# OR = {
+				# secret_religion = sunni
+				# secret_religion = zikri
+				# secret_religion = yazidi
+				# secret_religion = shiite
+				# secret_religion = druze
+				# secret_religion = hurufi
+				# secret_religion = ibadi
+				# secret_religion = kharijite
+			# }
+		# }
+		# AND = {
+			# NOT = { has_dlc = "Sons of Abraham" }
+			# OR = {
+				# secret_religion = jewish
+				# secret_religion = samaritan
+				# secret_religion = karaite
+			# }
+		# }
+		# AND = {
+			# NOT = { has_dlc = "The Old Gods" }
+			# OR = {
+				# secret_religion = zoroastrian
+				# secret_religion = mazdaki
+				# secret_religion = manichean
+				# secret_religion = khurmazta
+				# secret_religion = bon
+				# secret_religion = norse_pagan
+				# secret_religion = norse_pagan_reformed
+				# secret_religion = baltic_pagan
+				# secret_religion = baltic_pagan_reformed
+				# secret_religion = finnish_pagan
+				# secret_religion = finnish_pagan_reformed
+				# secret_religion = slavic_pagan
+				# secret_religion = slavic_pagan_reformed
+				# secret_religion = tengri_pagan
+				# secret_religion = tengri_pagan_reformed
+				# secret_religion = west_african_pagan
+				# secret_religion = west_african_pagan_reformed
+				# secret_religion = zun_pagan
+				# secret_religion = zun_pagan_reformed
+				# secret_religion = hellenic_pagan
+				# secret_religion = pagan
+				# secret_religion = aztec
+				# secret_religion = aztec_reformed
+			# }
+		# }
+		# AND = {
+			# NOT = { has_dlc = "Rajas of India" }
+			# OR = {
+				# secret_religion = hindu
+				# secret_religion = buddhist
+				# secret_religion = jain
+			# }
+		# }
+		# AND = {
+			# NOT = { has_dlc = "Jade Dragon" }
+			# secret_religion = taoist
+		# }
+	# }
+# }
+
 #to check type of ingredient... (if more are added, they need to go in here to work with the current system)
 is_ingredient_herb_trigger = {
 	OR = {
@@ -5260,6 +5400,73 @@ is_any_kinslayer_trigger = {
 		trait = tribal_kinslayer
 	}
 }
+
+# has_unsafe_religion = {
+	# NOT = { is_nomadic = yes }
+	# OR = {
+		# AND = {
+			# NOT = { has_dlc = "The Sword of Islam" }
+			# OR = {
+				# religion = sunni
+				# religion = zikri
+				# religion = yazidi
+				# religion = shiite
+				# religion = druze
+				# religion = hurufi
+				# religion = ibadi
+				# religion = kharijite
+			# }
+		# }
+		# AND = {
+			# NOT = { has_dlc = "Sons of Abraham" }
+			# OR = {
+				# religion = jewish
+				# religion = samaritan
+				# religion = karaite
+			# }
+		# }
+		# AND = {
+			# NOT = { has_dlc = "The Old Gods" }
+			# OR = {
+				# religion = zoroastrian
+				# religion = mazdaki
+				# religion = manichean
+				# religion = khurmazta
+				# religion = bon
+				# religion = norse_pagan
+				# religion = norse_pagan_reformed
+				# religion = baltic_pagan
+				# religion = baltic_pagan_reformed
+				# religion = finnish_pagan
+				# religion = finnish_pagan_reformed
+				# religion = slavic_pagan
+				# religion = slavic_pagan_reformed
+				# religion = tengri_pagan
+				# religion = tengri_pagan_reformed
+				# religion = west_african_pagan
+				# religion = west_african_pagan_reformed
+				# religion = zun_pagan
+				# religion = zun_pagan_reformed
+				# religion = hellenic_pagan
+				# religion = pagan
+				# religion = aztec
+				# religion = aztec_reformed
+			# }
+		# }
+		# AND = {
+			# NOT = { has_dlc = "Rajas of India" }
+			# OR = {
+				# religion = hindu
+				# religion = buddhist
+				# religion = jain
+			# }
+		# }
+		# AND = {
+			# NOT = { has_dlc = "Jade Dragon" }
+			# religion = taoist
+		# }
+	# }
+# }
 
 courtier_from_china_trigger = {
 	custom_tooltip = {

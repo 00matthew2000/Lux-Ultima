@@ -4637,7 +4637,13 @@ byzantine_elective = {
 	
 	#ROOT = Current Title holder, FROM = Candidate, FROMFROM = Title, FROMFROMFROM = Null
 	candidate_trigger = { #Close relatives, claimants, marshals. No mutilations (if byzantine)
-		NOT = { character = FROM } #Not the current ruler. 
+		NOT = { character = FROM } #Not the current ruler.
+		FROM = { 
+			NOR = { 
+				trait = crusader_king 
+				trait = crusader_queen
+			} 
+		} 
 		FROM = { #Either the candidate is in the realm, or is landless, or the title is independent, or the realm of the title does NOT have protected inheritance.
 			OR = { 
 				any_liege = { 
@@ -8046,7 +8052,13 @@ hre_feudal_elective = {
 	
 	#ROOT = Current Title holder, FROM = Candidate, FROMFROM = Title, FROMFROMFROM = Null
 	candidate_trigger = {
-		NOT = { character = FROM } #Not the current ruler. 
+		NOT = { character = FROM } #Not the current ruler.
+		FROM = { 
+			NOR = { 
+				trait = crusader_king 
+				trait = crusader_queen
+			} 
+		} 
 		FROM = { #Either the candidate is in the realm, or is landless, or the title is independent, or the realm of the title does NOT have protected inheritance.
 			OR = { 
 				any_liege = { 

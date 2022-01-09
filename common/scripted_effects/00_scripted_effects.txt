@@ -13680,7 +13680,7 @@ check_likes_or_dislikes_THIS_effect = {
             is_liked_by_China_trigger = yes
         }
         offmap_china = {
-			#show_scope_change = no
+			show_scope_change = no
             custom_tooltip = { text = emperor_likes_THIS_tt }
         }
     }
@@ -13690,7 +13690,7 @@ check_likes_or_dislikes_THIS_effect = {
            is_disliked_by_China_trigger = yes
         }
         offmap_china = {
-			#show_scope_change = no
+			show_scope_change = no
 			custom_tooltip = { text = emperor_dislikes_THIS_tt }
         }
     }
@@ -13700,7 +13700,7 @@ check_likes_or_dislikes_THIS_effect = {
             is_liked_and_disliked_by_China = yes
         }
         offmap_china = {
-			#show_scope_change = no
+			show_scope_change = no
             custom_tooltip = { text = emperor_has_ambiguous_feelings_of_THIS_tt }
         }
     }

@@ -3341,6 +3341,12 @@ feudal_elective = {
 	#ROOT = Current Title holder, FROM = Candidate, FROMFROM = Title, FROMFROMFROM = Null
 	candidate_trigger = {
 		NOT = { character = FROM } #Not the current ruler.
+		FROM = { 
+			NOR = { 
+				trait = crusader_king 
+				trait = crusader_queen
+			} 
+		} 
 		FROM = { #Either the candidate is in the realm, or is landless, or the title is independent, or the realm of the title does NOT have protected inheritance.
 			OR = { 
 				any_liege = { 
@@ -9852,6 +9858,12 @@ elective_gavelkind = {
 	#ROOT = Current Title holder, FROM = Candidate, FROMFROM = Title, FROMFROMFROM = Null
 	candidate_trigger = {
 		NOT = { character = FROM } #Not the current ruler.
+		FROM = { 
+			NOR = { 
+				trait = crusader_king 
+				trait = crusader_queen
+			} 
+		} 
 		FROM = { #Either the candidate is in the realm, or is landless, or the title is independent, or the realm of the title does NOT have protected inheritance.
 			OR = { 
 				any_liege = { 
@@ -16539,6 +16551,12 @@ eldership_rules = {
 	#ROOT = Current Title holder, FROM = Candidate, FROMFROM = Title, FROMFROMFROM = Null
 	candidate_trigger = {
 		NOT = { character = FROM } #Not the current ruler.
+		FROM = { 
+			NOR = { 
+				trait = crusader_king 
+				trait = crusader_queen
+			} 
+		} 
 		FROM = { #Either the candidate is in the realm, or is landless, or the title is independent, or the realm of the title does NOT have protected inheritance.
 			OR = { 
 				any_liege = { 

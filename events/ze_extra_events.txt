@@ -1846,7 +1846,7 @@ character_event = {
 				}
 				else_if = {
 					limit = {
-						classical_government_trigger = yes
+						classical_government = yes
 					}
 					set_government_type = oriental_monarchy_government
 				}
