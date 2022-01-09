@@ -1,10 +1,6 @@
 #Create a wonder
 obj_create_wonder = {
 	type = character
-
-	chance = {
-		factor = 5
-	}
 	
 	potential = {
 		has_game_rule = {
@@ -37,7 +33,7 @@ obj_create_wonder = {
 			any_realm_wonder = {
 				wonder_stage = 2
 				original_wonder_owner = {
-					character = ROOT
+					CHARACTER = root
 				}
 			}
 		} 

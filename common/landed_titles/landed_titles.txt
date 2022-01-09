@@ -45,7 +45,7 @@ d_huitzilopochtli = {
 	# Parent Religion 
 	religion = quetzal_reformed
 	
-	culture = nahua
+	culture = nahuatl
 	
 	# Cannot be held as a secondary title
 	primary = yes
@@ -11233,6 +11233,16 @@ e_slavinia = {
 				b_hagenow = {
 				}
 			}
+		}
+		d_rugen = {
+			color= { 100 120 82 }
+			color2= { 255 255 255 }
+
+			capital = 304 #Rugen
+
+			pommeranian = Rana
+			danish = Rugia
+
 			c_rostock = {
 				color = { 204 204 204 }
 
@@ -15225,19 +15235,6 @@ e_pontic_steppe = {
 				b_kozubay = {}
 				b_tyuntyugur = {}
 			}
-			
-			c_ishim = {
-				color={ 194 169 40 }
-				color2={ 255 255 255 }
-			
-				b_ishim = {}
-				b_esil = {}
-				b_mamlyut = {}
-				b_ust_ishim = {}
-				b_ulsut = {} #Fictional, for prosperity
-				b_mamshim = {} #Fictional, for prosperity
-				b_esut = {} #Fictional, for prosperity
-			}
 
 			c_kartaly = {
 				color={ 232 171 30 }
@@ -16859,6 +16856,19 @@ e_tartaria = {
 				b_tenul = {} #Fictional, for prosperity
 			}
 
+			c_ishim = {
+				color={ 194 169 40 }
+				color2={ 255 255 255 }
+			
+				b_ishim = {}
+				b_esil = {}
+				b_mamlyut = {}
+				b_ust_ishim = {}
+				b_ulsut = {} #Fictional, for prosperity
+				b_mamshim = {} #Fictional, for prosperity
+				b_esut = {} #Fictional, for prosperity
+			}
+
 			c_seletyteniz = {
 				color={ 175 130 50 }
 				color2={ 255 255 255 }
@@ -16875,7 +16885,37 @@ e_tartaria = {
 		d_tyumen = {
 			color = { 210 185 15 }
 			
-			capital = 1861 # Om
+			capital = 893 # Sibir
+		
+			c_sibir = {
+				color = { 227 174 31 }
+				
+				holy_site = chumbylat
+				holy_site = chumbylat_reformed
+				holy_site = vattisenyaly
+				holy_site = vattisenyaly_reformed
+				holy_site = voipel
+				holy_site = voipel_reformed
+			
+				b_surgut = {
+				}
+				b_belyyyar = {
+				}
+				b_iberbolgar = {
+				}
+				b_baduk = {
+				}
+				b_kaik = {
+				}
+				b_langepas = {
+				}
+				b_pokachi = {
+				}
+				b_vysokiy = {
+				}
+				b_sibir = {
+				}
+			}
 			
 			c_om = {
 				color={ 210 170 130 }
@@ -17033,35 +17073,6 @@ e_tartaria = {
 				b_poykovskiy = {
 				}
 				b_samza = {
-				}
-			}
-			c_sibir = {
-				color = { 227 174 31 }
-				
-				holy_site = chumbylat
-				holy_site = chumbylat_reformed
-				holy_site = vattisenyaly
-				holy_site = vattisenyaly_reformed
-				holy_site = voipel
-				holy_site = voipel_reformed
-			
-				b_surgut = {
-				}
-				b_belyyyar = {
-				}
-				b_iberbolgar = {
-				}
-				b_baduk = {
-				}
-				b_kaik = {
-				}
-				b_langepas = {
-				}
-				b_pokachi = {
-				}
-				b_vysokiy = {
-				}
-				b_sibir = {
 				}
 			}
 			c_yamalia = {
@@ -20112,9 +20123,6 @@ e_sassanid = {
 				b_navavihara = {}
 				b_tarmis = {}
 				b_dalverzintepe = {}
-				b_surkhkotal = {}
-				b_alkhanoum = {}
-				b_takhtisangin = {}
 			}
 			c_guzgan = {
 				color={ 179 214 53 }
@@ -29325,6 +29333,25 @@ e_maghreb = {
 				b_el_bakra = {} # Fictional, for prosperity
 				b_zidania = {} # Fictional, for prosperity
 			}
+			c_canarias = {
+				color={ 60 190 43 }
+				color2={ 255 255 255 }
+		
+				b_tenerife = {
+				}
+				b_lagomera = {
+				}
+				b_lanzarote = {
+				}
+				b_fuerteventura = {
+				}
+				b_lagraciosa = {
+				}
+				b_alegranza = {
+				}
+				b_lapalma = {
+				}
+			}
 			c_tadla = {
 				color={ 60 190 43 }
 				color2={ 255 255 255 }
@@ -29348,45 +29375,6 @@ e_maghreb = {
 				b_imidar_takhtani = {} # Fictional, for prosperity
 				b_dar_er_rhoul = {} # Fictional, for prosperity
 				b_tamrghoute = {} # Fictional, for prosperity
-			}
-		}
-		d_canarias = {
-			color = { 60 190 43 }
-			color2 = { 255 255 255 }
-			
-			capital = 849 #Canarias
-			
-			c_canarias = {
-				color={ 60 190 43 }
-				color2={ 255 255 255 }
-		
-				b_tenerife = {
-				}
-				b_lagomera = {
-				}
-				b_lanzarote = {
-				}
-				b_fuerteventura = {
-				}
-				b_lagraciosa = {
-				}
-				b_alegranza = {
-				}
-				b_lapalma = {
-				}
-			}
-			c_satti = {
-				color = { 231 178 35 }
-				color2 = { 255 255 255 }
-				
-				b_kurgan = {}
-				b_vagay = {}
-				b_kyzalyar = {}
-				b_lebyazhe = {}
-				b_yurgamysh = {}
-				b_shumikha = {}
-				b_mishkino = {}
-				b_makushino = {}
 			}
 		}
 		d_mzab = {
@@ -35722,7 +35710,7 @@ d_hurufi = {
 #	
 #	tribe = yes
 #	
-#	culture = nahua
+#	culture = nahuatl
 #	religion = aztec
 #}
 

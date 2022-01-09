@@ -1092,6 +1092,17 @@ spawn_byz_effect = {
 					}
 				}
 			}
+			preferred_limit = {
+				NOT = {
+					empire = {
+						any_de_jure_vassal_title = {
+							holder_scope = {
+								is_nomadic = yes
+							}
+						}
+					}
+				}
+			}
 			holder_scope = {
 				save_event_target_as = target_ruler
 			}
@@ -1140,7 +1151,7 @@ spawn_byz_effect = {
 				}
 				else = {
 					add_law = crown_authority_4
-					#add_law = imperial_administration
+					add_law = imperial_administration
 					add_law = vice_royalty_2
 					add_law = centralization_3
 				}
@@ -1529,6 +1540,17 @@ spawn_byz_effect = {
 					}
 				}
 			}
+			preferred_limit = {
+				NOT = {
+					empire = {
+						any_de_jure_vassal_title = {
+							holder_scope = {
+								is_nomadic = yes
+							}
+						}
+					}
+				}
+			}
 			holder_scope = {
 				save_event_target_as = target_ruler
 			}
@@ -1578,7 +1600,7 @@ spawn_byz_effect = {
 				}
 				else = {
 					add_law = crown_authority_4
-					#add_law = imperial_administration
+					add_law = imperial_administration
 					add_law = vice_royalty_2
 					add_law = centralization_3
 				}

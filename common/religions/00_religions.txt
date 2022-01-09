@@ -1270,7 +1270,7 @@ aztec_group = {
 	color = { 255 100 25 }
 	
 	ai_convert_same_group = 1 # try to convert if ai_zeal is high
-	ai_convert_other_group = 2 # always try to convert	
+	ai_convert_other_group = 2 # always try to convert
 	
 	quetzal_reformed = {
 		graphical_culture = mesoamericangfx
@@ -1383,92 +1383,6 @@ aztec_group = {
 		
 		religious_clothing_head = 4
 		religious_clothing_priest = 4
-	}
-	mayan_reformed = {
-		graphical_culture = mesoamericangfx
-		alternate_start = { always = no }
-		
-		secondary_event_pictures = mesoamerican
-		
-		icon = 17
-		heresy_icon = 18
-		
-		ai_convert_other_group = 2 # always try to convert
-		
-		color = { 0.45 0.21 0.11 }
-		
-		high_god_name = GOD_HUITZILOPOCHTLI
-		
-		god_names = {
-			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_TLALOC
-		}
-		evil_god_names = {
-			TLAZOLTEOTL GOD_MICTLANTECUHTLI XOLOTL
-		}
-		
-		#unit_modifier = {
-		#	levy_size = 0.3
-		#	
-		#	key = "OFF_RELIGION"
-		#}
-		
-		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
-		priest_title = PRIEST
-		
-		priests_can_marry = yes
-		max_consorts = 3
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		
-		aggression = 1.5 # AI aggression factor
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 3
-		
-		allow_in_ruler_designer = no
-	}	
-	
-	mayan = {
-		graphical_culture = mesoamericangfx
-		icon = 15
-		heresy_icon = 16
-		color = { 0.46 0.22 0.92 }
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } has_dlc = "Sunset Invasion" }
-		
-		secondary_event_pictures = mesoamerican
-		
-		high_god_name = GOD_HUITZILOPOCHTLI
-		
-		god_names = {
-			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_TLALOC
-		}
-		evil_god_names = {
-			TLAZOLTEOTL GOD_MICTLANTECUHTLI XOLOTL
-		}
-		
-		#unit_modifier = {
-		#	levy_size = 0.3
-		#	
-		#	key = "OFF_RELIGION"
-		#}
-		
-		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
-		priest_title = PRIEST
-		
-		priests_can_marry = yes
-		peace_prestige_loss = yes # Lose Prestige while at peace
-		raised_vassal_opinion_loss = no
-		max_consorts = 3
-		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		reformed = mayan_reformed
-		
-		aggression = 1.0 # AI aggression factor
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 3
-
 	}
 }
 pagan_group = {
@@ -2682,77 +2596,6 @@ bantu_group = {
 		intermarry = serer_reformed
 	}
 	
-	akuj_reformed = {
-		graphical_culture = africangfx
-		color = { 9 0 240 }
-		icon = 340
-		heresy_icon = 340
-		
-		reformed = akuj_reformed
-		#reformer_head_of_religion = yes
-		
-		high_god_name = GOD_AKUJ
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_LEGENDS
-		god_names = {
-			GOD_THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			EKIPE
-		}
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.30
-			city_vassal_tax_modifier = -0.30
-			temple_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.50
-			land_organisation = 0.10
-			castle_vassal_min_levy = 0.40
-			castle_vassal_max_levy = 0.40
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.45
-			temple_vassal_min_levy = 0.15
-			temple_vassal_max_levy = 0.10
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 6
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_infantry_offensive = 0.30
-			light_cavalry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 7 # The default in LI is 5
-		
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
 	akuj = {
 		graphical_culture = africangfx
 		color = { 0 241 77 }
@@ -2820,113 +2663,6 @@ bantu_group = {
 		raised_vassal_opinion_loss = no
 		short_reign_opinion_year_mult = 7 # The default in LI is 5
 		
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
-	baluba_reformed = {
-		graphical_culture = africangfx
-		color = { 185 175 175 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = GOD_KABEZYA_MPUNGU
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = baluba_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = byeri
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = num
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
-		intermarry = byeri_reformed
-		intermarry = imipashi_reformed
-		intermarry = num_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
 		religious_clothing_head = 4
 		religious_clothing_priest = 4
 	}
@@ -3123,115 +2859,6 @@ bantu_group = {
 		religious_clothing_priest = 4
 	}
 	
-	bukongo_reformed = {
-		graphical_culture = africangfx
-		color = { 209 47 178 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = THE_ANCESTORS
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = bukongo_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = bumuntu
-		intermarry = byeri
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = num
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
-		intermarry = bumuntu_reformed
-		intermarry = byeri_reformed
-		intermarry = imipashi_reformed
-		intermarry = num_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
 	bukongo = {
 		graphical_culture = africangfx
 		color = { 180 155 120 }
@@ -3320,113 +2947,6 @@ bantu_group = {
 		intermarry = bantu_pagan_reformed
 		intermarry = bukongo_reformed
 		intermarry = bumuntu_reformed
-		intermarry = byeri_reformed
-		intermarry = imipashi_reformed
-		intermarry = num_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
-	bumuntu_reformed = {
-		graphical_culture = africangfx
-		color = { 36 199 205 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = THE_ANCESTORS
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = bumuntu_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = byeri
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = num
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
 		intermarry = byeri_reformed
 		intermarry = imipashi_reformed
 		intermarry = num_reformed
@@ -4058,115 +3578,6 @@ bantu_group = {
 		religious_clothing_priest = 4
 	}
 	
-	imipashi_reformed = {
-		graphical_culture = africangfx
-		color = { 54 29 128 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = THE_ANCESTORS
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = imipashi_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = bumuntu
-		intermarry = byeri
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = num
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
-		intermarry = bumuntu_reformed
-		intermarry = byeri_reformed
-		intermarry = imipashi_reformed
-		intermarry = num_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
 	imipashi = {
 		graphical_culture = africangfx
 		color = { 24 24 68 }
@@ -4276,115 +3687,6 @@ bantu_group = {
 		religious_clothing_priest = 4
 	}
 	
-	kalunga_reformed = {
-		graphical_culture = africangfx
-		color = { 23 69 71 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = GOD_KALUNGA
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = kalunga_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = bumuntu
-		intermarry = byeri
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = num
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
-		intermarry = bumuntu_reformed
-		intermarry = byeri_reformed
-		intermarry = imipashi_reformed
-		intermarry = num_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
 	kalunga = {
 		graphical_culture = africangfx
 		color = { 221 222 79 }
@@ -4405,115 +3707,6 @@ bantu_group = {
 		}
 		
 		reformed = kalunga_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = bumuntu
-		intermarry = byeri
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = num
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
-		intermarry = bumuntu_reformed
-		intermarry = byeri_reformed
-		intermarry = imipashi_reformed
-		intermarry = num_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
-	odinane_reformed = {
-		graphical_culture = africangfx
-		color = { 91 105 199 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = THE_ANCESTORS
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = odinane_reformed
 		#reformer_head_of_religion = yes
 		
 		character_modifier = {
@@ -4805,7 +3998,7 @@ bantu_group = {
 		intermarry = bukongo_reformed
 		intermarry = bumuntu_reformed
 		intermarry = byeri_reformed
-		intermarry = imipashi_reformed
+		intermarry = imipashi
 		intermarry = odinane_reformed
 		intermarry = okuruo_reformed
 		intermarry = num_reformed
@@ -4907,113 +4100,6 @@ bantu_group = {
 		religious_clothing_priest = 4
 	}
 	
-	num_reformed = {
-		graphical_culture = africangfx
-		color = { 236 1 17 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = THE_ANCESTORS
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = num_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = bumuntu
-		intermarry = byeri
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
-		intermarry = bumuntu_reformed
-		intermarry = byeri_reformed
-		intermarry = imipashi_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
 	num = {
 		graphical_culture = africangfx
 		color = { 255 105 135 }
@@ -5103,115 +4189,6 @@ bantu_group = {
 		intermarry = bumuntu_reformed
 		intermarry = byeri_reformed
 		intermarry = imipashi_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
-	nzambiist_reformed = {
-		graphical_culture = africangfx
-		color = { 12 64 84 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = THE_ANCESTORS
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = nzambiist_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = bumuntu
-		intermarry = byeri
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = num
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
-		intermarry = bumuntu_reformed
-		intermarry = byeri_reformed
-		intermarry = imipashi_reformed
-		intermarry = num_reformed
 		intermarry = nyakalagan_reformed
 		intermarry = nzambiist_reformed
 		intermarry = odinane_reformed
@@ -5556,113 +4533,6 @@ bantu_group = {
 		religious_clothing_priest = 4
 	}
 	
-	muzimu_reformed = {
-		graphical_culture = africangfx
-		color = { 15 210 143 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = THE_ANCESTORS
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = muzimu_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = bumuntu
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = num
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
-		intermarry = bumuntu_reformed
-		intermarry = imipashi_reformed
-		intermarry = num_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
 	muzimu = {
 		graphical_culture = africangfx
 		color = { 5 1 5 }
@@ -5750,115 +4620,6 @@ bantu_group = {
 		intermarry = bantu_pagan_reformed
 		intermarry = bukongo_reformed
 		intermarry = bumuntu_reformed
-		intermarry = imipashi_reformed
-		intermarry = num_reformed
-		intermarry = nyakalagan_reformed
-		intermarry = nzambiist_reformed
-		intermarry = odinane_reformed
-		intermarry = okuruo_reformed
-		intermarry = zande_pagan_reformed
-		intermarry = zulu_pagan_reformed
-		# Bantu restrictive (sectarian 1), can be married only from the same group or civilization
-		intermarry = batembuzi
-		intermarry = nyasaye
-		intermarry = nyau
-		# West African  open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = mande_pagan
-		intermarry = serer_reformed
-
-		religious_clothing_head = 4
-		religious_clothing_priest = 4
-	}
-	
-	okuruo_reformed = {
-		graphical_culture = africangfx
-		color = { 122 205 86 }
-		icon = 67
-		heresy_icon = 68
-		
-		high_god_name = GOD_NJAMBI
-		
-		piety_name = PIETY
-		priest_title = PRIEST
-		scripture_name = THE_DANCES
-		
-		god_names = {
-			THE_ANCESTORS GOD_THE_SPIRITS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		reformed = okuruo_reformed
-		#reformer_head_of_religion = yes
-		
-		character_modifier = {
-			global_revolt_risk = 0.03
-			church_opinion = -10
-			castle_vassal_tax_modifier = 0.10
-			city_vassal_tax_modifier = -0.10
-			build_cost_modifier = 0.45
-			land_organisation = 0.30
-			castle_vassal_min_levy = 0.30
-			castle_vassal_max_levy = 0.30
-			city_vassal_min_levy = -0.15
-			city_vassal_max_levy = -0.15
-			temple_vassal_min_levy = 0.35
-			temple_vassal_max_levy = 0.30
-#			monthly_character_prestige = 0.10
-#			monthly_character_piety = -0.20
-			assassinate_chance_modifier = 0.20
-			arrest_chance_modifier = 0.20
-			diplomacy = -1
-			martial = 4
-			stewardship = 1
-			intrigue = -2
-			learning = -2
-#			ai_ambition = 40
-#			ai_zeal = 50
-		}
-		unit_modifier = {
-			key = "DEF_RELIGION_HOME_TERRITORY"
-			
-			levy_size = 0.10
-			light_cavalry_offensive = 0.30
-			light_infantry_offensive = 0.30
-			archers_offensive = 0.30
-			land_morale = 0.50
-		}
-		
-		aggression = 2.0
-		allow_looting = yes
-#		allow_viking_invasion = yes
-		can_call_crusade = no
-#		can_hold_temples = yes
-		priests_can_marry = yes
-		independence_war_score_bonus = 20
-		peace_prestige_loss = yes
-		raised_vassal_opinion_loss = no
-		short_reign_opinion_year_mult = 6 # The default in LI is 5
-		ignores_defensive_attrition = yes
-				
-		# Bantu open-minded (sectarian 0), can be married from the same group or civilization or related ones
-		intermarry = anansi
-		intermarry = bukongo
-		intermarry = bumuntu
-		intermarry = byeri
-		intermarry = imana
-		intermarry = imipashi
-		intermarry = kintu
-		intermarry = mwari
-		intermarry = num
-		intermarry = nyame
-		intermarry = nzambiist
-		intermarry = odinane
-		intermarry = okuruo
-		intermarry = zande_pagan
-		intermarry = zulu_pagan
-		intermarry = bantu_pagan_reformed
-		intermarry = bukongo_reformed
-		intermarry = bumuntu_reformed
-		intermarry = byeri_reformed
 		intermarry = imipashi_reformed
 		intermarry = num_reformed
 		intermarry = nyakalagan_reformed
@@ -19022,6 +17783,7 @@ mani_group = {
 			global_revolt_risk = -0.01
 			general_opinion = -30
 			same_religion_opinion = 80
+			general_opinion = 10
 			church_opinion = 20
 #			dynasty_opinion = 10
 			city_vassal_tax_modifier = -0.10
@@ -19981,6 +18743,7 @@ muslim = {
 		
 		character_modifier = {
 			general_opinion = 10
+			general_opinion = -10
 			same_religion_opinion = 40
 #			dynasty_opinion = -10
 			temple_vassal_tax_modifier = 0.20
@@ -28106,13 +26869,143 @@ zoroastrian_group = {
 		religious_clothing_priest = 7
 	}
 }
+
+	
+	
+
+american_pagan_group = {
+    graphical_culture = norsegfx
+    playable = yes
+	hostile_within_group = yes
+    
+	pagan = { # Use for misc other pagans
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 5
+		
+		color = { 0.6 0.0 0.0 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		
+		dislike_tribal_organization = yes
+		
+		dynamic_cult = no
+		secret_religion = no
+	}
+
+	mayan_reformed = {
+		graphical_culture = mesoamericangfx
+		alternate_start = { always = no }
+		
+		secondary_event_pictures = mesoamerican
+		
+		icon = 17
+		heresy_icon = 18
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.45 0.21 0.11 }
+		
+		high_god_name = GOD_HUITZILOPOCHTLI
+		
+		god_names = {
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_TLALOC
+		}
+		evil_god_names = {
+			TLAZOLTEOTL GOD_MICTLANTECUHTLI XOLOTL
+		}
+		
+		#unit_modifier = {
+		#	levy_size = 0.3
+		#	
+		#	key = "OFF_RELIGION"
+		#}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		priests_can_marry = yes
+		max_consorts = 3
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		
+		aggression = 1.5 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+	}	
+	
+	mayan = {
+		graphical_culture = mesoamericangfx
+		icon = 15
+		heresy_icon = 16
+		color = { 0.46 0.22 0.92 }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } has_dlc = "Sunset Invasion" }
+		
+		secondary_event_pictures = mesoamerican
+		
+		high_god_name = GOD_HUITZILOPOCHTLI
+		
+		god_names = {
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_TLALOC
+		}
+		evil_god_names = {
+			TLAZOLTEOTL GOD_MICTLANTECUHTLI XOLOTL
+		}
+		
+		#unit_modifier = {
+		#	levy_size = 0.3
+		#	
+		#	key = "OFF_RELIGION"
+		#}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		priests_can_marry = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = mayan_reformed
+		
+		aggression = 1.0 # AI aggression factor
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+	}
+}
 	
 asian_religion_group = {
     graphical_culture = indiangfx
     playable = yes
 	hostile_within_group = yes
-	
-	color = { 0.72 0.28 0.15 }
 
 	melanesian_religion_reformed = {
 		graphical_culture = hindugfx
@@ -29081,8 +27974,6 @@ african_pagan_group = {
     graphical_culture = muslimgfx
     playable = yes
 	hostile_within_group = yes
-	
-	color = { 0.27 0.81 0.49 }
     
 	south_bantu_mythology_reformed = {
 		graphical_culture = africangfx
@@ -32338,11 +31229,9 @@ native_american_group = {
 
 austronesian_group = {
    	graphical_culture = indiangfx
-    playable = yes
+    	playable = yes
 	has_coa_on_barony_only = no
 	hostile_within_group = yes
-	
-	color = { 0.09 0.98 0.12 }
 
 	maori_religion_reformed = {
 		graphical_culture = africangfx
@@ -32465,8 +31354,6 @@ eastern_folk_group = {
     playable = yes
 	has_coa_on_barony_only = no
 	hostile_within_group = yes
-	
-	color = { 0.71 0.25 0.16 }
 
 	ainu_pantheism_reformed = {
 		graphical_culture = mongolgfx	
@@ -32477,7 +31364,6 @@ eastern_folk_group = {
 		color = { 0.75 0.5 0.35 }
 		alternate_start = { always = no }
 		
-		crusade_name = GREAT_HOLY_WAR
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
 		ai_convert_other_group = 2 # always try to convert
