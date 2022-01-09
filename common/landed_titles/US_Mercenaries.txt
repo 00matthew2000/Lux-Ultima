@@ -277,86 +277,86 @@ d_genovese_crossbow_contingent = {
 	mercenary_type = d_genovese_crossbow_contingent_composition
 }
 
-#d_ventura_company = {
-#	color = { 80 80 160 }
-#	color2 = { 255 255 255 }
-#
-#	capital = 357 # Venezia
-#	
-#	# Hire Trigger
-#	allow = {
-#		OR = {
-#			religion_group = christian
-#			religion_group = pagan_group
-#			religion_group = jewish_group
-#			religion_group = zoroastrian_group
-#			religion_group = indian_group
-#			religion_group = chinese_group
-#		}
-#	}
-#	
-#	# Parent Religion 
-#	religion = catholic
-#	
-#	mercenary = yes
-#
-#	title = "Condottiero"
-#	foa = "CONDOTTIERO_FOA"
-#
-#	# Always exists
-#	landless = yes
-#	
-#	# Cannot be held as a secondary title
-#	primary = yes
-#	
-#	# Cannot be vassalized
-#	independent = yes
-#
-#	strength_growth_per_century = 1.00
-#	
-#	mercenary_type = d_ventura_company_composition
-#}
+d_ventura_company = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
 
-#d_free_company = {
-#	color = { 80 80 160 }
-#	color2 = { 255 255 255 }
-#
-#	capital = 496 # Byzantion
-#	
-#	# Hire Trigger
-#	allow = {
-#		OR = {
-#			religion_group = christian
-#			religion_group = muslim
-#			religion_group = pagan_group
-#			religion_group = jewish_group
-#			religion_group = zoroastrian_group
-#			religion_group = indian_group
-#			religion_group = chinese_group
-#		}
-#	}
-#	
-#	# Parent Religion 
-#	religion = orthodox
-#	
-#	mercenary = yes
-#
-#	title = "Condottiero"
-#	foa = "CONDOTTIERO_FOA"
-#
-#	# Always exists
-#	landless = yes
-#	
-#	# Cannot be held as a secondary title
-#	primary = yes
-#	
-#	# Cannot be vassalized
-#	independent = yes
-#
-#	strength_growth_per_century = 1.00
-#	
-#	mercenary_type = d_free_company_composition
-#}
+	capital = 357 # Venezia
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+			religion_group = jewish_group
+			religion_group = zoroastrian_group
+			religion_group = indian_group
+			religion_group = chinese_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	
+	mercenary = yes
+
+	title = "Condottiero"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+
+	strength_growth_per_century = 1.00
+	
+	mercenary_type = d_ventura_company_composition
+}
+
+d_free_company = {
+	color = { 80 80 160 }
+	color2 = { 255 255 255 }
+
+	capital = 496 # Byzantion
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+			religion_group = pagan_group
+			religion_group = jewish_group
+			religion_group = zoroastrian_group
+			religion_group = indian_group
+			religion_group = chinese_group
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	mercenary = yes
+
+	title = "Condottiero"
+	foa = "CONDOTTIERO_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+
+	strength_growth_per_century = 1.00
+	
+	mercenary_type = d_free_company_composition
+}
 
 d_novgorod_guard = {
 	color = { 80 80 160 }
@@ -2429,9 +2429,9 @@ d_devout = {
 	
 	# Hire Trigger
 	allow = {
-		#OR = {
+		OR = {
 			religion_group = muslim
-		#}
+		}
 	}
 	
 	# Parent Religion 
@@ -2585,9 +2585,9 @@ d_chosen = {
 	
 	# Hire Trigger
 	allow = {
-		#OR = {
+		OR = {
 			religion_group = muslim
-		#}
+		}
 	}
 	
 	# Parent Religion 
@@ -3221,9 +3221,9 @@ d_brothers_of_islam = {
 	
 	# Hire Trigger
 	allow = {
-		#OR = {
+		OR = {
 			religion_group = muslim
-		#}
+		}
 	}
 	
 	# Parent Religion 

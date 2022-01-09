@@ -400,28 +400,8 @@ e_polynesia = {
 			roman = "Pitcairn"
 			frankish = "Pitcairn"
 			
-			capital = 4143 # Pitcairn
+			capital = 4174 # Pitcairn
 			
-			c_chuuknamoduk = {
-
-				color={ 180 60 80 }
-				color2={ 146 110 77 }
-				
-				b_wenochuuk = {
-				}
-				b_faichuuk = {
-				}
-				b_namonuitoll = {
-				}
-				b_pattiwuuk = {
-				}
-				b_mortluuck = {
-				}
-				b_pulusuk = {
-				}
-				b_namoluk = {
-				}
-			}
 			c_pitcairn = {
 
 				color={ 180 60 150 }
@@ -448,7 +428,7 @@ e_polynesia = {
 				color={ 190 190 90 }
 				color2={ 246 110 145 }
 			
-			capital = 4170 # Avarua
+			capital = 4199 # Avarua
 			
 			c_avarua = {
 
@@ -497,7 +477,7 @@ e_polynesia = {
 				color={ 190 190 90 }
 				color2={ 246 110 145 }
 			
-			capital = 4153 # kiribati
+			capital = 4199 # kiribati
 			
 			c_kiribati = {
 
@@ -788,7 +768,27 @@ e_polynesia = {
 				b_eauripik = {
 				}
 			}
-			c_mortlocksapwua = {
+			c_chuuknamoduk = {
+
+				color={ 180 60 80 }
+				color2={ 146 110 77 }
+				
+				b_wenochuuk = {
+				}
+				b_faichuuk = {
+				}
+				b_namonuitoll = {
+				}
+				b_pattiwuuk = {
+				}
+				b_mortluuck = {
+				}
+				b_pulusuk = {
+				}
+				b_namoluk = {
+				}
+			}
+		c_mortlocksapwua = {
 
 				color={ 180 60 80 }
 				color2={ 126 100 56 }

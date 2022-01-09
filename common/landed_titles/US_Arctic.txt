@@ -715,7 +715,7 @@ e_nunavut = {
 	}
 	k_yukon = {
 
-		color={ 105 14 239 }
+		color={ 115 14 39 }
 		color2={ 220 220 220 }
 
 		roman = "Yukon"
@@ -724,7 +724,7 @@ e_nunavut = {
 		vinlandic = "Yukon"
 		swedish = "Yukon"
 
-		capital = 4573 # Yukon
+		capital = 4524 # Yukon
 
 		d_yukon = {
 
@@ -737,7 +737,7 @@ e_nunavut = {
 			vinlandic = "Yukon"
 			swedish = "Yukon"
 			
-			capital = 4556 # Kaskayukuuk
+			capital = 4524 # northYukon
 			
 			c_insapiangwichan = {
 				color={ 5 224 179 }
@@ -786,7 +786,7 @@ e_nunavut = {
 			swedish = "Kikuyaliksuk"
 			vinlandic = "Kikuyaliksuk"
 			
-			capital = 4573 # Yukon
+			capital = 4524 # Kikuyaliksuk
 			
 			c_wesunukitut = {
 				color={ 135 124 119 }
@@ -930,13 +930,6 @@ e_nunavut = {
 				b_matanuskasuista = {
 				}
 			}
-			c_yukuk = {
-				color={ 118 51 19 }
-				color2={ 220 220 220 }
-				
-				b_yukuk = {
-				}
-			}
 		}
 		d_anchorage = {
 
@@ -949,7 +942,7 @@ e_nunavut = {
 			vinlandic = "Anchorage"
 			swedish = "Anchorage"
 			
-			capital = 4529 # Anchorage
+			capital = 4508 # Anchorage
 			
 			c_anchorage = {
 				color={ 200 10 209 }
@@ -990,6 +983,13 @@ e_nunavut = {
 				b_yukolakalaska1 = {
 				}
 				b_denalaska1 = {
+				}
+			}
+			c_yukuk = {
+				color={ 118 51 19 }
+				color2={ 220 220 220 }
+				
+				b_yukuk = {
 				}
 			}
 			c_yupik = {

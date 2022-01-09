@@ -851,6 +851,7 @@ decadent = {
 	child_insult_adj = INSULT_FARTMASTER
 	male_insult_adj = INSULT_DECADENT
 	female_insult_adj = INSULT_DECADENT
+	child_insult_adj = INSULT_LAZY
 }
 
 # Character is seen as a reincarnation of another character.
@@ -3340,27 +3341,27 @@ baptized_by_bishop = {
 }
 
 #Increases society influence output.
-#baptized_by_satan = {
-#	
-#	opposites = {
-#		baptized_by_patriarch
-#		baptized_by_bishop
-#		baptized_by_pope
-#	}
-#
-#	#is_visible = {
-#		OR = {
-#			character = FROM
-#			#society_member_of = the_satanists 
-#		#}
-#	}
-#
-#	same_opinion = 15
-#
-#	random = no
-#	customizer = no
-#	ai_zeal = -50
-#}
+baptized_by_satan = {
+	
+	opposites = {
+		baptized_by_patriarch
+		baptized_by_bishop
+		baptized_by_pope
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = the_satanists 
+		}
+	}
+
+	same_opinion = 15
+
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
 baptized_by_patriarch = { #Same as Pope, only used to prevent localization from breaking upon death.
 	opposites =  {
 		baptized_by_pope
