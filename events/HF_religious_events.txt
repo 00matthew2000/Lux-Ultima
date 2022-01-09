@@ -2851,6 +2851,68 @@ character_event = {
 	}
 }
 
+#Chance to secretly become hellenic.
+# character_event = {
+	# id = HF.23028
+	# desc = EVTDESCAHF23028
+
+	# picture = GFX_evt_library
+	# border = GFX_event_normal_frame_religion
+	
+	# is_triggered_only = yes
+	
+	# option = { 
+		# name = EVTOPTAHF23028
+		# trigger = { 
+			# NOR = { 
+				# religion = hellenic_pagan
+				# religion = hellenic_pagan_reformed
+				# secret_religion = hellenic_pagan
+				# secret_religion = hellenic_pagan_reformed
+			# }  
+		# } 
+		# if = { 
+			# limit = { trait = zealous } 
+			# remove_trait = zealous
+		# } 
+		# if = {
+			# limit = {
+				# has_game_rule = {
+					# name = secret_cults
+					# value = default
+				# }
+			# }
+			# set_secret_religion = hellenic_pagan
+		# }
+		# if = {
+			# limit = {
+				# has_game_rule = {
+					# name = secret_cults
+					# value = none
+				# }
+			# }
+			# religion = hellenic_pagan
+		# }
+		# ai_chance = { factor = 2 } 
+	# }
+	# option = { 
+		# name = EVTOPTCHF23028
+		# trigger = { 
+			# OR = { 
+				# religion_group = graecoroman_group
+				# religion_group = indohelen_group
+				# secret_religion_group = graecoroman_group
+				# secret_religion_group = indohelen_group
+			# }  
+		# } 
+		# tiered_piety_reward_effect = yes
+		# ai_chance = { factor = 0 } 
+	# }
+	# option = { 
+		# name = EVTOPTBHF23028
+		# ai_chance = { factor = 98 } 
+	# }
+# }
 #Studied military.
 character_event = {
 	id = HF.23029
@@ -10612,6 +10674,498 @@ character_event = {
 		trigger = { NOT = { religion = FROM } }
 	}
 }
+#On_startup event giving Irminsul to the Saxon Kingdom on Charlemagne start.
+character_event = {
+	id = HF.23472
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = { 
+		is_save_game = no
+		is_alternate_start = no 
+		NOT = { year = 774 }
+		has_landed_title = k_saxony
+		religion = norse_pagan #Could be ruler-designed.
+	}
+	immediate = { 
+		120 = { 
+			set_province_flag = flag_great_pillar_norse_irminsul
+		}
+		b_paderborn = { 
+			add_building = tp_great_pillar_norse
+		}
+		religion_authority = {
+			modifier = built_great_pillar
+			years = 50
+		}
+	}
+}
+
+
+#on_siege_over_winner: Destroying a Great Pillar. (ROOT is besieger, FROM is besieged holding)
+character_event = {
+	id = HF.23473
+	title = EVTTITLEHF23473
+	desc = EVTDESCAHF23473
+	picture = GFX_evt_irminsul_burning
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Holy Fury"
+		OR = {
+			NOT = { religion_group = pagan_group }
+			is_reformed_religion = yes
+		}
+		FROM = {
+			holding_type = tribal
+			location = {  
+				OR = {
+					AND = {
+						has_province_flag = flag_great_pillar_norse
+						ROOT = { #religion_openly_norse_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_tengri
+						ROOT = { #religion_openly_tengri_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_slavic
+						ROOT = { #religion_openly_slavic_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_baltic
+						ROOT = { #religion_openly_baltic_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_finnish
+						ROOT = { #religion_openly_finnish_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_west_african
+						ROOT = { #religion_openly_west_african_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_aztec
+						ROOT = { #religion_openly_aztec_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_bon
+						ROOT = { #religion_openly_bon_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_zun
+						ROOT = { #religion_openly_zun_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_hellenic
+						ROOT = { #religion_openly_hellenic_or_reformed_trigger = no }
+					}
+				}
+			}
+			owner = {
+				top_liege = {
+					any_war = {
+						attacker = { character = ROOT }
+					}
+				}
+			}
+		}
+	}
+	
+	option = { #Destroy it!
+		name = EVTOPTAHF23473 
+		custom_tooltip = { text = tooltip_destroy_great_pillar }
+		if = {
+			limit = { has_religion_feature = religion_dogmatic }
+			tiered_piety_reward_effect = yes
+		}
+		if = {
+			limit = { has_religion_feature = religion_cosmopolitan }
+			tiered_piety_negative_effect = yes
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.3
+				religion_group = pagan_group
+			}
+			modifier = {
+				factor = 0.4
+				trait = sympathy_pagans
+			}
+			modifier = {
+				factor = 0.75
+				trait = cynical
+			}
+		}
+	}
+	option = {  #Leave it be.
+		name = EVTOPTBHF23473
+		if = {
+			tiered_piety_negative_effect = yes
+			if = {
+				limit = { NOT = { trait = sympathy_pagans } } 
+				random = { chance = 25 add_trait = sympathy_pagans }
+			}
+		}
+		if = {
+			limit = { trait = zealous } 
+			random = { 
+				chance = 25 
+				remove_trait = zealous 
+				hidden_tooltip = { character_event = { id = 38310 } }
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+	}
+}
+
+#Realm Pagans notified of Pillar's destruction.
+character_event = {
+	id = HF.23474
+	title = EVTTITLEHF23474
+	desc = EVTDESCAHF23474
+	picture = GFX_evt_irminsul_burning
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTAHF23474
+		trigger = { religion_group = pagan_group }
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_norse_pillar } }
+				religion = norse_pagan
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_tengri_pillar } }
+				religion = tengri_pagan
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_slavic_pillar } }
+				religion_group = slavic_group
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_baltic_pillar } }
+				religion_group = baltic_group
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_finnish_pillar } }
+				religion_group = finnish_group
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_west_african_pillar } }
+				religion_group = serer_group
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_aztec_pillar } }
+				religion = quetzal
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_bon_pillar } }
+				religion = bon
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_zun_pillar } }
+				religion = indoh_zor
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_hellenic_pillar } }
+				religion_group = graecoroman_group
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+	}
+	option = { 
+		name = EVTOPTBHF23474
+		trigger = { NOT = { religion_group = pagan_group } }
+	}
+}
+
+#Clean post-destruction flag.
+province_event = {
+	id = HF.23475
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		clr_province_flag = flag_just_destroyed_norse_pillar
+		clr_province_flag = flag_just_destroyed_tengri_pillar
+		clr_province_flag = flag_just_destroyed_slavic_pillar
+		clr_province_flag = flag_just_destroyed_baltic_pillar
+		clr_province_flag = flag_just_destroyed_finnish_pillar
+		clr_province_flag = flag_just_destroyed_west_african_pillar
+		clr_province_flag = flag_just_destroyed_aztec_pillar
+		clr_province_flag = flag_just_destroyed_bon_pillar
+		clr_province_flag = flag_just_destroyed_zun_pillar
+		clr_province_flag = flag_just_destroyed_hellenic_pillar
+	}
+}
+
+#Ruler has destroyed Great Pillar within his own realm.
+character_event = {
+	id = HF.23476
+	title = EVTTITLEHF23476
+	desc = EVTDESCAHF23476
+	picture = GFX_evt_irminsul_burning
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTAHF23476
+	}
+}
+#Pagan vassals of ruler react.
+character_event = {
+	id = HF.23477
+	title = EVTTITLEHF23477
+	desc = EVTDESCAHF23477
+	picture = GFX_evt_irminsul_burning
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTAHF23477
+		tooltip = { #Already removed in previous event.
+			religion_authority = {
+				modifier = destroyed_great_pillar
+				years = 10
+			}
+		}
+		if = { 
+			limit = { has_character_modifier = recently_built_great_pillar }
+			remove_character_modifier = recently_built_great_pillar
+		}
+		add_character_modifier = { #Prevents rebuilding one immediately after.
+			name = recently_destroyed_great_pillar_cooldown
+			years = 30
+		}
+		opinion = {
+			who = FROMFROM
+			modifier = opinion_sacrilege
+			years = 10
+		}
+	}
+}
 
 
 ###############################################################
@@ -13797,7 +14351,7 @@ character_event = {
 		}
 		has_religion_feature = religion_dogmatic
 		has_religion_feature = religion_temporal_head
-		#religion = FROMFROM
+		religion = FROMFROM
 		controls_religion = yes
 	}
 	
