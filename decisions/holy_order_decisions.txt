@@ -681,7 +681,7 @@ decisions = {
 		potential = {
 			is_playable = yes
 			is_nomadic = no
-			religion = quetzal
+			religion = aztec
 			is_heretic = no
 			is_title_active = d_holyaztec
 			OR = {
@@ -11362,7 +11362,7 @@ decisions = {
 		ai = no
 		
 		potential = {
-			religion = quetzal
+			religion = aztec
 			
 			higher_tier_than = DUKE
 			independent = yes
@@ -19648,7 +19648,7 @@ decisions = {
 		only_playable = yes
 		potential = {
 			is_playable = yes
-			religion = quetzal
+			religion = aztec
 			
 			is_title_active = d_holyaztec
 			NOT = { has_character_modifier = expelled_d_holyaztec }
@@ -19708,7 +19708,7 @@ decisions = {
 					piety = 1000
 					NOT = { wealth = 1000 }
 #					AND = {
-						NOT = { controls_religion = quetzal }
+						NOT = { controls_religion = aztec }
 #					}
 				}
 			}
@@ -30161,7 +30161,7 @@ decisions = {
 		potential = {
 
 			is_playable = yes
-			religion = quetzal
+			religion = aztec
 
 
 			NOT = { has_character_modifier = expelled_d_holyaztec }

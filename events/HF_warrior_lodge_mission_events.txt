@@ -14,7 +14,7 @@ character_event = {
 	only_capable = yes
 
 	trigger = {
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		has_any_quest = no
 		NOT = { has_character_modifier = quest_cooldown_timer }
 		NOT = { is_inaccessible_trigger = yes }
@@ -169,7 +169,7 @@ character_event = {
 						AND = {
 							any_society_member = {
 				           		NOT = { same_society_as = ROOT }
-				           		#is_member_of_any_warrior_lodge_trigger = yes
+				           		is_member_of_any_warrior_lodge_trigger = yes
 				                is_inaccessible_or_incapable_trigger = no
 				                NOT = { has_character_modifier = bedridden_illness }
 					            NOT = { has_character_modifier = severe_illness }
@@ -362,7 +362,7 @@ society_quest_event = {
 	only_capable = yes
 
 	trigger = {
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		has_any_quest = no
 		same_society_as = FROM
 		NOT = { has_character_modifier = quest_cooldown_timer }
@@ -652,7 +652,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		has_quest = quest_warrior_lodge_raid_and_loot
 		FROM = { is_quest_target_of = ROOT }
 	}
@@ -750,7 +750,7 @@ society_quest_event = {
 	only_capable = yes
 
 	trigger = {
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		same_society_as = FROM
 		has_any_quest = no
 		NOT = { has_character_modifier = quest_cooldown_timer }
@@ -869,7 +869,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		has_quest = quest_warrior_lodge_weak_focus_to_war
 		has_focus = focus_war
 	}
@@ -891,7 +891,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		has_quest = quest_warrior_lodge_weak_focus_to_hunting
 		has_focus = focus_hunting
 	}
@@ -913,7 +913,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		has_quest = quest_warrior_lodge_weak_focus_to_rulership
 		has_focus = focus_rulership
 	}
@@ -935,7 +935,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		has_quest = quest_warrior_lodge_weak_focus_to_carousing
 		has_focus = focus_carousing
 	}
@@ -978,7 +978,7 @@ society_quest_event = {
 
 	trigger = {
 		FROM = { is_alive = yes }
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		same_society_as = FROM
 		has_any_quest = no
 		NOT = { has_character_modifier = quest_cooldown_timer }
@@ -1269,7 +1269,7 @@ society_quest_event = {
 
 	trigger = {
 		FROM = { is_alive = yes }
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		same_society_as = FROM
 		has_any_quest = no
 		NOT = { has_character_modifier = quest_cooldown_timer }
@@ -1277,12 +1277,21 @@ society_quest_event = {
 		is_landed = yes
 	}
 
+	desc = {
+		text = EVTDESCHF10511_A #default
+		trigger = { event_target:duel_target = { is_member_of_any_warrior_lodge_trigger = yes } }
+	}
+	desc = {
+		text = EVTDESCHF10511_B #if target is not in a warrior lodge...
+		trigger = { event_target:duel_target = { is_member_of_any_warrior_lodge_trigger = no } }
+	}
+
 	immediate = {
 		if = { #Best case... (a society member of *another* warrior lodge, who matches or is below your PCS)
 			limit = {
 				any_society_member = {
 	           		NOT = { same_society_as = ROOT }
-	           		#is_member_of_any_warrior_lodge_trigger = yes
+	           		is_member_of_any_warrior_lodge_trigger = yes
 	                is_inaccessible_or_incapable_trigger = no
 	                NOT = { has_character_modifier = bedridden_illness }
 		            NOT = { has_character_modifier = severe_illness }
@@ -1300,7 +1309,7 @@ society_quest_event = {
 			any_society_member = {
 				limit = {
 	           		NOT = { same_society_as = ROOT }
-	           		#is_member_of_any_warrior_lodge_trigger = yes
+	           		is_member_of_any_warrior_lodge_trigger = yes
 	                is_inaccessible_or_incapable_trigger = no
 	                NOT = { has_character_modifier = bedridden_illness }
 		            NOT = { has_character_modifier = severe_illness }
@@ -1449,7 +1458,7 @@ society_quest_event = {
 			limit = {
 				any_society_member = {
 	           		NOT = { same_society_as = ROOT }
-	           		#is_member_of_any_warrior_lodge_trigger = yes
+	           		is_member_of_any_warrior_lodge_trigger = yes
 	                is_inaccessible_or_incapable_trigger = no
 	                NOT = { has_character_modifier = bedridden_illness }
 		            NOT = { has_character_modifier = severe_illness }
@@ -1462,7 +1471,7 @@ society_quest_event = {
 			any_society_member = {
 				limit = {
 	           		NOT = { same_society_as = ROOT }
-	           		#is_member_of_any_warrior_lodge_trigger = yes
+	           		is_member_of_any_warrior_lodge_trigger = yes
 	                is_inaccessible_or_incapable_trigger = no
 	                NOT = { has_character_modifier = bedridden_illness }
 		            NOT = { has_character_modifier = severe_illness }
@@ -1538,7 +1547,7 @@ society_quest_event = {
 	
 	trigger = {
 		FROM = { is_alive = yes }
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		same_society_as = FROM
 		has_any_quest = no
 		NOT = { has_character_modifier = quest_cooldown_timer }
@@ -1847,7 +1856,7 @@ character_event = {
 	has_dlc = "Holy Fury"
 	trigger = {
 		FROM = {
-			#is_member_of_any_warrior_lodge_trigger = yes
+			is_member_of_any_warrior_lodge_trigger = yes
 			has_quest = quest_warrior_lodge_war
 		}
 		any_realm_title = {
@@ -1880,7 +1889,7 @@ character_event = {
 	has_dlc = "Holy Fury"
 	trigger = {
 		FROM = {
-			#is_member_of_any_warrior_lodge_trigger = yes
+			is_member_of_any_warrior_lodge_trigger = yes
 			has_quest = quest_warrior_lodge_war
 		}
 		any_realm_title = {
@@ -1912,7 +1921,7 @@ character_event = {
 	has_dlc = "Holy Fury"
 	trigger = {
 		FROM = {
-			#is_member_of_any_warrior_lodge_trigger = yes
+			is_member_of_any_warrior_lodge_trigger = yes
 			has_quest = quest_warrior_lodge_war
 		}
 		any_realm_title = {
@@ -1944,7 +1953,7 @@ character_event = {
 	has_dlc = "Holy Fury"
 	trigger = {
 		FROM = {
-			#is_member_of_any_warrior_lodge_trigger = yes
+			is_member_of_any_warrior_lodge_trigger = yes
 			has_quest = quest_warrior_lodge_war
 		}
 		any_realm_title = {
@@ -1979,11 +1988,11 @@ character_event = {
 	trigger = {
 		OR = { 
 			AND = { 
-				#is_member_of_any_warrior_lodge_trigger = yes
+				is_member_of_any_warrior_lodge_trigger = yes
 				has_quest = quest_warrior_lodge_raid_and_loot
 			}
 			any_liege = { 
-				#is_member_of_any_warrior_lodge_trigger = yes
+				is_member_of_any_warrior_lodge_trigger = yes
 				has_quest = quest_warrior_lodge_raid_and_loot
 			}
 		}
@@ -1992,7 +2001,7 @@ character_event = {
 	immediate = {
 		if = {
 			limit = { 
-				#is_member_of_any_warrior_lodge_trigger = yes
+				is_member_of_any_warrior_lodge_trigger = yes
 				has_quest = quest_warrior_lodge_raid_and_loot
 			}
 			character_event = { id = HF.25511 days = 1 }
@@ -2000,13 +2009,13 @@ character_event = {
 		if = {
 			limit = { 
 				any_liege = { 
-					#is_member_of_any_warrior_lodge_trigger = yes
+					is_member_of_any_warrior_lodge_trigger = yes
 					has_quest = quest_warrior_lodge_raid_and_loot
 				}
 			}
 			any_liege = { 
 				limit = { 
-					#is_member_of_any_warrior_lodge_trigger = yes
+					is_member_of_any_warrior_lodge_trigger = yes
 					has_quest = quest_warrior_lodge_raid_and_loot
 				}
 				character_event = { id = HF.25511 days = 1 }
@@ -2024,7 +2033,7 @@ character_event = {
 	immediate = {
 		if = {
 			limit = { 
-				#is_member_of_any_warrior_lodge_trigger = yes
+				is_member_of_any_warrior_lodge_trigger = yes
 				has_quest = quest_warrior_lodge_raid_and_loot
 				any_realm_title = { 
 					is_quest_target_of = ROOT 
@@ -2057,7 +2066,7 @@ society_quest_event = {
 		is_landed = yes
 	    is_adult = yes	        		
 		FROM = { is_alive = yes }
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		same_society_as = FROM
 		has_any_quest = no
 		NOT = { has_character_modifier = quest_cooldown_timer }

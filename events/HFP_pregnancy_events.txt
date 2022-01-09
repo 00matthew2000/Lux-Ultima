@@ -3995,8 +3995,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion_group = tengri_group
-								religion_group = norsegerman_group
+								religion = tengri_pagan
+								religion = tengri_pagan_reformed
+								religion = norse_pagan
+								religion = norse_pagan_reformed
 							} 
 						} 
 						set_dynasty_flag = flag_vision_baby		#Positive
@@ -4008,8 +4010,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion_group = tengri_group
-								religion_group = norsegerman_group
+								religion = tengri_pagan
+								religion = tengri_pagan_reformed
+								religion = norse_pagan
+								religion = norse_pagan_reformed
 							} 
 						}
 						set_dynasty_flag = flag_vision_baby 	#Negative
@@ -8025,9 +8029,12 @@ character_event = {
 					} 
 					spouse = { 
 						OR = { 
-							religion_group = norsegerman_group
-							religion_group = baltic_group
-							religion_group = finnish_group 
+							religion = norse_pagan
+							religion = norse_pagan_reformed
+							religion = baltic_pagan
+							religion = baltic_pagan_reformed
+							religion = finnish_pagan
+							religion = finnish_pagan_reformed 
 						}  
 						NOR = { 
 							trait = incapable 
@@ -8036,9 +8043,12 @@ character_event = {
 						}
 					}
 					OR = { 
-						religion_group = norsegerman_group
-						religion_group = baltic_group
-						religion_group = finnish_group 
+						religion = norse_pagan
+						religion = norse_pagan_reformed
+						religion = baltic_pagan
+						religion = baltic_pagan_reformed
+						religion = finnish_pagan
+						religion = finnish_pagan_reformed 
 					} 
 				}
 				modifier = { 
@@ -8113,9 +8123,12 @@ character_event = {
 					} 
 					spouse = { 
 						OR = { 
-							religion_group = norsegerman_group
-							religion_group = baltic_group
-							religion_group = finnish_group 
+							religion = norse_pagan
+							religion = norse_pagan_reformed
+							religion = baltic_pagan
+							religion = baltic_pagan_reformed
+							religion = finnish_pagan
+							religion = finnish_pagan_reformed 
 						}  
 						NOR = { 
 							trait = incapable 
@@ -8124,9 +8137,12 @@ character_event = {
 						}
 					}
 					OR = { 
-						religion_group = norsegerman_group
-						religion_group = baltic_group
-						religion_group = finnish_group 
+						religion = norse_pagan
+						religion = norse_pagan_reformed
+						religion = baltic_pagan
+						religion = baltic_pagan_reformed
+						religion = finnish_pagan
+						religion = finnish_pagan_reformed 
 					} 
 				}
 				modifier = { 
@@ -8954,8 +8970,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion_group = tengri_group
-								religion_group = norsegerman_group
+								religion = tengri_pagan
+								religion = tengri_pagan_reformed
+								religion = norse_pagan
+								religion = norse_pagan_reformed
 							} 
 						} 
 						set_dynasty_flag = flag_vision_baby		#Positive
@@ -8982,8 +9000,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion_group = tengri_group
-								religion_group = norsegerman_group
+								religion = tengri_pagan
+								religion = tengri_pagan_reformed
+								religion = norse_pagan
+								religion = norse_pagan_reformed
 							} 
 						} 
 						set_dynasty_flag = flag_vision_baby		#Positive
@@ -9055,8 +9075,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion_group = tengri_group
-								religion_group = norsegerman_group
+								religion = tengri_pagan
+								religion = tengri_pagan_reformed
+								religion = norse_pagan
+								religion = norse_pagan_reformed
 							} 
 						}
 						set_dynasty_flag = flag_vision_baby 	#Negative
@@ -9101,8 +9123,10 @@ character_event = {
 							NOR = { 
 								religion_group = christian
 								religion_group = muslim
-								religion_group = tengri_group
-								religion_group = norsegerman_group
+								religion = tengri_pagan
+								religion = tengri_pagan_reformed
+								religion = norse_pagan
+								religion = norse_pagan_reformed
 							} 
 						}
 						set_dynasty_flag = flag_vision_baby 	#Negative

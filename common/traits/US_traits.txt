@@ -11,7 +11,7 @@ chivalrous = {
 			religion_group = muslim
 			religion_group = indian_group
 			religion_group = chinese_group
-			religion_group = bud_group
+			religion_group = buddhism_group
 		}
 	}
 	opposites =  {
@@ -80,7 +80,7 @@ dharma = {
 	potential = {
 		OR={
 			religion_group = indian_group
-			religion_group = bud_group
+			religion_group = buddhism_group
 		}
 	}
 	opposites =  {
@@ -155,6 +155,7 @@ tea_master = {
 		culture_group = far_east
 		culture_group = chinese
 		culture_group = korean_group
+		culture_group = di
 		culture_group = vietic
 		}
 	}
@@ -195,6 +196,7 @@ go_player = {
 		culture_group = far_east
 		culture_group = chinese
 		culture_group = korean_group
+		culture_group = di
 		culture_group = vietic
 		}
 	}

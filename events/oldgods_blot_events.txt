@@ -238,8 +238,8 @@ character_event = {
 						religion_group = muslim
 						AND = {
 							OR = {
-								religion = quetzal
-								religion = quetzal_reformed
+								religion = aztec
+								religion = aztec_reformed
 							}
 							culture = nahuatl
 						}
@@ -357,8 +357,8 @@ character_event = {
 			if = {
 				limit = { # Aztec
 					OR = {
-						religion = quetzal
-						religion = quetzal_reformed
+						religion = aztec
+						religion = aztec_reformed
 					}
 					culture = nahuatl
 					NOT = {
@@ -402,8 +402,8 @@ character_event = {
 						religion_group = muslim
 						AND = {
 							OR = {
-								religion = quetzal
-								religion = quetzal_reformed
+								religion = aztec
+								religion = aztec_reformed
 							}
 							culture = nahuatl
 						}
@@ -521,8 +521,8 @@ character_event = {
 			if = {
 				limit = { # Aztec
 					OR = {
-						religion = quetzal
-						religion = quetzal_reformed
+						religion = aztec
+						religion = aztec_reformed
 					}
 					culture = nahuatl
 					NOT = {
@@ -566,8 +566,8 @@ character_event = {
 						religion_group = muslim
 						AND = {
 							OR = {
-								religion = quetzal
-								religion = quetzal_reformed
+								religion = aztec
+								religion = aztec_reformed
 							}
 							culture = nahuatl
 						}
@@ -685,8 +685,8 @@ character_event = {
 			if = {
 				limit = { # Aztec
 					OR = {
-						religion = quetzal
-						religion = quetzal_reformed
+						religion = aztec
+						religion = aztec_reformed
 					}
 					culture = nahuatl
 					NOT = {
@@ -730,8 +730,8 @@ character_event = {
 						religion_group = muslim
 						AND = {
 							OR = {
-								religion = quetzal
-								religion = quetzal_reformed
+								religion = aztec
+								religion = aztec_reformed
 							}
 							culture = nahuatl
 						}
@@ -849,8 +849,8 @@ character_event = {
 			if = {
 				limit = { # Aztec
 					OR = {
-						religion = quetzal
-						religion = quetzal_reformed
+						religion = aztec
+						religion = aztec_reformed
 					}
 					culture = nahuatl
 					NOT = {

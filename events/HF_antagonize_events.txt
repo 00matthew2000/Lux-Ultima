@@ -224,8 +224,8 @@ character_event = {
 							AND = { 
 								trait = erudite 
 								NOR = { 
-									religion_group = graecoroman_group
-									religion_group = indohelen_group
+									religion = hellenic_pagan
+									religion = hellenic_pagan_reformed
 								}
 								ROOT = { religion_group = pagan_group }
 							}
@@ -2383,11 +2383,11 @@ character_event = {
 				}
 				modifier = { #Context
 					factor = 0
-					FROM = { religion_group = graecoroman_group }
+					FROM = { religion = hellenic_pagan }
 				}
 				modifier = { #Context
 					factor = 0
-					FROM = { religion_group = indohelen_group }
+					FROM = { religion = hellenic_pagan_reformed }
 				}
 				modifier = { #Try to pick opposite traits if any are available
 					factor = 1.5

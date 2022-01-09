@@ -24,7 +24,7 @@ character_event = {
 		NOT = { has_character_flag = call_to_legend_active }
 		war = no
         society_rank == 4
-		#is_member_of_any_warrior_lodge_trigger = yes
+		is_member_of_any_warrior_lodge_trigger = yes
 		is_inaccessible_or_incapable_trigger = no
 		is_adult = yes
 		any_society_member = {
@@ -2069,41 +2069,41 @@ character_event = { # Warrior Lodge members with high PCS might go out and duel 
     }
 }
 
-#character_event = { # Notify when a lodge member is killed in a duel
-#	id = HF.560
-#	hide_window = yes
-#	
-#	is_triggered_only = yes
-#	
-#	is_in_society = yes
-#
-#	trigger = {
-#		is_member_of_any_warrior_lodge_trigger = yes
-#		OR = {
-#			death_reason = death_duel
-#			death_reason = death_battle_duel
-#			death_reason = death_mission_duel
-#		}
-#	}
-#	
-#	immediate = {
-#		hidden_tooltip = { # Inform players that fellow society member has been killed in a duel
-#			save_event_target_as = lodge_member_killed
-#			killer = {
-#				save_event_target_as = lodge_member_killer
-#			}
-#			any_player = {
-#				limit = {
-#					same_society_as = ROOT
-#					NOT = {
-#						character = ROOT
-#					}
-#				}
-#				character_event = { id = HF.561 }
-#			}
-#		}
-#	}
-#}
+character_event = { # Notify when a lodge member is killed in a duel
+	id = HF.560
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	is_in_society = yes
+
+	trigger = {
+		is_member_of_any_warrior_lodge_trigger = yes
+		OR = {
+			death_reason = death_duel
+			death_reason = death_battle_duel
+			death_reason = death_mission_duel
+		}
+	}
+	
+	immediate = {
+		hidden_tooltip = { # Inform players that fellow society member has been killed in a duel
+			save_event_target_as = lodge_member_killed
+			killer = {
+				save_event_target_as = lodge_member_killer
+			}
+			any_player = {
+				limit = {
+					same_society_as = ROOT
+					NOT = {
+						character = ROOT
+					}
+				}
+				character_event = { id = HF.561 }
+			}
+		}
+	}
+}
 
 character_event = {
 	id = HF.561
@@ -2134,7 +2134,7 @@ character_event = {
     trigger = {
     	has_dlc = "Holy Fury"
     	is_inaccessible_or_incapable_trigger = no
-    	#is_member_of_any_warrior_lodge_trigger = yes
+    	is_member_of_any_warrior_lodge_trigger = yes
     	NOT = { has_character_flag = do_not_disturb }
 	    war = no
 	    is_adult = yes
@@ -3453,12 +3453,12 @@ character_event = {
     	OR = {
     		any_friend = { 	
     			same_society_as = ROOT
-    			#is_member_of_any_warrior_lodge_trigger = yes
+    			is_member_of_any_warrior_lodge_trigger = yes
     			block_general_event_trigger = no
     		}
     		any_lover = { 	
     			same_society_as = ROOT
-    			#is_member_of_any_warrior_lodge_trigger = yes
+    			is_member_of_any_warrior_lodge_trigger = yes
     			block_general_event_trigger = no
     		}
     	}

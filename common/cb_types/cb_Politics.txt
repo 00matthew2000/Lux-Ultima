@@ -381,7 +381,7 @@ cb_faction_independence = {
 								OR = { # If the old liege can use the subjugation CB, give no claims
 									NOR = {
 										LI_traditional_trigger = yes
-										religion = quetzal
+										religion = aztec
 										religion = tarhunt
 									}
 									NOT = { culture_group = PREVPREV }

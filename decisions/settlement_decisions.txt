@@ -721,7 +721,7 @@ settlement_decisions = {
 					}
 					OR = {
 						has_dlc = "Jade Dragon"
-						NOT = { religion = tao }
+						NOT = { religion = taoist }
 					}
 				}
 			}
@@ -1406,7 +1406,7 @@ settlement_decisions = {
 					}
 					OR = {
 						has_dlc = "Jade Dragon"
-						NOT = { religion = tao }
+						NOT = { religion = taoist }
 					}
 				}
 			}

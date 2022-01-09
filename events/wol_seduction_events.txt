@@ -6966,6 +6966,7 @@ character_event = {
 			modifier = {
 				factor = 0.5
 				is_close_relative = FROM
+				NOT = { religion = messalian }
 				NOT = { religion = zoroastrian }
 				NOT = {
 					OR = {
@@ -8345,6 +8346,7 @@ character_event = {
 			modifier = {
 				factor = 0.5
 				is_close_relative = FROM
+				NOT = { religion = messalian }
 				NOT = { religion = zoroastrian }
 				NOT = {
 					OR = {

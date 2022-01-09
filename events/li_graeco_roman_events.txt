@@ -11,7 +11,7 @@ character_event = {
 
 	
 	trigger = { 
-		has_landed_title = b_vesta_temple
+		has_landed_title = c_vesta_temple
 	}
 	
 	immediate = {
@@ -24,6 +24,7 @@ character_event = {
 					trait = vestalis
 					is_female = yes
 				}
+				c_vesta_temple = { gain_title = PREV }
 				b_vesta_temple = { gain_title = PREV }
 				set_defacto_liege = THIS
 				remove_title = title_vestalis
@@ -113,7 +114,7 @@ character_event = {
 	
 	trigger = {
 		trait = vestalis
-		has_landed_title = b_vesta_temple
+		has_landed_title = c_vesta_temple
 		NOT = { has_minor_title = title_vestalis_maxima }
 	}
 	

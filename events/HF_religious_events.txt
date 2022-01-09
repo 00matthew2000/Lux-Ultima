@@ -12968,7 +12968,7 @@ character_event = {
 		trigger = { 
 			OR = { 
 				religion_group = serer_group
-				religion_group = african_pagan_group
+				religion_group = serer_group_reformed
 			} 
 		} 
 		picture = GFX_evt_west_african_ruler
@@ -12978,7 +12978,7 @@ character_event = {
 			has_dlc = "Mystics"
 			NOR = { 
 				religion_group = serer_group
-				religion_group = african_pagan_group
+				religion_group = serer_group_reformed
 			} 
 			has_religion_feature = religion_animistic 
 		} 
@@ -13003,7 +13003,7 @@ character_event = {
 		}
 		OR = {
 			religion_group = serer_group
-			religion_group = african_pagan_group
+			religion_group = serer_group_reformed
 			has_religion_feature = religion_animistic 
 		}
 	}
@@ -13155,7 +13155,7 @@ character_event = {
 		trigger = { 
 			OR = { 
 				religion_group = serer_group
-				religion_group = african_pagan_group
+				religion_group = serer_group_reformed
 			} 
 		} 
 		picture = GFX_evt_west_african_ruler
@@ -13165,7 +13165,7 @@ character_event = {
 			has_dlc = "Mystics"
 			NOR = { 
 				religion_group = serer_group
-				religion_group = african_pagan_group
+				religion_group = serer_group_reformed
 			} 
 			has_religion_feature = religion_animistic 
 		} 
@@ -13218,7 +13218,7 @@ character_event = {
 					trigger = { 
 						NOR = {
 							religion_group = serer_group
-							religion_group = african_pagan_group
+							religion_group = serer_group_reformed
 						}
 					}
 					add_trait = slavic_tattoo_6
@@ -13290,7 +13290,7 @@ character_event = {
 					trigger = { 
 						NOR = {
 							religion_group = serer_group
-							religion_group = african_pagan_group
+							religion_group = serer_group_reformed
 						}
 					}
 					add_trait = norse_tattoo_6
@@ -13362,7 +13362,7 @@ character_event = {
 					trigger = { 
 						NOR = {
 							religion_group = serer_group
-							religion_group = african_pagan_group
+							religion_group = serer_group_reformed
 						}
 					}
 					add_trait = norse_tattoo_3
@@ -13434,7 +13434,7 @@ character_event = {
 					trigger = { 
 						NOR = {
 							religion_group = serer_group
-							religion_group = african_pagan_group
+							religion_group = serer_group_reformed
 						}
 					}
 					add_trait = norse_tattoo_4
@@ -13494,7 +13494,7 @@ character_event = {
 		}
 		OR = {
 			religion_group = serer_group
-			religion_group = african_pagan_group
+			religion_group = serer_group_reformed
 			has_religion_feature = religion_animistic 
 		}
 	}
@@ -13520,7 +13520,7 @@ character_event = {
 		is_save_game = no
 		OR = { 
 			religion_group = serer_group
-			religion_group = african_pagan_group
+			religion_group = serer_group_reformed
 			has_religion_feature = religion_animistic
 		}
 	}

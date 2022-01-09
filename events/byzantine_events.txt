@@ -19,7 +19,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			NOT = {  
-				culture_group = chinese
+				culture_group = chinese_group
 				has_dlc = "Jade Dragon"
 			}
 		} 
@@ -27,7 +27,7 @@ character_event = {
 	}
 	picture = { 
 		trigger = { 
-			culture_group = chinese
+			culture_group = chinese_group
 			has_dlc = "Jade Dragon"
 		} 
 		picture = GFX_evt_chinese_emissary
@@ -46,7 +46,7 @@ character_event = {
 			has_landed_title = e_roman_empire
 			culture_group = byzantine
 			culture = persian
-			culture_group = chinese
+			culture_group = chinese_group
 		}
 		NOR = {
 			any_courtier = { has_minor_title = title_imperial_eunuch }
@@ -81,14 +81,13 @@ character_event = {
 }
 
 # Martial Eunuch
-# Martial Eunuch
 character_event = {
 	id = LoR.801
 	desc = EVTDESCLoR.801
 	picture = { 
 		trigger = { 
 			NOT = {  
-				culture_group = chinese
+				culture_group = chinese_group
 				has_dlc = "Jade Dragon"
 			}
 		} 
@@ -96,7 +95,7 @@ character_event = {
 	}
 	picture = { 
 		trigger = { 
-			culture_group = chinese
+			culture_group = chinese_group
 			has_dlc = "Jade Dragon"
 		} 
 		picture = GFX_evt_chinese_emissary
@@ -152,7 +151,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			NOT = {  
-				culture_group = chinese
+				culture_group = chinese_group
 				has_dlc = "Jade Dragon"
 			}
 		} 
@@ -160,7 +159,7 @@ character_event = {
 	}
 	picture = { 
 		trigger = { 
-			culture_group = chinese
+			culture_group = chinese_group
 			has_dlc = "Jade Dragon"
 		} 
 		picture = GFX_evt_chinese_emissary
@@ -216,7 +215,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			NOT = {  
-				culture_group = chinese
+				culture_group = chinese_group
 				has_dlc = "Jade Dragon"
 			}
 		} 
@@ -224,7 +223,7 @@ character_event = {
 	}
 	picture = { 
 		trigger = { 
-			culture_group = chinese
+			culture_group = chinese_group
 			has_dlc = "Jade Dragon"
 		} 
 		picture = GFX_evt_chinese_emissary
@@ -280,7 +279,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			NOT = {  
-				culture_group = chinese
+				culture_group = chinese_group
 				has_dlc = "Jade Dragon"
 			}
 		} 
@@ -288,7 +287,7 @@ character_event = {
 	}
 	picture = { 
 		trigger = { 
-			culture_group = chinese
+			culture_group = chinese_group
 			has_dlc = "Jade Dragon"
 		} 
 		picture = GFX_evt_chinese_emissary
@@ -344,7 +343,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			NOT = {  
-				culture_group = chinese
+				culture_group = chinese_group
 				has_dlc = "Jade Dragon"
 			}
 		} 
@@ -352,7 +351,7 @@ character_event = {
 	}
 	picture = { 
 		trigger = { 
-			culture_group = chinese
+			culture_group = chinese_group
 			has_dlc = "Jade Dragon"
 		} 
 		picture = GFX_evt_chinese_emissary
@@ -632,7 +631,7 @@ character_event = {
 			dynasty = NONE
 			female = no
 			age = 22
-			trait = varangian
+			trait = varangian_trait
 			religion = ROOT
 			culture = varangian
 		}
@@ -802,8 +801,8 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = graecoroman_group
-			religion_group = indohelen_group
+			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = greek_fire }
 		in_command = no

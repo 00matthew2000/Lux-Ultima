@@ -1624,7 +1624,7 @@ character_event = {
 
 	trigger = {
 		is_priest = yes
-		religion = quetzal
+		religion = aztec
 		NOR = {
 			intrigue = 3
 			diplomacy = 3
@@ -2018,7 +2018,7 @@ character_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-	religion = quetzal
+	religion = aztec
 	has_dlc = "Sons of Abraham"
 
 	trigger = {
@@ -2344,6 +2344,7 @@ character_event = {
 	trigger = {
 		year = 885
 		is_priest = yes
+		has_landed_title = b_mntathos
 		OR = {
 			religion = orthodox
 			is_heresy_of = orthodox

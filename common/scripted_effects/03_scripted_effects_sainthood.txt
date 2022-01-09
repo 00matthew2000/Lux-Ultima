@@ -54,8 +54,29 @@ deciding_upon_saint_effect = {
                         religion = catholic
                     }
                     event_target:saint_person = {
+                        religion = fraticelli
+                    }
+                    event_target:saint_person = {
                         religion = orthodox
                     }
+                    event_target:saint_person = {
+                        religion = iconoclast
+                    }
+                    event_target:saint_person = {
+                        religion = nestorian
+                    }
+                    event_target:saint_person = {
+                        religion = miaphysite
+                    }
+                    event_target:saint_person = {
+                        religion = monophysite
+                    }
+                    event_target:saint_person = {
+                        religion = monothelite
+                    }
+                    # event_target:saint_person = {
+                        # religion = paulician
+                    # }
                     event_target:saint_person = {
                         has_religion_feature = religion_beatification
                     }

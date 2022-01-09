@@ -4160,6 +4160,7 @@ pay_back_assassins_effect = {
 				if = {
 					limit = {
 						ai = yes
+						primary_title = { title = d_hashshashin } 
 					}
 					wealth = 50
 				}
@@ -4174,6 +4175,7 @@ pay_back_assassins_effect = {
 				if = {
 					limit = {
 						ai = yes
+						primary_title = { title = d_hashshashin } 
 					}
 					wealth = 250
 				}
@@ -4188,6 +4190,7 @@ pay_back_assassins_effect = {
 				if = {
 					limit = {
 						ai = yes
+						primary_title = { title = d_hashshashin } 
 					}
 					wealth = 300
 				}
@@ -4202,6 +4205,7 @@ pay_back_assassins_effect = {
 				if = {
 					limit = {
 						ai = yes
+						primary_title = { title = d_hashshashin } 
 					}
 					wealth = 500
 				}
@@ -9088,11 +9092,11 @@ add_ascetic_trait_effect = {
 			add_trait = aryika
 		}
 		if = {
-			limit = { religion_group = bud_group }
+			limit = { religion = buddhist }
 			add_trait = bhikkhuni
 		}
 		if = {
-			limit = { religion_group = indian_group }
+			limit = { religion = hindu }
 			add_trait = sanyasini
 		}
 	}
@@ -9107,11 +9111,11 @@ add_ascetic_trait_effect = {
 			add_trait = muni
 		}
 		if = {
-			limit = { religion_group = bud_group }
+			limit = { religion = buddhist }
 			add_trait = bhikkhu
 		}
 		if = {
-			limit = { religion_group = indian_group }
+			limit = { religion = hindu }
 			add_trait = sanyasi
 		}
 	}
@@ -21545,7 +21549,7 @@ add_random_commander_trait_effect = {
 				NOT = {
 					trait = logistics_expert
 				}
-				culture_group = chinese
+				culture_group = chinese_group
 			}
 			add_trait = logistics_expert
 		}
@@ -21554,7 +21558,7 @@ add_random_commander_trait_effect = {
 				NOT = {
 					trait = master_of_flame
 				}
-				culture_group = chinese
+				culture_group = chinese_group
 			}
 			add_trait = master_of_flame
 		}
@@ -21563,7 +21567,7 @@ add_random_commander_trait_effect = {
 				NOT = {
 					trait = sapper
 				}
-				culture_group = chinese
+				culture_group = chinese_group
 			}
 			add_trait = sapper
 		}
@@ -21572,7 +21576,7 @@ add_random_commander_trait_effect = {
 				NOT = {
 					trait = levy_coordinator
 				}
-				culture_group = chinese
+				culture_group = chinese_group
 			}
 			add_trait = levy_coordinator
 		}
@@ -21778,7 +21782,7 @@ add_same_commander_trait_as_FROM = {
 				NOT = {
 					trait = logistics_expert
 				}
-				culture_group = chinese
+				culture_group = chinese_group
 				FROM = { trait = logistics_expert }
 			}
 			add_trait = logistics_expert
@@ -21788,7 +21792,7 @@ add_same_commander_trait_as_FROM = {
 				NOT = {
 					trait = master_of_flame
 				}
-				culture_group = chinese
+				culture_group = chinese_group
 				FROM = { trait = master_of_flame }
 			}
 			add_trait = master_of_flame
@@ -21798,7 +21802,7 @@ add_same_commander_trait_as_FROM = {
 				NOT = {
 					trait = sapper
 				}
-				culture_group = chinese
+				culture_group = chinese_group
 				FROM = { trait = sapper }
 			}
 			add_trait = sapper
@@ -21808,7 +21812,7 @@ add_same_commander_trait_as_FROM = {
 				NOT = {
 					trait = levy_coordinator
 				}
-				culture_group = chinese
+				culture_group = chinese_group
 				FROM = { trait = levy_coordinator }
 			}
 			add_trait = levy_coordinator
@@ -22569,14 +22573,21 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	}
 	else_if = {
 	    limit = { 
+	        OR = {
 	        	religion_group = zoroastrian_group
+	        	religion = zun_pagan
+	        	religion = zun_pagan_reformed
+			}
 		}
 	    add_artifact = circlet_of_twilight
         add_artifact = silver_staff
 	}
 	else_if = {
 	    limit = {
-	        	religion_group = norsegerman_group
+	       OR = {
+	        	religion = norse_pagan
+	        	religion = norse_pagan_reformed
+	        }
 	    }
 	    add_artifact = iron_crown
         add_artifact = engraved_sword
@@ -22623,14 +22634,21 @@ give_goldsmith_artifacts_flag_good_effect = {
 	}
 	else_if = {
 	    limit = { 
+	        OR = {
 	        	religion_group = zoroastrian_group
+	        	religion = zun_pagan
+	        	religion = zun_pagan_reformed
+			}
 		}
 	    add_artifact = circlet_of_the_heavens
         add_artifact = golden_staff
 	}
 	else_if = {
 	    limit = {
-	        	religion_group = norsegerman_group
+	       OR = {
+	        	religion = norse_pagan
+	        	religion = norse_pagan_reformed
+	        }
 	    }
 	    add_artifact = crown_of_the_sea
         add_artifact = golden_sword
@@ -22677,14 +22695,21 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	}
 	else_if = {
 	    limit = { 
+	        OR = {
 	        	religion_group = zoroastrian_group
+	        	religion = zun_pagan
+	        	religion = zun_pagan_reformed
+			}
 		}
 	    add_artifact = circlet_of_the_heavens
 	    add_artifact = staff_of_majesty
 	}
 	else_if = {
 	    limit = {
-	        	religion_group = norsegerman_group
+	       OR = {
+	        	religion = norse_pagan
+	        	religion = norse_pagan_reformed
+	        }
 	    }
 	    add_artifact = crown_of_crows
 	    add_artifact = sword_of_heroes
@@ -22731,14 +22756,21 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 	}
 	else_if = {
 	    limit = { 
+	        OR = {
 	        	religion_group = zoroastrian_group
+	        	religion = zun_pagan
+	        	religion = zun_pagan_reformed
+			}
 		}
 	    add_artifact = circlet_of_the_heavens_2
 	    add_artifact = staff_of_majesty_2
 	}
 	else_if = {
 	    limit = {
-	        	religion_group = norsegerman_group
+	       OR = {
+	        	religion = norse_pagan
+	        	religion = norse_pagan_reformed
+	        }
 	    }
 	    add_artifact = crown_of_crows_2
 	    add_artifact = sword_of_heroes_2
@@ -22786,14 +22818,21 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 	}
 	else_if = {
 	    limit = { 
+	        OR = {
 	        	religion_group = zoroastrian_group
+	        	religion = zun_pagan
+	        	religion = zun_pagan_reformed
+			}
 		}
 	    add_artifact = circlet_of_twilight
         add_artifact = silver_staff
 	}
 	else_if = {
 	    limit = {
-	        	religion_group = norsegerman_group
+	       OR = {
+	        	religion = norse_pagan
+	        	religion = norse_pagan_reformed
+	        }
 	    }
 	    add_artifact = iron_crown
         add_artifact = engraved_sword
@@ -22840,14 +22879,21 @@ give_weaponsmith_artifacts_flag_good_effect = {
 	}
 	else_if = {
 	    limit = { 
+	        OR = {
 	        	religion_group = zoroastrian_group
+	        	religion = zun_pagan
+	        	religion = zun_pagan_reformed
+			}
 		}
 	    add_artifact = circlet_of_the_heavens
         add_artifact = golden_staff
 	}
 	else_if = {
 	    limit = {
-	        	religion_group = norsegerman_group
+	       OR = {
+	        	religion = norse_pagan
+	        	religion = norse_pagan_reformed
+	        }
 	    }
 	    add_artifact = crown_of_the_sea
         add_artifact = golden_sword
@@ -22894,14 +22940,21 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 	}
 	else_if = {
 	    limit = { 
+	        OR = {
 	        	religion_group = zoroastrian_group
+	        	religion = zun_pagan
+	        	religion = zun_pagan_reformed
+			}
 		}
 	    add_artifact = circlet_of_the_heavens
 	    add_artifact = staff_of_majesty
 	}
 	else_if = {
 	    limit = {
-	        	religion_group = norsegerman_group
+	       OR = {
+	        	religion = norse_pagan
+	        	religion = norse_pagan_reformed
+	        }
 	    }
 	    add_artifact = crown_of_crows
 	    add_artifact = sword_of_heroes

@@ -282,11 +282,11 @@ tribal_invasion = {
 					OR = {
 						has_character_flag = horde_invader
 						AND = {
-							religion = quetzal
+							religion = aztec
 							culture_group = mesoamerican
 							FROM = {
 								NOT = {
-									religion = quetzal # Should subjugate these instead
+									religion = aztec # Should subjugate these instead
 								}
 							}
 						}
@@ -297,7 +297,7 @@ tribal_invasion = {
 					higher_tier_than = COUNT
 					independent = yes
 					OR = {
-						religion = quetzal
+						religion = aztec
 						OR = {
 							has_horde_culture = yes
 							has_character_flag = horde_invader

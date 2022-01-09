@@ -746,7 +746,7 @@ has_crusade_trait_trigger = {
 			trait = ukkos_shield
 		}
 		AND = {
-			religion = quetzal
+			religion = aztec
 			trait = eagle_warrior
 		}
 		AND = {
@@ -2419,7 +2419,7 @@ assassins_appropriate_target_trigger = {
 		AND = {
 			ROOT = {
 				society_rank = {
-					rank = 3
+					rank == 3
 					society = the_assassins
 				}
 			}
@@ -2428,7 +2428,7 @@ assassins_appropriate_target_trigger = {
 		AND = {
 			ROOT = {
 				society_rank = {
-					rank = 2
+					rank == 2
 					society = the_assassins
 				}
 			}
@@ -2437,7 +2437,7 @@ assassins_appropriate_target_trigger = {
 		AND = {
 			ROOT = {
 				society_rank = {
-					rank = 1
+					rank == 1
 					society = the_assassins
 				}
 			}
@@ -4679,7 +4679,7 @@ religion_openly_aztec_or_reformed_trigger = {
 	custom_tooltip = {
 		text = religion_openly_aztec_or_reformed_tooltip
 		hidden_trigger = {
-			religion = quetzal
+			religion = aztec
 		}
 	}
 }
@@ -6071,7 +6071,7 @@ this_is_warrior_culture_trigger = { #Not really about culture - Used in AI votin
 		religion_group = muslim
 		religion_group = norsegerman_group
 		religion_group = tengri_group
-		religion = quetzal
+		religion = aztec
 		has_religion_feature = religion_warlike
 		is_tribal = yes
 		is_nomadic = yes

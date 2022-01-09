@@ -11,248 +11,248 @@ namespace = HF
 
 #Consider sending a proposal for aid in war
 # From = Attacker, Root = Defender
-#character_event = {
-#    id = HF.50000
-#
-#    is_triggered_only = yes
-#    has_dlc = "Holy Fury"
-#    war = yes
-#    ai = yes
-#    hide_window = yes
-#
-#    trigger = {
-#		is_member_of_any_warrior_lodge_trigger = yes
-#		
-#        is_primary_war_defender = yes
-#
-#        any_war = {
-#            NOR = { 
-#                attacker = { using_cb = peasant_revolt }
-#                defender = { using_cb = peasant_revolt }
-#            }
-#        }
-#
-#        any_player= {
-#            war = no
-#            is_within_diplo_range = ROOT
-#            same_society_as = ROOT
-#            NOT = { vassal_of = ROOT }
-#
-#            is_within_diplo_range = FROM
-#            NOR = { 
-#                vassal_of = FROM 
-#                has_non_aggression_pact_with = FROM
-#                is_allied_with = FROM
-#            }
-#            NAND = { #So the player is not liege of both characters...
-#                ROOT = {
-#                    any_liege = {
-#                        character = PREVPREV
-#                    }
-#                }
-#                FROM = {
-#                    any_liege = {
-#                        character = PREVPREV
-#                    }
-#                }
-#            }
-#            NAND = {
-#                is_tributary = yes
-#                suzerain = {
-#                    OR = {
-#                        character = ROOT
-#                        character = FROM
-#                        any_liege = { character = ROOT }
-#                        any_liege = { character = FROM }
-#                    }
-#                }
-#            }
-#        }
-#    }
-#
-#    immediate = {
-#        save_event_target_as = warrior_lodge_war_defender 
-#        
-#        FROM = { 
-#            save_event_target_as = warrior_lodge_war_attacker 
-#            character_event = { id = HF.50001 }
-#        }
-#
-#        random_player= {
-#            limit = { 
-#                war = no
-#                is_within_diplo_range = ROOT
-#                same_society_as = ROOT
-#                NOT = { vassal_of = ROOT }
-#
-#                is_within_diplo_range = FROM
-#                NOR = { 
-#                    vassal_of = FROM 
-#                    has_non_aggression_pact_with = FROM
-#                    is_allied_with = FROM
-#                }
-#                NAND = { #So the player is not liege of both characters...
-#                    ROOT = {
-#                        any_liege = {
-#                            character = PREVPREV
-#                        }
-#                    }
-#                    FROM = {
-#                        any_liege = {
-#                            character = PREVPREV
-#                        }
-#                    }
-#                }
-#                
-#                NAND = {
-#                    is_tributary = yes
-#                    suzerain = {
-#                        OR = {
-#                            character = ROOT
-#                            character = FROM
-#                            any_liege = { character = ROOT }
-#                            any_liege = { character = FROM }
-#                        }
-#                    }
-#                }
-#            }
-#            save_event_target_as = player_target
-#        }
-#
-#        event_target:player_target = {
-#            random_list = 
-#            {
-#                40 = {
-#                    modifier = {
-#                        event_target:player_target = {
-#                            is_lover = event_target:warrior_lodge_war_defender
-#                        }
-#                        factor = 2
-#                    }
-#                    modifier = {
-#                        event_target:player_target = {
-#                            is_friend = event_target:warrior_lodge_war_defender
-#                        }
-#                        factor = 2
-#                    }
-#                    modifier = {
-#                        event_target:warrior_lodge_war_defender = {
-#                           opinion = { who = event_target:player_target value = 30 }
-#                        }
-#                        factor = 1.1
-#                    }
-#                    modifier = {
-#                        event_target:warrior_lodge_war_defender = {
-#                           opinion = { who = event_target:player_target value = 30 }
-#                        }
-#                        factor = 1.2
-#                    }
-#                    character_event = { id = HF.50002 }
-#                }
-#                60 = {
-#                    #Nothing happens
-#                }
-#            }
-#        }
-#    }
-#} 
+character_event = {
+    id = HF.50000
+
+    is_triggered_only = yes
+    has_dlc = "Holy Fury"
+    war = yes
+    ai = yes
+    hide_window = yes
+
+    trigger = {
+		is_member_of_any_warrior_lodge_trigger = yes
+		
+        is_primary_war_defender = yes
+
+        any_war = {
+            NOR = { 
+                attacker = { using_cb = peasant_revolt }
+                defender = { using_cb = peasant_revolt }
+            }
+        }
+
+        any_player= {
+            war = no
+            is_within_diplo_range = ROOT
+            same_society_as = ROOT
+            NOT = { vassal_of = ROOT }
+
+            is_within_diplo_range = FROM
+            NOR = { 
+                vassal_of = FROM 
+                has_non_aggression_pact_with = FROM
+                is_allied_with = FROM
+            }
+            NAND = { #So the player is not liege of both characters...
+                ROOT = {
+                    any_liege = {
+                        character = PREVPREV
+                    }
+                }
+                FROM = {
+                    any_liege = {
+                        character = PREVPREV
+                    }
+                }
+            }
+            NAND = {
+                is_tributary = yes
+                suzerain = {
+                    OR = {
+                        character = ROOT
+                        character = FROM
+                        any_liege = { character = ROOT }
+                        any_liege = { character = FROM }
+                    }
+                }
+            }
+        }
+    }
+
+    immediate = {
+        save_event_target_as = warrior_lodge_war_defender 
+        
+        FROM = { 
+            save_event_target_as = warrior_lodge_war_attacker 
+            character_event = { id = HF.50001 }
+        }
+
+        random_player= {
+            limit = { 
+                war = no
+                is_within_diplo_range = ROOT
+                same_society_as = ROOT
+                NOT = { vassal_of = ROOT }
+
+                is_within_diplo_range = FROM
+                NOR = { 
+                    vassal_of = FROM 
+                    has_non_aggression_pact_with = FROM
+                    is_allied_with = FROM
+                }
+                NAND = { #So the player is not liege of both characters...
+                    ROOT = {
+                        any_liege = {
+                            character = PREVPREV
+                        }
+                    }
+                    FROM = {
+                        any_liege = {
+                            character = PREVPREV
+                        }
+                    }
+                }
+                
+                NAND = {
+                    is_tributary = yes
+                    suzerain = {
+                        OR = {
+                            character = ROOT
+                            character = FROM
+                            any_liege = { character = ROOT }
+                            any_liege = { character = FROM }
+                        }
+                    }
+                }
+            }
+            save_event_target_as = player_target
+        }
+
+        event_target:player_target = {
+            random_list = 
+            {
+                40 = {
+                    modifier = {
+                        event_target:player_target = {
+                            is_lover = event_target:warrior_lodge_war_defender
+                        }
+                        factor = 2
+                    }
+                    modifier = {
+                        event_target:player_target = {
+                            is_friend = event_target:warrior_lodge_war_defender
+                        }
+                        factor = 2
+                    }
+                    modifier = {
+                        event_target:warrior_lodge_war_defender = {
+                           opinion = { who = event_target:player_target value = 30 }
+                        }
+                        factor = 1.1
+                    }
+                    modifier = {
+                        event_target:warrior_lodge_war_defender = {
+                           opinion = { who = event_target:player_target value = 30 }
+                        }
+                        factor = 1.2
+                    }
+                    character_event = { id = HF.50002 }
+                }
+                60 = {
+                    #Nothing happens
+                }
+            }
+        }
+    }
+} 
 
 #Can the Attacker consider sending a proposal for aid in war?
-#character_event = {
-#    id = HF.50001
-#
-#    is_triggered_only = yes
-#    has_dlc = "Holy Fury"
-#    war = yes
-#    ai = yes
-#    hide_window = yes
-#
-#    trigger = {
-#		is_member_of_any_warrior_lodge_trigger = yes
-#		
-#        is_primary_war_attacker = yes
-#
-#        any_player= {
-#			war = no
-#            is_within_diplo_range = ROOT
-#            same_society_as = ROOT
-#            NOT = { vassal_of = ROOT }
-#
-#            is_within_diplo_range = FROM
-#            NOR = { 
-#                vassal_of = FROM 
-#                has_non_aggression_pact_with = FROM
-#                is_allied_with = FROM
-#                same_society_as = FROM
-#            }
-#
-#            NAND = {
-#                is_tributary = yes
-#                suzerain = {
-#                    OR = {
-#                        character = ROOT
-#                        character = FROM
-#                        any_liege = { character = ROOT }
-#                        any_liege = { character = FROM }
-#                    }
-#                }
-#            }
-#        }         
-#    }
-#
-#    immediate = {
-#        random_player= {
-#            limit = { 
-#                war = no
-#                same_society_as = ROOT
-#                NOT = { same_society_as = event_target:warrior_lodge_war_defender }
-#                NOT = { vassal_of = ROOT }
-#                NOT = { vassal_of = event_target:warrior_lodge_war_defender }
-#            }
-#            save_event_target_as = player_target
-#        } 
-#
-#        event_target:player_target = {
-#            random_list = 
-#            {
-#                40 = {
-#                    modifier = {
-#                        event_target:player_target = {
-#                            is_lover = event_target:warrior_lodge_war_attacker
-#                        }
-#                        factor = 2
-#                    }
-#                    modifier = {
-#                        event_target:player_target = {
-#                            is_friend = event_target:warrior_lodge_war_attacker
-#                        }
-#                        factor = 2
-#                    }
-#                    modifier = {
-#                        event_target:warrior_lodge_war_attacker = {
-#                           opinion = { 
-#                            who = event_target:player_target 
-#                           value = 30 }
-#                        }
-#                        factor = 1.1
-#                    }
-#                    modifier = {
-#                        event_target:warrior_lodge_war_attacker = {
-#                           opinion = { 
-#                            who = event_target:player_target 
-#                           value = 50 }
-#                        }
-#                        factor = 1.2
-#                    }
-#                    character_event = { id = HF.50004 }
-#                }
-#                60 = {
-#                    #Nothing happens
-#                }
-#            }
-#        }
-#    }
-#} 
+character_event = {
+    id = HF.50001
+
+    is_triggered_only = yes
+    has_dlc = "Holy Fury"
+    war = yes
+    ai = yes
+    hide_window = yes
+
+    trigger = {
+		is_member_of_any_warrior_lodge_trigger = yes
+		
+        is_primary_war_attacker = yes
+
+        any_player= {
+			war = no
+            is_within_diplo_range = ROOT
+            same_society_as = ROOT
+            NOT = { vassal_of = ROOT }
+
+            is_within_diplo_range = FROM
+            NOR = { 
+                vassal_of = FROM 
+                has_non_aggression_pact_with = FROM
+                is_allied_with = FROM
+                same_society_as = FROM
+            }
+
+            NAND = {
+                is_tributary = yes
+                suzerain = {
+                    OR = {
+                        character = ROOT
+                        character = FROM
+                        any_liege = { character = ROOT }
+                        any_liege = { character = FROM }
+                    }
+                }
+            }
+        }         
+    }
+
+    immediate = {
+        random_player= {
+            limit = { 
+                war = no
+                same_society_as = ROOT
+                NOT = { same_society_as = event_target:warrior_lodge_war_defender }
+                NOT = { vassal_of = ROOT }
+                NOT = { vassal_of = event_target:warrior_lodge_war_defender }
+            }
+            save_event_target_as = player_target
+        } 
+
+        event_target:player_target = {
+            random_list = 
+            {
+                40 = {
+                    modifier = {
+                        event_target:player_target = {
+                            is_lover = event_target:warrior_lodge_war_attacker
+                        }
+                        factor = 2
+                    }
+                    modifier = {
+                        event_target:player_target = {
+                            is_friend = event_target:warrior_lodge_war_attacker
+                        }
+                        factor = 2
+                    }
+                    modifier = {
+                        event_target:warrior_lodge_war_attacker = {
+                           opinion = { 
+                            who = event_target:player_target 
+                           value = 30 }
+                        }
+                        factor = 1.1
+                    }
+                    modifier = {
+                        event_target:warrior_lodge_war_attacker = {
+                           opinion = { 
+                            who = event_target:player_target 
+                           value = 50 }
+                        }
+                        factor = 1.2
+                    }
+                    character_event = { id = HF.50004 }
+                }
+                60 = {
+                    #Nothing happens
+                }
+            }
+        }
+    }
+} 
 
 # Player receives a letter asking for aid (Defender)
 letter_event = {
@@ -320,85 +320,85 @@ letter_event = {
 }
 
 # ATTACKER will send letter to Player following the rejection
-#letter_event = {
-#    id = HF.50003
-#    is_triggered_only = yes
-#    has_dlc = "Holy Fury"
-#    war = yes
-#    ai = yes
-#    hide_window = yes
-#
-#    trigger = {
-#		is_member_of_any_warrior_lodge_trigger = yes
-#		
-#        is_primary_war_defender = yes
-#
-#        any_player= {
-#            war = no
-#            same_society_as = ROOT
-#            NOT = { vassal_of = ROOT }
-#            has_character_flag = got_war_invite_from_attacker
-#        }         
-#    }
-#
-#    immediate = {
-#        random_player= {
-#            limit = { 
-#                war = no
-#                same_society_as = ROOT
-#                has_character_flag = got_war_invite_from_defender
-#            }
-#            character_event = { id = HF.50005 days = 30 }
-#        } 
-#    }
-#}
+letter_event = {
+    id = HF.50003
+    is_triggered_only = yes
+    has_dlc = "Holy Fury"
+    war = yes
+    ai = yes
+    hide_window = yes
+
+    trigger = {
+		is_member_of_any_warrior_lodge_trigger = yes
+		
+        is_primary_war_defender = yes
+
+        any_player= {
+            war = no
+            same_society_as = ROOT
+            NOT = { vassal_of = ROOT }
+            has_character_flag = got_war_invite_from_attacker
+        }         
+    }
+
+    immediate = {
+        random_player= {
+            limit = { 
+                war = no
+                same_society_as = ROOT
+                has_character_flag = got_war_invite_from_defender
+            }
+            character_event = { id = HF.50005 days = 30 }
+        } 
+    }
+}
 
 # Player receives a letter asking for aid (Attacker)
-#letter_event = {
-#    id = HF.50004
-#    is_triggered_only = yes
-#    ai = no
-#    border = GFX_event_letter_frame_war
-#    desc = EVTDESC_HF_50004
-#
-#    trigger = {
-#		is_member_of_any_warrior_lodge_trigger = yes
-#        war = no   
-#        FROM = {
-#            same_society_as = ROOT
-#        } 
-#    }
-#
-#    option = # Join war
-#    {
-#        name = EVTOPTA_HF_50002
-#        join_defender_wars = FROM
-#        FROM = 
-#        {
-#            opinion = {
-#                modifier = opinion_grateful
-#                who = ROOT
-#                years = 5
-#            }
-#            set_character_flag = invited_player_to_war
-#        }
-#        set_character_flag = accepted_war_invite_from_attacker
-#    }
-#
-#    option = # Decline
-#    {
-#        name = EVTOPTB_HF_50002 
-#        FROM = 
-#        {
-#            opinion = {
-#                modifier = opinion_disappointed
-#                who = ROOT
-#                years = 5
-#            }
-#        }
-#        clr_character_flag = got_war_invite_from_defender 
-#    }
-#}
+letter_event = {
+    id = HF.50004
+    is_triggered_only = yes
+    ai = no
+    border = GFX_event_letter_frame_war
+    desc = EVTDESC_HF_50004
+
+    trigger = {
+		is_member_of_any_warrior_lodge_trigger = yes
+        war = no   
+        FROM = {
+            same_society_as = ROOT
+        } 
+    }
+
+    option = # Join war
+    {
+        name = EVTOPTA_HF_50002
+        join_defender_wars = FROM
+        FROM = 
+        {
+            opinion = {
+                modifier = opinion_grateful
+                who = ROOT
+                years = 5
+            }
+            set_character_flag = invited_player_to_war
+        }
+        set_character_flag = accepted_war_invite_from_attacker
+    }
+
+    option = # Decline
+    {
+        name = EVTOPTB_HF_50002 
+        FROM = 
+        {
+            opinion = {
+                modifier = opinion_disappointed
+                who = ROOT
+                years = 5
+            }
+        }
+        clr_character_flag = got_war_invite_from_defender 
+    }
+}
 
 # Player receives a letter asking for aid (Defender) after rejecting the attacker
 letter_event = {

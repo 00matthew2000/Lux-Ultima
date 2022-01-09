@@ -68,6 +68,7 @@ character_event = {
 						region = world_persia
 						kingdom = { title = k_darfur }
 						kingdom = { title = k_garama }
+						kingdom = { title = k_chad }
 						#Mali, Aksum and Kush have sea access in LI
 					}
 				}
@@ -1431,6 +1432,8 @@ province_event = {
 					empire = { title = e_tibet }
 					kingdom = { title = k_darfur }
 					kingdom = { title = k_garama }
+					kingdom = { title = k_chad }
+					#Mali, Aksum and Kush have sea access in LI
 				}
 			}
 			province_event = { id = WoL.10130 }

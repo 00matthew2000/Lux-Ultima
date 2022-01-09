@@ -3896,8 +3896,8 @@ offmap_submission = {
 					}
 						OR = { 
 							religion_group = christian
-							religion_group = graecoroman_group
-							religion_group = indohelen_group
+							religion = hellenic_pagan
+							religion = hellenic_pagan_reformed
 						}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
