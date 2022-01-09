@@ -16,7 +16,7 @@ patrons_lux = {
 		}
 		has_patron_god = no
 		OR = {
-			religion = quetzal
+			religion = aztec
 			religion = norse_pagan
 			religion = norse_pagan_reformed
 			religion = norse_war
@@ -51,7 +51,7 @@ patrons_lux = {
 	effect = {
 		if = {
 			limit = {
-				religion = quetzal
+				religion = aztec
 			}
 			character_event = { id = PATRONS_AZT.1 }
 		}
