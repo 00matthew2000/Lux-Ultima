@@ -25,6 +25,8 @@ e_china = {
 				color={ 22 135 201 }
 				color2={ 255 255 255 }
 
+				holy_site = indoh_confucian #placeholder, needs checked into
+
 				b_khaibyung = {
 				}
 				b_zsiangbyo = {
@@ -70,10 +72,6 @@ e_china = {
 
 				color={ 131 215 237 }
 				color2={ 255 255 255 }
-				
-				holy_site = confucian
-				holy_site = shenjiao
-				holy_site = indoh_confucian
 
 				b_gioxzjox = {
 				}
@@ -115,7 +113,11 @@ e_china = {
 			c_suungh = {
 
 				color={ 131 205 227 }
-				color2={ 255 255 255 }				
+				color2={ 255 255 255 }
+				
+				holy_site = confucian
+				holy_site = shenjiao
+				holy_site = indoh_confucian
 
 				b_suunghzjeng = {
 				}
@@ -375,26 +377,26 @@ e_china = {
 				b_zjekkhe = {
 				}
 			}
-			c_thadbjen = {
+			c_ghua = {
 
-				color={ 119 160 112 }
+				color={ 51 232 123 }
 				color2={ 255 255 255 }
 
-				b_tangdo = {
+				b_lekjang = {
 				}
-				b_myogho = {
+				b_ghomsren = {
 				}
-				b_byanchjang = {
+				b_okrung = {
 				}
-				b_chaixzjek = {
+				b_thenkhienghkuanh = {
 				}
-				b_giatzjek = {
+				b_thang_zyen = {
 				}
-				b_ghuangdrie = {
+				b_kaumyangh = {
 				}
-				b_ngagieu = {
+				b_siencuung = {
 				}
-				b_dekkrungx = {
+				b_chiengkhe = {
 				}
 			}
 		}
@@ -816,7 +818,7 @@ e_china = {
 			color={ 119 150 112 }
 			color2={ 255 255 255 }
 
-			capital = 2548 # Jiangning
+			capital = 2558 # Sjing
 
 			c_sjing = {
 
@@ -847,26 +849,26 @@ e_china = {
 				b_thadbjenhingkuokzsih = {
 				}
 			}
-			c_ghua = {
+			c_thadbjen = {
 
-				color={ 51 232 123 }
+				color={ 119 160 112 }
 				color2={ 255 255 255 }
 
-				b_lekjang = {
+				b_tangdo = {
 				}
-				b_ghomsren = {
+				b_myogho = {
 				}
-				b_okrung = {
+				b_byanchjang = {
 				}
-				b_thenkhienghkuanh = {
+				b_chaixzjek = {
 				}
-				b_thang_zyen = {
+				b_giatzjek = {
 				}
-				b_kaumyangh = {
+				b_ghuangdrie = {
 				}
-				b_siencuung = {
+				b_ngagieu = {
 				}
-				b_chiengkhe = {
+				b_dekkrungx = {
 				}
 			}
 		}
@@ -3474,15 +3476,6 @@ e_china = {
 				color={ 74 68 244 }
 				color2={ 255 255 255 }
 
-				sinohellenic = "Tsinan"
-				greek = "Tsinan"
-				hellenistic = "Tsinan"
-				roman = "Tsinan"
-				romanokoric = "Tsinan"
-				huakyo = "Tsinan"
-				nihonohellenic = "Tsinan"
-				viethellenic = "Tsinan"
-
 				b_ngyanzjeng = {
 				}
 				b_dadmjeng = {
@@ -3708,8 +3701,6 @@ e_china = {
 
 				color={ 170 94 241 }
 				color2={ 255 255 255 }
-				
-				holy_site = indoh_confucian
 
 				b_cjindengh = {
 				}
