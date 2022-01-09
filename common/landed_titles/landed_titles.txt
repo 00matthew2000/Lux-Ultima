@@ -28190,6 +28190,25 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_premnis = {
 				}
 			}
+			c_pakhoras = {
+				color = { 201 140 57 }
+				color2={ 255 255 255 }
+			
+				b_pakhoras = {
+				}
+				b_kom_ombo = {
+				}
+				b_abu_simbel = {
+				}
+				b_tutankhamun = {
+				}
+				b_dakka = {
+				}
+				b_maharraqa = {
+				}
+				b_argeen = {
+				}
+			}
 			c_qasr_ibrim = {
 				color = { 119 134 74 }
 				
@@ -28244,6 +28263,36 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_philae = {
 				}
 				b_kalabsha = {
+				}
+			}
+			c_luxor = {
+				color={ 122 16 27 }
+				color2={ 255 255 255 }
+				
+				nubian = "Nut"
+				greek = "Thebai" 
+				hellenistic = "Thebai"
+				roman = "Thebae"
+				egyptian_arabic = "Luxor"
+				
+				b_lux = {
+					nubian = "Nut"
+					greek = "Thebai" 
+					hellenistic = "Thebai"
+					roman = "Thebae"
+					egyptian_arabic = "Luxor"
+				}
+				b_qus = {
+				}
+				b_qift = {
+				}
+				b_armant = {
+				}
+				b_syene = {
+				}
+				b_madamum = {
+				}
+				b_thebai = {
 				}
 			}
 			c_farafra = {
