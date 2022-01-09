@@ -170,15 +170,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			holder_scope = { set_government_type = anarchist_government }
 			succession_w_cooldown = open_elective
@@ -319,9 +319,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -329,9 +329,9 @@ laws = {
 				has_law = people_control_2
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			holder_scope = {
 				if = { 
@@ -435,15 +435,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = people_control_0
@@ -493,15 +493,15 @@ laws = {
 				has_law = people_control_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = people_control_3_effect_1
@@ -559,15 +559,15 @@ laws = {
 				has_law = people_control_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			holder_scope = { set_government_type = demagogic_government }
 			if = {
@@ -661,15 +661,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -747,9 +747,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -757,9 +757,9 @@ laws = {
 				has_law = clergy_control_2
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -837,15 +837,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -939,15 +939,15 @@ laws = {
 				has_law = clergy_control_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -1011,15 +1011,15 @@ laws = {
 				has_law = clergy_control_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			holder_scope = {
 				set_government_type = mystic_government
@@ -1133,15 +1133,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 #			holder_scope = { set_government_type = benevolent_government }
 			succession_w_cooldown = feudal_elective
@@ -1230,9 +1230,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1240,9 +1240,9 @@ laws = {
 				has_law = state_control_2
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -1317,15 +1317,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -1397,15 +1397,15 @@ laws = {
 				has_law = state_control_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = state_control_0
@@ -1442,15 +1442,15 @@ laws = {
 			holder_scope = { prestige = 3000 }
 			has_law = state_control_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			holder_scope = { set_government_type = absolutist_government }
 			if = {
@@ -1564,15 +1564,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -1654,9 +1654,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1664,9 +1664,9 @@ laws = {
 				has_law = tradition_control_2
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -1735,15 +1735,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tradition_control_0
@@ -1783,15 +1783,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tradition_control_0
@@ -1826,15 +1826,15 @@ laws = {
 				has_law = tradition_control_3
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = tradition_control_4_effect_1
@@ -1874,15 +1874,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = knowledge_control_0_effect_1
@@ -1935,9 +1935,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1945,9 +1945,9 @@ laws = {
 				has_law = knowledge_control_2
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = knowledge_control_1_effect_1
@@ -2000,15 +2000,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -2084,15 +2084,15 @@ laws = {
 				has_law = knowledge_control_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = knowledge_control_3_effect_1
@@ -2136,15 +2136,15 @@ laws = {
 			}
 			has_law = knowledge_control_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = knowledge_control_4_effect_1
@@ -2265,15 +2265,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -2394,9 +2394,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2404,9 +2404,9 @@ laws = {
 				has_law = army_control_2
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = army_control_1_effect_1
@@ -2521,15 +2521,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = army_control_0
@@ -2570,15 +2570,15 @@ laws = {
 				has_law = army_control_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -2677,15 +2677,15 @@ laws = {
 			}
 			has_law = army_control_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -2790,15 +2790,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			succession_w_cooldown = open_elective
 			if = {
@@ -2918,9 +2918,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2928,9 +2928,9 @@ laws = {
 				has_law = messianic_power_2
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -3042,15 +3042,15 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -3143,15 +3143,15 @@ laws = {
 				has_law = messianic_power_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -3249,15 +3249,15 @@ laws = {
 			}
 			has_law = messianic_power_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = messianic_power_0
@@ -3391,9 +3391,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			
@@ -3457,9 +3457,9 @@ laws = {
 				}
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 			
 		pass_effect = {
 			holder_scope = {
@@ -3548,9 +3548,9 @@ laws = {
 				has_law = tolerance_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			
@@ -3663,9 +3663,9 @@ laws = {
 				}
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		pass_effect = {
 			holder_scope = {
 				if = {
@@ -3772,9 +3772,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			
@@ -3849,9 +3849,9 @@ laws = {
 				}
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		pass_effect = {
 			holder_scope = {
@@ -3928,9 +3928,9 @@ laws = {
 		allow = {
 			has_law = centralization_1
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -3962,9 +3962,9 @@ laws = {
 				}
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = centralization_0
@@ -4064,9 +4064,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -4089,9 +4089,9 @@ laws = {
 				}
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -4215,9 +4215,9 @@ laws = {
 				has_law = centralization_3
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -4261,9 +4261,9 @@ laws = {
 				}
 			}			
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -4385,9 +4385,9 @@ laws = {
 				has_law = centralization_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -4431,9 +4431,9 @@ laws = {
 				}
 			}			
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -4555,9 +4555,9 @@ laws = {
 				wealth = 100
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -4601,9 +4601,9 @@ laws = {
 				}
 			}			
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -4686,9 +4686,9 @@ laws = {
 			has_law = clanic_centralization_1
 		}
 		
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -4720,9 +4720,9 @@ laws = {
 				}
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = clanic_centralization_0_effect_1
@@ -4815,9 +4815,9 @@ laws = {
 				has_law = clanic_centralization_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -4840,9 +4840,9 @@ laws = {
 				}
 			}			
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -4950,9 +4950,9 @@ laws = {
 				has_law = clanic_centralization_3
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -4975,9 +4975,9 @@ laws = {
 				}
 			}			
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -5079,9 +5079,9 @@ laws = {
 				has_law = clanic_centralization_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -5104,9 +5104,9 @@ laws = {
 				}
 			}			
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -5194,9 +5194,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -5220,9 +5220,9 @@ laws = {
 			}			
 		}
 		
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -5330,15 +5330,15 @@ laws = {
 		allow = {
 			has_law = feudal_slider_1
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_slider_0
@@ -5404,15 +5404,15 @@ laws = {
 				has_law = feudal_slider_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_slider_0
@@ -5479,15 +5479,15 @@ laws = {
 				#has_law = feudal_slider_3
 #			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_slider_0
@@ -5553,15 +5553,15 @@ laws = {
 				has_law = feudal_slider_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_slider_0
@@ -5624,15 +5624,15 @@ laws = {
 		allow = {
 			has_law = feudal_slider_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_slider_0
@@ -5700,9 +5700,9 @@ laws = {
 			has_law = feudal_obligations_1
 			NOT = { holder_scope = { trait = greedy } }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lax Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -5735,9 +5735,9 @@ laws = {
 				has_law = feudal_obligations_1
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_obligations_0
@@ -5803,9 +5803,9 @@ laws = {
 				has_law = feudal_obligations_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lenient Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -5866,9 +5866,9 @@ laws = {
 			}
 		}
 		
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_obligations_0
@@ -5932,9 +5932,9 @@ laws = {
 		allow = {
 			always = yes # allow instant reversion
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lawful Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -6000,9 +6000,9 @@ laws = {
 			}
 		}
 		
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_obligations_0
@@ -6067,9 +6067,9 @@ laws = {
 				has_law = feudal_obligations_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Heavy Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -6133,9 +6133,9 @@ laws = {
 			}
 		}
 	
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_obligations_0
@@ -6199,9 +6199,9 @@ laws = {
 			has_law = feudal_obligations_3
 			holder_scope = { trait = greedy }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Harsh Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -6236,9 +6236,9 @@ laws = {
 			}
 		}
 	
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = feudal_obligations_0
@@ -6304,15 +6304,15 @@ laws = {
 		allow = {
 			has_law = city_slider_1
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_slider_0
@@ -6379,15 +6379,15 @@ laws = {
 				has_law = city_slider_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_slider_0
@@ -6454,15 +6454,15 @@ laws = {
 				#has_law = city_slider_3
 #			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_slider_0
@@ -6527,15 +6527,15 @@ laws = {
 				has_law = city_slider_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_slider_0
@@ -6597,15 +6597,15 @@ laws = {
 		allow = {
 			has_law = city_slider_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_slider_0
@@ -6672,9 +6672,9 @@ laws = {
 			has_law = city_obligations_1
 			NOT = { holder_scope = { trait = greedy } }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lax Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -6708,9 +6708,9 @@ laws = {
 			}
 		}
 
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_obligations_0
@@ -6776,9 +6776,9 @@ laws = {
 				has_law = city_obligations_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lenient Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -6839,9 +6839,9 @@ laws = {
 			}
 		}
 		
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_obligations_0
@@ -6905,9 +6905,9 @@ laws = {
 		allow = {
 				always = yes # allow instant reversion
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lawful Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -6973,9 +6973,9 @@ laws = {
 			}
 		}
 	
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_obligations_0
@@ -7041,9 +7041,9 @@ laws = {
 				has_law = city_obligations_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Heavy Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -7107,9 +7107,9 @@ laws = {
 			}
 		}
 	
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_obligations_0
@@ -7173,9 +7173,9 @@ laws = {
 			has_law = city_obligations_3
 			holder_scope = { trait = greedy }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Harsh Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -7210,9 +7210,9 @@ laws = {
 			}
 		}
 	 
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = city_obligations_0
@@ -7278,15 +7278,15 @@ laws = {
 		allow = {
 			has_law = temple_slider_1
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_slider_0
@@ -7352,15 +7352,15 @@ laws = {
 				has_law = temple_slider_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_slider_0
@@ -7427,15 +7427,15 @@ laws = {
 			#	has_law = temple_slider_3
 #			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_slider_0
@@ -7500,15 +7500,15 @@ laws = {
 				has_law = temple_slider_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_slider_0
@@ -7570,15 +7570,15 @@ laws = {
 		allow = {
 			has_law = temple_slider_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_slider_0
@@ -7644,9 +7644,9 @@ laws = {
 			has_law = temple_obligations_1
 			NOT = { holder_scope = { trait = greedy } }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lax Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -7680,9 +7680,9 @@ laws = {
 			}
 		}
    
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_obligations_0
@@ -7748,9 +7748,9 @@ laws = {
 				has_law = temple_obligations_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lenient Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -7810,9 +7810,9 @@ laws = {
 				has_law = temple_obligations_0
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_obligations_0
@@ -7876,9 +7876,9 @@ laws = {
 		allow = {
 			always = yes # allow instant reversion
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lawful Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -7943,9 +7943,9 @@ laws = {
 				has_law = temple_obligations_1
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_obligations_0
@@ -8011,9 +8011,9 @@ laws = {
 				has_law = temple_obligations_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Heavy Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -8077,9 +8077,9 @@ laws = {
 			}
 		}
 	
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_obligations_0
@@ -8144,9 +8144,9 @@ laws = {
 			has_law = temple_obligations_3
 			holder_scope = { trait = greedy }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Harsh Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -8181,9 +8181,9 @@ laws = {
 			}
 		}
 	 
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = temple_obligations_0
@@ -8216,15 +8216,15 @@ laws = {
 		allow = {
 			has_law = iqta_slider_1
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = iqta_slider_0
@@ -8255,15 +8255,15 @@ laws = {
 				#has_law = iqta_slider_2
 #			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = iqta_slider_0
@@ -8292,15 +8292,15 @@ laws = {
 				has_law = iqta_slider_3
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = iqta_slider_0
@@ -8330,15 +8330,15 @@ laws = {
 				has_law = iqta_slider_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			revoke_law = iqta_slider_0
 			revoke_law = iqta_slider_1
@@ -8363,15 +8363,15 @@ laws = {
 		allow = {
 			has_law = iqta_slider_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			revoke_law = iqta_slider_0
 			revoke_law = iqta_slider_1
@@ -8400,9 +8400,9 @@ laws = {
 			has_law = iqta_obligations_1
 			NOT = { holder_scope = { trait = greedy } }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lax Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -8435,9 +8435,9 @@ laws = {
 				has_law = iqta_obligations_1
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = iqta_obligations_0
@@ -8467,9 +8467,9 @@ laws = {
 				has_law = iqta_obligations_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lenient Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -8529,9 +8529,9 @@ laws = {
 				has_law = iqta_obligations_0
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = iqta_obligations_0
@@ -8563,9 +8563,9 @@ laws = {
 				#has_law = iqta_obligations_3
 #			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lawful Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -8630,9 +8630,9 @@ laws = {
 				has_law = iqta_obligations_1
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = iqta_obligations_0
@@ -8661,9 +8661,9 @@ laws = {
 				has_law = iqta_obligations_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Heavy Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -8727,9 +8727,9 @@ laws = {
 			}
 		}
 	
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = iqta_obligations_0
@@ -8758,9 +8758,9 @@ laws = {
 			has_law = iqta_obligations_3
 			holder_scope = { trait = greedy }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Harsh Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -8795,9 +8795,9 @@ laws = {
 			}
 		}
 	 
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = iqta_obligations_0
@@ -8827,15 +8827,15 @@ laws = {
 		allow = {
 			has_law = tajr_slider_1
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tajr_slider_0
@@ -8865,15 +8865,15 @@ laws = {
 				has_law = tajr_slider_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tajr_slider_0
@@ -8902,15 +8902,15 @@ laws = {
 				has_law = tajr_slider_3
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tajr_slider_0
@@ -8941,15 +8941,15 @@ laws = {
 				#has_law = tajr_slider_4
 #			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			revoke_law = tajr_slider_0
 			revoke_law = tajr_slider_1
@@ -8974,15 +8974,15 @@ laws = {
 		allow = {
 			has_law = tajr_slider_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			revoke_law = tajr_slider_0
 			revoke_law = tajr_slider_1
@@ -9011,9 +9011,9 @@ laws = {
 			has_law = tajr_obligations_1
 			NOT = { holder_scope = { trait = greedy } }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lax Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -9047,9 +9047,9 @@ laws = {
 			}
 		}
    
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tajr_obligations_0
@@ -9080,9 +9080,9 @@ laws = {
 				has_law = tajr_obligations_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lenient Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -9142,9 +9142,9 @@ laws = {
 				has_law = tajr_obligations_0
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tajr_obligations_0
@@ -9176,9 +9176,9 @@ laws = {
 				#has_law = tajr_obligations_3
 #			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lawful Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -9243,9 +9243,9 @@ laws = {
 				has_law = tajr_obligations_1
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tajr_obligations_0
@@ -9274,9 +9274,9 @@ laws = {
 				has_law = tajr_obligations_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Heavy Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -9340,9 +9340,9 @@ laws = {
 			}
 		}
 	
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tajr_obligations_0
@@ -9371,9 +9371,9 @@ laws = {
 			has_law = tajr_obligations_3
 			holder_scope = { trait = greedy }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Harsh Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -9408,9 +9408,9 @@ laws = {
 			}
 		}
 	 
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = tajr_obligations_0
@@ -9440,15 +9440,15 @@ laws = {
 		allow = {
 			has_law = imam_slider_1
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = imam_slider_0
@@ -9478,15 +9478,15 @@ laws = {
 				has_law = imam_slider_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = imam_slider_0
@@ -9517,15 +9517,15 @@ laws = {
 				#has_law = imam_slider_3
 #			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = imam_slider_0
@@ -9554,15 +9554,15 @@ laws = {
 				has_law = imam_slider_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			revoke_law = imam_slider_0
 			revoke_law = imam_slider_1
@@ -9587,15 +9587,15 @@ laws = {
 		allow = {
 			has_law = imam_slider_3
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			revoke_law = imam_slider_0
 			revoke_law = imam_slider_1
@@ -9624,9 +9624,9 @@ laws = {
 			has_law = imam_obligations_1
 			NOT = { holder_scope = { trait = greedy } }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lax Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -9660,9 +9660,9 @@ laws = {
 			}
 		}
    
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = imam_obligations_0
@@ -9693,9 +9693,9 @@ laws = {
 				has_law = imam_obligations_2
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lenient Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -9756,9 +9756,9 @@ laws = {
 			}
 		}
 	
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = imam_obligations_0
@@ -9790,9 +9790,9 @@ laws = {
 				#has_law = imam_obligations_3
 #			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Lawful Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -9858,9 +9858,9 @@ laws = {
 			}
 		}
 		
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = imam_obligations_0
@@ -9889,9 +9889,9 @@ laws = {
 				has_law = imam_obligations_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Heavy Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -9955,9 +9955,9 @@ laws = {
 			}
 		}
 	
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = imam_obligations_0
@@ -9986,9 +9986,9 @@ laws = {
 			has_law = imam_obligations_3
 			holder_scope = { trait = greedy }
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		# Harsh Demands likelihood
 		ai_will_do = {
 			factor = 1
@@ -10023,9 +10023,9 @@ laws = {
 			}
 		}
 	 
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = imam_obligations_0
@@ -10062,15 +10062,15 @@ laws = {
 		allow = {
 			has_law = clanic_castle_control_0
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = clanic_castle_control_1
@@ -10103,9 +10103,9 @@ laws = {
 				martial = 10
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10113,9 +10113,9 @@ laws = {
 				NOT = { has_law = clanic_castle_control_0 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = clanic_castle_control_0
@@ -10147,9 +10147,9 @@ laws = {
 				martial = 12
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10157,9 +10157,9 @@ laws = {
 				NOT = { has_law = clanic_castle_control_1 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = clanic_castle_control_2_effect_1
@@ -10196,9 +10196,9 @@ laws = {
 				martial = 14
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10206,9 +10206,9 @@ laws = {
 				NOT = { has_law = clanic_castle_control_2 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = clanic_castle_control_3_effect_1
@@ -10245,9 +10245,9 @@ laws = {
 				martial = 16
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10255,9 +10255,9 @@ laws = {
 				NOT = { has_law = clanic_castle_control_3 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = clanic_castle_control_4_effect_1
@@ -10296,15 +10296,15 @@ laws = {
 		allow = {
 			has_law = clanic_city_control_0
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = clanic_city_control_1
@@ -10340,9 +10340,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10350,9 +10350,9 @@ laws = {
 				NOT = { has_law = clanic_city_control_0 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -10398,9 +10398,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10408,9 +10408,9 @@ laws = {
 				NOT = { has_law = clanic_city_control_1 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -10460,9 +10460,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10470,9 +10470,9 @@ laws = {
 				NOT = { has_law = clanic_city_control_2 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -10522,9 +10522,9 @@ laws = {
 				}
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10532,9 +10532,9 @@ laws = {
 				NOT = { has_law = clanic_city_control_3 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			if = {
 				limit = {
@@ -10582,15 +10582,15 @@ laws = {
 		allow = {
 			has_law = clanic_temple_control_0
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = clanic_temple_control_1
@@ -10626,9 +10626,9 @@ laws = {
 				piety = 100
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10636,9 +10636,9 @@ laws = {
 				NOT = { has_law = clanic_temple_control_0 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = clanic_temple_control_0
@@ -10674,9 +10674,9 @@ laws = {
 				piety = 200
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10684,9 +10684,9 @@ laws = {
 				NOT = { has_law = clanic_temple_control_1 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = clanic_temple_control_2_effect_1
@@ -10726,9 +10726,9 @@ laws = {
 				piety = 500
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10736,9 +10736,9 @@ laws = {
 				NOT = { has_law = clanic_temple_control_2 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = clanic_temple_control_3_effect_1
@@ -10778,9 +10778,9 @@ laws = {
 				piety = 1000
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -10788,9 +10788,9 @@ laws = {
 				NOT = { has_law = clanic_temple_control_3 }
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			custom_tooltip = {
 				text = clanic_temple_control_4_effect_1
@@ -10827,15 +10827,15 @@ laws = {
 			}
 			has_dlc = "Charlemagne"
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 0
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = vice_royalty_0
@@ -10860,9 +10860,9 @@ laws = {
 		allow = {
 			has_law = ze_administration_laws_2
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 2
 			modifier = {
@@ -10877,9 +10877,9 @@ laws = {
 #				}
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = vice_royalty_0
@@ -10910,9 +10910,9 @@ laws = {
 				has_law = clanic_centralization_4
 			}
 		}
-		#revoke_allowed = {
-			#always = no
-		#}			
+		revoke_allowed = {
+			always = no
+		}			
 		ai_will_do = {
 			factor = 3
 			modifier = {
@@ -10930,9 +10930,9 @@ laws = {
 #				}
 			}
 		}
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		effect = {
 			hidden_tooltip = {
 				revoke_law = vice_royalty_0
@@ -10970,17 +10970,17 @@ laws = {
 			}
 		}
 		
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		
 		ai_will_do = {
 			factor = 0
 		}
 		
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		effect = {
 			hidden_tooltip = {
@@ -11018,9 +11018,9 @@ laws = {
 			}
 		}
 		
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -11030,9 +11030,9 @@ laws = {
 			}
 		}
 		
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		effect = {
 			hidden_tooltip = {
@@ -11068,9 +11068,9 @@ laws = {
 			}
 		}
 		
-		#revoke_allowed = {
-			#always = no
-		#}
+		revoke_allowed = {
+			always = no
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -11080,9 +11080,9 @@ laws = {
 			}
 		}
 		
-		#ai_will_revoke = {
-			#factor = 0
-		#}
+		ai_will_revoke = {
+			factor = 0
+		}
 		
 		effect = {
 			hidden_tooltip = {

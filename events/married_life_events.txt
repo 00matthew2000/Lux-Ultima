@@ -5407,9 +5407,7 @@ character_event = {
 					trait = celibate
 					family = ROOT
 				}
-				NOT = {
-				is_close_relative = ROOT
-				}
+				is_close_relative = no
 			}
 			add_lover = ROOT
 			random = {

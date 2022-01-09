@@ -3872,7 +3872,7 @@ province_event = {
 	option = {
 		name = "EVTOPTA1000182320" # Library
 		1001 = {
-			b_kharibta = { set_name = "Memphis" }
+			b_manusura = { set_name = "Memphis" }
 			add_province_modifier = { name = "memphis_library" duration = -1 }
 		}
 		owner = {
@@ -3886,7 +3886,7 @@ province_event = {
 	option = {
 		name = "EVTOPTB1000182320" # Temple
 		1001 = {
-			b_kharibta = { set_name = "Memphis" }
+			b_manusura = { set_name = "Memphis" }
 			add_province_modifier = { name = "memphis_fanaticism" duration = -1 }
 		}
 		owner = {
@@ -3900,7 +3900,7 @@ province_event = {
 	option = {
 		name = "EVTOPTC1000182320" # Palace
 		1001 = {
-			b_kharibta = { set_name = "Memphis" }
+			b_manusura = { set_name = "Memphis" }
 			add_province_modifier = { name = "memphis_admin" duration = -1 }
 		}
 		owner = {

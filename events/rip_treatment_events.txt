@@ -7818,7 +7818,7 @@ character_event = {
 	}
 
 	option = {
-		#name = ALAS
+		name = ALAS
 		clr_character_flag = new_leper_character
 		clr_character_flag = being_treated
 	}
@@ -7839,7 +7839,7 @@ character_event = {
 	}
 
 	option = {
-		#name = OK
+		name = OK
 		add_character_modifier = {
 			name = in_seclusion
 			duration = -1

@@ -262,12 +262,16 @@ character_event = { # Travel Tombola
 									capital_scope = {
 										OR = {
 											region = world_steppe_tarim
+											region = world_manchuria
+											region = world_mongolia
 											region = world_korea
 											region = world_japan
 											region = world_steppe_east
-											region = world_himalayas
-											region = world_tenem_lamit
-											region = world_indochina
+											region = world_tibet
+											region = world_philippines
+											region = world_vietnam
+											region = custom_yezo
+											region = world_japan_islands
 										}
 									}
 								}
@@ -288,6 +292,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_china
 										region = world_steppe_east
+										region = world_mongolia
 									}
 								}
 							}
@@ -303,6 +308,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_steppe_east
 										region = world_steppe_west
+										region = world_mongolia
 									}
 								}
 							}
@@ -319,6 +325,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_steppe_east
 										region = world_steppe_west
+										region = world_mongolia
 									}
 								}
 							}
@@ -333,7 +340,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 									}
 								}
 							}
@@ -348,7 +355,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_middle_east
 									}
@@ -365,7 +372,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_asia_minor
 										region = world_middle_east
@@ -383,7 +390,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_asia_minor
 										region = world_middle_east
@@ -402,7 +409,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_middle_east
 									}
@@ -419,7 +426,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_middle_east
 										region = world_africa_north
@@ -430,7 +437,7 @@ character_event = { # Travel Tombola
 							AND = {
 								ROOT = {
 									capital_scope = {
-										region = world_csz
+										region = world_africa_central
 									}
 								}
 								capital_scope = {
@@ -440,7 +447,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 										region = world_middle_east
 										region = world_india_bengal
 										region = world_india_rajastan
@@ -453,7 +460,8 @@ character_event = { # Travel Tombola
 								ROOT = {
 									capital_scope = {
 										OR = {
-											region = world_indochina
+											region = world_burma
+											region = world_khmer
 										}
 										NOT = {
 											region = world_china
@@ -462,7 +470,7 @@ character_event = { # Travel Tombola
 								}
 								capital_scope = {
 									OR = {
-										region = world_indochina
+										region = world_vietnam
 										region = world_china
 									}
 								}
@@ -476,8 +484,10 @@ character_event = { # Travel Tombola
 								}
 								capital_scope = {
 									OR = {
-										region = world_indochina
+										region = world_vietnam
 										region = world_china
+										region = world_burma
+										region = world_khmer
 									}
 								}
 							}
@@ -493,7 +503,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 									}
 								}
 							}
@@ -512,7 +522,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 										region = world_india_bengal
 									}
 								}
@@ -530,7 +540,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 										region = world_india_bengal
 										region = world_india_rajastan
 										region = world_india_deccan
@@ -550,7 +560,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 										region = world_middle_east
 										region = world_india_bengal
 										region = world_india_rajastan
@@ -586,12 +596,14 @@ character_event = { # Travel Tombola
 								ROOT = {
 									capital_scope = {
 										OR = {
+											region = world_manchuria
+											region = world_mongolia
 											region = world_korea
 											region = world_japan
 											region = world_steppe_east
-											region = world_himalayas
-											region = world_tenem_lamit
-											region = world_indochina
+											region = world_tibet
+											region = world_philippines
+											region = world_vietnam
 										}
 									}
 								}
@@ -612,6 +624,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_china
 										region = world_steppe_east
+										region = world_mongolia
 									}
 								}
 							}
@@ -627,6 +640,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_steppe_east
 										region = world_steppe_west
+										region = world_mongolia
 									}
 								}
 							}
@@ -643,6 +657,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_steppe_east
 										region = world_steppe_west
+										region = world_mongolia
 									}
 								}
 							}
@@ -657,7 +672,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 									}
 								}
 							}
@@ -672,7 +687,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_middle_east
 									}
@@ -689,7 +704,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_asia_minor
 										region = world_middle_east
@@ -707,7 +722,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_asia_minor
 										region = world_middle_east
@@ -726,7 +741,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_middle_east
 									}
@@ -743,7 +758,7 @@ character_event = { # Travel Tombola
 									OR = {
 										region = world_steppe_tarim
 										region = world_china
-										region = world_himalayas
+										region = world_tibet
 										region = world_persia
 										region = world_middle_east
 										region = world_africa_north
@@ -754,7 +769,7 @@ character_event = { # Travel Tombola
 							AND = {
 								ROOT = {
 									capital_scope = {
-										region = world_csz
+										region = world_africa_central
 									}
 								}
 								capital_scope = {
@@ -764,7 +779,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 										region = world_middle_east
 										region = world_india_bengal
 										region = world_india_rajastan
@@ -777,7 +792,8 @@ character_event = { # Travel Tombola
 								ROOT = {
 									capital_scope = {
 										OR = {
-											region = world_indochina
+											region = world_burma
+											region = world_khmer
 										}
 										NOT = {
 											region = world_china
@@ -786,7 +802,7 @@ character_event = { # Travel Tombola
 								}
 								capital_scope = {
 									OR = {
-										region = world_indochina
+										region = world_vietnam
 										region = world_china
 									}
 								}
@@ -800,8 +816,10 @@ character_event = { # Travel Tombola
 								}
 								capital_scope = {
 									OR = {
-										region = world_indochina
+										region = world_vietnam
 										region = world_china
+										region = world_burma
+										region = world_khmer
 									}
 								}
 							}
@@ -817,7 +835,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 									}
 								}
 							}
@@ -836,7 +854,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 										region = world_india_bengal
 									}
 								}
@@ -854,7 +872,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 										region = world_india_bengal
 										region = world_india_rajastan
 										region = world_india_deccan
@@ -874,7 +892,7 @@ character_event = { # Travel Tombola
 										region = world_china
 										region = world_indochina
 										region = world_indonesia
-										region = world_himalayas
+										region = world_tibet
 										region = world_middle_east
 										region = world_india_bengal
 										region = world_india_rajastan

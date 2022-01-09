@@ -2384,7 +2384,7 @@ narrative_event = {
 	trigger = {
 		wealth = 200
 		year = 885
-		b_mt_athos = {
+		b_mntathos = {
 			holder_scope = {
 				is_priest = yes
 				religion = ROOT
@@ -2462,7 +2462,7 @@ narrative_event = {
 			has_character_flag = do_not_disturb
 		}
 		is_inaccessible_trigger = no
-		b_mt_athos = {
+		b_mntathos = {
 			holder_scope = {
 				is_priest = yes
 				religion = ROOT

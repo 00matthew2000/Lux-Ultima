@@ -369,8 +369,10 @@ character_event = {
 		}
 		modifier = {
 			factor = 20
-			trait = incapable
-			immortal = yes # Incapable immortals more likely to wake up nuts
+			AND = {
+				trait = incapable
+				immortal = yes # Incapable immortals more likely to wake up nuts
+			}
 		}
 		modifier = {
 			factor = 2.1
@@ -746,7 +748,7 @@ character_event = {
 			mother_even_if_dead = { is_alive = no } 
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1
 			NOT = { age = 20 }
 			father_even_if_dead = { is_alive = no } 
 		}
@@ -4015,7 +4017,7 @@ character_event = {
 		text = EVTDESC_WOL_40_NC
 		trigger = {
 			is_female = yes
-			has_dlc = "Sons of Abraham"
+			has_DLC = "Sons of Abraham"
 		}
 		picture = GFX_evt_bad_news_female
 	}
@@ -4023,12 +4025,12 @@ character_event = {
 		text = EVTDESC_WOL_40_NC
 		trigger = {
 			is_female = no
-			has_dlc = "Sons of Abraham"
+			has_DLC = "Sons of Abraham"
 		}
 		picture = GFX_evt_bad_news
 	}
 	desc = {
-		trigger = { NOT = { has_dlc = "Sons of Abraham" } }
+		trigger = { NOT = { has_DLC = "Sons of Abraham" } }
 		text = EVTDESC_WOL_40_NC
 		picture = GFX_evt_recovery
 	}

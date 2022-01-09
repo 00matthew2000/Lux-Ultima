@@ -24,9 +24,9 @@ laws = {
 			has_law = term_length_1
 		}
 		
-		#revoke_allowed = { always = no }
+		revoke_allowed = { always = no }
 		ai_will_do = { factor = 0 }
-		#ai_will_revoke = { factor = 0 }
+		ai_will_revoke = { factor = 0 }
 	}
 	
 	term_length_1 = { # 4 Years
@@ -54,9 +54,9 @@ laws = {
 			}
 		}
 		
-		#revoke_allowed = { always = no }
+		revoke_allowed = { always = no }
 		ai_will_do = { factor = 0 }
-		#ai_will_revoke = { factor = 0 }
+		ai_will_revoke = { factor = 0 }
 	}
 	
 	term_length_2 = { # 6 Years
@@ -84,9 +84,9 @@ laws = {
 			}
 		}
 		
-		#revoke_allowed = { always = no }
+		revoke_allowed = { always = no }
 		ai_will_do = { factor = 0 }
-		#ai_will_revoke = { factor = 0 }
+		ai_will_revoke = { factor = 0 }
 	}
 	
 	term_length_3 = { # 10 Years
@@ -114,9 +114,9 @@ laws = {
 			}
 		}
 		
-		#revoke_allowed = { always = no }
+		revoke_allowed = { always = no }
 		ai_will_do = { factor = 0 }
-		#ai_will_revoke = { factor = 0 }
+		ai_will_revoke = { factor = 0 }
 	}
 	
 	term_length_4 = { # For Life
@@ -153,8 +153,8 @@ laws = {
 			}
 		}
 		
-		#revoke_allowed = { always = no }
+		revoke_allowed = { always = no }
 		ai_will_do = { factor = 0 }
-		#ai_will_revoke = { factor = 0 }
+		ai_will_revoke = { factor = 0 }
 	}
 }

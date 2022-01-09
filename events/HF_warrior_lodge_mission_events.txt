@@ -101,10 +101,10 @@ character_event = {
 										port = yes 
 										TECH_NAVAL = 1
 										OR = { 
-											has_building = ct_port_1
-											has_building = ct_shipw_1
+											has_building = tb_shipyard_1
+											has_building = ca_shipyard_1
 											has_building = tp_shipyard_1
-											has_building = pp_shipyard_1
+											has_building = ct_shipyard_1
 										} 
 										can_naval_path_to = PREVPREV
 									} 
@@ -427,10 +427,10 @@ society_quest_event = {
 								port = yes 
 								TECH_NAVAL = 1
 								OR = { 
-									has_building = ct_port_1
-									has_building = ct_shipw_1
+									has_building = tb_shipyard_1
+									has_building = ca_shipyard_1
 									has_building = tp_shipyard_1
-									has_building = pp_shipyard_1
+									has_building = ct_shipyard_1
 								} 
 								can_naval_path_to = PREVPREV
 							} 
@@ -470,10 +470,10 @@ society_quest_event = {
 								port = yes 
 								TECH_NAVAL = 1
 								OR = { 
-									has_building = ct_port_1
-									has_building = ct_shipw_1
+									has_building = tb_shipyard_1
+									has_building = ca_shipyard_1
 									has_building = tp_shipyard_1
-									has_building = pp_shipyard_1
+									has_building = ct_shipyard_1
 								} 
 								can_naval_path_to = PREVPREV
 							} 
@@ -1875,7 +1875,7 @@ character_event = {
 
 		event_target:attacker_target = {
 			set_character_flag = won_war@event_target:defender_target
-			#character_event = { id = HF.10514 days = 6 } # Hero character states that you completed the mission...
+			character_event = { id = HF.10514 days = 6 } # Hero character states that you completed the mission...
 		}
 	}
 }
@@ -1908,7 +1908,7 @@ character_event = {
 
 		event_target:attacker_target = {
 			set_character_flag = white_peace@event_target:defender_target
-			#character_event = { id = HF.10514 days = 6 } # Hero character states that you completed the mission...
+			character_event = { id = HF.10514 days = 6 } # Hero character states that you completed the mission...
 		}
 	}
 }
@@ -1940,7 +1940,7 @@ character_event = {
 
 		event_target:attacker_target = {
 			set_character_flag = lost_war@event_target:defender_target
-			#character_event = { id = HF.10514 days = 6 } # Hero character states that you completed the mission...
+			character_event = { id = HF.10514 days = 6 } # Hero character states that you completed the mission...
 		}
 	}
 }

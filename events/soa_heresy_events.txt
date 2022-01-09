@@ -358,7 +358,7 @@ province_event = {
 		name = EVTOPTD_SOA_4000 #  The owner is of the parent religion and interested in the heresy
 		trigger = {
 			owner = {
-				is_parent_religion = ROOT 
+				owner = { is_parent_religion = ROOT }
 			}
 		}
 		

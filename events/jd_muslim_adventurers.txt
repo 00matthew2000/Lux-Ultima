@@ -61,8 +61,10 @@ character_event = {
 		OR = {
 			is_female = no
 			liege = {
-				has_law = status_of_women_4
-				religion_group = muslim
+				AND = {
+					has_law = status_of_women_4
+					religion_group = muslim
+				}
 			}
 			has_game_rule = {
 				name = gender
@@ -485,12 +487,12 @@ character_event = {
 								attrition = 0.25
 								cannot_inherit = yes
 							}
-							#war = {
-								#target = PREVPREV
-								#casus_belli = kingdom_adventure
-								#thirdparty_title = PREV
-								#tier = KING
-							#}
+							war = {
+								target = PREVPREV
+								casus_belli = kingdom_adventure
+								thirdparty_title = PREV
+								tier = KING
+							}
 							remove_opinion = {
 								who = PREVPREV
 								modifier = opinion_duchy_adventure_target

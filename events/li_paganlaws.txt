@@ -6986,7 +6986,7 @@ province_event = {
 				}
 			}
 		}
-		holder_scope = {
+		event_target:province_owner = {
 			spawn_unit = {
 				province = ROOT
 				home = ROOT

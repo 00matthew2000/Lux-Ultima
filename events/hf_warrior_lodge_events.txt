@@ -500,7 +500,7 @@ character_event = { #Hero character's reaction, who then sends acceptance/refusa
 
 letter_event = { #SUCCESS: Welcome to the society!
     id = HF.10009
-    #picture = GFX_evt_melee
+    picture = GFX_evt_melee
     border = GFX_event_letter_frame_war
     is_triggered_only = yes
     
@@ -595,7 +595,7 @@ letter_event = { #SUCCESS: Welcome to the society!
 letter_event = { #FAILURE: You can't sit with us
     id = HF.10010
     desc = EVTDESC_HF_10010
-    #picture = GFX_evt_melee
+    picture = GFX_evt_melee
     border = GFX_event_letter_frame_war
     is_triggered_only = yes
     trigger = {
@@ -756,7 +756,7 @@ character_event = { #Fires for the adult child (from decision)
         }
         trigger = { # Kids only say yes if they not already a secret member of some kind...
             is_devil_worshiper_trigger = no
-            #NOT = { society_member_of = the_assassins }
+            NOT = { society_member_of = the_assassins }
         }
     }
     option = {      
@@ -785,7 +785,7 @@ character_event = { #Fires for the adult child (from decision)
                     }
                 }
                 is_devil_worshiper_trigger = yes
-                #society_member_of = the_assassins
+                society_member_of = the_assassins
             }
         }
     }
@@ -2755,8 +2755,8 @@ character_event = {
 # From = Society
 character_event = { 
     id = HF.10050
-    #picture = GFX_evt_battle
-    #border = GFX_event_normal_frame_war
+    picture = GFX_evt_battle
+    border = GFX_event_normal_frame_war
     hide_window = yes
     only_independent = yes
     has_dlc = "Holy Fury"
@@ -2832,76 +2832,76 @@ character_event = {
     hide_window = yes
     is_triggered_only = yes
     immediate = {
-#        if = {
-#            limit = {
-#                #religion_openly_norse_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_norse
-#            }
-#            join_society = warrior_lodge_norse
-#		}
-#        else_if = {
-#            limit = {
-#                #religion_openly_baltic_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_baltic
-#            }
-#            join_society = warrior_lodge_baltic
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_finnish_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_finnish
-#            }
-#            join_society = warrior_lodge_finnish
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_slavic_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_slavic
-#            }
-#            join_society = warrior_lodge_slavic
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_west_african_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_west_african
-#            }
-#            join_society = warrior_lodge_west_african
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_zun_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_zun
-#            }
-#            join_society = warrior_lodge_zun
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_bon_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_bon
-#            }
-#            join_society = warrior_lodge_bon
-#        }
-#        else_if = {
-#            limit = {
-#                ##religion_openly_hellenic_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_hellenic
-#            }
-#            join_society = warrior_lodge_hellenic
-#        }
-#        else_if = {
-#            limit = {
-#				OR = {
-#					#religion_openly_tengri_or_reformed_trigger = yes
-#					is_nomadic = yes
-#				}
-#                can_join_society = warrior_lodge_tengri
-#            }
-#            join_society = warrior_lodge_tengri
-#        }
-#        else = {
-#            log = "[Root.GetTitledName] failed to join a society in event HF.10051"
-#            break = yes
-#        }
+        if = {
+            limit = {
+                #religion_openly_norse_or_reformed_trigger = yes
+                can_join_society = warrior_lodge_norse
+            }
+            join_society = warrior_lodge_norse
+		}
+        else_if = {
+            limit = {
+                #religion_openly_baltic_or_reformed_trigger = yes
+                can_join_society = warrior_lodge_baltic
+            }
+            join_society = warrior_lodge_baltic
+        }
+        else_if = {
+            limit = {
+                #religion_openly_finnish_or_reformed_trigger = yes
+                can_join_society = warrior_lodge_finnish
+            }
+            join_society = warrior_lodge_finnish
+        }
+        else_if = {
+            limit = {
+                #religion_openly_slavic_or_reformed_trigger = yes
+                can_join_society = warrior_lodge_slavic
+            }
+            join_society = warrior_lodge_slavic
+        }
+        else_if = {
+            limit = {
+                #religion_openly_west_african_or_reformed_trigger = yes
+                can_join_society = warrior_lodge_west_african
+            }
+            join_society = warrior_lodge_west_african
+        }
+        else_if = {
+            limit = {
+                #religion_openly_zun_or_reformed_trigger = yes
+                can_join_society = warrior_lodge_zun
+            }
+            join_society = warrior_lodge_zun
+        }
+        else_if = {
+            limit = {
+                #religion_openly_bon_or_reformed_trigger = yes
+                can_join_society = warrior_lodge_bon
+            }
+            join_society = warrior_lodge_bon
+        }
+        else_if = {
+            limit = {
+                ##religion_openly_hellenic_or_reformed_trigger = yes
+                can_join_society = warrior_lodge_hellenic
+            }
+            join_society = warrior_lodge_hellenic
+        }
+        else_if = {
+            limit = {
+				OR = {
+					#religion_openly_tengri_or_reformed_trigger = yes
+					is_nomadic = yes
+				}
+                can_join_society = warrior_lodge_tengri
+            }
+            join_society = warrior_lodge_tengri
+        }
+        else = {
+            log = "[Root.GetTitledName] failed to join a society in event HF.10051"
+            break = yes
+        }
         log = "[Root.GetTitledName] joined [Root.Society.GetName] society!"
         
         apply_random_minor_injury_effect = yes #So it seems they were in a duel!

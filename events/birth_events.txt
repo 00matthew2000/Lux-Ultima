@@ -3460,7 +3460,7 @@ character_event = {
 
 character_event = {
 	id = 312
-	#picture = "GFX_evt_birth"
+	picture = "GFX_evt_birth"
 	
 	is_triggered_only = yes
 	hide_window = yes
@@ -3495,7 +3495,7 @@ character_event = {
 # On-action event: Birth complications - Pointing out that the baby receives this event, and thus he is the one that has to decide if his mother gets to die or not.
 character_event = {
 	id = 313
-	#desc = OK
+	desc = OK
 	
 	hide_window = yes
 	
@@ -3777,7 +3777,7 @@ character_event = {
 # (in mother scope)
 character_event = {
 	id = 314
-	#desc = OK
+	desc = OK
 	
 	hide_window = yes
 	
@@ -4155,7 +4155,7 @@ character_event = {
 # On-action event: A bastard child is born, but is not recognized as such by the spouse of the mother
 character_event = {
 	id = 318
-	#picture = GFX_evt_birth
+	picture = GFX_evt_birth
 	
 	is_triggered_only = yes
 	hide_window = yes

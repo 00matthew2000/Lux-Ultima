@@ -428,20 +428,22 @@ this_can_duel_with_from_trigger = {
 # To make sure characters have a chance of gaining a lover from dueling them (used as a modifier weight)...
 prev_is_lonely_this_romance_makes_sense_trigger = {
 	PREV = { has_lover = no }
-	NOT = { is_lover = PREV }
-	# Check opinions and attraction, etc...
-	NOT = { is_rival = PREV }
-	NOT = { is_lover = PREV }
-	prev_attraction_trigger = yes
-	OR = {
-		reverse_opinion = { who = PREV value = 45 }
-		reverse_has_opinion_modifier = { who = PREV modifier = opinion_budding_romance }
-	}
-	attacted_to_prev_trigger = yes
-	OR = {
-		opinion = { who = ROOT value = 45 }
-		has_opinion_modifier = { who = ROOT modifier = opinion_budding_romance }
-	}
+	AND = {
+    	NOT = { is_lover = PREV }
+		# Check opinions and attraction, etc...
+		NOT = { is_rival = PREV }
+		NOT = { is_lover = PREV }
+		prev_attraction_trigger = yes
+		OR = {
+			reverse_opinion = { who = PREV value = 45 }
+			reverse_has_opinion_modifier = { who = PREV modifier = opinion_budding_romance }
+		}
+		attacted_to_prev_trigger = yes
+		OR = {
+			opinion = { who = ROOT value = 45 }
+			has_opinion_modifier = { who = ROOT modifier = opinion_budding_romance }
+		}
+    }
 }
 
 

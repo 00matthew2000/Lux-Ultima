@@ -302,12 +302,14 @@ character_event = {
 				}
 				bad_soldier_outcome_score = yes
 				warrior_lodge_risk_reduction_score = yes
-				character_event = { id = HFP.11001 } # Killed (remake of 242)
+
 				random = { #Fix to the quick fix
-	    			chance = 75	    			
+	    			chance = 75
+	    			break = yes
 	    			allow_new_battle_events_effect = yes
-					break = yes
-	    		}				
+	    		}
+
+				character_event = { id = HFP.11001 } # Killed (remake of 242)
 			}
 			15 = {
 				trigger = {
@@ -344,12 +346,12 @@ character_event = {
 				}
 				bad_soldier_outcome_score = yes
 				warrior_lodge_risk_reduction_score = yes
-				#character_event = { id = HFP.11012 } # Serious head-injury (remake of 245). Chance to become Disfigured (if has RIP) or Incapable.
 				random = { #Fix to the quick fix
 	    			chance = 75
+	    			break = yes
 	    			allow_new_battle_events_effect = yes
-					break = yes
 	    		}
+				#character_event = { id = HFP.11012 } # Serious head-injury (remake of 245). Chance to become Disfigured (if has RIP) or Incapable.
 			}
 			15 = {
 				trigger = {
@@ -4380,6 +4382,10 @@ character_event = {
         		same_society_as = event_target:my_fellow_commander
         	}
         	modifier = {
+        		factor = 1.5
+        		same_society_as = event_target:my_fellow_commander
+        	}
+        	modifier = {
         		factor = 5
         		event_target:my_fellow_commander = {
         			current_scope_and_root_make_sense_as_friendlies_trigger = yes
@@ -5171,7 +5177,7 @@ character_event = {
             limit = { has_nickname = no }
             random = {
             	chance = 50
-            	#give_nickname = nick_the_traitor
+            	give_nickname = nick_the_traitor
             }
         }
        	add_character_modifier = {

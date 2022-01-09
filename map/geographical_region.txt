@@ -383,12 +383,6 @@ world_japan = {
 	}
 }
 
-world_china = {
-	regions = {
-		world_north_china world_south_china
-	}
-}
-
 world_north_china = {
 	duchies = {
 		d_cricheng d_kraulai d_thenbjen 
@@ -495,9 +489,9 @@ world_kentanmoz = {
 	}
 }
 
-world_zimbabwe_buhera = {
+world_zimbabwe = {
 	duchies = {
-		d_zimbabwe_buhera_buhera d_mapungubwe d_venda d_toutswe d_butwa d_dande_chidima d_kalomo d_maungwe_budya d_manyika_uteve
+		d_zimbabwe_buhera d_mapungubwe d_venda d_toutswe d_butwa d_dande_chidima d_kalomo d_maungwe_budya d_manyika_uteve
 	}
 }
 
@@ -540,7 +534,7 @@ world_africa_se = {
 
 world_africa = {
 	regions = {
-		world_africa_north world_africa_west world_africa_east world_east_african_coast world_zimbabwe_buhera world_kongo world_kentanmoz world_africa_se
+		world_africa_north world_africa_west world_africa_east world_east_african_coast world_zimbabwe world_kongo world_kentanmoz world_africa_se
 	}
 }
 
@@ -635,7 +629,7 @@ custom_crusade_pentarchy = { #The old classical world
 	regions = {
 		custom_crusade_constantinople custom_crusade_jerusalem custom_crusade_egypt custom_crusade_roma
 	}
-	duchies = { d_makedonia d_thessalonika d_athens d_hellas d_aegean_islands d_cephalonia d_achaia d_krete d_samos d_cyprus d_dyrrachion d_epirus d_tunis }
+	duchies = { d_makedonia d_thessalonika d_athens d_hellas d_aegean_islands d_cephalonia d_achaia d_krete d_samos d_cyprus d_dyrrachion d_nikopolis d_tunis }
 }
 
 custom_crusade_macedonia = {
@@ -742,7 +736,7 @@ custom_crusade_toundra = { #k_finland k_gardariki k_perm
 
 custom_crusade_siberia = { #k_yugra k_altai 
 	duchies = { 
-		d_tyumen d_oral d_altay d_abakan
+		d_tyumen d_oral d_altai d_yugh
 	}	
 }
 
@@ -766,7 +760,7 @@ custom_crusade_aral = { #k_khwarezm k_sakastan
 
 custom_crusade_tianshan = { #k_djeti_su k_urumqi  
 	duchies = {
-		d_almatu d_balkhash d_urumqi d_ili
+		d_almatu d_balkhash d_urumqi d_tengri_tagh
 	}	
 }
 
@@ -799,7 +793,7 @@ custom_crusade_maghreb = { # k_africa k_carthage k_numidia k_mauretania
 }
 
 custom_crusade_sahel = { # k_songhay k_garama k_chad
-	duchies = { d_songhay d_timbuktu d_ghana d_mali d_garama d_air d_kanem d_kebbi
+	duchies = { d_songhay d_timbuktu d_ghana d_mali d_garama d_chad
 	}	
 }
 
@@ -814,7 +808,7 @@ custom_crusade_darfur = { # k_darfur
 }
 
 custom_crusade_east_africa = { # k_zanzibar k_buganda k_malawi k_madagascar k_zimbabwe k_zulu k_makonde
-	duchies = { d_unguja d_mogadishu d_mombasa d_buganda d_omusoma d_rwanda d_rukwa d_malawi d_niassa d_madagascar d_qumur d_zimbabwe_buhera d_zulu d_rhapta d_makonde d_sofala
+	duchies = { d_zanzibar d_mogadishu d_mombasa d_buganda d_omusoma d_rwanda d_rukwa d_malawi d_niassa d_madagascar d_comoros d_zimbabwe d_zulu d_rhapta d_makonde d_sofala
 	}	
 }
 
@@ -839,7 +833,7 @@ custom_crusade_central_india = { # k_sindhia k_malwa k_rajputana k_orissa k_maha
 }
 
 custom_crusade_south_india = { # k_tamilakam k_andhra k_karnataka k_ceylon
-	duchies = { d_chola_nadu d_pandya_nadu d_chera_nadu d_maldives d_vengi d_orugallu d_udayagiri d_idaturainadu d_alupa d_mahishaka d_mysore d_kotthasara d_ruhuna d_nagadipa
+	duchies = { d_chola_nadu d_pandya_nadu d_chera_nadu d_maldives d_vengi d_orugallu d_tondaimandalam d_idaturainadu d_alupa d_mahishaka d_mysore d_kotthasara d_ruhuna d_nagadipa
 	}	
 }
 
@@ -1351,7 +1345,7 @@ custom_crusade_inuit_pagan_reformed = {
 		custom_crusade_roma custom_crusade_toundra
 	}
 	duchies = {
-		d_western_isles
+		d_sudreyjar
 #		world_europe_north not included in custom_crusade_toundra
 		#Sweden
 		d_uppland d_ostergotland d_vastergotland d_norrland d_bergslagen d_smaland
@@ -1377,7 +1371,7 @@ custom_historical_plague_free_zone = {
 }
 custom_eastern_edge_of_map = {
 	duchies = {
-		d_loulan d_abakan d_altay d_urumqi d_ngari d_nagqu d_lhasa d_shigatse d_kamapa d_tripuri
+		d_loulan d_yugh d_altai d_urumqi d_ngari d_nagqu d_lhasa d_shigatse d_kamapa d_tripuri
 	}
 }
 custom_chinese_invasion_target_region = {
@@ -1388,6 +1382,6 @@ custom_chinese_invasion_target_region = {
 
 custom_eastern_access = {
 	duchies = {
-		d_loulan d_abakan d_altay d_urumqi d_ngari d_nagqu d_lhasa d_shigatse d_kamapa d_tripuri
+		d_loulan d_yugh d_altai d_urumqi d_ngari d_nagqu d_lhasa d_shigatse d_kamapa d_tripuri
 	}
 }

@@ -1019,7 +1019,7 @@ character_event = {
 		
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_unrest
 					duration = 3650
@@ -1038,7 +1038,7 @@ character_event = {
 		
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_crisis
 					duration = 3650
@@ -1469,7 +1469,7 @@ character_event = {
 
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_pleased_witch_hunt
 					duration = 60
@@ -1512,7 +1512,7 @@ character_event = {
 
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_pleased_witch_hunt
 					duration = 60
@@ -1540,7 +1540,7 @@ character_event = {
 
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_pleased_witch_hunt
 					duration = 60
@@ -1573,7 +1573,7 @@ character_event = {
 
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_pleased_witch_hunt
 					duration = 60
@@ -1640,7 +1640,7 @@ character_event = {
 
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_pleased_witch_hunt
 					duration = 60
@@ -1718,7 +1718,7 @@ character_event = {
 
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_pleased_witch_hunt
 					duration = 60
@@ -1740,7 +1740,7 @@ character_event = {
 
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_pleased_witch_hunt
 					duration = 60
@@ -1762,7 +1762,7 @@ character_event = {
 
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				add_province_modifier = {
 					name = peasant_pleased_witch_hunt
 					duration = 60
@@ -1782,8 +1782,8 @@ character_event = {
 #Random character might get to point out someone
 character_event = {
 	id = RIP.13220
-	#border = GFX_event_normal_frame_religion
-	#picture = GFX_evt_throne_room
+	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_throne_room
 
 	is_triggered_only = yes
 	hide_window = yes
@@ -1882,7 +1882,7 @@ character_event = {
 
 		hidden_tooltip = {
 			any_realm_province = {
-				limit = { owner = { character = ROOT } }
+				limit = { OWNER = { character = ROOT } }
 				remove_province_modifier = peasant_unrest 
 			}
 		}

@@ -174,7 +174,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.25
-			#society_member_of = the_satanists
+			society_member_of = the_satanists
 		}
 	}
 	
@@ -226,13 +226,13 @@ narrative_event = {
 		name = { 
 			text = EVTOPTA_SOA_3002 # Pray and fast, father
 			trigger = {
-				#NOT = { #society_member_of = the_satanists }
+				NOT = { society_member_of = the_satanists }
 			}
 		}
 		name = { 
 			text = EVTOPTA_SOA_3002_SATANIST # Rejoice, father
 			trigger = {
-				#society_member_of = the_satanists
+				society_member_of = the_satanists
 			}
 		}
 		
@@ -241,7 +241,7 @@ narrative_event = {
 		}
 		
 		if = {
-			#limit = { #society_member_of = the_satanists }
+			limit = { society_member_of = the_satanists }
 			add_society_currency_major_effect = yes
 		}
 		
@@ -266,13 +266,13 @@ narrative_event = {
 		name = { 
 			text = EVTOPTB_SOA_3002 # Pray and fast, mother
 			trigger = {
-				#NOT = { #society_member_of = the_satanists }
+				NOT = { society_member_of = the_satanists }
 			}
 		}
 		name = { 
 			text = EVTOPTB_SOA_3002_SATANIST # Rejoice, mother
 			trigger = {
-				#society_member_of = the_satanists
+				society_member_of = the_satanists
 			}
 		}
 		
@@ -285,7 +285,7 @@ narrative_event = {
 		}
 		
 		if = {
-			#limit = { #society_member_of = the_satanists }
+			limit = { society_member_of = the_satanists }
 			add_society_currency_massive_effect = yes
 		}
 		
@@ -317,7 +317,7 @@ narrative_event = {
 		name = EVTOPTC_SOA_3002 # Consult the Court Chaplain
 		
 		trigger = {
-			#NOT = { #society_member_of = the_satanists }
+			NOT = { society_member_of = the_satanists }
 			job_spiritual = {
 				religion = ROOT
 			}
@@ -344,7 +344,7 @@ character_event = {
 			modifier = {
 				factor = 0
 				trait = zealous
-				#NOT = { #society_member_of = the_satanists }
+				NOT = { society_member_of = the_satanists }
 			}
 			modifier = {
 				factor = 2
@@ -395,7 +395,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				#society_member_of = the_satanists
+				society_member_of = the_satanists
 			}
 			modifier = {
 				factor = 2
@@ -483,7 +483,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				#society_member_of = the_satanists
+				society_member_of = the_satanists
 			}
 			modifier = {
 				factor = 2
@@ -1060,28 +1060,28 @@ character_event = {
 					has_global_flag = aztec_explorers
 					has_global_flag = aztec_arrival
 					has_game_rule = {
-						#name = aztec_invasion
+						name = aztec_invasion
 						value = off
 					}
 				}
 				OR = {
 					AND = {
 						has_game_rule = {
-							#name = aztec_invasion
+							name = aztec_invasion
 							value = historical
 						}
 						year = 1250
 					}
 					AND = {
 						has_game_rule = {
-							#name = aztec_invasion
+							name = aztec_invasion
 							value = random
 						}
 						total_years_played = 50
 					}
 					AND = {
 						has_game_rule = {
-							#name = aztec_invasion
+							name = aztec_invasion
 							value = delayed_random
 						}
 						year = 1000
@@ -1214,7 +1214,7 @@ character_event = {
 		
 		if = {
 			limit = { has_dlc = "Mystics" }
-			#join_society = the_satanists
+			join_society = the_satanists
 			add_society_currency_massive_effect = yes
 			set_society_grandmaster = yes
 			
@@ -1267,13 +1267,13 @@ narrative_event = {
 		name = {
 			text = EVTOPTA_SOA_3021
 			trigger = {
-				#NOT = { #society_member_of = the_satanists }
+				NOT = { society_member_of = the_satanists }
 			}
 		}
 		name = {
 			text = EVTOPTA_SOA_3021_SATANIST
 			trigger = {
-				#society_member_of = the_satanists
+				society_member_of = the_satanists
 			}
 		}
 	}
@@ -1476,13 +1476,13 @@ narrative_event = {
 	option = { 
 		name = EVTOPTA_SOA_3039
 		trigger = {
-			#NOT = { #society_member_of = the_satanists }
+			NOT = { society_member_of = the_satanists }
 		}
 	}
 	option = { 
 		name = EVTOPTA_SOA_3039_SATANIST
 		trigger = {
-			#society_member_of = the_satanists
+			society_member_of = the_satanists
 		}
 	}
 }
@@ -1500,13 +1500,13 @@ narrative_event = {
 	option = { 
 		name = EVTOPTA_SOA_3040
 		trigger = {
-			#NOT = { #society_member_of = the_satanists }
+			NOT = { society_member_of = the_satanists }
 		}
 	}
 	option = { 
 		name = EVTOPTA_SOA_3039_SATANIST
 		trigger = {
-			#society_member_of = the_satanists
+			society_member_of = the_satanists
 		}
 	}
 }
@@ -1524,13 +1524,13 @@ narrative_event = {
 	option = { 
 		name = EVTOPTA_SOA_3041
 		trigger = {
-			#NOT = { #society_member_of = the_satanists }
+			NOT = { society_member_of = the_satanists }
 		}
 	}
 	option = { 
 		name = EVTOPTA_SOA_3039_SATANIST
 		trigger = {
-			#society_member_of = the_satanists
+			society_member_of = the_satanists
 		}
 	}
 }
@@ -1853,7 +1853,7 @@ character_event = {
 					if = {
 						limit = { has_dlc = "Mystics" }
 						religion = ROOT
-						#join_society = the_satanists
+						join_society = the_satanists
 					}
 					
 					opinion = {
@@ -1911,7 +1911,7 @@ character_event = {
 					if = {
 						limit = { has_dlc = "Mystics" }
 						religion = ROOT
-						#join_society = the_satanists
+						join_society = the_satanists
 					}
 					
 					opinion = {
@@ -1970,7 +1970,7 @@ character_event = {
 					if = {
 						limit = { has_dlc = "Mystics" }
 						religion = ROOT
-						#join_society = the_satanists
+						join_society = the_satanists
 					}
 					
 					opinion = {
@@ -2070,7 +2070,7 @@ character_event = {
 				
 				if = {
 					limit = { has_dlc = "Mystics" }
-					#join_society = the_satanists
+					join_society = the_satanists
 				}
 				
 				if = {
@@ -2141,7 +2141,7 @@ character_event = {
 				
 				if = {
 					limit = { has_dlc = "Mystics" }
-					#join_society = the_satanists
+					join_society = the_satanists
 				}
 				
 				if = {
@@ -2330,13 +2330,13 @@ narrative_event = {
 		name = {
 			text = EVTOPTA_SOA_3077
 			trigger = {
-				#NOT = { #society_member_of = the_satanists }
+				NOT = { society_member_of = the_satanists }
 			}
 		}
 		name = {
 			text = EVTOPTA_SOA_3078
 			trigger = {
-				#society_member_of = the_satanists
+				society_member_of = the_satanists
 			}
 		}
 	}
@@ -2369,7 +2369,7 @@ character_event = {
 		set_global_flag = demon_child_to_aztecs
 		
 		if = {
-			#limit = { #society_member_of = the_satanists }
+			limit = { society_member_of = the_satanists }
 			society = {
 				any_society_member = {
 					limit = {
@@ -2377,7 +2377,7 @@ character_event = {
 						NOT = { is_close_relative = ROOT }
 						NOT = { dynasty = ROOT }
 					}
-					narrative_event = { id = SoA.3082 days = 3 }
+					character_event = { id = SoA.3082 days = 3 }
 				}
 			}
 		}
@@ -2386,7 +2386,7 @@ character_event = {
 			limit = {
 				NOT = { character = ROOT }
 			}
-			narrative_event = { id = SoA.3083 days = 3 }
+			character_event = { id = SoA.3083 days = 3 }
 		}
 		
 		any_dynasty_member = {
@@ -2395,7 +2395,7 @@ character_event = {
 				NOT = { character = ROOT }
 				NOT = { is_close_relative = ROOT }
 			}
-			narrative_event = { id = SoA.3083 days = 3 }
+			character_event = { id = SoA.3083 days = 3 }
 		}
 		
 		if = {
@@ -2421,7 +2421,7 @@ character_event = {
 				limit = {
 					has_dlc = "Zeus"
 				}
-				#add_law = revoke_title_law_2
+				add_law = revoke_title_law_2
 			}
 			if = {
 				limit = {
@@ -2541,13 +2541,13 @@ narrative_event = {
 		name = {
 			text = EVTOPTA_SOA_3082
 			trigger = {
-				#society_member_of = the_satanists
+				society_member_of = the_satanists
 			}
 		}
 		name = {
 			text = EVTOPTA_SOA_3083
 			trigger = {
-				#NOT = { #society_member_of = the_satanists }
+				NOT = { society_member_of = the_satanists }
 			}
 		}
 	}
@@ -2605,7 +2605,7 @@ character_event = {
 	
 	immediate = {
 		if = {
-			#limit = { #society_member_of = the_satanists }
+			limit = { society_member_of = the_satanists }
 			society = {
 				any_society_member = {
 					limit = { NOT = { character = ROOT } }

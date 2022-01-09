@@ -602,13 +602,13 @@ letter_event = {
 	option = { # Accept the invitation
 		name = EVTOPTA_ZE_23154
 		FROM = {
-			letter_event = { id = ZE.23155 days = 5 }
+			character_event = { id = ZE.23155 days = 5 }
 		}
 	}
 	option = { # Decline the invitation
 		name = EVTOPTB_ZE_23154
 		FROM = {
-			letter_event = { id = ZE.23156 days = 5 }
+			character_event = { id = ZE.23156 days = 5 }
 		}
 	}
 }
@@ -1868,7 +1868,7 @@ character_event = {
 				}
 			}
 		}
-		if = {
+		If = {
 			limit = {
 				NOT = {
 					trait = charitable
@@ -1913,7 +1913,7 @@ character_event = {
 			trait = slothful
 			trait = shy
 			liege = { is_rival = ROOT }
-			holds_favor_on = liege
+			holds_favor_on = LIEGE
 		}
 		OR = { 
 			trait = light_foot_leader

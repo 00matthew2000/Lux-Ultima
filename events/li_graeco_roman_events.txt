@@ -93,6 +93,7 @@ character_event = {
 				new_character = {
 					give_minor_title = title_vestalis_maxima
 					set_character_flag = flag_vestalis
+					c_vesta_temple = { gain_title = PREV }
 					b_vesta_temple = { gain_title = PREV }
 					set_defacto_liege = THIS
 				}
@@ -300,7 +301,7 @@ character_event = {
 				add_trait = vestalis
 				recalc_succession = yes
 				set_character_flag = flag_vestalis
-				b_vesta_temple = { owner = { change_variable = { which = "num_vestales" value = 1 } } }
+				c_vesta_temple = { owner = { change_variable = { which = "num_vestales" value = 1 } } }
 			}
 		}
 	}

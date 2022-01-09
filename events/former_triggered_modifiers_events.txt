@@ -4074,14 +4074,14 @@ character_event = {
 		}
 		is_landed = yes
 		realm_size = 500
-		NOT = {
+		NOR = {
 			has_character_flag = no_griot
-#			any_courtier = {
-#				has_minor_title = title_court_griot
-#			}
-#			any_vassal = {
-#				has_minor_title = title_court_griot
-#			}
+			any_courtier = {
+				has_minor_title = title_court_griot
+			}
+			any_vassal = {
+				has_minor_title = title_court_griot
+			}
 		}
 	}
 	mean_time_to_happen = {
@@ -4110,12 +4110,12 @@ character_event = {
 				religion = serer_reformed
 				culture_group = congo_nigerian
 			}
-#			any_courtier = {
-#				has_minor_title = title_court_griot
-#			}
-#			any_vassal = {
-#				has_minor_title = title_court_griot
-#			}
+			any_courtier = {
+				has_minor_title = title_court_griot
+			}
+			any_vassal = {
+				has_minor_title = title_court_griot
+			}
 		}
 	}
 	mean_time_to_happen = {
@@ -4143,20 +4143,20 @@ character_event = {
 		NOT = {
 			has_character_flag = adequate_griot_diplomacy
 		}
-#		OR = {
-#			any_courtier = {
-#				has_minor_title = title_court_griot
-#				NOT = {
-#					diplomacy = 10
-#				}
-#			}
-#			any_vassal = {
-#				has_minor_title = title_court_griot
-#				NOT = {
-#					diplomacy = 10
-#				}
-#			}
-#		}
+		OR = {
+			any_courtier = {
+				has_minor_title = title_court_griot
+				NOT = {
+					diplomacy = 10
+				}
+			}
+			any_vassal = {
+				has_minor_title = title_court_griot
+				NOT = {
+					diplomacy = 10
+				}
+			}
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -4184,20 +4184,20 @@ character_event = {
 				religion = serer_reformed
 				culture_group = congo_nigerian
 			}
-#			NOR = {
-#				any_courtier = {
-#					has_minor_title = title_court_griot
-#					NOT = {
-#						diplomacy = 10
-#					}
-#				}
-#				any_vassal = {
-#					has_minor_title = title_court_griot
-#					NOT = {
-#						diplomacy = 10
-#					}
-#				}
-#			}
+			NOR = {
+				any_courtier = {
+					has_minor_title = title_court_griot
+					NOT = {
+						diplomacy = 10
+					}
+				}
+				any_vassal = {
+					has_minor_title = title_court_griot
+					NOT = {
+						diplomacy = 10
+					}
+				}
+			}
 		}
 	}
 	mean_time_to_happen = {
@@ -4225,22 +4225,22 @@ character_event = {
 		NOT = {
 			has_character_flag = good_griot_diplomacy
 		}
-		#OR = {
-#			any_courtier = {
-#				has_minor_title = title_court_griot
-#				diplomacy = 10
-#				NOT = {
-#					diplomacy = 20
-#				}
-#			}
-#			any_vassal = {
-#				has_minor_title = title_court_griot
-#				diplomacy = 10
-#				NOT = {
-#					diplomacy = 20
-#				}
-#			}
-#		}
+		OR = {
+			any_courtier = {
+				has_minor_title = title_court_griot
+				diplomacy = 10
+				NOT = {
+					diplomacy = 20
+				}
+			}
+			any_vassal = {
+				has_minor_title = title_court_griot
+				diplomacy = 10
+				NOT = {
+					diplomacy = 20
+				}
+			}
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -4268,22 +4268,22 @@ character_event = {
 				religion = serer_reformed
 				culture_group = congo_nigerian
 			}
-#			NOR = {
-#				any_courtier = {
-#					has_minor_title = title_court_griot
-#					diplomacy = 10
-#					NOT = {
-#						diplomacy = 20
-#					}
-#				}
-#				any_vassal = {
-#					has_minor_title = title_court_griot
-#					diplomacy = 10
-#					NOT = {
-#						diplomacy = 20
-#					}
-#				}
-#			}
+			NOR = {
+				any_courtier = {
+					has_minor_title = title_court_griot
+					diplomacy = 10
+					NOT = {
+						diplomacy = 20
+					}
+				}
+				any_vassal = {
+					has_minor_title = title_court_griot
+					diplomacy = 10
+					NOT = {
+						diplomacy = 20
+					}
+				}
+			}
 		}
 	}
 	mean_time_to_happen = {
@@ -4311,16 +4311,16 @@ character_event = {
 		NOT = {
 			has_character_flag = great_griot_diplomacy
 		}
-#		OR = {
-#			any_courtier = {
-#				has_minor_title = title_court_griot
-#				diplomacy = 20
-#			}
-#			any_vassal = {
-#				has_minor_title = title_court_griot
-#				diplomacy = 20
-#			}
-#		}
+		OR = {
+			any_courtier = {
+				has_minor_title = title_court_griot
+				diplomacy = 20
+			}
+			any_vassal = {
+				has_minor_title = title_court_griot
+				diplomacy = 20
+			}
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -4348,16 +4348,16 @@ character_event = {
 				religion = serer_reformed
 				culture_group = congo_nigerian
 			}
-#			NOR = {
-#				any_courtier = {
-#					has_minor_title = title_court_griot
-#					diplomacy = 20
-#				}
-#				any_vassal = {
-#					has_minor_title = title_court_griot
-#					diplomacy = 20
-#				}
-#			}
+			NOR = {
+				any_courtier = {
+					has_minor_title = title_court_griot
+					diplomacy = 20
+				}
+				any_vassal = {
+					has_minor_title = title_court_griot
+					diplomacy = 20
+				}
+			}
 		}
 	}
 	mean_time_to_happen = {
@@ -4385,20 +4385,20 @@ character_event = {
 		NOT = {
 			has_character_flag = adequate_griot_learning
 		}
-#		OR = {
-#			any_courtier = {
-#				has_minor_title = title_court_griot
-#				NOT = {
-#					learning = 10
-#				}
-#			}
-#			any_vassal = {
-#				has_minor_title = title_court_griot
-#				NOT = {
-#					learning = 10
-#				}
-#			}
-#		}
+		OR = {
+			any_courtier = {
+				has_minor_title = title_court_griot
+				NOT = {
+					learning = 10
+				}
+			}
+			any_vassal = {
+				has_minor_title = title_court_griot
+				NOT = {
+					learning = 10
+				}
+			}
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -4426,20 +4426,20 @@ character_event = {
 				religion = serer_reformed
 				culture_group = congo_nigerian
 			}
-#			NOR = {
-#				any_courtier = {
-#					has_minor_title = title_court_griot
-#					NOT = {
-#						learning = 10
-#					}
-#				}
-#				any_vassal = {
-#					has_minor_title = title_court_griot
-#					NOT = {
-#						learning = 10
-#					}
-#				}
-#			}
+			NOR = {
+				any_courtier = {
+					has_minor_title = title_court_griot
+					NOT = {
+						learning = 10
+					}
+				}
+				any_vassal = {
+					has_minor_title = title_court_griot
+					NOT = {
+						learning = 10
+					}
+				}
+			}
 		}
 	}
 	mean_time_to_happen = {
@@ -4467,22 +4467,22 @@ character_event = {
 		NOT = {
 			has_character_flag = good_griot_learning
 		}
-#		OR = {
-#			any_courtier = {
-#				has_minor_title = title_court_griot
-#				learning = 10
-#				NOT = {
-#					learning = 20
-#				}
-#			}
-#			any_vassal = {
-#				has_minor_title = title_court_griot
-#				learning = 10
-#				NOT = {
-#					learning = 20
-#				}
-#			}
-#		}
+		OR = {
+			any_courtier = {
+				has_minor_title = title_court_griot
+				learning = 10
+				NOT = {
+					learning = 20
+				}
+			}
+			any_vassal = {
+				has_minor_title = title_court_griot
+				learning = 10
+				NOT = {
+					learning = 20
+				}
+			}
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -4510,22 +4510,22 @@ character_event = {
 				religion = serer_reformed
 				culture_group = congo_nigerian
 			}
-#			NOR = {
-#				any_courtier = {
-#					has_minor_title = title_court_griot
-#					learning = 10
-#					NOT = {
-#						learning = 20
-#					}
-#				}
-#				any_vassal = {
-#					has_minor_title = title_court_griot
-#					learning = 10
-#					NOT = {
-#						learning = 20
-#					}
-#				}
-#			}
+			NOR = {
+				any_courtier = {
+					has_minor_title = title_court_griot
+					learning = 10
+					NOT = {
+						learning = 20
+					}
+				}
+				any_vassal = {
+					has_minor_title = title_court_griot
+					learning = 10
+					NOT = {
+						learning = 20
+					}
+				}
+			}
 		}
 	}
 	mean_time_to_happen = {
@@ -4553,16 +4553,16 @@ character_event = {
 		NOT = {
 			has_character_flag = great_griot_learning
 		}
-#		OR = {
-#			any_courtier = {
-#				has_minor_title = title_court_griot
-#				learning = 20
-#			}
-#			any_vassal = {
-#				has_minor_title = title_court_griot
-#				learning = 20
-#			}
-#		}
+		OR = {
+			any_courtier = {
+				has_minor_title = title_court_griot
+				learning = 20
+			}
+			any_vassal = {
+				has_minor_title = title_court_griot
+				learning = 20
+			}
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -4590,16 +4590,16 @@ character_event = {
 				religion = serer_reformed
 				culture_group = congo_nigerian
 			}
-#			NOR = {
-#				any_courtier = {
-#					has_minor_title = title_court_griot
-#					learning = 20
-#				}
-#				any_vassal = {
-#					has_minor_title = title_court_griot
-#					learning = 20
-#				}
-#			}
+			NOR = {
+				any_courtier = {
+					has_minor_title = title_court_griot
+					learning = 20
+				}
+				any_vassal = {
+					has_minor_title = title_court_griot
+					learning = 20
+				}
+			}
 		}
 	}
 	mean_time_to_happen = {

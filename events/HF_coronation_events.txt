@@ -220,7 +220,7 @@ character_event = {
 		}
 		ai_chance = { 
 			factor = 30
-			modifier = { factor = 1.25 
+			modifier = { factor = 1 
 
 			} 
 		}
@@ -1623,30 +1623,32 @@ letter_event = {
 					}
 				}
 				modifier = { #If Papacy already controls historical provinces, it won't be interested in gaining even more land in Italy.
-					factor = 0 
-					OR = { 
-						any_vassal = { has_landed_title = c_roma }
-						has_landed_title = c_roma 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_latium }
-						has_landed_title = d_latium 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_spoleto }
-						has_landed_title = d_spoleto 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_ancona }
-						has_landed_title = d_ancona 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_ferrara }
-						has_landed_title = d_ferrara 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_benevento }
-						has_landed_title = d_benevento 
+					factor = 0
+					AND = { 
+						OR = { 
+							any_vassal = { has_landed_title = c_roma }
+							has_landed_title = c_roma 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_latium }
+							has_landed_title = d_latium 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_spoleto }
+							has_landed_title = d_spoleto 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_ancona }
+							has_landed_title = d_ancona 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_ferrara }
+							has_landed_title = d_ferrara 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_benevento }
+							has_landed_title = d_benevento 
+						}
 					}
 				}
 				if = { 
@@ -3810,7 +3812,7 @@ letter_event = {
 					hidden_tooltip = { character_event =  { id = HF.20230 } } 
 				}
 				any_de_jure_vassal_title = { #Pope takes over any titles under the title he's taking over from you.
-					limit = { holder_scope =  { character = ROOT } }
+					limit = { owner =  { character = ROOT } }
 					grant_title = FROM
 				} 
 			}
@@ -3837,7 +3839,7 @@ letter_event = {
 					hidden_tooltip = { character_event =  { id = HF.20230 } }
 				}
 				any_de_jure_vassal_title = {
-					limit = { holder_scope =  { character = ROOT } }
+					limit = { owner =  { character = ROOT } }
 					grant_title = FROM
 				} 
 			}
@@ -3884,7 +3886,7 @@ letter_event = {
 					hidden_tooltip = { character_event =  { id = HF.20230 } }
 				}
 				any_de_jure_vassal_title = {
-					limit = { holder_scope =  { character = ROOT } }
+					limit = { owner =  { character = ROOT } }
 					grant_title = FROM
 				} 
 			}
@@ -3931,7 +3933,7 @@ letter_event = {
 					hidden_tooltip = { character_event =  { id = HF.20230 } }
 				}
 				any_de_jure_vassal_title = {
-					limit = { holder_scope =  { character = ROOT } }
+					limit = { owner =  { character = ROOT } }
 					grant_title = FROM
 				} 
 			}
@@ -3978,7 +3980,7 @@ letter_event = {
 					hidden_tooltip = { character_event =  { id = HF.20230 } }
 				}
 				any_de_jure_vassal_title = {
-					limit = { holder_scope =  { character = ROOT } }
+					limit = { owner =  { character = ROOT } }
 					grant_title = FROM
 				} 
 			}
@@ -4025,7 +4027,7 @@ letter_event = {
 					hidden_tooltip = { character_event =  { id = HF.20230 } }
 				}
 				any_de_jure_vassal_title = {
-					limit = { holder_scope =  { character = ROOT } }
+					limit = { owner =  { character = ROOT } }
 					grant_title = FROM
 				} 
 			}
@@ -5117,7 +5119,7 @@ character_event = {
 					NOT = { is_inaccessible_trigger = yes }
 					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
 				}
-				#character_event = { id = HF.20301 } #Send Invitations
+				character_event = { id = HF.20301 } #Send Invitations
 			}
 			any_independent_ruler = {
 				limit = { 
@@ -5135,7 +5137,7 @@ character_event = {
 					higher_real_tier_than = DUKE
 					NOT = { distance_from_realm = { who = ROOT value = 120 } }
 				}
-				#character_event = { id = HF.20302 } #Send Invitations to other Catholic neighbors
+				character_event = { id = HF.20302 } #Send Invitations to other Catholic neighbors
 			}
 		}
 		ai_chance = { 
@@ -5183,7 +5185,7 @@ character_event = {
 					NOT = { is_inaccessible_trigger = yes }
 					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
 				}
-				#character_event = { id = HF.20301 } #Send Invitations
+				character_event = { id = HF.20301 } #Send Invitations
 			}
 		}
 		if = { 
@@ -5250,7 +5252,7 @@ character_event = {
 					NOT = { is_inaccessible_trigger = yes }
 					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
 				}
-				#character_event = { id = HF.20301 } #Send Invitations
+				character_event = { id = HF.20301 } #Send Invitations
 			}
 		}
 		ai_chance = { 
@@ -5294,7 +5296,7 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTAHF20301
-		#hidden_tooltip = { FROM = { character_event = { id = HF.20303 days = 3 random = 5 } } } #Notification.
+		hidden_tooltip = { FROM = { character_event = { id = HF.20303 days = 3 random = 5 } } } #Notification.
 		opinion = {
 			modifier = opinion_coronation_guest
 			months = 4
@@ -5310,7 +5312,7 @@ letter_event = {
 	}
 	option = {	#End of the line
 		name = EVTOPTBHF20301
-		#hidden_tooltip = { FROM = { character_event = { id = HF.20304 days = 3 random = 5 } } } #Notification.
+		hidden_tooltip = { FROM = { character_event = { id = HF.20304 days = 3 random = 5 } } } #Notification.
 		FROM = { 
 				show_scope_change = no	
 			opinion = {
@@ -5396,7 +5398,7 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTAHF20302
-		#hidden_tooltip = { FROM = { character_event = { id = HF.20303 days = 5 random = 5 } } } #Notification.
+		hidden_tooltip = { FROM = { character_event = { id = HF.20303 days = 5 random = 5 } } } #Notification.
 		FROM = { 
 			prestige = 75	# Prestigious guests bring prestige.
 		}
@@ -5416,7 +5418,7 @@ letter_event = {
 	}
 	option = {	#End of the line
 		name = EVTOPTBHF20302
-		#hidden_tooltip = { FROM = { character_event = { id = HF.20304 days = 5 random = 5 } } } #Notification.
+		hidden_tooltip = { FROM = { character_event = { id = HF.20304 days = 5 random = 5 } } } #Notification.
 		FROM = { 
 				show_scope_change = no	
 			opinion = {
@@ -5568,7 +5570,7 @@ character_event = {
 			has_character_flag = flag_crowned_by_bishop
 			has_character_flag = flag_crowned_by_pope
 		}
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
 	}
 
 	is_triggered_only = yes
@@ -5617,8 +5619,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -5681,8 +5683,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -5739,8 +5741,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -5764,8 +5766,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -5788,8 +5790,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -5850,8 +5852,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_diplomacy_boost } #to avoid the same event happening twice during the coronation.
@@ -5935,8 +5937,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -5963,8 +5965,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -5992,8 +5994,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_learning_boost  } #to avoid the same event happening twice during the coronation.
@@ -6056,8 +6058,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -6097,8 +6099,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	immediate = { 
@@ -6212,8 +6214,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -6279,8 +6281,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -6347,8 +6349,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -6389,8 +6391,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -6418,8 +6420,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_gain_diligent } #to avoid the same event happening twice during the coronation.
@@ -6466,8 +6468,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	immediate = { 
@@ -6520,8 +6522,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_haughty_child } #to avoid the same event happening twice during the coronation.
@@ -6580,8 +6582,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_priest_approves } #to avoid the same event happening twice during the coronation.
@@ -6644,8 +6646,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -6669,8 +6671,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_hre_talk } #to avoid the same event happening twice during the coronation.
@@ -6733,8 +6735,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_pope_talk  } #to avoid the same event happening twice during the coronation.
@@ -6810,8 +6812,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_foreign_teacher } #to avoid the same event happening twice during the coronation.
@@ -6889,8 +6891,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -6974,8 +6976,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7005,8 +7007,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7036,8 +7038,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_priest_disapproves } #to avoid the same event happening twice during the coronation.
@@ -7100,8 +7102,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7120,8 +7122,8 @@ character_event = {
 	hide_window = yes
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7211,8 +7213,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7254,8 +7256,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7285,8 +7287,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7498,8 +7500,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7552,8 +7554,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7604,8 +7606,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7665,8 +7667,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7709,8 +7711,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7748,8 +7750,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_cynic_taunts } #to avoid the same event happening twice during the coronation.
@@ -7863,8 +7865,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7893,8 +7895,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7923,8 +7925,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -7972,8 +7974,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = {
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_wandering_knight } #to avoid the same event happening twice during the coronation.
@@ -7991,7 +7993,7 @@ character_event = {
 				}
 			}
 		new_character = {
-			#save_event_target_as = coronation_knight
+			save_event_target_as = coronation_knight
 			remove_trait = slow
 			remove_trait = imbecile
 			remove_trait = dull
@@ -8042,15 +8044,15 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAHF20346
-		#show_portrait = coronation_knight
-		#event_target:coronation_knight = { 
-			#move_character = ROOT 
-			#opinion = {
-				#modifier = opinion_loyal_servant
-				#who = ROOT
-				#years = 100
-			#}
-		#}
+		show_portrait = coronation_knight
+		event_target:coronation_knight = { 
+			move_character = ROOT 
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
 		hidden_tooltip = { 
 			random_list = { 
 				30 = {  } 
@@ -8118,7 +8120,7 @@ character_event = {
 					} 
 					modifier = { 
 						factor = 1.5
-						#event_target:coronation_knight = { trait = lustful }
+						event_target:coronation_knight = { trait = lustful }
 					}
 					hidden_tooltip = { character_event = { id = HF.20347 days = 2 random = 2 } }
 				} 
@@ -8184,13 +8186,13 @@ character_event = {
 	option = {
 		name = EVTOPTBHF20346
 		
-		#hidden_tooltip = {
-			#event_target:coronation_knight = { 
-				#death = {
-					#death_reason = death_missing
-				#}
-			#}
-		#}
+		hidden_tooltip = {
+			event_target:coronation_knight = { 
+				death = {
+					death_reason = death_missing
+				}
+			}
+		}
 		ai_chance = { 	 
 			factor = 0
 		}
@@ -8207,16 +8209,16 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
 	
 	option = {
 		name = EVTOPTAHF20347
-		#event_target:coronation_knight = { add_lover = ROOT }
-		#hidden_tooltip = { add_lover = event_target:coronation_knight }
+		event_target:coronation_knight = { add_lover = ROOT }
+		hidden_tooltip = { add_lover = event_target:coronation_knight }
 		hidden_tooltip = { #Chance affair is discovered
 		random = { chance = 50
 				character_event = { id = HF.20348 days = 1 }
@@ -8259,11 +8261,11 @@ character_event = {
 			}
 			modifier = { 
 				factor = 0.5
-				#event_target:coronation_knight = { has_ugly_trait_trigger = yes }
+				event_target:coronation_knight = { has_ugly_trait_trigger = yes }
 			}
 			modifier = { 
 				factor = 0.5
-				#event_target:coronation_knight = { trait = weak }
+				event_target:coronation_knight = { trait = weak }
 			}
 		}
 	}
@@ -8271,7 +8273,7 @@ character_event = {
 		name = EVTOPTBHF20347
 		trigger = { diplomacy = 10 }
 		tooltip_info = diplomacy
-		#event_target:coronation_knight = { add_friend = ROOT }
+		event_target:coronation_knight = { add_friend = ROOT }
 		hidden_tooltip = { add_friend = event_target:coronation_knight }
 		ai_chance = { 	 
 			factor = 10
@@ -8281,11 +8283,11 @@ character_event = {
 		name = EVTOPTCHF20347
 		custom_tooltip = { text = EVTTOOLTIPBHF20347 }
 		hidden_tooltip = {
-			#event_target:coronation_knight = { 
-				#death = {
-					#death_reason = death_missing
-				#}
-			#}
+			event_target:coronation_knight = { 
+				death = {
+					death_reason = death_missing
+				}
+			}
 		}
 		ai_chance = { 	 
 			factor = 10
@@ -8302,9 +8304,9 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
-		#event_target:coronation_knight = { is_alive = yes } #Check if the knight is still alive.
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_knight = { is_alive = yes } #Check if the knight is still alive.
 	}
 
 	is_triggered_only = yes
@@ -8346,9 +8348,9 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
-		#event_target:coronation_knight = { is_alive = yes } #Check if the knight is still alive.
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_knight = { is_alive = yes } #Check if the knight is still alive.
 	}
 
 	is_triggered_only = yes
@@ -8371,9 +8373,9 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
-		#event_target:coronation_knight = { is_alive = yes } #Check if the knight is still alive.
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_knight = { is_alive = yes } #Check if the knight is still alive.
 	}
 
 	is_triggered_only = yes
@@ -8435,8 +8437,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = {
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_wandering_priest } #to avoid the same event happening twice during the coronation.
@@ -8520,43 +8522,43 @@ character_event = {
 		tooltip_info = learning
 		change_learning = 2
 		piety = 30
-		#show_portrait = coronation_scholar
-		#event_target:coronation_scholar = { 
-			#move_character = ROOT 
-			#opinion = {
-				#modifier = opinion_loyal_servant
-				#who = ROOT
-				#years = 100
-			#}
-		#}
+		show_portrait = coronation_scholar
+		event_target:coronation_scholar = { 
+			move_character = ROOT 
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
 		ai_chance = { 	 
 			factor = 100
 		}
 	}
 	option = {
 		name = EVTOPTBHF20351
-		#show_portrait = coronation_scholar
-		#event_target:coronation_scholar = { 
-			#move_character = ROOT 
-			#opinion = {
-				#modifier = opinion_loyal_servant
-				#who = ROOT
-				#years = 100
-			#}
-		#}
+		show_portrait = coronation_scholar
+		event_target:coronation_scholar = { 
+			move_character = ROOT 
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
 		ai_chance = { 	 
 			factor = 50
 		}
 	}
 	option = {
 		name = EVTOPTCHF20351
-		#hidden_tooltip = {
-			#event_target:coronation_scholar = { 
-				#death = {
-					#death_reason = death_missing
-				#}
-			#}
-		#}
+		hidden_tooltip = {
+			event_target:coronation_scholar = { 
+				death = {
+					death_reason = death_missing
+				}
+			}
+		}
 		ai_chance = { 	 
 			factor = 0
 		}
@@ -8585,8 +8587,8 @@ character_event = {
 	hide_new = yes 
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
 	}
 
 	immediate = { 
@@ -8637,8 +8639,8 @@ character_event = {
 	hide_new = yes 
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
 	}
 
 	is_triggered_only = yes
@@ -8676,8 +8678,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
 	}
 
 	is_triggered_only = yes
@@ -8713,8 +8715,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_secluded_embarassed } #to avoid the same event happening twice during the coronation.
@@ -8781,8 +8783,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_secluded_vassals } #to avoid the same event happening twice during the coronation.
@@ -8831,8 +8833,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
 	}
 
 	is_triggered_only = yes
@@ -8880,8 +8882,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_secluded_priest } #to avoid the same event happening twice during the coronation.
@@ -8990,8 +8992,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
 	}
 
 	is_triggered_only = yes
@@ -9014,8 +9016,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_secluded_ambitious } #to avoid the same event happening twice during the coronation.
@@ -9085,8 +9087,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_secluded_proud } #to avoid the same event happening twice during the coronation.
@@ -9130,8 +9132,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 	immediate = { 
 		event_target:coronation_ruler = { set_character_flag = flag_coronation_secluded_steward } #to avoid the same event happening twice during the coronation.
@@ -9180,8 +9182,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 	}
 
 	is_triggered_only = yes
@@ -9217,8 +9219,8 @@ character_event = {
 				trait = crowned_by_myself
 			} 
 		} 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crownied is still alive.
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crownied is still alive.
 		#NOT = { check_variable = { which = coronation_count value = 2 } } #Stop at second row.
 	}
 
@@ -9424,8 +9426,8 @@ character_event = {
 				trait = crowned_by_priest
 			} 
 		}
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 		event_target:coronation_ruler = { character = ROOT }
 	}
 
@@ -9468,9 +9470,9 @@ character_event = {
 				trait = possessed
 				AND = { 
 					trait = ambitious
-					#primary_title = { has_law = imperial_administration } 
+					primary_title = { has_law = imperial_administration } 
 				}
-				#society_member_of = the_satanists
+				society_member_of = the_satanists
 			}
 		}
 		add_trait = crowned_by_myself
@@ -9791,8 +9793,8 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 		has_opinion_modifier = { 
 			who = event_target:coronation_ruler 
 			modifier = opinion_coronation_guest 
@@ -9908,8 +9910,8 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	trigger = { 
-		#event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
-		#event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		event_target:coronation_priest = { is_alive = yes } #Check if the priest supposed to be crowning you is still alive.
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
 		vassal_of = FROM
 	}
 	
@@ -9944,11 +9946,11 @@ character_event = {
 #Crowned King: the Coronation ceremony has concluded. END OF THE LINE. HIDDEN FOR REDUNDANCY.
 character_event = {
 	id = HF.20369
-	#desc = EVTDESCHFA20369
+	desc = EVTDESCHFA20369
 	hide_window = yes
 
-	#picture = GFX_evt_pope
-	#border = GFX_event_normal_frame_religion
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
 
@@ -10207,7 +10209,7 @@ character_event = {
 				age = 16
 				religion = catholic 
 				is_feudal = yes
-				#NOT = { #government = order_government }
+				NOT = { government = order_government }
 				higher_real_tier_than = DUKE
 				NOT = { has_character_flag = is_charlemagne }
 				NOT = { has_character_flag = is_carloman }
@@ -10432,7 +10434,7 @@ character_event = {
 			has_character_flag = flag_crowned_by_priest
 			has_character_flag = flag_crowned_by_bishop
 			has_character_flag = flag_crowned_by_pope
-			#government = order_government 
+			government = order_government 
 		}
 	}
 
@@ -11983,7 +11985,7 @@ character_event = {
 				any_artifact = { 
 					limit = { artifact_type = iron_crown_of_lombardy }
 					unsafe_destroy_artifact = yes
-					#add_artifact = fragment_of_true_cross
+					add_artifact = fragment_of_true_cross
 				}
 			}
 		}
@@ -12200,7 +12202,7 @@ character_event = {
 		is_feudal = yes
 		is_adult = yes
 		is_vice_royalty = no
-		#NOT = { #government = order_government }
+		NOT = { government = order_government }
 		higher_real_tier_than = DUKE
 		religion = catholic
 		NOT = { check_variable = { which = uncrowned_count value = 30 } } #Stop at minus thirty.
@@ -13767,25 +13769,25 @@ character_event = {
 	}
 }
 
-#character_event = {
-#	id = HF.20420
-#	hide_window = yes
-#	is_triggered_only = yes
-#
-#	has_character_flag = flag_pepin_for_coronation   
-#
-#	trigger = {
-#		OR = {
-#			lower_real_tier_than = KING
-#			NOT = {
-#				any_war = {
-#					using_cb = pepin_religious
-#				}
-#			}
-#		}
-#	}
-#
-#	immediate = {
-#		clr_character_flag = flag_pepin_for_coronation
-#	}
-#}
+character_event = {
+	id = HF.20420
+	hide_window = yes
+	is_triggered_only = yes
+
+	has_character_flag = flag_pepin_for_coronation   
+
+	trigger = {
+		OR = {
+			lower_real_tier_than = KING
+			NOT = {
+				any_war = {
+					using_cb = pepin_religious
+				}
+			}
+		}
+	}
+
+	immediate = {
+		clr_character_flag = flag_pepin_for_coronation
+	}
+}

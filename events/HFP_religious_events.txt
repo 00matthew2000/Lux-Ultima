@@ -1347,29 +1347,31 @@ character_event = {
 				}
 				modifier = { #If Papacy already controls historical provinces, it won't be interested in gaining even more land in Italy.
 					factor = 0
-					OR = { 
-						any_vassal = { has_landed_title = c_roma }
-						has_landed_title = c_roma 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_latium }
-						has_landed_title = d_latium 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_spoleto }
-						has_landed_title = d_spoleto 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_ancona }
-						has_landed_title = d_ancona 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_ferrara }
-						has_landed_title = d_ferrara 
-					}
-					OR = { 
-						any_vassal = { has_landed_title = d_benevento }
-						has_landed_title = d_benevento 
+					AND = { 
+						OR = { 
+							any_vassal = { has_landed_title = c_roma }
+							has_landed_title = c_roma 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_latium }
+							has_landed_title = d_latium 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_spoleto }
+							has_landed_title = d_spoleto 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_ancona }
+							has_landed_title = d_ancona 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_ferrara }
+							has_landed_title = d_ferrara 
+						}
+						OR = { 
+							any_vassal = { has_landed_title = d_benevento }
+							has_landed_title = d_benevento 
+						}
 					}
 				}
 				modifier = {
