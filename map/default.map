@@ -1,4 +1,4 @@
-max_provinces = 4952
+max_provinces = 4951
 definitions = "definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"
@@ -76,27 +76,7 @@ sea_zones = { 3557 3567 }
 sea_zones = { 3673 3673 }
 sea_zones = { 4826 4886 }
 sea_zones = { 4905 4929 }
-#Smoky
-sea_zones = { 4552 4552 }
-#Fraser
-sea_zones = { 4930 4931 }
-#Wallawalla
-sea_zones = { 4932 4933 }
-#RioGrande
-sea_zones = { 4934 4936 }
-#Irrawaddy
-sea_zones = { 4944 4945 }
-#Mekong
-sea_zones = { 4555 4555 }
-sea_zones = { 4560 4560 }
-sea_zones = { 4565 4565 }
-#Yangtze
-sea_zones = { 4493 4493 }
-sea_zones = { 4512 4512 }
-#Yellow
-sea_zones = { 4949 4950 }
-#Irrawaddy
-sea_zones = { 1347 1348 }
+
 
 ocean_region = {	# World Ocean
 	sea_zones = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 }
@@ -186,10 +166,9 @@ major_rivers =
 	4932 4933 #Wallawalla
 	4934 4935 4936 #RioGrande
 	4944 4945 #Irrawaddy
-	4555 4560 4565 #Mekong
-	4493 4512 #Yangtze
+	4560 4565 #Mekong
+	4493 #Yangtze
 	4949 4950 #Yellow
-	1347 1348 #Irrawaddy
 }
 
 externals = { 1509 1510 1512 } # Silkroad Paths to china

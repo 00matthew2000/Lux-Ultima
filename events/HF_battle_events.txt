@@ -205,7 +205,7 @@ character_event = {
 				}
 				good_soldier_outcome_score = yes
 
-#				character_event = { id = HFP.11026 }  # Find a weapon on the battlefield
+				character_event = { id = HFP.11026 }  # Find a weapon on the battlefield
 			}
 			10 = {
 				trigger = {
@@ -214,7 +214,7 @@ character_event = {
 					has_nickname = no
 				}
 				good_soldier_outcome_score = yes
-#				character_event = { id = HFP.11027 } # Pick a nickname!
+				character_event = { id = HFP.11027 } # Pick a nickname!
 			}
 			
 			5 = {
@@ -227,7 +227,7 @@ character_event = {
 				good_soldier_outcome_score = yes
 
 				add_character_modifier = { name = battle_events_1_cooldown duration = 365 hidden = yes }				
-#				character_event = { id = HFP.11028 } # You decapitate your enemy, and take their skull as a trophy.
+				character_event = { id = HFP.11028 } # You decapitate your enemy, and take their skull as a trophy.
 			}
 			10 = {
 				trigger = {
@@ -236,7 +236,7 @@ character_event = {
 					NOT = { trait = robust }
 				}
 				good_soldier_outcome_score = yes
-#				character_event = { id = HFP.11034 } # You become Brawny.
+				character_event = { id = HFP.11034 } # You become Brawny.
 			}
 			10 = {
 				trigger = {
@@ -252,7 +252,7 @@ character_event = {
 				bad_soldier_outcome_score = yes
 
 				add_character_modifier = { name = battle_events_2_cooldown duration = 365 hidden = yes }
-#				character_event = { id = HFP.11036 }  # You are impressed by fellow commander
+				character_event = { id = HFP.11036 }  # You are impressed by fellow commander
 			}
 			10 = {
 				trigger = {
@@ -278,7 +278,7 @@ character_event = {
 				}
 
 				add_character_modifier = { name = battle_events_3_cooldown duration = 365 hidden = yes }
-#				character_event = { id = HFP.11037 } # You reminisce about previous battles (hooked from previous events)
+				character_event = { id = HFP.11037 } # You reminisce about previous battles (hooked from previous events)
 			}
 			3 = {
 				trigger = {
@@ -291,7 +291,7 @@ character_event = {
 					}
 				}
 				good_soldier_outcome_score = yes
-#				character_event = { id = HFP.11038 }  # An event where you gain a nickname/lose stressed/depressed
+				character_event = { id = HFP.11038 }  # An event where you gain a nickname/lose stressed/depressed
 			}
 
     		#### INJURIES...
@@ -351,7 +351,7 @@ character_event = {
 	    			break = yes
 	    			allow_new_battle_events_effect = yes
 	    		}
-				#character_event = { id = HFP.11012 } # Serious head-injury (remake of 245). Chance to become Disfigured (if has RIP) or Incapable.
+				character_event = { id = HFP.11012 } # Serious head-injury (remake of 245). Chance to become Disfigured (if has RIP) or Incapable.
 			}
 			15 = {
 				trigger = {
@@ -376,7 +376,7 @@ character_event = {
 				add_character_modifier = { name = battle_events_4_cooldown duration = 365 hidden = yes }
 				set_character_flag = about_to_challenge_enemy_commander
 
-				#character_event = { id = HFP.11025 } # Your pet to the rescue (otherwise something else)!
+				character_event = { id = HFP.11025 } # Your pet to the rescue (otherwise something else)!
 			}
 
 			####  GENERAL IMPROVEMENTS (traits/tech/skill)...			
@@ -390,7 +390,7 @@ character_event = {
 				bad_soldier_outcome_enemy_commander_score = yes
 
 				add_character_modifier = { name = battle_events_9_cooldown duration = 365 hidden = yes }				
-				#character_event = { id = HFP.11050 } # You spot an enemy (likely to be way worse than you): easy pickings!
+				character_event = { id = HFP.11050 } # You spot an enemy (likely to be way worse than you): easy pickings!
 			}
 
 			25 = {
@@ -406,7 +406,7 @@ character_event = {
 				good_soldier_outcome_score = yes
 
 				add_character_modifier = { name = battle_events_5_cooldown duration = 365 hidden = yes }
-				#character_event = { id = HFP.11013 } # Improves martial education (remake of 246)
+				character_event = { id = HFP.11013 } # Improves martial education (remake of 246)
 			}
 			20 = {
 				trigger = {
@@ -417,7 +417,7 @@ character_event = {
 				good_soldier_outcome_score = yes
 
 				add_character_modifier = { name = battle_events_6_cooldown duration = 365 hidden = yes }
-				#character_event = { id = HFP.11014 } # Flat improvement to martial skill or province modifier
+				character_event = { id = HFP.11014 } # Flat improvement to martial skill or province modifier
 			}
 			20 = {
 				trigger = {
@@ -432,7 +432,7 @@ character_event = {
 					}
 				}
 				good_soldier_outcome_score = yes
-				#character_event = { id = HFP.11016 } # Knowledge boost in capital from battle or tech points
+				character_event = { id = HFP.11016 } # Knowledge boost in capital from battle or tech points
 			}
 			30 = {
 				trigger = { 
@@ -443,7 +443,7 @@ character_event = {
 				good_soldier_outcome_score = yes
 
 				add_character_modifier = { name = battle_events_7_cooldown duration = 365 hidden = yes }
-				#character_event = { id = HFP.11017 } # Gain Combat Trait 1
+				character_event = { id = HFP.11017 } # Gain Combat Trait 1
 			}
 			20 = {
 				trigger = {
@@ -454,7 +454,7 @@ character_event = {
 				good_soldier_outcome_score = yes
 
 				add_character_modifier = { name = battle_events_7_cooldown duration = 365 hidden = yes }
-				#character_event = { id = HFP.11020 } # # Gain Combat Trait 2
+				character_event = { id = HFP.11020 } # # Gain Combat Trait 2
 			}
 			20 = {
 				trigger = {
@@ -465,7 +465,7 @@ character_event = {
 				good_soldier_outcome_score = yes
 
 				add_character_modifier = { name = battle_events_7_cooldown duration = 365 hidden = yes }
-				#character_event = { id = HFP.11021 } # # Gain Combat Trait 3
+				character_event = { id = HFP.11021 } # # Gain Combat Trait 3
 			}
 			20 = {
 				trigger = {
@@ -476,7 +476,7 @@ character_event = {
 				good_soldier_outcome_score = yes
 
 				add_character_modifier = { name = battle_events_7_cooldown duration = 365 hidden = yes }
-				#character_event = { id = HFP.11022 } # # Gain Combat Trait 4
+				character_event = { id = HFP.11022 } # # Gain Combat Trait 4
 			}
 			10 = {
 				trigger = {
@@ -500,7 +500,7 @@ character_event = {
 				good_soldier_outcome_score = yes
 
 				add_character_modifier = { name = battle_events_8_cooldown duration = 3650 hidden = yes }
-				#character_event = { id = HFP.11049 } # See someone you recognize (?). Gain Wroth/Patient
+				character_event = { id = HFP.11049 } # See someone you recognize (?). Gain Wroth/Patient
 			}
 
 			#### GAIN TRAITS/MISC...
@@ -524,7 +524,7 @@ character_event = {
 					has_job_title = job_marshal
 					trait = cruel
 				}
-				#character_event = { id = HFP.11023 } # Marshal: Unnecessary violence (fires for marshal, then liege might gain Cruel)
+				character_event = { id = HFP.11023 } # Marshal: Unnecessary violence (fires for marshal, then liege might gain Cruel)
 			}
 			25 = {
 				trigger = {
@@ -724,13 +724,13 @@ character_event = {
 				log = "fired OLD battle EVENT MNM.1203"
 			}
 			
-			#1 = {
-				#trigger = {
-					#is_alive = yes
-					#NOT = { is_indomitable_trigger = yes }
-				#}
-				#character_event = { id = HFP.30200 }
-			#}
+			1 = {
+				trigger = {
+					is_alive = yes
+					NOT = { is_indomitable_trigger = yes }
+				}
+				character_event = { id = HFP.30200 }
+			}
 		}
     }
 }
@@ -2017,7 +2017,7 @@ character_event = {
 					to = event_target:enemy_commander
 				}
 			}
-			#event_target:enemy_commander = { character_event = { id = HFP.11018 } }
+			event_target:enemy_commander = { character_event = { id = HFP.11018 } }
 		}
 		else_if = { #Else, if there is an enemy LIEGE, give them the artifact...
 			limit = {
@@ -2031,7 +2031,7 @@ character_event = {
 					to = event_target:enemy_liege
 				}
 			}
-			#event_target:enemy_liege = { character_event = { id = HFP.11018 } }
+			event_target:enemy_liege = { character_event = { id = HFP.11018 } }
 		}
 		else = { #Else, just destroy it
 			custom_tooltip = { text = artifact_is_removed_tt }
@@ -2106,7 +2106,7 @@ character_event = {
 		add_battle_PTSD_effect = yes #sends delayed follow-up event
 
 		#hidden_effect = {
-			#if = {
+			if = {
 				#limit = {
 					#is_member_of_any_warrior_lodge_trigger = yes
 					#event_target:enemy_commander = { is_member_of_any_warrior_lodge_trigger = yes }
@@ -2120,30 +2120,30 @@ character_event = {
 
 		allow_new_battle_events_effect = yes
 
-		#ai_chance = {
-            #factor = 50
-            #modifier = {
-                #factor = 3
-                #trait = craven
-            #}
-        #}
+		ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 3
+                trait = craven
+            }
+        }
 	}
-	#after = {
-	#	clr_ABC_desc_flag_effect = yes
-	#	clr_character_flag = skip_wounded_trait
-	#	clr_character_flag = injury_both_eyes
-    #	clr_character_flag = injury_eye
-    #	clr_character_flag = injury_hand
-    #	clr_character_flag = injury_leg
-    #	clr_character_flag = injury_face
-    #	clr_character_flag = injury_mangled_body 
-	# 	clr_character_flag = injury_maimed
-	#    clr_character_flag = injury_could_be_lethal
-	#    clr_character_flag = high_PCS_opt
-	#    clr_character_flag = duel_enemy_opt
-    #	clr_character_flag = duel_enemy_opt_gain_brave
-	#	clr_character_flag = duel_enemy_opt_is_brave
-	#}
+	after = {
+		clr_ABC_desc_flag_effect = yes
+		clr_character_flag = skip_wounded_trait
+		clr_character_flag = injury_both_eyes
+    	clr_character_flag = injury_eye
+    	clr_character_flag = injury_hand
+    	clr_character_flag = injury_leg
+    	clr_character_flag = injury_face
+    	clr_character_flag = injury_mangled_body 
+    	clr_character_flag = injury_maimed
+	    clr_character_flag = injury_could_be_lethal
+	    clr_character_flag = high_PCS_opt
+	    clr_character_flag = duel_enemy_opt
+    	clr_character_flag = duel_enemy_opt_gain_brave
+	    clr_character_flag = duel_enemy_opt_is_brave
+	}
 }
 
 ### BATTLE EVENT: Serious head injury in action (fired from HFP.11000)

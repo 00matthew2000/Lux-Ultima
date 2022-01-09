@@ -2704,7 +2704,7 @@ character_event = { #Outcome: Book is finished! It went Great/Good/Decent!
 											OR = {
 												ROOT = { has_religion_feature = religion_feature_zun }
 												ROOT = { has_religion_feature = religion_holy_family }
-												#ROOT = { religion = messalian }
+												ROOT = { religion = messalian }
 												ROOT = { religion = zoroastrian }
 												NOT = { is_close_relative = ROOT }
 											}
@@ -3309,7 +3309,7 @@ character_event = { #Outcome: Book is finished! It went Great/Good/Decent!
 			    							trait = seducer
 			    							trait = seductress
 			    						}
-			    						culture_group = indoaryan
+			    						culture_group = indoaryan_group
 			    						NOT = {
 											any_artifact = {
 												artifact_type = kama_sutra
