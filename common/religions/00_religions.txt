@@ -1272,53 +1272,6 @@ aztec_group = {
 	ai_convert_same_group = 1 # try to convert if ai_zeal is high
 	ai_convert_other_group = 2 # always try to convert
 	
-	quetzal_reformed = {
-		graphical_culture = mesoamericangfx
-		alternate_start = { always = no }
-		
-		secondary_event_pictures = mesoamerican
-		
-		icon = 17
-		heresy_icon = 18
-		
-		ai_convert_other_group = 2 # always try to convert
-		
-		color = { 0.95 0.3 0.3 }
-		
-		high_god_name = GOD_QUETZALCOATL
-		
-		piety_name = PIETY
-		priest_title = TLAMACAZQUI
-		scripture_name = THE_LEGENDS
-		god_names = {
-			GOD_MATLALCUEYE GOD_TLALOC GOD_CITLALLICUE GOD_TEZCAT
-			GOD_XIPE_TOTEC GOD_TONACACIHUATL GOD_MIXCOATL
-			GOD_XIUHTECUHTLI
-		}
-		evil_god_names = {
-			TLAZOLTEOTL GOD_MICTLANTECUHTLI XOLOTL
-		}
-		
-		#unit_modifier = {
-		#	levy_size = 0.3
-		#	
-		#	key = "OFF_RELIGION"
-		#}
-		
-		crusade_name = GREAT_HOLY_WAR		
-		
-		priests_can_marry = yes
-		max_consorts = 3
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		
-		aggression = 2.0 # AI aggression factor
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 3
-		
-		allow_in_ruler_designer = no
-	}
 	quetzal = {
 		crusade_name = CRUSADE
 		graphical_culture = mesoamericangfx

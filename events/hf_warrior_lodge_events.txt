@@ -403,7 +403,7 @@ character_event = {
         save_event_target_as = combatant_1 #the person issuing the duel...
         event_target:duel_target = {
             save_event_target_as = combatant_2 #the target of the duel...
-            #character_event = { id = HFP.10095 } #player challenges you to a duel
+            character_event = { id = HFP.10095 } #player challenges you to a duel
         }
     }
 }
@@ -965,7 +965,7 @@ character_event = {
         FROM = {
             clr_character_flag = passed_initiation
             clr_character_flag = is_being_recruited_to_warrior_lodge_by_parent
-            #hidden_tooltip = { character_event = { id = HF.25400 } } #Flavor Tombola for underage recruits.
+            hidden_tooltip = { character_event = { id = HF.25400 } } #Flavor Tombola for underage recruits.
         }
         clr_character_flag = show_only_once@FROM
     }
@@ -1770,9 +1770,10 @@ character_event = {
     #   text = EVTDESC_HF_10040_A
     #    trigger = { has_religion_matching_joined_warrior_lodge_trigger = yes }
     #}
-    desc = {
-        text = EVTDESC_HF_10040_B
-    }
+    #desc = {
+    #    text = EVTDESC_HF_10040_B
+    #    trigger = { has_religion_matching_joined_warrior_lodge_trigger = no }
+    #}
 
     picture = {
         picture = GFX_evt_horsemanship
@@ -3167,7 +3168,7 @@ character_event = {
         name = EVTOPTA_HF_10060 #I have been itching for a fight anyway!
         change_society_currency = -2000
         set_character_flag = fighting_to_rank_up
-        #character_event = { id = HFP.10100 } #Send actual duel events... 
+        character_event = { id = HFP.10100 } #Send actual duel events... 
     }
     option = {      
         name = EVTOPTB_HF_10060 #Perhaps it is better I simply wait this out...

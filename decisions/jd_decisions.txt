@@ -779,7 +779,7 @@ decisions = {
 					years = 30
 				}
 			}
-			#hidden_effect = { offmap_china = { governor = { character_event = { id = JD.60010 } } } }
+			hidden_effect = { offmap_china = { governor = { character_event = { id = JD.60010 } } } }
 		}
 		ai_will_do = {
 			factor = 1
@@ -1036,9 +1036,9 @@ decisions = {
 				}
 			}
 			
-			#event_target:enemy = {
-				#character_event = { id = JD.30047 }
-			#}
+			event_target:enemy = {
+				character_event = { id = JD.30047 }
+			}
 			
 			china_war_spawn_troops_effect = yes
 			# Requires the current things to function properly:

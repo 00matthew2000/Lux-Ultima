@@ -126,8 +126,8 @@
 				religion_group = muslim
 				religion_group = indian_group
 				religion_group = zoroastrian_group
-				#religion = zun_pagan
-				#religion = zun_pagan_reformed 
+				religion = zun_pagan
+				religion = zun_pagan_reformed 
 			}
 		}
 		modifier = {
@@ -186,8 +186,8 @@
 		modifier = {
 			factor = 0
 			OR = { 
-				religion_group = graecoroman_group
-				religion_group = indohelen_group
+				religion = hellenic_pagan
+				religion = hellenic_pagan_reformed
 			}
 		}
 		modifier = {
@@ -371,7 +371,7 @@
 			factor = 0
 			NOT = { religion_group = muslim }
 			NOT = { religion_group = zoroastrian_group }
-			#NOT = { religion = zun_pagan }
+			NOT = { religion = zun_pagan }
 			NOT = { religion_group = indian_group }
 		}
 	}
@@ -387,8 +387,8 @@
 			NOT = { religion_group = muslim }
 			NOT = { religion_group = indian_group }
 			NOT = { religion_group = zoroastrian_group }
-			#NOT = { religion = zun_pagan }
-			#NOT = { religion = zun_pagan_reformed }
+			NOT = { religion = zun_pagan }
+			NOT = { religion = zun_pagan_reformed }
 		}
 		modifier = {
 			factor = 100
@@ -1778,8 +1778,8 @@
 			}
 			OR = {
 				religion_group = christian
-				religion_group = graecoroman_group
-				religion_group = indohelen_group
+				religion = hellenic_pagan
+				religion = hellenic_pagan_reformed
 			}
 		#	OR = {
 		#		graphical_culture = southerngfx

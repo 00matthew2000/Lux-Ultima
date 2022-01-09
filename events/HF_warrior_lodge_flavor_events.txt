@@ -179,7 +179,7 @@ character_event = {
 			}
 			event_target:combatant_2 = {
 				apply_degree_of_dishonorable_duel_effect = yes #checks a bunch of age and health statuses...
-				#character_event = { id = HFP.10095 }
+				character_event = { id = HFP.10095 }
 			}
 		}
 		
@@ -202,7 +202,7 @@ character_event = {
 			}
 			event_target:combatant_2 = {
 				apply_degree_of_dishonorable_duel_effect = yes #checks a bunch of age and health statuses...			
-				#character_event = { id = HFP.10095 }
+				character_event = { id = HFP.10095 }
 			}
 		}
 		
@@ -225,7 +225,7 @@ character_event = {
 			}
 			event_target:combatant_2 = {
 				apply_degree_of_dishonorable_duel_effect = yes #checks a bunch of age and health statuses...
-				#character_event = { id = HFP.10095 }
+				character_event = { id = HFP.10095 }
 			}
 		}
 		
@@ -1983,7 +1983,7 @@ character_event = { # Warrior Lodge members with high PCS might go out and duel 
 			}
 			event_target:combatant_2 = {
 				apply_degree_of_dishonorable_duel_effect = yes #checks a bunch of age and health statuses...
-				#character_event = { id = HFP.10095 }
+				character_event = { id = HFP.10095 }
 			}
 		}
 		else_if = {
@@ -2063,7 +2063,7 @@ character_event = { # Warrior Lodge members with high PCS might go out and duel 
 			}	
 			event_target:combatant_2 = {
 				apply_degree_of_dishonorable_duel_effect = yes #checks a bunch of age and health statuses...
-				#character_event = { id = HFP.10095 }
+				character_event = { id = HFP.10095 }
 			}
 		}
     }

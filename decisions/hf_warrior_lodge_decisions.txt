@@ -333,9 +333,9 @@ targeted_decisions = {
 	                hidden = yes
 	            }
 	        }
-	        #hidden_tooltip = {
-	            #character_event = { id = HFP.10095 } #Duel evaluation (hidden) + result event as follow-up.
-	        #}
+	        hidden_tooltip = {
+	            character_event = { id = HFP.10095 } #Duel evaluation (hidden) + result event as follow-up.
+	        }
 	    }
 	    
 	    revoke_allowed = {

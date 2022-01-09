@@ -5212,10 +5212,10 @@ character_event = {
 							}
 						}
 						# Low Mandate
-						#OR = {
-							#has_character_modifier = mandate_of_heaven_2
-							#has_character_modifier = mandate_of_heaven_1
-						#}
+						OR = {
+							has_character_modifier = mandate_of_heaven_2
+							has_character_modifier = mandate_of_heaven_1
+						}
 					}
 				}
 			}
@@ -6652,7 +6652,7 @@ character_event = { # Traveling Teacher
 			female = no
 			age = 42
 			culture = han
-			religion = tao
+			religion = taoist
 			attributes = {
 				diplomacy = 2
 				learning = 14
@@ -6855,12 +6855,12 @@ character_event = { # Accept Teacher into Court
 				if = {
 					limit = {
 						NOT = {
-							religion = tao
+							religion = taoist
 						}
 					}
 					random = {
 						chance = 2
-						set_secret_religion = tao
+						set_secret_religion = taoist
 					}
 				}
 			}

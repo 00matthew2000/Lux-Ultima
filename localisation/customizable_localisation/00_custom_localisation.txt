@@ -3600,10 +3600,10 @@ defined_text = {
 	text = {
 		localisation_key = String_Romuvan
 		trigger = { 
-			#OR = {
-				#religion = baltic_pagan
+			OR = {
+				religion = baltic_pagan
 				religion = baltic_pagan_reformed
-			#}
+			}
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
@@ -6722,7 +6722,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			religion = judaism
+			religion = jewish
 		}
 		localisation_key = String_Qabalah
 	}
@@ -15062,7 +15062,7 @@ defined_text = {
 				FROM = {
 					OR = { 
 						religion = slavic_pagan
-						#religion = baltic_pagan
+						religion = baltic_pagan
 						religion = slavic_pagan_reformed
 						religion = baltic_pagan_reformed
 					}
@@ -15070,7 +15070,7 @@ defined_text = {
 				ROOT = {
 					OR = { 
 						religion = slavic_pagan
-						#religion = baltic_pagan
+						religion = baltic_pagan
 						religion = slavic_pagan_reformed
 						religion = baltic_pagan_reformed
 					}
@@ -17050,12 +17050,12 @@ defined_text = {
 		}
 		localisation_key = Holy_Order_Orthodox
 	}
-	#text = {
-		#trigger = {
-			#religion = miaphysite
-		#}
-		#localisation_key = Holy_Order_Miaphysite
-	#}
+	text = {
+		trigger = {
+			religion = miaphysite
+		}
+		localisation_key = Holy_Order_Miaphysite
+	}
 	text = {
 		trigger = {
 			religion = nestorian
@@ -17064,7 +17064,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			religion = judaism
+			religion = jewish
 		}
 		localisation_key = Holy_Order_Jewish
 	}
@@ -17076,7 +17076,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			religion = mani
+			religion = manichean
 		}
 		localisation_key = Holy_Order_Manichean
 	}

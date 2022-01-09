@@ -1802,9 +1802,9 @@ character_event = {
 	        duration = 365
 	        hidden = yes
 	    }
-	    #hidden_tooltip = {
-	        #FROM = { character_event = { id = HFP.10095 days = 1 } } #Duel evaluation (hidden) + result event as follow-up.
-	    #}
+	    hidden_tooltip = {
+	        FROM = { character_event = { id = HFP.10095 days = 1 } } #Duel evaluation (hidden) + result event as follow-up.
+	    }
 		ai_chance = { 
 			factor = 40
 			modifier = { 
@@ -1891,9 +1891,9 @@ character_event = {
 	        duration = 365
 	        hidden = yes
 	    }
-	    #hidden_tooltip = {
-	        #FROM = { character_event = { id = HFP.10095 days = 1 } } #Duel evaluation (hidden) + result event as follow-up.
-	    #}
+	    hidden_tooltip = {
+	        FROM = { character_event = { id = HFP.10095 days = 1 } } #Duel evaluation (hidden) + result event as follow-up.
+	    }
 		ai_chance = { 
 			factor = 40
 			modifier = { 

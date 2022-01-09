@@ -332,7 +332,7 @@ deciding_upon_saint_effect = {
             }
         }
         random_realm_province = {
-            #province_event = { id = HF.40010 }
+            province_event = { id = HF.40010 }
         }
         change_variable = { which = global_saint_number value = 1 }
         trigger_switch = {
@@ -1337,7 +1337,7 @@ check_if_ancestor_worship_worthy_effect = {
 
         set_character_flag = blessed_ancestor_prestige
         rightful_religious_head_scope = {
-            #character_event = { id = HF.40101 days = 3 }
+            character_event = { id = HF.40101 days = 3 }
         }
     }
 }

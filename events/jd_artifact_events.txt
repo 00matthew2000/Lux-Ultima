@@ -3309,7 +3309,7 @@ character_event = { #Outcome: Book is finished! It went Great/Good/Decent!
 			    							trait = seducer
 			    							trait = seductress
 			    						}
-			    						culture_group = indoaryan_group
+			    						culture_group = indo_aryan_group
 			    						NOT = {
 											any_artifact = {
 												artifact_type = kama_sutra
@@ -3915,7 +3915,7 @@ character_event = { #Outcome: Book is finished! It went Great/Good/Decent!
 			    				10 = {
 			    					add_artifact = cookbook_3_chinese_group
 			    					trigger = {
-			    						culture_group = chinese
+			    						culture_group = chinese_group
 			    						NOT = {
 				    						any_artifact = {
 												artifact_type = cookbook_3_chinese_group
@@ -4707,10 +4707,10 @@ character_event = { #Outcome: Book is finished! It went Great/Good/Decent!
 										value = 10
 										trait = brave
 									}
-									#additive_modifier = {
-										#value = 10
-										#is_member_of_any_warrior_lodge_trigger = yes
-									#}
+									additive_modifier = {
+										value = 10
+										is_member_of_any_warrior_lodge_trigger = yes
+									}
 									additive_modifier = {
 										value = 10
 										prestige = 500
@@ -4742,10 +4742,10 @@ character_event = { #Outcome: Book is finished! It went Great/Good/Decent!
 										value = 10
 										trait = brave
 									}
-									#additive_modifier = {
-										#value = 10
-										#is_member_of_any_warrior_lodge_trigger = yes
-									#}
+									additive_modifier = {
+										value = 10
+										is_member_of_any_warrior_lodge_trigger = yes
+									}
 									additive_modifier = {
 										value = 10
 										prestige = 500

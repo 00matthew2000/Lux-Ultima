@@ -47,11 +47,11 @@ targetted_decisions = {
 					ai = no
 					NOT = { character = FROM }
 				}
-				#character_event = { id = SSI.60 }
+				character_event = { id = SSI.60 }
 			}
 			hidden_tooltip = {
 				FROM = {
-					#character_event = { id = SSI.72 }
+					character_event = { id = SSI.72 }
 				}
 			}
 			death = {

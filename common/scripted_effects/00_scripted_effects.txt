@@ -4235,7 +4235,7 @@ major_soul_corruption_effect = {
 						}
 					}
 					set_character_flag = corruption_remove_kind
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				20 = {
 					modifier = {
@@ -4247,7 +4247,7 @@ major_soul_corruption_effect = {
 						}
 					}
 					set_character_flag = corruption_add_cruel
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				15 = {
 					modifier = {
@@ -4259,7 +4259,7 @@ major_soul_corruption_effect = {
 						} 
 					}
 					set_character_flag = corruption_remove_just
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				15 = {
 					modifier = {
@@ -4271,7 +4271,7 @@ major_soul_corruption_effect = {
 						} 
 					}
 					set_character_flag = corruption_add_arbitrary
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				10 = {
 					modifier = {
@@ -4283,7 +4283,7 @@ major_soul_corruption_effect = {
 						} 
 					}
 					set_character_flag = corruption_remove_honest	
-					#character_event = { id = MNM.7050 days = 3 random = 27 }		
+					character_event = { id = MNM.7050 days = 3 random = 27 }		
 				}
 				10 = {
 					modifier = {
@@ -4295,7 +4295,7 @@ major_soul_corruption_effect = {
 						} 
 					}
 					set_character_flag = corruption_add_deceitful
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				5 = { 
 					modifier = {
@@ -4304,47 +4304,47 @@ major_soul_corruption_effect = {
 						has_character_flag = corruption_add_possessed
 					}
 					set_character_flag = corruption_add_possessed
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				50 = { }
 			}
 		}
-		#random_list = { #Risk of getting weaker
-			#10 = {
-#				trigger = { NOT = { trait = stressed } }
-#				character_event = { id = MNM.7051 days = 32 random = 5 }
-#			}
-#			5 = {
-#				trigger = { NOT = { trait = lunatic } }
-#				#character_event = { id = MNM.7052 days = 32 random = 5 }
-#			}
-#			5 = {
-#				trigger = { NOR = { trait = stutter } }
-#				#character_event = { id = MNM.7053 days = 32 random = 5 }
-#			}
-#			5 = {
-#				trigger = { NOR = { trait = clubfooted } }
-#				#character_event = { id = MNM.7054 days = 32 random = 5} 
-#			}
-#			5 = {
-#				trigger = { NOR = { trait = hunchback } }
-#				character_event = { id = MNM.7055 days = 32 random = 5 }
-#			}
-#			5 = {
-#				trigger = { NOR = { trait = ugly } }
-#				character_event = { id = MNM.7056 days = 32 random = 5 }
-#			}
-			#5 = {
-				#trigger = {
-					#NOR = {
-			    		#trait = feeble
-			    		#trait = weak
-			    		#trait = strong
-			    	#}
-				#}
-				#character_event = { id = MNM.7059 days = 32 random = 5 }
-			#}
-			#40 = {
+		random_list = { #Risk of getting weaker
+			10 = {
+				trigger = { NOT = { trait = stressed } }
+				character_event = { id = MNM.7051 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOT = { trait = lunatic } }
+				character_event = { id = MNM.7052 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOR = { trait = stutter } }
+				character_event = { id = MNM.7053 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOR = { trait = clubfooted } }
+				character_event = { id = MNM.7054 days = 32 random = 5} 
+			}
+			5 = {
+				trigger = { NOR = { trait = hunchback } }
+				character_event = { id = MNM.7055 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOR = { trait = ugly } }
+				character_event = { id = MNM.7056 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = {
+					NOR = {
+			    		trait = feeble
+			    		trait = weak
+			    		trait = strong
+			    	}
+				}
+				character_event = { id = MNM.7059 days = 32 random = 5 }
+			}
+			40 = {
 				#trigger = { 
 				#	NOR = { 
 				#		NOT = { health = 3 }
@@ -4352,43 +4352,43 @@ major_soul_corruption_effect = {
 				#		has_character_modifier = corrupting_magic_major
 				#	}
 				#}
-				#character_event = { id = MNM.7057 days = 32 random = 5 }
-			#}
-			#220 = { # High visibility (ability abuse) increases the risk of getting weaker
-				#modifier = {
-					#factor = 0.9
-					#check_variable = { which = visibility_value value = 10 }
-				#}
-				#modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 15 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 20 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 25 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 30 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 35 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 40 }
-#				}
-#			}
-#		}
+				character_event = { id = MNM.7057 days = 32 random = 5 }
+			}
+			220 = { # High visibility (ability abuse) increases the risk of getting weaker
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 10 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 15 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 20 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 25 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 30 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 35 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 40 }
+				}
+			}
+		}
 		random = {
 			chance = 2
 			set_character_flag = has_it_coming
-			#character_event = { id = MNM.7854 days = 30 random = 50 } #Demon hunters come after you...
+			character_event = { id = MNM.7854 days = 30 random = 50 } #Demon hunters come after you...
 		}
 	}
 }
@@ -4418,7 +4418,7 @@ minor_soul_corruption_effect = {
 						}
 					}
 					set_character_flag = corruption_remove_kind
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				5 = {
 					modifier = {
@@ -4430,7 +4430,7 @@ minor_soul_corruption_effect = {
 						}
 					}
 					set_character_flag = corruption_add_cruel
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				10 = {
 					modifier = {
@@ -4442,7 +4442,7 @@ minor_soul_corruption_effect = {
 						}
 					}
 					set_character_flag = corruption_remove_just
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				5 = {
 					modifier = {
@@ -4454,7 +4454,7 @@ minor_soul_corruption_effect = {
 						} 
 					}
 					set_character_flag = corruption_add_arbitrary
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				10 = {
 					modifier = {
@@ -4466,7 +4466,7 @@ minor_soul_corruption_effect = {
 						} 
 					}
 					set_character_flag = corruption_remove_honest
-					#character_event = { id = MNM.7050 days = 3 random = 27 }			
+					character_event = { id = MNM.7050 days = 3 random = 27 }			
 				}
 				5 = {
 					modifier = {
@@ -4478,7 +4478,7 @@ minor_soul_corruption_effect = {
 						} 
 					}
 					set_character_flag = corruption_add_deceitful
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				5 = { 
 					modifier = {
@@ -4487,47 +4487,47 @@ minor_soul_corruption_effect = {
 						has_character_flag = corruption_add_possessed
 					}
 					set_character_flag = corruption_add_possessed
-					#character_event = { id = MNM.7050 days = 3 random = 27 }
+					character_event = { id = MNM.7050 days = 3 random = 27 }
 				}
 				80 = { }
 			}
 		}
-		#random_list = { #Risk of getting weaker
-			#15 = {
+		random_list = { #Risk of getting weaker
+			15 = {
 				trigger = { NOT = { trait = stressed } }
-				#character_event = { id = MNM.7051 days = 32 random = 5 }
-			#}
-			#5 = {
-				#trigger = { NOT = { trait = lunatic } }
-				#character_event = { id = MNM.7052 days = 32 random = 5 }
-			#}
-			#5 = {
-				#trigger = { NOR = { trait = stutter } }
-				#character_event = { id = MNM.7053 days = 32 random = 5 }
-			#}
-			#5 = {
-				#trigger = { NOR = { trait = clubfooted } }
-				#character_event = { id = MNM.7054 days = 32 random = 5 }
-			#}
-			#5 = {
-				#trigger = { NOR = { trait = hunchback } }
-				#character_event = { id = MNM.7055 days = 32 random = 5 }
-			#}
-			#5 = {
-				#trigger = { NOR = { trait = ugly } }
-				#character_event = { id = MNM.7056 days = 32 random = 5 }
-			#}
-			#5 = {
-				#trigger = {
-					#NOR = {
-						#trait = feeble
-						#trait = weak
-						#trait = strong
-					#}
-				#}
-				#character_event = { id = MNM.7059 days = 32 random = 5 }
-			#}
-			#50 = {
+				character_event = { id = MNM.7051 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOT = { trait = lunatic } }
+				character_event = { id = MNM.7052 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOR = { trait = stutter } }
+				character_event = { id = MNM.7053 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOR = { trait = clubfooted } }
+				character_event = { id = MNM.7054 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOR = { trait = hunchback } }
+				character_event = { id = MNM.7055 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = { NOR = { trait = ugly } }
+				character_event = { id = MNM.7056 days = 32 random = 5 }
+			}
+			5 = {
+				trigger = {
+					NOR = {
+						trait = feeble
+						trait = weak
+						trait = strong
+					}
+				}
+				character_event = { id = MNM.7059 days = 32 random = 5 }
+			}
+			50 = {
 				#trigger = { 
 				#	NOR = { 
 				#		NOT = { health = 3 }
@@ -4535,39 +4535,39 @@ minor_soul_corruption_effect = {
 				#		has_character_modifier = corrupting_magic_major
 				#	}
 				#}
-				#character_event = { id = MNM.7058 days = 32 random = 5 }
-			#}
-			#450 = {  # High visibility (ability abuse) increases the risk of getting weaker
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 10 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 15 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 20 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 25 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 30 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 35 }
-#				}
-#				modifier = {
-#					factor = 0.9
-#					check_variable = { which = visibility_value value = 40 }
-#				}
-#			}
-#		}
+				character_event = { id = MNM.7058 days = 32 random = 5 }
+			}
+			450 = {  # High visibility (ability abuse) increases the risk of getting weaker
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 10 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 15 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 20 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 25 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 30 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 35 }
+				}
+				modifier = {
+					factor = 0.9
+					check_variable = { which = visibility_value value = 40 }
+				}
+			}
+		}
 	}
 }
 
@@ -14157,12 +14157,12 @@ send_final_book_outcome_event_effect = {
 }
 
 abort_kow_tow_effect = {
-	#if = {
-		#limit = {
-			#NOT = { has_character_flag = kow_tow_hide_abort_notification }
-		#}
-		#character_event = { id = JD.32299 }
-	#}
+	if = {
+		limit = {
+			NOT = { has_character_flag = kow_tow_hide_abort_notification }
+		}
+		character_event = { id = JD.32299 }
+	}
 	#clear_delayed_event = { id = JD.32005 }
 	#clear_delayed_event = { id = JD.32200 }
 	#clear_delayed_event = { id = JD.32113 }
@@ -14180,11 +14180,11 @@ return_to_travel_tombola_effect = {
 				which = china_kow_tow_travel_events
 				value = 1
 			}
-			#character_event = {
-				#id = JD.32005
-				#days = 90
-				#random = 60
-			#}
+			character_event = {
+				id = JD.32005
+				days = 90
+				random = 60
+			}
 		}
 	}
 }
@@ -14196,11 +14196,11 @@ return_to_china_tombola_effect = {
 				which = china_kow_tow_travel_events
 				value = 1
 			}
-			#character_event = {
-				#id = JD.32210
-				#days = 70
-				#random = 30
-			#}
+			character_event = {
+				id = JD.32210
+				days = 70
+				random = 30
+			}
 		}
 	}
 }
@@ -21842,8 +21842,8 @@ landless_pope_effect = {
 					}
 				}
 			}
-			#character_event = { id = HFP.40034 }
-			#character_event = { id = HFP.40035 }
+			character_event = { id = HFP.40034 }
+			character_event = { id = HFP.40035 }
 		}
 	}
 }
