@@ -3561,7 +3561,7 @@ offmap_submission = {
 								has_province_modifier = nomad_agitation
 								NOT = { has_settlement_construction = yes }
 							}
-							#province_event = { id = JD.60100 } #increase counter for each nomad province
+							province_event = { id = JD.60100 } #increase counter for each nomad province
 						}
 						character_event = { id = JD.60101 days = 1 } #calculate gold sent from china for building holdings
 					}
@@ -3725,7 +3725,7 @@ offmap_submission = {
 								has_offmap_news_enabled = offmap_china
 								is_within_diplo_range = PREV
 							}
-							#narrative_event = { id = JD.60211 days = 1 }
+							narrative_event = { id = JD.60211 days = 1 }
 						}
 					}
 				}
@@ -4154,7 +4154,7 @@ dismantle_pretender_china_cb = {
 								liege = { character = ROOT_FROM }
 							}
 						}
-						#narrative_event = { id = JD.60209 }
+						narrative_event = { id = JD.60209 }
 					}
 					any_courtier = { death = { death_reason = death_executed_by_chinese_emperor } }
 					primary_title = {
@@ -4293,7 +4293,7 @@ force_open_china_cb = {
 							has_offmap_news_enabled = PREV
 							is_within_diplo_range = PREV
 						}
-						#narrative_event = { id = JD.60302 }
+						narrative_event = { id = JD.60302 }
 					}
 					clr_offmap_flag = no_policy_news
 				}
@@ -4366,7 +4366,7 @@ force_open_china_cb = {
 							has_offmap_news_enabled = PREV
 							is_within_diplo_range = PREV
 						}
-						#narrative_event = { id = JD.60303 }
+						narrative_event = { id = JD.60303 }
 					}
 					clr_offmap_tmp_flag = china_force_open_in_progress
 				}
@@ -4441,7 +4441,7 @@ destabilization_china_cb = {
 								liege = { character = ROOT_FROM }
 							}
 						}
-						#narrative_event = { id = JD.60209 }
+						narrative_event = { id = JD.60209 }
 					}
 					any_demesne_title = {
 						limit = {
@@ -4685,7 +4685,7 @@ invasion_of_china_cb = {
 								liege = { character = ROOT }
 							}
 						}
-						#narrative_event = { id = JD.60401 }
+						narrative_event = { id = JD.60401 }
 					}
 				}
 			}
@@ -4748,7 +4748,7 @@ invasion_of_china_cb = {
 							liege = { character = ROOT }
 						}
 					}
-					#narrative_event = { id = JD.60403 }
+					narrative_event = { id = JD.60403 }
 				}
 			}
 			custom_tooltip = {
@@ -4790,7 +4790,7 @@ invasion_of_china_cb = {
 								liege = { character = ROOT }
 							}
 						}
-						#narrative_event = { id = JD.60402 }
+						narrative_event = { id = JD.60402 }
 					}
 					any_demesne_title = {
 						limit = {

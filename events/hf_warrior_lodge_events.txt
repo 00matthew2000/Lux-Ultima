@@ -1766,14 +1766,14 @@ character_event = {
 
     is_triggered_only = yes
     
-    #desc = {
-    #   text = EVTDESC_HF_10040_A
-    #    trigger = { has_religion_matching_joined_warrior_lodge_trigger = yes }
-    #}
-    #desc = {
-    #    text = EVTDESC_HF_10040_B
-    #    trigger = { has_religion_matching_joined_warrior_lodge_trigger = no }
-    #}
+    desc = {
+        text = EVTDESC_HF_10040_A
+        trigger = { has_religion_matching_joined_warrior_lodge_trigger = yes }
+    }
+    desc = {
+        text = EVTDESC_HF_10040_B
+        trigger = { has_religion_matching_joined_warrior_lodge_trigger = no }
+    }
 
     picture = {
         picture = GFX_evt_horsemanship
@@ -1793,7 +1793,7 @@ character_event = {
         name = EVTOPTA_HF_10040
 
         if = { #To punish characters of the "wrong" religion...
-            #limit = { has_religion_matching_joined_warrior_lodge_trigger = no }
+            limit = { has_religion_matching_joined_warrior_lodge_trigger = no }
             custom_tooltip = { text = EVTOPTA_HF_10040_piety_loss_tt }
             piety =-150
         }
@@ -2773,10 +2773,10 @@ character_event = {
         any_realm_lord = {
             limit = {
                 ai = yes
-                #OR = {
-                    #has_religion_matching_empty_warrior_lodge_trigger = yes
-                    #has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
-                #}
+                OR = {
+                    has_religion_matching_empty_warrior_lodge_trigger = yes
+                    has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
+                }
                 is_in_society = no
                 has_secret_religion_trait_trigger = no
                 is_adult = yes
@@ -2794,10 +2794,10 @@ character_event = {
 		any_realm_character = {
             limit = {
                 ai = yes
-                #OR = {
-                    #has_religion_matching_empty_warrior_lodge_trigger = yes
-                    #has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
-                #}
+                OR = {
+                    has_religion_matching_empty_warrior_lodge_trigger = yes
+                    has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
+                }
                 is_in_society = no
                 has_secret_religion_trait_trigger = no
                 is_adult = yes
@@ -2815,7 +2815,7 @@ character_event = {
         if = {
             limit = {
                 ai = yes
-                #has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
+                has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
                 is_in_society = no
                 has_secret_religion_trait_trigger = no
                 is_adult = yes

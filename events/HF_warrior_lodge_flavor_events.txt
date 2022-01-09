@@ -2892,6 +2892,7 @@ character_event = {
 				NOT = { is_lover = ROOT }
 				OR = {
 					ROOT = { has_religion_feature = religion_holy_family }
+					ROOT = { religion = messalian }
 					ROOT = { religion = zoroastrian }
 					NOT = { is_close_relative = ROOT }
 				}
@@ -3467,7 +3468,7 @@ character_event = {
     	random_friend = {
             limit = {
             	same_society_as = ROOT
-            	#is_member_of_any_warrior_lodge_trigger = yes
+            	is_member_of_any_warrior_lodge_trigger = yes
             	block_general_event_trigger = no
             }
             save_event_target_as = mourning_friend
@@ -3476,7 +3477,7 @@ character_event = {
         random_lover = {
             limit = {
             	same_society_as = ROOT
-            	#is_member_of_any_warrior_lodge_trigger = yes
+            	is_member_of_any_warrior_lodge_trigger = yes
             	block_general_event_trigger = no
             }
             save_event_target_as = mourning_lover
@@ -3528,7 +3529,7 @@ character_event = {
 
     trigger = {  
         FROM = { is_alive = no }
-        #is_member_of_any_warrior_lodge_trigger = yes
+        is_member_of_any_warrior_lodge_trigger = yes
         is_inaccessible_or_incapable_trigger = no
     }
 

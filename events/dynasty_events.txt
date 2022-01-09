@@ -330,7 +330,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		is_landed = no
+		has_landed_title = no
 		NOR = {
 			trait = eunuch
 			trait = monk
@@ -533,7 +533,7 @@ character_event = {
 	
 	trigger = {
 		age = 16
-		is_landed = no
+		has_landed_title = no
 		opinion = { who = top_liege value = 0 }
 		
 		num_of_claims = 1

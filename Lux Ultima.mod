@@ -21,7 +21,6 @@ replace_path = "history/titles"
 replace_path = "history/wars"
 replace_path = "map"
 replace_path = "decisions"
-replace_path = "dlc_metadata/dlc_characters" 
 replace_path = "events"
 replace_path = "localization/customizable_localization" 
 

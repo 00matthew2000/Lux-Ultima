@@ -4583,10 +4583,10 @@ character_event = {
 	        		trait = kind
 	        		trait = cannibal_trait
 	        		is_evil_trigger = yes
-	        		#AND = {
+	        		AND = {
 	        		    trait = zealous
-	        			#has_religion_matching_joined_warrior_lodge_trigger = yes
-	        		#}
+	        			has_religion_matching_joined_warrior_lodge_trigger = yes
+	        		}
         		}
         	}
         }
@@ -4614,7 +4614,7 @@ character_event = {
         	text = EVTOPTA_HFP_11039_zealous
         	trigger = {
         		trait = zealous
-        		#has_religion_matching_joined_warrior_lodge_trigger = yes
+        		has_religion_matching_joined_warrior_lodge_trigger = yes
         		NOT = { trait = depressed }
         	}
         }
@@ -4849,10 +4849,10 @@ character_event = {
 	        		trait = kind
 	        		trait = cannibal_trait
 	        		is_evil_trigger = yes
-	        		#AND = {
+	        		AND = {
 	        		    trait = zealous
-						#has_religion_matching_joined_warrior_lodge_trigger = yes
-	        		#}
+	        			has_religion_matching_joined_warrior_lodge_trigger = yes
+	        		}
         		}
         	}
         }
@@ -4880,7 +4880,7 @@ character_event = {
         	text = EVTOPTA_HFP_11038_zealous
         	trigger = {
         		trait = zealous
-        		#has_religion_matching_joined_warrior_lodge_trigger = yes
+        		has_religion_matching_joined_warrior_lodge_trigger = yes
         		NOT = { trait = depressed }
         	}
         }
@@ -5541,9 +5541,9 @@ character_event = {
 		}
 
 		trigger = {
-			#has_dlc = "Holy Fury"
+			has_dlc = "Holy Fury"
 			#is_member_of_any_warrior_lodge_trigger = yes
-			#has_religion_matching_joined_warrior_lodge_trigger = yes
+			has_religion_matching_joined_warrior_lodge_trigger = yes
 		}
 	}
 	option = {

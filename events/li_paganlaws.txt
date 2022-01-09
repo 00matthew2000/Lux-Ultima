@@ -6893,9 +6893,7 @@ province_event = {
 				factor = 1.1
 				owner = {
 					any_war = {
-						defender = { 
-						character = event_target:province_owner 
-						}
+						defender = event_target:province_owner
 						any_attacker = {
 							relative_power = {
 								who = event_target:province_owner
@@ -6909,9 +6907,7 @@ province_event = {
 				factor = 1.25
 				owner = {
 					any_war = {
-						defender = { 
-						character = event_target:province_owner 
-						}
+						defender = event_target:province_owner
 						any_attacker = {
 							relative_power = {
 								who = event_target:province_owner
@@ -6925,9 +6921,7 @@ province_event = {
 				factor = 1.5
 				owner = {
 					any_war = {
-						defender = { 
-						character = event_target:province_owner 
-						}
+						defender = event_target:province_owner
 						any_attacker = {
 							relative_power = {
 								who = event_target:province_owner
@@ -6941,9 +6935,7 @@ province_event = {
 				factor = 2.0
 				owner = {
 					any_war = {
-						defender = { 
-						character = event_target:province_owner 
-						}
+						defender = event_target:province_owner
 						any_attacker = {
 							relative_power = {
 								who = event_target:province_owner
@@ -6957,9 +6949,7 @@ province_event = {
 				factor = 3.0
 				owner = {
 					any_war = {
-						defender = { 
-						character = event_target:province_owner 
-						}
+						defender = event_target:province_owner
 						any_attacker = {
 							relative_power = {
 								who = event_target:province_owner
@@ -6973,9 +6963,7 @@ province_event = {
 				factor = 5.0
 				owner = {
 					any_war = {
-						defender = { 
-						character = event_target:province_owner 
-						}
+						defender = event_target:province_owner
 						any_attacker = {
 							relative_power = {
 								who = event_target:province_owner
@@ -6986,7 +6974,7 @@ province_event = {
 				}
 			}
 		}
-		event_target:province_owner = {
+		owner = {
 			spawn_unit = {
 				province = ROOT
 				home = ROOT

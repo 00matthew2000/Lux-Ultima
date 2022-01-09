@@ -145,21 +145,21 @@ death_text_cannibal = {
 		}
 	}
 }
-#death_text_satanist = {
-#	weight_multiplier = {
-#		factor = 60
-#	
-#		modifier = {
-#			factor = 0
-#			NOT = { 
-#				society_rank = {
-#					rank = 4
-#					society = the_satanists
-#				}
-#			}
-#		}
-#	}
-#}
+death_text_satanist = {
+	weight_multiplier = {
+		factor = 60
+	
+		modifier = {
+			factor = 0
+			NOT = { 
+				society_rank = {
+					rank = 4
+					society = the_satanists
+				}
+			}
+		}
+	}
+}
 death_text_roman_emperor = {
 	weight_multiplier = {
 		factor = 60

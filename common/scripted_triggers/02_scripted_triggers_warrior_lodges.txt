@@ -486,67 +486,67 @@ is_available_fellow_society_member_trigger = {
 
 #Can be used on a character too -- will then default to look at the society a character is member of.
 #this_society_is_a_warrior_lodge_trigger = {
-#	OR = {
-#	    is_society = warrior_lodge_norse
-#	    is_society = warrior_lodge_tengri
-#	    is_society = warrior_lodge_baltic
-#	    is_society = warrior_lodge_finnish
-#	    is_society = warrior_lodge_slavic
-#	    is_society = warrior_lodge_serer
-#	    is_society = warrior_lodge_bon
-#	    is_society = warrior_lodge_graecoroman
-#	}
-#}
+	OR = {
+	    is_society = warrior_lodge_norse
+	    is_society = warrior_lodge_tengri
+	    is_society = warrior_lodge_baltic
+	    is_society = warrior_lodge_finnish
+	    is_society = warrior_lodge_slavic
+	    is_society = warrior_lodge_serer
+	    is_society = warrior_lodge_bon
+	    is_society = warrior_lodge_graecoroman
+	}
+}
 
 #has_religion_matching_warrior_lodge_to_revive_trigger = {
-	#OR = {
-#		AND = {
-#			religion_openly_norse_or_reformed_trigger = yes
-#			event_target:warrior_lodge_to_revive = {
-#				is_society = warrior_lodge_norse
-#			}
-#		}
-#		AND = {
-#			religion_openly_tengri_or_reformed_trigger = yes
-#			event_target:warrior_lodge_to_revive = {
-#				is_society = warrior_lodge_tengri
-#			}
-#		}
-#		AND = {
-#			religion_openly_baltic_or_reformed_trigger = yes
-#			event_target:warrior_lodge_to_revive = {
-#				is_society = warrior_lodge_baltic
-#			}
-#		}
-#		AND = {
-#			religion_openly_finnish_or_reformed_trigger = yes
-#			event_target:warrior_lodge_to_revive = {
-#				is_society = warrior_lodge_finnish
-#			}
-#		}
-#		AND = {
-#			religion_openly_slavic_or_reformed_trigger = yes
-#			event_target:warrior_lodge_to_revive = {
-#				is_society = warrior_lodge_slavic
-#			}
-#		}
-#		AND = {
-#			religion_openly_west_african_or_reformed_trigger = yes
-#			event_target:warrior_lodge_to_revive = {
-#				is_society = warrior_lodge_serer
-#			}
-#		}
-#		AND = {
-#			religion_openly_bon_or_reformed_trigger = yes
-#			event_target:warrior_lodge_to_revive = {
-#				is_society = warrior_lodge_bon
-#			}
-#		}
-#		AND = {
-#			religion_openly_hellenic_or_reformed_trigger = yes
-#			event_target:warrior_lodge_to_revive = {
-#				is_society = warrior_lodge_graecoroman
-#			}
-#		}
-#	}
-#}
+	OR = {
+		AND = {
+			religion_openly_norse_or_reformed_trigger = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_norse
+			}
+		}
+		AND = {
+			religion_openly_tengri_or_reformed_trigger = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_tengri
+			}
+		}
+		AND = {
+			religion_openly_baltic_or_reformed_trigger = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_baltic
+			}
+		}
+		AND = {
+			religion_openly_finnish_or_reformed_trigger = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_finnish
+			}
+		}
+		AND = {
+			religion_openly_slavic_or_reformed_trigger = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_slavic
+			}
+		}
+		AND = {
+			religion_openly_west_african_or_reformed_trigger = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_serer
+			}
+		}
+		AND = {
+			religion_openly_bon_or_reformed_trigger = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_bon
+			}
+		}
+		AND = {
+			religion_openly_hellenic_or_reformed_trigger = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_graecoroman
+			}
+		}
+	}
+}

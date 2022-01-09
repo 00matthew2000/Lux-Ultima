@@ -592,10 +592,10 @@ dishonorable_ai_chance_increase_score = {
             is_devil_worshiper_trigger = yes
         }
     }
-    #modifier = {
-        #factor = 0.5
-        #is_member_of_any_warrior_lodge_trigger = yes
-    #}
+    modifier = {
+        factor = 0.5
+        is_member_of_any_warrior_lodge_trigger = yes
+    }
     modifier = {
         factor = 1.5
         OR = {
@@ -673,10 +673,10 @@ warrior_lodge_risk_reduction_score = {
 		factor = 0.9 #reduces risk of injury
 		#Note: even being in a Warrior Lodge reduces risk, by default, as you have access to new battle events, effectively making the injury events less likely to fire from the same pool of events
 		OR = {
-			#AND = {
+			AND = {
 				NOT = { society_rank == 4 }
-				#is_member_of_any_warrior_lodge_trigger = yes
-			#}
+				is_member_of_any_warrior_lodge_trigger = yes
+			}
 			any_owned_bloodline = {
 				has_bloodline_flag = battle_survivor_bloodline
 				bloodline_is_active_for = PREV
@@ -1040,11 +1040,11 @@ warrior_recruit_score = { #rename to... "new_warrior_lodge_recruit_eligibility_s
 		factor = 1.1
 		has_benevolent_trait_trigger = yes
 	}
-	#modifier = {
-		#factor = 1.5
-		#has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
-		#trait = zealous
-	#}
+	modifier = {
+		factor = 1.5
+		has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
+		trait = zealous
+	}
 	modifier = {
 		factor = 1.2
 		trait = duelist
@@ -1517,11 +1517,11 @@ matching_soldier_score = { #choses "wisely", someone close to your skill level/p
 		is_evil_trigger = yes
 		PREV = { is_evil_trigger = yes }
 	}
-	#modifier = {
-	#	factor = 1.1
-	#	has_any_warrior_lodge_training_trait_trigger = yes
-	#	PREV = { has_any_warrior_lodge_training_trait_trigger = yes }
-	#}
+	modifier = {
+		factor = 1.1
+		has_any_warrior_lodge_training_trait_trigger = yes
+		PREV = { has_any_warrior_lodge_training_trait_trigger = yes }
+	}
 	modifier = {
 		factor = 1.5
 		has_at_least_3_traits_in_common_with_prev_trigger = yes

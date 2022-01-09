@@ -120,7 +120,6 @@ character_event = {
 	is_triggered_only = yes
 
 		#Secret religious society
-		immediate = {
 		if = {
 			limit = {
 				interested_in_society = secret_religious_cult
@@ -134,7 +133,7 @@ character_event = {
 				years = 5
 				hidden = yes
 			}
-			character_event = { id = MNM.3420 }
+			character_event = { id = MNM.3420 } 
 		}
 	}	
 }
@@ -151,10 +150,10 @@ character_event = {
 				limit = { NOT = { has_character_flag = ongoing_recruitment } }
 				set_character_flag = assassins_attempted_recruitment
 				set_character_flag = ongoing_recruitment
-				#if = {
-					#limit = { NOT = { religion = shiite } }
-					#character_event = { id = MNM.6020 } 
-				#}
+				if = {
+					limit = { NOT = { religion = shiite } }
+					character_event = { id = MNM.6020 } 
+				}
 				if = {
 					limit = { religion = shiite }
 					character_event = { id = MNM.6022 } 
@@ -381,14 +380,14 @@ letter_event = {
 	desc = {
 		trigger = { 
 			society_member_of = secret_religious_cult
-			#FROM = { ROOT = { is_openly_of_prevs_secret_religion_trigger = yes } }
+			FROM = { ROOT = { is_openly_of_prevs_secret_religion_trigger = yes } }
 		}
 		text = EVTDESC_MNM_10023_SR_A
 	}
 	desc = {
 		trigger = { 
 			society_member_of = secret_religious_cult 
-			#FROM = { ROOT = { is_openly_of_prevs_secret_religion_trigger = no } }
+			FROM = { ROOT = { is_openly_of_prevs_secret_religion_trigger = no } }
 		}
 		text = EVTDESC_MNM_10023_SR_B
 	}
@@ -1395,53 +1394,53 @@ character_event = {
 							set_society_grandmaster = yes
 						}
 					}
-					#50 = { 
-						#trigger = {
-						#	can_join_society = the_satanists
-						#}
-						#modifier = {
-						#	factor = 5
-						#	OR = {
-						#		has_impious_trait_trigger = yes
-						#		has_vice_trigger = yes
-						#		trait = drunkard
-						#		trait = possessed
-						#		trait = lunatic
-						#	}
-						#}
-						#modifier = {
-						#	factor = 2
-						#	the_satanists = { num_of_society_members < 15 }
-						#}
-						#modifier = {
-						#	factor = 2
-						#	the_satanists = { num_of_society_members < 10 }
-						#}
-						#join_society = the_satanists
-						#random_list = { # Artificially increase society influence for balance purposes
-						#	75 = {
-						#		modifier = {
-						#			factor = 0
-						#			society_influence >= 30
-						#		}
-						#		add_mission_succeed_influence_effect = yes
-						#	}
-						#	25 = {
-						#	}
-						#}
-						#if = {
-						#	limit = {
-						#		NOT = {
-						#			society = {
-						#				any_society_member = {
-						#					is_society_grandmaster = yes
-						#				}
-						#			}
-						#		}
-						#	}
-						#	set_society_grandmaster = yes
-						#}
-					#}
+					50 = { 
+						trigger = {
+							can_join_society = the_satanists
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_satanists = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_satanists = { num_of_society_members < 10 }
+						}
+						join_society = the_satanists
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
 					# 50 = { 
 						# trigger = {
 							# can_join_society = the_trollcrafters

@@ -3810,6 +3810,9 @@ character_event = {
 			OR = {
 				religion_group = muslim
 				religion_group = zoroastrian_group
+				religion_group = berberafrican_pagan_group
+				religion_group = arabafrican_pagan_group
+				religion_group = palmyranafrican_pagan_group
 				religion_group = yazd_group
 				religion_group = mand_group
 				religion_group = mani_group
@@ -3994,7 +3997,7 @@ character_event = {
 					d_holyapollinarist = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.1560
+								id = SoA.1560
 							}
 						}
 					}
@@ -4011,7 +4014,7 @@ character_event = {
 					d_holyarian = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.1460
+								id = SoA.1460
 							}
 						}
 					}
@@ -4029,7 +4032,7 @@ character_event = {
 					d_holyashari = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.1460
+								id = SoA.1460
 							}
 						}
 					}
@@ -4047,7 +4050,7 @@ character_event = {
 					d_holyathari = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.1460
+								id = SoA.1460
 							}
 						}
 					}
@@ -4065,7 +4068,7 @@ character_event = {
 					d_holyaudianist = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.1660
+								id = SoA.1660
 							}
 						}
 					}
@@ -4082,7 +4085,7 @@ character_event = {
 					d_holyaztec = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.1760
+								id = SoA.1760
 							}
 						}
 					}
@@ -4099,7 +4102,7 @@ character_event = {
 					d_holybud_bahusrutiya = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.1860
+								id = SoA.1860
 							}
 						}
 					}
@@ -4116,7 +4119,7 @@ character_event = {
 					d_holybud_mahayana = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.1960
+								id = SoA.1960
 							}
 						}
 					}
@@ -4133,7 +4136,7 @@ character_event = {
 					d_holybud_pratyeka = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.2060
+								id = SoA.2060
 							}
 						}
 					}
@@ -4150,7 +4153,7 @@ character_event = {
 					d_holybud_pureland = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.2160
+								id = SoA.2160
 							}
 						}
 					}
@@ -4167,7 +4170,7 @@ character_event = {
 					d_holybud_sthaviravada = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.2260
+								id = SoA.2260
 							}
 						}
 					}
@@ -4184,7 +4187,7 @@ character_event = {
 					d_holybud_vajrayana = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.2360
+								id = SoA.2360
 							}
 						}
 					}
@@ -4201,7 +4204,7 @@ character_event = {
 					d_holycatholic = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.2460
+								id = SoA.2460
 							}
 						}
 					}
@@ -4218,7 +4221,7 @@ character_event = {
 					d_holydonatist = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.2560
+								id = SoA.2560
 							}
 						}
 					}
@@ -4235,7 +4238,7 @@ character_event = {
 					d_holyharuri = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.2660
+								id = SoA.2660
 							}
 						}
 					}
@@ -4252,7 +4255,7 @@ character_event = {
 					d_holyhindu = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.2760
+								id = SoA.2760
 							}
 						}
 					}
@@ -4269,7 +4272,7 @@ character_event = {
 					d_holyhurufi = {
 						holder_scope = {
 							character_event = {
-								#id = SoA.2860
+								id = SoA.2860
 							}
 						}
 					}

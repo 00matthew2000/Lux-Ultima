@@ -9,7 +9,7 @@ french_martial_overlayer_trigger = {
 	NOR = { 
 		is_theocracy = yes 
 		has_job_title = job_spiritual
-		#french_overlayer_special_crown_trigger = yes
+		french_overlayer_special_crown_trigger = yes
 	}
 }
 
@@ -27,7 +27,7 @@ french_duchess_overlayer_trigger = {
 		is_theocracy = yes
 		is_merchant_republic = yes
 		has_job_title = job_spiritual
-		#french_overlayer_special_crown_trigger = yes
+		french_overlayer_special_crown_trigger = yes
 	}
 }
 
@@ -45,7 +45,7 @@ french_countess_overlayer_trigger = {
 		is_theocracy = yes
 		is_merchant_republic = yes
 		has_job_title = job_spiritual
-		#french_overlayer_special_crown_trigger = yes
+		french_overlayer_special_crown_trigger = yes
 	}
 }
 
@@ -64,7 +64,7 @@ french_courtier_overlayer_trigger = {
 		has_job_title = job_spiritual
 		has_job_title = job_marshal
 		has_job_title = job_spymaster
-		#french_overlayer_special_crown_trigger = yes
+		french_overlayer_special_crown_trigger = yes
 	}
 	is_ruler = no
 	spouse = { is_ruler = no }
@@ -100,7 +100,7 @@ french_queen_underlayer_trigger = {
 		has_job_title = job_spiritual
 		has_portrait_property = { layer = 5 index = 9 }
 		has_portrait_property = { layer = 5 index = 10 }
-		#french_overlayer_special_crown_trigger = yes
+		french_overlayer_special_crown_trigger = yes
 	}
 }
 
@@ -118,7 +118,7 @@ french_duke_overlayer_trigger = {
 		is_theocracy = yes
 		is_merchant_republic = yes
 		has_job_title = job_spiritual
-		#french_overlayer_special_crown_trigger = yes
+		french_overlayer_special_crown_trigger = yes
 	}
 }
 
@@ -136,6 +136,6 @@ french_count_overlayer_trigger = {
 		is_theocracy = yes
 		is_merchant_republic = yes
 		has_job_title = job_spiritual
-		#french_overlayer_special_crown_trigger = yes
+		french_overlayer_special_crown_trigger = yes
 	}
 }

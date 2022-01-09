@@ -4054,15 +4054,15 @@ title_master_engineer = {
             character_event = { id = JD.20033 days = 2920 random = 1095 } 
         }
 	}
-	#lose_effect = {
-		#clear_delayed_event = { id = JD.20033 }
-	#}
-	#retire_effect = {
-		#clear_delayed_event = { id = JD.20033 }	
-	#}
-	#death_effect = {
-		#clear_delayed_event = { id = JD.20033 }
-	#}
+	lose_effect = {
+		clear_delayed_event = { id = JD.20033 }
+	}
+	retire_effect = {
+		clear_delayed_event = { id = JD.20033 }	
+	}
+	death_effect = {
+		clear_delayed_event = { id = JD.20033 }
+	}
 
 	message = yes
 }

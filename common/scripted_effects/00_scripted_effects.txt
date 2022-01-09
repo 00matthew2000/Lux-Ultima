@@ -3973,7 +3973,7 @@ add_crusade_trait_effect = {
 	}
 	if = {
 		limit = {
-			religion = quetzal
+			religion = aztec
 		}
 		add_trait = eagle_warrior
 		break = yes
@@ -4143,7 +4143,7 @@ remove_assassins_debt_effect = {
 			set_variable = { which = assassins_debt value = 0 } 
 		}
 		clr_character_flag = assassins_target_debt
-		#clear_delayed_event = { id = MNM.6009 }
+		clear_delayed_event = { id = MNM.6009 }
 	}
 }
 
@@ -14163,12 +14163,12 @@ abort_kow_tow_effect = {
 		}
 		character_event = { id = JD.32299 }
 	}
-	#clear_delayed_event = { id = JD.32005 }
-	#clear_delayed_event = { id = JD.32200 }
-	#clear_delayed_event = { id = JD.32113 }
-	#clear_delayed_event = { id = JD.32111 }
-	#clear_delayed_event = { id = JD.32210 }
-	#clear_delayed_event = { id = JD.32290 }
+	clear_delayed_event = { id = JD.32005 }
+	clear_delayed_event = { id = JD.32200 }
+	clear_delayed_event = { id = JD.32113 }
+	clear_delayed_event = { id = JD.32111 }
+	clear_delayed_event = { id = JD.32210 }
+	clear_delayed_event = { id = JD.32290 }
 	clr_character_flag = went_on_kow_tow_pilgrimage
 	clean_up_after_kow_tow_effect = yes
 }

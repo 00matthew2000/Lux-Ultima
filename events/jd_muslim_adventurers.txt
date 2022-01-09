@@ -85,16 +85,6 @@ character_event = {
 			location = {
 				region = world_india
 			}
-			location = {
-				region = world_tibet
-			}
-			# Tianxia
-			location = {
-				region = world_indochina
-			}
-			location = {
-				region = world_indonesia
-			}
 		}
 		
 		NOT = { # Somewhat clunky way of checking that the character does not stand to inherit any titles
@@ -200,10 +190,6 @@ character_event = {
 				}
 			}
 			50 = {
-				modifier = {
-					factor = 2
-					culture = afghan
-				}
 				modifier = {
 					factor = 2
 					has_character_flag = flag_denied_title
