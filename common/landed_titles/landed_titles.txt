@@ -27547,172 +27547,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_khoiak = {
 				}
 			}
-			c_karanis = {
-				color={ 200 0 0 }
-				color2={ 255 255 255 }
-				
-				egyptian_arabic = "Kom Oshim"
-				bedouin_arabic = "Kom Oshim"
-				maghreb_arabic = "Kom Oshim"
-				levantine_arabic = "Kom Oshim"
-				andalusian_arabic = "Kom Oshim"
-				nubian = "Karanis"
-				
-				b_karanis = {
-				egyptian_arabic = "Kom Oshim"
-				bedouin_arabic = "Kom Oshim"
-				maghreb_arabic = "Kom Oshim"
-				levantine_arabic = "Kom Oshim"
-				andalusian_arabic = "Kom Oshim"
-				nubian = "Karanis"
-				}
-				b_moeris = {
-				}
-				b_edwa = {
-				}
-				b_gebala = {
-				}
-				b_theadelphia = {
-				egyptian_arabic = "Harit"
-				bedouin_arabic = "Harit"
-				maghreb_arabic = "Harit"
-				levantine_arabic = "Harit"
-				andalusian_arabic = "Harit"
-				}
-				b_philoteris = {
-				egyptian_arabic = "Wadfa"
-				bedouin_arabic = "Wadfa"
-				maghreb_arabic = "Wadfa"
-				levantine_arabic = "Wadfa"
-				andalusian_arabic = "Wadfa"
-				}
-				b_euhemeria = {
-				egyptian_arabic = "Kasr"
-				bedouin_arabic = "Kasr"
-				maghreb_arabic = "Kasr"
-				levantine_arabic = "Kasr"
-				andalusian_arabic = "Kasr"
-				}
-				b_sanhur = {
-				}
-			}
-			c_kharibta = {
-				color={ 95 228 115 }
-				color2={ 255 255 255 }
-				
-				holy_site = amun
-				holy_site = horus_re
-				holy_site = isis
-				holy_site = set
-				holy_site = amun_reformed
-				holy_site = aten_reformed
-				holy_site = isis_reformed
-				holy_site = set_reformed
-
-				egyptian_arabic = "al-Badaqun"
-				bedouin_arabic = "al-Badaqun"
-				maghreb_arabic = "al-Badaqun"
-				levantine_arabic = "al-Badaqun"
-				andalusian_arabic = "al-Badaqun"
-				nubian = "Arbat"
-
-				b_kharibta = {
-					egyptian_arabic = "Khiribta"
-					bedouin_arabic = "Khiribta"
-					maghreb_arabic = "Khiribta"
-					levantine_arabic = "Khiribta"
-					andalusian_arabic = "Khiribta"
-					nubian = "Arbat"
-				}
-				b_scetis = {
-					egyptian_arabic = "Wadi El Natrun"
-					bedouin_arabic = "Wadi El Natrun"
-					maghreb_arabic = "Wadi El Natrun"
-					levantine_arabic = "Wadi El Natrun"
-					andalusian_arabic = "Wadi El Natrun"
-					nubian = "Sihet"
-				}
-				b_naucratis_egypt = {
-					egyptian_arabic = "Piemro"
-					bedouin_arabic = "Piemro"
-					maghreb_arabic = "Piemro"
-					levantine_arabic = "Piemro"
-					andalusian_arabic = "Piemro"
-				}
-				b_ausim = {
-					nubian = "Khem"
-					egyptian_arabic = "Ausim"
-					bedouin_arabic = "Ausim"
-					maghreb_arabic = "Ausim"
-					levantine_arabic = "Ausim"
-					andalusian_arabic = "Ausim"
-					roman = "Letopolis"
-					greek = "Letopolis"
-					hellenistic = "Letopolis"
-				}
-				b_nikiou = {}
-				b_merimda = {}
-				b_shatnuf = {}
-			}
-		}
-		d_damietta = {
-			color={ 3 255 74 }
-			color2={ 255 255 255 }
-			
-			capital = 798 # Damietta
-			
-			hellenistic = "Tamiathis"
-			greek = "Tamiathis"
-			nubian = "Tamiat"
-			egyptian_arabic = "Dumyat"
-			bedouin_arabic = "Dumyat"
-			maghreb_arabic = "Dumyat"
-			levantine_arabic = "Dumyat"
-			andalusian_arabic = "Dumyat"
-			
-			c_delta = {
-				color={ 126 51 99 }
-				color2={ 255 255 255 }
-				
-				b_damietta = {
-					hellenistic = "Tamiathis"
-					greek = "Tamiathis"
-					nubian = "Tamiat"
-					egyptian_arabic = "Dumyat"
-					bedouin_arabic = "Dumyat"
-					maghreb_arabic = "Dumyat"
-					levantine_arabic = "Dumyat"
-					andalusian_arabic = "Dumyat"
-				}
-				b_busiris = {
-					nubian = "Busiri"
-				}
-				b_saramsah = {
-				}
-				b_burah = {
-				}
-				b_mahalla = {
-					hellenistic = "Theodosios"
-					greek = "Theodosios"
-					roman = "Theodosiou Nixis"
-					nubian = "Dishairi"
-				}
-				b_burlus = {
-				}
-				b_xois = {
-					egyptian_arabic = "Sakha"
-					bedouin_arabic = "Sakha"
-					maghreb_arabic = "Sakha"
-					levantine_arabic = "Sakha"
-					andalusian_arabic = "Sakha"
-				}
-				b_samannud = {
-					hellenistic = "Sebennytos"
-					greek = "Sebennytos"
-					roman = "Sebennytus"
-					nubian = "Semnoudi"
-				}
-			}
 			c_rosetta = {
 				color={ 168 54 227 }
 				color2={ 255 255 255 }
@@ -27778,6 +27612,149 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_naucratis = {
 				}
 				b_nitria = {
+				}
+			}
+			c_gizeh = {
+				color={ 110 229 144 }
+				color2={ 255 255 255 }
+				
+				egyptian_arabic = "al-Giziya"
+				bedouin_arabic = "al-Giziya"
+				maghreb_arabic = "al-Giziya"
+				levantine_arabic = "al-Giziya"
+				andalusian_arabic = "al-Giziya"
+				nubian = "Tiperses"
+				
+				b_gizeh = {
+					egyptian_arabic = "al-Giziya"
+					bedouin_arabic = "al-Giziya"
+					maghreb_arabic = "al-Giziya"
+					levantine_arabic = "al-Giziya"
+					andalusian_arabic = "al-Giziya"
+					nubian = "Tiperses"
+				}
+				b_aburowash = {
+				}
+				b_dashur = {
+				}
+				b_zawyetalayran = {
+				}
+				b_abughorob = {
+				}
+				b_abusir = {
+				}
+				b_saqqara = {
+				}
+				b_ellisht = {
+				}
+			}
+			c_kharibta = {
+				color={ 95 228 115 }
+				color2={ 255 255 255 }
+				
+				holy_site = amun
+				holy_site = horus_re
+				holy_site = isis
+				holy_site = set
+				holy_site = amun_reformed
+				holy_site = aten_reformed
+				holy_site = isis_reformed
+				holy_site = set_reformed
+
+				egyptian_arabic = "al-Badaqun"
+				bedouin_arabic = "al-Badaqun"
+				maghreb_arabic = "al-Badaqun"
+				levantine_arabic = "al-Badaqun"
+				andalusian_arabic = "al-Badaqun"
+				nubian = "Arbat"
+
+				b_kharibta = {
+					egyptian_arabic = "Khiribta"
+					bedouin_arabic = "Khiribta"
+					maghreb_arabic = "Khiribta"
+					levantine_arabic = "Khiribta"
+					andalusian_arabic = "Khiribta"
+					nubian = "Arbat"
+				}
+				b_scetis = {
+					egyptian_arabic = "Wadi El Natrun"
+					bedouin_arabic = "Wadi El Natrun"
+					maghreb_arabic = "Wadi El Natrun"
+					levantine_arabic = "Wadi El Natrun"
+					andalusian_arabic = "Wadi El Natrun"
+					nubian = "Sihet"
+				}
+				b_naucratis_egypt = {
+					egyptian_arabic = "Piemro"
+					bedouin_arabic = "Piemro"
+					maghreb_arabic = "Piemro"
+					levantine_arabic = "Piemro"
+					andalusian_arabic = "Piemro"
+				}
+				b_atfih = {
+					nubian = "Petpeh"
+				}
+				b_nikiou = {}
+				b_merimda = {}
+				b_shatnuf = {}
+			}
+		}
+		d_damietta = {
+			color={ 3 255 74 }
+			color2={ 255 255 255 }
+			
+			capital = 798 # Damietta
+			
+			hellenistic = "Tamiathis"
+			greek = "Tamiathis"
+			nubian = "Tamiat"
+			egyptian_arabic = "Dumyat"
+			bedouin_arabic = "Dumyat"
+			maghreb_arabic = "Dumyat"
+			levantine_arabic = "Dumyat"
+			andalusian_arabic = "Dumyat"
+			
+			c_delta = {
+				color={ 126 51 99 }
+				color2={ 255 255 255 }
+				
+				b_damietta = {
+					hellenistic = "Tamiathis"
+					greek = "Tamiathis"
+					nubian = "Tamiat"
+					egyptian_arabic = "Dumyat"
+					bedouin_arabic = "Dumyat"
+					maghreb_arabic = "Dumyat"
+					levantine_arabic = "Dumyat"
+					andalusian_arabic = "Dumyat"
+				}
+				b_busiris = {
+					nubian = "Busiri"
+				}
+				b_saramsah = {
+				}
+				b_burah = {
+				}
+				b_mahalla = {
+					hellenistic = "Theodosios"
+					greek = "Theodosios"
+					roman = "Theodosiou Nixis"
+					nubian = "Dishairi"
+			}
+				b_burlus = {
+				}
+				b_xois = {
+					egyptian_arabic = "Sakha"
+					bedouin_arabic = "Sakha"
+					maghreb_arabic = "Sakha"
+					levantine_arabic = "Sakha"
+					andalusian_arabic = "Sakha"
+				}
+				b_samannud = {
+					hellenistic = "Sebennytos"
+					greek = "Sebennytos"
+					roman = "Sebennytus"
+					nubian = "Semnoudi"
 				}
 			}
 			c_tanis = {
@@ -27849,37 +27826,47 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_merimdabenisalama = {}
 				b_alsalihiyah = {}
 			}
-			c_atfih = {
-				color = { 89 43 103 }
-				color2 = { 255 255 255 }
+			c_quena = {
+				color={ 32 244 127 }
+				color2={ 255 255 255 }
 				
-				nubian = "Peptah"
-				roman = "Busiris"
-				greek = "Aphroditopolis"
-				hellenistic = "Aphroditopolis"
-				egyptian_arabic = "Atfih"
-				bedouin_arabic = "Atfih"
-				maghreb_arabic = "Atfih"
-				levantine_arabic = "Atfih"
-				andalusian_arabic = "Atfih"
-			
-				b_atfih = {
-				nubian = "Peptah"
-				roman = "Busiris"
-				greek = "Aphroditopolis"
-				hellenistic = "Aphroditopolis"
-				egyptian_arabic = "Atfih"
-				bedouin_arabic = "Atfih"
-				maghreb_arabic = "Atfih"
-				levantine_arabic = "Atfih"
-				andalusian_arabic = "Atfih"
+				nubian = "Ena"
+				egyptian_arabic = "al-Qusiya"
+				bedouin_arabic = "al-Qusiya"
+				maghreb_arabic = "al-Qusiya"
+				levantine_arabic = "al-Qusiya"
+				andalusian_arabic = "al-Qusiya"
+				
+				b_quena = {
+					nubian = "Ena"
 				}
-				b_al_qabat = {}
-				b_al_kuddaya = {}
-				b_al_wasta = {}
-				b_al_quturi = {}
-				b_hipponon = {}
-				b_itwab = {}
+				b_qus = {
+				}
+				b_qift = {
+				}
+				b_luxor = {
+				}
+				b_shiblanjah = { # Fictional, for prosperity
+				}
+				b_khalaf = { # Fictional, for prosperity
+				}
+				b_bilbeis = { # Fictional, for prosperity
+				}
+			}
+			c_alqusair = {
+				color={ 32 244 127 }
+				color2={ 255 255 255 }
+
+				greek = "Leucus Limen"
+				nubian = "Leucus Limen"
+				
+				b_kosseir = {}
+				b_safaga = {}
+				b_abughusun = {}
+				b_ummrus = {}
+				b_asfoun = {} # Fictional, for prosperity
+				b_bureid = {} # Fictional, for prosperity
+				b_jamsah = {} # Fictional, for prosperity
 			}
 			c_sarqihya = {
 				color={ 28 240 123 }
@@ -27905,7 +27892,43 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				}
 				b_alhaifar = {
 				}
-				b_fayed = {}
+				b_minya = {}
+			}
+			c_akhmim = {
+				color={ 32 244 105 }
+				color2={ 255 255 255 }
+
+				nubian = "Khmin"
+				egyptian_arabic = "al-Ihmimiya"
+				bedouin_arabic = "al-Ihmimiya"
+				maghreb_arabic = "al-Ihmimiya"
+				levantine_arabic = "al-Ihmimiya"
+				andalusian_arabic = "al-Ihmimiya"
+
+				b_akhmim = {
+					nubian = "Khmin"
+					egyptian_arabic = "al-Ihmimiya"
+					bedouin_arabic = "al-Ihmimiya"
+					maghreb_arabic = "al-Ihmimiya"
+					levantine_arabic = "al-Ihmimiya"
+					andalusian_arabic = "al-Ihmimiya"
+				}
+				b_al_minya = {}
+				b_cynopolis = {
+					egyptian_arabic = "El Kays"
+					bedouin_arabic = "El Kays"
+					maghreb_arabic = "El Kays"
+					levantine_arabic = "El Kays"
+					andalusian_arabic = "El Kays"
+				}
+				b_antinoe = {
+					nubian = "Antinow"
+				}
+				b_hibeh = {
+					nubian = "Teudjo"
+				}
+				b_besa = {}
+				b_sharuna = {}
 			}
 			c_beni_suef = {
 				color={ 198 162 193 }
@@ -27951,134 +27974,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_mount_anthony = {}
 			}
 		}
-		d_luxor = {
-			color={ 120 115 38 }
-			color2={ 255 255 255 }
-			
-			capital = 791 # Quena
-			
-			c_quena = {
-				color={ 32 244 127 }
-				color2={ 255 255 255 }
-				
-				nubian = "Ena"
-				egyptian_arabic = "al-Qusiya"
-				bedouin_arabic = "al-Qusiya"
-				maghreb_arabic = "al-Qusiya"
-				levantine_arabic = "al-Qusiya"
-				andalusian_arabic = "al-Qusiya"
-				
-				b_quena = {
-					nubian = "Ena"
-				}
-				b_qus = {
-				}
-				b_qift = {
-				}
-				b_luxor = {
-				}
-				b_shiblanjah = { # Fictional, for prosperity
-				}
-				b_khalaf = { # Fictional, for prosperity
-				}
-				b_bilbeis = { # Fictional, for prosperity
-				}
-			}
-			c_hiba = {
-				color={ 140 186 24 }
-				color2={ 255 255 255 }
-
-				b_el_hiba = {
-				nubian = "Teujo"
-				roman = "Ancyronpolis"
-				greek = "Ancyronpolis"
-				hellenistic = "Ancyronpolis"
-				egyptian_arabic = "El Hiba"
-				bedouin_arabic = "El Hiba"
-				maghreb_arabic = "El Hiba"
-				levantine_arabic = "El Hiba"
-				andalusian_arabic = "El Hiba"
-				}
-				b_amarna = {
-				nubian = "Akhetaten"
-				roman = "Alabastron"
-				greek = "Alabastronopolis"
-				hellenistic = "Alabastronoplis"
-				egyptian_arabic = "Al Amarnah"
-				bedouin_arabic = "Al Amarnah"
-				maghreb_arabic = "Al Amarnah"
-				levantine_arabic = "Al Amarnah"
-				andalusian_arabic = "Al Amarnah"
-				}
-				b_antinopolis = {
-				nubian = "Antinow"
-				roman = "Antinoe"
-				greek = "Antinopolis"
-				hellenistic = "Antinopolis"
-				egyptian_arabic = "Sheik Abada"
-				bedouin_arabic = "Sheik Abada"
-				maghreb_arabic = "Sheik Abada"
-				levantine_arabic = "Sheik Abada"
-				andalusian_arabic = "Sheik Abada"
-				}
-				b_izbat = {
-				}
-				b_al_bayahu = {}
-				b_al_jabal = {}
-				b_besa = {}
-			}
-			c_akhmim = {
-				color={ 32 244 105 }
-				color2={ 255 255 255 }
-
-				nubian = "Khmin"
-				egyptian_arabic = "al-Ihmimiya"
-				bedouin_arabic = "al-Ihmimiya"
-				maghreb_arabic = "al-Ihmimiya"
-				levantine_arabic = "al-Ihmimiya"
-				andalusian_arabic = "al-Ihmimiya"
-
-				b_akhmim = {
-					nubian = "Khmin"
-					egyptian_arabic = "al-Ihmimiya"
-					bedouin_arabic = "al-Ihmimiya"
-					maghreb_arabic = "al-Ihmimiya"
-					levantine_arabic = "al-Ihmimiya"
-					andalusian_arabic = "al-Ihmimiya"
-				}
-				b_al_minya = {}
-				b_cynopolis = {
-					egyptian_arabic = "El Kays"
-					bedouin_arabic = "El Kays"
-					maghreb_arabic = "El Kays"
-					levantine_arabic = "El Kays"
-					andalusian_arabic = "El Kays"
-				}
-				b_antinoe = {
-					nubian = "Antinow"
-				}
-				b_hibeh = {
-					nubian = "Teudjo"
-				}
-				b_besa = {}
-				b_sharuna = {}
-			}
-			c_alqusair = {
-				color={ 32 244 127 }
-				color2={ 255 255 255 }
-
-				greek = "Leucus Limen"
-				nubian = "Leucus Limen"
-				
-				b_kosseir = {}
-				b_safaga = {}
-				b_abughusun = {}
-				b_ummrus = {}
-				b_asfoun = {} # Fictional, for prosperity
-				b_bureid = {} # Fictional, for prosperity
-				b_jamsah = {} # Fictional, for prosperity
-			}
-		}
 		d_faiyum = {
 			color={ 130 220 45 }
 			color2={ 255 255 255 }
@@ -28111,7 +28006,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_ahnas = {
 					nubian = "Ahnes"
 				}
-				b_karanis1 = {
+				b_karanis = {
 				}
 				b_beni_suef = {
 					nubian = "Panisof"
@@ -28119,40 +28014,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_heracleus = {}
 				b_arsinoe_faiyum = {}
 				b_wadi_el_rayan = {}
-			}
-			c_gizeh = {
-				color={ 110 229 144 }
-				color2={ 255 255 255 }
-				
-				egyptian_arabic = "al-Giziya"
-				bedouin_arabic = "al-Giziya"
-				maghreb_arabic = "al-Giziya"
-				levantine_arabic = "al-Giziya"
-				andalusian_arabic = "al-Giziya"
-				nubian = "Tiperses"
-				
-				b_gizeh = {
-					egyptian_arabic = "al-Giziya"
-					bedouin_arabic = "al-Giziya"
-					maghreb_arabic = "al-Giziya"
-					levantine_arabic = "al-Giziya"
-					andalusian_arabic = "al-Giziya"
-					nubian = "Tiperses"
-				}
-				b_aburowash = {
-				}
-				b_dashur = {
-				}
-				b_zawyetalayran = {
-				}
-				b_abughorob = {
-				}
-				b_abusir = {
-				}
-				b_saqqara = {
-				}
-				b_ellisht = {
-				}
 			}
 			c_buhairya = {
 				color={ 108 227 142 }
@@ -28210,49 +28071,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				}
 				b_dahrut = {
 				}
-			}
-			c_minya = {
-				color={ 18 218 23 }
-				color2={ 255 255 255 }
-
-				b_minya = {
-				nubian = "Shmun"
-				roman = "Hermopolis Magna"
-				greek = "Hermopolis"
-				hellenistic = "Hermopolis"
-				egyptian_arabic = "Munyat"
-				bedouin_arabic = "Munyat"
-				maghreb_arabic = "Munyat"
-				levantine_arabic = "Munyat"
-				andalusian_arabic = "Munyat"
-				}
-				b_hypselis = {
-				nubian = "Shotep"
-				roman = "Hypsela"
-				greek = "Hypselis"
-				hellenistic = "Hypselis"
-				egyptian_arabic = "Shtub"
-				bedouin_arabic = "Shtub"
-				maghreb_arabic = "Shtub"
-				levantine_arabic = "Shtub"
-				andalusian_arabic = "Shtub"
-				}
-				b_samalut = {
-				nubian = "Semulot"
-				roman = "Ereithis"
-				greek = "Ereithis"
-				hellenistic = "Ereithis"
-				egyptian_arabic = "Samalut"
-				bedouin_arabic = "Samalut"
-				maghreb_arabic = "Samalut"
-				levantine_arabic = "Samalut"
-				andalusian_arabic = "Samalut"
-				}
-				b_abyuha = {
-				}
-				b_sawadah = {}
-				b_nuwayr = {}
-				b_tahnasha = {}
 			}
 		}
 		d_aswan = {
