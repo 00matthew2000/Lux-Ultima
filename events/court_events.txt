@@ -1141,13 +1141,6 @@ character_event = {
 	
 	trigger = {
 		year = 1350
-		OR = {
-			religion = catholic
-			religion = cathar
-			religion = fraticelli
-			religion = waldensian
-#			religion = lollard
-		}
 		NOT = { has_character_flag = ars_moriendi }
 	}
 	

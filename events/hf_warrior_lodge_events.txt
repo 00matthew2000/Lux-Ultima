@@ -2837,56 +2837,56 @@ character_event = {
     immediate = {
         if = {
             limit = {
-                religion_openly_norse_or_reformed_trigger = yes
+                #religion_openly_norse_or_reformed_trigger = yes
                 can_join_society = warrior_lodge_norse
             }
             join_society = warrior_lodge_norse
 		}
         else_if = {
             limit = {
-                religion_openly_baltic_or_reformed_trigger = yes
+                #religion_openly_baltic_or_reformed_trigger = yes
                 can_join_society = warrior_lodge_baltic
             }
             join_society = warrior_lodge_baltic
         }
         else_if = {
             limit = {
-                religion_openly_finnish_or_reformed_trigger = yes
+                #religion_openly_finnish_or_reformed_trigger = yes
                 can_join_society = warrior_lodge_finnish
             }
             join_society = warrior_lodge_finnish
         }
         else_if = {
             limit = {
-                religion_openly_slavic_or_reformed_trigger = yes
+                #religion_openly_slavic_or_reformed_trigger = yes
                 can_join_society = warrior_lodge_slavic
             }
             join_society = warrior_lodge_slavic
         }
         else_if = {
             limit = {
-                religion_openly_west_african_or_reformed_trigger = yes
+                #religion_openly_west_african_or_reformed_trigger = yes
                 can_join_society = warrior_lodge_west_african
             }
             join_society = warrior_lodge_west_african
         }
         else_if = {
             limit = {
-                religion_openly_zun_or_reformed_trigger = yes
+                #religion_openly_zun_or_reformed_trigger = yes
                 can_join_society = warrior_lodge_zun
             }
             join_society = warrior_lodge_zun
         }
         else_if = {
             limit = {
-                religion_openly_bon_or_reformed_trigger = yes
+                #religion_openly_bon_or_reformed_trigger = yes
                 can_join_society = warrior_lodge_bon
             }
             join_society = warrior_lodge_bon
         }
         else_if = {
             limit = {
-                religion_openly_hellenic_or_reformed_trigger = yes
+                ##religion_openly_hellenic_or_reformed_trigger = yes
                 can_join_society = warrior_lodge_hellenic
             }
             join_society = warrior_lodge_hellenic
@@ -2894,7 +2894,7 @@ character_event = {
         else_if = {
             limit = {
 				OR = {
-					religion_openly_tengri_or_reformed_trigger = yes
+					#religion_openly_tengri_or_reformed_trigger = yes
 					is_nomadic = yes
 				}
                 can_join_society = warrior_lodge_tengri
@@ -3208,7 +3208,7 @@ character_event = {
 #Hero admits defeat: "YES, you may take my place at rank 4"... (for player)
 letter_event = {
     id = HF.10062
-    border = GFX_event_letter_frame_intrigue
+    border = GFX_event_letter_frame_intrigue_LI
     has_dlc = "Holy Fury"
     ai = no
     is_triggered_only = yes
@@ -3240,7 +3240,7 @@ letter_event = {
 #No, you may *not* take my place at rank 4... (for player)
 letter_event = {
     id = HF.10063
-    border = GFX_event_letter_frame_intrigue
+    border = GFX_event_letter_frame_intrigue_LI
     has_dlc = "Holy Fury"
     ai = no
     is_triggered_only = yes
