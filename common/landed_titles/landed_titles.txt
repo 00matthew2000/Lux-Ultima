@@ -53,7 +53,7 @@ d_huitzilopochtli = {
 	# Extra income due to donations, etc
 	monthly_income = 2 # (Must be an integer between 1 and 512)
 
-	mercenary_type = huitzilopochtli_composition
+	mercenary_type = d_huitzilopochtli_composition
 }
 
 e_hre = {                      # Created by special decision only
@@ -18306,9 +18306,6 @@ e_serindia = {
 	}
 }
 
-e_idel_ural = {
-}
-
 e_turk = {
 	color = { 242 174 31 }
 	allow = {
@@ -19132,7 +19129,7 @@ e_sassanid = {
 	k_persia = {
 		color = { 246 188 0 }
 		
-		capital = 646 #	Esfahan
+		capital = 643 #	Fars (Esfahan is in another kingdom)
 		
 		mani = 2000
 		mani_mithra = 2000
@@ -27839,9 +27836,9 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_quena = {
 					nubian = "Ena"
 				}
-				b_qus = {
+				b_qus1 = {
 				}
-				b_qift = {
+				b_qift1 = {
 				}
 				b_luxor = {
 				}
@@ -28282,11 +28279,11 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					roman = "Thebae"
 					egyptian_arabic = "Luxor"
 				}
-				b_qus = {
+				b_qus1 = {
 				}
-				b_qift = {
+				b_qift1 = {
 				}
-				b_armant = {
+				b_armant1 = {
 				}
 				b_syene = {
 				}
@@ -34533,7 +34530,7 @@ e_central_africa = {
 	
 	k_garama = {
 		color = { 140 56 84 }
-		capital = 987
+		capital = 1725
 		
 		berber_pagan_reformed = 2000
 		yoruba = 1000
@@ -38733,9 +38730,6 @@ e_india = {
 			}
 		}
 	}
-}
-
-e_bengal = {
 }
 
 e_deccan = {
