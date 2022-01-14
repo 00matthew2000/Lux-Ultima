@@ -3395,19 +3395,23 @@ e_byzantium = {
 				color={ 243 74 184 }
 				color2={ 255 255 20 }
 				
+				roman = "Tavium" 
+				greek = "Chattousa"
+				turkish = "Kirsehir"
+				
 				holy_site = illuyanka
 				holy_site = illuyanka_reformed
 				holy_site = luwian
 				holy_site = mithra_sol
 				holy_site = tarhunt
-				holy_site = tarhunt_reformed				
-				
-				turkish = "Kirsehir"
+				holy_site = tarhunt_reformed
 				
 				b_mikissos = {
 					turkish = "Kirsehir"
 				}
 				b_tavia = {
+					roman = "Tavium" 
+					greek = "Chattousa" 
 				}
 				b_asponia = {
 				}
@@ -3660,7 +3664,9 @@ e_byzantium = {
 			
 			c_edessa = {
 				color = { 153 255 5 }
+				
 				greek = Justinopolis
+				
 				holy_site = mandaean
 				holy_site = yahyanism
 				holy_site = yazdanism
@@ -3682,11 +3688,11 @@ e_byzantium = {
 					roman = Birtha
 					hellenistic = Birtha
 				}
-#				b_tulupe = {}
-#				b_kaisun = {}
-#				b_samsat = {}
+				b_tulupe = {}
+				b_kaisun = {}
+				b_samsat = {}
 				b_harran = {}
-#				b_edesurfa = {}
+				b_edesurfa = {}
 			}
 			c_aleppo = {
 				color={ 91 238 26 }
