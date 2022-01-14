@@ -2380,19 +2380,6 @@ e_byzantium = {
 		
 		culture = greek
 		
-		# Creation/Usurp Trigger
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture = greek
-				}
-			}
-		}
-		
-		orthodox = 5000 # Crusade target weight
-		catholic = 2000 # Crusade target weight
-		
 		d_hellas = {
 			color = { 213 73 165 }
 			capital = 475 #Magnesia
@@ -3242,8 +3229,6 @@ e_byzantium = {
 			color={ 214 140 190 }
 			
 			capital = 761 #Kilikia
-			
-			armenian = "Armenia Minor"
 	
 			c_lykandos = {
 				color={ 214 140 195 }
@@ -3884,27 +3869,26 @@ e_byzantium = {
 		color={ 113 88 101 }
 		color2={ 255 255 255 }
 		
-		culture = bulgarian
+		capital = 507 #Novae
 		
-		capital = 507 # Tyrnovo
-		
-		orthodox = 300 # Crusade target weight
-		catholic = 100 # Crusade target weight
-		slavic_pagan_reformed = 50 # Crusade target weight
-		tengri_pagan_reformed = 50
+		voipel_reformed = 2000
+		slavic_christian_reformed = 1000
+		erlik_reformed = 2000
+		tengri_confucian_reformed = 1000
+		tengri_mani_reformed = 2000
+		zal = 2000
+		zal_christ = 2000
+		zal_mani = 2000
 		
 		d_vidin = {
 			color={ 122 103 58 }
 			color2={ 255 255 255 }
 			
-			capital = 506 # Vidin
+			capital = 506 #Dunonia
 			
 			c_vidin = {
 				color = { 124 105 60 }
 				
-				b_vidin = {
-					greek = "Bononia"
-				}
 				b_viseslav = {}
 				b_kula = {}
 				b_srvljig = {}
@@ -3936,7 +3920,7 @@ e_byzantium = {
 		d_turnovo = { # Moesia
 			color = { 154 39 197 }
 			
-			capital = 507 # Tyrnovo
+			capital = 507 #Philippoulis
 			
 			c_tyrnovo = {
 				color = { 160 45 203 }
