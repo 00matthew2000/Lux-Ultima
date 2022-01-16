@@ -20048,7 +20048,7 @@ e_sassanid = {
 			color = { 180 150 0 }
 			
 			capital = 1185 # Kabul
-			
+				
 			c_kabul = {
 				color={ 135 90 30 }
 				color2={ 255 255 255 }
@@ -20060,23 +20060,14 @@ e_sassanid = {
 				persian = "Kapol"
 				parthian = "Kapul"
 				
-				b_kabul = {
-					hellenistic = "Kophene"
-					greek = "Kophene"
-					indohellenic = "Kophes"
-					gandharan = "Kophes"
-					persian = "Kapol"
-					parthian = "Kapul"
-				}
-				b_bagram = {
-					hellenistic = "Alexandreia tou Kaukasou"
-					greek = "Alexandreia tou Kaukasou"
-					indohellenic = "Alexandreia tou Kaukasou"
-					gandharan = "Alexandreia tou Kaukasou"
-				}
-				b_kapisa = {}
-				b_kharabat = {}
-				b_surobi = {}
+				b_dasht_e_barchi = {}
+				b_kabul = {}
+				b_deh_dana = {}
+				b_afshar = {}
+				b_khaje_bughra = {}
+				b_sement_khana = {}
+				b_bagrami = {}
+				b_rahman_maina = {}
 			}
 			c_khuttal = {
 				color={ 175 150 45 }

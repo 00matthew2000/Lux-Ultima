@@ -1264,912 +1264,6 @@ e_china = {
 			}
 		}
 	}
-	k_min = { #Min
-
-		color={ 164 43 21 }
-		color2={ 255 255 255 }
-
-		capital = 2582 # Piuk
-		
-		han = "Min"
-		
-		d_piukkianh = { #Fujian
-
-			color={ 203 53 27 }
-			color2={ 255 255 255 }
-
-			capital = 2582 # Piuk
-
-			c_piuk = {
-
-				color={ 213 53 27 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Fuzhou"
-				jiao_liao = "Fuzhou"
-				jin = "Fuzhou"
-				lanyin = "Fuzhou"
-				ba_shu = "Fuzhou"
-				shangjiang = "Fuzhou"
-				jiang_huai = "Fuzhou"
-				hui = "Fuzhou"
-				xuan = "Fuzhou"
-				nanwu = "Fuzhou"
-				gan = "Fuzhou"
-				xiang = "Fuzhou"
-				yuehai = "Fuzhou"
-				guangzhong = "Fuzhou"
-				korean = "Fuzhou"
-				japanese = "Fuzhou"
-				sinohellenic = "Fuzhou"
-				huakyo = "Fuzhou"
-				nihonohellenic = "Fuzhou"
-				romanokoric = "Fuzhou"
-
-				b_min = {
-				}
-				b_ghukuan = {
-				}
-				b_ghruaian = {
-				}
-				b_driunglak = {
-				}
-				b_piukchieng = {
-				}
-				b_lienkrung = {
-				}
-				b_driungkhe = {
-				}
-				b_minchieng = {
-				}
-			}
-			c_kianh = {
-
-				color={ 203 63 27 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Jianan"
-				jiao_liao = "Jianan"
-				jin = "Jianan"
-				lanyin = "Jianan"
-				ba_shu = "Jianan"
-				shangjiang = "Jianan"
-				jiang_huai = "Jianan"
-				hui = "Jianan"
-				xuan = "Jianan"
-				nanwu = "Jianan"
-				gan = "Jianan"
-				xiang = "Jianan"
-				yuehai = "Jianan"
-				guangzhong = "Jianan"
-				korean = "Jianan"
-				japanese = "Jianan"
-				sinohellenic = "Jianan"
-				huakyo = "Jianan"
-				nihonohellenic = "Jianan"
-				romanokoric = "Jianan"
-
-				b_kianhan = {
-				}
-				b_uneng = {
-				}
-				b_kianhjang = {
-				}
-				b_zriungan = {
-				}
-				b_zsyungkhe = {
-				}
-				b_kruanleh = {
-				}
-				b_bozjeng_kianh = {
-				}
-				b_driunghiuhkuanh = {
-				}
-			}
-			c_nomkiamh = {
-
-				color={ 203 53 37 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Nanjian"
-				jiao_liao = "Nanjian"
-				jin = "Nanjian"
-				lanyin = "Nanjian"
-				ba_shu = "Nanjian"
-				shangjiang = "Nanjian"
-				jiang_huai = "Nanjian"
-				hui = "Nanjian"
-				xuan = "Nanjian"
-				nanwu = "Nanjian"
-				gan = "Nanjian"
-				xiang = "Nanjian"
-				yuehai = "Nanjian"
-				guangzhong = "Nanjian"
-				korean = "Nanjian"
-				japanese = "Nanjian"
-				sinohellenic = "Nanjian"
-				huakyo = "Nanjian"
-				nihonohellenic = "Nanjian"
-				romanokoric = "Nanjian"
-
-				b_kiamhbo = {
-				}
-				b_zsjynhchjang = {
-				}
-				b_cianglak = {
-				}
-				b_sra = {
-				}
-				b_iukhe = {
-				}
-				b_tungcin = {
-				}
-				b_langyan = {
-				}
-				b_secin = {
-				}
-			}
-		}
-		d_wmin = { #Western Min
-
-			color={ 182 98 22 }
-			color2={ 255 255 255 }
-
-			capital = 2585 # Theng
-
-			c_theng = {
-
-				color={ 192 98 22 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Yongchun"
-				jiao_liao = "Yongchun"
-				jin = "Yongchun"
-				lanyin = "Yongchun"
-				ba_shu = "Yongchun"
-				shangjiang = "Yongchun"
-				jiang_huai = "Yongchun"
-				hui = "Yongchun"
-				xuan = "Yongchun"
-				nanwu = "Yongchun"
-				gan = "Yongchun"
-				xiang = "Yongchun"
-				yuehai = "Yongchun"
-				guangzhong = "Yongchun"
-				korean = "Yongchun"
-				japanese = "Yongchun"
-				sinohellenic = "Yongchun"
-				huakyo = "Yongchun"
-				nihonohellenic = "Yongchun"
-				romanokoric = "Yongchun"
-
-				b_driungtheng = {
-				}
-				b_zjanghghang = {
-				}
-				b_myoxbjen = {
-				}
-				b_nenghruah_theng = {
-				}
-				b_chiengliu_theng = {
-				}
-			}
-		}
-		d_smin = { #Southern Min
-
-			color={ 223 139 26 }
-			color2={ 255 255 255 }
-
-			capital = 2586 # Zyen (was 1488 Hing-hruah)
-
-			c_zyen = {
-
-				color={ 223 149 26 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Quanzhou"
-				jiao_liao = "Quanzhou"
-				jin = "Quanzhou"
-				lanyin = "Quanzhou"
-				ba_shu = "Quanzhou"
-				shangjiang = "Quanzhou"
-				jiang_huai = "Quanzhou"
-				hui = "Quanzhou"
-				xuan = "Quanzhou"
-				nanwu = "Quanzhou"
-				gan = "Quanzhou"
-				xiang = "Quanzhou"
-				yuehai = "Quanzhou"
-				guangzhong = "Quanzhou"
-				korean = "Quanzhou"
-				japanese = "Quanzhou"
-				sinohellenic = "Quanzhou"
-				huakyo = "Quanzhou"
-				nihonohellenic = "Quanzhou"
-				romanokoric = "Quanzhou"
-
-				b_cinhkrung = {
-				}
-				b_noman = {
-				}
-				b_dungan = {
-				}
-				b_ghuehan = {
-				}
-				b_zyenchiengkhe = {
-				}
-				b_yengxchjyn = {
-				}
-				b_zyentokhruah = {
-				}
-				b_chauxom = {
-				}
-			}
-			c_cjang = {
-
-				color={ 223 139 36 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Zhangzhou"
-				jiao_liao = "Zhangzhou"
-				jin = "Zhangzhou"
-				lanyin = "Zhangzhou"
-				ba_shu = "Zhangzhou"
-				shangjiang = "Zhangzhou"
-				jiang_huai = "Zhangzhou"
-				hui = "Zhangzhou"
-				xuan = "Zhangzhou"
-				nanwu = "Zhangzhou"
-				gan = "Zhangzhou"
-				xiang = "Zhangzhou"
-				yuehai = "Zhangzhou"
-				guangzhong = "Zhangzhou"
-				korean = "Zhangzhou"
-				japanese = "Zhangzhou"
-				sinohellenic = "Zhangzhou"
-				huakyo = "Zhangzhou"
-				nihonohellenic = "Zhangzhou"
-				romanokoric = "Zhangzhou"
-
-				b_lyungkhe = {
-				}
-				b_driangthad = {
-				}
-				b_cjangphox = {
-				}
-				b_lyungngram = {
-				}
-				b_nomsrenkiung = {
-				}
-				b_zriungpiukzsih = {
-				}
-			}
-		}
-	}
-	k_nomyat = { #Nanyue
-
-		color={ 234 85 6 }
-		color2={ 255 255 255 }
-
-		capital = 2588 # Kuangx
-
-		d_ekuangxnom = { #Eastern Guangnan
-
-			color={ 181 248 73 }
-			color2={ 255 255 255 }
-
-			capital = 2588 # Kuangx
-
-			c_kuangx = {
-
-				color={ 254 145 96 }
-				color2={ 255 255 255 }
-
-				b_phuanngyo = {
-				}
-				b_nomhaix = {
-				}
-				b_tungghruanx = {
-				}
-				b_singhuad = {
-				}
-				b_congzjeng = {
-				}
-				b_chiengyanx = {
-				}
-				b_ghruaizip = {
-				}
-				b_sinhan = {
-				}
-			}
-			c_zjeu = {
-
-				color={ 244 155 96 }
-				color2={ 255 255 255 }
-
-				b_khyukkrung = {
-				}
-				b_ungngyan = {
-				}
-				b_kianhpiuk = {
-				}
-				b_njinhruah = {
-				}
-				b_lakchjang = {
-				}
-				b_nomghruazsih = {
-				}
-			}
-			c_lien = {
-
-				color={ 244 145 106 }
-				color2={ 255 255 255 }
-
-				b_kuehjang = {
-				}
-				b_jangsren = {
-				}
-				b_liensren = {
-				}
-				b_ghuehkuangzsih = {
-				}
-			}
-			c_ghueh = {
-
-				color={ 244 145 86 }
-				color2={ 255 255 255 }
-
-				b_kyoizjenx = {
-				}
-				b_pakla = {
-				}
-				b_haixphiung = {
-				}
-				b_ghangyan = {
-				}
-				b_driunghiokuanh = {
-				}
-			}
-		}
-		d_liengxtung = { #Lingdong
-
-			color={ 253 187 87 }
-			color2={ 255 255 255 }
-
-			capital = 2593 # Zsyn (was 1497 Muai)
-
-			c_zsyn = {
-
-				color={ 253 187 97 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Meizhou"
-				jiao_liao = "Meizhou"
-				jin = "Meizhou"
-				lanyin = "Meizhou"
-				ba_shu = "Meizhou"
-				shangjiang = "Meizhou"
-				jiang_huai = "Meizhou"
-				hui = "Meizhou"
-				xuan = "Meizhou"
-				nanwu = "Meizhou"
-				gan = "Meizhou"
-				xiang = "Meizhou"
-				yuehai = "Meizhou"
-				guangzhong = "Meizhou"
-				korean = "Meizhou"
-				japanese = "Meizhou"
-				sinohellenic = "Meizhou"
-				huakyo = "Meizhou"
-				nihonohellenic = "Meizhou"
-				romanokoric = "Meizhou"
-
-				b_lyungchjyen = {
-				}
-				b_zsyndriunglak = {
-				}
-				b_hingneng = {
-				}
-			}
-			c_drieu = {
-
-				color={ 253 197 87 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Chaozhou"
-				jiao_liao = "Chaozhou"
-				jin = "Chaozhou"
-				lanyin = "Chaozhou"
-				ba_shu = "Chaozhou"
-				shangjiang = "Chaozhou"
-				jiang_huai = "Chaozhou"
-				hui = "Chaozhou"
-				xuan = "Chaozhou"
-				nanwu = "Chaozhou"
-				gan = "Chaozhou"
-				xiang = "Chaozhou"
-				yuehai = "Chaozhou"
-				guangzhong = "Chaozhou"
-				korean = "Chaozhou"
-				japanese = "Chaozhou"
-				sinohellenic = "Chaozhou"
-				huakyo = "Chaozhou"
-				nihonohellenic = "Chaozhou"
-				romanokoric = "Chaozhou"
-
-				b_haixjang = {
-				}
-				b_drieujang = {
-				}
-				b_lenhruazsih = {
-				}
-				b_ghanmyonkungzsi = {
-				}
-			}
-		}
-		d_drieux-khiengh = { #Zhaoqing
-
-			color={ 248 56 35 }
-			color2={ 255 255 255 }
-
-			capital = 2594 # Khang
-
-			c_khang = {
-
-				color={ 238 56 35 }
-				color2={ 255 255 255 }
-
-				b_tuankhe = {
-				}
-				b_srungsjyix = {
-				}
-				b_tozjeng = {
-				}
-				b_jyetzjeng = {
-				}
-				b_lyungmuxmieuh = {
-				}
-			}
-			c_nomon = {
-
-				color={ 248 56 45 }
-				color2={ 255 255 255 }
-
-				b_jangkrung = {
-				}
-				b_jangchjyn = {
-				}
-				b_sinhing = {
-				}
-				b_kuokonzsih = {
-				}
-			}
-		}
-		d_ziengxhaix = { #Jinghai
-
-			color={ 0 114 81 }
-			color2={ 255 255 255 }
-
-			capital = 2596 # Luai (was 1676 Kau)
-
-			c_luai = {
-
-				color={ 250 111 105 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Leizhou"
-				jiao_liao = "Leizhou"
-				jin = "Leizhou"
-				lanyin = "Leizhou"
-				ba_shu = "Leizhou"
-				shangjiang = "Leizhou"
-				jiang_huai = "Leizhou"
-				hui = "Leizhou"
-				xuan = "Leizhou"
-				nanwu = "Leizhou"
-				gan = "Leizhou"
-				xiang = "Leizhou"
-				yuehai = "Leizhou"
-				guangzhong = "Leizhou"
-				korean = "Leizhou"
-				japanese = "Leizhou"
-				sinohellenic = "Leizhou"
-				huakyo = "Leizhou"
-				nihonohellenic = "Leizhou"
-				romanokoric = "Leizhou"
-
-				b_haixkhang = {
-				}
-				b_kuandu = {
-				}
-				b_cjinmyoxdang = {
-				}
-				b_luaicoxzsi = {
-				}
-			}
-			c_gjyeng = {
-
-				color={ 250 101 95 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Qiongshan"
-				jiao_liao = "Qiongshan"
-				jin = "Qiongshan"
-				lanyin = "Qiongshan"
-				ba_shu = "Qiongshan"
-				shangjiang = "Qiongshan"
-				jiang_huai = "Qiongshan"
-				hui = "Qiongshan"
-				xuan = "Qiongshan"
-				nanwu = "Qiongshan"
-				gan = "Qiongshan"
-				xiang = "Qiongshan"
-				yuehai = "Qiongshan"
-				guangzhong = "Qiongshan"
-				korean = "Qiongshan"
-				japanese = "Qiongshan"
-				sinohellenic = "Qiongshan"
-				huakyo = "Qiongshan"
-				nihonohellenic = "Qiongshan"
-				romanokoric = "Qiongshan"
-
-				b_gjyengsren = {
-				}
-				b_ngielyn = {
-				}
-				b_myanhneng = {
-				}
-				b_myonchjang = {
-				}
-				b_drangmrad = {
-				}
-				b_chjanghruah = {
-				}
-				b_komxon = {
-				}
-				b_hlai = {
-				}
-			}
-			c_khim = {
-
-				color={ 240 121 95 }
-				color2={ 255 255 255 }
-
-				b_lengsren = {
-				}
-				b_khimanyanx = {
-				}
-				b_njosiek = {
-				}
-				b_njoghung = {
-				}
-				b_sipimx = {
-				}
-				b_koxsrim = {
-				}
-			}
-		}
-		d_wkuangxnom = { #Western Guangnan
-
-			color={ 238 175 119 }
-			color2={ 255 255 255 }
-
-			capital = 2599 # Ngo
-
-			c_nomyatngo = {
-
-				color={ 248 175 119 }
-				color2={ 255 255 255 }
-
-				ji_li = "Ngchow"
-				jiao_liao = "Ngchow"
-				jin = "Ngchow"
-				lanyin = "Ngchow"
-				ba_shu = "Ngchow"
-				shangjiang = "Ngchow"
-				jiang_huai = "Ngchow"
-				hui = "Ngchow"
-				xuan = "Ngchow"
-				nanwu = "Ngchow"
-				gan = "Ngchow"
-				xiang = "Ngchow"
-				yuehai = "Ngchow"
-				guangzhong = "Ngchow"
-				korean = "Ngchow"
-				japanese = "Ngchow"
-				sinohellenic = "Ngchow"
-				huakyo = "Ngchow"
-				nihonohellenic = "Ngchow"
-				romanokoric = "Ngchow"
-
-				b_changngo = {
-				}
-				b_bjenlak = {
-				}
-				b_limghah = {
-				}
-				b_domcin = {
-				}
-				b_zrimkhe = {
-				}
-				b_lyungbjen = {
-				}
-				b_piuhchjyen = {
-				}
-				b_kyungzjeng = {
-				}
-			}
-			c_jyung = {
-
-				color={ 238 175 129 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Rong"
-				jiao_liao = "Rong"
-				jin = "Rong"
-				lanyin = "Rong"
-				ba_shu = "Rong"
-				shangjiang = "Rong"
-				jiang_huai = "Rong"
-				hui = "Rong"
-				xuan = "Rong"
-				nanwu = "Rong"
-				gan = "Rong"
-				xiang = "Rong"
-				yuehai = "Rong"
-				guangzhong = "Rong"
-				korean = "Rong"
-				japanese = "Rong"
-				sinohellenic = "Rong"
-				huakyo = "Rong"
-				nihonohellenic = "Rong"
-				romanokoric = "Rong"
-
-				b_phoxneng = {
-				}
-				b_nomliu = {
-				}
-				b_pokliu = {
-				}
-				b_liukchjyen = {
-				}
-				b_pakbrak = {
-				}
-				b_hingngiap = {
-				}
-				b_mramuon = {
-				}
-				b_kyoluhsren = {
-				}
-			}
-			c_zsiangx = {
-
-				color={ 228 175 119 }
-				color2={ 255 255 255 }
-
-				ji_li = "Yulin"
-				jiao_liao = "Yulin"
-				jin = "Yulin"
-				lanyin = "Yulin"
-				ba_shu = "Yulin"
-				shangjiang = "Yulin"
-				jiang_huai = "Yulin"
-				hui = "Yulin"
-				xuan = "Yulin"
-				nanwu = "Yulin"
-				gan = "Yulin"
-				xiang = "Yulin"
-				yuehai = "Yulin"
-				guangzhong = "Yulin"
-				korean = "Yulin"
-				japanese = "Yulin"
-				sinohellenic = "Yulin"
-				huakyo = "Yulin"
-				nihonohellenic = "Yulin"
-				romanokoric = "Yulin"
-
-				b_jangzjuh = {
-				}
-				b_yotlim = {
-				ji_li = "Yulin"
-				jiao_liao = "Yulin"
-				jin = "Yulin"
-				lanyin = "Yulin"
-				ba_shu = "Yulin"
-				shangjiang = "Yulin"
-				jiang_huai = "Yulin"
-				hui = "Yulin"
-				xuan = "Yulin"
-				nanwu = "Yulin"
-				gan = "Yulin"
-				xiang = "Yulin"
-				yuehai = "Yulin"
-				guangzhong = "Yulin"
-				korean = "Yulin"
-				japanese = "Yulin"
-				sinohellenic = "Yulin"
-				huakyo = "Yulin"
-				nihonohellenic = "Yulin"
-				romanokoric = "Yulin"
-				}
-				b_nengphox = {
-				}
-				b_liengxbyang = {
-				}
-				b_myoxhruah = {
-				}
-				b_laipjin_zsiangx = {
-				}
-				b_myoxsien = {
-				}
-				b_zjanghlim = {
-				}
-			}
-			c_yung = {
-
-				color={ 238 165 119 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Yongzhou"
-				jiao_liao = "Yongzhou"
-				jin = "Yongzhou"
-				lanyin = "Yongzhou"
-				ba_shu = "Yongzhou"
-				shangjiang = "Yongzhou"
-				jiang_huai = "Yongzhou"
-				hui = "Yongzhou"
-				xuan = "Yongzhou"
-				nanwu = "Yongzhou"
-				gan = "Yongzhou"
-				xiang = "Yongzhou"
-				yuehai = "Yongzhou"
-				guangzhong = "Yongzhou"
-				korean = "Yongzhou"
-				japanese = "Yongzhou"
-				sinohellenic = "Yongzhou"
-				huakyo = "Yongzhou"
-				nihonohellenic = "Yongzhou"
-				romanokoric = "Yongzhou"
-				
-				holy_site = sastsana_phi
-				holy_site = bimojiao
-				holy_site = ua_dab
-				holy_site = nugyauq
-				holy_site = thangiao
-
-				b_syenhruah = {
-				}
-				b_myoxjyen = {
-				}
-				b_koxmyanh = {
-				}
-				b_yungthadbjen = {
-				}
-				b_yengxbjen = {
-				}
-				b_tokhang = {
-				}
-				b_byungxngieh = {
-				}
-				b_myoxlung = {
-				}
-			}
-		}
-		d_ziengxkrung = { #Jingjiang
-
-			color={ 231 140 58 }
-			color2={ 255 255 255 }
-
-			capital = 2603 # Kueh
-
-			c_kueh = {
-
-				color={ 241 140 58 }
-				color2={ 255 255 255 }
-
-				b_kimkueh = {
-				}
-				b_lengchjyen = {
-				}
-				b_jangsruk = {
-				}
-				b_liehphox = {
-				}
-				b_siunjin = {
-				}
-				b_yengxpiuk = {
-				}
-				b_kox = {
-				}
-				b_hingan = {
-				}
-			}
-			c_jung = {
-
-				color={ 231 150 58 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Rongshui"
-				jiao_liao = "Rongshui"
-				jin = "Rongshui"
-				lanyin = "Rongshui"
-				ba_shu = "Rongshui"
-				shangjiang = "Rongshui"
-				jiang_huai = "Rongshui"
-				hui = "Rongshui"
-				xuan = "Rongshui"
-				nanwu = "Rongshui"
-				gan = "Rongshui"
-				xiang = "Rongshui"
-				yuehai = "Rongshui"
-				guangzhong = "Rongshui"
-				korean = "Rongshui"
-				japanese = "Rongshui"
-				sinohellenic = "Rongshui"
-				huakyo = "Rongshui"
-				nihonohellenic = "Rongshui"
-				romanokoric = "Rongshui"
-
-				b_jungsjyix = {
-				}
-				b_ghruaiyanx = {
-				}
-				b_lakzjenx = {
-				}
-				b_limkhe = {
-				}
-				b_myoxjang_jung = {
-				}
-				b_pokghra = {
-				}
-				b_zsimkrung = {
-				}
-			}
-			c_ngie = {
-
-				color={ 231 140 68 }
-				color2={ 255 255 255 }
-				
-				ji_li = "Longcheng"
-				jiao_liao = "Longcheng"
-				jin = "Longcheng"
-				lanyin = "Longcheng"
-				ba_shu = "Longcheng"
-				shangjiang = "Longcheng"
-				jiang_huai = "Longcheng"
-				hui = "Longcheng"
-				xuan = "Longcheng"
-				nanwu = "Longcheng"
-				gan = "Longcheng"
-				xiang = "Longcheng"
-				yuehai = "Longcheng"
-				guangzhong = "Longcheng"
-				korean = "Longcheng"
-				japanese = "Longcheng"
-				sinohellenic = "Longcheng"
-				huakyo = "Longcheng"
-				nihonohellenic = "Longcheng"
-				romanokoric = "Longcheng"
-
-				b_ngiesren = {
-				}
-				b_thengha = {
-				}
-				b_sion = {
-				}
-				b_kyoinjin = {
-				}
-				b_kimzjengngie = {
-				}
-				b_anhruahngie = {
-				}
-				b_liehphua = {
-				}
-				b_uonzyen = {
-				}
-			}
-		}
-	}
 	k_chriox = { #Chu
 
 		color={ 252 200 10 }
@@ -2757,654 +1851,6 @@ e_china = {
 				b_ngyukghuangkiung = {
 				}
 				b_ciexjangdungh = {
-				}
-			}
-		}
-	}
-	k_zjyuk = { #Shu
-
-		color={ 245 182 205 }
-		color2={ 255 255 255 }
-
-		capital = 2626 # Gyi
-
-		d_gyicju = { #Kuizhou
-
-			color={ 240 185 245 }
-			color2={ 255 255 255 }
-
-			capital = 2626 # Gyi
-
-			c_gyi = {
-
-				color={ 250 185 245 }
-				color2={ 255 255 255 }
-
-				b_byungxcet = {
-				}
-				b_dadneng_gyi = {
-				}
-				b_yonan = {
-				}
-				b_myosren = {
-				}
-				b_dadchjang = {
-				}
-				b_brakdehmieuh = {
-				}
-				b_triangghuanghumieuh = {
-				}
-				b_kaujang_gyi = {
-				}
-			}
-			c_that = {
-
-				color={ 240 195 245 }
-				color2={ 255 255 255 }
-
-				b_thungchjyen = {
-				}
-				b_sinneng = {
-				}
-				b_pragio = {
-				}
-				b_yengxmiuk = {
-				}
-				b_tunghiang = {
-				}
-				b_thungmieng = {
-				}
-			}
-			c_triung = {
-
-				color={ 240 185 235 }
-				color2={ 255 255 255 }
-
-				b_limkrung = {
-				}
-				b_temhkrung = {
-				}
-				b_phiungto = {
-				}
-				b_nompjin = {
-				}
-				b_bjentosren = {
-				}
-				b_dociengx = {
-				}
-			}
-			c_kyung = {
-
-				color={ 240 195 235 }
-				color2={ 255 255 255 }
-
-				b_pra = {
-				}
-				b_peksren = {
-				}
-				b_krungcin = {
-				}
-				b_crinkhe = {
-				}
-				b_jahlang = {
-				}
-				b_nomchjyen = {
-				}
-				b_liunghruah = {
-				}
-				b_yengiih = {
-				}
-			}
-			c_trin = {
-
-				color={ 230 185 255 }
-				color2={ 255 255 255 }
-
-				b_lakngyan = {
-				}
-				b_puahchjyen = {
-				}
-				b_cynngieh = {
-				}
-				b_syijang = {
-				}
-				b_langchjyen = {
-				}
-				b_tadsjyix = {
-				}
-				b_tozjangx = {
-				}
-				b_ngiehzyen = {
-				}
-			}
-			c_giem = {
-
-				color={ 230 195 245 }
-				color2={ 255 255 255 }
-
-				b_brangsjyix = {
-				}
-				b_giemkrung = {
-				}
-				b_myohchjyen = {
-				}
-				b_anjii = {
-				}
-				b_gyungsjyix = {
-				}
-				b_kyoxcju = {
-				}
-				b_giemphoxneng = {
-				}
-				b_ghuamyox = {
-				}
-			}
-		}
-		d_liihcju = { #Lizhou
-
-			color={ 205 180 242 }
-			color2={ 255 255 255 }
-
-			capital = 2632 # Liang
-
-			c_liang = {
-
-				color={ 215 180 242 }
-				color2={ 255 255 255 }
-
-				b_nomdriengh = {
-				}
-				b_pauzjeng = {
-				}
-				b_zjengkoh = {
-				}
-				b_se = {
-				}
-				b_driangliux = {
-				}
-				b_daksjyix = {
-				}
-				b_denghkyonsren = {
-				}
-				b_jangbjenkruan = {
-				}
-			}
-			c_liih = {
-
-				color={ 195 180 242 }
-				color2={ 255 255 255 }
-
-				b_mjenkuk = {
-				}
-				b_krachjyen = {
-				}
-				b_kramreng = {
-				}
-				b_cjeuhruah = {
-				}
-				b_samzyen = {
-				}
-				b_kimngiu = {
-				}
-				b_chengo = {
-				}
-				b_ghuangdrakzsih = {
-				}
-			}
-			c_pra = {
-
-				color={ 205 170 242 }
-				color2={ 255 255 255 }
-
-				b_hruahzjeng = {
-				}
-				b_onjang = {
-				}
-				b_congkhux = {
-				}
-				b_thungkrung = {
-				}
-				b_nankrung = {
-				}
-				b_buandaux = {
-				}
-				b_gicjang = {
-				}
-				b_kuangxnop = {
-				}
-			}
-			c_langh = {
-
-				color={ 215 170 242 }
-				color2={ 255 255 255 }
-
-				b_langhtriung = {
-				}
-				b_changkhe = {
-				}
-				b_byungkuok = {
-				}
-				b_nombox = {
-				}
-				b_sinciengx = {
-				}
-				b_sincjengh = {
-				}
-				b_sesjyix = {
-				}
-				b_yengxanzsih = {
-				}
-			}
-			c_kiamh = {
-
-				color={ 205 190 232 }
-				color2={ 255 255 255 }
-
-				b_phoxan = {
-				}
-				b_kiamhmuon = {
-				}
-				b_myoxlien = {
-				}
-				b_phoxzjeng = {
-				}
-				b_cixdung = {
-				}
-				b_imbjen = {
-				}
-				b_limcin = {
-				}
-				b_kiamhkak = {
-				}
-			}
-		}
-		d_dungchjyen = { #Tongchuan
-
-			color={ 181 142 241 }
-			color2={ 255 255 255 }
-
-			capital = 2637 # Gio
-
-			c_gio = {
-
-				color={ 191 142 241 }
-				color2={ 255 255 255 }
-
-				b_liukrung = {
-				}
-				b_giokrung = {
-				}
-				b_linsren = {
-				}
-				b_linsjyix = {
-				}
-				b_ngrukdrie = {
-				}
-				b_sinmieng = {
-				}
-				b_ghuakhe = {
-				}
-				b_dadtriuk = {
-				}
-			}
-			c_cix = {
-
-				color={ 181 142 251 }
-				color2={ 255 255 255 }
-
-				b_chii = {
-				}
-				b_zsjah-ghung = {
-				}
-				b_jemdeng = {
-				}
-				b_biuzjeng = {
-				}
-				b_triungkrung = {
-				}
-				b_dungsren = {
-				}
-				b_tungkruan = {
-				}
-				b_pyoio = {
-				}
-			}
-			c_ghop = {
-
-				color={ 181 132 241 }
-				color2={ 255 255 255 }
-
-				b_zjekcjeuh = {
-				}
-				b_hanhchrio = {
-				}
-				b_prachjyen = {
-				}
-				b_dungliang = {
-				}
-				b_chjeksjyix = {
-				}
-				b_ankio = {
-				}
-				b_laithan = {
-				}
-				b_yonmuon = {
-				}
-			}
-			c_phox = {
-
-				color={ 181 142 231 }
-				color2={ 255 255 255 }
-
-				b_anngruk = {
-				}
-				b_phoxankio = {
-				}
-				b_lakcjiih = {
-				}
-				b_phoxzi = {
-				}
-				b_phoxkhang = {
-				}
-				b_phoxchiengliu = {
-				}
-				b_zriungkhom = {
-				}
-				b_khuonhbyotzsih = {
-				}
-			}
-			c_cii = {
-
-				color={ 181 152 231 }
-				color2={ 255 255 255 }
-
-				b_buanzjek = {
-				}
-				b_ciijang = {
-				}
-				b_nuaihkrung = {
-				}
-				b_ciilyungsjyix = {
-				}
-				b_bjiilodungh = {
-				}
-				b_puanhngyatsren = {
-				}
-				b_dryunglyungsren = {
-				}
-				b_ngyatsren = {
-				}
-			}
-			c_yeng = {
-
-				color={ 171 142 251 }
-				color2={ 255 255 255 }
-
-				b_yengtok = {
-				}
-				b_ciikuan = {
-				}
-				b_yoiyanx = {
-				}
-				b_inghleng = {
-				}
-				b_sammyangh = {
-				}
-				b_samkrung = {
-				}
-				b_kungciengx = {
-				}
-				b_lyungdai = {
-				}
-			}
-			c_zjyuklo = {
-
-				color={ 171 152 241 }
-				color2={ 255 255 255 }
-
-				b_lochjyen = {
-				}
-				b_krungan = {
-				}
-				b_piuhzsjynh = {
-				}
-				b_ghopkrung = {
-				}
-				b_kiuxcje = {
-				}
-				b_zjingliu = {
-				}
-				b_nopkhe = {
-				}
-				b_singa = {
-				}
-			}
-			c_zsiox = {
-
-				color={ 181 132 251 }
-				color2={ 255 255 255 }
-				
-				holy_site = tao
-				holy_site = tao_reformed
-
-				b_pokdaux = {
-				}
-				b_nomkhe = {
-				}
-				b_khienghbyo = {
-				}
-				b_laibyoh = {
-				}
-				b_ngiepjin = {
-				}
-				b_sjang = {
-				}
-				b_zsioxghruaiyanx = {
-				}
-			}
-		}
-		d_zjengto = { #Chengdu
-
-			color={ 245 133 245 }
-			color2={ 255 255 255 }
-
-			capital = 2649 # Antiocheia Eschate
-			
-			sinohellenic = "Antiocheia Eschate"
-			greek = "Antiocheia Eschate"
-			hellenistic = "Antiocheia Eschate"
-			roman = "Antiocheia Eschate"
-			romanokoric = "Antiocheia Eschate"
-			huakyo = "Antiocheia Eschate"
-			nihonohellenic = "Antiocheia Eschate"
-			viethellenic = "Antiocheia Eschate"		
-	
-			c_mjen = {
-
-				color={ 255 133 245 }
-				color2={ 255 255 255 }
-
-				b_prase = {
-				}
-				b_cjangmieng = {
-				}
-				b_lakrung = {
-				}
-				b_mjenzsjinzyen = {
-				}
-				b_ngyoihzjeng = {
-				}
-				b_lyungan = {
-				}
-				b_mjenzjekzyen = {
-				}
-				b_jemzyen = {
-				}
-			}
-			c_muh = {
-
-				color={ 245 143 245 }
-				color2={ 255 255 255 }
-
-				b_minsren = {
-				}
-				b_minchjyen = {
-				}
-				b_zji = {
-				}
-				b_tang = {
-				}
-				b_dangh = {
-				}
-				b_drik = {
-				}
-				b_kecuungkruan = {
-				}
-				b_daukruan = {
-				}
-			}
-			c_hanh = {
-
-				color={ 235 133 245 }
-				color2={ 255 255 255 }
-
-				b_lak = {
-				}
-				b_tokjang = {
-				}
-				b_mjentriuk = {
-				}
-				b_zjipphyangh = {
-				}
-				b_hrauhzyen = {
-				}
-				b_lyungbiunghzsi = {
-				}
-			}
-			c_krenx = {
-
-				color={ 245 133 235 }
-				color2={ 255 255 255 }
-
-				b_jangan = {
-				}
-				b_bjenzyen = {
-				}
-				b_kimsjyix = {
-				}
-				b_yengxneng = {
-				}
-				b_kyoihbjen = {
-				}
-				b_kimdang = {
-				}
-				b_jyungzyen = {
-				}
-				b_prakmuh = {
-				}
-			}
-			c_jek = {
-
-				color={ 255 123 245 }
-				color2={ 255 255 255 }
-				
-				holy_site = tao
-				holy_site = tao_reformed
-				
-				sinohellenic = "Antiocheia Eschate"
-				greek = "Antiocheia Eschate"
-				hellenistic = "Antiocheia Eschate"
-				roman = "Antiocheia Eschate"
-				romanokoric = "Antiocheia Eschate"
-				huakyo = "Antiocheia Eschate"
-				nihonohellenic = "Antiocheia Eschate"
-
-				b_zjengto = {
-				}
-				b_ghruahjang = {
-				sinohellenic = "Antiocheia Eschate"
-				greek = "Antiocheia Eschate"
-				hellenistic = "Antiocheia Eschate"
-				roman = "Antiocheia Eschate"
-				romanokoric = "Antiocheia Eschate"
-				huakyo = "Antiocheia Eschate"
-				nihonohellenic = "Antiocheia Eschate"
-				}
-				b_bie = {
-				}
-				b_srungliu = {
-				}
-				b_sinbyan = {
-				}
-				b_kuangxto = {
-				}
-				b_heming = {
-				}
-				b_lengzyen = {
-				}
-				b_sinto_jek = {
-				}
-			}
-			c_zjyuk = {
-
-				color={ 245 143 235 }
-				color2={ 255 255 255 }
-
-				b_cinhngyan = {
-				}
-				b_krungngyan = {
-				}
-				b_sincin = {
-				}
-				b_yengxkhang = {
-				}
-				b_myanhzip = {
-				}
-				b_kimmrax = {
-				}
-				b_sinchjyen = {
-				}
-			}
-			c_kra = {
-
-				color={ 255 133 235 }
-				color2={ 255 255 255 }
-
-				b_kralyungju = {
-				}
-				b_ngamii = {
-				}
-				b_krepkrung = {
-				}
-				b_gienye = {
-				}
-				b_ghungngrax = {
-				}
-				b_mukchjyen = {
-				}
-				b_kuangsianghzsih = {
-				}
-				b_phoxghenzsih = {
-				}
-			}
-			c_ngrax = {
-
-				color={ 255 123 235 }
-				color2={ 255 255 255 }
-
-				b_ngiamdaux = {
-				}
-				b_mjengsren = {
-				}
-				b_prakdriangx = {
-				}
-				b_losren = {
-				}
-				b_yengkeng = {
-				}
-				b_jaxchjyen = {
-				}
-				b_sesren = {
 				}
 			}
 		}
@@ -4531,6 +2977,1283 @@ e_china = {
 	}
 }
 
+e_baiyue = {
+
+	color={ 223 163 0 }
+	color2={ 90 79 88 }
+
+	capital = 2588 #Panyu
+			
+	k_nomyat = { #Nanyue
+
+		color={ 234 85 6 }
+		color2={ 255 255 255 }
+
+		capital = 2588 # Kuangx
+
+		d_ekuangxnom = { #Eastern Guangnan
+
+			color={ 181 248 73 }
+			color2={ 255 255 255 }
+
+			capital = 2588 # Kuangx
+
+			c_kuangx = {
+
+				color={ 254 145 96 }
+				color2={ 255 255 255 }
+
+				b_phuanngyo = {
+				}
+				b_nomhaix = {
+				}
+				b_tungghruanx = {
+				}
+				b_singhuad = {
+				}
+				b_congzjeng = {
+				}
+				b_chiengyanx = {
+				}
+				b_ghruaizip = {
+				}
+				b_sinhan = {
+				}
+			}
+			c_zjeu = {
+
+				color={ 244 155 96 }
+				color2={ 255 255 255 }
+
+				b_khyukkrung = {
+				}
+				b_ungngyan = {
+				}
+				b_kianhpiuk = {
+				}
+				b_njinhruah = {
+				}
+				b_lakchjang = {
+				}
+				b_nomghruazsih = {
+				}
+			}
+			c_lien = {
+
+				color={ 244 145 106 }
+				color2={ 255 255 255 }
+
+				b_kuehjang = {
+				}
+				b_jangsren = {
+				}
+				b_liensren = {
+				}
+				b_ghuehkuangzsih = {
+				}
+			}
+			c_ghueh = {
+
+				color={ 244 145 86 }
+				color2={ 255 255 255 }
+
+				b_kyoizjenx = {
+				}
+				b_pakla = {
+				}
+				b_haixphiung = {
+				}
+				b_ghangyan = {
+				}
+				b_driunghiokuanh = {
+				}
+			}
+		}
+		d_liengxtung = { #Lingdong
+
+			color={ 253 187 87 }
+			color2={ 255 255 255 }
+
+			capital = 2593 # Zsyn (was 1497 Muai)
+
+			c_zsyn = {
+
+				color={ 253 187 97 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Meizhou"
+				jiao_liao = "Meizhou"
+				jin = "Meizhou"
+				lanyin = "Meizhou"
+				ba_shu = "Meizhou"
+				shangjiang = "Meizhou"
+				jiang_huai = "Meizhou"
+				hui = "Meizhou"
+				xuan = "Meizhou"
+				nanwu = "Meizhou"
+				gan = "Meizhou"
+				xiang = "Meizhou"
+				yuehai = "Meizhou"
+				guangzhong = "Meizhou"
+				korean = "Meizhou"
+				japanese = "Meizhou"
+				sinohellenic = "Meizhou"
+				huakyo = "Meizhou"
+				nihonohellenic = "Meizhou"
+				romanokoric = "Meizhou"
+
+				b_lyungchjyen = {
+				}
+				b_zsyndriunglak = {
+				}
+				b_hingneng = {
+				}
+			}
+			c_drieu = {
+
+				color={ 253 197 87 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Chaozhou"
+				jiao_liao = "Chaozhou"
+				jin = "Chaozhou"
+				lanyin = "Chaozhou"
+				ba_shu = "Chaozhou"
+				shangjiang = "Chaozhou"
+				jiang_huai = "Chaozhou"
+				hui = "Chaozhou"
+				xuan = "Chaozhou"
+				nanwu = "Chaozhou"
+				gan = "Chaozhou"
+				xiang = "Chaozhou"
+				yuehai = "Chaozhou"
+				guangzhong = "Chaozhou"
+				korean = "Chaozhou"
+				japanese = "Chaozhou"
+				sinohellenic = "Chaozhou"
+				huakyo = "Chaozhou"
+				nihonohellenic = "Chaozhou"
+				romanokoric = "Chaozhou"
+
+				b_haixjang = {
+				}
+				b_drieujang = {
+				}
+				b_lenhruazsih = {
+				}
+				b_ghanmyonkungzsi = {
+				}
+			}
+		}
+		d_drieux-khiengh = { #Zhaoqing
+
+			color={ 248 56 35 }
+			color2={ 255 255 255 }
+
+			capital = 2594 # Khang
+
+			c_khang = {
+
+				color={ 238 56 35 }
+				color2={ 255 255 255 }
+
+				b_tuankhe = {
+				}
+				b_srungsjyix = {
+				}
+				b_tozjeng = {
+				}
+				b_jyetzjeng = {
+				}
+				b_lyungmuxmieuh = {
+				}
+			}
+			c_nomon = {
+
+				color={ 248 56 45 }
+				color2={ 255 255 255 }
+
+				b_jangkrung = {
+				}
+				b_jangchjyn = {
+				}
+				b_sinhing = {
+				}
+				b_kuokonzsih = {
+				}
+			}
+		}
+		d_ziengxhaix = { #Jinghai
+
+			color={ 0 114 81 }
+			color2={ 255 255 255 }
+
+			capital = 2596 # Luai (was 1676 Kau)
+
+			c_luai = {
+
+				color={ 250 111 105 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Leizhou"
+				jiao_liao = "Leizhou"
+				jin = "Leizhou"
+				lanyin = "Leizhou"
+				ba_shu = "Leizhou"
+				shangjiang = "Leizhou"
+				jiang_huai = "Leizhou"
+				hui = "Leizhou"
+				xuan = "Leizhou"
+				nanwu = "Leizhou"
+				gan = "Leizhou"
+				xiang = "Leizhou"
+				yuehai = "Leizhou"
+				guangzhong = "Leizhou"
+				korean = "Leizhou"
+				japanese = "Leizhou"
+				sinohellenic = "Leizhou"
+				huakyo = "Leizhou"
+				nihonohellenic = "Leizhou"
+				romanokoric = "Leizhou"
+
+				b_haixkhang = {
+				}
+				b_kuandu = {
+				}
+				b_cjinmyoxdang = {
+				}
+				b_luaicoxzsi = {
+				}
+			}
+			c_gjyeng = {
+
+				color={ 250 101 95 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Qiongshan"
+				jiao_liao = "Qiongshan"
+				jin = "Qiongshan"
+				lanyin = "Qiongshan"
+				ba_shu = "Qiongshan"
+				shangjiang = "Qiongshan"
+				jiang_huai = "Qiongshan"
+				hui = "Qiongshan"
+				xuan = "Qiongshan"
+				nanwu = "Qiongshan"
+				gan = "Qiongshan"
+				xiang = "Qiongshan"
+				yuehai = "Qiongshan"
+				guangzhong = "Qiongshan"
+				korean = "Qiongshan"
+				japanese = "Qiongshan"
+				sinohellenic = "Qiongshan"
+				huakyo = "Qiongshan"
+				nihonohellenic = "Qiongshan"
+				romanokoric = "Qiongshan"
+
+				b_gjyengsren = {
+				}
+				b_ngielyn = {
+				}
+				b_myanhneng = {
+				}
+				b_myonchjang = {
+				}
+				b_drangmrad = {
+				}
+				b_chjanghruah = {
+				}
+				b_komxon = {
+				}
+				b_hlai = {
+				}
+			}
+			c_khim = {
+
+				color={ 240 121 95 }
+				color2={ 255 255 255 }
+
+				b_lengsren = {
+				}
+				b_khimanyanx = {
+				}
+				b_njosiek = {
+				}
+				b_njoghung = {
+				}
+				b_sipimx = {
+				}
+				b_koxsrim = {
+				}
+			}
+		}
+		d_wkuangxnom = { #Western Guangnan
+
+			color={ 238 175 119 }
+			color2={ 255 255 255 }
+
+			capital = 2599 # Ngo
+
+			c_nomyatngo = {
+
+				color={ 248 175 119 }
+				color2={ 255 255 255 }
+
+				ji_li = "Ngchow"
+				jiao_liao = "Ngchow"
+				jin = "Ngchow"
+				lanyin = "Ngchow"
+				ba_shu = "Ngchow"
+				shangjiang = "Ngchow"
+				jiang_huai = "Ngchow"
+				hui = "Ngchow"
+				xuan = "Ngchow"
+				nanwu = "Ngchow"
+				gan = "Ngchow"
+				xiang = "Ngchow"
+				yuehai = "Ngchow"
+				guangzhong = "Ngchow"
+				korean = "Ngchow"
+				japanese = "Ngchow"
+				sinohellenic = "Ngchow"
+				huakyo = "Ngchow"
+				nihonohellenic = "Ngchow"
+				romanokoric = "Ngchow"
+
+				b_changngo = {
+				}
+				b_bjenlak = {
+				}
+				b_limghah = {
+				}
+				b_domcin = {
+				}
+				b_zrimkhe = {
+				}
+				b_lyungbjen = {
+				}
+				b_piuhchjyen = {
+				}
+				b_kyungzjeng = {
+				}
+			}
+			c_jyung = {
+
+				color={ 238 175 129 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Rong"
+				jiao_liao = "Rong"
+				jin = "Rong"
+				lanyin = "Rong"
+				ba_shu = "Rong"
+				shangjiang = "Rong"
+				jiang_huai = "Rong"
+				hui = "Rong"
+				xuan = "Rong"
+				nanwu = "Rong"
+				gan = "Rong"
+				xiang = "Rong"
+				yuehai = "Rong"
+				guangzhong = "Rong"
+				korean = "Rong"
+				japanese = "Rong"
+				sinohellenic = "Rong"
+				huakyo = "Rong"
+				nihonohellenic = "Rong"
+				romanokoric = "Rong"
+
+				b_phoxneng = {
+				}
+				b_nomliu = {
+				}
+				b_pokliu = {
+				}
+				b_liukchjyen = {
+				}
+				b_pakbrak = {
+				}
+				b_hingngiap = {
+				}
+				b_mramuon = {
+				}
+				b_kyoluhsren = {
+				}
+			}
+			c_zsiangx = {
+
+				color={ 228 175 119 }
+				color2={ 255 255 255 }
+
+				ji_li = "Yulin"
+				jiao_liao = "Yulin"
+				jin = "Yulin"
+				lanyin = "Yulin"
+				ba_shu = "Yulin"
+				shangjiang = "Yulin"
+				jiang_huai = "Yulin"
+				hui = "Yulin"
+				xuan = "Yulin"
+				nanwu = "Yulin"
+				gan = "Yulin"
+				xiang = "Yulin"
+				yuehai = "Yulin"
+				guangzhong = "Yulin"
+				korean = "Yulin"
+				japanese = "Yulin"
+				sinohellenic = "Yulin"
+				huakyo = "Yulin"
+				nihonohellenic = "Yulin"
+				romanokoric = "Yulin"
+
+				b_jangzjuh = {
+				}
+				b_yotlim = {
+				ji_li = "Yulin"
+				jiao_liao = "Yulin"
+				jin = "Yulin"
+				lanyin = "Yulin"
+				ba_shu = "Yulin"
+				shangjiang = "Yulin"
+				jiang_huai = "Yulin"
+				hui = "Yulin"
+				xuan = "Yulin"
+				nanwu = "Yulin"
+				gan = "Yulin"
+				xiang = "Yulin"
+				yuehai = "Yulin"
+				guangzhong = "Yulin"
+				korean = "Yulin"
+				japanese = "Yulin"
+				sinohellenic = "Yulin"
+				huakyo = "Yulin"
+				nihonohellenic = "Yulin"
+				romanokoric = "Yulin"
+				}
+				b_nengphox = {
+				}
+				b_liengxbyang = {
+				}
+				b_myoxhruah = {
+				}
+				b_laipjin_zsiangx = {
+				}
+				b_myoxsien = {
+				}
+				b_zjanghlim = {
+				}
+			}
+			c_yung = {
+
+				color={ 238 165 119 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Yongzhou"
+				jiao_liao = "Yongzhou"
+				jin = "Yongzhou"
+				lanyin = "Yongzhou"
+				ba_shu = "Yongzhou"
+				shangjiang = "Yongzhou"
+				jiang_huai = "Yongzhou"
+				hui = "Yongzhou"
+				xuan = "Yongzhou"
+				nanwu = "Yongzhou"
+				gan = "Yongzhou"
+				xiang = "Yongzhou"
+				yuehai = "Yongzhou"
+				guangzhong = "Yongzhou"
+				korean = "Yongzhou"
+				japanese = "Yongzhou"
+				sinohellenic = "Yongzhou"
+				huakyo = "Yongzhou"
+				nihonohellenic = "Yongzhou"
+				romanokoric = "Yongzhou"
+				
+				holy_site = sastsana_phi
+				holy_site = bimojiao
+				holy_site = ua_dab
+				holy_site = nugyauq
+				holy_site = thangiao
+
+				b_syenhruah = {
+				}
+				b_myoxjyen = {
+				}
+				b_koxmyanh = {
+				}
+				b_yungthadbjen = {
+				}
+				b_yengxbjen = {
+				}
+				b_tokhang = {
+				}
+				b_byungxngieh = {
+				}
+				b_myoxlung = {
+				}
+			}
+		}
+		d_ziengxkrung = { #Jingjiang
+
+			color={ 231 140 58 }
+			color2={ 255 255 255 }
+
+			capital = 2603 # Kueh
+
+			c_kueh = {
+
+				color={ 241 140 58 }
+				color2={ 255 255 255 }
+
+				b_kimkueh = {
+				}
+				b_lengchjyen = {
+				}
+				b_jangsruk = {
+				}
+				b_liehphox = {
+				}
+				b_siunjin = {
+				}
+				b_yengxpiuk = {
+				}
+				b_kox = {
+				}
+				b_hingan = {
+				}
+			}
+			c_jung = {
+
+				color={ 231 150 58 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Rongshui"
+				jiao_liao = "Rongshui"
+				jin = "Rongshui"
+				lanyin = "Rongshui"
+				ba_shu = "Rongshui"
+				shangjiang = "Rongshui"
+				jiang_huai = "Rongshui"
+				hui = "Rongshui"
+				xuan = "Rongshui"
+				nanwu = "Rongshui"
+				gan = "Rongshui"
+				xiang = "Rongshui"
+				yuehai = "Rongshui"
+				guangzhong = "Rongshui"
+				korean = "Rongshui"
+				japanese = "Rongshui"
+				sinohellenic = "Rongshui"
+				huakyo = "Rongshui"
+				nihonohellenic = "Rongshui"
+				romanokoric = "Rongshui"
+
+				b_jungsjyix = {
+				}
+				b_ghruaiyanx = {
+				}
+				b_lakzjenx = {
+				}
+				b_limkhe = {
+				}
+				b_myoxjang_jung = {
+				}
+				b_pokghra = {
+				}
+				b_zsimkrung = {
+				}
+			}
+			c_ngie = {
+
+				color={ 231 140 68 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Longcheng"
+				jiao_liao = "Longcheng"
+				jin = "Longcheng"
+				lanyin = "Longcheng"
+				ba_shu = "Longcheng"
+				shangjiang = "Longcheng"
+				jiang_huai = "Longcheng"
+				hui = "Longcheng"
+				xuan = "Longcheng"
+				nanwu = "Longcheng"
+				gan = "Longcheng"
+				xiang = "Longcheng"
+				yuehai = "Longcheng"
+				guangzhong = "Longcheng"
+				korean = "Longcheng"
+				japanese = "Longcheng"
+				sinohellenic = "Longcheng"
+				huakyo = "Longcheng"
+				nihonohellenic = "Longcheng"
+				romanokoric = "Longcheng"
+
+				b_ngiesren = {
+				}
+				b_thengha = {
+				}
+				b_sion = {
+				}
+				b_kyoinjin = {
+				}
+				b_kimzjengngie = {
+				}
+				b_anhruahngie = {
+				}
+				b_liehphua = {
+				}
+				b_uonzyen = {
+				}
+			}
+		}
+	}
+	k_min = { #Min
+
+		color={ 164 43 21 }
+		color2={ 255 255 255 }
+
+		capital = 2582 # Piuk
+		
+		han = "Min"
+		
+		d_piukkianh = { #Fujian
+
+			color={ 203 53 27 }
+			color2={ 255 255 255 }
+
+			capital = 2582 # Piuk
+
+			c_piuk = {
+
+				color={ 213 53 27 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Fuzhou"
+				jiao_liao = "Fuzhou"
+				jin = "Fuzhou"
+				lanyin = "Fuzhou"
+				ba_shu = "Fuzhou"
+				shangjiang = "Fuzhou"
+				jiang_huai = "Fuzhou"
+				hui = "Fuzhou"
+				xuan = "Fuzhou"
+				nanwu = "Fuzhou"
+				gan = "Fuzhou"
+				xiang = "Fuzhou"
+				yuehai = "Fuzhou"
+				guangzhong = "Fuzhou"
+				korean = "Fuzhou"
+				japanese = "Fuzhou"
+				sinohellenic = "Fuzhou"
+				huakyo = "Fuzhou"
+				nihonohellenic = "Fuzhou"
+				romanokoric = "Fuzhou"
+
+				b_min = {
+				}
+				b_ghukuan = {
+				}
+				b_ghruaian = {
+				}
+				b_driunglak = {
+				}
+				b_piukchieng = {
+				}
+				b_lienkrung = {
+				}
+				b_driungkhe = {
+				}
+				b_minchieng = {
+				}
+			}
+			c_kianh = {
+
+				color={ 203 63 27 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Jianan"
+				jiao_liao = "Jianan"
+				jin = "Jianan"
+				lanyin = "Jianan"
+				ba_shu = "Jianan"
+				shangjiang = "Jianan"
+				jiang_huai = "Jianan"
+				hui = "Jianan"
+				xuan = "Jianan"
+				nanwu = "Jianan"
+				gan = "Jianan"
+				xiang = "Jianan"
+				yuehai = "Jianan"
+				guangzhong = "Jianan"
+				korean = "Jianan"
+				japanese = "Jianan"
+				sinohellenic = "Jianan"
+				huakyo = "Jianan"
+				nihonohellenic = "Jianan"
+				romanokoric = "Jianan"
+
+				b_kianhan = {
+				}
+				b_uneng = {
+				}
+				b_kianhjang = {
+				}
+				b_zriungan = {
+				}
+				b_zsyungkhe = {
+				}
+				b_kruanleh = {
+				}
+				b_bozjeng_kianh = {
+				}
+				b_driunghiuhkuanh = {
+				}
+			}
+			c_nomkiamh = {
+
+				color={ 203 53 37 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Nanjian"
+				jiao_liao = "Nanjian"
+				jin = "Nanjian"
+				lanyin = "Nanjian"
+				ba_shu = "Nanjian"
+				shangjiang = "Nanjian"
+				jiang_huai = "Nanjian"
+				hui = "Nanjian"
+				xuan = "Nanjian"
+				nanwu = "Nanjian"
+				gan = "Nanjian"
+				xiang = "Nanjian"
+				yuehai = "Nanjian"
+				guangzhong = "Nanjian"
+				korean = "Nanjian"
+				japanese = "Nanjian"
+				sinohellenic = "Nanjian"
+				huakyo = "Nanjian"
+				nihonohellenic = "Nanjian"
+				romanokoric = "Nanjian"
+
+				b_kiamhbo = {
+				}
+				b_zsjynhchjang = {
+				}
+				b_cianglak = {
+				}
+				b_sra = {
+				}
+				b_iukhe = {
+				}
+				b_tungcin = {
+				}
+				b_langyan = {
+				}
+				b_secin = {
+				}
+			}
+		}
+		d_wmin = { #Western Min
+
+			color={ 182 98 22 }
+			color2={ 255 255 255 }
+
+			capital = 2585 # Theng
+
+			c_theng = {
+
+				color={ 192 98 22 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Yongchun"
+				jiao_liao = "Yongchun"
+				jin = "Yongchun"
+				lanyin = "Yongchun"
+				ba_shu = "Yongchun"
+				shangjiang = "Yongchun"
+				jiang_huai = "Yongchun"
+				hui = "Yongchun"
+				xuan = "Yongchun"
+				nanwu = "Yongchun"
+				gan = "Yongchun"
+				xiang = "Yongchun"
+				yuehai = "Yongchun"
+				guangzhong = "Yongchun"
+				korean = "Yongchun"
+				japanese = "Yongchun"
+				sinohellenic = "Yongchun"
+				huakyo = "Yongchun"
+				nihonohellenic = "Yongchun"
+				romanokoric = "Yongchun"
+
+				b_driungtheng = {
+				}
+				b_zjanghghang = {
+				}
+				b_myoxbjen = {
+				}
+				b_nenghruah_theng = {
+				}
+				b_chiengliu_theng = {
+				}
+			}
+		}
+		d_smin = { #Southern Min
+
+			color={ 223 139 26 }
+			color2={ 255 255 255 }
+
+			capital = 2586 # Zyen (was 1488 Hing-hruah)
+
+			c_zyen = {
+
+				color={ 223 149 26 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Quanzhou"
+				jiao_liao = "Quanzhou"
+				jin = "Quanzhou"
+				lanyin = "Quanzhou"
+				ba_shu = "Quanzhou"
+				shangjiang = "Quanzhou"
+				jiang_huai = "Quanzhou"
+				hui = "Quanzhou"
+				xuan = "Quanzhou"
+				nanwu = "Quanzhou"
+				gan = "Quanzhou"
+				xiang = "Quanzhou"
+				yuehai = "Quanzhou"
+				guangzhong = "Quanzhou"
+				korean = "Quanzhou"
+				japanese = "Quanzhou"
+				sinohellenic = "Quanzhou"
+				huakyo = "Quanzhou"
+				nihonohellenic = "Quanzhou"
+				romanokoric = "Quanzhou"
+
+				b_cinhkrung = {
+				}
+				b_noman = {
+				}
+				b_dungan = {
+				}
+				b_ghuehan = {
+				}
+				b_zyenchiengkhe = {
+				}
+				b_yengxchjyn = {
+				}
+				b_zyentokhruah = {
+				}
+				b_chauxom = {
+				}
+			}
+			c_cjang = {
+
+				color={ 223 139 36 }
+				color2={ 255 255 255 }
+				
+				ji_li = "Zhangzhou"
+				jiao_liao = "Zhangzhou"
+				jin = "Zhangzhou"
+				lanyin = "Zhangzhou"
+				ba_shu = "Zhangzhou"
+				shangjiang = "Zhangzhou"
+				jiang_huai = "Zhangzhou"
+				hui = "Zhangzhou"
+				xuan = "Zhangzhou"
+				nanwu = "Zhangzhou"
+				gan = "Zhangzhou"
+				xiang = "Zhangzhou"
+				yuehai = "Zhangzhou"
+				guangzhong = "Zhangzhou"
+				korean = "Zhangzhou"
+				japanese = "Zhangzhou"
+				sinohellenic = "Zhangzhou"
+				huakyo = "Zhangzhou"
+				nihonohellenic = "Zhangzhou"
+				romanokoric = "Zhangzhou"
+
+				b_lyungkhe = {
+				}
+				b_driangthad = {
+				}
+				b_cjangphox = {
+				}
+				b_lyungngram = {
+				}
+				b_nomsrenkiung = {
+				}
+				b_zriungpiukzsih = {
+				}
+			}
+		}
+	}
+	k_dai_viet = {
+
+		color={ 136 117 90 }
+		color2={ 80 79 88 }
+
+		culture = viet
+
+		capital = 2146 # Thang Long
+
+		# Regnal names
+		male_names = {
+				Thai-To Thai-Tong Thanh-Tong Nhan-Tong Than-Tong Anh-Tong Cao-Tong Hue-Tong Chieu-Hoang
+				Dai-Hanh Trung-Tong Ngoa-Trieu Phe-De Tien-Hoang Minh-Tong Hien-Tong Du-Tong Duc-Cong
+				Nghe-Tong Due-Tong Thuan-Thong Thieu-De
+		}
+
+		d_thang_long = {
+
+			color={ 151 132 74 }
+			color2={ 80 79 88 }
+
+			capital = 2146 # Thang Long
+
+			c_thang_long = {
+
+				color={ 161 132 74 }
+				color2={ 80 79 88 }
+
+				b_thang_long = {
+				}
+				b_hoang_liet = {
+				}
+				b_my_dinh = {
+					holy_site = nat
+					holy_site = sastsana_phi
+					holy_site = benzhujiao
+					holy_site = nugyauq
+					holy_site = thangiao
+				}
+				b_dong_ngac = {
+				}
+				b_trau_quy = {
+				}
+				b_tu_son = {
+				}
+				b_phu_luong = {
+				}
+				b_phu_cuong = {
+				}
+			}
+			c_haiphong = {
+
+				color={ 151 142 74 }
+				color2={ 80 79 88 }
+
+				b_haiphong = {
+				}
+				b_vinh_niem = {
+				}
+				b_bac_son = {
+				}
+				b_hung_thang = {
+				}
+				b_nam_son = {
+				}
+				b_cat_hai = {
+				}
+				b_minh_duc = {
+				}
+				b_dai_ban = {
+				}
+			}
+			c_thai_nguyen = {
+
+				color={ 151 132 84 }
+				color2={ 80 79 88 }
+
+				b_thai_nguyen = {
+				}
+				b_song_cong = {
+				}
+				b_quyet_thang = {
+				}
+				b_thinh_duc = {
+				}
+				b_tuc_duyen = {
+				}
+				b_trung_thanh = {
+				}
+				b_cai_dan = {
+				}
+				b_quan_trieu = {
+				}
+			}
+			c_lang_son = {
+
+				color={ 141 132 74 }
+				color2={ 80 79 88 }
+
+				b_lang_son = {
+				}
+				b_van_thuy = {
+				}
+				b_bao_lam = {
+				}
+				b_ban_xam = {
+				}
+				b_mau_son = {
+				}
+				b_xuan_man = {
+				}
+				b_loc_binh = {
+				}
+				b_van_quan = {
+				}
+			}
+		}
+		d_viet_bac = {
+
+			color={ 161 29 14 }
+			color2={ 80 79 88 }
+
+			capital = 2188 # Lao Cai
+
+			c_lao_cai = {
+
+				color={ 151 124 84 }
+				color2={ 80 79 88 }
+
+				b_lao_cai = {
+				}
+				b_kim_tan = {
+				}
+				b_cam_duong = {
+				}
+				b_ban_phiet = {
+				}
+				b_ban_cam = {
+				}
+				b_thanh_binh = {
+				}
+				b_lung_khau_nhin = {
+				}
+				b_ta_ngai_cho = {
+				}
+			}
+			c_yen_bai = {
+
+				color={ 141 134 84 }
+				color2={ 80 79 88 }
+
+				b_yen_bai = {
+				}
+				b_minh_bao = {
+				}
+				b_phuc_loc = {
+				}
+				b_hop_minh = {
+				}
+				b_tuy_loc = {
+				}
+				b_co_phuc = {
+				}
+				b_kien_thanh = {
+				}
+				b_yen_phu = {
+				}
+			}
+			c_ha_giang = {
+
+				color={ 141 124 94 }
+				color2={ 80 79 88 }
+
+				b_ha_giang = {
+				}
+				b_ngoc_duong = {
+				}
+				b_phong_quang = {
+				}
+				b_phuong_tien = {
+				}
+				b_cao_bo = {
+				}
+				b_vi_xuyen = {
+				}
+				b_linh_ho = {
+				}
+				b_ngoc_minh = {
+				}
+			}
+			c_lai_chau = {
+
+				color={ 131 124 84 }
+				color2={ 80 79 88 }
+
+				b_lai_chau = {
+				}
+				b_ho_thau = {
+				}
+				b_pa_vay_su = {
+				}
+				b_mo_si_san = {
+				}
+				b_ma_ly_chai = {
+				}
+				b_mu_sang = {
+				}
+				b_muong_so = {
+				}
+				b_phong_tho = {
+				}
+			}
+			c_dien_bien_phu = {
+
+				color={ 141 114 84 }
+				color2={ 80 79 88 }
+
+				b_dien_bien_phu = {
+				}
+				b_thanh_minh = {
+				}
+				b_muong_pon = {
+				}
+				b_muong_muon = {
+				}
+				b_muong_cha = {
+				}
+				b_muong_mun = {
+				}
+				b_ban_chin = {
+				}
+				b_ban_co = {
+				}
+			}
+		}
+		d_thanh_hoa = {
+
+			color={ 153 99 72 }
+			color2={ 80 79 88 }
+
+			capital = 2144 # Thanh Hoa
+
+			c_thanh_hoa = {
+
+				color={ 163 99 72 }
+				color2={ 80 79 88 }
+
+				b_thanh_hoa = {
+				}
+				b_hoang_dai = {
+				}
+				b_tao_xuyen = {
+				}
+				b_nhoi = {
+				}
+				b_yen_cat = {
+				}
+				b_sam_son = {
+				}
+				b_trieu_son = {
+				}
+				b_xuan_du = {
+				}
+			}
+			c_hoa_tinh = {
+
+				color={ 153 109 72 }
+				color2={ 80 79 88 }
+
+				b_hoa_tinh = {
+				}
+				b_tan_hoa = {
+				}
+				b_trung_minh = {
+				}
+				b_doc_lap = {
+				}
+				b_vay_nua = {
+				}
+				b_thung_nai = {
+				}
+				b_binh_thanh = {
+				}
+				b_bac_phong = {
+				}
+			}
+			c_son_la = {
+
+				color={ 153 109 82 }
+				color2={ 80 79 88 }
+
+				b_son_la = {
+				}
+				b_ban_chom = {
+				}
+				b_chieng_kheo = {
+				}
+				b_muong_chanh = {
+				}
+				b_chieng_noi = {
+				}
+				b_nam_ty = {
+				}
+				b_ban_cat = {
+				}
+				b_co_ma = {
+				}
+			}
+		}
+		d_ha_tinh = {
+
+			color={ 146 140 80 }
+			color2={ 80 79 88 }
+
+			capital = 2142 # Ha Tinh
+
+			c_ha_tinh = {
+
+				color={ 156 140 80 }
+				color2={ 80 79 88 }
+
+				b_ha_tinh = {
+				}
+				b_tran_phu = {
+				}
+				b_thach_quy = {
+				}
+				b_thach_hai = {
+				}
+				b_thach_tri = {
+				}
+				b_voi = {
+				}
+				b_ky_anh = {
+				}
+				b_ky_hai = {
+				}
+			}
+			c_ke_van = {
+
+				color={ 146 150 80 }
+				color2={ 80 79 88 }
+
+				b_ke_van = {
+				}
+				b_cua_lo = {
+				}
+				b_kim_lien = {
+				}
+				b_thanh_thuy = {
+				}
+				b_phuc_son = {
+				}
+				b_chau_khe = {
+				}
+				b_nghia_phuc = {
+				}
+				b_cau_giat = {
+				}
+			}
+		}
+	}
+}
+
 k_lox = {
 	allow = {
 		title = d_thenbjen
@@ -5293,6 +5016,654 @@ e_archeserika = {
 				b_limthau = {
 				}
 				b_thebo = {
+				}
+			}
+		}
+	}
+	k_zjyuk = { #Shu
+
+		color={ 245 182 205 }
+		color2={ 255 255 255 }
+
+		capital = 2626 # Gyi
+
+		d_gyicju = { #Kuizhou
+
+			color={ 240 185 245 }
+			color2={ 255 255 255 }
+
+			capital = 2626 # Gyi
+
+			c_gyi = {
+
+				color={ 250 185 245 }
+				color2={ 255 255 255 }
+
+				b_byungxcet = {
+				}
+				b_dadneng_gyi = {
+				}
+				b_yonan = {
+				}
+				b_myosren = {
+				}
+				b_dadchjang = {
+				}
+				b_brakdehmieuh = {
+				}
+				b_triangghuanghumieuh = {
+				}
+				b_kaujang_gyi = {
+				}
+			}
+			c_that = {
+
+				color={ 240 195 245 }
+				color2={ 255 255 255 }
+
+				b_thungchjyen = {
+				}
+				b_sinneng = {
+				}
+				b_pragio = {
+				}
+				b_yengxmiuk = {
+				}
+				b_tunghiang = {
+				}
+				b_thungmieng = {
+				}
+			}
+			c_triung = {
+
+				color={ 240 185 235 }
+				color2={ 255 255 255 }
+
+				b_limkrung = {
+				}
+				b_temhkrung = {
+				}
+				b_phiungto = {
+				}
+				b_nompjin = {
+				}
+				b_bjentosren = {
+				}
+				b_dociengx = {
+				}
+			}
+			c_kyung = {
+
+				color={ 240 195 235 }
+				color2={ 255 255 255 }
+
+				b_pra = {
+				}
+				b_peksren = {
+				}
+				b_krungcin = {
+				}
+				b_crinkhe = {
+				}
+				b_jahlang = {
+				}
+				b_nomchjyen = {
+				}
+				b_liunghruah = {
+				}
+				b_yengiih = {
+				}
+			}
+			c_trin = {
+
+				color={ 230 185 255 }
+				color2={ 255 255 255 }
+
+				b_lakngyan = {
+				}
+				b_puahchjyen = {
+				}
+				b_cynngieh = {
+				}
+				b_syijang = {
+				}
+				b_langchjyen = {
+				}
+				b_tadsjyix = {
+				}
+				b_tozjangx = {
+				}
+				b_ngiehzyen = {
+				}
+			}
+			c_giem = {
+
+				color={ 230 195 245 }
+				color2={ 255 255 255 }
+
+				b_brangsjyix = {
+				}
+				b_giemkrung = {
+				}
+				b_myohchjyen = {
+				}
+				b_anjii = {
+				}
+				b_gyungsjyix = {
+				}
+				b_kyoxcju = {
+				}
+				b_giemphoxneng = {
+				}
+				b_ghuamyox = {
+				}
+			}
+		}
+		d_liihcju = { #Lizhou
+
+			color={ 205 180 242 }
+			color2={ 255 255 255 }
+
+			capital = 2632 # Liang
+
+			c_liang = {
+
+				color={ 215 180 242 }
+				color2={ 255 255 255 }
+
+				b_nomdriengh = {
+				}
+				b_pauzjeng = {
+				}
+				b_zjengkoh = {
+				}
+				b_se = {
+				}
+				b_driangliux = {
+				}
+				b_daksjyix = {
+				}
+				b_denghkyonsren = {
+				}
+				b_jangbjenkruan = {
+				}
+			}
+			c_liih = {
+
+				color={ 195 180 242 }
+				color2={ 255 255 255 }
+
+				b_mjenkuk = {
+				}
+				b_krachjyen = {
+				}
+				b_kramreng = {
+				}
+				b_cjeuhruah = {
+				}
+				b_samzyen = {
+				}
+				b_kimngiu = {
+				}
+				b_chengo = {
+				}
+				b_ghuangdrakzsih = {
+				}
+			}
+			c_pra = {
+
+				color={ 205 170 242 }
+				color2={ 255 255 255 }
+
+				b_hruahzjeng = {
+				}
+				b_onjang = {
+				}
+				b_congkhux = {
+				}
+				b_thungkrung = {
+				}
+				b_nankrung = {
+				}
+				b_buandaux = {
+				}
+				b_gicjang = {
+				}
+				b_kuangxnop = {
+				}
+			}
+			c_langh = {
+
+				color={ 215 170 242 }
+				color2={ 255 255 255 }
+
+				b_langhtriung = {
+				}
+				b_changkhe = {
+				}
+				b_byungkuok = {
+				}
+				b_nombox = {
+				}
+				b_sinciengx = {
+				}
+				b_sincjengh = {
+				}
+				b_sesjyix = {
+				}
+				b_yengxanzsih = {
+				}
+			}
+			c_kiamh = {
+
+				color={ 205 190 232 }
+				color2={ 255 255 255 }
+
+				b_phoxan = {
+				}
+				b_kiamhmuon = {
+				}
+				b_myoxlien = {
+				}
+				b_phoxzjeng = {
+				}
+				b_cixdung = {
+				}
+				b_imbjen = {
+				}
+				b_limcin = {
+				}
+				b_kiamhkak = {
+				}
+			}
+		}
+		d_dungchjyen = { #Tongchuan
+
+			color={ 181 142 241 }
+			color2={ 255 255 255 }
+
+			capital = 2637 # Gio
+
+			c_gio = {
+
+				color={ 191 142 241 }
+				color2={ 255 255 255 }
+
+				b_liukrung = {
+				}
+				b_giokrung = {
+				}
+				b_linsren = {
+				}
+				b_linsjyix = {
+				}
+				b_ngrukdrie = {
+				}
+				b_sinmieng = {
+				}
+				b_ghuakhe = {
+				}
+				b_dadtriuk = {
+				}
+			}
+			c_cix = {
+
+				color={ 181 142 251 }
+				color2={ 255 255 255 }
+
+				b_chii = {
+				}
+				b_zsjah-ghung = {
+				}
+				b_jemdeng = {
+				}
+				b_biuzjeng = {
+				}
+				b_triungkrung = {
+				}
+				b_dungsren = {
+				}
+				b_tungkruan = {
+				}
+				b_pyoio = {
+				}
+			}
+			c_ghop = {
+
+				color={ 181 132 241 }
+				color2={ 255 255 255 }
+
+				b_zjekcjeuh = {
+				}
+				b_hanhchrio = {
+				}
+				b_prachjyen = {
+				}
+				b_dungliang = {
+				}
+				b_chjeksjyix = {
+				}
+				b_ankio = {
+				}
+				b_laithan = {
+				}
+				b_yonmuon = {
+				}
+			}
+			c_phox = {
+
+				color={ 181 142 231 }
+				color2={ 255 255 255 }
+
+				b_anngruk = {
+				}
+				b_phoxankio = {
+				}
+				b_lakcjiih = {
+				}
+				b_phoxzi = {
+				}
+				b_phoxkhang = {
+				}
+				b_phoxchiengliu = {
+				}
+				b_zriungkhom = {
+				}
+				b_khuonhbyotzsih = {
+				}
+			}
+			c_cii = {
+
+				color={ 181 152 231 }
+				color2={ 255 255 255 }
+
+				b_buanzjek = {
+				}
+				b_ciijang = {
+				}
+				b_nuaihkrung = {
+				}
+				b_ciilyungsjyix = {
+				}
+				b_bjiilodungh = {
+				}
+				b_puanhngyatsren = {
+				}
+				b_dryunglyungsren = {
+				}
+				b_ngyatsren = {
+				}
+			}
+			c_yeng = {
+
+				color={ 171 142 251 }
+				color2={ 255 255 255 }
+
+				b_yengtok = {
+				}
+				b_ciikuan = {
+				}
+				b_yoiyanx = {
+				}
+				b_inghleng = {
+				}
+				b_sammyangh = {
+				}
+				b_samkrung = {
+				}
+				b_kungciengx = {
+				}
+				b_lyungdai = {
+				}
+			}
+			c_zjyuklo = {
+
+				color={ 171 152 241 }
+				color2={ 255 255 255 }
+
+				b_lochjyen = {
+				}
+				b_krungan = {
+				}
+				b_piuhzsjynh = {
+				}
+				b_ghopkrung = {
+				}
+				b_kiuxcje = {
+				}
+				b_zjingliu = {
+				}
+				b_nopkhe = {
+				}
+				b_singa = {
+				}
+			}
+			c_zsiox = {
+
+				color={ 181 132 251 }
+				color2={ 255 255 255 }
+				
+				holy_site = tao
+				holy_site = tao_reformed
+
+				b_pokdaux = {
+				}
+				b_nomkhe = {
+				}
+				b_khienghbyo = {
+				}
+				b_laibyoh = {
+				}
+				b_ngiepjin = {
+				}
+				b_sjang = {
+				}
+				b_zsioxghruaiyanx = {
+				}
+			}
+		}
+		d_zjengto = { #Chengdu
+
+			color={ 245 133 245 }
+			color2={ 255 255 255 }
+
+			capital = 2649 # Antiocheia Eschate
+			
+			sinohellenic = "Antiocheia Eschate"
+			greek = "Antiocheia Eschate"
+			hellenistic = "Antiocheia Eschate"
+			roman = "Antiocheia Eschate"
+			romanokoric = "Antiocheia Eschate"
+			huakyo = "Antiocheia Eschate"
+			nihonohellenic = "Antiocheia Eschate"
+			viethellenic = "Antiocheia Eschate"		
+	
+			c_mjen = {
+
+				color={ 255 133 245 }
+				color2={ 255 255 255 }
+
+				b_prase = {
+				}
+				b_cjangmieng = {
+				}
+				b_lakrung = {
+				}
+				b_mjenzsjinzyen = {
+				}
+				b_ngyoihzjeng = {
+				}
+				b_lyungan = {
+				}
+				b_mjenzjekzyen = {
+				}
+				b_jemzyen = {
+				}
+			}
+			c_muh = {
+
+				color={ 245 143 245 }
+				color2={ 255 255 255 }
+
+				b_minsren = {
+				}
+				b_minchjyen = {
+				}
+				b_zji = {
+				}
+				b_tang = {
+				}
+				b_dangh = {
+				}
+				b_drik = {
+				}
+				b_kecuungkruan = {
+				}
+				b_daukruan = {
+				}
+			}
+			c_hanh = {
+
+				color={ 235 133 245 }
+				color2={ 255 255 255 }
+
+				b_lak = {
+				}
+				b_tokjang = {
+				}
+				b_mjentriuk = {
+				}
+				b_zjipphyangh = {
+				}
+				b_hrauhzyen = {
+				}
+				b_lyungbiunghzsi = {
+				}
+			}
+			c_krenx = {
+
+				color={ 245 133 235 }
+				color2={ 255 255 255 }
+
+				b_jangan = {
+				}
+				b_bjenzyen = {
+				}
+				b_kimsjyix = {
+				}
+				b_yengxneng = {
+				}
+				b_kyoihbjen = {
+				}
+				b_kimdang = {
+				}
+				b_jyungzyen = {
+				}
+				b_prakmuh = {
+				}
+			}
+			c_jek = {
+
+				color={ 255 123 245 }
+				color2={ 255 255 255 }
+				
+				holy_site = tao
+				holy_site = tao_reformed
+				
+				sinohellenic = "Antiocheia Eschate"
+				greek = "Antiocheia Eschate"
+				hellenistic = "Antiocheia Eschate"
+				roman = "Antiocheia Eschate"
+				romanokoric = "Antiocheia Eschate"
+				huakyo = "Antiocheia Eschate"
+				nihonohellenic = "Antiocheia Eschate"
+
+				b_zjengto = {
+				}
+				b_ghruahjang = {
+				sinohellenic = "Antiocheia Eschate"
+				greek = "Antiocheia Eschate"
+				hellenistic = "Antiocheia Eschate"
+				roman = "Antiocheia Eschate"
+				romanokoric = "Antiocheia Eschate"
+				huakyo = "Antiocheia Eschate"
+				nihonohellenic = "Antiocheia Eschate"
+				}
+				b_bie = {
+				}
+				b_srungliu = {
+				}
+				b_sinbyan = {
+				}
+				b_kuangxto = {
+				}
+				b_heming = {
+				}
+				b_lengzyen = {
+				}
+				b_sinto_jek = {
+				}
+			}
+			c_zjyuk = {
+
+				color={ 245 143 235 }
+				color2={ 255 255 255 }
+
+				b_cinhngyan = {
+				}
+				b_krungngyan = {
+				}
+				b_sincin = {
+				}
+				b_yengxkhang = {
+				}
+				b_myanhzip = {
+				}
+				b_kimmrax = {
+				}
+				b_sinchjyen = {
+				}
+			}
+			c_kra = {
+
+				color={ 255 133 235 }
+				color2={ 255 255 255 }
+
+				b_kralyungju = {
+				}
+				b_ngamii = {
+				}
+				b_krepkrung = {
+				}
+				b_gienye = {
+				}
+				b_ghungngrax = {
+				}
+				b_mukchjyen = {
+				}
+				b_kuangsianghzsih = {
+				}
+				b_phoxghenzsih = {
+				}
+			}
+			c_ngrax = {
+
+				color={ 255 123 235 }
+				color2={ 255 255 255 }
+
+				b_ngiamdaux = {
+				}
+				b_mjengsren = {
+				}
+				b_prakdriangx = {
+				}
+				b_losren = {
+				}
+				b_yengkeng = {
+				}
+				b_jaxchjyen = {
+				}
+				b_sesren = {
 				}
 			}
 		}
