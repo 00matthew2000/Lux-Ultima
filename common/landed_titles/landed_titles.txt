@@ -20753,10 +20753,17 @@ e_sassanid = {
 				holy_site = indohelen_reformed
 				holy_site = mand_ruha
 				
-				hellenistic = "Seleukeia"
-				greek = "Seleukeia"
+				hellenistic = "Seleukia" 
+				greek = "Seleukia" 
+				indohellenic = "Seleukia" 
+				gandharan = "Seleukia" 
+				tocharian = "Seleukia" 
+				sinohellenic = "Seleukia" 
+				viethellenic = "Seleukia" 
 				roman = "Ctesiphon"
-				persian = "Tisfon"
+				persian = "Tosbon" 
+				parthian = "Tosbon" 
+				saka = "Tosbon"
 				bedouin_arabic = "Mada'in"
 				levantine_arabic = "Mada'in"
 				andalusian_arabic = "Mada'in"
@@ -32131,16 +32138,11 @@ e_britannia = {
 	pictish = Alba
 	breton = Prydain
 	
-	# Creation/usurpation trigger
 	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture = romanobrython
-				culture = saxon
-				culture = norman
-				culture_group = celtic
-				culture_group = north_germanic
+		OR = {
+			NOT = { culture = saxon } # encourage Saxon rulers to unify England first
+			any_demesne_title = {
+				title = k_saxons
 			}
 		}
 	}
@@ -32480,6 +32482,9 @@ e_britannia = {
 				roman = Glevum
 			
 				b_gloucester = {
+					roman = "Colonia Glevensium" 
+					welsh = "Caerloyw" 
+					saxon = "Glaiwceaster" 
 				}
 				b_sudeley = {
 				}
@@ -32488,6 +32493,9 @@ e_britannia = {
 				b_cheltenham = {
 				}
 				b_cirencester = {
+					roman = "Corinium Dobunnorum" 
+					saxon = "Cyrneceaster" 
+					welsh = "Caer Ceri" 
 				}
 				b_winchcombe = {
 				}
@@ -32523,7 +32531,6 @@ e_britannia = {
 			
 				b_hereford = {
 					saxon = "Hereford" 
-					
 				}
 				b_leominster = {
 					welsh = "Llanllieni" 
@@ -33573,6 +33580,7 @@ e_britannia = {
 					pictish = "Lanbrin"
 					welsh = "Llanbryn"
 					irish = "Cillecnoc"
+					saxon = "Coldingaham"
 				}
 				b_huntly = {
 					pictish = "Istrad Bach"
