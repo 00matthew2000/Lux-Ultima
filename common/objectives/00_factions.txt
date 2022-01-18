@@ -20,6 +20,10 @@ faction_succ_seniority = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -356,6 +360,26 @@ faction_succ_seniority = {
 		modifier = {
 			factor = 4.0
 			FROM = { trait = ambitious }
+		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
 		}
 	}
 	
@@ -704,6 +728,26 @@ faction_succ_seniority = {
 			factor = 4.0
 			trait = ambitious
 		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				ROOT = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				ROOT = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
 	}
 	
 	success = {
@@ -739,6 +783,10 @@ faction_succ_primogeniture = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -1052,6 +1100,26 @@ faction_succ_primogeniture = {
 		modifier = {
 			factor = 4.0
 			FROM = { trait = ambitious }
+		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
 		}
 	}
 	
@@ -1397,6 +1465,26 @@ faction_succ_primogeniture = {
 			factor = 4.0
 			trait = ambitious
 		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
 	}
 	
 	success = {
@@ -1433,6 +1521,10 @@ faction_succ_gavelkind = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -1835,6 +1927,26 @@ faction_succ_gavelkind = {
 			factor = 4.0
 			FROM = { trait = ambitious }
 		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -2153,6 +2265,26 @@ faction_succ_gavelkind = {
 			factor = 4.0
 			trait = ambitious
 		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
 	}
 	
 	success = {
@@ -2188,6 +2320,10 @@ faction_succ_feudal_elective = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -2962,6 +3098,10 @@ faction_lower_crown_authority = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		NOT = { has_dlc = "Zeus" }
 		prisoner = no
 		is_ruler = yes
@@ -3243,6 +3383,26 @@ faction_lower_crown_authority = {
 			factor = 4.0
 			FROM = { trait = ambitious }
 		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -3507,6 +3667,26 @@ faction_lower_crown_authority = {
 			factor = 4.0
 			trait = ambitious
 		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
 	}
 	
 	success = {
@@ -3546,6 +3726,10 @@ faction_loosen_clan_control = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -4134,6 +4318,10 @@ faction_independence = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -4149,7 +4337,10 @@ faction_independence = {
 				OR = {
 					is_council_content = no
 					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					has_landed_title = e_china_west_governor
+					#has_landed_title = e_china_west_governor
+					#has_council = no
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
 				}
 			}
 		}
@@ -4257,11 +4448,14 @@ faction_independence = {
 				is_voter = no
 				is_nomadic = yes
 				is_tribal = yes
-				liege = {
+				liege = { 
 					OR = {
 						is_council_content = no
 						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						has_landed_title = e_china_west_governor
+						#has_landed_title = e_china_west_governor
+						#has_council = no
+						has_character_modifier = mandate_of_heaven_2
+						has_character_modifier = mandate_of_heaven_1
 					}
 				}
 			}
@@ -4349,6 +4543,10 @@ faction_independence = {
 						NOT = { ROOT = { tier = KING } }
 					}
 				}
+				NOR = {
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
+				}
 			}
 		}
 		
@@ -4376,6 +4574,10 @@ faction_independence = {
 					culture = ROOT
 				}
 				NOT = { distance = { who = ROOT distance = 200 } }
+				NOR = {
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
+				}
 			}
 		}
 		
@@ -4402,6 +4604,10 @@ faction_independence = {
 						culture = ROOT
 						religion = ROOT
 					}
+				}
+				NOR = {
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
 				}
 			}
 		}
@@ -4597,10 +4803,30 @@ faction_independence = {
 			liege = {
 				government = confucian_bureaucracy
 			}
-			offmap_china = {
-				NOR = {
-					has_status = china_stable
-					has_status = china_golden_age
+			#offmap_china = {
+			#	NOR = {
+			#		has_status = china_stable
+			#		has_status = china_golden_age
+			#	}
+			#}
+		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
 				}
 			}
 		}
@@ -4668,6 +4894,10 @@ faction_independence = {
 						NOT = { ROOT = { tier = KING } }
 					}
 				}
+				NOR = {
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
+				}
 			}
 			NOT = {	
 				has_opinion_modifier = {
@@ -4692,6 +4922,10 @@ faction_independence = {
 					culture = ROOT
 				}
 				NOT = { distance = { who = ROOT distance = 200 } }
+				NOR = {
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
+				}
 			}
 			NOT = {	
 				has_opinion_modifier = {
@@ -4745,6 +4979,10 @@ faction_independence = {
 						religion = ROOT
 					}
 				}
+				NOR = {
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
+				}
 			}
 			NOT = {	
 				has_opinion_modifier = {
@@ -4782,6 +5020,10 @@ faction_independence = {
 				primary_title = { is_tribal_type_title = yes }
 				culture = ROOT
 				religion = ROOT
+				NOR = {
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
+				}
 			}
 		}
 		
@@ -4806,6 +5048,10 @@ faction_independence = {
 							}
 						}
 					}
+				}
+				NOR = {
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
 				}
 			}
 			NOT = {	
@@ -5047,10 +5293,30 @@ faction_independence = {
 			liege = {
 				government = confucian_bureaucracy
 			}
-			offmap_china = {
-				NOR = {
-					has_status = china_stable
-					has_status = china_golden_age
+			#offmap_china = {
+			#	NOR = {
+			#		has_status = china_stable
+			#		has_status = china_golden_age
+			#	}
+			#}
+		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				ROOT = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				ROOT = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
 				}
 			}
 		}
@@ -5090,6 +5356,10 @@ faction_claimant = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -5105,6 +5375,9 @@ faction_claimant = {
 				OR = {
 					is_council_content = no
 					NOT = { primary_title = { has_law = war_voting_power_1 } }
+					#has_council = no
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
 				}
 			}
 		}
@@ -5278,6 +5551,8 @@ faction_claimant = {
 						is_council_content = no
 						NOT = { primary_title = { has_law = war_voting_power_1 } }
 						#has_council = no
+						has_character_modifier = mandate_of_heaven_2
+						has_character_modifier = mandate_of_heaven_1
 					}
 				}
 			}
@@ -5842,7 +6117,120 @@ faction_claimant = {
 				}
 			}
 		}
-	}
+		modifier = {
+				factor = 0.5
+				liege = {
+					has_character_modifier = mandate_of_heaven_4
+					FROM = {
+						has_acceptable_chinese_religion_trigger = yes
+						culture_group = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				liege = {
+					has_character_modifier = mandate_of_heaven_5
+					FROM = {
+						has_acceptable_chinese_religion_trigger = yes
+						culture_group = PREV
+					}
+				}
+			}
+			
+			# NEVER depose the Imperial Family as far as k_chrysanthemum_throne goes!
+			modifier = {
+				factor = 0
+				OR = {
+					has_global_flag = imperial_family_deposed
+					liege = {
+						religion = nihon_shinto
+						controls_religion = yes
+					}
+				}
+				new_character = {
+					NOT = {
+						dynasty = 1000027000 # Imperial Family
+					}
+					NOT = {
+						character = FROM # You can back yourself
+					}
+				}
+				# Assuming we care...
+				OR = {
+					religion = nihon_shinto
+					AND = {
+						religion_group = bud_group
+						culture = japanese
+					}
+				}
+				# ... and that it isn't just a faction for the Shogunate or a lesser kingdom
+				ROOT = {
+					title = k_chrysanthemum_throne
+				}
+			}
+			
+			# Do it less frequently if they previously were deposed
+			modifier = {
+				factor = 0.1
+				OR = {
+					has_global_flag = imperial_family_deposed
+					liege = {
+						religion = nihon_shinto
+						controls_religion = yes
+					}
+				}
+				new_character = {
+					NOT = {
+						dynasty = 1000027000 # Imperial Family
+					}
+					NOT = {
+						character = FROM # You can back yourself...
+					}
+				}
+				# Assuming we care...
+				OR = {
+					religion = nihon_shinto
+					AND = {
+						religion_group = bud_group
+						culture = japanese
+					}
+				}
+				# ... and that it isn't just a faction for the Shogunate or a lesser kingdom
+				ROOT = {
+					title = k_chrysanthemum_throne
+				}
+			}
+			
+			# NEVER depose the Tenno in favour of the Regent!
+			modifier = {
+				factor = 0
+				OR = {
+					has_global_flag = imperial_family_deposed
+					liege = {
+						religion = nihon_shinto
+						controls_religion = yes
+					}
+				}
+				new_character = {
+					OR = {
+						trait = japanese_regent
+						trait = japanese_regent2 # The Shogun's Regent should also not be an option
+					}
+					NOT = {
+						character = ROOT # You can back yourself...
+					}
+				}
+				# Assuming we care...
+				OR = {
+					religion = nihon_shinto
+					AND = {
+						religion_group = bud_group
+						culture = japanese
+					}
+				}
+			}
+		}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
 	membership = {
@@ -6450,6 +6838,119 @@ faction_claimant = {
 				has_opinion_modifier = { who = LIEGE modifier = opinion_tyrant }
 			}
 		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		
+		# NEVER depose the Imperial Family as far as k_chrysanthemum_throne goes!
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = imperial_family_deposed
+				liege = {
+					religion = nihon_shinto
+					controls_religion = yes
+				}
+			}
+			new_character = {
+				NOT = {
+					dynasty = 1000027000 # Imperial Family
+				}
+				NOT = {
+					character = FROM # You can back yourself
+				}
+			}
+			# Assuming we care...
+			OR = {
+				religion = nihon_shinto
+				AND = {
+					religion_group = bud_group
+					culture = japanese
+				}
+			}
+			# ... and that it isn't just a faction for the Shogunate or a lesser kingdom
+			ROOT = {
+				title = k_chrysanthemum_throne
+			}
+		}
+		
+		# Do it less frequently if they previously were deposed
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_global_flag = imperial_family_deposed
+				liege = {
+					religion = nihon_shinto
+					controls_religion = yes
+				}
+			}
+			new_character = {
+				NOT = {
+					dynasty = 1000027000 # Imperial Family
+				}
+				NOT = {
+					character = FROM # You can back yourself...
+				}
+			}
+			# Assuming we care...
+			OR = {
+				religion = nihon_shinto
+				AND = {
+					religion_group = bud_group
+					culture = japanese
+				}
+			}
+			# ... and that it isn't just a faction for the Shogunate or a lesser kingdom
+			ROOT = {
+				title = k_chrysanthemum_throne
+			}
+		}
+		
+		# NEVER depose the Tenno in favour of the Regent!
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = imperial_family_deposed
+				liege = {
+					religion = nihon_shinto
+					controls_religion = yes
+				}
+			}
+			new_character = {
+				OR = {
+					trait = japanese_regent
+					trait = japanese_regent2 # The Shogun's Regent should also not be an option
+				}
+				NOT = {
+					character = ROOT # You can back yourself...
+				}
+			}
+			# Assuming we care...
+			OR = {
+				religion = nihon_shinto
+				AND = {
+					religion_group = bud_group
+					culture = japanese
+				}
+			}
+		}
 	}
 	
 	success = {
@@ -6478,6 +6979,10 @@ faction_antiking = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -6971,6 +7476,10 @@ faction_overthrow = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -7898,6 +8407,10 @@ faction_increase_council_power = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		has_dlc = "Zeus"
 		prisoner = no
 		is_ruler = yes
@@ -7912,6 +8425,10 @@ faction_increase_council_power = {
 				OR = {
 					is_council_content = no
 					NOT = { primary_title = { has_law = war_voting_power_1 } }
+					NOR = {
+						has_character_modifier = mandate_of_heaven_2
+						has_character_modifier = mandate_of_heaven_1
+					}
 				}
 			}
 		}
@@ -8584,6 +9101,26 @@ faction_increase_council_power = {
 			factor = 4.0
 			trait = ambitious
 		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
 	}
 	
 	success = {
@@ -8622,6 +9159,10 @@ faction_powerful_vassal_takeover = {
 	
 	# Plotter scope
 	potential = {
+		NOR = {
+			trait = treasure_fleet_preparation
+			trait = treasure_fleet_voyage
+		}
 		has_dlc = "Zeus"
 		prisoner = no
 		is_ruler = yes
@@ -8637,13 +9178,19 @@ faction_powerful_vassal_takeover = {
 					is_council_content = no
 					NOT = { primary_title = { has_law = war_voting_power_1 } }
 					#has_council = no
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
 				}
 			}
 		}
 		NOT = { trait = incapable }
 		liege = {
 			is_feudal = yes
-			NOT = { government = chinese_imperial_government }
+			OR = {
+				NOT = { government = chinese_imperial_government }
+				has_character_modifier = mandate_of_heaven_2
+				has_character_modifier = mandate_of_heaven_1
+			}
 			NOT = { controls_religion = yes }
 			NOT = {
 				any_demesne_title = {
@@ -8717,6 +9264,8 @@ faction_powerful_vassal_takeover = {
 						is_council_content = no
 						NOT = { primary_title = { has_law = war_voting_power_1 } }
 						#has_council = no
+						has_character_modifier = mandate_of_heaven_2
+						has_character_modifier = mandate_of_heaven_1
 					}
 				}
 			}
@@ -8796,6 +9345,10 @@ faction_powerful_vassal_takeover = {
 						}
 					}
 				}
+				NOR = {
+					has_character_modifier = mandate_of_heaven_2
+					has_character_modifier = mandate_of_heaven_1
+				}
 			}
 		}
 		
@@ -8842,6 +9395,12 @@ faction_powerful_vassal_takeover = {
 				NOR = {
 					has_opinion_modifier = { who = LIEGE modifier = opinion_evil_tyrant }
 					has_opinion_modifier = { who = LIEGE modifier = opinion_tyrant }
+					liege = {
+						OR = {
+							has_character_modifier = mandate_of_heaven_2
+							has_character_modifier = mandate_of_heaven_1
+						}
+					}
 				}
 			}
 		}
@@ -8921,6 +9480,26 @@ faction_powerful_vassal_takeover = {
 		modifier = {
 			factor = 4.0
 			FROM = { trait = ambitious }
+		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				FROM = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
 		}
 	}
 	
@@ -9076,6 +9655,12 @@ faction_powerful_vassal_takeover = {
 			NOR = {
 				has_opinion_modifier = { who = LIEGE modifier = opinion_evil_tyrant }
 				has_opinion_modifier = { who = LIEGE modifier = opinion_tyrant }
+				liege = {
+					OR = {
+						has_character_modifier = mandate_of_heaven_2
+						has_character_modifier = mandate_of_heaven_1
+					}
+				}
 			}
 		}
 		
@@ -9183,6 +9768,26 @@ faction_powerful_vassal_takeover = {
 		modifier = {
 			factor = 4.0
 			trait = ambitious
+		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_character_modifier = mandate_of_heaven_4
+				ROOT = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_character_modifier = mandate_of_heaven_5
+				ROOT = {
+					has_acceptable_chinese_religion_trigger = yes
+					culture_group = PREV
+				}
+			}
 		}
 	}
 	

@@ -8325,6 +8325,64 @@ chinese_group = {
 		religious_clothing_head = 6
 		religious_clothing_priest = 4
 	}
+
+	shenjiao = { #Chinese folk religion
+		has_coa_on_barony_only = yes
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+
+		icon = 60
+
+		color = { 0.9 0.4 0.1 }
+		
+		high_god_name = GOD_SHANGDI
+		god_names = {
+			GOD_SHANGDI GOD_PANGU GOD_FUXI GOD_NUWA GOD_CHANG'E GOD_SHENNONG GOD_HUANGDI GOD_GUAN_YU GOD_CAISHEN GOD_THE_JIUHUANG_DAI
+			GOD_QIYE GOD_BAYE GOD_YU_HUANG GOD_TUDI_GONG GOD_WENCHANGDI GOD_XI_WANGMU GOD_YUEXIA_LAOREN GOD_ZAOSHEN
+			GOD_MAZU GOD_SHOUSHEN GOD_FUSHEN GOD_LUSHEN
+		}
+		evil_god_names = {
+			YAN_WANG
+		}
+
+		scripture_name = THE_ZHIGUAI
+		priest_title = WU
+		piety_name = XIAO
+
+		character_modifier = {
+			stewardship = 2
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		intermarry = melanesian_religion
+		intermarry = melanesian_religion_reformed
+		intermarry = taiwanese_religion
+		intermarry = taiwanese_religion_reformed
+		intermarry = philippine_religion
+		intermarry = philippine_religion_reformed
+		intermarry = bornean_religion
+		intermarry = bornean_religion_reformed	
+		intermarry = sulawesi_religion
+		intermarry = sulawesi_religion_reformed
+		intermarry = flores_religion
+		intermarry = flores_religion_reformed
+		intermarry = java_religion
+		intermarry = java_religion_reformed	
+		intermarry = sumatran_religion
+		intermarry = sumatran_religion_reformed	
+		intermarry = malagasy_religion
+		intermarry = malagasy_religion_reformed	
+
+	}
 	
 	lubu = {
 		graphical_culture = mongolgfx
@@ -30769,121 +30827,6 @@ native_american_group = {
 
 	}
 
-	dreamtime_religion_reformed = {
-		graphical_culture = africangfx
-		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
-		secondary_event_pictures = sunni
-
-		icon = 35
-		heresy_icon = 36
-		
-		ai_convert_other_group = 2 # always try to convert
-		
-		color = { 0.6 0.4 0.3 }
-		alternate_start = { always = no }
-		
-		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
-		priest_title = SHAMAN
-		
-		high_god_name = GOD_THE_CREATOR
-		
-		god_names = {
-			GOD_THE_SPIRITS GOD_THE_ANCESTORS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-
-		
-		priests_can_marry = yes
-		female_temple_holders = yes
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		allow_looting = yes
-		max_consorts = 3
-		short_reign_opinion_year_mult = 1.5
-
-		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-
-		intermarry = melanesian_religion_reformed
-		intermarry = melanesian_religion
-		
-		allow_in_ruler_designer = no
-		intermarry = dreamtime_religion
-		aggression = 0.7 # AI aggression factor
-	}
-	
-	dreamtime_religion = {
-		graphical_culture = africangfx
-		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
-
-		icon = 34
-		heresy_icon = 35
-		
-		color = { 0.9 0.75 0.55 }
-
-		scripture_name = THE_LEGENDS
-		priest_title = SHAMAN
-		
-		high_god_name = GOD_THE_CREATOR
-		
-		god_names = {
-			GOD_THE_SPIRITS GOD_THE_ANCESTORS
-		}
-		evil_god_names = {
-			THE_DARK_SPIRITS
-		}
-		
-		unit_modifier = {		
-			garrison_size = 0.3
-			levy_size = 0.1
-			
-			key = "DEF_RELIGION"
-		}
-		unit_home_modifier = {
-			land_morale = 0.9
-			light_infantry_defensive = 0.9
-			heavy_infantry_defensive = 0.8
-			pikemen_defensive = 0.8
-			light_cavalry_defensive = 0.8
-			knights_defensive = 0.8
-			archers_defensive = 0.9
-			horse_archers_defensive = 0.8
-			camel_cavalry_defensive = 0.8
-			war_elephants_defensive = 0.8
-			
-			garrison_size = 0.4
-			
-			key = "DEF_RELIGION_HOME_TERRITORY"
-		}
-
-		
-		priests_can_marry = yes
-		female_temple_holders = yes
-		defensive_attrition = yes
-		allow_looting = yes
-	
-		short_reign_opinion_year_mult = 2	
-		max_consorts = 1
-		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		reformed = dreamtime_religion_reformed
-		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-		
-		dislike_tribal_organization = yes
-		can_demand_religious_conversion = no
-		
-		intermarry = melanesian_religion_reformed
-		intermarry = melanesian_religion
-		aggression = 0.7 # AI aggression factor
-	
-	}
-
 	animism_reformed = {
 		graphical_culture = africangfx
 		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
@@ -32338,12 +32281,126 @@ native_american_group = {
 
 austronesian_group = {
    	graphical_culture = indiangfx
-    playable = yes
+    	playable = yes
 	has_coa_on_barony_only = no
 	hostile_within_group = yes
 	
 	color = { 0.09 0.98 0.12 }
 
+	dreamtime_religion_reformed = {
+		graphical_culture = africangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		secondary_event_pictures = sunni
+
+		icon = 35
+		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.6 0.4 0.3 }
+		alternate_start = { always = no }
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+		short_reign_opinion_year_mult = 1.5
+
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+
+		intermarry = melanesian_religion_reformed
+		intermarry = melanesian_religion
+		
+		allow_in_ruler_designer = no
+		intermarry = dreamtime_religion
+		aggression = 0.7 # AI aggression factor
+	}
+	
+	dreamtime_religion = {
+		graphical_culture = africangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 0.9 0.75 0.55 }
+
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		unit_modifier = {		
+			garrison_size = 0.3
+			levy_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.9
+			light_infantry_defensive = 0.9
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.8
+			knights_defensive = 0.8
+			archers_defensive = 0.9
+			horse_archers_defensive = 0.8
+			camel_cavalry_defensive = 0.8
+			war_elephants_defensive = 0.8
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+	
+		short_reign_opinion_year_mult = 2	
+		max_consorts = 1
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = dreamtime_religion_reformed
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		
+		intermarry = melanesian_religion_reformed
+		intermarry = melanesian_religion
+		aggression = 0.7 # AI aggression factor
+	
+	}
 	maori_religion_reformed = {
 		graphical_culture = africangfx
 		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
@@ -32812,64 +32869,6 @@ eastern_folk_group = {
 		intermarry = malagasy_religion
 		intermarry = malagasy_religion_reformed	
 		
-	}
-	
-	shenjiao = { #Chinese folk religion
-		has_coa_on_barony_only = yes
-		graphical_culture = chinesegfx
-		secondary_event_pictures = sunni
-
-		icon = 60
-
-		color = { 0.9 0.4 0.1 }
-		
-		high_god_name = GOD_SHANGDI
-		god_names = {
-			GOD_SHANGDI GOD_PANGU GOD_FUXI GOD_NUWA GOD_CHANG'E GOD_SHENNONG GOD_HUANGDI GOD_GUAN_YU GOD_CAISHEN GOD_THE_JIUHUANG_DAI
-			GOD_QIYE GOD_BAYE GOD_YU_HUANG GOD_TUDI_GONG GOD_WENCHANGDI GOD_XI_WANGMU GOD_YUEXIA_LAOREN GOD_ZAOSHEN
-			GOD_MAZU GOD_SHOUSHEN GOD_FUSHEN GOD_LUSHEN
-		}
-		evil_god_names = {
-			YAN_WANG
-		}
-
-		scripture_name = THE_ZHIGUAI
-		priest_title = WU
-		piety_name = XIAO
-
-		character_modifier = {
-			stewardship = 2
-		}
-
-		has_heir_designation = yes
-		can_grant_divorce = yes
-		priests_can_inherit = no
-		max_consorts = 3
-		
-		short_reign_opinion_year_mult = 0 # No short reign penalty
-		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
-
-		intermarry = melanesian_religion
-		intermarry = melanesian_religion_reformed
-		intermarry = taiwanese_religion
-		intermarry = taiwanese_religion_reformed
-		intermarry = philippine_religion
-		intermarry = philippine_religion_reformed
-		intermarry = bornean_religion
-		intermarry = bornean_religion_reformed	
-		intermarry = sulawesi_religion
-		intermarry = sulawesi_religion_reformed
-		intermarry = flores_religion
-		intermarry = flores_religion_reformed
-		intermarry = java_religion
-		intermarry = java_religion_reformed	
-		intermarry = sumatran_religion
-		intermarry = sumatran_religion_reformed	
-		intermarry = malagasy_religion
-		intermarry = malagasy_religion_reformed	
-
 	}
 	
 	benzhujiao = { #Bai folk religion

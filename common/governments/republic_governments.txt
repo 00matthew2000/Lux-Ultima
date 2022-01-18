@@ -178,6 +178,7 @@ republic_governments = {
 				NOT = {	religion = 	shiite	}
 				NOT = {	religion = 	sunni	}
 				NOT = {	religion = 	zahiri	}
+				NOT = {	religion = 	nihon_shinto  }
 				NOT = {	religion = 	baltic_pagan_reformed 	}
 				NOT = {	religion = 	bantu_pagan_reformed	}
 				NOT = {	religion = 	berber_pagan_reformed	}
@@ -249,6 +250,10 @@ republic_governments = {
 			tribal_government
 			merchant_republic_government
 			republic_government
+			chinese_vassal_government
+			japanese_imperial_government
+			japanese_feudal_government
+			japanese_monastic_feudal_government
 		}
 		gets_religion_opinion_penalties = no
 		vassal_government_opinion_penalties = no

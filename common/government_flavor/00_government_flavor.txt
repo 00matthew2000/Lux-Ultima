@@ -3464,6 +3464,7 @@ government_flavor = {
 		is_vice_royalty = yes
 		tier = DUKE
 		NOT = { culture_group = byzantine }
+		NOT = { culture_group = chinese }
 	}
 }
 
@@ -3475,6 +3476,7 @@ government_flavor = {
 		is_vice_royalty = yes
 		tier = KING
 		NOT = { culture_group = byzantine }
+		NOT = { culture_group = chinese }
 	}
 }
 
@@ -3840,6 +3842,24 @@ government_flavor = {
 	trigger = {
 		government = messianic_government
 		
+	}
+}
+
+government_flavor = {
+	name = gov_confucian
+	graphics = GFX_evt_chinese_emissary
+	priority = 4
+	trigger = {
+		government = confucian_bureaucracy
+	}
+}
+
+government_flavor = {
+	name = gov_pretender_chinese_empire
+	graphics = GFX_evt_chinese_emissary
+	priority = 4
+	trigger = {
+		government = chinese_imperial_government
 	}
 }
 

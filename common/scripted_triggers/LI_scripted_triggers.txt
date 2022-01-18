@@ -52,6 +52,11 @@ LI_pagan_trigger = {	#"Pagan" religions = Tribal Governments
 		religion = voipel
 		religion = zande_pagan
 		religion = zulu_pagan
+		religion_group = asian_religion_group
+		religion_group = eastern_folk_group
+		religion_group = native_american_group
+		religion_group = bantu_group
+		religion_group = austronesian_group
 	}
 }
 LI_norse_pagan_trigger = {
@@ -124,6 +129,7 @@ LI_allows_gurus_trigger = {
 		religion = tao_reformed
 		religion = confucian
 		religion = zz01_vedanta
+		religion_group = chinese_group
 	}
 }
 
