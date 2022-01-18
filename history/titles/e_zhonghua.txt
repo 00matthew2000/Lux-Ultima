@@ -180,8 +180,9 @@
 	name = "Song"
 	adjective = "Song"
 	effect = {
+		set_title_flag = pretender_chinese_empire
 		set_title_flag = song_china
-		set_global_flag = song_china_exists
+		set_global_flag = pretender_song_china_exists	
 		set_preferred_capital = 2882 # Bianjing(/Dongjing), a.k.a. Kaifeng
 	}
 	law = crown_authority_1

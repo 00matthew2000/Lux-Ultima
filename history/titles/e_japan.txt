@@ -1,3 +1,71 @@
+# Asuka Period
+672.8.21 = {
+	law = agnatic_succession
+	#law = succ_primogeniture
+	law = tenno
+	effect = {
+		insert_title_history = k_japan # Will add all history entries in k_japan earlier than the earliest entry here
+	}
+}
+
+# Nara Period
+707.7.18 = {
+	law = crown_authority_1
+	#law = succ_primogeniture
+	law = tenno
+	law = centralization_1
+	law = imperial_administration
+	law = ze_administration_laws_2
+	law = vice_royalty_1
+	#law = revoke_title_law_0
+}
+
+#Heian Period
+781.4.30 = {
+	law = crown_authority_1
+	law = succ_primogeniture
+	law = centralization_1
+	law = imperial_administration
+	law = ze_administration_laws_2
+	law = vice_royalty_2
+	#law = revoke_title_law_1	
+	law = law_voting_power_1
+}
+
+809.5.8 = {
+	effect = {
+		set_global_flag = minamoto_exist # Technically happened a bit later, but as long as it happens for Saga...
+	}
+}
+
+858.10.7 = {
+	effect = {
+		set_global_flag = japanese_regency
+	}
+	# Fujiwara Yoshifusa becomes the Kampaku
+	law = regent_marriage_control_1
+	law = regent_vassal_control_1
+	law = regent_prisoner_control_0
+	law = regent_treasury_control_0
+	law = regent_execution_control_0
+	law = regent_title_control_0
+	law = regent_succession_control_0
+	law = vassal_wars_law_0
+}
+
+876.12.18 = {
+	# Fujiwara Mototsune invents the position of Sessho
+	law = regent_prisoner_control_1
+	law = regent_treasury_control_1
+}
+
+1016.3.24 = {
+	# Fujiwara Michinaga is in control - zenith of the Regent's power
+	law = regent_execution_control_1
+	law = regent_title_control_1
+	law = regent_succession_control_1
+}
+
 1045.2.5={
 	holder = 1000075047 #Emperor Go-Reizei
 }

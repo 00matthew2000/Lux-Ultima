@@ -707,6 +707,18 @@ laws = {
 		allow = {
 			NOT = { has_law = ze_administration_laws_2 }
 			NOT = { holder_scope = { government = classical_government } }
+			NOT = {
+				holder_scope = {
+					tier = emperor
+					government = chinese_imperial_government
+				}
+			}
+			NOT = {
+				holder_scope = {
+					religion = nihon_shinto
+					controls_religion = yes
+				}
+			}
 		}
 		potential = {
 			has_dlc = "Zeus"
@@ -757,6 +769,12 @@ laws = {
 							holder_scope = { government = oriental_monarchy_government }
 							has_law = centralization_2
 						}
+					}
+				}
+				NOT = {
+				holder_scope = {
+					tier = emperor
+					government = chinese_imperial_government
 					}
 				}
 			}
@@ -830,6 +848,13 @@ laws = {
 						has_law = clanic_centralization_4
 						prestige = 2000
 					}
+				}
+				NOR = { 
+					government = chinese_imperial_government 
+					government = chinese_vassal_government
+					government = japanese_imperial_government
+					government = japanese_feudal_government
+					government = japanese_monastic_feudal_government
 				}
 			}
 #			NOT = { has_law = ze_administration_laws_0 } # commenting gives a way out for non reformed religions, if they succeed in creating an empire

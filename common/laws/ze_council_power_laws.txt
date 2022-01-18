@@ -1341,6 +1341,13 @@ laws = {
 			holder_scope = {
 				is_feudal = yes
 			}
+			holder_scope = { # Neither the Tenno nor the EoC should be elected!
+				NOR = {
+					government = chinese_imperial_government
+					government = japanese_imperial_government
+				}
+			}
+			holy_order = no														  	  
 		}
 		#revoke_allowed = {
 			#always = no
