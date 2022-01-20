@@ -677,15 +677,6 @@ e_german = {
 		culture = saxon
 
 		capital = 257 # Brunswick
-
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture = saxon
-				}
-			}
-		}
 		
 		catholic = 3000 # Crusade target weight
 		norse_pagan_reformed = 500 # Crusade target weight
@@ -9000,18 +8991,6 @@ e_scandinavia = {
 		mordvin = Suomi
 		meshchera = Suomi
 		
-		# Creation/usurpation trigger
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture_group = north_germanic
-					culture_group = finno_ugric
-					culture_group = east_slavic
-				}
-			}
-		}
-		
 		d_lapland = {
 			color = { 120 70 90 }
 
@@ -9972,18 +9951,6 @@ e_slavinia = {
 	capital = 527 # Krakowskie
 		
 	culture = polish
-	
-	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture_group = west_slavic
-				culture_group = baltic
-			}
-		}
-	}
-	
-	short_name = yes
 
 	k_moravia = {
 		color = { 145 120 85 }
@@ -10213,10 +10180,6 @@ e_slavinia = {
         catholic = 400 # Crusade target weight
         slavic_pagan_reformed = 100 # Crusade target weight
         baltic_pagan_reformed = 50 # Crusade target weight
-        
-		allow = {
-			k_moravia = { has_holder = no }
-		}
 
         d_bohemia = {
             color={ 195 110 11 }
@@ -15085,30 +15048,10 @@ e_pontic_steppe = {
 	
 	capital = 619 #	Saray
 	
-	short_name = yes
-	
-	# Creation/Usurp Trigger
 	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture_group = altaic
-				culture = alan
-				culture = hungarian
-			}
-		}
+		culture_group = altaic
 	}
 	
-	k_magyar = {
-		color={ 187 70 70 }
-		culture = hungarian
-
-		capital = 522 # Pest
-	
-		allow = {
-			ai = no
-		}
-	}
 	k_bulgar = {
 		color = { 140 120 90 }
 			
@@ -16168,14 +16111,8 @@ e_tartaria = {
 	
 	capital = 1457 # Kara Khorum
 	
-	# Creation/Usurp Trigger
 	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture_group = altaic
-			}
-		}
+		culture_group = altaic
 	}
 	
 	k_mongolia = {
@@ -19072,17 +19009,6 @@ e_sassanid = {
 	mandaean_reformed = 1000
 
 	roman = "Parthicum"
-	
-	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture_group = iranian
-			}
-		}
-	}
-	
-	short_name = yes
 
 	k_persia = {
 		color = { 246 188 0 }
@@ -21439,15 +21365,6 @@ e_pannonia = {
 		
 		capital = 515 # Tirgoviste
 		
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture = romanian
-				}
-			}
-		}
-		
 		d_transylvania = {
 			color = { 255 150 150 }
 			
@@ -23705,26 +23622,6 @@ e_gallia = {
 		
 		catholic = 4000 # Crusade target weight
 		
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					NOT = { has_landed_title = k_france }
-					AND = {
-						has_landed_title = k_france
-						has_landed_title = k_burgundy
-						any_demesne_title = {
-							tier = king
-							NOT = { title = k_france }
-							NOT = { title = k_aquitaine }
-							NOT = { title = k_brittany }
-							NOT = { title = k_burgundy }
-						}
-					}
-				}
-			}
-		}
-		
 		d_aquitaine = {
 			color={ 54 10 243 }
 			color2={ 255 255 255 }
@@ -24159,26 +24056,6 @@ e_spain = {
 		capital = 190 # Leon
 		
 		culture = castillan
-		
-		# Creation/usurpation trigger
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					religion_group = christian
-				}
-			}
-			conditional_tooltip = {
-				trigger = {
-					k_leon = {
-						is_titular = yes
-					}
-				}
-				k_leon = {
-					is_titular = no
-				}
-			}
-		}
 		
 		catholic = 250 # Crusade target weight
 		muslim = 25 # Crusade target weight
@@ -24967,25 +24844,6 @@ e_spain = {
 		
 		culture = castillan
 		
-		allow = {
-			conditional_tooltip = {
-				trigger = {
-					k_castille = {
-						is_titular = yes
-					}
-				}
-				k_castille = {
-					is_titular = no
-				}
-			}
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					religion_group = christian
-				}
-			}	
-		}
-		
 		catholic = 250 # Crusade target weight
 		muslim = 25 # Crusade target weight
 		
@@ -25208,19 +25066,6 @@ e_spain = {
 		culture = basque
 
 		roman = "Vasconia"
-		
-		# Creation/usurpation trigger
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					AND = {
-						culture = basque
-						religion_group = christian
-					}
-				}
-			}
-		}
 		
 		d_navarra = {
 			color = { 230 198 90 }
@@ -25489,15 +25334,6 @@ e_spain = {
 		castillan = "Granada"
 		catalan = "Granada"
 		portuguese = "Granada"
-		
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture_group = arabic
-				}
-			}
-		}
 		
 		d_cordoba = {
 			color = { 60 180 12 }
@@ -27061,9 +26897,9 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				color = { 168 210 182 }
 				color2 = { 255 255 255 }
 				
-				hellenistic = "Kallinikos"
-				greek = "Kallinikos"
-				roman = "Callinicum"
+				greek = Kallinikos
+				hellenistic = Kallinikos
+				roman = Kallinikus
 			
 				b_raqqah = {
 					hellenistic = "Kallinikos"
@@ -27609,8 +27445,8 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				nubian = "Djani"
 				
 				b_tjaru = {
-					hellenistic = "Sele"
-					greek = "Sele"
+					hellenistic = "Zele" 
+					greek = "Sile"
 					roman = "Sile"
 					nubian = "Sle"
 					egyptian_arabic = "Tajaru"
@@ -28400,7 +28236,10 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					maghreb_arabic = "Isiwan"
 					levantine_arabic = "Siwah"
 					andalusian_arabic = "Siwah"
-					nubian = "Sesamu"
+					nubian = "Timasirayn" 
+					sao = "Timasirayn" 
+					fur = "Timasirayn" 
+					luo = "Timasirayn"
 				}
 				b_quattara = {
 					nubian = "Attara"
@@ -28521,6 +28360,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				#holy_site = shaytana
 				hellenistic = "Alexandreia Katisson"
 				roman = "Alexandria ad Issum"
+				greek = "Alexandria ad Issum"
 				bedouin_arabic = "Iskandaruna"
 				maghreb_arabic = "Iskandaruna"
 				levantine_arabic = "Iskandaruna"
@@ -28531,6 +28371,7 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 			
 				b_alexandretta = {
 					hellenistic = "Alexandreia Katisson"
+					greek = "Alexandria ad Issum"
 					roman = "Alexandria ad Issum"
 					bedouin_arabic = "Iskandaruna"
 					maghreb_arabic = "Iskandaruna"
@@ -29211,17 +29052,6 @@ e_maghreb = {
 	capital = 843 # Marrakech
 	
 	culture = maghreb_arabic
-	
-	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture = maghreb_arabic
-			}
-		}
-	}
-	
-	short_name = yes
 	
 	k_mauretania = {
 		color={ 58 188 41 }
@@ -30230,8 +30060,8 @@ e_maghreb = {
 		color = { 70 105 208 }
 		color2 = { 255 255 255 }
 		
-		title = "Exarch"
-		title_prefix = "Exarchate Of" 
+		title = EXARCH
+		title_prefix = "EXARCHATE OF" 
 		capital = 811
 
 		berber_pagan_reformed = 1000
@@ -31468,7 +31298,7 @@ e_ireland = { # dejure empire for Ireland
 		roman = "Hibernia"
 		swedish = Irland
 		danish = Irland
-		norwegian = Irland
+		norwegian = "Vestmennland"
 		irish = Éire
 		pictish = Iuerthon
 		welsh = Iwerddon
@@ -35815,11 +35645,13 @@ e_india = {
 				
 				b_purusapura = {}
 				b_taksasila = {
-					hellenistic = "Sirkap"
-					greek = "Sirkap"
-					indohellenic = "Sirkap"
-					gandharan = "Sirkap"
-					tocharian = "Sirkap"
+					hellenistic = "Sirkap" 
+					greek = "Sirkap" 
+					indohellenic = "Sirkap" 
+					gandharan = "Sirkap" 
+					tocharian = "Sirkap" 
+					sinohellenic = "Sirkap" 
+					viethellenic = "Sirkap" 
 				}
 				b_hayatabad = {}
 				b_arjunava = {
