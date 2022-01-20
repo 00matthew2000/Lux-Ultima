@@ -28,9 +28,12 @@ bid_for_independence = {
 	
 	is_permanent = yes
 	is_independence = yes
+	
+	# No need to check Chinese Peace Deals
 
 	can_use = {
 		ROOT = {
+			
 			de_facto_liege = FROM
 			
 			higher_tier_than = BARON
@@ -121,6 +124,23 @@ bid_for_independence = {
 				liege_before_war = {
 					is_merchant_republic = yes
 				}
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -312,6 +332,8 @@ cb_faction_independence = {
 	
 	is_independence = yes
 	
+	# No need to check Chinese Peace Deals
+	
 	can_use = {
 		ROOT = {
 			vassal_of = FROM
@@ -350,6 +372,23 @@ cb_faction_independence = {
 				liege_before_war = {
 					in_revolt = no
 				}
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -576,6 +615,8 @@ depose_liege = {
 	is_permanent = yes
 	can_call_vassals = no
 	major_revolt = no
+	
+	# No need to check Chinese Peace Deals
 
 	can_use = {
 		always = no
@@ -647,6 +688,20 @@ depose_liege = {
 	}
 
 	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 		hidden_tooltip = {
 			FROM = {
 				any_vassal = {
@@ -766,6 +821,8 @@ overthrow_ruler = {
 	attacker_can_call_allies = no
 	major_revolt = yes
 	is_tyranny_cb = yes
+	
+	# No need to check Chinese Peace Deals
 
 	can_use = {
 		FROM = {
@@ -810,6 +867,23 @@ overthrow_ruler = {
 				any_vassal = {
 					letter_event = { id = addrebels.0 days = 1 }
 				}
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -1001,6 +1075,20 @@ overthrow_ruler_no_calls = {
 	}
 
 	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 		hidden_tooltip = {
 			FROM = {
 				any_vassal = {
@@ -1738,6 +1826,8 @@ change_seniority_succession_law = {
 	can_ask_to_join_war = no
 	major_revolt = yes
 	
+	# No need to check Chinese Peace Deals
+	
 #	attacker_alliance_occ_warscore = yes # Occupying any holding of any attacker counts towards war score
 	
 	can_use = {
@@ -1784,6 +1874,23 @@ change_seniority_succession_law = {
 			tier = emperor
 			tier = king
 			is_primary_holder_title = yes
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 	
@@ -1945,7 +2052,8 @@ change_primogeniture_succession_law = {
 	major_revolt = yes
 	
 #	attacker_alliance_occ_warscore = yes # Occupying any holding of any attacker counts towards war score
-	
+
+	# No need to check Chinese Peace Deals
 	can_use = {
 		ROOT = {
 			vassal_of = FROM
@@ -1993,6 +2101,22 @@ change_primogeniture_succession_law = {
 		}
 	}
 
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
 		FROM = {
@@ -2153,6 +2277,7 @@ change_feudal_elective_succession_law = {
 	major_revolt = yes
 	
 #	attacker_alliance_occ_warscore = yes # Occupying any holding of any attacker counts towards war score
+	# No need to check Chinese Peace Deals
 	
 	can_use = {
 		ROOT = {
@@ -2358,6 +2483,7 @@ change_gavelkind_succession_law = {
 	major_revolt = yes
 	
 #	attacker_alliance_occ_warscore = yes # Occupying any holding of any attacker counts towards war score
+	# No need to check Chinese Peace Deals
 	
 	can_use = {
 		ROOT = {
@@ -2403,6 +2529,23 @@ change_gavelkind_succession_law = {
 			tier = emperor
 			tier = king
 			is_primary_holder_title = yes
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 	
@@ -2563,6 +2706,7 @@ lower_crown_authority_law = {
 	major_revolt = yes
 	
 #	attacker_alliance_occ_warscore = yes # Occupying any holding of any attacker counts towards war score
+	# No need to check Chinese Peace Deals
 	
 	can_use = {
 		ROOT = {
@@ -2610,6 +2754,22 @@ lower_crown_authority_law = {
 						is_liege_or_above = PREV # or have shared liege
 					}
 				}
+			}
+		}
+	}
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -2741,6 +2901,7 @@ loosen_clan_control_law = {
 	major_revolt = yes
 	
 #	attacker_alliance_occ_warscore = yes # Occupying any holding of any attacker counts towards war score
+	# No need to check Chinese Peace Deals
 	
 	can_use = {
 		ROOT = {
@@ -2788,6 +2949,22 @@ loosen_clan_control_law = {
 						is_liege_or_above = PREV # or have shared liege
 					}
 				}
+			}
+		}
+	}
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -2920,6 +3097,8 @@ weaken_vassal_plot = {
 	can_call_allies = no
 	can_ask_to_join_war = no
 	
+	# No need to check Chinese Peace Deals
+	
 	can_use = {
 		ROOT = {
 			custom_tooltip = {
@@ -2949,6 +3128,23 @@ weaken_vassal_plot = {
 			}
 			holder_scope = {
 				is_liege_or_above = FROM
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -3503,6 +3699,8 @@ cb_install_antiking = {
 	
 	attacker_rel_head_is_ally = yes # The attacker can call his (main) Pope into the war
 	
+	# No need to check Chinese Peace Deals
+	
 	can_use = {
 		ROOT = {
 			vassal_of = FROM
@@ -3541,6 +3739,23 @@ cb_install_antiking = {
 						is_liege_or_above = PREV # or have shared liege
 					}
 				}
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}

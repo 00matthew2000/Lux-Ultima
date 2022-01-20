@@ -12,6 +12,20 @@ crusade = {
 	
 	can_use_gui = {
 		ROOT = {
+			top_liege = {
+				OR = {
+					NOR = { # If your government type ignores religion, don't wage holy war!
+						government = chinese_imperial_government
+						government = chinese_vassal_government
+						government = japanese_imperial_government
+						government = japanese_feudal_government
+						government = confucian_bureaucracy # Not used at present, but should still be here...
+					}
+					FROM = {
+						has_character_modifier = known_satanist
+					}
+				}
+			}
 			has_called_crusade = no
 			religion_authority = 0.05
 			piety = 500
@@ -21,6 +35,8 @@ crusade = {
 	can_use = {
 		#year = 1090
 		ROOT = {
+			
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			mercenary = no
 			is_nomadic = no		
 			is_landed = yes
@@ -607,6 +623,23 @@ crusade = {
 		FROM = {
 			any_realm_title = {
 				de_jure_liege_or_above = PREVPREV
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}

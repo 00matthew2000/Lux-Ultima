@@ -91,6 +91,10 @@ religious_proselyte1 = {
 				trait = tolerant_ruler
 				trait = content
 			}
+			OR = {
+				NOT = { religion = bud_group }
+				piety = 250
+			}
 		}
 	}
 	
@@ -154,11 +158,96 @@ religious_proselyte1 = {
 		ROOT = {	
 			piety = -600
 			scaled_wealth = -0.5
+			show_scope_change = no
+			if = {
+				limit = {
+					religion = buddhist
+				}
+				piety = -250
+			}
+		}
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+	
+	can_use = {
+		ROOT = {
+			
+			NOR = { # If your government type ignores religion, don't wage holy war!
+				government = chinese_imperial_government
+				government = chinese_vassal_government
+				government = japanese_imperial_government
+				government = japanese_feudal_government
+				government = confucian_bureaucracy # Not used at present, but should still be here...
+			}
+		}
+		ROOT = {
+			OR = {
+				NOT = {
+					religion_group = bud_group
+				}
+				FROM = {
+					NOT = {
+						religion = nihon_shinto
+					}
+				}
+			}
+			is_nomadic = no
+			NOT = { religion = tao }
+			NOT = { religion = nihon_shinto }
+			OR = {
+				NOT = { religion = hindu }
+				FROM = { NOT = { has_dharmic_religion_trigger = yes } }
+			}
+			NOT = { same_realm = FROM }
+			OR = {
+				NOT = { religion_group = FROM }
+				is_heresy_of = FROM
+				is_parent_religion = FROM
+				AND = {
+					has_dharmic_religion_trigger = yes
+					FROM = { religion = tao }
+					FROM = { religion = nihon_shinto }
+				}
+			}
+			top_liege = {
+				NOR = { # If your government type ignores religion, don't wage holy war!
+					government = chinese_imperial_government
+					government = chinese_vassal_government
+					government = japanese_imperial_government
+					government = japanese_feudal_government
+					government = confucian_bureaucracy # Not used at present, but should still be here...
+				}
+			}
+			mercenary = no
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 		}
 	}
 	
 	is_valid = {
 		ROOT = {
+			OR = {
+				NOT = { religion_group = FROM }
+				is_heresy_of = FROM
+				is_parent_religion = FROM
+				AND = { #This needs to be checked out...00matthew2000
+					has_dharmic_religion_trigger = yes
+					FROM = { religion = tao }
+					FROM = { religion = nihon_shinto }
+				}
+			}
 			NOR = {
 				same_realm = FROM
 				religion_group = FROM
@@ -2189,7 +2278,10 @@ excommunicated_ruler = {
 
 	can_use = {
 		ROOT = {
+			
 			mercenary = no
+			# Should be irrelevant as an excommunicated EoC won't use the Grace mechanics, but you never know...
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			is_nomadic = no
 			custom_tooltip = {
 				text = NOT_BUSY
@@ -2215,6 +2307,23 @@ excommunicated_ruler = {
 	is_valid = {
 		FROM = {
 			excommunicated_for = ROOT
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 
@@ -2590,6 +2699,7 @@ depose_antipope = {
 	
 	can_use = {
 		ROOT = {
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			custom_tooltip = {
 				text = NOT_BUSY
 				hidden_tooltip = {
@@ -2623,6 +2733,23 @@ depose_antipope = {
 			rightful_religious_head_scope = {
 				is_liege_or_above = PREV
 				has_claim = k_papal_state
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}

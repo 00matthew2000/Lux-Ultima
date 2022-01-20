@@ -36,6 +36,7 @@ peasant_revolt = {
 	
 	is_independence = yes
 	
+	# No need to check Chinese Peace Deals
 	can_use = {
 		ROOT = {
 			primary_title = {
@@ -66,6 +67,23 @@ peasant_revolt = {
 			}
 			holder_scope = {
 				is_liege_or_above = FROM
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -154,6 +172,7 @@ heretic_revolt = {
 	hostile_against_others = yes
 	can_ask_to_join_war = no
 	
+	# No need to check Chinese Peace Deals
 	can_use = {
 		ROOT = {
 			primary_title = {
@@ -168,6 +187,23 @@ heretic_revolt = {
 				}
 			}
 			mercenary = no
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 
@@ -303,6 +339,23 @@ liberation_revolt = {
 
 	is_valid_title = {
 		has_holder = no
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 	
 	on_success = {
@@ -445,6 +498,8 @@ duchy_adventure = {
 			primary_title = {
 				temporary = yes # Revolter or adventurer trigger
 			}
+			# Probably irrelevant, but...
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			war = no
 			has_character_flag = duchy_adventurer
 			custom_tooltip = {
@@ -454,10 +509,53 @@ duchy_adventure = {
 				}
 			}
 		}
+		# Can't use this against the Tenno under some circumstances
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = nihon_shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+		}
 	}
 
 	is_valid = {
 		always = yes
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 	
 	on_success = {
@@ -963,6 +1061,7 @@ religious_revolt = {
 	hostile_against_others = yes
 	can_ask_to_join_war = no
 	
+	# No need to check Chinese Peace Deals
 	can_use = {
 		ROOT = {
 			has_character_flag = religious_revolter
@@ -971,6 +1070,23 @@ religious_revolt = {
 				hidden_tooltip = {
 					is_inaccessible_trigger = no
 				}
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}

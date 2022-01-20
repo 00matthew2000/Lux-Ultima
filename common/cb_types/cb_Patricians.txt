@@ -36,6 +36,8 @@ coastal_republic = {
 
 	can_use = {
 		ROOT = {
+			
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			mercenary = no
 			OR = {
 				is_merchant_republic = yes
@@ -104,6 +106,23 @@ coastal_republic = {
 			OR = {
 				is_merchant_republic = yes
 				is_patrician = yes
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -212,6 +231,8 @@ coastal_county_republic = {
 
 	can_use = {
 		ROOT = {
+			
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			mercenary = no
 			OR = {
 				is_merchant_republic = yes
@@ -292,6 +313,41 @@ coastal_county_republic = {
 				}
 			}
 		}
+		# Can't use this against the Tenno under some circumstances
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = nihon_shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+			NOT = {
+				FROM = {
+					capital_scope = {
+						county = {
+							title = PREVPREVPREV # Contains the Tenno's current capital
+						}
+					}
+				}
+			}
+		}
 	}
 
 	is_valid = {
@@ -316,6 +372,23 @@ coastal_county_republic = {
 						}
 					}
 				}
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -429,6 +502,8 @@ embargo_cb = {
 
 	can_use = {
 		ROOT = {
+			
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			mercenary = no
 			independent = yes
 			NOT = {
@@ -490,6 +565,23 @@ embargo_cb = {
 						is_merchant_republic = yes
 					}
 				}
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -645,6 +737,8 @@ seize_trade_post = {
 
 	can_use = {
 		ROOT = {
+			
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			mercenary = no
 			OR = {
 				is_merchant_republic = yes
@@ -727,6 +821,23 @@ seize_trade_post = {
 		}
 		holder_scope = {
 			NOT = { character = FROM }
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 

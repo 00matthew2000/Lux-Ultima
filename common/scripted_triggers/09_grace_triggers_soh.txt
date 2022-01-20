@@ -15,10 +15,7 @@ test_grace_acceptance_trigger = {
 
 # Checks if ROOT is the Emperor of China and uses the Grace mechanics
 is_chinese_emperor_trigger = {
-	OR = {
-		has_landed_title = e_china
-		has_landed_title = e_archeserika
-	}
+	has_landed_title = e_china
 	OR = {
 		AND = {
 			has_landed_title = c_zinyung

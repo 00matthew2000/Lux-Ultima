@@ -11,6 +11,7 @@ rivalry_cb = {
 	
 	can_use = {
 		ROOT = {
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			is_rival = FROM
 			custom_tooltip = {
 				text = NOT_BUSY
@@ -32,6 +33,23 @@ rivalry_cb = {
 	is_valid = {
 		ROOT = {
 			is_rival = FROM
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 	
@@ -161,6 +179,7 @@ tributary_cb = {
 		has_dlc = "Horse Lords"
 
 		ROOT = {
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			mercenary = no
 			is_tributary = no
 			NOR = {
@@ -251,6 +270,31 @@ tributary_cb = {
 				rightful_religious_head_scope = {
 					character = FROM 
 				}
+			}
+		}
+	}
+	
+	on_add = {
+		# Chance to surrender early
+		ROOT = { save_event_target_as = tribute_war_suzerain }
+		FROM = {
+			show_scope_change = no
+			save_event_target_as = tribute_war_target
+			set_character_flag = surrender_tributary_cb
+			character_event = { id = JD.2500 days = 5 tooltip = surrender_tributary_tt }
+		}
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -527,6 +571,65 @@ tributary_cb = {
 				trait = greedy
 			}
 		}
+		
+		modifier = {
+			factor = 2
+			NOT = {
+				has_dlc = "Jade Dragon"
+			}
+			ROOT = {
+				NOT = {
+					any_owned_bloodline = {
+						has_bloodline_flag = genghis_khan_line # The Mongols will be a bit more conquest-prone...
+					}
+				}
+				is_chinese_emperor_trigger = yes
+			}
+			FROM = {
+				NOT = {
+					any_realm_province = {
+						OR = {
+							region = world_china
+							county = {
+								de_jure_liege_or_above = e_china
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.25
+			ROOT = {
+				is_chinese_emperor_trigger = yes
+			}
+			any_independent_ruler = {
+				NOR = {
+					character = ROOT
+					has_truce = ROOT
+					suzerain = {
+						character = ROOT
+					}
+				}
+				government = chinese_imperial_government
+				any_realm_province = {
+					OR = {
+						region = world_china
+						county = {
+							de_jure_liege_or_above = e_china
+						}
+					}
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			ROOT = {
+				government = japanese_imperial_government # Japan was historically isolationist, so spamming tributaries isn't good...
+			}
+		}
 	}
 }
 
@@ -544,6 +647,7 @@ free_tributary_cb = {
 		has_dlc = "Horse Lords"
 		
 		ROOT = {
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			OR = {
 				AND = {
 					is_tributary = yes
@@ -605,6 +709,23 @@ free_tributary_cb = {
 			}
 		}
 	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 
 	on_success = {
 		FROM = {
@@ -643,6 +764,14 @@ free_tributary_cb = {
 				}
 				suzerain = {
 					remove_tributary = PREV
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				any_tributary = {
+					narrative_event = { id = grace.610 } # Offer the EoC's tributaries the opportunity to downgrade their tier
 				}
 			}
 		}
@@ -842,6 +971,20 @@ free_tributary_cb = {
 				}
 			}
 		}
+		
+		modifier = { # Don't take a huge Grace penalty for no reason!
+			factor = 0
+			ROOT = {
+				is_decision_potential = ai_ask_to_decrease_tributary_tier
+				is_decision_allowed = ai_ask_to_decrease_tributary_tier
+				NOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = opinion_china_refused_decrese_tributary_tier
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -856,6 +999,8 @@ cb_install_khan = {
 	can_call_vassals = yes
 	attacker_can_call_allies = no
 	major_revolt = yes
+	
+	# No need to check Chinese Peace Deals
 
 	can_use = {
 		has_dlc = "Horse Lords"
@@ -891,6 +1036,23 @@ cb_install_khan = {
 			any_demesne_title = {
 				NOT = { lower_tier_than = ROOT }
 				temporary = no
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -983,6 +1145,8 @@ nomad_dispute = {
 	allowed_to_target_tributaries = no
 	# allowed_to_target_suzerains = no	
 	
+	# No need to check Chinese Peace Deals (unless we enable nomadic EoCs in the future...)
+	
 	can_use = {
 		has_dlc = "Horse Lords"
 
@@ -1022,6 +1186,23 @@ nomad_dispute = {
 		}
 		FROM = {
 			has_landed_title = PREV
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 
@@ -1130,6 +1311,7 @@ cb_liberate_nomad_duchy = {
 				}
 			}
 			mercenary = no
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 		}
 	}
 	
@@ -1167,6 +1349,23 @@ cb_liberate_nomad_duchy = {
 			NOT = { pacifist = yes }
 			NOT = { same_realm = FROM }
 			mercenary = no
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 	
@@ -1302,6 +1501,7 @@ cb_minor_clan_revolt = {
 	
 	is_independence = yes
 	
+	# No need to check Chinese Peace Deals
 	can_use = {
 		ROOT = {
 			primary_title = { temporary = yes } # Revolter or adventurer trigger
@@ -1330,6 +1530,23 @@ cb_minor_clan_revolt = {
 			}
 			holder_scope = {
 				is_liege_or_above = FROM
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -1486,6 +1703,7 @@ nomad_subjugation = {
 
 	can_use = {
 		ROOT = {
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			is_nomadic = yes
 			NOR = {
 				same_realm = FROM
@@ -1520,6 +1738,33 @@ nomad_subjugation = {
 				}
 			}
 		}
+		
+		# Can't use this against the Tenno under some circumstances
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+		}
 	}
 	
 	on_add = {
@@ -1539,6 +1784,20 @@ nomad_subjugation = {
 					years = 100
 					hidden = yes
 				}
+			}
+		}
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -1794,6 +2053,20 @@ nomad_invasion = {
 	
 	on_add = {
 		ROOT = { prestige = -100 }
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	can_use = {
@@ -1805,10 +2078,52 @@ nomad_invasion = {
 					is_inaccessible_trigger = no
 				}
 			}
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 		}
 		
 		ROOT = {
 			NOT = { same_realm = FROM }
+		}
+		
+		# Can't use this against the Tenno under some circumstances
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+			NOR = {
+				any_direct_de_jure_vassal_title = {
+					any_direct_de_jure_vassal_title = {
+						title = c_yamashiro
+					}
+				}
+				FROM = {
+					capital_scope = {
+						kingdom = {
+							title = PREVPREVPREV # Contains the Tenno's current capital
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -2120,6 +2435,20 @@ nomad_expansion = {
 	
 	on_add = {
 		ROOT = { prestige = -300 }
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	can_use = {
@@ -2154,6 +2483,42 @@ nomad_expansion = {
 								character = ROOT
 								is_liege_or_above = ROOT
 							}
+						}
+					}
+				}
+			}
+		}
+		# Can't use this against the Tenno under some circumstances
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = nihon_shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+			NOR = {
+				title = d_kinai # Contains Yamashiro
+				FROM = {
+					capital_scope = {
+						duchy = {
+							title = PREVPREVPREV # Contains the Tenno's current capital
 						}
 					}
 				}
@@ -2405,6 +2770,8 @@ nomad_humiliate_cb = {
 	allowed_to_target_tributaries = no
 	# allowed_to_target_suzerains = no
 	
+	# No need to check Chinese Peace Deals (unless we allow nomadic EoCs in the future...)
+	
 	can_use = {
 		has_dlc = "Horse Lords"
 
@@ -2472,6 +2839,24 @@ nomad_humiliate_cb = {
 						}
 					}
 				}
+			}
+		}
+		china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}

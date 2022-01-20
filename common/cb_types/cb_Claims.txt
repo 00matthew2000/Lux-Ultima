@@ -36,6 +36,7 @@ claim = {
 	
 	can_use_title = {
 		ROOT = {
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			scaled_wealth = 0.1
 			custom_tooltip = {
 				text = NOT_BUSY
@@ -91,6 +92,56 @@ claim = {
 					is_contested = yes # Is already being contested in some form of Claim or Succession War
 				}
 			}
+			# If China's Mandate is Poor or Lost, weak claims on China can be pressed by Chinese Imperial rulers
+			AND = {
+				ROOT = {
+					government = chinese_imperial_government
+				}
+				#title = e_china
+				holder_scope = {
+					OR = {
+						has_character_flag = mandate_of_heaven_2
+						has_character_flag = mandate_of_heaven_1
+					}
+				}
+			}
+		}
+		
+		# Can't claim war the Tenno under some circumstances
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = nihon_shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+			NOR = {
+				title = c_yamashiro
+				FROM = {
+					capital_scope = {
+						county = {
+							title = PREVPREVPREV # Contains the Tenno's current capital
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -105,6 +156,24 @@ claim = {
 		}
 		ROOT = { has_claim = PREV }
 	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+	
 	on_success_title = {
 	
 		hidden_tooltip = {
@@ -262,6 +331,8 @@ other_claim = {
 
 	can_use = {
 		ROOT = {
+			
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 			mercenary = no
 			custom_tooltip = {
 				text = NOT_BUSY
@@ -343,6 +414,42 @@ other_claim = {
 				}
 			}
 		}
+		
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = nihon_shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+			NOR = {
+				title = c_yamashiro
+				FROM = {
+					capital_scope = {
+						county = {
+							title = PREVPREVPREV # Contains the Tenno's current capital
+						}
+					}
+				}
+			}
+		}
 	}
 	is_valid_title = {
 		OR = {
@@ -355,6 +462,24 @@ other_claim = {
 		}
 		ROOT = { has_claim = PREV }
 	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+	
 	on_success = {
 		hidden_tooltip = {
 			ROOT = {
@@ -720,6 +845,23 @@ claim_on_liege = {
 			ROOT = { has_claim = PREV }
 		}
 	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 
 	on_success = {
 		any_attacker = {
@@ -922,6 +1064,8 @@ other_claim_on_liege = {
 
 	infamy_modifier = 0.5
 	
+	# No need to check Chinese Peace Deals
+	
 	can_use = {
 		ROOT = {
 			custom_tooltip = {
@@ -1026,6 +1170,23 @@ other_claim_on_liege = {
 				attacker = {
 					character = ROOT
 				}
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -1316,6 +1477,8 @@ claim_on_liege_plot = {
 
 	infamy_modifier = 0.85
 	
+	# No need to check Chinese Peace Deals
+	
 	can_use = {
 		ROOT = {
 			custom_tooltip = {
@@ -1384,6 +1547,24 @@ claim_on_liege_plot = {
 			}
 		}
 	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+	
 	# can_use_gui = { #tentatively removed - DR
 		# ROOT = {
 			# wealth = 50
@@ -1560,6 +1741,8 @@ claim_on_vassal_plot = {
 
 	infamy_modifier = 0.85
 	
+	# No need to check Chinese Peace Deals
+	
 	can_use = {
 		ROOT = {
 			custom_tooltip = {
@@ -1581,12 +1764,15 @@ claim_on_vassal_plot = {
 			}
 		}
 	}
+	
 	# can_use_gui = { #tentatively removed - DR
 		# ROOT = {
 			# wealth = 50
 			# prestige = 100
 		# }
 	# }
+	
+	
 	is_valid_title = {
 		FROM = {
 			has_landed_title = PREV
@@ -1595,6 +1781,24 @@ claim_on_vassal_plot = {
 			has_plot = plot_gain_vassal_title
 		}
 	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+	
 	# on_add = { #v11 addition
 			# ROOT = {	
 				# scaled_wealth = -0.1
@@ -1695,6 +1899,7 @@ claim_all = {
 
 	can_use = {
 		ROOT = {
+			
 			custom_tooltip = {
 				text = NOT_BUSY
 				hidden_tooltip = {
@@ -1706,9 +1911,44 @@ claim_all = {
 				strong = yes # Count only strong claims
 				value = 2
 			}
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
+		}
+		
+		# Can't use this against the Tenno unless you're going after k_chrysanthemum_throne
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = nihon_shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+			ROOT = {
+				religion = nihon_shinto
+				k_chrysanthemum_throne = {
+					claimed_by = ROOT
+				}
+			}
 		}
 	}
-		# can_use_gui = { #tentatively removed - DR
+	
+	# can_use_gui = { #tentatively removed - DR
 		# ROOT = {
 			# wealth = 50
 			# prestige = 100
@@ -1740,6 +1980,20 @@ claim_all = {
 					ROOT = { has_strong_claim = PREV }
 				}
 				press_claim = ROOT
+			}
+		}
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -1914,6 +2168,8 @@ dejure_county_claim = {
 					is_inaccessible_trigger = no
 				}
 			}
+			
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 		}
 	}
 	can_use_title = {
@@ -1973,6 +2229,43 @@ dejure_county_claim = {
 				expelled_my_holy_order_trigger = yes
 			}
 		}
+		
+		# Can't use this against the Tenno under some circumstances
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = nihon_shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+			NOR = {
+				title = c_yamashiro
+				FROM = {
+					capital_scope = {
+						county = {
+							title = PREVPREVPREV # Contains the Tenno's current capital
+						}
+					}
+				}
+			}
+		}
 	}
 	can_use_gui = { 
 		ROOT = {
@@ -1994,6 +2287,22 @@ dejure_county_claim = {
 				# scaled_wealth = -0.1
 			# }
 		# }
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	on_success_title = {
 		any_attacker = {
 			limit = { character = ROOT }
@@ -2139,6 +2448,8 @@ other_dejure_county_claim = {
 					is_inaccessible_trigger = no
 				}
 			}
+			
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 		}
 		FROM = {
 			OR = {
@@ -2180,6 +2491,43 @@ other_dejure_county_claim = {
 				is_liege_or_above = FROM
 			}
 		}
+		
+		# Can't use this against the Tenno under some circumstances
+		OR = {
+			FROM = {
+				NAND = {
+					controls_religion = yes
+					religion = nihon_shinto
+				}
+			}
+			ROOT = {
+				NOT = {
+					top_liege = {
+						any_vassal = {
+							character = FROM
+						}
+						religion = nihon_shinto
+						AND = {
+							religion_group = bud_group
+							culture = japanese
+						}
+						NOT = {
+							government = chinese_imperial_government
+						}
+					}
+				}
+			}
+			NOR = {
+				title = c_yamashiro
+				FROM = {
+					capital_scope = {
+						county = {
+							title = PREVPREVPREV # Contains the Tenno's current capital
+						}
+					}
+				}
+			}
+		}
 	}
 
 	can_use_gui = { 
@@ -2195,6 +2543,23 @@ other_dejure_county_claim = {
 			}
 			holder_scope = {
 				is_liege_or_above = FROM
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -2337,6 +2702,8 @@ dejure_barony_claim = {
 					is_inaccessible_trigger = no
 				}
 			}
+			
+			china_forbids_war_trigger = no # Chinese Peace Deal or tributary relationship blocks CB
 		}
 		FROM = {
 			OR = {
@@ -2373,6 +2740,68 @@ dejure_barony_claim = {
 					character = ROOT
 					is_liege_or_above = ROOT
 				}
+			}
+		}
+		# Don't de jure war the Saio/Saiin!
+		NAND = {
+			OR = {
+				AND = {
+					title = c_yamashiro
+					FROM = {
+						has_landed_title = b_gion
+						b_gion = {
+							holding_type = temple
+						}
+						religion = nihon_shinto
+						trait = imperial_priestess
+						any_dynasty_member = {
+							religion = nihon_shinto
+							controls_religion = yes
+						}
+					}
+				}
+				AND = {
+					title = c_ise
+					FROM = {
+						has_landed_title = b_ise
+						b_ise = {
+							holding_type = temple
+						}
+						religion = nihon_shinto
+						trait = imperial_priestess
+						any_dynasty_member = {
+							religion = nihon_shinto
+							controls_religion = yes
+						}
+					}
+				}
+			}
+			ROOT = {
+				OR = {
+					religion = nihon_shinto
+					AND = {
+						culture = japanese
+						religion_group = bud_group
+					}
+				}
+				controls_religion = no # The Tenno is an exception!
+			}
+		}
+	}
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			#limit = { defender = { is_offmap_governor = offmap_china } }
+			limit = {
+				has_dlc = "Jade Dragon"
+				defender = {
+					is_china_or_defended_chinese_tributary_trigger = yes
+				}
+			}
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
