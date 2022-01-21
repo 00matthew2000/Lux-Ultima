@@ -10977,10 +10977,10 @@ laws = {
 				is_nomadic = no
 				is_republic = no
 				OR = {
-					#NAND = {
-					#	government = chinese_imperial_government
-					#	tier = emperor
-					#}
+					NAND = {
+						government = chinese_imperial_government
+						tier = emperor
+					}
 					has_character_modifier = mandate_of_heaven_1
 					has_character_modifier = mandate_of_heaven_2
 				}
@@ -11013,6 +11013,7 @@ laws = {
 		effect = {
 			hidden_tooltip = {
 				revoke_law = vassal_wars_law_1
+				revoke_law = vassal_wars_law_2
 			}
 			set_the_kings_peace = no
 			set_the_kings_full_peace = no
@@ -11069,6 +11070,7 @@ laws = {
 		effect = {
 			hidden_tooltip = {
 				revoke_law = vassal_wars_law_0
+				revoke_law = vassal_wars_law_2
 			}
 			set_the_kings_peace = yes
 			set_the_kings_full_peace = no
@@ -11123,6 +11125,7 @@ laws = {
 		effect = {
 			hidden_tooltip = {
 				revoke_law = vassal_wars_law_0
+				revoke_law = vassal_wars_law_1
 			}
 			set_the_kings_peace = yes
 			set_the_kings_full_peace = yes
