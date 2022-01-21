@@ -3080,7 +3080,7 @@ altaic = {
 	}
 
 	mongol = {
-		graphical_cultures = { cumangfx turkishgfx }
+		graphical_cultures = { mongolgfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		alternate_start = { has_alternate_start_parameter = { key = culture value = full_random } }
@@ -3111,7 +3111,7 @@ altaic = {
 	}
 	
 	khitan = {
-		graphical_cultures = { cumangfx turkishgfx muslimgfx }
+		graphical_cultures = { centralasiangfx mongolgfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		dynasty_name_first = yes
