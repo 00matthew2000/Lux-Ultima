@@ -3126,6 +3126,7 @@ character_event = {
 		
 		custom_tooltip = { text = EVTOPTA301_DESC }
 		spouse = {
+			if = {
 				limit = {
 					has_dlc = "Jade Dragon"
 					ROOT = {

@@ -674,6 +674,7 @@ letter_event = {
 				is_nomadic = no
 			}
 			event_target:raiding_adventurer = {
+				if = {
 					limit = {
 						NOT = { religion_group = muslim }
 						NAND = {
@@ -1033,6 +1034,7 @@ letter_event = {
 					}
 					set_government_type = muslim_government
 				}
+				else_if = {
 					limit = {
 						culture_group = tibetan_group
 						OR = {
@@ -1233,7 +1235,7 @@ character_event = {
     			modifier = { trait = craven factor = 5 }
     			liege = {
 					ROOT = { religion = PREV }
-					#character_event = { id = ADV.21 days = 7 }
+					character_event = { id = ADV.21 days = 7 }
 				}
     			any_courtier = {
     				limit = { is_landed = no }
