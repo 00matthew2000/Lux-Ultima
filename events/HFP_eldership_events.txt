@@ -207,6 +207,41 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTBHFP24003
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		reverse_opinion = {
 			modifier = opinion_elder_refused_demand
 			who = FROM
@@ -897,6 +932,41 @@ character_event = {
 	}
 	option = { #Refuse.
 		name = EVTOPTBHFP24007
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		reverse_opinion = {
 			modifier = opinion_elder_refused_demand
 			who = FROM
@@ -1531,6 +1601,41 @@ character_event = {
 	}
 	option = { #Refuse.
 		name = EVTOPTBHFP24011
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		show_portrait = FROM
 		reverse_opinion = {
 			modifier = opinion_elder_refused_demand
@@ -1871,6 +1976,41 @@ character_event = {
 	}
 	option = { #Refuse.
 		name = EVTOPTDHFP24015
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		reverse_opinion = {
 			modifier = opinion_elder_refused_demand
 			who = FROM
@@ -2230,6 +2370,50 @@ character_event = {
 
 	option = {
 		name = EVTOPTAHFP24018
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+				FROMFROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+				FROMFROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+				FROMFROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		opinion = {
 			name = opinion_elder_traitor
 			who = FROMFROM

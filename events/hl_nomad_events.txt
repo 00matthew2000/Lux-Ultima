@@ -267,11 +267,90 @@ character_event = { # Nomads may pillage holdings on siege
 		FROM = {
 			destroy_random_building = THIS
 			holder_scope = {
+				ROOT = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							is_chinese_emperor_trigger = no
+							PREV = {
+								top_liege = {
+									is_chinese_emperor_trigger = no # If this is true, we don't want a second penalty
+								}
+							}
+						}
+						if = {
+							limit = {
+								PREV = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							detract_grace_major_effect = yes
+						}
+						else_if = {
+							limit = {
+								PREV = {
+									any_close_relative = {
+										dynasty = PREV
+										is_chinese_emperor_trigger = yes
+									}
+								}
+							}
+							detract_grace_medium_effect = yes
+						}
+						else_if = {
+							limit = {
+								PREV = {
+									any_dynasty_member = {
+										is_chinese_emperor_trigger = yes
+									}
+								}
+							}
+							detract_grace_minor_effect = yes
+						}
+					}
+				}
 				top_liege = {
 					opinion = {
 						modifier = opinion_furious
 						who = ROOT
 						years = 3
+					}
+					ROOT = {
+						if = {
+							limit = {
+								has_dlc = "Jade Dragon"
+								is_chinese_emperor_trigger = no
+							}
+							if = {
+								limit = {
+									PREV = {
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								detract_grace_major_effect = yes
+							}
+							else_if = {
+								limit = {
+									PREV = {
+										any_close_relative = {
+											dynasty = PREV
+											is_chinese_emperor_trigger = yes
+										}
+									}
+								}
+								detract_grace_medium_effect = yes
+							}
+							else_if = {
+								limit = {
+									PREV = {
+										any_dynasty_member = {
+											is_chinese_emperor_trigger = yes
+										}
+									}
+								}
+								detract_grace_minor_effect = yes
+							}
+						}
 					}
 				}
 			}

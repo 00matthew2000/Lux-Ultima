@@ -605,6 +605,9 @@ narrative_event = {
 		}
 		in_command = no
 		NOT = { has_character_flag = do_not_disturb }
+		NOT = {
+			trait = treasure_fleet_preparation
+		}
 		NOT = { has_character_flag = call_of_the_wolves }
 	}
 	
@@ -966,6 +969,9 @@ narrative_event = {
 		trait = possessed
 		NOT = { has_character_modifier = lycanthropy }
 		NOT = { has_character_flag = do_not_disturb }
+		NOT = {
+			trait = treasure_fleet_preparation
+		}
 	}
 	
 	weight_multiplier = {
@@ -1031,6 +1037,9 @@ character_event = {
 		trait = possessed
 		has_character_modifier = lycanthropy
 		NOT = { has_character_flag = do_not_disturb }
+		NOT = {
+			trait = treasure_fleet_preparation
+		}
 	}
 	
 	option = {
@@ -1393,6 +1402,18 @@ character_event = {
 			death = {
 				death_reason = death_murder_unknown
 				killer = ROOT
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						OR = { 
+							religion = bon
+							religion = bon_reformed
+						}
+						ROOT = { ai = no }
+					}
+					ROOT = { set_character_flag = achievement_bon_appetit }
+				}
 			}
 		}
 		if = {

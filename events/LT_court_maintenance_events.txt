@@ -720,6 +720,33 @@ character_event = {
 				who = ROOT
 			}
         }
+        if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:courtier = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:courtier = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
         ai_chance = {
             factor = 1
 	            additive_opinion_modifier = { # Adds the opinion from 'ROOT' to 'who' multiplied by factor to the score.

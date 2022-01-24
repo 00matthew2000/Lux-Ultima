@@ -724,6 +724,22 @@ character_event = {
 								}
 							}
 						}
+						holder_scope = {
+							OR = {
+								top_liege = {
+									is_chinese_emperor_trigger = yes
+									ROOT = {
+										has_character_modifier = peace_deal_with_china
+									}
+								}
+								top_liege = {
+									has_character_modifier = peace_deal_with_china
+									ROOT = {
+										is_chinese_emperor_trigger = yes
+									}
+								}
+							}
+						}
 					}
 				}
 				save_event_target_as = claimant_claim

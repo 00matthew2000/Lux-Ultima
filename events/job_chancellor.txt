@@ -846,6 +846,43 @@ letter_event = {
 		event_target:target_title = { show_scope_change = no add_claim = ROOT }
 		FROM = {
 			show_scope_change = no
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			opinion = {
 				modifier = opinion_furious
 				who = ROOT
@@ -880,6 +917,43 @@ letter_event = {
 		event_target:target_title = { show_scope_change = no add_claim = ROOT }
 		FROM = {
 			show_scope_change = no
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			opinion = {
 				modifier = opinion_furious
 				who = ROOT
@@ -914,6 +988,43 @@ letter_event = {
 		event_target:target_title = { show_scope_change = no add_claim = ROOT }
 		FROM = {
 			show_scope_change = no
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			opinion = {
 				modifier = opinion_furious
 				who = ROOT
@@ -984,6 +1095,43 @@ letter_event = {
 		event_target:target_title = { show_scope_change = no add_claim = ROOT }
 		FROM = {
 			show_scope_change = no
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			opinion = {
 				modifier = opinion_furious
 				who = ROOT
@@ -1018,6 +1166,43 @@ letter_event = {
 		event_target:target_title = { show_scope_change = no add_claim = ROOT }
 		FROM = {
 			show_scope_change = no
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			opinion = {
 				modifier = opinion_furious
 				who = ROOT
@@ -1138,6 +1323,41 @@ character_event = {
 		piety = -10
 		random_list = {
 			50 = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						is_chinese_emperor_trigger = no
+					}
+					if = {
+						limit = {
+							FROM = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						detract_grace_super_huge_effect = yes
+					}
+					else_if = {
+						limit = {
+							FROM = {
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+						}
+						detract_grace_massive_effect = yes
+					}
+					else_if = {
+						limit = {
+							FROM = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+						}
+						detract_grace_major_effect = yes
+					}
+				}
 				FROM = {
 					character_event = { id = 20141 days = 7 tooltip = "EVTTOOLTIP20141" }
 				}
@@ -1551,6 +1771,47 @@ letter_event = {
 	
 	option = {
 		name = "EVTOPTA20172"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						liege = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						liege = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						liege = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		prestige = -10
 	}
 }
@@ -1619,6 +1880,47 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTA20175
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						liege = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						liege = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						liege = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		prestige = -5
 		hidden_tooltip = {
 			FROM = {
@@ -1648,6 +1950,47 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTA20176
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						liege = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						liege = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						liege = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		prestige = -10
 		hidden_tooltip = {
 			FROM = {

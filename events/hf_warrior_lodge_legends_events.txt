@@ -1427,6 +1427,9 @@ character_event = {
                                 NOT = { character = event_target:my_duel_target } #Can't have previously dueled...
                                 NOT = { character = event_target:target_ruler } #Should not be the ruler themselves...
                                 ai = yes
+	              NOT = {
+									trait = treasure_fleet_preparation
+								}
                             }
                         }
                         any_realm_character = {
@@ -1441,6 +1444,9 @@ character_event = {
                                 NOT = { character = event_target:my_duel_target } #Can't have previously dueled...
                                 NOT = { character = event_target:target_ruler } #Should not be the ruler themselves...
                                 ai = yes
+	              NOT = {
+									trait = treasure_fleet_preparation
+								}
                             }
                             score_value = { #Prioritizes selecting a good warrior, if it can...
                                 value = 10
@@ -1996,6 +2002,9 @@ character_event = {
                     NOT = { character = event_target:target_ruler } #Should not be the ruler themselves...
                     is_theocracy = no #preferably not, really. It feels weird.
                     ai = yes
+	  NOT = {
+						trait = treasure_fleet_preparation
+					}
                 }
                 score_value = { #Prioritizes selecting a good warrior, if it can...
                     value = 10
@@ -2552,6 +2561,41 @@ character_event = {
         }
 
         add_blood_splatter_effect = yes
+        if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:other_combatant = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:other_combatant = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:other_combatant = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 
         tooltip = {
             event_target:other_combatant = {
@@ -2758,6 +2802,41 @@ character_event = {
             }
         }
         if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:combatant_2 = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:combatant_2 = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:combatant_2 = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
+        if = {
             limit = { multiplayer = no }
             if = {
                 limit = { event_target:combatant_1 = { character = ROOT } } #if you instigated this...
@@ -2860,6 +2939,41 @@ character_event = {
                 }
             }
         }
+        if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:combatant_1 = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:combatant_1 = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:combatant_1 = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
         if = {
             limit = { multiplayer = no }
             if = {

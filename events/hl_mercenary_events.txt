@@ -1504,6 +1504,43 @@ character_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 	}
 	option = {
 		name = GOOD_RIDDANCE
@@ -1514,6 +1551,43 @@ character_event = {
 						who = ROOT
 						value = 0
 					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
 				}
 			}
 		}
@@ -1667,6 +1741,49 @@ character_event = {
 										}
 										factor = 0
 									}
+									if = {
+										limit = {
+											has_dlc = "Jade Dragon"
+											ROOT = {
+												is_chinese_emperor_trigger = no
+											}
+										}
+										if = {
+											limit = {
+												PREV = {
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											ROOT = {
+												detract_grace_major_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												PREV = {
+													any_close_relative = {
+														dynasty = PREV
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											ROOT = {
+												detract_grace_medium_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												PREV = {
+													any_dynasty_member = {
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											ROOT = {
+												detract_grace_minor_effect = yes
+											}
+										}
+									}
 									character_event = { id = HL.10512 }
 								}
 								25 = { # Maimed
@@ -1677,6 +1794,49 @@ character_event = {
 									modifier = {
 										combat_rating_diff = { who = PREV value = 4 }
 										factor = 2
+									}
+									if = {
+										limit = {
+											has_dlc = "Jade Dragon"
+											ROOT = {
+												is_chinese_emperor_trigger = no
+											}
+										}
+										if = {
+											limit = {
+												PREV = {
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											ROOT = {
+												detract_grace_super_huge_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												PREV = {
+													any_close_relative = {
+														dynasty = PREV
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											ROOT = {
+												detract_grace_massive_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												PREV = {
+													any_dynasty_member = {
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											ROOT = {
+												detract_grace_major_effect = yes
+											}
+										}
 									}
 									character_event = { id = HL.10513 }
 								}
@@ -1692,6 +1852,49 @@ character_event = {
 									modifier = {
 										combat_rating_diff = { who = PREV value = 5 }
 										factor = 2
+									}
+									if = {
+										limit = {
+											has_dlc = "Jade Dragon"
+											ROOT = {
+												is_chinese_emperor_trigger = no
+											}
+										}
+										if = {
+											limit = {
+												PREV = {
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											ROOT = {
+												detract_grace_super_huge_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												PREV = {
+													any_close_relative = {
+														dynasty = PREV
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											ROOT = {
+												detract_grace_massive_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												PREV = {
+													any_dynasty_member = {
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											ROOT = {
+												detract_grace_major_effect = yes
+											}
+										}
 									}
 									character_event = { id = HL.10514 }
 								}

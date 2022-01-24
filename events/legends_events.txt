@@ -1895,6 +1895,34 @@ narrative_event = {
 	
 	option = {
 		name = "EVTOPTA10107"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			# The sacrifice can't be the EoC
+			if = {
+				limit = {
+					event_target:human_sacrifice = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:human_sacrifice = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		
 		event_target:human_sacrifice = {
 			death = {

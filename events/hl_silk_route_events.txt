@@ -25,46 +25,87 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Horse Lords"
-		conditional_tooltip = {
-			trigger = { 
-				has_dlc = "Jade Dragon"
-			}
-	        NOT = { offmap_china = { governor = { character = ROOT } } }
-	        offmap_china = {
-	            NOR = {
-	                has_status = china_civil_war
-	                has_status = china_plague
-	            }
-	        }
-		}
+		#conditional_tooltip = {
+		#	trigger = { 
+		#		has_dlc = "Jade Dragon"
+		#	}
+	    #    NOT = { offmap_china = { governor = { character = ROOT } } }
+	    #    offmap_china = {
+	    #        NOR = {
+	    #            has_status = china_civil_war
+	    #            has_status = china_plague
+	    #        }
+	    #    }
+		#}
 		higher_tier_than = COUNT
 		NOR = {
 			has_character_flag = had_chinese_envoy
 			has_character_flag = do_not_disturb
 			trait = infirm
 		}
-		OR = {
-			AND = {
-				has_dlc = "Jade Dragon"
-	      	  	china_diplo_interaction_trigger = yes
-	      	}
-	      	AND = {
-	      		NOT = { has_dlc = "Jade Dragon" }
-				capital_scope = {
-					OR = {
-						region = world_steppe_east
-						region = world_steppe_tarim
-						duchy = { title = d_marakanda }
-						duchy = { title = d_khwarizmian }
-						duchy = { title = d_merv }
-					}
-				}
-			}
+		NOT = {
+			trait = treasure_fleet_preparation
 		}
+		#OR = { # Leave this commented out; the game rule has been removed due to China being on the map
+		#	AND = {
+		#		has_dlc = "Jade Dragon"
+	    #  	  	china_diplo_interaction_trigger = yes
+	    #  	}
+	    #  	AND = {
+	    #  		NOT = { has_dlc = "Jade Dragon" }
+		#		capital_scope = {
+		#			OR = {
+		#				region = world_steppe_east
+		#				region = world_steppe_tarim
+		#				duchy = { title = d_samarkand }
+		#				duchy = { title = d_khiva }
+		#				duchy = { title = d_merv }
+		#			}
+		#		}
+		#	}
+		#}
 		any_demesne_province = {
 			has_trade_post = yes
 			trade_route = silk_road
 		#	trade_route_active = silk_road
+		}
+
+		### Various checks to ensure that the EoC doesn't pester his vassals, people he's at war with, etc.
+		is_chinese_emperor_trigger = no # The EoC cannot ask himself for Boons/send Tributes to himself
+		is_inaccessible_trigger = no
+		# Isn't at war with China
+		NOT = {
+			any_war = {
+				OR = {
+					AND = {
+						any_attacker = {
+								is_chinese_emperor_trigger = yes
+						}
+						any_defender = {
+							character = ROOT
+						}
+					}
+					AND = {
+						any_attacker = {
+							character = ROOT
+						}
+						any_defender = {
+								is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+			}
+		}
+		# Isn't a vassal of China
+		NOT = {
+			top_liege = {
+				has_landed_title = e_china
+			}
+		}
+		e_china = {
+			holder_scope = {
+				is_chinese_emperor_trigger = yes
+			}
 		}
 	}
 	
@@ -101,7 +142,12 @@ character_event = {
 		hidden_tooltip = {
 			if = {
 				limit = { has_dlc = "Jade Dragon" }
-				offmap_china = { governor = { character_event = { id = HL.5062 days = 90 random = 41 } } }
+				#offmap_china = { governor = { character_event = { id = HL.5062 days = 90 random = 41 } } }
+				e_china = {
+					holder_scope = {
+						character_event = { id = HL.5062 days = 90 random = 41 }
+					}
+				}
 				break = yes
 			}
 			letter_event = { id = HL.5048 days = 90 random = 41 }
@@ -205,7 +251,12 @@ character_event = {
 		hidden_tooltip = { # Angry Emperor
 			if = {
 				limit = { has_dlc = "Jade Dragon" }
-				offmap_china = { governor = { character_event = { id = HL.5062 days = 15 random = 15 } } }
+				#offmap_china = { governor = { character_event = { id = HL.5062 days = 15 random = 15 } } }
+				e_china = {
+					holder_scope = {
+						character_event = { id = HL.5062 days = 15 random = 15 }
+					}
+				}
 				break = yes
 			}
 			letter_event = { id = HL.5048 days = 15 random = 15 }
@@ -369,6 +420,9 @@ character_event = {
 								trait = incapable
 								has_character_flag = do_not_disturb
 							}
+							NOT = {
+								trait = treasure_fleet_preparation
+							}
 						}
 					}
 					random_vassal = {
@@ -379,6 +433,9 @@ character_event = {
 							NOR = {
 								trait = incapable
 								has_character_flag = do_not_disturb
+							}
+							NOT = {
+								trait = treasure_fleet_preparation
 							}
 						}
 						character_event = { id = HL.5009 }
@@ -395,6 +452,9 @@ character_event = {
 								NOR = {
 									trait = incapable
 									has_character_flag = do_not_disturb
+								}
+								NOT = {
+								trait = treasure_fleet_preparation
 								}
 							}
 						}
@@ -539,7 +599,9 @@ province_event = {
 		}
 		if = {
 			limit = { has_dlc = "Jade Dragon" }
-			add_grace_trivial_effect = yes
+			holder_scope = {
+				add_grace_trivial_effect = yes
+			}
 		}
 	}
 }
@@ -1572,6 +1634,9 @@ province_event = {
 				trait = incapable
 				trait = infirm
 				has_character_flag = do_not_disturb
+			}
+			NOT = {
+				trait = treasure_fleet_preparation
 			}
 		}
 	}

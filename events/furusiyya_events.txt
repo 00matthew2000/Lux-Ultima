@@ -20,6 +20,12 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA88250"
+		trigger = {
+			NOR = {
+				trait = treasure_fleet_preparation
+				has_character_flag = do_not_disturb
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}

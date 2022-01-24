@@ -816,6 +816,20 @@ character_event = {
 			limit = {
 				has_character_flag = ignore_courtship
 			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					# THIS cannot be the EoC
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					detract_grace_major_effect = yes
+				}
+			}
 			clr_character_flag = ignore_courtship
 			opinion = {
 				modifier = opinion_disgusted
@@ -831,6 +845,20 @@ character_event = {
 		random_courtier = {
 			limit = {
 				has_character_flag = ignore_courtship
+			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					# THIS cannot be the EoC
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					detract_grace_major_effect = yes
+				}
 			}
 			opinion = {
 				modifier = opinion_disgusted

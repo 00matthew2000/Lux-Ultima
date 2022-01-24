@@ -1371,6 +1371,36 @@ character_event = {
 	option = {
 		name = "EVTOPTA75041"
 		event_target:target_infidel = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				# The courtier cannot be the EoC
+				if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			any_courtier = {
 				limit = {
 					religion = PREV
@@ -1455,6 +1485,36 @@ character_event = {
 	option = {
 		name = "EVTOPTA75042"
 		event_target:target_infidel = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				# The courtier cannot be the EoC
+				if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			banish = yes
 			any_courtier = {
 				limit = {
@@ -1664,6 +1724,53 @@ character_event = {
 	option = {
 		name = "EVTOPTA75051"
 		event_target:target_heretic = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				# The courtier cannot be the EoC
+				if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
+			any_courtier = {
+				limit = {
+					religion = PREV
+					NOT = {
+						character = ROOT
+					}
+					NOT = {
+						character = PREV
+					}
+					prisoner = no
+				}
+				opinion = {
+					modifier = opinion_burned_same_faith
+					who = ROOT
+					years = 5
+				}
+			}
 			show_scope_change = no
 			death = {
 				death_reason = death_execution_burning
@@ -1749,6 +1856,36 @@ character_event = {
 	option = {
 		name = "EVTOPTA75052"
 		event_target:target_heretic = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				# The courtier cannot be the EoC
+				if= {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			banish = yes
 			any_courtier = {
 				limit = {
@@ -2504,6 +2641,15 @@ character_event = {
 	option = {
 		name = "EVTOPTA75098" #Fine the Steward
 		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			FROM = {
+				detract_grace_major_effect = yes
+			}
+		}
+		if = {
 			limit = {	
 				FROM = {
 					treasury = 1
@@ -2528,6 +2674,15 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB75098"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			FROM = {
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			imprison = ROOT
 			hidden_tooltip = {
@@ -2539,6 +2694,15 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTC75098"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			FROM = {
+				detract_grace_major_effect = yes
+			}
+		}
 		add_trait = arbitrary
 		FROM = {
 			show_scope_change = no

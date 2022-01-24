@@ -475,6 +475,41 @@ long_character_event = {
 		trigger = {
 			trait = cannibal_trait
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:bear_character = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:bear = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:bear = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		event_target:bear_character = {
 			death = {
 				death_reason = death_execution_eaten
@@ -489,6 +524,41 @@ long_character_event = {
 			NOT = { trait = cannibal_trait }
 			trait = lunatic
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:bear_character = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:bear = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:bear = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		event_target:bear_character = {
 			death = {
 				death_reason = death_execution_eaten
@@ -501,6 +571,41 @@ long_character_event = {
 		name = bear.6.f
 		trigger = {
 			trait = hunter
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:bear_character = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:bear = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:bear = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
 		}
 		event_target:bear_character = {
 			death = {

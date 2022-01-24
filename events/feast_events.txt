@@ -1046,6 +1046,9 @@ character_event = {
 					NOT = { has_character_modifier = holding_large_feast }
 					war = no
 					is_adult = yes
+					NOT = {
+						trait = treasure_fleet_preparation
+					}
 				}
 				letter_event = {
 					id = 72011
@@ -2945,7 +2948,46 @@ character_event = {
 		}
 		random_list = {
 			10 = {
-				death = { death_reason = death_duel }
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							FROM = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							FROM = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = ROOT
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
+				}
+				death = { death_reason = death_duel killer = FROM } # Should have a killer, even if vanilla doesn't
 				hidden_tooltip = {
 					FROM = {
 						set_character_flag = killed_opponent
@@ -2957,6 +2999,45 @@ character_event = {
 				}
 			}
 			20 = {
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							FROM = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							FROM = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = ROOT
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
+				}
 				add_maimed_trait_effect = yes
 				hidden_tooltip = {
 					FROM = {
@@ -2969,6 +3050,45 @@ character_event = {
 				}
 			}
 			30 = {
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							FROM = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							FROM = {
+								detract_grace_major_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = ROOT
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_medium_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_minor_effect = yes
+							}
+						}
+					}
+				}
 				add_trait = wounded
 				hidden_tooltip = {
 					FROM = {
@@ -3002,6 +3122,45 @@ character_event = {
 		}
 		random_list = {
 			1 = {
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							FROM = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							FROM = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = ROOT
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
+				}
 				death = { death_reason = death_duel }
 				FROM = {
 					set_character_flag = killed_opponent
@@ -3012,6 +3171,45 @@ character_event = {
 				}
 			}
 			10 = {
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							FROM = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							FROM = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = ROOT
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
+				}
 				add_maimed_trait_effect = yes
 				FROM = {
 					set_character_flag = maimed_opponent
@@ -3022,6 +3220,45 @@ character_event = {
 				}
 			}
 			19 = {
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							FROM = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							FROM = {
+								detract_grace_major_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = ROOT
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_medium_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							FROM = {
+								detract_grace_minor_effect = yes
+							}
+						}
+					}
+				}
 				add_trait = wounded
 				FROM = {
 					set_character_flag = wounded_opponent

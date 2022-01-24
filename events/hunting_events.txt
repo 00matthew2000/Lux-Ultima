@@ -1499,6 +1499,7 @@ character_event = {
 						region = world_europe_south
 						region = world_europe_west
 						region = world_asia_minor
+						region = world_japan
 					}
 				}
 			}
@@ -1522,6 +1523,11 @@ character_event = {
 					OR = {
 						region = world_india
 						region = world_persia
+						region = world_himalayas
+						# Tianxia
+						region = world_southeast_asia
+						region = world_china
+						region = world_korea
 					}
 				}
 			}

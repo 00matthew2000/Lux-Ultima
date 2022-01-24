@@ -95,6 +95,10 @@ targetted_decisions = {
 				any_owned_bloodline = {
 					has_bloodline_flag = bloodline_castration
 				}
+				culture_group = korean_group
+				culture = jurchen
+				culture = khitan
+				culture = viet
 			}
 		}
 	
@@ -108,6 +112,43 @@ targetted_decisions = {
 			prisoner = yes
 		}
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					FROM = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				if = {
 					limit = { age = 16}
@@ -264,6 +305,43 @@ targetted_decisions = {
 			prisoner = yes
 		}
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					FROM = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				FROM = {
 					character_event = { id = LoR.830 }
@@ -415,6 +493,43 @@ targetted_decisions = {
 			prisoner = yes
 		}
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					FROM = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			add_trait = blinded
 			random = {
 				chance = 5				

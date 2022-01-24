@@ -1063,6 +1063,43 @@ character_event = {
 				}
 				break = yes
 			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					event_target:enemy_commander = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					event_target:enemy_commander = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					event_target:enemy_commander = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					event_target:enemy_commander = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			death = {
 				death_reason = death_battle
 				killer = event_target:enemy_commander
@@ -1649,6 +1686,43 @@ character_event = {
 			remove_trait_craven_effect = yes
 		}
 		allow_new_battle_events_effect = yes
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:enemy_commander = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:enemy_commander = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:enemy_commander = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:enemy_commander = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		ai_chance = {
             factor = 50
             modifier = {
@@ -2118,6 +2192,44 @@ character_event = {
 
 		allow_new_battle_events_effect = yes
 
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:enemy_commander = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:enemy_commander = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:enemy_commander = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:enemy_commander = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+
 		#ai_chance = {
             #factor = 50
             #modifier = {
@@ -2216,6 +2328,43 @@ character_event = {
 			break = yes
 		}
 		allow_new_battle_events_effect = yes
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:enemy_commander = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:enemy_commander = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:enemy_commander = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:enemy_commander = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 	}
 }
 
@@ -3239,6 +3388,22 @@ character_event = {
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
         trigger = { has_character_flag = desc_dog }
+	if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:enemy_commander = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:enemy_commander = {
+					detract_grace_massive_effect = yes # Same as for a close relative
+				}
+			}
+		}
     }
     option = {
         name = EVTOPTA_HFP_11025_cat
@@ -3261,6 +3426,22 @@ character_event = {
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
         trigger = { has_character_flag = desc_cat }
+	if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:enemy_commander = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:enemy_commander = {
+					detract_grace_massive_effect = yes # Same as for close relative
+				}
+			}
+		}
     }
     option = {      
         name = EVTOPTA_HFP_11025_horse
@@ -3269,6 +3450,22 @@ character_event = {
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
         trigger = { has_character_flag = desc_horse }
+	if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:enemy_commander = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:enemy_commander = {
+					detract_grace_massive_effect = yes # Same as for close relative
+				}
+			}
+		}
     }
     option = {
         name = EVTOPTA_HFP_11025_owl
@@ -3277,6 +3474,22 @@ character_event = {
 		clr_character_flag = about_to_challenge_enemy_commander
 		allow_new_battle_events_effect = yes
         trigger = { has_character_flag = desc_owl }
+	if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:enemy_commander = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:enemy_commander = {
+					detract_grace_massive_effect = yes # Same as for close relative
+				}
+			}
+		}
     }
     option = {
         name = EVTOPTA_HFP_11025_eagle
@@ -3287,6 +3500,22 @@ character_event = {
 		send_new_eagle_event_effect = yes #Only for certain bloodlines...!
 
         trigger = { has_character_flag = desc_eagle }
+	if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:enemy_commander = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:enemy_commander = {
+					detract_grace_massive_effect = yes # Same as for close relative
+				}
+			}
+		}
     }
     option = {
         name = EVTOPTA_HFP_11025_fallback
@@ -3836,6 +4065,42 @@ character_event = {
 	option = { #Take artifact, get lots of opinion reward...
 		name = EVTOPTA_HFP_11028 #I will mount your head on the castle walls!
 		
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:enemy_commander = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:enemy_commander = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:enemy_commander = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
+
 		hidden_effect = {
 			set_character_flag = took_enemy_skull
 			add_artifact = enemy_skull 		#Hook-in: Warrior Lodges
@@ -3927,6 +4192,41 @@ character_event = {
 
 	option = { #Take no skull artifact, less opinion reward, but become more Kind...
 		name = EVTOPTB_HFP_11028 #Or just go in peace...
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:enemy_commander = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:enemy_commander = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:enemy_commander = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		
 		hidden_effect = {
 			if = {
@@ -5203,6 +5503,41 @@ character_event = {
         }
         log = "[Root.GetBestName] chose to give the enemy [commander_cannon_fodder.GetBestName] in exchange for their own life."
 
+	if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:commander_cannon_fodder = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:commander_cannon_fodder = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:commander_cannon_fodder = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
     	ai_chance = {
             factor = 50
             modifier = {
@@ -5257,6 +5592,44 @@ character_event = {
         }
 
         log = "[Root.GetBestName] chose to die."
+
+	if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:other_combatant = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:other_combatant = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:other_combatant = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:other_combatant = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
         
         ai_chance = {
             factor = 50
@@ -5518,6 +5891,42 @@ character_event = {
 			}
 		}
 
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
+
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -5538,6 +5947,79 @@ character_event = {
 			#has_dlc = "Holy Fury"
 			#is_member_of_any_warrior_lodge_trigger = yes
 			#has_religion_matching_joined_warrior_lodge_trigger = yes
+		}
+	}
+	# Non-Warrior Lodge members only...
+	option = {
+		name = EVTOPTC_HFP_11046 #I think I prefer you dead.
+
+		hidden_effect = {
+			event_target:captured_commander = { character_event = { id = HFP.11047 } } #"They took one look at me and then I was toast"-event.
+		}
+
+		tooltip = {
+			FROM = {
+				show_scope_change = no
+				death = {
+		            death_reason = death_duel
+		            killer = ROOT
+		        }
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				event_target:captured_commander = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 0.01
+				trait = kind
+			}
+			modifier = {
+				factor = 1.5
+				is_evil_trigger = yes
+			}
+		}
+
+		trigger = {
+			is_member_of_any_warrior_lodge_trigger = no
 		}
 	}
 	option = {
@@ -5898,6 +6380,41 @@ character_event = {
             modifier = opinion_mocked_me_in_battle
             years = 3
         }
+	if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:enemy_commander = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:enemy_commander = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:enemy_commander = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 							
 		ai_chance = {
             factor = 100

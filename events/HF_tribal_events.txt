@@ -182,6 +182,9 @@ character_event = {
 						has_any_opinion_modifier = opinion_great_tribal_festival_guest 
 						trait = incapable
 						is_inaccessible_trigger = yes
+					}
+					NOT = {
+						trait = treasure_fleet_preparation
 					} 
 				} 
 				letter_event = { id = HF.23807 } 
@@ -229,6 +232,9 @@ letter_event = {
 							trait = incapable
 							is_inaccessible_trigger = yes
 						} 
+						NOT = {
+							trait = treasure_fleet_preparation
+						}
 					}
 					opinion = {
 						modifier = opinion_great_tribal_festival_guest
@@ -249,6 +255,9 @@ letter_event = {
 							has_any_opinion_modifier = opinion_great_tribal_festival_guest 
 							trait = incapable
 							is_inaccessible_trigger = yes
+						}
+						NOT = {
+							trait = treasure_fleet_preparation
 						} 
 					}
 					opinion = {
@@ -1733,6 +1742,43 @@ character_event = {
 			years = 15
 			who = FROM
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		random_list = { 
 			50 = { 
 			}
@@ -1805,6 +1851,43 @@ character_event = {
 	    #hidden_tooltip = {
 	        #FROM = { character_event = { id = HFP.10095 days = 1 } } #Duel evaluation (hidden) + result event as follow-up.
 	    #}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		ai_chance = { 
 			factor = 40
 			modifier = { 
@@ -1844,6 +1927,43 @@ character_event = {
 		add_character_modifier = {
 			name = publicly_humiliated
 			years = 2
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
 		}
 		ai_chance = { 
 			factor = 80 
@@ -1894,6 +2014,43 @@ character_event = {
 	    #hidden_tooltip = {
 	        #FROM = { character_event = { id = HFP.10095 days = 1 } } #Duel evaluation (hidden) + result event as follow-up.
 	    #}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		ai_chance = { 
 			factor = 40
 			modifier = { 
@@ -1929,6 +2086,43 @@ character_event = {
 			modifier = opinion_antagonized_2
 			years = 15
 			who = FROM
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
 		}
 		ai_chance = { 
 			factor = 80 
@@ -2016,6 +2210,43 @@ character_event = {
 					modifier = insulted
 					months = 34
 					who = ROOT
+				}
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_medium_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_minor_effect = yes
+						}
+					}
 				}
 			}
 		}
@@ -2791,6 +3022,43 @@ character_event = {
 		name = EVTOPTAHF23848
 		trigger = { 
 			is_adult = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
 		}
 		opinion = {
 			modifier = opinion_disrespectful_pest

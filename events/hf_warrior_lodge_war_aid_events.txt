@@ -294,6 +294,41 @@ letter_event = {
     option = # Decline
     {
         name = EVTOPTB_HF_50002 
+        if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		} 
         FROM = 
         {
             show_scope_change = no
@@ -434,6 +469,41 @@ letter_event = {
     option = # Decline
     {
         name = EVTOPTB_HF_50002 
+        if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
         FROM = 
         {
             opinion = {
@@ -772,6 +842,41 @@ character_event = {
         }
         add_society_currency_major_effect = yes
         wealth = 50
+        if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
         opinion = {
             modifier = opinion_very_disappointed
             who = FROM
@@ -801,6 +906,41 @@ character_event = {
         }
         character_event = { id = HF.50107 }
         event_target:warrior_lodge_war_side = { character_event = { id = HF.50107 } }
+        if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		} 
     }
 
     option = {
@@ -809,6 +949,41 @@ character_event = {
             has_character_flag = negative_war_letter
         }
         character_event = { id = HF.50107 }
+        if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
         event_target:warrior_lodge_war_side = { character_event = { id = HF.50107 } }
     }
 
@@ -819,6 +994,41 @@ character_event = {
             trait = craven
         }
         remove_trait_craven_effect = yes
+        if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
         character_event = { id = HF.50107 }
         event_target:warrior_lodge_war_side = { character_event = { id = HF.50107 } }
     }

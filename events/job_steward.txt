@@ -1462,6 +1462,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTB20226 # Refuse
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# ROOT cannot be the EoC
+			}
+			if = {
+				limit = {
+					liege = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {

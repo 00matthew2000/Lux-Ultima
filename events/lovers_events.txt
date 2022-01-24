@@ -49,10 +49,71 @@ character_event = {
 			trait = envious
 		}
 	}
+
+	# Intentionally different from vanilla!
+	immediate = {
+		spouse = {
+			random_lover = {
+				limit = {
+					NOT = {
+						character = ROOT
+					}
+				}
+				save_event_target_as = target_lover
+			}
+		}
+	}
 	
 	option = {
 		name = "EVTOPTA64000"
 		spouse = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					is_chinese_emperor_trigger = no
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_chinese_emperor_trigger = yes
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										current_heir = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+						}
+					}
+					detract_grace_super_huge_effect = yes
+					event_target:target_lover = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									any_child = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+					detract_grace_massive_effect = yes
+					event_target:target_lover = {
+						detract_grace_massive_effect = yes
+					}
+				}
+			}
 			character_event = {
 				id = 64001
 				tooltip = "EVTTOOLTIP64001"
@@ -62,6 +123,53 @@ character_event = {
 	option = {
 		name = "EVTOPTB64000"
 		spouse = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					is_chinese_emperor_trigger = no
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								is_chinese_emperor_trigger = yes
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										current_heir = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+						}
+					}
+					detract_grace_super_huge_effect = yes
+					event_target:target_lover = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									any_child = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+					detract_grace_massive_effect = yes
+					event_target:target_lover = {
+						detract_grace_massive_effect = yes
+					}
+				}
+			}
 			random_lover = {
 				character_event = {
 					id = 64002
@@ -92,7 +200,23 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB64001"
-		random_lover = {	
+		event_target:target_lover = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes # Breaking up with lover
+					}
+				}
+			}	
 			character_event = {
 				id = 64046
 				tooltip = "EVTTOOLTIP64046"
@@ -131,6 +255,22 @@ character_event = {
 		name = "EVTOPTB64002" # Break up
 		FROM = {
 			spouse = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_major_effect = yes # Breaking up with lover
+						}
+					}
+				}
 				character_event = {
 					id = 64046
 					tooltip = "EVTTOOLTIP64046"
@@ -147,6 +287,41 @@ character_event = {
 	option = {
 		name = "EVTOPTC64002" # I will claw your eyes out!
 		tooltip_info = martial
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		trigger = {
 			martial = 10
 			FROM = {
@@ -180,6 +355,41 @@ character_event = {
 				NOT = {
 					trait = wounded
 				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
 			}
 		}
 		FROM = {
@@ -404,6 +614,22 @@ character_event = {
 				has_character_flag = lover_ill_flag_64005
 			}		
 			clr_character_flag = lover_ill_flag_64005
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes # Breaking up with lover
+					}
+				}
+			}
 			character_event = {
 				id = 64046
 				tooltip = "EVTTOOLTIP64046"
@@ -536,6 +762,22 @@ character_event = {
 				has_character_flag = lover_wounded_flag_64006
 			}
 			clr_character_flag = lover_wounded_flag_64006
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes # Breaking up with lover
+					}
+				}
+			}
 			character_event = {
 				id = 64046
 				tooltip = "EVTTOOLTIP64046"
@@ -604,9 +846,16 @@ character_event = {
 	weight_multiplier = {
 		days = 1
 	}
-
-	immediate = {
-		random_courtier = {
+	
+	option = {
+		name = "EVTOPTA64010"
+		trigger = {
+			is_female = no
+		}
+		ai_chance = {
+			factor = 95
+		}
+		any_courtier = {
 			limit = {
 				age = 12
 				OR = {
@@ -656,19 +905,6 @@ character_event = {
 	            value = 10
 	            interesting_courtier_selection_score = yes
 	        }
-			save_event_target_as = lover
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA64010"
-		trigger = {
-			is_female = no
-		}
-		ai_chance = {
-			factor = 95
-		}
-		event_target:lover = {
 			random_list = {
 				80 = {
 					set_character_flag = good_reply
@@ -695,7 +931,36 @@ character_event = {
 		ai_chance = {
 			factor = 95
 		}
-		event_target:lover = {
+		any_courtier = {
+			limit = {
+				age = 12
+				is_female = no
+				is_married = no
+				has_epidemic = no
+				NOT = {
+					trait = homosexual
+				}
+				NOT = {
+					trait = celibate
+				}
+				NOT = {
+					trait = incapable
+				}
+				NOT = {
+					trait = eunuch
+				}
+				is_ill = no
+				NOT = {
+					family = ROOT
+				}
+				NOT = {
+					age = 18
+				}
+			}
+			score_value = { #Prioritizes selecting an interesting courtier...
+	            value = 10
+	            interesting_courtier_selection_score = yes
+	        }
 			random_list = {
 				80 = {
 					set_character_flag = good_reply
@@ -783,6 +1048,20 @@ character_event = {
 		name = "EVTOPTB64011" #Scorn reply
 		trigger = {
 			has_character_flag = bad_reply
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
 		}
 		FROM = {
 			character_event = {
@@ -1145,6 +1424,20 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB64017"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			character_event = {
 				id = 64019
@@ -1198,6 +1491,20 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA64020"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			opinion = {
 				modifier = opinion_angry
@@ -1401,6 +1708,47 @@ character_event = {
 		}
 		if = {
 			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									current_heir = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								any_child = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+		}
+		if = {
+			limit = {
 				is_married = yes
 				spouse = {
 					is_alive = yes
@@ -1425,6 +1773,22 @@ character_event = {
 				has_character_flag = lover_retreat_64030
 			}
 			clr_character_flag = lover_retreat_64030
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes # Breaking up with lover
+					}
+				}
+			}
 			character_event = {
 				id = 64046
 				tooltip = "EVTTOOLTIP64046"
@@ -1551,6 +1915,22 @@ character_event = {
 				has_character_flag = lover_dostuff_64035
 			}
 			clr_character_flag = lover_dostuff_64035
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes # Breaking up with lover
+					}
+				}
+			}
 			character_event = {
 				id = 64046
 				tooltip = "EVTTOOLTIP64045" 
@@ -1589,6 +1969,21 @@ character_event = {
 			}
 		}
 	}
+
+	# Intentionally different from vanilla!
+	immediate = {
+		spouse = {
+			random_lover = {
+				limit = {
+					is_abroad = no
+					prisoner = no
+					NOT = {trait = incapable }
+					NOT = { character = ROOT }
+				}
+				save_event_target_as = target_lover
+			}
+		}
+	}
 	
 	weight_multiplier = {
 		days = 1
@@ -1620,6 +2015,59 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA64041"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					is_chinese_emperor_trigger = no
+				}
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								is_chinese_emperor_trigger = yes
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										current_heir = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+						}
+					}
+					detract_grace_super_huge_effect = yes
+					event_target:target_lover = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									any_child = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+					detract_grace_massive_effect = yes
+					event_target:target_lover = {
+						detract_grace_massive_effect = yes
+					}
+				}
+			}
+		}
 		FROM = {
 			reverse_opinion = {
 				modifier = opinion_angry
@@ -1630,13 +2078,68 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB64041"
-		random_lover = {
-			limit = { 
-				is_abroad = no
-				prisoner = no
-				NOT = { trait = incapable }
-				NOT = { character = FROM }
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+							   
+							  
 			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					is_chinese_emperor_trigger = no
+				}
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								is_chinese_emperor_trigger = yes
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										current_heir = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+						}
+					}
+					detract_grace_super_huge_effect = yes
+					event_target:target_lover = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									any_child = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+					detract_grace_massive_effect = yes
+					event_target:target_lover = {
+						detract_grace_massive_effect = yes
+					}
+				}
+			}
+		}
+		event_target:target_lover = {
+			#limit = { 
+			#	is_abroad = no
+			#	prisoner = no
+			#	NOT = { trait = incapable }
+			#	NOT = { character = FROM }
+			#}
 			character_event = {
 				id = 64046
 				tooltip = "EVTTOOLTIP64046"
@@ -1718,6 +2221,22 @@ character_event = {
 		name = "EVTOPTA64045"
 		clr_character_flag = lost_loving_feeling # Set in chief Qadi event chain (105035). Zina.
 		event_target:lover = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes # Breaking up with lover
+					}
+				}
+			}
 			character_event = {
 				id = 64046
 				tooltip = "EVTTOOLTIP64046"
@@ -1804,6 +2323,20 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB64050" #This was just something for us growing up
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:infatuated_love_64050 = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		event_target:infatuated_love_64050 = {
 			hidden_tooltip = {
 				remove_opinion = { who = ROOT modifier = teenage_infatuation }
@@ -2091,6 +2624,22 @@ character_event = {
 	option = {
 		name = "EVTOPTD64060" #She's married, I should forget her
 		event_target:lover = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes # Breaking up with lover
+					}
+				}
+			}
 			character_event = {
 				id = 64046
 				tooltip = "EVTTOOLTIP64046"
@@ -2147,16 +2696,6 @@ character_event = {
 		modifier = {
 			factor = 1.5
 			trait = lustful
-		}
-	}
-
-	immediate = {
-		random_lover = {
-			limit = {
-				is_female = yes
-				is_married = yes 
-			}
-			save_event_target_as = lover		
 		}
 	}
 	
@@ -2290,16 +2829,6 @@ character_event = {
 		modifier = {
 			factor = 1.5
 			trait = lustful
-		}
-	}
-
-	immediate = {
-		random_lover = {
-			limit = {
-				is_female = yes
-				is_married = yes 
-			}
-			save_event_target_as = lover		
 		}
 	}
 	
@@ -2494,6 +3023,55 @@ character_event = {
 					who = ROOT
 					years = 5
 				}
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								is_chinese_emperor_trigger = yes
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										current_heir = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+							event_target:target_lover = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									any_child = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+							event_target:target_lover = {
+								detract_grace_massive_effect = yes
+							}
+						}
+					}
+				}
 			}
 		}
 		if = {
@@ -2587,6 +3165,53 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA64077"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									current_heir = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+				event_target:target_lover = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								any_child = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+				event_target:target_lover = {
+					detract_grace_massive_effect = yes
+				}
+			}
+		}
 		reverse_opinion = {
 			modifier = opinion_hate
 			who = FROM
@@ -2850,6 +3475,81 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA64086"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							spouse = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							AND = {
+								is_chinese_emperor_trigger = no
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							spouse = {
+								is_chinese_emperor_trigger = no
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							AND = {
+								is_chinese_emperor_trigger = no
+								NOT = {
+									any_close_relative = {
+										dynasty = PREV
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							spouse = {
+								is_chinese_emperor_trigger = no
+								NOT = {
+									any_close_relative = {
+										dynasty = PREV
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		random_list = {
 			75 = {
 				FROM = {
@@ -2901,6 +3601,33 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA64087"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+					# If either eloper is a relative of the EoC, they upset him
+					OR = {
+						AND = {
+							dynasty = ROOT
+							any_close_relative = {
+								character = ROOT
+							}
+						}
+						spouse = {
+							dynasty = ROOT
+							any_close_relative = {
+								character = ROOT
+							}
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		opinion = {
 			modifier = opinion_angry
 			who = FROM
@@ -2919,6 +3646,33 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA64088"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+					# If either eloper is a relative of the EoC, they upset him
+					OR = {
+						AND = {
+							dynasty = ROOT
+							any_close_relative = {
+								character = ROOT
+							}
+						}
+						spouse = {
+							dynasty = ROOT
+							any_close_relative = {
+								character = ROOT
+							}
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		banish = yes
 		opinion = {
 			modifier = opinion_angry
@@ -3148,6 +3902,53 @@ character_event = {
 			}
 			25 = {
 				spouse = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							is_chinese_emperor_trigger = no
+						}
+						if = {
+							limit = {
+								spouse = {
+									OR = {
+										is_chinese_emperor_trigger = yes
+										e_china = {
+											holder_scope = {
+												is_chinese_emperor_trigger = yes
+												current_heir = {
+													character = PREVPREVPREV
+													dynasty = PREV
+												}
+											}
+										}
+									}
+								}
+							}
+							detract_grace_super_huge_effect = yes
+							event_target:target_lover = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								spouse = {
+									e_china = {
+										holder_scope = {
+											is_chinese_emperor_trigger = yes
+											any_child = {
+												character = PREVPREVPREV
+												dynasty = PREV
+											}
+										}
+									}
+								}
+							}
+							detract_grace_massive_effect = yes
+							event_target:target_lover = {
+								detract_grace_massive_effect = yes
+							}
+						}
+					}
 					character_event = {
 						id = 64102
 						tooltip = "EVTTOOLTIP64102"
@@ -3174,6 +3975,22 @@ character_event = {
 		}
 			25 = {
 				event_target:target_lover = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_major_effect = yes # Breaking up with lover
+							}
+						}
+					}
 					character_event = {
 						id = 64046
 						tooltip = "EVTTOOLTIP64046" 
@@ -3273,6 +4090,22 @@ character_event = {
 			}
 		}
 	}
+
+	immediate = {
+		random_lover = {
+			limit = {
+				NOT = { trait = incapable }
+				prisoner = no
+				ROOT = { NOT = { is_consort = PREV } }
+				NOT = {
+					spouse = {
+						character = ROOT
+					}
+				}
+			}
+			save_event_target_as = target_lover
+		}
+	}
 	
 	mean_time_to_happen = {
 		months = 360
@@ -3283,6 +4116,55 @@ character_event = {
 		random_list = {
 			50 = {
 				spouse = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									is_chinese_emperor_trigger = yes
+									e_china = {
+										holder_scope = {
+											is_chinese_emperor_trigger = yes
+											current_heir = {
+												character = PREVPREVPREV
+												dynasty = PREV
+											}
+										}
+									}
+								}
+							}
+							ROOT = {
+								detract_grace_super_huge_effect = yes
+								event_target:target_lover = {
+									detract_grace_super_huge_effect = yes
+								}
+							}
+						}
+						else_if = {
+							limit = {
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										any_child = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+								event_target:target_lover = {
+									detract_grace_massive_effect = yes
+								}
+							}
+						}
+					}
 					character_event = {
 						id = 64105
 						tooltip = "EVTTOOLTIP64105" #FALLOUT!
@@ -3322,6 +4204,55 @@ character_event = {
 		}
 			25 = {
 				spouse = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									is_chinese_emperor_trigger = yes
+									e_china = {
+										holder_scope = {
+											is_chinese_emperor_trigger = yes
+											current_heir = {
+												character = PREVPREVPREV
+												dynasty = PREV
+											}
+										}
+									}
+								}
+							}
+							ROOT = {
+								detract_grace_super_huge_effect = yes
+								event_target:target_lover = {
+									detract_grace_super_huge_effect = yes
+								}
+							}
+						}
+						else_if = {
+							limit = {
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										any_child = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+								event_target:target_lover = {
+									detract_grace_massive_effect = yes
+								}
+							}
+						}
+					}
 					character_event = {
 						id = 64105
 						tooltip = "EVTTOOLTIP64105" #FALLOUT!
@@ -3348,6 +4279,55 @@ character_event = {
 		}
 			10 = {
 				spouse = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									is_chinese_emperor_trigger = yes
+									e_china = {
+										holder_scope = {
+											is_chinese_emperor_trigger = yes
+											current_heir = {
+												character = PREVPREVPREV
+												dynasty = PREV
+											}
+										}
+									}
+								}
+							}
+							ROOT = {
+								detract_grace_super_huge_effect = yes
+								event_target:target_lover = {
+									detract_grace_super_huge_effect = yes
+								}
+							}
+						}
+						else_if = {
+							limit = {
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										any_child = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+								event_target:target_lover = {
+									detract_grace_massive_effect = yes
+								}
+							}
+						}
+					}
 					character_event = {
 						id = 64105
 						tooltip = "EVTTOOLTIP64105" #FALLOUT!
@@ -3373,16 +4353,24 @@ character_event = {
 			}
 		}
 			25 = {
-				random_lover = {
-					limit  = {
-						NOT = { trait = incapable }
-						prisoner = no
-						ROOT = { NOT = { is_consort = PREV } }
-						NOT = {
-							spouse = {
-								character = ROOT
+				event_target:target_lover = {
+			   
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+						
 							}
-						}					
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_major_effect = yes # Breaking up with lover
+							}
+						}
 					}
 					character_event = {
 						id = 64046
@@ -3477,6 +4465,55 @@ character_event = {
 			
 			
 			spouse = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								is_chinese_emperor_trigger = yes
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										current_heir = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+							event_target:target_lover = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									any_child = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+							event_target:target_lover = {
+								detract_grace_massive_effect = yes
+							}
+						}
+					}
+				}
 				character_event = {
 					id = 64105
 					tooltip = "EVTTOOLTIP64105" #FALLOUT!
@@ -3505,6 +4542,55 @@ character_event = {
 			chance = 50
 			
 			spouse = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								is_chinese_emperor_trigger = yes
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										current_heir = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+							event_target:target_lover = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									any_child = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+							event_target:target_lover = {
+								detract_grace_massive_effect = yes
+							}
+						}
+					}
+				}
 				character_event = {
 					id = 64105
 					tooltip = "EVTTOOLTIP64105" #FALLOUT!
@@ -3530,6 +4616,55 @@ character_event = {
 			}
 			10 = {
 				spouse = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									is_chinese_emperor_trigger = yes
+									e_china = {
+										holder_scope = {
+											is_chinese_emperor_trigger = yes
+											current_heir = {
+												character = PREVPREVPREV
+												dynasty = PREV
+											}
+										}
+									}
+								}
+							}
+							ROOT = {
+								detract_grace_super_huge_effect = yes
+								event_target:target_lover = {
+									detract_grace_super_huge_effect = yes
+								}
+							}
+						}
+						else_if = {
+							limit = {
+								e_china = {
+									holder_scope = {
+										is_chinese_emperor_trigger = yes
+										any_child = {
+											character = PREVPREVPREV
+											dynasty = PREV
+										}
+									}
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+								event_target:target_lover = {
+									detract_grace_massive_effect = yes
+								}
+							}
+						}
+					}
 					character_event = {
 						id = 64105
 						tooltip = "EVTTOOLTIP64105" #FALLOUT!
@@ -3538,6 +4673,22 @@ character_event = {
 			}
 			10 = {
 				event_target:target_lover = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_major_effect = yes # Breaking up with lover
+							}
+						}
+					}
 					character_event = {
 						id = 64046
 						tooltip = "EVTTOOLTIP64046" 
@@ -3573,6 +4724,22 @@ character_event = {
 			}
 		}
 		event_target:target_lover = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes # Insulting
+					}
+				}
+			}
 			character_event = {
 				id = 64046
 				tooltip = "EVTTOOLTIP64046" 
@@ -3621,6 +4788,20 @@ character_event = {
 	mean_time_to_happen = {
 		months = 360
 	}
+
+	# Intentionally different from vanilla!
+	immediate = {
+		random_lover = {
+			limit = {
+				NOT = {
+					spouse = {
+						character = ROOT
+					}
+				}
+			}
+			save_event_target_as = target_lover
+		}
+	}
 	
 	option = {
 		name = "EVTOPTA64120" #Disown affair
@@ -3628,13 +4809,22 @@ character_event = {
 			set_character_flag = adulterous_affair_public
 		}
 		prestige = -25
-		any_lover = {
-			limit = {
-				NOT = {
-					spouse = {
-						character = ROOT
+		event_target:target_lover = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
 					}
-				}		
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes # Breaking up with lover
+					}
+				}
 			}
 			character_event = {
 				id = 64046
@@ -3725,9 +4915,69 @@ character_event = {
 	mean_time_to_happen = {
 		months = 360
 	}
+
+	immediate = {
+		spouse = {
+			random_lover = {
+				limit = {
+					NOT = {
+						character = ROOT
+					}
+				}
+				save_event_target_as = target_lover
+			}
+		}
+	}
 	
 	option = {
 		name = "EVTOPTA64125" #Bear it stoically
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			if = {
+				limit = {
+					OR = {
+						is_chinese_emperor_trigger = yes
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								current_heir = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				spouse = {
+					detract_grace_super_huge_effect = yes
+					event_target:target_lover = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					e_china = {
+						holder_scope = {
+							is_chinese_emperor_trigger = yes
+							any_child = {
+								character = PREVPREVPREV
+								dynasty = PREV
+							}
+						}
+					}
+				}
+				spouse = {
+					detract_grace_massive_effect = yes
+					event_target:target_lover = {
+						detract_grace_massive_effect = yes
+					}
+				}
+			}
+		}
 		prestige = -50
 		random = {
 			chance = 10
@@ -3743,6 +4993,53 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB64125" #Arrest him
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			if = {
+				limit = {
+					OR = {
+						is_chinese_emperor_trigger = yes
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								current_heir = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				spouse = {
+					detract_grace_super_huge_effect = yes
+					event_target:target_lover = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					e_china = {
+						holder_scope = {
+							is_chinese_emperor_trigger = yes
+							any_child = {
+								character = PREVPREVPREV
+								dynasty = PREV
+							}
+						}
+					}
+				}
+				spouse = {
+					detract_grace_massive_effect = yes
+					event_target:target_lover = {
+						detract_grace_massive_effect = yes
+					}
+				}
+			}
+		}
 		trigger = {
 			spouse = {
 				any_lover = {
@@ -3754,11 +5051,7 @@ character_event = {
 		
 		prestige = -10
 		spouse = {
-			random_lover = {
-				limit = {
-					NOT = { character = ROOT }
-					is_liege_or_above = ROOT
-				}
+			event_target:target_lover = {
 				imprison = ROOT
 				hidden_tooltip = {
 					character_event = {
@@ -3780,6 +5073,53 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTC64125" #Arrest her
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			if = {
+				limit = {
+					OR = {
+						is_chinese_emperor_trigger = yes
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								current_heir = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				spouse = {
+					detract_grace_super_huge_effect = yes
+					event_target:target_lover = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					e_china = {
+						holder_scope = {
+							is_chinese_emperor_trigger = yes
+							any_child = {
+								character = PREVPREVPREV
+								dynasty = PREV
+							}
+						}
+					}
+				}
+				spouse = {
+					detract_grace_massive_effect = yes
+					event_target:target_lover = {
+						detract_grace_massive_effect = yes
+					}
+				}
+			}
+		}
 		prestige = -20
 		spouse = {
 			imprison = ROOT
@@ -3802,6 +5142,53 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTD64125" #Arrest both of them
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			if = {
+				limit = {
+					OR = {
+						is_chinese_emperor_trigger = yes
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								current_heir = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				spouse = {
+					detract_grace_super_huge_effect = yes
+					event_target:target_lover = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					e_china = {
+						holder_scope = {
+							is_chinese_emperor_trigger = yes
+							any_child = {
+								character = PREVPREVPREV
+								dynasty = PREV
+							}
+						}
+					}
+				}
+				spouse = {
+					detract_grace_massive_effect = yes
+					event_target:target_lover = {
+						detract_grace_massive_effect = yes
+					}
+				}
+			}
+		}
 		trigger = {
 			spouse = {
 				any_lover = {

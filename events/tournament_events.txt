@@ -24,6 +24,11 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA70000"
+		trigger = {
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
+		}
 		ai_chance = {
 			factor = 100
 			modifier  = {

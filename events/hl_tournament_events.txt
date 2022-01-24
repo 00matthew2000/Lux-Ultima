@@ -36,6 +36,9 @@ character_event = {
 					is_female = no
 					has_character_flag = special_marshal
 				}
+				NOT = {
+					trait = treasure_fleet_preparation
+				}
 			}
 			letter_event = {
 				id = HL.7001

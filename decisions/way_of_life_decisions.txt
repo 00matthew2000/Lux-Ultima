@@ -32,6 +32,18 @@ targetted_decisions = {
 			always = yes
 		}
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					FROM = {
+						is_chinese_emperor_trigger = no
+					}
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
 			FROM = { character_event = { id = WoL.1109 tooltip = EVTTOOLTIP64046 } }
 		}
 		#revoke_allowed = {
@@ -694,6 +706,10 @@ targetted_decisions = {
 			NOT = { is_inaccessible_trigger = yes }
 			NOT = { had_character_flag = { flag = inviting_guests_to_party_timer days = 90 } }
 			NOT = { has_character_flag = party_host }
+			NOT = {
+				trait = treasure_fleet_preparation
+				}
+			}
 		}
 		potential = {
 			is_adult = yes
@@ -718,7 +734,10 @@ targetted_decisions = {
 			ROOT = {
 				custom_tooltip = {
 					text = tooltip_not_busy
-					NOT = { has_character_flag = do_not_disturb }
+					NOT = { has_character_flag = do_not_disturb }		
+					NOT = {
+						trait = treasure_fleet_preparation
+					}
 				}
 			}
 			FROM = {
@@ -1111,6 +1130,9 @@ decisions = {
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+		        NOT = {
+					trait = treasure_fleet_preparation
+				}
 			}
 		}
 		effect = {

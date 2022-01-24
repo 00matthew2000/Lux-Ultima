@@ -527,6 +527,17 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		# For now, let's restrict the capital location a bit to avoid characters in Japan "marching east"...
+		# Not sure what a good localization idea for characters from Tibet, the steppes, the Far East, etc. would be; feel free to add 
+		capital_scope = {
+			OR = {
+				region = world_europe
+				region = world_africa
+				region = world_persia
+				region = world_middle_east
+				region = world_india
+			}
+		}
 		OR = {
 			AND = {
 				has_focus = focus_war
