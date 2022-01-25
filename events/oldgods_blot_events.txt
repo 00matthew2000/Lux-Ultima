@@ -880,6 +880,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_610
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -940,6 +974,40 @@ character_event = {
 			FROM = { controls_religion = no }
 		}
 		name = EVTOPTA_TOG_611
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -960,6 +1028,40 @@ character_event = {
 			FROM = { controls_religion = yes }
 		}
 		name = EVTOPTA_TOG_611_Pope
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			religion_authority = { modifier = sacrificed_head_bad years = 20 }
 			death = {
@@ -1005,6 +1107,40 @@ character_event = {
 			FROM = { controls_religion = no }
 		}
 		name = EVTOPTA_TOG_612
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1025,6 +1161,40 @@ character_event = {
 			FROM = { controls_religion = yes }
 		}
 		name = EVTOPTA_TOG_612_Caliph
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			religion_authority = { modifier = sacrificed_head_bad years = 20 }
 			death = {
@@ -1067,6 +1237,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_613
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1102,6 +1306,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_614
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1137,6 +1375,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_615
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1172,6 +1444,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_616
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1207,6 +1513,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_617
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1242,6 +1582,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_618
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1277,6 +1651,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_619
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1312,6 +1720,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_620
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1348,6 +1790,40 @@ character_event = {
 			FROM = { controls_religion = no }
 		}
 		name = EVTOPTA_TOG_621
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -1367,6 +1843,40 @@ character_event = {
 		name = EVTOPTA_TOG_621_Aztec_Religious_Head
 		trigger = {
 			FROM = { controls_religion = yes }
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
 		}
 		FROM = {
 			religion_authority = { modifier = sacrificed_head_bad years = 20 }
@@ -2575,6 +3085,47 @@ character_event = {
 		trigger = {
 			is_married = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									current_heir = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								any_child = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+		}
 		hidden_tooltip = {
 			liege = {
 				set_character_flag = feast_lustful
@@ -3031,7 +3582,7 @@ character_event = {
 				}
 				character_event = { id = TOG.667 }
 				set_character_flag = feast_homosexual
-				add_lover = FROM
+				add_lover = ROOT
 			}		
 		}
 	}
@@ -3209,6 +3760,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_610
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -3220,21 +3805,23 @@ character_event = {
 				limit = { has_character_flag = attending_blot }
 				character_event = { id = TOG.622 }
 			}
+			if = {
+				limit = {
+					FROM = { 
+						controls_religion = yes
+						NOT = { religion = norse_pagan_reformed }
+					}
+					ai = no
+					NOT = { has_character_flag = achievement_holy_smoke }
+				}
+				set_character_flag = achievement_holy_smoke
+			}
 		}
 		if = {
 			limit = {
 				FROM = { 
 					controls_religion = yes
 					NOT = { religion = norse_pagan_reformed }
-				}
-			}
-			hidden_tooltip = {
-				if = {
-					limit = {
-						ai = no
-						NOT = { has_character_flag = achievement_holy_smoke }
-					}
-					set_character_flag = achievement_holy_smoke
 				}
 			}
 			prestige = 250
@@ -3264,6 +3851,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_610
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -3275,21 +3896,23 @@ character_event = {
 				limit = { has_character_flag = attending_blot }
 				character_event = { id = TOG.622 }
 			}
+			if = {
+				limit = {
+					FROM = { 
+						controls_religion = yes
+						NOT = { religion = norse_pagan_reformed }
+					}
+					ai = no
+					NOT = { has_character_flag = achievement_holy_smoke }
+				}
+				set_character_flag = achievement_holy_smoke
+			}
 		}
 		if = {
 			limit = {
 				FROM = { 
 					controls_religion = yes
 					NOT = { religion = norse_pagan_reformed }
-				}
-			}
-			hidden_tooltip = {
-				if = {
-					limit = {
-						ai = no
-						NOT = { has_character_flag = achievement_holy_smoke }
-					}
-					set_character_flag = achievement_holy_smoke
 				}
 			}
 			prestige = 250
@@ -3319,6 +3942,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_610
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -3330,21 +3987,23 @@ character_event = {
 				limit = { has_character_flag = attending_blot }
 				character_event = { id = TOG.622 }
 			}
+			if = {
+				limit = {
+					FROM = { 
+						controls_religion = yes
+						NOT = { religion = norse_pagan_reformed }
+					}
+					ai = no
+					NOT = { has_character_flag = achievement_holy_smoke }
+				}
+				set_character_flag = achievement_holy_smoke
+			}
 		}
 		if = {
 			limit = {
 				FROM = { 
 					controls_religion = yes
 					NOT = { religion = norse_pagan_reformed }
-				}
-			}
-			hidden_tooltip = {
-				if = {
-					limit = {
-						ai = no
-						NOT = { has_character_flag = achievement_holy_smoke }
-					}
-					set_character_flag = achievement_holy_smoke
 				}
 			}
 			prestige = 250

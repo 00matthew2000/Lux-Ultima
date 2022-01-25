@@ -2082,8 +2082,6 @@ character_event = {
 			limit = {
 				has_dlc = "Jade Dragon"
 				is_chinese_emperor_trigger = no
-							   
-							  
 			}
 			if = {
 				limit = {
@@ -4192,16 +4190,16 @@ character_event = {
 			50 = {
 			}
 			25 = {
-			if = {
-				limit = { NOT = { trait = deceitful } }
-				add_trait = deceitful
-				hidden_tooltip = {
-					character_event = {
-						id = 38255 #Notify Deceitful
+				if = {
+					limit = { NOT = { trait = deceitful } }
+					add_trait = deceitful
+					hidden_tooltip = {
+						character_event = {
+							id = 38255 #Notify Deceitful
+						}
 					}
 				}
 			}
-		}
 			25 = {
 				spouse = {
 					if = {
@@ -4342,25 +4340,23 @@ character_event = {
 			50 = {
 			}
 			25 = {
-			if = {
-				limit = { NOT = { trait = humble } }
-				add_trait = humble
-				hidden_tooltip = {
-					character_event = {
-						id = 38260 #Notify Humble
+				if = {
+					limit = { NOT = { trait = humble } }
+					add_trait = humble
+					hidden_tooltip = {
+						character_event = {
+							id = 38260 #Notify Humble
+						}
 					}
 				}
 			}
-		}
 			25 = {
 				event_target:target_lover = {
-			   
 					if = {
 						limit = {
 							has_dlc = "Jade Dragon"
 							ROOT = {
 								is_chinese_emperor_trigger = no
-						
 							}
 						}
 						if = {
@@ -4752,7 +4748,7 @@ character_event = {
 character_event = {
 	id = 64120
 	desc = EVTDESC64120
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	min_age = 16
 	capable_only = yes
@@ -4886,7 +4882,7 @@ character_event = {
 character_event = {
 	id = 64125
 	desc = EVTDESC64125
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	min_age = 16
 	only_men = yes

@@ -8,7 +8,7 @@
 ###################################
 #
 # Designed by Johan Andersson
-# Written by Sara Wendel-Örtqvist
+# Written by Sara Wendel-Ã–rtqvist
 
 ###  Homosexual ### 
 
@@ -177,6 +177,43 @@ character_event = {
 				}
 				NOT = {
 					reverse_opinion = { who = ROOT value = 50 }
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
 				}
 			}
 			character_event = {
@@ -799,11 +836,48 @@ character_event = {
 					opinion = { who = PREV value = 75 }
 				}
 			}
-		}
-		character_event = {
-			id = 69012
-			days = 3
-			tooltip = EVTTOOLTIP69012
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
+			character_event = {
+				id = 69012
+				days = 3
+				tooltip = EVTTOOLTIP69012
+			}
 		}
 	}
 }
@@ -1269,6 +1343,43 @@ character_event = {
 					trait = blinded
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			add_maimed_trait_effect = yes
 		}
 	}
@@ -1479,6 +1590,43 @@ character_event = {
 				}
 				NOT = {
 					num_of_children = 1
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
 				}
 			}
 			character_event = {
@@ -1962,6 +2110,43 @@ character_event = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			character_event = {
 				id = 69036
 				days = 3
@@ -2098,6 +2283,47 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA69034
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									current_heir = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								any_child = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+		}
 		FROM = {
 			opinion = {
 				modifier = opinion_mad_as_hell
@@ -2118,6 +2344,47 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA69035
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									current_heir = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								any_child = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+		}
 		FROM = {
 			opinion = {
 				modifier = opinion_forgive
@@ -2383,6 +2650,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	only_playable = yes # We really don't care that a random courtier has upset their spouse
 	
 	trigger = {
 		any_lover = {
@@ -2428,6 +2696,22 @@ character_event = {
 		name = EVTOPTB69039 #Confess to wife
 		clr_character_flag = committed_adultery
 		event_target:problem_lover = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			remove_lover = ROOT
 		}
 		spouse = {
@@ -2597,6 +2881,43 @@ character_event = {
 				}
 				NOT = {
 					has_character_flag = suspected_occultist
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
 				}
 			}
 			character_event = {
@@ -2827,7 +3148,7 @@ character_event = {
 character_event = {
 	id = 69044
 	desc = EVTDESC69044
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	min_age = 16
 	capable_only = yes
@@ -3779,6 +4100,43 @@ character_event = {
 			factor = 40
 		}
 		event_target:69060_target_courtier = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			character_event = {
 				id = 69062
 				days = 3
@@ -4358,6 +4716,43 @@ character_event = {
 				}
 				NOT = { is_inaccessible_trigger = yes }
 			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			character_event = {
 				id = 69072
 				days = 3
@@ -4650,7 +5045,7 @@ character_event = {
 character_event = {
 	id = 69075
 	desc = EVTDESC69075
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	capable_only = yes
 	prisoner = no
@@ -4719,7 +5114,7 @@ character_event = {
 character_event = {
 	id = 69080
 	desc = EVTDESC69080
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4745,7 +5140,7 @@ character_event = {
 character_event = {
 	id = 69081
 	desc = EVTDESC69081
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4771,7 +5166,7 @@ character_event = {
 character_event = {
 	id = 69082
 	desc = EVTDESC69082
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4791,7 +5186,7 @@ character_event = {
 character_event = {
 	id = 69083
 	desc = EVTDESC69083
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4818,7 +5213,7 @@ character_event = {
 character_event = {
 	id = 69084
 	desc = EVTDESC69084
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4838,7 +5233,7 @@ character_event = {
 character_event = {
 	id = 69085
 	desc = EVTDESC69085
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4858,7 +5253,7 @@ character_event = {
 character_event = {
 	id = 69086
 	desc = EVTDESC69086
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4878,7 +5273,7 @@ character_event = {
 character_event = {
 	id = 69087
 	desc = EVTDESC69087
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4898,7 +5293,7 @@ character_event = {
 character_event = {
 	id = 69088
 	desc = EVTDESC69088
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4918,7 +5313,7 @@ character_event = {
 character_event = {
 	id = 69089
 	desc = EVTDESC69089
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4938,7 +5333,7 @@ character_event = {
 character_event = {
 	id = 69090
 	desc = EVTDESC69090
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -4958,7 +5353,7 @@ character_event = {
 character_event = {
 	id = 69091
 	desc = EVTDESC69091
-	picture = GFX_evt_courtiers_looking_scandalized
+	picture = GFX_evt_scandal
 	
 	is_triggered_only = yes
 	
@@ -5254,6 +5649,43 @@ character_event = {
 				}
 				NOT = {
 					trait = zealous
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
 				}
 			}
 			character_event = {
