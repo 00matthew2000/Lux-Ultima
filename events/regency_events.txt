@@ -59,6 +59,16 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA61000 # Embezzle
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# A vassal can impossibly be the EoC
+				liege = {
+					is_chinese_emperor_trigger = yes
+				}
+			}
+			detract_grace_major_effect = yes
+		}
 		ai_chance = { factor = 100 }
 		liege = { wealth = -20 }
 		wealth = 20
@@ -203,6 +213,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA61100 #Grab holding.
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# The regent cannot be the EoC
+			}
+			if = {
+				limit = {
+					liege = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		ai_chance = { factor = 100 }
 		liege = {
 			character_event = {	id = 61101 tooltip = EVTTOOLTIP61101 }
@@ -296,6 +341,16 @@ character_event = {
 		
 	option = {
 		name = EVTOPTA61105 #Give the money.
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# A vassal can impossibly be the EoC
+				liege = {
+					is_chinese_emperor_trigger = yes
+				}
+			}
+			detract_grace_major_effect = yes # Counts as theft, even though it isn't taken for yourself
+		}
 		ai_chance = { factor = 100 }
 		ROOT = { piety = 30 }
 			liege = {
@@ -419,6 +474,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA61120
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# Regent cannot be the EoC
+			}
+			if = {
+				limit = {
+					liege = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		ai_chance = { factor = 100 }
 		liege = {
 			character_event = {	id = 61121 tooltip = EVTTOOLTIP61121 }
@@ -795,6 +885,36 @@ character_event = {
 				random_courtier = {
 					limit = { has_minor_title = title_regent }
 					add_trait = wounded
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						# Regent can't be the EoC, so no need to check that
+						if = {
+							limit = {
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
 					opinion = {
 						modifier = opinion_mad_as_hell
 						who = ROOT
@@ -953,6 +1073,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA61141
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# Regent can't be the EoC
+			}
+			if = {
+				limit = {
+					liege = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		ai_chance = { factor = 100 }
 		set_character_flag = declared_ruler_insane
 		random_list = {
@@ -1179,6 +1334,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA61155
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# Recen't can't be the EoC
+			}
+			if = {
+				limit = {
+					liege = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		ai_chance = { factor = 0 }
 		random_list = {
 			40 = {
@@ -1746,6 +1936,41 @@ character_event = {
 
 	option = {
 		name = EVTOPTA61210
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# The regent cannot be the EoC
+			}
+			if = {
+				limit = {
+					liege = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		ai_chance = { factor = 100 }
 		liege = {
 			character_event = {	id = 61211 tooltip = EVTTOOLTIP61211 }
@@ -2242,6 +2467,34 @@ character_event = {
 			random_courtier = {
 				limit = { has_minor_title = title_regent }
 				character_event = {	id = 61227 tooltip = EVTTOOLTIP61230 }
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						# The regent cannot be the EoC
+					}
+					# The courtier cannot be the EoC
+					if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
 			}
 		}
 		hidden_tooltip = {
@@ -2260,6 +2513,34 @@ character_event = {
 			random_courtier = {
 				limit = { has_minor_title = title_regent }
 				character_event = {	id = 61232 tooltip = EVTTOOLTIP61232 }
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						# The regent cannot be the EoC
+					}
+					# The courtier cannot be the EoC
+					if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
 			}
 		}
 		hidden_tooltip = {
@@ -2578,6 +2859,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA61300
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# The regent cannot be the EoC
+			}
+			if = {
+				limit = {
+					liege = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		ai_chance = { factor = 100 }
 		liege = {
 			random_demesne_title = {
@@ -2710,6 +3026,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA61300
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# The regent cannot be the EoC
+			}
+			if = {
+				limit = {
+					liege = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					liege = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		ai_chance = { factor = 100 }
 		liege = {
 			random_demesne_title = {

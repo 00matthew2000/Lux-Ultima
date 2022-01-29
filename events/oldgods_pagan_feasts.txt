@@ -31,6 +31,10 @@ character_event = {
 				war = no
 				NOT = { trait = incapable }
 				is_inaccessible_trigger = no
+				NOR = {
+					trait = treasure_fleet_voyage
+					has_character_flag = do_not_disturb
+				}
 			}
 			character_event = { id = TOG.701 tooltip = EVTTOOLTIP_TOG_701 }
 		}
@@ -846,6 +850,47 @@ character_event = {
 		set_character_flag = feast_lustful
 		trigger = {
 			is_married = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									current_heir = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								any_child = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
 		}
 		hidden_tooltip = {
 			liege = {
@@ -1767,6 +1812,10 @@ character_event = {
 				war = no
 				NOT = { trait = incapable }
 				is_inaccessible_trigger = no
+				NOR = {
+					trait = treasure_fleet_voyage
+					has_character_flag = do_not_disturb
+				}
 			}
 			character_event = { id = TOG.751 tooltip = EVTTOOLTIP_TOG_751 }
 		}
@@ -2581,6 +2630,47 @@ character_event = {
 		set_character_flag = feast_lustful
 		trigger = {
 			is_married = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									current_heir = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								any_child = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
 		}
 		hidden_tooltip = {
 			liege = {
@@ -3498,6 +3588,10 @@ character_event = {
 				war = no
 				NOT = { trait = incapable }
 				is_inaccessible_trigger = no
+				NOR = {
+					trait = treasure_fleet_voyage
+					has_character_flag = do_not_disturb
+				}
 			}
 			character_event = { id = TOG.801 tooltip = EVTTOOLTIP_TOG_801 }
 		}
@@ -4579,6 +4673,47 @@ character_event = {
 		set_character_flag = feast_lustful
 		trigger = {
 			is_married = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									current_heir = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								any_child = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
 		}
 		hidden_tooltip = {
 			liege = {

@@ -976,7 +976,39 @@ character_event = {
 		}
 		random_list = {
 			67 = { imprison = FROM }
-			33 = { banish = yes }
+			33 = {
+				banish = yes
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						FROM = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					# Can't be the EoC
+					if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						FROM = {
+							detract_grace_major_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						FROM = {
+							detract_grace_minor_effect = yes
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -1967,6 +1999,36 @@ character_event = {
 		random_courtier = {
 			limit = { has_character_flag = heathen_to_target }
 			clr_character_flag = heathen_to_target
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				# The courtier cannot be the EoC
+				if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			banish = yes
 		}
 		
@@ -3426,6 +3488,43 @@ character_event = {
 					}
 					character_event = { id = 39605 days = 1 }
 				}
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
 			}
 		}
 		custom_tooltip = { text = preacher_imprisoned }
@@ -3678,6 +3777,24 @@ character_event = {
 								}
 							}
 						}
+					}
+				}
+			}
+			# Tianxia
+			modifier = {
+				factor = 0.2
+				OR = {
+					culture = ryukyuan
+					culture = ainu
+				}
+			}
+			modifier = {
+				factor = 0.2
+				culture_group = japonic
+				FROM = {
+					NOR = {
+						religion_group = bud_group
+						religion = nihon_shinto
 					}
 				}
 			}
@@ -4057,6 +4174,24 @@ character_event = {
 					NOT = { war_score = 10 }
 				}
 			}
+			# Tianxia
+			modifier = {
+				factor = 0.2
+				OR = {
+					culture = ryukyuan
+					culture = ainu
+				}
+			}
+			modifier = {
+				factor = 0.2
+				culture_group = japonic
+				FROM = {
+					NOR = {
+						religion_group = bud_group
+						religion = nihon_shinto
+					}
+				}
+			}
 		}
 		
 		if = {
@@ -4154,6 +4289,43 @@ character_event = {
 						who = ROOT
 					}
 				}
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
 			}
 			hidden_tooltip = {
 				character_event = { id = 39613 days = 1 }
@@ -4249,6 +4421,68 @@ letter_event = {
 				culture_group = north_germanic # Vikings do like their alcohol
 				FROM = {
 					religion_group = muslim
+				}
+			}
+			# Tianxia
+			modifier = {
+				factor = 0.2
+				OR = {
+					culture = ryukyuan
+					culture = ainu
+				}
+			}
+			modifier = {
+				factor = 0.2
+				OR = {
+					culture_group = chinese
+					culture_group = korean_group
+					culture = viet
+					culture = jurchen
+				}
+				FROM = {
+					NOR = {
+						religion_group = bud_group
+						religion = tao
+					}
+				}
+			}
+			modifier = {
+				factor = 0.2
+				culture_group = japonic
+				FROM = {
+					NOR = {
+						religion_group = bud_group
+						religion = nihon_shinto
+					}
+				}
+			}
+			modifier = {
+				factor = 0.2
+				OR = {
+					culture_group = tai_kadai
+					AND = {
+						culture_group = mon_khmer
+						NOT = {
+							culture = viet
+						}
+					}
+				}
+				FROM = {
+					NOR = {
+						religion = hindu
+						religion_group = bud_group
+					}
+				}
+			}
+			modifier = {
+				factor = 0.2
+				culture_group = malay_group
+				FROM = {
+					NOR = {
+						religion_group = bud_group
+						religion = hindu
+						religion_group = muslim
+					}
 				}
 			}
 		}
@@ -4406,6 +4640,43 @@ character_event = {
 						who = ROOT
 					}
 				}
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
 			}
 		}
 		FROM = {
@@ -4434,6 +4705,43 @@ character_event = {
 					reverse_opinion = {
 						modifier = opinion_sent_preacher
 						who = ROOT
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
 					}
 				}
 			}

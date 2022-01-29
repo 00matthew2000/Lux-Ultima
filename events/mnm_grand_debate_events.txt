@@ -38,6 +38,9 @@ character_event = {
 						NOT = { is_inaccessible_trigger = yes }
 						NOT = { has_character_flag = do_not_disturb }
 						prisoner = no
+						NOT = {
+							trait = treasure_fleet_preparation
+						}
 					}
 					clr_character_flag = tournament_has_ended
 					character_event = { id = MNM.1981 }
@@ -2244,6 +2247,50 @@ character_event = {
 			text = EVTTOOLTIPB_MNM_5101
 		}
 		event_target:sabotage_target = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						is_chinese_emperor_trigger = no
+						NOT = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			character_event = {	id = MNM.5103 }
 		}
 	}

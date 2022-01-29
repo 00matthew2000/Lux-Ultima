@@ -198,6 +198,35 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA30001" #I don't ever want to see you again!
+		if = {
+			limit = {
+				spouse = {
+					is_chinese_emperor_trigger = yes
+				}
+			}
+			detract_grace_massive_effect = yes
+		}
+		else_if = {
+			limit = {
+				spouse = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+			}
+			detract_grace_major_effect = yes
+		}
+		else_if = {
+			limit = {
+				spouse = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+			}
+			detract_grace_minor_effect = yes
+		}
 		spouse = {
 			random = {
 				chance = 25
@@ -258,6 +287,41 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTB30003" #Never!
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		add_character_modifier = {
 			name = unrighteous_spouse
 			duration = -1
@@ -362,6 +426,41 @@ character_event = {
 									prestige = 15
 								}
 								25 = {
+									if = {
+										limit = {
+											has_dlc = "Jade Dragon"
+											is_chinese_emperor_trigger = no
+										}
+										if = {
+											limit = {
+												event_target:target_child = {
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											detract_grace_super_huge_effect = yes
+										}
+										else_if = {
+											limit = {
+												event_target:target_child = {
+													any_close_relative = {
+														dynasty = PREV
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											detract_grace_massive_effect = yes
+										}
+										else_if = {
+											limit = {
+												event_target:target_child = {
+													any_dynasty_member = {
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											detract_grace_major_effect = yes
+										}
+									}
 									spouse = {
 										character_event = {
 											id = 30005
@@ -388,6 +487,41 @@ character_event = {
 									prestige = 15
 								}
 								40 = {
+									if = {
+										limit = {
+											has_dlc = "Jade Dragon"
+											is_chinese_emperor_trigger = no
+										}
+										if = {
+											limit = {
+												event_target:target_child = {
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											detract_grace_super_huge_effect = yes
+										}
+										else_if = {
+											limit = {
+												event_target:target_child = {
+													any_close_relative = {
+														dynasty = PREV
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											detract_grace_massive_effect = yes
+										}
+										else_if = {
+											limit = {
+												event_target:target_child = {
+													any_dynasty_member = {
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											detract_grace_major_effect = yes
+										}
+									}
 									spouse = {
 										character_event = {
 											id = 30005
@@ -417,6 +551,41 @@ character_event = {
 									prestige = 15
 								}
 								45 = {
+									if = {
+										limit = {
+											has_dlc = "Jade Dragon"
+											is_chinese_emperor_trigger = no
+										}
+										if = {
+											limit = {
+												event_target:target_child = {
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											detract_grace_super_huge_effect = yes
+										}
+										else_if = {
+											limit = {
+												event_target:target_child = {
+													any_close_relative = {
+														dynasty = PREV
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											detract_grace_massive_effect = yes
+										}
+										else_if = {
+											limit = {
+												event_target:target_child = {
+													any_dynasty_member = {
+														is_chinese_emperor_trigger = yes
+													}
+												}
+											}
+											detract_grace_major_effect = yes
+										}
+									}
 									spouse = {
 										character_event = { #Husband accuses spouse of heir's death
 											id = 30007
@@ -473,6 +642,41 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTB30005" #Execute!
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		spouse = {
 			death = {
 				death_reason = death_execution_beheading
@@ -569,6 +773,43 @@ character_event = {
 			}
 			50 = {
 				random_courtier = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
 					add_maimed_trait_effect = yes
 
 					opinion = {
@@ -616,6 +857,41 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTB30007" #Execute!
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		spouse = {
 			death = {
 				death_reason = death_execution_beheading
@@ -720,6 +996,43 @@ character_event = {
 				event_target:target_courtier = {
 					if = {
 						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
+					if = {
+						limit = {
 							NOT = {
 								has_dlc = "Reapers"
 							}
@@ -815,6 +1128,43 @@ character_event = {
 	option = {
 		name = "EVTOPTB30011" #Execute!
 		ai_chance = { factor = 20 }
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				ROOT = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_execution_beheading
@@ -921,6 +1271,43 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTB30020" #Execute!
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				ROOT = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		spouse = {
 			death = {
 				death_reason = death_execution_beheading
@@ -1015,6 +1402,41 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTB30021" #Execute!
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		spouse = {
 			death = {
 				death_reason = death_execution_beheading
@@ -1107,6 +1529,41 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTB30025"
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		spouse = {
 			character_event = {
 				id = 30026
@@ -1368,6 +1825,84 @@ character_event = {
 		prestige = 10
 		custom_tooltip = {
 			text = "EVTTOOLTIP30033"
+			event_target:prisoner_spouse = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
+			event_target:outside_spouse = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
 			hidden_tooltip = {
 				event_target:outside_spouse = {
 					character_event = {
@@ -1586,6 +2121,84 @@ character_event = {
 	option = {
 		name = "EVTOPTC30037"
 		event_target:prisoner_spouse = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
+		}
+		event_target:outside_spouse = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
+		}
+		event_target:prisoner_spouse = {
 			death = {
 				death_reason = death_execution_hanging
 				killer = ROOT
@@ -1711,6 +2324,43 @@ character_event = {
 	option = {
 		name = "EVTOPTC30040"
 		event_target:annoying_courtier = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			opinion = {
 				modifier = opinion_mocked
 				who = ROOT
@@ -1896,6 +2546,45 @@ character_event = {
 				}
 			}
 			80 = {
+				event_target:chosen_courtier = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
+				}
 				character_event = {
 					id = 30047
 					tooltip = "EVTTOOLTIP30047"
@@ -1931,7 +2620,44 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA30046"
-		event_target:chosen_courtier = { 
+		event_target:chosen_courtier = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			} 
 			death = {
 				death_reason = death_murder_unknown_drowning
 				killer = ROOT
@@ -1953,6 +2679,43 @@ character_event = {
 	option = {
 		name = "EVTOPTB30046"
 		event_target:chosen_courtier = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			death = {
 				death_reason = death_murder_unknown_drowning
 				killer = ROOT
@@ -1974,6 +2737,43 @@ character_event = {
 	option = {
 		name = "EVTOPTC30046"
 		event_target:chosen_courtier = { 
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			death = {
 				death_reason = death_murder_unknown_drowning
 				killer = ROOT
@@ -1994,6 +2794,43 @@ character_event = {
 	option = {
 		name = "EVTOPTD30046"
 		event_target:chosen_courtier = { 
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			death = {
 				death_reason = death_murder_unknown_drowning
 				killer = ROOT
@@ -3940,6 +4777,47 @@ character_event = {
 	option = {
 		name = "EVTOPTB30076" #Tell
 		ai_chance = { factor = 10 }
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									current_heir = {
+										dynasty = PREV
+										character = PREVPREVPREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+				event_target:sire_bastard = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+				event_target:sire_bastard = {
+					detract_grace_massive_effect = yes
+				}
+			}
+		}
 		spouse = {
 			character_event = {
 				id = 30078
@@ -3951,6 +4829,47 @@ character_event = {
 	option = {
 		name = "EVTOPTC30076" #Blame
 		ai_chance = { factor = 10 }
+		if = { # Blames it on SEDUCTION, so the EoC won't be satisfied with letting it slide
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									current_heir = {
+										dynasty = PREV
+										character = PREVPREVPREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+				event_target:sire_bastard = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+				event_target:sire_bastard = {
+					detract_grace_massive_effect = yes
+				}
+			}
+		}
 		spouse = {
 			character_event = {
 				id = 30079
@@ -4091,6 +5010,43 @@ character_event = {
 		name = "EVTOPTB30080" #Execute courtier
 		pacifists_lose_piety_effect = yes
 		event_target:sire_bastard = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			death = {
 				death_reason = death_execution_hanging
 				killer = ROOT
@@ -4101,6 +5057,43 @@ character_event = {
 		name = "EVTOPTC30080" #Banish
 		ai_chance = { factor = 1000 }
 		event_target:sire_bastard = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			banish = yes
 		}
 	}
@@ -4149,6 +5142,43 @@ character_event = {
 		name = "EVTOPTB30081" #Execute
 		pacifists_lose_piety_effect = yes
 		event_target:sire_bastard = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			death = {
 				death_reason = death_execution_hanging
 				killer = ROOT
@@ -4156,6 +5186,43 @@ character_event = {
 		}
 		FROM = {
 			FROM = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
 				death = {
 					death_reason = death_execution_hanging
 					killer = ROOT
@@ -4167,10 +5234,84 @@ character_event = {
 		name = "EVTOPTC30081" #Banish
 		ai_chance = { factor = 1000 }
 		event_target:sire_bastard = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			banish = yes
 		}
 		FROM = {
 			FROM = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
 				banish = yes
 			}
 		}

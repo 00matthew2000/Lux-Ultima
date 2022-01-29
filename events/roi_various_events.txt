@@ -1628,6 +1628,71 @@ character_event = {
 				}
 			}
 		}
+		if = { # Murder attempt is punished as murder
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM= {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			# FROM can't be the EoC
+			if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_execution
@@ -2364,6 +2429,34 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_RoI_247
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			# FROM cannot be the EoC
+			if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		FROM = {
 			opinion = {
 				who = ROOT
@@ -2374,6 +2467,71 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB_RoI_247
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM= {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			# FROM can't be the EoC
+			if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROM = {
 			death = {
 				death_reason = death_execution
@@ -2850,6 +3008,8 @@ character_event = {
 		capital_scope = {
 			OR = {
 				region = world_india
+				region = world_indochina
+				region = world_malaysia
 				duchy = {
 					title = d_gedrosia
 				}
@@ -2985,7 +3145,11 @@ character_event = {
 			religion = tengri_bud_reformed
 		}
 		capital_scope = {
-			region = world_india
+			OR = {
+				region = world_india
+				region = world_indochina
+				region = world_malaysia
+			}
 		}
 	}
 	
@@ -3040,7 +3204,11 @@ character_event = {
 			religion = tengri_bud_reformed
 		}
 		capital_scope = {
-			region = world_india
+			OR = {
+				region = world_india
+				region = world_indochina
+				region = world_malaysia
+			}
 		}
 		OR = {
 			AND = {
@@ -3092,7 +3260,11 @@ character_event = {
 						religion = tengri_bud_reformed
 					}
 					capital_scope = {
-						region = world_india
+						OR = {
+							region = world_india
+							region = world_indochina
+							region = world_malaysia
+						}
 					}
 				}
 				character_event = { id = RoI.20165 }
@@ -4019,7 +4191,11 @@ character_event = {
 	trigger = {
 		has_dlc = "Rajas of India"
 		capital_scope = {
-			region = world_india
+			OR = {
+				region = world_india
+				region = world_far_east
+				region = world_himalayas
+			}
 		}
 		NOT = { is_inaccessible_trigger = yes }
 	}
@@ -4185,6 +4361,9 @@ character_event = {
 		}
 		NOT = { has_character_flag = do_not_disturb }
 		NOT = { is_inaccessible_trigger = yes }
+		NOT = {
+			trait = treasure_fleet_preparation
+		}
 	}
 	
 	option = {

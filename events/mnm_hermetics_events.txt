@@ -129,6 +129,9 @@ character_event = {
 				opinion = { who = ROOT value = 0 }
 			}
 		}
+		NOT = {
+			trait = treasure_fleet_preparation
+		}
 	}
 
     immediate = {
@@ -3093,6 +3096,52 @@ character_event = {
 
 
         event_target:infiltration_target = {
+	if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+					event_target:infiltration_companion = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+					event_target:infiltration_companion = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+					event_target:infiltration_companion = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
         	if = {
 	        	limit = { is_landed = yes }
 	        	ROOT = { imprison = PREV }
@@ -11771,6 +11820,15 @@ character_event = {
 		ai_chance = {
 			factor = 30
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = yes
+				}
+			}
+			detract_grace_major_effect = yes
+		}
 		
 		custom_tooltip = {
 			text = EVTTOOLTIPB_MNM_1641
@@ -12001,6 +12059,15 @@ character_event = {
 	
 	option = {
 		name = CURSES
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = yes
+				}
+			}
+			detract_grace_major_effect = yes
+		}
 		
 		prestige = -75
 		detract_society_currency_minor_effect = yes

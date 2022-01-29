@@ -159,6 +159,9 @@ character_event = {
 			NOT = {	has_character_flag = ramadan }
 			NOT = {	has_character_flag = asked_on_hajj }
 			NOT = { has_character_flag = do_not_disturb }
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 	}
 	
@@ -748,6 +751,43 @@ character_event = {
 				modifier = opinion_hajj_attempt_murder
 				who = ROOT
 			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			character_event = { id = 86161 tooltip = "EVTTOOLTIP86161" } 
 		}
 	}
@@ -785,7 +825,46 @@ character_event = {
 		}
 		random_list = {
 			80 = {
-				FROM = { character_event = { id = 86162 tooltip = EVTTOOLTIP86162 } }
+				FROM = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = ROOT
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
+					character_event = { id = 86162 tooltip = EVTTOOLTIP86162 }
+				}
 			}
 			20 = {
 				add_trait = wounded
@@ -801,7 +880,46 @@ character_event = {
 		}
 		random_list = {
 			30 = {
-				FROM = { character_event = { id = 86162 tooltip = EVTTOOLTIP86162 } }
+				FROM = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_super_huge_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = ROOT
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_massive_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_major_effect = yes
+							}
+						}
+					}
+					character_event = { id = 86162 tooltip = EVTTOOLTIP86162 }
+				}
 			}
 			60 = {
 				add_trait = wounded

@@ -40,6 +40,9 @@ character_event = {
 					NOT = { trait = incapable }
 					age = 16
 					NOT = { has_character_flag = do_not_disturb }
+					NOT = {
+						trait = treasure_fleet_preparation
+					}
 				}
 				letter_event = {
 					id = RoI.1001
@@ -60,6 +63,9 @@ character_event = {
 					NOT = { trait = incapable }
 					age = 16
 					NOT = { has_character_flag = do_not_disturb }
+					NOT = {
+						trait = treasure_fleet_preparation
+					}
 				}
 				letter_event = {
 					id = RoI.1940
@@ -897,7 +903,13 @@ character_event = {
 	
 	trigger = {
 		capital_scope = {
-			region = world_india
+			OR = {
+				region = world_india
+				region = world_indochina
+				region = world_indonesia
+				region = world_java
+				region = world_malaysia
+			}
 		}
 	}
 	
@@ -1283,7 +1295,13 @@ character_event = {
 	
 	trigger = {
 		capital_scope = {
-			region = world_india
+			OR = {
+				region = world_india
+				region = world_indochina
+				region = world_indonesia
+				region = world_java
+				region = world_malaysia
+			}
 		}
 	}
 
@@ -1660,7 +1678,11 @@ character_event = {
 		name = EVTOPTC_RoI_1178 # 3 - Massive ritual blood sacrifice of animals (elephants, massive)
 		trigger = {
 			capital_scope = {
-				region = world_india
+				OR = {
+					region = world_india
+					region = world_indochina
+					region = world_malaysia
+				}
 			}
 		}
 		any_vassal = {
@@ -1733,6 +1755,41 @@ character_event = {
 				}
 			}
 			set_character_flag = achievement_kali_maaa
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
 		}
 		FROM = {
 			death = {

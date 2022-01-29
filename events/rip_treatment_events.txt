@@ -3095,6 +3095,40 @@ character_event = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_10_FLAG }
 			add_trait = one_eyed
 			add_trait = severely_injured
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				resolve_severely_injured_effect = yes
 			}
@@ -3102,6 +3136,40 @@ character_event = {
 		if = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_11_FLAG }
 			add_trait = eunuch
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 		}
 		if = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_12_FLAG }
@@ -3111,6 +3179,40 @@ character_event = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_13_FLAG }
 			add_trait = disfigured
 			add_trait = severely_injured
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				resolve_severely_injured_effect = yes
 			}
@@ -3119,6 +3221,40 @@ character_event = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_14_FLAG }
 			add_trait = one_handed
 			add_trait = severely_injured
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				resolve_severely_injured_effect = yes
 			}
@@ -3127,6 +3263,40 @@ character_event = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_15_FLAG }
 			add_trait = one_legged
 			add_trait = severely_injured
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				resolve_severely_injured_effect = yes
 			}
@@ -3186,6 +3356,40 @@ character_event = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_10_FLAG }
 			add_trait = one_eyed
 			add_trait = severely_injured
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				resolve_severely_injured_effect = yes
 			}
@@ -3193,6 +3397,40 @@ character_event = {
 		if = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_11_FLAG }
 			add_trait = eunuch
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 		}
 		if = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_12_FLAG }
@@ -3202,11 +3440,79 @@ character_event = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_13_FLAG }
 			add_trait = disfigured
 			add_trait = severely_injured
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 		}
 		if = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_14_FLAG }
 			add_trait = one_handed
 			add_trait = severely_injured
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				resolve_severely_injured_effect = yes
 			}
@@ -3215,6 +3521,40 @@ character_event = {
 			limit = { has_character_flag = EVTDESC_RIP_11040_15_FLAG }
 			add_trait = one_legged
 			add_trait = severely_injured
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				resolve_severely_injured_effect = yes
 			}
@@ -3256,6 +3596,41 @@ character_event = {
 		clr_character_flag = EVTDESC_RIP_11040_13_FLAG
 		clr_character_flag = EVTDESC_RIP_11040_14_FLAG
 		clr_character_flag = EVTDESC_RIP_11040_15_FLAG
+
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROMFROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 
 		ROOT = {
 			opinion = {
@@ -4177,6 +4552,40 @@ character_event = {
 		if = {
 			limit = { has_character_flag = EVTDESC_RIP_11047_8_FLAG }
 			# DROWNING
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			opinion = {
 				who = FROMFROM
 				modifier = opinion_traitor
@@ -4190,6 +4599,40 @@ character_event = {
 
 		if = {
 			limit = { has_character_flag = EVTDESC_RIP_11047_9_FLAG }
+			if = { # Even if successful, the court physician is penalized
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROMFROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROMFROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 
 			opinion = {
 				who = FROMFROM
@@ -7615,6 +8058,40 @@ character_event = {
 				years = 10
 			}
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROMFROMFROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROMFROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROMFROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 	}
 
 	# have their head
@@ -7627,6 +8104,67 @@ character_event = {
 			factor = 5
 		}
 		name = EVTOPTA_RIP_11060
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROMFROMFROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROMFROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROMFROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			# FROMFROMFROM can't be the EoC
+			if = {
+				limit = {
+					FROMFROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		FROMFROMFROM = {
 			death = {
 				death_reason = death_execution_beheading

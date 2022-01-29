@@ -32,6 +32,10 @@ character_event = {
 			is_maimed_trigger = yes
 			is_ill = yes
 		}
+		NOR = {
+			trait = treasure_fleet_voyage
+			has_character_flag = do_not_disturb
+		}
 		liege = {
 			age = 16
 			NOT = { age = 50 }
@@ -57,6 +61,10 @@ character_event = {
 					who = ROOT
 					modifier = opinion_loyal_servant
 				}
+			}
+			NOR = {
+				trait = treasure_fleet_voyage
+				has_character_flag = do_not_disturb
 			}
 		}
 	}
@@ -154,6 +162,10 @@ character_event = {
 			is_maimed_trigger = yes
 			is_ill = yes
 		}
+		NOR = {
+			trait = treasure_fleet_voyage
+			has_character_flag = do_not_disturb
+		}
 		liege = {
 			any_vassal = {
 				is_ruler = yes
@@ -183,6 +195,10 @@ character_event = {
 						who = ROOT
 						modifier = opinion_loyal_servant
 					}
+				}
+				NOR = {
+					trait = treasure_fleet_voyage
+					has_character_flag = do_not_disturb
 				}
 			}
 		}
@@ -276,6 +292,10 @@ character_event = {
 							who = ROOT
 							modifier = opinion_loyal_servant
 						}
+					}
+					NOR = {
+						trait = treasure_fleet_voyage
+						has_character_flag = do_not_disturb
 					}
 				}
 				set_character_flag = holmgang_challenger
@@ -426,6 +446,10 @@ character_event = {
 						who = ROOT
 						modifier = opinion_loyal_servant
 					}
+				}
+				NOR = {
+					trait = treasure_fleet_voyage
+					has_character_flag = do_not_disturb
 				}
 			}
 			set_character_flag = holmgang_challenger
@@ -1220,6 +1244,40 @@ character_event = {
 		}
 		prestige = 200
 		add_scarred_tiered_effect = yes
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1290,6 +1348,40 @@ character_event = {
 			clr_character_flag = do_not_disturb
 		}
 		prestige = 200
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1358,6 +1450,74 @@ character_event = {
 		}
 		prestige = 50
 		add_trait = wounded
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROMFROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		tooltip = {
 			FROMFROM = { 
 				prestige = 50 

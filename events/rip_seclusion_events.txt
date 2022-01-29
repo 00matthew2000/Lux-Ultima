@@ -131,6 +131,9 @@ character_event = {
 				is_inaccessible_trigger = yes
 				has_character_modifier = recently_opened_gates
 				has_character_flag = do_not_disturb
+				NOT = {
+					trait = treasure_fleet_preparation
+				}
 			}
 		}
 		
@@ -657,6 +660,68 @@ character_event = {
 			}
 		}
 		change_variable = { which = remaining_food value = -1 }
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:target_greedy_courtier = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_greedy_courtier = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_greedy_courtier = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			# The countier can't be the EoC
+			if = {
+				limit = {
+					event_target:target_greedy_courtier = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:target_greedy_courtier = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		event_target:target_greedy_courtier = {
 			#unset seclusion 
 			reverse_opinion = { modifier = gluttonous_neg who = ROOT years = 5 }
@@ -686,6 +751,68 @@ character_event = {
 					is_married = ROOT
 					is_child_of = ROOT 
 				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:target_greedy_courtier = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_greedy_courtier = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_greedy_courtier = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			# The courtier can't be the EoC
+			if = {
+				limit = {
+					event_target:target_greedy_courtier = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:target_greedy_courtier = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
 			}
 		}
 		event_target:target_greedy_courtier = {			
@@ -1083,6 +1210,34 @@ character_event = {
 				ai = no
 			}
 			set_character_flag = achievement_an_honest_mistake
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			# The courtier can't be the EoC
+			if = {
+				limit = {
+					event_target:sick_courtier = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:sick_courtier = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
 		}
 		event_target:sick_courtier = {
 			remove_character_modifier = in_seclusion
@@ -1491,6 +1646,15 @@ character_event = {
 
 	option = { # respectfully disagree
 		name = EVTOPTB_RIP_12008
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger  = yes
+				}
+			}
+			detract_grace_major_effect = yes
+		}
 		ai_chance = {
 			factor = 25
 			
@@ -3379,6 +3543,41 @@ character_event = {
 		event_target:captured_sneaker = {
 			prisoner = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# The sneaker can't be the EoC...
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:captured_sneaker = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:captured_sneaker = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:captured_sneaker = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		hidden_tooltip = { add_maimed_trait_effect = yes }
 		clr_character_flag = seclusion_events_on
 	}
@@ -3399,6 +3598,41 @@ character_event = {
 		name = EVTOPTA_RIP_12066
 		custom_tooltip = { text = EVTOPTA_RIP_12066_TOOLTIP }
 
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				# The sneaker can't be the EoC...
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:captured_sneaker = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:captured_sneaker = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:captured_sneaker = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		death = {
 			death_reason = death_murder_unknown
 			killer = FROM

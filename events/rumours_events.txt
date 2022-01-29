@@ -8,7 +8,7 @@
 ###################################
 #
 # Designed by Johan Andersson
-# Written by Sara Wendel-Ã–rtqvist
+# Written by Sara Wendel-Örtqvist
 
 ###  Homosexual ### 
 
@@ -836,7 +836,8 @@ character_event = {
 					opinion = { who = PREV value = 75 }
 				}
 			}
-			if = {
+		}
+		if = {
 				limit = {
 					has_dlc = "Jade Dragon"
 					ROOT = {
@@ -3148,7 +3149,7 @@ character_event = {
 character_event = {
 	id = 69044
 	desc = EVTDESC69044
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	min_age = 16
 	capable_only = yes
@@ -5045,7 +5046,7 @@ character_event = {
 character_event = {
 	id = 69075
 	desc = EVTDESC69075
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	capable_only = yes
 	prisoner = no
@@ -5114,7 +5115,7 @@ character_event = {
 character_event = {
 	id = 69080
 	desc = EVTDESC69080
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5140,7 +5141,7 @@ character_event = {
 character_event = {
 	id = 69081
 	desc = EVTDESC69081
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5166,7 +5167,7 @@ character_event = {
 character_event = {
 	id = 69082
 	desc = EVTDESC69082
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5186,7 +5187,7 @@ character_event = {
 character_event = {
 	id = 69083
 	desc = EVTDESC69083
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5213,7 +5214,7 @@ character_event = {
 character_event = {
 	id = 69084
 	desc = EVTDESC69084
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5233,7 +5234,7 @@ character_event = {
 character_event = {
 	id = 69085
 	desc = EVTDESC69085
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5253,7 +5254,7 @@ character_event = {
 character_event = {
 	id = 69086
 	desc = EVTDESC69086
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5273,7 +5274,7 @@ character_event = {
 character_event = {
 	id = 69087
 	desc = EVTDESC69087
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5293,7 +5294,7 @@ character_event = {
 character_event = {
 	id = 69088
 	desc = EVTDESC69088
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5313,7 +5314,7 @@ character_event = {
 character_event = {
 	id = 69089
 	desc = EVTDESC69089
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5333,7 +5334,7 @@ character_event = {
 character_event = {
 	id = 69090
 	desc = EVTDESC69090
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	
@@ -5353,7 +5354,7 @@ character_event = {
 character_event = {
 	id = 69091
 	desc = EVTDESC69091
-	picture = GFX_evt_scandal
+	picture = GFX_evt_courtiers_looking_scandalized
 	
 	is_triggered_only = yes
 	

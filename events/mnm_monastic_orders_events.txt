@@ -87,6 +87,9 @@ character_event = {
 		has_any_quest = no
 		NOT = { is_inaccessible_trigger = yes }
 		NOT = { has_character_modifier = quest_cooldown_timer }
+		NOT = {
+			trait = treasure_fleet_preparation
+		}
 	}
 
 	immediate = {
@@ -6100,6 +6103,43 @@ character_event = { # win - wound
 
 	option = {
 		name = EVTOPTA_MNM.4620
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:monastic_artifact_witness = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:monastic_artifact_witness = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:monastic_artifact_witness = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		event_target:monastic_artifact_witness = {
 			death = { death_reason = death_murder_unknown killer = ROOT }
 		}
@@ -6295,6 +6335,43 @@ character_event = { # win - maimed
 
 	option = {
 		name = EVTOPTA_MNM.4621
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:monastic_artifact_witness = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:monastic_artifact_witness = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:monastic_artifact_witness = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		event_target:monastic_artifact_witness = {
 			death = { death_reason = death_murder_unknown killer = ROOT }
 		}
@@ -6496,6 +6573,43 @@ character_event = { # loss - death
 
 	option = {
 		name = EVTOPTA_MNM.4622
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:monastic_artifact_witness = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:monastic_artifact_witness = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:monastic_artifact_witness = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		death = { death_reason = death_duel killer = event_target:monastic_artifact_witness }
 	}
 }

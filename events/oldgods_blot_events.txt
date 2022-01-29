@@ -30,6 +30,10 @@ character_event = {
 				prisoner = no
 				war = no
 				NOT = { trait = incapable }
+				NOR = {
+					trait = treasure_fleet_voyage
+					has_character_flag = do_not_disturb
+				}
 			}
 			character_event = { id = TOG.601 tooltip = EVTTOOLTIP_TOG_601 }
 			hidden_tooltip = { character_event = { id = TOG.605 days = 10 } }
@@ -3582,7 +3586,7 @@ character_event = {
 				}
 				character_event = { id = TOG.667 }
 				set_character_flag = feast_homosexual
-				add_lover = ROOT
+				add_lover = FROM
 			}		
 		}
 	}
@@ -3805,23 +3809,21 @@ character_event = {
 				limit = { has_character_flag = attending_blot }
 				character_event = { id = TOG.622 }
 			}
-			if = {
-				limit = {
-					FROM = { 
-						controls_religion = yes
-						NOT = { religion = norse_pagan_reformed }
-					}
-					ai = no
-					NOT = { has_character_flag = achievement_holy_smoke }
-				}
-				set_character_flag = achievement_holy_smoke
-			}
 		}
 		if = {
 			limit = {
 				FROM = { 
 					controls_religion = yes
 					NOT = { religion = norse_pagan_reformed }
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { has_character_flag = achievement_holy_smoke }
+					}
+					set_character_flag = achievement_holy_smoke
 				}
 			}
 			prestige = 250
@@ -3896,23 +3898,21 @@ character_event = {
 				limit = { has_character_flag = attending_blot }
 				character_event = { id = TOG.622 }
 			}
-			if = {
-				limit = {
-					FROM = { 
-						controls_religion = yes
-						NOT = { religion = norse_pagan_reformed }
-					}
-					ai = no
-					NOT = { has_character_flag = achievement_holy_smoke }
-				}
-				set_character_flag = achievement_holy_smoke
-			}
 		}
 		if = {
 			limit = {
 				FROM = { 
 					controls_religion = yes
 					NOT = { religion = norse_pagan_reformed }
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { has_character_flag = achievement_holy_smoke }
+					}
+					set_character_flag = achievement_holy_smoke
 				}
 			}
 			prestige = 250
@@ -3987,23 +3987,21 @@ character_event = {
 				limit = { has_character_flag = attending_blot }
 				character_event = { id = TOG.622 }
 			}
-			if = {
-				limit = {
-					FROM = { 
-						controls_religion = yes
-						NOT = { religion = norse_pagan_reformed }
-					}
-					ai = no
-					NOT = { has_character_flag = achievement_holy_smoke }
-				}
-				set_character_flag = achievement_holy_smoke
-			}
 		}
 		if = {
 			limit = {
 				FROM = { 
 					controls_religion = yes
 					NOT = { religion = norse_pagan_reformed }
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { has_character_flag = achievement_holy_smoke }
+					}
+					set_character_flag = achievement_holy_smoke
 				}
 			}
 			prestige = 250

@@ -542,6 +542,10 @@ character_event = {
 					NOR = { 
 						any_demesne_title = { region = world_india } 
 						any_demesne_title = { region = world_africa }
+						any_demesne_title = { region = world_china }
+						any_demesne_title = { region = world_korea }
+						any_demesne_title = { region = world_indochina }
+						any_demesne_title = { region = world_southeast_asia }
 					}
 					OR = {
 						trait = wroth
@@ -556,6 +560,42 @@ character_event = {
 		name = EVTOPTD_77851
 		custom_tooltip = { text = EVTOPTD_77851_TOOLTIP }
 
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:cat_hater = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:cat_hater = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:cat_hater = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
+
 		event_target:cat_hater = { death = { death_reason = death_execution_impaling killer = ROOT } }
 	}
 
@@ -564,8 +604,12 @@ character_event = {
 		trigger = {
 			event_target:cat_hater = { liege = { character = ROOT } }
 			OR = {
-				any_demesne_title = { region = world_india }
+				any_demesne_title = { region = world_india } 
 				any_demesne_title = { region = world_africa }
+				any_demesne_title = { region = world_china }
+				any_demesne_title = { region = world_korea }
+				any_demesne_title = { region = world_indochina }
+				any_demesne_title = { region = world_southeast_asia }
 			}
 			OR = {
 				trait = wroth
@@ -577,9 +621,53 @@ character_event = {
 		}
 		name = EVTOPTE_77851
 		custom_tooltip = { text = EVTOPTD_77851_TOOLTIP }
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:cat_hater = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:cat_hater = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:cat_hater = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 
 		if = {
-			limit = { any_demesne_title = { region = world_india } }
+			limit = {
+				OR = {
+					any_demesne_title = { region = world_india } 
+					any_demesne_title = { region = world_africa }
+					any_demesne_title = { region = world_china }
+					any_demesne_title = { region = world_korea }
+					any_demesne_title = { region = world_indochina }
+					any_demesne_title = { region = world_southeast_asia }
+				}
+			}
 			event_target:cat_hater = { death = { death_reason = death_execution_tiger killer = ROOT } }
 			break = yes
 		}
@@ -737,6 +825,15 @@ character_event = {
 		}
 
 		add_rival = FROM
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			FROM = {
+				detract_grace_massive_effect = yes # Same as for a close relative!
+			}
+		}
 	}
 }
 

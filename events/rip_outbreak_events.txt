@@ -764,6 +764,12 @@ character_event = {
 			has_global_flag = bp_world_europe_west_broadcasted
 			has_global_flag = bp_world_europe_north_broadcasted
 			has_global_flag = bp_world_steppe_broadcasted
+			# Tianxia
+			has_global_flag = bp_world_himalayas_broadcasted
+			has_global_flag = bp_world_china_broadcasted
+			has_global_flag = bp_world_korea_broadcasted
+			has_global_flag = bp_world_japan_broadcasted
+			has_global_flag = bp_world_southeast_asia_broadcasted
 		}
 	}
 
@@ -965,6 +971,184 @@ character_event = {
 			capital_scope = { province_event = { id = RIP.10124 } }
 			chronicle = {
 			entry = CHRONICLE_STEPPE_GONE
+			picture = GFX_evt_monk
+			}
+		}
+		### Tianxia
+		
+		# Tibet
+		if = {
+			limit = {
+				NOT = { has_global_flag = bp_world_himalayas_broadcasted }
+				regional_percentage = {
+					region = world_himalayas
+					percentage = 0.5
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+			}
+			set_global_flag = bp_world_himalayas_broadcasted
+			capital_scope = { province_event = { id = RIPEXTRA.1 } }
+			chronicle = {
+			entry = CHRONICLE_NORTHEUROPE_GONE
+			picture = GFX_evt_monk
+			}
+		}
+		
+		# China
+		if = {
+			limit = {
+				NOT = { has_global_flag = bp_world_china_broadcasted }
+				regional_percentage = {
+					region = world_china
+					percentage = 0.5
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+			}
+			set_global_flag = bp_world_china_broadcasted
+			capital_scope = { province_event = { id = RIPEXTRA.4} }
+			chronicle = {
+			entry = CHRONICLE_NORTHEUROPE_GONE
+			picture = GFX_evt_monk
+			}
+		}
+		
+		# Korea
+		if = {
+			limit = {
+				NOT = { has_global_flag = bp_world_korea_broadcasted }
+				regional_percentage = {
+					region = world_korea
+					percentage = 0.5
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+			}
+			set_global_flag = bp_world_korea_broadcasted
+			capital_scope = { province_event = { id = RIPEXTRA.7 } }
+			chronicle = {
+			entry = CHRONICLE_NORTHEUROPE_GONE
+			picture = GFX_evt_monk
+			}
+		}
+		
+		# Southeast Asia
+		if = {
+			limit = {
+				NOT = { has_global_flag = bp_world_southeast_asia_broadcasted }
+				OR = {
+					AND = {
+						regional_percentage = {
+							region = world_tenem_lamit
+							percentage = 0.5
+							OR = {
+								has_province_modifier = depopulated_1
+								has_province_modifier = depopulated_2
+								has_province_modifier = depopulated_3
+							}
+						}
+						regional_percentage = {
+							region = world_indonesia
+							percentage = 0.5
+							OR = {
+								has_province_modifier = depopulated_1
+								has_province_modifier = depopulated_2
+								has_province_modifier = depopulated_3
+							}
+						}
+						regional_percentage = {
+							region = world_java
+							percentage = 0.5
+							OR = {
+								has_province_modifier = depopulated_1
+								has_province_modifier = depopulated_2
+								has_province_modifier = depopulated_3
+							}
+						}
+						regional_percentage = {
+							region = world_indochina
+							percentage = 0.5
+							OR = {
+								has_province_modifier = depopulated_1
+								has_province_modifier = depopulated_2
+								has_province_modifier = depopulated_3
+							}
+						}
+						regional_percentage = {
+							region = world_malaysia
+							percentage = 0.5
+							OR = {
+								has_province_modifier = depopulated_1
+								has_province_modifier = depopulated_2
+								has_province_modifier = depopulated_3
+							}
+						}
+					}
+					regional_percentage = {
+						region = world_philippines
+						percentage = 0.75
+						OR = {
+							has_province_modifier = depopulated_1
+							has_province_modifier = depopulated_2
+							has_province_modifier = depopulated_3
+						}
+					}
+					regional_percentage = {
+						region = world_borneo_sulawesi
+						percentage = 0.75
+						OR = {
+							has_province_modifier = depopulated_1
+							has_province_modifier = depopulated_2
+							has_province_modifier = depopulated_3
+						}
+					}
+					regional_percentage = {
+						region = world_java_sumatra_malacca
+						percentage = 0.75
+						OR = {
+							has_province_modifier = depopulated_1
+							has_province_modifier = depopulated_2
+							has_province_modifier = depopulated_3
+						}
+					}
+				}
+			}
+			set_global_flag = bp_world_indonesia_broadcasted
+			capital_scope = { province_event = { id = RIPEXTRA.13 } }
+			chronicle = {
+			entry = CHRONICLE_NORTHEUROPE_GONE
+			picture = GFX_evt_monk
+			}
+		}
+		
+		# Japan
+		if = {
+			limit = {
+				NOT = { has_global_flag = bp_world_japan_broadcasted }
+				regional_percentage = {
+					region = world_japan
+					percentage = 0.5
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+			}
+			set_global_flag = bp_world_japan_broadcasted
+			capital_scope = { province_event = { id = RIPEXTRA.16 } }
+			chronicle = {
+			entry = CHRONICLE_NORTHEUROPE_GONE
 			picture = GFX_evt_monk
 			}
 		}
@@ -1554,6 +1738,137 @@ character_event = {
 					has_province_modifier = depopulated_3
 				}
 			}
+			# Tianxia
+			regional_percentage = {
+				region = world_himalayas
+				percentage = 0.5
+				OR = {
+					has_province_modifier = depopulated_1
+					has_province_modifier = depopulated_2
+					has_province_modifier = depopulated_3
+				}
+			}
+			regional_percentage = {
+				region = world_china
+				percentage = 0.5
+				OR = {
+					has_province_modifier = depopulated_1
+					has_province_modifier = depopulated_2
+					has_province_modifier = depopulated_3
+				}
+			}
+			regional_percentage = {
+				region = world_korea
+				percentage = 0.5
+				OR = {
+					has_province_modifier = depopulated_1
+					has_province_modifier = depopulated_2
+					has_province_modifier = depopulated_3
+				}
+			}
+			OR = {
+				AND = {
+					regional_percentage = {
+					region = world_malaysia
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+				regional_percentage = {
+					region = world_indochina
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+				regional_percentage = {
+					region = world_tenem_lamit
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+				regional_percentage = {
+					region = world_indonesia
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+				regional_percentage = {
+					region = world_java
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+						}
+					}
+				}
+				regional_percentage = {
+					region = world_malaysia
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+				regional_percentage = {
+					region = world_indochina
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+				regional_percentage = {
+					region = world_tenem_lamit
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+				regional_percentage = {
+					region = world_indonesia
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+				regional_percentage = {
+					region = world_java
+					percentage = 0.75
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+			}
+			regional_percentage = {
+				region = world_japan
+				percentage = 0.5
+				OR = {
+					has_province_modifier = depopulated_1
+					has_province_modifier = depopulated_2
+					has_province_modifier = depopulated_3
+				}
+			}
 		}
 	}
 
@@ -1569,5 +1884,11 @@ character_event = {
 		clr_global_flag = bp_world_europe_west_broadcasted
 		clr_global_flag = bp_world_europe_north_broadcasted
 		clr_global_flag = bp_world_steppe_broadcasted
+		# Tianxia
+		clr_global_flag = bp_world_himalayas_broadcasted
+		clr_global_flag = bp_world_china_broadcasted
+		clr_global_flag = bp_world_korea_broadcasted
+		clr_global_flag = bp_world_japan_broadcasted
+		clr_global_flag = bp_world_southeast_asia_broadcasted
 	}
 }

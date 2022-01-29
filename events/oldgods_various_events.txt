@@ -268,6 +268,44 @@ character_event = {
 		name = EVTOPTA_TOG_3001
 		if = {
 			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		add_blood_splatter_effect = yes
+		if = {
+			limit = {
 				NOT = {
 					has_dlc = "Reapers"
 				}
@@ -453,9 +491,69 @@ character_event = {
 		}			
 	}
 	
+	# Berserker is Wounded in battle
+character_event = {
+	id = TOG.3002
+	desc = EVTDESC_TOG_3002
+	picture = GFX_evt_viking_battle_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		trait = berserker
+		NOT = { trait = wounded }
+		NOT = { is_maimed_trigger = yes }
+		is_alive = yes
+	}
+
+	immediate = {
+		disallow_new_battle_events_effect = yes #to keep the tombola from spamming you...
+	}
+	
 	option = {
 		name = EVTOPTA_TOG_3001
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = PREV
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		add_trait = wounded
+		add_blood_splatter_effect = yes
+		allow_new_battle_events_effect = yes
 	}
 }
 
@@ -870,6 +968,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_3007
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		FROMFROM = {
 			add_trait = wounded
 			opinion = {
@@ -4079,6 +4212,83 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_TOG_3257
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+				detract_grace_massive_effect = yes
+			}
+		}
 		FROMFROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -4093,6 +4303,83 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB_TOG_3257
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+				detract_grace_massive_effect = yes
+			}
+		}
 		FROMFROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -4104,6 +4391,83 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTC_TOG_3257
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+				detract_grace_massive_effect = yes
+			}
+		}
 		FROMFROM = {
 			death = {
 				death_reason = death_sacrificed_norse
@@ -4147,6 +4511,46 @@ character_event = {
 	
 	option = {
 		name = EVTOPTB_TOG_3257
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		FROMFROM = {
 			clr_character_flag = demon_child
 			clr_character_flag = demon_child_fake
@@ -4163,6 +4567,46 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTC_TOG_3257
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		FROMFROM = {
 			clr_character_flag = demon_child
 			clr_character_flag = demon_child_fake

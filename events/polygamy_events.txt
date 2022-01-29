@@ -231,12 +231,96 @@ character_event = {
 					}
 				}
 				spouse = {
+					random_spouse = {
+						limit = { is_main_spouse = yes }
+						if = {
+							limit = {
+								has_dlc = "Jade Dragon"
+								ROOT = {
+									is_chinese_emperor_trigger = no
+								}
+							}
+							if = {
+								limit = {
+									is_chinese_emperor_trigger = yes
+								}
+								ROOT = {
+									detract_grace_super_huge_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_close_relative = {
+										dynasty = PREV
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_massive_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_dynasty_member = {
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_major_effect = yes
+								}
+							}
+						}
+						death = {
+							death_reason = death_murder_poison
+							killer = ROOT
+						}
+					}
 					character_event = { id = 89006 days = 4 tooltip = "EVTTOOLTIP89007" }
 				}
 			}
 			50 = {
-				event_target:first_wife = {
-					character_event = { id = 89007 days = 4 tooltip = "EVTTOOLTIP89007" }
+				spouse = {
+					random_spouse = {
+						limit = { is_main_spouse = yes }
+						if = {
+							limit = {
+								has_dlc = "Jade Dragon"
+								ROOT = {
+									is_chinese_emperor_trigger = no
+								}
+							}
+							if = {
+								limit = {
+									is_chinese_emperor_trigger = yes
+								}
+								ROOT = {
+									detract_grace_super_huge_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_close_relative = {
+										dynasty = PREV
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_massive_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_dynasty_member = {
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_major_effect = yes
+								}
+							}
+						}
+						character_event = { id = 89007 days = 4 tooltip = "EVTTOOLTIP89007" }
+					}
 				}
 			}
 		}
@@ -292,6 +376,43 @@ character_event = {
 	option = { # Have killer executed
 		name = "EVTOPTC89006"
 		event_target:plotting_second_wife = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			death = {
 				death_reason = death_execution_poison
 				killer = ROOT
@@ -327,6 +448,43 @@ character_event = {
 	option = { # Execute wife
 		name = "EVTOPTA89008"
 		event_target:plotting_second_wife = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			death = {
 				death_reason = death_execution
 				killer = ROOT
@@ -342,6 +500,43 @@ character_event = {
 	option = { # Tell wife to fight own battles
 		name = "EVTOPTC89008"
 		event_target:first_wife = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				character_event = { id = 89009 days = 4 }
 			}
@@ -399,6 +594,43 @@ character_event = {
 	option = {
 		name = "EVTOPTB89010"
 		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			opinion = {
 				who = ROOT
 				modifier = opinion_disappointed
@@ -423,6 +655,43 @@ character_event = {
 			30 = {
 				spouse = {
 					event_target:plotting_second_wife = {
+						if = {
+							limit = {
+								has_dlc = "Jade Dragon"
+								ROOT = {
+									is_chinese_emperor_trigger = no
+								}
+							}
+							if = {
+								limit = {
+									is_chinese_emperor_trigger = yes
+								}
+								ROOT = {
+									detract_grace_super_huge_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_close_relative = {
+										dynasty = PREV
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_massive_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_dynasty_member = {
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_major_effect = yes
+								}
+							}
+						}
 						death = {
 							death_reason = death_murder_poison
 							killer = ROOT
@@ -462,6 +731,43 @@ character_event = {
 	option = {
 		name = "EVTOPTC89012"
 		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			death = {
 				death_reason = death_execution
 				killer = ROOT
@@ -728,6 +1034,43 @@ character_event = {
 								character_event = { id = 89025 tooltip = "EVTTOOLTIP89025" }
 								any_child = {
 									limit = { is_primary_heir = yes }
+									if = {
+										limit = {
+											has_dlc = "Jade Dragon"
+											ROOT = {
+												is_chinese_emperor_trigger = no
+											}
+										}
+										if = {
+											limit = {
+												is_chinese_emperor_trigger = yes
+											}
+											ROOT = {
+												detract_grace_super_huge_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												any_close_relative = {
+													dynasty = PREV
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											ROOT = {
+												detract_grace_massive_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												any_dynasty_member = {
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											ROOT = {
+												detract_grace_major_effect = yes
+											}
+										}
+									}
 									death = {
 										death_reason = death_murder_unknown_poison
 										killer = ROOT
@@ -742,6 +1085,43 @@ character_event = {
 				spouse = {
 					any_child = {
 						limit = { is_primary_heir = yes }
+						if = {
+							limit = {
+								has_dlc = "Jade Dragon"
+								ROOT = {
+									is_chinese_emperor_trigger = no
+								}
+							}
+							if = {
+								limit = {
+									is_chinese_emperor_trigger = yes
+								}
+								ROOT = {
+									detract_grace_super_huge_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_close_relative = {
+										dynasty = PREV
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_massive_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_dynasty_member = {
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_major_effect = yes
+								}
+							}
+						}
 						character_event = { id = 89021 days = 4 tooltip = "EVTTOOLTIP89021" }
 					}
 					hidden_tooltip = {
@@ -780,6 +1160,45 @@ character_event = {
 	
 	option = { # Kill wife
 		name = "EVTOPTA89022"
+		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
+		}
 		FROM = { death = { death_reason = death_execution killer = ROOT } }
 	}
 	option = { # Imprison wife
@@ -882,6 +1301,45 @@ character_event = {
 	}
 	option = { # Imprison wife
 		name = "EVTOPTB89025"
+		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
+		}
 		FROM = { imprison = yes }
 		hidden_tooltip = {
 			any_spouse = {
@@ -1022,9 +1480,47 @@ character_event = {
 								}
 							}
 							50 = {
-								character_event = { id = 89035 tooltip = "EVTTOOLTIP89025" }
-								event_target:victim_son = {
-									death = { death_reason = death_murder killer = ROOT }
+								character_event = { id = 89035 }
+								any_child = {
+									limit = { has_character_flag = victim_son }
+									if = {
+										limit = {
+											has_dlc = "Jade Dragon"
+											ROOT = {
+												is_chinese_emperor_trigger = no
+											}
+										}
+										if = {
+											limit = {
+												is_chinese_emperor_trigger = yes
+											}
+											ROOT = {
+												detract_grace_super_huge_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												any_close_relative = {
+													dynasty = PREV
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											ROOT = {
+												detract_grace_massive_effect = yes
+											}
+										}
+										else_if = {
+											limit = {
+												any_dynasty_member = {
+													is_chinese_emperor_trigger = yes
+												}
+											}
+											ROOT = {
+												detract_grace_major_effect = yes
+											}
+										}
+									}
+									death = { death_reason = death_murder_poison killer = ROOT }
 								}
 							}
 						}
@@ -1034,6 +1530,43 @@ character_event = {
 			50 = {
 				spouse = {
 					event_target:victim_son = {
+						if = {
+							limit = {
+								has_dlc = "Jade Dragon"
+								ROOT = {
+									is_chinese_emperor_trigger = no
+								}
+							}
+							if = {
+								limit = {
+									is_chinese_emperor_trigger = yes
+								}
+								ROOT = {
+									detract_grace_super_huge_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_close_relative = {
+										dynasty = PREV
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_massive_effect = yes
+								}
+							}
+							else_if = {
+								limit = {
+									any_dynasty_member = {
+										is_chinese_emperor_trigger = yes
+									}
+								}
+								ROOT = {
+									detract_grace_major_effect = yes
+								}
+							}
+						}
 						character_event = { id = 89031 days = 4 tooltip = "EVTTOOLTIP89021" }
 					}
 					hidden_tooltip = {
@@ -1073,6 +1606,45 @@ character_event = {
 	
 	option = { # Kill wife
 		name = "EVTOPTA89022"
+		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
+		}
 		FROM = { death = { death_reason = death_execution killer = ROOT } }
 	}
 	option = { # Imprison wife
@@ -1103,6 +1675,43 @@ character_event = {
 	option = { # Do nothing
 		name = "EVTOPTC89022"
 		event_target:victim_son = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			opinion = {
 				who = ROOT
 				modifier = opinion_very_disappointed
@@ -1174,6 +1783,45 @@ character_event = {
 	
 	option = { # Kill wife
 		name = "EVTOPTA89025"
+		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
+		}
 		FROM = { death = { death_reason = death_execution killer = ROOT } }
 	}
 	option = { # Imprison wife

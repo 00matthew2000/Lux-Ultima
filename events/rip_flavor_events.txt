@@ -646,6 +646,55 @@ character_event = {
 		trigger = {
 			trait = paranoid
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:spouse_target = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_chinese_emperor_trigger = yes
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								current_heir = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				event_target:spouse_target = {
+					detract_grace_super_huge_effect = yes
+				}
+				event_target:physician_target = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					e_china = {
+						holder_scope = {
+							is_chinese_emperor_trigger = yes
+							any_child = {
+								character = PREVPREVPREV
+								dynasty = PREV
+							}
+						}
+					}
+				}
+				event_target:spouse_target = {
+					detract_grace_massive_effect = yes
+				}
+				event_target:physician_target = {
+					detract_grace_massive_effect = yes
+				}
+			}
+		}
 		
 		event_target:spouse_target = {
 			father_of_unborn_known = yes
@@ -1010,6 +1059,40 @@ character_event = {
 
 	option = { # I shall have your head for this!
 		name = EVTOPTA_RIP_4019
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:physician_target = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:physician_target = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:physician_target = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		
 		fertility = -0.05
 		
@@ -4759,6 +4842,43 @@ character_event = {
 		trigger = { is_ruler = yes }
 
 		name = EVTOPTA_RIP_29011
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		
 		#adds rival
 		if = {
@@ -4811,6 +4931,43 @@ character_event = {
 	#Get out
 	option = {
 		name = EVTOPTB_RIP_29011
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 
 		if = {
 			limit = {
@@ -5663,6 +5820,11 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_RIP_29104
+		trigger = {
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
+		}
 		custom_tooltip = { text = EVTOPTA_RIP_29104_TOOLTIP }
 		scaled_wealth = { value = -0.25 min = -25 }
 
@@ -5728,6 +5890,11 @@ character_event = {
 	#Attend
 	option = {
 		name = EVTOPTA_RIP_29112
+		trigger = {
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
+		}
 		
 		add_character_modifier = {
 			name = attending_masquerade
@@ -6951,6 +7118,40 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_RIP_29504
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:rip_physician = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:rip_physician = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:rip_physician = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 
 		if = { 
 			limit = { NOT = { trait = infirm } }
@@ -8113,6 +8314,40 @@ letter_event = {
 
 	option = {
 		name = EVTOPTA_RIP_30000 # Ask for money
+		if = { # The EoC isn't going to be happy if you make demands!
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -8139,6 +8374,40 @@ letter_event = {
 	}
 	option = {
 		name = EVTOPTB_RIP_30000 # Ask for a Favor
+		if = { # The EoC isn't going to be happy if you make demands!
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -8205,6 +8474,40 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTD_RIP_30000 # Refuse
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		
 		trigger = {
 			FROMFROM = {
@@ -8264,6 +8567,40 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTD_RIP_30000_TRAITOR # Refuse and become a traitor
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		
 		trigger = {
 			FROMFROM = {
@@ -8670,6 +9007,40 @@ letter_event = {
 
 	option = {
 		name = EVTOPTA_RIP_30000 # Ask for money
+		if = { # The EoC isn't going to be happy if you make demands!
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -8696,6 +9067,40 @@ letter_event = {
 	}
 	option = {
 		name = EVTOPTB_RIP_30020 # Ask for a Favor
+		if = { # The EoC isn't going to be happy if you make demands!
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -8764,6 +9169,40 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTD_RIP_30000 # Refuse
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		
 		trigger = {
 			FROMFROM = {
@@ -8823,6 +9262,40 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTD_RIP_30000_TRAITOR # Refuse
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		
 		trigger = {
 			FROMFROM = {
@@ -9221,6 +9694,40 @@ letter_event = {
 
 	option = {
 		name = EVTOPTA_RIP_30000 # Ask for money
+		if = { # The EoC isn't going to be happy if you make demands!
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -9247,6 +9754,40 @@ letter_event = {
 	}
 	option = {
 		name = EVTOPTB_RIP_30040 # Ask for a Favor
+		if = { # The EoC isn't going to be happy if you make demands!
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -9315,6 +9856,41 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTD_RIP_30000 # Refuse
+
+		if = { # The EoC isn't going to be happy if you make demands!
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		
 		trigger = {
 			FROMFROM = {
@@ -9375,6 +9951,40 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTD_RIP_30000_TRAITOR # Refuse
+		if = { # The EoC isn't going to be happy if you make demands!
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					FROMFROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROMFROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		
 		trigger = {
 			FROMFROM = {
@@ -10138,6 +10748,41 @@ character_event = {
 			chance = 50
 			add_trait_wroth_effect = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:suicide_duel_target = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:suicide_duel_target = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:suicide_duel_target = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 
 		event_target:suicide_duel_target = { 
 			prestige = -100
@@ -10193,6 +10838,41 @@ character_event = {
 		name = EVTOPTA_RIP_30206
 
 		prestige = 100
+		if = { # As far as the world knows, the rival didn't do you a favour!
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 
 		FROM = {
 			tooltip = {
@@ -10210,6 +10890,41 @@ character_event = {
 		name = EVTOPTB_RIP_30206
 
 		prestige = 100
+		if = { # As far as the world knows, the rival didn't do you a favour!
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 
 		FROM = {
 			tooltip = {
@@ -10222,6 +10937,42 @@ character_event = {
 	option = {
 		trigger = { FROM = { has_character_flag = won_suicide_duel } }
 		name = EVTOPTC_RIP_30206
+
+		if = { # Wounding FROM
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 	}
 }
 

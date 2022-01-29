@@ -442,6 +442,10 @@ character_event = {
 					is_maimed_trigger = yes
 					trait = infirm
 				}
+				NOR = {
+					trait = treasure_fleet_voyage
+					has_character_flag = do_not_disturb
+				}
 			}
 			set_character_flag = do_not_disturb
 			hidden_tooltip = { character_event = { id = TOG.299 days = 100 } } # Safety catch flag clearing
@@ -1371,10 +1375,14 @@ character_event = {
 		capital_scope = {
 			NOT = { region = world_india }
 			NOT = { region = world_persia }
+			NOT = { region = world_indochina }
+			NOT = { region = world_southeast_asia }
 		}
 		location = {
 			county = {
 				NOT = { region = world_india }
+				NOT = { region = world_indochina }
+				NOT = { region = world_southeast_asia }
 			}
 		}
 	}
@@ -2327,6 +2335,47 @@ character_event = {
 		set_character_flag = feast_lustful
 		trigger = {
 			is_married = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					spouse = {
+						OR = {
+							is_chinese_emperor_trigger = yes
+							e_china = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+									current_heir = {
+										character = PREVPREVPREV
+										dynasty = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					spouse = {
+						e_china = {
+							holder_scope = {
+								is_chinese_emperor_trigger = yes
+								any_child = {
+									character = PREVPREVPREV
+									dynasty = PREV
+								}
+							}
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
 		}
 		hidden_tooltip = {
 			liege = {

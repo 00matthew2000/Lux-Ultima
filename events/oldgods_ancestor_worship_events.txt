@@ -378,6 +378,41 @@ character_event = {
 
 		set_character_flag = ancestors_human
 
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:human_sacrifice_prisoner = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:human_sacrifice_prisoner = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:human_sacrifice_prisoner = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		event_target:human_sacrifice_prisoner = {
 			show_scope_change = no
 			death = { death_reason = death_sacrificed_ancestors killer = ROOT }
@@ -416,6 +451,41 @@ character_event = {
 
 		set_character_flag = ancestors_human
 
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					event_target:human_sacrifice_prisoner = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_super_huge_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:human_sacrifice_prisoner = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_massive_effect = yes
+			}
+			else_if = {
+				limit = {
+					event_target:human_sacrifice_prisoner = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+		}
 		event_target:human_sacrifice_courtier = { death = { death_reason = death_sacrificed_ancestors killer = ROOT } }
 
 		event_target:human_sacrifice_courtier = { save_event_target_as = kinslayer_target }
