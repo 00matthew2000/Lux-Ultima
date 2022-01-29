@@ -41,6 +41,9 @@ character_event = {
 				is_inaccessible_trigger = yes
 				has_character_flag = do_not_disturb
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 			prisoner = no
 		}
 		any_independent_ruler = {
@@ -49,10 +52,6 @@ character_event = {
 				has_opinion_modifier = { who = ROOT modifier = opinion_sent_preacher }
 			}
 			LI_pagan_trigger = yes
-			OR = {
-				NOT = { religion = quetzal }
-				year = 1350
-			}
 			is_reformed_religion = no
 			controls_religion = no
 			ROOT = {
@@ -489,6 +488,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_ZE_5027  # Accuse him of treason!
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				job_spiritual = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_spiritual = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_spiritual = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		job_spiritual = {
 			remove_title = job_spiritual
 			add_character_modifier = {
@@ -504,6 +537,40 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB_ZE_5027  # Depose but forgive him on condition he stops misbehaving.
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				job_spiritual = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_spiritual = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_spiritual = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		job_spiritual = {
 			remove_title = job_spiritual
 			add_character_modifier = {
@@ -581,6 +648,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_ZE_5030 # Depose + get imprison reason
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				job_spiritual = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_spiritual = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_spiritual = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		job_spiritual = {
 			prestige = -50
 			piety = -50
@@ -594,6 +695,40 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB_ZE_5030 # Turn a blind eye for now but get imprison reason
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				job_spiritual = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_spiritual = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_spiritual = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		job_spiritual = {
 			reverse_opinion = {
 				who = ROOT

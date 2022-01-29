@@ -182,6 +182,43 @@ character_event = {
 			prestige = -50
 			spouse = {
 				save_event_target_as = target_spurned_spouse
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
 				employer = {
 					opinion = {
 						who = ROOT
@@ -947,6 +984,40 @@ character_event = {
 		name = EVTOPTA_ZE_1130  # Oh my!
 		FROM = {
 			spouse = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						PREV = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						PREV = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						PREV = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
 				death = {
 					death_reason = death_murder
 					killer = FROM
@@ -1016,6 +1087,42 @@ character_event = {
 	option = {
 		name = EVTOPTA_ZE_1142
 		FROMFROM = {
+			spouse = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						PREV = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						PREV = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						PREV = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
 			end_inaccessibility_effect = yes #removes in_hiding or in_seclusion
 			remove_spouse = spouse
 			random_lover = {
@@ -1052,6 +1159,42 @@ character_event = {
 	option = {
 		name = EVTOPTA_ZE_1150
 		FROM = {
+			spouse = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						PREV = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						PREV = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						PREV = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
 			end_inaccessibility_effect = yes
 			remove_spouse = spouse
 			random_lover = {

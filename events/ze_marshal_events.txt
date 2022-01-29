@@ -662,6 +662,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_ZE_4100 # Depose + get imprison reason
+
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				job_marshal = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_marshal = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_marshal = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		add_character_modifier = {
 			name = disloyal_peasantry
 			years = 5
@@ -681,6 +716,41 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB_ZE_4100 # Turn a blind eye for now but get imprison reason
+
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				job_marshal = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_marshal = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_marshal = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		add_character_modifier = {
 			name = disloyal_peasantry
 			years = 5
@@ -772,6 +842,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_ZE_4120 # Depose + get imprison reason
+
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				job_marshal = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_marshal = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_marshal = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		event_target:custom_marshal_4120 = {
 			show_scope_change = no
 			location = {
@@ -792,6 +897,41 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB_ZE_4120 # Turn a blind eye for now but get imprison reason
+
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				job_marshal = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_marshal = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				job_marshal = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		event_target:custom_marshal_4120 = {
 			show_scope_change = no
 			location = {

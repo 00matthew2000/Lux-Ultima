@@ -4493,6 +4493,80 @@ character_event = {
 				trait = impaler
 			}
 		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROMFROMFROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROMFROMFROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROMFROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROMFROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROMFROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROMFROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		
 		opinion = {
 			who = FROMFROM
@@ -4513,6 +4587,80 @@ character_event = {
 	
 	option = {
 		name = EVTOPTB_WOL_2227 # Tighten security
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROMFROMFROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROMFROMFROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROMFROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROMFROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				FROMFROM = {
+					is_chinese_emperor_trigger = no
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				FROMFROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				FROMFROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -4690,7 +4838,7 @@ character_event = {
 	
 	trigger = {
 		has_focus = focus_intrigue
-		has_regent = no
+		has_actual_regency_trigger = no
 		in_command = no
 		job_spymaster = {
 			OR = {
@@ -4898,6 +5046,79 @@ character_event = {
 	option = {
 		name = EVTOPTA_WOL_2302 # Arrest the spymaster!
 		
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							plot_target_char = {
+								character = ROOT
+							}
+							plot_target_title = {
+								holder_scope = {
+									character = ROOT
+								}
+							}
+						}
+					}
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							plot_target_char = {
+								dynasty = ROOT
+								any_close_relative = {
+									character = ROOT
+								}
+							}
+							plot_target_title = {
+								holder_scope = {
+									dynasty = ROOT
+									any_close_relative = {
+										character = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							plot_target_char = {
+								any_dynasty_member = {
+									character = ROOT
+								}
+							}
+							plot_target_title = {
+								holder_scope = {
+									any_dynasty_member = {
+										character = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -4937,6 +5158,79 @@ character_event = {
 	option = {
 		name = EVTOPTB_WOL_2302 # Let them plot...
 		
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = yes
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							plot_target_char = {
+								character = ROOT
+							}
+							plot_target_title = {
+								holder_scope = {
+									character = ROOT
+								}
+							}
+						}
+					}
+				}
+				FROM = {
+					detract_grace_super_huge_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							plot_target_char = {
+								dynasty = ROOT
+								any_close_relative = {
+									character = ROOT
+								}
+							}
+							plot_target_title = {
+								holder_scope = {
+									dynasty = ROOT
+									any_close_relative = {
+										character = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+				FROM = {
+					detract_grace_massive_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							plot_target_char = {
+								any_dynasty_member = {
+									character = ROOT
+								}
+							}
+							plot_target_title = {
+								holder_scope = {
+									any_dynasty_member = {
+										character = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+				FROM = {
+					detract_grace_major_effect = yes
+				}
+			}
+		}
 		ai_chance = {
 			factor = 1
 		}

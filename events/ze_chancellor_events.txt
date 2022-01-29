@@ -458,6 +458,40 @@ character_event = {
 			prestige = -50
 			piety = -50
 			imprison = ROOT
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					detract_grace_major_effect = yes
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							any_close_relative = {
+								dynasty = ROOT
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+					detract_grace_medium_effect = yes
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+					detract_grace_minor_effect = yes
+				}
+			}
 		}
 	}
 	option = {
@@ -479,6 +513,41 @@ character_event = {
 				years = 3
 				modifier = opinion_turned_a_blind_eye
 			}
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					detract_grace_major_effect = yes
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							any_close_relative = {
+								dynasty = ROOT
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+					detract_grace_medium_effect = yes
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+					}
+					detract_grace_minor_effect = yes
+				}
+			}
+		
 		}
 	}
 }

@@ -541,6 +541,45 @@ long_character_event = {
 		prestige = 50
 		if = {
 			limit = { event_target:challenger = { character = ROOT } }
+			event_target:opponent = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
 			tooltip = {
 				event_target:opponent = {
 					maim_hand_effect = yes
@@ -565,6 +604,45 @@ long_character_event = {
 		}		
 		if = {
 			limit = { NOT = { event_target:challenger = { character = ROOT } } }
+			event_target:challenger = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
 			tooltip = {
 				event_target:challenger = {
 					maim_hand_effect = yes
@@ -605,6 +683,46 @@ long_character_event = {
 			limit = { event_target:challenger = { character = ROOT } }
 			if = {
 				limit = { event_target:opponent = { NOT = { is_maimed_trigger = yes } } }
+
+				event_target:opponent = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_major_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_medium_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_minor_effect = yes
+							}
+						}
+					}
+				}
 				tooltip = {
 					event_target:opponent = {
 						add_trait = wounded
@@ -625,6 +743,46 @@ long_character_event = {
 			limit = { NOT = { event_target:challenger = { character = ROOT } } }
 			if = {
 				limit = { event_target:challenger = { NOT = { is_maimed_trigger = yes } } }
+				
+				event_target:challenger = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								is_chinese_emperor_trigger = no
+							}
+						}
+						if = {
+							limit = {
+								is_chinese_emperor_trigger = yes
+							}
+							ROOT = {
+								detract_grace_major_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_medium_effect = yes
+							}
+						}
+						else_if = {
+							limit = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+							ROOT = {
+								detract_grace_minor_effect = yes
+							}
+						}
+					}
+				}		
 				tooltip = {
 					event_target:challenger = {
 						add_trait = wounded
@@ -713,6 +871,45 @@ long_character_event = {
 			limit = { event_target:challenger = { character = ROOT } }
 			event_target:opponent = { save_event_target_as = kinslayer_target }
 			add_kinslayer_trait_effect = yes
+			event_target:opponent = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
 			tooltip = {
 				event_target:opponent = {
 					death = {
@@ -735,6 +932,45 @@ long_character_event = {
 			limit = { NOT = { event_target:challenger = { character = ROOT } } }
 			event_target:challenger = { save_event_target_as = kinslayer_target }
 			add_kinslayer_trait_effect = yes
+			event_target:challenger = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
 			tooltip = {
 				event_target:challenger = {
 					death = {
@@ -903,6 +1139,45 @@ long_character_event = {
 			add_kinslayer_trait_effect = yes
 			save_event_target_as = kinslayer_target
 			event_target:opponent = { add_kinslayer_trait_effect = yes }
+			event_target:opponent = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
 			if = {
 				limit = { multiplayer = no }
 				death = {
@@ -919,12 +1194,51 @@ long_character_event = {
 				}
 			}
 		}
-		if = {
+		else_if = {
 			limit = { NOT = { event_target:challenger = { character = ROOT } } }
 			event_target:challenger = { save_event_target_as = kinslayer_target }
 			add_kinslayer_trait_effect = yes
 			save_event_target_as = kinslayer_target
 			event_target:challenger = { add_kinslayer_trait_effect = yes }
+			event_target:challenger = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						ROOT = {
+							is_chinese_emperor_trigger = no
+						}
+					}
+					if = {
+						limit = {
+							is_chinese_emperor_trigger = yes
+						}
+						ROOT = {
+							detract_grace_super_huge_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_relative = {
+								dynasty = PREV
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_massive_effect = yes
+						}
+					}
+					else_if = {
+						limit = {
+							any_dynasty_member = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						ROOT = {
+							detract_grace_major_effect = yes
+						}
+					}
+				}
+			}
 			if = {
 				limit = { multiplayer = no }
 				death = {
@@ -987,6 +1301,46 @@ long_character_event = {
 		}
 		event_target:opponent = { save_event_target_as = kinslayer_target }
 		add_kinslayer_trait_effect = yes
+
+		event_target:opponent = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
+		}
 		tooltip = {
 			event_target:opponent = {
 				death = {
@@ -1029,6 +1383,46 @@ long_character_event = {
 		}
 		event_target:challenger = { save_event_target_as = kinslayer_target }
 		add_kinslayer_trait_effect = yes
+
+		event_target:challenger = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
+		}
 		tooltip = {
 			event_target:challenger = {
 				death = {
@@ -1166,6 +1560,9 @@ character_event = {
 		NOT = { has_character_flag = do_not_disturb }
 		in_command = no
 		prisoner = no
+		NOT = {
+			trait = treasure_fleet_preparation
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1714,6 +2111,9 @@ character_event = {
 						trait = infirm
 						has_character_flag = do_not_disturb
 					}
+					NOT = {
+						trait = treasure_fleet_preparation
+					}
 				}
 				save_event_target_as = attacker
 				set_character_flag = selected
@@ -1735,6 +2135,9 @@ character_event = {
 							trait = infirm
 							has_character_flag = do_not_disturb
 							has_character_flag = selected
+						}
+						NOT = {
+						trait = treasure_fleet_preparation
 						}
 					}
 					save_event_target_as = attacker
@@ -1770,6 +2173,9 @@ character_event = {
 						has_character_flag = do_not_disturb
 						has_character_flag = selected
 					}
+					NOT = {
+						trait = treasure_fleet_preparation
+					}
 				}
 				save_event_target_as = defender
 				set_character_flag = selected
@@ -1791,6 +2197,9 @@ character_event = {
 							trait = infirm
 							has_character_flag = do_not_disturb
 							has_character_flag = selected
+						}
+						NOT = {
+						trait = treasure_fleet_preparation
 						}
 					}
 					save_event_target_as = defender

@@ -299,7 +299,7 @@ character_event = {
 	
 	trigger = {
 		has_focus = focus_family
-		has_regent = no
+		has_actual_regency_trigger = no
 		in_command = no
 		is_ill = no
 		any_spouse = {
@@ -426,7 +426,7 @@ character_event = {
 	
 	trigger = {
 		has_focus = focus_family
-		has_regent = no
+		has_actual_regency_trigger = no
 		in_command = no
 		is_ill = no
 		any_sibling = {
@@ -612,7 +612,7 @@ character_event = {
 	
 	trigger = {
 		has_focus = focus_family
-		has_regent = no
+		has_actual_regency_trigger = no
 		in_command = no
 		is_ill = no
 		OR = {
@@ -850,7 +850,7 @@ character_event = {
 	
 	trigger = {
 		has_focus = focus_family
-		has_regent = no
+		has_actual_regency_trigger = no
 		in_command = no
 		is_ill = no
 		any_child = {
@@ -1030,7 +1030,7 @@ character_event = {
 	
 	trigger = {
 		has_focus = focus_family
-		has_regent = no
+		has_actual_regency_trigger = no
 		in_command = no
 		is_ill = no
 	}
@@ -1423,7 +1423,7 @@ character_event = {
 	
 	trigger = {
 		has_focus = focus_family
-		has_regent = no
+		has_actual_regency_trigger = no
 		in_command = no
 		is_ill = no
 		num_of_children = 2

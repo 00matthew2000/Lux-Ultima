@@ -501,6 +501,15 @@ character_event = {
 		}
 		new_character = {
 			prisoner = yes
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
 		}
 		FROMFROM = { clr_province_flag = castle_province }
 		clr_global_flag = rulership_castle
@@ -1318,6 +1327,15 @@ character_event = {
 	option = {
 		name = EVTOPTB_WoL_12028
 		event_target:suspected_witch = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
 			imprison = ROOT
 		}
 		hidden_tooltip = { character_event = { id = WoL.12500 days = 1 } }

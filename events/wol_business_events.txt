@@ -511,6 +511,7 @@ character_event = {
 				is_within_diplo_range = ROOT
 				mercenary = no
 				holy_order = no
+				is_chinese_emperor_trigger = no
 				primary_title = {
 					is_landless_type_title = no
 				}
@@ -537,6 +538,7 @@ character_event = {
 				is_within_diplo_range = ROOT
 				mercenary = no
 				holy_order = no
+				is_chinese_emperor_trigger = no
 				primary_title = {
 					is_landless_type_title = no
 				}
@@ -563,6 +565,7 @@ character_event = {
 				is_within_diplo_range = ROOT
 				mercenary = no
 				holy_order = no
+				is_chinese_emperor_trigger = no
 				primary_title = {
 					is_landless_type_title = no
 				}
@@ -587,6 +590,7 @@ character_event = {
 				is_adult = yes
 				mercenary = no
 				holy_order = no
+				is_chinese_emperor_trigger = no
 				primary_title = {
 					is_landless_type_title = no
 				}
@@ -2387,6 +2391,19 @@ province_event = {
 		name = EVTOPTA_WOL_10217
 		holder_scope = {
 			event_target:stonemason = {
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_dlc = "Jade Dragon"
+							ROOT = {
+								holder_scope = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+						}
+						detract_grace_major_effect = yes
+					}
+				}
 				imprison = PREV
 			}
 			hidden_tooltip = {
@@ -3526,6 +3543,10 @@ character_event = {
 				character_event = { id = WoL.10300 }
 			}
 			30 = {
+				modifier = {
+					factor = 0
+					is_chinese_emperor_trigger = yes # The EoC going on trade expeditions could be messy, so this has been disabled for safety reasons
+				}
 				modifier = {
 					OR = {
 						NOT = {

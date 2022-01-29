@@ -719,6 +719,20 @@ character_event = {
 	picture = GFX_evt_child_bully
 	
 	is_triggered_only = yes
+
+	immediate = { # Not ideal to have this hidden, but the bully isn't guaranteed to get an event...
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				event_target:bullied_ward = {
+					is_chinese_emperor_trigger = yes
+				}
+			}
+			event_target:child_bully = {
+				detract_grace_major_effect = yes
+			}
+		}
+	}
 	
 	option = {
 		name = EVTOPTA78020

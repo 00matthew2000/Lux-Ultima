@@ -30,6 +30,8 @@ character_event = {
 		NOR = {
 			has_character_flag = epic_hunt
 			has_character_flag = do_not_disturb
+			trait = treasure_fleet_preparation
+			religion = jain
 		}
 		non_hunting_trigger = no
 	}
@@ -43,6 +45,7 @@ character_event = {
 						region = world_europe_south
 						region = world_europe_west
 						region = world_asia_minor
+						region = world_japan # Tianxia
 					}
 				}
 			}
@@ -67,6 +70,9 @@ character_event = {
 					OR = {
 						region = world_india
 						region = world_persia
+						region = world_southeast_asia
+						region = world_china
+						region = world_korea
 					}
 				}
 			}
@@ -172,7 +178,7 @@ character_event = {
 		if = {
 			limit = {
 				OR = {
-					has_regent = yes
+					has_actual_regency_trigger = yes
 					in_command = yes
 					trait = pregnant
 					has_character_flag = do_not_disturb
@@ -340,6 +346,7 @@ character_event = {
 						region = world_europe_south
 						region = world_europe_west
 						region = world_asia_minor
+						region = world_japan # Tianxia
 					}
 				}
 			}
@@ -364,6 +371,9 @@ character_event = {
 					OR = {
 						region = world_india
 						region = world_persia
+						region = world_southeast_asia
+						region = world_china
+						region = world_korea
 					}
 				}
 			}
@@ -455,6 +465,7 @@ narrative_event = {
 						region = world_europe_south
 						region = world_europe_west
 						region = world_asia_minor
+						region = world_japan # Tianxia
 					}
 				}
 			}
@@ -479,6 +490,9 @@ narrative_event = {
 					OR = {
 						region = world_india
 						region = world_persia
+						region = world_southeast_asia
+						region = world_china
+						region = world_korea
 					}
 				}
 			}
@@ -2909,6 +2923,43 @@ character_event = {
 	option = {
 		name = EVTOPTA_WoL_5231
 		random_courtier = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			random_list = {
 				50 = {
 				}
@@ -2949,6 +3000,43 @@ character_event = {
 			}
 		}
 		random_courtier = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			random_list = {
 				50 = {
 				}

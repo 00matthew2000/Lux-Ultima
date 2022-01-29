@@ -89,6 +89,41 @@ character_event = {
 
 		if = {
 			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:target_treasurer = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_treasurer = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_treasurer = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
+
+		if = {
+			limit = {
 				NOT = { trait = just }
 				NOT = { trait = arbitrary }
 			}
@@ -115,6 +150,41 @@ character_event = {
 			trait = wroth
 		}
 		name = EVTOPTB_ZE_3001
+
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:target_treasurer = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_treasurer = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_treasurer = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		#effects on you
 		if = { limit = { trait = kind } remove_trait = kind }
 		if = { limit = { NOT = { trait = cruel } } add_trait = cruel }
@@ -122,6 +192,43 @@ character_event = {
 		event_target:target_treasurer = {
 			show_scope_change = no
 			add_rival = ROOT
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					ROOT = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					ROOT = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = PREV
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					ROOT = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			if = { limit = { has_job_title = job_treasurer} remove_title = job_treasurer }
 			if = { limit = { is_maimed_trigger = yes } death = { death_reason = death_execution killer = ROOT } break = yes }
 			if = { limit = { trait = wounded } add_maimed_trait_effect = yes }
@@ -132,6 +239,41 @@ character_event = {
 	#Do nothing
 	option = {
 		name = EVTOPTC_ZE_3001
+
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+			}
+			if = {
+				limit = {
+					is_chinese_emperor_trigger = yes
+				}
+				event_target:target_treasurer = {
+					detract_grace_major_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_relative = {
+						dynasty = ROOT
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_treasurer = {
+					detract_grace_medium_effect = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_dynasty_member = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				event_target:target_treasurer = {
+					detract_grace_minor_effect = yes
+				}
+			}
+		}
 		if = { limit = { trait = wroth } remove_trait = wroth }
 		if = { limit = { NOT = { trait = patient }} add_trait = patient }
 		event_target:target_treasurer = {
