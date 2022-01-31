@@ -161,7 +161,7 @@ religious_proselyte1 = {
 			show_scope_change = no
 			if = {
 				limit = {
-					religion = buddhist
+					religion_group = bud_group
 				}
 				piety = -250
 			}

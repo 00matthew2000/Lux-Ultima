@@ -3821,353 +3821,353 @@ clear_all_chinese_name_title_flags_effect = {
 sixteen_prefectures_transfer_effect = {
 	log = "The Sixteen Prefectures are being handed over"
 	# Kings
-	any_realm_lord = {
-		limit = {
-			tier = king
-			# Owns land in the Sixteen Prefectures
-			any_demesne_title = {
-				OR = {
-					title = c_wuzhai
-					title = c_shuozhou
-					title = c_datong
-					title = c_dadu
-					title = c_zhangjiakou
-					title = c_chengde
-					title = c_kaiping
-				}
-			}
-		}
-		log = "[This.GetBestName] holds land in the Sixteen Prefectures!"
-		# The vassal becomes a Liao tributary
-		if = {
-			limit = {
-				NOT = {
-					any_demesne_title = {
-						tier = count
-						NOR = {
-							title = c_wuzhai
-							title = c_shuozhou
-							title = c_datong
-							title = c_dadu
-							title = c_zhangjiakou
-							title = c_chengde
-							title = c_kaiping
-						}
-					}
-				}
-			}
-			log = "[This.GetBestName] holds no land elsewhere!"
-			# Take care of sub-vassals that shouldn't become Liao tributaries
-			any_realm_lord = {
-				limit = {
-					any_demesne_title = {
-						tier = count
-						NOR = {
-							title = c_wuzhai
-							title = c_shuozhou
-							title = c_datong
-							title = c_dadu
-							title = c_zhangjiakou
-							title = c_chengde
-							title = c_kaiping
-						}
-					}
-				}
-				log = "[This.GetBestName] remains with the Black Turtle!"
-				set_defacto_liege = e_black_turtle
-			}
-			log = "[This.GetBestName] became a Liao tributary!"
-			set_defacto_liege = THIS
-			event_target:liao_emperor = {
-				make_tributary = {
-					who = PREV
-					tributary_type = nomadic
-				}
-			}
-		}
-		# A new ruler is created as a Liao tributary
-		else = {
-			log = "[This.GetBestName] holds land elsewhere!"
-			create_random_soldier = {
-				random_traits = yes
-				dynasty = random
-				religion = ROOT
-				culture = ROOT
-				female = no
-				age = 25
-			}
-			new_character = {
-				save_event_target_as = liao_tributary_character
-			}
-			any_demesne_title = {
-				limit = {
-					OR = {
-						title = c_wuzhai
-						title = c_shuozhou
-						title = c_datong
-						title = c_dadu
-						title = c_zhangjiakou
-						title = c_chengde
-						title = c_kaiping
-					}
-				}
-				grant_title_no_opinion = event_target:liao_tributary_character
-			}
-			event_target:liao_tributary_character = {
-				log = "[This.GetBestName] is the actual Liao tributary!"
-				set_defacto_liege = THIS
-				event_target:liao_emperor = {
-					make_tributary = {
-						who = PREV
-						tributary_type = nomadic
-					}
-				}
-			}
-		}
-	}
-
-	# Dukes
-	any_realm_lord = {
-		limit = {
-			tier = duke
-			# Owns land in the Sixteen Prefectures
-			any_demesne_title = {
-				OR = {
-					title = c_wuzhai
-					title = c_shuozhou
-					title = c_datong
-					title = c_dadu
-					title = c_zhangjiakou
-					title = c_chengde
-					title = c_kaiping
-				}
-			}
-		}
-		log = "[This.GetBestName] holds land in the Sixteen Prefectures!"
-		# The vassal becomes a Liao tributary
-		if = {
-			limit = {
-				NOT = {
-					any_demesne_title = {
-						tier = count
-						NOR = {
-							title = c_wuzhai
-							title = c_shuozhou
-							title = c_datong
-							title = c_dadu
-							title = c_zhangjiakou
-							title = c_chengde
-							title = c_kaiping
-						}
-					}
-				}
-			}
-			log = "[This.GetBestName] holds no land elsewhere!"
-			# Take care of sub-vassals that shouldn't become Liao tributaries
-			any_realm_lord = {
-				limit = {
-					any_demesne_title = {
-						tier = count
-						NOR = {
-							title = c_wuzhai
-							title = c_shuozhou
-							title = c_datong
-							title = c_dadu
-							title = c_zhangjiakou
-							title = c_chengde
-							title = c_kaiping
-						}
-					}
-				}
-				log = "[This.GetBestName] remains with the Black Turtle!"
-				set_defacto_liege = e_black_turtle
-			}
-			log = "[This.GetBestName] became a Liao tributary!"
-			set_defacto_liege = THIS
-			event_target:liao_emperor = {
-				make_tributary = {
-					who = PREV
-					tributary_type = nomadic
-				}
-			}
-		}
-		# A new ruler is created as a Liao tributary
-		else = {
-			log = "[This.GetBestName] holds land elsewhere!"
-			create_random_soldier = {
-				random_traits = yes
-				dynasty = random
-				religion = ROOT
-				culture = ROOT
-				female = no
-				age = 25
-			}
-			new_character = {
-				save_event_target_as = liao_tributary_character
-			}
-			any_demesne_title = {
-				limit = {
-					OR = {
-						title = c_wuzhai
-						title = c_shuozhou
-						title = c_datong
-						title = c_dadu
-						title = c_zhangjiakou
-						title = c_chengde
-						title = c_kaiping
-					}
-				}
-				grant_title_no_opinion = event_target:liao_tributary_character
-			}
-			event_target:liao_tributary_character = {
-				log = "[This.GetBestName] is the actual Liao tributary!"
-				set_defacto_liege = THIS
-				event_target:liao_emperor = {
-					make_tributary = {
-						who = PREV
-						tributary_type = nomadic
-					}
-				}
-			}
-		}
-	}
-
-	# Counts
-	any_realm_lord = {
-		limit = {
-			tier = count
-			# Owns land in the Sixteen Prefectures
-			any_demesne_title = {
-				OR = {
-					title = c_wuzhai
-					title = c_shuozhou
-					title = c_datong
-					title = c_dadu
-					title = c_zhangjiakou
-					title = c_chengde
-					title = c_kaiping
-				}
-			}
-		}
-		log = "[This.GetBestName] holds land in the Sixteen Prefectures!"
-		# The vassal becomes a Liao tributary
-		if = {
-			limit = {
-				NOT = {
-					any_demesne_title = {
-						tier = count
-						NOR = {
-							title = c_wuzhai
-							title = c_shuozhou
-							title = c_datong
-							title = c_dadu
-							title = c_zhangjiakou
-							title = c_chengde
-							title = c_kaiping
-						}
-					}
-				}
-			}
-			log = "[This.GetBestName] holds no land elsewhere!"
-			log = "[This.GetBestName] became a Liao tributary!"
-			set_defacto_liege = THIS
-			event_target:liao_emperor = {
-				make_tributary = {
-					who = PREV
-					tributary_type = nomadic
-				}
-			}
-		}
-		# A new ruler is created as a Liao tributary
-		else = {
-			create_random_soldier = {
-				random_traits = yes
-				dynasty = random
-				religion = ROOT
-				culture = ROOT
-				female = no
-				age = 25
-			}
-			new_character = {
-				save_event_target_as = liao_tributary_character
-			}
-			any_demesne_title = {
-				limit = {
-					OR = {
-						title = c_wuzhai
-						title = c_shuozhou
-						title = c_datong
-						title = c_dadu
-						title = c_zhangjiakou
-						title = c_chengde
-						title = c_kaiping
-					}
-				}
-				grant_title_no_opinion = event_target:liao_tributary_character
-			}
-			event_target:liao_tributary_character = {
-				log = "[This.GetBestName] is the actual Liao tributary!"
-				set_defacto_liege = THIS
-				event_target:liao_emperor = {
-					make_tributary = {
-						who = PREV
-						tributary_type = nomadic
-					}
-				}
-			}
-		}
-	}
-
-	# ROOT, if relevant
-	if = {
-		limit = {
-			any_demesne_title = {
-				OR = {
-					title = c_wuzhai
-					title = c_shuozhou
-					title = c_datong
-					title = c_dadu
-					title = c_zhangjiakou
-					title = c_chengde
-					title = c_kaiping
-				}
-			}
-		}
-		# A new ruler is created as a Liao tributary
-		create_random_soldier = {
-			random_traits = yes
-			dynasty = random
-			religion = ROOT
-			culture = ROOT
-			female = no
-			age = 25
-		}
-		new_character = {
-			save_event_target_as = liao_tributary_character
-		}
-		any_demesne_title = {
-			limit = {
-				OR = {
-					title = c_wuzhai
-					title = c_shuozhou
-					title = c_datong
-					title = c_dadu
-					title = c_zhangjiakou
-					title = c_chengde
-					title = c_kaiping
-				}
-			}
-			grant_title_no_opinion = event_target:liao_tributary_character
-		}
-		event_target:liao_tributary_character = {
-			log = "[This.GetBestName] is the actual Liao tributary!"
-			set_defacto_liege = THIS
-			event_target:liao_emperor = {
-				make_tributary = {
-					who = PREV
-					tributary_type = nomadic
-				}
-			}
-		}
-	}
+#	any_realm_lord = {
+#		limit = {
+#			tier = king
+#			# Owns land in the Sixteen Prefectures
+#			any_demesne_title = {
+#				OR = {
+#					title = c_wuzhai
+#					title = c_shuozhou
+#					title = c_datong
+#					title = c_dadu
+#					title = c_zhangjiakou
+#					title = c_chengde
+#					title = c_kaiping
+#				}
+#			}
+#		}
+#		log = "[This.GetBestName] holds land in the Sixteen Prefectures!"
+#		# The vassal becomes a Liao tributary
+#		if = {
+#			limit = {
+#				NOT = {
+#					any_demesne_title = {
+#						tier = count
+#						NOR = {
+#							title = c_wuzhai
+#							title = c_shuozhou
+#							title = c_datong
+#							title = c_dadu
+#							title = c_zhangjiakou
+#							title = c_chengde
+#							title = c_kaiping
+#						}
+#					}
+#				}
+#			}
+#			log = "[This.GetBestName] holds no land elsewhere!"
+#			# Take care of sub-vassals that shouldn't become Liao tributaries
+#			any_realm_lord = {
+#				limit = {
+#					any_demesne_title = {
+#						tier = count
+#						NOR = {
+#							title = c_wuzhai
+#							title = c_shuozhou
+#							title = c_datong
+#							title = c_dadu
+#							title = c_zhangjiakou
+#							title = c_chengde
+#							title = c_kaiping
+#						}
+#					}
+#				}
+#				log = "[This.GetBestName] remains with the Black Turtle!"
+#				set_defacto_liege = e_black_turtle
+#			}
+#			log = "[This.GetBestName] became a Liao tributary!"
+#			set_defacto_liege = THIS
+#			event_target:liao_emperor = {
+#				make_tributary = {
+#					who = PREV
+#					tributary_type = nomadic
+#				}
+#			}
+#		}
+#		# A new ruler is created as a Liao tributary
+#		else = {
+#			log = "[This.GetBestName] holds land elsewhere!"
+#			create_random_soldier = {
+#				random_traits = yes
+#				dynasty = random
+#				religion = ROOT
+#				culture = ROOT
+#				female = no
+#				age = 25
+#			}
+#			new_character = {
+#				save_event_target_as = liao_tributary_character
+#			}
+#			any_demesne_title = {
+#				limit = {
+#					OR = {
+#						title = c_wuzhai
+#						title = c_shuozhou
+#						title = c_datong
+#						title = c_dadu
+#						title = c_zhangjiakou
+#						title = c_chengde
+#						title = c_kaiping
+#					}
+#				}
+#				grant_title_no_opinion = event_target:liao_tributary_character
+#			}
+#			event_target:liao_tributary_character = {
+#				log = "[This.GetBestName] is the actual Liao tributary!"
+#				set_defacto_liege = THIS
+#				event_target:liao_emperor = {
+#					make_tributary = {
+#						who = PREV
+#						tributary_type = nomadic
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	# Dukes
+#	any_realm_lord = {
+#		limit = {
+#			tier = duke
+#			# Owns land in the Sixteen Prefectures
+#			any_demesne_title = {
+#				OR = {
+#					title = c_wuzhai
+#					title = c_shuozhou
+#					title = c_datong
+#					title = c_dadu
+#					title = c_zhangjiakou
+#					title = c_chengde
+#					title = c_kaiping
+#				}
+#			}
+#		}
+#		log = "[This.GetBestName] holds land in the Sixteen Prefectures!"
+#		# The vassal becomes a Liao tributary
+#		if = {
+#			limit = {
+#				NOT = {
+#					any_demesne_title = {
+#						tier = count
+#						NOR = {
+#							title = c_wuzhai
+#							title = c_shuozhou
+#							title = c_datong
+#							title = c_dadu
+#							title = c_zhangjiakou
+#							title = c_chengde
+#							title = c_kaiping
+#						}
+#					}
+#				}
+#			}
+#			log = "[This.GetBestName] holds no land elsewhere!"
+#			# Take care of sub-vassals that shouldn't become Liao tributaries
+#			any_realm_lord = {
+#				limit = {
+#					any_demesne_title = {
+#						tier = count
+#						NOR = {
+#							title = c_wuzhai
+#							title = c_shuozhou
+#							title = c_datong
+#							title = c_dadu
+#							title = c_zhangjiakou
+#							title = c_chengde
+#							title = c_kaiping
+#						}
+#					}
+#				}
+#				log = "[This.GetBestName] remains with the Black Turtle!"
+#				set_defacto_liege = e_black_turtle
+#			}
+#			log = "[This.GetBestName] became a Liao tributary!"
+#			set_defacto_liege = THIS
+#			event_target:liao_emperor = {
+#				make_tributary = {
+#					who = PREV
+#					tributary_type = nomadic
+#				}
+#			}
+#		}
+#		# A new ruler is created as a Liao tributary
+#		else = {
+#			log = "[This.GetBestName] holds land elsewhere!"
+#			create_random_soldier = {
+#				random_traits = yes
+#				dynasty = random
+#				religion = ROOT
+#				culture = ROOT
+#				female = no
+#				age = 25
+#			}
+#			new_character = {
+#				save_event_target_as = liao_tributary_character
+#			}
+#			any_demesne_title = {
+#				limit = {
+#					OR = {
+#						title = c_wuzhai
+#						title = c_shuozhou
+#						title = c_datong
+#						title = c_dadu
+#						title = c_zhangjiakou
+#						title = c_chengde
+#						title = c_kaiping
+#					}
+#				}
+#				grant_title_no_opinion = event_target:liao_tributary_character
+#			}
+#			event_target:liao_tributary_character = {
+#				log = "[This.GetBestName] is the actual Liao tributary!"
+#				set_defacto_liege = THIS
+#				event_target:liao_emperor = {
+#					make_tributary = {
+#						who = PREV
+#						tributary_type = nomadic
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	# Counts
+#	any_realm_lord = {
+#		limit = {
+#			tier = count
+#			# Owns land in the Sixteen Prefectures
+#			any_demesne_title = {
+#				OR = {
+#					title = c_wuzhai
+#					title = c_shuozhou
+#					title = c_datong
+#					title = c_dadu
+#					title = c_zhangjiakou
+#					title = c_chengde
+#					title = c_kaiping
+#				}
+#			}
+#		}
+#		log = "[This.GetBestName] holds land in the Sixteen Prefectures!"
+#		# The vassal becomes a Liao tributary
+#		if = {
+#			limit = {
+#				NOT = {
+#					any_demesne_title = {
+#						tier = count
+#						NOR = {
+#							title = c_wuzhai
+#							title = c_shuozhou
+#							title = c_datong
+#							title = c_dadu
+#							title = c_zhangjiakou
+#							title = c_chengde
+#							title = c_kaiping
+#						}
+#					}
+#				}
+#			}
+#			log = "[This.GetBestName] holds no land elsewhere!"
+#			log = "[This.GetBestName] became a Liao tributary!"
+#			set_defacto_liege = THIS
+#			event_target:liao_emperor = {
+#				make_tributary = {
+#					who = PREV
+#					tributary_type = nomadic
+#				}
+#			}
+#		}
+#		# A new ruler is created as a Liao tributary
+#		else = {
+#			create_random_soldier = {
+#				random_traits = yes
+#				dynasty = random
+#				religion = ROOT
+#				culture = ROOT
+#				female = no
+#				age = 25
+#			}
+#			new_character = {
+#				save_event_target_as = liao_tributary_character
+#			}
+#			any_demesne_title = {
+#				limit = {
+#					OR = {
+#						title = c_wuzhai
+#						title = c_shuozhou
+#						title = c_datong
+#						title = c_dadu
+#						title = c_zhangjiakou
+#						title = c_chengde
+#						title = c_kaiping
+#					}
+#				}
+#				grant_title_no_opinion = event_target:liao_tributary_character
+#			}
+#			event_target:liao_tributary_character = {
+#				log = "[This.GetBestName] is the actual Liao tributary!"
+#				set_defacto_liege = THIS
+#				event_target:liao_emperor = {
+#					make_tributary = {
+#						who = PREV
+#						tributary_type = nomadic
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	# ROOT, if relevant
+#	if = {
+#		limit = {
+#			any_demesne_title = {
+#				OR = {
+#					title = c_wuzhai
+#					title = c_shuozhou
+#					title = c_datong
+#					title = c_dadu
+#					title = c_zhangjiakou
+#					title = c_chengde
+#					title = c_kaiping
+#				}
+#			}
+#		}
+#		# A new ruler is created as a Liao tributary
+#		create_random_soldier = {
+#			random_traits = yes
+#			dynasty = random
+#			religion = ROOT
+#			culture = ROOT
+#			female = no
+#			age = 25
+#		}
+#		new_character = {
+#			save_event_target_as = liao_tributary_character
+#		}
+#		any_demesne_title = {
+#			limit = {
+#				OR = {
+#					title = c_wuzhai
+#					title = c_shuozhou
+#					title = c_datong
+#					title = c_dadu
+#					title = c_zhangjiakou
+#					title = c_chengde
+#					title = c_kaiping
+#				}
+#			}
+#			grant_title_no_opinion = event_target:liao_tributary_character
+#		}
+#		event_target:liao_tributary_character = {
+#			log = "[This.GetBestName] is the actual Liao tributary!"
+#			set_defacto_liege = THIS
+#			event_target:liao_emperor = {
+#				make_tributary = {
+#					who = PREV
+#					tributary_type = nomadic
+#				}
+#			}
+#		}
+#	}
 }

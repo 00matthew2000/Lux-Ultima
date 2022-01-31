@@ -3312,7 +3312,7 @@ baptized_by_pope = {
 	opposites =  {
 		baptized_by_patriarch
 		baptized_by_bishop
-		baptized_by_satan
+		#baptized_by_satan
 	}
 	
 	monthly_character_prestige = 0.05
@@ -3328,7 +3328,7 @@ baptized_by_bishop = {
 	opposites =  {
 		baptized_by_patriarch
 		baptized_by_pope
-		baptized_by_satan
+		#baptized_by_satan
 	}
 	
 	monthly_character_piety = 0.05
@@ -3365,7 +3365,7 @@ baptized_by_patriarch = { #Same as Pope, only used to prevent localization from 
 	opposites =  {
 		baptized_by_pope
 		baptized_by_bishop
-		baptized_by_satan
+		#baptized_by_satan
 	}
 	
 	monthly_character_prestige = 0.05

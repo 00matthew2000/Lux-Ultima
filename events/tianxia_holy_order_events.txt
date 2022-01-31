@@ -25,31 +25,31 @@
 #	
 #	option = {
 #		trigger = {
-#			religion = buddhist
-#			culture_group = japonic
+#			religion_group = bud_group
+#			culture = japanese
 #		}
 #		name = EVTOPTA_TIANXIA_ORDERS_1 # Sounds great!
 #	}
 #	option = {
 #		trigger = {
-#			religion = buddhist
+#			religion_group = bud_group
 #			NOT = {
-#				culture_group = japonic
+#				culture = japanese
 #			}
 #		}
 #		name = EVTOPTB_TIANXIA_ORDERS_1 # I see...
 #	}
 #	option = {
 #		trigger = {
-#			religion = shinto
+#			religion = nihon_shinto
 #		}
 #		name = EVTOPTC_TIANXIA_ORDERS_1 # Let's hope they behave...
 #	}
 #	option = {
 #		trigger = {
 #			NOR = {
-#				religion = buddhist
-#				religion = shinto
+#				religion_group = bud_group
+#				religion = nihon_shinto
 #			}
 #		}
 #		name = EVTOPTD_TIANXIA_ORDERS_1 # This could be bad...
@@ -71,7 +71,7 @@
 #		any_independent_ruler = {
 #			any_realm_province = {
 #				region = world_japan
-#				religion = buddhist
+#				religion_group = bud_group
 #			}
 #		}
 #	}
@@ -82,7 +82,7 @@
 #		create_character = {
 #			random_traits = no
 #			dynasty = random
-#			religion = shinto
+#			religion = nihon_shinto
 #			culture = japanese
 #			female = no
 #			age = 33
@@ -136,7 +136,7 @@
 #			create_character = {
 #				random_traits = yes
 #				dynasty = random
-#				religion = shinto
+#				religion = nihon_shinto
 #				culture = japanese
 #				female = no
 #				age = 16
@@ -144,7 +144,7 @@
 #			create_character = {
 #				random_traits = yes
 #				dynasty = random
-#				religion = shinto
+#				religion = nihon_shinto
 #				culture = japanese
 #				female = no
 #				age = 18
@@ -152,7 +152,7 @@
 #			create_character = {
 #				random_traits = yes
 #				dynasty = random
-#				religion = shinto
+#				religion = nihon_shinto
 #				culture = japanese
 #				female = no
 #				age = 18
@@ -160,7 +160,7 @@
 #			create_character = {
 #				random_traits = yes
 #				dynasty = random
-#				religion = shinto
+#				religion = nihon_shinto
 #				culture = japanese
 #				female = no
 #				age = 20
@@ -168,7 +168,7 @@
 #			create_character = {
 #				random_traits = yes
 #				dynasty = random
-#				religion = shinto
+#				religion = nihon_shinto
 #				culture = japanese
 #				female = no
 #				age = 25
@@ -176,7 +176,7 @@
 #			create_character = {
 #				random_traits = yes
 #				dynasty = random
-#				religion = shinto
+#				religion = nihon_shinto
 #				culture = japanese
 #				female = no
 #				age = 26
@@ -184,7 +184,7 @@
 #			create_character = {
 #				random_traits = yes
 #				dynasty = random
-#				religion = shinto
+#				religion = nihon_shinto
 #				culture = japanese
 #				female = no
 #				age = 28
@@ -192,7 +192,7 @@
 #			create_character = {
 #				random_traits = yes
 #				dynasty = random
-#				religion = shinto
+#				religion = nihon_shinto
 #				culture = japanese
 #				female = yes
 #				age = 16
@@ -200,7 +200,7 @@
 #			create_character = {
 #				random_traits = yes
 #				dynasty = random
-#				religion = shinto
+#				religion = nihon_shinto
 #				culture = japanese
 #				female = yes
 #				age = 17
@@ -240,20 +240,20 @@
 #		modifier = {
 #			factor = 10
 #			2484 = {
-#				religion = buddhist
+#				religion_group = bud_group
 #			}
 #		}
 #		modifier = {
 #			factor = 10
 #			2501 = {
-#				religion = buddhist
+#				religion_group = bud_group
 #			}
 #		}
 #		modifier = {
 #			factor = 10
 #			e_japan = {
 #				holder_scope = {
-#					religion = buddhist
+#					religion_group = bud_group
 #				}
 #			}
 #		}
@@ -281,10 +281,10 @@
 #					has_holder = yes
 #					holder_scope = {
 #						OR = {
-#							religion = shinto
+#							religion = nihon_shinto
 #							AND = {
-#								religion = buddhist
-#								culture_group = japonic
+#								religion_group = bud_group
+#								culture = japanese
 #							}
 #						}
 #						OR = {
@@ -322,7 +322,7 @@
 #			any_player = {
 #				limit = {
 #					OR = {
-#						religion = buddhist
+#						religion_group = bud_group
 #						capital_scope = { region = world_japan }
 #						capital_scope = { region = world_japan_islands }
 #						capital_scope = { region = custom_yezo }
@@ -346,7 +346,7 @@
 #	option = {
 #		trigger = {
 #			NAND = {
-#				religion = shinto
+#				religion = nihon_shinto
 #				trait = zealous
 #			}
 #		}
@@ -380,7 +380,7 @@
 #				}
 #			}
 #			2484 = {
-#				religion = buddhist
+#				religion_group = bud_group
 #			}
 #		}
 #		if = {
@@ -399,7 +399,7 @@
 #				}
 #			}
 #			2501 = {
-#				religion = buddhist
+#				religion_group = bud_group
 #			}
 #		}
 #		FROM = {
@@ -412,7 +412,7 @@
 #					character = ROOT
 #				}
 #				OR = {
-#					religion = buddhist
+#					religion_group = bud_group
 #					capital_scope = { region = world_japan }
 #					capital_scope = { region = world_japan_islands }
 #					capital_scope = { region = custom_yezo }
@@ -425,8 +425,8 @@
 #	option = {
 #		trigger = {
 #			NAND = {
-#				religion = buddhist
-#				culture_group = japonic
+#				religion_group = bud_group
+#				culture = japanese
 #				trait = zealous
 #			}
 #		}
@@ -435,7 +435,7 @@
 #		
 #		if = {
 #			limit = {
-#				religion = buddhist
+#				religion_group = bud_group
 #			}
 #			piety = -100
 #		}
@@ -449,7 +449,7 @@
 #					character = ROOT
 #				}
 #				OR = {
-#					religion = buddhist
+#					religion_group = bud_group
 #					capital_scope = { region = world_japan }
 #					capital_scope = { region = world_japan_islands }
 #					capital_scope = { region = custom_yezo }
@@ -475,31 +475,31 @@
 #	
 #	option = {
 #		trigger = {
-#			religion = buddhist
-#			culture_group = japonic
+#			religion_group = bud_group
+#			culture = japanese
 #		}
 #		name = EVTOPTA_TIANXIA_ORDERS_1 # Sounds great!
 #	}
 #	option = {
 #		trigger = {
-#			religion = buddhist
+#			religion_group = bud_group
 #			NOT = {
-#				culture_group = japonic
+#				culture = japanese
 #			}
 #		}
 #		name = EVTOPTB_TIANXIA_ORDERS_1 # I see...
 #	}
 #	option = {
 #		trigger = {
-#			religion = shinto
+#			religion = nihon_shinto
 #		}
 #		name = EVTOPTC_TIANXIA_ORDERS_1 # Let's hope they behave...
 #	}
 #	option = {
 #		trigger = {
 #			NOR = {
-#				religion = buddhist
-#				religion = shinto
+#				religion_group = bud_group
+#				religion = nihon_shinto
 #			}
 #		}
 #		name = EVTOPTD_TIANXIA_ORDERS_1 # This could be bad...
@@ -521,31 +521,31 @@
 #	
 #	option = {
 #		trigger = {
-#			religion = buddhist
-#			culture_group = japonic
+#			religion_group = bud_group
+#			culture = japanese
 #		}
 #		name = EVTOPTA_TIANXIA_ORDERS_1 # Sounds great!
 #	}
 #	option = {
 #		trigger = {
-#			religion = buddhist
+#			religion_group = bud_group
 #			NOT = {
-#				culture_group = japonic
+#				culture = japanese
 #			}
 #		}
 #		name = EVTOPTB_TIANXIA_ORDERS_1 # I see...
 #	}
 #	option = {
 #		trigger = {
-#			religion = shinto
+#			religion = nihon_shinto
 #		}
 #		name = EVTOPTC_TIANXIA_ORDERS_1 # Let's hope they behave...
 #	}
 #	option = {
 #		trigger = {
 #			NOR = {
-#				religion = buddhist
-#				religion = shinto
+#				religion_group = bud_group
+#				religion = nihon_shinto
 #			}
 #		}
 #		name = EVTOPTD_TIANXIA_ORDERS_1 # This could be bad...
@@ -919,14 +919,14 @@
 #	
 #	option = {
 #		trigger = {
-#			religion = shinto
+#			religion = nihon_shinto
 #		}
 #		name = EVTOPTA_TIANXIA_ORDERS_10 # Sounds great!
 #	}
 #	option = {
 #		trigger = {
-#			religion = buddhist
-#			culture_group = japonic
+#			religion_group = bud_group
+#			culture = japanese
 #		}
 #		name = EVTOPTB_TIANXIA_ORDERS_10 # Let's hope they behave...
 #	}
@@ -934,10 +934,10 @@
 #		trigger = {
 #			NOR = {
 #				AND = {
-#					religion = buddhist
-#					culture_group = japonic
+#					religion_group = bud_group
+#					culture = japanese
 #				}
-#				religion = shinto
+#				religion = nihon_shinto
 #			}
 #		}
 #		name = EVTOPTC_TIANXIA_ORDERS_10 # This could be bad...
@@ -961,10 +961,10 @@
 #		year = 850
 #		any_independent_ruler = {
 #			NOR = {
-#				religion = shinto
+#				religion = nihon_shinto
 #				AND = {
-#					religion = buddhist
-#					culture_group = japonic
+#					religion_group = bud_group
+#					culture = japanese
 #				}
 #			}
 #			any_realm_province = {
@@ -1073,7 +1073,7 @@
 #		any_player = {
 #			limit = {
 #				OR = {
-#					religion = shinto
+#					religion = nihon_shinto
 #					capital_scope = { region = world_japan }
 #					capital_scope = { region = world_japan_islands }
 #					capital_scope = { region = custom_yezo }
@@ -1099,14 +1099,14 @@
 #	
 #	option = {
 #		trigger = {
-#			religion = shinto
+#			religion = nihon_shinto
 #		}
 #		name = EVTOPTA_TIANXIA_ORDERS_12 # Sounds great!
 #	}
 #	option = {
 #		trigger = {
-#			religion = buddhist
-#			culture_group = japonic
+#			religion_group = bud_group
+#			culture = japanese
 #		}
 #		name = EVTOPTB_TIANXIA_ORDERS_12 # Let's hope they behave...
 #	}
@@ -1114,10 +1114,10 @@
 #		trigger = {
 #			NOR = {
 #				AND = {
-#					religion = buddhist
-#					culture_group = japonic
+#					religion_group = bud_group
+#					culture = japanese
 #				}
-#				religion = shinto
+#				religion = nihon_shinto
 #			}
 #		}
 #		name = EVTOPTC_TIANXIA_ORDERS_12 # This could be bad...
@@ -1589,10 +1589,10 @@
 #						government = japanese_imperial_government
 #						PREV = {
 #							OR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								AND = {
-#									religion = buddhist
-#									culture_group = japonic
+#									religion_group = bud_group
+#									culture = japanese
 #								}
 #							}
 #						}
@@ -2296,10 +2296,10 @@
 #						government = japanese_imperial_government
 #						PREV = {
 #							OR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								AND = {
-#									religion = buddhist
-#									culture_group = japonic
+#									religion_group = bud_group
+#									culture = japanese
 #								}
 #							}
 #						}
@@ -3003,10 +3003,10 @@
 #						government = japanese_imperial_government
 #						PREV = {
 #							OR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								AND = {
-#									religion = buddhist
-#									culture_group = japonic
+#									religion_group = bud_group
+#									culture = japanese
 #								}
 #							}
 #						}
@@ -3710,10 +3710,10 @@
 #						government = japanese_imperial_government
 #						PREV = {
 #							OR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								AND = {
-#									religion = buddhist
-#									culture_group = japonic
+#									religion_group = bud_group
+#									culture = japanese
 #								}
 #							}
 #						}
@@ -4417,10 +4417,10 @@
 #						government = japanese_imperial_government
 #						PREV = {
 #							OR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								AND = {
-#									religion = buddhist
-#									culture_group = japonic
+#									religion_group = bud_group
+#									culture = japanese
 #								}
 #							}
 #						}
@@ -5124,10 +5124,10 @@
 #						government = japanese_imperial_government
 #						PREV = {
 #							OR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								AND = {
-#									religion = buddhist
-#									culture_group = japonic
+#									religion_group = bud_group
+#									culture = japanese
 #								}
 #							}
 #						}
@@ -5831,10 +5831,10 @@
 #						government = japanese_imperial_government
 #						PREV = {
 #							OR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								AND = {
-#									religion = buddhist
-#									culture_group = japonic
+#									religion_group = bud_group
+#									culture = japanese
 #								}
 #							}
 #						}
@@ -6538,10 +6538,10 @@
 #						government = japanese_imperial_government
 #						PREV = {
 #							OR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								AND = {
-#									religion = buddhist
-#									culture_group = japonic
+#									religion_group = bud_group
+#									culture = japanese
 #								}
 #							}
 #						}

@@ -6942,7 +6942,7 @@ kurultai = {
 						has_religion_feature = religion_peaceful
 					}
 				}
-				religion = buddhist
+				religion_group = bud_group
 				religion_group = christian
 				religion_group = muslim
 				religion_group = jewish_group
@@ -7087,7 +7087,7 @@ kurultai = {
 			OR = { 
 				religion_group = christian
 				religion_group = muslim
-				religion = shinto
+				religion = nihon_shinto
 			}
 			FROM = { 
 				trait = lefthanded

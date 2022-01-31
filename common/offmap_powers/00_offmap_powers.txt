@@ -162,14 +162,14 @@ offmap_china = {
 				}
 			}
 		}
-		vassal_of_WP = {
-			value = 2
-			FROM = {
-				liege = {
-					has_landed_title = e_china_west_governor
-				}
-			}
-		}
+#		vassal_of_WP = {
+#			value = 2
+#			FROM = {
+#				liege = {
+#					has_landed_title = e_china_west_governor
+#				}
+#			}
+#		}
 		offmap_same_culture_and_religion = {
 			value = 2
 			offmap_ruler = {

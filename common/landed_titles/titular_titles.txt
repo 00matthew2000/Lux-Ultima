@@ -2056,3 +2056,23 @@ d_markland = {
 d_vinland = {
 	color = { 169 10 201 }
 }
+e_china = {                      # Titular, created by special decision only if entire China is united
+	color = { 100 200 100 }
+
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	allow = {
+		always = no # Only created through special decision
+	}
+
+	gain_effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_character_flag = recreated_china
+				}
+			}
+			character_event = { id = nameofchina.46 } # Clear out Grace and related stuff, then go to naming (if relevant)
+		}
+	}
+}

@@ -696,7 +696,7 @@ title_hi = {
 	allowed_to_hold = {
 		is_female = yes
 		any_consort = {
-			religion = shinto
+			religion = nihon_shinto
 			controls_religion = yes
 			# Must not have been forced to become a concubine of the Tenno
 			NOT = {
@@ -715,7 +715,7 @@ title_hi = {
 	
 	allowed_to_grant = {
 		is_female = no
-		religion = shinto
+		religion = nihon_shinto
 		controls_religion = yes
 	}
 	
@@ -745,7 +745,7 @@ title_bunin = {
 	allowed_to_hold = {
 		is_female = yes
 		any_consort = {
-			religion = shinto
+			religion = nihon_shinto
 			controls_religion = yes
 			# Must not have been forced to become a concubine of the Tenno
 			NOT = {
@@ -767,7 +767,7 @@ title_bunin = {
 	
 	allowed_to_grant = {
 		is_female = no
-		religion = shinto
+		religion = nihon_shinto
 		controls_religion = yes
 	}
 	
@@ -791,7 +791,7 @@ title_hin = {
 	allowed_to_hold = {
 		is_female = yes
 		any_consort = {
-			religion = shinto
+			religion = nihon_shinto
 			controls_religion = yes
 			# Must not have been forced to become a concubine of the Tenno
 			NOT = {
@@ -814,7 +814,7 @@ title_hin = {
 	
 	allowed_to_grant = {
 		is_female = no
-		religion = shinto
+		religion = nihon_shinto
 		controls_religion = yes
 	}
 }

@@ -75,6 +75,7 @@ decisions = {
 		
 		effect = {
 			wealth = -1000
+			activate_title = { title = e_china status = yes }
 			set_character_flag = recreated_china # Avoids getting nameofchina.32
 			set_global_flag = china_recreated # Blocks artefact creation on game start if the title is recreated from the IC start (do not set this flag in the history files as that'll break Song and Yuan!)
 			
@@ -142,7 +143,30 @@ decisions = {
 					remove_character_modifier = peace_deal_with_china
 				}
 			}
+
+			if = {
+				limit = {
+					OR = {
+						has_landed_title = e_zhonghua
+						e_zhonghua = { has_holder = no }
+					}
+				}
+				e_zhonghua = { destroy_landed_title = THIS }
+				activate_title = { title = e_zhonghua status = no }
+			}
 			
+
+			if = {
+				limit = {
+					OR = {
+						has_landed_title = e_archeserika
+						e_archeserika = { has_holder = no }
+					}
+				}
+				e_archeserika = { destroy_landed_title = THIS }
+				activate_title = { title = e_archeserika status = no }
+			}
+
 			# Clear out the old name of China and grant it to ROOT
 			e_china = {
 				clr_title_flag = tang_china
@@ -673,10 +697,10 @@ decisions = {
 								ROOT = {
 									OR = {
 										NOR = {
-											religion = shinto
+											religion = nihon_shinto
 											AND = {
-												religion = buddhist
-												culture_group = japonic
+												religion_group = bud_group
+												culture = japanese
 											}
 										}
 										has_claim = k_chrysanthemum_throne
@@ -739,7 +763,7 @@ decisions = {
 				AND = {
 					# Intentionally excludes non-Chinese Buddhists
 					culture_group = chinese_group
-					religion = buddhist
+					religion_group = bud_group
 				}
 				# Intentionally excludes religions that are "Chinese enough" unless Chinese Imperial
 				government = chinese_imperial_government # Overridse religion restrictions not part of the government type

@@ -1966,13 +1966,13 @@ tenno_succession = {
 			value = 100
 			ROOT = {
 				OR = {
-					culture = yamato
+					culture = nihonohellenic
 					culture = japanese
 				}
 			}
 			FROM = {
 				OR = {
-					culture = yamato
+					culture = nihonohellenic
 					culture = japanese
 				}
 			}
@@ -1980,10 +1980,10 @@ tenno_succession = {
 		additive_modifier = {
 			value = 100
 			ROOT = {
-				culture_group = japonic
+				culture = japanese
 			}
 			FROM = {
-				culture_group = japonic
+				culture = japanese
 			}
 		}
 		additive_modifier = {
@@ -3980,7 +3980,7 @@ tenno_succession = {
 			OR = { 
 				religion_group = christian
 				religion_group = muslim
-				religion = shinto
+				religion = nihon_shinto
 			}
 			FROM = { 
 				trait = lefthanded
@@ -4242,7 +4242,7 @@ tenno_succession = {
 	# ROOT = Current Title holder, FROM = Candidate, FROMFROM = Title, FROMFROMFROM = Null
 	candidate_trigger = {
 		FROM = {
-			religion = shinto # Vanilla is strict when it comes to religion and rel head succession, so we should probably be as strict in case there are issues...;;;;;;;;;;;;;x
+			religion = nihon_shinto # Vanilla is strict when it comes to religion and rel head succession, so we should probably be as strict in case there are issues...;;;;;;;;;;;;;x
 			NOT = {
 				trait = bastard
 			}

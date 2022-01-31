@@ -1422,18 +1422,18 @@ targeted_decisions = {
 							FROM = { NOT = { has_landed_title = d_finnish_pagan_reformed } }
 							artifact_type = crown_finnish_fylkir
 						}
-						AND = {
-							FROM = { NOT = { has_landed_title = d_west_african_pagan_reformed } }
-							artifact_type = crown_west_african_fylkir
-						}
-						AND = {
-							FROM = { NOT = { has_landed_title = d_zun_pagan_reformed } }
-							artifact_type = crown_zun_fylkir
-						}
-						AND = {
-							FROM = { NOT = { has_landed_title = k_hellenic_pagan } }
-							artifact_type = scepter_hellenic_fylkir
-						}
+#						AND = {
+#							FROM = { NOT = { has_landed_title = d_west_african_pagan_reformed } }
+#							artifact_type = crown_west_african_fylkir
+#						}
+#						AND = {
+#							FROM = { NOT = { has_landed_title = d_zun_pagan_reformed } }
+#							artifact_type = crown_zun_fylkir
+#						}
+#						AND = {
+#							FROM = { NOT = { has_landed_title = k_hellenic_pagan } }
+#							artifact_type = scepter_hellenic_fylkir
+#						}
 						AND = {
 							FROM = { NOT = { has_landed_title = d_bon_reformed } }
 							artifact_type = scepter_bon_fylkir
@@ -1442,11 +1442,10 @@ targeted_decisions = {
 							FROM = { NOT = { has_landed_title = d_aztec_reformed } }
 							artifact_type = crown_aztec_fylkir
 						}
-						AND = {
-							FROM = { NOT = { has_landed_title = e_persia } }
-							artifact_type = crown_pahlavi
-						}
-						# TODO: Tianxia pagans
+#						AND = {
+#							FROM = { NOT = { has_landed_title = e_persia } }
+#							artifact_type = crown_pahlavi
+#						}
 					}
 				}
 				ROOT = {

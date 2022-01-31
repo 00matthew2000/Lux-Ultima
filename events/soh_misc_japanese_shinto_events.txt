@@ -3594,7 +3594,7 @@
 #	border = GFX_event_normal_frame_religion
 #	
 #	trigger = {
-#		religion = shinto
+#		religion = nihon_shinto
 #	}
 #	
 #	mean_time_to_happen = {
@@ -3625,7 +3625,7 @@
 #	}
 #	
 #	immediate = {
-#		religion = buddhist
+#		religion_group = bud_group
 #		add_province_modifier = {
 #			name = religious_unrest
 #			duration = 730
@@ -3638,7 +3638,7 @@
 #			trigger = {
 #				owner = {
 #					NOR = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						religion = ROOT
 #					}
 #				}
@@ -3650,11 +3650,11 @@
 #		}
 #		name = {
 #			text = EVTOPTC_JAPAN_2
-#			trigger = { owner = { religion = shinto } }
+#			trigger = { owner = { religion = nihon_shinto } }
 #		}
 #		if = {
 #			limit = { 
-#				ruler = { religion = shinto }
+#				ruler = { religion = nihon_shinto }
 #			}
 #			ruler = { piety = -10 }
 #		}
@@ -3696,7 +3696,7 @@
 #		name = EVTOPTA_JAPAN_3
 #		trigger = {
 #			NOR = {
-#				religion = shinto
+#				religion = nihon_shinto
 #				religion = FROM
 #			}
 #		}
@@ -3710,7 +3710,7 @@
 #	option = {
 #		name = EVTOPTC_JAPAN_3
 #		trigger = {
-#			religion = shinto
+#			religion = nihon_shinto
 #		}
 #	}
 #}
@@ -3723,16 +3723,16 @@
 #	border = GFX_event_normal_frame_religion
 #		
 #	trigger = {
-#		religion = shinto
+#		religion = nihon_shinto
 #		any_neighbor_province = {
 #			OR = {
 #				AND = {
 #					has_owner = yes
 #					NOR = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						religion_group = pagan_group
 #						religion = jain # Shouldn't spread to silly places!
-#						religion = buddhist # Has its own event
+#						religion_group = bud_group # Has its own event
 #					}
 #				}
 #				AND = {
@@ -3742,20 +3742,20 @@
 #							AND = {
 #								has_owner = yes
 #								NOR = {
-#									religion = shinto
+#									religion = nihon_shinto
 #									religion_group = pagan_group
 #									religion = jain # Shouldn't spread to silly places!
-#									religion = buddhist # Has its own event
+#									religion_group = bud_group # Has its own event
 #								}
 #							}
 #							AND = {
 #								is_land = no
 #								any_neighbor_province = {
 #									NOR = {
-#										religion = shinto
+#										religion = nihon_shinto
 #										religion_group = pagan_group
 #										religion = jain # Shouldn't spread to silly places!
-#										religion = buddhist # Has its own event
+#										religion_group = bud_group # Has its own event
 #									}
 #								}
 #							}
@@ -3802,10 +3802,10 @@
 #						any_neighbor_province = {
 #							has_owner = yes
 #							NOR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								religion_group = pagan_group
 #								religion = jain # Shouldn't spread to silly places!
-#								religion = buddhist # Has its own event
+#								religion_group = bud_group # Has its own event
 #							}
 #						}
 #					}
@@ -3814,10 +3814,10 @@
 #					limit = {
 #						has_owner = yes
 #						NOR = {
-#							religion = shinto
+#							religion = nihon_shinto
 #							religion_group = pagan_group
 #							religion = jain # Shouldn't spread to silly places!
-#							religion = buddhist # Has its own event
+#							religion_group = bud_group # Has its own event
 #						}
 #					}
 #					ROOT = {
@@ -3834,10 +3834,10 @@
 #							any_neighbor_province = {
 #								has_owner = yes
 #								NOR = {
-#									religion = shinto
+#									religion = nihon_shinto
 #									religion_group = pagan_group
 #									religion = jain # Shouldn't spread to silly places!
-#									religion = buddhist # Has its own event
+#									religion_group = bud_group # Has its own event
 #								}
 #							}
 #						}
@@ -3851,10 +3851,10 @@
 #						limit = {
 #							has_owner = yes
 #							NOR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								religion_group = pagan_group
 #								religion = jain # Shouldn't spread to silly places!
-#								religion = buddhist # Has its own event
+#								religion_group = bud_group # Has its own event
 #							}
 #						}
 #						ROOT = {
@@ -3874,10 +3874,10 @@
 #								any_neighbor_province = {
 #									has_owner = yes
 #									NOR = {
-#										religion = shinto
+#										religion = nihon_shinto
 #										religion_group = pagan_group
 #										religion = jain # Shouldn't spread to silly places!
-#										religion = buddhist # Has its own event
+#										religion_group = bud_group # Has its own event
 #									}
 #								}
 #							}
@@ -3896,10 +3896,10 @@
 #							limit = {
 #								has_owner = yes
 #								NOR = {
-#									religion = shinto
+#									religion = nihon_shinto
 #									religion_group = pagan_group
 #									religion = jain # Shouldn't spread to silly places!
-#									religion = buddhist # Has its own event
+#									religion_group = bud_group # Has its own event
 #								}
 #							}
 #							ROOT = {
@@ -3922,7 +3922,7 @@
 #			trigger = {
 #				owner = {
 #					NOR = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						religion = ROOT
 #					}
 #				}
@@ -3934,11 +3934,11 @@
 #		}
 #		name = {
 #			text = EVTOPTC_JAPAN_4
-#			trigger = { owner = { religion = shinto } }
+#			trigger = { owner = { religion = nihon_shinto } }
 #		}
 #		if = {
 #			limit = { 
-#				ruler = { religion = shinto }
+#				ruler = { religion = nihon_shinto }
 #			}
 #			ruler = { piety = -10 }
 #		}
@@ -3980,7 +3980,7 @@
 #		name = EVTOPTA_JAPAN_5
 #		trigger = {
 #			NOR = {
-#				religion = shinto
+#				religion = nihon_shinto
 #				religion = FROM
 #			}
 #		}
@@ -3994,7 +3994,7 @@
 #	option = {
 #		name = EVTOPTC_JAPAN_5
 #		trigger = {
-#			religion = shinto
+#			religion = nihon_shinto
 #		}
 #	}
 #}
@@ -4040,10 +4040,10 @@
 #	
 #	trigger = {
 #		OR = {
-#			religion = shinto
+#			religion = nihon_shinto
 #			AND = {
-#				culture_group = japonic
-#				religion = buddhist
+#				culture = japanese
+#				religion_group = bud_group
 #			}
 #		}
 #		controls_religion = no
@@ -4086,10 +4086,10 @@
 #	
 #	trigger = {
 #		OR = {
-#			religion = shinto
+#			religion = nihon_shinto
 #			AND = {
-#				religion = buddhist
-#				culture_group = japonic
+#				religion_group = bud_group
+#				culture = japanese
 #			}
 #		}
 #		controls_religion = no
@@ -4133,10 +4133,10 @@
 #	
 #	trigger = {
 #		OR = {
-#			religion = shinto
+#			religion = nihon_shinto
 #			AND = {
-#				religion = buddhist
-#				culture_group = japonic
+#				religion_group = bud_group
+#				culture = japanese
 #			}
 #		}
 #		controls_religion = no
@@ -4181,10 +4181,10 @@
 #				event_target:true_heir = {
 #					AND = {
 #						OR = {
-#							religion = shinto
+#							religion = nihon_shinto
 #							AND = {
-#								religion = buddhist
-#								culture_group = japonic
+#								religion_group = bud_group
+#								culture = japanese
 #							}
 #						}
 #						controls_religion = no
@@ -4225,7 +4225,7 @@
 #				trait = japanese_regent
 #				event_target:true_heir = {
 #					NAND = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #				}
@@ -4235,7 +4235,7 @@
 #				if = {
 #					limit = {
 #						liege = {
-#							religion = shinto
+#							religion = nihon_shinto
 #							controls_religion = yes
 #						}
 #						has_job_title = job_spymaster
@@ -4254,7 +4254,7 @@
 #	is_triggered_only = yes
 #	hide_window = yes
 #	
-#	religion = shinto
+#	religion = nihon_shinto
 #	
 #	only_playable = yes
 #	
@@ -4314,7 +4314,7 @@
 #	hide_window = yes
 #	is_triggered_only = yes
 #	
-#	religion = shinto
+#	religion = nihon_shinto
 #	
 #	only_playable = yes
 #	
@@ -4387,7 +4387,7 @@
 #	hide_window = yes
 #	is_triggered_only = yes
 #	
-#	religion = shinto
+#	religion = nihon_shinto
 #	
 #	only_playable = yes
 #	
@@ -4456,17 +4456,17 @@
 #		trait = japanese_regent
 #		NOR = {
 #			liege = {
-#				religion = shinto
+#				religion = nihon_shinto
 #				controls_religion = yes
 #			}
 #			top_liege = {
 #				liege_before_war = {
-#					religion = shinto
+#					religion = nihon_shinto
 #					controls_religion = yes
 #				}
 #			}
 #			liege_before_war = {
-#				religion = shinto
+#				religion = nihon_shinto
 #				controls_religion = yes
 #			}
 #		}
@@ -4488,7 +4488,7 @@
 #	trigger = {
 #		trait = japanese_regent
 #		liege = {
-#			religion = shinto
+#			religion = nihon_shinto
 #			controls_religion = yes
 #		}
 #		FROMFROM = {
@@ -4524,17 +4524,17 @@
 #				is_ruler = no
 #				NOR = {
 #					liege = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #					top_liege = {
 #						liege_before_war = {
-#							religion = shinto
+#							religion = nihon_shinto
 #							controls_religion = yes
 #						}
 #					}
 #					liege_before_war = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #				}
@@ -4549,7 +4549,7 @@
 #		if = {
 #			limit = {
 #				NAND = {
-#					religion = shinto
+#					religion = nihon_shinto
 #					controls_religion = yes
 #				}
 #			}
@@ -4564,7 +4564,7 @@
 #			if = {
 #				limit = {
 #					liege = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #					has_job_title = job_spymaster
@@ -4586,7 +4586,7 @@
 #	trigger = {
 #		trait = japanese_regent
 #		liege = {
-#			religion = shinto
+#			religion = nihon_shinto
 #			controls_religion = yes
 #		}
 #		liege = {
@@ -4620,7 +4620,7 @@
 #	only_playable = yes
 #	
 #	trigger = {
-#		religion = shinto
+#		religion = nihon_shinto
 #		controls_religion = yes
 #	}
 #	
@@ -8407,10 +8407,10 @@
 #					NAND = {
 #						tier = emperor
 #						OR = {
-#							religion = shinto
+#							religion = nihon_shinto
 #							AND = {
-#								culture_group = japonic
-#								religion = buddhist
+#								culture = japanese
+#								religion_group = bud_group
 #							}
 #						}
 #						NOT = {
@@ -8427,12 +8427,12 @@
 #				limit = {
 #					OR = {
 #						AND = {
-#							religion = shinto
+#							religion = nihon_shinto
 #							controls_religion = no
 #						}
 #						AND = {
-#							religion = buddhist
-#							culture_group = japonic
+#							religion_group = bud_group
+#							culture = japanese
 #						}
 #						NOT = {
 #							government = chinese_imperial_government
@@ -8444,7 +8444,7 @@
 #			# If the Tenno inherited from the Shogun, the Shogun's old regent becomes the Tenno's regent
 #			else_if = {
 #				limit = {
-#					religion = shinto
+#					religion = nihon_shinto
 #					controls_religion = yes	
 #				}
 #				add_trait = under_regency
@@ -8493,12 +8493,12 @@
 #				liege = {
 #					OR = {
 #						AND = {
-#							religion = shinto
+#							religion = nihon_shinto
 #							controls_religion = no
 #						}
 #						AND = {
-#							religion = buddhist
-#							culture_group = japonic
+#							religion_group = bud_group
+#							culture = japanese
 #						}
 #					}
 #					NOT = {
@@ -8509,12 +8509,12 @@
 #					liege_before_war = {
 #						OR = {
 #							AND = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								controls_religion = no
 #							}
 #							AND = {
-#								religion = buddhist
-#								culture_group = japonic
+#								religion_group = bud_group
+#								culture = japanese
 #							}
 #						}
 #						NOT = {
@@ -8525,12 +8525,12 @@
 #				liege_before_war = {
 #					OR = {
 #						AND = {
-#							religion = shinto
+#							religion = nihon_shinto
 #							controls_religion = no
 #						}
 #						AND = {
-#							religion = buddhist
-#							culture_group = japonic
+#							religion_group = bud_group
+#							culture = japanese
 #						}
 #					}
 #					NOT = {
@@ -8540,7 +8540,7 @@
 #			}
 #			# The Tenno can't serve as the Regent for the Shogun
 #			AND = {
-#				religion = shinto
+#				religion = nihon_shinto
 #				controls_religion = yes
 #			}
 #		}
@@ -8562,12 +8562,12 @@
 #		liege = {
 #			OR = {
 #				AND = {
-#					religion = shinto
+#					religion = nihon_shinto
 #					controls_religion = no
 #				}
 #				AND = {
-#					religion = buddhist
-#					culture_group = japonic
+#					religion_group = bud_group
+#					culture = japanese
 #				}
 #			}
 #			NOT = {
@@ -8607,12 +8607,12 @@
 #					liege = {
 #						OR = {
 #							AND = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								controls_religion = no
 #							}
 #							AND = {
-#								religion = buddhist
-#								culture_group = japonic
+#								religion_group = bud_group
+#								culture = japanese
 #							}
 #						}
 #						NOT = {
@@ -8623,12 +8623,12 @@
 #						liege_before_war = {
 #							OR = {
 #								AND = {
-#									religion = shinto
+#									religion = nihon_shinto
 #									controls_religion = no
 #								}
 #								AND = {
-#									religion = buddhist
-#									culture_group = japonic
+#									religion_group = bud_group
+#									culture = japanese
 #								}
 #							}
 #							NOT = {
@@ -8639,12 +8639,12 @@
 #					liege_before_war = {
 #						OR = {
 #							AND = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								controls_religion = no
 #							}
 #							AND = {
-#								religion = buddhist
-#								culture_group = japonic
+#								religion_group = bud_group
+#								culture = japanese
 #							}
 #						}
 #						NOT = {
@@ -8664,7 +8664,7 @@
 #			limit = {
 #				# The Tenno can't be the Regent
 #				NAND = {
-#					religion = shinto
+#					religion = nihon_shinto
 #					controls_religion = yes
 #				}
 #			}
@@ -8681,12 +8681,12 @@
 #					liege = {
 #						OR = {
 #							AND = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								controls_religion = no
 #							}
 #							AND = {
-#								religion = buddhist
-#								culture_group = japonic
+#								religion_group = bud_group
+#								culture = japanese
 #							}
 #						}
 #						NOT = {
@@ -8712,12 +8712,12 @@
 #		liege = {
 #			OR = {
 #				AND = {
-#					religion = shinto
+#					religion = nihon_shinto
 #					controls_religion = no
 #				}
 #				AND = {
-#					religion = buddhist
-#					culture_group = japonic
+#					religion_group = bud_group
+#					culture = japanese
 #				}
 #			}
 #			NOT = {
@@ -8755,7 +8755,7 @@
 #	trigger = {
 #		OR = {
 #			AND = {
-#				religion = shinto
+#				religion = nihon_shinto
 #				controls_religion = yes
 #			}
 #			real_tier = emperor
@@ -10649,8 +10649,8 @@
 #			culture = yamato
 #		}
 #		OR = {
-#			religion = shinto
-#			religion = buddhist
+#			religion = nihon_shinto
+#			religion_group = bud_group
 #		}
 #	}
 #	
@@ -10723,8 +10723,8 @@
 #		}
 #		culture = wako
 #		OR = {
-#			religion = shinto
-#			religion = buddhist
+#			religion = nihon_shinto
+#			religion_group = bud_group
 #		}
 #		NOT = {
 #			has_province_modifier = pirate_haven
@@ -10794,8 +10794,8 @@
 #			NAND = {
 #				culture = wako
 #				OR = {
-#					religion = shinto
-#					religion = buddhist
+#					religion = nihon_shinto
+#					religion_group = bud_group
 #				}
 #			}
 #		}
@@ -10901,7 +10901,7 @@
 #						female = no
 #						dynasty = none
 #						culture = wako
-#						religion = shinto
+#						religion = nihon_shinto
 #						attributes = {
 #							martial = 5
 #						}
@@ -10915,7 +10915,7 @@
 #						female = yes
 #						dynasty = none
 #						culture = wako
-#						religion = shinto
+#						religion = nihon_shinto
 #						trait = pirate
 #						attributes = {
 #							martial = 5
@@ -11319,7 +11319,7 @@
 #		trait = japanese_regent
 #		has_minor_title = title_regent
 #		liege = {
-#			religion = shinto
+#			religion = nihon_shinto
 #			controls_religion = yes
 #			primary_title = {
 #				has_law = regent_succession_control_1
@@ -11360,7 +11360,7 @@
 #					}
 #					any_dynasty_member = {
 #						limit = {
-#							religion = shinto # Vanilla is strict when it comes to religion and rel head succession, so we should probably be as strict in case there are issues...;;;;;;;;;;;;;x
+#							religion = nihon_shinto # Vanilla is strict when it comes to religion and rel head succession, so we should probably be as strict in case there are issues...;;;;;;;;;;;;;x
 #							NOT = {
 #								trait = bastard
 #							}
@@ -12856,7 +12856,7 @@
 #	is_triggered_only = yes
 #	
 #	only_playable = yes
-#	religion = shinto
+#	religion = nihon_shinto
 #	
 #	trigger = {
 #		controls_religion = yes
@@ -12901,7 +12901,7 @@
 #					}
 #					any_dynasty_member = {
 #						limit = {
-#							religion = shinto # Vanilla is strict when it comes to religion and rel head succession, so we should probably be as strict in case there are issues...;;;;;;;;;;;;;x
+#							religion = nihon_shinto # Vanilla is strict when it comes to religion and rel head succession, so we should probably be as strict in case there are issues...;;;;;;;;;;;;;x
 #							NOT = {
 #								trait = bastard
 #							}
@@ -13651,7 +13651,7 @@
 #	is_triggered_only = yes
 #	
 #	only_playable = yes
-#	religion = shinto
+#	religion = nihon_shinto
 #	
 #	trigger = {
 #		controls_religion = yes
@@ -13696,7 +13696,7 @@
 #					}
 #					any_dynasty_member = {
 #						limit = {
-#							religion = shinto # Vanilla is strict when it comes to religion and rel head succession, so we should probably be as strict in case there are issues...;;;;;;;;;;;;;x
+#							religion = nihon_shinto # Vanilla is strict when it comes to religion and rel head succession, so we should probably be as strict in case there are issues...;;;;;;;;;;;;;x
 #							NOT = {
 #								trait = bastard
 #							}
@@ -14446,7 +14446,7 @@
 #			if = {
 #				limit = {
 #					NAND = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #				}
@@ -14474,7 +14474,7 @@
 #			if = {
 #				limit = {
 #					NAND = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #				}
@@ -14504,7 +14504,7 @@
 #			if = {
 #				limit = {
 #					NAND = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #				}
@@ -14652,7 +14652,7 @@
 #			is_landed = no
 #			is_adult = yes
 #			is_inaccessible_or_incapable_trigger = no
-#			religion = shinto
+#			religion = nihon_shinto
 #			OR = {
 #				culture = japanese
 #				culture = yamato
@@ -14660,7 +14660,7 @@
 #			}
 #			NOT = {
 #				any_dynasty_member = {
-#					religion = shinto
+#					religion = nihon_shinto
 #					controls_religion = yes
 #				}
 #			}
@@ -14688,7 +14688,7 @@
 #				is_landed = no
 #				is_adult = yes
 #				is_inaccessible_or_incapable_trigger = no
-#				religion = shinto
+#				religion = nihon_shinto
 #				OR = {
 #					culture = japanese
 #					culture = yamato
@@ -14696,7 +14696,7 @@
 #				}
 #				NOT = {
 #					any_dynasty_member = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #				}
@@ -14720,10 +14720,10 @@
 #				OR = {
 #					trait = cynical
 #					trait = humble
-#					true_religion = shinto
+#					true_religion = nihon_shinto
 #				}
 #			}
-#			religion = buddhist
+#			religion_group = bud_group
 #			set_character_flag = japanese_religion_switch
 #		}
 #	}
@@ -14743,7 +14743,7 @@
 #			is_landed = no
 #			is_adult = yes
 #			is_inaccessible_or_incapable_trigger = no
-#			religion = buddhist
+#			religion_group = bud_group
 #			OR = {
 #				culture = japanese
 #				culture = yamato
@@ -14751,7 +14751,7 @@
 #			}
 #			NOT = {
 #				any_dynasty_member = {
-#					religion = shinto
+#					religion = nihon_shinto
 #					controls_religion = yes
 #				}
 #			}
@@ -14783,7 +14783,7 @@
 #				is_landed = no
 #				is_adult = yes
 #				is_inaccessible_or_incapable_trigger = no
-#				religion = buddhist
+#				religion_group = bud_group
 #				OR = {
 #					culture = japanese
 #					culture = yamato
@@ -14814,10 +14814,10 @@
 #				OR = {
 #					trait = cynical
 #					trait = humble
-#					true_religion = shinto
+#					true_religion = nihon_shinto
 #				}
 #			}
-#			religion = shinto
+#			religion = nihon_shinto
 #			set_character_flag = japanese_religion_switch
 #		}
 #	}
@@ -14864,8 +14864,8 @@
 #					region = custom_yezo # Hokkaido
 #				}
 #			}
-#			culture_group = japonic
-#			religion = shinto
+#			culture = japanese
+#			religion = nihon_shinto
 #		}
 #		NOT = {
 #			any_opinion_modifier_target = {
@@ -14880,14 +14880,14 @@
 #	immediate = {
 #		if = {
 #			limit = {
-#				culture_group = japonic
+#				culture = japanese
 #			}
 #			create_character = {
 #				age = 16
 #				female = yes
 #				dynasty = none
 #				culture = ROOT
-#				religion = shinto
+#				religion = nihon_shinto
 #				health = 6
 #				fertility = 0.8
 #				attributes = {
@@ -14912,7 +14912,7 @@
 #				female = yes
 #				dynasty = none
 #				culture = japanese
-#				religion = shinto
+#				religion = nihon_shinto
 #				health = 6
 #				fertility = 0.8
 #				attributes = {
@@ -16557,7 +16557,7 @@
 #							has_character_flag = kitsune_future_nun
 #							NAND = {
 #								NOT = {
-#									true_religion = buddhist
+#									true_religion_group = bud_group
 #								}
 #								trait = zealous
 #							}
@@ -16642,7 +16642,7 @@
 #				}
 #				break_betrothal = yes
 #			}
-#			religion = buddhist
+#			religion_group = bud_group
 #			add_trait = bhikkhuni
 #			clr_character_flag = ai_flag_refuse_concubinage
 #			clr_character_flag = ai_flag_refuse_marriage
@@ -16660,7 +16660,7 @@
 #				factor = 0
 #				trait = zealous
 #				NOT = {
-#					true_religion = buddhist
+#					true_religion_group = bud_group
 #				}
 #			}
 #		}
@@ -16671,7 +16671,7 @@
 #		
 #		if = {
 #			limit = {
-#				religion = buddhist
+#				religion_group = bud_group
 #			}
 #			piety = -10
 #		}
@@ -16695,11 +16695,11 @@
 #			factor = 100
 #			modifier = {
 #				factor = 0.1
-#				true_religion = buddhist
+#				true_religion_group = bud_group
 #			}
 #			modifier = {
 #				factor = 0
-#				true_religion = buddhist
+#				true_religion_group = bud_group
 #				trait = zealous
 #			}
 #		}
@@ -16737,7 +16737,7 @@
 #		remove_lover = FROMFROM
 #		
 #		FROMFROM = {
-#			religion = buddhist
+#			religion_group = bud_group
 #			add_trait = bhikkhuni
 #			leave_court_effect = yes
 #			clr_character_flag = ai_flag_refuse_concubinage
@@ -18641,7 +18641,7 @@
 #					}
 #				}
 #				preferred_limit = {
-#					religion = buddhist
+#					religion_group = bud_group
 #				}
 #				save_event_target_as = kitsune_priest
 #			}
@@ -18692,7 +18692,7 @@
 #					}
 #				}
 #				preferred_limit = {
-#					religion = buddhist
+#					religion_group = bud_group
 #				}
 #				save_event_target_as = kitsune_priest
 #			}
@@ -19384,7 +19384,7 @@
 #	
 #	is_triggered_only = yes
 #	
-#	religion = shinto
+#	religion = nihon_shinto
 #	only_rulers = yes
 #	only_women = yes
 #	min_age = 16
@@ -19751,7 +19751,7 @@
 #				is_adult = no
 #				is_married = no
 #				is_consort = no
-#				religion = shinto
+#				religion = nihon_shinto
 #				is_inaccessible_or_incapable_trigger = no
 #				is_landed = no
 #				is_ruler = no
@@ -20005,10 +20005,10 @@
 #		is_inaccessible_or_incapable_trigger = no
 #		# You're "Japanese enough"
 #		OR = {
-#			religion = shinto
+#			religion = nihon_shinto
 #			AND = {
-#				culture_group = japonic
-#				religion = buddhist
+#				culture = japanese
+#				religion_group = bud_group
 #			}
 #		}
 #		
@@ -20034,9 +20034,9 @@
 #				port = yes
 #				can_naval_path_to = c_ise # Doesn't matter which province we pick...
 #				NOR = { # More interesting to use this instead of the normal check
-#					religion = shinto
-#					culture_group = japonic
-#					religion = buddhist
+#					religion = nihon_shinto
+#					culture = japanese
+#					religion_group = bud_group
 #				}
 #				NOR = {
 #					region = world_japan
@@ -20074,9 +20074,9 @@
 #					port = yes
 #					can_naval_path_to = c_ise # Doesn't matter which province we pick...
 #					NOR = { # More interesting to use this instead of the normal check
-#						religion = shinto
-#						culture_group = japonic
-#						religion = buddhist
+#						religion = nihon_shinto
+#						culture = japanese
+#						religion_group = bud_group
 #					}
 #					NOR = {
 #						region = world_japan
@@ -20090,9 +20090,9 @@
 #					port = yes
 #					can_naval_path_to = c_ise # Doesn't matter which province we pick...
 #					NOR = { # More interesting to use this instead of the normal check
-#						religion = shinto
-#						culture_group = japonic
-#						religion = buddhist
+#						religion = nihon_shinto
+#						culture = japanese
+#						religion_group = bud_group
 #					}
 #					NOR = {
 #						region = world_japan
@@ -21383,10 +21383,10 @@
 #						factor = 0
 #						event_target:foreigners_host = {
 #							NOR = {
-#								religion = shinto
+#								religion = nihon_shinto
 #								AND = {
-#									culture_group = japonic
-#									religion = buddhist
+#									culture = japanese
+#									religion_group = bud_group
 #								}
 #								religion = ryukyuan_pagan
 #								religion = ryukyuan_pagan_reformed
@@ -22278,8 +22278,8 @@
 #							OR = {
 #								religion = ROOT
 #								NOR = {
-#									religion = shinto
-#									religion = buddhist
+#									religion = nihon_shinto
+#									religion_group = bud_group
 #								}
 #							}
 #						}
@@ -22306,7 +22306,7 @@
 #							OR = {
 #								culture = ROOT
 #								NOT = {
-#									culture_group = japonic
+#									culture = japanese
 #								}
 #							}
 #						}
@@ -22572,10 +22572,10 @@
 #			if = {
 #				limit = {
 #					OR = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						AND = {
-#							culture_group = japonic
-#							religion = buddhist
+#							culture = japanese
+#							religion_group = bud_group
 #						}
 #					}
 #				}
@@ -26979,11 +26979,11 @@
 #			limit = {
 #				OR = {
 #					liege = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #					liege_before_war = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #				}
@@ -26994,7 +26994,7 @@
 #			if = {
 #				limit = {
 #					liege = {
-#						religion = shinto
+#						religion = nihon_shinto
 #						controls_religion = yes
 #					}
 #				}
@@ -27057,7 +27057,7 @@
 #	
 #	is_triggered_only = yes
 #	
-#	religion = shinto
+#	religion = nihon_shinto
 #	
 #	only_women = yes
 #	only_rulers = yes
@@ -27109,7 +27109,7 @@
 #	
 #	is_triggered_only = yes
 #	
-#	religion = shinto
+#	religion = nihon_shinto
 #	only_playable = yes
 #
 #	trigger = {

@@ -379,7 +379,7 @@ tribal_invasion = {
 			FROM = {
 				NAND = {
 					controls_religion = yes
-					religion = shinto
+					religion = nihon_shinto
 				}
 			}
 			ROOT = {
@@ -388,10 +388,10 @@ tribal_invasion = {
 						any_vassal = {
 							character = FROM
 						}
-						religion = shinto
+						religion = nihon_shinto
 						AND = {
-							religion = buddhist
-							culture_group = japonic
+							religion_group = bud_group
+							culture = japanese
 						}
 						NOT = {
 							government = chinese_imperial_government

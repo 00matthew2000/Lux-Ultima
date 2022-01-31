@@ -2156,7 +2156,7 @@ character_event = {
 				NOT = { has_religion_feature = religion_peaceful }
 				NOT = { has_religion_feature = religion_syncretic }
 			}
-			#religion = buddhist
+			#religion_group = bud_group
 			#religion = jain
 			#religion = nestorian
 			#religion = priscillianism
@@ -2285,7 +2285,7 @@ character_event = {
 #		in_command = no
 #		is_abroad = no
 #		OR = {
-#			religion = buddhist
+#			religion_group = bud_group
 #			religion = jain
 #			religion = nestorian
 #			religion = priscillianism

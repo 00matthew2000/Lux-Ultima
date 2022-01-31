@@ -1114,10 +1114,10 @@ narrative_event = {
 								any_vassal = {
 									has_character_flag =  coming_to_hanami
 									OR = {
-										religion = shinto
+										religion = nihon_shinto
 										AND = {
-											religion = buddhist
-											culture_group = japonic
+											religion_group = bud_group
+											culture = japanese
 										}
 									}
 									NOT = {
@@ -1130,10 +1130,10 @@ narrative_event = {
 							limit = {
 								has_character_flag =  coming_to_hanami
 								OR = {
-									religion = shinto
+									religion = nihon_shinto
 									AND = {
-										religion = buddhist
-										culture_group = japonic
+										religion_group = bud_group
+										culture = japanese
 									}
 								}
 								NOT = {
@@ -1164,10 +1164,10 @@ narrative_event = {
 							limit = {
 								has_character_flag =  coming_to_hanami
 								OR = {
-									religion = shinto
+									religion = nihon_shinto
 									AND = {
-										religion = buddhist
-										culture_group = japonic
+										religion_group = bud_group
+										culture = japanese
 									}
 								}
 								NOT = {
@@ -1370,7 +1370,7 @@ narrative_event = {
 							create_character = {
 								age = 25
 								culture = ROOT
-								religion = shinto
+								religion = nihon_shinto
 								random_traits = yes
 								female = yes
 								attributes = {
@@ -1459,7 +1459,7 @@ narrative_event = {
 							create_character = {
 								age = 25
 								culture = ROOT
-								religion = shinto
+								religion = nihon_shinto
 								random_traits = yes
 								female = yes
 								attributes = {
@@ -1705,8 +1705,8 @@ character_event = {
 	option = {
 		trigger = {
 			OR = {
-				true_religion = shinto
-				true_religion = buddhist
+				true_religion = nihon_shinto
+				true_religion_group = bud_group
 			}
 			NOT = {
 				trait = cynical
@@ -1730,8 +1730,8 @@ character_event = {
 		trigger = {
 			OR = {
 				NOR = {
-					true_religion = shinto
-					true_religion = buddhist
+					true_religion = nihon_shinto
+					true_religion_group = bud_group
 				}
 				trait = cynical
 			}
@@ -1791,8 +1791,8 @@ character_event = {
 	option = {
 		trigger = {
 			OR = {
-				true_religion = shinto
-				true_religion = buddhist
+				true_religion = nihon_shinto
+				true_religion_group = bud_group
 			}
 			NOT = {
 				trait = cynical
@@ -1815,8 +1815,8 @@ character_event = {
 		trigger = {
 			OR = {
 				NOR = {
-					true_religion = shinto
-					true_religion = buddhist
+					true_religion = nihon_shinto
+					true_religion_group = bud_group
 				}
 				trait = zealous
 			}

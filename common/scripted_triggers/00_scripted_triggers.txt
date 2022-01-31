@@ -4893,40 +4893,17 @@ is_liked_and_disliked_by_China = {
 
 #Used in the invasion script...
 valid_offmap_china_target = {
-	NOT = { character = ROOT }
-	NOT = { has_character_modifier = peace_deal_with_china }
-	NOT = { has_character_flag = defeated_china }
-	NOT = {	is_tributary = { suzerain = ROOT } }
-	in_revolt = no
-	is_within_diplo_range = ROOT
-	is_landed = yes
-	higher_tier_than = BARON
-	NOT = { primary_title = { has_title_flag = rebel_general_title } } #uses special cb to target
-	NOT = { offmap_china = { offmap_ruler = { dynasty = PREVPREV } } }
-}
-
-valid_offmap_china_target_location = {
-	OR = {
-		any_realm_province = { region = custom_chinese_invasion_target_region }
-		any_neighbor_independent_ruler = {
-			has_landed_title = e_china_west_governor
-		}
-	}
-}
-
-valid_offmap_china_target_location_tributary_chain = {
-	OR = {
-		#any_realm_province = { region = custom_chinese_invasion_target_region }
-		any_neighbor_independent_ruler = {
-			has_landed_title = e_china_west_governor
-		}
-		any_neighbor_independent_ruler = {
-			is_tributary = yes
-			suzerain = {
-				has_landed_title = e_china_west_governor
-			}
-		}
-	}
+	always = no # Offmap China no longer exists!
+	#NOT = { character = ROOT }
+	#NOT = { has_character_modifier = peace_deal_with_china }
+	#NOT = { has_character_flag = defeated_china }
+	#NOT = {	is_tributary = { suzerain = ROOT } }
+	#in_revolt = no
+	#is_within_diplo_range = ROOT
+	#is_landed = yes
+	#higher_tier_than = BARON
+	#NOT = { primary_title = { has_title_flag = rebel_general_title } } #uses special cb to target
+	#NOT = { offmap_china = { offmap_ruler = { dynasty = PREVPREV } } }
 }
 
 # JADE DRAGON
