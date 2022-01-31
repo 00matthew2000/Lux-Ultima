@@ -29,12 +29,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 						culture = zhangzhung
 						culture = sumpa
 						culture = ryukyuan
-						culture = minahasan
-						religion = cathar
-						religion = bogomilist
-						religion = paulician
-						religion = messalian
-						religion = mazdaki
+						feminism_1_religions_trigger = yes
 						culture = minangkabau # Matrilinear, but you could always go for equality...
 						AND = {
 							religion = ryukyuan_pagan_reformed
@@ -43,7 +38,6 @@ score_current_chrysanthemum_throne_heir_effect = {
 							}
 						}
 						religion = ryukyuan_pagan
-						culture = nakhi # Often matrilineal
 						culture = qiang # Often matrilineal
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon
@@ -2530,16 +2524,10 @@ score_current_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			ROOT = {
-				OR = {
-					culture = yamato
-					culture = japanese
-				}
+				culture = japanese
 			}
 			event_target:current_chrysanthemum_throne_heir = {
-				OR = {
-					culture = yamato
-					culture = japanese
-				}
+				culture = japanese
 			}
 		}
 		change_variable = {
@@ -2550,10 +2538,10 @@ score_current_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			ROOT = {
-				culture_group = japonic
+				culture_group = far_east
 			}
 			event_target:current_chrysanthemum_throne_heir = {
-				culture_group = japonic
+				culture_group = far_east
 			}
 		}
 		change_variable = {
@@ -3307,8 +3295,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 			is_adult = yes
 			OR = { 
 				NOT = { is_close_relative = event_target:current_chrysanthemum_throne_heir }
-				religion = zoroastrian
-				religion = messalian
+				close_relative_marriages_allowed_trigger = yes
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
 			} 
@@ -3358,8 +3345,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 			is_adult = yes
 			OR = { 
 				NOT = { is_close_relative = event_target:current_chrysanthemum_throne_heir }
-				religion = zoroastrian
-				religion = messalian
+				close_relative_marriages_allowed_trigger = yes
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
 			} 
@@ -5460,12 +5446,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 						culture = zhangzhung
 						culture = sumpa
 						culture = ryukyuan
-						culture = minahasan
-						religion = cathar
-						religion = bogomilist
-						religion = paulician
-						religion = messalian
-						religion = mazdaki
+						feminism_1_religions_trigger = yes
 						culture = minangkabau # Matrilinear, but you could always go for equality...
 						AND = {
 							religion = ryukyuan_pagan_reformed
@@ -5474,7 +5455,6 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 							}
 						}
 						religion = ryukyuan_pagan
-						culture = nakhi # Often matrilineal
 						culture = qiang # Often matrilineal
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon
@@ -7961,16 +7941,10 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			ROOT = {
-				OR = {
-					culture = yamato
-					culture = japanese
-				}
+				culture = japanese
 			}
 			event_target:preferred_chrysanthemum_throne_heir = {
-				OR = {
-					culture = yamato
-					culture = japanese
-				}
+				culture = japanese
 			}
 		}
 		change_variable = {
@@ -7981,10 +7955,10 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			ROOT = {
-				culture_group = japonic
+				culture_group = far_east
 			}
 			event_target:preferred_chrysanthemum_throne_heir = {
-				culture_group = japonic
+				culture_group = far_east
 			}
 		}
 		change_variable = {
@@ -8738,8 +8712,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			is_adult = yes
 			OR = { 
 				NOT = { is_close_relative = event_target:preferred_chrysanthemum_throne_heir }
-				religion = zoroastrian
-				religion = messalian
+				close_relative_marriages_allowed_trigger = yes
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
 			} 
@@ -8789,8 +8762,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			is_adult = yes
 			OR = { 
 				NOT = { is_close_relative = event_target:preferred_chrysanthemum_throne_heir }
-				religion = zoroastrian
-				religion = messalian
+				close_relative_marriages_allowed_trigger = yes
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
 			} 
