@@ -2,17 +2,17 @@
 # WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
 ########################################################################################################
 
-#amaterasu_descendant = {
-#	agnatic = yes # Always inherited from fathers
-#	enatic = yes # Always inherited from mothers
-#		
-#	tolerates_indian_group = yes		# Tolerates and is tolerated by Indian religions (technically should only be Buddhist and Shinto, but...)
-#	
-#	shinto_opinion = 10
-#	
-#	customizer = no
-#}
-#
+amaterasu_descendant = {
+	agnatic = yes # Always inherited from fathers
+	enatic = yes # Always inherited from mothers
+		
+	tolerates_indian_group = yes		# Tolerates and is tolerated by Indian religions (technically should only be Buddhist and Shinto, but...)
+	
+	shinto_opinion = 10
+	
+	customizer = no
+}
+
 under_regency = {  #For the Tenno
 	cached = yes  #Keep a cache of all trait holders, to use with the corresponding event trigger
 	pilgrimage = yes     #Will need a regent, but can still be guardian to children
@@ -288,21 +288,18 @@ japanese_regent2 = {  #For the Shikken(s)
 }
 
 ## Shenist mourning
-#in_mourning = {
-#	pilgrimage = yes    # Will need a regent, but can still be guardian to children
-#	customizer = no
-#	random = no
-#	
-#	potential = {
-#		OR = {
-#			religion = chinese_pagan
-#			religion = chinese_pagan_reformed
-#		}
-#	}
-#
-#	monthly_character_piety = 2
-#	dynasty_opinion = 5
-#}
+in_mourning = {
+	pilgrimage = yes    # Will need a regent, but can still be guardian to children
+	customizer = no
+	random = no
+	
+	potential = {
+		religion = shenjiao
+	}
+
+	monthly_character_piety = 2
+	dynasty_opinion = 5
+}
 
 # LNY follow-up
 hunting_dragons = {

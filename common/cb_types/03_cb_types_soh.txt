@@ -4121,7 +4121,7 @@ korean_reconquest = {
 			any_owned_bloodline = {
 				has_bloodline_flag = korean_bloodline
 			}
-			culture_group = koreanic
+			culture_group = korean
 			OR = {
 				religion_group = bud_group
 				religion = taoist
@@ -4175,7 +4175,7 @@ korean_reconquest = {
 			AND = {
 				any_direct_de_jure_vassal_title = {
 					location = {
-						culture_group = koreanic
+						culture_group = korean
 					}
 				}
 			}
@@ -4271,7 +4271,7 @@ korean_reconquest = {
 	
 	is_valid = {
 		ROOT = {
-			culture_group = koreanic
+			culture_group = korean
 			OR = {
 				religion_group = bud_group
 				religion = taoist

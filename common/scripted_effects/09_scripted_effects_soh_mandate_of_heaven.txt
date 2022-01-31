@@ -1984,7 +1984,7 @@ calculate_personal_mandate_of_heaven_effect = {
 	else_if = {
 		limit = {
 			NOT = {
-				culture_group = chinese_group # China should ideally be Chinese
+				culture_group = chinese # China should ideally be Chinese
 			}
 		}
 		change_variable = {
@@ -2003,7 +2003,7 @@ calculate_personal_mandate_of_heaven_effect = {
 	}
 	if = {
 		limit = {
-			religion = taoist # China should ideally be Taoist
+			religion = tao # China should ideally be Taoist
 		}
 		change_variable = {
 			which = personal_mandate_of_heaven
@@ -2013,10 +2013,10 @@ calculate_personal_mandate_of_heaven_effect = {
 	else_if = {
 		limit = {
 			NOR = { # Preferred religions, even if others are allowd
-				religion = taoist
-				religion = buddhist
-				religion = chinese_pagan
-				religion = chinese_pagan_reformed
+				religion = tao
+				religion_group = bud_group
+				religion = shenjiao
+				religion = sol_taoist
 			}
 		}
 		change_variable = {

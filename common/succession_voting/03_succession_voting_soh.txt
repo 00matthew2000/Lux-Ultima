@@ -4384,12 +4384,12 @@ bureaucratic_succession_voting = {
 	}
 	candidate_trigger = {
 		NOT = { character = FROM } #Not the current ruler.
-		FROM = { 
-			NOR = { 
-				trait = crusader_king 
-				trait = crusader_queen
-			} 
-		}
+		#FROM = { 
+			#NOR = { 
+				#trait = crusader_king 
+				#trait = crusader_queen
+			}# 
+		#}
 		OR = {
 			ROOT = { # Relatives of the current holder
 				is_close_relative = FROM

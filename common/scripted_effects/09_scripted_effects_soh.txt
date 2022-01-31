@@ -2897,7 +2897,7 @@ create_new_court_eunuch_effect = {
 					ROOT = {
 						NOR = {
 							religion = shenjiao
-							religion = shenjiao_reformed
+							religion = sol_taoist
 							has_landed_title = e_china
 							any_realm_province = {
 								region = world_china
@@ -2911,7 +2911,7 @@ create_new_court_eunuch_effect = {
 					}
 					random_list = {
 						80 = {
-							religion = shenjiao_reformed
+							religion = sol_taoist
 						}
 						20 = {
 							religion = shenjiao

@@ -17,12 +17,12 @@ character_event = {
 				# Publicly Shenist/Reformed Shenist
 				OR = {
 					religion = shenjiao
-					religion = shenjiao_reformed
+					religion = sol_taoist
 				}
 				# Not secretly following a different religion
 				OR = {
 					true_religion = shenjiao
-					true_religion = shenjiao_reformed
+					true_religion = sol_taoist
 				}
 			}
 			character_event = { id = shenist.2 days = 1 }
@@ -42,12 +42,12 @@ character_event = {
 				# Publicly Shenist/Reformed Shenist
 				OR = {
 					religion = shenjiao
-					religion = shenjiao_reformed
+					religion = sol_taoist
 				}
 				# Not secretly following a different religion
 				OR = {
 					true_religion = shenjiao
-					true_religion = shenjiao_reformed
+					true_religion = sol_taoist
 				}
 				NOT = {
 					trait = in_mourning
@@ -114,7 +114,7 @@ character_event = {
 				FROMFROM = {
 					NOR = {
 						religion = shenjiao
-						religion = shenjiao_reformed
+						religion = sol_taoist
 						religion = tao
 						religion_group = bud_group
 					}
@@ -157,7 +157,7 @@ character_event = {
 					dynasty = ROOT
 					OR = {
 						religion = shenjiao
-						religion = shenjiao_reformed
+						religion = sol_taoist
 						religion = tao
 						religion_group = bud_group
 					}
@@ -925,7 +925,7 @@ character_event = {
 					is_descendant_of = PREV
 					OR = {
 						religion = shenjiao
-						religion = shenjiao_reformed
+						religion = sol_taoist
 						religion = tao
 						religion_group = bud_group
 						has_religion_feature = religion_beatification

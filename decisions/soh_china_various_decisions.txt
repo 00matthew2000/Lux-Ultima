@@ -762,7 +762,7 @@ decisions = {
 				religion = chinese_pagan_reformed
 				AND = {
 					# Intentionally excludes non-Chinese Buddhists
-					culture_group = chinese_group
+					culture_group = chinese
 					religion_group = bud_group
 				}
 				# Intentionally excludes religions that are "Chinese enough" unless Chinese Imperial
@@ -1037,7 +1037,7 @@ decisions = {
 				has_global_flag = treasure_fleet_invasion_ongoing
 			}
 			NOT = {
-				2753 = { # Hangzhou
+				2564 = { # Hangzhou
 					has_province_flag = abort_treasure_fleet_asap
 				}
 			}
@@ -1311,7 +1311,7 @@ decisions = {
 		allow = {
 			custom_tooltip = {
 				text = tresure_fleet_is_in_port
-				2753 = { # Hangzhou
+				2564 = { # Hangzhou
 					has_province_flag = treasure_fleet_port_flag
 				}
 			}
@@ -1345,7 +1345,7 @@ title_decisions = {
 						}
 					}
 				}
-				title = c_luoyang # The only historical capital that's not the capital of some de jure kingdom
+				title = c_si # The only historical capital that's not the capital of some de jure kingdom
 				FROM = {
 					ai = no
 				}
@@ -1463,7 +1463,7 @@ title_decisions = {
 								}
 							}
 						}
-						title = c_luoyang
+						title = c_si
 					}
 				}
 			}
