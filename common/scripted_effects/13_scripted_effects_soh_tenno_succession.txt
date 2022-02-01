@@ -3774,11 +3774,11 @@ score_current_chrysanthemum_throne_heir_effect = {
 			OR = { 
 				trait = lustful 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 			}
 			NOT = { trait = chaste }
@@ -3799,8 +3799,8 @@ score_current_chrysanthemum_throne_heir_effect = {
 				religion_group = muslim
 				religion_group = jewish_group
 				religion_group = indian_group
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				religion = graeco_roman
+				religion = graeco_roman_reformed
 				religion = bon
 				religion = bon_reformed
 			}
@@ -3820,11 +3820,11 @@ score_current_chrysanthemum_throne_heir_effect = {
 			OR = { 
 				trait = gluttonous
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 			}
 			NOT = { trait = temperate }
@@ -3980,11 +3980,11 @@ score_current_chrysanthemum_throne_heir_effect = {
 			NOT = { character = event_target:current_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 				trait = proud
 				trait = envious
@@ -4006,11 +4006,11 @@ score_current_chrysanthemum_throne_heir_effect = {
 			NOT = { character = event_target:current_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 				trait = lustful
 				trait = hedonist
@@ -4053,11 +4053,11 @@ score_current_chrysanthemum_throne_heir_effect = {
 			NOT = { character = event_target:current_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 				trait = gluttonous
 				trait = hedonist
@@ -4100,7 +4100,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 			NOT = { character = event_target:current_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
 				}
@@ -4210,7 +4210,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			NOT = { character = event_target:current_chrysanthemum_throne_heir } #Do not judge yourself.
-			religion_group = pagan_group
+			LI_pagan_trigger = yes
 			NOR = { 
 				religion = bon
 				religion = bon_reformed
@@ -4257,7 +4257,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			NOT = { character = event_target:current_chrysanthemum_throne_heir } #Do not judge yourself.
-			religion_group = pagan_group
+			LI_pagan_trigger = yes
 			NOR = { 
 				religion = bon
 				religion = bon_reformed
@@ -4390,7 +4390,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			NOT = { character = event_target:current_chrysanthemum_throne_heir } #Do not judge yourself.
-			religion_group = pagan_group
+			LI_pagan_trigger = yes
 			NOR = { 
 				trait = content
 				religion = bon
@@ -4440,7 +4440,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 			religion = event_target:current_chrysanthemum_throne_heir
 			OR = { 
 				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				religion = graeco_roman
 				trait = cynical
 			}
 			NOT = { 
@@ -4462,7 +4462,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 			religion = event_target:current_chrysanthemum_throne_heir
 			NOR = { 
 				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				religion = graeco_roman
 				trait = cynical
 			}
 			OR = { 
@@ -5411,6 +5411,71 @@ score_current_chrysanthemum_throne_heir_effect = {
 		change_variable = {
 			which = current_heir_score
 			value = 70
+		}
+	}
+	
+	if = {
+		limit = {
+			NOT = { character = event_target:current_chrysanthemum_throne_heir } #But not if it's me.
+			event_target:current_chrysanthemum_throne_heir = {
+				tier = emperor
+				NAND = {
+					dynasty = ROOT
+					is_descendant_of = ROOT
+				}
+			}
+		}
+		change_variable = {
+			which = current_heir_score
+			value = -1000
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { character = event_target:current_chrysanthemum_throne_heir } #But not if it's me.
+			event_target:current_chrysanthemum_throne_heir = {
+				tier = king
+				NAND = {
+					dynasty = ROOT
+					is_descendant_of = ROOT
+				}
+			}
+		}
+		change_variable = {
+			which = current_heir_score
+			value = -500
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { character = event_target:current_chrysanthemum_throne_heir } #But not if it's me.
+			event_target:current_chrysanthemum_throne_heir = {
+				tier = duke
+				NAND = {
+					dynasty = ROOT
+					is_descendant_of = ROOT
+				}
+			}
+		}
+		change_variable = {
+			which = current_heir_score
+			value = -100
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { character = event_target:current_chrysanthemum_throne_heir } #But not if it's me.
+			event_target:current_chrysanthemum_throne_heir = {
+				tier = count
+				NAND = {
+					dynasty = ROOT
+					is_descendant_of = ROOT
+				}
+			}
+		}
+		change_variable = {
+			which = current_heir_score
+			value = -50
 		}
 	}
 }
@@ -9191,11 +9256,11 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			OR = { 
 				trait = lustful 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 			}
 			NOT = { trait = chaste }
@@ -9216,8 +9281,8 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 				religion_group = muslim
 				religion_group = jewish_group
 				religion_group = indian_group
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				religion = graeco_roman
+				religion = graeco_roman_reformed
 				religion = bon
 				religion = bon_reformed
 			}
@@ -9237,11 +9302,11 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			OR = { 
 				trait = gluttonous
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 			}
 			NOT = { trait = temperate }
@@ -9397,11 +9462,11 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 				trait = proud
 				trait = envious
@@ -9423,11 +9488,11 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 				trait = lustful
 				trait = hedonist
@@ -9470,11 +9535,11 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
 				}
 				trait = gluttonous
 				trait = hedonist
@@ -9517,7 +9582,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
 				AND = { 
-					religion_group = pagan_group
+					LI_pagan_trigger = yes
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
 				}
@@ -9627,7 +9692,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #Do not judge yourself.
-			religion_group = pagan_group
+			LI_pagan_trigger = yes
 			NOR = { 
 				religion = bon
 				religion = bon_reformed
@@ -9674,7 +9739,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #Do not judge yourself.
-			religion_group = pagan_group
+			LI_pagan_trigger = yes
 			NOR = { 
 				religion = bon
 				religion = bon_reformed
@@ -9807,7 +9872,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #Do not judge yourself.
-			religion_group = pagan_group
+			LI_pagan_trigger = yes
 			NOR = { 
 				trait = content
 				religion = bon
@@ -9857,7 +9922,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			religion = event_target:preferred_chrysanthemum_throne_heir
 			OR = { 
 				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				religion = graeco_roman
 				trait = cynical
 			}
 			NOT = { 
@@ -9879,7 +9944,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			religion = event_target:preferred_chrysanthemum_throne_heir
 			NOR = { 
 				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				religion = graeco_roman
 				trait = cynical
 			}
 			OR = { 
@@ -10828,6 +10893,71 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 		change_variable = {
 			which = preferred_heir_score
 			value = 70
+		}
+	}
+	
+	if = {
+		limit = {
+			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #But not if it's me.
+			event_target:preferred_chrysanthemum_throne_heir = {
+				tier = emperor
+				NAND = {
+					dynasty = ROOT
+					is_descendant_of = ROOT
+				}
+			}
+		}
+		change_variable = {
+			which = preferred_heir_score
+			value = -1000
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #But not if it's me.
+			event_target:preferred_chrysanthemum_throne_heir = {
+				tier = king
+				NAND = {
+					dynasty = ROOT
+					is_descendant_of = ROOT
+				}
+			}
+		}
+		change_variable = {
+			which = preferred_heir_score
+			value = -500
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #But not if it's me.
+			event_target:preferred_chrysanthemum_throne_heir = {
+				tier = duke
+				NAND = {
+					dynasty = ROOT
+					is_descendant_of = ROOT
+				}
+			}
+		}
+		change_variable = {
+			which = preferred_heir_score
+			value = -100
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #But not if it's me.
+			event_target:preferred_chrysanthemum_throne_heir = {
+				tier = count
+				NAND = {
+					dynasty = ROOT
+					is_descendant_of = ROOT
+				}
+			}
+		}
+		change_variable = {
+			which = preferred_heir_score
+			value = -50
 		}
 	}
 }

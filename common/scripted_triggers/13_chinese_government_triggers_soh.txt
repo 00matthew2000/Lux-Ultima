@@ -823,22 +823,61 @@ has_acceptable_chinese_culture_trigger = {
 		culture = tangut # Xia
 		culture = jurchen # Jin
 		culture = mongol # Yuan	
-		culture = japanese
+		# Japanese culture characters cannot take this decision if the Emperor of Japan is part of the same realm or dynasty, or if they are the next Tenno
+		AND = {
+			OR = {
+				culture = japanese
+				culture = nihonohellenic
+			}
+			NOR = {
+				has_landed_title = k_chrysanthemum_throne
+				any_vassal = {
+					has_landed_title = k_chrysanthemum_throne # Direct vassal check is fine since we are looking at a king-tier title
+				}
+				k_chrysanthemum_throne = {
+					holder_scope = {
+						NOR = {
+							AND = {
+								dynasty = PREVPREV
+								religion = PREVPREV
+							}
+							current_heir = {
+								character = PREVPREV
+							}
+						}
+					}
+				}
+			}
+		}
 		culture = sinohellenic
-		culture = nihonohellenic
 		culture = romanokoric
 		culture = huakyo
 		culture = viethellenic
 		culture_group = yue
 		culture_group = korean_group
-		AND = {
 		culture_group = tai_kadai
-		religion_group = chinese_group
-		}
-		AND = {
+		culture_group = vietic
+		culture_group = hmong_mien
+		culture = dragon_culture # It IS the DRAGON Throne, after all...
+	}
+}
+
+has_acceptable_chinese_culture_province_trigger = {
+	OR = {
+		culture_group = chinese
+		culture = khitan # Liao
+		culture = tangut # Xia
+		culture = jurchen # Jin
+		culture = mongol # Yuan
+		culture = japanese
+		culture = nihonohellenic
+		culture = sinohellenic
+		culture = romanokoric
+		culture = huakyo
+		culture = viethellenic
+		culture_group = yue
+		culture_group = korean_group
 		culture_group = tai_kadai
-		religion = indoh_confucian
-		}
 		culture_group = vietic
 		culture_group = hmong_mien
 		culture = dragon_culture # It IS the DRAGON Throne, after all...
@@ -862,14 +901,7 @@ has_acceptable_chinese_culture_no_gamerule_trigger = { # For Grace checks
 		culture = viethellenic
 		culture_group = yue
 		culture_group = korean_group
-		AND = {
 		culture_group = tai_kadai
-		religion_group = chinese_group
-		}
-		AND = {
-		culture_group = tai_kadai
-		religion = indoh_confucian
-		}
 		culture_group = vietic
 		culture_group = hmong_mien
 		# Japanese culture characters cannot take this decision if the Emperor of Japan is part of the same realm or dynasty, or if they are the next Tenno
@@ -887,11 +919,11 @@ has_acceptable_chinese_culture_no_gamerule_trigger = { # For Grace checks
 					holder_scope = {
 						NOR = {
 							AND = {
-								dynasty = ROOT
-								religion = ROOT
+								dynasty = PREVPREV
+								religion = PREVPREV
 							}
 							current_heir = {
-								character = ROOT
+								character = PREVPREV
 							}
 						}
 					}
@@ -946,14 +978,7 @@ has_acceptable_chinese_culture_cvg_trigger = { # Needs to be different to avoid 
 		culture = viethellenic
 		culture_group = yue
 		culture_group = korean_group
-		AND = {
 		culture_group = tai_kadai
-		religion_group = chinese_group
-		}
-		AND = {
-		culture_group = tai_kadai
-		religion = indoh_confucian
-		}
 		culture_group = vietic
 		culture_group = hmong_mien
 	}

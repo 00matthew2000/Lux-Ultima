@@ -55,7 +55,7 @@ can_become_japanese_monastic_feudal_trigger = {
 				culture = ROOT
 			}
 			OR = {
-				culture = japanese
+				culture_group = far_east
 				k_chrysanthemum_throne = {
 					holder_scope = {
 						culture = ROOT
@@ -98,6 +98,7 @@ has_actual_regency_trigger = {
 					has_character_modifier = failed_to_overthrow_regent # If you recently failed to overthrow your regent, he'll restrict what you can do quite a bit...
 					trait = hunting_dragons
 					trait = treasure_fleet_voyage
+					has_character_modifier = bedridden_illness
 				}
 			}
 		}

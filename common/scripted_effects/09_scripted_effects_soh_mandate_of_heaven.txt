@@ -4764,188 +4764,14 @@ calculate_realm_health_mandate_of_heaven_effect = {
 	
 	if = {
 		limit = {
-			e_china = {
-				has_holder = no
-			}
-		}
-		change_variable = {
-			which = realm_mandate_of_heaven
-			value = 500 # FDaTK
-		}
-	}
-	else_if = {
-		limit = {
-			e_china = {
-				holder_scope = {
-					is_chinese_emperor_trigger = no
-				}
-			}
-		}
-		change_variable = {
-			which = realm_mandate_of_heaven
-			value = 500
-		}
-	}
-	
-	if = {
-		limit = {
 			has_landed_title = e_china # Free MoH boost due to holding China...
 		}
 		change_variable = {
 			which = realm_mandate_of_heaven
 			value = 1000
 		}
-		
-		# ... but with penalties if you don't actually control all of it...
-		any_province = {
-			limit = {
-				any_province_holding = {
-					OR = {
-						holding_type = castle
-						holding_type = city
-					}
-				}
-				county = {
-					OR = {
-						region = world_china
-						e_china = {
-							de_jure_vassal_or_below = PREV
-						}
-					}
-					holder_scope = {
-						NOR = {
-							character = ROOT
-							any_liege = {
-								OR = {
-									character = ROOT
-									liege_before_war = {
-										character = ROOT
-									}
-								}
-							}
-							liege_before_war = {
-								character = ROOT
-							}
-						} 
-					}
-				}
-			}
-			if = { # Harsher penalty if the province belongs to a pretender's realm
-				limit = {
-					county = {
-						holder_scope = {
-							top_liege = {
-								primary_title = {
-									OR = {
-										has_title_flag = pretender_chinese_empire
-										has_title_flag = five_dynasties_and_ten_kingdoms
-									}
-								}
-							}
-						}
-					}
-				}
-				ROOT = {
-					change_variable = {
-						which = realm_mandate_of_heaven
-						value = -10
-					}
-				}
-			}
-			else = {
-				ROOT = {
-					change_variable = {
-						which = realm_mandate_of_heaven
-						value = -5
-					}
-				}
-			}
-		}
-	}
-	else = { # Pretenders and FDaTK emperors get a boost from holding provinces in China and a smaller one for their own de jure
-		any_province = {
-			limit = {
-				any_province_holding = {
-					OR = {
-						holding_type = castle
-						holding_type = city
-					}
-				}
-				county = {
-					OR = {
-						region = world_china
-						e_china = {
-							de_jure_vassal_or_below = PREV
-						}
-					}
-					holder_scope = {
-						OR = {
-							character = ROOT
-							any_liege = {
-								OR = {
-									character = ROOT
-									liege_before_war = {
-										character = ROOT
-									}
-								}
-							}
-							liege_before_war = {
-								character = ROOT
-							}
-						} 
-					}
-				}
-			}
-			ROOT = {
-				change_variable = {
-					which = realm_mandate_of_heaven
-					value = 10
-				}
-			}
-		}
-		any_province = {
-			limit = {
-				county = {
-					NOR = {
-						region = world_china
-						e_china = {
-							de_jure_vassal_or_below = PREV
-						}
-					}
-					ROOT = {
-						primary_title = {
-							de_jure_vassal_or_below = PREVPREV
-						}
-					}
-					holder_scope = {
-						OR = {
-							character = ROOT
-							any_liege = {
-								OR = {
-									character = ROOT
-									liege_before_war = {
-										character = ROOT
-									}
-								}
-							}
-							liege_before_war = {
-								character = ROOT
-							}
-						} 
-					}
-				}
-			}
-			ROOT = {
-				change_variable = {
-					which = realm_mandate_of_heaven
-					value = 5
-				}
-			}
-		}
 	}
 
-	log = "MANDATE OF HEAVEN: Realm Mandate after control of de jure/China is [Root.realm_mandate_of_heaven.GetValue]!"
-	
 	any_realm_province = {
 		limit = {
 			NOT = {
@@ -5439,6 +5265,93 @@ calculate_realm_health_mandate_of_heaven_effect = {
 					value = 1
 				}
 			}
+		}
+	}
+	
+	if = {
+		limit = {
+			NOT = {
+				realm_size = 50
+			}
+		}
+		change_variable = {
+			which = realm_mandate_of_heaven
+			value = -1000
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				realm_size = 100
+			}
+		}
+		change_variable = {
+			which = realm_mandate_of_heaven
+			value = -500
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				realm_size = 200
+			}
+		}
+		change_variable = {
+			which = realm_mandate_of_heaven
+			value = -250
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				realm_size = 400
+			}
+		}
+		change_variable = {
+			which = realm_mandate_of_heaven
+			value = -100
+		}
+	}
+	else_if = {
+		limit = {
+			realm_size = 500
+			NOT = {
+				realm_size = 600
+			}
+		}
+		change_variable = {
+			which = realm_mandate_of_heaven
+			value = 100
+		}
+	}
+	else_if = {
+		limit = {
+			realm_size = 600
+			NOT = {
+				realm_size = 700
+			}
+		}
+		change_variable = {
+			which = realm_mandate_of_heaven
+			value = 250
+		}
+	}
+	else_if = {
+		limit = {
+			realm_size = 700
+			NOT = {
+				realm_size = 800
+			}
+		}
+		change_variable = {
+			which = realm_mandate_of_heaven
+			value = 500
+		}
+	}
+	else = {
+		change_variable = {
+			which = realm_mandate_of_heaven
+			value = 1000
 		}
 	}
 	
@@ -7801,6 +7714,14 @@ potentially_change_current_mandate_of_heaven_level_effect = {
 						}
 					}
 					set_character_flag = new_mandate_of_heaven_5
+					modifier = {
+						factor = 0
+						is_adult = no # China deserves better than a child on the throne!
+					}
+					modifier = {
+						factor = 0
+						has_regent = yes # Not has_actual_regency_trigger!
+					}
 				}
 				25 = {
 					# Personal
@@ -8406,6 +8327,14 @@ potentially_change_current_mandate_of_heaven_level_effect = {
 					}
 					set_character_flag = new_mandate_of_heaven_5
 					set_character_flag = mandate_changed_good
+					modifier = {
+						factor = 0
+						is_adult = no # China deserves better than a child on the throne!
+					}
+					modifier = {
+						factor = 0
+						has_regent = yes # Not has_actual_regency_trigger!
+					}
 				}
 				60 = {
 					# If the MoH is very good in at least one category, you're likely to go up
