@@ -69,9 +69,19 @@ tenno_succession = {
 					OR = {
 						is_female = yes
 						# Feminist culture
+						culture = basque
 						culture = zhangzhung
 						culture = sumpa
 						culture = ryukyuan
+						feminism_1_religions_trigger = yes
+						culture = minangkabau # Matrilinear, but you could always go for equality...
+						AND = {
+							religion = ryukyuan_pagan_reformed
+							NOT = {
+								has_religion_feature = religion_patriarchal
+							}
+						}
+						religion = ryukyuan_pagan
 						culture = qiang # Often matrilineal
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon
@@ -99,7 +109,10 @@ tenno_succession = {
 				is_female = no
 			}
 			ROOT = {
-				has_religion_feature = religion_matriarchal
+				OR =  {
+					has_religion_feature = religion_matriarchal
+					culture = minangkabau # Matrilinear, but you could always go for equality...
+				}
 			}
 		}
 		additive_modifier = { # The Primo heir gets an advantage
@@ -1980,10 +1993,10 @@ tenno_succession = {
 		additive_modifier = {
 			value = 100
 			ROOT = {
-				culture = japanese
+				culture_group = far_east
 			}
 			FROM = {
-				culture = japanese
+				culture_group = far_east
 			}
 		}
 		additive_modifier = {
@@ -2915,7 +2928,13 @@ tenno_succession = {
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
 				trait = lustful 
-				LI_pagan_trigger = yes
+				AND = { 
+					LI_pagan_trigger = yes
+					NOT = { religion = bon }
+					NOT = { religion = bon_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
+				}
 			}
 			NOT = { trait = chaste }
 			FROM = { 
@@ -2943,7 +2962,13 @@ tenno_succession = {
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
 				trait = gluttonous
-				LI_pagan_trigger = yes
+				AND = { 
+					LI_pagan_trigger = yes
+					NOT = { religion = bon }
+					NOT = { religion = bon_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
+				}
 			}
 			NOT = { trait = temperate }
 			FROM = { 
@@ -3055,7 +3080,13 @@ tenno_succession = {
 			localisation_key = tooltip_feudal_elector_vote_humble_negative
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				LI_pagan_trigger = yes
+				AND = { 
+					LI_pagan_trigger = yes
+					NOT = { religion = bon }
+					NOT = { religion = bon_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
+				}
 				trait = proud
 				trait = envious
 			}
@@ -3068,7 +3099,13 @@ tenno_succession = {
 			localisation_key = tooltip_feudal_elector_vote_lustful_positive
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				LI_pagan_trigger = yes
+				AND = { 
+					LI_pagan_trigger = yes
+					NOT = { religion = bon }
+					NOT = { religion = bon_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
+				}
 				trait = lustful
 				trait = hedonist
 			}
@@ -3101,7 +3138,13 @@ tenno_succession = {
 			localisation_key = tooltip_feudal_elector_vote_gluttonous_positive
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				LI_pagan_trigger = yes
+				AND = { 
+					LI_pagan_trigger = yes
+					NOT = { religion = bon }
+					NOT = { religion = bon_reformed }
+					NOT = { religion = graeco_roman }
+					NOT = { religion = graeco_roman_reformed }
+				}
 				trait = gluttonous
 				trait = hedonist
 			}
@@ -3134,7 +3177,11 @@ tenno_succession = {
 			localisation_key = tooltip_feudal_elector_vote_greedy_positive
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				LI_pagan_trigger = yes
+				AND = { 
+					LI_pagan_trigger = yes
+					NOT = { religion = bon }
+					NOT = { religion = bon_reformed }
+				}
 				trait = greedy
 			}
 			FROM = { 
@@ -3214,7 +3261,14 @@ tenno_succession = {
 			localisation_key = tooltip_feudal_elector_vote_proud_positive
 			NOT = { character = FROM } #Do not judge yourself.
 			LI_pagan_trigger = yes
-			NOT = { trait = humble }
+			NOR = { 
+				religion = bon
+				religion = bon_reformed
+				trait = humble
+			}
+			NOT = {
+				trait = japanese_regent
+			}
 			FROM = { 
 				trait = proud
 			}
