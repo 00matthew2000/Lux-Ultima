@@ -4326,7 +4326,7 @@ character_event = {
 
 	immediate = {
 		current_heir = { set_character_flag = flag_pepin_for_coronation
-			character_event = { id = HF.20420 days = 2 } #Further safety check.
+			#character_event = { id = HF.20420 days = 2 } #Further safety check.
 		}
 	}
 }

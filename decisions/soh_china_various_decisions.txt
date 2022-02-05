@@ -939,7 +939,7 @@ decisions = {
 				modifier = recent_dragon_hunt
 				months = 120
 			}
-			character_event = { id = dragon.4 days = 7 random = 7 } # Confirm dragon hunt
+			#character_event = { id = dragon.4 days = 7 random = 7 } # Confirm dragon hunt
 		}
 		
 		ai_will_do = {
@@ -1430,7 +1430,7 @@ title_decisions = {
 						dynasty = 1000156610 # Qian (Wuyue)
 						dynasty = 1000156611 # Wang (Min)
 						dynasty = 1000156612 # Ma (Chu)
-						dynasty = 1000156613 # Liu (Southern Han)
+						dynasty = 1000156116 # Liu (Southern Han)
 						dynasty = 1000156606 # Meng (Later Shu)
 						dynasty = 1000156614 # Gao (Jingnan)
 					}
@@ -1548,7 +1548,7 @@ title_decisions = {
 			modifier = {
 				factor = 0.05
 				FROM = {
-					dynasty = 1000156613 # Liu (Southern Han)
+					dynasty = 1000156116 # Liu (Southern Han)
 				}
 				NOT = {
 					title = c_guangzhou

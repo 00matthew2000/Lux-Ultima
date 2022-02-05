@@ -3695,33 +3695,33 @@ assassins_debt = {
 #	learning = -1
 #}
 #
-#hashish_addict = {
-#	is_visible = { 
-#		OR = {
-#			society_member_of = the_assassins 
-#			character = FROM
-#		}
-#	}
-#	icon = 88
-#	health = -0.5
-#}
-#
-#withdrawal_symptoms = {
-#	is_visible = { 
-#		OR = {
-#			society_member_of = the_assassins 
-#			character = FROM
-#		}
-#	}
-#	icon = 40
-#	health = -0.5
-#	diplomacy = -2
-#	stewardship = -2
-#	martial = -2
-#	intrigue = -2
-#	learning = -2
-#	combat_rating = -20
-#}
+hashish_addict = {
+	is_visible = { 
+		OR = {
+			society_member_of = the_assassins 
+			character = FROM
+		}
+	}
+	icon = 88
+	health = -0.5
+}
+
+withdrawal_symptoms = {
+	is_visible = { 
+		OR = {
+			society_member_of = the_assassins 
+			character = FROM
+		}
+	}
+	icon = 40
+	health = -0.5
+	diplomacy = -2
+	stewardship = -2
+	martial = -2
+	intrigue = -2
+	learning = -2
+	combat_rating = -20
+}
 
 foolish_behavior = {
 	general_opinion = -10

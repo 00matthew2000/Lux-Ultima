@@ -211,12 +211,12 @@ dragon_bride_married = {
 }
 
 # Trait to prevent inheritance for anyone sent to China
-#sent_to_china = {	
-#	cannot_inherit = yes
-#	customizer = no
-#	random = no
-#}
-#
+sent_to_china = {	
+	cannot_inherit = yes
+	customizer = no
+	random = no
+}
+
 #dead_song_emperor = {
 #	customizer = no
 #	random = no
@@ -325,21 +325,21 @@ hunting_dragons = {
 
 # Saio/Saiin
 
-#imperial_priestess = {
-#	random = no
-#	customizer = no
-#	
-#	potential = {
-#		religion = nihon_shinto
-#		is_female = yes # In case it is improperly scripted, remove it
-#		controls_religion = no # If the Saio/Saiin inherits the Chrysanthemum Throne, they shouldn't be blocked from marrying...
-#	}
-#	
-#	cached = yes # Should only ever be two or less people with this, and we might want to do something special with it, so...
-#	cannot_marry = yes
-#	cannot_inherit = yes
-#	monthly_character_piety = 1
-#}
+imperial_priestess = {
+	random = no
+	customizer = no
+	
+	potential = {
+		religion = nihon_shinto
+		is_female = yes # In case it is improperly scripted, remove it
+		controls_religion = no # If the Saio/Saiin inherits the Chrysanthemum Throne, they shouldn't be blocked from marrying...
+	}
+	
+	cached = yes # Should only ever be two or less people with this, and we might want to do something special with it, so...
+	cannot_marry = yes
+	cannot_inherit = yes
+	monthly_character_piety = 1
+}
 
 # Treasure Fleet
 

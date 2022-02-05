@@ -12491,14 +12491,14 @@ province_event = {
 					# Gold for Grace?
 					character_event = { id = treasurefleet.259 days = 1 random = 15 }
 				}
-				1 = {
-					modifier = {
-						factor = 0
-						ai = no
-					}
+				#1 = {
+					#modifier = {
+						#factor = 0
+						#ai = no
+					#}
 					# Artifact for Grace? - AI only!
-					character_event = { id = treasurefleet.263 } # Intentionally not offset
-				}
+					#character_event = { id = treasurefleet.263 } # Intentionally not offset
+				#}
 				1 = {
 					modifier = {
 						factor = 0

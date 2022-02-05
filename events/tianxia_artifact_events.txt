@@ -139,7 +139,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					culture_group = chinese_group
+					culture_group = chinese
 				}
 				modifier = {
 					factor = 2
@@ -162,9 +162,10 @@ character_event = {
 				modifier = {
 					factor = 2
 					OR = {
-						culture_group = malayo_polynesian_group
-						culture_group = dravidian_group
-						culture_group = indo_aryan_group
+						culture_group = malay_group
+						culture_group = javanese_group
+						culture_group = dravidian
+						culture_group = indoaryan
 						culture_group = byzantine # Supposedly the mythological owner claimed descent from Alexander the Great...
 						religion = melanesian_religion
 						religion = melanesian_religion_reformed
@@ -211,8 +212,8 @@ character_event = {
 				modifier = {
 					factor = 2
 					OR = {
-						culture_group = dravidian_group
-						culture_group = indo_aryan_group
+						culture_group = dravidian
+						culture_group = indoaryan
 					}
 				}
 				modifier = {
@@ -250,7 +251,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					culture_group = chinese_group
+					culture_group = chinese
 				}
 				modifier = {
 					factor = 2
@@ -283,7 +284,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					culture_group = chinese_group
+					culture_group = chinese
 				}
 				modifier = {
 					factor = 2
@@ -358,7 +359,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					culture_group = chinese_group
+					culture_group = chinese
 				}
 				modifier = {
 					factor = 2
@@ -394,7 +395,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					culture_group = chinese_group
+					culture_group = chinese
 				}
 				modifier = {
 					factor = 2
@@ -901,7 +902,7 @@ character_event = {
 		}
 		name = EVTOPTB_ARTIFACTS_6 # ...and my GUARDS!
 		
-		add_artifact = totsuka_no_tsurugi
+		#add_artifact = totsuka_no_tsurugi
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -993,7 +994,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = totsuka_no_tsurugi
+		#add_artifact = totsuka_no_tsurugi
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -1043,7 +1044,7 @@ character_event = {
 		
 		add_trait = wounded
 		
-		add_artifact = totsuka_no_tsurugi
+		#add_artifact = totsuka_no_tsurugi
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -1167,7 +1168,7 @@ character_event = {
 #		
 #		wealth = -500
 #		
-#		add_artifact = totsuka_no_tsurugi
+#		#add_artifact = totsuka_no_tsurugi
 #		new_artifact = {
 #			set_creation_date = "-1.1.1"
 #		}
@@ -1190,7 +1191,7 @@ character_event = {
 #		}
 #		name = EVTOPTB_ARTIFACTS_10 # I will make you an offer you can't refuse!
 #		
-#		add_artifact = totsuka_no_tsurugi
+#		#add_artifact = totsuka_no_tsurugi
 #		new_artifact = {
 #			set_creation_date = "-1.1.1"
 #		}
@@ -1684,7 +1685,7 @@ character_event = {
 		
 		piety = 50
 		
-		add_artifact = hilt_of_thuan_thien
+		#add_artifact = hilt_of_thuan_thien
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -1841,7 +1842,7 @@ character_event = {
 			unsafe_destroy_artifact = yes
 		}
 		
-		add_artifact = thuan_thien
+		#add_artifact = thuan_thien
 	}
 }
 
@@ -2205,7 +2206,7 @@ narrative_event = {
 		
 		wealth = -500
 		
-		add_artifact = blade_of_thuan_thien
+		#add_artifact = blade_of_thuan_thien
 		set_global_flag = blade_of_thuan_thien_found
 		
 		new_artifact = {
@@ -2226,7 +2227,7 @@ narrative_event = {
 		
 		prestige = -10
 		
-		add_artifact = blade_of_thuan_thien
+		#add_artifact = blade_of_thuan_thien
 		set_global_flag = blade_of_thuan_thien_found
 		
 		new_artifact = {
@@ -2351,7 +2352,7 @@ narrative_event = {
 		
 		piety = 50
 		
-		add_artifact = blade_of_thuan_thien
+		#add_artifact = blade_of_thuan_thien
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -3360,7 +3361,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = ganjiang
+		#add_artifact = ganjiang
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -3396,7 +3397,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = moye
+		#add_artifact = moye
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -3939,7 +3940,7 @@ character_event = {
 		
 		prestige = 100
 		
-		add_artifact = cura_si_manjakini
+		#add_artifact = cura_si_manjakini
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -4380,9 +4381,10 @@ narrative_event = {
 			modifier = {
 				factor = 0.01
 				NOR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-					culture_group = malayo_polynesian_group
+					culture_group = indoaryan
+					culture_group = dravidian
+					culture_group = malay_group
+					culture_group = javanese_group
 					culture_group = mon_khmer
 				}
 			}
@@ -4409,9 +4411,10 @@ narrative_event = {
 			modifier = {
 				factor = 0
 				NOR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-					culture_group = malayo_polynesian_group
+					culture_group = indoaryan
+					culture_group = dravidian
+					culture_group = malay_group
+					culture_group = javanese_group
 					culture_group = mon_khmer
 				}
 			}
@@ -4783,7 +4786,7 @@ character_event = {
 		
 		piety = 100
 		
-		add_artifact = vijaya
+		#add_artifact = vijaya
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -5054,7 +5057,7 @@ narrative_event = {
 		
 		wealth = -500
 		
-		add_artifact = sword_of_goujian
+		#add_artifact = sword_of_goujian
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -5073,7 +5076,7 @@ narrative_event = {
 		
 		prestige = -10
 		
-		add_artifact = sword_of_goujian
+		#add_artifact = sword_of_goujian
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -5653,7 +5656,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = spear_of_fuchai
+		#add_artifact = spear_of_fuchai
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -5985,7 +5988,7 @@ character_event = {
 		
 		set_character_flag = fuchai_tallest_tower
 		
-		add_artifact = art_of_war_page
+		#add_artifact = art_of_war_page
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -6004,7 +6007,7 @@ character_event = {
 		
 		set_character_flag = fuchai_armory
 		
-		add_artifact = art_of_war_page
+		#add_artifact = art_of_war_page
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -6015,7 +6018,7 @@ character_event = {
 	option = {
 		name = EVTOPTC_ARTIFACTS_92 # Time to go home
 		
-		add_artifact = art_of_war_page
+		#add_artifact = art_of_war_page
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -6183,7 +6186,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = spear_of_fuchai
+		#add_artifact = spear_of_fuchai
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -6505,7 +6508,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = spear_of_fuchai
+		#add_artifact = spear_of_fuchai
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -7366,7 +7369,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = kogarasu_maru
+		#add_artifact = kogarasu_maru
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -7402,7 +7405,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = dojigiri
+		#add_artifact = dojigiri
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -7438,7 +7441,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = onimaru
+		#add_artifact = onimaru
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -7474,7 +7477,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = mikazuki
+		#add_artifact = mikazuki
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -7510,7 +7513,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = odenta
+		#add_artifact = odenta
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -7546,7 +7549,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = juzumaru
+		#add_artifact = juzumaru
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -7959,7 +7962,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = zhanlu
+		#add_artifact = zhanlu
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -7995,7 +7998,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = juque
+		#add_artifact = juque
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -8031,7 +8034,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = shengxie
+		#add_artifact = shengxie
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -8067,7 +8070,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = yuchang
+		#add_artifact = yuchang
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -8103,7 +8106,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = chunjun
+		#add_artifact = chunjun
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -8139,7 +8142,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = longyuan
+		#add_artifact = longyuan
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -8175,7 +8178,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = taie
+		#add_artifact = taie
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -8211,7 +8214,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = gongbu
+		#add_artifact = gongbu
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -8743,7 +8746,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = dragon_phoenix_sword
+		#add_artifact = dragon_phoenix_sword
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -8780,7 +8783,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = green_dragon_crescent_blade
+		#add_artifact = green_dragon_crescent_blade
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -8963,7 +8966,7 @@ character_event = {
 		
 		piety = -50
 		
-		add_artifact = kojiki
+		#add_artifact = kojiki
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -9089,7 +9092,7 @@ character_event = {
 		
 		piety = -50
 		
-		add_artifact = nihon_shoki
+		#add_artifact = nihon_shoki
 		new_artifact = {
 			set_creation_date = "-1.1.1"
 		}
@@ -9346,7 +9349,7 @@ character_event = {
 		
 		prestige = 25
 		
-		add_artifact = epic_of_darkness
+		#add_artifact = epic_of_darkness
 	}
 }
 

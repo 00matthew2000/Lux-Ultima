@@ -43,20 +43,20 @@ imperial_conquest = {
 					has_character_flag = mandate_of_heaven_uprising # A successful Mandate revolter can try to take over more of China
 					culture_group = chinese
 					OR = {
-						religion = taoist
+						religion = tao
 						religion_group = bud_group
-						religion = chinese_pagan
-						religion = chinese_pagan_reformed
+						religion = shenjiao
+						religion = sol_taoist
 					}
 				}
 				AND = {
 					culture_group = chinese # Only for Chinese characters!
 					government = chinese_vassal_government
 					OR = { # Only for the truly Chinese religions
-						religion = taoist
+						religion = tao
 						religion_group = bud_group
-						religion = chinese_pagan
-						religion = chinese_pagan_reformed
+						religion = shenjiao
+						religion = sol_taoist
 					}
 					e_china = {
 						has_holder = no
@@ -4124,7 +4124,7 @@ korean_reconquest = {
 			culture_group = korean
 			OR = {
 				religion_group = bud_group
-				religion = taoist
+				religion = tao
 				religion = korean_pagan
 				religion = korean_pagan_reformed
 			}
@@ -4274,7 +4274,7 @@ korean_reconquest = {
 			culture_group = korean
 			OR = {
 				religion_group = bud_group
-				religion = taoist
+				religion = tao
 				religion = korean_pagan
 				religion = korean_pagan_reformed
 			}
@@ -5446,7 +5446,7 @@ war_of_honor = {
 							character = FROM
 						}
 					}
-					character_event = { id = risingsun.27 }
+					#character_event = { id = risingsun.27 }
 				}
 			}
 		}
@@ -5492,7 +5492,7 @@ war_of_honor = {
 							character = ROOT
 						}
 					}
-					character_event = { id = risingsun.30 }
+					#character_event = { id = risingsun.30 }
 				}
 			}
 		}
@@ -5536,7 +5536,7 @@ war_of_honor = {
 							character = FROM
 						}
 					}
-					character_event = { id = risingsun.30 }
+					#character_event = { id = risingsun.30 }
 				}
 			}
 		}
@@ -5582,7 +5582,7 @@ war_of_honor = {
 							character = ROOT
 						}
 					}
-					character_event = { id = risingsun.30 }
+					#character_event = { id = risingsun.30 }
 				}
 			}
 		}
@@ -5630,7 +5630,7 @@ war_of_honor = {
 							character = FROM
 						}
 					}
-					character_event = { id = risingsun.30 }
+					#character_event = { id = risingsun.30 }
 				}
 			}
 		}
@@ -5682,7 +5682,7 @@ war_of_honor = {
 							character = ROOT
 						}
 					}
-					character_event = { id = risingsun.27 }
+					#character_event = { id = risingsun.27 }
 				}
 			}
 		}
@@ -6160,7 +6160,7 @@ rising_sun_subjugation_cb = {
 					ai = no
 					society_member_of = warriors_of_the_rising_sun
 				}
-				character_event = { id = risingsun.241 } # Inform members 
+				#character_event = { id = risingsun.241 } # Inform members 
 			}
 		}
 		hidden_tooltip = { fire_haruspicy_event_effect = yes }

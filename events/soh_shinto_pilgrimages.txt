@@ -156,7 +156,7 @@ character_event = {
 	option = {
 		name = EVTOPTC_SHINTO_3 # I think I will head to a foreign site...
 		hidden_tooltip = {
-			character_event = { id = MNM.8001 } # Select from vanilla Buddhist sites
+			#character_event = { id = MNM.8001 } # Select from vanilla Buddhist sites
 		}
 		ai_chance = {
 			factor = 0 # We don't want it to get stuck in a loop...

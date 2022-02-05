@@ -94,7 +94,7 @@ nick_dokuganryu = {
 		}
 		modifier = {
 			factor = 2
-			religion_group = christian
+			religion_group = graceoroman_group
 		}
 	}
 }
@@ -112,15 +112,12 @@ nick_the_tiger_of_capital = {
 			religion = shenjiao
 			religion = sol_taoist
 			religion = shingyo
-			religion = shingyo_reformed
 			religion = thangiao
-			religion = thangiao_reformed
-			religion = ryukyuan_pagan
-			religion = ryukyuan_pagan_reformed
+			religion = ryukyu_shinto
 			religion = nihon_shinto
 			AND = {
 				culture = japanese
-				religion_group = christian
+				religion_group = graceoroman_group
 			}
 		}
 		martial = 10
@@ -180,15 +177,12 @@ nick_the_dragon_of_capital = {
 			religion = shenjiao
 			religion = sol_taoist
 			religion = shingyo
-			religion = shingyo_reformed
 			religion = thangiao
-			religion = thangiao_reformed
-			religion = ryukyuan_pagan
-			religion = ryukyuan_pagan_reformed
+			religion = ryukyu_shinto
 			religion = nihon_shinto
 			AND = {
 				culture = japanese
-				religion_group = christian
+				religion_group = graceoroman_group
 			}
 		}
 		martial = 10

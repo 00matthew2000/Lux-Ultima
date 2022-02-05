@@ -111,36 +111,56 @@ world_middle_east_arabia = {
 		d_sinai
 	}
 }
-world_india_deccan = {
+world_india_lanka = {
 	duchies = {
-		#Maharastra
-		d_konkana
+		d_kotthasara d_ruhuna d_nagadipa
+	}
+}
+world_india_south = {
+	duchies = {
+		#South India
 		#Tamilakam
-		d_chola_nadu d_pandya_nadu d_chera_nadu
+		d_chola_nadu d_pandya_nadu d_chera_nadu d_maldives
 		#Andhra
-		d_vengi d_udayagiri
+		d_vengi d_orugallu d_tondaimandalam d_udayagiri
+		#Karnataka
+		d_idaturainadu d_alupa d_mahishaka d_mysore
 	}
 }
 world_india_bengal = {
 	duchies = {
+		#Nepal
+		d_kathmandu d_jumla
 		#Bengal
-		d_vanga d_gauda 
+		d_gauda d_kamapa d_vanga d_radha d_tripura
+		#Magadha
+		d_kannauj d_vatsa d_anga
 		#Kamarupa
 		d_para_lauhitya d_sutiya
 		#Orissa
-		d_daksina_kosala
+		d_kataka d_tamralipti d_daksina_kosala d_utkala
 		#Bihar
 		d_tirabhukti
 	}
 }
 world_india_rajastan = {
 	duchies = {
+		#Sindhia
+		d_sindh d_sakala d_pentapotamia d_taxila
+		#Uttarakhand
+		d_kumaon d_garhwal
 		#Delhi
 		d_kuru d_haritanaka d_mathura
 		#Gujarat
-		d_saurashtra d_lata
+		d_sarasvatamandala d_saurashtra d_lata
 		#Kosala
 		d_saryupara
+		#Malwa
+		d_avanti d_tripuri d_khajuraho
+		#Maharastra
+		d_dandaka d_konkana d_thana d_vidarbha
+		#Rajputana
+		d_ajayameru d_citrakuta d_kotah d_thar
 	}
 }
 world_persia = {
@@ -418,17 +438,30 @@ world_far_east = {
 	}
 }
 
+world_cham = {
+	duchies = {
+		d_vijaya d_indrapura d_kauthara d_panduranga
+	}
+}
+
+world_lavo = {
+	duchies = {
+		d_lavodapura d_phanat d_u_thong d_ratchaburi
+	}
+}
+
 world_indochina = {
+	regions = {
+		world_cham world_lavo
+	}
 	duchies = {
 		d_bagan d_arakan d_kachin d_shan
 		d_pegu d_taungoo d_martaban 
 		d_dali d_lunghtungh d_ghuadchjyen d_kiamhchjyen d_thaktung d_thunghaix d_yengxchjang 
 		d_hariphunchai d_lanna d_nan 
 		d_angkor d_sambor d_battambang d_oc_eo 
-		d_luang_prabang d_khorat d_champassak 
-		d_lavodapura d_phanat d_u_thong d_ratchaburi
+		d_luang_prabang d_khorat d_champassak
 		d_thang_long d_viet_bac d_thanh_hoa d_ha_tinh 
-		d_vijaya d_indrapura d_kauthara d_panduranga
 	}
 }
 
@@ -441,11 +474,16 @@ world_tenem_lamit = {
 
 world_malaysia = {
 	duchies = {
+		d_temasek d_langkasuka d_melaka d_pekan d_ligor
+	}
+}
+
+world_sumatra = {
+	duchies = {
 		d_palembang d_bengkulu d_karang_berahi 
-		d_jambi d_panai d_temasek
+		d_jambi d_panai
 		d_pariaman d_padang d_pagarruyung
 		d_samudra d_aceh d_barus
-		d_langkasuka d_melaka d_pekan d_ligor
 	}
 }
 
@@ -456,9 +494,17 @@ world_java = {
 	}
 }
 
-world_indonesia = {
+world_borneo = {
 	duchies = {
 		d_tanjungpura d_banjarmasin d_kutai d_brunei
+	}
+}
+
+world_indonesia = {
+	regions = {
+		world_borneo world_java world_sumatra
+	}
+	duchies = {
 		d_timur d_sumbawa d_sumba
 		d_makassar d_banggai d_butung d_minahasa
 		d_ternate d_tidore d_seram d_aru d_papua
@@ -468,7 +514,7 @@ world_indonesia = {
 
 world_southeast_asia = {
 	regions = {
-		world_indochina world_tenem_lamit world_malaysia world_java world_indonesia
+		world_indochina world_tenem_lamit world_malaysia world_indonesia
 	}
 }
 
@@ -529,7 +575,7 @@ world_africa_se = {
 
 world_africa = {
 	regions = {
-		world_africa_north world_africa_west world_africa_east world_east_african_coast world_zimbabwe_buhera world_africa_se
+		world_africa_north world_africa_west world_africa_east world_east_african_coast world_zimbabwe_buhera world_kongo world_africa_se
 	}
 }
 
@@ -801,7 +847,7 @@ custom_crusade_darfur = { # k_darfur
 	duchies = { d_darfur d_khordofan d_malakal
 	}	
 }
-
+b
 custom_crusade_east_africa = { # k_zanzibar k_buganda k_malawi k_madagascar k_zimbabwe k_zulu k_makonde
 	duchies = { d_unguja d_mogadishu d_mombasa d_buganda d_omusoma d_rwanda d_rukwa d_malawi d_niassa d_madagascar d_qumur d_zimbabwe_buhera d_zulu d_rhapta d_makonde d_sofala
 	}	

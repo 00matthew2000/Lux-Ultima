@@ -2886,10 +2886,10 @@ create_new_court_eunuch_effect = {
 		# Randomize religion
 		random_list = {
 			50 = {
-				religion = taoist
+				religion = tao
 			}
 			50 = {
-				religion = buddhist
+				religion_group = bud_group
 			}
 			50 = {
 				modifier = {
@@ -2981,8 +2981,8 @@ create_new_court_eunuch_effect = {
 					factor = 0
 					ROOT = {
 						NOR = {
-							religion = ryukyuan_pagan
-							religion = ryukyuan_pagan_reformed
+							religion = ryukyu_shinto
+							religion = ryukyu_shinto_reformed
 						}
 					} 
 				}
@@ -2992,15 +2992,15 @@ create_new_court_eunuch_effect = {
 					}
 					random_list = {
 						80 = {
-							religion = ryukyuan_pagan_reformed
+							religion = ryukyu_shinto_reformed
 						}
 						20 = {
-							religion = ryukyuan_pagan
+							religion = ryukyu_shinto
 						}
 					}
 				}
 				else = {
-					religion = ryukyuan_pagan
+					religion = ryukyu_shinto
 				}
 			}
 			100 = {
@@ -3085,7 +3085,7 @@ create_new_court_eunuch_effect = {
 						}
 					}
 				}
-				culture = nakhi
+				culture = lolo
 			}
 			10 = {
 				modifier = {
@@ -3100,7 +3100,7 @@ create_new_court_eunuch_effect = {
 						}
 					}
 				}
-				culture = min
+				culture = minyue
 			}
 			10 = {
 				modifier = {
@@ -3145,7 +3145,7 @@ create_new_court_eunuch_effect = {
 						}
 					}
 				}
-				culture = tujia
+				culture = sinohellenic
 			}
 			10 = {
 				modifier = {
@@ -3160,7 +3160,7 @@ create_new_court_eunuch_effect = {
 						}
 					}
 				}
-				culture = she
+				culture = zhuang
 			}
 			10 = {
 				culture = ROOT
@@ -3682,7 +3682,7 @@ increase_tributary_tier_or_vassalize_end_of_war_effect = {
 					remove_tributary = event_target:target_tributary
 					reverse_remove_opinion = {
 						who = event_target:target_tributary
-						modifier = i_was_imperial_tributary
+						modifier = i_was_imperial_tributarye
 					}
 				}
 				make_tributary = {
