@@ -177,8 +177,8 @@ thuan_thien = { # Technically very late in the era, but...
 	combat_rating = 20 # Supposedly gave Lê Lợi the strength of a thousand men
 	martial = 4 # Supposedly gave Lê Lợi the strength of a thousand men
 	health = 2 # Supposedly made Lê Lợi grow very tall
-	viet_pagan_opinion = 5
-	viet_pagan_reformed_opinion = 5
+	thangiao_opinion = 5
+	#viet_pagan_reformed_opinion = 5
 	viet_opinion = 5
 	taoist_opinion = 5
 	mon_khmer_opinion = 5
@@ -212,8 +212,8 @@ hilt_of_thuan_thien = { # To be combined with the blade
 	monthly_character_piety = 0.2
 	combat_rating = 1
 	quality = 4
-	viet_pagan_opinion = 1
-	viet_pagan_reformed_opinion = 1
+	thangiao_opinion = 1
+	#viet_pagan_reformed_opinion = 1
 	viet_opinion = 1
 	mon_khmer_opinion = 1
 	indestructible = yes
@@ -239,8 +239,8 @@ blade_of_thuan_thien = { # To be combined with the hilt
 	monthly_character_piety = 0.2
 	combat_rating = 1
 	quality = 4
-	viet_pagan_opinion = 1
-	viet_pagan_reformed_opinion = 1
+	thangiao_opinion = 1
+	#viet_pagan_reformed_opinion = 1
 	viet_opinion = 1
 	mon_khmer_opinion = 1
 	active = {
@@ -872,7 +872,7 @@ king_of_na_gold_seal = {
 			religion = nihon_shinto
 			religion_group = bud_group
 			religion = tao
-			religion = ryukyu_religion
+			religion = ryukyu_shinto
 			religion = ainu_pantheism
 			religion = ainu_pantheism_reformed
 		}
@@ -1038,7 +1038,7 @@ extermination_of_evil = {
 			religion = shenjiao
 			religion = sol_taoist
 			religion = shingyo
-			religion = ryukyu_religion
+			religion = ryukyu_shinto
 			religion = thangiao
 		}
 	}
@@ -1051,18 +1051,18 @@ extermination_of_evil = {
 			religion = shenjiao
 			religion = sol_taoist
 			religion = shingyo
-			religion = ryukyu_religion
+			religion = ryukyu_shinto
 			religion = thangiao
 		}
 	}
 	quality = 4
-	flags = { art decor unique japanese buddhist taoist shinto chinese_pagan shingyo ryukyuan_pagan viet_pagan }
+	flags = { art decor unique japanese buddhist taoist shinto chinese_pagan shingyo ryukyu_shinto viet_pagan }
 	picture = "GFX_magnificent_painting"
 }
 
 ngoc_lu_drum = {
-	viet_pagan_opinion = 5
-	viet_pagan_reformed_opinion = 5
+	thangiao_opinion = 5
+	#viet_pagan_reformed_opinion = 5
 	indestructible = yes
 	quality = 3
 	active = {

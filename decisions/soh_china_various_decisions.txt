@@ -1426,13 +1426,13 @@ title_decisions = {
 						dynasty = 1051150 # Li (Tang)
 						dynasty = 1051151 # Zhao (Song)
 						dynasty = 1051153 # Wanayan (Jurchen Jin)
-						dynasty = 1000156607 # Yang (Wu)
-						dynasty = 1000156610 # Qian (Wuyue)
-						dynasty = 1000156611 # Wang (Min)
-						dynasty = 1000156612 # Ma (Chu)
+						#dynasty = 1000156607 # Yang (Wu)
+						#dynasty = 1000156610 # Qian (Wuyue)
+						#dynasty = 1000156611 # Wang (Min)
+						#dynasty = 1000156612 # Ma (Chu)
 						dynasty = 1000156116 # Liu (Southern Han)
-						dynasty = 1000156606 # Meng (Later Shu)
-						dynasty = 1000156614 # Gao (Jingnan)
+						#dynasty = 1000156606 # Meng (Later Shu)
+						#dynasty = 1000156614 # Gao (Jingnan)
 					}
 				}
 			}
@@ -1443,7 +1443,7 @@ title_decisions = {
 					dynasty = 11100 # Borjigin (Yuan)
 				}
 				NOT = {
-					title = c_dadu
+					title = c_y
 				}
 			}
 			modifier = {
@@ -1452,13 +1452,13 @@ title_decisions = {
 					dynasty = 1051150 # Li (Tang)
 				}
 				NOR = {
-					title = c_changan
+					title = c_zinyung
 					AND = {
 						e_china = {
 							capital_scope = {
 								county = {
 									NOT = {
-										title = c_changan
+										title = c_zinyung
 									}
 								}
 							}
@@ -1473,18 +1473,18 @@ title_decisions = {
 					dynasty = 1051151 # Zhao (Song)
 				}
 				NOR = {
-					title = c_bianjing
+					title = c_bienh
 					AND = {
 						e_china = {
 							capital_scope = {
 								county = {
 									NOT = {
-										title = c_bianjing
+										title = c_bienh
 									}
 								}
 							}
 						}
-						title = c_hangzhou
+						title = c_ghang
 					}
 				}
 			}
@@ -1494,84 +1494,84 @@ title_decisions = {
 					dynasty = 1051153 # Wanayan (Jurchen Jin)
 				}
 				NOR = {
-					title = c_bianjing
+					title = c_bienh
 					AND = {
 						e_china = {
 							capital_scope = {
 								county = {
 									NOT = {
-										title = c_bianjing
+										title = c_bienh
 									}
 								}
 							}
 						}
-						title = c_dadu
+						title = c_y
 					}
 				}
 			}
-			modifier = {
-				factor = 0.05
-				FROM = {
-					dynasty = 1000156607 # Yang (Wu)
-				}
-				NOT = {
-					title = c_guangling
-				}
-			}
-			modifier = {
-				factor = 0.05
-				FROM = {
-					dynasty = 1000156610 # Qian (Wuyue)
-				}
-				NOT = {
-					title = c_hangzhou
-				}
-			}
-			modifier = {
-				factor = 0.05
-				FROM = {
-					dynasty = 1000156611 # Wang (Min)
-				}
-				NOT = {
-					title = c_fuzhou
-				}
-			}
-			modifier = {
-				factor = 0.05
-				FROM = {
-					dynasty = 1000156612 # Ma (Chu)
-				}
-				NOT = {
-					title = c_tanzhou
-				}
-			}
+#			modifier = {
+#				factor = 0.05
+#				FROM = {
+#					dynasty = 1000156607 # Yang (Wu)
+#				}
+#				NOT = {
+#					title = c_jang
+#				}
+#			}
+#			modifier = {
+#				factor = 0.05
+#				FROM = {
+#					dynasty = 1000156610 # Qian (Wuyue)
+#				}
+#				NOT = {
+#					title = c_ghang
+#				}
+#			}
+#			modifier = {
+#				factor = 0.05
+#				FROM = {
+#					dynasty = 1000156611 # Wang (Min)
+#				}
+#				NOT = {
+#					title = c_piuk
+#				}
+#			}
+#			modifier = {
+#				factor = 0.05
+#				FROM = {
+#					dynasty = 1000156612 # Ma (Chu)
+#				}
+#				NOT = {
+#					title = c_dom
+#				}
+#			}
 			modifier = {
 				factor = 0.05
 				FROM = {
 					dynasty = 1000156116 # Liu (Southern Han)
 				}
 				NOT = {
-					title = c_guangzhou
+					title = c_kuangx
 				}
 			}
-			modifier = {
-				factor = 0.05
-				FROM = {
-					dynasty = 1000156606 # Meng (Later Shu)
-				}
-				NOT = {
-					title = c_chengdu
-				}
-			}
-			modifier = {
-				factor = 0.05
-				FROM = {
-					dynasty = 1000156614 # Gao (Jingnan)
-				}
-				NOT = {
-					title = c_jiangling
-				}
-			}
+#			modifier = {
+#				factor = 0.05
+#				FROM = {
+#					dynasty = 1000156606 # Meng (Later Shu)
+#				}
+#				NOT = {
+#					title = c_jek
+#				}
+#			}
+#			modifier = {
+#				factor = 0.05
+#				FROM = {
+#					dynasty = 1000156614 # Gao (Jingnan)
+#				}
+#				NOT = {
+#					title = c_kieng
+#				}
+#			}
 		}
 	}
 }

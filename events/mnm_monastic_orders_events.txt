@@ -2245,8 +2245,8 @@ character_event = {
 #Penance/meditation success
 letter_event = {
 	id = MNM.4428
-	#border = GFX_event_letter_frame_religion
-	#desc = EVTDESC_MNM_4428
+	border = GFX_event_letter_frame_religion
+	desc = EVTDESC_MNM_4428
 	is_triggered_only = yes
 	
 	trigger = {
@@ -2303,8 +2303,8 @@ letter_event = {
 #Penance/meditation failure
 letter_event = {
 	id = MNM.4429
-	#border = GFX_event_letter_frame_religion
-	#desc = EVTDESC_MNM_4429
+	border = GFX_event_letter_frame_religion
+	desc = EVTDESC_MNM_4429
 	is_triggered_only = yes
 
 	trigger = {

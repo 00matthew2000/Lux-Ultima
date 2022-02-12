@@ -2926,9 +2926,8 @@ create_new_court_eunuch_effect = {
 				modifier = {
 					factor = 0
 					ROOT = {
-						NOR = {
+						NOT = {
 							religion = thangiao
-							religion = thangiao_reformed
 						}
 					} 
 				}
@@ -2937,9 +2936,9 @@ create_new_court_eunuch_effect = {
 						has_global_flag = thangiao_reformation
 					}
 					random_list = {
-						80 = {
-							religion = thangiao_reformed
-						}
+						#80 = {
+							#religion = thangiao_reformed
+						#}
 						20 = {
 							religion = thangiao
 						}
@@ -2953,9 +2952,8 @@ create_new_court_eunuch_effect = {
 				modifier = {
 					factor = 0
 					ROOT = {
-						NOR = {
+						NOT = {
 							religion = shingyo
-							religion = shingyo_reformed
 						}
 					} 
 				}
@@ -2964,9 +2962,9 @@ create_new_court_eunuch_effect = {
 						has_global_flag = shingyo_reformation
 					}
 					random_list = {
-						80 = {
-							religion = shingyo_reformed
-						}
+						#80 = {
+							#religion = shingyo_reformed
+						#}
 						20 = {
 							religion = shingyo
 						}
@@ -2988,7 +2986,7 @@ create_new_court_eunuch_effect = {
 				}
 				if = {
 					limit = {
-						has_global_flag = ryukyuan_pagan_reformation
+						has_global_flag = ryukyu_shinto_reformation
 					}
 					random_list = {
 						80 = {

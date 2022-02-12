@@ -31,13 +31,13 @@ score_current_chrysanthemum_throne_heir_effect = {
 						culture = ryukyuan
 						feminism_1_religions_trigger = yes
 						culture = minangkabau # Matrilinear, but you could always go for equality...
-						AND = {
-							religion = ryukyu_religion_reformed
-							NOT = {
-								has_religion_feature = religion_patriarchal
-							}
-						}
-						religion = ryukyu_religion
+						#AND = {
+							#religion = ryukyu_shinto_reformed
+							#NOT = {
+								#has_religion_feature = religion_patriarchal
+							#}
+						#}
+						religion = ryukyu_shinto
 						culture = qiang # Often matrilineal
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon
@@ -3777,8 +3777,8 @@ score_current_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 			}
 			NOT = { trait = chaste }
@@ -3799,8 +3799,8 @@ score_current_chrysanthemum_throne_heir_effect = {
 				religion_group = muslim
 				religion_group = jewish_group
 				religion_group = indian_group
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				#religion = hellenic_pagan
+				#religion = hellenic_pagan_reformed
 				religion = bon
 				religion = bon_reformed
 			}
@@ -3823,8 +3823,8 @@ score_current_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 			}
 			NOT = { trait = temperate }
@@ -3983,8 +3983,8 @@ score_current_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = proud
 				trait = envious
@@ -4009,8 +4009,8 @@ score_current_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = lustful
 				trait = hedonist
@@ -4056,8 +4056,8 @@ score_current_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = gluttonous
 				trait = hedonist
@@ -4440,7 +4440,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 			religion = event_target:current_chrysanthemum_throne_heir
 			OR = { 
 				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				#religion = hellenic_pagan
 				trait = cynical
 			}
 			NOT = { 
@@ -4462,7 +4462,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 			religion = event_target:current_chrysanthemum_throne_heir
 			NOR = { 
 				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				#religion = hellenic_pagan
 				trait = cynical
 			}
 			OR = { 
@@ -5235,7 +5235,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 			OR = { 
 				religion_group = christian
 				religion_group = muslim
-				religion = shinto
+				religion = nihon_shinto
 			}
 			event_target:current_chrysanthemum_throne_heir = { 
 				trait = lefthanded
@@ -5448,13 +5448,13 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 						culture = ryukyuan
 						feminism_1_religions_trigger = yes
 						culture = minangkabau # Matrilinear, but you could always go for equality...
-						AND = {
-							religion = ryukyu_religion_reformed
-							NOT = {
-								has_religion_feature = religion_patriarchal
-							}
-						}
-						religion = ryukyu_religion
+						#AND = {
+							#religion = ryukyu_shinto_reformed
+							#NOT = {
+								#has_religion_feature = religion_patriarchal
+							#}
+						#}
+						religion = ryukyu_shinto
 						culture = qiang # Often matrilineal
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon
@@ -9194,8 +9194,8 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 			}
 			NOT = { trait = chaste }
@@ -9216,8 +9216,8 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 				religion_group = muslim
 				religion_group = jewish_group
 				religion_group = indian_group
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				#religion = hellenic_pagan
+				#religion = hellenic_pagan_reformed
 				religion = bon
 				religion = bon_reformed
 			}
@@ -9240,8 +9240,8 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 			}
 			NOT = { trait = temperate }
@@ -9400,8 +9400,8 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = proud
 				trait = envious
@@ -9426,8 +9426,8 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = lustful
 				trait = hedonist
@@ -9473,8 +9473,8 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 					religion_group = pagan_group
 					NOT = { religion = bon }
 					NOT = { religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
+					#NOT = { religion = hellenic_pagan }
+					#NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = gluttonous
 				trait = hedonist
@@ -9857,7 +9857,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			religion = event_target:preferred_chrysanthemum_throne_heir
 			OR = { 
 				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				#religion = hellenic_pagan
 				trait = cynical
 			}
 			NOT = { 
@@ -9879,7 +9879,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			religion = event_target:preferred_chrysanthemum_throne_heir
 			NOR = { 
 				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				#religion = hellenic_pagan
 				trait = cynical
 			}
 			OR = { 
@@ -10652,7 +10652,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 			OR = { 
 				religion_group = christian
 				religion_group = muslim
-				religion = shinto
+				religion = nihon_shinto
 			}
 			event_target:preferred_chrysanthemum_throne_heir = { 
 				trait = lefthanded

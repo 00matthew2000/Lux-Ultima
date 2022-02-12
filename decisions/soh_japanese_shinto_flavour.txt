@@ -301,12 +301,12 @@ decisions = {
 				factor = 0.1
 				always = yes # Slow it down
 			}
-			modifier = {
-				factor = 0.1
-				NOT = {
-					trait = mahayana_buddhist
-				}
-			}
+			#modifier = {
+				#factor = 0.1
+				#NOT = {
+					#trait = mahayana_buddhist
+				#}
+			#}
 			modifier = {
 				factor = 0
 				NOT = {

@@ -2896,33 +2896,33 @@ calculate_personal_mandate_of_heaven_effect = {
 			value = -250
 		}
 	}
-	if = {
-		limit = {
-			has_character_modifier = astounding_visions
-		}
-		change_variable = {
-			which = personal_mandate_of_heaven
-			value = 250
-		}
-	}
-	if = {
-		limit = {
-			has_character_modifier = uplifting_visions
-		}
-		change_variable = {
-			which = personal_mandate_of_heaven
-			value = 100
-		}
-	}
-	if = {
-		limit = {
-			has_character_modifier = frightening_visions
-		}
-		change_variable = {
-			which = personal_mandate_of_heaven
-			value = -100
-		}
-	}
+#	if = {
+#		limit = {
+#			has_character_modifier = astounding_visions
+#		}
+#		change_variable = {
+#			which = personal_mandate_of_heaven
+#			value = 250
+#		}
+#	}
+#	if = {
+#		limit = {
+#			has_character_modifier = uplifting_visions
+#		}
+#		change_variable = {
+#			which = personal_mandate_of_heaven
+#			value = 100
+#		}
+#	}
+#	if = {
+#		limit = {
+#			has_character_modifier = frightening_visions
+#		}
+#		change_variable = {
+#			which = personal_mandate_of_heaven
+#			value = -100
+#		}
+#	}
 	if = {
 		limit = {
 			has_character_modifier = withdrawal_symptoms
@@ -3544,51 +3544,51 @@ calculate_personal_mandate_of_heaven_effect = {
 			value = -250
 		}
 	}
-	if = {
-		limit = {
-			has_character_modifier = diplomatic_insight
-		}
-		change_variable = {
-			which = personal_mandate_of_heaven
-			value = 250
-		}
-	}
-	if = {
-		limit = {
-			has_character_modifier = martial_insight
-		}
-		change_variable = {
-			which = personal_mandate_of_heaven
-			value = 100
-		}
-	}
-	if = {
-		limit = {
-			has_character_modifier = intrigue_insight
-		}
-		change_variable = {
-			which = personal_mandate_of_heaven
-			value = 100
-		}
-	}
-	if = {
-		limit = {
-			has_character_modifier = learning_insight
-		}
-		change_variable = {
-			which = personal_mandate_of_heaven
-			value = 250
-		}
-	}
-	if = {
-		limit = {
-			has_character_modifier = stewardship_insight
-		}
-		change_variable = {
-			which = personal_mandate_of_heaven
-			value = 250
-		}
-	}
+	#if = {
+		#limit = {
+			#has_character_modifier = diplomatic_insight
+		#}
+		#change_variable = {
+			#which = personal_mandate_of_heaven
+			#value = 250
+		#}
+	#}
+	#if = {
+		#limit = {
+			#has_character_modifier = martial_insight
+		#}
+		#change_variable = {
+			#which = personal_mandate_of_heaven
+			#value = 100
+		#}
+	#}
+	#if = {
+		#limit = {
+			#has_character_modifier = intrigue_insight
+		#}
+		#change_variable = {
+			#which = personal_mandate_of_heaven
+			#value = 100
+		#}
+	#}
+	#if = {
+		#limit = {
+			#has_character_modifier = learning_insight
+		#}
+		#change_variable = {
+			#which = personal_mandate_of_heaven
+			#value = 250
+		#}
+	#}
+	#if = {
+		#limit = {
+			#has_character_modifier = stewardship_insight
+		#}
+		#change_variable = {
+			#which = personal_mandate_of_heaven
+			#value = 250
+		#}
+	#}
 	if = {
 		limit = {
 			has_character_modifier = accused_apostate

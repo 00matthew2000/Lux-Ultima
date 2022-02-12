@@ -1095,7 +1095,7 @@ character_event = {
 						}
 					}
 					regional_percentage = {
-						region = world_philippines
+						region = world_tenem_lamit
 						percentage = 0.75
 						OR = {
 							has_province_modifier = depopulated_1
@@ -1104,7 +1104,7 @@ character_event = {
 						}
 					}
 					regional_percentage = {
-						region = world_borneo_sulawesi
+						region = world_sumatra
 						percentage = 0.75
 						OR = {
 							has_province_modifier = depopulated_1
@@ -1113,7 +1113,25 @@ character_event = {
 						}
 					}
 					regional_percentage = {
-						region = world_java_sumatra_malacca
+						region = world_java
+						percentage = 0.75
+						OR = {
+							has_province_modifier = depopulated_1
+							has_province_modifier = depopulated_2
+							has_province_modifier = depopulated_3
+						}
+					}
+					regional_percentage = {
+						region = world_borneo
+						percentage = 0.75
+						OR = {
+							has_province_modifier = depopulated_1
+							has_province_modifier = depopulated_2
+							has_province_modifier = depopulated_3
+						}
+					}
+					regional_percentage = {
+						region = world_east_indonesia
 						percentage = 0.75
 						OR = {
 							has_province_modifier = depopulated_1

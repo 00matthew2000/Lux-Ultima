@@ -553,7 +553,7 @@ abdicate_to_opinion_target_or_most_liked_relative = {
 					who = ROOT
 					modifier = supporting_as_new_tenno
 				}
-				religion = shinto
+				religion = nihon_shinto
 				is_ascetic_trigger = no
 				NOR = {
 					trait = bastard
@@ -586,7 +586,7 @@ abdicate_to_opinion_target_or_most_liked_relative = {
 					NOT = {
 						character = PREV
 					}
-					religion = shinto
+					religion = nihon_shinto
 					is_ascetic_trigger = no
 					NOR = {
 						trait = bastard
@@ -607,7 +607,7 @@ abdicate_to_opinion_target_or_most_liked_relative = {
 									holder_scope = {
 										NOT = {
 											any_dynasty_member = {
-												religion = shinto
+												religion = nihon_shinto
 												is_ascetic_trigger = no
 												is_female = no
 											}
@@ -632,7 +632,7 @@ abdicate_to_opinion_target_or_most_liked_relative = {
 									holder_scope = {
 										NOT = {
 											any_dynasty_member = {
-												religion = shinto
+												religion = nihon_shinto
 												is_ascetic_trigger = no
 												is_female = yes
 											}

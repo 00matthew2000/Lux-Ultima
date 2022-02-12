@@ -249,8 +249,7 @@ decisions = {
 			has_actual_regency_trigger = no
 			is_adult = yes
 			# Controls all of Honshu, Kyushu, and Shikoku
-			completely_controls_region = world_japan_south
-			completely_controls_region = world_japan_north
+			completely_controls_region = world_japan
 		}
 		effect = {
 			set_character_flag = restoring_japan

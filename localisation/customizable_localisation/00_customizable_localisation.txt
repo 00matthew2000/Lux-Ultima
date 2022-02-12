@@ -12963,7 +12963,7 @@ defined_text = { #Dead Christians forget their Popes.
 		trigger = {
 			is_alive = yes
 			persistent_event_target:baptizing_satanist_per = { is_female = no }
-			trait = baptized_by_satan
+			#trait = baptized_by_satan
 		}
 		localisation_key = string_baptized_by_satan_alive_male
 	}
@@ -12972,7 +12972,7 @@ defined_text = { #Dead Christians forget their Popes.
 			FROM = { persistent_event_target:baptizing_satanist_per = { is_female = no } }
 			FROM = {
 				is_alive = yes
-				trait = baptized_by_satan
+				#trait = baptized_by_satan
 			}
 		}
 		localisation_key = string_from_baptized_by_satan_male_aliveop
@@ -12981,7 +12981,7 @@ defined_text = { #Dead Christians forget their Popes.
 		trigger = {
 			is_alive = yes
 			persistent_event_target:baptizing_satanist_per = { is_female = yes }
-			trait = baptized_by_satan
+			#trait = baptized_by_satan
 		}
 		localisation_key = string_baptized_by_satan_alive_female
 	}
@@ -12990,7 +12990,7 @@ defined_text = { #Dead Christians forget their Popes.
 			FROM = { persistent_event_target:baptizing_satanist_per = { always = yes } }
 			FROM = {
 				is_alive = yes
-				trait = baptized_by_satan
+				#trait = baptized_by_satan
 			}
 		}
 		localisation_key = string_from_baptized_by_satan_female_aliveop
@@ -12998,7 +12998,7 @@ defined_text = { #Dead Christians forget their Popes.
 	text = {
 		trigger = {
 			is_alive = no
-			trait = baptized_by_satan
+			#trait = baptized_by_satan
 		}
 		localisation_key = string_baptized_by_satan_dead
 	}

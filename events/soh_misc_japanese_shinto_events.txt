@@ -10646,7 +10646,7 @@ character_event = {
 #		}
 #		OR = {
 #			culture = japanese
-#			culture = yamato
+#			culture = nihonohellenic
 #		}
 #		OR = {
 #			religion = nihon_shinto
@@ -10677,7 +10677,7 @@ character_event = {
 #		modifier = {
 #			factor = 0.9
 #			any_neighbor_province = {
-#				culture = wako # More common if adjacent
+#				culture = emishi # More common if adjacent
 #			}
 #		}
 #	}
@@ -10686,22 +10686,22 @@ character_event = {
 #		trigger = {
 #			owner = {
 #				NOT = {
-#					culture = wako
+#					culture = emishi
 #				}
 #			}
 #		}
 #		name = EVTOPTA_JAPAN_406 # Let's hope they behave...
-#		culture = wako
+#		culture = emishi
 #	}
 #	
 #	option = {
 #		trigger = {
 #			owner = {
-#				culture = wako
+#				culture = emishi
 #			}
 #		}
 #		name = EVTOPTB_JAPAN_406 # That's... good?
-#		culture = wako
+#		culture = emishi
 #	}
 #}
 #
@@ -10721,7 +10721,7 @@ character_event = {
 #			region = world_japan_islands
 #			region = world_korea
 #		}
-#		culture = wako
+#		culture = emishi
 #		OR = {
 #			religion = nihon_shinto
 #			religion_group = bud_group
@@ -10732,11 +10732,11 @@ character_event = {
 #		owner = {
 #			NOR = {
 #				AND = {
-#					culture = wako
+#					culture = emishi
 #					independent = yes
 #				}
 #				top_liege = {
-#					culture = wako
+#					culture = emishi
 #				}
 #			}
 #		}
@@ -10792,7 +10792,7 @@ character_event = {
 #		modifier = {
 #			factor = 0.1
 #			NAND = {
-#				culture = wako
+#				culture = emishi
 #				OR = {
 #					religion = nihon_shinto
 #					religion_group = bud_group
@@ -10805,9 +10805,9 @@ character_event = {
 #			factor = 0.1
 #			owner = {
 #				OR = {
-#					culture = wako
+#					culture = emishi
 #					any_liege = {
-#						culture = wako
+#						culture = emishi
 #					}
 #				}
 #			}
@@ -10844,7 +10844,7 @@ character_event = {
 #		trigger = {
 #			owner = {
 #				NOT = {
-#					culture = wako
+#					culture = emishi
 #				}
 #			}
 #		}
@@ -10855,7 +10855,7 @@ character_event = {
 #	option = {
 #		trigger = {
 #			owner = {
-#				culture = wako
+#				culture = emishi
 #			}
 #		}
 #		name = EVTOPTB_JAPAN_408 # I can organize my own raids!
@@ -10877,7 +10877,7 @@ character_event = {
 #	trigger = {
 #		always = no # Not working well
 #		any_demesne_province = {
-#			culture = wako
+#			culture = emishi
 #			has_province_modifier = pirate_haven
 #		}
 #	}
@@ -10889,7 +10889,7 @@ character_event = {
 #	immediate = {
 #		random_demesne_province = {
 #			limit = {
-#				culture = wako
+#				culture = emishi
 #				has_province_modifier = pirate_haven
 #			}
 #			save_event_target_as = wako_province
@@ -10900,7 +10900,7 @@ character_event = {
 #						age = 25
 #						female = no
 #						dynasty = none
-#						culture = wako
+#						culture = emishi
 #						religion = nihon_shinto
 #						attributes = {
 #							martial = 5
@@ -10914,7 +10914,7 @@ character_event = {
 #						age = 25
 #						female = yes
 #						dynasty = none
-#						culture = wako
+#						culture = emishi
 #						religion = nihon_shinto
 #						trait = pirate
 #						attributes = {
@@ -11269,7 +11269,7 @@ character_event = {
 #	option = {
 #		trigger = {
 #			NOT = {
-#				culture = wako
+#				culture = emishi
 #			}
 #		}
 #		name = EVTOPTA_JAPAN_409 # Be gone!
@@ -11277,7 +11277,7 @@ character_event = {
 #	
 #	option = {
 #		trigger = {
-#			culture = wako
+#			culture = emishi
 #		}
 #		name = EVTOPTB_JAPAN_409 # I don't need them!
 #	}
@@ -14655,8 +14655,8 @@ character_event = {
 			religion = nihon_shinto
 			OR = {
 				culture = japanese
-				culture = yamato
-				culture = wako
+				culture = nihonohellenic
+				culture = emishi
 			}
 			NOT = {
 				any_dynasty_member = {
@@ -14691,8 +14691,8 @@ character_event = {
 				religion = nihon_shinto
 				OR = {
 					culture = japanese
-					culture = yamato
-					culture = wako
+					culture = nihonohellenic
+					culture = emishi
 				}
 				NOT = {
 					any_dynasty_member = {
@@ -14746,8 +14746,8 @@ character_event = {
 			religion_group = bud_group
 			OR = {
 				culture = japanese
-				culture = yamato
-				culture = wako
+				culture = nihonohellenic
+				culture = emishi
 			}
 			NOT = {
 				any_dynasty_member = {
@@ -14786,8 +14786,8 @@ character_event = {
 				religion_group = bud_group
 				OR = {
 					culture = japanese
-					culture = yamato
-					culture = wako
+					culture = nihonohellenic
+					culture = emishi
 				}
 				NOR = {
 					trait = zealous

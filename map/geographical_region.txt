@@ -122,7 +122,7 @@ world_india_south = {
 		#Tamilakam
 		d_chola_nadu d_pandya_nadu d_chera_nadu d_maldives
 		#Andhra
-		d_vengi d_orugallu d_tondaimandalam d_udayagiri
+		d_vengi d_orugallu d_udayagiri
 		#Karnataka
 		d_idaturainadu d_alupa d_mahishaka d_mysore
 	}
@@ -143,7 +143,7 @@ world_india_bengal = {
 		d_tirabhukti
 	}
 }
-world_india_rajastan = {
+world_india_north = {
 	duchies = {
 		#Sindhia
 		d_sindh d_sakala d_pentapotamia d_taxila
@@ -220,13 +220,13 @@ world_middle_east = {
 }
 world_india = {
 	regions = {
-		world_india_deccan world_india_bengal world_india_rajastan
+		world_india_south world_india_bengal world_india_north
 	}
 }
 
 world_himalayas = {
 	duchies = {
-		d_lhasa d_yarlung d_shigatse d_nagchu d_bhutan d_ngari d_dege d_qamdo d_nyingchi d_kathmandu d_pamir d_qinghai d_nagormo d_nangqen d_erma
+		d_lhasa d_yarlung d_shigatse d_nagchu d_bhutan d_ngari d_dege d_qamdo d_nyingchi d_pamir d_qinghai d_nagormo d_nangqen d_erma
 	}
 }
 
@@ -500,16 +500,20 @@ world_borneo = {
 	}
 }
 
-world_indonesia = {
-	regions = {
-		world_borneo world_java world_sumatra
-	}
+world_east_indonesia = {
 	duchies = {
 		d_timur d_sumbawa d_sumba
 		d_makassar d_banggai d_butung d_minahasa
 		d_ternate d_tidore d_seram d_aru d_papua
 		d_maweport d_rabara d_vasucasatu
 	}
+}
+
+world_indonesia = {
+	regions = {
+		world_borneo world_java world_sumatra world_east_indonesia
+	}
+	
 }
 
 world_southeast_asia = {
@@ -575,7 +579,7 @@ world_africa_se = {
 
 world_africa = {
 	regions = {
-		world_africa_north world_africa_west world_africa_east world_east_african_coast world_zimbabwe_buhera world_kongo world_africa_se
+		world_africa_north world_africa_west world_africa_east world_east_african_coast world_zimbabwe_buhera world_africa_se
 	}
 }
 
@@ -847,7 +851,7 @@ custom_crusade_darfur = { # k_darfur
 	duchies = { d_darfur d_khordofan d_malakal
 	}	
 }
-b
+
 custom_crusade_east_africa = { # k_zanzibar k_buganda k_malawi k_madagascar k_zimbabwe k_zulu k_makonde
 	duchies = { d_unguja d_mogadishu d_mombasa d_buganda d_omusoma d_rwanda d_rukwa d_malawi d_niassa d_madagascar d_qumur d_zimbabwe_buhera d_zulu d_rhapta d_makonde d_sofala
 	}	
@@ -1401,4 +1405,39 @@ custom_crusade_shaytana = {
 	regions = {
 		custom_crusade_pentarchy
 	}	
+}
+
+custom_treasure_fleet = {
+	duchies = {
+		d_ziengxhaix
+		d_kraulai
+		d_leujang
+	}
+	
+	counties = {
+		c_nomon
+		c_kuangx
+		c_ghueh
+		c_drieu
+		c_cjang
+		c_zyen
+		c_piuk
+		c_uon
+		c_thai
+		c_yat
+		c_siuh
+		c_so
+		c_zjang
+		c_thad
+		c_chriox
+		c_haix
+		c_cheng
+		c_deh
+		c_chieng
+		c_y
+		c_keh
+		c_bjen
+		c_cuung
+		c_kimx
+	}
 }

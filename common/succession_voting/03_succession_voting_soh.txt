@@ -75,13 +75,13 @@ tenno_succession = {
 						culture = ryukyuan
 						feminism_1_religions_trigger = yes
 						culture = minangkabau # Matrilinear, but you could always go for equality...
-						AND = {
-							religion = ryukyuan_pagan_reformed
-							NOT = {
-								has_religion_feature = religion_patriarchal
-							}
-						}
-						religion = ryukyuan_pagan
+						#AND = {
+							#religion = ryukyu_shinto_reformed
+							#NOT = {
+								#has_religion_feature = religion_patriarchal
+							#}
+						#}
+						religion = ryukyu_shinto
 						culture = qiang # Often matrilineal
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon

@@ -1876,8 +1876,8 @@ targeted_decisions = {
 			narrative_event = { id = grace.304 } # Fires an event for the EoC that lets him decide whether to grant the Boon or not
 		}
 		
-		ai_will_do = {
-			factor = 0
+		#ai_will_do = {
+			#factor = 0
 			#modifier = {
 			#	factor = 0
 			#	NOT = {
@@ -1917,7 +1917,7 @@ targeted_decisions = {
 			#	factor = 0
 			#	china_grants_physician_boon_from_trigger = no
 			#}
-		}
+		#}
 	}
 	
 	request_artifact_china = {
