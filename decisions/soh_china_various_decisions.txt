@@ -10,6 +10,7 @@ decisions = {
 			e_china = {
 				has_holder = no
 			}
+			government = chinese_imperial_government
 			any_realm_province = {
 				OR = {
 					county = {
@@ -46,16 +47,17 @@ decisions = {
 				NOT = {
 					any_independent_ruler = {
 						tier = emperor
+						government = chinese_imperial_government
 						any_realm_province = {
 							count = 50
 							OR = {
-							county = {
-								de_jure_liege_or_above = e_zhonghua
-							}
-							county = {
-								de_jure_liege_or_above = e_archeserika
-							}
-							region = world_china
+								county = {
+									de_jure_liege_or_above = e_zhonghua
+								}
+								county = {
+									de_jure_liege_or_above = e_archeserika
+								}
+								region = world_china
 							}
 						}
 					}
@@ -75,7 +77,6 @@ decisions = {
 		
 		effect = {
 			wealth = -1000
-			activate_title = { title = e_china status = yes }
 			set_character_flag = recreated_china # Avoids getting nameofchina.32
 			set_global_flag = china_recreated # Blocks artefact creation on game start if the title is recreated from the IC start (do not set this flag in the history files as that'll break Song and Yuan!)
 			
@@ -143,30 +144,7 @@ decisions = {
 					remove_character_modifier = peace_deal_with_china
 				}
 			}
-
-			if = {
-				limit = {
-					OR = {
-						has_landed_title = e_zhonghua
-						e_zhonghua = { has_holder = no }
-					}
-				}
-				e_zhonghua = { destroy_landed_title = THIS }
-				activate_title = { title = e_zhonghua status = no }
-			}
 			
-
-			if = {
-				limit = {
-					OR = {
-						has_landed_title = e_archeserika
-						e_archeserika = { has_holder = no }
-					}
-				}
-				e_archeserika = { destroy_landed_title = THIS }
-				activate_title = { title = e_archeserika status = no }
-			}
-
 			# Clear out the old name of China and grant it to ROOT
 			e_china = {
 				clr_title_flag = tang_china
@@ -700,7 +678,7 @@ decisions = {
 											religion = nihon_shinto
 											AND = {
 												religion_group = bud_group
-												culture = japanese
+												culture_group = far_east
 											}
 										}
 										has_claim = k_chrysanthemum_throne
@@ -913,15 +891,18 @@ decisions = {
 			NOT = {
 				trait = treasure_fleet_preparation # We don't want anyone to become busy with the LNY during the TF preparation...
 			}
-			any_independent_ruler = {
-				any_realm_province = {
-					has_province_flag = dragons_lair_province
-					ROOT = {
-						any_realm_province = {
-							NOT = {
-								distance = {
-									where = PREVPREV
-									value = 1000
+			custom_tooltip = {
+				text = not_too_far_to_fredak
+				any_independent_ruler = {
+					any_realm_province = {
+						has_province_flag = dragons_lair_province
+						ROOT = {
+							any_realm_province = {
+								NOT = {
+									distance = {
+										where = PREVPREV
+										value = 1000
+									}
 								}
 							}
 						}
@@ -939,6 +920,7 @@ decisions = {
 				modifier = recent_dragon_hunt
 				months = 120
 			}
+			#check this later if we decide to include dragon events
 			#character_event = { id = dragon.4 days = 7 random = 7 } # Confirm dragon hunt
 		}
 		
@@ -1218,6 +1200,7 @@ decisions = {
 			top_liege = {
 				is_chinese_emperor_trigger = yes
 			}
+			is_chinese_emperor_trigger = no # Blocks the EoC
 		}
 		
 		allow = {

@@ -8,7 +8,7 @@ amaterasu_descendant = {
 		
 	tolerates_indian_group = yes		# Tolerates and is tolerated by Indian religions (technically should only be Buddhist and Shinto, but...)
 	
-	shinto_opinion = 10
+	shinto_opinion = 5
 	
 	customizer = no
 }
@@ -229,11 +229,7 @@ japanese_feudal_trait = {
 		OR = {
 			religion = nihon_shinto
 			AND = {
-				culture = japanese
-				religion_group = bud_group
-			}
-			AND = {
-				culture = nihonohellenic
+				culture_group = far_east
 				religion_group = bud_group
 			}
 		}
