@@ -2889,7 +2889,7 @@ create_new_court_eunuch_effect = {
 				religion = tao
 			}
 			50 = {
-				religion_group = bud_group
+				religion = confucian
 			}
 			50 = {
 				modifier = {
@@ -2978,9 +2978,8 @@ create_new_court_eunuch_effect = {
 				modifier = {
 					factor = 0
 					ROOT = {
-						NOR = {
+						NOT = {
 							religion = ryukyu_shinto
-							religion = ryukyu_shinto_reformed
 						}
 					} 
 				}
@@ -2990,10 +2989,10 @@ create_new_court_eunuch_effect = {
 					}
 					random_list = {
 						80 = {
-							religion = ryukyu_shinto_reformed
+							religion = ryukyu_shinto
 						}
 						20 = {
-							religion = ryukyu_shinto
+							religion = nihon_shinto
 						}
 					}
 				}
@@ -3038,7 +3037,7 @@ create_new_court_eunuch_effect = {
 						}
 					}
 				}
-				culture_group = chinese
+				culture = huakyo
 			}
 			10 = {
 				modifier = {

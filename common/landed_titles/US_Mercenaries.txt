@@ -4649,39 +4649,6 @@ d_lightning_tachi = {
 	mercenary_type = d_lightning_tachi_composition
 }
 
-d_ainu_band = {
-	color = { 255 191 235 }
-	color2 = { 255 255 255 }
-
-	capital = 2011 # Oshima
-	
-	# Hire Trigger
-	allow = {
-		always = yes
-	}
-	
-	# Parent Religion 
-	religion = ainu_pantheism
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-
-	strength_growth_per_century = 1.00
-	
-	mercenary_type = d_ainu_band_composition
-}
-
 d_riders_of_kimek = {
 	color = { 158 196 145 }
 	color2 = { 255 255 255 }

@@ -735,9 +735,10 @@ decisions = {
 			}
 			prisoner = no
 			OR = {
-				religion = taoist
-				religion = chinese_pagan
-				religion = chinese_pagan_reformed
+				religion = tao
+				religion = shenjiao
+				religion = confucian
+				religion = sol_taoist
 				AND = {
 					# Intentionally excludes non-Chinese Buddhists
 					culture_group = chinese

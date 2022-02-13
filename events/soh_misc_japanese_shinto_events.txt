@@ -14723,7 +14723,7 @@ character_event = {
 					true_religion = nihon_shinto
 				}
 			}
-			religion_group = bud_group
+			religion = bud_zen
 			set_character_flag = japanese_religion_switch
 		}
 	}
@@ -21375,7 +21375,6 @@ character_event = {
 									religion_group = bud_group
 								}
 								religion = ryukyu_shinto
-								religion = ryukyu_shinto_reformed
 							}
 						}
 					}
@@ -21428,9 +21427,9 @@ character_event = {
 						trait = craven
 					}
 					# Foreigner wants to join the WotRS
-					event_target:foreigners_host = {
-						character_event = { id = japan.528 }
-					}
+					#event_target:foreigners_host = {
+						#character_event = { id = japan.528 }
+					#}
 				}
 				1 = {
 					modifier = {

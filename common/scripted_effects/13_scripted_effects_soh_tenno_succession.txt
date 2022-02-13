@@ -4373,7 +4373,7 @@ score_current_chrysanthemum_throne_heir_effect = {
 		limit = {
 			NOT = { character = event_target:current_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
-				religion = buddhist
+				religion_group = bud_group
 				religion = jain
 				religion = bon
 				pacifist = yes
@@ -9790,7 +9790,7 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 		limit = {
 			NOT = { character = event_target:preferred_chrysanthemum_throne_heir } #Do not judge yourself.
 			OR = { 
-				religion = buddhist
+				religion_group = bud_group
 				religion = jain
 				religion = bon
 				pacifist = yes

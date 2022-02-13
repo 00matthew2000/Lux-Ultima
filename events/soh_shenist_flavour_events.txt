@@ -883,11 +883,11 @@ character_event = {
 	option = {
 		name = EVTOPTA_SHENIST_15 # They might have some answers...
 		
-		event_target:ancestor_to_mourn = {
-			ROOT = {
-				add_sympathy_for_prevs_open_religion_effect = yes
-			}
-		}
+		#event_target:ancestor_to_mourn = {
+			#ROOT = {
+				#add_sympathy_for_prevs_open_religion_effect = yes
+			#}
+		#}
 	}
 }
 

@@ -2568,7 +2568,7 @@ tenno_succession = {
 			OR = { 
 				NOT = { is_close_relative = FROM }
 				religion = zoroastrian
-				religion = messalian
+				#religion = messalian
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
 			} 
@@ -2615,7 +2615,7 @@ tenno_succession = {
 			OR = { 
 				NOT = { is_close_relative = FROM }
 				religion = zoroastrian
-				religion = messalian
+				#religion = messalian
 				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
 			} 

@@ -48,7 +48,7 @@ character_event = {
 		trigger = {
 			OR = {
 				ai = yes
-				FROMFROMs_religion_is_playable_trigger = yes
+				#FROMFROMs_religion_is_playable_trigger = yes
 				has_acceptable_chinese_religion_trigger = yes
 			}
 		}
@@ -10766,7 +10766,7 @@ character_event = {
 		trigger = {
 			OR = {
 				ai = no
-				FROMFROMs_religion_is_playable_trigger = yes
+				##FROMFROMs_religion_is_playable_trigger = yes
 				has_acceptable_chinese_religion_trigger = yes
 			}
 		}
@@ -27301,7 +27301,7 @@ character_event = {
 		trigger = {
 			OR = {
 				ai = yes
-				FROMFROMs_religion_is_playable_trigger = yes
+				#FROMFROMs_religion_is_playable_trigger = yes
 				has_acceptable_chinese_religion_trigger = yes
 			}
 		}

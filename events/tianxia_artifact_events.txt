@@ -4372,8 +4372,6 @@ narrative_event = {
 		}
 		name = EVTOPTC_ARTIFACTS_64 # I will become Hindu!
 		
-		religion_group = indian_group
-		
 		piety = 25
 		
 		ai_chance = {
@@ -4402,7 +4400,7 @@ narrative_event = {
 		}
 		name = EVTOPTD_ARTIFACTS_64 # I will become Hindu, in secret!
 		
-		set_secret_religion_group = indian_group
+		#set_secret_religion_group = indian_group
 		
 		piety = 25
 		
@@ -9835,7 +9833,7 @@ character_event = {
 		location = {
 			custom_tooltip = {
 				text = is_burninated_with_extreme_prejudice
-				burninate_with_extreme_prejudice_effect = yes
+				#burninate_with_extreme_prejudice_effect = yes
 			}
 			hidden_tooltip = {
 				any_province_character = {
@@ -10852,9 +10850,9 @@ character_event = {
 					}
 				}
 			}
-			25 = {
-				reverse_random_personality_trait_effect = yes
-			}
+			#25 = {
+				#reverse_random_personality_trait_effect = yes
+			#}
 		}
 	}
 	

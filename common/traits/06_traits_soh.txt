@@ -229,7 +229,11 @@ japanese_feudal_trait = {
 		OR = {
 			religion = nihon_shinto
 			AND = {
-				culture_group = far_east
+				culture = japanese
+				religion_group = bud_group
+			}
+			AND = {
+				culture = nihonohellenic
 				religion_group = bud_group
 			}
 		}
