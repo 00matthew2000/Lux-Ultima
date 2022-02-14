@@ -246,6 +246,7 @@ character_event = {
 				modifier = { 
 					factor = 0 
 					AND = {
+						LI_pagan_trigger = yes
 						has_artifact = famous_head
 						has_artifact = famous_tongue
 						has_artifact = infamous_tongue
@@ -8134,6 +8135,7 @@ character_event = {
     			NOR = {
     				wealth = 25
     				yearly_income = 5
+    				LI_pagan_trigger = yes
 				}
     			factor = 0
 			}
@@ -8962,7 +8964,7 @@ character_event = {
 					has_dharmic_religion_trigger = yes
 					NAND = {
 						religion_group = bud_group
-						culture = japanese
+						culture_group = far_east
 					}
 				}
 			}
@@ -8984,7 +8986,7 @@ character_event = {
 					has_dharmic_religion_trigger = yes
 					NAND = {
 						religion_group = bud_group
-						culture = japanese
+						culture_group = far_east
 					}
 				}
 			}
@@ -9021,7 +9023,7 @@ character_event = {
 				religion = nihon_shinto
 				AND = {
 					religion_group = bud_group
-					culture = japanese
+					culture_group = far_east
 				}
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
@@ -9046,7 +9048,7 @@ character_event = {
 				religion = nihon_shinto
 				AND = {
 					religion_group = bud_group
-					culture = japanese
+					culture_group = far_east
 				}
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
@@ -9064,20 +9066,19 @@ character_event = {
 
     #Bow
     option = {
-        trigger = { 
-        	is_nomadic = yes 
-        	has_character_flag = weaponsmith
-        	have_all_weaponsmith_bow_all_flags_trigger = no 
-	OR = {
+        trigger = {
+			OR = {
 				is_nomadic = yes
 				religion = nihon_shinto
 				AND = {
 					religion_group = bud_group
-					culture = japanese
+					culture_group = far_east
 				}
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
 			}
+        	has_character_flag = weaponsmith
+        	have_all_weaponsmith_bow_all_flags_trigger = no 
         }
         name = EVTOPTF_MNM_9118
         custom_tooltip = { text = EVTOPTF_MNM_9118_TT }
@@ -12167,7 +12168,8 @@ character_event = {
 	trigger = {
 		FROM = {
 			always = yes
-			is_capital = yes
+			#is_capital = yes
+			location = { capital_holding = { title = FROM } } #Do not reiterate the event after taking the capital holding.
 			location = { is_capital = yes }
 		}
 	}
@@ -12810,6 +12812,41 @@ character_event = {
 	}
 	
 	option = {
+		if = {
+			limit = {
+				has_dlc = "Jade Dragon"
+				is_chinese_emperor_trigger = no
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_chinese_emperor_trigger = yes
+					}
+				}
+				detract_grace_major_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_medium_effect = yes
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+				}
+				detract_grace_minor_effect = yes
+			}
+		}
 		name = {
 			text = EVTOPTA_MNM_9906
 			trigger = {
