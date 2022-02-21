@@ -3363,33 +3363,33 @@ character_event = {
     	            }
     	        }
     	    }
-#    	    random_society_member = {
-#    	        limit = {
-#    	            society_member_of = monastic_order_benedictine
-#    	            ai = yes
-#    	            NOT = { trait = diligent }
-#    	            NOT = { character = ROOT }
-#    	        }
+    	    random_society_member = {
+    	        limit = {
+    	            society_member_of = monastic_order_benedictine
+    	            ai = yes
+    	            NOT = { trait = diligent }
+    	            NOT = { character = ROOT }
+    	        }
     	        add_trait = diligent
-    	    #}
+    	    }
     	}
-#		random_society_member = {
-#    	    limit = {
-#    	        society_member_of = monastic_order_benedictine
-#    	        trait = diligent
-#    	        NOT = { character = ROOT }
-#    	    }
-#    	    save_event_target_as = benedictines_diligent_mentor
-#    	}
-#   		random_society_member = {
-#    	    limit = {
-#    	        #society_member_of = monastic_order_benedictine
-#    	        society_rank = { rank == 4 }
-#    	        trait = diligent
-#    	        NOT = { character = ROOT }
-#    	    }
-#    	    save_event_target_as = benedictines_diligent_mentor
-#    	}
+		random_society_member = {
+    	    limit = {
+    	        society_member_of = monastic_order_benedictine
+    	        trait = diligent
+    	        NOT = { character = ROOT }
+    	    }
+    	    save_event_target_as = benedictines_diligent_mentor
+    	}
+   		random_society_member = {
+    	    limit = {
+    	        society_member_of = monastic_order_benedictine
+    	        society_rank = { rank == 4 }
+    	        trait = diligent
+    	        NOT = { character = ROOT }
+    	    }
+    	    save_event_target_as = benedictines_diligent_mentor
+    	}
     	event_target:benedictines_diligent_mentor = { character_event = { id = MNM.4601 } }
 	}
 }
@@ -7162,7 +7162,7 @@ character_event = {
 						diplomacy = 15
 		            }
                     NOT = { character = ROOT }
-                    same_realm = yes
+                    same_realm = ROOT
                 }
                 character_event = { id = MNM.3261 }
                 break = yes
@@ -7597,7 +7597,7 @@ character_event = {
 						diplomacy = 15
 		            }
                     NOT = { character = ROOT }
-                    same_realm = yes
+                    same_realm = ROOT
                 }
                 character_event = { id = MNM.4201 }
                 break = yes
@@ -7904,7 +7904,7 @@ character_event = { #Hidden start
                     is_inaccessible_trigger = no
                     has_vice_trigger = yes
                     NOT = { character = ROOT }
-                    same_realm = yes
+                    same_realm = ROOT
                 }
                 character_event = { id = MNM.4211 }
                 break = yes

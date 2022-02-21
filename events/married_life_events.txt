@@ -276,7 +276,7 @@ character_event = {
 character_event = {
 	id = 30003
 	desc = "EVTDESC30003"
-	picture = "GFX_evt_courtiers_looking_scandalized"
+	picture = "GFX_evt_scandal"
 	
 	is_triggered_only = yes
 	
@@ -393,15 +393,23 @@ character_event = {
 		}
 	}
 	
-	option = {
-		name = "EVTOPTA30004" #Poison!
-		pacifists_lose_piety_effect = yes
+	immediate = {
 		spouse = {
 			random_child = {
 				limit = {
 					is_primary_heir = yes
 					is_female = no
 				}
+				save_event_target_as = target_child
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA30004" #Poison!
+		pacifists_lose_piety_effect = yes
+		spouse = {
+			event_target:target_child = {
 				random_list = {
 					33 = {
 						if = {
@@ -6548,9 +6556,7 @@ character_event = {
 					trait = celibate
 					family = ROOT
 				}
-				NOT = {
-				is_close_relative = ROOT
-				}
+				is_close_relative = no
 			}
 			add_lover = ROOT
 			random = {
