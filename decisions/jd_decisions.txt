@@ -12,10 +12,14 @@ decisions = {
 		is_high_prio = yes
 		ai_check_interval = 60
 		potential = {
-			culture_group = chinese
-			is_nomadic = no
 			is_feudal = yes
 			NOT = { government = chinese_imperial_government }
+			NOT = {
+				government = japanese_imperial_government
+			}
+			NOT = {
+				has_landed_title = e_china # Already the real EoC
+			}
 			has_dlc = "Jade Dragon"
 			holy_order = no
 			OR = {
@@ -28,6 +32,18 @@ decisions = {
 					trait = ambitious
 					prestige = 40000
 				}
+				AND = {
+					any_owned_bloodline = {
+						has_flag = pretender_chinese_imperial_bloodline # If we already have pretensions, it is easier
+					}
+					prestige = 20000
+				}
+				AND = {
+					any_owned_bloodline = {
+						has_flag = real_chinese_imperial_bloodline # If we used to rule China, it is easier
+					}
+					prestige = 10000
+				}
 				prestige = 120000
 			}
 		}
@@ -36,43 +52,110 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
+			has_regent = no # Can't do this while having a regent
 			is_tributary = no
 			tier = EMPEROR
 			realm_size = 200
+			custom_tooltip = {
+				text = follows_a_chinese_religion
+				has_acceptable_chinese_religion_trigger = yes # If your religion wouldn't let you keep the government type, it is impossible to enact the decision
+			}
+			custom_tooltip = {
+				text = has_chinese_enough_culture
+				has_acceptable_chinese_culture_trigger = yes # If your culture wouldn't let you keep the government type, it is impossible to enact the decision	
+			}
+			OR = { # We don't want the ruler of Japan to become a pretender empire if they should focus on Japanese stuff
+				NAND = {
+					culture_group = far_east
+					religion_group = bud_group
+				}
+				NOR = {
+					has_landed_title = k_chrysanthemum_throne
+					any_vassal = {
+						has_landed_title = k_chrysanthemum_throne # Direct vassal check is fine since we are looking at a king-tier title
+					}
+					k_chrysanthemum_throne = {
+						holder_scope = {
+							NOR = {
+								AND = {
+									dynasty = ROOT
+									religion = ROOT
+								}
+								current_heir = {
+									character = ROOT
+								}
+							}
+						}
+					}
+				}
+			}
 			conditional_tooltip = {
-				trigger = { 
+				trigger = {
 					OR = {
-						religion = tao 
-						religion = tao_reformed
+						# Pretenders and former rulers of China have an easier time
+						any_owned_bloodline = {
+							has_bloodline_flag = pretender_chinese_imperial_bloodline
+						}
+						any_owned_bloodline = {
+							has_bloodline_flag = real_chinese_imperial_bloodline
+						}
 					}
 				}
 				prestige = 8000
 				wealth = 500
 			}
 			conditional_tooltip = {
-				trigger = { 
+				trigger = {
 					NOR = {
-						religion = tao 
-						religion = tao_reformed
+						# Pretenders and former rulers of China have an easier time
+						any_owned_bloodline = {
+							has_bloodline_flag = pretender_chinese_imperial_bloodline
+						}
+						any_owned_bloodline = {
+							has_bloodline_flag = real_chinese_imperial_bloodline
+						}
 					}
 				}
 				prestige = 16000
 				wealth = 1000
 			}
-
-			offmap_china = {
-				show_scope_change = no
-				offmap_ruler = { NOT = { dynasty = ROOT } }
-			}
-		}
-		effect = {
-			if = {
-			    limit = { 
+			war = no # Must be at peace
+			
+			# Cannot be the heir to e_china
+			e_china = {
+				holder_scope = {
+					NOR = {
+						current_heir = {
+							character = ROOT
+						}
+					}
+					# The AI should not do this if it shares the dynasty of the EoC
 					OR = {
-						religion = tao 
-						religion = tao_reformed
+						ROOT = {
+							ai = no
+						}
+						NOT = {
+							dynasty = ROOT
+						}
 					}
 				}
+			}
+			NOT = {
+				has_character_modifier = peace_deal_with_china # If you have a Chinese Peace Deal, you need to break it or wait for it to expire
+			}
+
+			#offmap_china = {
+			#	show_scope_change = no
+			#	offmap_ruler = { NOT = { dynasty = ROOT } }
+			#}
+		}
+		effect = {
+			hidden_tooltip = {
+				remove_trait = japanese_feudal_trait
+				remove_trait = japanese_monastic_trait
+			}
+			if = {
+			    limit = { religion = tao }
 			    wealth = -500
 			}
 			else = {
@@ -81,159 +164,21 @@ decisions = {
 			if = {
 				limit = {
 					has_dlc = "Holy Fury"
-					NOT = {
-						any_owned_bloodline = { 
-							has_bloodline_flag = created_bloodline
-						}
-					}
+					#NOT = {
+					#	any_owned_bloodline = { 
+					#		has_bloodline_flag = created_bloodline
+					#	}
+					#}
 				}
-				#character_event = { id = HF.24240 tooltip = tooltip_evt_hf_24240 }
+				#character_event = { id = HF.24240 tooltip = tooltip_evt_hf_24240 } # Handled in naming event
 			}
-			custom_tooltip = {
-				text = adopt_chinese_imperialism_tt
-				hidden_effect = {
-					create_title = {
-						tier = EMPEROR
-						landless = no
-						temporary = no
-						custom_created = yes
-						culture = ROOT
-						holder = ROOT
-						base_title = THIS
-						short_name = yes
-						copy_title_laws = yes
-					}
-					new_title = {
-						set_title_flag = uses_temple_names_by_script #Titles with this flag give their heirs a temple name via on_death event
-						set_title_flag = pretender_chinese_empire #Blocks all grace interactions
-						adjective = e_china_west_governor_adj #Use WP adj as it is "Chinese" but also gives the right one in different languages
-						random_list = { #Random Empire name that China doesn't have
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = tang_china } } }
-								set_name = "Tang Empire"
-								set_title_flag = china_name_Tang
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = jin_china } } }
-								set_name = "Jin Empire"
-								set_title_flag = china_name_Jin
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = wei_china } } }
-								set_name = "Wei Empire"
-								set_title_flag = china_name_Wei
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = qi_china } } }
-								set_name = "Qi Empire"
-								set_title_flag = china_name_Qi
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = zhou_china } } }
-								set_name = "Zhou Empire"
-								set_title_flag = china_name_Zhou
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = han_china } } }
-								set_name = "Han Empire"
-								set_title_flag = china_name_Han
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = qin_china } } }
-								set_name = "Qin Empire"
-								set_title_flag = china_name_Qin
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = yan_china } } }
-								set_name = "Yan Empire"
-								set_title_flag = china_name_Yan
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = zhao_china } } }
-								set_name = "Zhao Empire"
-								set_title_flag = china_name_Zhao
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = liao_china } } }
-								set_name = "Liao Empire"
-								set_title_flag = china_name_Liao
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = yuan_china } } }
-								set_name = "Yuan Empire"
-								set_title_flag = china_name_Yuan
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = xia_china } } }
-								set_name = "Xia Empire"
-								set_title_flag = china_name_Xia
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = qing_china } } }
-								set_name = "Qing Empire"
-								set_title_flag = china_name_Qing
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = dai_china } } }
-								set_name = "Dai Empire"
-								set_title_flag = china_name_Dai
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = cheng_china } } }
-								set_name = "Cheng Empire"
-								set_title_flag = china_name_Cheng
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = liang_china } } }
-								set_name = "Liang Empire"
-								set_title_flag = china_name_Liang
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = song_china } } }
-								set_name = "Song Empire"
-								set_title_flag = china_name_Song
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = ming_china } } }
-								set_name = "Ming Empire"
-								set_title_flag = china_name_Ming
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = shu_china } } }
-								set_name = "Shu Empire"
-								set_title_flag = china_name_Shu
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = wu_china } } }
-								set_name = "Wu Empire"
-								set_title_flag = china_name_Wu
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = chu_china } } }
-								set_name = "Chu Empire"
-								set_title_flag = china_name_Chu
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = yue_china } } }
-								set_name = "Yue Empire"
-								set_title_flag = china_name_Yue
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = yin_china } } }
-								set_name = "Yin Empire"
-								set_title_flag = china_name_Yin
-							}
-							1 = { 
-								trigger = { NOT = { offmap_china = { has_offmap_name = shun_china } } }
-								set_name = "Shun Empire"
-								set_title_flag = china_name_Shun
-							}
-						}
-						add_law = {
-							law = succ_primogeniture
-							cooldown = no
-							opinion_effect = no
-						}
+			primary_title = { # DO NOT ADD BACK THE CUSTOM TITLE STUFF VANILLA USES!
+				set_title_flag = pretender_chinese_empire
+				add_law = {
+					law = succ_primogeniture
+					cooldown = no
+					opinion_effect = no
+				}
 					}
 				}
 			}
@@ -246,378 +191,423 @@ decisions = {
 			}
 			set_government_type = chinese_imperial_government
 			custom_tooltip = { text = adopt_chinese_imperialism_gov_tt }
-			custom_tooltip = {
-				text = adopt_chinese_imperialism_temple_name_tt
-				hidden_effect = {
-					random_list = { #Give a temple name
-						1 = { set_name = Gaozu }
-						1 = { set_name = Taizu }
-						1 = { set_name = Shizu }
-						1 = { set_name = Zhaozu }
-						1 = { set_name = Jingzu }
-						1 = { set_name = Xianzu }
-						1 = { set_name = Liezu }
-						1 = { set_name = Chengzu }
-					}
-					set_character_flag = given_temple_name_by_script
-				}
-			}
-		}
-	}
-
-	raise_chinese_honor_guard = {
-		only_playable = yes
-		is_high_prio = yes
-		is_mercenary = yes
-		potential = {
-			is_landed = yes
-			OR = {
-				any_spouse = { has_character_flag = chinese_honor_guard } #Need to be married to Chinese prince/princess
-				any_consort = { has_character_flag = chinese_honor_guard } #Need to be married to Chinese prince/princess
-				any_courtier = {
-					is_landed = no
-					liege = { character = ROOT }
-					dynasty = ROOT
-					OR = {
-						any_spouse = { has_character_flag = chinese_honor_guard }
-						any_consort = { has_character_flag = chinese_honor_guard }
+			# DO NOT ADD BACK TEMPLE NAMES; THEY'RE GRANTED ON DEATH!
+			if = { # If we have positive Grace, zero it out!
+				limit = {
+					check_variable = {
+						which = grace
+						value = 1
 					}
 				}
+				set_variable = {
+					which = grace
+					value = 0
+				}
 			}
-			OR = {
-				ai = no
-				any_war = {
-					OR = {
-						any_defender = {
-							character = ROOT
-							is_primary_war_defender = yes
-						}
-						any_attacker = {
-							character = ROOT
-							is_primary_war_attacker = yes
+			detract_grace_super_huge_effect = yes # China is VERY upset with you for doing this!
+			detract_grace_super_huge_effect = yes # China is VERY upset with you for doing this!
+			hidden_tooltip = {
+				e_china = {
+					holder_scope = {
+						change_variable = {
+							which = stored_mandate_change
+							value = -1000
 						}
 					}
 				}
 			}
-		}
-		allow = {
-			custom_tooltip = {
-				text = primary_defender_or_attacker_tt
-				hidden_tooltip = {
-					any_war = {
-						OR = {
-							any_defender = {
-								character = ROOT
-								is_primary_war_defender = yes
-							}
-							any_attacker = {
-								character = ROOT
-								is_primary_war_attacker = yes
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = {
-				text = earmarked_regiments_tt
-				hidden_tooltip = {
-					NOT = {
-						has_earmarked_regiments = honor_guard
-					}
-				}
-			}
-			custom_tooltip = {
-				text = raise_chinese_honor_guard_TT
-				NOT = { has_character_modifier = jd_chinese_honor_guard_timer }
-			}
-		}
-		effect = {
-			hidden_effect = {
-				add_character_modifier = { #Can't use it too often
-					name = jd_chinese_honor_guard_timer
-					hidden = yes
-					years = 1
-				}
+		
+			# Claim China
+			e_china = {
+				add_weak_pressed_claim = PREV
 			}
 			if = {
 				limit = {
-					tier = emperor
+					has_character_modifier = chinese_imperial_trade_contract
 				}
-				capital_scope = {
-					PREV = {
-						spawn_unit = {
-							owner = ROOT
-							province = PREV
-							home = PREV
-							troops = {
-								archers = { 1000 1000 }
-								heavy_infantry = { 200 200 }
-								pikemen = { 800 800 }
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-							maintenance_multiplier = 0.25
-							earmark = honor_guard
-						}
-					}
-				}
-				break = yes
+				remove_character_modifier = chinese_imperial_trade_contract
 			}
-			if = {
-				limit = {
-					tier = king
-				}
-				capital_scope = {
-					PREV = {
-						spawn_unit = {
-							owner = ROOT
-							province = PREV
-							home = PREV
-							troops = {
-								archers = { 800 800 }
-								heavy_infantry = { 100 100 }
-								pikemen = { 600 600 }
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-							maintenance_multiplier = 0.25
-							earmark = honor_guard
-						}
-					}
-				}
-				break = yes
-			}
-			if = {
-				limit = {
-					tier = duke
-				}
-				capital_scope = {
-					PREV = {
-						spawn_unit = {
-							owner = ROOT
-							province = PREV
-							home = PREV
-							troops = {
-								archers = { 500 500 }
-								heavy_infantry = { 100 100 }
-								pikemen = { 400 400 }
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-							maintenance_multiplier = 0.25
-							earmark = honor_guard
-						}
-					}
-				}
-				break = yes
-			}
-			capital_scope = {
-				PREV = {
-					spawn_unit = {
-						owner = ROOT
-						province = PREV
-						home = PREV
-						troops = {
-							archers = { 250 250 }
-							heavy_infantry = { 50 50 }
-							pikemen = { 200 200 }
-						}
-						attrition = 1.0
-						disband_on_peace = yes
-						maintenance_multiplier = 0.25
-							earmark = honor_guard
-					}
-				}
-			}
-
+			character_event = { id = nameofchina.30 } # Name the empire
 		}
+		
 		ai_will_do = {
-			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
-		}
-	}
-	
-	raise_chinese_regiment = {
-		only_playable = yes
-		is_high_prio = yes
-		is_mercenary = yes
-		potential = {
-			is_playable = yes
-			is_landed = yes
-			is_tributary = {
-				type = offmap
-			}
-		}
-		allow = {
-			war = yes
-			custom_tooltip = {
-				text = primary_defender_TT
-				hidden_tooltip = {
-					any_war = {
-						any_defender = {
-							character = ROOT
-							is_primary_war_defender = yes
-						}
-					}
+			factor = 1
+			# Characters that should focus on the Japanese stuff shouldn't do this!
+			modifier = {
+				factor = 0
+				OR = {
+					culture = yamato
+					culture = japanese
 				}
+				religion_group = bud_group
 			}
-			custom_tooltip = {
-				text = war_with_other_tributary_tt
-				hidden_tooltip = {
-					any_war = {
-						any_attacker = {
-							is_primary_war_attacker = yes
-							NOT = { is_tributary = { type = offmap } }
-						}
-					}
-				}
-			}
-			custom_tooltip = {
-				text = already_raised_TT
+			modifier = {
+				factor = 0
 				NOT = {
-					has_earmarked_regiments = chinese_regiment
+					has_acceptable_chinese_culture_no_gamerule_trigger = yes
 				}
 			}
-			custom_tooltip = {
-				text = raise_chinese_regiment_TT
-				NOT = { has_character_modifier = jd_chinese_regiment_timer }
-			}
-			offmap_china = {
-				NOR = {
-					has_status = china_unrest
-					has_status = china_plague
-					has_status = china_famine
-					has_status = china_civil_war
-					has_status = china_mongol_invasion
-					has_status = china_jurchen_invasion
-				}
-			}
-		}
-		effect = {
-			hidden_effect = {
-				add_character_modifier = { #Can't use it too often
-					name = jd_chinese_regiment_timer
-					hidden = yes
-					duration = 365
-				}
-			}
-			capital_scope = {
-				PREV = {
-					if = {
-						limit = {
-							ROOT = {
-								OR = {
-									AND = {
-										tier = EMPEROR
-										is_nomadic = no
-									}
-									AND = {
-										is_nomadic = yes
-										num_of_count_titles_in_realm > 16
-									}
-								}
-							}
-						}
-						spawn_unit = {
-							province = PREV
-							home = PREV
-							owner = ROOT
-							troops = {
-								light_infantry = { 1500 1500 }
-								archers = { 1500 1500 }
-								heavy_infantry = { 450 450 }
-								pikemen = { 750 750 }
-								light_cavalry = { 600 600 }
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-							maintenance_multiplier = 0.25
-							earmark = chinese_regiment
-						}
-					}
-					else_if = {
-						limit = {
-							ROOT = {
-								OR = {
-									tier = KING
-									AND = {
-										is_nomadic = yes
-										num_of_count_titles_in_realm > 12
-									}
-								}
-							}
-						}
-						spawn_unit = {
-							province = PREV
-							home = PREV
-							owner = ROOT
-							troops = {
-								light_infantry = { 1250 1250 }
-								archers = { 1250 1250 }
-								heavy_infantry = { 375 375 }
-								pikemen = { 625 625 }
-								light_cavalry = { 500 500 }
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-							maintenance_multiplier = 0.25
-							earmark = chinese_regiment
-						}
-					}
-					else_if = {
-						limit = {
-							ROOT = {
-								OR = {
-									tier = DUKE
-									AND = {
-										is_nomadic = yes
-										num_of_count_titles_in_realm > 8
-									}
-								}
-							}
-						}
-						spawn_unit = {
-							province = PREV
-							home = PREV
-							owner = ROOT
-							troops = {
-								light_infantry = { 1000 1000 }
-								archers = { 1000 1000 }
-								heavy_infantry = { 300 300 }
-								pikemen = { 500 500 }
-								light_cavalry = { 400 400 }
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-							maintenance_multiplier = 0.25
-							earmark = chinese_regiment
-						}
-					}
-					else = {
-						spawn_unit = {
-							province = PREV
-							home = PREV
-							owner = ROOT
-							troops = {
-								light_infantry = { 750 750 }
-								archers = { 750 750 }
-								heavy_infantry = { 225 225 }
-								pikemen = { 375 375 }
-								light_cavalry = { 300 300 }
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-							maintenance_multiplier = 0.25
-							earmark = chinese_regiment
-						}
-					}
-				}
-			}
-
-		}
-		ai_will_do = {
-			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
 		}
 	}
+#	# DO NOT REACTIVATE THESE; THEY'RE LEFTOVERS FROM OFFMAP CHINA AND ALSO DON'T WORK!
+#	raise_chinese_honor_guard = {
+#		only_playable = yes
+#		is_high_prio = yes
+#		is_mercenary = yes
+#		potential = {
+#			always = no # Needs to be updated; might be removed entirely as China could be allied!
+#			is_landed = yes
+#			OR = {
+#				any_spouse = { has_character_flag = chinese_honor_guard } #Need to be married to Chinese prince/princess
+#				any_consort = { has_character_flag = chinese_honor_guard } #Need to be married to Chinese prince/princess
+#				any_courtier = {
+#					is_landed = no
+#					liege = { character = ROOT }
+#					dynasty = ROOT
+#					OR = {
+#						any_spouse = { has_character_flag = chinese_honor_guard }
+#						any_consort = { has_character_flag = chinese_honor_guard }
+#					}
+#				}
+#			}
+#			OR = {
+#				ai = no
+#				any_war = {
+#					OR = {
+#						any_defender = {
+#							character = ROOT
+#							is_primary_war_defender = yes
+#						}
+#						any_attacker = {
+#							character = ROOT
+#							is_primary_war_attacker = yes
+#						}
+#					}
+#				}
+#			}
+#		}
+#		allow = {
+#			custom_tooltip = {
+#				text = primary_defender_or_attacker_tt
+#				hidden_tooltip = {
+#					any_war = {
+#						OR = {
+#							any_defender = {
+#								character = ROOT
+#								is_primary_war_defender = yes
+#							}
+#							any_attacker = {
+#								character = ROOT
+#								is_primary_war_attacker = yes
+#							}
+#						}
+#					}
+#				}
+#			}
+#			custom_tooltip = {
+#				text = earmarked_regiments_tt
+#				hidden_tooltip = {
+#					NOT = {
+#						has_earmarked_regiments = honor_guard
+#					}
+#				}
+#			}
+#			custom_tooltip = {
+#				text = raise_chinese_honor_guard_TT
+#				NOT = { has_character_modifier = jd_chinese_honor_guard_timer }
+#			}
+#		}
+#		effect = {
+#			hidden_effect = {
+#				add_character_modifier = { #Can't use it too often
+#					name = jd_chinese_honor_guard_timer
+#					hidden = yes
+#					years = 1
+#				}
+#			}
+#			if = {
+#				limit = {
+#					tier = emperor
+#				}
+#				capital_scope = {
+#					PREV = {
+#						spawn_unit = {
+#							owner = ROOT
+#							province = PREV
+#							home = PREV
+#							troops = {
+#								archers = { 1000 1000 }
+#								heavy_infantry = { 200 200 }
+#								pikemen = { 800 800 }
+#							}
+#							attrition = 1.0
+#							disband_on_peace = yes
+#							maintenance_multiplier = 0.25
+#							earmark = honor_guard
+#						}
+#					}
+#				}
+#				break = yes
+#			}
+#			if = {
+#				limit = {
+#					tier = king
+#				}
+#				capital_scope = {
+#					PREV = {
+#						spawn_unit = {
+#							owner = ROOT
+#							province = PREV
+#							home = PREV
+#							troops = {
+#								archers = { 800 800 }
+#								heavy_infantry = { 100 100 }
+#								pikemen = { 600 600 }
+#							}
+#							attrition = 1.0
+#							disband_on_peace = yes
+#							maintenance_multiplier = 0.25
+#							earmark = honor_guard
+#						}
+#					}
+#				}
+#				break = yes
+#			}
+#			if = {
+#				limit = {
+#					tier = duke
+#				}
+#				capital_scope = {
+#					PREV = {
+#						spawn_unit = {
+#							owner = ROOT
+#							province = PREV
+#							home = PREV
+#							troops = {
+#								archers = { 500 500 }
+#								heavy_infantry = { 100 100 }
+#								pikemen = { 400 400 }
+#							}
+#							attrition = 1.0
+#							disband_on_peace = yes
+#							maintenance_multiplier = 0.25
+#							earmark = honor_guard
+#						}
+#					}
+#				}
+#				break = yes
+#			}
+#			capital_scope = {
+#				PREV = {
+#					spawn_unit = {
+#						owner = ROOT
+#						province = PREV
+#						home = PREV
+#						troops = {
+#							archers = { 250 250 }
+#							heavy_infantry = { 50 50 }
+#							pikemen = { 200 200 }
+#						}
+#						attrition = 1.0
+#						disband_on_peace = yes
+#						maintenance_multiplier = 0.25
+#							earmark = honor_guard
+#					}
+#				}
+#			}
+#
+#		}
+#		ai_will_do = {
+#			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
+#		}
+#	}
+#	
+#	raise_chinese_regiment = {
+#		only_playable = yes
+#		is_high_prio = yes
+#		is_mercenary = yes
+#		potential = {
+#			always = no # China will be called into its tributaries' defensive wars, offensive wars will probably be unsupported...
+#			is_playable = yes
+#			is_landed = yes
+#			#is_tributary = {
+#			#	type = offmap
+#			#}
+#		}
+#		allow = {
+#			war = yes
+#			custom_tooltip = {
+#				text = primary_defender_TT
+#				hidden_tooltip = {
+#					any_war = {
+#						any_defender = {
+#							character = ROOT
+#							is_primary_war_defender = yes
+#						}
+#					}
+#				}
+#			}
+#			#custom_tooltip = {
+#			#	text = war_with_other_tributary_tt
+#			#	hidden_tooltip = {
+#			#		any_war = {
+#			#			any_attacker = {
+#			#				is_primary_war_attacker = yes
+#			#				NOT = { is_tributary = { type = offmap } }
+#			#			}
+#			#		}
+#			#	}
+#			#}
+#			custom_tooltip = {
+#				text = already_raised_TT
+#				NOT = {
+#					has_earmarked_regiments = chinese_regiment
+#				}
+#			}
+#			custom_tooltip = {
+#				text = raise_chinese_regiment_TT
+#				NOT = { has_character_modifier = jd_chinese_regiment_timer }
+#			}
+#			#offmap_china = {
+#			#	NOR = {
+#			#		has_status = china_unrest
+#			#		has_status = china_plague
+#			#		has_status = china_famine
+#			#		has_status = china_civil_war
+#			#		has_status = china_mongol_invasion
+#			#		has_status = china_jurchen_invasion
+#			#	}
+#			#}
+#		}
+#		effect = {
+#			hidden_effect = {
+#				add_character_modifier = { #Can't use it too often
+#					name = jd_chinese_regiment_timer
+#					hidden = yes
+#					duration = 365
+#				}
+#			}
+#			capital_scope = {
+#				PREV = {
+#					if = {
+#						limit = {
+#							ROOT = {
+#								OR = {
+#									AND = {
+#										tier = EMPEROR
+#										is_nomadic = no
+#									}
+#									AND = {
+#										is_nomadic = yes
+#										num_of_count_titles_in_realm > 16
+#									}
+#								}
+#							}
+#						}
+#						spawn_unit = {
+#							province = PREV
+#							home = PREV
+#							owner = ROOT
+#							troops = {
+#								light_infantry = { 1500 1500 }
+#								archers = { 1500 1500 }
+#								heavy_infantry = { 450 450 }
+#								pikemen = { 750 750 }
+#								light_cavalry = { 600 600 }
+#							}
+#							attrition = 1.0
+#							disband_on_peace = yes
+#							maintenance_multiplier = 0.25
+#							earmark = chinese_regiment
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							ROOT = {
+#								OR = {
+#									tier = KING
+#									AND = {
+#										is_nomadic = yes
+#										num_of_count_titles_in_realm > 12
+#									}
+#								}
+#							}
+#						}
+#						spawn_unit = {
+#							province = PREV
+#							home = PREV
+#							owner = ROOT
+#							troops = {
+#								light_infantry = { 1250 1250 }
+#								archers = { 1250 1250 }
+#								heavy_infantry = { 375 375 }
+#								pikemen = { 625 625 }
+#								light_cavalry = { 500 500 }
+#							}
+#							attrition = 1.0
+#							disband_on_peace = yes
+#							maintenance_multiplier = 0.25
+#							earmark = chinese_regiment
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							ROOT = {
+#								OR = {
+#									tier = DUKE
+#									AND = {
+#										is_nomadic = yes
+#										AND = {
+#											is_nomadic = yes
+#											num_of_count_titles_in_realm > 8
+#										}
+#									}
+#								}
+#							}
+#						}
+#						spawn_unit = {
+#							province = PREV
+#							home = PREV
+#							owner = ROOT
+#							troops = {
+#								light_infantry = { 1000 1000 }
+#								archers = { 1000 1000 }
+#								heavy_infantry = { 300 300 }
+#								pikemen = { 500 500 }
+#								light_cavalry = { 400 400 }
+#							}
+#							attrition = 1.0
+#							disband_on_peace = yes
+#							maintenance_multiplier = 0.25
+#							earmark = chinese_regiment
+#						}
+#					}
+#					else = {
+#						spawn_unit = {
+#							province = PREV
+#							home = PREV
+#							owner = ROOT
+#							troops = {
+#								light_infantry = { 750 750 }
+#								archers = { 750 750 }
+#								heavy_infantry = { 225 225 }
+#								pikemen = { 375 375 }
+#								light_cavalry = { 300 300 }
+#							}
+#							attrition = 1.0
+#							disband_on_peace = yes
+#							maintenance_multiplier = 0.25
+#							earmark = chinese_regiment
+#						}
+#					}
+#				}
+#			}
+#
+#		}
+#		ai_will_do = {
+#			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
+#		}
+#	}
 	
 	tributary_independence_normal = {
 		only_playable = yes
@@ -630,6 +620,18 @@ decisions = {
 				}
 				is_tributary = {
 					type = permanent
+				}
+				is_tributary = {
+					type = chinese_peripheral_tributary
+				}
+				is_tributary = {
+					type = chinese_imperial_tributary
+				}
+				is_tributary = {
+					type = chinese_protectorate
+				}
+				is_tributary = {
+					type = chinese_client_state
 				}
 				is_tributary = {
 					type = nomadic
@@ -649,9 +651,23 @@ decisions = {
 				}
 			}
 			conditional_tooltip = {
-				trigger = { 
-					is_tributary = {
-						type = permanent
+				trigger = {
+					OR = {
+						is_tributary = {
+							type = permanent
+						}
+						is_tributary = {
+							type = chinese_peripheral_tributary
+						}
+						is_tributary = {
+							type = chinese_imperial_tributary
+						}
+						is_tributary = {
+							type = chinese_protectorate
+						}
+						is_tributary = {
+							type = chinese_client_state
+						}
 					}
 				}
 				suzerain = {
