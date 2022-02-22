@@ -66,7 +66,7 @@ decisions = {
 			}
 			OR = { # We don't want the ruler of Japan to become a pretender empire if they should focus on Japanese stuff
 				NAND = {
-					culture_group = far_east
+					culture = japanese
 					religion_group = bud_group
 				}
 				NOR = {
@@ -738,9 +738,338 @@ decisions = {
 			}
 		}
 		effect = {
-			any_suzerain = {
-				character_event = { id = JD.2200 }
-				remove_tributary = ROOT
+			if = { # If the AI could have used the better decision, act as if it did so that it doesn't take a huge Grace penalty for no reason!
+				limit = {
+					ai = yes
+					suzerain = {
+						is_chinese_emperor_trigger = yes
+						NOT = {
+							reverse_has_opinion_modifier = {
+								who = ROOT
+								modifier = opinion_china_refused_decrese_tributary_tier
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_tributary = {
+							type = chinese_client_state
+						}
+					}
+					if = {
+						limit = {
+							NOT = { # If a Client State is too distant, China will be more willing to let them go
+								any_realm_province = {
+									any_neighbor_province = {
+										OR = {
+											AND = {
+												has_owner = yes
+												owner = {
+													OR = {
+														is_chinese_emperor_trigger = yes
+														top_liege = {
+															is_chinese_emperor_trigger = yes
+														}
+														is_tributary = {
+															type = chinese_client_state
+														}
+														is_tributary = {
+															type = chinese_protectorate
+														}
+														top_liege = {
+															OR = {
+																is_tributary = {
+																	type = chinese_client_state
+																}
+																is_tributary = {
+																	type = chinese_protectorate
+																}
+															}
+														}
+													}
+													NOR = {
+														character = ROOT
+														top_liege = {
+															character = ROOT
+														}
+													}
+												}
+											}
+											AND = {
+												is_land = no
+												any_neighbor_province = {
+													OR = {
+														AND = {
+															has_owner = yes
+															owner = {
+																OR = {
+																	is_chinese_emperor_trigger = yes
+																	top_liege = {
+																		is_chinese_emperor_trigger = yes
+																	}
+																	is_tributary = {
+																		type = chinese_client_state
+																	}
+																	is_tributary = {
+																		type = chinese_protectorate
+																	}
+																	top_liege = {
+																		OR = {
+																			is_tributary = {
+																				type = chinese_client_state
+																			}
+																			is_tributary = {
+																				type = chinese_protectorate
+																			}
+																		}
+																	}
+																}
+																NOR = {
+																	character = ROOT
+																	top_liege = {
+																		character = ROOT
+																	}
+																}
+															}
+														}
+														AND = {
+															is_land = no
+															any_neighbor_province = {
+																has_owner = yes
+																owner = {
+																	OR = {
+																		is_chinese_emperor_trigger = yes
+																		top_liege = {
+																			is_chinese_emperor_trigger = yes
+																		}
+																		is_tributary = {
+																			type = chinese_client_state
+																		}
+																		is_tributary = {
+																			type = chinese_protectorate
+																		}
+																		top_liege = {
+																			OR = {
+																				is_tributary = {
+																					type = chinese_client_state
+																				}
+																				is_tributary = {
+																					type = chinese_protectorate
+																				}
+																			}
+																		}
+																	}
+																	NOR = {
+																		character = ROOT
+																		top_liege = {
+																			character = ROOT
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							check_variable = {
+								which = grace
+								value = 1000
+							}
+						}
+						change_variable = {
+							which = grace
+							value = -1000
+						}
+						set_character_flag = ai_ask_to_decrease_tributary_tier
+						character_event = { id = grace.975 }
+						break = yes
+					}
+					else_if = {
+						limit =  {
+							check_variable = {
+								which = grace
+								value = 2000
+							}
+						}
+						change_variable = {
+							which = grace
+							value = -2000
+						}
+						set_character_flag = ai_ask_to_decrease_tributary_tier
+						character_event = { id = grace.975 }
+						break = yes
+					}
+				}
+				else_if = {
+					limit = {
+						is_tributary = {
+							type = chinese_protectorate
+						}
+					}
+					if = {
+						limit = {
+							NOT = { # If a Protectorate is too distant, China will be more willing to let them go
+								any_realm_province = {
+									any_neighbor_province = {
+										OR = {
+											AND = {
+												has_owner = yes
+												owner = {
+													OR = {
+														is_chinese_emperor_trigger = yes
+														top_liege = {
+															is_chinese_emperor_trigger = yes
+														}
+													}
+												}
+											}
+											AND = {
+												is_land = no
+												any_neighbor_province = {
+													OR = {
+														AND = {
+															has_owner = yes
+															owner = {
+																OR = {
+																	is_chinese_emperor_trigger = yes
+																	top_liege = {
+																		is_chinese_emperor_trigger = yes
+																	}
+																}
+															}
+														}
+														AND = {
+															is_land = no
+															any_neighbor_province = {
+																has_owner = yes
+																owner = {
+																	OR = {
+																		is_chinese_emperor_trigger = yes
+																		top_liege = {
+																			is_chinese_emperor_trigger = yes
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							check_variable = {
+								which = grace
+								value = 500
+							}
+						}
+						change_variable = {
+							which = grace
+							value = -500
+						}
+						set_character_flag = ai_ask_to_decrease_tributary_tier
+						character_event = { id = grace.975 }
+						break = yes
+					}
+					else_if = {
+						limit =  {
+							check_variable = {
+								which = grace
+								value = 1000
+							}
+						}
+						change_variable = {
+							which = grace
+							value = -1000
+						}
+						set_character_flag = ai_ask_to_decrease_tributary_tier
+						character_event = { id = grace.975 }
+						break = yes
+					}
+				}
+				else_if = {
+					limit = {
+						is_tributary = {
+							type = chinese_imperial_tributary
+						}
+						check_variable = {
+							which = grace
+							value = 500
+						}
+					}
+					change_variable = {
+						which = grace
+						value = -500
+					}
+					set_character_flag = ai_ask_to_decrease_tributary_tier
+					character_event = { id = grace.975 }
+					break = yes
+				}
+				else_if = {
+					limit = {
+						is_tributary = {
+							type = chinese_peripheral_tributary
+						}
+						check_variable = {
+							which = grace
+							value = 250
+						}
+					}
+					change_variable = {
+						which = grace
+						value = -250
+					}
+					set_character_flag = ai_ask_to_decrease_tributary_tier
+					character_event = { id = grace.975 }
+					break = yes
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_dlc = "Jade Dragon"
+						is_chinese_emperor_trigger = no
+					}
+					if = {
+						limit = {
+							suzerain = {
+								is_chinese_emperor_trigger = yes
+							}
+						}
+						detract_grace_super_huge_effect = yes
+					}
+					else_if = {
+						limit = {
+							suzerain = {
+								any_close_relative = {
+									dynasty = PREV
+									is_chinese_emperor_trigger = yes
+								}
+							}
+						}
+						detract_grace_massive_effect = yes
+					}
+					else_if = {
+						limit = {
+							suzerain = {
+								any_dynasty_member = {
+									is_chinese_emperor_trigger = yes
+								}
+							}
+						}
+						detract_grace_major_effect = yes
+					}
+				}
+				any_suzerain = {
+					character_event = { id = JD.2200 }
+					remove_tributary = ROOT
+				}
 			}
 		}
 		ai_will_do = {
@@ -754,318 +1083,319 @@ decisions = {
 		}
 	}
 	
-	tributary_independence_china = {
-		only_playable = yes
-		is_high_prio = yes
-		ai_check_interval = 24
-
-		potential = {
-			is_tributary = {
-				type = offmap
-			}
-		}
-		allow = {
-			offmap_china = {
-				OR = {
-					has_status = china_civil_war
-					has_status = china_mongol_invasion
-					has_status = china_jurchen_invasion
-				}
-			}
-		}
-		effect = {
-			any_suzerain = {
-				remove_tributary = ROOT
-			}
-			if = {
-				limit = { 
-				    offmap_china = { offmap_has_like = likes_tributaries }
-				}
-				detract_grace_massive_effect = yes
-			}
-			else = { detract_grace_major_effect = yes }
-			custom_tooltip = {
-				text = tributary_independence_china_tt
-				add_character_modifier = {
-					hidden = yes
-					name = chinese_grace_tributary_timer
-					years = 30
-				}
-			}
-			#hidden_effect = { offmap_china = { governor = { character_event = { id = JD.60010 } } } }
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.5 # Slow down
-				NOT = {
-					trait = ambitious
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					trait = content
-					trait = craven
-				}
-			}
-		}
-	}
-
-	china_sends_reinforcements = {
-		ai_check_interval = 2
-		only_independent = yes
-		potential = {
-			ai = yes
-			war = yes
-			offmap_china = {
-				governor = {
-					character = ROOT
-				}
-				# Don't spawn reinforcements immediately
-				had_offmap_tmp_flag = {
-					flag = china_entered_war
-					years = 3
-				}
-				OR = {
-					NOT = {
-						# Only spawn reinforcements once
-						has_offmap_flag = china_sent_war_reinforcements
-						# Exception: Really long wars
-					}
-					had_offmap_tmp_flag = {
-						flag = china_sent_war_reinforcements
-						years = 30
-					}
-				}
-				# Don't spawn reinforcements for the following statuses in China.
-				NOR = {
-					has_status = china_famine
-					has_status = china_civil_war
-					has_status = china_mongol_invasion
-					has_status = china_jurchen_invasion
-					has_status = china_plague
-				}
-			}
-			# Only if China is losing a war by 50 war score.
-			any_war = {
-				OR = {
-					AND = {
-						attacker = {
-							character = ROOT
-						}
-						NOT = { war_score = -49 }
-					}
-					AND = {
-						defender = {
-							character = ROOT
-						}
-						war_score = 50
-					}
-				}
-			}
-		}
-		allow = {
-		}
-		effect = {
-			offmap_china = {
-				clr_offmap_flag = china_sent_war_reinforcements
-				set_offmap_flag = china_sent_war_reinforcements
-			}
-			
-			### To manipulate the troop spawning for specific situations modify the parameter valiables (china_war_troop_quantity, china_war_troop_quality, china_war_target_match_mult, and china_war_minimum_commander_martial) after the following block.
-			set_variable = {
-				which = china_war_troop_quantity
-				value = 8
-				# 8 regiments of ~500 units
-			}
-			set_variable = {
-				which = china_war_troop_quality
-				value = 4
-				# Value between 1-7 [A value less than 1 or higher than 7 will be evaluated as 1 and 7 respectively]
-			}
-			set_variable = {
-				which = china_war_target_match_mult
-				value = 0.75
-			}
-			set_variable = {
-				which = china_war_minimum_commander_martial
-				value = 14
-			}
-			###
-			
-			
-			# Manipulate the parameter variables dependent on the current status in China.
-			china_war_modify_variables_by_status_effect = yes
-			# Manipulate the parameter variables dependent on the current century.
-			china_war_modify_variables_by_century_effect = yes
-			
-			### Match mult calculation against war enemies and sending notification events to enemy war leaders.
-			any_war = {
-				attacker = {
-					if = {
-						limit = {
-							NOT = { character = ROOT }
-							PREV = {
-								defender = {
-									character = ROOT
-								}
-							}
-						}
-						save_event_target_as = enemy
-						PREV = {
-							any_attacker = {
-								save_event_target_as = temp_war_ally_calc
-								ROOT = {
-									# Match mult the variable against the opponents troops.
-									export_to_variable = {
-										which = china_temp_troop_calc
-										value = realm_levies
-										who = event_target:temp_war_ally_calc
-									}
-									
-									divide_variable = {
-										which = china_temp_troop_calc
-										value = 500
-									}
-									
-									multiply_variable = {
-										which = china_temp_troop_calc
-										which = china_war_target_match_mult
-									}
-									
-									change_variable = {
-										which = china_war_troop_quantity
-										which = china_temp_troop_calc
-									}
-								}
-							}
-						}
-					}
-				}
-				defender = {
-					if = {
-						limit = {
-							NOT = { character = ROOT }
-							PREV = {
-								attacker = {
-									character = ROOT
-								}
-							}
-						}
-						save_event_target_as = enemy
-						PREV = {
-							any_attacker = {
-								save_event_target_as = temp_war_ally_calc
-								ROOT = {
-									# Match mult the variable against the opponents troops.
-									export_to_variable = {
-										which = china_temp_troop_calc
-										value = realm_levies_plus_allies
-										who = event_target:temp_war_ally_calc
-									}
-									
-									divide_variable = {
-										which = china_temp_troop_calc
-										value = 500
-									}
-									
-									multiply_variable = {
-										which = china_temp_troop_calc
-										which = china_war_target_match_mult
-									}
-									
-									change_variable = {
-										which = china_war_troop_quantity
-										which = china_temp_troop_calc
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			
-			# Hardcap at 50k troopspawn
-			if = {
-				limit = {	
-					check_variable = {
-						which = china_war_troop_quantity
-						value > 100
-					}
-				}
-				set_variable = {
-					which = china_war_troop_quantity
-					value = 100
-				}
-			}
-
-			#if = {
-				#limit = {
-					#FROM = {
-						#capital_scope = {
-							#NOT = { region = world_india }
-						#}
-					#}
-				#}
-				#1513 = { # Jiuquan
-					#save_event_target_as = spawn_province
-				#}
-			#}
-			else = {
-				offmap_china = { set_offmap_flag = troop_spawn_india_temp }
-				1318 = { # Samatata
-					save_event_target_as = spawn_province
-				}
-				set_variable = {
-					which = boat_spawns
-					which = china_war_troop_quantity
-				}
-				multiply_variable = {
-					which = boat_spawns
-					value = 5
-				}
-				while = {
-					limit = {
-						check_variable = {
-							which = boat_spawns
-							value = 1
-						}
-					}
-					change_variable = {
-						which = boat_spawns
-						value = -1
-					}
-					spawn_fleet = {
-						province = 1411 # ganges delta
-						owner = ROOT
-						disband_on_peace = yes
-						troops =
-						{
-							galleys = { 1 1 }
-						}
-						merge = yes
-					}
-				}
-			}
-			
-			#event_target:enemy = {
-				#character_event = { id = JD.30047 }
-			#}
-			
-			china_war_spawn_troops_effect = yes
-			# Requires the current things to function properly:
-			# event_target:spawn_province
-			# variable: china_war_troop_quality
-			# variable: china_war_troop_quantity
-		}
-		#revoke_allowed = {
-			#always = no
-		#}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#	tributary_independence_china = { # DO NOT REACTIVATE; THIS IS ONLY FOR OFFMAP CHINA
+#		only_playable = yes
+#		is_high_prio = yes
+#		ai_check_interval = 6
+#		potential = {
+#			always = no # Offmap China, and thus offmap tributaries, no longer exists
+#			#is_tributary = {
+#			#	type = offmap
+#			#}
+#		}
+#		allow = {
+#			#offmap_china = {
+#			#	OR = {
+#			#		has_status = china_civil_war
+#			#		has_status = china_mongol_invasion
+#			#		has_status = china_jurchen_invasion
+#			#	}
+#			#}
+#		}
+#		effect = {
+#			any_suzerain = {
+#				remove_tributary = ROOT
+#			}
+#			#if = {
+#			#	limit = { 
+#			#	    offmap_china = { offmap_has_like = likes_tributaries }
+#			#	}
+#			#	detract_grace_massive_effect = yes
+#			#}
+#			else = { detract_grace_major_effect = yes }
+#			custom_tooltip = {
+#				text = tributary_independence_china_tt
+#				add_character_modifier = {
+#					hidden = yes
+#					name = chinese_grace_tributary_timer
+#					years = 30
+#				}
+#			}
+#			hidden_effect = { offmap_china = { governor = { character_event = { id = JD.60010 } } } }
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.5 # Slow down
+#				NOT = {
+#					trait = ambitious
+#				}
+#			}
+#			modifier = {
+#				factor = 0
+#				OR = {
+#					trait = content
+#					trait = craven
+#				}
+#			}
+#		}
+#	}
+#
+#	china_sends_reinforcements = { # OFFMAP CHINA ONLY; DON'T REACTIVATE!
+#		ai_check_interval = 2
+#		only_independent = yes
+#		potential = {
+#			always = no # We no longer have an offmap China...
+#			ai = yes
+#			war = yes
+#			#offmap_china = {
+#			#	governor = {
+#			#		character = ROOT
+#			#	}
+#			#	# Don't spawn reinforcements immediately
+#			#	had_offmap_tmp_flag = {
+#			#		flag = china_entered_war
+#			#		years = 3
+#			#	}
+#			#	OR = {
+#			#		NOT = {
+#			#			# Only spawn reinforcements once
+#			#			has_offmap_flag = china_sent_war_reinforcements
+#			#			# Exception: Really long wars
+#			#		}
+#			#		had_offmap_tmp_flag = {
+#			#			flag = china_sent_war_reinforcements
+#			#			years = 30
+#			#		}
+#			#	}
+#			#	# Don't spawn reinforcements for the following statuses in China.
+#			#	NOR = {
+#			#		has_status = china_famine
+#			#		has_status = china_civil_war
+#			#		has_status = china_mongol_invasion
+#			#		has_status = china_jurchen_invasion
+#			#		has_status = china_plague
+#			#	}
+#			#}
+#			# Only if China is losing a war by 50 war score.
+#			any_war = {
+#				OR = {
+#					AND = {
+#						attacker = {
+#							character = ROOT
+#						}
+#						NOT = { war_score = -49 }
+#					}
+#					AND = {
+#						defender = {
+#							character = ROOT
+#						}
+#						war_score = 50
+#					}
+#				}
+#			}
+#		}
+#		allow = {
+#		}
+#		effect = {
+##			offmap_china = {
+##				clr_offmap_flag = china_sent_war_reinforcements
+##				set_offmap_flag = china_sent_war_reinforcements
+##			}
+##			
+##			### To manipulate the troop spawning for specific situations modify the parameter valiables (china_war_troop_quantity, china_war_troop_quality, china_war_target_match_mult, and china_war_minimum_commander_martial) after the following block.
+##			set_variable = {
+##				which = china_war_troop_quantity
+##				value = 8
+##				# 8 regiments of ~500 units
+##			}
+##			set_variable = {
+##				which = china_war_troop_quality
+##				value = 4
+##				# Value between 1-7 [A value less than 1 or higher than 7 will be evaluated as 1 and 7 respectively]
+##			}
+##			set_variable = {
+##				which = china_war_target_match_mult
+##				value = 0.75
+##			}
+##			set_variable = {
+##				which = china_war_minimum_commander_martial
+##				value = 14
+##			}
+##			###
+##			
+##			
+##			# Manipulate the parameter variables dependent on the current status in China.
+##			china_war_modify_variables_by_status_effect = yes
+##			# Manipulate the parameter variables dependent on the current century.
+##			china_war_modify_variables_by_century_effect = yes
+##			
+##			### Match mult calculation against war enemies and sending notification events to enemy war leaders.
+##			any_war = {
+##				attacker = {
+##					if = {
+##						limit = {
+##							NOT = { character = ROOT }
+##							PREV = {
+##								defender = {
+##									character = ROOT
+##								}
+##							}
+##						}
+##						save_event_target_as = enemy
+##						PREV = {
+##							any_attacker = {
+##								save_event_target_as = temp_war_ally_calc
+##								ROOT = {
+##									# Match mult the variable against the opponents troops.
+##									export_to_variable = {
+##										which = china_temp_troop_calc
+##										value = realm_levies
+##										who = event_target:temp_war_ally_calc
+##									}
+##									
+##									divide_variable = {
+##										which = china_temp_troop_calc
+##										value = 500
+##									}
+##									
+##									multiply_variable = {
+##										which = china_temp_troop_calc
+##										which = china_war_target_match_mult
+##									}
+##									
+##									change_variable = {
+##										which = china_war_troop_quantity
+##										which = china_temp_troop_calc
+##									}
+##								}
+##							}
+##						}
+##					}
+##				}
+##				defender = {
+##					if = {
+##						limit = {
+##							NOT = { character = ROOT }
+##							PREV = {
+##								attacker = {
+##									character = ROOT
+##								}
+##							}
+##						}
+##						save_event_target_as = enemy
+##						PREV = {
+##							any_attacker = {
+##								save_event_target_as = temp_war_ally_calc
+##								ROOT = {
+##									# Match mult the variable against the opponents troops.
+##									export_to_variable = {
+##										which = china_temp_troop_calc
+##										value = realm_levies_plus_allies
+##										who = event_target:temp_war_ally_calc
+##									}
+##									
+##									divide_variable = {
+##										which = china_temp_troop_calc
+##										value = 500
+##									}
+##									
+##									multiply_variable = {
+##										which = china_temp_troop_calc
+##										which = china_war_target_match_mult
+##									}
+##									
+##									change_variable = {
+##										which = china_war_troop_quantity
+##										which = china_temp_troop_calc
+##									}
+##								}
+##							}
+##						}
+##					}
+##				}
+##			}
+##			
+##			# Hardcap at 50k troopspawn
+##			if = {
+##				limit = {	
+##					check_variable = {
+##						which = china_war_troop_quantity
+##						value > 100
+##					}
+##				}
+##				set_variable = {
+##					which = china_war_troop_quantity
+##					value = 100
+##				}
+##			}
+##
+##			if = {
+##				limit = {
+##					FROM = {
+##						capital_scope = {
+##							NOT = { region = world_india }
+##						}
+##					}
+##				}
+##				1513 = { # Jiuquan
+##					save_event_target_as = spawn_province
+##				}
+##			}
+##			else = {
+##				offmap_china = { set_offmap_flag = troop_spawn_india_temp }
+##				1318 = { # Samatata
+##					save_event_target_as = spawn_province
+##				}
+##				set_variable = {
+##					which = boat_spawns
+##					which = china_war_troop_quantity
+##				}
+##				multiply_variable = {
+##					which = boat_spawns
+##					value = 5
+##				}
+##				while = {
+##					limit = {
+##						check_variable = {
+##							which = boat_spawns
+##							value = 1
+##						}
+##					}
+##					change_variable = {
+##						which = boat_spawns
+##						value = -1
+##					}
+##					spawn_fleet = {
+##						province = 1411 # ganges delta
+##						owner = ROOT
+##						disband_on_peace = yes
+##						troops =
+##						{
+##							galleys = { 1 1 }
+##						}
+##						merge = yes
+##					}
+##				}
+##			}
+##			
+##			event_target:enemy = {
+##				character_event = { id = JD.30047 }
+##			}
+##			
+##			china_war_spawn_troops_effect = yes
+##			# Requires the current things to function properly:
+##			# event_target:spawn_province
+##			# variable: china_war_troop_quality
+##			# variable: china_war_troop_quantity
+#		}
+#		revoke_allowed = {
+#			always = no
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
 
 	write_a_book = {
 		only_playable = yes

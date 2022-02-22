@@ -678,7 +678,7 @@ decisions = {
 											religion = nihon_shinto
 											AND = {
 												religion_group = bud_group
-												culture_group = far_east
+												culture = japanese
 											}
 										}
 										has_claim = k_chrysanthemum_throne
@@ -1493,42 +1493,6 @@ title_decisions = {
 					}
 				}
 			}
-#			modifier = {
-#				factor = 0.05
-#				FROM = {
-#					dynasty = 1000156607 # Yang (Wu)
-#				}
-#				NOT = {
-#					title = c_jang
-#				}
-#			}
-#			modifier = {
-#				factor = 0.05
-#				FROM = {
-#					dynasty = 1000156610 # Qian (Wuyue)
-#				}
-#				NOT = {
-#					title = c_ghang
-#				}
-#			}
-#			modifier = {
-#				factor = 0.05
-#				FROM = {
-#					dynasty = 1000156611 # Wang (Min)
-#				}
-#				NOT = {
-#					title = c_piuk
-#				}
-#			}
-#			modifier = {
-#				factor = 0.05
-#				FROM = {
-#					dynasty = 1000156612 # Ma (Chu)
-#				}
-#				NOT = {
-#					title = c_dom
-#				}
-#			}
 			modifier = {
 				factor = 0.05
 				FROM = {
