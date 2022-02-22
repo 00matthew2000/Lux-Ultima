@@ -179,8 +179,6 @@ decisions = {
 					cooldown = no
 					opinion_effect = no
 				}
-					}
-				}
 			}
 			any_demesne_title = {
 				limit = { 
@@ -235,10 +233,7 @@ decisions = {
 			# Characters that should focus on the Japanese stuff shouldn't do this!
 			modifier = {
 				factor = 0
-				OR = {
-					culture = yamato
-					culture = japanese
-				}
+				culture = japanese
 				religion_group = bud_group
 			}
 			modifier = {

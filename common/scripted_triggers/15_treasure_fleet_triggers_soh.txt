@@ -125,6 +125,7 @@ is_in_active_treasure_fleet_region_trigger = {
 			OR = {
 				region = world_india_bengal
 				region = world_india_south
+            }
 		}
 		AND = {
 			2564 = { # Hangzhou
