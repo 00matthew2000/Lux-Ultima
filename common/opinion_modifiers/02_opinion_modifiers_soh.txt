@@ -599,3 +599,13 @@ i_was_misc_tributary = {
 	months = 3600
 	inherit = yes
 }
+# Shogunate faction
+supporting_as_new_tenno = {
+	opinion = 10
+}
+opinion_revoked_support_as_tenno = {
+	opinion = -1000
+	prison_reason = yes
+	revoke_reason = yes
+	execute_reason = yes
+}
