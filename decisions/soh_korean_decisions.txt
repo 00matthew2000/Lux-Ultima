@@ -74,6 +74,7 @@ decisions = {
 			}
 			set_character_flag = recent_minor_decision
 			set_character_flag = do_not_disturb
+			#activate these if we end up including this - tsf4
 			#hidden_tooltip = { character_event = { id = chuseok.140 days = 150 } } # Safety catch flag clearing
 			
 			#hidden_tooltip = {

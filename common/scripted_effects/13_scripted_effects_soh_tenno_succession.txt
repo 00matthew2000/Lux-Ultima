@@ -2538,10 +2538,10 @@ score_current_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			ROOT = {
-				culture_group = far_east
+				culture = japanese
 			}
 			event_target:current_chrysanthemum_throne_heir = {
-				culture_group = far_east
+				culture = japanese
 			}
 		}
 		change_variable = {
@@ -8020,10 +8020,10 @@ score_preferred_chrysanthemum_throne_heir_effect = {
 	if = {
 		limit = {
 			ROOT = {
-				culture_group = far_east
+				culture = japanese
 			}
 			event_target:preferred_chrysanthemum_throne_heir = {
-				culture_group = far_east
+				culture = japanese
 			}
 		}
 		change_variable = {

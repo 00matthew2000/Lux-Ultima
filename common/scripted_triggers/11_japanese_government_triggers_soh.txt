@@ -55,7 +55,7 @@ can_become_japanese_monastic_feudal_trigger = {
 				culture = ROOT
 			}
 			OR = {
-				culture_group = far_east
+				culture = japanese
 				k_chrysanthemum_throne = {
 					holder_scope = {
 						culture = ROOT

@@ -8964,7 +8964,7 @@ character_event = {
 					has_dharmic_religion_trigger = yes
 					NAND = {
 						religion_group = bud_group
-						culture_group = far_east
+						culture = japanese
 					}
 				}
 			}
@@ -8986,7 +8986,7 @@ character_event = {
 					has_dharmic_religion_trigger = yes
 					NAND = {
 						religion_group = bud_group
-						culture_group = far_east
+						culture = japanese
 					}
 				}
 			}
@@ -9023,7 +9023,7 @@ character_event = {
 				religion = nihon_shinto
 				AND = {
 					religion_group = bud_group
-					culture_group = far_east
+					culture = japanese
 				}
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
@@ -9048,7 +9048,7 @@ character_event = {
 				religion = nihon_shinto
 				AND = {
 					religion_group = bud_group
-					culture_group = far_east
+					culture = japanese
 				}
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
@@ -9072,7 +9072,7 @@ character_event = {
 				religion = nihon_shinto
 				AND = {
 					religion_group = bud_group
-					culture_group = far_east
+					culture = japanese
 				}
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
