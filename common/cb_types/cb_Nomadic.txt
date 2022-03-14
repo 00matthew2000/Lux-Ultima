@@ -1753,10 +1753,12 @@ nomad_subjugation = {
 						any_vassal = {
 							character = FROM
 						}
-						religion = nihon_shinto
-						AND = {
-							religion_group = bud_group
-							culture = japanese
+						NOR = {
+							religion = nihon_shinto
+							AND = {
+								religion_group = bud_group
+								culture = japanese
+							}
 						}
 						NOT = {
 							government = chinese_imperial_government
@@ -2099,10 +2101,12 @@ nomad_invasion = {
 						any_vassal = {
 							character = FROM
 						}
-						religion = nihon_shinto
-						AND = {
-							religion_group = bud_group
-							culture = japanese
+						NOR = {
+							religion = nihon_shinto
+							AND = {
+								religion_group = bud_group
+								culture = japanese
+							}
 						}
 						NOT = {
 							government = chinese_imperial_government
@@ -2112,14 +2116,12 @@ nomad_invasion = {
 			}
 			NOR = {
 				any_direct_de_jure_vassal_title = {
-					any_direct_de_jure_vassal_title = {
 						title = c_yamashiro
-					}
 				}
 				FROM = {
 					capital_scope = {
 						kingdom = {
-							title = PREVPREVPREV # Contains the Tenno's current capital
+							title = PREVPREV # Contains the Tenno's current capital
 						}
 					}
 				}
@@ -2502,10 +2504,12 @@ nomad_expansion = {
 						any_vassal = {
 							character = FROM
 						}
-						religion = nihon_shinto
-						AND = {
-							religion_group = bud_group
-							culture = japanese
+						NOR = {
+							religion = nihon_shinto
+							AND = {
+								religion_group = bud_group
+								culture = japanese
+							}
 						}
 						NOT = {
 							government = chinese_imperial_government
@@ -2545,57 +2549,45 @@ nomad_expansion = {
 	}
 	
 	on_success = {
-		ROOT = {
-			if = {
-				limit = {
-					has_nickname = no
-				}
-				FROM = {
+		hidden_tooltip = {
+			ROOT = {
+				if = {
+					limit = {
+						has_nickname = no
+					}
+					FROM = {
 						save_event_target_as = nickname_target
 					}
-				ROOT = { 
-					save_event_target_as = nickname_receiver
-				}
-				random_list = {
-					5 = { give_nickname = nick_the_eastern_wind }
-					5 = { give_nickname = nick_the_despoiler }
-					5 = {
-						give_nickname = nick_the_culture_marauder
-						modifier = {
-							factor = 0
-							event_target:nickname_target = { is_nomadic = yes }
-						}
-						modifier = {
-							factor = 0
-							event_target:nickname_target = { culture = ROOT }
-						}
+					ROOT = { 
+						save_event_target_as = nickname_receiver
 					}
-					5 = { 
-						give_nickname = nick_the_bane_of_realmname
-						modifier = {
-							factor = 0
-							event_target:nickname_target = { is_nomadic = yes }
+					random_list = {
+						2 = { give_nickname = nick_the_eastern_wind }
+						5 = { give_nickname = nick_the_despoiler }
+						5 = { 
+							give_nickname = nick_the_bane_of_realmname
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { is_nomadic = yes }
+							}
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { culture = ROOT }
+							}
 						}
-						modifier = {
-							factor = 0
-							event_target:nickname_target = { culture = ROOT }
+						5 = { 
+							give_nickname = nick_the_culture_marauder
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { is_nomadic = yes }
+							}
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { culture = ROOT }
+							}
 						}
+						100 = { }
 					}
-					5 = { 
-						give_nickname = nick_the_slayer_of_culture
-						modifier = {
-							factor = 0
-							event_target:nickname_target = { culture = ROOT }
-						}
-					}
-					5 = { 
-						give_nickname = nick_the_scourge_of_god
-						modifier = {
-							factor = 0
-							event_target:nickname_target = { religion = ROOT }
-						}
-					}
-					100 = { }
 				}
 			}
 		}

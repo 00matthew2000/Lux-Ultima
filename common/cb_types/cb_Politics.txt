@@ -861,18 +861,16 @@ overthrow_ruler = {
 			}
 		}
 	}
+	
 	on_add = {
 		hidden_tooltip = {
+			fire_haruspicy_event_effect = yes
 			FROM = {
 				any_vassal = {
 					letter_event = { id = addrebels.0 days = 1 }
 				}
 			}
 		}
-	}
-	
-	on_add = {
-		hidden_tooltip = { fire_haruspicy_event_effect = yes }
 		if = {
 			#limit = { defender = { is_offmap_governor = offmap_china } }
 			limit = {
