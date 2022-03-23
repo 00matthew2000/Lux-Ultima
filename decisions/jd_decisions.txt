@@ -1598,7 +1598,7 @@ targeted_decisions = {
 										port = yes
 									}
 									ROOT = { is_seafarer = no }
-									NOT = { any_demesne_province = { port = yes } }
+									NOT = { port = yes } 
 								}
 							}
 							any_vassal = {

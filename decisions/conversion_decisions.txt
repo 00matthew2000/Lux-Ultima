@@ -375,18 +375,18 @@ targetted_decisions = {
 		allow = {
 			NOT = { trait = zealous }
 			OR = {
-				AND = {
+				#AND = {
 					prestige = 500
 					#capital_scope = {
 						#true_religion_group = ROOT
 					#}
-				}
-				AND = {
+				#}
+				#AND = {
 					prestige = 1000
 					#capital_scope = {
 						#NOT = { true_religion_group = ROOT }
 					#}
-				}
+				#}
 			}
 		}
 		effect = {
@@ -719,46 +719,32 @@ targetted_decisions = {
 decisions = {
 	# x
 	# Weak or unreformed religions are allowed to convert to the attacker's religion when under Holy War
-	convert_to_attacker_religion = {
+	convert_to_attacker_religion = { #Fix by comparing this to base game's decision
 		only_playable = yes
 		ai_check_interval = 18
 		
 		is_high_prio = yes
 		
-		from_potential = {
-			is_playable = yes
-			custom_tooltip = {
-				text = not_bastion_tooltip
-				hidden_tooltip = {
-					bastion_of_faith_religion_trigger = no
-				}
-				NOT = { religion_authority = 0.3 }
-			}
-			controls_religion = no
-			war = yes
-		}
 		potential = {
-		any_war = {
-			#defender = { character = FROM }
-			defender = {
-			NOT = { religion = ROOT }
-			}
-			attacker = { 
-			character = ROOT 
-			}
-		}
-		custom_tooltip = {
-			text = proselyte_religion_tooltip
-			hidden_tooltip = {
-				ROOT = {
-				proselyte_religion_trigger = yes
+			war = yes
+			any_war = {
+				defender = { character = ROOT }
+				attacker = {
+				NOT = { religion = ROOT }
 				}
 			}
-		}
-		OR = {
-			holy_war_trigger = yes
-			crusade_trigger = yes
-			#using_cb = sacred_war
+			custom_tooltip = {
+				text = proselyte_religion_tooltip
+				hidden_tooltip = {
+					ROOT = {
+					proselyte_religion_trigger = yes
+					}
+				}
+			}
+			OR = {
+				holy_war_trigger = yes
+				crusade_trigger = yes
+				#using_cb = sacred_war
 			}
 		}
 		
@@ -768,51 +754,65 @@ decisions = {
 		}
 		
 		effect = {
-			FROM = {
-				prestige = -500
-				piety = 100
-				religion_authority = {
-					modifier = ruler_converted_from
-				}
-			}
+			prestige = -500
+			piety = 100
 			hidden_tooltip = {
-				ROOT = {
+				any_war = {
+					limit = {
+						defender = { character = ROOT }
+						attacker = {
+							NOT = { religion = ROOT }
+						}
+						OR = {
+							using_cb = crusade
+							using_cb = religious_proselyte1
+							using_cb = religious_proselyte2
+							using_cb = religious_bastion1
+							using_cb = religious_bastion2
+							using_cb = religious_ancestral
+						}
+					}
+					attacker = {
+						save_event_target_as = enemy_attacker
+						}
+					}
+				}
+				event_target:enemy_attacker = {
+				hidden_tooltip = {
 					letter_event = { id = 62800 }
-				}
-			}
-			hidden_tooltip = {
-				FROM = {
-					any_courtier = {
-						limit = {
-							religion = FROM
-							employer = { character = FROM }
+					ROOT = {
+						any_courtier = {
+							limit = {
+								religion = ROOT
+								employer = { character = ROOT }
+							}
+							religion = PREVPREV
 						}
-						religion = ROOT
-					}
-					any_vassal = {
-						limit = {
-							is_playable = no
-							religion = FROM
+						any_vassal = {
+							limit = {
+								is_playable = no
+								religion = ROOT
+							}
+							religion = PREVPREV
 						}
-						religion = ROOT
-					}
-					capital_scope = {
-						if = {
-							limit = { religion = FROM }
-							religion = ROOT
+						capital_scope = {
+							if = {
+								limit = { religion = ROOT }
+								religion = PREVPREV
+							}
 						}
 					}
-					religion = ROOT 
 				}
-			}
-			
-			hidden_tooltip = {
-				religion_authority = {
-					modifier = ruler_converted_to
+				hidden_tooltip = {
+					religion_authority = {
+						modifier = ruler_converted_to
+					}
 				}
+				reverse_religion = ROOT 
 			}
-			
-			#piety = 100
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
 		}
 		
 		#revoke_allowed = {
@@ -832,35 +832,41 @@ decisions = {
 				factor = 0
 				NOT = {
 					any_war = {
-						defender = { character = FROM }
+						defender = { character = ROOT }
 						OR = {
-							crusade_trigger = yes
-							holy_war_trigger = yes
-							#using_cb = sacred_war
+							using_cb = crusade
+							using_cb = religious_proselyte1
+							using_cb = religious_proselyte2
+							using_cb = religious_bastion1
+							using_cb = religious_bastion2
+							using_cb = religious_ancestral
 						}
 						war_score = 50
-						#thirdparty_title_scope = {
-#						FROM = {
-#							primary_title = {
-#								title = PREVPREV
-#								}
-#							}
-#						}
+						thirdparty_title_scope = {
+						ROOT = {
+							primary_title = {
+								title = PREVPREV
+								}
+							}
+						}
 					}
 				}
 			}
 			modifier = {
 				factor = 2
 				any_war = {
-					defender = { character = FROM }
+					defender = { character = ROOT }
 					OR = {
-						crusade_trigger = yes
-						holy_war_trigger = yes
-						#using_cb = sacred_war
+						using_cb = crusade
+						using_cb = religious_proselyte1
+						using_cb = religious_proselyte2
+						using_cb = religious_bastion1
+						using_cb = religious_bastion2
+						using_cb = religious_ancestral
 					}
 					war_score = 75
 					thirdparty_title_scope = {
-						FROM = {
+						ROOT = {
 							primary_title = {
 								title = PREVPREV
 							}
