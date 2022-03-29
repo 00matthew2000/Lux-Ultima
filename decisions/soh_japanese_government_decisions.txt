@@ -187,9 +187,9 @@ decisions = {
 						county = {
 							OR = {
 								any_direct_de_jure_vassal_title = {
-									is_holy_site = shinto
+									is_holy_site = nihon_shinto
 								}
-								is_holy_site = shinto
+								is_holy_site = nihon_shinto
 							}
 						}
 						culture = PREV
@@ -397,8 +397,8 @@ decisions = {
 			controls_religion = yes
 			trait = under_regency
 			NOT = { trait = incapable }
-			OR = {
-				NOT = {
+			NOT = {
+				OR = {
 					has_character_flag = asked_to_end_regency
 					had_character_flag = { flag = asked_to_end_regency days = 1825 }
 				}
@@ -739,8 +739,8 @@ decisions = {
 					culture = japanese
 				}
 			}
-			OR = {
-				NOT = {
+			NOT = {
+				OR = {
 					has_character_flag = asked_for_regency
 					had_character_flag = { flag = asked_for_regency days = 1825 }
 				}
@@ -1133,8 +1133,8 @@ decisions = {
 			}
 			trait = under_regency2
 			NOT = { trait = incapable }
-			OR = {
-				NOT = {
+			NOT = {
+				OR = {
 					has_character_flag = asked_to_end_regency
 					had_character_flag = { flag = asked_to_end_regency days = 1825 }
 				}
@@ -1487,8 +1487,8 @@ decisions = {
 					culture = japanese
 				}
 			}
-			OR = {
-				NOT = {
+			NOT = {
+				OR = {
 					has_character_flag = asked_for_regency
 					had_character_flag = { flag = asked_for_regency days = 1825 }
 				}

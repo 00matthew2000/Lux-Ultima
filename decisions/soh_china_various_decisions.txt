@@ -377,13 +377,13 @@ decisions = {
 						opinion_effect = no
 					}
 				}
-				else = {
-					add_law = {
-						law = imperial_administration
-						cooldown = no
-						opinion_effect = no
-					}
-				}
+				#else = {
+					#add_law = {
+						#law = imperial_administration ##Not really sure what to put here instead, if anything -00matthew2000
+						#cooldown = no
+						#opinion_effect = no
+					#}
+				#}
 				if = {
 					limit = {
 						has_dlc = "Charlemagne"

@@ -69,9 +69,9 @@ plot_decisions = {
 		effect = {
 			letter_event = { id = japan.23 } # Check the troop ratio!
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 		}
@@ -190,9 +190,9 @@ plot_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 		}
@@ -262,9 +262,9 @@ plot_decisions = {
 				set_character_flag = faction_regent_ultimatum_taken
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -455,9 +455,9 @@ plot_decisions = {
 				letter_event = { id = japan.39 } # Inform the liege
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 		}
@@ -517,9 +517,9 @@ plot_decisions = {
 				set_character_flag = faction_shogun_ultimatum_taken
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -566,9 +566,12 @@ plot_decisions = {
 								attacker = { character = PREV }
 								OR = {
 									using_cb = invasion
-									using_cb = religious
+									using_cb = religious_proselyte1
+									using_cb = religious_proselyte2
+									using_cb = religious_bastion1
+									using_cb = religious_bastion2
+									using_cb = religious_ancestral
 									using_cb = tribal_invasion
-									using_cb = muslim_invasion
 									using_cb = viking_invasion
 									using_cb = claim_all
 									using_cb = claim
@@ -628,9 +631,9 @@ plot_decisions = {
 				set_character_flag = faction_oust_shogun_ultimatum_taken
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -677,9 +680,12 @@ plot_decisions = {
 								attacker = { character = PREV }
 								OR = {
 									using_cb = invasion
-									using_cb = religious
+									using_cb = religious_proselyte1
+									using_cb = religious_proselyte2
+									using_cb = religious_bastion1
+									using_cb = religious_bastion2
+									using_cb = religious_ancestral
 									using_cb = tribal_invasion
-									using_cb = muslim_invasion
 									using_cb = viking_invasion
 									using_cb = claim_all
 									using_cb = claim
@@ -820,9 +826,9 @@ plot_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 		}
@@ -878,9 +884,9 @@ plot_decisions = {
 				set_character_flag = faction_regent_ultimatum_taken
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -1074,9 +1080,9 @@ plot_decisions = {
 				letter_event = { id = japan.92 } # Inform the liege
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 		ai_will_do = {
 			factor = 1
 		}

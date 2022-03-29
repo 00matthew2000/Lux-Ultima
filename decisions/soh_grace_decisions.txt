@@ -6178,12 +6178,12 @@ decisions = {
 							who = ROOT
 							modifier = opinion_china_refused_horses
 						}
-						AND = {
+						#AND = {
 							has_opinion_modifier = {
 								who = ROOT
 								modifier = opinion_china_supplying_horses
 							}
-						}
+						#}
 					}
 				}
 			}

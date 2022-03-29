@@ -3,12 +3,10 @@ vassals_can_change_to_japanese_feudal_trigger = {
 	OR = {
 		# Our direct liege isn't bureaucratic or the Tenno
 		AND = {
-			OR = {
-				liege = {
-					OR = {
-						government = japanese_feudal_government
-						government = japanese_monastic_feudal_government
-					}
+			liege = {
+				OR = {
+					government = japanese_feudal_government
+					government = japanese_monastic_feudal_government
 				}
 			}
 			any_owned_bloodline = {
