@@ -11694,7 +11694,7 @@ character_event = {
 							value = 30
 						}
 					}
-					narrative_event = { id = LNY.155 } # Dragon driven off and wounded
+					#narrative_event = { id = LNY.155 } # Dragon driven off and wounded
 				}
 				else = {
 					narrative_event = { id = LNY.159 } # Defeat
@@ -12375,7 +12375,7 @@ narrative_event = {
 			}
 			character_event = { id = LNY.167 days = 1 } # Inform vassals
 		}
-		character_event = { id = LNY.168 days = 2 } # Calculate outcome
+		#character_event = { id = LNY.168 days = 2 } # Calculate outcome
 		
 		ai_chance = {
 			factor = 1000
@@ -14725,6 +14725,7 @@ narrative_event = {
 # Peasant girl rescues the hostages - liege
 narrative_event = {
 	id = LNY.194
+	title = EVTTITLE_LNY_194
 	desc = EVTDESC_LNY_194
 	picture = GFX_evt_chinese_bureaucrat
 	border = GFX_event_narrative_frame_war
@@ -14765,6 +14766,7 @@ narrative_event = {
 # Peasant girl rescues the hostages - vassals that joined
 narrative_event = {
 	id = LNY.195
+	title = EVTTITLE_LNY_195
 	desc = EVTDESC_LNY_195
 	picture = GFX_evt_chinese_bureaucrat
 	border = GFX_event_narrative_frame_war
@@ -14785,6 +14787,7 @@ narrative_event = {
 # Peasant girl rescues the hostages - vassals that didn't join
 narrative_event = {
 	id = LNY.196
+	title = EVTTITLE_LNY_196
 	desc = EVTDESC_LNY_196
 	picture = GFX_evt_chinese_bureaucrat
 	border = GFX_event_narrative_frame_war
@@ -14799,6 +14802,7 @@ narrative_event = {
 # Peasant girl fails to rescue the hostages - liege
 narrative_event = {
 	id = LNY.197
+	title = EVTTITLE_LNY_197
 	desc = EVTDESC_LNY_197
 	picture = GFX_evt_china_diplomatic_incident
 	border = GFX_event_narrative_frame_war
@@ -14846,6 +14850,7 @@ narrative_event = {
 # Peasant girl rescues the hostages - vassals that joined
 narrative_event = {
 	id = LNY.198
+	title = EVTTITLE_LNY_198
 	desc = EVTDESC_LNY_198
 	picture = GFX_evt_china_diplomatic_incident
 	border = GFX_event_narrative_frame_war
@@ -14867,6 +14872,7 @@ narrative_event = {
 # Peasant girl rescues the hostages - vassals that didn't join
 narrative_event = {
 	id = LNY.199
+	title = EVTTITLE_LNY_199
 	desc = EVTDESC_LNY_199
 	picture = GFX_evt_china_diplomatic_incident
 	border = GFX_event_narrative_frame_war

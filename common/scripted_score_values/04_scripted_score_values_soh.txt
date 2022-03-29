@@ -1826,18 +1826,18 @@ tenno_succession_candidate_weight = {
 		}
 	}
 
-	# Culture - Japanese/Yamato > Japonic > other, assuming you don't have a different culure
+	# Culture - Japanese/Nihonohellenic > Japonic > other, assuming you don't have a different culure
 	additive_modifier = {
 		value = 100
 		event_target:regent_or_tenno = {
 			OR = {
-				culture = yamato
+				culture = nihonohellenic
 				culture = japanese
 			}
 		}
 		ROOT = {
 			OR = {
-				culture = yamato
+				culture = nihonohellenic
 				culture = japanese
 			}
 		}
@@ -1845,10 +1845,10 @@ tenno_succession_candidate_weight = {
 	additive_modifier = {
 		value = 100
 		event_target:regent_or_tenno = {
-			culture_group = japonic
+			culture = japanese
 		}
 		ROOT = {
-			culture_group = japonic
+			culture = japanese
 		}
 	}
 	additive_modifier = {
@@ -2300,7 +2300,7 @@ tenno_succession_candidate_weight = {
 		OR = { 
 			NOT = { is_close_relative = ROOT }
 			religion = zoroastrian
-			religion = messalian
+			#religion = messalian
 			has_religion_feature = religion_holy_family 
 			has_religion_feature = religion_feature_zun
 		} 
@@ -2346,7 +2346,7 @@ tenno_succession_candidate_weight = {
 		OR = { 
 			NOT = { is_close_relative = ROOT }
 			religion = zoroastrian
-			religion = messalian
+			#religion = messalian
 			has_religion_feature = religion_holy_family 
 			has_religion_feature = religion_feature_zun
 		} 
@@ -2635,7 +2635,7 @@ tenno_succession_candidate_weight = {
 				NOT = { religion = bon }
 				NOT = { religion = bon_reformed }
 				#NOT = { religion_group = graecoroman_group }
-				#NOT = { religion_group = graecoroman_group_reformed }
+				#NOT = { religion = indoh_confucian }
 			}
 		}
 		NOT = { trait = chaste }
@@ -2652,7 +2652,7 @@ tenno_succession_candidate_weight = {
 			religion_group = jewish_group
 			religion_group = indian_group
 			religion_group = graecoroman_group
-			religion_group = graecoroman_group_reformed
+			religion = indoh_confucian
 			religion = bon
 			religion = bon_reformed
 		}
@@ -2671,7 +2671,7 @@ tenno_succession_candidate_weight = {
 				NOT = { religion = bon }
 				NOT = { religion = bon_reformed }
 				#NOT = { religion_group = graecoroman_group }
-				#NOT = { religion_group = graecoroman_group_reformed }
+				#NOT = { religion = indoh_confucian }
 			}
 		}
 		NOT = { trait = temperate }
@@ -2781,7 +2781,7 @@ tenno_succession_candidate_weight = {
 				NOT = { religion = bon }
 				NOT = { religion = bon_reformed }
 				#NOT = { religion_group = graecoroman_group }
-				#NOT = { religion_group = graecoroman_group_reformed }
+				#NOT = { religion = indoh_confucian }
 			}
 			trait = proud
 			trait = envious
@@ -2802,7 +2802,7 @@ tenno_succession_candidate_weight = {
 				NOT = { religion = bon }
 				NOT = { religion = bon_reformed }
 				#NOT = { religion_group = graecoroman_group }
-				#NOT = { religion_group = graecoroman_group_reformed }
+				#NOT = { religion = indoh_confucian }
 			}
 			trait = lustful
 			trait = hedonist
@@ -2839,7 +2839,7 @@ tenno_succession_candidate_weight = {
 				NOT = { religion = bon }
 				NOT = { religion = bon_reformed }
 				#NOT = { religion_group = graecoroman_group }
-				#NOT = { religion_group = graecoroman_group_reformed }
+				#NOT = { religion = indoh_confucian }
 			}
 			trait = gluttonous
 			trait = hedonist
@@ -3070,7 +3070,7 @@ tenno_succession_candidate_weight = {
 		value = 10
 		NOT = { character = ROOT } #Do not judge yourself.
 		OR = { 
-			religion = buddhist
+			religion_group = bud_group
 			religion = jain
 			religion = bon
 			pacifist = yes
@@ -3687,7 +3687,7 @@ tenno_succession_candidate_weight = {
 		OR = { 
 			religion_group = christian
 			religion_group = muslim
-			religion = shinto
+			religion = nihon_shinto
 		}
 		ROOT = { 
 			trait = lefthanded
