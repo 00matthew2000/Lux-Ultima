@@ -288,11 +288,9 @@ powerful_vassal_takeover_war = { # Started from faction
 		if = {
 			limit = {
 				has_law = succession_voting_power_0
-				holder_scope = {
-					NOR = {
-						government = chinese_imperial_government # Should NOT become Elective!
-						government = japanese_imperial_government # Should NOT become Elective!
-					}
+				NOR = {
+					government = chinese_imperial_government # Should NOT become Elective!
+					government = japanese_imperial_government # Should NOT become Elective!
 				}
 			}
 			add_law_w_cooldown = succession_voting_power_1

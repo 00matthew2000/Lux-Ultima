@@ -1177,36 +1177,36 @@ west_african = {
 		modifier = default_culture_modifier
 	}
 
-	soninke = {
-		graphical_cultures = { westafricangfx africangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		color = { 0.35 0.35 0.2 }
-		
-		male_names = {
-			Abubakar Akoi Alayaman 
-			Bérété Bathily Bomou Bilali Bunama Badä Bamari Bannu Birama Bisi Biyu 
-			Cissi Diobé Dabo Diakhaba Diawara Daffi Doucouri Dankaran Demba Daoud_David Diara
-			Fissourou Fadiga Fädazu Fuluku Gane Gao Ishaq_Isaac
-			Kaba Kabayo Kalabi Kanafa Kambine Kassa Kaya Kayna Kinkin Kukuray Kusoy
-			Marega M'Bali Maghan Majan Mamadi Mamoudou Mari-Djata Musa_Moses 
-			Niakhaté Nintasanay	Wague Wali Wati
-			Reidja Sy Sylla Sakho Soukhouna Sima Soumaré Sakoura Salman Sandaki Soumaba Soumaoro Soundiata Sulayman 
-			Tandian Tunka Tunka-Menin Tabouri Tounkara Touri Tandi Takoi Tib  
-			Yansané Yatabéri Yama Yasiboy
-			Zakoi Zenku
-		}
-		female_names = {
-			Adja Alima Amita Aoua Aminata Aichata Aissata
-			Barakissa Bintou Deye Djeneba Djenly Djire
-			Fadima Fatim Fatoumata Halima Hawa
-			Ina Kondolon Kadi Kilia Kolonkan 
-			Lorane Mariam Namandjé 
-			Nafissa Namiss Nana
-			Sané Sogolon Safiatou Salimata Sidibé Siya Tekhaye
-			Youma Zeinab
-		}
-	}
+#	soninke = {
+#		graphical_cultures = { westafricangfx africangfx }
+#		secondary_event_pictures = bedouin_arabic
+#		
+#		color = { 0.35 0.35 0.2 }
+#		
+#		male_names = {
+#			Abubakar Akoi Alayaman 
+#			Bérété Bathily Bomou Bilali Bunama Badä Bamari Bannu Birama Bisi Biyu 
+#			Cissi Diobé Dabo Diakhaba Diawara Daffi Doucouri Dankaran Demba Daoud_David Diara
+#			Fissourou Fadiga Fädazu Fuluku Gane Gao Ishaq_Isaac
+#			Kaba Kabayo Kalabi Kanafa Kambine Kassa Kaya Kayna Kinkin Kukuray Kusoy
+#			Marega M'Bali Maghan Majan Mamadi Mamoudou Mari-Djata Musa_Moses 
+#			Niakhaté Nintasanay	Wague Wali Wati
+#			Reidja Sy Sylla Sakho Soukhouna Sima Soumaré Sakoura Salman Sandaki Soumaba Soumaoro Soundiata Sulayman 
+#			Tandian Tunka Tunka-Menin Tabouri Tounkara Touri Tandi Takoi Tib  
+#			Yansané Yatabéri Yama Yasiboy
+#			Zakoi Zenku
+#		}
+#		female_names = {
+#			Adja Alima Amita Aoua Aminata Aichata Aissata
+#			Barakissa Bintou Deye Djeneba Djenly Djire
+#			Fadima Fatim Fatoumata Halima Hawa
+#			Ina Kondolon Kadi Kilia Kolonkan 
+#			Lorane Mariam Namandjé 
+#			Nafissa Namiss Nana
+#			Sané Sogolon Safiatou Salimata Sidibé Siya Tekhaye
+#			Youma Zeinab
+#		}
+#	}
 
 	songhay = {
 		color = { 0.5 0.35 0.10 }
@@ -1314,7 +1314,7 @@ west_african = {
 		modifier = default_culture_modifier
 	}
 }
-central_african = {
+central_african = { ###Gonna keep Central African here because I may remove it later and put the cultures in other groups, but I need to revisit it -00matthew2000
 	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
 	graphical_cultures = { muslimgfx }
 
@@ -4425,24 +4425,24 @@ nilo_saharan = {
 
 		modifier = default_culture_modifier
 	}
-	daju = {
-		graphical_cultures = { africangfx westafricangfx }
-		secondary_event_pictures = bedouin_arabic
-		
-		color = { 0.95 0.9 0.65 }
-		
-		male_names = {
-			Adam Ahmed_Ahmad Anqarib Asil Bakhit Ber Bogirg Bokdoru Bolad Born Bug Chang Chaski Dahab Dong Ede Ett Ferne Gaguwe Galan Gelgel Gon Habib Hajar Hassaballah Ibedou Ibrahim_Abraham Ishaq_Isaac Issa Izzo Jal Jamne Kalge Kamalgi Karim Kasefroge Kosom Koydin Kukne Kur Lanhjin Magjin Maland Malaz Mbakin Meayge Meewge Moussa Moustafa_Mustafa Murtin Omar Pen Pid Risha Rong Salih Shendi Shuaeib Wadanh Youssouf_Joseph Yug
-		}
-		female_names = {
-			Amm Awdinh Bakhita Ber Bis Bor Buk Chaski Emsire Gaguwe Gosgod Hamam Jamne Kakaw Kimzir Kubuy Kugurg Kulk Lanhjin Maj Mariam Musin Ngid Okk Pid Raqiq Ur Usk Wadanh
-		}
-		
-		founder_named_dynasties = yes
-		dukes_called_kings = yes
-		
-		allow_looting = yes
-	}
+#	daju = {
+#		graphical_cultures = { africangfx westafricangfx }
+#		secondary_event_pictures = bedouin_arabic
+#		
+#		color = { 0.95 0.9 0.65 }
+#		
+#		male_names = {
+#			Adam Ahmed_Ahmad Anqarib Asil Bakhit Ber Bogirg Bokdoru Bolad Born Bug Chang Chaski Dahab Dong Ede Ett Ferne Gaguwe Galan Gelgel Gon Habib Hajar Hassaballah Ibedou Ibrahim_Abraham Ishaq_Isaac Issa Izzo Jal Jamne Kalge Kamalgi Karim Kasefroge Kosom Koydin Kukne Kur Lanhjin Magjin Maland Malaz Mbakin Meayge Meewge Moussa Moustafa_Mustafa Murtin Omar Pen Pid Risha Rong Salih Shendi Shuaeib Wadanh Youssouf_Joseph Yug
+#		}
+#		female_names = {
+#			Amm Awdinh Bakhita Ber Bis Bor Buk Chaski Emsire Gaguwe Gosgod Hamam Jamne Kakaw Kimzir Kubuy Kugurg Kulk Lanhjin Maj Mariam Musin Ngid Okk Pid Raqiq Ur Usk Wadanh
+#		}
+#		
+#		founder_named_dynasties = yes
+#		dukes_called_kings = yes
+#		
+#		allow_looting = yes
+#	}
 	sao = {
 		graphical_cultures = { westafricangfx }
 		

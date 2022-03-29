@@ -146,18 +146,15 @@ holy_banner_of_mohammad = {
 		value = 0
 		additive_modifier = {
 			value = 100
-			primary_title = {
-				title = e_arabia
+			OR = {
+				AND = {
+				religion_group = muslim	
+				is_landed = yes	
+				}
+				primary_title = {
+					title = e_arabia
+				}
 			}
-		}
-	}
-
-	weight = {
-		value = 0
-		additive_modifier = {
-			value = 100
-			religion_group = muslim		
-			is_landed = yes	
 		}
 	}
 
@@ -188,18 +185,15 @@ blessed_mantle = {
 		value = 0
 		additive_modifier = {
 			value = 100
-			primary_title = {
-				title = e_arabia
+			OR = {
+				AND = {
+				religion_group = muslim	
+				is_landed = yes	
+				}
+				primary_title = {
+					title = e_arabia
+				}
 			}
-		}
-	}
-
-	weight = {
-		value = 0
-		additive_modifier = {
-			value = 100
-			religion_group = muslim	
-			is_landed = yes		
 		}
 	}
 

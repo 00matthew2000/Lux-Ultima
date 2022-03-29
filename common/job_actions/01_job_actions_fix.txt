@@ -356,7 +356,7 @@ action_show_fake_mapmode = {
 			FROM = {
 				has_character_flag = fake_mapmode_capital_holding_type
 			}
-			has_holder = yes
+			#has_holder = yes ##Not really sure what to do with this -00matthew2000
 			capital_holding = {
 				NOR = {
 					holding_type = castle

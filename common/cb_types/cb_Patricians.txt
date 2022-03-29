@@ -327,10 +327,12 @@ coastal_county_republic = {
 						any_vassal = {
 							character = FROM
 						}
-						religion = nihon_shinto
-						AND = {
-							religion_group = bud_group
-							culture = japanese
+						NOR = {
+							religion = nihon_shinto
+							AND = {
+								religion_group = bud_group
+								culture = japanese
+							}
 						}
 						NOT = {
 							government = chinese_imperial_government

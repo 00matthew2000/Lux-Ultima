@@ -79,7 +79,18 @@ CB_NAME_REGENCY_FACTION;Create Permanent Regency War;;;;;;;;;;;;;x
 WAR_NAME_REGENCY_FACTION;$ATTACKER$'s $ORDER$Permanent Regency War;;;;;;;;;;;;;x
 CB_NAME_TAKE_REGENCY;War for the Regency;;;;;;;;;;;;;x
 WAR_NAME_TAKE_REGENCY;$ORDER$$FIRST_ADJ$-$SECOND_ADJ$ War for the Regency;;;;;;;;;;;;;x
+CB_NAME_UNIFICATION_OF_KOREA;War to Unify Korea;;;;;;;;;;;;;x
+WAR_NAME_UNIFICATION_OF_KOREA;$ORDER$$FIRST_ADJ$-$SECOND_ADJ$ War to Unify Korea;;;;;;;;;;;;;x
+unification_of_korea_desc;We can declare war on our rivals to unify all of Korea under our banner;;;;;;;;;;;;;x
+end_regency_war_desc;We can declare war on the Regent to take control of the Regency;;;;;;;;;;;;;x
+regency_faction_war_desc;We can declare war on the Regent to take control of the Regency;;;;;;;;;;;;;x
+take_over_regency_war_faction2_desc;We can declare war on the Regent to take control of the Regency;;;;;;;;;;;;;x
+end_regency_war_faction2_desc;We can declare war on the Regent to take control of the Regency;;;;;;;;;;;;;x
 take_over_regency_war_desc;We can declare war on the Regent to take control of the Regency;;;;;;;;;;;;;x
+chinese_tributary_tier_war_desc;This is a matter of tributary tribulation;;;;;;;;;;;;;x
+chinese_decadence_invasion_desc;This ruler is not worthy of ruling in Tianxia, we must invade them;;;;;;;;;;;;;x
+chinese_decadence_usurpation_desc;This ruler is not worthy of ruling in Tianxia, we must usurp them;;;;;;;;;;;;;x
+chinese_county_conquest_desc;It is time for us to expand our domain into this region;;;;;;;;;;;;;x
 CB_NAME_END_REGENCY;War to force end the Regency;;;;;;;;;;;;;x
 WAR_NAME_END_REGENCY;$ATTACKER$'s $ORDER$War to end the Regency;;;;;;;;;;;;;x
 under_regency;Under Regency;;;;;;;;;;;;;x
@@ -233,6 +244,7 @@ CB_NAME_SHOGUNATE_WAR;Proclaim Shogunate War;;;;;;;;;;;;;x
 WAR_NAME_SHOGUNATE_WAR;$ATTACKER$'s $ORDER$ War to become Shogun;;;;;;;;;;;;;x
 CB_NAME_END_SHOGUNATE_WAR;End Shogunate War;;;;;;;;;;;;;x
 WAR_NAME_END_SHOGUNATE_WAR;$ATTACKER$'s $ORDER$ War to restore the Tenno;;;;;;;;;;;;;x
+end_shogunate_war_desc;$ATTACKER$'s $ORDER$ War to restore the Tenno;;;;;;;;;;;;;x
 opinion_supported_as_regent;Supported as Regent;;;;;;;;;;;;;x
 opinion_installed_as_shogun;Installed as Shogun;;;;;;;;;;;;;x
 opinion_supported_against_shogun;Supported against Shogun;;;;;;;;;;;;;x

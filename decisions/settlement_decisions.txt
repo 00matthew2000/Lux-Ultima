@@ -36,19 +36,19 @@ settlement_decisions = {
 			}
 		}
 		allow = {
-			conditional_tooltip = {
-				trigger = {
-					FROM = {
-						NOT = {
-							government = order_government
-						}
-					}
-				}
-
-				location = {
-					religion = FROM
-				}
-			}
+#			conditional_tooltip = {
+#				trigger = {
+#					FROM = {
+#						NOT = {
+#							government = order_government
+#						}
+#					}
+#				}
+#
+#				location = {
+#					religion = FROM
+#				}
+#			}
 			conditional_tooltip = {
 				trigger = {
 				has_building = tb_hillfort_4
