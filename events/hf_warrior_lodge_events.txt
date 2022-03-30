@@ -3102,216 +3102,216 @@ character_event = {
 #(fired from on_five_year_pulse)
 # Root = Character
 # From = Society
-character_event = { 
-    id = HF.10050
-    #picture = GFX_evt_battle
-    #border = GFX_event_normal_frame_war
-    hide_window = yes
-    only_independent = yes
-    has_dlc = "Holy Fury"
+# character_event = { 
+    # id = HF.10050
+    # #picture = GFX_evt_battle
+    # #border = GFX_event_normal_frame_war
+    # hide_window = yes
+    # only_independent = yes
+    # has_dlc = "Holy Fury"
     
-    is_triggered_only = yes
+    # is_triggered_only = yes
 
-    trigger = {
-        is_alive = yes
-    }
+    # trigger = {
+        # is_alive = yes
+    # }
 
-    immediate = {
-        #Make others join a warrior lodge...
-        any_realm_lord = {
-            limit = {
-                ai = yes
-                #OR = {
-                    #has_religion_matching_empty_warrior_lodge_trigger = yes
-                    #has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
-                #}
-                is_in_society = no
-                has_secret_religion_trait_trigger = no
-                is_adult = yes
-                NOT = { block_general_event_trigger = yes }
-				higher_tier_than = BARON
-				NOT = { character = ROOT }
-            }
-            score_value = { #Prioritizes selecting some kind of warrior...
-                value = 10
-                warrior_recruit_score = yes
-            }
-            count = 2
-            character_event = { id = HF.10051 }
-        }
-		any_realm_character = {
-            limit = {
-                ai = yes
-                #OR = {
-                    #has_religion_matching_empty_warrior_lodge_trigger = yes
-                    #has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
-                #}
-                is_in_society = no
-                has_secret_religion_trait_trigger = no
-                is_adult = yes
-                NOT = { block_general_event_trigger = yes }
-            }
-            score_value = { #Prioritizes selecting some kind of warrior...
-                value = 10
-                warrior_recruit_score = yes
-            }
-            count = 1
-            character_event = { id = HF.10051 }
-        }
+    # immediate = {
+        # #Make others join a warrior lodge...
+        # any_realm_lord = {
+            # limit = {
+                # ai = yes
+                # #OR = {
+                    # #has_religion_matching_empty_warrior_lodge_trigger = yes
+                    # #has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
+                # #}
+                # is_in_society = no
+                # has_secret_religion_trait_trigger = no
+                # is_adult = yes
+                # NOT = { block_general_event_trigger = yes }
+				# higher_tier_than = BARON
+				# NOT = { character = ROOT }
+            # }
+            # score_value = { #Prioritizes selecting some kind of warrior...
+                # value = 10
+                # warrior_recruit_score = yes
+            # }
+            # count = 2
+            # character_event = { id = HF.10051 }
+        # }
+		# any_realm_character = {
+            # limit = {
+                # ai = yes
+                # #OR = {
+                    # #has_religion_matching_empty_warrior_lodge_trigger = yes
+                    # #has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
+                # #}
+                # is_in_society = no
+                # has_secret_religion_trait_trigger = no
+                # is_adult = yes
+                # NOT = { block_general_event_trigger = yes }
+            # }
+            # score_value = { #Prioritizes selecting some kind of warrior...
+                # value = 10
+                # warrior_recruit_score = yes
+            # }
+            # count = 1
+            # character_event = { id = HF.10051 }
+        # }
 
-        #And maybe join yourself?
-        if = {
-            limit = {
-                ai = yes
-                #has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
-                is_in_society = no
-                has_secret_religion_trait_trigger = no
-                is_adult = yes
-                NOT = { block_general_event_trigger = yes }
-            }
-            log = "[Root.GetTitledName] is trying to joining a lodge!"
-            character_event = { id = HF.10051 }
-        }
-    }
-}
+        # #And maybe join yourself?
+        # if = {
+            # limit = {
+                # ai = yes
+                # #has_religion_matching_warrior_lodge_in_need_of_members_trigger = yes
+                # is_in_society = no
+                # has_secret_religion_trait_trigger = no
+                # is_adult = yes
+                # NOT = { block_general_event_trigger = yes }
+            # }
+            # log = "[Root.GetTitledName] is trying to joining a lodge!"
+            # character_event = { id = HF.10051 }
+        # }
+    # }
+# }
 
-### Follow-up: If was eligible, AI joins a warrior lodge
-character_event = {
-    id = HF.10051
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-#        if = {
-#            limit = {
-#                #religion_openly_norse_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_norse
-#            }
-#            join_society = warrior_lodge_norse
-#		}
-#        else_if = {
-#            limit = {
-#                #religion_openly_baltic_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_baltic
-#            }
-#            join_society = warrior_lodge_baltic
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_finnish_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_finnish
-#            }
-#            join_society = warrior_lodge_finnish
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_slavic_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_slavic
-#            }
-#            join_society = warrior_lodge_slavic
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_west_african_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_west_african
-#            }
-#            join_society = warrior_lodge_west_african
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_zun_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_zun
-#            }
-#            join_society = warrior_lodge_zun
-#        }
-#        else_if = {
-#            limit = {
-#                #religion_openly_bon_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_bon
-#            }
-#            join_society = warrior_lodge_bon
-#        }
-#        else_if = {
-#            limit = {
-#                ##religion_openly_hellenic_or_reformed_trigger = yes
-#                can_join_society = warrior_lodge_hellenic
-#            }
-#            join_society = warrior_lodge_hellenic
-#        }
-#        else_if = {
-#            limit = {
-#				OR = {
-#					#religion_openly_tengri_or_reformed_trigger = yes
-#					is_nomadic = yes
-#				}
-#                can_join_society = warrior_lodge_tengri
-#            }
-#            join_society = warrior_lodge_tengri
-#        }
-#        else = {
-#            log = "[Root.GetTitledName] failed to join a society in event HF.10051"
-#            break = yes
-#        }
-        log = "[Root.GetTitledName] joined [Root.Society.GetName] society!"
+# ### Follow-up: If was eligible, AI joins a warrior lodge
+# character_event = {
+    # id = HF.10051
+    # hide_window = yes
+    # is_triggered_only = yes
+    # immediate = {
+# #        if = {
+# #            limit = {
+# #                #religion_openly_norse_or_reformed_trigger = yes
+# #                can_join_society = warrior_lodge_norse
+# #            }
+# #            join_society = warrior_lodge_norse
+# #		}
+# #        else_if = {
+# #            limit = {
+# #                #religion_openly_baltic_or_reformed_trigger = yes
+# #                can_join_society = warrior_lodge_baltic
+# #            }
+# #            join_society = warrior_lodge_baltic
+# #        }
+# #        else_if = {
+# #            limit = {
+# #                #religion_openly_finnish_or_reformed_trigger = yes
+# #                can_join_society = warrior_lodge_finnish
+# #            }
+# #            join_society = warrior_lodge_finnish
+# #        }
+# #        else_if = {
+# #            limit = {
+# #                #religion_openly_slavic_or_reformed_trigger = yes
+# #                can_join_society = warrior_lodge_slavic
+# #            }
+# #            join_society = warrior_lodge_slavic
+# #        }
+# #        else_if = {
+# #            limit = {
+# #                #religion_openly_west_african_or_reformed_trigger = yes
+# #                can_join_society = warrior_lodge_west_african
+# #            }
+# #            join_society = warrior_lodge_west_african
+# #        }
+# #        else_if = {
+# #            limit = {
+# #                #religion_openly_zun_or_reformed_trigger = yes
+# #                can_join_society = warrior_lodge_zun
+# #            }
+# #            join_society = warrior_lodge_zun
+# #        }
+# #        else_if = {
+# #            limit = {
+# #                #religion_openly_bon_or_reformed_trigger = yes
+# #                can_join_society = warrior_lodge_bon
+# #            }
+# #            join_society = warrior_lodge_bon
+# #        }
+# #        else_if = {
+# #            limit = {
+# #                ##religion_openly_hellenic_or_reformed_trigger = yes
+# #                can_join_society = warrior_lodge_hellenic
+# #            }
+# #            join_society = warrior_lodge_hellenic
+# #        }
+# #        else_if = {
+# #            limit = {
+# #				OR = {
+# #					#religion_openly_tengri_or_reformed_trigger = yes
+# #					is_nomadic = yes
+# #				}
+# #                can_join_society = warrior_lodge_tengri
+# #            }
+# #            join_society = warrior_lodge_tengri
+# #        }
+# #        else = {
+# #            log = "[Root.GetTitledName] failed to join a society in event HF.10051"
+# #            break = yes
+# #        }
+        # log = "[Root.GetTitledName] joined [Root.Society.GetName] society!"
         
-        apply_random_minor_injury_effect = yes #So it seems they were in a duel!
+        # apply_random_minor_injury_effect = yes #So it seems they were in a duel!
 
-        if = {
-            limit = {
-                NOT = {
-                    society = {
-                        any_society_member = {
-                            is_society_grandmaster = yes
-                        }
-                    }
-                }
-            }
-            log = "[This.Society.GetName] is a society without a grandmaster and I am trying to be set as the grandmaster."
-            set_society_grandmaster = yes # Set character as Grand Master (if there was none)
-            add_society_currency_massive_effect = yes
-        }
+        # if = {
+            # limit = {
+                # NOT = {
+                    # society = {
+                        # any_society_member = {
+                            # is_society_grandmaster = yes
+                        # }
+                    # }
+                # }
+            # }
+            # log = "[This.Society.GetName] is a society without a grandmaster and I am trying to be set as the grandmaster."
+            # set_society_grandmaster = yes # Set character as Grand Master (if there was none)
+            # add_society_currency_massive_effect = yes
+        # }
 
-        society = {
-            any_society_member = { #Send notification to players that society is growing...
-                limit = {
-                    ai = no
-                    society_rank = 4
-                }
-                character_event = { id = HF.10052 days = 1 random = 15 }
-            }
-        }
-    }
-}
+        # society = {
+            # any_society_member = { #Send notification to players that society is growing...
+                # limit = {
+                    # ai = no
+                    # society_rank = 4
+                # }
+                # character_event = { id = HF.10052 days = 1 random = 15 }
+            # }
+        # }
+    # }
+# }
 
-#Notification for players, that their warrior lodge is growing
-character_event = {
-    id = HF.10052
-    desc = EVTDESC_HF_10052
-    picture = GFX_evt_battle
-    is_triggered_only = yes
+# #Notification for players, that their warrior lodge is growing
+# character_event = {
+    # id = HF.10052
+    # desc = EVTDESC_HF_10052
+    # picture = GFX_evt_battle
+    # is_triggered_only = yes
 
-    hide_from = yes
+    # hide_from = yes
     
-    trigger = {
-        is_alive = yes
-        NOT = { has_character_modifier = warrior_lodge_HF_10052_cooldown }
-    }
+    # trigger = {
+        # is_alive = yes
+        # NOT = { has_character_modifier = warrior_lodge_HF_10052_cooldown }
+    # }
 
-    notification = yes
+    # notification = yes
 
-    immediate = {
-        hidden_effect = {
-            add_character_modifier = {
-                name = warrior_lodge_HF_10052_cooldown
-                duration = 30
-                hidden = yes
-            }
-        }        
-    }
+    # immediate = {
+        # hidden_effect = {
+            # add_character_modifier = {
+                # name = warrior_lodge_HF_10052_cooldown
+                # duration = 30
+                # hidden = yes
+            # }
+        # }        
+    # }
 
-    option = {      
-        name = EXCELLENT
-    }
-}
+    # option = {      
+        # name = EXCELLENT
+    # }
+# }
 
 ### Maintenance: Warrior Lodge Society spawns if it died (fired from on_society_destroyed)
 # Root = Character
@@ -3413,68 +3413,68 @@ character_event = {
 #}
 
 ### Maintenance: Rank up event (AI only)
-character_event = {
-    id = HF.10054
-    hide_window = yes
-    is_triggered_only = yes
-    has_dlc = "Holy Fury"
-    ai = yes
+# character_event = {
+    # id = HF.10054
+    # hide_window = yes
+    # is_triggered_only = yes
+    # has_dlc = "Holy Fury"
+    # ai = yes
 	
-	is_in_society = yes
+	# is_in_society = yes
     
-    trigger = { 
-        #is_member_of_any_warrior_lodge_trigger = yes
-		is_inaccessible_or_incapable_trigger = no
-		society_can_rank_up = yes
-		has_society_currency_minor_trigger = yes
-    }
+    # trigger = { 
+        # #is_member_of_any_warrior_lodge_trigger = yes
+		# is_inaccessible_or_incapable_trigger = no
+		# society_can_rank_up = yes
+		# has_society_currency_minor_trigger = yes
+    # }
 
-    immediate = {
-        society = {
-            save_event_target_as = my_warrior_lodge
-        }
-        random_list = {
-            50 = {}
-            50 = {
-                trigger = {
-                    society_rank < 3
-                }
-                society_rank_up = 1
-                detract_society_currency_medium_effect = yes # at a worst, they are put at 0 currency
-            }
-            500 = {
-                trigger = {
-                    society_rank == 3
-                    NOT = {
-                        is_society_rank_full = { # Checks if named society's rank is full
-                            society = event_target:my_warrior_lodge
-                            rank = 4
-                        }
-                    }
-                }
-                society_rank_up = 1
-                detract_society_currency_medium_effect = yes # at a worst, they are put at 0 currency
-            }
-        }
+    # immediate = {
+        # society = {
+            # save_event_target_as = my_warrior_lodge
+        # }
+        # random_list = {
+            # 50 = {}
+            # 50 = {
+                # trigger = {
+                    # society_rank < 3
+                # }
+                # society_rank_up = 1
+                # detract_society_currency_medium_effect = yes # at a worst, they are put at 0 currency
+            # }
+            # 500 = {
+                # trigger = {
+                    # society_rank == 3
+                    # NOT = {
+                        # is_society_rank_full = { # Checks if named society's rank is full
+                            # society = event_target:my_warrior_lodge
+                            # rank = 4
+                        # }
+                    # }
+                # }
+                # society_rank_up = 1
+                # detract_society_currency_medium_effect = yes # at a worst, they are put at 0 currency
+            # }
+        # }
 
-        #If the warrior lodge has been blocked from the Legendary Gathering decision for 100 years...
-        if = {
-            limit = {
-                event_target:my_warrior_lodge = {
-                    had_flag = {
-                        flag = used_legendary_gathering
-                        years = 100
-                    }
-                }
-            }
-            event_target:my_warrior_lodge = {
-                clr_flag = used_legendary_gathering #So the whole thing is reset...
-                clr_flag = block_society_progress
-                set_society_progress = 0
-            }
-        }
-    }
-}
+        # #If the warrior lodge has been blocked from the Legendary Gathering decision for 100 years...
+        # if = {
+            # limit = {
+                # event_target:my_warrior_lodge = {
+                    # had_flag = {
+                        # flag = used_legendary_gathering
+                        # years = 100
+                    # }
+                # }
+            # }
+            # event_target:my_warrior_lodge = {
+                # clr_flag = used_legendary_gathering #So the whole thing is reset...
+                # clr_flag = block_society_progress
+                # set_society_progress = 0
+            # }
+        # }
+    # }
+# }
 
 ### Trying to rank up to Hero: To duel a current hero or not? (for players)
 character_event = {
