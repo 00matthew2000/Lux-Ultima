@@ -30164,15 +30164,13 @@ province_event = {
 	immediate = {
 		if = {
 			limit = {
-				OR = {
 					NOT = {
 						has_dlc = "Sunset Invasion"
 					}
-					has_game_rule = {
-						name = inca_invasion
-						value = off
-					}
-				}
+					#has_game_rule = {
+						#name = inca_invasion
+						#value = off
+					#}
 			}
 			d_treasure_fleet = {
 				holder_scope = {

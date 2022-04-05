@@ -456,13 +456,17 @@ world_lavo = {
 	}
 }
 
+world_burma = {
+	duchies = {
+		d_bagan d_arakan d_kachin d_shan d_pyu d_pegu d_taungoo d_martaban 
+	}
+}
+
 world_indochina = {
 	regions = {
-		world_cham world_lavo
+		world_cham world_lavo world_burma
 	}
 	duchies = {
-		d_bagan d_arakan d_kachin d_shan
-		d_pegu d_taungoo d_martaban 
 		d_dali d_lunghtungh d_ghuadchjyen d_kiamhchjyen d_thaktung d_thunghaix d_yengxchjang 
 		d_hariphunchai d_lanna d_nan 
 		d_angkor d_sambor d_battambang d_oc_eo 
