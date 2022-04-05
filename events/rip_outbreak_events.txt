@@ -1042,6 +1042,28 @@ character_event = {
 			}
 		}
 		
+		# Indochina
+		if = {
+			limit = {
+				NOT = { has_global_flag = bp_world_indochina_broadcasted }
+				regional_percentage = {
+					region = world_indochina
+					percentage = 0.5
+					OR = {
+						has_province_modifier = depopulated_1
+						has_province_modifier = depopulated_2
+						has_province_modifier = depopulated_3
+					}
+				}
+			}
+			set_global_flag = bp_world_indochina_broadcasted
+			capital_scope = { province_event = { id = RIPEXTRA.10 } }
+			chronicle = {
+			entry = CHRONICLE_NORTHEUROPE_GONE
+			picture = GFX_evt_monk
+			}
+		}
+		
 		# Southeast Asia
 		if = {
 			limit = {
