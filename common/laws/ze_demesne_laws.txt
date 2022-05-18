@@ -708,8 +708,8 @@ laws = {
 			NOT = { has_law = ze_administration_laws_2 }
 			NOT = { holder_scope = { government = classical_government } }
 			NOT = {
+				tier = emperor
 				holder_scope = {
-					tier = emperor
 					government = chinese_imperial_government
 				}
 			}

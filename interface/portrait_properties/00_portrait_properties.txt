@@ -877,7 +877,7 @@
 		modifier = {
 			factor = 0
 			is_female = no
-			higher_real_tier_than = unlanded
+			is_landed = yes
 		}
 		modifier = {
 			factor = 0
@@ -1796,10 +1796,10 @@
 			factor = 100
 			is_devout_chinese_buddhist_trigger = yes
 		}
-		modifier = {
-			factor = 100 #No longer bearded Ottavian.
-			character = 145290
-		}
+		#modifier = {
+			#factor = 100 #No longer bearded Ottavian.
+			#character = 145290
+		#}
 		modifier = { # frankish men less likely to wear beards after the 12th century, in stages 
 			factor = 5
 			year = 1100
@@ -4147,10 +4147,10 @@
 		factor = 100
 		modifier = {
 			factor = 0
-			OR = {
+			#OR = {
 				has_minor_title = title_cardinal
-				has_minor_title = title_fraticelli_cardinal
-			}
+				#has_minor_title = title_fraticelli_cardinal
+			#}
 		}
 		modifier = {
 			factor = 0
@@ -4321,10 +4321,10 @@
 		factor = 100
 		modifier = {
 			factor = 0
-			OR = {
+			#OR = {
 				has_minor_title = title_cardinal
-				has_minor_title = title_fraticelli_cardinal
-			}
+				#has_minor_title = title_fraticelli_cardinal
+			#}
 		}
 		modifier = {
 			factor = 0
@@ -4660,9 +4660,9 @@
 		}
 		modifier = {
 			factor = 0
-			NOR = {
+			NOT = {
 				has_minor_title = title_cardinal
-				#has_minor_title = title_fraticelli_cardinal
+				##has_minor_title = title_fraticelli_cardinal
 			}
 		}
 	}
@@ -4678,9 +4678,9 @@
 		}
 		modifier = {
 			factor = 0
-			NOR = {
+			NOT = {
 				has_minor_title = title_cardinal
-				#has_minor_title = title_fraticelli_cardinal
+				##has_minor_title = title_fraticelli_cardinal
 			}
 		}
 	}
@@ -5781,21 +5781,25 @@
 		}
 	}
 	2 = { # Military Helm 02
+		factor = 1
 		trigger = {
 			french_martial_overlayer_trigger = yes
 		}
 	}
 	3 = { # Military Helm 03
+		factor = 1
 		trigger = {
 			french_martial_overlayer_trigger = yes
 		}
 	}
 	4 = { # Military Helm 04
+		factor = 1
 		trigger = {
 			french_martial_overlayer_trigger = yes
 		}
 	}
 	5 = { # Count Accessories
+		factor = 1
 		trigger = {
 			french_count_overlayer_trigger = yes
 			NOR = { 
@@ -5846,6 +5850,7 @@
 		}
 	}
 	10 = { # Duke Accessories
+		factor = 1
 		trigger = {
 			french_duke_overlayer_trigger = yes
 			OR = { 
@@ -5864,6 +5869,7 @@
 		}
 	}
 	12 = { # Duke Accessories
+		factor = 1
 		trigger = {
 			french_duke_overlayer_trigger = yes
 			OR = { 
@@ -5873,6 +5879,7 @@
 		}
 	}
 	13 = { # Duke Accessories
+		factor = 1
 		trigger = {
 			french_duke_overlayer_trigger = yes
 			OR = { 

@@ -3697,10 +3697,10 @@ assassins_debt = {
 #
 hashish_addict = {
 	is_visible = { 
-		OR = {
-			society_member_of = the_assassins 
+		#OR = {
+			#society_member_of = the_assassins 
 			character = FROM
-		}
+		#}
 	}
 	icon = 88
 	health = -0.5
@@ -3708,10 +3708,10 @@ hashish_addict = {
 
 withdrawal_symptoms = {
 	is_visible = { 
-		OR = {
-			society_member_of = the_assassins 
+		#OR = {
+			#society_member_of = the_assassins 
 			character = FROM
-		}
+		#}
 	}
 	icon = 40
 	health = -0.5

@@ -25,8 +25,8 @@
 is_devout_chinese_buddhist_trigger = {			### Male, and visually Chinese by race and Buddhist religion; and is a Buddhist monk, a chaplain, or a theocratic ruler.
 	OR = {
 		graphical_culture = chinesegfx
-		graphical_culture = khitangfx
-		graphical_culture = khmergfx
+		#graphical_culture = khitangfx
+		#graphical_culture = khmergfx
 	}
 	religion_group = bud_group
 	is_female = no

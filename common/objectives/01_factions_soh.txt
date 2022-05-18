@@ -25,9 +25,9 @@ faction_regent = {
 			liege = { 
 				OR = {
 					is_council_content = no
-					AND = {
+					#AND = {
 						NOT = { primary_title = { has_law = war_voting_power_1 } }
-					}
+					#}
 					#has_council = no
 				}
 			}
@@ -130,9 +130,9 @@ faction_regent = {
 				liege = { 
 					OR = {
 						is_council_content = no
-						AND = {
+						#AND = {
 							NOT = { primary_title = { has_law = war_voting_power_1 } }
-						}
+						#}
 						#has_council = no
 					}
 				}
@@ -323,7 +323,7 @@ faction_regent = {
 		modifier = {
 			factor = 0.25
 			liege = {
-				has_character_modifier = hwarang_faction_discouragement
+				has_character_modifier = hwarang_faction_discouragement #Not sure what to do with this right now, may wait for Tianxia to fix it -00matthew2000
 			}
 		}
 		
@@ -498,8 +498,8 @@ faction_regent = {
 					has_law = status_of_women_4
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
-					has_religion_feature = religion_feature_ryukyuan_three_mountains
-					has_religion_feature = religion_feature_ryukyuan_historical
+					#has_religion_feature = religion_feature_ryukyuan_three_mountains
+					#has_religion_feature = religion_feature_ryukyuan_historical
 					has_religion_feature = religion_matriarchal
 					has_game_rule = {
 						name = gender
@@ -815,7 +815,7 @@ faction_regent_loyalists = {
 		modifier = {
 			factor = 0.25
 			liege = {
-				has_character_modifier = hwarang_faction_discouragement
+				has_character_modifier = hwarang_faction_discouragement #Not sure what to do with this right now, may wait for Tianxia to fix it -00matthew2000
 			}
 		}
 		
@@ -1104,8 +1104,8 @@ faction_regent_loyalists = {
 					has_law = status_of_women_4
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
-					has_religion_feature = religion_feature_ryukyuan_three_mountains
-					has_religion_feature = religion_feature_ryukyuan_historical
+					#has_religion_feature = religion_feature_ryukyuan_three_mountains
+					#has_religion_feature = religion_feature_ryukyuan_historical
 					has_religion_feature = religion_matriarchal
 					has_game_rule = {
 						name = gender
@@ -1334,9 +1334,9 @@ faction_shogun = {
 			liege = { 
 				OR = {
 					is_council_content = no
-					AND = {
+					#AND = {
 						NOT = { primary_title = { has_law = war_voting_power_1 } }
-					}
+					#}
 					#has_council = no
 					trait = under_regency
 				}
@@ -1462,9 +1462,9 @@ faction_shogun = {
 				liege = { 
 					OR = {
 						is_council_content = no
-						AND = {
+						#AND = {
 							NOT = { primary_title = { has_law = war_voting_power_1 } }
-						}
+						#}
 						#has_council = no
 						trait = under_regency
 					}
@@ -1716,7 +1716,7 @@ faction_shogun = {
 		modifier = {
 			factor = 0.25
 			liege = {
-				has_character_modifier = hwarang_faction_discouragement
+				has_character_modifier = hwarang_faction_discouragement #Not sure what to do with this right now, may wait for Tianxia to fix it -00matthew2000
 			}
 		}
 		
@@ -1901,8 +1901,8 @@ faction_shogun = {
 					has_law = status_of_women_4
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
-					has_religion_feature = religion_feature_ryukyuan_three_mountains
-					has_religion_feature = religion_feature_ryukyuan_historical
+					#has_religion_feature = religion_feature_ryukyuan_three_mountains
+					#has_religion_feature = religion_feature_ryukyuan_historical
 					has_religion_feature = religion_matriarchal
 					has_game_rule = {
 						name = gender
@@ -2156,9 +2156,9 @@ faction_oust_shogun = {
 			liege = { 
 				OR = {
 					is_council_content = no
-					AND = {
+					#AND = {
 						NOT = { primary_title = { has_law = war_voting_power_1 } }
-					}
+					#}
 					#has_council = no
 				}
 			}
@@ -2269,9 +2269,9 @@ faction_oust_shogun = {
 				liege = { 
 					OR = {
 						is_council_content = no
-						AND = {
+						#AND = {
 							NOT = { primary_title = { has_law = war_voting_power_1 } }
-						}
+						#}
 						#has_council = no
 					}
 				}
@@ -2544,7 +2544,7 @@ faction_oust_shogun = {
 		modifier = {
 			factor = 0.25
 			liege = {
-				has_character_modifier = hwarang_faction_discouragement
+				has_character_modifier = hwarang_faction_discouragement #Not sure what to do with this right now, may wait for Tianxia to fix it -00matthew2000
 			}
 		}
 		
@@ -2744,8 +2744,8 @@ faction_oust_shogun = {
 					has_law = status_of_women_4
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
-					has_religion_feature = religion_feature_ryukyuan_three_mountains
-					has_religion_feature = religion_feature_ryukyuan_historical
+					#has_religion_feature = religion_feature_ryukyuan_three_mountains
+					#has_religion_feature = religion_feature_ryukyuan_historical
 					has_religion_feature = religion_matriarchal
 					has_game_rule = {
 						name = gender
@@ -3009,9 +3009,9 @@ faction_regent2 = {
 			liege = { 
 				OR = {
 					is_council_content = no
-					AND = {
+					#AND = {
 						NOT = { primary_title = { has_law = war_voting_power_1 } }
-					}
+					#}
 					#has_council = no
 				}
 			}
@@ -3041,15 +3041,13 @@ faction_regent2 = {
 			}
 		}
 		OR = {
-			OR = {
-				AND = {
-					religion = nihon_shinto
-					controls_religion = no
-				}
-				AND = {
-					religion_group = bud_group
-					culture = japanese
-				}
+			AND = {
+				religion = nihon_shinto
+				controls_religion = no
+			}
+			AND = {
+				religion_group = bud_group
+				culture = japanese
 			}
 		}
 		NOT = {
@@ -3101,9 +3099,9 @@ faction_regent2 = {
 				liege = { 
 					OR = {
 						is_council_content = no
-						AND = {
+						#AND = {
 							NOT = { primary_title = { has_law = war_voting_power_1 } }
-						}
+						#}
 						#has_council = no
 					}
 				}
@@ -3299,7 +3297,7 @@ faction_regent2 = {
 		modifier = {
 			factor = 0.25
 			liege = {
-				has_character_modifier = hwarang_faction_discouragement
+				has_character_modifier = hwarang_faction_discouragement #Not sure what to do with this right now, may wait for Tianxia to fix it -00matthew2000
 			}
 		}
 		
@@ -3474,8 +3472,8 @@ faction_regent2 = {
 					has_law = status_of_women_4
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
-					has_religion_feature = religion_feature_ryukyuan_three_mountains
-					has_religion_feature = religion_feature_ryukyuan_historical
+					#has_religion_feature = religion_feature_ryukyuan_three_mountains
+					#has_religion_feature = religion_feature_ryukyuan_historical
 					has_religion_feature = religion_matriarchal
 					has_game_rule = {
 						name = gender
@@ -3804,7 +3802,7 @@ faction_regent_loyalists2 = {
 		modifier = {
 			factor = 0.25
 			liege = {
-				has_character_modifier = hwarang_faction_discouragement
+				has_character_modifier = hwarang_faction_discouragement #Not sure what to do with this right now, may wait for Tianxia to fix it -00matthew2000
 			}
 		}
 		
@@ -4117,8 +4115,8 @@ faction_regent_loyalists2 = {
 					has_law = status_of_women_4
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
-					has_religion_feature = religion_feature_ryukyuan_three_mountains
-					has_religion_feature = religion_feature_ryukyuan_historical
+					#has_religion_feature = religion_feature_ryukyuan_three_mountains
+					#has_religion_feature = religion_feature_ryukyuan_historical
 					has_religion_feature = religion_matriarchal
 					has_game_rule = {
 						name = gender

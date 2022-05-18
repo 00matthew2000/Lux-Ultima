@@ -72,8 +72,8 @@ kurultai = {
 				# Commanders
 				has_minor_title = title_commander
 				# Warrior lodge memebers
-				has_minor_title = title_shieldmaiden
-				society_member_of = warrior_lodge_tengri
+				#has_minor_title = title_shieldmaiden
+				#society_member_of = warrior_lodge_tengri
 				# Other nomadic honorary titles
 				has_minor_title = title_yabgu
 				has_minor_title = title_ishad
@@ -98,8 +98,8 @@ kurultai = {
 						has_religion_feature = religion_matriarchal
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon
-						has_religion_feature = religion_feature_ryukyuan_historical
-						has_religion_feature = religion_feature_ryukyuan_three_mountains
+						#has_religion_feature = religion_feature_ryukyuan_historical
+						#has_religion_feature = religion_feature_ryukyuan_three_mountains
 					}
 				}
 				FROMFROM = {
@@ -942,21 +942,21 @@ kurultai = {
 		
 		# Tengri WL membership is good
 		additive_modifier = {
-			society_member_of = warrior_lodge_tengri
+			#society_member_of = warrior_lodge_tengri
 			value = 5
 		}
 		additive_modifier = {
-			society_member_of = warrior_lodge_tengri
+			#society_member_of = warrior_lodge_tengri
 			society_rank == 2
 			value = 5
 		}
 		additive_modifier = {
-			society_member_of = warrior_lodge_tengri
+			#society_member_of = warrior_lodge_tengri
 			society_rank == 3
 			value = 10
 		}
 		additive_modifier = {
-			society_member_of = warrior_lodge_tengri
+			#society_member_of = warrior_lodge_tengri
 			society_rank == 4
 			value = 25
 		}
@@ -2752,10 +2752,6 @@ kurultai = {
 			value = 10
 		}
 		additive_modifier = {
-			trait = seaking # Unlikely, and worth less due to coastal raiding being un-Mongol
-			value = 10
-		}
-		additive_modifier = {
 			trait = shieldmaiden
 			value = 5
 		}
@@ -3211,27 +3207,27 @@ kurultai = {
 		# Tengri WL membership is good
 		additive_modifier = {
 			FROM = {
-				society_member_of = warrior_lodge_tengri
+				#society_member_of = warrior_lodge_tengri
 			}
 			value = 5
 		}
 		additive_modifier = {
 			FROM = {
-				society_member_of = warrior_lodge_tengri
+				#society_member_of = warrior_lodge_tengri
 				society_rank == 2
 			}
 			value = 5
 		}
 		additive_modifier = {
 			FROM = {
-				society_member_of = warrior_lodge_tengri
+				#society_member_of = warrior_lodge_tengri
 				society_rank == 3
 			}
 			value = 10
 		}
 		additive_modifier = {
 			FROM = {
-				society_member_of = warrior_lodge_tengri
+				#society_member_of = warrior_lodge_tengri
 				society_rank == 4
 			}
 			value = 25
@@ -5312,12 +5308,6 @@ kurultai = {
 		}
 		additive_modifier = {
 			FROM = {
-				trait = seaking # Unlikely, and worth less due to coastal raiding being un-Mongol
-			}
-			value = 10
-		}
-		additive_modifier = {
-			FROM = {
 				trait = shieldmaiden
 			}
 			value = 5
@@ -6704,8 +6694,8 @@ kurultai = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
 				has_religion_feature = religion_feature_bon
-				has_religion_feature = religion_feature_ryukyuan_historical
-				has_religion_feature = religion_feature_ryukyuan_three_mountains
+				#has_religion_feature = religion_feature_ryukyuan_historical
+				#has_religion_feature = religion_feature_ryukyuan_three_mountains
 				has_game_rule = {
 					name = gender
 					value = all
@@ -6725,8 +6715,8 @@ kurultai = {
 				has_religion_feature = religion_patriarchal
 				has_religion_feature = religion_equal
 				has_religion_feature = religion_feature_bon
-				has_religion_feature = religion_feature_ryukyuan_historical
-				has_religion_feature = religion_feature_ryukyuan_three_mountains
+				#has_religion_feature = religion_feature_ryukyuan_historical
+				#has_religion_feature = religion_feature_ryukyuan_three_mountains
 				has_game_rule = {
 					name = gender
 					value = all
@@ -6747,8 +6737,8 @@ kurultai = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
 				has_religion_feature = religion_feature_bon
-				has_religion_feature = religion_feature_ryukyuan_historical
-				has_religion_feature = religion_feature_ryukyuan_three_mountains
+				#has_religion_feature = religion_feature_ryukyuan_historical
+				#has_religion_feature = religion_feature_ryukyuan_three_mountains
 				has_game_rule = {
 					name = gender
 					value = all
@@ -6768,8 +6758,8 @@ kurultai = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
 				has_religion_feature = religion_feature_bon
-				has_religion_feature = religion_feature_ryukyuan_historical
-				has_religion_feature = religion_feature_ryukyuan_three_mountains
+				#has_religion_feature = religion_feature_ryukyuan_historical
+				#has_religion_feature = religion_feature_ryukyuan_three_mountains
 				has_game_rule = {
 					name = gender
 					value = all
@@ -6789,8 +6779,8 @@ kurultai = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
 				has_religion_feature = religion_feature_bon
-				has_religion_feature = religion_feature_ryukyuan_historical
-				has_religion_feature = religion_feature_ryukyuan_three_mountains
+				#has_religion_feature = religion_feature_ryukyuan_historical
+				#has_religion_feature = religion_feature_ryukyuan_three_mountains
 				has_game_rule = {
 					name = gender
 					value = all
@@ -6810,8 +6800,8 @@ kurultai = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
 				has_religion_feature = religion_feature_bon
-				has_religion_feature = religion_feature_ryukyuan_historical
-				has_religion_feature = religion_feature_ryukyuan_three_mountains
+				#has_religion_feature = religion_feature_ryukyuan_historical
+				#has_religion_feature = religion_feature_ryukyuan_three_mountains
 				has_game_rule = {
 					name = gender
 					value = all
@@ -7254,15 +7244,15 @@ kurultai = {
 						has_religion_feature = religion_matriarchal
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon
-						has_religion_feature = religion_feature_ryukyuan_historical
-						has_religion_feature = religion_feature_ryukyuan_three_mountains
+						#has_religion_feature = religion_feature_ryukyuan_historical
+						#has_religion_feature = religion_feature_ryukyuan_three_mountains
 					}
 				}
 				FROM = {
 					has_law = true_cognatic_succession
 				}
 				trait = shieldmaiden
-				society_member_of = warrior_lodge_tengri
+				##society_member_of = warrior_lodge_tengri
 				has_game_rule = {
 					name = gender
 					value = all

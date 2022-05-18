@@ -113,6 +113,11 @@ republic_governments = {
 					}
 				}
 			}
+			NOR = { 
+				is_government_potential = classical_government
+				is_government_potential = oriental_monarchy_government
+				classical_government_trigger = yes
+			}
 		}
 		
 		color = { 0 102 102 }
@@ -213,7 +218,12 @@ republic_governments = {
 				NOT = {	religion = 	zande_pagan_reformed	}
 				NOT = {	religion = 	zulu_pagan_reformed	}
 			}
-			NOT = { is_government_potential = merchant_republic_government }
+			NOR = { 
+				is_government_potential = merchant_republic_government 
+				is_government_potential = classical_government
+				is_government_potential = oriental_monarchy_government
+				classical_government_trigger = yes
+			}
 		}
 		
 		color = { 209 125 130 }

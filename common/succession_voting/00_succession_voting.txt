@@ -16311,8 +16311,8 @@ eldership_rules = {
 			NOT = { character = FROM } #Do not judge yourself.
 			FROM = { 
 				OR = { 
-					is_lover = yes
-					is_friend = yes
+					is_lover = ROOT
+					is_friend = ROOT
 				}
 			}
 		}
