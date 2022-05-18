@@ -9847,10 +9847,8 @@ letter_event = {
 	option = {
 		trigger = {
 			ai = no
-			AND = {
-				has_character_flag = repeat_artifact_choice_event
-				has_character_flag = repeat_artifact_choice_event_2
-			}
+			has_character_flag = repeat_artifact_choice_event
+			has_character_flag = repeat_artifact_choice_event_2
 		}
 		
 		name = EVTOPTD_GRACE_314 # More options
@@ -19548,34 +19546,34 @@ letter_event = {
 
 ##### Misc (974-999, reserved ids 950-999)
 
-# on_startup event to ensure that pre-existing tributaries of China start getting Grace
-character_event = {
-	id = grace.974
-	is_triggered_only = yes
-	hide_window = yes
-	
-	only_playable = yes
-	has_dlc = "Jade Dragon"
-	
-	trigger = {
-		is_chinese_emperor_trigger = yes
-		NOT = {
-			has_global_flag = tributary_setup
-		}
-	}
-	
-	immediate = {
-		set_global_flag = tributary_setup
-		any_independent_ruler = {
-			limit = {
-				suzerain = {
-					character = ROOT
-				}
-			}
-			character_event = { id = grace.7 }
-		}
-	}
-}
+## on_startup event to ensure that pre-existing tributaries of China start getting Grace
+#character_event = {
+#	id = grace.974
+#	is_triggered_only = yes
+#	hide_window = yes
+#	
+#	only_playable = yes
+#	has_dlc = "Jade Dragon"
+#	
+#	trigger = {
+#		is_chinese_emperor_trigger = yes
+#		NOT = {
+#			has_global_flag = tributary_setup
+#		}
+#	}
+#	
+#	immediate = {
+#		set_global_flag = tributary_setup
+#		any_independent_ruler = {
+#			limit = {
+#				suzerain = {
+#					character = ROOT
+#				}
+#			}
+#			character_event = { id = grace.7 }
+#		}
+#	}
+#}
 
 # Event setting up proper scopes for AI Grace decisions
 character_event = {
@@ -20096,187 +20094,187 @@ character_event = {
 	}
 }
 
-# Chinese princess spawn event - for testing - never triggered normally
-character_event = {
-	id = grace.982
-	is_triggered_only = yes
-	hide_window = yes
-	
-	immediate = {
-		e_china = {
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					set_father = PREV
-					dynasty = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-			holder_scope = {
-				create_character = {
-					female = yes
-					age = 16
-					culture = PREV
-					religion = PREV
-					random_traits = yes
-				}
-				new_character = {
-					dynasty = PREV
-					set_father = PREV
-					add_trait = dragon_bride_unmarried
-				}
-			}
-		}
-	}
-}
+## Chinese princess spawn event - for testing - never triggered normally
+#character_event = {
+#	id = grace.982
+#	is_triggered_only = yes
+#	hide_window = yes
+#	
+#	immediate = {
+#		e_china = {
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					set_father = PREV
+#					dynasty = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#			holder_scope = {
+#				create_character = {
+#					female = yes
+#					age = 16
+#					culture = PREV
+#					religion = PREV
+#					random_traits = yes
+#				}
+#				new_character = {
+#					dynasty = PREV
+#					set_father = PREV
+#					add_trait = dragon_bride_unmarried
+#				}
+#			}
+#		}
+#	}
+#}
 
 
-# Grace cheat event - for testing (or general cheating, I suppose...) - never triggered normally
-character_event = {
-	id = grace.983
-	is_triggered_only = yes
-	hide_window = yes
-	
-	immediate = {
-		change_variable = {
-			which = grace
-			value = 1000000
-		}
-		set_character_flag = grace_character
-	}
-}
+## Grace cheat event - for testing (or general cheating, I suppose...) - never triggered normally
+#character_event = {
+#	id = grace.983
+#	is_triggered_only = yes
+#	hide_window = yes
+#	
+#	immediate = {
+#		change_variable = {
+#			which = grace
+#			value = 1000000
+#		}
+#		set_character_flag = grace_character
+#	}
+#}
 
 # on_yearly_pulse Chinese princess handling
 character_event = {
@@ -21244,15 +21242,15 @@ character_event = {
 #}
 
 # Show current Grace
-letter_event = {
-	id = grace.997
-	is_triggered_only = yes
-	desc = EVTDESC_GRACE_997
-	
-	option = {
-		name = EVTOPTA_GRACE_997
-	}
-}
+#letter_event = {
+#	id = grace.997
+#	is_triggered_only = yes
+#	desc = EVTDESC_GRACE_997
+#	
+#	option = {
+#		name = EVTOPTA_GRACE_997
+#	}
+#}
 
 # on_death event handling Grace inheritance
 character_event = {

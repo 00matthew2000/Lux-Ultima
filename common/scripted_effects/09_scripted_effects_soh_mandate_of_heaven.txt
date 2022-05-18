@@ -10945,7 +10945,7 @@ update_mandate_of_heaven_law_and_modifier_effect = {
 				}
 				primary_title = {
 					add_law = {
-						law = revoke_title_law_1
+						law = revoke_title_voting_power_1
 						cooldown = no
 						opinion_effect = no
 					}
@@ -11009,7 +11009,7 @@ update_mandate_of_heaven_law_and_modifier_effect = {
 				}
 				primary_title = {
 					add_law = {
-						law = revoke_title_law_1
+						law = revoke_title_voting_power_1
 						cooldown = no
 						opinion_effect = no
 					}
@@ -11073,7 +11073,7 @@ update_mandate_of_heaven_law_and_modifier_effect = {
 				}
 				primary_title = {
 					add_law = {
-						law = revoke_title_law_1
+						law = revoke_title_voting_power_1
 						cooldown = no
 						opinion_effect = no
 					}
@@ -11128,30 +11128,30 @@ update_mandate_of_heaven_law_and_modifier_effect = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					has_dlc = "Zeus"
-				}
-				primary_title = {
-					add_law = {
-						law = revoke_title_law_0
-						cooldown = no
-						opinion_effect = no
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "Zeus"
-				}
-				primary_title = {
-					add_law = {
-						law = out_of_realm_inheritance_law_0
-						cooldown = no
-						opinion_effect = no
-					}
-				}
-			}
+			#if = {
+				#limit = {
+					#has_dlc = "Zeus"
+				#}
+				#primary_title = {
+					#add_law = {
+						#law = revoke_title_law_0
+						#cooldown = no
+						#opinion_effect = no
+					#}
+				#}
+			#}
+			#if = {
+				#limit = {
+					#has_dlc = "Zeus"
+				#}
+				#primary_title = {
+					#add_law = {
+						#law = out_of_realm_inheritance_law_0
+						#cooldown = no
+						#opinion_effect = no
+					#}
+				#}
+			#}
 			if = {
 				limit = {
 					has_dlc = "Zeus"
@@ -11183,30 +11183,30 @@ update_mandate_of_heaven_law_and_modifier_effect = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					has_dlc = "Zeus"
-				}
-				primary_title = {
-					add_law = {
-						law = revoke_title_law_0
-						cooldown = no
-						opinion_effect = no
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "Zeus"
-				}
-				primary_title = {
-					add_law = {
-						law = out_of_realm_inheritance_law_0
-						cooldown = no
-						opinion_effect = no
-					}
-				}
-			}
+			#if = {
+				#limit = {
+					#has_dlc = "Zeus"
+				#}
+				#primary_title = {
+					#add_law = {
+						#law = revoke_title_law_0
+						#cooldown = no
+						#opinion_effect = no
+					#}
+				#}
+			#}
+			#if = {
+				#limit = {
+					#has_dlc = "Zeus"
+				#}
+				#primary_title = {
+					#add_law = {
+						#law = out_of_realm_inheritance_law_0
+						#cooldown = no
+						#opinion_effect = no
+					#}
+				#}
+			#}
 			if = {
 				limit = {
 					has_dlc = "Zeus"
