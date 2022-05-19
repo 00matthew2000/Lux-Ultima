@@ -633,10 +633,8 @@ title_shogun = {
 	
 	allowed_to_grant = {
 		always = no # Irrelevant
-		AND = {
-			has_landed_title = e_japan
-			has_landed_title = k_chrysanthemum_throne
-		}
+		has_landed_title = e_japan
+		has_landed_title = k_chrysanthemum_throne
 	}
 
 	gain_effect = {

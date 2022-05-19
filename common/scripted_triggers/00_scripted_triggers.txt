@@ -1455,7 +1455,7 @@ can_be_councilmember_emperor_trigger = {
 			} 
 		} 
 	}
-	AND = {
+	#AND = {
 		OR = {
 			AND = { #Patriarchal religions can only hire males. Matriarchal religions can only hire females.
 				is_female = no 
@@ -1497,7 +1497,7 @@ can_be_councilmember_emperor_trigger = {
 			}
 		}
 		is_adult = yes
-	}
+	#}
 }
 
 ###REAPER'S DUE####

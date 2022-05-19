@@ -2746,8 +2746,8 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = GetSRGreeting 
+#defined_text = {
+#	name = GetSRGreeting 
 #	text = {
 #		localisation_key = String_Gods_blessing_upon_thee
 #		trigger = { 
@@ -2819,7 +2819,7 @@ defined_text = {
 	#		}
 	#	}
 	#}
-
+#
 	#text = {
 	#	localisation_key = String_Ancestors_blessings
 	#	trigger = { is_tengri_secret_religious_society_member_trigger = yes 
@@ -2828,7 +2828,7 @@ defined_text = {
 	#		}
 	#	}
 	#}
-
+#
 	#text = {
 	#	localisation_key = String_Dievas_blessings
 	#	trigger = { is_baltic_secret_religious_society_member_trigger = yes 
@@ -2837,7 +2837,7 @@ defined_text = {
 	#		}
 	#	}
 	#}
-
+#
 	#text = {
 	#	localisation_key = String_Ukkos_blessings
 	#	trigger = { is_finnish_secret_religious_society_member_trigger = yes 
@@ -2846,7 +2846,7 @@ defined_text = {
 	#		}
 	#	}
 	#}
-
+#
 	#text = {
 	#	localisation_key = String_Ancestors_blessings
 	#	trigger = { is_west_african_secret_religious_society_member_trigger = yes 
@@ -2855,7 +2855,7 @@ defined_text = {
 	#		}
 	#	}
 	#}
-
+#
 	#text = {
 	#	localisation_key = String_Zuns_blessings
 	#	trigger = { is_zun_secret_religious_society_member_trigger = yes 
@@ -2864,7 +2864,7 @@ defined_text = {
 	#		}
 	#	}
 	#}
-
+#
 #	text = {
 #		localisation_key = String_Huitzilopochtlis_strength_to_you
 #		trigger = { is_aztec_secret_religious_society_member_trigger = yes 
@@ -2881,8 +2881,8 @@ defined_text = {
 	#		}
 	#	}
 	#}
-	
-}
+#	
+#}
 
 defined_text = {
 	name = GetSRFarewell
@@ -3169,14 +3169,14 @@ defined_text = {
 #			}
 #		}
 #	}
-	#text = {
+	text = {
 	#	localisation_key = String_Yinyang_symbol
 	#	trigger = { is_taoist_secret_religious_society_member_trigger = yes 
 	#		NOT = {
 	#			has_alternate_start_parameter = { key = religion_names value = random }
 	#		}
 	#	}
-	#}
+	}
 	fallback_text = {
 		localisation_key = String_god_symbol
 	}

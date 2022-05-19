@@ -4254,239 +4254,239 @@ e_baiyue = {
 	}
 }
 
-k_lox = {
-	allow = {
-		title = d_thenbjen
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_suungh = {
-	allow = {
-		title = d_kyoitok
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_zsio = {
-	allow = {
-		title = d_eghruainom
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_cju = {
-	allow = {
-		title = d_iuhkuok
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_drin = {
-	allow = {
-		title = d_triungmyox
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_yat = {
-	allow = {
-		title = d_eliangcjet
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_drieu = {
-	allow = {
-		title = d_liengxtung
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_siang = {
-	allow = {
-		title = d_skienggho
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_pra = {
-	allow = {
-		title = d_gyicju
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_hanh = {
-	allow = {
-		title = d_liihcju
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_yung = {
-	allow = {
-		title = d_zinbiungh
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_giudrie = {
-	allow = {
-		title = d_dungkhiengh
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_dang = {
-	allow = {
-		title = d_liungtok
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_yed = {
-	allow = {
-		title = d_dadmjeng
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_ngyoih = {
-	allow = {
-		title = d_cjindengh
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_triungsren = {
-	allow = {
-		title = d_triungsren
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_daih = {
-	allow = {
-		title = d_daddung
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
-
-k_leu = {
-	allow = {
-		title = d_ghrembjen
-		num_of_duke_titles = 2
-		independent = yes
-		any_demesne_title = {
-			NOT = { tier = emperor }
-			NOT = { tier = king }
-		}
-		war = no
-	}
-}
+#k_lox = {
+#	allow = {
+#		title = d_thenbjen
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_suungh = {
+#	allow = {
+#		title = d_kyoitok
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_zsio = {
+#	allow = {
+#		title = d_eghruainom
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_cju = {
+#	allow = {
+#		title = d_iuhkuok
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_drin = {
+#	allow = {
+#		title = d_triungmyox
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_yat = {
+#	allow = {
+#		title = d_eliangcjet
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_drieu = {
+#	allow = {
+#		title = d_liengxtung
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_siang = {
+#	allow = {
+#		title = d_skienggho
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_pra = {
+#	allow = {
+#		title = d_gyicju
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_hanh = {
+#	allow = {
+#		title = d_liihcju
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_yung = {
+#	allow = {
+#		title = d_zinbiungh
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_giudrie = {
+#	allow = {
+#		title = d_dungkhiengh
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_dang = {
+#	allow = {
+#		title = d_liungtok
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_yed = {
+#	allow = {
+#		title = d_dadmjeng
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_ngyoih = {
+#	allow = {
+#		title = d_cjindengh
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_triungsren = {
+#	allow = {
+#		title = d_triungsren
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_daih = {
+#	allow = {
+#		title = d_daddung
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
+#
+#k_leu = {
+#	allow = {
+#		title = d_ghrembjen
+#		num_of_duke_titles = 2
+#		independent = yes
+#		any_demesne_title = {
+#			NOT = { tier = emperor }
+#			NOT = { tier = king }
+#		}
+#		war = no
+#	}
+#}
 
 #k_minyag = {
 

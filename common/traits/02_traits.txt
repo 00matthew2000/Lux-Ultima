@@ -512,11 +512,12 @@ bad_priest_muslim = {
 
 	potential = {
 		OR = {
-			controls_religion = sunni
-			controls_religion = shiite
-			controls_religion = ibadi
-			controls_religion = hurufi
+			religion = sunni
+			religion = shiite
+			religion = ibadi
+			religion = hurufi
 		}
+		controls_religion = yes
 	}
 	
 	church_opinion = -10
@@ -543,8 +544,9 @@ bad_priest_norse = {
 		OR = {
 			is_theocracy = yes
 			is_ruler = no
-			controls_religion = norse_pagan_reformed
+			controls_religion = yes
 		}
+		religion = norse_pagan_reformed
 	}
 	
 	church_opinion = -10
