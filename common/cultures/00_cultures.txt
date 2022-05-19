@@ -2130,7 +2130,7 @@ north_germanic = {
 		modifier = default_culture_modifier
 	}
 	norsegael = { 
-		graphical_cultures = { northmangfx celticgfx }
+		graphical_cultures = { celticgfx norsegfx  }
 		
 		color = { 0.3 0.45 0.3 }
 
@@ -5477,7 +5477,7 @@ south_slavic = {
 	}
 }
 finno_ugric = {
-	graphical_cultures = { northmangfx norsegfx westerngfx }
+	graphical_cultures = { northmangfx ugricgfx westerngfx }
 
 	finnish = {
 		graphical_cultures = { ugricgfx }
