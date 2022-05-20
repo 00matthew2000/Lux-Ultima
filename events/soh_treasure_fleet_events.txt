@@ -30954,18 +30954,18 @@ character_event = {
 #	}
 #}
 
-province_event = {
-	id = treasurefleet.516
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		FROM = {
-			narrative_event = { id = treasurefleet.406 } # Create your own empire?
-		}
-	}
-}
+#province_event = {
+#	id = treasurefleet.516
+#	hide_window = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		FROM = {
+#			narrative_event = { id = treasurefleet.406 } # Create your own empire?
+#		}
+#	}
+#}
 
 # Trait inheritance for EoC
 character_event = {

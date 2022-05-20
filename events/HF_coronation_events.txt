@@ -2839,27 +2839,27 @@ letter_event = {
 				}
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 50 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 50 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 100 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 100 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 150 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 150 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 50 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 50 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 100 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 100 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 150 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 150 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
@@ -3319,27 +3319,27 @@ letter_event = {
 				}
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 50 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 50 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 100 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 100 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 150 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 150 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 50 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 50 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 100 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 100 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_FROM_realm = { who = ROOT value = 150 } } 
+				NOT = { distance_from_realm = { who = ROOT value = 150 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
@@ -5133,7 +5133,7 @@ character_event = {
 					religion = ROOT 	
 					is_within_diplo_range = ROOT
 					higher_real_tier_than = DUKE
-					NOT = { distance_FROM_realm = { who = ROOT value = 120 } }
+					NOT = { distance_from_realm = { who = ROOT value = 120 } }
 				}
 				#character_event = { id = HF.20302 } #Send Invitations to other Catholic neighbors
 			}
@@ -5275,213 +5275,213 @@ character_event = {
 	}
 }
 
-#Vassal: King is inviting you to his coronation.
-letter_event = {
-	id = HF.20301
-	desc = EVTDESCHFA20301
-	border = GFX_event_letter_frame_religion
-
-	is_triggered_only = yes
-	trigger = {
-		FROM = {
-			OR = {
-				has_character_flag = flag_crowned_by_priest
-				has_character_flag = flag_crowned_by_bishop
-				has_character_flag = flag_crowned_by_pope
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTAHF20301
-		#hidden_tooltip = { FROM = { character_event = { id = HF.20303 days = 3 random = 5 } } } #Notification.
-		opinion = {
-			modifier = opinion_coronation_guest
-			months = 4
-			who = FROM
-		}
-		add_character_modifier = {
-			name = out_traveling #Vassal travel is short, so no regent needed.
-			duration = 45
-		}
-		ai_chance = { 
-			factor = 70 
-		}
-	}
-	option = {	#End of the line
-		name = EVTOPTBHF20301
-		#hidden_tooltip = { FROM = { character_event = { id = HF.20304 days = 3 random = 5 } } } #Notification.
-		FROM = { 
-				show_scope_change = no	
-			opinion = {
-				modifier = opinion_dislike
-				years = 10
-				who = ROOT
-			}
-		}
-		ai_chance = { 
-			factor = 30 
-			modifier = {		#Of course he will be present.
-				factor = 0
-				event_target:coronation_priest = { character = ROOT }
-			} 
-			modifier = {
-				factor = 0.3
-				opinion = { who = FROM value = 100 }
-			}
-			modifier = {
-				factor = 0.4
-				opinion = { who = FROM value = 80 }
-			}
-			modifier = {
-				factor = 0.5
-				opinion = { who = FROM value = 60 }
-			}
-			modifier = {
-				factor = 0.65
-				opinion = { who = FROM value = 40 }
-			}
-			modifier = {
-				factor = 0.75
-				opinion = { who = FROM value = 20 }
-			}
-			modifier = {
-				factor = 0.85
-				opinion = { who = FROM value = 0 }
-			}
-			modifier = {
-				factor = 1.15
-				NOT = { opinion = { who = FROM value = 0 } }
-			}
-			modifier = {
-				factor = 1.25
-				NOT = { opinion = { who = FROM value = -20 } }
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { opinion = { who = FROM value = -40 } }
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { opinion = { who = FROM value = -60 } }
-			}
-			modifier = {
-				factor = 1.75
-				NOT = { opinion = { who = FROM value = -80 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { opinion = { who = FROM value = -100 } }
-			}
-		}
-	}
-}
-#Foreign King: King is inviting you to his coronation.
-letter_event = {
-	id = HF.20302
-	desc = EVTDESCHFA20302
-	border = GFX_event_letter_frame_religion
-
-	is_triggered_only = yes
-	trigger = {
-		FROM = {
-			OR = {
-				has_character_flag = flag_crowned_by_priest
-				has_character_flag = flag_crowned_by_bishop
-				has_character_flag = flag_crowned_by_pope
-			}
-		}
-	}
-	
-	
-	option = {
-		name = EVTOPTAHF20302
-		#hidden_tooltip = { FROM = { character_event = { id = HF.20303 days = 5 random = 5 } } } #Notification.
-		FROM = { 
-			prestige = 75	# Prestigious guests bring prestige.
-		}
-		opinion = {
-			modifier = opinion_coronation_guest
-			months = 4
-			who = FROM
-		}
-		add_trait = travelling #Foreign King's travel is longer, it needs a regent, as if it were a pilgrimage.
-		#add_character_modifier = {
-		#	name = out_traveling
-		#	duration = 45
-		#}
-		ai_chance = { 
-			factor = 70 
-		}
-	}
-	option = {	#End of the line
-		name = EVTOPTBHF20302
-		#hidden_tooltip = { FROM = { character_event = { id = HF.20304 days = 5 random = 5 } } } #Notification.
-		FROM = { 
-				show_scope_change = no	
-			opinion = {
-				modifier = opinion_dislike
-				years = 10
-				who = ROOT
-			}
-		}
-		ai_chance = { 
-			factor = 30
-			modifier = {		#Of course he will be present.
-				factor = 0
-				event_target:coronation_priest = { character = ROOT }
-			} 
-			modifier = {
-				factor = 0.3
-				opinion = { who = FROM value = 100 }
-			}
-			modifier = {
-				factor = 0.4
-				opinion = { who = FROM value = 80 }
-			}
-			modifier = {
-				factor = 0.5
-				opinion = { who = FROM value = 60 }
-			}
-			modifier = {
-				factor = 0.65
-				opinion = { who = FROM value = 40 }
-			}
-			modifier = {
-				factor = 0.75
-				opinion = { who = FROM value = 20 }
-			}
-			modifier = {
-				factor = 0.85
-				opinion = { who = FROM value = 0 }
-			}
-			modifier = {
-				factor = 1.15
-				NOT = { opinion = { who = FROM value = 0 } }
-			}
-			modifier = {
-				factor = 1.25
-				NOT = { opinion = { who = FROM value = -20 } }
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { opinion = { who = FROM value = -40 } }
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { opinion = { who = FROM value = -60 } }
-			}
-			modifier = {
-				factor = 1.75
-				NOT = { opinion = { who = FROM value = -80 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { opinion = { who = FROM value = -100 } }
-			}
-		}
-	}
-}
+##Vassal: King is inviting you to his coronation.
+#letter_event = {
+#	id = HF.20301
+#	desc = EVTDESCHFA20301
+#	border = GFX_event_letter_frame_religion
+#
+#	is_triggered_only = yes
+#	trigger = {
+#		FROM = {
+#			OR = {
+#				has_character_flag = flag_crowned_by_priest
+#				has_character_flag = flag_crowned_by_bishop
+#				has_character_flag = flag_crowned_by_pope
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTAHF20301
+#		#hidden_tooltip = { FROM = { character_event = { id = HF.20303 days = 3 random = 5 } } } #Notification.
+#		opinion = {
+#			modifier = opinion_coronation_guest
+#			months = 4
+#			who = FROM
+#		}
+#		add_character_modifier = {
+#			name = out_traveling #Vassal travel is short, so no regent needed.
+#			duration = 45
+#		}
+#		ai_chance = { 
+#			factor = 70 
+#		}
+#	}
+#	option = {	#End of the line
+#		name = EVTOPTBHF20301
+#		#hidden_tooltip = { FROM = { character_event = { id = HF.20304 days = 3 random = 5 } } } #Notification.
+#		FROM = { 
+#				show_scope_change = no	
+#			opinion = {
+#				modifier = opinion_dislike
+#				years = 10
+#				who = ROOT
+#			}
+#		}
+#		ai_chance = { 
+#			factor = 30 
+#			modifier = {		#Of course he will be present.
+#				factor = 0
+#				event_target:coronation_priest = { character = ROOT }
+#			} 
+#			modifier = {
+#				factor = 0.3
+#				opinion = { who = FROM value = 100 }
+#			}
+#			modifier = {
+#				factor = 0.4
+#				opinion = { who = FROM value = 80 }
+#			}
+#			modifier = {
+#				factor = 0.5
+#				opinion = { who = FROM value = 60 }
+#			}
+#			modifier = {
+#				factor = 0.65
+#				opinion = { who = FROM value = 40 }
+#			}
+#			modifier = {
+#				factor = 0.75
+#				opinion = { who = FROM value = 20 }
+#			}
+#			modifier = {
+#				factor = 0.85
+#				opinion = { who = FROM value = 0 }
+#			}
+#			modifier = {
+#				factor = 1.15
+#				NOT = { opinion = { who = FROM value = 0 } }
+#			}
+#			modifier = {
+#				factor = 1.25
+#				NOT = { opinion = { who = FROM value = -20 } }
+#			}
+#			modifier = {
+#				factor = 1.5
+#				NOT = { opinion = { who = FROM value = -40 } }
+#			}
+#			modifier = {
+#				factor = 1.5
+#				NOT = { opinion = { who = FROM value = -60 } }
+#			}
+#			modifier = {
+#				factor = 1.75
+#				NOT = { opinion = { who = FROM value = -80 } }
+#			}
+#			modifier = {
+#				factor = 2
+#				NOT = { opinion = { who = FROM value = -100 } }
+#			}
+#		}
+#	}
+#}
+##Foreign King: King is inviting you to his coronation.
+#letter_event = {
+#	id = HF.20302
+#	desc = EVTDESCHFA20302
+#	border = GFX_event_letter_frame_religion
+#
+#	is_triggered_only = yes
+#	trigger = {
+#		FROM = {
+#			OR = {
+#				has_character_flag = flag_crowned_by_priest
+#				has_character_flag = flag_crowned_by_bishop
+#				has_character_flag = flag_crowned_by_pope
+#			}
+#		}
+#	}
+#	
+#	
+#	option = {
+#		name = EVTOPTAHF20302
+#		#hidden_tooltip = { FROM = { character_event = { id = HF.20303 days = 5 random = 5 } } } #Notification.
+#		FROM = { 
+#			prestige = 75	# Prestigious guests bring prestige.
+#		}
+#		opinion = {
+#			modifier = opinion_coronation_guest
+#			months = 4
+#			who = FROM
+#		}
+#		add_trait = travelling #Foreign King's travel is longer, it needs a regent, as if it were a pilgrimage.
+#		#add_character_modifier = {
+#		#	name = out_traveling
+#		#	duration = 45
+#		#}
+#		ai_chance = { 
+#			factor = 70 
+#		}
+#	}
+#	option = {	#End of the line
+#		name = EVTOPTBHF20302
+#		#hidden_tooltip = { FROM = { character_event = { id = HF.20304 days = 5 random = 5 } } } #Notification.
+#		FROM = { 
+#				show_scope_change = no	
+#			opinion = {
+#				modifier = opinion_dislike
+#				years = 10
+#				who = ROOT
+#			}
+#		}
+#		ai_chance = { 
+#			factor = 30
+#			modifier = {		#Of course he will be present.
+#				factor = 0
+#				event_target:coronation_priest = { character = ROOT }
+#			} 
+#			modifier = {
+#				factor = 0.3
+#				opinion = { who = FROM value = 100 }
+#			}
+#			modifier = {
+#				factor = 0.4
+#				opinion = { who = FROM value = 80 }
+#			}
+#			modifier = {
+#				factor = 0.5
+#				opinion = { who = FROM value = 60 }
+#			}
+#			modifier = {
+#				factor = 0.65
+#				opinion = { who = FROM value = 40 }
+#			}
+#			modifier = {
+#				factor = 0.75
+#				opinion = { who = FROM value = 20 }
+#			}
+#			modifier = {
+#				factor = 0.85
+#				opinion = { who = FROM value = 0 }
+#			}
+#			modifier = {
+#				factor = 1.15
+#				NOT = { opinion = { who = FROM value = 0 } }
+#			}
+#			modifier = {
+#				factor = 1.25
+#				NOT = { opinion = { who = FROM value = -20 } }
+#			}
+#			modifier = {
+#				factor = 1.5
+#				NOT = { opinion = { who = FROM value = -40 } }
+#			}
+#			modifier = {
+#				factor = 1.5
+#				NOT = { opinion = { who = FROM value = -60 } }
+#			}
+#			modifier = {
+#				factor = 1.75
+#				NOT = { opinion = { who = FROM value = -80 } }
+#			}
+#			modifier = {
+#				factor = 2
+#				NOT = { opinion = { who = FROM value = -100 } }
+#			}
+#		}
+#	}
+#}
 #King Notification: Vassal will come to the Coronation Ceremony
 letter_event = {
 	id = HF.20303
@@ -13534,154 +13534,154 @@ character_event = {
 	}
 }
 
-#On_title_usurped: move special crowns to new holder. FROMFROM = old holder, FROM = title, ROOT = new holder.
-character_event = {
-	id = HF.20414
-	hide_window = yes
-
-	trigger = {
-		OR = {	
-			AND = {
-				FROM = { title = e_hre } 
-				FROMFROM = { any_artifact = { artifact_type = crown_hre } } 
-			} 
-			AND = {
-				FROM = { title = e_sassanid } 
-				FROMFROM = { any_artifact = { artifact_type = crown_pahlavi } } 
-			} 
-			AND = {
-				FROM = { title = e_byzantium } 
-				FROMFROM = { any_artifact = { artifact_type = crown_byzantine } } 
-			} 
-			AND = {
-				FROM = { title = d_norse_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
-			} 
-			AND = {
-				FROM = { title = d_tengri_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
-			} 
-			AND = {
-				FROM = { title = d_finnish_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
-			} 
-		}
-	}
-
-	is_triggered_only = yes
-
-	immediate = {
-
-		if = {
-			limit = {
-				FROM = { title = e_hre } 
-				FROMFROM = { any_artifact = { artifact_type = crown_hre } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_hre }
-					save_event_target_as = inheriting_artifact_1
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = e_sassanid } 
-				FROMFROM = { any_artifact = { artifact_type = crown_pahlavi } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_pahlavi }
-					save_event_target_as = inheriting_artifact_4
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = e_byzantium } 
-				FROMFROM = { any_artifact = { artifact_type = crown_byzantine } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_byzantine }
-					save_event_target_as = inheriting_artifact_2
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = d_norse_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_fylkir }
-					save_event_target_as = inheriting_artifact_3
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = d_tengri_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_tengri_fylkir }
-					save_event_target_as = inheriting_artifact_tengricrown 
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = { title = d_finnish_pagan_reformed } 
-				FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
-			} 
-			FROMFROM = { 
-				any_artifact = { 
-					limit = { artifact_type = crown_finnish_fylkir }
-					save_event_target_as = inheriting_artifact_finnishcrown
-				}
-			}
-		}
-		event_target:inheriting_artifact_1 = {
-			transfer_artifact = {
-				FROM = FROMFROM
-				to = ROOT
- 			} 
- 		} 
-		event_target:inheriting_artifact_2 = {
-			transfer_artifact = {
-				FROM = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_3 = {
-			transfer_artifact = {
-				FROM = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_tengricrown = {
-			transfer_artifact = {
-				FROM = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_finnishcrown = {
-			transfer_artifact = {
-				FROM = FROMFROM
-				to = ROOT
- 			} 
- 		}
-		event_target:inheriting_artifact_4 = {
-			transfer_artifact = {
-				FROM = FROMFROM
-				to = ROOT
- 			} 
- 		} 
-	}
-}
+##On_title_usurped: move special crowns to new holder. FROMFROM = old holder, FROM = title, ROOT = new holder.
+#character_event = {
+#	id = HF.20414
+#	hide_window = yes
+#
+#	trigger = {
+#		OR = {	
+#			AND = {
+#				FROM = { title = e_hre } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_hre } } 
+#			} 
+#			AND = {
+#				FROM = { title = e_sassanid } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_pahlavi } } 
+#			} 
+#			AND = {
+#				FROM = { title = e_byzantium } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_byzantine } } 
+#			} 
+#			AND = {
+#				FROM = { title = d_norse_pagan_reformed } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
+#			} 
+#			AND = {
+#				FROM = { title = d_tengri_pagan_reformed } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
+#			} 
+#			AND = {
+#				FROM = { title = d_finnish_pagan_reformed } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
+#			} 
+#		}
+#	}
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#
+#		if = {
+#			limit = {
+#				FROM = { title = e_hre } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_hre } } 
+#			} 
+#			FROMFROM = { 
+#				any_artifact = { 
+#					limit = { artifact_type = crown_hre }
+#					save_event_target_as = inheriting_artifact_1
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				FROM = { title = e_sassanid } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_pahlavi } } 
+#			} 
+#			FROMFROM = { 
+#				any_artifact = { 
+#					limit = { artifact_type = crown_pahlavi }
+#					save_event_target_as = inheriting_artifact_4
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				FROM = { title = e_byzantium } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_byzantine } } 
+#			} 
+#			FROMFROM = { 
+#				any_artifact = { 
+#					limit = { artifact_type = crown_byzantine }
+#					save_event_target_as = inheriting_artifact_2
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				FROM = { title = d_norse_pagan_reformed } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_fylkir } } 
+#			} 
+#			FROMFROM = { 
+#				any_artifact = { 
+#					limit = { artifact_type = crown_fylkir }
+#					save_event_target_as = inheriting_artifact_3
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				FROM = { title = d_tengri_pagan_reformed } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_tengri_fylkir } } 
+#			} 
+#			FROMFROM = { 
+#				any_artifact = { 
+#					limit = { artifact_type = crown_tengri_fylkir }
+#					save_event_target_as = inheriting_artifact_tengricrown 
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				FROM = { title = d_finnish_pagan_reformed } 
+#				FROMFROM = { any_artifact = { artifact_type = crown_finnish_fylkir } } 
+#			} 
+#			FROMFROM = { 
+#				any_artifact = { 
+#					limit = { artifact_type = crown_finnish_fylkir }
+#					save_event_target_as = inheriting_artifact_finnishcrown
+#				}
+#			}
+#		}
+#		event_target:inheriting_artifact_1 = {
+#			transfer_artifact = {
+#				FROM = FROMFROM
+#				to = ROOT
+# 			} 
+# 		} 
+#		event_target:inheriting_artifact_2 = {
+#			transfer_artifact = {
+#				FROM = FROMFROM
+#				to = ROOT
+# 			} 
+# 		}
+#		event_target:inheriting_artifact_3 = {
+#			transfer_artifact = {
+#				FROM = FROMFROM
+#				to = ROOT
+# 			} 
+# 		}
+#		event_target:inheriting_artifact_tengricrown = {
+#			transfer_artifact = {
+#				FROM = FROMFROM
+#				to = ROOT
+# 			} 
+# 		}
+#		event_target:inheriting_artifact_finnishcrown = {
+#			transfer_artifact = {
+#				FROM = FROMFROM
+#				to = ROOT
+# 			} 
+# 		}
+#		event_target:inheriting_artifact_4 = {
+#			transfer_artifact = {
+#				FROM = FROMFROM
+#				to = ROOT
+# 			} 
+# 		} 
+#	}
+#}
 
 #On_conversion: clean up uncrowned modifier.
 character_event = {

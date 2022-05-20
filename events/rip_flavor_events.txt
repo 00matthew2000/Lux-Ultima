@@ -8997,687 +8997,687 @@ letter_event = {
 
 # DEFENDER SURRENDER EVENTS
 
-# Vassal is asked by Liege to surrender to another vassal on an ongoing war
-letter_event = {
-	id = RIP.30020
-	desc = EVTDESC_RIP_30020
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-
-	option = {
-		name = EVTOPTA_RIP_30000 # Ask for money
-		if = { # The EoC isn't going to be happy if you make demands!
-			limit = {
-				has_dlc = "Jade Dragon"
-			}
-			if = {
-				limit = {
-					FROMFROM = {
-						is_chinese_emperor_trigger = yes
-					}
-				}
-				detract_grace_major_effect = yes
-			}
-			else_if = {
-				limit = {
-					FROMFROM = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-				}
-				detract_grace_medium_effect = yes
-			}
-			else_if = {
-				limit = {
-					FROMFROM = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-				}
-				detract_grace_minor_effect = yes
-			}
-		}
-		ai_chance = {
-			factor = 100
-			modifier = {
-				factor = 5.0
-				trait = greedy 
-			}
-			modifier = {
-				factor = 2.0
-				trait = envious
-			}
-		}
-		tooltip = {
-			FROMFROM = {
-				transfer_scaled_wealth = {
-					value = 0.33
-					to = ROOT
-					min = 30
-				}
-			}
-		}
-		FROMFROM = {
-			character_event = { id = RIP.30023 days = 3 }
-		}
-	}
-	option = {
-		name = EVTOPTB_RIP_30020 # Ask for a Favor
-		if = { # The EoC isn't going to be happy if you make demands!
-			limit = {
-				has_dlc = "Jade Dragon"
-			}
-			if = {
-				limit = {
-					FROMFROM = {
-						is_chinese_emperor_trigger = yes
-					}
-				}
-				detract_grace_major_effect = yes
-			}
-			else_if = {
-				limit = {
-					FROMFROM = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-				}
-				detract_grace_medium_effect = yes
-			}
-			else_if = {
-				limit = {
-					FROMFROM = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-				}
-				detract_grace_minor_effect = yes
-			}
-		}
-		ai_chance = {
-			factor = 100
-			modifier = {
-				factor = 3.0
-				trait = deceitful 
-			}
-			modifier = {
-				factor = 3.0
-				trait = ambitious
-			}
-		}
-		trigger = {
-			has_dlc = "Conclave"
-			FROMFROM = { NOT = { owes_favor_to = ROOT } }
-		}
-		FROMFROM = {
-			character_event = { id = RIP.30027 days = 3 }
-		}
-	}
-	
-	option = {
-		name = EVTOPTC_RIP_30000 # Ask for nothing
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				is_rival = FROMFROM
-			}
-			modifier = {
-				factor = 10.0
-				OR = {
-					is_friend = FROMFROM
-					is_lover = FROMFROM
-				}
-			}
-			modifier = {
-				factor = 1.5
-				opinion = {
-					who = FROMFROM
-					value = 50
-				}
-			}
-			modifier = {
-				factor = 2.0
-				opinion = {
-					who = FROMFROM
-					value = 90
-				}
-			}
-		}
-		
-		tooltip = {
-			reverse_opinion = {
-				who = FROMFROM
-				modifier = opinion_very_grateful
-				years = 10
-			}
-		}
-		
-		prestige = 100
-		
-		FROMFROM = {
-			character_event = { id = RIP.30021 days = 3 }
-		}
-	}
-	
-	option = {
-		name = EVTOPTD_RIP_30000 # Refuse
-		if = {
-			limit = {
-				has_dlc = "Jade Dragon"
-			}
-			if = {
-				limit = {
-					FROMFROM = {
-						is_chinese_emperor_trigger = yes
-					}
-				}
-				detract_grace_super_huge_effect = yes
-			}
-			else_if = {
-				limit = {
-					FROMFROM = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-				}
-				detract_grace_massive_effect = yes
-			}
-			else_if = {
-				limit = {
-					FROMFROM = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-				}
-				detract_grace_major_effect = yes
-			}
-		}
-		
-		trigger = {
-			FROMFROM = {
-				NOR = {
-					has_law = ze_administration_laws_1
-					has_law = ze_administration_laws_2
-				}
-			}
-		}
-		
-		ai_chance = {
-			factor = 100
-			modifier = {
-				factor = 20.0
-				is_rival = FROMFROM
-			}
-			modifier = {
-				factor = 2.0
-				NOT = {
-					opinion = {
-						who = FROMFROM
-						value = -25
-					}
-				}
-			}
-			modifier = {
-				factor = 2.0
-				NOT = {
-					opinion = {
-						who = FROMFROM
-						value = -50
-					}
-				}
-			}
-			modifier = {
-				factor = 2.0
-				NOT = {
-					opinion = {
-						who = FROMFROM
-						value = -75
-					}
-				}
-			}
-		}
-		
-		tooltip = {
-			reverse_opinion = {
-				who = FROMFROM
-				modifier = opinion_refused_to_end_war
-				years = 3
-			}
-		}
-		FROMFROM = {
-			character_event = { id = RIP.30026 days = 3 }
-		}
-	}
-	
-	option = {
-		name = EVTOPTD_RIP_30000_TRAITOR # Refuse
-		if = {
-			limit = {
-				has_dlc = "Jade Dragon"
-			}
-			if = {
-				limit = {
-					FROMFROM = {
-						is_chinese_emperor_trigger = yes
-					}
-				}
-				detract_grace_super_huge_effect = yes
-			}
-			else_if = {
-				limit = {
-					FROMFROM = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-				}
-				detract_grace_massive_effect = yes
-			}
-			else_if = {
-				limit = {
-					FROMFROM = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-				}
-				detract_grace_major_effect = yes
-			}
-		}
-		
-		trigger = {
-			FROMFROM = {
-				OR = {
-					has_law = ze_administration_laws_1
-					has_law = ze_administration_laws_2
-				}
-			}
-		}
-		
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 20.0
-				is_rival = FROMFROM
-			}
-			modifier = {
-				factor = 2.0
-				NOT = {
-					opinion = {
-						who = FROMFROM
-						value = -25
-					}
-				}
-			}
-			modifier = {
-				factor = 2.0
-				NOT = {
-					opinion = {
-						who = FROMFROM
-						value = -50
-					}
-				}
-			}
-			modifier = {
-				factor = 2.0
-				NOT = {
-					opinion = {
-						who = FROMFROM
-						value = -75
-					}
-				}
-			}
-		}
-		
-		tooltip = {
-			reverse_opinion = {
-				who = FROMFROM
-				modifier = opinion_traitor
-				years = 3
-			}
-		}
-		FROMFROM = {
-			character_event = { id = RIP.30026 days = 3 }
-		}
-	}
-}
-
-# Vassal agrees, asking for nothing
-letter_event = {
-	id = RIP.30021
-	desc = EVTDESC_RIP_30021
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-		
-		event_target:target_attacker = {
-			character_event = { id = RIP.30022 }
-		}
-		
-		opinion = {
-			who = FROM
-			modifier = opinion_very_grateful
-			years = 10
-		}
-		
-		FROM = {
-			any_war = {
-				limit = {
-					attacker = { character = event_target:target_attacker }
-					defender = { character = FROM }
-				}
-				end_war = success
-			}
-		}
-	}
-}
-
-# The other vassal is notified
-letter_event = {
-	id = RIP.30022
-	desc = EVTDESC_RIP_30022
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RIP_30002
-		opinion = {
-			who = FROM
-			modifier = opinion_very_grateful
-			years = 10
-		}
-		reverse_add_favor = FROM
-	}
-}
-
-# Vassal agrees, asking for money
-letter_event = {
-	id = RIP.30023
-	desc = EVTDESC_RIP_30023
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RIP_30003 # Very well...
-		ai_chance = {
-			factor = 100
-			modifier = {
-				factor = 0
-				NOT = { scaled_wealth = 0.33 }
-			}
-		}
-		
-		event_target:target_attacker = {
-			character_event = { id = RIP.30022 }
-		}
-		
-		tooltip = {
-			transfer_scaled_wealth = {
-				value = 0.33
-				to = FROM
-				min = 30
-			}
-		}
-		
-		FROM = {
-			letter_event = { id = RIP.30024 }
-			any_war = {
-				limit = {
-					attacker = { character = event_target:target_attacker }
-					defender = { character = FROM }
-				}
-				end_war = success
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTB_RIP_30003 # I can't afford that
-		ai_chance = {
-			factor = 1
-		}
-		FROM = {
-			letter_event = { id = RIP.30025 }
-		}
-	}
-}
-
-# The defender is notified and given money
-letter_event = {
-	id = RIP.30024
-	desc = EVTDESC_RIP_30024
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-		prestige = 100
-		FROM = {
-			transfer_scaled_wealth = {
-				value = 0.33
-				to = ROOT
-				min = 30
-			}
-		}
-	}
-}
-
-# The defender is notified - liege cannot afford to pay that much money
-letter_event = {
-	id = RIP.30025
-	desc = EVTDESC_RIP_30025
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RIP_30025
-	}
-}
-
-# Vassal refuses liege's request. Liege is notified.
-letter_event = {
-	id = RIP.30026
-	desc = EVTDESC_RIP_30026
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RIP_30006
-		trigger = {
-			NOR = {
-				has_law = ze_administration_laws_1
-				has_law = ze_administration_laws_2
-			}
-		}
-		
-		opinion = {
-			who = FROM
-			modifier = opinion_refused_to_end_war
-			years = 3
-		}
-	}
-	
-	option = {
-		name = EVTOPTA_RIP_30006_TRAITOR
-		
-		trigger = {
-			OR = {
-				has_law = ze_administration_laws_1
-				has_law = ze_administration_laws_2
-			}
-		}
-		
-		opinion = {
-			who = FROM
-			modifier = opinion_traitor
-			years = 3
-		}
-	}
-	
-}
-
-# Vassal agrees, asking for a Favor
-letter_event = {
-	id = RIP.30027
-	desc = EVTDESC_RIP_30027
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RIP_30003 # Very well...
-		ai_chance = {
-			factor = 100
-		}
-		
-		event_target:target_attacker = {
-			character_event = { id = RIP.30022 }
-		}
-		
-		reverse_add_favor = FROM
-		
-		opinion = {
-			who = FROM
-			modifier = opinion_grateful
-			years = 10
-		}
-		
-		FROM = {
-			letter_event = { id = RIP.30028 }
-			any_war = {
-				limit = {
-					attacker = { character = event_target:target_attacker }
-					defender = { character = FROM }
-				}
-				end_war = success
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTB_RIP_30007 # No
-		ai_chance = {
-			factor = 0
-		}
-		
-		FROM = {
-			letter_event = { id = RIP.30029 }
-		}
-	}
-}
-
-# The defender is notified about the favor
-letter_event = {
-	id = RIP.30028
-	desc = EVTDESC_RIP_30028
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-		prestige = 100
-		tooltip = {
-			add_favor = FROM
-			reverse_opinion = {
-				who = FROM
-				modifier = opinion_grateful
-				years = 10
-			}
-		}
-	}
-}
-
-# The defender is notified - liege not willing to owe a favor
-letter_event = {
-	id = RIP.30029
-	desc = EVTDESC_RIP_30029
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RIP_30005
-	}
-}
-
-# Vassal is asked by Liege to surrender to another vassal - can't refuse since the liege calls in a favor
-letter_event = {
-	id = RIP.30030
-	desc = EVTDESC_RIP_30030
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RIP_30010
-		
-		any_war = {
-			limit = {
-				attacker = { character = event_target:target_attacker }
-				defender = { character = FROM }
-			}
-			end_war = success
-		}
-		
-		tooltip = {
-			reverse_opinion = {
-				who = FROMFROM
-				modifier = opinion_very_grateful
-				years = 10
-			}
-			
-			reverse_remove_favor = FROMFROM
-		}
-		
-		FROMFROM = {
-			character_event = { id = RIP.30031 }
-		}
-	}
-}
-
-# Liege gets feedback on the surrender. The favor is used up.
-letter_event = {
-	id = RIP.30031
-	desc = EVTDESC_RIP_30031
-	border = GFX_event_letter_frame_war
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-		
-		event_target:target_attacker = {
-			character_event = { id = RIP.30022 }
-		}
-		
-		opinion = {
-			who = FROM
-			modifier = opinion_very_grateful
-			years = 10
-		}
-	}
-}
+## Vassal is asked by Liege to surrender to another vassal on an ongoing war
+#letter_event = {
+#	id = RIP.30020
+#	desc = EVTDESC_RIP_30020
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = EVTOPTA_RIP_30000 # Ask for money
+#		if = { # The EoC isn't going to be happy if you make demands!
+#			limit = {
+#				has_dlc = "Jade Dragon"
+#			}
+#			if = {
+#				limit = {
+#					FROMFROM = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#				}
+#				detract_grace_major_effect = yes
+#			}
+#			else_if = {
+#				limit = {
+#					FROMFROM = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#				}
+#				detract_grace_medium_effect = yes
+#			}
+#			else_if = {
+#				limit = {
+#					FROMFROM = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#				}
+#				detract_grace_minor_effect = yes
+#			}
+#		}
+#		ai_chance = {
+#			factor = 100
+#			modifier = {
+#				factor = 5.0
+#				trait = greedy 
+#			}
+#			modifier = {
+#				factor = 2.0
+#				trait = envious
+#			}
+#		}
+#		tooltip = {
+#			FROMFROM = {
+#				transfer_scaled_wealth = {
+#					value = 0.33
+#					to = ROOT
+#					min = 30
+#				}
+#			}
+#		}
+#		FROMFROM = {
+#			character_event = { id = RIP.30023 days = 3 }
+#		}
+#	}
+#	option = {
+#		name = EVTOPTB_RIP_30020 # Ask for a Favor
+#		if = { # The EoC isn't going to be happy if you make demands!
+#			limit = {
+#				has_dlc = "Jade Dragon"
+#			}
+#			if = {
+#				limit = {
+#					FROMFROM = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#				}
+#				detract_grace_major_effect = yes
+#			}
+#			else_if = {
+#				limit = {
+#					FROMFROM = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#				}
+#				detract_grace_medium_effect = yes
+#			}
+#			else_if = {
+#				limit = {
+#					FROMFROM = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#				}
+#				detract_grace_minor_effect = yes
+#			}
+#		}
+#		ai_chance = {
+#			factor = 100
+#			modifier = {
+#				factor = 3.0
+#				trait = deceitful 
+#			}
+#			modifier = {
+#				factor = 3.0
+#				trait = ambitious
+#			}
+#		}
+#		trigger = {
+#			has_dlc = "Conclave"
+#			FROMFROM = { NOT = { owes_favor_to = ROOT } }
+#		}
+#		FROMFROM = {
+#			character_event = { id = RIP.30027 days = 3 }
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTC_RIP_30000 # Ask for nothing
+#		ai_chance = {
+#			factor = 50
+#			modifier = {
+#				factor = 0
+#				is_rival = FROMFROM
+#			}
+#			modifier = {
+#				factor = 10.0
+#				OR = {
+#					is_friend = FROMFROM
+#					is_lover = FROMFROM
+#				}
+#			}
+#			modifier = {
+#				factor = 1.5
+#				opinion = {
+#					who = FROMFROM
+#					value = 50
+#				}
+#			}
+#			modifier = {
+#				factor = 2.0
+#				opinion = {
+#					who = FROMFROM
+#					value = 90
+#				}
+#			}
+#		}
+#		
+#		tooltip = {
+#			reverse_opinion = {
+#				who = FROMFROM
+#				modifier = opinion_very_grateful
+#				years = 10
+#			}
+#		}
+#		
+#		prestige = 100
+#		
+#		FROMFROM = {
+#			character_event = { id = RIP.30021 days = 3 }
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTD_RIP_30000 # Refuse
+#		if = {
+#			limit = {
+#				has_dlc = "Jade Dragon"
+#			}
+#			if = {
+#				limit = {
+#					FROMFROM = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#				}
+#				detract_grace_super_huge_effect = yes
+#			}
+#			else_if = {
+#				limit = {
+#					FROMFROM = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#				}
+#				detract_grace_massive_effect = yes
+#			}
+#			else_if = {
+#				limit = {
+#					FROMFROM = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#				}
+#				detract_grace_major_effect = yes
+#			}
+#		}
+#		
+#		trigger = {
+#			FROMFROM = {
+#				NOR = {
+#					has_law = ze_administration_laws_1
+#					has_law = ze_administration_laws_2
+#				}
+#			}
+#		}
+#		
+#		ai_chance = {
+#			factor = 100
+#			modifier = {
+#				factor = 20.0
+#				is_rival = FROMFROM
+#			}
+#			modifier = {
+#				factor = 2.0
+#				NOT = {
+#					opinion = {
+#						who = FROMFROM
+#						value = -25
+#					}
+#				}
+#			}
+#			modifier = {
+#				factor = 2.0
+#				NOT = {
+#					opinion = {
+#						who = FROMFROM
+#						value = -50
+#					}
+#				}
+#			}
+#			modifier = {
+#				factor = 2.0
+#				NOT = {
+#					opinion = {
+#						who = FROMFROM
+#						value = -75
+#					}
+#				}
+#			}
+#		}
+#		
+#		tooltip = {
+#			reverse_opinion = {
+#				who = FROMFROM
+#				modifier = opinion_refused_to_end_war
+#				years = 3
+#			}
+#		}
+#		FROMFROM = {
+#			character_event = { id = RIP.30026 days = 3 }
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTD_RIP_30000_TRAITOR # Refuse
+#		if = {
+#			limit = {
+#				has_dlc = "Jade Dragon"
+#			}
+#			if = {
+#				limit = {
+#					FROMFROM = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#				}
+#				detract_grace_super_huge_effect = yes
+#			}
+#			else_if = {
+#				limit = {
+#					FROMFROM = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#				}
+#				detract_grace_massive_effect = yes
+#			}
+#			else_if = {
+#				limit = {
+#					FROMFROM = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#				}
+#				detract_grace_major_effect = yes
+#			}
+#		}
+#		
+#		trigger = {
+#			FROMFROM = {
+#				OR = {
+#					has_law = ze_administration_laws_1
+#					has_law = ze_administration_laws_2
+#				}
+#			}
+#		}
+#		
+#		ai_chance = {
+#			factor = 20
+#			modifier = {
+#				factor = 20.0
+#				is_rival = FROMFROM
+#			}
+#			modifier = {
+#				factor = 2.0
+#				NOT = {
+#					opinion = {
+#						who = FROMFROM
+#						value = -25
+#					}
+#				}
+#			}
+#			modifier = {
+#				factor = 2.0
+#				NOT = {
+#					opinion = {
+#						who = FROMFROM
+#						value = -50
+#					}
+#				}
+#			}
+#			modifier = {
+#				factor = 2.0
+#				NOT = {
+#					opinion = {
+#						who = FROMFROM
+#						value = -75
+#					}
+#				}
+#			}
+#		}
+#		
+#		tooltip = {
+#			reverse_opinion = {
+#				who = FROMFROM
+#				modifier = opinion_traitor
+#				years = 3
+#			}
+#		}
+#		FROMFROM = {
+#			character_event = { id = RIP.30026 days = 3 }
+#		}
+#	}
+#}
+#
+## Vassal agrees, asking for nothing
+#letter_event = {
+#	id = RIP.30021
+#	desc = EVTDESC_RIP_30021
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EXCELLENT
+#		
+#		event_target:target_attacker = {
+#			character_event = { id = RIP.30022 }
+#		}
+#		
+#		opinion = {
+#			who = FROM
+#			modifier = opinion_very_grateful
+#			years = 10
+#		}
+#		
+#		FROM = {
+#			any_war = {
+#				limit = {
+#					attacker = { character = event_target:target_attacker }
+#					defender = { character = FROM }
+#				}
+#				end_war = success
+#			}
+#		}
+#	}
+#}
+#
+## The other vassal is notified
+#letter_event = {
+#	id = RIP.30022
+#	desc = EVTDESC_RIP_30022
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_RIP_30002
+#		opinion = {
+#			who = FROM
+#			modifier = opinion_very_grateful
+#			years = 10
+#		}
+#		reverse_add_favor = FROM
+#	}
+#}
+#
+## Vassal agrees, asking for money
+#letter_event = {
+#	id = RIP.30023
+#	desc = EVTDESC_RIP_30023
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_RIP_30003 # Very well...
+#		ai_chance = {
+#			factor = 100
+#			modifier = {
+#				factor = 0
+#				NOT = { scaled_wealth = 0.33 }
+#			}
+#		}
+#		
+#		event_target:target_attacker = {
+#			character_event = { id = RIP.30022 }
+#		}
+#		
+#		tooltip = {
+#			transfer_scaled_wealth = {
+#				value = 0.33
+#				to = FROM
+#				min = 30
+#			}
+#		}
+#		
+#		FROM = {
+#			letter_event = { id = RIP.30024 }
+#			any_war = {
+#				limit = {
+#					attacker = { character = event_target:target_attacker }
+#					defender = { character = FROM }
+#				}
+#				end_war = success
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTB_RIP_30003 # I can't afford that
+#		ai_chance = {
+#			factor = 1
+#		}
+#		FROM = {
+#			letter_event = { id = RIP.30025 }
+#		}
+#	}
+#}
+#
+## The defender is notified and given money
+#letter_event = {
+#	id = RIP.30024
+#	desc = EVTDESC_RIP_30024
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EXCELLENT
+#		prestige = 100
+#		FROM = {
+#			transfer_scaled_wealth = {
+#				value = 0.33
+#				to = ROOT
+#				min = 30
+#			}
+#		}
+#	}
+#}
+#
+## The defender is notified - liege cannot afford to pay that much money
+#letter_event = {
+#	id = RIP.30025
+#	desc = EVTDESC_RIP_30025
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_RIP_30025
+#	}
+#}
+#
+## Vassal refuses liege's request. Liege is notified.
+#letter_event = {
+#	id = RIP.30026
+#	desc = EVTDESC_RIP_30026
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_RIP_30006
+#		trigger = {
+#			NOR = {
+#				has_law = ze_administration_laws_1
+#				has_law = ze_administration_laws_2
+#			}
+#		}
+#		
+#		opinion = {
+#			who = FROM
+#			modifier = opinion_refused_to_end_war
+#			years = 3
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTA_RIP_30006_TRAITOR
+#		
+#		trigger = {
+#			OR = {
+#				has_law = ze_administration_laws_1
+#				has_law = ze_administration_laws_2
+#			}
+#		}
+#		
+#		opinion = {
+#			who = FROM
+#			modifier = opinion_traitor
+#			years = 3
+#		}
+#	}
+#	
+#}
+#
+## Vassal agrees, asking for a Favor
+#letter_event = {
+#	id = RIP.30027
+#	desc = EVTDESC_RIP_30027
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_RIP_30003 # Very well...
+#		ai_chance = {
+#			factor = 100
+#		}
+#		
+#		event_target:target_attacker = {
+#			character_event = { id = RIP.30022 }
+#		}
+#		
+#		reverse_add_favor = FROM
+#		
+#		opinion = {
+#			who = FROM
+#			modifier = opinion_grateful
+#			years = 10
+#		}
+#		
+#		FROM = {
+#			letter_event = { id = RIP.30028 }
+#			any_war = {
+#				limit = {
+#					attacker = { character = event_target:target_attacker }
+#					defender = { character = FROM }
+#				}
+#				end_war = success
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTB_RIP_30007 # No
+#		ai_chance = {
+#			factor = 0
+#		}
+#		
+#		FROM = {
+#			letter_event = { id = RIP.30029 }
+#		}
+#	}
+#}
+#
+## The defender is notified about the favor
+#letter_event = {
+#	id = RIP.30028
+#	desc = EVTDESC_RIP_30028
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EXCELLENT
+#		prestige = 100
+#		tooltip = {
+#			add_favor = FROM
+#			reverse_opinion = {
+#				who = FROM
+#				modifier = opinion_grateful
+#				years = 10
+#			}
+#		}
+#	}
+#}
+#
+## The defender is notified - liege not willing to owe a favor
+#letter_event = {
+#	id = RIP.30029
+#	desc = EVTDESC_RIP_30029
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_RIP_30005
+#	}
+#}
+#
+## Vassal is asked by Liege to surrender to another vassal - can't refuse since the liege calls in a favor
+#letter_event = {
+#	id = RIP.30030
+#	desc = EVTDESC_RIP_30030
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_RIP_30010
+#		
+#		any_war = {
+#			limit = {
+#				attacker = { character = event_target:target_attacker }
+#				defender = { character = FROM }
+#			}
+#			end_war = success
+#		}
+#		
+#		tooltip = {
+#			reverse_opinion = {
+#				who = FROMFROM
+#				modifier = opinion_very_grateful
+#				years = 10
+#			}
+#			
+#			reverse_remove_favor = FROMFROM
+#		}
+#		
+#		FROMFROM = {
+#			character_event = { id = RIP.30031 }
+#		}
+#	}
+#}
+#
+## Liege gets feedback on the surrender. The favor is used up.
+#letter_event = {
+#	id = RIP.30031
+#	desc = EVTDESC_RIP_30031
+#	border = GFX_event_letter_frame_war
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EXCELLENT
+#		
+#		event_target:target_attacker = {
+#			character_event = { id = RIP.30022 }
+#		}
+#		
+#		opinion = {
+#			who = FROM
+#			modifier = opinion_very_grateful
+#			years = 10
+#		}
+#	}
+#}
 
 #####################################################
 # LIEGE DEMANDS GAVELKIND SUCCESSION LAW OF A VASSAL
