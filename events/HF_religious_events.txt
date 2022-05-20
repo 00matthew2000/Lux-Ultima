@@ -10860,7 +10860,7 @@ character_event = {
 				has_religion_feature = religion_stable
 				has_religion_feature = religion_feature_slavic
 				has_religion_feature = religion_feature_finnish
-				has_religion_feature = chinese_imperial_package_deal
+				#has_religion_feature = chinese_imperial_package_deal
 				#has_religion_feature = religion_feature_inca
 			}
 			religion = ROOT
@@ -10899,10 +10899,10 @@ character_event = {
 	option = { 
 		name = EVTOPTAHF23751
 		trigger = {#Synergy
-			OR = {
+			#OR = {
 				has_religion_feature = religion_astrology
-				has_religion_feature = religion_feature_chinese
-			}
+				##has_religion_feature = religion_feature_chinese
+			#}
 		} 
 		custom_tooltip = { text = TT_EVTOPTAHF23751 }
 		hidden_tooltip = { 
@@ -11390,10 +11390,10 @@ character_event = {
 							has_religion_feature = religion_meritocratic
 							has_religion_feature = religion_matriarchal
 							has_religion_feature = religion_patriarchal
-							has_religion_feature = religion_feature_chinese
-							has_religion_feature = religion_feature_korean
-							has_religion_feature = religion_feature_viet
-							has_religion_feature = chinese_imperial_package_deal
+							#has_religion_feature = religion_feature_chinese
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = chinese_imperial_package_deal
 							#has_religion_feature = religion_feature_inca
 						} 
 					}
@@ -11418,10 +11418,10 @@ character_event = {
 							has_religion_feature = religion_meritocratic
 							has_religion_feature = religion_matriarchal
 							has_religion_feature = religion_patriarchal
-							has_religion_feature = religion_feature_chinese
-							has_religion_feature = religion_feature_korean
-							has_religion_feature = religion_feature_viet
-							has_religion_feature = chinese_imperial_package_deal
+							#has_religion_feature = religion_feature_chinese
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = chinese_imperial_package_deal
 							#has_religion_feature = religion_feature_inca
 						} 
 					}
@@ -11496,10 +11496,10 @@ character_event = {
 									has_religion_feature = religion_meritocratic
 									has_religion_feature = religion_matriarchal
 									has_religion_feature = religion_patriarchal
-									has_religion_feature = religion_feature_chinese
-										has_religion_feature = religion_feature_korean
-										has_religion_feature = religion_feature_viet
-										has_religion_feature = chinese_imperial_package_deal
+									#has_religion_feature = religion_feature_chinese
+										#has_religion_feature = religion_feature_korean
+										#has_religion_feature = religion_feature_korean
+										#has_religion_feature = chinese_imperial_package_deal
 										#has_religion_feature = religion_feature_inca
 								} 
 							}
@@ -11520,10 +11520,10 @@ character_event = {
 									has_religion_feature = religion_meritocratic
 									has_religion_feature = religion_matriarchal
 									has_religion_feature = religion_patriarchal
-									has_religion_feature = religion_feature_chinese
-										has_religion_feature = religion_feature_korean
-										has_religion_feature = religion_feature_viet
-										has_religion_feature = chinese_imperial_package_deal
+									#has_religion_feature = religion_feature_chinese
+										#has_religion_feature = religion_feature_korean
+										#has_religion_feature = religion_feature_korean
+										#has_religion_feature = chinese_imperial_package_deal
 										#has_religion_feature = religion_feature_inca
 								} 
 							}
@@ -11620,10 +11620,10 @@ character_event = {
 						has_religion_feature = religion_meritocratic
 						has_religion_feature = religion_matriarchal
 						has_religion_feature = religion_patriarchal
-						has_religion_feature = religion_feature_chinese
-						has_religion_feature = religion_feature_korean
-						has_religion_feature = religion_feature_viet
-						has_religion_feature = chinese_imperial_package_deal
+						#has_religion_feature = religion_feature_chinese
+						#has_religion_feature = religion_feature_korean
+						#has_religion_feature = religion_feature_korean
+						#has_religion_feature = chinese_imperial_package_deal
 						#has_religion_feature = religion_feature_inca
 					} 
 				}
@@ -11670,10 +11670,10 @@ character_event = {
 							has_religion_feature = religion_meritocratic
 							has_religion_feature = religion_matriarchal
 							has_religion_feature = religion_patriarchal
-							has_religion_feature = religion_feature_chinese
-							has_religion_feature = religion_feature_korean
-							has_religion_feature = religion_feature_viet
-							has_religion_feature = chinese_imperial_package_deal
+							#has_religion_feature = religion_feature_chinese
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = chinese_imperial_package_deal
 							#has_religion_feature = religion_feature_inca
 						} 
 					}
@@ -11698,10 +11698,10 @@ character_event = {
 							has_religion_feature = religion_meritocratic
 							has_religion_feature = religion_matriarchal
 							has_religion_feature = religion_patriarchal
-							has_religion_feature = religion_feature_chinese
-							has_religion_feature = religion_feature_korean
-							has_religion_feature = religion_feature_viet
-							has_religion_feature = chinese_imperial_package_deal
+							#has_religion_feature = religion_feature_chinese
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = chinese_imperial_package_deal
 							#has_religion_feature = religion_feature_inca
 						} 
 					}
@@ -11776,10 +11776,10 @@ character_event = {
 									has_religion_feature = religion_meritocratic
 									has_religion_feature = religion_matriarchal
 									has_religion_feature = religion_patriarchal
-									has_religion_feature = religion_feature_chinese
-							has_religion_feature = religion_feature_korean
-							has_religion_feature = religion_feature_viet
-							has_religion_feature = chinese_imperial_package_deal
+									#has_religion_feature = religion_feature_chinese
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = religion_feature_korean
+							#has_religion_feature = chinese_imperial_package_deal
 							#has_religion_feature = religion_feature_inca
 								} 
 							}
@@ -11800,10 +11800,10 @@ character_event = {
 									has_religion_feature = religion_meritocratic
 									has_religion_feature = religion_matriarchal
 									has_religion_feature = religion_patriarchal
-									has_religion_feature = religion_feature_chinese
-									has_religion_feature = religion_feature_korean
-									has_religion_feature = religion_feature_viet
-									has_religion_feature = chinese_imperial_package_deal
+									#has_religion_feature = religion_feature_chinese
+									#has_religion_feature = religion_feature_korean
+									#has_religion_feature = religion_feature_korean
+									#has_religion_feature = chinese_imperial_package_deal
 									#has_religion_feature = religion_feature_inca
 								} 
 							}
@@ -13105,7 +13105,7 @@ character_event = {
 			} 
 			OR = {
 				has_religion_feature = religion_animistic 
-				has_religion_feature = religion_feature_korean  # Gives animistic
+				#has_religion_feature = religion_feature_korean  # Gives animistic
 			}
 		} 
 		picture = GFX_evt_magic_ritual
@@ -13115,7 +13115,7 @@ character_event = {
 			NOT = { has_dlc = "Mystics" } 
 			OR = {
 				has_religion_feature = religion_animistic 
-				has_religion_feature = religion_feature_korean  # Gives animistic
+				#has_religion_feature = religion_feature_korean  # Gives animistic
 			}
 		} 
 		picture = GFX_evt_tribal_shrine
@@ -13134,7 +13134,7 @@ character_event = {
 			religion_group = serer_group
 			religion_group = african_pagan_group
 			has_religion_feature = religion_animistic 
-			has_religion_feature = religion_feature_korean # Gives animistic 
+			#has_religion_feature = religion_feature_korean # Gives animistic 
 		}
 	}
 	
@@ -13299,7 +13299,7 @@ character_event = {
 			} 
 			OR = {
 				has_religion_feature = religion_animistic 
-				has_religion_feature = religion_feature_korean # Gives animistic
+				#has_religion_feature = religion_feature_korean # Gives animistic
 			}
 		} 
 		picture = GFX_evt_magic_ritual
@@ -13309,7 +13309,7 @@ character_event = {
 			NOT = { has_dlc = "Mystics" } 
 			OR = {
 				has_religion_feature = religion_animistic 
-				has_religion_feature = religion_feature_korean # Gives animistic
+				#has_religion_feature = religion_feature_korean # Gives animistic
 			} 
 		} 
 		picture = GFX_evt_tribal_shrine
@@ -13632,7 +13632,7 @@ character_event = {
 			religion_group = serer_group
 			religion_group = african_pagan_group
 			has_religion_feature = religion_animistic 
-			has_religion_feature = religion_feature_korean # Gives animistic
+			#has_religion_feature = religion_feature_korean # Gives animistic
 		}
 	}
 	
@@ -13659,7 +13659,7 @@ character_event = {
 			religion_group = serer_group
 			religion_group = african_pagan_group
 			has_religion_feature = religion_animistic
-			has_religion_feature = religion_feature_korean # Gives animistic
+			#has_religion_feature = religion_feature_korean # Gives animistic
 		}
 	}
 	immediate = { 

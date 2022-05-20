@@ -4538,175 +4538,175 @@ province_event = {
 				}
 				province_event = { id = treasurefleet.102 days = 15 } # Progress check
 			}
-			3 = {
-				modifier = {
-					factor = 0
-					has_game_rule = {
-						name = supernatural_events
-						value = off
-					}
-				}
-				modifier = {
-					factor = 0
-					has_game_rule = {
-						name = supernatural_events
-						value = on
-					}
-					NOT = {
-						any_player = {
-							OR = {
-								is_chinese_emperor_trigger = yes
-								trait = treasure_fleet_voyage
-							}
-						}
-					}
-				}
-				# Celestial dragon
-				e_china = {
-					holder_scope = {
-						narrative_event = { id = treasurefleet.90 }
-						any_realm_lord = {
-							limit = {
-								ai = no
-								NOT = {
-									trait = treasure_fleet_voyage
-								}
-							}
-							narrative_event = { id = treasurefleet.92 }
-						}
-					}
-				}
-				d_treasure_fleet = {
-					holder_scope = {
-						narrative_event = { id = treasurefleet.91 }
-					}
-				}
-				e_china = {
-					holder_scope = {
-						any_realm_lord = {
-							limit = {
-								ai = no
-								trait = treasure_fleet_voyage
-							}
-							narrative_event = { id = treasurefleet.91 }
-						}
-					}
-				}
-				any_player = {
-					limit = {
-						NOR = {
-							has_landed_title = e_china
-							trait = treasure_fleet_voyage
-							any_liege = {
-								has_landed_title = e_china
-							}
-						}
-					}
-					character_event = { id = treasurefleet.93 }
-				}
-				set_province_flag = treasure_fleet_voyage_flag
-				random_list = {
-					10 = {
-						set_province_flag = treasure_fleet_going_to_korea
-					}
-					10 = {
-						set_province_flag = treasure_fleet_going_to_japan
-					}
-					10 = {
-						set_province_flag = treasure_fleet_going_to_ryukyu
-					}
-					10 = {
-						set_province_flag = treasure_fleet_going_to_maynila
-					}
-					60 = {
-						set_province_flag = treasure_fleet_going_to_champa
-					}
-				}
-				province_event = { id = treasurefleet.102 days = 15 } # Progress check
-			}
-			1 = {
-				modifier = {
-					factor = 0
-					NAND = {
-						has_global_flag = first_dragon_attack
-						NOR = {
-							has_global_flag = dragon_injured
-							has_global_flag = ongoing_dragon_attack
-							has_global_flag = dragon_slain
-							has_global_flag = ongoing_dragonslaying_attempt
-						}
-					}
-				}
-				modifier = {
-					factor = 0
-					has_game_rule = {
-						name = supernatural_events
-						value = off
-					}
-				}
-				modifier = {
-					factor = 0
-					has_game_rule = {
-						name = supernatural_events
-						value = on
-					}
-					NOT = {
-						any_player = {
-							OR = {
-								is_chinese_emperor_trigger = yes
-								trait = treasure_fleet_voyage
-							}
-						}
-					}
-				}
-				# Red dragon
-				e_china = {
-					holder_scope = {
-						narrative_event = { id = treasurefleet.94 }
-						any_realm_lord = {
-							limit = {
-								ai = no
-								NOT = {
-									trait = treasure_fleet_voyage
-								}
-							}
-							narrative_event = { id = treasurefleet.96 }
-						}
-					}
-				}
-				d_treasure_fleet = {
-					holder_scope = {
-						narrative_event = { id = treasurefleet.95 }
-					}
-				}
-				activate_title = {
-					title = d_treasure_fleet
-					status = no
-				}
-				e_china = {
-					holder_scope = {
-						any_realm_lord = {
-							limit = {
-								ai = no
-								trait = treasure_fleet_voyage
-							}
-							narrative_event = { id = treasurefleet.95 }
-						}
-					}
-				}
-				any_player = {
-					limit = {
-						NOR = {
-							has_landed_title = e_china
-							trait = treasure_fleet_voyage
-							any_liege = {
-								has_landed_title = e_china
-							}
-						}
-					}
-					character_event = { id = treasurefleet.97 }
-				}
-			}
+#			3 = {
+#				modifier = {
+#					factor = 0
+#					has_game_rule = {
+#						name = supernatural_events
+#						value = off
+#					}
+#				}
+#				modifier = {
+#					factor = 0
+#					has_game_rule = {
+#						name = supernatural_events
+#						value = on
+#					}
+#					NOT = {
+#						any_player = {
+#							OR = {
+#								is_chinese_emperor_trigger = yes
+#								trait = treasure_fleet_voyage
+#							}
+#						}
+#					}
+#				}
+#				# Celestial dragon
+#				e_china = {
+#					holder_scope = {
+#						narrative_event = { id = treasurefleet.90 }
+#						any_realm_lord = {
+#							limit = {
+#								ai = no
+#								NOT = {
+#									trait = treasure_fleet_voyage
+#								}
+#							}
+#							narrative_event = { id = treasurefleet.92 }
+#						}
+#					}
+#				}
+#				d_treasure_fleet = {
+#					holder_scope = {
+#						narrative_event = { id = treasurefleet.91 }
+#					}
+#				}
+#				e_china = {
+#					holder_scope = {
+#						any_realm_lord = {
+#							limit = {
+#								ai = no
+#								trait = treasure_fleet_voyage
+#							}
+#							narrative_event = { id = treasurefleet.91 }
+#						}
+#					}
+#				}
+#				any_player = {
+#					limit = {
+#						NOR = {
+#							has_landed_title = e_china
+#							trait = treasure_fleet_voyage
+#							any_liege = {
+#								has_landed_title = e_china
+#							}
+#						}
+#					}
+#					character_event = { id = treasurefleet.93 }
+#				}
+#				set_province_flag = treasure_fleet_voyage_flag
+#				random_list = {
+#					10 = {
+#						set_province_flag = treasure_fleet_going_to_korea
+#					}
+#					10 = {
+#						set_province_flag = treasure_fleet_going_to_japan
+#					}
+#					10 = {
+#						set_province_flag = treasure_fleet_going_to_ryukyu
+#					}
+#					10 = {
+#						set_province_flag = treasure_fleet_going_to_maynila
+#					}
+#					60 = {
+#						set_province_flag = treasure_fleet_going_to_champa
+#					}
+#				}
+#				province_event = { id = treasurefleet.102 days = 15 } # Progress check
+#			}
+#			1 = {
+#				modifier = {
+#					factor = 0
+#					NAND = {
+#						has_global_flag = first_dragon_attack
+#						NOR = {
+#							has_global_flag = dragon_injured
+#							has_global_flag = ongoing_dragon_attack
+#							has_global_flag = dragon_slain
+#							has_global_flag = ongoing_dragonslaying_attempt
+#						}
+#					}
+#				}
+#				modifier = {
+#					factor = 0
+#					has_game_rule = {
+#						name = supernatural_events
+#						value = off
+#					}
+#				}
+#				modifier = {
+#					factor = 0
+#					has_game_rule = {
+#						name = supernatural_events
+#						value = on
+#					}
+#					NOT = {
+#						any_player = {
+#							OR = {
+#								is_chinese_emperor_trigger = yes
+#								trait = treasure_fleet_voyage
+#							}
+#						}
+#					}
+#				}
+#				# Red dragon
+#				e_china = {
+#					holder_scope = {
+#						narrative_event = { id = treasurefleet.94 }
+#						any_realm_lord = {
+#							limit = {
+#								ai = no
+#								NOT = {
+#									trait = treasure_fleet_voyage
+#								}
+#							}
+#							narrative_event = { id = treasurefleet.96 }
+#						}
+#					}
+#				}
+#				d_treasure_fleet = {
+#					holder_scope = {
+#						narrative_event = { id = treasurefleet.95 }
+#					}
+#				}
+#				activate_title = {
+#					title = d_treasure_fleet
+#					status = no
+#				}
+#				e_china = {
+#					holder_scope = {
+#						any_realm_lord = {
+#							limit = {
+#								ai = no
+#								trait = treasure_fleet_voyage
+#							}
+#							narrative_event = { id = treasurefleet.95 }
+#						}
+#					}
+#				}
+#				any_player = {
+#					limit = {
+#						NOR = {
+#							has_landed_title = e_china
+#							trait = treasure_fleet_voyage
+#							any_liege = {
+#								has_landed_title = e_china
+#							}
+#						}
+#					}
+#					character_event = { id = treasurefleet.97 }
+#				}
+#			}
 			1 = {
 				# Fleet sinks in the harbour
 				e_china = {
@@ -4849,175 +4849,175 @@ character_event = {
 	}
 }
 
-# Celestial dragon at departure
-narrative_event = {
-	id = treasurefleet.90
-	title = EVTTITLE_TREASURE_FLEET_90
-	desc = EVTDESC_TREASURE_FLEET_90
-	picture = GFX_evt_chinese_mythology
-	window = EventWindowOffmap
-	background = GFX_event_window_news_from_china
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_TREASURE_FLEET_90 # Most auspicious!
-		
-		hidden_tooltip = {
-			change_variable = {
-				which = stored_mandate_change
-				value = 5000
-			}
-		}
-	}
-}
+## Celestial dragon at departure
+#narrative_event = {
+#	id = treasurefleet.90
+#	title = EVTTITLE_TREASURE_FLEET_90
+#	desc = EVTDESC_TREASURE_FLEET_90
+#	picture = GFX_evt_chinese_mythology
+#	window = EventWindowOffmap
+#	background = GFX_event_window_news_from_china
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_TREASURE_FLEET_90 # Most auspicious!
+#		
+#		hidden_tooltip = {
+#			change_variable = {
+#				which = stored_mandate_change
+#				value = 5000
+#			}
+#		}
+#	}
+#}
+#
+## Celestial dragon at departure - inform people that joined
+#narrative_event = {
+#	id = treasurefleet.91
+#	title = EVTTITLE_TREASURE_FLEET_91
+#	desc = EVTDESC_TREASURE_FLEET_91
+#	picture = GFX_evt_chinese_mythology
+#	window = EventWindowOffmap
+#	background = GFX_event_window_news_from_china
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_TREASURE_FLEET_91 # Most auspicious!
+#		
+#		prestige = 50
+#	}
+#}
+#
+## Celestial dragon at departure - inform other vassals
+#narrative_event = {
+#	id = treasurefleet.92
+#	title = EVTTITLE_TREASURE_FLEET_92
+#	desc = EVTDESC_TREASURE_FLEET_92
+#	picture = GFX_evt_chinese_mythology
+#	window = EventWindowOffmap
+#	background = GFX_event_window_news_from_china
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_TREASURE_FLEET_92 # Most auspicious!
+#	}
+#}
+#
+## Celestial dragon at departure - inform the world
+#character_event = {
+#	id = treasurefleet.93
+#	desc = EVTDESC_TREASURE_FLEET_93
+#	picture = GFX_evt_chinese_mythology
+#	border = GFX_event_normal_frame_religion
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		trigger = {
+#			any_realm_province = {
+#				port = yes
+#				can_naval_path_to = c_ghang
+#			}
+#		}
+#		name = EVTOPTA_TREASURE_FLEET_93 # Interesting...
+#	}
+#	
+#	option = {
+#		trigger = {
+#			NOT = {
+#				any_realm_province = {
+#					port = yes
+#					can_naval_path_to = c_ghang
+#				}
+#			}
+#		}
+#		name = EVTOPTB_TREASURE_FLEET_93 # I don't care!
+#	}
+#}
+#
+## Red dragon burns the fleet at departure
+#narrative_event = {
+#	id = treasurefleet.94
+#	title = EVTTITLE_TREASURE_FLEET_94
+#	desc = EVTDESC_TREASURE_FLEET_94
+#	picture = GFX_evt_burning_man_hf
+#	window = EventWindowOffmap
+#	background = GFX_event_window_news_from_china
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_TREASURE_FLEET_94 # Most inauspicious!
+#		
+#		prestige = -100
+#		
+#		hidden_tooltip = {
+#			change_variable = {
+#				which = stored_mandate_change
+#				value = -5000
+#			}
+#		}
+#		FROM = {
+#			clean_up_old_treasure_fleet_effect = yes
+#		}
+#	}
+#}
 
-# Celestial dragon at departure - inform people that joined
-narrative_event = {
-	id = treasurefleet.91
-	title = EVTTITLE_TREASURE_FLEET_91
-	desc = EVTDESC_TREASURE_FLEET_91
-	picture = GFX_evt_chinese_mythology
-	window = EventWindowOffmap
-	background = GFX_event_window_news_from_china
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_TREASURE_FLEET_91 # Most auspicious!
-		
-		prestige = 50
-	}
-}
-
-# Celestial dragon at departure - inform other vassals
-narrative_event = {
-	id = treasurefleet.92
-	title = EVTTITLE_TREASURE_FLEET_92
-	desc = EVTDESC_TREASURE_FLEET_92
-	picture = GFX_evt_chinese_mythology
-	window = EventWindowOffmap
-	background = GFX_event_window_news_from_china
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_TREASURE_FLEET_92 # Most auspicious!
-	}
-}
-
-# Celestial dragon at departure - inform the world
-character_event = {
-	id = treasurefleet.93
-	desc = EVTDESC_TREASURE_FLEET_93
-	picture = GFX_evt_chinese_mythology
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		trigger = {
-			any_realm_province = {
-				port = yes
-				can_naval_path_to = c_ghang
-			}
-		}
-		name = EVTOPTA_TREASURE_FLEET_93 # Interesting...
-	}
-	
-	option = {
-		trigger = {
-			NOT = {
-				any_realm_province = {
-					port = yes
-					can_naval_path_to = c_ghang
-				}
-			}
-		}
-		name = EVTOPTB_TREASURE_FLEET_93 # I don't care!
-	}
-}
-
-# Red dragon burns the fleet at departure
-narrative_event = {
-	id = treasurefleet.94
-	title = EVTTITLE_TREASURE_FLEET_94
-	desc = EVTDESC_TREASURE_FLEET_94
-	picture = GFX_evt_burning_man_hf
-	window = EventWindowOffmap
-	background = GFX_event_window_news_from_china
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_TREASURE_FLEET_94 # Most inauspicious!
-		
-		prestige = -100
-		
-		hidden_tooltip = {
-			change_variable = {
-				which = stored_mandate_change
-				value = -5000
-			}
-		}
-		FROM = {
-			clean_up_old_treasure_fleet_effect = yes
-		}
-	}
-}
-
-# Red dragon burns the fleet at departure - inform people that joined
-narrative_event = {
-	id = treasurefleet.95
-	title = EVTTITLE_TREASURE_FLEET_95
-	desc = EVTDESC_TREASURE_FLEET_95
-	picture = GFX_evt_burning_man_hf
-	window = EventWindowOffmap
-	background = GFX_event_window_news_from_china
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_TREASURE_FLEET_95 # Aargh!
-		
-		remove_trait = treasure_fleet_voyage
-		clr_character_flag = do_not_disturb
-		
-		death = {
-			death_reason = death_evil_dragon
-		}
-	}
-}
-
-# Red dragon burns the fleet at departure - inform other vassals
-narrative_event = {
-	id = treasurefleet.96
-	title = EVTTITLE_TREASURE_FLEET_96
-	desc = EVTDESC_TREASURE_FLEET_96
-	picture = GFX_evt_burning_man_hf
-	window = EventWindowOffmap
-	background = GFX_event_window_news_from_china
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_TREASURE_FLEET_96 # Most inauspicious!
-	}
-}
-
-# Red dragon burns the fleet at departure - inform the world
-character_event = {
-	id = treasurefleet.97
-	desc = EVTDESC_TREASURE_FLEET_97
-	picture = GFX_evt_treasure_fleet
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_TREASURE_FLEET_97 # So much for that...
-	}
-}
+## Red dragon burns the fleet at departure - inform people that joined
+#narrative_event = {
+#	id = treasurefleet.95
+#	title = EVTTITLE_TREASURE_FLEET_95
+#	desc = EVTDESC_TREASURE_FLEET_95
+#	picture = GFX_evt_burning_man_hf
+#	window = EventWindowOffmap
+#	background = GFX_event_window_news_from_china
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_TREASURE_FLEET_95 # Aargh!
+#		
+#		remove_trait = treasure_fleet_voyage
+#		clr_character_flag = do_not_disturb
+#		
+#		death = {
+#			death_reason = death_evil_dragon
+#		}
+#	}
+#}
+#
+## Red dragon burns the fleet at departure - inform other vassals
+#narrative_event = {
+#	id = treasurefleet.96
+#	title = EVTTITLE_TREASURE_FLEET_96
+#	desc = EVTDESC_TREASURE_FLEET_96
+#	picture = GFX_evt_burning_man_hf
+#	window = EventWindowOffmap
+#	background = GFX_event_window_news_from_china
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_TREASURE_FLEET_96 # Most inauspicious!
+#	}
+#}
+#
+## Red dragon burns the fleet at departure - inform the world
+#character_event = {
+#	id = treasurefleet.97
+#	desc = EVTDESC_TREASURE_FLEET_97
+#	picture = GFX_evt_treasure_fleet
+#	border = GFX_event_normal_frame_war
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_TREASURE_FLEET_97 # So much for that...
+#	}
+#}
 
 # Fleet sinks in the harbour
 narrative_event = {
@@ -11523,53 +11523,53 @@ narrative_event = {
 	}
 }
 
-# Treasure Fleet arrives in Taiwan - DEPRECATED AND MERGED WITH RYUKYU
-narrative_event = {
-	id = treasurefleet.211
-	title = EVTTITLE_TREASURE_FLEET_211
-	desc = EVTDESC_TREASURE_FLEET_211
-	picture = GFX_evt_treasure_fleet
-	window = EventWindowOffmap
-	background = GFX_event_window_news_from_china
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	major_trigger = {
-		notified_of_treasure_fleet_arrival_trigger = yes
-	}
-	
-	option = {
-		trigger = {
-			NOT = {
-				top_liege = {
-					is_chinese_emperor_trigger = yes
-				}
-			}
-		}
-		name = EVTOPTA_TREASURE_FLEET_211 # Interesting...
-	}
-	
-	option = {
-		trigger = {
-			trait = treasure_fleet_voyage
-		}
-		name = EVTOPTB_TREASURE_FLEET_211 # Interesting...
-	}
-	
-	option = {
-		trigger = {
-			top_liege = {
-				is_chinese_emperor_trigger = yes
-				NOT = {
-					trait = treasure_fleet_voyage
-				}
-			}
-		}
-		name = EVTOPTC_TREASURE_FLEET_211 # Meh...
-	}
-}
+## Treasure Fleet arrives in Taiwan - DEPRECATED AND MERGED WITH RYUKYU
+#narrative_event = {
+#	id = treasurefleet.211
+#	title = EVTTITLE_TREASURE_FLEET_211
+#	desc = EVTDESC_TREASURE_FLEET_211
+#	picture = GFX_evt_treasure_fleet
+#	window = EventWindowOffmap
+#	background = GFX_event_window_news_from_china
+#	
+#	major = yes
+#	
+#	is_triggered_only = yes
+#	
+#	major_trigger = {
+#		notified_of_treasure_fleet_arrival_trigger = yes
+#	}
+#	
+#	option = {
+#		trigger = {
+#			NOT = {
+#				top_liege = {
+#					is_chinese_emperor_trigger = yes
+#				}
+#			}
+#		}
+#		name = EVTOPTA_TREASURE_FLEET_211 # Interesting...
+#	}
+#	
+#	option = {
+#		trigger = {
+#			trait = treasure_fleet_voyage
+#		}
+#		name = EVTOPTB_TREASURE_FLEET_211 # Interesting...
+#	}
+#	
+#	option = {
+#		trigger = {
+#			top_liege = {
+#				is_chinese_emperor_trigger = yes
+#				NOT = {
+#					trait = treasure_fleet_voyage
+#				}
+#			}
+#		}
+#		name = EVTOPTC_TREASURE_FLEET_211 # Meh...
+#	}
+#}
 
 # Treasure Fleet arrives in maynila
 narrative_event = {
@@ -17868,7 +17868,7 @@ character_event = {
 			1 = {
 				modifier = {
 					factor = 0
-					NAND = {
+					#NAND = {
 						any_opinion_modifier_target = {
 							has_opinion_modifier = {
 								who = ROOT
@@ -17881,7 +17881,7 @@ character_event = {
 								trait = drunkard
 							}
 						}
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
@@ -24689,12 +24689,12 @@ province_event = {
 										}
 										OR = {
 											ai = no
-											AND = {
+											#AND = {
 												has_game_rule = {
 													name = treasure_fleet_invasion_rule
 													value = allowed
 												}
-											}
+											#}
 										}
 									}
 								}
@@ -24973,12 +24973,12 @@ province_event = {
 							}
 							OR = {
 								ai = no
-								AND = {
+								#AND = {
 									has_game_rule = {
 										name = treasure_fleet_invasion_rule
 										value = allowed
 									}
-								}
+								#}
 							}
 						}
 					}
@@ -30872,87 +30872,87 @@ character_event = {
 	}
 }
 
-# CB test
-character_event = {
-	id = treasurefleet.515
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		2564 = { # Hangzhou
-			set_province_flag = treasure_fleet_in_red_sea
-			change_variable = {
-				which = treasure_fleet_army_strength
-				value = 100
-			}
-		}
-		random_playable_ruler = {
-			limit = {
-				can_interact_with_treasure_fleet_trigger = yes
-				top_liege = {
-					any_realm_province = {
-						is_in_active_treasure_fleet_region_trigger = yes
-						NOT = {
-							any_province = {
-								owner = {
-									top_liege = {
-										is_chinese_emperor_trigger = yes
-									}
-								}
-								NOT = {
-									distance = {
-										where = PREV
-										value = 500
-									}
-								}
-								NOT = {
-									can_naval_path_to = {
-										target = PREV
-										distance <= 1000
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			top_liege = {
-				save_event_target_as = potential_tf_invasion_target
-				random_realm_province = {
-					limit = {
-						is_in_active_treasure_fleet_region_trigger = yes
-						NOT = {
-							any_province = {
-								owner = {
-									top_liege = {
-										is_chinese_emperor_trigger = yes
-									}
-								}
-								NOT = {
-									distance = {
-										where = PREV
-										value = 500
-									}
-								}
-								NOT = {
-									can_naval_path_to = {
-										target = PREV
-										distance <= 1000
-									}
-								}
-							}
-						}
-					}
-					save_event_target_as = potential_tf_invasion_target_beachhead
-				}
-			}
-			2753 = {
-				province_event = { id = treasurefleet.516 } # Ping
-			}
-		}
-	}
-}
+## CB test
+#character_event = {
+#	id = treasurefleet.515
+#	hide_window = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		2564 = { # Hangzhou
+#			set_province_flag = treasure_fleet_in_red_sea
+#			change_variable = {
+#				which = treasure_fleet_army_strength
+#				value = 100
+#			}
+#		}
+#		random_playable_ruler = {
+#			limit = {
+#				can_interact_with_treasure_fleet_trigger = yes
+#				top_liege = {
+#					any_realm_province = {
+#						is_in_active_treasure_fleet_region_trigger = yes
+#						NOT = {
+#							any_province = {
+#								owner = {
+#									top_liege = {
+#										is_chinese_emperor_trigger = yes
+#									}
+#								}
+#								NOT = {
+#									distance = {
+#										where = PREV
+#										value = 500
+#									}
+#								}
+#								NOT = {
+#									can_naval_path_to = {
+#										target = PREV
+#										distance <= 1000
+#									}
+#								}
+#							}
+#						}
+#					}
+#				}
+#			}
+#			top_liege = {
+#				save_event_target_as = potential_tf_invasion_target
+#				random_realm_province = {
+#					limit = {
+#						is_in_active_treasure_fleet_region_trigger = yes
+#						NOT = {
+#							any_province = {
+#								owner = {
+#									top_liege = {
+#										is_chinese_emperor_trigger = yes
+#									}
+#								}
+#								NOT = {
+#									distance = {
+#										where = PREV
+#										value = 500
+#									}
+#								}
+#								NOT = {
+#									can_naval_path_to = {
+#										target = PREV
+#										distance <= 1000
+#									}
+#								}
+#							}
+#						}
+#					}
+#					save_event_target_as = potential_tf_invasion_target_beachhead
+#				}
+#			}
+#			2753 = {
+#				province_event = { id = treasurefleet.516 } # Ping
+#			}
+#		}
+#	}
+#}
 
 province_event = {
 	id = treasurefleet.516

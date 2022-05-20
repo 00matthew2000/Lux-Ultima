@@ -2839,27 +2839,27 @@ letter_event = {
 				}
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 50 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 50 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 100 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 100 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 150 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 150 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 50 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 50 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 100 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 100 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 150 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 150 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
@@ -3319,27 +3319,27 @@ letter_event = {
 				}
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 50 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 50 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 100 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 100 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 150 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 150 } } 
 				NOT = { relative_power = { who = ROOT power = 2 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 50 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 50 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 100 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 100 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
-				NOT = { distance_from_realm = { who = ROOT value = 150 } } 
+				NOT = { distance_FROM_realm = { who = ROOT value = 150 } } 
 				NOT = { relative_power = { who = ROOT power = 3 } }
 			}
 			preferred_limit = { 
@@ -3809,7 +3809,7 @@ letter_event = {
 					set_defacto_liege = FROM
 					hidden_tooltip = { character_event =  { id = HF.20230 } } 
 				}
-				any_de_jure_vassal_title = { #Pope takes over any titles under the title he's taking over from you.
+				any_de_jure_vassal_title = { #Pope takes over any titles under the title he's taking over FROM you.
 					limit = { holder_scope =  { character = ROOT } }
 					grant_title = FROM
 				} 
@@ -4244,7 +4244,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAHF20220
-		set_character_flag = flag_preparing_coronation #Set it back to avoid the decision from being available again.
+		set_character_flag = flag_preparing_coronation #Set it back to avoid the decision FROM being available again.
 		clr_character_flag = flag_antipope_for_coronation
 		clr_character_flag = flag_excommunicated_for_coronation
 		set_character_flag = flag_crowned_by_pope
@@ -4579,7 +4579,7 @@ character_event = {
 			}
 		}
 	}
-	show_from_from = yes
+	show_FROM_FROM = yes
 
 	picture = GFX_evt_pope_feast
 	border = GFX_event_normal_frame_religion
@@ -4767,7 +4767,7 @@ character_event = {
 			}
 		}
 	}
-	show_from_from_from = yes
+	show_FROM_FROM_FROM = yes
 
 	picture = GFX_evt_pope_feast
 	border = GFX_event_normal_frame_religion
@@ -4861,7 +4861,7 @@ character_event = {
 character_event = {
 	id = HF.20238
 	desc = EVTDESCHFA20238
-	show_from_from_from = yes
+	show_FROM_FROM_FROM = yes
 
 	picture = GFX_evt_pope_feast
 	border = GFX_event_normal_frame_religion
@@ -4954,7 +4954,7 @@ letter_event = {
 		}
 		event_target:scoped_artifact = {
 			transfer_artifact = {
-				from = ROOT
+				FROM = ROOT
 				to = FROM
  			} 
 			clr_artifact_flag = flag_considering_donation
@@ -5019,7 +5019,7 @@ letter_event = {
 		}
 		event_target:scoped_artifact = {
 			transfer_artifact = {
-				from = ROOT
+				FROM = ROOT
 				to = FROM
  			} 
 			clr_artifact_flag = flag_considering_donation
@@ -5133,7 +5133,7 @@ character_event = {
 					religion = ROOT 	
 					is_within_diplo_range = ROOT
 					higher_real_tier_than = DUKE
-					NOT = { distance_from_realm = { who = ROOT value = 120 } }
+					NOT = { distance_FROM_realm = { who = ROOT value = 120 } }
 				}
 				#character_event = { id = HF.20302 } #Send Invitations to other Catholic neighbors
 			}
@@ -5327,51 +5327,51 @@ letter_event = {
 			} 
 			modifier = {
 				factor = 0.3
-				opinion = { who = from value = 100 }
+				opinion = { who = FROM value = 100 }
 			}
 			modifier = {
 				factor = 0.4
-				opinion = { who = from value = 80 }
+				opinion = { who = FROM value = 80 }
 			}
 			modifier = {
 				factor = 0.5
-				opinion = { who = from value = 60 }
+				opinion = { who = FROM value = 60 }
 			}
 			modifier = {
 				factor = 0.65
-				opinion = { who = from value = 40 }
+				opinion = { who = FROM value = 40 }
 			}
 			modifier = {
 				factor = 0.75
-				opinion = { who = from value = 20 }
+				opinion = { who = FROM value = 20 }
 			}
 			modifier = {
 				factor = 0.85
-				opinion = { who = from value = 0 }
+				opinion = { who = FROM value = 0 }
 			}
 			modifier = {
 				factor = 1.15
-				NOT = { opinion = { who = from value = 0 } }
+				NOT = { opinion = { who = FROM value = 0 } }
 			}
 			modifier = {
 				factor = 1.25
-				NOT = { opinion = { who = from value = -20 } }
+				NOT = { opinion = { who = FROM value = -20 } }
 			}
 			modifier = {
 				factor = 1.5
-				NOT = { opinion = { who = from value = -40 } }
+				NOT = { opinion = { who = FROM value = -40 } }
 			}
 			modifier = {
 				factor = 1.5
-				NOT = { opinion = { who = from value = -60 } }
+				NOT = { opinion = { who = FROM value = -60 } }
 			}
 			modifier = {
 				factor = 1.75
-				NOT = { opinion = { who = from value = -80 } }
+				NOT = { opinion = { who = FROM value = -80 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = from value = -100 } }
+				NOT = { opinion = { who = FROM value = -100 } }
 			}
 		}
 	}
@@ -5433,51 +5433,51 @@ letter_event = {
 			} 
 			modifier = {
 				factor = 0.3
-				opinion = { who = from value = 100 }
+				opinion = { who = FROM value = 100 }
 			}
 			modifier = {
 				factor = 0.4
-				opinion = { who = from value = 80 }
+				opinion = { who = FROM value = 80 }
 			}
 			modifier = {
 				factor = 0.5
-				opinion = { who = from value = 60 }
+				opinion = { who = FROM value = 60 }
 			}
 			modifier = {
 				factor = 0.65
-				opinion = { who = from value = 40 }
+				opinion = { who = FROM value = 40 }
 			}
 			modifier = {
 				factor = 0.75
-				opinion = { who = from value = 20 }
+				opinion = { who = FROM value = 20 }
 			}
 			modifier = {
 				factor = 0.85
-				opinion = { who = from value = 0 }
+				opinion = { who = FROM value = 0 }
 			}
 			modifier = {
 				factor = 1.15
-				NOT = { opinion = { who = from value = 0 } }
+				NOT = { opinion = { who = FROM value = 0 } }
 			}
 			modifier = {
 				factor = 1.25
-				NOT = { opinion = { who = from value = -20 } }
+				NOT = { opinion = { who = FROM value = -20 } }
 			}
 			modifier = {
 				factor = 1.5
-				NOT = { opinion = { who = from value = -40 } }
+				NOT = { opinion = { who = FROM value = -40 } }
 			}
 			modifier = {
 				factor = 1.5
-				NOT = { opinion = { who = from value = -60 } }
+				NOT = { opinion = { who = FROM value = -60 } }
 			}
 			modifier = {
 				factor = 1.75
-				NOT = { opinion = { who = from value = -80 } }
+				NOT = { opinion = { who = FROM value = -80 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = from value = -100 } }
+				NOT = { opinion = { who = FROM value = -100 } }
 			}
 		}
 	}
@@ -5525,7 +5525,7 @@ letter_event = {
 	}
 }
 
-#King: Day 11 from budget, ceremony starts.
+#King: Day 11 FROM budget, ceremony starts.
 character_event = {
 	id = HF.20305
 	desc = {
@@ -5585,7 +5585,7 @@ character_event = {
 			#Child King's flattered and can become haughty or conscientious.
 			#The coronation_priest approves of the ceremony.
 			#Temperate/Celibate coronation_priest disapproves of the extravagant ceremony.
-			#HRE/Francia Emperor gets a talk from the priest about being the heir of Charlemagne (chance for prestige, learning, diligent)
+			#HRE/Francia Emperor gets a talk FROM the priest about being the heir of Charlemagne (chance for prestige, learning, diligent)
 			#The Pope talks to the King about his duties as protector of Christendom (chance to gain zealous, cynical, learning).
 			#Child king is taught by foreign ruler about stewardship.
 			#Two foreign Kings (guests) become (or are) rivals, coronation_ruler with high diplomacy can help them lose rivalry and become his friends.
@@ -5602,7 +5602,7 @@ character_event = {
 			#King's Councillor becomes his rival due to secluded coronation.
 			hidden_tooltip = { set_variable = { which = coronation_count value = 0 } } 
 			hidden_tooltip = { character_event = { id = HF.20365 days = 3 random = 3 } } # First and second row of random list.
-		hidden_tooltip = { character_event = { id = HF.20366 days = 32 } } #THE CORONATION ITSELF # For safety reasons, just in case guests die in the middle of the feast and prevent the last event from firing.
+		hidden_tooltip = { character_event = { id = HF.20366 days = 32 } } #THE CORONATION ITSELF # For safety reasons, just in case guests die in the middle of the feast and prevent the last event FROM firing.
 		
 	}
 }
@@ -5637,7 +5637,7 @@ character_event = {
 				NOT = { is_lover = ROOT } 
 				NOT = { is_married = ROOT }
 				NOT = { num_of_friends = 3 }
-				opinion = { who = from value = -20 }
+				opinion = { who = FROM value = -20 }
 			} 
 			save_event_target_as = potential_friend
 		}
@@ -5807,7 +5807,7 @@ character_event = {
 				NOT = { is_lover = ROOT } 
 				NOT = { is_married = ROOT }
 				NOT = { num_of_friends = 3 }
-				opinion = { who = from value = -20 }
+				opinion = { who = FROM value = -20 }
 			} 
 			save_event_target_as = potential_friend
 		}
@@ -9460,7 +9460,7 @@ character_event = {
 		name = EVTOPTZHF20366
 		trigger = { 
 			tier = EMPEROR
-			age = 16 # Has to be strong enough to grab the crown from the Pope's clutches.
+			age = 16 # Has to be strong enough to grab the crown FROM the Pope's clutches.
 			event_target:coronation_priest = { has_landed_title = k_papal_state }
 			has_character_flag = flag_extravagant_coronation				#Only allowed to screw everything up if you have spent the most money in it already.
 			OR = { 
@@ -10094,7 +10094,7 @@ character_event = {
 	}
 }
 
-#Crazy Napoleon ruler snatched the crown from the Pope's hands and crowned himself Emperor.
+#Crazy Napoleon ruler snatched the crown FROM the Pope's hands and crowned himself Emperor.
 character_event = {
 	id = HF.20371
 	title = EVTTITLE20371
@@ -11182,7 +11182,7 @@ character_event = {
 			FROM = { 
 			remove_opinion = { 
 					who = ROOT
-					modifier = opinion_fired_from_council  
+					modifier = opinion_fired_FROM_council  
 				}
 			}
 		} 
@@ -11476,7 +11476,7 @@ character_event = {
 			NOT = { 
 				current_heir = { character = PREV } 
 			}
-			NOT = { #Prevent same vassal from giving homage multiple times when inheriting new titles within the realm (from siblings and such)
+			NOT = { #Prevent same vassal FROM giving homage multiple times when inheriting new titles within the realm (FROM siblings and such)
 				current_heir = { vassal_of = PREV } 
 			}
 			religion_group = christian
@@ -11668,7 +11668,7 @@ character_event = {
 	}
 }
 
-#Liege receives homage from vassal.
+#Liege receives homage FROM vassal.
 character_event = {
 	id = HF.20396
 	desc = EVTDESCHFA20396
@@ -12518,79 +12518,79 @@ character_event = {
 	immediate = { 
 		event_target:inheriting_artifact_1 = {
 			transfer_artifact = {
-				from = event_target:unworthy_hre_crown
+				FROM = event_target:unworthy_hre_crown
 				to = event_target:worthy_hre_crown
  			} 
  		} 
 		event_target:inheriting_artifact_2 = {
 			transfer_artifact = {
-				from = event_target:unworthy_byz_crown
+				FROM = event_target:unworthy_byz_crown
 				to = event_target:worthy_byz_crown
  			} 
  		}
 		event_target:inheriting_artifact_3 = {
 			transfer_artifact = {
-				from = event_target:unworthy_fylkir_crown
+				FROM = event_target:unworthy_fylkir_crown
 				to = event_target:worthy_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_tengricrown = {
 			transfer_artifact = {
-				from = event_target:unworthy_tengri_fylkir_crown
+				FROM = event_target:unworthy_tengri_fylkir_crown
 				to = event_target:worthy_tengri_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_finnishcrown = {
 			transfer_artifact = {
-				from = event_target:unworthy_finnish_fylkir_crown
+				FROM = event_target:unworthy_finnish_fylkir_crown
 				to = event_target:worthy_finnish_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_west_africancrown = {
 			transfer_artifact = {
-				from = event_target:unworthy_west_african_fylkir_crown
+				FROM = event_target:unworthy_west_african_fylkir_crown
 				to = event_target:worthy_west_african_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_slaviccrown = {
 			transfer_artifact = {
-				from = event_target:unworthy_slavic_fylkir_crown
+				FROM = event_target:unworthy_slavic_fylkir_crown
 				to = event_target:worthy_slavic_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_balticcrown = {
 			transfer_artifact = {
-				from = event_target:unworthy_baltic_fylkir_crown
+				FROM = event_target:unworthy_baltic_fylkir_crown
 				to = event_target:worthy_baltic_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_boncrown = {
 			transfer_artifact = {
-				from = event_target:unworthy_bon_fylkir_crown
+				FROM = event_target:unworthy_bon_fylkir_crown
 				to = event_target:worthy_bon_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_zuncrown = {
 			transfer_artifact = {
-				from = event_target:unworthy_zun_fylkir_crown
+				FROM = event_target:unworthy_zun_fylkir_crown
 				to = event_target:worthy_zun_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_helleniccrown = {
 			transfer_artifact = {
-				from = event_target:unworthy_hellenic_fylkir_crown
+				FROM = event_target:unworthy_hellenic_fylkir_crown
 				to = event_target:worthy_hellenic_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_azteccrown = {
 			transfer_artifact = {
-				from = event_target:unworthy_aztec_fylkir_crown
+				FROM = event_target:unworthy_aztec_fylkir_crown
 				to = event_target:worthy_aztec_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_4 = {
 			transfer_artifact = {
-				from = event_target:unworthy_pahlavi_crown
+				FROM = event_target:unworthy_pahlavi_crown
 				to = event_target:worthy_pahlavi_crown
  			} 
  		}
@@ -12755,7 +12755,7 @@ character_event = {
 
 #########################################################
 
-#Liege receives homage from vassal - Expanded flavor.
+#Liege receives homage FROM vassal - Expanded flavor.
 character_event = {
 	id = HF.20410
 	desc = {
@@ -12820,7 +12820,7 @@ character_event = {
 			has_character_flag = flag_homage_generic
 		}
 	}
-	show_from_from = yes #Vassal
+	show_FROM_FROM = yes #Vassal
 
 	picture = { 
 		trigger = { 
@@ -13256,7 +13256,7 @@ character_event = {
 	}
 }
 
-#Vassal receives homage from vassal - Expanded flavor.
+#Vassal receives homage FROM vassal - Expanded flavor.
 character_event = {
 	id = HF.20411
 	desc = {
@@ -13646,37 +13646,37 @@ character_event = {
 		}
 		event_target:inheriting_artifact_1 = {
 			transfer_artifact = {
-				from = FROMFROM
+				FROM = FROMFROM
 				to = ROOT
  			} 
  		} 
 		event_target:inheriting_artifact_2 = {
 			transfer_artifact = {
-				from = FROMFROM
+				FROM = FROMFROM
 				to = ROOT
  			} 
  		}
 		event_target:inheriting_artifact_3 = {
 			transfer_artifact = {
-				from = FROMFROM
+				FROM = FROMFROM
 				to = ROOT
  			} 
  		}
 		event_target:inheriting_artifact_tengricrown = {
 			transfer_artifact = {
-				from = FROMFROM
+				FROM = FROMFROM
 				to = ROOT
  			} 
  		}
 		event_target:inheriting_artifact_finnishcrown = {
 			transfer_artifact = {
-				from = FROMFROM
+				FROM = FROMFROM
 				to = ROOT
  			} 
  		}
 		event_target:inheriting_artifact_4 = {
 			transfer_artifact = {
-				from = FROMFROM
+				FROM = FROMFROM
 				to = ROOT
  			} 
  		} 

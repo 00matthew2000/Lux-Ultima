@@ -1263,7 +1263,7 @@ character_event = {
 	only_playable = yes
 	capable_only = yes
 	
-	is_triggered_only = yes
+	#is_triggered_only = yes ###I guess this isn't supposed to have a triggered_only since it already has a trigger and theres no other mention of it in the files -00matthew2000 ###
 	
 	trigger = {
 		war = yes

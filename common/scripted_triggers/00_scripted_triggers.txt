@@ -4504,11 +4504,11 @@ ingredient_is_antipyretic_trigger = {
 }
 
 ingredient_is_perceived_healthy_trigger = {
-	OR = {
-		AND = {
+	#OR = {
+		#AND = {
 			is_ingredient_herb_trigger = yes
-			NOT = { #artifact_type = ingredient_herb3 } #Mandrake
-		}
+			#NOT = { #artifact_type = ingredient_herb3 } #Mandrake
+		#}
 		#artifact_type = ingredient_metal_exotic8 #Mercury
 		#artifact_type = ingredient_metal_exotic7 #Iron
 		#artifact_type = ingredient_metal_exotic6 #Gold
@@ -4517,25 +4517,25 @@ ingredient_is_perceived_healthy_trigger = {
 		#artifact_type = ingredient_animal7 #Heart
 		#artifact_type = ingredient_animal8 #Liver
 		#artifact_type = ingredient_animal9 #Intestines
-	}
-}
+	#}
+#}
 }
 
 ingredient_is_unhealthy_trigger = {
-	OR = {
+	#OR = {
 		#artifact_type = ingredient_herb3 #Mandrake
 		#artifact_type = ingredient_metal_exotic7 #Mercury
 		#artifact_type = ingredient_metal_exotic8 #Iron
-		AND = {
+		#AND = {
 			is_ingredient_animal_part_trigger = yes
-			NOR = {
+			#NOR = {
 				#artifact_type = ingredient_animal2 #Kidney
 				#artifact_type = ingredient_animal7 #Heart
 				#artifact_type = ingredient_animal8 #Liver
 				#artifact_type = ingredient_animal9 #Intestines
-			}
-		}
-	}
+			#}
+		#}
+	#}
 }
 
 same_true_religion_as_from_trigger = {

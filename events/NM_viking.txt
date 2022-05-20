@@ -4,13 +4,19 @@ character_event = {
 	desc = "EVTDESC320000"
 	picture = GFX_evt_bandits
 
-	is_triggered_only = yes
+	#is_triggered_only = yes
 	
 	prisoner = no
 	only_rulers = yes
 	
 	trigger = {
-		in_command = yes
+		trait = nm_on_viking
+		is_ruler = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+
 	}
 	
 	option = {
@@ -217,15 +223,20 @@ character_event = {
 	desc = "EVTDESC320001"
 	picture = GFX_evt_bandits
 
-	is_triggered_only = yes
+	#is_triggered_only = yes
 
 	prisoner = no
 	only_rulers = yes
 	
 	trigger = {
-		in_command = yes
+		trait = nm_on_viking
+		is_ruler = yes
 	}
 	
+	mean_time_to_happen = {
+		days = 120
+
+	}
 	
 	option = {
 		name = "EVTOPTA320000"
@@ -440,13 +451,19 @@ character_event = {
 	desc = "EVTDESC320002"
 	picture = GFX_evt_bandits
 	
-	is_triggered_only = yes
+	##is_triggered_only = yes
 
 	prisoner = no
 	only_rulers = yes
 	
 	trigger = {
-		in_command = yes
+		trait = nm_on_viking
+		is_ruler = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 200
+
 	}
 	
 	option = {
@@ -566,20 +583,18 @@ character_event = {
 	desc = "EVTDESC320003"
 	picture = GFX_evt_bandits
 
-	is_triggered_only = yes
+	#is_triggered_only = yes
 	
 	prisoner = no
 	only_rulers = yes
 	
 	trigger = {
-		in_command = yes
-		location = {
-			holder_scope = {
-				NOT = {
-					same_realm = ROOT
-				}
-			}
-		}
+		trait = nm_on_viking
+		is_ruler = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 250
 	}
 	
 	option = {
@@ -795,20 +810,18 @@ character_event = {
 	desc = "EVTDESC321001"
 	picture = GFX_evt_bandits
 
-	is_triggered_only = yes
+	#is_triggered_only = yes
 	
 	prisoner = no
 	only_rulers = yes
 	
 	trigger = {
-		NOT = { has_character_modifier = nm_monster_survivor }
-		in_command = yes
-		location = {
-			any_neighbor_province = {
-				is_land = no
-			}
-		}
-		culture_group = north_germanic
+		trait = nm_on_viking
+		is_ruler = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 9200
 	}
 	
 	option = {

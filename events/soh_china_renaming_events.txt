@@ -48838,15 +48838,15 @@ narrative_event = {
 			}
 			set_government_type = japanese_imperial_government
 		}
-		else_if = {
-			limit = {
-				OR = {
-					has_landed_title = e_roman_empire
-					has_landed_title = e_byzantium
-				}
-			}
-			set_government_type = roman_imperial_government
-		}
+		#else_if = {
+			#limit = {
+				#OR = {
+					#has_landed_title = e_roman_empire
+					#has_landed_title = e_byzantium
+				#}
+			#}
+			#set_government_type = roman_imperial_government
+		#}
 		else_if = {
 			limit = {
 				religion_group = muslim
@@ -59897,15 +59897,15 @@ character_event = {
 			}
 			set_government_type = japanese_imperial_government
 		}
-		else_if = {
-			limit = {
-				OR = {
-					has_landed_title = e_roman_empire
-					has_landed_title = e_byzantium
-				}
-			}
-			set_government_type = roman_imperial_government
-		}
+		#else_if = {
+			#limit = {
+				#OR = {
+					#has_landed_title = e_roman_empire
+					#has_landed_title = e_byzantium
+				#}
+			#}
+			#set_government_type = roman_imperial_government
+		#}
 		else_if = {
 			limit = {
 				religion_group = muslim

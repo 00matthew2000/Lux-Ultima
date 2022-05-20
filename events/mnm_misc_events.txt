@@ -150,105 +150,105 @@ character_event = {
 	}	
 }
 
-character_event = { 
-	id = MNM.10012
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		FROM = {
-			if = {
-				limit = { NOT = { has_character_flag = ongoing_recruitment } }
-				set_character_flag = assassins_attempted_recruitment
-				set_character_flag = ongoing_recruitment
-				#if = {
-					#limit = { NOT = { religion = shiite } }
-					#character_event = { id = MNM.6020 } 
-				#}
-				#if = {
-					#limit = { religion = shiite }
-					#character_event = { id = MNM.6022 } 
-				#}
-			}
-		}
-	}
-}
-
-character_event = {
-	id = MNM.10013
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = { 
-		FROM = {
-			set_character_flag = satanists_attempted_recruitment
-			#set_character_flag = being_recruited_by_the_satanists
-			#character_event = { id = MNM.7001 }
-		}
-	}
-}
-
-character_event = {
-	id = MNM.10014
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = { 
-		FROM = {
-			set_character_flag = trollcrafters_attempted_recruitment
-			#set_character_flag = being_recruited_by_the_trollcrafters
-			#character_event = { id = MNM.7001 }
-		}
-	}
-}
-
-character_event = {
-	id = MNM.10015
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = { 
-		FROM = {
-			set_character_flag = cult_of_kali_attempted_recruitment
-			#set_character_flag = being_recruited_by_the_cult_of_kali
-			#character_event = { id = MNM.7001 }
-		}
-	}
-}
-
-character_event = {
-	id = MNM.10016
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = { 
-		FROM = {
-			set_character_flag = cold_ones_attempted_recruitment
-			#set_character_flag = being_recruited_by_the_cold_ones
-			#character_event = { id = MNM.7001 }
-		}
-	}
-}
-
-character_event = {
-	id = MNM.10017
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = { 
-		FROM = {
-			set_character_flag = plaguebringers_attempted_recruitment
-			#set_character_flag = being_recruited_by_the_plaguebringers
-			#character_event = { id = MNM.7001 }
-		}
-	}
-}
+#character_event = { 
+#	id = MNM.10012
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		FROM = {
+#			if = {
+#				limit = { NOT = { has_character_flag = ongoing_recruitment } }
+#				set_character_flag = assassins_attempted_recruitment
+#				set_character_flag = ongoing_recruitment
+#				#if = {
+#					#limit = { NOT = { religion = shiite } }
+#					#character_event = { id = MNM.6020 } 
+#				#}
+#				#if = {
+#					#limit = { religion = shiite }
+#					#character_event = { id = MNM.6022 } 
+#				#}
+#			}
+#		}
+#	}
+#}
+#
+#character_event = {
+#	id = MNM.10013
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		FROM = {
+#			set_character_flag = satanists_attempted_recruitment
+#			#set_character_flag = being_recruited_by_the_satanists
+#			#character_event = { id = MNM.7001 }
+#		}
+#	}
+#}
+#
+#character_event = {
+#	id = MNM.10014
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		FROM = {
+#			set_character_flag = trollcrafters_attempted_recruitment
+#			#set_character_flag = being_recruited_by_the_trollcrafters
+#			#character_event = { id = MNM.7001 }
+#		}
+#	}
+#}
+#
+#character_event = {
+#	id = MNM.10015
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		FROM = {
+#			set_character_flag = cult_of_kali_attempted_recruitment
+#			#set_character_flag = being_recruited_by_the_cult_of_kali
+#			#character_event = { id = MNM.7001 }
+#		}
+#	}
+#}
+#
+#character_event = {
+#	id = MNM.10016
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		FROM = {
+#			set_character_flag = cold_ones_attempted_recruitment
+#			#set_character_flag = being_recruited_by_the_cold_ones
+#			#character_event = { id = MNM.7001 }
+#		}
+#	}
+#}
+#
+#character_event = {
+#	id = MNM.10017
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		FROM = {
+#			set_character_flag = plaguebringers_attempted_recruitment
+#			#set_character_flag = being_recruited_by_the_plaguebringers
+#			#character_event = { id = MNM.7001 }
+#		}
+#	}
+#}
 
 
 
@@ -1357,7 +1357,7 @@ character_event = {
 					}
 					100 = { 
 						trigger = {
-							can_join_society = the_assassins
+							can_#join_society = the_assassins
 						}
 						modifier = {
 							factor = 0.5
@@ -1379,7 +1379,7 @@ character_event = {
 								intrigue = 18
 							}
 						}
-						join_society = the_assassins
+						#join_society = the_assassins
 						random_list = { # Artificially increase society influence for balance purposes
 							75 = {
 								modifier = {

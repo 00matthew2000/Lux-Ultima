@@ -3606,7 +3606,7 @@ character_event = {
     is_triggered_only = yes
 
     trigger = {
-        AND = {
+        #AND = {
             event_target:trade_competitor_1 = {
                 has_character_flag = trade_competition_build_city
             }
@@ -3622,7 +3622,7 @@ character_event = {
             event_target:trade_competitor_5 = {
                 has_character_flag = trade_competition_build_city
             }
-        }
+        #}
     }
 	
     option = {

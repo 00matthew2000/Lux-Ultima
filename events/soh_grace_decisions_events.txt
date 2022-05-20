@@ -2873,7 +2873,7 @@ narrative_event = {
 	
 	option = {
 		trigger = {
-			AND = {
+			#AND = {
 				is_female = no
 				is_adult = yes
 				NOR = {
@@ -2884,7 +2884,7 @@ narrative_event = {
 				}
 				prisoner = no
 				is_inaccessible_trigger = no
-			}
+			#}
 			OR = {
 				ai = no
 				china_accepts_concubine_tribute_fromfrom_trigger = yes
@@ -2936,7 +2936,7 @@ narrative_event = {
 	
 	option = {
 		trigger = {
-			AND = {
+			#AND = {
 				current_heir = {
 					is_female = no
 					is_adult = yes
@@ -2950,7 +2950,7 @@ narrative_event = {
 					is_inaccessible_trigger = no
 					is_landed = no
 				}
-			}
+			#}
 			OR = {
 				ai = no
 				china_accepts_concubine_tribute_fromfrom_trigger = yes
@@ -9745,11 +9745,9 @@ letter_event = {
 	option = {
 		trigger = {
 			ai = no
-			AND = {
-				has_character_flag = repeat_artifact_choice_event
-				NOT = {
-					has_character_flag = repeat_artifact_choice_event_2
-				}
+			has_character_flag = repeat_artifact_choice_event
+			NOT = {
+				has_character_flag = repeat_artifact_choice_event_2
 			}
 		}
 		
@@ -20875,29 +20873,27 @@ character_event = {
 				}
 			}
 			# Defender is EoC (or a Chinese tributary, if the attacker isn't one), attacker has trade contract
-			AND = {
-				ROOT = {
-					OR = {
-						is_chinese_emperor_trigger = yes
-						AND = {
-							OR = {
-								is_tributary = {
-									type = chinese_imperial_tributary
-								}
-								is_tributary = {
-									type = chinese_protectorate
-								}
-								is_tributary = {
-									type = chinese_client_state
-								}
+			ROOT = {
+				OR = {
+					is_chinese_emperor_trigger = yes
+					AND = {
+						OR = {
+							is_tributary = {
+								type = chinese_imperial_tributary
 							}
+							is_tributary = {
+								type = chinese_protectorate
+							}
+							is_tributary = {
+								type = chinese_client_state
+							}
+						}
+						suzerain = {
+							is_chinese_emperor_trigger = yes
+						}
+						FROM = {
 							suzerain = {
-								is_chinese_emperor_trigger = yes
-							}
-							FROM = {
-								suzerain = {
-									is_chinese_emperor_trigger = no
-								}
+								is_chinese_emperor_trigger = no
 							}
 						}
 					}

@@ -8,14 +8,14 @@ on_startup = {
 		#grace.974 # Gives starting tributaries of China their yearly Grace income
 		#japan.7 # Inform the player if they're Japanese Feudal/Japanese Monastic
 		#japan.8 # Keep the current government type
-		#japan.11 # Regency setup
+		japan.11 # Regency setup
 		nameofchina.50 # Force Chinese Imperial where relevant
 		#tianxia_orders.125 # Sohei baronies
 		#tianxia_orders.126 # Shaolin Monks baronies
-		#japan.65 # Regency setup; the other event sometimes doesn't fire properly for unknown reasons
-		#japan.70 # Regency setup for the Shogun
+		japan.65 # Regency setup; the other event sometimes doesn't fire properly for unknown reasons
+		japan.70 # Regency setup for the Shogun
 		#japan.404 # Regency setup; the other event sometimes doesn't fire properly for unknown reasons
-		#japan.609 # Tenno succession
+		japan.609 # Tenno succession
 	}
 }
 
@@ -27,12 +27,12 @@ on_death = {
 		nameofchina.43 # Event ensuring that Song emperors keep their zhangokfutou
 		eunuch.4 # Court eunuch death
 		mandate_of_heaven.2 # Transfer MoH to heir
-		#japan.9 # Keep the current government type
+		japan.9 # Keep the current government type
 		shenist.1 # Mourning
-		#japan.415 # The Tenno might counter meddling (also handles inheritance of under_regency)
-		#japan.416 # under_regency2 inheritance
-		#japan.417 # Japanse_regent inheritance
-		#japan.418 # japanese_regent2 inheritance
+		japan.415 # The Tenno might counter meddling (also handles inheritance of under_regency)
+		japan.416 # under_regency2 inheritance
+		japan.417 # Japanse_regent inheritance
+		japan.418 # japanese_regent2 inheritance
 		#risingsun.11 # Cleanup for dead quest targets
 		#risingsun.239 # Rising Sun Subjugation fails to launch due to leader death
 		#risingsun.242 # Rising Sun Subjugation CB invalidates due to leader death
@@ -52,12 +52,12 @@ on_new_holder = {
 		#artifacts.160 # The Imperial Regalia of Japan is taken by the Tenno
 		#japan.8 # Keep the current government type
 		#japan.10 # Destroy secondary empire titles for Japanese Imperial rulers
-		#japan.12 # Pass on the under_regency trait
-		#japan.14 # Pass on the actual regency minor title
-		#japan.17 # Make sure the Tenno isn't also the regent
-		#japan.71 # Pass on the under_regency2 trait
-		#japan.73 # Pass on the actual regency minor title
-		#japan.76 # Make sure the Tenno isn't also the regent
+		japan.12 # Pass on the under_regency trait
+		japan.14 # Pass on the actual regency minor title
+		japan.17 # Make sure the Tenno isn't also the regent
+		japan.71 # Pass on the under_regency2 trait
+		japan.73 # Pass on the actual regency minor title
+		japan.76 # Make sure the Tenno isn't also the regent
 		#japan.405 # Enable Minamoto/Taira factioning if the Imperial Family loses the Chrysanthemum Throne
 		#dragon.186 # Clean up of people stuck as part of someone else's dragonslayer party
 		treasurefleet.6 # Remove treasure_fleet_preparation from ex-EoCs
@@ -66,8 +66,8 @@ on_new_holder = {
 		#renaming.2 # Wuyue
 		#renaming.3 # Dali
 		#renaming.4 # Dali 2
-		#japan.607 # Japanese regent inheritance
-		#japan.609 # Tenno succession
+		japan.607 # Japanese regent inheritance
+		japan.609 # Tenno succession
 	}
 }
 
@@ -86,15 +86,15 @@ on_new_holder_inheritance = {
 		mandate_of_heaven.4 # Inherit MoH
 		#japan.8 # Keep the current government type
 		#japan.10 # Destroy secondary empire titles for Japanese Imperial rulers
-		#japan.15 # Become the new Regent
-		#japan.74 # Become the new Regen
+		japan.15 # Become the new Regent
+		japan.74 # Become the new Regen
 		treasurefleet.6 # Remove treasure_fleet_preparation from ex-EoCs
 		treasurefleet.104 # Clear out treasure_fleet_voyage if we got an empire
 		#renaming.1 # Chu
 		#renaming.2 # Wuyue
 		#renaming.3 # Dali
-		#japan.607 # Japanese regent inheritance
-		#japan.609 # Tenno succession
+		japan.607 # Japanese regent inheritance
+		japan.609 # Tenno succession
 	}
 }
 
@@ -121,8 +121,10 @@ on_new_holder_usurpation = {
 		#renaming.1 # Chu
 		#renaming.2 # Wuyue
 		#renaming.3 # Dali
-		#japan.607 # Japanese regent inheritance
-		#japan.609 # Tenno succession
+		japan.607 # Japanese regent inheritance
+		japan.609 # Tenno succession
+		japan.610 # Usurpation of regency
+		japan.611 # Usurpation of regency
 	}
 }
 
@@ -137,7 +139,7 @@ on_war_started = {
 
 on_war_ended_victory = {
 	events = {
-		#grace.987 # Chinese princess update
+		grace.987 # Chinese princess update
 		mandate_of_heaven.9 # Change the MoH
 		#risingsun.233 # Ronin cleanup
 		#gosannen.26 # Warrior band cleanup
@@ -154,7 +156,7 @@ on_war_ended_defeat = {
 
 on_war_ended_whitepeace = {
 	events = {
-		#grace.987 # Chinese princess update
+		grace.987 # Chinese princess update
 		mandate_of_heaven.11 # Change the MoH
 		#risingsun.233 # Ronin cleanup
 		#gosannen.26 # Warrior band cleanup
@@ -163,7 +165,7 @@ on_war_ended_whitepeace = {
 
 on_war_ended_invalid = {
 	events = {
-		#grace.987 # Chinese princess update
+		grace.987 # Chinese princess update
 		#risingsun.233 # Ronin cleanup
 		#gosannen.26 # Warrior band cleanup
 	}
@@ -212,8 +214,8 @@ on_adolescence = {
 on_adulthood = {
 	events = {
 		grace.985 # Chinese princess trait adding but be careful with these as we need to look into the grace events...00matthew2000
-		#japan.16 # Regency handling
-		#japan.75 # Regency handling
+		japan.16 # Regency handling
+		japan.75 # Regency handling
 		#japan.506 # Kitsune daughter
 	}
 }
@@ -230,19 +232,19 @@ on_yearly_pulse = {
 		#artifacts.213 # Talking artifact event selection
 		nameofchina.49 # Clear up irrelevant China name flags and flags/names on titles with no holder - fires for the Pope
 		#dragon.3 # Clear up silver dragon flag if necessary - fires for the Pope
-		#japan.13 # Japanese_regent trait cleanup
-		#japan.16 # Regency handling
+		japan.13 # Japanese_regent trait cleanup
+		japan.16 # Regency handling
 		mandate_of_heaven.20 # Update Silk Road multiplier - fires for the Pope
 		#tianxia_orders.8 # Sons of the Dragon formed dynamically
 		#tianxia_orders.11 # Bushido Brotherhood formed dynamically
-		#japan.72 # japanese_regent2 trait cleanup
+		japan.72 # japanese_regent2 trait cleanup
 		#japan.75 # Regency handling
-		#japan.411 # Regent might meddle in the Tenno's succession
-		#japan.413 # The Tenno might counter meddling
+		japan.411 # Regent might meddle in the Tenno's succession
+		japan.413 # The Tenno might counter meddling
 		treasurefleet.513 # Cleanup of treasure_fleet_voyage
 		treasurefleet.514 # Cleanup of treasure_fleet_preparation
 		grace.7 # Tributary Grace gain
-		#japan.609 # Tenno succession
+		japan.609 # Tenno succession
 	}
 	random_events = {
 		#1 = tianxia_orders.2 # Sohei form dynamically
@@ -266,7 +268,7 @@ on_decade_pulse = {
 	random_events = {
 		1 = jdextra.11 # Chinese commander traits
 		#10 = artifacts.21 # Chance to destroy Thuan Thien
-		#1 = japan.520 # Foreigners on your Shores
+		1 = japan.520 # Foreigners on your Shores
 		100 = 0
 		#shinto_buddhist_swap = {
 			#10 = japan.426
@@ -364,7 +366,7 @@ on_focus_selected = {
 
 on_marriage = {
 	events = {
-		#japan.608 # Saio/Saiin failsafe
+		japan.608 # Saio/Saiin failsafe
 	}
 }
 

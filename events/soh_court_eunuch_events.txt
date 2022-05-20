@@ -600,26 +600,26 @@ character_event = {
 }
 
 
-# If an eunuch fires/resigns, the AI should get a new one ASAP
-character_event = {
-	id = eunuch.3
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		#log = "eunuch.3 happened for [Root.GetBestName]!"
-		if = {
-			limit = {
-				tier = emperor
-				government = chinese_imperial_government
-				ai = yes
-			}
-			# DO NOT UNCOMMENT!
-			# Currently causes an infinite recursion when fired here
-			#character_event = { id = eunuch.1 }
-		}
-	}
-}
+## If an eunuch fires/resigns, the AI should get a new one ASAP
+#character_event = {
+#	id = eunuch.3
+#	hide_window = yes
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		#log = "eunuch.3 happened for [Root.GetBestName]!"
+#		if = {
+#			limit = {
+#				tier = emperor
+#				government = chinese_imperial_government
+#				ai = yes
+#			}
+#			# DO NOT UNCOMMENT!
+#			# Currently causes an infinite recursion when fired here
+#			#character_event = { id = eunuch.1 }
+#		}
+#	}
+#}
 
 # on_death event to fire eunuch.1 for the liege if they're an AI
 character_event = {

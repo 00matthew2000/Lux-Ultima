@@ -360,7 +360,7 @@
 #					# Bon can spread in Tibet
 #					event_target:silk_road_religion_spread_target_province = {
 #						NOT = {
-#							region = world_tibet
+#							region = world_himalayas
 #						}
 #					}
 #				}
@@ -1103,7 +1103,7 @@
 #								NOR = {
 #									region = world_persia
 #									region = world_steppe_tarim
-#									region = world_tibet
+#									region = world_himalayas
 #									region = world_india
 #								}
 #							}
@@ -1145,7 +1145,7 @@
 #							factor = 2
 #							event_target:silk_road_religion_spread_target_province = {
 #								NOR = {
-#									region = world_tibet
+#									region = world_himalayas
 #									region = world_steppe_tarim
 #									region = world_india
 #									region = world_burma
@@ -1236,7 +1236,7 @@
 #								NOR = {
 #									region = world_china
 #									region = world_steppe_tarim
-#									region = world_tibet
+#									region = world_himalayas
 #									region = world_indochina
 #									region = world_korea
 #								}
@@ -1409,7 +1409,7 @@
 #								NOR = {
 #									region = world_indochina
 #									region = world_dali
-#									region = world_tibet
+#									region = world_himalayas
 #									region = world_india
 #								}
 #							}

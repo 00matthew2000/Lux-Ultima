@@ -39,14 +39,14 @@ is_in_active_treasure_fleet_region_trigger = {
 			2564 = { # Hangzhou
 				has_province_flag = treasure_fleet_in_japan
 			}
-			AND = { # Everything in Honshu "between" Nagato and Muro (inclusive) + Shikoku + Kyushu + minor islands in the south
+			#AND = { # Everything in Honshu "between" Nagato and Muro (inclusive) + Shikoku + Kyushu + minor islands in the south ### Don't think extra AND is needed BUT we'll see I guess -00matthew2000 ###
 				region = world_japan
 				NOT = {
 					province_id = 2014 #Amami
 					province_id = 2015 #Ryukyu
 					province_id = 2016 #Sakishima
 				}
-			}
+			#}
 		}
 		AND = {
 			2564 = { # Hangzhou

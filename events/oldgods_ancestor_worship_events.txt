@@ -4825,10 +4825,10 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = {
-			trigger = { has_character_modifier = follower_of_orunmila }
-			text = EVTOPTA_TOG_7526_ORUNMILA
-		}
+		#name = {
+			#trigger = { has_character_modifier = follower_of_orunmila }
+			#text = EVTOPTA_TOG_7526_ORUNMILA
+		#}
 		name = {
 			trigger = { has_character_modifier = follower_of_morana }
 			text = EVTOPTA_TOG_7526_MORANA
@@ -4845,10 +4845,10 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_taipo_and_mielikki }
 			text = EVTOPTA_TOG_7526_TM
 		}
-		name = {
-			trigger = { has_character_modifier = follower_of_shango }
-			text = EVTOPTA_TOG_7526_SHANGO
-		}
+		#name = {
+			#trigger = { has_character_modifier = follower_of_shango }
+			#text = EVTOPTA_TOG_7526_SHANGO
+		#}
 		name = {
 			trigger = { has_character_modifier = follower_of_ukko }
 			text = EVTOPTA_TOG_7526_UKKO
@@ -4861,14 +4861,14 @@ character_event = {
 			trigger = { has_character_modifier = follower_of_jarilo }
 			text = EVTOPTA_TOG_7526_JARILO
 		}
-		name = {
-			trigger = { has_character_modifier = follower_of_ekwensu }
-			text = EVTOPTA_TOG_7526_EKWENSU
-		}
-		name = {
-			trigger = { has_character_modifier = follower_of_yemoja }
-			text = EVTOPTA_TOG_7526_YEMOJA
-		}
+		#name = {
+			#trigger = { has_character_modifier = follower_of_ekwensu }
+			#text = EVTOPTA_TOG_7526_EKWENSU
+		#}
+		#name = {
+			#trigger = { has_character_modifier = follower_of_yemoja }
+			#text = EVTOPTA_TOG_7526_YEMOJA
+		#}
 		name = {
 			trigger = { has_character_modifier = follower_of_akka }
 			text = EVTOPTA_TOG_7526_AKKA

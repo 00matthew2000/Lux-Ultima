@@ -4263,66 +4263,66 @@ character_event = {
 	}
 }
 
-# Make sure that the Tenno never holds multiple empires - we don't want k_chrysanthemum_throne and e_japan to separate outside of a shogunate
-character_event = {
-	id = japan.10
-	is_triggered_only = yes
-	hide_window = yes
-	
-	religion = nihon_shinto
-	
-	only_playable = yes
-	
-	trigger = {
-		OR = {
-			controls_religion = yes
-			has_character_flag = temporarily_japanese_imperial
-		}
-		FROM = {
-			tier = emperor
-		}
-		NOT = {
-			has_character_flag = restoring_japan
-		}
-		num_of_emperor_titles = 2
-	}
-	
-	immediate = {
-		if = {
-			limit = {
-				any_demesne_title = {
-					title = e_japan
-				}
-			}
-			any_demesne_title = {
-				limit = {
-					tier = emperor
-					NOT = {
-						title = e_japan
-					}
-				}
-				unsafe_destroy_landed_title = THIS
-			}
-		}
-		else = {
-			primary_title = {
-				set_title_flag = keep_this_title
-			}
-			any_demesne_title = {
-				limit = {
-					tier = emperor
-					NOT = {
-						has_title_flag = keep_this_title
-					}
-				}
-				unsafe_destroy_landed_title = THIS
-			}
-			primary_title = {
-				clr_title_flag = keep_this_title
-			}
-		}
-	}
-}
+## Make sure that the Tenno never holds multiple empires - we don't want k_chrysanthemum_throne and e_japan to separate outside of a shogunate
+#character_event = {
+#	id = japan.10
+#	is_triggered_only = yes
+#	hide_window = yes
+#	
+#	religion = nihon_shinto
+#	
+#	only_playable = yes
+#	
+#	trigger = {
+#		OR = {
+#			controls_religion = yes
+#			has_character_flag = temporarily_japanese_imperial
+#		}
+#		FROM = {
+#			tier = emperor
+#		}
+#		NOT = {
+#			has_character_flag = restoring_japan
+#		}
+#		num_of_emperor_titles = 2
+#	}
+#	
+#	immediate = {
+#		if = {
+#			limit = {
+#				any_demesne_title = {
+#					title = e_japan
+#				}
+#			}
+#			any_demesne_title = {
+#				limit = {
+#					tier = emperor
+#					NOT = {
+#						title = e_japan
+#					}
+#				}
+#				unsafe_destroy_landed_title = THIS
+#			}
+#		}
+#		else = {
+#			primary_title = {
+#				set_title_flag = keep_this_title
+#			}
+#			any_demesne_title = {
+#				limit = {
+#					tier = emperor
+#					NOT = {
+#						has_title_flag = keep_this_title
+#					}
+#				}
+#				unsafe_destroy_landed_title = THIS
+#			}
+#			primary_title = {
+#				clr_title_flag = keep_this_title
+#			}
+#		}
+#	}
+#}
 
 ### Regency stuff
 
@@ -6512,13 +6512,13 @@ letter_event = {
 						has_dlc = "Zeus"
 					}
 					add_law_w_cooldown = ze_administration_laws_1 # Late Feudal
-					add_law_w_cooldown = out_of_realm_inheritance_law_1 # No external inheritance (should already be in place, but...)
+					#add_law_w_cooldown = out_of_realm_inheritance_law_1 # No external inheritance (should already be in place, but...)
 					add_law_w_cooldown = vassal_wars_law_0 # Unrestricted vassal wars
 					succession = primogeniture # You get a get-out-of-Gavelkind/-Elective free card!
 				}
 				else = {
 					add_law_w_cooldown = crown_authority_1 # Unrestricted vassal wars; unfortunately, this won't give the rest of the necessary laws
-					add_law_w_cooldown = feudal_administration
+					#add_law_w_cooldown = feudal_administration
 				}
 				if = {
 					limit = {
@@ -7056,13 +7056,13 @@ letter_event = {
 						has_dlc = "Zeus"
 					}
 					add_law_w_cooldown = ze_administration_laws_2 # Imperial
-					add_law_w_cooldown = out_of_realm_inheritance_law_1 # No external inheritance
+					#add_law_w_cooldown = out_of_realm_inheritance_law_1 # No external inheritance
 					add_law_w_cooldown = vassal_wars_law_0 # Unrestricted vassal wars; you'll have to work on blocking them again
 					add_law_w_cooldown = tenno
 				}
 				else = {
 					add_law_w_cooldown = crown_authority_1 # Unrestricted vassal wars; unfortunately, this won't give the rest of the necessary laws
-					add_law_w_cooldown = imperial_administration
+					#add_law_w_cooldown = imperial_administration
 				}
 				if = {
 					limit = {
@@ -8258,70 +8258,70 @@ letter_event = {
 	}
 }
 
-# Change the Tenno's spouse - deprecated for the Shogun!
-letter_event = {
-	id = japan.68
-	desc = EVTDESC_JAPAN_68
-	
-	show_from_from = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		spouse = {
-			save_event_target_as = old_spouse
-		}
-	}
-	
-	option = {
-		name = EVTOPTA_JAPAN_68 # I can't oppose this...
-		if = {
-			limit = {
-				FROM = {
-					has_dlc = "Jade Dragon"
-					is_chinese_emperor_trigger = no
-				}
-			}
-			if = {
-				limit = {
-					is_chinese_emperor_trigger = yes
-				}
-				FROM = {
-					detract_grace_major_effect = yes
-				}
-			}
-			else_if = {
-				limit = {
-					any_close_relative = {
-						dynasty = PREV
-						is_chinese_emperor_trigger = yes
-					}
-				}
-				FROM = {
-					detract_grace_medium_effect = yes
-				}
-			}
-			else_if = {
-				limit = {
-					any_dynasty_member = {
-						is_chinese_emperor_trigger = yes
-					}
-				}
-				FROM = {
-					detract_grace_minor_effect = yes
-				}
-			}
-		}
-		
-		opinion = {
-			who = FROMFROM
-			modifier = changed_my_spouse
-		}
-		remove_spouse = event_target:old_spouse
-		add_consort = event_target:old_spouse
-		add_spouse = FROMFROMFROM
-	}
-}
+## Change the Tenno's spouse - deprecated for the Shogun!
+#letter_event = {
+#	id = japan.68
+#	desc = EVTDESC_JAPAN_68
+#	
+#	show_from_from = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		spouse = {
+#			save_event_target_as = old_spouse
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTA_JAPAN_68 # I can't oppose this...
+#		if = {
+#			limit = {
+#				FROM = {
+#					has_dlc = "Jade Dragon"
+#					is_chinese_emperor_trigger = no
+#				}
+#			}
+#			if = {
+#				limit = {
+#					is_chinese_emperor_trigger = yes
+#				}
+#				FROM = {
+#					detract_grace_major_effect = yes
+#				}
+#			}
+#			else_if = {
+#				limit = {
+#					any_close_relative = {
+#						dynasty = PREV
+#						is_chinese_emperor_trigger = yes
+#					}
+#				}
+#				FROM = {
+#					detract_grace_medium_effect = yes
+#				}
+#			}
+#			else_if = {
+#				limit = {
+#					any_dynasty_member = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#				}
+#				FROM = {
+#					detract_grace_minor_effect = yes
+#				}
+#			}
+#		}
+#		
+#		opinion = {
+#			who = FROMFROM
+#			modifier = changed_my_spouse
+#		}
+#		remove_spouse = event_target:old_spouse
+#		add_consort = event_target:old_spouse
+#		add_spouse = FROMFROMFROM
+#	}
+#}
 
 # Take the Shogun's title
 letter_event = {
@@ -10706,30 +10706,30 @@ character_event = {
 
 ##### Anti-Minamoto/-Taira takeover
 
-# If the Imperial Family loses the Chrysanthemum Throne, enable factioning
-character_event = {
-	id = japan.405
-	is_triggered_only = yes
-	hide_window = yes
-	
-	only_playable = yes
-	
-	trigger = {
-		FROM = {
-			title = k_chrysanthemum_throne
-		}
-		NOT = {
-			dynasty = 1000027000 # The Imperial Family
-		}
-		NOT = {
-			has_global_flag = imperial_family_deposed
-		}
-	}
-	
-	immediate = {
-		set_global_flag = imperial_family_deposed
-	}
-}
+## If the Imperial Family loses the Chrysanthemum Throne, enable factioning ###Don't really know what this is so I'm just gonna # it for now -00matthew2000 ###
+#character_event = {
+#	id = japan.405
+#	is_triggered_only = yes
+#	hide_window = yes
+#	
+#	only_playable = yes
+#	
+#	trigger = {
+#		FROM = {
+#			title = k_chrysanthemum_throne
+#		}
+#		NOT = {
+#			dynasty = 1000027000 # The Imperial Family
+#		}
+#		NOT = {
+#			has_global_flag = imperial_family_deposed
+#		}
+#	}
+#	
+#	immediate = {
+#		set_global_flag = imperial_family_deposed
+#	}
+#}
 
 ##### Wako (Wokou) events - add cultural buildings + game rule + localization
 
@@ -14761,190 +14761,190 @@ character_event = {
 
 ### Shinto-Buddhist conversion
 
-# Shinto -> Buddhist
-character_event = {
-	id = japan.426
-	hide_window = yes
-	
-	only_rulers = yes
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		any_courtier = {
-			is_landed = no
-			is_adult = yes
-			is_inaccessible_or_incapable_trigger = no
-			religion = nihon_shinto
-			OR = {
-				culture = japanese
-				culture = nihonohellenic
-				culture = emishi
-			}
-			NOT = {
-				any_dynasty_member = {
-					religion = nihon_shinto
-					OR = {
-						controls_religion = yes
-						has_character_flag = temporarily_japanese_imperial
-					}
-				}
-			}
-			NOR = {
-				trait = zealous
-				trait = proud
-			}
-			NOT = {
-				has_character_flag = japanese_religion_switch
-			}
-			NOT = {
-				trait = japanese_monastic_trait
-			}
-			NOT = {
-				top_liege = {
-					government = chinese_imperial_government
-				}
-			}
-		}
-	}
-	
-	immediate = {
-		random_courtier = {
-			limit = {
-				is_landed = no
-				is_adult = yes
-				is_inaccessible_or_incapable_trigger = no
-				religion = nihon_shinto
-				OR = {
-					culture = japanese
-					culture = nihonohellenic
-					culture = emishi
-				}
-				NOT = {
-					any_dynasty_member = {
-						religion = nihon_shinto
-						OR = {
-							controls_religion = yes
-							has_character_flag = temporarily_japanese_imperial
-						}
-					}
-				}
-				NOR = {
-					trait = zealous
-					trait = proud
-				}
-				NOT = {
-					has_character_flag = japanese_religion_switch
-				}
-				NOT = {
-					trait = japanese_monastic_trait
-				}
-				NOT = {
-					top_liege = {
-						government = chinese_imperial_government
-					}
-				}
-			}
-			preferred_limit = {
-				OR = {
-					trait = cynical
-					trait = humble
-					true_religion = nihon_shinto
-				}
-			}
-			religion = bud_zen
-			set_character_flag = japanese_religion_switch
-		}
-	}
-}
-
-# Buddhist -> Shinto
-character_event = {
-	id = japan.427
-	hide_window = yes
-	
-	only_rulers = yes
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		any_courtier = {
-			is_landed = no
-			is_adult = yes
-			is_inaccessible_or_incapable_trigger = no
-			religion_group = bud_group
-			OR = {
-				culture = japanese
-				culture = nihonohellenic
-				culture = emishi
-			}
-			NOR = {
-				trait = zealous
-				trait = proud
-			}
-			NOT = {
-				has_character_flag = japanese_religion_switch
-			}
-			NOT = {
-				trait = japanese_monastic_trait
-			}
-			NOT = {
-				top_liege = {
-					government = chinese_imperial_government
-				}
-			}
-			NOR = {
-				trait = bhikkhu
-				trait = bhikkhuni
-			}
-		}
-	}
-	
-	immediate = {
-		random_courtier = {
-			limit = {
-				is_landed = no
-				is_adult = yes
-				is_inaccessible_or_incapable_trigger = no
-				religion_group = bud_group
-				OR = {
-					culture = japanese
-					culture = nihonohellenic
-					culture = emishi
-				}
-				NOR = {
-					trait = zealous
-					trait = proud
-				}
-				NOT = {
-					has_character_flag = japanese_religion_switch
-				}
-				NOT = {
-					trait = japanese_monastic_trait
-				}
-				NOT = {
-					top_liege = {
-						government = chinese_imperial_government
-					}
-				}
-				NOR = {
-					trait = bhikkhu
-					trait = bhikkhuni
-				}
-			}
-	
-			preferred_limit = {
-				OR = {
-					trait = cynical
-					trait = humble
-					true_religion = nihon_shinto
-				}
-			}
-			religion = nihon_shinto
-			set_character_flag = japanese_religion_switch
-		}
-	}
-}
+## Shinto -> Buddhist
+#character_event = {
+#	id = japan.426
+#	hide_window = yes
+#	
+#	only_rulers = yes
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		any_courtier = {
+#			is_landed = no
+#			is_adult = yes
+#			is_inaccessible_or_incapable_trigger = no
+#			religion = nihon_shinto
+#			OR = {
+#				culture = japanese
+#				culture = nihonohellenic
+#				culture = emishi
+#			}
+#			NOT = {
+#				any_dynasty_member = {
+#					religion = nihon_shinto
+#					OR = {
+#						controls_religion = yes
+#						has_character_flag = temporarily_japanese_imperial
+#					}
+#				}
+#			}
+#			NOR = {
+#				trait = zealous
+#				trait = proud
+#			}
+#			NOT = {
+#				has_character_flag = japanese_religion_switch
+#			}
+#			NOT = {
+#				trait = japanese_monastic_trait
+#			}
+#			NOT = {
+#				top_liege = {
+#					government = chinese_imperial_government
+#				}
+#			}
+#		}
+#	}
+#	
+#	immediate = {
+#		random_courtier = {
+#			limit = {
+#				is_landed = no
+#				is_adult = yes
+#				is_inaccessible_or_incapable_trigger = no
+#				religion = nihon_shinto
+#				OR = {
+#					culture = japanese
+#					culture = nihonohellenic
+#					culture = emishi
+#				}
+#				NOT = {
+#					any_dynasty_member = {
+#						religion = nihon_shinto
+#						OR = {
+#							controls_religion = yes
+#							has_character_flag = temporarily_japanese_imperial
+#						}
+#					}
+#				}
+#				NOR = {
+#					trait = zealous
+#					trait = proud
+#				}
+#				NOT = {
+#					has_character_flag = japanese_religion_switch
+#				}
+#				NOT = {
+#					trait = japanese_monastic_trait
+#				}
+#				NOT = {
+#					top_liege = {
+#						government = chinese_imperial_government
+#					}
+#				}
+#			}
+#			preferred_limit = {
+#				OR = {
+#					trait = cynical
+#					trait = humble
+#					true_religion = nihon_shinto
+#				}
+#			}
+#			religion = bud_zen
+#			set_character_flag = japanese_religion_switch
+#		}
+#	}
+#}
+#
+## Buddhist -> Shinto
+#character_event = {
+#	id = japan.427
+#	hide_window = yes
+#	
+#	only_rulers = yes
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		any_courtier = {
+#			is_landed = no
+#			is_adult = yes
+#			is_inaccessible_or_incapable_trigger = no
+#			religion_group = bud_group
+#			OR = {
+#				culture = japanese
+#				culture = nihonohellenic
+#				culture = emishi
+#			}
+#			NOR = {
+#				trait = zealous
+#				trait = proud
+#			}
+#			NOT = {
+#				has_character_flag = japanese_religion_switch
+#			}
+#			NOT = {
+#				trait = japanese_monastic_trait
+#			}
+#			NOT = {
+#				top_liege = {
+#					government = chinese_imperial_government
+#				}
+#			}
+#			NOR = {
+#				trait = bhikkhu
+#				trait = bhikkhuni
+#			}
+#		}
+#	}
+#	
+#	immediate = {
+#		random_courtier = {
+#			limit = {
+#				is_landed = no
+#				is_adult = yes
+#				is_inaccessible_or_incapable_trigger = no
+#				religion_group = bud_group
+#				OR = {
+#					culture = japanese
+#					culture = nihonohellenic
+#					culture = emishi
+#				}
+#				NOR = {
+#					trait = zealous
+#					trait = proud
+#				}
+#				NOT = {
+#					has_character_flag = japanese_religion_switch
+#				}
+#				NOT = {
+#					trait = japanese_monastic_trait
+#				}
+#				NOT = {
+#					top_liege = {
+#						government = chinese_imperial_government
+#					}
+#				}
+#				NOR = {
+#					trait = bhikkhu
+#					trait = bhikkhuni
+#				}
+#			}
+#	
+#			preferred_limit = {
+#				OR = {
+#					trait = cynical
+#					trait = humble
+#					true_religion = nihon_shinto
+#				}
+#			}
+#			religion = nihon_shinto
+#			set_character_flag = japanese_religion_switch
+#		}
+#	}
+#}
 
 ##### Kitsune events
 
@@ -23946,7 +23946,7 @@ character_event = {
 								martial = 10
 							}
 						}
-						add_artifact = the_warriors_of_the_rising_sun
+						#add_artifact = the_warriors_of_the_rising_sun
 						set_character_flag = wrote_warriors_of_the_rising_sun
 						set_character_flag = foreigner_wrote_good_book
 						new_artifact = {
@@ -27291,9 +27291,11 @@ character_event = {
 		}
 		add_trait = japanese_regent
 		if = {
-			regent = {
-				log = "[This.GetBestName] is the initial Regent!"
-				remove_title = title_regent
+			limit = {
+				regent = {
+					log = "[This.GetBestName] is the initial Regent!"
+					remove_title = title_regent
+				}
 			}
 		}
 		log = "[This.GetBestName] is the new Regent!"
@@ -27347,9 +27349,11 @@ character_event = {
 		}
 		add_trait = japanese_regent2
 		if = {
-			regent = {
-				log = "[This.GetBestName] is the initial Regent!"
-				remove_title = title_regent
+			limit = {
+				regent = {
+					log = "[This.GetBestName] is the initial Regent!"
+					remove_title = title_regent
+				}
 			}
 		}
 		log = "[This.GetBestName] is the new Regent!"

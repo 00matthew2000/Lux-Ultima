@@ -6447,9 +6447,8 @@ character_event = {
 	trigger = {
 		event_target:battlefield_location = {
 			OR = {
-				region = world_africa_west
-				region = world_africa_central
-				region = world_africa_east
+				region = world_africa
+				region = world_southeast_asia
 			}
 			OR = {
 				borders_major_river = yes
