@@ -4,413 +4,413 @@ namespace = HF
 
 #############################################
 ## Power 2: Summon Commander
-character_event = {
-    id = HF.25000
-    desc = EVTDESCHFA25000
-    picture = { 
-        trigger = { event_target:invited_lodge_soldier = { society_member_of = warrior_lodge_tengri } }
-        picture = GFX_evt_eagle_warriors
-    }
-    picture = { 
-        trigger = { event_target:invited_lodge_soldier = { OR = { society_member_of = warrior_lodge_zun society_member_of = warrior_lodge_west_african } } }
-        picture = GFX_evt_sun_temple
-    }
-    picture = { 
-        trigger = { event_target:invited_lodge_soldier = { society_member_of = warrior_lodge_hellenic } }
-        picture = GFX_evt_hellenic_temple
-    }
-    picture = { 
-        trigger = { 
-            event_target:invited_lodge_soldier = { 
-                NOR = { 
-                    society_member_of = warrior_lodge_zun 
-                    society_member_of = warrior_lodge_west_african 
-                    society_member_of = warrior_lodge_tengri 
-                    society_member_of = warrior_lodge_hellenic 
-                } 
-            } 
-        }
-        picture = GFX_evt_viking_battle_oldgods
-    }
-
-    border = GFX_event_normal_frame_war
-
-    is_triggered_only = yes
-    
-	option = {
-		name = EVTOPTCHF25000
-		
-		trigger = {
-			OR = { 
-				NOT = { ROOT = { has_law = succ_byzantine_elective } }  #Either not Imperial...
-				NOT = { #...Or there are no valid vassal candidates that can be commanders.
-					any_vassal = { 
-						higher_real_tier_than = BARON
-						NOT = { 
-							primary_title = { temporary = yes } 
-						}
-						OR = {
-							AND = {
-								OR = {
-									male_can_hold_minor_title_trigger = yes
-									female_can_hold_minor_commander_title_trigger = yes
-								}
-								OR = {
-									NOT = { religion = hindu }
-									trait = kshatriya
-								}
-								is_adult = yes
-							}
-							has_character_flag = special_marshal
-						}
-				
-						prisoner = no
-						NOT = { trait = incapable }
-						NOT = { is_inaccessible_trigger = yes }
-						NOT = { has_character_flag = guru }
-						NOT = { has_character_modifier = refusing_to_lead }
-						NOR = {
-							has_job_title = job_chancellor
-							has_job_title = job_marshal
-							has_job_title = job_treasurer
-							has_job_title = job_spymaster
-							has_job_title = job_spiritual
-							has_minor_title = title_commander
-						}
-					} 
-				}
-			}
-			any_realm_character = {
-				NOT = {
-					higher_tier_than = BARON
-				}
-				liege = { character = ROOT }
-				has_minor_title = title_commander
-				NOT = {
-					martial = 10
-				}
-			}
-			OR = {
-				AND = {
-					tier = COUNT
-					any_realm_character = {
-						count = 2
-						liege = { character = ROOT }
-						has_minor_title = title_commander
-					}
-				}
-				AND = {
-					tier = DUKE
-					any_realm_character = {
-						count = 4
-						liege = { character = ROOT }
-						has_minor_title = title_commander
-					}
-				}
-				AND = {
-					tier = KING
-					is_nomadic = no
-					any_realm_character = {
-						count = 6
-						liege = { character = ROOT }
-						has_minor_title = title_commander
-					}
-				}
-				AND = {
-					tier = EMPEROR
-					is_nomadic = no
-					any_realm_character = {
-						count = 8
-						liege = { character = ROOT }
-						has_minor_title = title_commander
-					}
-				}
-				AND = {
-					tier = KING
-					is_nomadic = yes
-					any_realm_character = {
-						count = 2
-						liege = { character = ROOT }
-						has_minor_title = title_commander
-					}
-				}
-				AND = {
-					tier = EMPEROR
-					is_nomadic = yes
-					any_realm_character = {
-						count = 4
-						liege = { character = ROOT }
-						has_minor_title = title_commander
-					}
-				}
-			}
-		}
-		
-		random_realm_character = {
-			limit = {
-				NOT = {
-					higher_tier_than = BARON
-				}
-				liege = { character = ROOT }
-				has_minor_title = title_commander
-				NOT = {
-					martial = 12
-				}
-			}
-			opinion = {
-				modifier = insulted
-				who = ROOT
-				years = 2
-			}
-			remove_title = title_commander
-		}
-		
-		event_target:invited_lodge_soldier = {
-			show_scope_change = no
-			opinion = {
-				modifier = opinion_loyal_servant
-				who = ROOT
-				years = 100
-			}
-			give_minor_title = title_commander
-		}
-	}
-    option = {
-        name = EVTOPTAHF25000
-        trigger = {
-			OR = { 
-				NOT = { ROOT = { has_law = succ_byzantine_elective } }  #Either not Imperial...
-				NOT = { #...Or there are no valid vassal candidates that can be commanders.
-					any_vassal = { 
-						higher_real_tier_than = BARON
-						NOT = { 
-							primary_title = { temporary = yes } 
-						}
-						OR = {
-							AND = {
-								OR = {
-									male_can_hold_minor_title_trigger = yes
-									female_can_hold_minor_commander_title_trigger = yes
-								}
-								OR = {
-									NOT = { religion = hindu }
-									trait = kshatriya
-								}
-								is_adult = yes
-							}
-							has_character_flag = special_marshal
-						}
-				
-						prisoner = no
-						NOT = { trait = incapable }
-						NOT = { is_inaccessible_trigger = yes }
-						NOT = { has_character_flag = guru }
-						NOT = { has_character_modifier = refusing_to_lead }
-						NOR = {
-							has_job_title = job_chancellor
-							has_job_title = job_marshal
-							has_job_title = job_treasurer
-							has_job_title = job_spymaster
-							has_job_title = job_spiritual
-							has_minor_title = title_commander
-						}
-					} 
-				}
-			}
-            OR = {
-                AND = {
-                    tier = COUNT
-                    NOT = {
-                        any_realm_character = {
-                            count = 2
-                            liege = { character = ROOT }
-                            has_minor_title = title_commander
-                        }
-                    }
-                }
-                AND = {
-                    tier = DUKE
-                    NOT = {
-                        any_realm_character = {
-                            count = 4
-                            liege = { character = ROOT }
-                            has_minor_title = title_commander
-                        }
-                    }
-                }
-                AND = {
-                    tier = KING
-                    is_nomadic = no
-                    NOT = {
-                        any_realm_character = {
-                            count = 6
-                            liege = { character = ROOT }
-                            has_minor_title = title_commander
-                        }
-                    }
-                }
-                AND = {
-                    tier = EMPEROR
-                    is_nomadic = no
-                    NOT = {
-                        any_realm_character = {
-                            count = 8
-                            liege = { character = ROOT }
-                            has_minor_title = title_commander
-                        }
-                    }
-                }
-                AND = {
-                    tier = KING
-                    is_nomadic = yes
-                    NOT = {
-                        any_realm_character = {
-                            count = 2
-                            liege = { character = ROOT }
-                            has_minor_title = title_commander
-                        }
-                    }
-                }
-                AND = {
-                    tier = EMPEROR
-                    is_nomadic = yes
-                    NOT = {
-                        any_realm_character = {
-                            count = 4
-                            liege = { character = ROOT }
-                            has_minor_title = title_commander
-                        }
-                    }
-                }
-            }
-        }
-        
-        event_target:invited_lodge_soldier = {
-			show_scope_change = no
-            opinion = {
-                modifier = opinion_loyal_servant
-                who = ROOT
-                years = 100
-            }
-            give_minor_title = title_commander
-        }
-    }
-    option = {
-        name = EVTOPTBHF25000
-        event_target:invited_lodge_soldier = { 
-            show_scope_change = no
-            opinion = {
-                modifier = opinion_loyal_servant
-                who = ROOT
-                years = 100
-            }
-        }
-        ai_chance = {    
-            factor = 100
-        }
-    }
-}
+#character_event = {
+#    id = HF.25000
+#    desc = EVTDESCHFA25000
+#    picture = { 
+#        trigger = { event_target:invited_lodge_soldier = { society_member_of = warrior_lodge_tengri } }
+#        picture = GFX_evt_eagle_warriors
+#    }
+#    picture = { 
+#        trigger = { event_target:invited_lodge_soldier = { OR = { society_member_of = warrior_lodge_zun society_member_of = warrior_lodge_west_african } } }
+#        picture = GFX_evt_sun_temple
+#    }
+#    picture = { 
+#        trigger = { event_target:invited_lodge_soldier = { society_member_of = warrior_lodge_hellenic } }
+#        picture = GFX_evt_hellenic_temple
+#    }
+#    picture = { 
+#        trigger = { 
+#            event_target:invited_lodge_soldier = { 
+#                NOR = { 
+#                    society_member_of = warrior_lodge_zun 
+#                    society_member_of = warrior_lodge_west_african 
+#                    society_member_of = warrior_lodge_tengri 
+#                    society_member_of = warrior_lodge_hellenic 
+#                } 
+#            } 
+#        }
+#        picture = GFX_evt_viking_battle_oldgods
+#    }
+#
+#    border = GFX_event_normal_frame_war
+#
+#    is_triggered_only = yes
+#    
+#	option = {
+#		name = EVTOPTCHF25000
+#		
+#		trigger = {
+#			OR = { 
+#				NOT = { ROOT = { has_law = succ_byzantine_elective } }  #Either not Imperial...
+#				NOT = { #...Or there are no valid vassal candidates that can be commanders.
+#					any_vassal = { 
+#						higher_real_tier_than = BARON
+#						NOT = { 
+#							primary_title = { temporary = yes } 
+#						}
+#						OR = {
+#							AND = {
+#								OR = {
+#									male_can_hold_minor_title_trigger = yes
+#									female_can_hold_minor_commander_title_trigger = yes
+#								}
+#								OR = {
+#									NOT = { religion = hindu }
+#									trait = kshatriya
+#								}
+#								is_adult = yes
+#							}
+#							has_character_flag = special_marshal
+#						}
+#				
+#						prisoner = no
+#						NOT = { trait = incapable }
+#						NOT = { is_inaccessible_trigger = yes }
+#						NOT = { has_character_flag = guru }
+#						NOT = { has_character_modifier = refusing_to_lead }
+#						NOR = {
+#							has_job_title = job_chancellor
+#							has_job_title = job_marshal
+#							has_job_title = job_treasurer
+#							has_job_title = job_spymaster
+#							has_job_title = job_spiritual
+#							has_minor_title = title_commander
+#						}
+#					} 
+#				}
+#			}
+#			any_realm_character = {
+#				NOT = {
+#					higher_tier_than = BARON
+#				}
+#				liege = { character = ROOT }
+#				has_minor_title = title_commander
+#				NOT = {
+#					martial = 10
+#				}
+#			}
+#			OR = {
+#				AND = {
+#					tier = COUNT
+#					any_realm_character = {
+#						count = 2
+#						liege = { character = ROOT }
+#						has_minor_title = title_commander
+#					}
+#				}
+#				AND = {
+#					tier = DUKE
+#					any_realm_character = {
+#						count = 4
+#						liege = { character = ROOT }
+#						has_minor_title = title_commander
+#					}
+#				}
+#				AND = {
+#					tier = KING
+#					is_nomadic = no
+#					any_realm_character = {
+#						count = 6
+#						liege = { character = ROOT }
+#						has_minor_title = title_commander
+#					}
+#				}
+#				AND = {
+#					tier = EMPEROR
+#					is_nomadic = no
+#					any_realm_character = {
+#						count = 8
+#						liege = { character = ROOT }
+#						has_minor_title = title_commander
+#					}
+#				}
+#				AND = {
+#					tier = KING
+#					is_nomadic = yes
+#					any_realm_character = {
+#						count = 2
+#						liege = { character = ROOT }
+#						has_minor_title = title_commander
+#					}
+#				}
+#				AND = {
+#					tier = EMPEROR
+#					is_nomadic = yes
+#					any_realm_character = {
+#						count = 4
+#						liege = { character = ROOT }
+#						has_minor_title = title_commander
+#					}
+#				}
+#			}
+#		}
+#		
+#		random_realm_character = {
+#			limit = {
+#				NOT = {
+#					higher_tier_than = BARON
+#				}
+#				liege = { character = ROOT }
+#				has_minor_title = title_commander
+#				NOT = {
+#					martial = 12
+#				}
+#			}
+#			opinion = {
+#				modifier = insulted
+#				who = ROOT
+#				years = 2
+#			}
+#			remove_title = title_commander
+#		}
+#		
+#		event_target:invited_lodge_soldier = {
+#			show_scope_change = no
+#			opinion = {
+#				modifier = opinion_loyal_servant
+#				who = ROOT
+#				years = 100
+#			}
+#			give_minor_title = title_commander
+#		}
+#	}
+#    option = {
+#        name = EVTOPTAHF25000
+#        trigger = {
+#			OR = { 
+#				NOT = { ROOT = { has_law = succ_byzantine_elective } }  #Either not Imperial...
+#				NOT = { #...Or there are no valid vassal candidates that can be commanders.
+#					any_vassal = { 
+#						higher_real_tier_than = BARON
+#						NOT = { 
+#							primary_title = { temporary = yes } 
+#						}
+#						OR = {
+#							AND = {
+#								OR = {
+#									male_can_hold_minor_title_trigger = yes
+#									female_can_hold_minor_commander_title_trigger = yes
+#								}
+#								OR = {
+#									NOT = { religion = hindu }
+#									trait = kshatriya
+#								}
+#								is_adult = yes
+#							}
+#							has_character_flag = special_marshal
+#						}
+#				
+#						prisoner = no
+#						NOT = { trait = incapable }
+#						NOT = { is_inaccessible_trigger = yes }
+#						NOT = { has_character_flag = guru }
+#						NOT = { has_character_modifier = refusing_to_lead }
+#						NOR = {
+#							has_job_title = job_chancellor
+#							has_job_title = job_marshal
+#							has_job_title = job_treasurer
+#							has_job_title = job_spymaster
+#							has_job_title = job_spiritual
+#							has_minor_title = title_commander
+#						}
+#					} 
+#				}
+#			}
+#            OR = {
+#                AND = {
+#                    tier = COUNT
+#                    NOT = {
+#                        any_realm_character = {
+#                            count = 2
+#                            liege = { character = ROOT }
+#                            has_minor_title = title_commander
+#                        }
+#                    }
+#                }
+#                AND = {
+#                    tier = DUKE
+#                    NOT = {
+#                        any_realm_character = {
+#                            count = 4
+#                            liege = { character = ROOT }
+#                            has_minor_title = title_commander
+#                        }
+#                    }
+#                }
+#                AND = {
+#                    tier = KING
+#                    is_nomadic = no
+#                    NOT = {
+#                        any_realm_character = {
+#                            count = 6
+#                            liege = { character = ROOT }
+#                            has_minor_title = title_commander
+#                        }
+#                    }
+#                }
+#                AND = {
+#                    tier = EMPEROR
+#                    is_nomadic = no
+#                    NOT = {
+#                        any_realm_character = {
+#                            count = 8
+#                            liege = { character = ROOT }
+#                            has_minor_title = title_commander
+#                        }
+#                    }
+#                }
+#                AND = {
+#                    tier = KING
+#                    is_nomadic = yes
+#                    NOT = {
+#                        any_realm_character = {
+#                            count = 2
+#                            liege = { character = ROOT }
+#                            has_minor_title = title_commander
+#                        }
+#                    }
+#                }
+#                AND = {
+#                    tier = EMPEROR
+#                    is_nomadic = yes
+#                    NOT = {
+#                        any_realm_character = {
+#                            count = 4
+#                            liege = { character = ROOT }
+#                            has_minor_title = title_commander
+#                        }
+#                    }
+#                }
+#            }
+#        }
+#        
+#        event_target:invited_lodge_soldier = {
+#			show_scope_change = no
+#            opinion = {
+#                modifier = opinion_loyal_servant
+#                who = ROOT
+#                years = 100
+#            }
+#            give_minor_title = title_commander
+#        }
+#    }
+#    option = {
+#        name = EVTOPTBHF25000
+#        event_target:invited_lodge_soldier = { 
+#            show_scope_change = no
+#            opinion = {
+#                modifier = opinion_loyal_servant
+#                who = ROOT
+#                years = 100
+#            }
+#        }
+#        ai_chance = {    
+#            factor = 100
+#        }
+#    }
+#}
 #############################################
 ## Power 3: Summon Warriors of Ukko
 #Which kind?
-character_event = {
-	id = HF.25001
-	desc = EVTDESCHF25001
-    picture = GFX_evt_mysterious_forest
-    border = GFX_event_normal_frame_war
-    
-    has_dlc = "Holy Fury"
-
-    is_triggered_only = yes
-    
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = warriors_of_ukko_01 } 
-			33 = { sound_effect = warriors_of_ukko_02 } 
-			33 = { sound_effect = warriors_of_ukko_03 } 
-		}
-	}
-    option = {
-        name = EVTOPTAHF25001
-            capital_scope = {
-                show_scope_change = no
-                ROOT = {
-                    show_scope_change = no
-                    spawn_unit = { 
-                        province = PREV
-                        owner = ROOT
-                        troops = { 
-                    		light_infantry = { 1000 1000 }
-                    		heavy_infantry = { 500 500 }
-                        }
-                        earmark = ukko_warriors
-                        attrition = 0.5
-                        disband_on_peace = yes
-                    }
-                }
-            }
-        ai_chance = {    
-            factor = 30
-        }
-    }
-    option = {
-        name = EVTOPTBHF25001
-            capital_scope = {
-                show_scope_change = no
-                ROOT = {
-                    show_scope_change = no
-                    spawn_unit = { 
-                        province = PREV
-                        owner = ROOT
-                        troops = { 
-                            pikemen = { 1000 1000 }
-                        }
-                        earmark = ukko_warriors
-                        attrition = 0.5
-                        disband_on_peace = yes 
-                    }
-                }
-            }
-        ai_chance = {    
-            factor = 30
-        }
-    }
-    option = {
-        name = EVTOPTCHF25001
-            capital_scope = {
-                show_scope_change = no
-                ROOT = {
-                    show_scope_change = no
-                    spawn_unit = { 
-                        province = PREV
-                        owner = ROOT
-                        troops = { 
-                    		light_cavalry = { 1500 1500 }
-                        }
-                        earmark = ukko_warriors
-                        attrition = 0.5
-                        disband_on_peace = yes
-                    }
-                }
-            }
-        ai_chance = {    
-            factor = 30
-        }
-    }
-    option = { #Changed my mind
-        name = EVTOPTDHF25001
-       hidden_tooltip = {
-            remove_character_modifier = lodge_summon_warriors_cooldown
-           	if = { 
-           		limit = { society_member_of = warrior_lodge_finnish } #Safety check for sneaky players.
-           		add_society_currency_medium_effect = yes 
-           	}
-        }
-        ai_chance = {    
-            factor = 0
-        }
-    }
-}
+#character_event = {
+#	id = HF.25001
+#	desc = EVTDESCHF25001
+#    picture = GFX_evt_mysterious_forest
+#    border = GFX_event_normal_frame_war
+#    
+#    has_dlc = "Holy Fury"
+#
+#    is_triggered_only = yes
+#    
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = warriors_of_ukko_01 } 
+#			33 = { sound_effect = warriors_of_ukko_02 } 
+#			33 = { sound_effect = warriors_of_ukko_03 } 
+#		}
+#	}
+#    option = {
+#        name = EVTOPTAHF25001
+#            capital_scope = {
+#                show_scope_change = no
+#                ROOT = {
+#                    show_scope_change = no
+#                    spawn_unit = { 
+#                        province = PREV
+#                        owner = ROOT
+#                        troops = { 
+#                    		light_infantry = { 1000 1000 }
+#                    		heavy_infantry = { 500 500 }
+#                        }
+#                        earmark = ukko_warriors
+#                        attrition = 0.5
+#                        disband_on_peace = yes
+#                    }
+#                }
+#            }
+#        ai_chance = {    
+#            factor = 30
+#        }
+#    }
+#    option = {
+#        name = EVTOPTBHF25001
+#            capital_scope = {
+#                show_scope_change = no
+#                ROOT = {
+#                    show_scope_change = no
+#                    spawn_unit = { 
+#                        province = PREV
+#                        owner = ROOT
+#                        troops = { 
+#                            pikemen = { 1000 1000 }
+#                        }
+#                        earmark = ukko_warriors
+#                        attrition = 0.5
+#                        disband_on_peace = yes 
+#                    }
+#                }
+#            }
+#        ai_chance = {    
+#            factor = 30
+#        }
+#    }
+#    option = {
+#        name = EVTOPTCHF25001
+#            capital_scope = {
+#                show_scope_change = no
+#                ROOT = {
+#                    show_scope_change = no
+#                    spawn_unit = { 
+#                        province = PREV
+#                        owner = ROOT
+#                        troops = { 
+#                    		light_cavalry = { 1500 1500 }
+#                        }
+#                        earmark = ukko_warriors
+#                        attrition = 0.5
+#                        disband_on_peace = yes
+#                    }
+#                }
+#            }
+#        ai_chance = {    
+#            factor = 30
+#        }
+#    }
+#    option = { #Changed my mind
+#        name = EVTOPTDHF25001
+#       hidden_tooltip = {
+#            remove_character_modifier = lodge_summon_warriors_cooldown
+#           	if = { 
+#           		limit = { society_member_of = warrior_lodge_finnish } #Safety check for sneaky players.
+#           		add_society_currency_medium_effect = yes 
+#           	}
+#        }
+#        ai_chance = {    
+#            factor = 0
+#        }
+#    }
+#}
 
 #Only when war ends, remove the modifier that prevents you from taking the decision again.
 character_event = {
@@ -522,193 +522,193 @@ character_event = {
 #############################################
 ## Power 2: Call of the Steppe
 #Call of the Steppe - Nomad version.
-character_event = {
-	id = HF.25004
-	desc = EVTDESCHF25004
-	picture = GFX_evt_horsemanship
-	border = GFX_event_normal_frame_war
-	
-	immediate = { 
-		random_list = { 
-			33 = {  sound_effect = call_of_the_steppe_01 } 
-			33 = {  sound_effect = call_of_the_steppe_02 } 
-			33 = {  sound_effect = call_of_the_steppe_03 } 
-		}
-	}
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25004
-		population = 1000
-		manpower = 500
-	}
-}
+#character_event = {
+#	id = HF.25004
+#	desc = EVTDESCHF25004
+#	picture = GFX_evt_horsemanship
+#	border = GFX_event_normal_frame_war
+#	
+#	immediate = { 
+#		random_list = { 
+#			33 = {  sound_effect = call_of_the_steppe_01 } 
+#			33 = {  sound_effect = call_of_the_steppe_02 } 
+#			33 = {  sound_effect = call_of_the_steppe_03 } 
+#		}
+#	}
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25004
+#		population = 1000
+#		manpower = 500
+#	}
+#}
 #Call of the Steppe - Non-nomad version.
-character_event = {
-	id = HF.25005
-	desc = EVTDESCHF25005
-	picture = GFX_evt_mongols
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25005
-		add_character_modifier = { 
-			modifier = lodge_call_of_the_steppe_boost
-			duration = 3650
-		}
-		clr_character_flag = flag_using_call_of_the_steppes
-	}
-}
+#character_event = {
+#	id = HF.25005
+#	desc = EVTDESCHF25005
+#	picture = GFX_evt_mongols
+#	border = GFX_event_normal_frame_war
+#	
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25005
+#		add_character_modifier = { 
+#			modifier = lodge_call_of_the_steppe_boost
+#			duration = 3650
+#		}
+#		clr_character_flag = flag_using_call_of_the_steppes
+#	}
+#}
 
 #Zun Battle trance.
-character_event = {
-	id = HF.25006
-	desc = EVTDESCHF25006
-	picture = GFX_evt_sun_temple
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { trigger = { is_female = no } sound_effect = battle_trance_male_01 } 
-			33 = { trigger = { is_female = no } sound_effect = battle_trance_male_02 } 
-			33 = { trigger = { is_female = no } sound_effect = battle_trance_male_03 } 
-			33 = { trigger = { is_female = yes } sound_effect = battle_trance_female_01 } 
-			33 = { trigger = { is_female = yes } sound_effect = battle_trance_female_02 } 
-			33 = { trigger = { is_female = yes } sound_effect = battle_trance_female_03 } 
-		}
-	}
-	option = { 
-		name = EVTOPTAHF25006
-		add_character_modifier = { 
-			modifier = lodge_zun_battle_trance_1
-			duration = 2655
-		}
-        ai_chance = {    
-            factor = 30
-        }
-	}
-	option = { 
-		name = EVTOPTBHF25006
-		add_character_modifier = { 
-			modifier = lodge_zun_battle_trance_2
-			duration = 2655
-		}
-        ai_chance = {    
-            factor = 30
-        }
-	}
-	option = { 
-		name = EVTOPTCHF25006
-		add_character_modifier = { 
-			modifier = lodge_zun_battle_trance_3
-			duration = 2655
-		}
-        ai_chance = {    
-            factor = 30
-        }
-	}
-	option = { #Changed my mind.
-		name = EVTOPTDHF25006
-       hidden_tooltip = {
-           	if = { 
-           		limit = { society_member_of = warrior_lodge_zun } #Safety check for sneaky players.
-           		add_society_currency_minor_effect = yes 
-           	}
-        }
-        ai_chance = {    
-            factor = 0
-        }
-	}
-	after = { 
-		clr_character_flag = flag_picking_battle_trance
-	}
-}
+#character_event = {
+#	id = HF.25006
+#	desc = EVTDESCHF25006
+#	picture = GFX_evt_sun_temple
+#	border = GFX_event_normal_frame_war
+#	
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { trigger = { is_female = no } sound_effect = battle_trance_male_01 } 
+#			33 = { trigger = { is_female = no } sound_effect = battle_trance_male_02 } 
+#			33 = { trigger = { is_female = no } sound_effect = battle_trance_male_03 } 
+#			33 = { trigger = { is_female = yes } sound_effect = battle_trance_female_01 } 
+#			33 = { trigger = { is_female = yes } sound_effect = battle_trance_female_02 } 
+#			33 = { trigger = { is_female = yes } sound_effect = battle_trance_female_03 } 
+#		}
+#	}
+#	option = { 
+#		name = EVTOPTAHF25006
+#		add_character_modifier = { 
+#			modifier = lodge_zun_battle_trance_1
+#			duration = 2655
+#		}
+#        ai_chance = {    
+#            factor = 30
+#        }
+#	}
+#	option = { 
+#		name = EVTOPTBHF25006
+#		add_character_modifier = { 
+#			modifier = lodge_zun_battle_trance_2
+#			duration = 2655
+#		}
+#        ai_chance = {    
+#            factor = 30
+#        }
+#	}
+#	option = { 
+#		name = EVTOPTCHF25006
+#		add_character_modifier = { 
+#			modifier = lodge_zun_battle_trance_3
+#			duration = 2655
+#		}
+#        ai_chance = {    
+#            factor = 30
+#        }
+#	}
+#	option = { #Changed my mind.
+#		name = EVTOPTDHF25006
+#       hidden_tooltip = {
+#           	if = { 
+#           		limit = { society_member_of = warrior_lodge_zun } #Safety check for sneaky players.
+#           		add_society_currency_minor_effect = yes 
+#           	}
+#        }
+#        ai_chance = {    
+#            factor = 0
+#        }
+#	}
+#	after = { 
+#		clr_character_flag = flag_picking_battle_trance
+#	}
+#}
 
 #############################################
 ## Power 2: Slavic Stand Together.
 #Hidden character ping.
-character_event = {
-	id = HF.25007
-	hide_window = yes
-	
-	is_triggered_only = yes
-	immediate = { 
-		random_society_member = { 
-			limit = {
-				is_ruler = no
-				religion = ROOT
-				is_unimportant_trigger = yes
-				NOR = { 
-					host = { character = ROOT } 
-					any_spouse = { is_ruler = yes }
-					prisoner = yes
-					any_close_relative = { ai = no } 
-					host = { ai = no } 
-					is_heir = ROOT 
-					trait = incapable
-					is_inaccessible_trigger = yes
-					in_command = yes
-					has_minor_title = title_commander
-					has_character_flag = no_court_invites
-				}
-			}
-			preferred_limit = {
-				trait = brave
-				trait = zealous
-				trait = strong
-				trait = brilliant_strategist
-				dynasty = ROOT
-			}
-			preferred_limit = {
-				trait = brave
-				trait = zealous
-				trait = strong
-				trait = brilliant_strategist
-			}
-			preferred_limit = {
-				trait = brave
-				trait = zealous
-				trait = brilliant_strategist
-				dynasty = ROOT
-			}
-			preferred_limit = {
-				trait = brave
-				trait = zealous
-				trait = brilliant_strategist
-			}
-			preferred_limit = {
-				trait = brave
-				trait = zealous
-				trait = skilled_tactician
-				dynasty = ROOT
-			}
-			preferred_limit = {
-				trait = brave
-				trait = zealous
-				trait = skilled_tactician
-			}
-			preferred_limit = {
-				trait = brave
-				trait = zealous
-				dynasty = ROOT
-			}
-			preferred_limit = {
-				trait = brave
-				trait = zealous
-			}
-			preferred_limit = {
-				trait = brave
-			}
-			save_event_target_as = scoped_slavic_savior
-		}
-		character_event = { id = HF.25008 }
-	}
-}
+#character_event = {
+#	id = HF.25007
+#	hide_window = yes
+#	
+#	is_triggered_only = yes
+#	immediate = { 
+#		random_society_member = { 
+#			limit = {
+#				is_ruler = no
+#				religion = ROOT
+#				is_unimportant_trigger = yes
+#				NOR = { 
+#					host = { character = ROOT } 
+#					any_spouse = { is_ruler = yes }
+#					prisoner = yes
+#					any_close_relative = { ai = no } 
+#					host = { ai = no } 
+#					is_heir = ROOT 
+#					trait = incapable
+#					is_inaccessible_trigger = yes
+#					in_command = yes
+#					has_minor_title = title_commander
+#					has_character_flag = no_court_invites
+#				}
+#			}
+#			preferred_limit = {
+#				trait = brave
+#				trait = zealous
+#				trait = strong
+#				trait = brilliant_strategist
+#				dynasty = ROOT
+#			}
+#			preferred_limit = {
+#				trait = brave
+#				trait = zealous
+#				trait = strong
+#				trait = brilliant_strategist
+#			}
+#			preferred_limit = {
+#				trait = brave
+#				trait = zealous
+#				trait = brilliant_strategist
+#				dynasty = ROOT
+#			}
+#			preferred_limit = {
+#				trait = brave
+#				trait = zealous
+#				trait = brilliant_strategist
+#			}
+#			preferred_limit = {
+#				trait = brave
+#				trait = zealous
+#				trait = skilled_tactician
+#				dynasty = ROOT
+#			}
+#			preferred_limit = {
+#				trait = brave
+#				trait = zealous
+#				trait = skilled_tactician
+#			}
+#			preferred_limit = {
+#				trait = brave
+#				trait = zealous
+#				dynasty = ROOT
+#			}
+#			preferred_limit = {
+#				trait = brave
+#				trait = zealous
+#			}
+#			preferred_limit = {
+#				trait = brave
+#			}
+#			save_event_target_as = scoped_slavic_savior
+#		}
+#		character_event = { id = HF.25008 }
+#	}
+#}
 
 #Slavic Stand Together. Spawn troops and move character.
 character_event = {
@@ -1111,428 +1111,428 @@ character_event = {
 ####################################################################
 
 #On_start: setup event for scarred traits visuals and variable.
-character_event = {
-	id = HF.25020
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = { 
-		is_save_game = no
-		OR = { 
-			trait = scarred
-			trait = scarred_mid
-			trait = scarred_high
-		}
-	}
-	immediate = {
-		add_scarred_start_effect = yes
-	}
-}
-
-#War Sacrifice power.
-character_event = {
-	id = HF.25021
-	desc = {
-		trigger = {
-			religion_group = pagan_group
-		}
-		text = EVTDESCAHF25021
-	}
-	desc = {
-		trigger = { 
-			NOT = {
-				religion_group = pagan_group
-			}
-		}
-		text = EVTDESCBHF25021
-	}
-	picture = GFX_evt_religious_exultation
-	border = GFX_event_normal_frame_religion
-	hide_new = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			random_dynasty_member = {
-				limit = {
-					is_ruler = no
-					is_adult = yes
-					host = { character = ROOT }
-					NOT = { is_heir = ROOT }
-				}
-				save_event_target_as = scoped_war_sacrifice
-			}
-			random_courtier = { 
-				limit = {
-					NOT = { dynasty = ROOT }
-					is_ruler = no 
-					is_adult = yes 
-					is_alive = yes 
-				} 
-				preferred_limit = {
-					is_unimportant_trigger = yes
-				}
-				save_event_target_as = sacrificed_courtier
-			}
-			clr_character_flag = flag_painted_by_norse #Safety cleanup
-			clr_character_flag = flag_painted_by_tengri
-			clr_character_flag = flag_painted_by_baltic
-			clr_character_flag = flag_painted_by_finnish
-			clr_character_flag = flag_painted_by_slavic
-			clr_character_flag = flag_painted_by_west_african
-			clr_character_flag = flag_painted_by_zun
-			clr_character_flag = flag_painted_by_bon
-			clr_character_flag = flag_painted_by_hellenic
-			#Bon and Hellenics would not paint their faces. They only get the blood splatter effect when sacrificing. Flags only used for localization.
-#			if = {
-#				limit = { 
-#					society_member_of = warrior_lodge_norse		#Tie to flag to avoid potential multiplayer delay issues.
-#				}
-#				set_character_flag = flag_painted_by_norse
-#			}
-#			if = {
-#				limit = { 
-#					society_member_of = warrior_lodge_tengri
-#				}
-#				set_character_flag = flag_painted_by_tengri
-#			}
-#			if = {
-#				limit = { 
-#					society_member_of = warrior_lodge_baltic
-#				}
-#				set_character_flag = flag_painted_by_baltic
-#			}
-#			if = {
-#				limit = { 
-#					society_member_of = warrior_lodge_finnish
-#				}
-#				set_character_flag = flag_painted_by_finnish
-#			}
-#			if = {
-#				limit = { 
-#					society_member_of = warrior_lodge_slavic
-#				}
-#				set_character_flag = flag_painted_by_slavic
-#			}
-#			if = {
-#				limit = { 
-#					society_member_of = warrior_lodge_west_african
-#				}
-#				set_character_flag = flag_painted_by_west_african
-#			}
-#			if = {
-#				limit = { 
-#					society_member_of = warrior_lodge_zun
-#				}
-#				set_character_flag = flag_painted_by_zun
-#			}
-#			if = {
-#				limit = { 
-#					society_member_of = warrior_lodge_bon
-#				}
-#				set_character_flag = flag_painted_by_bon
-#			}
-#			if = {
-#				limit = { 
-#					society_member_of = warrior_lodge_hellenic
-#				}
-#				set_character_flag = flag_painted_by_hellenic
-#			}
-		}
-	}
-	option = { #Sacrifice family member
-		name = EVTOPTAHF25021
-		trigger = { 
-			event_target:scoped_war_sacrifice = { is_alive = yes } 
-			OR = { 
-				religion_group = norsegerman_group
-				religion_group = slavic_group
-				religion_group = baltic_group
-				religion_group = tengri_group
-				religion_group = finnish_group
-				religion_group = serer_group
-				religion_group = african_pagan_group
-				has_religion_feature = religion_ritual_sacrifice
-			} 
-		}
-		add_character_modifier = { 
-			modifier = lodge_war_sacrifice_4
-			years = 5 
-		}
-		add_blood_splatter_effect = yes
-		event_target:scoped_war_sacrifice = { 
-			show_scope_change = no
-			if = {
-				limit = {
-					has_dlc = "Jade Dragon"
-					ROOT = {
-						is_chinese_emperor_trigger = no
-					}
-				}
-				if = {
-					limit = {
-						is_chinese_emperor_trigger = yes
-					}
-					ROOT = {
-						detract_grace_super_huge_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_massive_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_major_effect = yes
-					}
-				}
-			}
-			save_event_target_as = kinslayer_target
-			death = { 
-				death_reason = death_execution_aztec_sacrifice 
-				killer = ROOT
-			} 
-		} 
-		add_kinslayer_trait_effect = yes
-		pacifists_lose_piety_effect = yes
-		hidden_tooltip = { character_event = { id = HF.25022 } } 
-		hidden_tooltip = {
-			clr_character_flag = flag_picking_war_sacrifice
-			add_character_modifier = { 
-				modifier = lodge_war_sacrifice_cooldown
-				years = 10
-				hidden = yes
-			}
-			event_target:scoped_war_sacrifice = {
-				mother = {
-					opinion = {
-						modifier = opinion_killed_close_kin
-						who = ROOT
-					}
-				}
-				father = {
-					opinion = {
-						modifier = opinion_killed_close_kin
-						who = ROOT
-					}
-				}
-				spouse = {
-					opinion = {
-						modifier = opinion_spouse_slayer
-						who = ROOT
-					}
-				}
-				any_child = {
-					opinion = {
-						modifier = opinion_killed_close_kin
-						who = ROOT
-					}
-				}
-			}
-		}
-	}
-	option = { #Sacrifice servant
-		name = EVTOPTBHF25021
-		trigger = { 
-			any_courtier = {
-				NOT = { dynasty = ROOT }
-				is_ruler = no 
-				is_adult = yes 
-				is_alive = yes 
-			} 
-			OR = { 
-				religion_group = norsegerman_group
-				religion_group = slavic_group
-				religion_group = baltic_group
-				religion_group = tengri_group
-				religion_group = finnish_group
-				religion_group = serer_group
-				religion_group = african_pagan_group
-				has_religion_feature = religion_ritual_sacrifice
-			} 
-		}
-		add_character_modifier = { 
-			modifier = lodge_war_sacrifice_3
-			years = 5 
-		}
-		event_target:sacrificed_courtier = { 
-			show_scope_change = no
-			if = {
-				limit = {
-					has_dlc = "Jade Dragon"
-					ROOT = {
-						is_chinese_emperor_trigger = no
-					}
-				}
-				if = {
-					limit = {
-						is_chinese_emperor_trigger = yes
-					}
-					ROOT = {
-						detract_grace_super_huge_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_massive_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_major_effect = yes
-					}
-				}
-			}
-			death = { 
-				death_reason = death_execution_aztec_sacrifice 
-				killer = ROOT
-			} 
-		} 
-		custom_tooltip = { 
-			text = tooltip_EVTOPTBHF25021
-			hidden_tooltip = { 
-				any_courtier_or_vassal = {
-					limit = {
-						NOR = {
-							trait = impaler
-							trait = cruel
-							#is_member_of_any_warrior_lodge_trigger = yes
-						} 
-					}
-					opinion = {
-						who = ROOT
-						modifier = opinion_savage_butcher
-						years = 5
-					}
-				}
-				event_target:scoped_war_sacrifice = {
-					mother = {
-						opinion = {
-							modifier = opinion_killed_close_kin
-							who = ROOT
-						}
-					}
-					father = {
-						opinion = {
-							modifier = opinion_killed_close_kin
-							who = ROOT
-						}
-					}
-					spouse = {
-						opinion = {
-							modifier = opinion_spouse_slayer
-							who = ROOT
-						}
-					}
-					any_child = {
-						opinion = {
-							modifier = opinion_killed_close_kin
-							who = ROOT
-						}
-					}
-				}
-			} 
-		} 
-		pacifists_lose_piety_effect = yes
-		add_blood_splatter_effect = yes
-		hidden_tooltip = { character_event = { id = HF.25023 } } 
-		hidden_tooltip = {
-			clr_character_flag = flag_picking_war_sacrifice
-			add_character_modifier = { 
-				modifier = lodge_war_sacrifice_cooldown
-				years = 10
-				hidden = yes
-			}
-		}
-	}
-	option = { #Sacrifice livestock
-		name = {
-			text = EVTOPTCHF25021_A
-			trigger = {
-				is_nomadic = no
-			}
-		}
-		name = {
-			text = EVTOPTCHF25021_B
-			trigger = {
-				is_nomadic = yes
-			}
-		}
-		add_character_modifier = { 
-			modifier = lodge_war_sacrifice_2
-			years = 5 
-		}
-		if = { 
-			limit = { ai = no is_nomadic = no }
-			scaled_wealth = { value = -0.75 min = -50 max = -150 } 
-		}
-		if = { 
-			limit = { ai = no is_nomadic = yes }
-			manpower = -150
-		}
-		if = { 
-			limit = { NOR = { religion_group = pagan_group has_religion_feature = religion_ritual_sacrifice } }
-			tiered_high_piety_negative_effect = yes 
-		}
-		add_blood_splatter_effect = yes
-		hidden_tooltip = { character_event = { id = HF.25024 } } 
-		hidden_tooltip = {
-			clr_character_flag = flag_picking_war_sacrifice
-			add_character_modifier = { 
-				modifier = lodge_war_sacrifice_cooldown
-				years = 10
-				hidden = yes
-			}
-		}
-	}
-	option = { #Never mind.
-		name = EVTOPTEHF25021
-		trigger = { ai = no }
-		add_society_currency_medium_effect = yes
-		clr_character_flag = flag_picking_war_sacrifice
-	}
-#	option = { #Sacrifice wealth
-#		name = EVTOPTDHF25021
-#		if = { 
-#			limit = { ai = no }
-#			scaled_wealth = { value = -0.25 min = -25 max = -75 } 
-#		}
-#		if = { 
-#			limit = { NOT = { religion_group = pagan_group } }
-#			tiered_piety_negative_effect = yes 
-#		}
-#		hidden_tooltip = { character_event = { id = HF.25025 } } 
-#		add_character_modifier = { 
-#			modifier = lodge_war_sacrifice_1
-#			years = 5 
+#character_event = {
+#	id = HF.25020
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#
+#	trigger = { 
+#		is_save_game = no
+#		OR = { 
+#			trait = scarred
+#			trait = scarred_mid
+#			trait = scarred_high
 #		}
 #	}
-}
+#	immediate = {
+#		add_scarred_start_effect = yes
+#	}
+#}
+
+#War Sacrifice power.
+#character_event = {
+#	id = HF.25021
+#	desc = {
+#		trigger = {
+#			religion_group = pagan_group
+#		}
+#		text = EVTDESCAHF25021
+#	}
+#	desc = {
+#		trigger = { 
+#			NOT = {
+#				religion_group = pagan_group
+#			}
+#		}
+#		text = EVTDESCBHF25021
+#	}
+#	picture = GFX_evt_religious_exultation
+#	border = GFX_event_normal_frame_religion
+#	hide_new = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		hidden_effect = {
+#			random_dynasty_member = {
+#				limit = {
+#					is_ruler = no
+#					is_adult = yes
+#					host = { character = ROOT }
+#					NOT = { is_heir = ROOT }
+#				}
+#				save_event_target_as = scoped_war_sacrifice
+#			}
+#			random_courtier = { 
+#				limit = {
+#					NOT = { dynasty = ROOT }
+#					is_ruler = no 
+#					is_adult = yes 
+#					is_alive = yes 
+#				} 
+#				preferred_limit = {
+#					is_unimportant_trigger = yes
+#				}
+#				save_event_target_as = sacrificed_courtier
+#			}
+#			clr_character_flag = flag_painted_by_norse #Safety cleanup
+#			clr_character_flag = flag_painted_by_tengri
+#			clr_character_flag = flag_painted_by_baltic
+#			clr_character_flag = flag_painted_by_finnish
+#			clr_character_flag = flag_painted_by_slavic
+#			clr_character_flag = flag_painted_by_west_african
+#			clr_character_flag = flag_painted_by_zun
+#			clr_character_flag = flag_painted_by_bon
+#			clr_character_flag = flag_painted_by_hellenic
+#			#Bon and Hellenics would not paint their faces. They only get the blood splatter effect when sacrificing. Flags only used for localization.
+##			if = {
+##				limit = { 
+##					society_member_of = warrior_lodge_norse		#Tie to flag to avoid potential multiplayer delay issues.
+##				}
+##				set_character_flag = flag_painted_by_norse
+##			}
+##			if = {
+##				limit = { 
+##					society_member_of = warrior_lodge_tengri
+##				}
+##				set_character_flag = flag_painted_by_tengri
+##			}
+##			if = {
+##				limit = { 
+##					society_member_of = warrior_lodge_baltic
+##				}
+##				set_character_flag = flag_painted_by_baltic
+##			}
+##			if = {
+##				limit = { 
+##					society_member_of = warrior_lodge_finnish
+##				}
+##				set_character_flag = flag_painted_by_finnish
+##			}
+##			if = {
+##				limit = { 
+##					society_member_of = warrior_lodge_slavic
+##				}
+##				set_character_flag = flag_painted_by_slavic
+##			}
+##			if = {
+##				limit = { 
+##					society_member_of = warrior_lodge_west_african
+##				}
+##				set_character_flag = flag_painted_by_west_african
+##			}
+##			if = {
+##				limit = { 
+##					society_member_of = warrior_lodge_zun
+##				}
+##				set_character_flag = flag_painted_by_zun
+##			}
+##			if = {
+##				limit = { 
+##					society_member_of = warrior_lodge_bon
+##				}
+##				set_character_flag = flag_painted_by_bon
+##			}
+##			if = {
+##				limit = { 
+##					society_member_of = warrior_lodge_hellenic
+##				}
+##				set_character_flag = flag_painted_by_hellenic
+##			}
+#		}
+#	}
+#	option = { #Sacrifice family member
+#		name = EVTOPTAHF25021
+#		trigger = { 
+#			event_target:scoped_war_sacrifice = { is_alive = yes } 
+#			OR = { 
+#				religion_group = norsegerman_group
+#				religion_group = slavic_group
+#				religion_group = baltic_group
+#				religion_group = tengri_group
+#				religion_group = finnish_group
+#				religion_group = serer_group
+#				religion_group = african_pagan_group
+#				has_religion_feature = religion_ritual_sacrifice
+#			} 
+#		}
+#		add_character_modifier = { 
+#			modifier = lodge_war_sacrifice_4
+#			years = 5 
+#		}
+#		add_blood_splatter_effect = yes
+#		event_target:scoped_war_sacrifice = { 
+#			show_scope_change = no
+#			if = {
+#				limit = {
+#					has_dlc = "Jade Dragon"
+#					ROOT = {
+#						is_chinese_emperor_trigger = no
+#					}
+#				}
+#				if = {
+#					limit = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#					ROOT = {
+#						detract_grace_super_huge_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_massive_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_major_effect = yes
+#					}
+#				}
+#			}
+#			save_event_target_as = kinslayer_target
+#			death = { 
+#				death_reason = death_execution_aztec_sacrifice 
+#				killer = ROOT
+#			} 
+#		} 
+#		add_kinslayer_trait_effect = yes
+#		pacifists_lose_piety_effect = yes
+#		hidden_tooltip = { character_event = { id = HF.25022 } } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_picking_war_sacrifice
+#			add_character_modifier = { 
+#				modifier = lodge_war_sacrifice_cooldown
+#				years = 10
+#				hidden = yes
+#			}
+#			event_target:scoped_war_sacrifice = {
+#				mother = {
+#					opinion = {
+#						modifier = opinion_killed_close_kin
+#						who = ROOT
+#					}
+#				}
+#				father = {
+#					opinion = {
+#						modifier = opinion_killed_close_kin
+#						who = ROOT
+#					}
+#				}
+#				spouse = {
+#					opinion = {
+#						modifier = opinion_spouse_slayer
+#						who = ROOT
+#					}
+#				}
+#				any_child = {
+#					opinion = {
+#						modifier = opinion_killed_close_kin
+#						who = ROOT
+#					}
+#				}
+#			}
+#		}
+#	}
+#	option = { #Sacrifice servant
+#		name = EVTOPTBHF25021
+#		trigger = { 
+#			any_courtier = {
+#				NOT = { dynasty = ROOT }
+#				is_ruler = no 
+#				is_adult = yes 
+#				is_alive = yes 
+#			} 
+#			OR = { 
+#				religion_group = norsegerman_group
+#				religion_group = slavic_group
+#				religion_group = baltic_group
+#				religion_group = tengri_group
+#				religion_group = finnish_group
+#				religion_group = serer_group
+#				religion_group = african_pagan_group
+#				has_religion_feature = religion_ritual_sacrifice
+#			} 
+#		}
+#		add_character_modifier = { 
+#			modifier = lodge_war_sacrifice_3
+#			years = 5 
+#		}
+#		event_target:sacrificed_courtier = { 
+#			show_scope_change = no
+#			if = {
+#				limit = {
+#					has_dlc = "Jade Dragon"
+#					ROOT = {
+#						is_chinese_emperor_trigger = no
+#					}
+#				}
+#				if = {
+#					limit = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#					ROOT = {
+#						detract_grace_super_huge_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_massive_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_major_effect = yes
+#					}
+#				}
+#			}
+#			death = { 
+#				death_reason = death_execution_aztec_sacrifice 
+#				killer = ROOT
+#			} 
+#		} 
+#		custom_tooltip = { 
+#			text = tooltip_EVTOPTBHF25021
+#			hidden_tooltip = { 
+#				any_courtier_or_vassal = {
+#					limit = {
+#						NOR = {
+#							trait = impaler
+#							trait = cruel
+#							#is_member_of_any_warrior_lodge_trigger = yes
+#						} 
+#					}
+#					opinion = {
+#						who = ROOT
+#						modifier = opinion_savage_butcher
+#						years = 5
+#					}
+#				}
+#				event_target:scoped_war_sacrifice = {
+#					mother = {
+#						opinion = {
+#							modifier = opinion_killed_close_kin
+#							who = ROOT
+#						}
+#					}
+#					father = {
+#						opinion = {
+#							modifier = opinion_killed_close_kin
+#							who = ROOT
+#						}
+#					}
+#					spouse = {
+#						opinion = {
+#							modifier = opinion_spouse_slayer
+#							who = ROOT
+#						}
+#					}
+#					any_child = {
+#						opinion = {
+#							modifier = opinion_killed_close_kin
+#							who = ROOT
+#						}
+#					}
+#				}
+#			} 
+#		} 
+#		pacifists_lose_piety_effect = yes
+#		add_blood_splatter_effect = yes
+#		hidden_tooltip = { character_event = { id = HF.25023 } } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_picking_war_sacrifice
+#			add_character_modifier = { 
+#				modifier = lodge_war_sacrifice_cooldown
+#				years = 10
+#				hidden = yes
+#			}
+#		}
+#	}
+#	option = { #Sacrifice livestock
+#		name = {
+#			text = EVTOPTCHF25021_A
+#			trigger = {
+#				is_nomadic = no
+#			}
+#		}
+#		name = {
+#			text = EVTOPTCHF25021_B
+#			trigger = {
+#				is_nomadic = yes
+#			}
+#		}
+#		add_character_modifier = { 
+#			modifier = lodge_war_sacrifice_2
+#			years = 5 
+#		}
+#		if = { 
+#			limit = { ai = no is_nomadic = no }
+#			scaled_wealth = { value = -0.75 min = -50 max = -150 } 
+#		}
+#		if = { 
+#			limit = { ai = no is_nomadic = yes }
+#			manpower = -150
+#		}
+#		if = { 
+#			limit = { NOR = { religion_group = pagan_group has_religion_feature = religion_ritual_sacrifice } }
+#			tiered_high_piety_negative_effect = yes 
+#		}
+#		add_blood_splatter_effect = yes
+#		hidden_tooltip = { character_event = { id = HF.25024 } } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_picking_war_sacrifice
+#			add_character_modifier = { 
+#				modifier = lodge_war_sacrifice_cooldown
+#				years = 10
+#				hidden = yes
+#			}
+#		}
+#	}
+#	option = { #Never mind.
+#		name = EVTOPTEHF25021
+#		trigger = { ai = no }
+#		add_society_currency_medium_effect = yes
+#		clr_character_flag = flag_picking_war_sacrifice
+#	}
+##	option = { #Sacrifice wealth
+##		name = EVTOPTDHF25021
+##		if = { 
+##			limit = { ai = no }
+##			scaled_wealth = { value = -0.25 min = -25 max = -75 } 
+##		}
+##		if = { 
+##			limit = { NOT = { religion_group = pagan_group } }
+##			tiered_piety_negative_effect = yes 
+##		}
+##		hidden_tooltip = { character_event = { id = HF.25025 } } 
+##		add_character_modifier = { 
+##			modifier = lodge_war_sacrifice_1
+##			years = 5 
+##		}
+##	}
+#}
 
 #Sacrificed relative to the gods.
 character_event = {
@@ -2497,68 +2497,68 @@ character_event = {
 ##################################################################
 #Hellenic Warrior Lodge has been recreated.
 #Players notified.
-narrative_event = {
-	id = HF.25026
-	title = EVTTITLEHF25026
-	desc = EVTDESCHF25026
-	hide_from = yes
-	hide_new = yes
-
-	picture = GFX_evt_hippodrome_byzantine
-	
-	only_playable = yes
-	hide_from = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTAHF25026
-		trigger = {
-			OR = { 
-				society_member_of = warrior_lodge_hellenic 
-				religion_group = indohelen_group
-				religion_group = graecoroman_group
-				can_join_society = warrior_lodge_hellenic
-			}
-		}
-		if = {
-			limit = { 
-				NOT = { society_member_of = warrior_lodge_hellenic }
-				can_join_society = warrior_lodge_hellenic
-			}
-			join_society = warrior_lodge_hellenic
-		}
-	}
-	option = {
-		name = EVTOPTBHF25026
-		trigger = {
-			NOR = { 
-				society_member_of = warrior_lodge_hellenic 
-				religion_group = indohelen_group
-				religion_group = graecoroman_group
-			}
-		}
-	}
-}
+#narrative_event = {
+#	id = HF.25026
+#	title = EVTTITLEHF25026
+#	desc = EVTDESCHF25026
+#	hide_from = yes
+#	hide_new = yes
+#
+#	picture = GFX_evt_hippodrome_byzantine
+#	
+#	only_playable = yes
+#	hide_from = yes
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTAHF25026
+#		trigger = {
+#			OR = { 
+#				society_member_of = warrior_lodge_hellenic 
+#				religion_group = indohelen_group
+#				religion_group = graecoroman_group
+#				can_join_society = warrior_lodge_hellenic
+#			}
+#		}
+#		if = {
+#			limit = { 
+#				NOT = { society_member_of = warrior_lodge_hellenic }
+#				can_join_society = warrior_lodge_hellenic
+#			}
+#			join_society = warrior_lodge_hellenic
+#		}
+#	}
+#	option = {
+#		name = EVTOPTBHF25026
+#		trigger = {
+#			NOR = { 
+#				society_member_of = warrior_lodge_hellenic 
+#				religion_group = indohelen_group
+#				religion_group = graecoroman_group
+#			}
+#		}
+#	}
+#}
 
 ####################################
 #Call to Glory Power - First notification.
-character_event = {
-	id = HF.25030
-	desc = EVTDESCHF25030
-	picture = GFX_evt_viking_battle_oldgods
-	border = GFX_event_normal_frame_war
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25030
-		custom_tooltip = { 
-			text = TT_EVTOPTAHF25030
-		}
-		hidden_tooltip = { character_event = { id = HF.25031 days = 25 random = 5 } } #Hidden random list.
-	}
-}
+#character_event = {
+#	id = HF.25030
+#	desc = EVTDESCHF25030
+#	picture = GFX_evt_viking_battle_oldgods
+#	border = GFX_event_normal_frame_war
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25030
+#		custom_tooltip = { 
+#			text = TT_EVTOPTAHF25030
+#		}
+#		hidden_tooltip = { character_event = { id = HF.25031 days = 25 random = 5 } } #Hidden random list.
+#	}
+#}
 
 #Main list
 character_event = {
@@ -4126,43 +4126,43 @@ character_event = {
 #####################################################
 #Create Fetish Lodge Power for West-Africans.
 #Decide whether you want a mask or an idol.
-character_event = {
-	id = HF.25040
-	desc = EVTDESCHF25040
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25040
-		trigger = {
-			NOT = { 
-   				any_artifact = {
-   					has_artifact_flag = mask 
-   				}
-			} 
-		}
-		hidden_tooltip = { character_event = { id = HF.25041 days = 35 random = 45 } } #Pick Mask Quality.
-		ai_chance = {
-			factor = 70 #More visible to other players.
-		}
-	}
-	option = { 
-		name = EVTOPTBHF25040
-		trigger = {
-			NOT = { 
-   				any_artifact = {
-   					has_artifact_flag = totem 
-   				}
-			} 
-		}
-		hidden_tooltip = { character_event = { id = HF.25042 days = 65 random = 45 } } #Pick Fetish Type.
-		ai_chance = {
-			factor = 30
-		}
-	}
-}
+#character_event = {
+#	id = HF.25040
+#	desc = EVTDESCHF25040
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25040
+#		trigger = {
+#			NOT = { 
+#   				any_artifact = {
+#   					has_artifact_flag = mask 
+#   				}
+#			} 
+#		}
+#		hidden_tooltip = { character_event = { id = HF.25041 days = 35 random = 45 } } #Pick Mask Quality.
+#		ai_chance = {
+#			factor = 70 #More visible to other players.
+#		}
+#	}
+#	option = { 
+#		name = EVTOPTBHF25040
+#		trigger = {
+#			NOT = { 
+#   				any_artifact = {
+#   					has_artifact_flag = totem 
+#   				}
+#			} 
+#		}
+#		hidden_tooltip = { character_event = { id = HF.25042 days = 65 random = 45 } } #Pick Fetish Type.
+#		ai_chance = {
+#			factor = 30
+#		}
+#	}
+#}
 
 #Mask: Pick quality.
 character_event = {
@@ -4790,155 +4790,155 @@ character_event = {
 
 #Notifications for Baltic Holds Power.
 #tb_defensive_fortifications_1
-character_event = {
-	id = HF.25060
-	desc = EVTDESCHF25060
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
-#tb_defensive_fortifications_2
-character_event = {
-	id = HF.25061
-	desc = EVTDESCHF25061
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
-#tb_defensive_fortifications_3
-character_event = {
-	id = HF.25062
-	desc = EVTDESCHF25062
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
-#tb_defensive_fortifications_4
-character_event = {
-	id = HF.25063
-	desc = EVTDESCHF25063
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
-#tb_hillfort_1
-character_event = {
-	id = HF.25064
-	desc = EVTDESCHF25064
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
-#tb_hillfort_2
-character_event = {
-	id = HF.25065
-	desc = EVTDESCHF25065
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
-#tb_hillfort_3
-character_event = {
-	id = HF.25066
-	desc = EVTDESCHF25066
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
-#tb_hillfort_4
-character_event = {
-	id = HF.25067
-	desc = EVTDESCHF25067
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
-#castle_walls
-character_event = {
-	id = HF.25068
-	desc = EVTDESCHF25068
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
-#castle_fortifications
-character_event = {
-	id = HF.25069
-	desc = EVTDESCHF25069
-	picture = GFX_evt_pagan
-	border = GFX_event_normal_frame_religion
-
-	notification = yes
-
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25060
-	}
-}
+#character_event = {
+#	id = HF.25060
+#	desc = EVTDESCHF25060
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
+##tb_defensive_fortifications_2
+#character_event = {
+#	id = HF.25061
+#	desc = EVTDESCHF25061
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
+##tb_defensive_fortifications_3
+#character_event = {
+#	id = HF.25062
+#	desc = EVTDESCHF25062
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
+##tb_defensive_fortifications_4
+#character_event = {
+#	id = HF.25063
+#	desc = EVTDESCHF25063
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
+##tb_hillfort_1
+#character_event = {
+#	id = HF.25064
+#	desc = EVTDESCHF25064
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
+##tb_hillfort_2
+#character_event = {
+#	id = HF.25065
+#	desc = EVTDESCHF25065
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
+##tb_hillfort_3
+#character_event = {
+#	id = HF.25066
+#	desc = EVTDESCHF25066
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
+##tb_hillfort_4
+#character_event = {
+#	id = HF.25067
+#	desc = EVTDESCHF25067
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
+##castle_walls
+#character_event = {
+#	id = HF.25068
+#	desc = EVTDESCHF25068
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
+##castle_fortifications
+#character_event = {
+#	id = HF.25069
+#	desc = EVTDESCHF25069
+#	picture = GFX_evt_pagan
+#	border = GFX_event_normal_frame_religion
+#
+#	notification = yes
+#
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25060
+#	}
+#}
 #on_startup event giving tattoos to Grand Masters/Veterans of the Warrior Lodges who have them.
 character_event = {
 	id = HF.25070

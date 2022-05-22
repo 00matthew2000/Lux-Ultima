@@ -349,51 +349,51 @@ letter_event = {
 	}
 }
 
-character_event = {
-	id = MNM.78006
-
-	is_triggered_only = yes
-	
-	hide_window = yes
-	
-	immediate = {
-		event_target:chancellor_employer = {
-			letter_event = { id = MNM.78009 }
-		}
-	}
-}
-
-letter_event = {
-	id = MNM.78009
-	desc = 78001.d2
-
-	is_triggered_only = yes
-	
-	notification = yes
-	
-	trigger = {
-		NOT = { 
-			has_character_modifier = popular_ruler
-		}
-	}
-	
-	option = {
-		name = I_SEE
-	}
-	
-	after = {
-		if = {
-			limit = {
-				has_character_flag = statecraft_pop_ruler
-			}
-			add_character_modifier = {
-					name = popular_ruler
-					days = 730
-			}
-			clr_character_flag = statecraft_pop_ruler
-		}
-	}
-}
+#character_event = {
+#	id = MNM.78006
+#
+#	is_triggered_only = yes
+#	
+#	hide_window = yes
+#	
+#	immediate = {
+#		event_target:chancellor_employer = {
+#			letter_event = { id = MNM.78009 }
+#		}
+#	}
+#}
+#
+#letter_event = {
+#	id = MNM.78009
+#	desc = 78001.d2
+#
+#	is_triggered_only = yes
+#	
+#	notification = yes
+#	
+#	trigger = {
+#		NOT = { 
+#			has_character_modifier = popular_ruler
+#		}
+#	}
+#	
+#	option = {
+#		name = I_SEE
+#	}
+#	
+#	after = {
+#		if = {
+#			limit = {
+#				has_character_flag = statecraft_pop_ruler
+#			}
+#			add_character_modifier = {
+#					name = popular_ruler
+#					days = 730
+#			}
+#			clr_character_flag = statecraft_pop_ruler
+#		}
+#	}
+#}
 
 #Inform the target
 letter_event = {

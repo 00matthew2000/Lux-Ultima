@@ -759,96 +759,96 @@ character_event = {
 ########################################################
 # Recruit/Induct your Child into your Warrior Lodge
 ########################################################
-character_event = { #Fires for the adult child (from decision)
-    id = HF.10016
-    desc = EVTDESC_HF_10016
-    picture = GFX_evt_melee
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-    
-    trigger = {
-
-    }
-
-    immediate = {
-        #Find a non-prisoner member
-        any_society_member = {
-            limit = { 
-                society_member_of = event_target:warrior_lodge_to_join
-                prisoner = no
-            }
-            score_value = { #Prioritizes selecting some kind of warrior...
-                value = 10
-                warrior_hero_score = yes
-            }
-            save_event_target_as = hero_character
-        }
-        if = { #If it failed to save anyone...
-            limit = { event_target:hero_character = { always = no } }
-            #Means everyone is somehow in prison so just use the leader anyway...?
-            event_target:warrior_lodge_to_join = { leader = { save_event_target_as = hero_character } }
-        }
-    }
-
-    option = {      
-        name = EVTOPTA_HF_10016 #YES - It's what I always wanted
-        custom_tooltip = { text = EVTOPTA_HF_10016_TT }
-
-        event_target:hero_character = {
-            character_event = { id = HF.10004 } #Send regular "I wanna join"-event to high-ranking member
-        }
-        set_character_flag = accepted_trial
-
-        ai_chance = {
-            factor = 100
-            #warrior_recruit_score = yes
-            modifier = {
-                factor = 0
-                is_in_society = yes
-            }
-        }
-        trigger = { # Kids only say yes if they not already a secret member of some kind...
-            is_devil_worshiper_trigger = no
-            #NOT = { society_member_of = the_assassins }
-        }
-    }
-    option = {      
-        name = EVTOPTB_HF_10016 #NO - I will carve my own path
-        custom_tooltip = { text = EVTOPTB_HF_10016_TT }
-        set_character_flag = refused_trial
-
-        clr_character_flag = society_join_block
-        clr_character_flag = awaiting_initiation_trial
-    
-        hidden_effect = { character_event = { id = HF.10015 days = 365 } }
-
-        ai_chance = {
-            factor = 10
-            modifier = {
-                factor = 1.5
-                trait = stubborn
-            }
-        }
-        trigger = { #Only show this option if parent does *not* have a mission to recruit you (or if you have somehow had time to join a secret society *before* they tried recruiting you)...
-            OR = {
-                NOT = {
-                    event_target:recruiting_parent = {
-                        has_quest = quest_warrior_lodge_recruit
-                        quest_target = { character = ROOT }
-                    }
-                }
-                is_devil_worshiper_trigger = yes
-                #society_member_of = the_assassins
-            }
-        }
-    }
-
-    after = { #Answer is relayed to parent...
-        event_target:recruiting_parent = {
-            character_event = { id = HF.10012 days = 1 }
-        }
-    }
-}
+#character_event = { #Fires for the adult child (from decision)
+#    id = HF.10016
+#    desc = EVTDESC_HF_10016
+#    picture = GFX_evt_melee
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#    
+#    trigger = {
+#
+#    }
+#
+#    immediate = {
+#        #Find a non-prisoner member
+#        any_society_member = {
+#            limit = { 
+#                society_member_of = event_target:warrior_lodge_to_join
+#                prisoner = no
+#            }
+#            score_value = { #Prioritizes selecting some kind of warrior...
+#                value = 10
+#                warrior_hero_score = yes
+#            }
+#            save_event_target_as = hero_character
+#        }
+#        if = { #If it failed to save anyone...
+#            limit = { event_target:hero_character = { always = no } }
+#            #Means everyone is somehow in prison so just use the leader anyway...?
+#            event_target:warrior_lodge_to_join = { leader = { save_event_target_as = hero_character } }
+#        }
+#    }
+#
+#    option = {      
+#        name = EVTOPTA_HF_10016 #YES - It's what I always wanted
+#        custom_tooltip = { text = EVTOPTA_HF_10016_TT }
+#
+#        event_target:hero_character = {
+#            character_event = { id = HF.10004 } #Send regular "I wanna join"-event to high-ranking member
+#        }
+#        set_character_flag = accepted_trial
+#
+#        ai_chance = {
+#            factor = 100
+#            #warrior_recruit_score = yes
+#            modifier = {
+#                factor = 0
+#                is_in_society = yes
+#            }
+#        }
+#        trigger = { # Kids only say yes if they not already a secret member of some kind...
+#            is_devil_worshiper_trigger = no
+#            #NOT = { society_member_of = the_assassins }
+#        }
+#    }
+#    option = {      
+#        name = EVTOPTB_HF_10016 #NO - I will carve my own path
+#        custom_tooltip = { text = EVTOPTB_HF_10016_TT }
+#        set_character_flag = refused_trial
+#
+#        clr_character_flag = society_join_block
+#        clr_character_flag = awaiting_initiation_trial
+#    
+#        hidden_effect = { character_event = { id = HF.10015 days = 365 } }
+#
+#        ai_chance = {
+#            factor = 10
+#            modifier = {
+#                factor = 1.5
+#                trait = stubborn
+#            }
+#        }
+#        trigger = { #Only show this option if parent does *not* have a mission to recruit you (or if you have somehow had time to join a secret society *before* they tried recruiting you)...
+#            OR = {
+#                NOT = {
+#                    event_target:recruiting_parent = {
+#                        has_quest = quest_warrior_lodge_recruit
+#                        quest_target = { character = ROOT }
+#                    }
+#                }
+#                is_devil_worshiper_trigger = yes
+#                #society_member_of = the_assassins
+#            }
+#        }
+#    }
+#
+#    after = { #Answer is relayed to parent...
+#        event_target:recruiting_parent = {
+#            character_event = { id = HF.10012 days = 1 }
+#        }
+#    }
+#}
 
 #Delayed clean up event (for child who turned down recruitment)
 character_event = {
@@ -1192,153 +1192,153 @@ character_event = {
 ########################################################
 
 # START & END: Has either Duelist, Strategist, or Hunter already - Replace the existing trait
-character_event = {
-    id = HF.10020
-    picture = GFX_evt_armory
-    border = GFX_event_normal_frame_war
-    
-    is_triggered_only = yes
-    
-    desc = {
-        trigger = { trait = duelist }
-        picture = GFX_evt_battle
-        text = EVTDESC_HF_10020_duelist
-    }
-    
-    desc = {
-        trigger = { trait = strategist }
-        picture = GFX_evt_battle
-        text = EVTDESC_HF_10020_strategist
-    }
-    
-    desc = {
-        trigger = { trait = hunter }
-        picture = GFX_evt_battle
-        text = EVTDESC_HF_10020_hunter
-    }
-    
-    option = { # Change to Duelist
-        name = EVTOPTA_HF_10020
-        if = { limit = { trait = strategist }
-            remove_trait = strategist
-        }
-        if = { limit = { trait = hunter }
-            remove_trait = hunter
-        }
-        add_trait = duelist
-        trigger = { NOT = { trait = duelist } }
-    }
-    
-    option = { # Change to Strategist
-        name = EVTOPTB_HF_10020
-        if = { limit = { trait = duelist }
-            remove_trait = duelist
-        }
-        if = { limit = { trait = hunter }
-            remove_trait = hunter
-        }
-        add_trait = strategist       
-        trigger = { NOT = { trait = strategist } }
-    }
-    
-    option = { # Change to Hunter
-        name = EVTOPTC_HF_10020
-        if = { limit = { trait = duelist }
-            remove_trait = duelist
-        }
-        if = { limit = { trait = strategist }
-            remove_trait = strategist
-        }
-        add_trait = hunter
-        trigger = { NOT = { trait = hunter } }
-    }
-    
-    option = { # Change your mind
-        name = EVTOPTD_HF_10020      
-        add_society_currency_minor_effect = yes
-    }
-
-    after = { clr_character_flag = choosing_military_aspect }
-}
+#character_event = {
+#    id = HF.10020
+#    picture = GFX_evt_armory
+#    border = GFX_event_normal_frame_war
+#    
+#    is_triggered_only = yes
+#    
+#    desc = {
+#        trigger = { trait = duelist }
+#        picture = GFX_evt_battle
+#        text = EVTDESC_HF_10020_duelist
+#    }
+#    
+#    desc = {
+#        trigger = { trait = strategist }
+#        picture = GFX_evt_battle
+#        text = EVTDESC_HF_10020_strategist
+#    }
+#    
+#    desc = {
+#        trigger = { trait = hunter }
+#        picture = GFX_evt_battle
+#        text = EVTDESC_HF_10020_hunter
+#    }
+#    
+#    option = { # Change to Duelist
+#        name = EVTOPTA_HF_10020
+#        if = { limit = { trait = strategist }
+#            remove_trait = strategist
+#        }
+#        if = { limit = { trait = hunter }
+#            remove_trait = hunter
+#        }
+#        add_trait = duelist
+#        trigger = { NOT = { trait = duelist } }
+#    }
+#    
+#    option = { # Change to Strategist
+#        name = EVTOPTB_HF_10020
+#        if = { limit = { trait = duelist }
+#            remove_trait = duelist
+#        }
+#        if = { limit = { trait = hunter }
+#            remove_trait = hunter
+#        }
+#        add_trait = strategist       
+#        trigger = { NOT = { trait = strategist } }
+#    }
+#    
+#    option = { # Change to Hunter
+#        name = EVTOPTC_HF_10020
+#        if = { limit = { trait = duelist }
+#            remove_trait = duelist
+#        }
+#        if = { limit = { trait = strategist }
+#            remove_trait = strategist
+#        }
+#        add_trait = hunter
+#        trigger = { NOT = { trait = hunter } }
+#    }
+#    
+#    option = { # Change your mind
+#        name = EVTOPTD_HF_10020      
+#        add_society_currency_minor_effect = yes
+#    }
+#
+#    after = { clr_character_flag = choosing_military_aspect }
+#}
 
 
 # START: No Previous Lifestyle trait - Choose one
-character_event = {
-    id = HF.10021
-    desc = EVTDESC_HF_10021
-    picture = GFX_evt_armory
-    border = GFX_event_normal_frame_war
-    
-    is_triggered_only = yes
-    
-    option = { # Choose Dueling
-        name = EVTOPTA_HF_10021
-        show_trait = duelist
-        
-        custom_tooltip = {
-            text = EVTOPTA_HF_10021_tt
-            character_event = { id = HF.10022 days = 20 random = 20 }
-        }
-        
-
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 1.1
-                has_duel_exp_modifier_trigger = yes
-            }
-            modifier = {
-                factor = 3
-                trait = brave
-            }
-        }
-    }
-    
-    option = { # Choose Strategy
-        name = EVTOPTB_HF_10021
-
-        show_trait = strategist
-        
-        custom_tooltip = {
-            text = EVTOPTB_HF_10021_tt
-            character_event = { id = HF.10025 days = 20 random = 20 }
-        }
-        
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 1.5
-                has_education_stewardship_trigger = yes
-            }
-        }
-    }
-    
-    option = { # Choose Hunting
-        name = EVTOPTC_HF_10021
-
-        show_trait = hunter
-        
-        custom_tooltip = {
-            text = EVTOPTC_HF_10021_tt
-            character_event = { id = HF.10030 days = 20 random = 20 }
-        }
-        
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 5
-                trait = falconer
-            }
-        }
-    }
-    
-    option = { # Change your mind
-        name = EVTOPTD_MNM_1900
-        
-        add_society_currency_minor_effect = yes
-        clr_character_flag = choosing_military_aspect
-    }
-}
+#character_event = {
+#    id = HF.10021
+#    desc = EVTDESC_HF_10021
+#    picture = GFX_evt_armory
+#    border = GFX_event_normal_frame_war
+#    
+#    is_triggered_only = yes
+#    
+#    option = { # Choose Dueling
+#        name = EVTOPTA_HF_10021
+#        show_trait = duelist
+#        
+#        custom_tooltip = {
+#            text = EVTOPTA_HF_10021_tt
+#            character_event = { id = HF.10022 days = 20 random = 20 }
+#        }
+#        
+#
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 1.1
+#                has_duel_exp_modifier_trigger = yes
+#            }
+#            modifier = {
+#                factor = 3
+#                trait = brave
+#            }
+#        }
+#    }
+#    
+#    option = { # Choose Strategy
+#        name = EVTOPTB_HF_10021
+#
+#        show_trait = strategist
+#        
+#        custom_tooltip = {
+#            text = EVTOPTB_HF_10021_tt
+#            character_event = { id = HF.10025 days = 20 random = 20 }
+#        }
+#        
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 1.5
+#                has_education_stewardship_trigger = yes
+#            }
+#        }
+#    }
+#    
+#    option = { # Choose Hunting
+#        name = EVTOPTC_HF_10021
+#
+#        show_trait = hunter
+#        
+#        custom_tooltip = {
+#            text = EVTOPTC_HF_10021_tt
+#            character_event = { id = HF.10030 days = 20 random = 20 }
+#        }
+#        
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 5
+#                trait = falconer
+#            }
+#        }
+#    }
+#    
+#    option = { # Change your mind
+#        name = EVTOPTD_MNM_1900
+#        
+#        add_society_currency_minor_effect = yes
+#        clr_character_flag = choosing_military_aspect
+#    }
+#}
 
 # Become a Duelist
 character_event = {
@@ -1811,582 +1811,582 @@ character_event = {
 ########################################################
 # RANK 2 POWER - Warrior Training
 ########################################################
-character_event = {
-    id = HF.10040
-    picture = GFX_evt_teaching_moment
-    border = GFX_event_normal_frame_war
-    has_dlc = "Holy Fury"
-
-    is_triggered_only = yes
-    
-    #desc = {
-    #   text = EVTDESC_HF_10040_A
-    #    trigger = { has_religion_matching_joined_warrior_lodge_trigger = yes }
-    #}
-    desc = {
-        text = EVTDESC_HF_10040_B
-    }
-
-    picture = {
-        picture = GFX_evt_horsemanship
-        trigger = {
-            OR = {
-                society_member_of = warrior_lodge_tengri
-                society_member_of = warrior_lodge_bon
-            }
-        }
-    }
-
-    immediate = {
-        hidden_effect = { select_and_save_fellow_society_member_effect = yes }
-    }
-
-    option = { #Finally!
-        name = EVTOPTA_HF_10040
-
-        if = { #To punish characters of the "wrong" religion...
-            #limit = { has_religion_matching_joined_warrior_lodge_trigger = no }
-            custom_tooltip = { text = EVTOPTA_HF_10040_piety_loss_tt }
-            piety =-150
-        }
-
-        add_warrior_lodge_leader_trait_effect = yes
-        add_legend_progress_trivial_effect = yes
-        clr_character_flag = choosing_warrior_training
-    }
-}
+#character_event = {
+#    id = HF.10040
+#    picture = GFX_evt_teaching_moment
+#    border = GFX_event_normal_frame_war
+#    has_dlc = "Holy Fury"
+#
+#    is_triggered_only = yes
+#    
+#    #desc = {
+#    #   text = EVTDESC_HF_10040_A
+#    #    trigger = { has_religion_matching_joined_warrior_lodge_trigger = yes }
+#    #}
+#    desc = {
+#        text = EVTDESC_HF_10040_B
+#    }
+#
+#    picture = {
+#        picture = GFX_evt_horsemanship
+#        trigger = {
+#            OR = {
+#                society_member_of = warrior_lodge_tengri
+#                society_member_of = warrior_lodge_bon
+#            }
+#        }
+#    }
+#
+#    immediate = {
+#        hidden_effect = { select_and_save_fellow_society_member_effect = yes }
+#    }
+#
+#    option = { #Finally!
+#        name = EVTOPTA_HF_10040
+#
+#        if = { #To punish characters of the "wrong" religion...
+#            #limit = { has_religion_matching_joined_warrior_lodge_trigger = no }
+#            custom_tooltip = { text = EVTOPTA_HF_10040_piety_loss_tt }
+#            piety =-150
+#        }
+#
+#        add_warrior_lodge_leader_trait_effect = yes
+#        add_legend_progress_trivial_effect = yes
+#        clr_character_flag = choosing_warrior_training
+#    }
+#}
 
 ########################################################
 # RANK 1 POWER - Toughness (Bon only)
 ########################################################
-character_event = {
-    id = HF.10055
-    picture = GFX_evt_religious_exultation
-    border = GFX_event_normal_frame_war
-    has_dlc = "Holy Fury"
-
-    is_triggered_only = yes
-    
-    immediate = {
-        hidden_effect = {
-            random_list = { #Triggered text explains what happened exactly...
-                1 = {
-                    trigger = { trait = wounded } # -1 health
-                    set_character_flag = removed_wounded  #least severe, so low prio
-                }
-                100 = {
-                    trigger = { trait = severely_injured } # -2 health
-                    set_character_flag = removed_severely_injured
-                }
-                100 = {
-                    trigger = { trait = maimed } # -2 health
-                    set_character_flag = removed_maimed
-                }
-                1000 = { # -3 health
-                    trigger = { trait = mangled }
-                    set_character_flag = removed_mangled #most severe, so high prio
-                }
-                100 = {
-                    trigger = { trait = infection } # -2 health
-                    set_character_flag = removed_infection
-                }
-            }
-            if = { #So you don't get infected from something that is no longer there...
-                limit = { has_character_flag = pending_infection }
-                clr_character_flag = pending_infection
-            }
-        }
-    }
-
-    desc = {
-        text = EVTDESC_HF_10055_WOUNDED
-        trigger = { has_character_flag = removed_wounded }
-    }
-    desc = {
-        text = EVTDESC_HF_10055_SEVERELY_INJURED
-        trigger = { has_character_flag = removed_severely_injured }
-    }
-    desc = {
-        text = EVTDESC_HF_10055_MAIMED
-        trigger = { has_character_flag = removed_maimed }
-    }
-    desc = {
-        text = EVTDESC_HF_10055_MANGLED
-        trigger = { has_character_flag = removed_mangled }
-    }
-    desc = {
-        text = EVTDESC_HF_10055_INFECTION
-        trigger = { has_character_flag = removed_infection }
-    }
-
-    option = { #I feel better!
-        name = EVTOPTA_HF_10055
-        trigger_switch = {
-            on_trigger = has_character_flag 
-            removed_wounded = { remove_trait = wounded }
-            removed_severely_injured = { remove_trait = severely_injured }
-            removed_maimed = { remove_trait = maimed }
-            removed_mangled = { remove_trait = mangled }
-            removed_infection = { remove_trait = infection }
-        }
-
-        # If you have it, also remove one minor injury-modifier (prioritizing the worst one)...
-        if = {
-            limit = { has_character_modifier = swollen_wrist }
-            remove_character_modifier = swollen_wrist # -6 PCR
-        }
-        else_if = {
-            limit = { has_character_modifier = black_eye }
-            remove_character_modifier = black_eye # -4 PCR
-        }
-        else_if = {
-            limit = { has_character_modifier = swollen_ankle }
-            remove_character_modifier = swollen_ankle # -4 PCR
-        }
-        else_if = {
-            limit = { has_character_modifier = concussion }
-            remove_character_modifier = concussion # -4 PCR
-        }
-        else_if = {
-            limit = { has_character_modifier = cracked_ribs }
-            remove_character_modifier = cracked_ribs # -4 PCR
-        }
-        else_if = {
-            limit = { has_character_modifier = badly_bruised }
-            remove_character_modifier = badly_bruised # -3 PCR
-        }
-        else_if = {
-            limit = { has_character_modifier = sore_muscles }
-            remove_character_modifier = sore_muscles # -3 PCR
-        }
-
-        add_scarred_tiered_effect = yes
-    }
-    option = { #[God] is with me.
-        name = EVTOPTB_HF_10055
-        piety = 5
-        trigger_switch = {
-            on_trigger = has_character_flag 
-            removed_wounded = { remove_trait = wounded }
-            removed_severely_injured = { remove_trait = severely_injured }
-            removed_maimed = { remove_trait = maimed }
-            removed_mangled = { remove_trait = mangled }
-            removed_infection = { remove_trait = infection }
-        }
-        add_trait = zealous
-        add_scarred_tiered_effect = yes
-        trigger = { NOT = { trait = zealous } }
-    }
-    after = {        
-
-        hidden_effect = {
-            random_list = {
-                10 = {
-                    sound_effect = toughness_01
-                }
-                10 = {
-                    sound_effect = toughness_02
-                }
-                10 = {
-                    sound_effect = toughness_03
-                }
-            }
-        }
-
-        clr_character_flag = using_toughness
-        clr_character_flag = removed_wounded
-        clr_character_flag = removed_severely_injured
-        clr_character_flag = removed_maimed
-        clr_character_flag = removed_mangled
-        clr_character_flag = removed_infection
-    }
-}
+#character_event = {
+#    id = HF.10055
+#    picture = GFX_evt_religious_exultation
+#    border = GFX_event_normal_frame_war
+#    has_dlc = "Holy Fury"
+#
+#    is_triggered_only = yes
+#    
+#    immediate = {
+#        hidden_effect = {
+#            random_list = { #Triggered text explains what happened exactly...
+#                1 = {
+#                    trigger = { trait = wounded } # -1 health
+#                    set_character_flag = removed_wounded  #least severe, so low prio
+#                }
+#                100 = {
+#                    trigger = { trait = severely_injured } # -2 health
+#                    set_character_flag = removed_severely_injured
+#                }
+#                100 = {
+#                    trigger = { trait = maimed } # -2 health
+#                    set_character_flag = removed_maimed
+#                }
+#                1000 = { # -3 health
+#                    trigger = { trait = mangled }
+#                    set_character_flag = removed_mangled #most severe, so high prio
+#                }
+#                100 = {
+#                    trigger = { trait = infection } # -2 health
+#                    set_character_flag = removed_infection
+#                }
+#            }
+#            if = { #So you don't get infected from something that is no longer there...
+#                limit = { has_character_flag = pending_infection }
+#                clr_character_flag = pending_infection
+#            }
+#        }
+#    }
+#
+#    desc = {
+#        text = EVTDESC_HF_10055_WOUNDED
+#        trigger = { has_character_flag = removed_wounded }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10055_SEVERELY_INJURED
+#        trigger = { has_character_flag = removed_severely_injured }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10055_MAIMED
+#        trigger = { has_character_flag = removed_maimed }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10055_MANGLED
+#        trigger = { has_character_flag = removed_mangled }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10055_INFECTION
+#        trigger = { has_character_flag = removed_infection }
+#    }
+#
+#    option = { #I feel better!
+#        name = EVTOPTA_HF_10055
+#        trigger_switch = {
+#            on_trigger = has_character_flag 
+#            removed_wounded = { remove_trait = wounded }
+#            removed_severely_injured = { remove_trait = severely_injured }
+#            removed_maimed = { remove_trait = maimed }
+#            removed_mangled = { remove_trait = mangled }
+#            removed_infection = { remove_trait = infection }
+#        }
+#
+#        # If you have it, also remove one minor injury-modifier (prioritizing the worst one)...
+#        if = {
+#            limit = { has_character_modifier = swollen_wrist }
+#            remove_character_modifier = swollen_wrist # -6 PCR
+#        }
+#        else_if = {
+#            limit = { has_character_modifier = black_eye }
+#            remove_character_modifier = black_eye # -4 PCR
+#        }
+#        else_if = {
+#            limit = { has_character_modifier = swollen_ankle }
+#            remove_character_modifier = swollen_ankle # -4 PCR
+#        }
+#        else_if = {
+#            limit = { has_character_modifier = concussion }
+#            remove_character_modifier = concussion # -4 PCR
+#        }
+#        else_if = {
+#            limit = { has_character_modifier = cracked_ribs }
+#            remove_character_modifier = cracked_ribs # -4 PCR
+#        }
+#        else_if = {
+#            limit = { has_character_modifier = badly_bruised }
+#            remove_character_modifier = badly_bruised # -3 PCR
+#        }
+#        else_if = {
+#            limit = { has_character_modifier = sore_muscles }
+#            remove_character_modifier = sore_muscles # -3 PCR
+#        }
+#
+#        add_scarred_tiered_effect = yes
+#    }
+#    option = { #[God] is with me.
+#        name = EVTOPTB_HF_10055
+#        piety = 5
+#        trigger_switch = {
+#            on_trigger = has_character_flag 
+#            removed_wounded = { remove_trait = wounded }
+#            removed_severely_injured = { remove_trait = severely_injured }
+#            removed_maimed = { remove_trait = maimed }
+#            removed_mangled = { remove_trait = mangled }
+#            removed_infection = { remove_trait = infection }
+#        }
+#        add_trait = zealous
+#        add_scarred_tiered_effect = yes
+#        trigger = { NOT = { trait = zealous } }
+#    }
+#    after = {        
+#
+#        hidden_effect = {
+#            random_list = {
+#                10 = {
+#                    sound_effect = toughness_01
+#                }
+#                10 = {
+#                    sound_effect = toughness_02
+#                }
+#                10 = {
+#                    sound_effect = toughness_03
+#                }
+#            }
+#        }
+#
+#        clr_character_flag = using_toughness
+#        clr_character_flag = removed_wounded
+#        clr_character_flag = removed_severely_injured
+#        clr_character_flag = removed_maimed
+#        clr_character_flag = removed_mangled
+#        clr_character_flag = removed_infection
+#    }
+#}
 
 ########################################################
 # RANK 1 POWER - Go Berserk (Norse only)
 ########################################################
-character_event = {
-    id = HF.10056
-    picture = GFX_evt_duel_team
-    border = GFX_event_normal_frame_war
-    has_dlc = "Holy Fury"
-
-    is_triggered_only = yes
-
-    portrait = event_target:kinslayer_target
-    
-    desc = {
-        text = EVTDESC_HF_10056_no_harm_1
-        trigger = {
-            has_character_flag = no_harm
-            event_target:fellow_member = { always = yes }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10056_no_harm_2
-        trigger = {
-            has_character_flag = no_harm
-            event_target:my_beloved = { always = yes }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10056_casualty
-        trigger = {
-            has_character_flag = someone_is_hurt
-        }
-    }
-
-    immediate = {
-        hidden_effect = {
-            #Play SFX...
-            if = {
-                limit = { is_female = yes }
-                random_list = {
-                    10 = {
-                        sound_effect = berserk_female_01
-                    }
-                    10 = {
-                        sound_effect = berserk_female_02
-                    }
-                    10 = {
-                        sound_effect = berserk_female_03
-                    }
-                }
-            }
-            else = {
-                random_list = {
-                    10 = {
-                        sound_effect = berserk_male_01
-                    }
-                    10 = {
-                        sound_effect = berserk_male_02
-                    }
-                    10 = {
-                        sound_effect = berserk_male_03
-                    }
-                }
-            }
-
-            random_list = { # Decide if someone actually gets hurt...
-                2 = {
-                    set_character_flag = someone_is_hurt 
-                }
-                8 = {
-                    set_character_flag = no_harm
-                }
-            }
-            random_list = { #Find someone to get caught in the crossfire...
-                10 = {
-                    any_courtier_or_vassal = { #event_target:my_beloved (might be platonic, children, etc)
-                        limit = {
-                            is_adult = yes
-                            ai = yes
-                            prisoner = no
-                        }
-                        score_value = { #Prioritizes selecting some kind of loved person...
-                            value = 1
-                            beloved_target_selection_score = yes
-                        }
-                        score_value = { #Prioritizes selecting some kind of not great warrior...
-                            value = 1
-                            bad_soldier_outcome_score = yes
-                        }
-                        #Effect:
-                        save_event_target_as = my_beloved
-                    }
-                }
-                10 = {
-                    any_society_member = { #event_target:fellow_member (could be anyone in your society)
-                        limit = { 
-                            society_member_of = warrior_lodge_norse
-                            NOT = { character = ROOT }
-                            ai = yes
-                            prisoner = no
-                        }
-                        score_value = { #Prioritizes selecting some kind of not great warrior...
-                            value = 10
-                            bad_soldier_outcome_score = yes
-                        }
-                        save_event_target_as = fellow_member
-                    }
-                }
-            }
-            if = {
-                limit = { event_target:my_beloved = { always = yes } }
-                event_target:my_beloved = { save_event_target_as = kinslayer_target }
-            }
-            else_if = {
-                limit = { event_target:fellow_member = { always = yes } }
-                event_target:fellow_member = { save_event_target_as = kinslayer_target }
-            }
-        }
-    }
-
-    option = { #I am stronger than ever!
-        name = {
-            text = EVTOPTA_HF_10056_1
-            trigger = { has_character_flag = no_harm }
-        }
-        name = {
-            text = EVTOPTA_HF_10056_2
-            trigger = { has_character_flag = someone_is_hurt }
-        }
-
-        prestige = 15
-        add_trait = berserker
-
-        if = { limit = { has_character_flag = someone_is_hurt }
-            event_target:kinslayer_target = {
-                show_scope_change = no
-                hidden_effect = {
-                    random_list = { #Find someone who cares about the person caught in the fury...
-                        10 = {
-                            trigger = {
-                                any_spouse = { NOT = { character = ROOT } }
-                                is_married = yes
-                            }
-                            random_spouse = {
-                                limit = { NOT = { character = ROOT } }
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                        10 = {
-                            trigger = {
-                                any_friend = { NOT = { character = ROOT } }
-                                any_friend = { always = yes }
-                            }
-                            random_friend = {
-                                limit = { NOT = { character = ROOT } }
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                        10 = {
-                            trigger = {
-                                any_lover = { NOT = { character = ROOT } }
-                                any_lover = { always = yes }
-                            }
-                            random_lover = {
-                                limit = { NOT = { character = ROOT } }
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                        10 = {
-                            trigger = {
-                                current_heir = {
-                                    is_adult = yes
-                                    prisoner = no
-                                    NOT = { character = ROOT }
-                                    is_close_relative = event_target:kinslayer_target
-                                }
-                            }
-                            current_heir = {
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                        10 = {
-                            trigger = {
-                                any_child = {
-                                    is_adult = yes
-                                    NOT = { character = ROOT }
-                                }
-                            }
-                            random_child = {
-                                limit = {
-                                    is_adult = yes
-                                    NOT = { character = ROOT }
-                                }
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                    }
-                    event_target:potential_rival = { character_event = { id = HF.10057 days = 3 } } #Send them a choice to become rival or not...
-                }
-                if = {
-					limit = {
-						has_dlc = "Jade Dragon"
-						ROOT = {
-							is_chinese_emperor_trigger = no
-						}
-					}
-					if = {
-						limit = {
-							is_chinese_emperor_trigger = yes
-						}
-						ROOT = {
-							detract_grace_super_huge_effect = yes
-						}
-					}
-					else_if = {
-						limit = {
-							any_close_relative = {
-								dynasty = PREV
-								is_chinese_emperor_trigger = yes
-							}
-						}
-						ROOT = {
-							detract_grace_massive_effect = yes
-						}
-					}
-					else_if = {
-						limit = {
-							any_dynasty_member = {
-								is_chinese_emperor_trigger = yes
-							}
-						}
-						ROOT = {
-							detract_grace_major_effect = yes
-						}
-					}
-				}
-                death = {
-                    death_reason = death_berserker_rage
-                    killer = ROOT
-                }
-            }
-            add_kinslayer_trait_effect = yes
-        }
-        else = {
-            if = {
-                limit = {
-                    event_target:kinslayer_target = { any_spouse = { character = ROOT } }
-                }
-                reverse_opinion = {
-                    who = event_target:kinslayer_target
-                    modifier = opinion_impressed_infatuated
-                    years = 10
-                }
-            }
-            else = {
-                reverse_opinion = {
-                    who = event_target:kinslayer_target
-                    modifier = opinion_impressed
-                    years = 5
-                }
-            }
-        }
-    }
-    option = { #W-wait, what did I do? [OPTIONAL: "only" maiming the other person]
-        name = EVTOPTB_HF_10056
-        add_trait = berserker
-
-        event_target:kinslayer_target = {
-            show_scope_change = no
-            add_maimed_trait_effect = yes
-            if = {
-				limit = {
-					has_dlc = "Jade Dragon"
-					ROOT = {
-						is_chinese_emperor_trigger = no
-					}
-				}
-				if = {
-					limit = {
-						is_chinese_emperor_trigger = yes
-					}
-					ROOT = {
-						detract_grace_super_huge_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_massive_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_major_effect = yes
-					}
-				}
-			}
-        }
-
-        if = {
-            limit = { trait = cruel }
-            remove_trait = cruel
-        }
-        else = {
-            add_trait = kind
-        }
-
-        if = {
-            limit = { event_target:kinslayer_target = { is_close_relative = ROOT } }
-            random = {
-                chance = 5
-                add_trait = lunatic
-                hidden_effect = { character_event = { id = 38304 } }# notify lunatic
-            }
-        }
-
-        trigger = {
-            has_character_flag = someone_is_hurt
-            NOT = { trait = kind }
-        }
-    }
-    option = { #W-wait, what did I do? [OPTIONAL: "only" maiming the other person] KIND VERSION
-        name = EVTOPTC_HF_10056
-        tooltip_info = kind
-        add_trait = berserker
-
-        event_target:kinslayer_target = {
-            show_scope_change = no
-            add_maimed_trait_effect = yes
-            if = {
-				limit = {
-					has_dlc = "Jade Dragon"
-					ROOT = {
-						is_chinese_emperor_trigger = no
-					}
-				}
-				if = {
-					limit = {
-						is_chinese_emperor_trigger = yes
-					}
-					ROOT = {
-						detract_grace_super_huge_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_massive_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_major_effect = yes
-					}
-				}
-			}
-        }
-        trigger = { has_character_flag = someone_is_hurt trait = kind }
-    }
-    after = {
-        clr_character_flag = no_harm
-        clr_character_flag = someone_is_hurt
-        clr_character_flag = going_berserk
-    }
-}
+#character_event = {
+#    id = HF.10056
+#    picture = GFX_evt_duel_team
+#    border = GFX_event_normal_frame_war
+#    has_dlc = "Holy Fury"
+#
+#    is_triggered_only = yes
+#
+#    portrait = event_target:kinslayer_target
+#    
+#    desc = {
+#        text = EVTDESC_HF_10056_no_harm_1
+#        trigger = {
+#            has_character_flag = no_harm
+#            event_target:fellow_member = { always = yes }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10056_no_harm_2
+#        trigger = {
+#            has_character_flag = no_harm
+#            event_target:my_beloved = { always = yes }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10056_casualty
+#        trigger = {
+#            has_character_flag = someone_is_hurt
+#        }
+#    }
+#
+#    immediate = {
+#        hidden_effect = {
+#            #Play SFX...
+#            if = {
+#                limit = { is_female = yes }
+#                random_list = {
+#                    10 = {
+#                        sound_effect = berserk_female_01
+#                    }
+#                    10 = {
+#                        sound_effect = berserk_female_02
+#                    }
+#                    10 = {
+#                        sound_effect = berserk_female_03
+#                    }
+#                }
+#            }
+#            else = {
+#                random_list = {
+#                    10 = {
+#                        sound_effect = berserk_male_01
+#                    }
+#                    10 = {
+#                        sound_effect = berserk_male_02
+#                    }
+#                    10 = {
+#                        sound_effect = berserk_male_03
+#                    }
+#                }
+#            }
+#
+#            random_list = { # Decide if someone actually gets hurt...
+#                2 = {
+#                    set_character_flag = someone_is_hurt 
+#                }
+#                8 = {
+#                    set_character_flag = no_harm
+#                }
+#            }
+#            random_list = { #Find someone to get caught in the crossfire...
+#                10 = {
+#                    any_courtier_or_vassal = { #event_target:my_beloved (might be platonic, children, etc)
+#                        limit = {
+#                            is_adult = yes
+#                            ai = yes
+#                            prisoner = no
+#                        }
+#                        score_value = { #Prioritizes selecting some kind of loved person...
+#                            value = 1
+#                            beloved_target_selection_score = yes
+#                        }
+#                        score_value = { #Prioritizes selecting some kind of not great warrior...
+#                            value = 1
+#                            bad_soldier_outcome_score = yes
+#                        }
+#                        #Effect:
+#                        save_event_target_as = my_beloved
+#                    }
+#                }
+#                10 = {
+#                    any_society_member = { #event_target:fellow_member (could be anyone in your society)
+#                        limit = { 
+#                            society_member_of = warrior_lodge_norse
+#                            NOT = { character = ROOT }
+#                            ai = yes
+#                            prisoner = no
+#                        }
+#                        score_value = { #Prioritizes selecting some kind of not great warrior...
+#                            value = 10
+#                            bad_soldier_outcome_score = yes
+#                        }
+#                        save_event_target_as = fellow_member
+#                    }
+#                }
+#            }
+#            if = {
+#                limit = { event_target:my_beloved = { always = yes } }
+#                event_target:my_beloved = { save_event_target_as = kinslayer_target }
+#            }
+#            else_if = {
+#                limit = { event_target:fellow_member = { always = yes } }
+#                event_target:fellow_member = { save_event_target_as = kinslayer_target }
+#            }
+#        }
+#    }
+#
+#    option = { #I am stronger than ever!
+#        name = {
+#            text = EVTOPTA_HF_10056_1
+#            trigger = { has_character_flag = no_harm }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10056_2
+#            trigger = { has_character_flag = someone_is_hurt }
+#        }
+#
+#        prestige = 15
+#        add_trait = berserker
+#
+#        if = { limit = { has_character_flag = someone_is_hurt }
+#            event_target:kinslayer_target = {
+#                show_scope_change = no
+#                hidden_effect = {
+#                    random_list = { #Find someone who cares about the person caught in the fury...
+#                        10 = {
+#                            trigger = {
+#                                any_spouse = { NOT = { character = ROOT } }
+#                                is_married = yes
+#                            }
+#                            random_spouse = {
+#                                limit = { NOT = { character = ROOT } }
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                        10 = {
+#                            trigger = {
+#                                any_friend = { NOT = { character = ROOT } }
+#                                any_friend = { always = yes }
+#                            }
+#                            random_friend = {
+#                                limit = { NOT = { character = ROOT } }
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                        10 = {
+#                            trigger = {
+#                                any_lover = { NOT = { character = ROOT } }
+#                                any_lover = { always = yes }
+#                            }
+#                            random_lover = {
+#                                limit = { NOT = { character = ROOT } }
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                        10 = {
+#                            trigger = {
+#                                current_heir = {
+#                                    is_adult = yes
+#                                    prisoner = no
+#                                    NOT = { character = ROOT }
+#                                    is_close_relative = event_target:kinslayer_target
+#                                }
+#                            }
+#                            current_heir = {
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                        10 = {
+#                            trigger = {
+#                                any_child = {
+#                                    is_adult = yes
+#                                    NOT = { character = ROOT }
+#                                }
+#                            }
+#                            random_child = {
+#                                limit = {
+#                                    is_adult = yes
+#                                    NOT = { character = ROOT }
+#                                }
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                    }
+#                    event_target:potential_rival = { character_event = { id = HF.10057 days = 3 } } #Send them a choice to become rival or not...
+#                }
+#                if = {
+#					limit = {
+#						has_dlc = "Jade Dragon"
+#						ROOT = {
+#							is_chinese_emperor_trigger = no
+#						}
+#					}
+#					if = {
+#						limit = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#						ROOT = {
+#							detract_grace_super_huge_effect = yes
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							any_close_relative = {
+#								dynasty = PREV
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#						ROOT = {
+#							detract_grace_massive_effect = yes
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							any_dynasty_member = {
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#						ROOT = {
+#							detract_grace_major_effect = yes
+#						}
+#					}
+#				}
+#                death = {
+#                    death_reason = death_berserker_rage
+#                    killer = ROOT
+#                }
+#            }
+#            add_kinslayer_trait_effect = yes
+#        }
+#        else = {
+#            if = {
+#                limit = {
+#                    event_target:kinslayer_target = { any_spouse = { character = ROOT } }
+#                }
+#                reverse_opinion = {
+#                    who = event_target:kinslayer_target
+#                    modifier = opinion_impressed_infatuated
+#                    years = 10
+#                }
+#            }
+#            else = {
+#                reverse_opinion = {
+#                    who = event_target:kinslayer_target
+#                    modifier = opinion_impressed
+#                    years = 5
+#                }
+#            }
+#        }
+#    }
+#    option = { #W-wait, what did I do? [OPTIONAL: "only" maiming the other person]
+#        name = EVTOPTB_HF_10056
+#        add_trait = berserker
+#
+#        event_target:kinslayer_target = {
+#            show_scope_change = no
+#            add_maimed_trait_effect = yes
+#            if = {
+#				limit = {
+#					has_dlc = "Jade Dragon"
+#					ROOT = {
+#						is_chinese_emperor_trigger = no
+#					}
+#				}
+#				if = {
+#					limit = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#					ROOT = {
+#						detract_grace_super_huge_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_massive_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_major_effect = yes
+#					}
+#				}
+#			}
+#        }
+#
+#        if = {
+#            limit = { trait = cruel }
+#            remove_trait = cruel
+#        }
+#        else = {
+#            add_trait = kind
+#        }
+#
+#        if = {
+#            limit = { event_target:kinslayer_target = { is_close_relative = ROOT } }
+#            random = {
+#                chance = 5
+#                add_trait = lunatic
+#                hidden_effect = { character_event = { id = 38304 } }# notify lunatic
+#            }
+#        }
+#
+#        trigger = {
+#            has_character_flag = someone_is_hurt
+#            NOT = { trait = kind }
+#        }
+#    }
+#    option = { #W-wait, what did I do? [OPTIONAL: "only" maiming the other person] KIND VERSION
+#        name = EVTOPTC_HF_10056
+#        tooltip_info = kind
+#        add_trait = berserker
+#
+#        event_target:kinslayer_target = {
+#            show_scope_change = no
+#            add_maimed_trait_effect = yes
+#            if = {
+#				limit = {
+#					has_dlc = "Jade Dragon"
+#					ROOT = {
+#						is_chinese_emperor_trigger = no
+#					}
+#				}
+#				if = {
+#					limit = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#					ROOT = {
+#						detract_grace_super_huge_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_massive_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_major_effect = yes
+#					}
+#				}
+#			}
+#        }
+#        trigger = { has_character_flag = someone_is_hurt trait = kind }
+#    }
+#    after = {
+#        clr_character_flag = no_harm
+#        clr_character_flag = someone_is_hurt
+#        clr_character_flag = going_berserk
+#    }
+#}
 
 # Ping to relation of the casualty. To become rivals, or nah?
 character_event = {
@@ -2437,587 +2437,587 @@ character_event = {
 }
 
 ### IN PRISON VERSION ### 
-character_event = {
-    id = HF.10070
-    title = HF_10070_title
-    picture = GFX_evt_jailbreak
-    border = GFX_event_normal_frame_war
-    has_dlc = "Holy Fury"
-
-    is_triggered_only = yes
-
-    portrait = event_target:kinslayer_target
-
-    only_capable = yes
-    prisoner = yes
-    
-    trigger = {
-        is_adult = yes
-        OR = {
-            has_character_modifier = the_oubliette
-            has_character_modifier = the_dungeon
-        }
-        host = {
-            OR = {
-                any_courtier = { # There is either another prisoner...
-                    NOT = { character = PREV }
-                    NOT = { character = ROOT }
-                    NOT = { trait = incapable }
-                    prisoner = yes
-                    NOT = { is_friend = ROOT }
-                    ai = yes
-                }
-                any_courtier = { #Or someone "unimportant" around...
-                    NOT = { character = PREV }
-                    NOT = { character = ROOT }
-                    NOT = { trait = incapable }
-                    prisoner = no
-                    NOT = { is_friend = ROOT }
-                    NOR = {
-                        is_lover = PREV
-                        is_friend = PREV
-                        is_rival = PREV
-                    }
-                    ai = yes
-                }
-            }
-        }
-    }
-    
-    desc = {
-        text = EVTDESC_HF_10070_A #You injured yourself, accosting courtier
-        trigger = {
-            has_character_flag = hurt_self
-            event_target:crossfire_target = { prisoner = no }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10070_B #You injured yourself, assaulting fellow prisoner
-        trigger = {
-            has_character_flag = hurt_self
-            event_target:crossfire_target = { prisoner = yes }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10070_C #You succeed to escape, hurting whoever gets in your way
-        trigger = {
-            has_character_flag = someone_is_hurt
-        }
-    }
-
-    immediate = {
-        hidden_effect = {
-            #Play SFX...
-            if = {
-                limit = { is_female = yes }
-                random_list = {
-                    10 = { sound_effect = berserk_female_01 }
-                    10 = { sound_effect = berserk_female_02 }
-                    10 = { sound_effect = berserk_female_03 }
-                }
-            }
-            else = {
-                random_list = {
-                    10 = { sound_effect = berserk_male_01 }
-                    10 = { sound_effect = berserk_male_02 }
-                    10 = { sound_effect = berserk_male_03 }
-                }
-            }
-
-            random_list = { # Decide if someone else actually gets hurt...
-                5 = { set_character_flag = someone_is_hurt }
-                5 = { set_character_flag = hurt_self } #means *you* get harmed instead
-            }
-
-            hidden_effect = {
-                host = { save_event_target_as = host_target }
-            }
-
-            random_list = { #Find someone to get caught in the crossfire...
-                100 = {
-                    trigger = {
-                        host = {
-                            any_courtier = { # There is either another prisoner...
-                                NOT = { character = PREV }
-                                NOT = { character = ROOT }
-                                NOT = { trait = incapable }
-                                prisoner = yes
-                                NOT = { is_friend = ROOT }
-                                ai = yes
-                            }
-                        }
-                    }
-                    host = {
-                        random_courtier = { # There is either another prisoner...
-                            limit = {
-                                NOT = { character = ROOT }
-                                NOT = { character = PREV }
-                                NOT = { trait = incapable }
-                                prisoner = yes
-                                NOT = { is_friend = ROOT }
-                                ai = yes
-                            }
-                            preferred_limit = {
-                                is_unimportant_trigger = yes
-                            }
-                            #Effect:
-                            save_event_target_as = crossfire_target
-                        }
-                    }
-                }
-                10 = {
-                    host = {
-                        random_courtier = { #Or someone "unimportant" around...
-                            limit = {
-                                NOT = { character = ROOT }
-                                NOT = { character = PREV }
-                                NOT = { trait = incapable }
-                                prisoner = no
-                                NOT = { is_friend = ROOT }
-                                NOR = {
-                                    is_lover = PREV
-                                    is_friend = PREV
-                                    is_rival = PREV
-                                }
-                                ai = yes
-                            }
-                            preferred_limit = {
-                                is_unimportant_trigger = yes
-                            }
-                            #Effect:
-                            save_event_target_as = crossfire_target
-                        }
-                    }
-                }
-            }
-            if = {
-                limit = { event_target:crossfire_target = { always = yes } }
-                event_target:crossfire_target = { save_event_target_as = kinslayer_target }
-            }
-        }
-    }
-
-    option = { #I am stronger than ever!
-        name = {
-            text = EVTOPTA_HF_10070_1 #You injured yourself, accosting courtier
-            trigger = {
-                has_character_flag = hurt_self
-                event_target:crossfire_target = { prisoner = no }
-            }
-        }
-        name = {
-            text = EVTOPTA_HF_10070_2 #You injured yourself, assaulting fellow prisoner
-            trigger = {
-                has_character_flag = hurt_self
-                event_target:crossfire_target = { prisoner = yes }
-            }
-        }
-        name = {
-            text = EVTOPTA_HF_10070_3 #You succeed to escape, hurting whoever gets in your way
-            trigger = {
-                has_character_flag = someone_is_hurt
-            }
-        }
-
-        if = {
-            limit = { # Hurt courtier and self
-                has_character_flag = hurt_self
-                event_target:crossfire_target = { prisoner = no }
-            }
-            if = {
-                limit = { NOT = { trait = one_handed } }
-                random_list = {
-                    50 = {
-                        add_trait = one_handed
-                        hidden_effect = {
-                            add_trait = severely_injured
-                            #after all severe injuries...
-                            resolve_severely_injured_effect = yes
-                        }
-                    }
-                    50 = {
-                        add_character_modifier = {
-                            modifier = swollen_wrist
-                            months = 12
-                        }
-                    }
-                }
-            }
-            else = {
-                add_trait = severely_injured
-                resolve_severely_injured_effect = yes
-            }
-            event_target:kinslayer_target = {
-                show_scope_change = no
-                add_maimed_trait_effect = yes
-                if = {
-					limit = {
-						has_dlc = "Jade Dragon"
-						ROOT = {
-							is_chinese_emperor_trigger = no
-						}
-					}
-					if = {
-						limit = {
-							is_chinese_emperor_trigger = yes
-						}
-						ROOT = {
-							detract_grace_super_huge_effect = yes
-						}
-					}
-					else_if = {
-						limit = {
-							any_close_relative = {
-								dynasty = PREV
-								is_chinese_emperor_trigger = yes
-							}
-						}
-						ROOT = {
-							detract_grace_massive_effect = yes
-						}
-					}
-					else_if = {
-						limit = {
-							any_dynasty_member = {
-								is_chinese_emperor_trigger = yes
-							}
-						}
-						ROOT = {
-							detract_grace_major_effect = yes
-						}
-					}
-				}
-            }
-        }
-        else_if = {
-            limit = { #Hurt other prisoner and self
-                has_character_flag = hurt_self
-                event_target:crossfire_target = { prisoner = yes }
-            }
-            
-            add_maimed_trait_effect = yes
-
-            event_target:kinslayer_target = {
-                show_scope_change = no
-                add_maimed_trait_effect = yes
-                if = {
-					limit = {
-						has_dlc = "Jade Dragon"
-						ROOT = {
-							is_chinese_emperor_trigger = no
-						}
-					}
-					if = {
-						limit = {
-							is_chinese_emperor_trigger = yes
-						}
-						ROOT = {
-							detract_grace_super_huge_effect = yes
-						}
-					}
-					else_if = {
-						limit = {
-							any_close_relative = {
-								dynasty = PREV
-								is_chinese_emperor_trigger = yes
-							}
-						}
-						ROOT = {
-							detract_grace_massive_effect = yes
-						}
-					}
-					else_if = {
-						limit = {
-							any_dynasty_member = {
-								is_chinese_emperor_trigger = yes
-							}
-						}
-						ROOT = {
-							detract_grace_major_effect = yes
-						}
-					}
-				}
-            }
-
-        }
-        
-        else_if = { #Succeeds in escaping and kills someone else (courtier/prisoner, doesn't matter)
-            limit = { has_character_flag = someone_is_hurt }
-            
-            custom_tooltip = {
-                text = you_break_out_of_prison_tt
-                prisoner = no
-            }
-
-            event_target:kinslayer_target = {
-                show_scope_change = no
-                if = {
-					limit = {
-						has_dlc = "Jade Dragon"
-						ROOT = {
-							is_chinese_emperor_trigger = no
-						}
-					}
-					if = {
-						limit = {
-							is_chinese_emperor_trigger = yes
-						}
-						ROOT = {
-							detract_grace_super_huge_effect = yes
-						}
-					}
-					else_if = {
-						limit = {
-							any_close_relative = {
-								dynasty = PREV
-								is_chinese_emperor_trigger = yes
-							}
-						}
-						ROOT = {
-							detract_grace_massive_effect = yes
-						}
-					}
-					else_if = {
-						limit = {
-							any_dynasty_member = {
-								is_chinese_emperor_trigger = yes
-							}
-						}
-						ROOT = {
-							detract_grace_major_effect = yes
-						}
-					}
-				}
-                hidden_effect = {
-                    random_list = { #Find someone who cares about the person caught in the fury...
-                        10 = {
-                            trigger = {
-                                any_spouse = { NOT = { character = ROOT } }
-                                is_married = yes
-                            }
-                            random_spouse = {
-                                limit = { NOT = { character = ROOT } }
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                        10 = {
-                            trigger = {
-                                any_friend = { NOT = { character = ROOT } }
-                                any_friend = { always = yes }
-                            }
-                            random_friend = {
-                                limit = { NOT = { character = ROOT } }
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                        10 = {
-                            trigger = {
-                                any_lover = { NOT = { character = ROOT } }
-                                any_lover = { always = yes }
-                            }
-                            random_lover = {
-                                limit = { NOT = { character = ROOT } }
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                        10 = {
-                            trigger = {
-                                current_heir = {
-                                    is_adult = yes
-                                    prisoner = no
-                                    NOT = { character = ROOT }
-                                    is_close_relative = event_target:kinslayer_target
-                                }
-                            }
-                            current_heir = {
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                        10 = {
-                            trigger = {
-                                any_child = {
-                                    is_adult = yes
-                                    NOT = { character = ROOT }
-                                }
-                            }
-                            random_child = {
-                                limit = {
-                                    is_adult = yes
-                                    NOT = { character = ROOT }
-                                }
-                                save_event_target_as = potential_rival
-                            }
-                        }
-                    }
-                    event_target:potential_rival = { character_event = { id = HF.10071 days = 3 } } #Send them a choice to become rival or not...
-                }
-
-                if = { #if it found a potential enemy
-                    limit = { event_target:potential_rival = { always = yes } }
-                    if = {
-                        limit = { #check if they are the same character as the host
-                            event_target:potential_rival = { character = event_target:host_target }
-                        }
-                        event_target:potential_rival = { set_character_flag = i_am_hurt_and_original_captor }
-                    }
-                    else = {
-                        event_target:host_target = { character_event = { id = HF.10071 days = 1 } } #Also send this person a choice to become rival or not...   
-                    }
-                }
-                if = {
-                    limit = { prisoner = yes}
-                    custom_tooltip = {
-                        text = fellow_prisoner_dies_tt
-                        death = {
-                            death_reason = death_berserker_rage
-                            killer = ROOT
-                        }
-                    }
-                }
-                else = {
-                    custom_tooltip = {
-                        text = courtier_dies_tt
-                        death = {
-                            death_reason = death_berserker_rage
-                            killer = ROOT
-                        }
-                    }   
-                }
-            }
-            add_kinslayer_trait_effect = yes
-        }
-
-        prestige = 15
-
-        if = { limit = { NOT = { trait = berserker } }
-            add_trait = berserker
-        }
-    }
-    option = { #W-wait, what did I do? [OPTIONAL: "only" maiming the other person]
-        name = EVTOPTB_HF_10070 
-        if = { limit = { NOT = { trait = berserker } }
-            add_trait = berserker
-        }
-
-        if = {
-            limit = { trait = cruel }
-            remove_trait = cruel
-        }
-        else = {
-            add_trait = kind
-        }
-
-        event_target:kinslayer_target = {
-            show_scope_change = no
-            add_maimed_trait_effect = yes
-            if = {
-				limit = {
-					has_dlc = "Jade Dragon"
-					ROOT = {
-						is_chinese_emperor_trigger = no
-					}
-				}
-				if = {
-					limit = {
-						is_chinese_emperor_trigger = yes
-					}
-					ROOT = {
-						detract_grace_super_huge_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_massive_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_major_effect = yes
-					}
-				}
-			}
-        }
-
-
-        if = {
-            limit = { event_target:kinslayer_target = { is_close_relative = ROOT } }
-            random = {
-                chance = 5
-                add_trait = lunatic
-                hidden_effect = { character_event = { id = 38304 } }# notify lunatic
-            }
-        }
-
-        trigger = {
-            has_character_flag = someone_is_hurt
-            NOT = { trait = kind }
-        }
-    }
-    option = { #W-wait, what did I do? [OPTIONAL: "only" maiming the other person] KIND VERSION
-        name = EVTOPTC_HF_10056
-        tooltip_info = kind
-        add_trait = berserker
-
-        event_target:kinslayer_target = {
-            show_scope_change = no
-            add_maimed_trait_effect = yes
-            if = {
-				limit = {
-					has_dlc = "Jade Dragon"
-					ROOT = {
-						is_chinese_emperor_trigger = no
-					}
-				}
-				if = {
-					limit = {
-						is_chinese_emperor_trigger = yes
-					}
-					ROOT = {
-						detract_grace_super_huge_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_close_relative = {
-							dynasty = PREV
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_massive_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						any_dynasty_member = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					ROOT = {
-						detract_grace_major_effect = yes
-					}
-				}
-			}
-        }
-        trigger = { has_character_flag = someone_is_hurt trait = kind }
-    }
-    after = {
-        clr_character_flag = hurt_self
-        clr_character_flag = someone_is_hurt
-        clr_character_flag = going_berserk
-    }
-}
+#character_event = {
+#    id = HF.10070
+#    title = HF_10070_title
+#    picture = GFX_evt_jailbreak
+#    border = GFX_event_normal_frame_war
+#    has_dlc = "Holy Fury"
+#
+#    is_triggered_only = yes
+#
+#    portrait = event_target:kinslayer_target
+#
+#    only_capable = yes
+#    prisoner = yes
+#    
+#    trigger = {
+#        is_adult = yes
+#        OR = {
+#            has_character_modifier = the_oubliette
+#            has_character_modifier = the_dungeon
+#        }
+#        host = {
+#            OR = {
+#                any_courtier = { # There is either another prisoner...
+#                    NOT = { character = PREV }
+#                    NOT = { character = ROOT }
+#                    NOT = { trait = incapable }
+#                    prisoner = yes
+#                    NOT = { is_friend = ROOT }
+#                    ai = yes
+#                }
+#                any_courtier = { #Or someone "unimportant" around...
+#                    NOT = { character = PREV }
+#                    NOT = { character = ROOT }
+#                    NOT = { trait = incapable }
+#                    prisoner = no
+#                    NOT = { is_friend = ROOT }
+#                    NOR = {
+#                        is_lover = PREV
+#                        is_friend = PREV
+#                        is_rival = PREV
+#                    }
+#                    ai = yes
+#                }
+#            }
+#        }
+#    }
+#    
+#    desc = {
+#        text = EVTDESC_HF_10070_A #You injured yourself, accosting courtier
+#        trigger = {
+#            has_character_flag = hurt_self
+#            event_target:crossfire_target = { prisoner = no }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10070_B #You injured yourself, assaulting fellow prisoner
+#        trigger = {
+#            has_character_flag = hurt_self
+#            event_target:crossfire_target = { prisoner = yes }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10070_C #You succeed to escape, hurting whoever gets in your way
+#        trigger = {
+#            has_character_flag = someone_is_hurt
+#        }
+#    }
+#
+#    immediate = {
+#        hidden_effect = {
+#            #Play SFX...
+#            if = {
+#                limit = { is_female = yes }
+#                random_list = {
+#                    10 = { sound_effect = berserk_female_01 }
+#                    10 = { sound_effect = berserk_female_02 }
+#                    10 = { sound_effect = berserk_female_03 }
+#                }
+#            }
+#            else = {
+#                random_list = {
+#                    10 = { sound_effect = berserk_male_01 }
+#                    10 = { sound_effect = berserk_male_02 }
+#                    10 = { sound_effect = berserk_male_03 }
+#                }
+#            }
+#
+#            random_list = { # Decide if someone else actually gets hurt...
+#                5 = { set_character_flag = someone_is_hurt }
+#                5 = { set_character_flag = hurt_self } #means *you* get harmed instead
+#            }
+#
+#            hidden_effect = {
+#                host = { save_event_target_as = host_target }
+#            }
+#
+#            random_list = { #Find someone to get caught in the crossfire...
+#                100 = {
+#                    trigger = {
+#                        host = {
+#                            any_courtier = { # There is either another prisoner...
+#                                NOT = { character = PREV }
+#                                NOT = { character = ROOT }
+#                                NOT = { trait = incapable }
+#                                prisoner = yes
+#                                NOT = { is_friend = ROOT }
+#                                ai = yes
+#                            }
+#                        }
+#                    }
+#                    host = {
+#                        random_courtier = { # There is either another prisoner...
+#                            limit = {
+#                                NOT = { character = ROOT }
+#                                NOT = { character = PREV }
+#                                NOT = { trait = incapable }
+#                                prisoner = yes
+#                                NOT = { is_friend = ROOT }
+#                                ai = yes
+#                            }
+#                            preferred_limit = {
+#                                is_unimportant_trigger = yes
+#                            }
+#                            #Effect:
+#                            save_event_target_as = crossfire_target
+#                        }
+#                    }
+#                }
+#                10 = {
+#                    host = {
+#                        random_courtier = { #Or someone "unimportant" around...
+#                            limit = {
+#                                NOT = { character = ROOT }
+#                                NOT = { character = PREV }
+#                                NOT = { trait = incapable }
+#                                prisoner = no
+#                                NOT = { is_friend = ROOT }
+#                                NOR = {
+#                                    is_lover = PREV
+#                                    is_friend = PREV
+#                                    is_rival = PREV
+#                                }
+#                                ai = yes
+#                            }
+#                            preferred_limit = {
+#                                is_unimportant_trigger = yes
+#                            }
+#                            #Effect:
+#                            save_event_target_as = crossfire_target
+#                        }
+#                    }
+#                }
+#            }
+#            if = {
+#                limit = { event_target:crossfire_target = { always = yes } }
+#                event_target:crossfire_target = { save_event_target_as = kinslayer_target }
+#            }
+#        }
+#    }
+#
+#    option = { #I am stronger than ever!
+#        name = {
+#            text = EVTOPTA_HF_10070_1 #You injured yourself, accosting courtier
+#            trigger = {
+#                has_character_flag = hurt_self
+#                event_target:crossfire_target = { prisoner = no }
+#            }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10070_2 #You injured yourself, assaulting fellow prisoner
+#            trigger = {
+#                has_character_flag = hurt_self
+#                event_target:crossfire_target = { prisoner = yes }
+#            }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10070_3 #You succeed to escape, hurting whoever gets in your way
+#            trigger = {
+#                has_character_flag = someone_is_hurt
+#            }
+#        }
+#
+#        if = {
+#            limit = { # Hurt courtier and self
+#                has_character_flag = hurt_self
+#                event_target:crossfire_target = { prisoner = no }
+#            }
+#            if = {
+#                limit = { NOT = { trait = one_handed } }
+#                random_list = {
+#                    50 = {
+#                        add_trait = one_handed
+#                        hidden_effect = {
+#                            add_trait = severely_injured
+#                            #after all severe injuries...
+#                            resolve_severely_injured_effect = yes
+#                        }
+#                    }
+#                    50 = {
+#                        add_character_modifier = {
+#                            modifier = swollen_wrist
+#                            months = 12
+#                        }
+#                    }
+#                }
+#            }
+#            else = {
+#                add_trait = severely_injured
+#                resolve_severely_injured_effect = yes
+#            }
+#            event_target:kinslayer_target = {
+#                show_scope_change = no
+#                add_maimed_trait_effect = yes
+#                if = {
+#					limit = {
+#						has_dlc = "Jade Dragon"
+#						ROOT = {
+#							is_chinese_emperor_trigger = no
+#						}
+#					}
+#					if = {
+#						limit = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#						ROOT = {
+#							detract_grace_super_huge_effect = yes
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							any_close_relative = {
+#								dynasty = PREV
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#						ROOT = {
+#							detract_grace_massive_effect = yes
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							any_dynasty_member = {
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#						ROOT = {
+#							detract_grace_major_effect = yes
+#						}
+#					}
+#				}
+#            }
+#        }
+#        else_if = {
+#            limit = { #Hurt other prisoner and self
+#                has_character_flag = hurt_self
+#                event_target:crossfire_target = { prisoner = yes }
+#            }
+#            
+#            add_maimed_trait_effect = yes
+#
+#            event_target:kinslayer_target = {
+#                show_scope_change = no
+#                add_maimed_trait_effect = yes
+#                if = {
+#					limit = {
+#						has_dlc = "Jade Dragon"
+#						ROOT = {
+#							is_chinese_emperor_trigger = no
+#						}
+#					}
+#					if = {
+#						limit = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#						ROOT = {
+#							detract_grace_super_huge_effect = yes
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							any_close_relative = {
+#								dynasty = PREV
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#						ROOT = {
+#							detract_grace_massive_effect = yes
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							any_dynasty_member = {
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#						ROOT = {
+#							detract_grace_major_effect = yes
+#						}
+#					}
+#				}
+#            }
+#
+#        }
+#        
+#        else_if = { #Succeeds in escaping and kills someone else (courtier/prisoner, doesn't matter)
+#            limit = { has_character_flag = someone_is_hurt }
+#            
+#            custom_tooltip = {
+#                text = you_break_out_of_prison_tt
+#                prisoner = no
+#            }
+#
+#            event_target:kinslayer_target = {
+#                show_scope_change = no
+#                if = {
+#					limit = {
+#						has_dlc = "Jade Dragon"
+#						ROOT = {
+#							is_chinese_emperor_trigger = no
+#						}
+#					}
+#					if = {
+#						limit = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#						ROOT = {
+#							detract_grace_super_huge_effect = yes
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							any_close_relative = {
+#								dynasty = PREV
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#						ROOT = {
+#							detract_grace_massive_effect = yes
+#						}
+#					}
+#					else_if = {
+#						limit = {
+#							any_dynasty_member = {
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#						ROOT = {
+#							detract_grace_major_effect = yes
+#						}
+#					}
+#				}
+#                hidden_effect = {
+#                    random_list = { #Find someone who cares about the person caught in the fury...
+#                        10 = {
+#                            trigger = {
+#                                any_spouse = { NOT = { character = ROOT } }
+#                                is_married = yes
+#                            }
+#                            random_spouse = {
+#                                limit = { NOT = { character = ROOT } }
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                        10 = {
+#                            trigger = {
+#                                any_friend = { NOT = { character = ROOT } }
+#                                any_friend = { always = yes }
+#                            }
+#                            random_friend = {
+#                                limit = { NOT = { character = ROOT } }
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                        10 = {
+#                            trigger = {
+#                                any_lover = { NOT = { character = ROOT } }
+#                                any_lover = { always = yes }
+#                            }
+#                            random_lover = {
+#                                limit = { NOT = { character = ROOT } }
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                        10 = {
+#                            trigger = {
+#                                current_heir = {
+#                                    is_adult = yes
+#                                    prisoner = no
+#                                    NOT = { character = ROOT }
+#                                    is_close_relative = event_target:kinslayer_target
+#                                }
+#                            }
+#                            current_heir = {
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                        10 = {
+#                            trigger = {
+#                                any_child = {
+#                                    is_adult = yes
+#                                    NOT = { character = ROOT }
+#                                }
+#                            }
+#                            random_child = {
+#                                limit = {
+#                                    is_adult = yes
+#                                    NOT = { character = ROOT }
+#                                }
+#                                save_event_target_as = potential_rival
+#                            }
+#                        }
+#                    }
+#                    event_target:potential_rival = { character_event = { id = HF.10071 days = 3 } } #Send them a choice to become rival or not...
+#                }
+#
+#                if = { #if it found a potential enemy
+#                    limit = { event_target:potential_rival = { always = yes } }
+#                    if = {
+#                        limit = { #check if they are the same character as the host
+#                            event_target:potential_rival = { character = event_target:host_target }
+#                        }
+#                        event_target:potential_rival = { set_character_flag = i_am_hurt_and_original_captor }
+#                    }
+#                    else = {
+#                        event_target:host_target = { character_event = { id = HF.10071 days = 1 } } #Also send this person a choice to become rival or not...   
+#                    }
+#                }
+#                if = {
+#                    limit = { prisoner = yes}
+#                    custom_tooltip = {
+#                        text = fellow_prisoner_dies_tt
+#                        death = {
+#                            death_reason = death_berserker_rage
+#                            killer = ROOT
+#                        }
+#                    }
+#                }
+#                else = {
+#                    custom_tooltip = {
+#                        text = courtier_dies_tt
+#                        death = {
+#                            death_reason = death_berserker_rage
+#                            killer = ROOT
+#                        }
+#                    }   
+#                }
+#            }
+#            add_kinslayer_trait_effect = yes
+#        }
+#
+#        prestige = 15
+#
+#        if = { limit = { NOT = { trait = berserker } }
+#            add_trait = berserker
+#        }
+#    }
+#    option = { #W-wait, what did I do? [OPTIONAL: "only" maiming the other person]
+#        name = EVTOPTB_HF_10070 
+#        if = { limit = { NOT = { trait = berserker } }
+#            add_trait = berserker
+#        }
+#
+#        if = {
+#            limit = { trait = cruel }
+#            remove_trait = cruel
+#        }
+#        else = {
+#            add_trait = kind
+#        }
+#
+#        event_target:kinslayer_target = {
+#            show_scope_change = no
+#            add_maimed_trait_effect = yes
+#            if = {
+#				limit = {
+#					has_dlc = "Jade Dragon"
+#					ROOT = {
+#						is_chinese_emperor_trigger = no
+#					}
+#				}
+#				if = {
+#					limit = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#					ROOT = {
+#						detract_grace_super_huge_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_massive_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_major_effect = yes
+#					}
+#				}
+#			}
+#        }
+#
+#
+#        if = {
+#            limit = { event_target:kinslayer_target = { is_close_relative = ROOT } }
+#            random = {
+#                chance = 5
+#                add_trait = lunatic
+#                hidden_effect = { character_event = { id = 38304 } }# notify lunatic
+#            }
+#        }
+#
+#        trigger = {
+#            has_character_flag = someone_is_hurt
+#            NOT = { trait = kind }
+#        }
+#    }
+#    option = { #W-wait, what did I do? [OPTIONAL: "only" maiming the other person] KIND VERSION
+#        name = EVTOPTC_HF_10056
+#        tooltip_info = kind
+#        add_trait = berserker
+#
+#        event_target:kinslayer_target = {
+#            show_scope_change = no
+#            add_maimed_trait_effect = yes
+#            if = {
+#				limit = {
+#					has_dlc = "Jade Dragon"
+#					ROOT = {
+#						is_chinese_emperor_trigger = no
+#					}
+#				}
+#				if = {
+#					limit = {
+#						is_chinese_emperor_trigger = yes
+#					}
+#					ROOT = {
+#						detract_grace_super_huge_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_close_relative = {
+#							dynasty = PREV
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_massive_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						any_dynasty_member = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					ROOT = {
+#						detract_grace_major_effect = yes
+#					}
+#				}
+#			}
+#        }
+#        trigger = { has_character_flag = someone_is_hurt trait = kind }
+#    }
+#    after = {
+#        clr_character_flag = hurt_self
+#        clr_character_flag = someone_is_hurt
+#        clr_character_flag = going_berserk
+#    }
+#}
 
 # Ping to relation of the casualty. To become rivals, or nah?
 character_event = {
@@ -3063,36 +3063,36 @@ character_event = {
 ########################################################
 # RANK 3 POWER - Inspire Warriors
 ########################################################
-character_event = {
-    id = HF.10059
-    desc = EVTDESC_HF_10059
-    picture = GFX_evt_battle
-    border = GFX_event_normal_frame_war
-    has_dlc = "Holy Fury"
-
-    is_triggered_only = yes
-
-    notification = yes
-
-    option = { #Finally!
-        name = EXCELLENT
-        event_target:target_holding = { refill_holding_levy = yes }
-        clr_character_flag = inspiring_warriors
-        hidden_effect = {
-            random_list = {
-                10 = {
-                    sound_effect = inspire_warriors_01
-                }
-                10 = {
-                    sound_effect = inspire_warriors_02
-                }
-                10 = {
-                    sound_effect = inspire_warriors_03
-                }
-            }
-        }
-    }
-}
+#character_event = {
+#    id = HF.10059
+#    desc = EVTDESC_HF_10059
+#    picture = GFX_evt_battle
+#    border = GFX_event_normal_frame_war
+#    has_dlc = "Holy Fury"
+#
+#    is_triggered_only = yes
+#
+#    notification = yes
+#
+#    option = { #Finally!
+#        name = EXCELLENT
+#        event_target:target_holding = { refill_holding_levy = yes }
+#        clr_character_flag = inspiring_warriors
+#        hidden_effect = {
+#            random_list = {
+#                10 = {
+#                    sound_effect = inspire_warriors_01
+#                }
+#                10 = {
+#                    sound_effect = inspire_warriors_02
+#                }
+#                10 = {
+#                    sound_effect = inspire_warriors_03
+#                }
+#            }
+#        }
+#    }
+#}
 
 
 

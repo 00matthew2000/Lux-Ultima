@@ -2102,22 +2102,22 @@ character_event = { # Warrior Lodge members with high PCS might go out and duel 
 #	}
 #}
 
-character_event = {
-	id = HF.561
-	desc = HF_561_DESC
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-	
-	is_in_society = yes
-	
-	notification = yes
-
-	option = {
-		name = CURSES
-	}
-}
+#character_event = {
+#	id = HF.561
+#	desc = HF_561_DESC
+#	picture = GFX_evt_battle
+#	border = GFX_event_normal_frame_war
+#	
+#	is_triggered_only = yes
+#	
+#	is_in_society = yes
+#	
+#	notification = yes
+#
+#	option = {
+#		name = CURSES
+#	}
+#}
 
 
 ##### Teaching Moment #####

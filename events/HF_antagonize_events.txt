@@ -22,6 +22,11 @@ character_event = {
 	}
 
 	is_triggered_only = yes
+	
+	weight_multiplier = {
+		days = 1
+		factor = 100	
+	}
 
 	immediate = { character_event = { id = HF.22000 days = 90 random = 120 } } #Further delayed to prevent potential overlapping with Sway events.
 
@@ -861,28 +866,28 @@ character_event = {
 	}
 }
 
-#Antagonizer notified.
-character_event = {
-	id = HF.22003
-	desc = EVTDESCHF22003
-	picture = GFX_evt_upsetting_letter
-
-	trigger = { 
-		FROM = { is_alive = yes } 
-	}
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF22003
-		custom_tooltip = { text = tooltip_22003_A }
-		hidden_tooltip = { 
-			remove_special_interest = persistent_event_target:antagonize_target
-			persistent_event_target:antagonize_target = { clr_character_flag = flag_character_being_antagonized }
-			clear_persistent_event_target = antagonize_target
-		}
-		ai_chance = { factor = 100 }
-	}
-}
+##Antagonizer notified.
+#character_event = {
+#	id = HF.22003
+#	desc = EVTDESCHF22003
+#	picture = GFX_evt_upsetting_letter
+#
+#	trigger = { 
+#		FROM = { is_alive = yes } 
+#	}
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF22003
+#		custom_tooltip = { text = tooltip_22003_A }
+#		hidden_tooltip = { 
+#			remove_special_interest = persistent_event_target:antagonize_target
+#			persistent_event_target:antagonize_target = { clr_character_flag = flag_character_being_antagonized }
+#			clear_persistent_event_target = antagonize_target
+#		}
+#		ai_chance = { factor = 100 }
+#	}
+#}
 
 #Antagonized: is imprisoned and can no longer be interacted with.
 character_event = {

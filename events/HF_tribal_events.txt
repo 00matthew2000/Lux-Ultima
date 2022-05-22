@@ -185,9 +185,52 @@ character_event = {
 					}
 					NOT = {
 						trait = treasure_fleet_preparation
-					} 
+					}
 				} 
 				letter_event = { id = HF.23807 } 
+			}
+			if = { 
+				limit = { 
+					is_member_of_any_warrior_lodge_trigger = yes
+				} 
+				random_society_member = { #Possible Hero guest.
+					limit = { 
+						same_society_as = ROOT
+						society_rank = 4
+						ai = yes
+						NOR = {
+							prisoner = yes
+							character = ROOT
+							liege = { character = ROOT } 
+							top_liege = { character = ROOT } 
+							has_character_flag = do_not_disturb
+							has_character_modifier = holding_large_feast  
+							has_any_opinion_modifier = opinion_coronation_guest
+							has_any_opinion_modifier = opinion_great_tribal_festival_guest 
+							trait = incapable
+							is_inaccessible_trigger = yes
+						}
+						NOT = {
+							trait = treasure_fleet_preparation
+						}
+					} 
+					random = { 
+						chance = 50
+						modifier = { 
+							factor = 1.25 
+							ROOT = { real_tier = KING } 
+						} 
+						modifier = { 
+							factor = 1.5 
+							ROOT = { real_tier = EMPEROR } 
+						} 
+						modifier = { 
+							factor = 1.5 
+							ROOT = { prestige = 500 } 
+						} 
+						letter_event = { id = HF.23809 } 
+					} 
+				}
 			}
 			character_event = { id = HF.23811 days = 20 } #Preparation event for host. 
 		}

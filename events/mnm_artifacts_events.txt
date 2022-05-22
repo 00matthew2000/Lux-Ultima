@@ -82,92 +82,92 @@ character_event = {
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = christian
 						has_artifact = bones_of_st_peter
 						has_artifact = staff_of_moses
 						has_artifact = davids_harp
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = jewish_group
 						has_artifact = staff_of_moses
 						has_artifact = davids_harp
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = muslim
 						has_artifact = staff_of_moses
 						has_artifact = davids_harp
 						has_artifact = seal_of_mohammad
 						has_artifact = holy_banner_of_mohammad
 						has_artifact = blessed_mantle
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = zoroastrian_group
 						has_artifact = cup_of_jamshid
 						has_artifact = babr_e_bayan
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						OR = {
 							religion_group = indian_group
 							religion_group = bud_group
 						}
 						has_artifact = buddhas_tooth
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = norsegerman_group
 						has_artifact = mjolnir
 						has_artifact = andvaranaut
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = serer_group
 						has_artifact = fetish_of_souls
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = finnish_group
 						has_artifact = sampo
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = slavic_group
 						has_artifact = axe_of_perun
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = baltic_group
 						has_artifact = axe_of_perkunas
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = tengri_group
 						has_artifact = yada_tashy
-					}
+					#}
 				}
 				event_target:rumor_councillor = { character_event = { id = MNM.9001 } } 
 			}
@@ -183,7 +183,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = christian
 						has_artifact = crown_of_thorns
 						has_artifact = seamless_robe_of_jesus
@@ -191,38 +191,38 @@ character_event = {
 						has_artifact = holy_foreskin
 						has_artifact = seal_of_solomon
 						has_artifact = image_of_edessa
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = jewish_group
 						has_artifact = seal_of_solomon
 						has_artifact = tabernacle
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = muslim
 						has_artifact = seal_of_solomon
 						has_artifact = sword_of_mohammad
 						has_artifact = letter_of_mohammad
 						has_artifact = blessed_sandals
 						has_artifact = cloak_of_mohammad
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = zoroastrian_group
 						has_artifact = derafsh_kaviani
 						has_artifact = cyrus_cylinder
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						OR = {
 							religion_group = indian_group
 							religion_group = bud_group
@@ -231,21 +231,21 @@ character_event = {
 						has_artifact = elaborate_danda
 						has_artifact = sarira
 						has_artifact = sariraka_actual_body_part
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = norsegerman_group
 						has_artifact = gjallarhorn
-					}
+					#}
 				}
 				event_target:rumor_councillor = { character_event = { id = MNM.9002 } }
 			} 
 			60 = { #Weak rumor
 				modifier = { 
 					factor = 0 
-					AND = {
+					#AND = {
 						LI_pagan_trigger = yes
 						has_artifact = famous_head
 						has_artifact = famous_tongue
@@ -254,11 +254,11 @@ character_event = {
 						has_artifact = famous_arm
 						has_artifact = famous_foot
 						has_artifact = famous_ancient_weapon
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = christian
 						has_artifact = fingerbone_of_saint
 						has_artifact = famous_head
@@ -273,11 +273,11 @@ character_event = {
 						has_artifact = veil_of_veronica
 						has_artifact = remains_of_st_cessianus
 						has_artifact = weeping_statue
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = jewish_group
 						has_artifact = famous_head
 						has_artifact = famous_tongue
@@ -287,11 +287,11 @@ character_event = {
 						has_artifact = famous_foot
 						has_artifact = famous_ancient_weapon
 						has_artifact = davids_sling
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = muslim
 						has_artifact = mohammads_beard
 						OR = {
@@ -307,11 +307,11 @@ character_event = {
 						has_artifact = famous_ancient_weapon
 						has_artifact = mohammads_bowl
 						has_artifact = tooth_of_mohammad
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						religion_group = zoroastrian_group
 						has_artifact = haoma_sapling
 						has_artifact = keshmar_cypress_branch
@@ -322,11 +322,11 @@ character_event = {
 						has_artifact = famous_arm
 						has_artifact = famous_foot
 						has_artifact = famous_ancient_weapon
-					}
+					#}
 				}
 				modifier = {
 					factor = 0
-					AND = {
+					#AND = {
 						OR = {
 							religion_group = indian_group
 							religion_group = bud_group
@@ -338,7 +338,7 @@ character_event = {
 						has_artifact = famous_arm
 						has_artifact = famous_foot
 						has_artifact = famous_ancient_weapon
-					}
+					#}
 				}
 				event_target:rumor_councillor = { character_event = { id = MNM.9003 } }
 			} 
@@ -7689,10 +7689,10 @@ character_event = {
     has_dlc = "Mystics"
 
     trigger = {
-    	AND = {
+    	#AND = {
     		has_artifact = blessed_mantle
     		NOT = { has_artifact = water_of_blessed_mantle }
-    	}
+    	#}
     }
 
     option = { #Make Water of the Blessed Mantle!

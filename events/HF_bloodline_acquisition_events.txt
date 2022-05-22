@@ -3722,17 +3722,6 @@ character_event = { # Child of Destiny launches Adventure
 				NOT = {
 					distance_from_realm = { who = PREV value = 800 }
 				}
-				NOT = {
-					any_realm_character = {
-						ai = no
-					}
-				}
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 800 }
-				}
 			}
 			preferred_limit = {
 				distance_from_realm = { who = PREV value = 200 }
@@ -4067,141 +4056,141 @@ character_event = { # Child of Destiny gets extra stats
 	}
 }
 
-character_event = { # Child of Destiny can choose to adopt culture/religion of newly conquered land.
-	id = HF.303
-	desc = HF_303_DESC
-	picture = GFX_evt_emissary
-	is_triggered_only = yes
-	hide_new = yes
-	hide_from = yes
-	
-	trigger = {
-		capital_scope = {
-			OR = {
-				NOT = { religion = ROOT }
-				NOT = { culture = ROOT }
-			}
-		}
-	}
-	
-	option = { # Adopt culture and religion
-		name = HF_303_OPTA
-		trigger = {
-			capital_scope = {
-				NOT = { religion = ROOT }
-				NOT = { culture = ROOT }
-			}
-		}
-		custom_tooltip = {
-			text = adopt_culture_and_religion_tt
-		}
-		hidden_effect = {
-			capital_scope = {
-				reverse_culture = ROOT
-				reverse_religion = ROOT
-			}
-			any_child = {
-				limit = {
-					is_ruler = no
-					ai = yes
-				}
-				culture = ROOT
-				religion = ROOT
-			}
-			any_courtier = {
-				limit = {
-					is_ruler = no
-					ai = yes
-				}
-				culture = ROOT
-				religion = ROOT
-			}
-		}
-		ai_chance = {
-        	factor = 50
-			modifier = {
-				factor = 0
-				has_character_flag = ai_flag_refuse_conversion
-			}
-        }
-	}
-	option = { # Adopt Culture
-		name = HF_303_OPTB
-		trigger = {
-			capital_scope = {
-				NOT = { culture = ROOT }
-			}
-		}
-		custom_tooltip = {
-			text = adopt_culture_tt
-		}
-		hidden_effect = {
-			capital_scope = {
-				reverse_culture = ROOT
-			}
-			any_child = {
-				limit = {
-					is_ruler = no
-					ai = yes
-				}
-				culture = ROOT
-			}
-			any_courtier = {
-				limit = {
-					is_ruler = no
-					ai = yes
-				}
-				culture = ROOT
-			}
-		}
-		ai_chance = {
-        	factor = 40
-        }
-	}
-	option = { # Adopt Religion
-		name = HF_303_OPTC
-		trigger = {
-			capital_scope = {
-				NOT = { religion = ROOT }
-			}
-		}
-		custom_tooltip = {
-			text = adopt_religion_tt
-		}
-		hidden_effect = {
-			capital_scope = {
-				reverse_religion = ROOT
-			}
-			any_child = {
-				limit = {
-					is_ruler = no
-					ai = yes
-				}
-				religion = ROOT
-			}
-			any_courtier = {
-				limit = {
-					is_ruler = no
-					ai = yes
-				}
-				religion = ROOT
-			}
-		}
-		ai_chance = {
-        	factor = 10
-			modifier = {
-				factor = 0
-				has_character_flag = ai_flag_refuse_conversion
-			}
-        }
-	}
-	option = { # Stay the same
-		name = HF_303_OPTD
-		ai_chance = {
-        	factor = 0
-        }
-	}
-}
+#character_event = { # Child of Destiny can choose to adopt culture/religion of newly conquered land.
+#	id = HF.303
+#	desc = HF_303_DESC
+#	picture = GFX_evt_emissary
+#	is_triggered_only = yes
+#	hide_new = yes
+#	hide_from = yes
+#	
+#	trigger = {
+#		capital_scope = {
+#			OR = {
+#				NOT = { religion = ROOT }
+#				NOT = { culture = ROOT }
+#			}
+#		}
+#	}
+#	
+#	option = { # Adopt culture and religion
+#		name = HF_303_OPTA
+#		trigger = {
+#			capital_scope = {
+#				NOT = { religion = ROOT }
+#				NOT = { culture = ROOT }
+#			}
+#		}
+#		custom_tooltip = {
+#			text = adopt_culture_and_religion_tt
+#		}
+#		hidden_effect = {
+#			capital_scope = {
+#				reverse_culture = ROOT
+#				reverse_religion = ROOT
+#			}
+#			any_child = {
+#				limit = {
+#					is_ruler = no
+#					ai = yes
+#				}
+#				culture = ROOT
+#				religion = ROOT
+#			}
+#			any_courtier = {
+#				limit = {
+#					is_ruler = no
+#					ai = yes
+#				}
+#				culture = ROOT
+#				religion = ROOT
+#			}
+#		}
+#		ai_chance = {
+#        	factor = 50
+#			modifier = {
+#				factor = 0
+#				has_character_flag = ai_flag_refuse_conversion
+#			}
+#        }
+#	}
+#	option = { # Adopt Culture
+#		name = HF_303_OPTB
+#		trigger = {
+#			capital_scope = {
+#				NOT = { culture = ROOT }
+#			}
+#		}
+#		custom_tooltip = {
+#			text = adopt_culture_tt
+#		}
+#		hidden_effect = {
+#			capital_scope = {
+#				reverse_culture = ROOT
+#			}
+#			any_child = {
+#				limit = {
+#					is_ruler = no
+#					ai = yes
+#				}
+#				culture = ROOT
+#			}
+#			any_courtier = {
+#				limit = {
+#					is_ruler = no
+#					ai = yes
+#				}
+#				culture = ROOT
+#			}
+#		}
+#		ai_chance = {
+#        	factor = 40
+#        }
+#	}
+#	option = { # Adopt Religion
+#		name = HF_303_OPTC
+#		trigger = {
+#			capital_scope = {
+#				NOT = { religion = ROOT }
+#			}
+#		}
+#		custom_tooltip = {
+#			text = adopt_religion_tt
+#		}
+#		hidden_effect = {
+#			capital_scope = {
+#				reverse_religion = ROOT
+#			}
+#			any_child = {
+#				limit = {
+#					is_ruler = no
+#					ai = yes
+#				}
+#				religion = ROOT
+#			}
+#			any_courtier = {
+#				limit = {
+#					is_ruler = no
+#					ai = yes
+#				}
+#				religion = ROOT
+#			}
+#		}
+#		ai_chance = {
+#        	factor = 10
+#			modifier = {
+#				factor = 0
+#				has_character_flag = ai_flag_refuse_conversion
+#			}
+#        }
+#	}
+#	option = { # Stay the same
+#		name = HF_303_OPTD
+#		ai_chance = {
+#        	factor = 0
+#        }
+#	}
+#}
 
 character_event = { # Child of Destiny gains bloodline
 	id = HF.304

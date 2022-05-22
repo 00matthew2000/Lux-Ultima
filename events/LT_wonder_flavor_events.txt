@@ -560,7 +560,7 @@ character_event = {
 					modifier = {
       					factor = 5
 				    	trait = deceitful
-				    	opinion < 20
+				    	opinion = { who = FROM value = 20 } 
 				    }
 					letter_event = { id = LT.20030 days = 100 random = 50 }
 				}
@@ -606,7 +606,7 @@ character_event = {
 					modifier = {
       					factor = 5
 				    	trait = deceitful
-				    	opinion < 20
+				    	opinion = { who = FROM value = 20 } 
 				    }
 					letter_event = { id = LT.20030 days = 100 random = 50 }
 				}
