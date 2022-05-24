@@ -1366,7 +1366,7 @@ character_event = {
 				#they die
 				40 = {
 					event_target:EoD_doomsday_prophet = {
-						death = { death_reason = death_execution_burning KILLER = FROM }
+						death = { death_reason = death_execution_burning killer = FROM }
 					}
 				}
 
@@ -1415,7 +1415,7 @@ letter_event = {
 	immediate = {
 		if = {
 			limit = {
-				any_direct_de_jure_vassal_title = {
+				any_realm_title = { ### Changed this in an attempt to fix it, went from any_direct_de_jure_vassal_title to any_realm_title -00matthew2000 ###
 					holder_scope = {
 						character = event_target:EoD_doomsday_prophet
 					}

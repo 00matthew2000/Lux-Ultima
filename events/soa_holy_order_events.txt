@@ -826,7 +826,9 @@ letter_event = {
 			holder_scope = {
 				FROMFROM = {
 					hidden_tooltip = {
-						clear_wealth = PREV
+						PREV = {
+						clear_wealth = yes
+						}
 					}
 				}
 				if = {

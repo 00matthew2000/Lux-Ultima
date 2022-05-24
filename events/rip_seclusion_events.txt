@@ -2999,7 +2999,7 @@ character_event = {
 		custom_tooltip = { text = EVTOPTC_RIP_12054_TOOLTIP }	
 		
 		event_target:captured_sneaker = {
-			death = { death_reason = death_execution_beheading Killer = FROM }
+			death = { death_reason = death_execution_beheading killer = FROM }
 			
 			hidden_tooltip = {
 				clr_character_flag = did_not_trust_steward
@@ -3708,7 +3708,7 @@ narrative_event = {
 			}
 		random_courtier = {
 			limit = {
-				is_close_relative = yes
+				is_close_relative = ROOT
 				is_adult = yes
 				prisoner = no
 				is_incapable = no
@@ -3872,7 +3872,7 @@ character_event = {
 				has_character_modifier = in_seclusion
 			}
 			any_courtier = {
-				is_close_relative = yes
+				is_close_relative = ROOT
 				is_adult = yes
 				prisoner = no
 				is_incapable = no
@@ -3906,7 +3906,7 @@ character_event = {
 			}
 			random_courtier = {
 				limit = {
-					is_close_relative = yes
+					is_close_relative = ROOT
 					is_adult = yes
 					prisoner = no
 					is_incapable = no
@@ -5721,7 +5721,7 @@ character_event = {
 								has_character_modifier = in_seclusion
 							}
 							any_courtier = {
-								is_close_relative = yes
+								is_close_relative = ROOT
 								is_adult = yes
 								prisoner = no
 								is_incapable = no

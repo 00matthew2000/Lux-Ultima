@@ -106,14 +106,14 @@ character_event = {
 										OR = { 
 											has_building = ct_port_1
 											has_building = ct_shipw_1
-											has_building = tp_shipyard_1
+											#has_building = tp_shipyard_1
 											has_building = pp_shipyard_1
 										} 
 										can_naval_path_to = PREVPREV
 									} 
 								}
 							}
-							capital_holding = { NOT = { holding_type = nomad } }
+							capital_scope = { NOT = { holding_type = nomad } } ### Not sure about this one really, changed it from holding to scope -00matthew2000 ###
 							holder_scope = {
 								NOT = {
 									character = ROOT
@@ -169,7 +169,7 @@ character_event = {
 					ai = no
 					age = 16
 					OR = {
-						AND = {
+						#AND = {
 							any_society_member = {
 				           		NOT = { same_society_as = ROOT }
 				           		#is_member_of_any_warrior_lodge_trigger = yes
@@ -181,8 +181,8 @@ character_event = {
 				                ai = yes
 								is_within_diplo_range = ROOT
 				            }
-						}
-						AND = {
+						#}
+						#AND = {
 							any_rival = {
 				                is_inaccessible_or_incapable_trigger = no
 				                NOT = { has_character_modifier = bedridden_illness }
@@ -191,8 +191,8 @@ character_event = {
 				                ai = yes
 								ROOT = { capital_scope = { distance = { where = PREV distance < 1000 } } }
 			            	}
-						}
-						AND = {
+						#}
+						#AND = {
 							any_realm_character = {
 				                is_inaccessible_or_incapable_trigger = no
 				                NOT = { has_character_modifier = bedridden_illness }
@@ -201,8 +201,8 @@ character_event = {
 				                ai = yes
 				                is_adult = yes
 				            }
-						}
-						AND = {
+						#}
+						#AND = {
 							any_neighbor_independent_ruler = {
 								any_realm_character = {
 					                is_inaccessible_or_incapable_trigger = no
@@ -214,7 +214,7 @@ character_event = {
 									ROOT = { capital_scope = { distance = { where = PREV distance < 1000 } } }
 								}
 				            }
-						}
+						#}
 					}
 				}
 				event_target:lodge_hero = {
@@ -432,14 +432,14 @@ society_quest_event = {
 								OR = { 
 									has_building = ct_port_1
 									has_building = ct_shipw_1
-									has_building = tp_shipyard_1
+									#has_building = tp_shipyard_1
 									has_building = pp_shipyard_1
 								} 
 								can_naval_path_to = PREVPREV
 							} 
 						}
 					}
-					capital_holding = { NOT = { holding_type = nomad } }
+					capital_scope = { NOT = { holding_type = nomad } }
 					holder_scope = {
 						NOT = {
 							character = ROOT
@@ -460,7 +460,7 @@ society_quest_event = {
 			random_realm_province = {
 				limit = {
 					is_occupied = no
-					capital_holding = { NOT = { holding_type = nomad } }
+					capital_scope = { NOT = { holding_type = nomad } }
 					OR = {
 						any_neighbor_province = {
 							owner = { is_liege_or_above = ROOT }
@@ -475,7 +475,7 @@ society_quest_event = {
 								OR = { 
 									has_building = ct_port_1
 									has_building = ct_shipw_1
-									has_building = tp_shipyard_1
+									#has_building = tp_shipyard_1
 									has_building = pp_shipyard_1
 								} 
 								can_naval_path_to = PREVPREV
@@ -692,9 +692,11 @@ character_event = {
 			}
 			scaled_wealth = { value = 1.0 min = 100 max = 250 }
 		}
-		hidden_tooltip = {
-			destroy_random_building = FROM
-			destroy_random_building = FROM
+		hidden_tooltip = { ### NO IDEA IF THIS WILL ACTUALLY FIX IT OR BREAK IT BUT...I put "yes" instead of FROM -00matthew2000 ###
+			FROM = {
+			destroy_random_building = yes
+			destroy_random_building = yes
+			}
 		}
 	}
 }
@@ -1721,134 +1723,134 @@ society_quest_event = {
 
 
 #Mission to Wage War complete: Warrior lodge hero says good job on the war!
-letter_event = {
-	id = HF.10514
-	border = GFX_event_letter_frame_war
-
-	portrait = event_target:lodge_hero
-
-	trigger = {
-		has_quest = quest_warrior_lodge_war
-	}
-
-	immediate = { 
-		hidden_effect = {
-			
-			if = { #Find some folks who are impressed by your victory...
-				limit = { has_character_flag = won_war@event_target:defender_target }
-				any_society_member = {
-					limit = {
-						same_society_as = ROOT
-						NOT = { character = ROOT }
-						NOT = { character = event_target:defender_target }
-					}
-					count = 3
-					score_value = { #Prioritizes selecting some kind of warrior...
-						value = 10
-						warrior_recruit_score = yes
-					}
-					set_character_flag = impressed@ROOT
-				}
-			}
-
-			#Selects someone to congratulate you...
-			random_society_member = {
-				limit = {
-					same_society_as = ROOT
-					society_rank == 4
-					NOT = { character = ROOT }
-					NOT = { character = event_target:defender_target }
-				}
-				save_event_target_as = lodge_hero
-				break = yes
-			}
-			random_society_member = {
-				limit = {
-					same_society_as = ROOT
-					society_rank == 3
-					NOT = { character = ROOT }
-					NOT = { character = event_target:defender_target }
-				}
-				save_event_target_as = lodge_hero
-				break = yes
-			}
-			random_society_member = {
-				limit = {
-					same_society_as = ROOT
-					society_rank == 2
-					NOT = { character = ROOT }
-					NOT = { character = event_target:defender_target }
-				}
-				save_event_target_as = lodge_hero
-				break = yes
-			}
-			random_society_member = {
-				limit = {
-					same_society_as = ROOT
-					society_rank == 1 #This is likely never really ever going to be needed. But still.
-					NOT = { character = ROOT }
-					NOT = { character = event_target:defender_target }
-				}
-				save_event_target_as = lodge_hero
-				break = yes
-			}
-		}
-	}
-
-	desc = {
-		text = EVTDESC_HF_10514_won
-		trigger = { has_character_flag = won_war@event_target:defender_target }
-	}
-	desc = {
-		text = EVTDESC_HF_10514_white_peace
-		trigger = { has_character_flag = white_peace@event_target:defender_target }
-	}
-	desc = {
-		text = EVTDESC_HF_10514_lost
-		trigger = { has_character_flag = lost_war@event_target:defender_target }
-	}
-	
-	is_triggered_only = yes
-
-	#I understand
-	option = {
-		name = {
-			text = EVTOPTA_HF_10514_won
-			trigger = { has_character_flag = won_war@event_target:defender_target }
-		}
-		name = {
-			text = EVTOPTA_HF_10514_white_peace
-			trigger = { has_character_flag = white_peace@event_target:defender_target }
-		}
-		name = {
-			text = EVTOPTA_HF_10514_lost
-			trigger = { has_character_flag = lost_war@event_target:defender_target }
-		}
-		trigger_switch = {
-			on_trigger = has_character_flag
-			won_war@event_target:defender_target = {
-				any_society_member = {
-					limit = { has_character_flag = impressed@ROOT }
-					show_scope_change = no
-					opinion = {
-			            who = ROOT
-			            modifier = opinion_conquered_new_land
-			            years = 10
-			        }
-					clr_character_flag = impressed@ROOT
-				}
-				add_society_currency_major_effect = yes
-			}
-			white_peace@event_target:defender_target = { add_society_currency_medium_effect = yes }
-			lost_war@event_target:defender_target = { add_society_currency_minor_effect = yes }
-		}
-		clr_quest = quest_warrior_lodge_war
-		add_legend_progress_trivial_effect = yes
-		clr_character_flag = won_war@event_target:defender_target
-		clr_character_flag = white_peace@event_target:defender_target
-		clr_character_flag = lost_war@event_target:defender_target
-	}
-}
+#letter_event = {
+#	id = HF.10514
+#	border = GFX_event_letter_frame_war
+#
+#	portrait = event_target:lodge_hero
+#
+#	trigger = {
+#		has_quest = quest_warrior_lodge_war
+#	}
+#
+#	immediate = { 
+#		hidden_effect = {
+#			
+#			if = { #Find some folks who are impressed by your victory...
+#				limit = { has_character_flag = won_war@event_target:defender_target }
+#				any_society_member = {
+#					limit = {
+#						same_society_as = ROOT
+#						NOT = { character = ROOT }
+#						NOT = { character = event_target:defender_target }
+#					}
+#					count = 3
+#					score_value = { #Prioritizes selecting some kind of warrior...
+#						value = 10
+#						warrior_recruit_score = yes
+#					}
+#					set_character_flag = impressed@ROOT
+#				}
+#			}
+#
+#			#Selects someone to congratulate you...
+#			random_society_member = {
+#				limit = {
+#					same_society_as = ROOT
+#					society_rank == 4
+#					NOT = { character = ROOT }
+#					NOT = { character = event_target:defender_target }
+#				}
+#				save_event_target_as = lodge_hero
+#				break = yes
+#			}
+#			random_society_member = {
+#				limit = {
+#					same_society_as = ROOT
+#					society_rank == 3
+#					NOT = { character = ROOT }
+#					NOT = { character = event_target:defender_target }
+#				}
+#				save_event_target_as = lodge_hero
+#				break = yes
+#			}
+#			random_society_member = {
+#				limit = {
+#					same_society_as = ROOT
+#					society_rank == 2
+#					NOT = { character = ROOT }
+#					NOT = { character = event_target:defender_target }
+#				}
+#				save_event_target_as = lodge_hero
+#				break = yes
+#			}
+#			random_society_member = {
+#				limit = {
+#					same_society_as = ROOT
+#					society_rank == 1 #This is likely never really ever going to be needed. But still.
+#					NOT = { character = ROOT }
+#					NOT = { character = event_target:defender_target }
+#				}
+#				save_event_target_as = lodge_hero
+#				break = yes
+#			}
+#		}
+#	}
+#
+#	desc = {
+#		text = EVTDESC_HF_10514_won
+#		trigger = { has_character_flag = won_war@event_target:defender_target }
+#	}
+#	desc = {
+#		text = EVTDESC_HF_10514_white_peace
+#		trigger = { has_character_flag = white_peace@event_target:defender_target }
+#	}
+#	desc = {
+#		text = EVTDESC_HF_10514_lost
+#		trigger = { has_character_flag = lost_war@event_target:defender_target }
+#	}
+#	
+#	is_triggered_only = yes
+#
+#	#I understand
+#	option = {
+#		name = {
+#			text = EVTOPTA_HF_10514_won
+#			trigger = { has_character_flag = won_war@event_target:defender_target }
+#		}
+#		name = {
+#			text = EVTOPTA_HF_10514_white_peace
+#			trigger = { has_character_flag = white_peace@event_target:defender_target }
+#		}
+#		name = {
+#			text = EVTOPTA_HF_10514_lost
+#			trigger = { has_character_flag = lost_war@event_target:defender_target }
+#		}
+#		trigger_switch = {
+#			on_trigger = has_character_flag
+#			won_war@event_target:defender_target = {
+#				any_society_member = {
+#					limit = { has_character_flag = impressed@ROOT }
+#					show_scope_change = no
+#					opinion = {
+#			            who = ROOT
+#			            modifier = opinion_conquered_new_land
+#			            years = 10
+#			        }
+#					clr_character_flag = impressed@ROOT
+#				}
+#				add_society_currency_major_effect = yes
+#			}
+#			white_peace@event_target:defender_target = { add_society_currency_medium_effect = yes }
+#			lost_war@event_target:defender_target = { add_society_currency_minor_effect = yes }
+#		}
+#		clr_quest = quest_warrior_lodge_war
+#		add_legend_progress_trivial_effect = yes
+#		clr_character_flag = won_war@event_target:defender_target
+#		clr_character_flag = white_peace@event_target:defender_target
+#		clr_character_flag = lost_war@event_target:defender_target
+#	}
+#}
 
 #on_war_ended_victory: Clear Wage War mission correctly
 # From = Attacker, Root = Defender
@@ -1990,10 +1992,10 @@ character_event = {
 
 	trigger = {
 		OR = { 
-			AND = { 
+			#AND = { 
 				#is_member_of_any_warrior_lodge_trigger = yes
 				has_quest = quest_warrior_lodge_raid_and_loot
-			}
+			#}
 			any_liege = { 
 				#is_member_of_any_warrior_lodge_trigger = yes
 				has_quest = quest_warrior_lodge_raid_and_loot

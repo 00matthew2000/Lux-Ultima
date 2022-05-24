@@ -909,23 +909,23 @@ character_event = { # Chance of gaining a personality trait of Founder
 #}
 
 #Notification for players of the new Tyrant of Sicily.
-narrative_event = {
-	id = HF.24006
-	title = EVTTITLEHF24000
-	desc = EVTDESCHF24006
-	picture = GFX_evt_beheading
-	border = GFX_event_narrative_frame_intrigue
-	sound = bloodline_added
-	
-	is_triggered_only = yes
-
-	trigger = { 
-		has_dlc = "Holy Fury" 
-	}
-	option = {
-		name = EVTOPTAHF24006
-	}
-}
+#narrative_event = {
+#	id = HF.24006
+#	title = EVTTITLEHF24000
+#	desc = EVTDESCHF24006
+#	picture = GFX_evt_beheading
+#	border = GFX_event_narrative_frame_intrigue
+#	sound = bloodline_added
+#	
+#	is_triggered_only = yes
+#
+#	trigger = { 
+#		has_dlc = "Holy Fury" 
+#	}
+#	option = {
+#		name = EVTOPTAHF24006
+#	}
+#}
 
 #Teuta's bloodline. Fired on_war_ended_victory of a war against Byzantium.
 # From = Attacker, Root = Defender

@@ -3413,45 +3413,45 @@ character_event = {
 #}
 
 # A letter arrives from the EoC stating that the Emperor is looking for 'the best trade partner'
-letter_event = {
-    id = JD.40001
-	has_dlc = "Jade Dragon"
-    
-    desc = {
-        text = EVTDESC_JD_40001_A
-        trigger = { has_character_flag = trade_competition_build_city }
-    }
-    desc = {
-        text = EVTDESC_JD_40001_C
-        trigger = { has_character_flag = trade_competition_accumulate_prestige } 
-    }
-    border = GFX_event_letter_frame_diplomacy
-    
-    is_triggered_only = yes
-    
-    # Accept the challenge - City
-    option = {
-        name = EVTOPTA_JD_40001
-        if = {
-            limit = {
-                has_character_flag = trade_competition_build_city
-            }
-            custom_tooltip = { text = trade_competition_build_city_TT }
-        }
-        if = {
-            limit = {
-                has_character_flag = trade_competition_accumulate_prestige
-            }
-            custom_tooltip = { text = trade_competition_prestige_TT }
-        }
-        any_playable_ruler = {
-            limit = {
-                has_character_flag = trade_competition_participant
-            }
-            show_portrait = yes
-        }
-    }
-}
+#letter_event = {
+#    id = JD.40001
+#	has_dlc = "Jade Dragon"
+#    
+#    desc = {
+#        text = EVTDESC_JD_40001_A
+#        trigger = { has_character_flag = trade_competition_build_city }
+#    }
+#    desc = {
+#        text = EVTDESC_JD_40001_C
+#        trigger = { has_character_flag = trade_competition_accumulate_prestige } 
+#    }
+#    border = GFX_event_letter_frame_diplomacy
+#    
+#    is_triggered_only = yes
+#    
+#    # Accept the challenge - City
+#    option = {
+#        name = EVTOPTA_JD_40001
+#        if = {
+#            limit = {
+#                has_character_flag = trade_competition_build_city
+#            }
+#            custom_tooltip = { text = trade_competition_build_city_TT }
+#        }
+#        if = {
+#            limit = {
+#                has_character_flag = trade_competition_accumulate_prestige
+#            }
+#            custom_tooltip = { text = trade_competition_prestige_TT }
+#        }
+#        any_playable_ruler = {
+#            limit = {
+#                has_character_flag = trade_competition_participant
+#            }
+#            show_portrait = yes
+#        }
+#    }
+#}
 
 # On-action start event for city construction
 #character_event = {

@@ -46,6 +46,20 @@ character_event = {
 			} 
 			character_event = { id = HF.23802 } 
 		}
+		if = { 
+			limit = { 
+				#is_member_of_any_warrior_lodge_trigger = yes
+			} 
+			any_society_member = { #Possible Hero guest.
+				limit = { 
+					has_opinion_modifier = { 
+						who = ROOT
+						modifier = opinion_great_tribal_festival_guest 
+					} 
+				} 
+				character_event = { id = HF.23805 } 
+			}
+		}
 	}
 }
 #All guests notified that the festival has been interrupted by the unexpected death of the host.
@@ -191,7 +205,7 @@ character_event = {
 			}
 			if = { 
 				limit = { 
-					is_member_of_any_warrior_lodge_trigger = yes
+					#is_member_of_any_warrior_lodge_trigger = yes ### More may need to be done here to just remove this event chain -00matthew2000 ###
 				} 
 				random_society_member = { #Possible Hero guest.
 					limit = { 
@@ -371,7 +385,7 @@ letter_event = {
 	}
 	
 	immediate = {
-		FROM = { character_event = { id = HF.23810 days = 3 random = 7 } }
+		FROM = { letter_event = { id = HF.23810 days = 3 random = 7 } }
 		hidden_tooltip = { 
 			character_event = { id = HF.23800 days = 300 } # Full cleanup event, in case something goes wrong.
 		} 
@@ -1943,19 +1957,19 @@ character_event = {
 			}
 			modifier = { 
 				factor = 1.25
-				ROOT = { attribute_diff = { character = FROM combat_rating  = 5 } }
+				#ROOT = { attribute_diff = { character = FROM combat_rating  = 5 } }
 			}
 			modifier = { 
 				factor = 1.25
-				ROOT = { attribute_diff = { character = FROM combat_rating  = 10 } }
+				#ROOT = { attribute_diff = { character = FROM combat_rating  = 10 } }
 			}
 			modifier = { 
 				factor = 1.5
-				ROOT = { attribute_diff = { character = FROM combat_rating  = 15 } }
+				#ROOT = { attribute_diff = { character = FROM combat_rating  = 15 } }
 			}
 			modifier = { 
 				factor = 1.75
-				ROOT = { attribute_diff = { character = FROM combat_rating  = 20 } }
+				#ROOT = { attribute_diff = { character = FROM combat_rating  = 20 } }
 			}
 		}
 	}
@@ -2106,19 +2120,19 @@ character_event = {
 			}
 			modifier = { 
 				factor = 1.25
-				ROOT = { attribute_diff = { character = FROM combat_rating  = 5 } }
+				#ROOT = { attribute_diff = { character = FROM combat_rating  = 5 } }
 			}
 			modifier = { 
 				factor = 1.25
-				ROOT = { attribute_diff = { character = FROM combat_rating  = 10 } }
+				#ROOT = { attribute_diff = { character = FROM combat_rating  = 10 } }
 			}
 			modifier = { 
 				factor = 1.5
-				ROOT = { attribute_diff = { character = FROM combat_rating  = 15 } }
+				#ROOT = { attribute_diff = { character = FROM combat_rating  = 15 } }
 			}
 			modifier = { 
 				factor = 1.75
-				ROOT = { attribute_diff = { character = FROM combat_rating  = 20 } }
+				#ROOT = { attribute_diff = { character = FROM combat_rating  = 20 } }
 			}
 		}
 	}

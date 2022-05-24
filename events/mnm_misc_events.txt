@@ -1355,55 +1355,55 @@ character_event = {
 							set_society_grandmaster = yes
 						}
 					}
-					100 = { 
-						trigger = {
-							can_#join_society = the_assassins
-						}
-						modifier = {
-							factor = 0.5
-							is_landed = no
-						}
-						modifier = {
-							factor = 2
-							is_landed = yes
-						}
-						modifier = {
-							factor = 5
-							NOT = { trait = decadent }
-							OR = {
-								trait = zealous
-								trait = schemer
-								trait = elusive_shadow
-								trait = deceitful
-								trait = ambitious
-								intrigue = 18
-							}
-						}
-						#join_society = the_assassins
-						random_list = { # Artificially increase society influence for balance purposes
-							75 = {
-								modifier = {
-									factor = 0
-									society_influence >= 30
-								}
-								add_mission_succeed_influence_effect = yes
-							}
-							25 = {
-							}
-						}
-						if = {
-							limit = {
-								NOT = {
-									society = {
-										any_society_member = {
-											is_society_grandmaster = yes
-										}
-									}
-								}
-							}
-							set_society_grandmaster = yes
-						}
-					}
+#					100 = { 
+#						trigger = {
+#							#can_join_society = the_assassins
+#						}
+#						modifier = {
+#							factor = 0.5
+#							is_landed = no
+#						}
+#						modifier = {
+#							factor = 2
+#							is_landed = yes
+#						}
+#						modifier = {
+#							factor = 5
+#							NOT = { trait = decadent }
+#							OR = {
+#								trait = zealous
+#								trait = schemer
+#								trait = elusive_shadow
+#								trait = deceitful
+#								trait = ambitious
+#								intrigue = 18
+#							}
+#						}
+#						#join_society = the_assassins
+#						random_list = { # Artificially increase society influence for balance purposes
+#							75 = {
+#								modifier = {
+#									factor = 0
+#									society_influence >= 30
+#								}
+#								add_mission_succeed_influence_effect = yes
+#							}
+#							25 = {
+#							}
+#						}
+#						if = {
+#							limit = {
+#								NOT = {
+#									society = {
+#										any_society_member = {
+#											is_society_grandmaster = yes
+#										}
+#									}
+#								}
+#							}
+#							set_society_grandmaster = yes
+#						}
+#					}
 					#50 = { 
 						#trigger = {
 						#	can_join_society = the_satanists

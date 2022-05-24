@@ -231,17 +231,19 @@ character_event = {
     		prisoner = no
     		is_adult = yes
     		count = 2
-			has_lover = no
-			NOT = {
-				any_rival = {
-					always = yes
-				}
-			}
-			NOT = {
-				any_friend = {
-					always = yes
-				}
-			}
+    		AND = {
+    			has_lover = no
+    			NOT = {
+    				any_rival = {
+        				always = yes
+        			}
+    			}
+    			NOT = {
+    				any_friend = {
+        				always = yes
+        			}
+    			}
+    		}
     	}
     }
 
@@ -255,17 +257,19 @@ character_event = {
 		    		prisoner = no
 		    		is_adult = yes
 		    		count = 4 #More courtiers that are lonely
-					has_lover = no
-					NOT = {
-						any_rival = {
-							always = yes
-						}
-					}
-					NOT = {
-						any_friend = {
-							always = yes
-						}
-					}
+		    		AND = {
+		    			has_lover = no
+		    			NOT = {
+		    				any_rival = {
+		        				always = yes
+		        			}
+		    			}
+		    			NOT = {
+		    				any_friend = {
+		        				always = yes
+		        			}
+		    			}
+		    		}
 		    	}
 			}
     		break = yes
@@ -275,17 +279,19 @@ character_event = {
     			is_landed = no
 	    		prisoner = no
 	    		is_adult = yes
-				has_lover = no
-				NOT = {
-					any_rival = {
-						always = yes
-					}
-				}
-				NOT = {
-					any_friend = {
-						always = yes
-					}
-				}
+	    		AND = {
+        			has_lover = no
+        			NOT = {
+        				any_rival = {
+	        				always = yes
+	        			}
+        			}
+        			NOT = {
+        				any_friend = {
+	        				always = yes
+	        			}
+        			}
+        		}
     		}
             preferred_limit = {
                 trait = lustful
@@ -310,21 +316,23 @@ character_event = {
     	}
     	any_courtier = {
     		limit = {
-    			NOT = { character = event_target:courtier_1 }
+    			NOT = { CHARACTER = event_target:courtier_1 }
     			is_landed = no
 	    		prisoner = no
                 is_adult = yes
-				has_lover = no
-				NOT = {
-					any_rival = {
-						always = yes
-					}
-				}
-				NOT = {
-					any_friend = {
-						always = yes
-					}
-				}
+	    		AND = {
+        			has_lover = no
+        			NOT = {
+        				any_rival = {
+	        				always = yes
+	        			}
+        			}
+        			NOT = {
+        				any_friend = {
+	        				always = yes
+	        			}
+        			}
+        		}
     		}
             preferred_limit = {
                 trait = lustful
@@ -413,7 +421,6 @@ character_event = {
     	}
     }
 }
-
 
 #To add random modifiers
 character_event = {

@@ -12169,7 +12169,7 @@ character_event = {
 		FROM = {
 			always = yes
 			#is_capital = yes
-			location = { capital_holding = { title = FROM } } #Do not reiterate the event after taking the capital holding.
+			location = { capital_scope = { title = FROM } } #Do not reiterate the event after taking the capital holding. ### Don't know if this'll fix it, changed to scope from holding -00matthew2000 ###
 			location = { is_capital = yes }
 		}
 	}
@@ -12558,7 +12558,7 @@ character_event = {
 					}
 					transfer_artifact = {
 						from = ROOT
-						to = THIS
+						to = PREV
 					}
 				}
 			}
@@ -13304,7 +13304,7 @@ character_event = {
 					}
 					transfer_artifact = {
 						from = ROOT
-						to = THIS
+						to = PREV
 					}
 				}
 			}
@@ -13612,7 +13612,7 @@ character_event = {
 					}
 					transfer_artifact = {
 						from = ROOT
-						to = THIS
+						to = PREV
 					}
 				}
 			}

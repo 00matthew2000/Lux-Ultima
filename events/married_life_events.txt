@@ -547,8 +547,6 @@ character_event = {
 								}
 							}
 						}
-					}
-					33 = {
 						death = {
 							death_reason = death_murder_poison
 							killer = ROOT
@@ -4690,7 +4688,9 @@ character_event = {
 			num_of_children = 1
 		}
 		any_courtier = {
-			is_close_relative = no
+			NOT = {
+					is_close_relative = ROOT
+				}
 			is_female = no
 			age = 20
 			NOR = {
@@ -4735,7 +4735,9 @@ character_event = {
 		ai_chance = { factor = 80 }
 		random_courtier = {
 			limit = {
-				is_close_relative = no
+				NOT = {
+					is_close_relative = ROOT
+				}
 				is_female = no
 				age = 20
 				NOR = {
@@ -6503,7 +6505,9 @@ character_event = {
 				trait = celibate
 				family = ROOT
 			}
-			is_close_relative = no
+			NOT = {
+					is_close_relative = ROOT
+				}
 		}
 		NOT = {
 			has_character_modifier = suitable_father_timer
@@ -6556,7 +6560,9 @@ character_event = {
 					trait = celibate
 					family = ROOT
 				}
-				is_close_relative = no
+				NOT = {
+					is_close_relative = ROOT
+				}
 			}
 			add_lover = ROOT
 			random = {

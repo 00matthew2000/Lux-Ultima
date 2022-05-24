@@ -4144,7 +4144,7 @@ character_event = {
 	trigger = {
 		this_is_sea_raider_trigger = yes
 		FROM = {
-			location = { capital_scope = { title = FROM } } #Do not reiterate the event after taking the capital holding.
+			location = { capital_holding = { title = FROM } } #Do not reiterate the event after taking the capital holding.
 			is_tribal = no
 			is_nomadic = no
 		}
@@ -4355,7 +4355,7 @@ character_event = {
 	trigger = {
 		this_is_sea_raider_trigger = yes
 		FROM = {
-			location = { capital_scope = { title = FROM } } #Do not reiterate the event after taking the capital holding.
+			location = { capital_holding = { title = FROM } } #Do not reiterate the event after taking the capital holding.
 			is_tribal = no
 			is_nomadic = no
 		}
@@ -4484,7 +4484,7 @@ character_event = {
 			trait = sea_queen
 		}
 		FROM = {
-			location = { capital_scope = { title = FROM } } #Do not reiterate the event after taking the capital holding.
+			location = { capital_holding = { title = FROM } } #Do not reiterate the event after taking the capital holding.
 			location = { num_of_settlements = 5 } #Only fires for big cities. 
 			is_tribal = no
 			is_nomadic = no
@@ -4580,7 +4580,7 @@ character_event = {
 				}
 				hidden_tooltip = {
 					location = {
-						character_event = { id = HF.23211 days = 1 } #Inform owner that his holding has been destroyed.
+						province_event = { id = HF.23211 days = 1 } #Inform owner that his holding has been destroyed.
 					}
 				}
 				FROM = { destroy_settlement = THIS }
@@ -4949,7 +4949,7 @@ character_event = {
 		} 
 		this_is_sea_raider_trigger = yes
 		FROM = {
-			location = { capital_scope = { title = FROM } } #Do not reiterate the event after taking the capital holding.
+			location = { capital_holding = { title = FROM } } #Do not reiterate the event after taking the capital holding.
 			location = { num_of_settlements = 4 } #Only fires for medium to big cities. 
 			is_tribal = no
 			is_nomadic = no

@@ -4332,19 +4332,19 @@ character_event = {
 #}
 
 #Notification: Vassal, you've just become a Papal vassal.
-character_event = {
-	id = HF.20230
-	desc = EVTDESCHFA20230
-
-	picture = GFX_evt_pope
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = {
-		name = EVTOPTAHF20230
-	}
-}
+#character_event = {
+#	id = HF.20230
+#	desc = EVTDESCHFA20230
+#
+#	picture = GFX_evt_pope
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = EVTOPTAHF20230
+#	}
+#}
 
 #On_death of the coronation_priest. Set hidden opinion to ping back to the coronation_ruler.
 character_event = {
@@ -4484,570 +4484,570 @@ character_event = {
 #}
 
 #King: Pope wants an orgy.
-letter_event = {
-	id = HF.20235
-	desc = EVTDESCHFA20235
-	border = GFX_event_letter_frame_religion
-
-	trigger = {
-		religion = catholic
-	}
-	is_triggered_only = yes
-	
-	#Fund AND join the Orgy
-	option = {
-		name = EVTOPTZHF20235
-		custom_tooltip = { text = join_pope_orgy }
-		set_character_flag = flag_crowned_by_pope
-		FROM = { save_event_target_as = coronation_priest
-				show_scope_change = no	
-			opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 2
-				who = ROOT
-			}
-			reverse_opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 2
-				who = ROOT
-			}
-		}
-		transfer_scaled_wealth = { to = FROM value = 0.75 min = 150 max = 400 } 
-		tiered_piety_negative_effect = yes
-		hidden_tooltip = { 
-			FROM = { 
-				tiered_piety_negative_effect = yes
-			} 
-		}
-		hidden_tooltip = { character_event = { id = HF.20236 } } #Small event chain.
-		#hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
-		ai_chance = { factor = 10 }
-	}
-	option = {
-		name = EVTOPTAHF20235
-		trigger = { NOT = { trait = hedonist } }
-		set_character_flag = flag_crowned_by_bishop
-		FROM = { save_event_target_as = coronation_priest
-				show_scope_change = no	
-			opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 2
-				who = ROOT
-			}
-			reverse_opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 2
-				who = ROOT
-			}
-		}
-		transfer_scaled_wealth = { to = FROM value = 0.75 min = 150 max = 400 } 
-		piety = -50
-		hidden_tooltip = { 
-			FROM = { 
-				tiered_piety_negative_effect = yes
-			} 
-		}
-		hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
-		ai_chance = { factor = 100 }
-	}
-	option = {	#End of the line
-		name = EVTOPTBHF20235
-		custom_tooltip = { text = coronation_canceled }
-		#clr_character_flag = flag_preparing_coronation #Replaced by timed modifier
-		ai_chance = { factor = 0 }
-	}
-}
-
-#Go to the priest's orgy, because why not.
-character_event = {
-	id = HF.20236
-	desc = { #Orgy with Prince-Bishop.
-		text = EVTDESCHFA20236
-		trigger = {
-			NOT = {
-				FROMFROM = { 
-					has_landed_title = k_papal_state
-				}
-			}
-		}
-	}
-	desc = { #Orgy with the Pope.
-		text = EVTDESCHFB20236
-		trigger = {
-			FROMFROM = { 
-				has_landed_title = k_papal_state
-			}
-		}
-	}
-	show_FROM_FROM = yes
-
-	picture = GFX_evt_pope_feast
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTAHF20236
-		custom_tooltip = { text = papal_orgy_drunk }
-		set_character_flag = flag_papal_orgy_drunk
-		if = { 
-			limit = { trait = drunkard } 
-			tiered_piety_negative_effect = yes
-		}
-		if = { 
-			limit = { NOT = { trait = drunkard } } 
-			add_trait = drunkard 
-		}
-		if = { 
-			limit = { FROMFROM = { has_landed_title = k_papal_state } } 
-			prestige = 50
-		}
-		ai_chance = { factor = 30 }
-	}
-	option = {
-		name = EVTOPTBHF20236
-		custom_tooltip = { text = papal_orgy_lustful }
-		set_character_flag = flag_papal_orgy_lustful
-		if = { 
-			limit = { trait = lustful } 
-			tiered_piety_negative_effect = yes
-		}
-		if = { 
-			limit = { trait = chaste } 
-			remove_trait = chaste
-		}
-		if = { 
-			limit = { NOT = { trait = lustful } } 
-			add_trait = lustful
-		}
-		if = { 
-			limit = { FROMFROM = { has_landed_title = k_papal_state } } 
-			prestige = 50
-		}
-		ai_chance = { factor = 30 }
-	}
-	option = {
-		name = EVTOPTCHF20236
-		custom_tooltip = { text = papal_orgy_glutton }
-		set_character_flag = flag_papal_orgy_glutton
-		if = { 
-			limit = { trait = gluttonous } 
-			tiered_piety_negative_effect = yes
-		}
-		if = { 
-			limit = { trait = temperate } 
-			remove_trait = temperate
-		}
-		if = { 
-			limit = { NOT = { trait = gluttonous } } 
-			add_trait = gluttonous
-		}
-		if = { 
-			limit = { FROMFROM = { NOT = { has_landed_title = k_papal_state } } } 
-			gain_weight_medium_effect = yes
-			weight_trait_check_effect = yes
-		}
-		if = { 
-			limit = { FROMFROM = { has_landed_title = k_papal_state } } 
-			gain_weight_large_effect = yes
-			weight_trait_check_effect = yes
-		}
-		if = { 
-			limit = { FROMFROM = { has_landed_title = k_papal_state } } 
-			prestige = 50
-		}
-		ai_chance = { factor = 30 }
-	}
-	after = { 
-		hidden_tooltip = { 
-			random_list = { 
-				40 = { #Priest comes onto you.
-					modifier = { 
-						factor = 0
-						is_female = no 
-						FROMFROM = { NOT = { trait = homosexual } } 
-					} 
-					modifier = { 
-						factor = 0.25
-						is_female = yes
-						age = 45
-					}
-					modifier = { 
-						factor = 0.5
-						has_ugly_trait_trigger = yes
-					} 
-					modifier = { 
-						factor = 0.5
-						trait = disfigured
-					} 
-					modifier = { 
-						factor = 0.5
-						trait = has_bubonic_plague
-					} 
-					modifier = { 
-						factor = 0.5
-						trait = inbred
-					} 
-					modifier = { 
-						factor = 1.75
-						has_fair_trait_trigger = yes
-					} 	
-					modifier = { 
-						factor = 1.5
-						NOT = { age = 30 }
-					} 
-					modifier = { 
-						factor = 2.5
-						NOT = { age = 18 } #Obviously...
-					} 
-					modifier = { 
-					factor = 0.5
-						trait = one_eyed
-					} 
-					modifier = { 
-						factor = 1.5
-						trait = lustful
-					} 
-					modifier = { 
-						factor = 0.5
-						FROMFROM = { NOT = { trait = lustful } }
-					} 
-
-					character_event = { id = HF.20237 } 
-				}
-				30 = { #Become Hedonist.
-					modifier = { 
-						factor = 0
-						has_any_lifestyle_trait = yes
-					} 
-					modifier = { 
-						factor = 1.5
-						trait = drunkard
-					} 
-					modifier = { 
-						factor = 1.5
-						trait = gluttonous
-					} 
-					modifier = { 
-						factor = 1.5
-					trait = slothful
-					} 
-					modifier = { 
-						factor = 1.5
-						trait = lustful
-					} 
-					character_event = { id = HF.20238 } 
-				}
-				30 = { #Nothing happens, end the event.
-					character_event = { id = HF.20239 } 
-				}
-			}
-		}
-	}
-}
-
-#Time for the communion
-character_event = {
-	id = HF.20237
-	desc = { # with Prince-Bishop.
-		text = EVTDESCHFA20237
-		trigger = {
-			NOT = {
-				FROMFROMFROM = { 
-					has_landed_title = k_papal_state
-				}
-			}
-		}
-	}
-	desc = { # with the Pope.
-		text = EVTDESCHFB20237
-		trigger = {
-			FROMFROMFROM = { 
-				has_landed_title = k_papal_state
-			}
-		}
-	}
-	show_FROM_FROM_FROM = yes
-
-	picture = GFX_evt_pope_feast
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTAHF20237
-		trigger = { 
-			OR = { 
-				is_female = yes 
-				trait = homosexual
-			} 
-		}
-		custom_tooltip = { text = papal_orgy_communion }
-		tiered_prestige_reward_effect = yes
-		tiered_piety_negative_effect = yes
-		hidden_tooltip = { 
-			if = { 
-				limit = { 
-					is_female = yes 
-					NOT = { age = 40 }
-					fertility = 0.4
-				}
-				random = { 
-					chance = 10
-					modifier = {
-						factor = 0.5
-						NOT = { fertility = 0.3 }
-					}
-					modifier = {
-						factor = 1.5
-						fertility = 0.3
-					}
-					modifier = {
-						factor = 1.5
-						fertility = 0.5
-					}
-					modifier = {
-						factor = 1.5
-						fertility = 0.7
-					}
-					modifier = {
-						factor = 1.5
-						fertility = 0.9
-					}
-					modifier = {
-						factor = 1.5
-						fertility = 1.25
-					}
-					modifier = {
-						factor = 1.75
-						fertility = 1.5
-					}
-					modifier = {
-						factor = 2
-						fertility = 1.75
-					}
-					modifier = {
-						factor = 3
-						fertility = 2
-					}
-					ROOT = { impregnate = FROMFROMFROM }
-					if = { 
-						limit = { FROMFROMFROM = { has_landed_title = k_papal_state } } 
-						set_character_flag = flag_vatican_prince #cleared on birth.
-					}
-				}
-			}
-		}
-		hidden_tooltip = { character_event = { id = HF.20239 } } #Conclude the Orgy.
-		ai_chance = { 
-			factor = 90 
-			modifier = { 
-				factor = 0.25
-				trait = chaste
-			}
-		}
-	}
-	option = {
-		name = EVTOPTBHF20237
-		custom_tooltip = { text = papal_orgy_flee }
-		hidden_tooltip = { character_event = { id = HF.20239 } } #Conclude the Orgy.
-		ai_chance = { 
-			factor = 10 
-		}
-	}
-}
+#letter_event = {
+#	id = HF.20235
+#	desc = EVTDESCHFA20235
+#	border = GFX_event_letter_frame_religion
+#
+#	trigger = {
+#		religion = catholic
+#	}
+#	is_triggered_only = yes
+#	
+#	#Fund AND join the Orgy
+#	option = {
+#		name = EVTOPTZHF20235
+#		custom_tooltip = { text = join_pope_orgy }
+#		set_character_flag = flag_crowned_by_pope
+#		FROM = { save_event_target_as = coronation_priest
+#				show_scope_change = no	
+#			opinion = {
+#				modifier = opinion_supposed_to_crown
+#				months = 2
+#				who = ROOT
+#			}
+#			reverse_opinion = {
+#				modifier = opinion_supposed_to_crown
+#				months = 2
+#				who = ROOT
+#			}
+#		}
+#		transfer_scaled_wealth = { to = FROM value = 0.75 min = 150 max = 400 } 
+#		tiered_piety_negative_effect = yes
+#		hidden_tooltip = { 
+#			FROM = { 
+#				tiered_piety_negative_effect = yes
+#			} 
+#		}
+#		hidden_tooltip = { character_event = { id = HF.20236 } } #Small event chain.
+#		#hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
+#		ai_chance = { factor = 10 }
+#	}
+#	option = {
+#		name = EVTOPTAHF20235
+#		trigger = { NOT = { trait = hedonist } }
+#		set_character_flag = flag_crowned_by_bishop
+#		FROM = { save_event_target_as = coronation_priest
+#				show_scope_change = no	
+#			opinion = {
+#				modifier = opinion_supposed_to_crown
+#				months = 2
+#				who = ROOT
+#			}
+#			reverse_opinion = {
+#				modifier = opinion_supposed_to_crown
+#				months = 2
+#				who = ROOT
+#			}
+#		}
+#		transfer_scaled_wealth = { to = FROM value = 0.75 min = 150 max = 400 } 
+#		piety = -50
+#		hidden_tooltip = { 
+#			FROM = { 
+#				tiered_piety_negative_effect = yes
+#			} 
+#		}
+#		hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
+#		ai_chance = { factor = 100 }
+#	}
+#	option = {	#End of the line
+#		name = EVTOPTBHF20235
+#		custom_tooltip = { text = coronation_canceled }
+#		#clr_character_flag = flag_preparing_coronation #Replaced by timed modifier
+#		ai_chance = { factor = 0 }
+#	}
+#}
+#
+##Go to the priest's orgy, because why not.
+#character_event = {
+#	id = HF.20236
+#	desc = { #Orgy with Prince-Bishop.
+#		text = EVTDESCHFA20236
+#		trigger = {
+#			NOT = {
+#				FROMFROM = { 
+#					has_landed_title = k_papal_state
+#				}
+#			}
+#		}
+#	}
+#	desc = { #Orgy with the Pope.
+#		text = EVTDESCHFB20236
+#		trigger = {
+#			FROMFROM = { 
+#				has_landed_title = k_papal_state
+#			}
+#		}
+#	}
+#	show_from_from = yes
+#
+#	picture = GFX_evt_pope_feast
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTAHF20236
+#		custom_tooltip = { text = papal_orgy_drunk }
+#		set_character_flag = flag_papal_orgy_drunk
+#		if = { 
+#			limit = { trait = drunkard } 
+#			tiered_piety_negative_effect = yes
+#		}
+#		if = { 
+#			limit = { NOT = { trait = drunkard } } 
+#			add_trait = drunkard 
+#		}
+#		if = { 
+#			limit = { FROMFROM = { has_landed_title = k_papal_state } } 
+#			prestige = 50
+#		}
+#		ai_chance = { factor = 30 }
+#	}
+#	option = {
+#		name = EVTOPTBHF20236
+#		custom_tooltip = { text = papal_orgy_lustful }
+#		set_character_flag = flag_papal_orgy_lustful
+#		if = { 
+#			limit = { trait = lustful } 
+#			tiered_piety_negative_effect = yes
+#		}
+#		if = { 
+#			limit = { trait = chaste } 
+#			remove_trait = chaste
+#		}
+#		if = { 
+#			limit = { NOT = { trait = lustful } } 
+#			add_trait = lustful
+#		}
+#		if = { 
+#			limit = { FROMFROM = { has_landed_title = k_papal_state } } 
+#			prestige = 50
+#		}
+#		ai_chance = { factor = 30 }
+#	}
+#	option = {
+#		name = EVTOPTCHF20236
+#		custom_tooltip = { text = papal_orgy_glutton }
+#		set_character_flag = flag_papal_orgy_glutton
+#		if = { 
+#			limit = { trait = gluttonous } 
+#			tiered_piety_negative_effect = yes
+#		}
+#		if = { 
+#			limit = { trait = temperate } 
+#			remove_trait = temperate
+#		}
+#		if = { 
+#			limit = { NOT = { trait = gluttonous } } 
+#			add_trait = gluttonous
+#		}
+#		if = { 
+#			limit = { FROMFROM = { NOT = { has_landed_title = k_papal_state } } } 
+#			gain_weight_medium_effect = yes
+#			weight_trait_check_effect = yes
+#		}
+#		if = { 
+#			limit = { FROMFROM = { has_landed_title = k_papal_state } } 
+#			gain_weight_large_effect = yes
+#			weight_trait_check_effect = yes
+#		}
+#		if = { 
+#			limit = { FROMFROM = { has_landed_title = k_papal_state } } 
+#			prestige = 50
+#		}
+#		ai_chance = { factor = 30 }
+#	}
+#	after = { 
+#		hidden_tooltip = { 
+#			random_list = { 
+#				40 = { #Priest comes onto you.
+#					modifier = { 
+#						factor = 0
+#						is_female = no 
+#						FROMFROM = { NOT = { trait = homosexual } } 
+#					} 
+#					modifier = { 
+#						factor = 0.25
+#						is_female = yes
+#						age = 45
+#					}
+#					modifier = { 
+#						factor = 0.5
+#						has_ugly_trait_trigger = yes
+#					} 
+#					modifier = { 
+#						factor = 0.5
+#						trait = disfigured
+#					} 
+#					modifier = { 
+#						factor = 0.5
+#						trait = has_bubonic_plague
+#					} 
+#					modifier = { 
+#						factor = 0.5
+#						trait = inbred
+#					} 
+#					modifier = { 
+#						factor = 1.75
+#						has_fair_trait_trigger = yes
+#					} 	
+#					modifier = { 
+#						factor = 1.5
+#						NOT = { age = 30 }
+#					} 
+#					modifier = { 
+#						factor = 2.5
+#						NOT = { age = 18 } #Obviously...
+#					} 
+#					modifier = { 
+#					factor = 0.5
+#						trait = one_eyed
+#					} 
+#					modifier = { 
+#						factor = 1.5
+#						trait = lustful
+#					} 
+#					modifier = { 
+#						factor = 0.5
+#						FROMFROM = { NOT = { trait = lustful } }
+#					} 
+#
+#					character_event = { id = HF.20237 } 
+#				}
+#				30 = { #Become Hedonist.
+#					modifier = { 
+#						factor = 0
+#						has_any_lifestyle_trait = yes
+#					} 
+#					modifier = { 
+#						factor = 1.5
+#						trait = drunkard
+#					} 
+#					modifier = { 
+#						factor = 1.5
+#						trait = gluttonous
+#					} 
+#					modifier = { 
+#						factor = 1.5
+#					trait = slothful
+#					} 
+#					modifier = { 
+#						factor = 1.5
+#						trait = lustful
+#					} 
+#					character_event = { id = HF.20238 } 
+#				}
+#				30 = { #Nothing happens, end the event.
+#					character_event = { id = HF.20239 } 
+#				}
+#			}
+#		}
+#	}
+#}
+#
+##Time for the communion
+#character_event = {
+#	id = HF.20237
+#	desc = { # with Prince-Bishop.
+#		text = EVTDESCHFA20237
+#		trigger = {
+#			NOT = {
+#				FROMFROMFROM = { 
+#					has_landed_title = k_papal_state
+#				}
+#			}
+#		}
+#	}
+#	desc = { # with the Pope.
+#		text = EVTDESCHFB20237
+#		trigger = {
+#			FROMFROMFROM = { 
+#				has_landed_title = k_papal_state
+#			}
+#		}
+#	}
+#	show_from_from_from = yes
+#
+#	picture = GFX_evt_pope_feast
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTAHF20237
+#		trigger = { 
+#			OR = { 
+#				is_female = yes 
+#				trait = homosexual
+#			} 
+#		}
+#		custom_tooltip = { text = papal_orgy_communion }
+#		tiered_prestige_reward_effect = yes
+#		tiered_piety_negative_effect = yes
+#		hidden_tooltip = { 
+#			if = { 
+#				limit = { 
+#					is_female = yes 
+#					NOT = { age = 40 }
+#					fertility = 0.4
+#				}
+#				random = { 
+#					chance = 10
+#					modifier = {
+#						factor = 0.5
+#						NOT = { fertility = 0.3 }
+#					}
+#					modifier = {
+#						factor = 1.5
+#						fertility = 0.3
+#					}
+#					modifier = {
+#						factor = 1.5
+#						fertility = 0.5
+#					}
+#					modifier = {
+#						factor = 1.5
+#						fertility = 0.7
+#					}
+#					modifier = {
+#						factor = 1.5
+#						fertility = 0.9
+#					}
+#					modifier = {
+#						factor = 1.5
+#						fertility = 1.25
+#					}
+#					modifier = {
+#						factor = 1.75
+#						fertility = 1.5
+#					}
+#					modifier = {
+#						factor = 2
+#						fertility = 1.75
+#					}
+#					modifier = {
+#						factor = 3
+#						fertility = 2
+#					}
+#					ROOT = { impregnate = FROMFROMFROM }
+#					if = { 
+#						limit = { FROMFROMFROM = { has_landed_title = k_papal_state } } 
+#						set_character_flag = flag_vatican_prince #cleared on birth.
+#					}
+#				}
+#			}
+#		}
+#		hidden_tooltip = { character_event = { id = HF.20239 } } #Conclude the Orgy.
+#		ai_chance = { 
+#			factor = 90 
+#			modifier = { 
+#				factor = 0.25
+#				trait = chaste
+#			}
+#		}
+#	}
+#	option = {
+#		name = EVTOPTBHF20237
+#		custom_tooltip = { text = papal_orgy_flee }
+#		hidden_tooltip = { character_event = { id = HF.20239 } } #Conclude the Orgy.
+#		ai_chance = { 
+#			factor = 10 
+#		}
+#	}
+#}
 
 #Becoming Hedonist
-character_event = {
-	id = HF.20238
-	desc = EVTDESCHFA20238
-	show_FROM_FROM_FROM = yes
-
-	picture = GFX_evt_pope_feast
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTAHF20238
-		add_trait = hedonist
-		hidden_tooltip = { character_event = { id = HF.20239 } } #Proceed with the coronation.
-	}
-}
-
-#The orgy has concluded.
-character_event = {
-	id = HF.20239
-	desc = { # with Prince-Bishop.
-		text = EVTDESCHFA20239
-		trigger = {
-			NOT = {
-				event_target:coronation_priest = { 
-					has_landed_title = k_papal_state
-				}
-			}
-		}
-	}
-	desc = { # with the Pope.
-		text = EVTDESCHFB20239
-		trigger = {
-			event_target:coronation_priest = { 
-				has_landed_title = k_papal_state
-			}
-		}
-	}
-
-	picture = GFX_evt_pope_feast
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTAHF20239
-		clr_character_flag = flag_papal_orgy_drunk
-		clr_character_flag = flag_papal_orgy_lustful
-		clr_character_flag = flag_papal_orgy_glutton
-		hidden_tooltip = { character_event = { id = HF.20300 } } #Proceed with the coronation.
-	}
-}
+#character_event = {
+#	id = HF.20238
+#	desc = EVTDESCHFA20238
+#	show_from_from_from = yes
+#
+#	picture = GFX_evt_pope_feast
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTAHF20238
+#		add_trait = hedonist
+#		hidden_tooltip = { character_event = { id = HF.20239 } } #Proceed with the coronation.
+#	}
+#}
+#
+##The orgy has concluded.
+#character_event = {
+#	id = HF.20239
+#	desc = { # with Prince-Bishop.
+#		text = EVTDESCHFA20239
+#		trigger = {
+#			NOT = {
+#				event_target:coronation_priest = { 
+#					has_landed_title = k_papal_state
+#				}
+#			}
+#		}
+#	}
+#	desc = { # with the Pope.
+#		text = EVTDESCHFB20239
+#		trigger = {
+#			event_target:coronation_priest = { 
+#				has_landed_title = k_papal_state
+#			}
+#		}
+#	}
+#
+#	picture = GFX_evt_pope_feast
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTAHF20239
+#		clr_character_flag = flag_papal_orgy_drunk
+#		clr_character_flag = flag_papal_orgy_lustful
+#		clr_character_flag = flag_papal_orgy_glutton
+#		hidden_tooltip = { character_event = { id = HF.20300 } } #Proceed with the coronation.
+#	}
+#}
 
 
 #King: Bishop asks for small religious artifact.
-letter_event = {
-	id = HF.20240
-	desc = EVTDESCHFA20240
-	border = GFX_event_letter_frame_religion
-
-	trigger = {
-			religion = catholic
-	}
-	is_triggered_only = yes
-	
-	immediate = {
-		random_artifact = { 
-			limit = { 
-				has_artifact_flag = christian  
-				NOT = { has_artifact_flag = rare } 
-				NOT = { has_artifact_flag = very_rare } 
-				NOT = { has_artifact_flag = flag_considering_donation } 
-			}
-			save_event_target_as = scoped_artifact
-			set_artifact_flag = flag_considering_donation
-		}
-	}
-	option = {
-		name = EVTOPTAHF20240
-		set_character_flag = flag_crowned_by_bishop
-		FROM = { 
-				show_scope_change = no	
-			save_event_target_as = coronation_priest
-			opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 1
-				who = ROOT
-			}
-			reverse_opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 1
-				who = ROOT
-			}
-		}
-		event_target:scoped_artifact = {
-			transfer_artifact = {
-				FROM = ROOT
-				to = FROM
- 			} 
-			clr_artifact_flag = flag_considering_donation
- 		} 
-		hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
-		ai_chance = { factor = 100 }
-	}
-	option = {	#End of the line
-		name = EVTOPTBHF20240
-		custom_tooltip = { text = coronation_canceled }
-		#clr_character_flag = flag_preparing_coronation #Replaced by timed modifier
-		hidden_tooltip = { 
-			event_target:scoped_artifact = { 
-				clr_artifact_flag = flag_considering_donation
-			} 
-		}
-		ai_chance = { factor = 0 }
-	}
-}
+#letter_event = {
+#	id = HF.20240
+#	desc = EVTDESCHFA20240
+#	border = GFX_event_letter_frame_religion
+#
+#	trigger = {
+#			religion = catholic
+#	}
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		random_artifact = { 
+#			limit = { 
+#				has_artifact_flag = christian  
+#				NOT = { has_artifact_flag = rare } 
+#				NOT = { has_artifact_flag = very_rare } 
+#				NOT = { has_artifact_flag = flag_considering_donation } 
+#			}
+#			save_event_target_as = scoped_artifact
+#			set_artifact_flag = flag_considering_donation
+#		}
+#	}
+#	option = {
+#		name = EVTOPTAHF20240
+#		set_character_flag = flag_crowned_by_bishop
+#		FROM = { 
+#				show_scope_change = no	
+#			save_event_target_as = coronation_priest
+#			opinion = {
+#				modifier = opinion_supposed_to_crown
+#				months = 1
+#				who = ROOT
+#			}
+#			reverse_opinion = {
+#				modifier = opinion_supposed_to_crown
+#				months = 1
+#				who = ROOT
+#			}
+#		}
+#		event_target:scoped_artifact = {
+#			transfer_artifact = {
+#				FROM = ROOT
+#				to = FROM
+# 			} 
+#			clr_artifact_flag = flag_considering_donation
+# 		} 
+#		hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
+#		ai_chance = { factor = 100 }
+#	}
+#	option = {	#End of the line
+#		name = EVTOPTBHF20240
+#		custom_tooltip = { text = coronation_canceled }
+#		#clr_character_flag = flag_preparing_coronation #Replaced by timed modifier
+#		hidden_tooltip = { 
+#			event_target:scoped_artifact = { 
+#				clr_artifact_flag = flag_considering_donation
+#			} 
+#		}
+#		ai_chance = { factor = 0 }
+#	}
+#}
 
 #King: Pope asks for rare religious artifact.
-letter_event = {
-	id = HF.20241
-	desc = EVTDESCHFA20241
-	border = GFX_event_letter_frame_religion
-
-	trigger = {
-			religion = catholic
-	}
-	is_triggered_only = yes
-	
-	immediate = {
-		random_artifact = { 
-			limit = { 
-				has_artifact_flag = christian  
-				OR = { 
-					has_artifact_flag = very_rare 
-					has_artifact_flag = rare 
-				} 
-				NOT = { has_artifact_flag = flag_considering_donation } 
-			}
-			save_event_target_as = scoped_artifact
-			set_artifact_flag = flag_considering_donation
-		}
-	}
-	option = {
-		name = EVTOPTAHF20241
-		set_character_flag = flag_crowned_by_pope
-		FROM = { 
-				show_scope_change = no	
-			save_event_target_as = coronation_priest
-			opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 1
-				who = ROOT
-			}
-			reverse_opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 1
-				who = ROOT
-			}
-		}
-		event_target:scoped_artifact = {
-			transfer_artifact = {
-				FROM = ROOT
-				to = FROM
- 			} 
-			clr_artifact_flag = flag_considering_donation
- 		} 
-		hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
-		ai_chance = { factor = 100 }
-	}
-	option = {	#End of the line
-		name = EVTOPTBHF20241
-		custom_tooltip = { text = coronation_canceled }
-		# The Pope remembers what he wants, cheaty spammy player.
-		FROM = { 
-				show_scope_change = no	
-			opinion = {
-				modifier = opinion_requested_artifact
-				years = 10
-				who = ROOT
-			}
-		}
-		hidden_tooltip = { 
-			event_target:scoped_artifact = { 
-				clr_artifact_flag = flag_considering_donation
-			} 
-		}
-		#clr_character_flag = flag_preparing_coronation #Replaced by timed modifier
-		ai_chance = { factor = 0 }
-	}
-}
+#letter_event = {
+#	id = HF.20241
+#	desc = EVTDESCHFA20241
+#	border = GFX_event_letter_frame_religion
+#
+#	trigger = {
+#			religion = catholic
+#	}
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		random_artifact = { 
+#			limit = { 
+#				has_artifact_flag = christian  
+#				OR = { 
+#					has_artifact_flag = very_rare 
+#					has_artifact_flag = rare 
+#				} 
+#				NOT = { has_artifact_flag = flag_considering_donation } 
+#			}
+#			save_event_target_as = scoped_artifact
+#			set_artifact_flag = flag_considering_donation
+#		}
+#	}
+#	option = {
+#		name = EVTOPTAHF20241
+#		set_character_flag = flag_crowned_by_pope
+#		FROM = { 
+#				show_scope_change = no	
+#			save_event_target_as = coronation_priest
+#			opinion = {
+#				modifier = opinion_supposed_to_crown
+#				months = 1
+#				who = ROOT
+#			}
+#			reverse_opinion = {
+#				modifier = opinion_supposed_to_crown
+#				months = 1
+#				who = ROOT
+#			}
+#		}
+#		event_target:scoped_artifact = {
+#			transfer_artifact = {
+#				FROM = ROOT
+#				to = FROM
+# 			} 
+#			clr_artifact_flag = flag_considering_donation
+# 		} 
+#		hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
+#		ai_chance = { factor = 100 }
+#	}
+#	option = {	#End of the line
+#		name = EVTOPTBHF20241
+#		custom_tooltip = { text = coronation_canceled }
+#		# The Pope remembers what he wants, cheaty spammy player.
+#		FROM = { 
+#				show_scope_change = no	
+#			opinion = {
+#				modifier = opinion_requested_artifact
+#				years = 10
+#				who = ROOT
+#			}
+#		}
+#		hidden_tooltip = { 
+#			event_target:scoped_artifact = { 
+#				clr_artifact_flag = flag_considering_donation
+#			} 
+#		}
+#		#clr_character_flag = flag_preparing_coronation #Replaced by timed modifier
+#		ai_chance = { factor = 0 }
+#	}
+#}
 
 ########################################################################################################################################
 
@@ -11182,7 +11182,7 @@ character_event = {
 			FROM = { 
 			remove_opinion = { 
 					who = ROOT
-					modifier = opinion_fired_FROM_council  
+					modifier = opinion_fired_from_council  
 				}
 			}
 		} 
@@ -12256,7 +12256,7 @@ character_event = {
 					} 
 				} 
 			}
-			AND =  { 
+			#AND =  { 
 #				has_landed_title = d_norse_pagan_reformed 
 #				any_artifact = { artifact_type = crown_fylkir }
 #				d_norse_pagan_reformed = { 
@@ -12371,7 +12371,7 @@ character_event = {
 			}
 			current_heir = { character_event = { id = HF.20407 days = 1 } }
 		}
-		if = { 
+		#if = { 
 #			limit = { 
 #				has_landed_title = d_norse_pagan_reformed
 #				any_artifact = { artifact_type = crown_fylkir }
@@ -12518,79 +12518,79 @@ character_event = {
 	immediate = { 
 		event_target:inheriting_artifact_1 = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_hre_crown
+				from = event_target:unworthy_hre_crown
 				to = event_target:worthy_hre_crown
  			} 
  		} 
 		event_target:inheriting_artifact_2 = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_byz_crown
+				from = event_target:unworthy_byz_crown
 				to = event_target:worthy_byz_crown
  			} 
  		}
 		event_target:inheriting_artifact_3 = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_fylkir_crown
+				from = event_target:unworthy_fylkir_crown
 				to = event_target:worthy_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_tengricrown = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_tengri_fylkir_crown
+				from = event_target:unworthy_tengri_fylkir_crown
 				to = event_target:worthy_tengri_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_finnishcrown = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_finnish_fylkir_crown
+				from = event_target:unworthy_finnish_fylkir_crown
 				to = event_target:worthy_finnish_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_west_africancrown = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_west_african_fylkir_crown
+				from = event_target:unworthy_west_african_fylkir_crown
 				to = event_target:worthy_west_african_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_slaviccrown = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_slavic_fylkir_crown
+				from = event_target:unworthy_slavic_fylkir_crown
 				to = event_target:worthy_slavic_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_balticcrown = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_baltic_fylkir_crown
+				from = event_target:unworthy_baltic_fylkir_crown
 				to = event_target:worthy_baltic_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_boncrown = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_bon_fylkir_crown
+				from = event_target:unworthy_bon_fylkir_crown
 				to = event_target:worthy_bon_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_zuncrown = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_zun_fylkir_crown
+				from = event_target:unworthy_zun_fylkir_crown
 				to = event_target:worthy_zun_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_helleniccrown = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_hellenic_fylkir_crown
+				from = event_target:unworthy_hellenic_fylkir_crown
 				to = event_target:worthy_hellenic_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_azteccrown = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_aztec_fylkir_crown
+				from = event_target:unworthy_aztec_fylkir_crown
 				to = event_target:worthy_aztec_fylkir_crown
  			} 
  		}
 		event_target:inheriting_artifact_4 = {
 			transfer_artifact = {
-				FROM = event_target:unworthy_pahlavi_crown
+				from = event_target:unworthy_pahlavi_crown
 				to = event_target:worthy_pahlavi_crown
  			} 
  		}
@@ -12820,7 +12820,7 @@ character_event = {
 			has_character_flag = flag_homage_generic
 		}
 	}
-	show_FROM_FROM = yes #Vassal
+	show_from_from = yes #Vassal
 
 	picture = { 
 		trigger = { 

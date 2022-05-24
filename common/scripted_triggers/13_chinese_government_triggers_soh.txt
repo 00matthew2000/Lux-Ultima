@@ -834,19 +834,18 @@ has_acceptable_chinese_culture_trigger = {
 				any_vassal = {
 					has_landed_title = k_chrysanthemum_throne # Direct vassal check is fine since we are looking at a king-tier title
 				}
-				k_chrysanthemum_throne = {
-					holder_scope = {
-						NOR = {
-							AND = {
-								dynasty = PREVPREV
-								religion = PREVPREV
-							}
-							current_heir = {
-								character = PREVPREV
-							}
-						}
-					}
-				}
+#				k_chrysanthemum_throne = { ### Need some help here with the dynasty = ROOT, also the FROM was added by me so feel free to remove it -00matthew2000 ###
+#					holder_scope = {
+#						NOT = {
+#							AND = {
+#								FROM = {
+#									dynasty = ROOT
+#									religion = ROOT
+#								}
+#							}
+#						}
+#					}
+#				}
 			}
 		}
 		culture = sinohellenic

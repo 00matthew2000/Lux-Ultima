@@ -8362,28 +8362,10 @@ character_event = {
 	}
 }
 
-#babies born in seclusion gain seclusion
-character_event = {
-	id = RIP.11064
-	
-	hide_window = yes
-
-	is_triggered_only = yes
-	
-	trigger = {
-		host = {
-			has_character_modifier = in_seclusion
-		}
-	}
-
-	option = {
-		#name = OK
-		add_character_modifier = {
-			name = in_seclusion
-			duration = -1
-		}
-	}
-}
+#babies born in seclusion gain seclusion ###MERGED WITH UNIVERSAL BIRTH EVENT
+# character_event = {
+	# id = RIP.11064
+# }
 
 # Court Physician becomes renowned
 character_event = {

@@ -427,6 +427,7 @@ on_yearly_pulse = {
 		#Dynasty requests
 		#250 = 66000
 		#250 = 66099 # Landless claimant asks dynasty head to press the claim in a war
+		250 = 66100
 		
 		#Hedge Knights Events
 		100 = 71000 
@@ -821,6 +822,10 @@ on_yearly_pulse = {
 		# Court events
 		100 = LT.61006 # Decide nickname (court maintenance)
 		150 = LT.10103 # Courtiers praise your hospitality
+
+		#VIET MISC STUFF
+		100 = VIETmisc.2519
+		100 = VIETmisc.2520
 				
 		#Norse Mod stuff
 				
@@ -1382,6 +1387,11 @@ on_five_year_pulse = {
 
 		2 = HFP.20801 #Character becoming Groomed due to Focus.
 		2 = HFP.20802 #Character becoming Uncouth due to Focus.
+
+		#VIET Event Chains
+		2 = VIETmisc.2513 #Call on the avatar
+		2 = fantasia.0 #Mermaid
+		2 = fantasia.8 #Merlin
 		
 		#Polished new trait events;
 		10 = misc_traits.33 #Mid-life Fashion Event
@@ -1397,6 +1407,9 @@ on_five_year_pulse = {
 		
 		#Crown events.
 		10 = HF.20400
+
+		#Zoroastrian pets
+		1 = ZP.1
 		
 		40 = 0
 	}
@@ -1933,27 +1946,28 @@ on_birth = {
 	events = {
 		300 # A Bastard is born
 		312 # The child of a consort is born		
-		318 # A Bastard is born, but is not recognized as such by the mother's spouse (cuckoo!)
+		#318 # A Bastard is born, but is not recognized as such by the mother's spouse (cuckoo!)
 		335 # Hidden utility event for all children born
-		TOG.3206 # Child Perceived to be Demon Born
+		#TOG.3206 # Child Perceived to be Demon Born
 		#706 # Full House achievement
 		#707 # Keeping it in the Family achievement
-		CM.10011 # Chronicle entry
+		#CM.10011 # Chronicle entry
 		HL.1000 # Child born with Wolf's Blood
 		HL.1700 # Wolf's Blood inheritance
 		TOG.6001 # Children gains Saoshyant Descendant trait from Saoshyant
-		RIP.11064 # Babies born in seclusion get seclusion modifier
-		HFP.20403 # Remove pregnancy_finishing trait, check all special circumstances for child's birth.
-		HFP.20555 # Clear all hard_pregnancy traits and flags.
+		#RIP.11064 # Babies born in seclusion get seclusion modifier
+		#HFP.20403 # Remove pregnancy_finishing trait, check all special circumstances for child's birth.
+		#HFP.20555 # Clear all hard_pregnancy traits and flags.
 		HFP.30030 # Apply freckles trait properly.
 		HF.23019 # Zodiac signs assigned on Hellenic babies.
-		HFP.20068 # Cleanup for children born after father's death.
+		#HFP.20068 # Cleanup for children born after father's death.
 		HF.23750 # Stable Doctrine gives chance to shield newborn heir from harm.
 		meneth.700 #Inheritance of traits from grandparents
 		ancrel.215 # Child Perceived to be a Changeling
-		slavery.400 #Slave is born
-		slavery.402 #Slave bears owner's child
+		#slavery.400 #Slave is born
+		#slavery.402 #Slave bears owner's child
 		arinnitis_heritage.1 #Pass on Scion of Arinniti status
+		birth.990
 	}
 	random_events = {
 		200 = 0
@@ -2226,6 +2240,7 @@ on_death = {
 		HF.20231 # Notification if priest dies before the end of the Coronation Ceremony
 		HF.20374 # Set uncrowned trait to handle real uncrowned Kings not gaining a crown after death.
 		HF.20393 # On death of vassal, heir prompted to pay homage to crowned liege.
+		HF.20406 # Artifact inheritance for special crowns. ###Don't know if this is really a thing or not, can be fixed -00matthew2000 ###
 		HF.21001 # Clear swayed target on his death.
 		HF.22119 # Clear swayed target on his death.
 		HF.21152 # Clear special interest Sway/Antagonize characters on_death of Swayer/Antagonizer.
@@ -2253,6 +2268,7 @@ on_death = {
 		jus_uxoris.1
 		jus_uxoris.4
 		maint.6 #Female temple succession
+		HFP.19101 # Varangian guards return home upon becoming players
 		LT.20501 # Sucessor must decide on Burial if it has wonders with burial_ground flag
 	}
 	random_events = {
@@ -2317,6 +2333,12 @@ on_loot_settlement = {
 		5 = TOG.3301
 		5 = TOG.3302
 		5 = TOG.3303
+		20 = nm_raid.0
+		20 = nm_raid.1
+		20 = nm_raid.2
+		20 = nm_raid.3
+		85 = slavery.4000 #Take slaves
+		5 = nm_raid.4
 		20 = HF.23207 #Pirating events: taking thralls.
 		30 = HF.23209 #Pirating events: stealing cattle.
 		60 = HF.23210 #Pirating events: destroying large port city.
@@ -2324,6 +2346,9 @@ on_loot_settlement = {
 		250 = 0
 	}
 	events = {
+		TGF.3321
+		TGF.3322
+		TGF.3323
 		RIP.11720
 		MNM.9899 # Chance to steal artifact from capital holdings
 		HF.25503 # Warrior Lodge Mission: Raid province
@@ -3566,7 +3591,7 @@ on_character_leave_society = {
 	events = {
 		MNM.10018 #clears on-going event flags and effects
 		MNM.1611 # Clears Apprentice minor titles
-		HF.25035 # Clear Call to Glory effects.
+		#HF.25035 # Clear Call to Glory effects.
 		HF.25071 #Clear Warriors of Ukko event troops.
 	}
 }
@@ -4101,6 +4126,7 @@ on_wonder_upgrade_finish = {
 	events = {
 		LT.10001
 		#LT.20700 #upgrade_strategic_exclaves effect to build maximum fortification in province holdings
+		LT.10003 # Handles setting desc of upgrades using dynamic loc keys
 	}
 	random_events = {
 		1000 = 0

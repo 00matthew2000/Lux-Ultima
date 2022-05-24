@@ -29,7 +29,7 @@ character_event = {
 	desc = fantasia.0.desc
 	picture = GFX_evt_maiden
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	min_age = 16
 	only_rulers = yes
@@ -323,7 +323,7 @@ character_event = {
 	desc = fantasia.8.desc
 	picture = GFX_evt_holy_light
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	min_age = 16
 	only_rulers = yes

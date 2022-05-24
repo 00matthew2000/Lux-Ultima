@@ -6002,7 +6002,10 @@ letter_event = {
 		FROM = {
 			add_trait = japanese_regent
 			liege = {
-				regent = {
+				random_character = {
+					limit = {
+						has_minor_title = title_regent
+					}
 					remove_title = title_regent
 				}
 			}
@@ -27290,14 +27293,14 @@ character_event = {
 			remove_trait = japanese_regent
 		}
 		add_trait = japanese_regent
-		if = {
-			limit = {
+		#if = {
+			#limit = {
 				regent = {
 					log = "[This.GetBestName] is the initial Regent!"
 					remove_title = title_regent
 				}
-			}
-		}
+			#}
+		#}
 		log = "[This.GetBestName] is the new Regent!"
 		give_minor_title = title_regent
 		give_minor_title = title_appointed_regent
@@ -27348,14 +27351,14 @@ character_event = {
 			remove_trait = japanese_regent2
 		}
 		add_trait = japanese_regent2
-		if = {
-			limit = {
+		#if = {
+			#limit = {
 				regent = {
 					log = "[This.GetBestName] is the initial Regent!"
 					remove_title = title_regent
 				}
-			}
-		}
+			#}
+		#}
 		log = "[This.GetBestName] is the new Regent!"
 		give_minor_title = title_regent
 		give_minor_title = title_appointed_regent

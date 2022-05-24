@@ -95,74 +95,74 @@ namespace = HF
 #}
 
 # Sent from event_target:legendary_society (above)
-province_event = {
-    id = HF.12000 
-    is_triggered_only = yes
-    hide_window = yes
-    
-    trigger = {
-    	event_target:legendary_society = { society_has_members = yes }
-    	has_province_flag = initiating_legendary_journey
-    }
-
-    fail_trigger_effect = {
-    	if = {
-    		limit = { NOT = { has_province_flag = initiating_legendary_journey } } #@event_target:legendary_society } }
-    		#log = "[LEGENDARY JOURNEY]: Somehow [This.GetName] got event HF.12000, without having the right flag to help [event_target:legendary_society.GetName], so stopped chain before it started."
-    	}
-		else = {
-			event_target:legendary_society = {
-				clr_flag = block_society_progress
-				set_society_progress = 0
-			}
-			#log = "[LEGENDARY JOURNEY]: [This.GetName] got event HF.12000, but found out that [event_target:legendary_society.GetName] has no members left, so stopped chain before it started."
-		}
-    }
-
-    immediate = {
-        if = {
-            limit = {
-                has_province_flag = initiating_legendary_journey #It has begun...
-                #There are at least two members at rank 4...
-                event_target:legendary_society = {
-	                any_society_member = {
-	                    society_rank == 4
-	                    NOT = { is_inaccessible_trigger = yes }
-	                    count = 2
-	                }
-                }
-            }
-            event_target:legendary_society = {
-	            random_society_member = {
-	                limit = {
-	                    society_rank == 4
-	                    NOT = { is_inaccessible_trigger = yes }
-	                }
-	                preferred_limit = { ai = no } #We'd rather it was a player...
-
-	                #character_event = { id = HF.12001 } #START: Sends event to a warrior lodge member/hero...
-                    #log = "[LEGENDARY JOURNEY]: Event HF.12000 fired and [This.GetTitledFirstName] is the original hero, who starts it all!"
-                }
-            }
-            clr_province_flag = initiating_legendary_journey
-        }
-        else_if = {
-            limit = {
-                has_province_flag = initiating_legendary_journey #It has begun...
-                #But there are not enough members at rank 4...
-                NOT = {                    
-                    any_society_member = {
-                        society_rank == 4
-                        NOT = { is_inaccessible_trigger = yes }
-                        count = 2
-                    }
-                }
-            }
-            #log = "[LEGENDARY JOURNEY]: Event HF.12000 fired, but there were not enough members. Checking back in max 265 days."
-           #character_event = { id = HF.12000 days = 165 random = 100 } #Check back in a while...
-        }
-    }
-}
+#province_event = {
+#    id = HF.12000 
+#    is_triggered_only = yes
+#    hide_window = yes
+#    
+#    trigger = {
+#    	event_target:legendary_society = { society_has_members = yes }
+#    	has_province_flag = initiating_legendary_journey
+#    }
+#
+#    fail_trigger_effect = {
+#    	if = {
+#    		limit = { NOT = { has_province_flag = initiating_legendary_journey } } #@event_target:legendary_society } }
+#    		#log = "[LEGENDARY JOURNEY]: Somehow [This.GetName] got event HF.12000, without having the right flag to help [event_target:legendary_society.GetName], so stopped chain before it started."
+#    	}
+#		else = {
+#			event_target:legendary_society = {
+#				clr_flag = block_society_progress
+#				set_society_progress = 0
+#			}
+#			#log = "[LEGENDARY JOURNEY]: [This.GetName] got event HF.12000, but found out that [event_target:legendary_society.GetName] has no members left, so stopped chain before it started."
+#		}
+#    }
+#
+#    immediate = {
+#        if = {
+#            limit = {
+#                has_province_flag = initiating_legendary_journey #It has begun...
+#                #There are at least two members at rank 4...
+#                event_target:legendary_society = {
+#	                any_society_member = {
+#	                    society_rank == 4
+#	                    NOT = { is_inaccessible_trigger = yes }
+#	                    count = 2
+#	                }
+#                }
+#            }
+#            event_target:legendary_society = {
+#	            random_society_member = {
+#	                limit = {
+#	                    society_rank == 4
+#	                    NOT = { is_inaccessible_trigger = yes }
+#	                }
+#	                preferred_limit = { ai = no } #We'd rather it was a player...
+#
+#	                #character_event = { id = HF.12001 } #START: Sends event to a warrior lodge member/hero...
+#                    #log = "[LEGENDARY JOURNEY]: Event HF.12000 fired and [This.GetTitledFirstName] is the original hero, who starts it all!"
+#                }
+#            }
+#            clr_province_flag = initiating_legendary_journey
+#        }
+#        else_if = {
+#            limit = {
+#                has_province_flag = initiating_legendary_journey #It has begun...
+#                #But there are not enough members at rank 4...
+#                NOT = {                    
+#                    any_society_member = {
+#                        society_rank == 4
+#                        NOT = { is_inaccessible_trigger = yes }
+#                        count = 2
+#                    }
+#                }
+#            }
+#            #log = "[LEGENDARY JOURNEY]: Event HF.12000 fired, but there were not enough members. Checking back in max 265 days."
+#           #character_event = { id = HF.12000 days = 165 random = 100 } #Check back in a while...
+#        }
+#    }
+#}
 
 
 #LEGEND START: Our warrior lodge is *legendary*. My brothers and sisters are saying we have a name to live up to! Or to make for ourselves!
@@ -359,130 +359,130 @@ province_event = {
 #}
 
 #Potential follow-up, for OTHER HEROES only (if there were more heroes at rank 4).
-character_event = {
-    id = HF.12002
-    title = legendary_prep_title
-    desc = EVTDESC_HF_12002
-    picture = GFX_evt_camaraderie
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-
-    immediate = {
-        capital_scope = { save_event_target_as = home_capital }
-        save_event_target_as = player_hero
-    }
-
-    option = {      
-        name = EVTOPTA_HF_12002 #Let's go!
-        custom_tooltip = { text = EVTOPTA_HF_12002_TT }
-        hidden_effect = {
-	        set_variable = {
-	            which = legendary_event_progress
-	            value = 0
-	        }
-        }
-        add_2_points_to_legendary_progress_effect = yes
-        evaluate_legendary_progress_effect = yes
-        show_portrait = event_target:target_ruler
-        character_event = { id = HF.12003 days = 5 } #Send hidden tombola on self...
-
-        hidden_effect = { # Lower-ranking player members are notified...
-            any_society_member = {
-                limit = {
-                    ai = no
-                    same_society_as = ROOT
-                    NOT = { has_character_flag = call_to_legend_active }
-                    NOT = { character = ROOT }
-                }
-                character_event = { id = HF.12011 } # Let other society members know what is going on
-            }
-        }
-    }
-    option = {
-        name = EVTOPTB_HF_12001 #I'd rather stay here.
-        custom_tooltip = { text = EVTOPTB_HF_12002_TT }
-        clr_character_flag = do_not_disturb
-        clr_character_flag = call_to_legend_active
-        set_character_flag = rank_up_blocked
-        society_rank_down = 1
-
-        hidden_effect = {
-            if = {
-                limit = { is_society_grandmaster = yes }
-                set_society_grandmaster = no
-            }
-        }
-
-        if = {
-            limit = {
-                # If there are no adventures left (because you're in a weird MP where everyone is in this lodge and at rank 4 and you all decided to turn this epic chain down for some reason)
-                NOT = {
-                    any_society_member = {
-                        society_rank == 4
-                        same_society_as = ROOT
-                        has_character_flag = call_to_legend_active
-                        NOT = { character = ROOT }
-                    }
-                }
-            }
-            stop_society_progress = yes # To prevent things from breaking
-        }
-        
-        trigger = {
-            ai = no
-        }
-    }
-}
-
-#Other society members are informed of the journey starting...
-character_event = {
-    id = HF.12011
-    title = legendary_prep_title
-    desc = EVTDESC_HF_12011
-    picture = GFX_evt_camaraderie
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-
-    trigger = {
-        NOT = { has_character_modifier = warrior_lodge_HF_12011_cooldown } # to prevent MP spam
-    }
-
-    immediate = {
-         hidden_effect = {
-            add_character_modifier = {
-                name = warrior_lodge_HF_12011_cooldown
-                duration = 60
-                hidden = yes
-            }
-        }   
-    }
-
-    option = {      
-        name = EVTOPTA_HF_12011
-        if = {
-            limit = { NOT = { trait = proud } }
-            random = {
-                chance = 40
-                add_trait = proud
-                hidden_tooltip = { character_event = { id = 38261 } } # Notify Proud
-            }
-        }
-        show_portrait = event_target:target_ruler
-    }
-
-    option = {      
-        name = EVTOPTB_HF_12011
-        if = {
-            limit = { NOT = { trait = humble } }
-            random = {
-                chance = 40
-                add_trait = humble
-                hidden_tooltip = { character_event = { id = 38260 } } #Notify Humble
-            }
-        }
-        show_portrait = event_target:target_ruler
-    }
-}
+#character_event = {
+#    id = HF.12002
+#    title = legendary_prep_title
+#    desc = EVTDESC_HF_12002
+#    picture = GFX_evt_camaraderie
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#
+#    immediate = {
+#        capital_scope = { save_event_target_as = home_capital }
+#        save_event_target_as = player_hero
+#    }
+#
+#    option = {      
+#        name = EVTOPTA_HF_12002 #Let's go!
+#        custom_tooltip = { text = EVTOPTA_HF_12002_TT }
+#        hidden_effect = {
+#	        set_variable = {
+#	            which = legendary_event_progress
+#	            value = 0
+#	        }
+#        }
+#        add_2_points_to_legendary_progress_effect = yes
+#        evaluate_legendary_progress_effect = yes
+#        show_portrait = event_target:target_ruler
+#        character_event = { id = HF.12003 days = 5 } #Send hidden tombola on self...
+#
+#        hidden_effect = { # Lower-ranking player members are notified...
+#            any_society_member = {
+#                limit = {
+#                    ai = no
+#                    same_society_as = ROOT
+#                    NOT = { has_character_flag = call_to_legend_active }
+#                    NOT = { character = ROOT }
+#                }
+#                character_event = { id = HF.12011 } # Let other society members know what is going on
+#            }
+#        }
+#    }
+#    option = {
+#        name = EVTOPTB_HF_12001 #I'd rather stay here.
+#        custom_tooltip = { text = EVTOPTB_HF_12002_TT }
+#        clr_character_flag = do_not_disturb
+#        clr_character_flag = call_to_legend_active
+#        set_character_flag = rank_up_blocked
+#        society_rank_down = 1
+#
+#        hidden_effect = {
+#            if = {
+#                limit = { is_society_grandmaster = yes }
+#                set_society_grandmaster = no
+#            }
+#        }
+#
+#        if = {
+#            limit = {
+#                # If there are no adventures left (because you're in a weird MP where everyone is in this lodge and at rank 4 and you all decided to turn this epic chain down for some reason)
+#                NOT = {
+#                    any_society_member = {
+#                        society_rank == 4
+#                        same_society_as = ROOT
+#                        has_character_flag = call_to_legend_active
+#                        NOT = { character = ROOT }
+#                    }
+#                }
+#            }
+#            stop_society_progress = yes # To prevent things from breaking
+#        }
+#        
+#        trigger = {
+#            ai = no
+#        }
+#    }
+#}
+#
+##Other society members are informed of the journey starting...
+#character_event = {
+#    id = HF.12011
+#    title = legendary_prep_title
+#    desc = EVTDESC_HF_12011
+#    picture = GFX_evt_camaraderie
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#
+#    trigger = {
+#        NOT = { has_character_modifier = warrior_lodge_HF_12011_cooldown } # to prevent MP spam
+#    }
+#
+#    immediate = {
+#         hidden_effect = {
+#            add_character_modifier = {
+#                name = warrior_lodge_HF_12011_cooldown
+#                duration = 60
+#                hidden = yes
+#            }
+#        }   
+#    }
+#
+#    option = {      
+#        name = EVTOPTA_HF_12011
+#        if = {
+#            limit = { NOT = { trait = proud } }
+#            random = {
+#                chance = 40
+#                add_trait = proud
+#                hidden_tooltip = { character_event = { id = 38261 } } # Notify Proud
+#            }
+#        }
+#        show_portrait = event_target:target_ruler
+#    }
+#
+#    option = {      
+#        name = EVTOPTB_HF_12011
+#        if = {
+#            limit = { NOT = { trait = humble } }
+#            random = {
+#                chance = 40
+#                add_trait = humble
+#                hidden_tooltip = { character_event = { id = 38260 } } #Notify Humble
+#            }
+#        }
+#        show_portrait = event_target:target_ruler
+#    }
+#}
 
 ### Hidden Tombola (prep/travel? events)
 character_event = {

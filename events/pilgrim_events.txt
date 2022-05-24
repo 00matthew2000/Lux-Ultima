@@ -84,49 +84,49 @@ character_event = {
 }
 
 # Check catholic pilgrim's location - then send on to destination choice event
-character_event = {
-	id = SoA.5008
-
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		hidden_tooltip = {
-			if = {
-				limit = {
-					OR = {
-						capital_scope = { province_id = 67 }	#Kent (Canterbury)
-						capital_scope = { province_id = 234 }
-						capital_scope = { province_id = 275 }
-						capital_scope = { province_id = 208 }
-					}
-				}
-				character_event = { id = SoA.5016 days = 4 } # Go to Jerusalem
-			}
-			if = {
-				limit = {
-					capital_scope = { province_id = 814 }
-				}
-				character_event = { id = SoA.5017 days = 4 } # Go to Rome
-			}
-			if = {
-				limit = { 
-					NOT = {
-						OR = {
-							capital_scope = { province_id = 67 }
-							capital_scope = { province_id = 814 }
-							capital_scope = { province_id = 234 }
-							capital_scope = { province_id = 275 }
-							capital_scope = { province_id = 208 }
-						}
-					}
-				}
-				character_event = { id = SoA.5018 days = 4 } # May choose destination
-			}
-		}
-	}
-}
+#character_event = {
+#	id = SoA.5008
+#
+#	hide_window = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		hidden_tooltip = {
+#			if = {
+#				limit = {
+#					OR = {
+#						capital_scope = { province_id = 67 }	#Kent (Canterbury)
+#						capital_scope = { province_id = 234 }
+#						capital_scope = { province_id = 275 }
+#						capital_scope = { province_id = 208 }
+#					}
+#				}
+#				character_event = { id = SoA.5016 days = 4 } # Go to Jerusalem
+#			}
+#			if = {
+#				limit = {
+#					capital_scope = { province_id = 814 }
+#				}
+#				character_event = { id = SoA.5017 days = 4 } # Go to Rome
+#			}
+#			if = {
+#				limit = { 
+#					NOT = {
+#						OR = {
+#							capital_scope = { province_id = 67 }
+#							capital_scope = { province_id = 814 }
+#							capital_scope = { province_id = 234 }
+#							capital_scope = { province_id = 275 }
+#							capital_scope = { province_id = 208 }
+#						}
+#					}
+#				}
+#				character_event = { id = SoA.5018 days = 4 } # May choose destination
+#			}
+#		}
+#	}
+#}
 
 ###########################################
 #                                         #
@@ -2981,66 +2981,66 @@ character_event = {
 namespace = lux_soa
 
 # # Mediterranean Christian - Choose destination
-character_event = {
-	id = lux_soa.2
-	desc =EVTDESC_SoA_5011
-	picture = GFX_evt_icon
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_SoA_5011
-		trigger = {
-			NOT = { capital_scope = { province_id = 814 } }
-		}
-		set_character_flag = pilgrimage_to_jerusalem
-		hidden_tooltip = {
-			character_event = { id = SoA.5022 days = 15 }
-		}
-		if = {
-			limit = { ai = no }
-			chronicle = {
-				entry = CHRONICLE_PILGRIMAGE_TO_JERUSALEM
-				picture = GFX_evt_pilgrims_epic_journey
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTC_SoA_5011
-		trigger = {
-			NOT = { capital_scope = { province_id = 804 } }
-		}
-		set_character_flag = pilgrimage_to_antioch
-		hidden_tooltip = {
-			character_event = { id = SoA.5096 days = 15 }
-		}
-		if = {
-			limit = { ai = no }
-			chronicle = {
-				entry = CHRONICLE_PILGRIMAGE_TO_ANTIOCH
-				picture = GFX_evt_pilgrims_epic_journey
-			}
-		}
-	}
-
-	option = {
-		name = EVTOPTB_SoA_5020
-		ai_chance = { factor = 50 }
-		set_character_flag = pilgrimage_to_rome
-		hidden_tooltip = {
-			character_event = { id = SoA.5024 days = 15 }
-		}
-		if = {
-			limit = { ai = no }
-			chronicle = {
-				entry = CHRONICLE_PILGRIMAGE_TO_ROME
-				picture = GFX_evt_pilgrims_epic_journey
-			}
-		}
-	}
-}
+#character_event = {
+#	id = lux_soa.2
+#	desc =EVTDESC_SoA_5011
+#	picture = GFX_evt_icon
+#	border = GFX_event_normal_frame_religion
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_SoA_5011
+#		trigger = {
+#			NOT = { capital_scope = { province_id = 814 } }
+#		}
+#		set_character_flag = pilgrimage_to_jerusalem
+#		hidden_tooltip = {
+#			character_event = { id = SoA.5022 days = 15 }
+#		}
+#		if = {
+#			limit = { ai = no }
+#			chronicle = {
+#				entry = CHRONICLE_PILGRIMAGE_TO_JERUSALEM
+#				picture = GFX_evt_pilgrims_epic_journey
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTC_SoA_5011
+#		trigger = {
+#			NOT = { capital_scope = { province_id = 804 } }
+#		}
+#		set_character_flag = pilgrimage_to_antioch
+#		hidden_tooltip = {
+#			character_event = { id = SoA.5096 days = 15 }
+#		}
+#		if = {
+#			limit = { ai = no }
+#			chronicle = {
+#				entry = CHRONICLE_PILGRIMAGE_TO_ANTIOCH
+#				picture = GFX_evt_pilgrims_epic_journey
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = EVTOPTB_SoA_5020
+#		ai_chance = { factor = 50 }
+#		set_character_flag = pilgrimage_to_rome
+#		hidden_tooltip = {
+#			character_event = { id = SoA.5024 days = 15 }
+#		}
+#		if = {
+#			limit = { ai = no }
+#			chronicle = {
+#				entry = CHRONICLE_PILGRIMAGE_TO_ROME
+#				picture = GFX_evt_pilgrims_epic_journey
+#			}
+#		}
+#	}
+#}
 
 # Hibernicist - Choose destination
 character_event = {

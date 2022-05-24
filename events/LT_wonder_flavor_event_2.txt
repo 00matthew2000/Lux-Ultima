@@ -288,10 +288,10 @@ character_event = {
 			limit = {
 				prisoner = no
 			}
-			score_value = { #Select someone that matters more!
-                value = 2
-                beloved_target_selection_score = yes
-            }
+			#score_value = { #Select someone that matters more!
+                #value = 2
+                #beloved_target_selection_score = yes
+            #}
 			save_event_target_as = target_courtier
 		}
 		random_courtier = {

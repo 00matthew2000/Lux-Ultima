@@ -2687,42 +2687,13 @@ character_event = {
 }
 
 # Under chattel slavery, slavery is inherited from the mother
-character_event = {
-	id = slavery.400
-	hide_window = yes
-	is_triggered_only = yes
+# character_event = {
+	# id = slavery.400 #MERGED WITH BIRTH.990
+	# hide_window = yes
+	# is_triggered_only = yes
 	
-	trigger = {
-		mother = {
-			trait = slave
-			slave_owner = {
-				has_opinion_modifier = { who = PREV modifier = opinion_my_slave }
-				crownlaw_title = { has_law = slavery_2 }
-				
-				# If the father is the owner or a relative thereof, special event to handle it
-				NOT = { ROOT = { father = { character = PREVPREV } } }
-			}
-		}
-	}
-	
-	immediate = {
-		mother = {
-			slave_owner = {
-				limit = { has_opinion_modifier = { who = PREV modifier = opinion_my_slave } }
-				character_event = { id = slavery.401 }
-			}		
-		}
-		ROOT = {			
-			if = {
-				limit = { father = { NOT = { any_spouse = { any_child = { character = ROOT } } } } }
-				add_trait = bastard
-				if = {
-					dynasty = mother_bastard
-				}	
-			}
-		}
-	}
-}
+	# option = { name = OK }
+# }
 
 character_event = {
 	id = slavery.401
@@ -2745,25 +2716,38 @@ character_event = {
 }
 
 # One of your slaves gives birth to your child
-character_event = {
-	id = slavery.402
-	hide_window = yes
-	is_triggered_only = yes
+# character_event = {
+	# id = slavery.402 #MERGED WITH BIRTH.990
+	# hide_window = yes
+	# is_triggered_only = yes
 	
-	trigger = { father = { ROOT = { mother = { trait = slave has_opinion_modifier = { who = PREVPREV modifier = opinion_my_owner } } } } }
-	
-	immediate = {
-		father = { character_event = { id = slavery.403 } }
-	}
-}
+	# option = { name = OK }
+# }
+
 character_event = {
 	id = slavery.403
-	desc = "EVTDESCSLAVERY403"
 	picture = GFX_evt_birth
+	
 	is_triggered_only = yes
 	
-	option = {
-		name = "EVTOPTASLAVERY403"
+	desc = {
+		text = EVTDESCSLAVERY403
+		trigger = { FROM = { is_alive = yes } }
+	}
+	desc = {
+		text = EVTDESCSLAVERY403B
+		trigger = { FROM = { is_alive = no } }
+	}
+	
+	option = { # Keep the child in slavery
+		name = {
+			text = EVTOPTASLAVERY403
+			trigger = { FROM = { is_alive = yes } }
+		}
+		name = {
+			text = EVTOPTASLAVERY403B
+			trigger = { FROM = { is_alive = no } }
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -2775,7 +2759,7 @@ character_event = {
 				trait = humble
 			}
 			modifier = {
-				factor = 0.5
+				factor = 0
 				trait = honorable
 			}
 			modifier = {
@@ -2815,51 +2799,135 @@ character_event = {
 				trait = familyperson
 			}
 		}
-		# Keep the child in slavery
+		save_event_target_as = enslaver
 		FROM = {
 			set_father = 0
-			add_trait = slave
-			#give_minor_title = title_slave
+			set_character_flag = newborn_slave #blocks opinion modifiers
+			enslave_effect = yes 
+			#give_minor_title = title_slave	
 			if = {
-				dynasty = mother_bastard
+				limit = { NOT = { dynasty = 0 } }
+				dynasty = none
 			}	
+			bastard_nickname_mother_effect = yes
 		}
 		if = {
 			limit = { 
-				NOR = {
-					trait = ruthless
-					trait = honorable
-				}
+				NOT = { trait = ruthless } 
+				NOT = { trait = honorable }
+				NOT = { personality_traits = 6 }
 			}
 			random = {
 				chance = 25
 				add_trait = ruthless
-				hidden_tooltip = { character_event = { id = lux_trait_events.19 } }
+				hidden_tooltip = { character_event = { id = trait_notification.18 } }
 			}	
 		}	
 		hidden_tooltip = {
 			FROM = { 
-				move_character = ROOT 
-				set_real_father = ROOT
+				set_real_father = ROOT 
+				any_owned_bloodline = {
+					remove_bloodline_member = PREV
+				}
 			}
-			opinion = { who = FROM modifier = opinion_my_slave }
-			reverse_opinion = { who = FROM modifier = opinion_my_owner }
 		}
+		recalc_succession = yes
 	}
 	option = {
 		# Free the child but leave it illegitimate
-		name = "EVTOPTBSLAVERY403"
+		name = {
+			text = EVTOPTBSLAVERY403
+			trigger = { FROM = { is_alive = yes } }
+		}
+		name = {
+			text = EVTOPTBSLAVERY403B
+			trigger = { FROM = { is_alive = no } }
+		}
+		trigger = {
+			NOT = { #no concept of bastardry
+				AND = {
+					culture_group = altaic 
+					OR = {
+						is_ruler = yes
+						liege = { culture_group = altaic }
+					}
+				}
+			}	
+		}
 		ai_chance = { factor = 100 }
 		FROM = {
-			character_event = { id = 306 tooltip = EVTTOOLTIP306 } # The child gets the father's dynasty, but is not legitimized.
+			acknowledge_newborn_FROM_effect = yes # The child gets the father's dynasty, but is not legitimized.
 		}
 		prestige = -75	
+		recalc_succession = yes
 	}
 	option = {
 		# Free the child and its mother and legitimize it
-		name = "EVTOPTCSLAVERY404"
+		name = {
+			text = "EVTOPTCSLAVERY404" # Legitimize the child
+			trigger = { can_legitimise_bastards_trigger = yes }
+		}	
+		name = {
+			text = EVTOPTA301B # Ask for Legitimization
+			trigger = { can_legitimise_bastards_trigger = no }
+		}
+		trigger = {
+			NOT = { trait = bastard } 
+			NOT = { dynasty = 0 }
+			can_press_claims_trigger = yes
+			NAND = { #no concept of bastardry
+				culture_group = altaic 
+				OR = {
+					is_ruler = yes
+					liege = { culture_group = altaic }
+				}
+			}	
+		}
 		ai_chance = {
 			factor = 50
+			
+			modifier = {
+				factor = 0.5
+				OR = {
+					NOT = { age = 40 }
+					current_heir = { dynasty = PREV }
+					primary_title = { has_elective_law_trigger = yes }
+				}	
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					trait = honorable
+					trait = just
+					current_heir = { is_child_of = PREV }					
+					AND = {
+						FROM = { is_female = yes }
+						primary_title = {
+							OR = {
+								has_law = cognatic_succession
+								has_law = agnatic_succession
+							}
+						}
+					}
+					AND = {
+						FROM = { is_female = no }
+						primary_title = {
+							OR = {
+								has_law = enatic_succession
+								has_law = enatic_cognatic_succession
+							}
+						}
+					}
+				}	
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { NOT = { graphical_culture = ROOT } }
+			}
+			modifier = {
+				factor = 0.25
+				FROM = { is_alive = no }
+			}
 			modifier = {
 				factor = 0
 				trait = proud
@@ -2889,11 +2957,166 @@ character_event = {
 				trait = greedy
 			}
 		}
+		prestige = -200
 		FROM = {
-			character_event = { id = 302 tooltip = EVTTOOLTIP302 } # The child gets the father's dynasty
 			mother = { character_event = { id = slavery.0 tooltip = "EVTTOOLTIPSLAVERY0" } }
 		}
-		prestige = -200
+		if = {
+			limit = { can_legitimise_bastards_trigger = yes }
+			piety = -20
+			FROM = {
+				legitimise_newborn_FROM_effect = yes # The child gets the father's dynasty			
+			}
+			if = {
+				limit = { ROOT = { NOT = { culture_group = altaic_group } } }#Promiscious culture does not care
+				any_child = {
+					limit = {
+						NOT = { character = FROM }
+						dynasty = ROOT
+						NOT = { trait = bastard }
+					}
+					opinion = {
+						who = ROOT
+						modifier = legitimized_bastard
+						months = 60
+					}
+				}
+			}	
+			recalc_succession = yes
+		}
+		else = {
+			hidden_tooltip = { #temporarily make them acknowledged bastard just in case event fails
+				FROM = { 
+					dynasty = ROOT				
+					add_trait = bastard
+					if = {
+						limit = { mother_even_if_dead = { always = yes } }
+						bastard_nickname_mother_effect = yes	
+					}	
+					if = {
+						limit = { NOT = { mother_even_if_dead = { always = yes } } }
+						bastard_nickname_father_effect = yes	
+					}	
+				} 
+			}
+			if = { #find liege for legitmisation
+				limit = { 
+					any_liege = { 
+						tier = KING 
+						can_legitimise_bastards_trigger = yes 
+						NOT = { war_with = PREV }
+						NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_refused_legit } }
+					} 
+				}
+				set_character_flag = legitimising_bastard
+				any_liege = {
+					limit = { tier = KING }
+					save_event_target_as = liege_to_ask_for_legit
+					custom_tooltip = {
+						text = TOOLTIP301LEGITREQUEST
+						hidden_tooltip = { FROM = { character_event = { id = bastard.600 } } }
+					}	
+				}
+			}
+			else_if = { #find liege for legitmisation
+				limit = { 
+					liege = { 
+						can_legitimise_bastards_trigger = yes 
+						NOT = { war_with = PREV } 
+						NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_refused_legit } }
+					} 
+				}
+				set_character_flag = legitimising_bastard
+				liege = {
+					save_event_target_as = liege_to_ask_for_legit
+					custom_tooltip = {
+						text = TOOLTIP301LEGITREQUEST
+						hidden_tooltip = { FROM = { character_event = { id = bastard.600 } } }
+					}
+				}
+			}
+			else_if = { #find liege for legitmisation
+				limit = { 
+					top_liege = { 
+						can_legitimise_bastards_trigger = yes 
+						NOT = { war_with = PREV } 
+						NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_refused_legit } }
+					} 
+				}
+				set_character_flag = legitimising_bastard
+				top_liege = {
+					save_event_target_as = liege_to_ask_for_legit
+					custom_tooltip = {
+						text = TOOLTIP301LEGITREQUEST
+						hidden_tooltip = { FROM = { character_event = { id = bastard.600 } } }
+					}
+				}
+			}
+			else = {
+				random_independent_ruler = {
+					limit = {
+						higher_tier_than = ROOT
+						reverse_has_opinion_modifier = { who = ROOT modifier = opinion_de_facto_liege }	
+						can_legitimise_bastards_trigger = yes
+						NOT = { war_with = ROOT }
+						NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_refused_legit } }
+					}
+					ROOT = { set_character_flag = legitimising_bastard }
+					save_event_target_as = liege_to_ask_for_legit
+					custom_tooltip = {
+						text = TOOLTIP301LEGITREQUEST
+						hidden_tooltip = { FROM = { character_event = { id = bastard.600 } } }
+					}
+					break = yes
+				}
+				custom_tooltip = { #if no liege, found acknowledge them
+					text = TOOLTIPlegit_bastard_fail
+					FROM = { 
+						acknowledge_newborn_FROM_effect = yes
+					} 
+				}
+			}
+		}	
+	}
+	
+	option = {
+		# Steppe Nomad Acknowledges child
+		name = "EVTOPTDSLAVERY404"
+		trigger = {
+			culture_group = altaic 
+			OR = {
+				is_ruler = yes
+				liege = { culture_group = altaic }
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+			modifier = {
+				factor = 0.5
+				trait = ruthless
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+		}
+		FROM = {
+			remove_trait = slave
+			dynasty = ROOT
+		}	
+		recalc_succession = yes
 	}
 }
 # Lashing a slave

@@ -3901,57 +3901,57 @@ character_event = {
 
 # Shepherds' Crusade kills a local Jew or priest. Fired from 'on_siege_over_loc_chars'.
 # Siege winner unit owner in the 'new_character' scope, lost holding title in FROM, local character in ROOT.
-character_event = {
-	id = SoA.5406
-	
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		OR = {
-			religion_group = jewish_group
-			is_priest = yes
-		}
-		new_character = {
-			rebel = yes
-			has_character_flag = shepherds_crusade_leader
-		}
-	}
-	
-	immediate = {
-		random = {
-			chance = 50
-			new_character = {
-				ROOT = {
-					death = {
-						death_reason = death_rabble
-						killer = PREV
-					}
-				}
-			}
-			any_liege = { # Inform the victim's lieges
-				character_event = {
-					id = SoA.5409
-				}
-			}
-		}
-	}
-}
-
-# Liege notified of killing of character by Shepherds' Crusade
-character_event = {
-	id = SoA.5409
-	desc = EVTDESC_SoA_5409
-	picture = GFX_evt_beheading
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_SoA_5409
-	}
-}
+#character_event = {
+#	id = SoA.5406
+#	
+#	hide_window = yes
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		OR = {
+#			religion_group = jewish_group
+#			is_priest = yes
+#		}
+#		new_character = {
+#			rebel = yes
+#			has_character_flag = shepherds_crusade_leader
+#		}
+#	}
+#	
+#	immediate = {
+#		random = {
+#			chance = 50
+#			new_character = {
+#				ROOT = {
+#					death = {
+#						death_reason = death_rabble
+#						killer = PREV
+#					}
+#				}
+#			}
+#			any_liege = { # Inform the victim's lieges
+#				character_event = {
+#					id = SoA.5409
+#				}
+#			}
+#		}
+#	}
+#}
+#
+## Liege notified of killing of character by Shepherds' Crusade
+#character_event = {
+#	id = SoA.5409
+#	desc = EVTDESC_SoA_5409
+#	picture = GFX_evt_beheading
+#	border = GFX_event_normal_frame_war
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTA_SoA_5409
+#	}
+#}
 
 ###########################################
 #                                         #

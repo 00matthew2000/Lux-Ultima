@@ -2150,10 +2150,10 @@ letter_event = {
 				}
 				FROM = {
 					detract_grace_super_huge_effect = yes
-					any_faction_backer = {
-						faction = faction_lower_crown_authority
-						detract_grace_super_huge_effect = yes
-					}
+					#any_faction_backer = {
+						#faction = faction_lower_crown_authority
+						#detract_grace_super_huge_effect = yes
+					#}
 				}
 			}
 			else_if = {
@@ -2165,10 +2165,10 @@ letter_event = {
 				}
 				FROM = {
 					detract_grace_massive_effect = yes
-					any_faction_backer = {
-						faction = faction_lower_crown_authority
-						detract_grace_massive_effect = yes
-					}
+					#any_faction_backer = {
+						#faction = faction_lower_crown_authority
+						#detract_grace_massive_effect = yes
+					#}
 				}
 			}
 			else_if = {
@@ -2179,10 +2179,10 @@ letter_event = {
 				}
 				FROM = {
 					detract_grace_major_effect = yes
-					any_faction_backer = {
-						faction = faction_lower_crown_authority
-						detract_grace_major_effect = yes
-					}
+					#any_faction_backer = {
+						#faction = faction_lower_crown_authority
+						#detract_grace_major_effect = yes
+					#}
 				}
 			}
 		}
@@ -2319,10 +2319,10 @@ letter_event = {
 				}
 				FROM = {
 					detract_grace_super_huge_effect = yes
-					any_faction_backer = {
-						faction = faction_lower_crown_authority
-						detract_grace_super_huge_effect = yes
-					}
+					#any_faction_backer = {
+						#faction = faction_lower_crown_authority
+						#detract_grace_super_huge_effect = yes
+					#}
 				}
 			}
 			else_if = {
@@ -2334,10 +2334,10 @@ letter_event = {
 				}
 				FROM = {
 					detract_grace_massive_effect = yes
-					any_faction_backer = {
-						faction = faction_lower_crown_authority
-						detract_grace_massive_effect = yes
-					}
+					#any_faction_backer = {
+						#faction = faction_lower_crown_authority
+						#detract_grace_massive_effect = yes
+					#}
 				}
 			}
 			else_if = {
@@ -2348,10 +2348,10 @@ letter_event = {
 				}
 				FROM = {
 					detract_grace_major_effect = yes
-					any_faction_backer = {
-						faction = faction_lower_crown_authority
-						detract_grace_major_effect = yes
-					}
+					#any_faction_backer = {
+						#faction = faction_lower_crown_authority
+						#detract_grace_major_effect = yes
+					#}
 				}
 			}
 		}
@@ -3360,10 +3360,10 @@ letter_event = {
 				}
 				FROM = {
 					detract_grace_super_huge_effect = yes
-					any_faction_backer = {
-						faction = faction_lower_crown_authority
-						detract_grace_super_huge_effect = yes
-					}
+					#any_faction_backer = {
+						#faction = faction_lower_crown_authority
+						#detract_grace_super_huge_effect = yes
+					#}
 				}
 			}
 			else_if = {
@@ -3375,10 +3375,10 @@ letter_event = {
 				}
 				FROM = {
 					detract_grace_massive_effect = yes
-					any_faction_backer = {
-						faction = faction_lower_crown_authority
-						detract_grace_massive_effect = yes
-					}
+					#any_faction_backer = {
+						#faction = faction_lower_crown_authority
+						#detract_grace_massive_effect = yes
+					#}
 				}
 			}
 			else_if = {
@@ -3389,10 +3389,10 @@ letter_event = {
 				}
 				FROM = {
 					detract_grace_major_effect = yes
-					any_faction_backer = {
-						faction = faction_lower_crown_authority
-						detract_grace_major_effect = yes
-					}
+					#any_faction_backer = {
+						#faction = faction_lower_crown_authority
+						#detract_grace_major_effect = yes
+					#}
 				}
 			}
 		}

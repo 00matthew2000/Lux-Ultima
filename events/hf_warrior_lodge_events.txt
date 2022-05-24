@@ -11,749 +11,749 @@ namespace = HF
 
 #From on_character_ask_to_join_society
 #Set up for finding an appropriate Hero character, who will tell the new recruit about the initation duel
-character_event = {
-    id = HF.10003
-    is_triggered_only = yes
-    hide_window = yes
-    #ai = no
+#character_event = {
+#    id = HF.10003
+#    is_triggered_only = yes
+#    hide_window = yes
+#    #ai = no
+#
+#    trigger = {
+#        NOT = { has_character_flag = is_being_recruited_to_warrior_lodge_by_parent }
+#        NOT = { has_character_flag = awaiting_initiation_trial }
+#        #FROM = { leader = { is_member_of_any_warrior_lodge_trigger = yes } }
+#    }
+#
+#    immediate = {
+#        FROM = { save_event_target_as = warrior_lodge_to_join } #used later for joining correct society
+#        set_character_flag = society_join_block
+#        set_character_flag = awaiting_initiation_trial
+#        save_event_target_as = new_recruit
+#
+#        if = { #Find a non-prisoner member
+#            limit = { FROM = { leader = { prisoner = yes } } }
+#            FROM = {
+#                random_society_member = {
+#                    limit = { 
+#                        society_member_of = event_target:warrior_lodge_to_join
+#                        society_rank == 4
+#                        prisoner = no
+#                    }
+#                    character_event = { id = HF.10004 }
+#                    break = yes
+#                }
+#                random_society_member = {
+#                    limit = { 
+#                        society_member_of = event_target:warrior_lodge_to_join
+#                        society_rank == 3
+#                        prisoner = no
+#                    }
+#                    character_event = { id = HF.10004 }
+#                    break = yes
+#                }
+#                random_society_member = {
+#                    limit = { 
+#                        society_member_of = event_target:warrior_lodge_to_join
+#                        society_rank == 2
+#                        prisoner = no
+#                    }
+#                    character_event = { id = HF.10004 }
+#                    break = yes
+#                }
+#                random_society_member = {
+#                    limit = { 
+#                        society_member_of = event_target:warrior_lodge_to_join
+#                        society_rank == 1
+#                        prisoner = no
+#                    }
+#                    character_event = { id = HF.10004 }
+#                    break = yes
+#                }
+#            }
+#            #Everyone is somehow in prison so just use the leader anyway
+#        }
+#        FROM = { leader = { character_event = { id = HF.10004 } } }
+#    }
+#}
+#
+##Event for hero character (unless MP, this is an AI)
+#character_event = {
+#    id = HF.10004
+#    desc = EVTDESC_HF_10004
+#    picture = GFX_evt_melee
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#    
+#    immediate = { hidden_effect = { save_event_target_as = hero_character } }
+#
+#    option = {
+#        name = EVTOPTA_HF_10004 #I'll put on my most intimidating face
+#        custom_tooltip = { text = EVTOPTA_HF_10004_TT }
+#        add_legend_progress_trivial_effect = yes
+#        hidden_effect = {
+#            event_target:new_recruit = { character_event = { id = HF.10005 } } #sends event to player
+#        }
+#    }
+#}
+#
+#
+##Do you want to accept the challenge to fight a member of the society, or not?
+#character_event = {
+#    id = HF.10005
+#    desc = EVTDESC_HF_10005
+#    picture = GFX_evt_teaching_moment
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#
+#    immediate = {
+#        if = {
+#            limit = {
+#                any_owned_bloodline = {
+#                    has_bloodline_flag = bloodline_legendary_warrior
+#                }
+#            }
+#            random_owned_bloodline = {
+#                limit = {
+#                    has_bloodline_flag = bloodline_legendary_warrior
+#                }
+#                preferred_limit = {
+#                    founder = { NOT = { character = ROOT } }   
+#                }
+#                founder = { save_event_target_as = founder_target }
+#            }
+#        }
+#    }
+#
+#
+#    desc = {
+#        text = EVTDESC_HF_10005 #Default desc
+#        trigger = {
+#            NOT = {
+#                any_owned_bloodline = {
+#                    has_bloodline_flag = bloodline_legendary_warrior
+#                }
+#            }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10005_bloodline # Bloodline special desc
+#        trigger = {
+#            any_owned_bloodline = {
+#                has_bloodline_flag = bloodline_legendary_warrior
+#            }
+#        }
+#    }
+#
+#    option = { #I'll gladly fight to prove myself!
+#        name = {
+#            text = EVTOPTA_HF_10005 #default "Yeah, sure"
+#            trigger = {
+#                NOT = {
+#                    any_owned_bloodline = {
+#                        has_bloodline_flag = bloodline_legendary_warrior
+#                    }
+#                }
+#            }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10005_bloodline
+#            trigger = {
+#                any_owned_bloodline = {
+#                    has_bloodline_flag = bloodline_legendary_warrior
+#                }
+#            }
+#        }
+#        custom_tooltip = { text = EVTOPTA_HF_10005_TT }
+#        hidden_effect = {
+#            event_target:hero_character = { #Sends notification to the hero character
+#                set_character_flag = they_accepted@ROOT
+#                character_event = { id = HF.10006 }
+#            }
+#        }
+#        
+#        #FALLBACK:
+#        if = { #If FROM is no longer alive, clear relevant flags, etc...
+#            limit = { FROM = { NOT = { is_alive = yes } } }
+#            reset_warrior_lodge_joining_chain_effect = yes
+#        }
+#        ai_chance = {
+#            factor = 100
+#        }
+#    }
+#    option = { #I changed my mind...
+#        name = EVTOPTB_HF_10005
+#        custom_tooltip = { text = EVTOPTB_HF_10005_TT }
+#
+#        tooltip = {
+#            reverse_opinion = {
+#                who = event_target:hero_character
+#                modifier = opinion_disappointed
+#                years = 5
+#            }
+#        }
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 0
+#                has_character_flag = is_being_recruited_to_warrior_lodge_by_parent
+#            }
+#        }
+#
+#        hidden_effect = {
+#            clr_character_flag = society_join_block
+#            clr_character_flag = awaiting_initiation_trial
+#            event_target:hero_character = { #Sends notification to the hero character
+#                set_character_flag = they_declined@ROOT
+#                character_event = { id = HF.10006 }
+#            }
+#        }
+#    }
+#}
+#
+##The new recruit accepted/chickened out (for the hero character)
+#character_event = {
+#    id = HF.10006
+#    picture = GFX_evt_melee
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#    
+#    immediate = {
+#        hidden_effect = { #Selects duel targets...
+#            if = {
+#                limit = { has_character_flag = they_accepted@FROM }
+#                any_society_member = {
+#                    limit = { same_society_as = ROOT }
+#                    score_value = {  #Prioritizes selecting a rank 1 member, who's available...!
+#                        value = 1
+#                        #Ranks...
+#                        additive_modifier = {
+#                            society_rank == 1
+#                            value = 100000
+#                        }
+#                        additive_modifier = {
+#                            society_rank == 2
+#                            value = 1000
+#                        }
+#                        additive_modifier = {
+#                            society_rank == 3
+#                            value = 10
+#                        }
+#                        additive_modifier = {
+#                            society_rank == 4
+#                            value = 1
+#                        }
+#                        #The fighters should be somewhat evenly matched...
+#                        additive_modifier = {
+#                            OR = {
+#                                AND = {
+#                                    duelist_skill_is_low_group_trigger = yes
+#                                    FROM = { duelist_skill_is_low_group_trigger = yes }
+#                                }
+#                                AND = {
+#                                    duelist_skill_is_medium_group_trigger = yes
+#                                    FROM = { duelist_skill_is_medium_group_trigger = yes }
+#                                }
+#                                AND = {
+#                                    duelist_skill_is_high_group_trigger = yes
+#                                    FROM = { duelist_skill_is_high_group_trigger = yes }
+#                                }
+#                            }
+#                            value = 1000
+#                        }
+#                        #If recruit is bad duelist, the fighters should be as evenly bad as can be...
+#                        additive_modifier = {
+#                            OR = {
+#                                AND = {
+#                                    is_the_worst_duelist_trigger = yes
+#                                    FROM = { is_the_worst_duelist_trigger = yes }
+#                                }
+#                                AND = {
+#                                    is_terrible_duelist_trigger = yes
+#                                    FROM = { is_terrible_duelist_trigger = yes }
+#                                }
+#                                AND = {
+#                                    is_bad_duelist_trigger = yes
+#                                    FROM = { is_bad_duelist_trigger = yes }
+#                                }
+#                            }
+#                            value = 1000
+#                        }
+#                        #Relationship with FROM... (so new ones can form)
+#                        additive_modifier = {
+#                            NOR = {
+#                                is_rival = FROM
+#                                is_lover = FROM
+#                                is_friend = FROM
+#                            }
+#                            value = 100
+#                        }
+#                        additive_modifier = {
+#                            OR = {
+#                                reverse_has_opinion_modifier = { who = FROM modifier = opinion_hate }
+#                                reverse_has_opinion_modifier = { who = FROM modifier = opinion_tortured_me }
+#                                reverse_has_opinion_modifier = { who = FROM modifier = opinion_mutilated_me }
+#                                reverse_has_opinion_modifier = { who = FROM modifier = opinion_imprisoned }
+#                            }
+#                            value = 100
+#                        }
+#                        additive_modifier = {
+#                            FROM = { PREV = { prev_is_lonely_this_romance_makes_sense_trigger = yes } }
+#                            value = 200
+#                        }
+#                        #Shouldn't be in prison/incapable, etc...
+#                        additive_modifier = {
+#                            block_general_event_trigger = yes
+#                            value = -5000
+#                        }
+#                        #Shouldn't be ROOT in this case...
+#                        additive_modifier = {
+#                            character = ROOT
+#                            value = -1000
+#                        }
+#                        #Should *absolutely* preferably be an AI...
+#                        additive_modifier = {
+#                            NOT = { ai = yes }
+#                            value = -1000
+#                        }
+#                        #Shouldn't be sick, etc...
+#                        additive_modifier = {
+#                            value = -500
+#                            OR = {
+#                                has_character_modifier = bedridden_illness
+#                                has_character_modifier = severe_illness
+#                                character_disease_trigger = yes
+#                                has_severe_disability_trigger = yes
+#                            }
+#                        }
+#                        #Shouldn't be prone to dying and breaking the events...
+#                        additive_modifier = {
+#                            value = -500
+#                            OR = {
+#                                age = 60
+#                                is_maimed_trigger = yes #has a maimed trait
+#                            }
+#                        }
+#                    }
+#                    save_event_target_as = duel_target
+#                }
+#            }
+#        }
+#    }
+#
+#    desc = {
+#        text = EVTDESC_HF_10006_yes
+#        trigger = {
+#            has_character_flag = they_accepted@FROM
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10006_no
+#        trigger = {
+#            has_character_flag = they_declined@FROM
+#        }
+#    }
+#
+#    option = { #Let's find someone to duel them!
+#        name = EVTOPTA_HF_10006_yes
+#        custom_tooltip = { text = EVTOPTA_HF_10006_TT_1 }
+#        show_portrait = event_target:duel_target
+#        trigger = {
+#            has_character_flag = they_accepted@FROM
+#        }
+#    }
+#    option = { #That little coward
+#        name = EVTOPTA_HF_10006_no
+#        opinion = {
+#            who = FROM
+#            modifier = opinion_disappointed
+#            years = 5
+#        }
+#        trigger = {
+#            has_character_flag = they_declined@FROM
+#        }
+#    }
+#    after = {
+#        hidden_effect = {
+#            if = {
+#                limit = {
+#                    has_character_flag = they_accepted@FROM    
+#                }
+#                event_target:new_recruit = { character_event = { id = HF.10007 } } #send ping to set up duel
+#            }
+#            clr_character_flag = they_accepted@FROM
+#            clr_character_flag = they_declined@FROM
+#        }
+#    }
+#}
+#
+#
+##Ping to player to set scopes
+#character_event = {
+#    id = HF.10007
+#    hide_window = yes
+#    is_triggered_only = yes
+#    immediate = {
+#        #FALLBACK:
+#        if = { #If FROM is no longer alive, clear relevant flags, etc...
+#            limit = { event_target:duel_target = { NOT = { is_alive = yes } } } 
+#            reset_warrior_lodge_joining_chain_effect = yes
+#        }
+#
+#        set_character_flag = mock_duel
+#        #REQUIRED event targets for setting up duel evaluation! (1 & 2)
+#        save_event_target_as = combatant_1 #the person issuing the duel...
+#        event_target:duel_target = {
+#            save_event_target_as = combatant_2 #the target of the duel...
+#            #character_event = { id = HFP.10095 } #player challenges you to a duel
+#        }
+#    }
+#}
 
-    trigger = {
-        NOT = { has_character_flag = is_being_recruited_to_warrior_lodge_by_parent }
-        NOT = { has_character_flag = awaiting_initiation_trial }
-        #FROM = { leader = { is_member_of_any_warrior_lodge_trigger = yes } }
-    }
+#character_event = { #Hero character's reaction, who then sends acceptance/refusal letter to player
+#    id = HF.10008
+#    picture = GFX_evt_melee
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#    trigger = {
+#    
+#    }
+#
+#    immediate = {
+#
+#    }
+#
+#    desc = {
+#        text = EVTDESC_HF_10008_they_succeeded_greatly
+#        trigger = {
+#            FROM = {
+#                NOR = {
+#                    has_character_flag = was_mildly_injured
+#                    has_character_flag = was_actually_injured
+#                    has_character_flag = duel_fled
+#                }
+#            }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10008_they_were_mildly_injured
+#        trigger = {
+#            FROM = { has_character_flag = was_mildly_injured }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10008_they_were_seriously_injured
+#        trigger = {
+#            FROM = { has_character_flag = was_actually_injured }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10008_they_fled
+#        trigger = {
+#            FROM = { has_character_flag = duel_fled }
+#        }
+#    }
+#
+#    option = {
+#        name = {
+#            text = EVTOPTA_HF_10008_impressed
+#            trigger = {
+#                FROM = {
+#                    NOR = {
+#                        has_character_flag = was_mildly_injured
+#                        has_character_flag = was_actually_injured
+#                        has_character_flag = duel_fled
+#                    }
+#                }
+#            }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10008_accepting
+#            trigger = {
+#                FROM = { has_character_flag = was_mildly_injured }
+#            }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10008_surprised
+#            trigger = {
+#                FROM = { has_character_flag = was_actually_injured }
+#            }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10008_unimpressed
+#            trigger = {
+#                FROM = { has_character_flag = duel_fled }
+#            }
+#        }
+#        if = {
+#            limit = {
+#                NOT = { FROM = { has_character_flag = duel_fled } }
+#            }
+#            custom_tooltip = { text = EVTOPTA_HF_10008_TT }
+#            add_legend_progress_trivial_effect = yes
+#            FROM = { letter_event = { id = HF.10009 days = 5 } }
+#        }
+#        else = {
+#            custom_tooltip = { text = EVTOPTB_HF_10008_TT }
+#            FROM = { letter_event = { id = HF.10010 days = 5 } }
+#        }
+#		if = {
+#			limit = {
+#                FROM = {
+#					OR = {
+#						has_character_flag = was_mildly_injured
+#						has_character_flag = was_actually_injured
+#					}
+#				}
+#			}
+#			if = {
+#				limit = {
+#					has_dlc = "Jade Dragon"
+#					event_target:combatant_2 = {
+#						is_chinese_emperor_trigger = no
+#					}
+#				}
+#				if = {
+#					limit = {
+#						FROM = {
+#							is_chinese_emperor_trigger = yes
+#						}
+#					}
+#					event_target:combatant_2 = {
+#						detract_grace_major_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						FROM = {
+#							any_close_relative = {
+#								dynasty = PREV
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#					}
+#					event_target:combatant_2 = {
+#						detract_grace_medium_effect = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						FROM = {
+#							any_dynasty_member = {
+#								is_chinese_emperor_trigger = yes
+#							}
+#						}
+#					}
+#					event_target:combatant_2 = {
+#						detract_grace_major_effect = yes
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
 
-    immediate = {
-        FROM = { save_event_target_as = warrior_lodge_to_join } #used later for joining correct society
-        set_character_flag = society_join_block
-        set_character_flag = awaiting_initiation_trial
-        save_event_target_as = new_recruit
-
-        if = { #Find a non-prisoner member
-            limit = { FROM = { leader = { prisoner = yes } } }
-            FROM = {
-                random_society_member = {
-                    limit = { 
-                        society_member_of = event_target:warrior_lodge_to_join
-                        society_rank == 4
-                        prisoner = no
-                    }
-                    character_event = { id = HF.10004 }
-                    break = yes
-                }
-                random_society_member = {
-                    limit = { 
-                        society_member_of = event_target:warrior_lodge_to_join
-                        society_rank == 3
-                        prisoner = no
-                    }
-                    character_event = { id = HF.10004 }
-                    break = yes
-                }
-                random_society_member = {
-                    limit = { 
-                        society_member_of = event_target:warrior_lodge_to_join
-                        society_rank == 2
-                        prisoner = no
-                    }
-                    character_event = { id = HF.10004 }
-                    break = yes
-                }
-                random_society_member = {
-                    limit = { 
-                        society_member_of = event_target:warrior_lodge_to_join
-                        society_rank == 1
-                        prisoner = no
-                    }
-                    character_event = { id = HF.10004 }
-                    break = yes
-                }
-            }
-            #Everyone is somehow in prison so just use the leader anyway
-        }
-        FROM = { leader = { character_event = { id = HF.10004 } } }
-    }
-}
-
-#Event for hero character (unless MP, this is an AI)
-character_event = {
-    id = HF.10004
-    desc = EVTDESC_HF_10004
-    picture = GFX_evt_melee
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-    
-    immediate = { hidden_effect = { save_event_target_as = hero_character } }
-
-    option = {
-        name = EVTOPTA_HF_10004 #I'll put on my most intimidating face
-        custom_tooltip = { text = EVTOPTA_HF_10004_TT }
-        add_legend_progress_trivial_effect = yes
-        hidden_effect = {
-            event_target:new_recruit = { character_event = { id = HF.10005 } } #sends event to player
-        }
-    }
-}
-
-
-#Do you want to accept the challenge to fight a member of the society, or not?
-character_event = {
-    id = HF.10005
-    desc = EVTDESC_HF_10005
-    picture = GFX_evt_teaching_moment
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-
-    immediate = {
-        if = {
-            limit = {
-                any_owned_bloodline = {
-                    has_bloodline_flag = bloodline_legendary_warrior
-                }
-            }
-            random_owned_bloodline = {
-                limit = {
-                    has_bloodline_flag = bloodline_legendary_warrior
-                }
-                preferred_limit = {
-                    founder = { NOT = { character = ROOT } }   
-                }
-                founder = { save_event_target_as = founder_target }
-            }
-        }
-    }
-
-
-    desc = {
-        text = EVTDESC_HF_10005 #Default desc
-        trigger = {
-            NOT = {
-                any_owned_bloodline = {
-                    has_bloodline_flag = bloodline_legendary_warrior
-                }
-            }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10005_bloodline # Bloodline special desc
-        trigger = {
-            any_owned_bloodline = {
-                has_bloodline_flag = bloodline_legendary_warrior
-            }
-        }
-    }
-
-    option = { #I'll gladly fight to prove myself!
-        name = {
-            text = EVTOPTA_HF_10005 #default "Yeah, sure"
-            trigger = {
-                NOT = {
-                    any_owned_bloodline = {
-                        has_bloodline_flag = bloodline_legendary_warrior
-                    }
-                }
-            }
-        }
-        name = {
-            text = EVTOPTA_HF_10005_bloodline
-            trigger = {
-                any_owned_bloodline = {
-                    has_bloodline_flag = bloodline_legendary_warrior
-                }
-            }
-        }
-        custom_tooltip = { text = EVTOPTA_HF_10005_TT }
-        hidden_effect = {
-            event_target:hero_character = { #Sends notification to the hero character
-                set_character_flag = they_accepted@ROOT
-                character_event = { id = HF.10006 }
-            }
-        }
-        
-        #FALLBACK:
-        if = { #If FROM is no longer alive, clear relevant flags, etc...
-            limit = { FROM = { NOT = { is_alive = yes } } }
-            reset_warrior_lodge_joining_chain_effect = yes
-        }
-        ai_chance = {
-            factor = 100
-        }
-    }
-    option = { #I changed my mind...
-        name = EVTOPTB_HF_10005
-        custom_tooltip = { text = EVTOPTB_HF_10005_TT }
-
-        tooltip = {
-            reverse_opinion = {
-                who = event_target:hero_character
-                modifier = opinion_disappointed
-                years = 5
-            }
-        }
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 0
-                has_character_flag = is_being_recruited_to_warrior_lodge_by_parent
-            }
-        }
-
-        hidden_effect = {
-            clr_character_flag = society_join_block
-            clr_character_flag = awaiting_initiation_trial
-            event_target:hero_character = { #Sends notification to the hero character
-                set_character_flag = they_declined@ROOT
-                character_event = { id = HF.10006 }
-            }
-        }
-    }
-}
-
-#The new recruit accepted/chickened out (for the hero character)
-character_event = {
-    id = HF.10006
-    picture = GFX_evt_melee
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-    
-    immediate = {
-        hidden_effect = { #Selects duel targets...
-            if = {
-                limit = { has_character_flag = they_accepted@FROM }
-                any_society_member = {
-                    limit = { same_society_as = ROOT }
-                    score_value = {  #Prioritizes selecting a rank 1 member, who's available...!
-                        value = 1
-                        #Ranks...
-                        additive_modifier = {
-                            society_rank == 1
-                            value = 100000
-                        }
-                        additive_modifier = {
-                            society_rank == 2
-                            value = 1000
-                        }
-                        additive_modifier = {
-                            society_rank == 3
-                            value = 10
-                        }
-                        additive_modifier = {
-                            society_rank == 4
-                            value = 1
-                        }
-                        #The fighters should be somewhat evenly matched...
-                        additive_modifier = {
-                            OR = {
-                                AND = {
-                                    duelist_skill_is_low_group_trigger = yes
-                                    FROM = { duelist_skill_is_low_group_trigger = yes }
-                                }
-                                AND = {
-                                    duelist_skill_is_medium_group_trigger = yes
-                                    FROM = { duelist_skill_is_medium_group_trigger = yes }
-                                }
-                                AND = {
-                                    duelist_skill_is_high_group_trigger = yes
-                                    FROM = { duelist_skill_is_high_group_trigger = yes }
-                                }
-                            }
-                            value = 1000
-                        }
-                        #If recruit is bad duelist, the fighters should be as evenly bad as can be...
-                        additive_modifier = {
-                            OR = {
-                                AND = {
-                                    is_the_worst_duelist_trigger = yes
-                                    FROM = { is_the_worst_duelist_trigger = yes }
-                                }
-                                AND = {
-                                    is_terrible_duelist_trigger = yes
-                                    FROM = { is_terrible_duelist_trigger = yes }
-                                }
-                                AND = {
-                                    is_bad_duelist_trigger = yes
-                                    FROM = { is_bad_duelist_trigger = yes }
-                                }
-                            }
-                            value = 1000
-                        }
-                        #Relationship with FROM... (so new ones can form)
-                        additive_modifier = {
-                            NOR = {
-                                is_rival = FROM
-                                is_lover = FROM
-                                is_friend = FROM
-                            }
-                            value = 100
-                        }
-                        additive_modifier = {
-                            OR = {
-                                reverse_has_opinion_modifier = { who = FROM modifier = opinion_hate }
-                                reverse_has_opinion_modifier = { who = FROM modifier = opinion_tortured_me }
-                                reverse_has_opinion_modifier = { who = FROM modifier = opinion_mutilated_me }
-                                reverse_has_opinion_modifier = { who = FROM modifier = opinion_imprisoned }
-                            }
-                            value = 100
-                        }
-                        additive_modifier = {
-                            FROM = { PREV = { prev_is_lonely_this_romance_makes_sense_trigger = yes } }
-                            value = 200
-                        }
-                        #Shouldn't be in prison/incapable, etc...
-                        additive_modifier = {
-                            block_general_event_trigger = yes
-                            value = -5000
-                        }
-                        #Shouldn't be ROOT in this case...
-                        additive_modifier = {
-                            character = ROOT
-                            value = -1000
-                        }
-                        #Should *absolutely* preferably be an AI...
-                        additive_modifier = {
-                            NOT = { ai = yes }
-                            value = -1000
-                        }
-                        #Shouldn't be sick, etc...
-                        additive_modifier = {
-                            value = -500
-                            OR = {
-                                has_character_modifier = bedridden_illness
-                                has_character_modifier = severe_illness
-                                character_disease_trigger = yes
-                                has_severe_disability_trigger = yes
-                            }
-                        }
-                        #Shouldn't be prone to dying and breaking the events...
-                        additive_modifier = {
-                            value = -500
-                            OR = {
-                                age = 60
-                                is_maimed_trigger = yes #has a maimed trait
-                            }
-                        }
-                    }
-                    save_event_target_as = duel_target
-                }
-            }
-        }
-    }
-
-    desc = {
-        text = EVTDESC_HF_10006_yes
-        trigger = {
-            has_character_flag = they_accepted@FROM
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10006_no
-        trigger = {
-            has_character_flag = they_declined@FROM
-        }
-    }
-
-    option = { #Let's find someone to duel them!
-        name = EVTOPTA_HF_10006_yes
-        custom_tooltip = { text = EVTOPTA_HF_10006_TT_1 }
-        show_portrait = event_target:duel_target
-        trigger = {
-            has_character_flag = they_accepted@FROM
-        }
-    }
-    option = { #That little coward
-        name = EVTOPTA_HF_10006_no
-        opinion = {
-            who = FROM
-            modifier = opinion_disappointed
-            years = 5
-        }
-        trigger = {
-            has_character_flag = they_declined@FROM
-        }
-    }
-    after = {
-        hidden_effect = {
-            if = {
-                limit = {
-                    has_character_flag = they_accepted@FROM    
-                }
-                event_target:new_recruit = { character_event = { id = HF.10007 } } #send ping to set up duel
-            }
-            clr_character_flag = they_accepted@FROM
-            clr_character_flag = they_declined@FROM
-        }
-    }
-}
-
-
-#Ping to player to set scopes
-character_event = {
-    id = HF.10007
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        #FALLBACK:
-        if = { #If FROM is no longer alive, clear relevant flags, etc...
-            limit = { event_target:duel_target = { NOT = { is_alive = yes } } } 
-            reset_warrior_lodge_joining_chain_effect = yes
-        }
-
-        set_character_flag = mock_duel
-        #REQUIRED event targets for setting up duel evaluation! (1 & 2)
-        save_event_target_as = combatant_1 #the person issuing the duel...
-        event_target:duel_target = {
-            save_event_target_as = combatant_2 #the target of the duel...
-            #character_event = { id = HFP.10095 } #player challenges you to a duel
-        }
-    }
-}
-
-character_event = { #Hero character's reaction, who then sends acceptance/refusal letter to player
-    id = HF.10008
-    picture = GFX_evt_melee
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-    trigger = {
-    
-    }
-
-    immediate = {
-
-    }
-
-    desc = {
-        text = EVTDESC_HF_10008_they_succeeded_greatly
-        trigger = {
-            FROM = {
-                NOR = {
-                    has_character_flag = was_mildly_injured
-                    has_character_flag = was_actually_injured
-                    has_character_flag = duel_fled
-                }
-            }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10008_they_were_mildly_injured
-        trigger = {
-            FROM = { has_character_flag = was_mildly_injured }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10008_they_were_seriously_injured
-        trigger = {
-            FROM = { has_character_flag = was_actually_injured }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10008_they_fled
-        trigger = {
-            FROM = { has_character_flag = duel_fled }
-        }
-    }
-
-    option = {
-        name = {
-            text = EVTOPTA_HF_10008_impressed
-            trigger = {
-                FROM = {
-                    NOR = {
-                        has_character_flag = was_mildly_injured
-                        has_character_flag = was_actually_injured
-                        has_character_flag = duel_fled
-                    }
-                }
-            }
-        }
-        name = {
-            text = EVTOPTA_HF_10008_accepting
-            trigger = {
-                FROM = { has_character_flag = was_mildly_injured }
-            }
-        }
-        name = {
-            text = EVTOPTA_HF_10008_surprised
-            trigger = {
-                FROM = { has_character_flag = was_actually_injured }
-            }
-        }
-        name = {
-            text = EVTOPTA_HF_10008_unimpressed
-            trigger = {
-                FROM = { has_character_flag = duel_fled }
-            }
-        }
-        if = {
-            limit = {
-                NOT = { FROM = { has_character_flag = duel_fled } }
-            }
-            custom_tooltip = { text = EVTOPTA_HF_10008_TT }
-            add_legend_progress_trivial_effect = yes
-            FROM = { letter_event = { id = HF.10009 days = 5 } }
-        }
-        else = {
-            custom_tooltip = { text = EVTOPTB_HF_10008_TT }
-            FROM = { letter_event = { id = HF.10010 days = 5 } }
-        }
-		if = {
-			limit = {
-                FROM = {
-					OR = {
-						has_character_flag = was_mildly_injured
-						has_character_flag = was_actually_injured
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "Jade Dragon"
-					event_target:combatant_2 = {
-						is_chinese_emperor_trigger = no
-					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							is_chinese_emperor_trigger = yes
-						}
-					}
-					event_target:combatant_2 = {
-						detract_grace_major_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						FROM = {
-							any_close_relative = {
-								dynasty = PREV
-								is_chinese_emperor_trigger = yes
-							}
-						}
-					}
-					event_target:combatant_2 = {
-						detract_grace_medium_effect = yes
-					}
-				}
-				else_if = {
-					limit = {
-						FROM = {
-							any_dynasty_member = {
-								is_chinese_emperor_trigger = yes
-							}
-						}
-					}
-					event_target:combatant_2 = {
-						detract_grace_major_effect = yes
-					}
-				}
-			}
-		}
-	}
-}
-
-letter_event = { #SUCCESS: Welcome to the society!
-    id = HF.10009
-    #picture = GFX_evt_melee
-    border = GFX_event_letter_frame_war
-    is_triggered_only = yes
-    
-    trigger = {
-        NOT = { has_character_flag = show_once_flag }
-    }
-
-    immediate = {
-        set_character_flag = show_once_flag
-    }
-
-    desc = {
-        text = EVTDESC_HF_10009_succeeded_greatly
-        trigger = {
-            NOR = {
-                has_character_flag = was_mildly_injured
-                has_character_flag = was_actually_injured
-                has_character_flag = duel_fled
-            }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10009_was_mildly_injured
-        trigger = { has_character_flag = was_mildly_injured }
-    }
-    desc = {
-        text = EVTDESC_HF_10009_was_seriously_injured
-        trigger = { has_character_flag = was_actually_injured }
-    }
-
-    option = {
-        name = EVTOPTA_HF_10009
-        
-        join_society = event_target:warrior_lodge_to_join
-
-
-        if = {
-            limit = { has_character_flag = minor_reward }
-            add_society_currency_minor_effect = yes
-        }
-        if = {
-            limit = { has_character_flag = medium_reward }
-            add_society_currency_medium_effect = yes
-        }
-
-        if = { # Give Sympathy trait if appropriate...
-            limit = {
-                NOT = { religion_group = pagan_group }
-            }
-            #Give Sympathy trait
-            add_trait = sympathy_pagans
-        }
-
-        hidden_effect = {
-            clr_character_flag = was_actually_injured
-            clr_character_flag = was_mildly_injured
-            clr_character_flag = awaiting_initiation_trial
-            clr_character_flag = duel_fled
-            clr_character_flag = minor_reward
-            clr_character_flag = medium_reward
-            clr_character_flag = show_once_flag
-        }
-
-        ### For characters who were recruited by their parents...
-        if = {
-            limit = {
-                has_character_flag = is_being_recruited_to_warrior_lodge_by_parent
-                event_target:recruiting_parent = { is_alive = yes }
-            }
-            custom_tooltip = { text = your_parent_will_be_proud_tt }
-            tooltip = { #You are happy to have been recruited, and they are impressed you succeeded...
-                opinion = {
-                    modifier = opinion_grateful
-                    who = event_target:recruiting_parent
-                    years = 5
-                }
-                reverse_opinion = {
-                    modifier = opinion_impressed
-                    who = event_target:recruiting_parent
-                    years = 5
-                }
-            }
-
-            set_character_flag = passed_initiation
-            event_target:recruiting_parent = { character_event = { id = HF.10013 } }
-        }
-        ###
-        clr_character_flag = society_join_block 
-    } 
-}
-
-letter_event = { #FAILURE: You can't sit with us
-    id = HF.10010
-    desc = EVTDESC_HF_10010
-    #picture = GFX_evt_melee
-    border = GFX_event_letter_frame_war
-    is_triggered_only = yes
-    trigger = {
-    
-    }
-
-    immediate = {
-
-    }
-
-    option = {
-        name = EVTOPTA_HF_10010
-        custom_tooltip = { text = EVTOPTA_HF_10010_TT } #You will be blocked from joining for 10 years
-        #add blocking modifier (hidden)
-
-        hidden_effect = {
-            clr_character_flag = was_actually_injured
-            clr_character_flag = was_mildly_injured
-            clr_character_flag = awaiting_initiation_trial
-            clr_character_flag = duel_fled
-            clr_character_flag = minor_reward
-            clr_character_flag = medium_reward
-        }
-
-        if = { #For characters who were recruited by their parents...
-            limit = {
-                has_character_flag = is_being_recruited_to_warrior_lodge_by_parent
-                event_target:recruiting_parent = { is_alive = yes }
-            }
-            custom_tooltip = { text = notify_parent_recruiter_tt } #Your parent will be notified.
-            set_character_flag = failed_initiation
-            event_target:recruiting_parent = { character_event = { id = HF.10014 } }
-        }
-        clr_character_flag = society_join_block
-    }
-}
-
-#In case the hero character has died or something odd happens:
-### Gating event on player to make sure societies are joined correctly! [sent from clean up, after duels]
-character_event = {
-    id = HF.10011
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        #sends outcome of the initiation duel to leader, who instantly sends a response to the player: Join us!/Banned for 10 years!
-        if = { #check if original hero is still around...
-            limit = {
-                event_target:hero_character = {
-                    block_general_event_trigger = no
-                }
-            }
-            event_target:hero_character = { character_event = { id = HF.10008 } }
-        }
-        else = { #Otherwise, look elsewhere...
-            if = { #Find a non-prisoner member to send the response...
-                limit = { event_target:warrior_lodge_to_join = { leader = { prisoner = yes } } }
-                event_target:warrior_lodge_to_join = {
-                    random_society_member = {
-                        limit = { 
-                            society_member_of = event_target:warrior_lodge_to_join 
-                            society_rank == 4
-                            prisoner = no
-                        }
-                        save_event_target_as = hero_character
-                        character_event = { id = HF.10008 }
-                        break = yes
-                    }
-                    random_society_member = {
-                        limit = { 
-                            society_member_of = event_target:warrior_lodge_to_join 
-                            society_rank == 3
-                            prisoner = no
-                        }
-                        save_event_target_as = hero_character
-                        character_event = { id = HF.10008 }
-                        break = yes
-                    }
-                    random_society_member = {
-                        limit = { 
-                            society_member_of = event_target:warrior_lodge_to_join 
-                            society_rank == 2
-                            prisoner = no
-                        }
-                        save_event_target_as = hero_character
-                        character_event = { id = HF.10008 }
-                        break = yes
-                    }
-                    random_society_member = {
-                        limit = { 
-                            society_member_of = event_target:warrior_lodge_to_join 
-                            society_rank == 1
-                            prisoner = no
-                        }
-                        save_event_target_as = hero_character
-                        character_event = { id = HF.10008 }
-                        break = yes
-                    }
-                }
-                #Everyone is somehow in prison so just use the leader anyway (there was no "break = yes")
-            }
-            event_target:warrior_lodge_to_join = { leader = { character_event = { id = HF.10008 } } }
-            event_target:hero_character = { character_event = { id = HF.10008 } }
-        }
-    }
-}
+#letter_event = { #SUCCESS: Welcome to the society!
+#    id = HF.10009
+#    #picture = GFX_evt_melee
+#    border = GFX_event_letter_frame_war
+#    is_triggered_only = yes
+#    
+#    trigger = {
+#        NOT = { has_character_flag = show_once_flag }
+#    }
+#
+#    immediate = {
+#        set_character_flag = show_once_flag
+#    }
+#
+#    desc = {
+#        text = EVTDESC_HF_10009_succeeded_greatly
+#        trigger = {
+#            NOR = {
+#                has_character_flag = was_mildly_injured
+#                has_character_flag = was_actually_injured
+#                has_character_flag = duel_fled
+#            }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10009_was_mildly_injured
+#        trigger = { has_character_flag = was_mildly_injured }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10009_was_seriously_injured
+#        trigger = { has_character_flag = was_actually_injured }
+#    }
+#
+#    option = {
+#        name = EVTOPTA_HF_10009
+#        
+#        join_society = event_target:warrior_lodge_to_join
+#
+#
+#        if = {
+#            limit = { has_character_flag = minor_reward }
+#            add_society_currency_minor_effect = yes
+#        }
+#        if = {
+#            limit = { has_character_flag = medium_reward }
+#            add_society_currency_medium_effect = yes
+#        }
+#
+#        if = { # Give Sympathy trait if appropriate...
+#            limit = {
+#                NOT = { religion_group = pagan_group }
+#            }
+#            #Give Sympathy trait
+#            add_trait = sympathy_pagans
+#        }
+#
+#        hidden_effect = {
+#            clr_character_flag = was_actually_injured
+#            clr_character_flag = was_mildly_injured
+#            clr_character_flag = awaiting_initiation_trial
+#            clr_character_flag = duel_fled
+#            clr_character_flag = minor_reward
+#            clr_character_flag = medium_reward
+#            clr_character_flag = show_once_flag
+#        }
+#
+#        ### For characters who were recruited by their parents...
+#        if = {
+#            limit = {
+#                has_character_flag = is_being_recruited_to_warrior_lodge_by_parent
+#                event_target:recruiting_parent = { is_alive = yes }
+#            }
+#            custom_tooltip = { text = your_parent_will_be_proud_tt }
+#            tooltip = { #You are happy to have been recruited, and they are impressed you succeeded...
+#                opinion = {
+#                    modifier = opinion_grateful
+#                    who = event_target:recruiting_parent
+#                    years = 5
+#                }
+#                reverse_opinion = {
+#                    modifier = opinion_impressed
+#                    who = event_target:recruiting_parent
+#                    years = 5
+#                }
+#            }
+#
+#            set_character_flag = passed_initiation
+#            event_target:recruiting_parent = { character_event = { id = HF.10013 } }
+#        }
+#        ###
+#        clr_character_flag = society_join_block 
+#    } 
+#}
+#
+#letter_event = { #FAILURE: You can't sit with us
+#    id = HF.10010
+#    desc = EVTDESC_HF_10010
+#    #picture = GFX_evt_melee
+#    border = GFX_event_letter_frame_war
+#    is_triggered_only = yes
+#    trigger = {
+#    
+#    }
+#
+#    immediate = {
+#
+#    }
+#
+#    option = {
+#        name = EVTOPTA_HF_10010
+#        custom_tooltip = { text = EVTOPTA_HF_10010_TT } #You will be blocked from joining for 10 years
+#        #add blocking modifier (hidden)
+#
+#        hidden_effect = {
+#            clr_character_flag = was_actually_injured
+#            clr_character_flag = was_mildly_injured
+#            clr_character_flag = awaiting_initiation_trial
+#            clr_character_flag = duel_fled
+#            clr_character_flag = minor_reward
+#            clr_character_flag = medium_reward
+#        }
+#
+#        if = { #For characters who were recruited by their parents...
+#            limit = {
+#                has_character_flag = is_being_recruited_to_warrior_lodge_by_parent
+#                event_target:recruiting_parent = { is_alive = yes }
+#            }
+#            custom_tooltip = { text = notify_parent_recruiter_tt } #Your parent will be notified.
+#            set_character_flag = failed_initiation
+#            event_target:recruiting_parent = { character_event = { id = HF.10014 } }
+#        }
+#        clr_character_flag = society_join_block
+#    }
+#}
+#
+##In case the hero character has died or something odd happens:
+#### Gating event on player to make sure societies are joined correctly! [sent from clean up, after duels]
+#character_event = {
+#    id = HF.10011
+#    hide_window = yes
+#    is_triggered_only = yes
+#    immediate = {
+#        #sends outcome of the initiation duel to leader, who instantly sends a response to the player: Join us!/Banned for 10 years!
+#        if = { #check if original hero is still around...
+#            limit = {
+#                event_target:hero_character = {
+#                    block_general_event_trigger = no
+#                }
+#            }
+#            event_target:hero_character = { character_event = { id = HF.10008 } }
+#        }
+#        else = { #Otherwise, look elsewhere...
+#            if = { #Find a non-prisoner member to send the response...
+#                limit = { event_target:warrior_lodge_to_join = { leader = { prisoner = yes } } }
+#                event_target:warrior_lodge_to_join = {
+#                    random_society_member = {
+#                        limit = { 
+#                            society_member_of = event_target:warrior_lodge_to_join 
+#                            society_rank == 4
+#                            prisoner = no
+#                        }
+#                        save_event_target_as = hero_character
+#                        character_event = { id = HF.10008 }
+#                        break = yes
+#                    }
+#                    random_society_member = {
+#                        limit = { 
+#                            society_member_of = event_target:warrior_lodge_to_join 
+#                            society_rank == 3
+#                            prisoner = no
+#                        }
+#                        save_event_target_as = hero_character
+#                        character_event = { id = HF.10008 }
+#                        break = yes
+#                    }
+#                    random_society_member = {
+#                        limit = { 
+#                            society_member_of = event_target:warrior_lodge_to_join 
+#                            society_rank == 2
+#                            prisoner = no
+#                        }
+#                        save_event_target_as = hero_character
+#                        character_event = { id = HF.10008 }
+#                        break = yes
+#                    }
+#                    random_society_member = {
+#                        limit = { 
+#                            society_member_of = event_target:warrior_lodge_to_join 
+#                            society_rank == 1
+#                            prisoner = no
+#                        }
+#                        save_event_target_as = hero_character
+#                        character_event = { id = HF.10008 }
+#                        break = yes
+#                    }
+#                }
+#                #Everyone is somehow in prison so just use the leader anyway (there was no "break = yes")
+#            }
+#            event_target:warrior_lodge_to_join = { leader = { character_event = { id = HF.10008 } } }
+#            event_target:hero_character = { character_event = { id = HF.10008 } }
+#        }
+#    }
+#}
 
 
 ########################################################
@@ -851,339 +851,339 @@ character_event = {
 #}
 
 #Delayed clean up event (for child who turned down recruitment)
-character_event = {
-    id = HF.10015
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        clr_character_flag = is_being_recruited_to_warrior_lodge_by_parent
-        clr_character_flag = refused_trial
-    }
-}
+#character_event = {
+#    id = HF.10015
+#    hide_window = yes
+#    is_triggered_only = yes
+#    immediate = {
+#        clr_character_flag = is_being_recruited_to_warrior_lodge_by_parent
+#        clr_character_flag = refused_trial
+#    }
+#}
 
 #For the parent - Child said yes/no. If yes, you will updated after the trial again.
-character_event = {
-    id = HF.10012
-    picture = GFX_evt_melee
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-    
-    desc = {
-        text = EVTDESC_HF_10012_A
-        trigger = {
-            FROM = { has_character_flag = accepted_trial }
-            NOT = { event_target:hero_character = { character = ROOT } }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10012_A_hero_is_parent
-        trigger = {
-            FROM = { has_character_flag = accepted_trial }
-            event_target:hero_character = { character = ROOT }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10012_B
-        trigger = {
-            FROM = { has_character_flag = refused_trial }
-            NOT = { event_target:hero_character = { character = ROOT } }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10012_B_hero_is_parent
-        trigger = {
-            FROM = { has_character_flag = refused_trial }
-            event_target:hero_character = { character = ROOT }
-        }
-    }
-
-    option = { 
-
-        name = {
-            text = EVTOPTA_HF_10012_1 #I was just waiting for you to be ready!
-            trigger = { event_target:hero_character = { NOT = { character = ROOT } } }
-        }
-        name = {
-            text = EVTOPTA_HF_10012_2 #We'll do this the right way. 
-            trigger = { event_target:hero_character = { character = ROOT } }
-        }
-        if = {
-            limit = { event_target:hero_character = { NOT = { character = ROOT } } }
-            custom_tooltip = { text = EVTOPTA_HF_10012_TT }
-            show_portrait = event_target:hero_character
-        }
-
-        trigger = { FROM = { has_character_flag = accepted_trial } }
-    }
-    option = {      
-        name = EVTOPTB_HF_10012 #Why, you ungrateful little...
-        custom_tooltip = { text = EVTOPTB_HF_10012_TT }
-        if = {
-            limit = { event_target:hero_character = { NOT = { character = ROOT } } }
-            show_portrait = event_target:hero_character
-        }
-        trigger = { FROM = { has_character_flag = refused_trial } }
-    }
-
-    after = {
-        FROM = {
-            clr_character_flag = accepted_trial
-            clr_character_flag = refused_trial
-        }
-    }
-}
+#character_event = {
+#    id = HF.10012
+#    picture = GFX_evt_melee
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#    
+#    desc = {
+#        text = EVTDESC_HF_10012_A
+#        trigger = {
+#            FROM = { has_character_flag = accepted_trial }
+#            NOT = { event_target:hero_character = { character = ROOT } }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10012_A_hero_is_parent
+#        trigger = {
+#            FROM = { has_character_flag = accepted_trial }
+#            event_target:hero_character = { character = ROOT }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10012_B
+#        trigger = {
+#            FROM = { has_character_flag = refused_trial }
+#            NOT = { event_target:hero_character = { character = ROOT } }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10012_B_hero_is_parent
+#        trigger = {
+#            FROM = { has_character_flag = refused_trial }
+#            event_target:hero_character = { character = ROOT }
+#        }
+#    }
+#
+#    option = { 
+#
+#        name = {
+#            text = EVTOPTA_HF_10012_1 #I was just waiting for you to be ready!
+#            trigger = { event_target:hero_character = { NOT = { character = ROOT } } }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10012_2 #We'll do this the right way. 
+#            trigger = { event_target:hero_character = { character = ROOT } }
+#        }
+#        if = {
+#            limit = { event_target:hero_character = { NOT = { character = ROOT } } }
+#            custom_tooltip = { text = EVTOPTA_HF_10012_TT }
+#            show_portrait = event_target:hero_character
+#        }
+#
+#        trigger = { FROM = { has_character_flag = accepted_trial } }
+#    }
+#    option = {      
+#        name = EVTOPTB_HF_10012 #Why, you ungrateful little...
+#        custom_tooltip = { text = EVTOPTB_HF_10012_TT }
+#        if = {
+#            limit = { event_target:hero_character = { NOT = { character = ROOT } } }
+#            show_portrait = event_target:hero_character
+#        }
+#        trigger = { FROM = { has_character_flag = refused_trial } }
+#    }
+#
+#    after = {
+#        FROM = {
+#            clr_character_flag = accepted_trial
+#            clr_character_flag = refused_trial
+#        }
+#    }
+#}
 
 #For the parent - Child made it through the duel and has joined the Warrior Lodge!
-character_event = {
-    id = HF.10013
-    picture = GFX_evt_camaraderie
-    desc = EVTDESC_HF_10013_A #"I am one of you guys now!"
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-
-    trigger = {
-        NOT = { has_character_flag = show_only_once@FROM }
-    }
-
-    immediate = {
-        set_character_flag = show_only_once@FROM
-    }
-    
-    option = { 
-        name = EVTOPTA_HF_10013 #I knew you had it in you.
-        custom_tooltip = { text = EVTOPTA_HF_10013_TT }
-        prestige = 20
-        reverse_opinion = {
-            modifier = opinion_grateful
-            who = FROM
-            years = 5
-        }
-        opinion = {
-            modifier = opinion_impressed
-            who = FROM
-            years = 5
-        }
-        if = {
-            limit = {
-                has_quest = quest_warrior_lodge_recruit
-                quest_target = { character = FROM }
-            }
-            clr_quest = quest_warrior_lodge_recruit
-            add_society_currency_medium_effect = yes
-        }
-        add_legend_progress_trivial_effect = yes
-        trigger = { same_society_as = FROM }
-    }
-
-    ### Only if left society: ###
-    option = {
-        name = EVTOPTB_HF_10013 #You make me regret my decision to leave...
-        custom_tooltip = { text = EVTOPTB_HF_10013_TT }
-        if = {
-            limit = { NOT = { trait = depressed } }
-            random = {
-                chance = 10
-                add_trait_depressed_effect = yes
-            }
-        }
-        trigger = { NOT = { same_society_as = FROM } }
-    }
-    option = {
-        name = EVTOPTC_HF_10013 #I'm not impressed.
-        custom_tooltip = { text = EVTOPTC_HF_10013_TT }
-
-        if = {
-            limit = {
-                NOT = { trait = kind }
-                NOT = { trait = cruel }
-            }
-            add_trait = cruel
-        }
-        else_if = {
-            limit = {
-                trait = kind
-            }
-            remove_trait = kind
-        }
-        reverse_opinion = {
-            modifier = opinion_disappointed
-            who = FROM
-            years = 5
-        }
-
-        trigger = { NOT = { same_society_as = FROM } }
-    }
-
-    after = {
-        FROM = {
-            clr_character_flag = passed_initiation
-            clr_character_flag = is_being_recruited_to_warrior_lodge_by_parent
-            #hidden_tooltip = { character_event = { id = HF.25400 } } #Flavor Tombola for underage recruits.
-        }
-        clr_character_flag = show_only_once@FROM
-    }
-}
-
-#For the parent - Child somehow failed to join Warrior Lodge...
-character_event = {
-    id = HF.10014
-    picture = GFX_evt_teaching_moment
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-
-    trigger = {
-        NOT = { has_character_flag = show_only_once@FROM }
-    }
-
-    immediate = {
-        set_character_flag = show_only_once@FROM
-    }
-
-    desc = {
-        text = EVTDESC_HF_10014_A
-        trigger = {
-            FROM = { NOT = { has_character_flag = chickened_out } }
-        }
-    }
-    desc = {
-        text = EVTDESC_HF_10014_B
-        trigger = {
-            FROM = { has_character_flag = chickened_out }
-        }
-    }
-    
-
-    option = { 
-        name = EVTOPTA_HF_10014 #I'm still proud to call you family.
-        custom_tooltip = { text = EVTOPTA_HF_10014_TT }
-
-        if = {
-            limit = {
-                NOT = { trait = kind }
-                NOT = { trait = cruel }
-            }
-            add_trait = kind
-        }
-        else_if = {
-            limit = {
-                trait = cruel
-            }
-            remove_trait = cruel
-        }
-        FROM = { set_character_flag = parent_was_supportive }
-    }
-    option = {      
-        name = EVTOPTB_HF_10014 #I expected more, honestly...
-        custom_tooltip = { text = EVTOPTB_HF_10014_TT }
-
-        prestige = 20
-
-        if = {
-            limit = {
-                NOT = { trait = kind }
-                NOT = { trait = cruel }
-            }
-            add_trait = cruel
-        }
-        else_if = {
-            limit = {
-                trait = kind
-            }
-            remove_trait = kind
-        }
-        else_if = {
-            limit = {
-                NOT = { trait = honest }
-            }
-            add_trait = honest
-        }
-        FROM = { set_character_flag = parent_was_mean }
-    }
-
-    after = {
-        if = {
-            limit = {
-                has_quest = quest_warrior_lodge_recruit
-                quest_target = { character = FROM }
-            }
-            clr_quest = { id = quest_warrior_lodge_recruit failure = yes }
-        }
-        FROM = {
-            clr_character_flag = failed_initiation
-            clr_character_flag = chickened_out
-            clr_character_flag = is_being_recruited_to_warrior_lodge_by_parent
-            character_event = { id = HF.10017 days = 5 }
-        }
-        clr_character_flag = show_only_once@FROM
-    }
-}
-
-#Adult Child receives parent's reaction to failure to join Warrior Lodge.
-character_event = {
-    id = HF.10017
-    picture = GFX_evt_camaraderie
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-    
-    trigger = {
-        FROM = { is_alive = yes }
-    }
-
-    desc = {
-        text = EVTDESC_HF_10017_A #They took it well.
-        trigger = { has_character_flag = parent_was_supportive }
-    }
-    desc = {
-        text = EVTDESC_HF_10017_B #They took it poorly.
-        trigger = { has_character_flag = parent_was_mean }
-    }
-
-    ############### Good reaction #########
-    option = {      
-        name = EVTOPTA_HF_10017_1 #Family is most important, after all.
-        if = {
-            limit = { has_dlc = "Way of Life" }
-            set_focus = focus_family
-        }
-        opinion = {
-            modifier = comforted_opinion
-            who = FROM
-            years = 5
-        }
-        trigger = { has_character_flag = parent_was_supportive }
-    }
-    option = {      
-        name = EVTOPTA_HF_10017_2 #I'm lucky to have him/her.
-        
-        opinion = {
-            modifier = comforted_opinion
-            who = FROM
-            years = 5
-        }
-
-        trigger = { has_character_flag = parent_was_supportive }
-    }
-    ############### Poor reaction #########
-    option = {      
-        name = EVTOPTB_HF_10017_2 #This is not the end of my story!
-
-        if = {
-            limit = { NOT = { trait = stressed } }
-            add_trait = stressed
-        }
-        if = {
-            limit = { NOT = { trait = ambitious } }
-            add_trait = ambitious
-        }
-
-        custom_tooltip = { text = EVTOPTB_HF_10017_TT }
-        trigger = { has_character_flag = parent_was_mean }
-    }
-    option = {      
-        name = EVTOPTB_HF_10017_1 #I am an embarrassment.
-        trigger = { has_character_flag = parent_was_mean }
-    }
-}
+#character_event = {
+#    id = HF.10013
+#    picture = GFX_evt_camaraderie
+#    desc = EVTDESC_HF_10013_A #"I am one of you guys now!"
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#
+#    trigger = {
+#        NOT = { has_character_flag = show_only_once@FROM }
+#    }
+#
+#    immediate = {
+#        set_character_flag = show_only_once@FROM
+#    }
+#    
+#    option = { 
+#        name = EVTOPTA_HF_10013 #I knew you had it in you.
+#        custom_tooltip = { text = EVTOPTA_HF_10013_TT }
+#        prestige = 20
+#        reverse_opinion = {
+#            modifier = opinion_grateful
+#            who = FROM
+#            years = 5
+#        }
+#        opinion = {
+#            modifier = opinion_impressed
+#            who = FROM
+#            years = 5
+#        }
+#        if = {
+#            limit = {
+#                has_quest = quest_warrior_lodge_recruit
+#                quest_target = { character = FROM }
+#            }
+#            clr_quest = quest_warrior_lodge_recruit
+#            add_society_currency_medium_effect = yes
+#        }
+#        add_legend_progress_trivial_effect = yes
+#        trigger = { same_society_as = FROM }
+#    }
+#
+#    ### Only if left society: ###
+#    option = {
+#        name = EVTOPTB_HF_10013 #You make me regret my decision to leave...
+#        custom_tooltip = { text = EVTOPTB_HF_10013_TT }
+#        if = {
+#            limit = { NOT = { trait = depressed } }
+#            random = {
+#                chance = 10
+#                add_trait_depressed_effect = yes
+#            }
+#        }
+#        trigger = { NOT = { same_society_as = FROM } }
+#    }
+#    option = {
+#        name = EVTOPTC_HF_10013 #I'm not impressed.
+#        custom_tooltip = { text = EVTOPTC_HF_10013_TT }
+#
+#        if = {
+#            limit = {
+#                NOT = { trait = kind }
+#                NOT = { trait = cruel }
+#            }
+#            add_trait = cruel
+#        }
+#        else_if = {
+#            limit = {
+#                trait = kind
+#            }
+#            remove_trait = kind
+#        }
+#        reverse_opinion = {
+#            modifier = opinion_disappointed
+#            who = FROM
+#            years = 5
+#        }
+#
+#        trigger = { NOT = { same_society_as = FROM } }
+#    }
+#
+#    after = {
+#        FROM = {
+#            clr_character_flag = passed_initiation
+#            clr_character_flag = is_being_recruited_to_warrior_lodge_by_parent
+#            #hidden_tooltip = { character_event = { id = HF.25400 } } #Flavor Tombola for underage recruits.
+#        }
+#        clr_character_flag = show_only_once@FROM
+#    }
+#}
+#
+##For the parent - Child somehow failed to join Warrior Lodge...
+#character_event = {
+#    id = HF.10014
+#    picture = GFX_evt_teaching_moment
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#
+#    trigger = {
+#        NOT = { has_character_flag = show_only_once@FROM }
+#    }
+#
+#    immediate = {
+#        set_character_flag = show_only_once@FROM
+#    }
+#
+#    desc = {
+#        text = EVTDESC_HF_10014_A
+#        trigger = {
+#            FROM = { NOT = { has_character_flag = chickened_out } }
+#        }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10014_B
+#        trigger = {
+#            FROM = { has_character_flag = chickened_out }
+#        }
+#    }
+#    
+#
+#    option = { 
+#        name = EVTOPTA_HF_10014 #I'm still proud to call you family.
+#        custom_tooltip = { text = EVTOPTA_HF_10014_TT }
+#
+#        if = {
+#            limit = {
+#                NOT = { trait = kind }
+#                NOT = { trait = cruel }
+#            }
+#            add_trait = kind
+#        }
+#        else_if = {
+#            limit = {
+#                trait = cruel
+#            }
+#            remove_trait = cruel
+#        }
+#        FROM = { set_character_flag = parent_was_supportive }
+#    }
+#    option = {      
+#        name = EVTOPTB_HF_10014 #I expected more, honestly...
+#        custom_tooltip = { text = EVTOPTB_HF_10014_TT }
+#
+#        prestige = 20
+#
+#        if = {
+#            limit = {
+#                NOT = { trait = kind }
+#                NOT = { trait = cruel }
+#            }
+#            add_trait = cruel
+#        }
+#        else_if = {
+#            limit = {
+#                trait = kind
+#            }
+#            remove_trait = kind
+#        }
+#        else_if = {
+#            limit = {
+#                NOT = { trait = honest }
+#            }
+#            add_trait = honest
+#        }
+#        FROM = { set_character_flag = parent_was_mean }
+#    }
+#
+#    after = {
+#        if = {
+#            limit = {
+#                has_quest = quest_warrior_lodge_recruit
+#                quest_target = { character = FROM }
+#            }
+#            clr_quest = { id = quest_warrior_lodge_recruit failure = yes }
+#        }
+#        FROM = {
+#            clr_character_flag = failed_initiation
+#            clr_character_flag = chickened_out
+#            clr_character_flag = is_being_recruited_to_warrior_lodge_by_parent
+#            character_event = { id = HF.10017 days = 5 }
+#        }
+#        clr_character_flag = show_only_once@FROM
+#    }
+#}
+#
+##Adult Child receives parent's reaction to failure to join Warrior Lodge.
+#character_event = {
+#    id = HF.10017
+#    picture = GFX_evt_camaraderie
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#    
+#    trigger = {
+#        FROM = { is_alive = yes }
+#    }
+#
+#    desc = {
+#        text = EVTDESC_HF_10017_A #They took it well.
+#        trigger = { has_character_flag = parent_was_supportive }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10017_B #They took it poorly.
+#        trigger = { has_character_flag = parent_was_mean }
+#    }
+#
+#    ############### Good reaction #########
+#    option = {      
+#        name = EVTOPTA_HF_10017_1 #Family is most important, after all.
+#        if = {
+#            limit = { has_dlc = "Way of Life" }
+#            set_focus = focus_family
+#        }
+#        opinion = {
+#            modifier = comforted_opinion
+#            who = FROM
+#            years = 5
+#        }
+#        trigger = { has_character_flag = parent_was_supportive }
+#    }
+#    option = {      
+#        name = EVTOPTA_HF_10017_2 #I'm lucky to have him/her.
+#        
+#        opinion = {
+#            modifier = comforted_opinion
+#            who = FROM
+#            years = 5
+#        }
+#
+#        trigger = { has_character_flag = parent_was_supportive }
+#    }
+#    ############### Poor reaction #########
+#    option = {      
+#        name = EVTOPTB_HF_10017_2 #This is not the end of my story!
+#
+#        if = {
+#            limit = { NOT = { trait = stressed } }
+#            add_trait = stressed
+#        }
+#        if = {
+#            limit = { NOT = { trait = ambitious } }
+#            add_trait = ambitious
+#        }
+#
+#        custom_tooltip = { text = EVTOPTB_HF_10017_TT }
+#        trigger = { has_character_flag = parent_was_mean }
+#    }
+#    option = {      
+#        name = EVTOPTB_HF_10017_1 #I am an embarrassment.
+#        trigger = { has_character_flag = parent_was_mean }
+#    }
+#}
 
 
 
@@ -1341,472 +1341,472 @@ character_event = {
 #}
 
 # Become a Duelist
-character_event = {
-    id = HF.10022
-    desc = EVTDESC_HF_10022
-    picture = GFX_evt_armory
-    border = GFX_event_normal_frame_war
-    
-    is_triggered_only = yes
+#character_event = {
+#    id = HF.10022
+#    desc = EVTDESC_HF_10022
+#    picture = GFX_evt_armory
+#    border = GFX_event_normal_frame_war
+#    
+#    is_triggered_only = yes
+#
+#    immediate = {
+#        hidden_effect = {
+#            if = {
+#                limit = {
+#                    any_society_member = { #If there is a character with the desired trait...
+#                        same_society_as = ROOT
+#                        ai = yes
+#                        NOT = { character = ROOT }
+#                        NOT = { block_general_event_trigger = yes }
+#                        trait = duelist
+#                    }
+#                }
+#                random_society_member = { #save them as mentor...
+#                    limit = {
+#                        same_society_as = ROOT
+#                        ai = yes
+#                        NOT = { character = ROOT }
+#                        NOT = { block_general_event_trigger = yes }
+#                        trait = duelist
+#                    }
+#                    save_event_target_as = mentor_target
+#                }
+#            }
+#        }
+#    }
+#    
+#    option = {
+#        name = EVTOPTA_HF_10022 #I will ask fellow society member for guidance!
+#
+#        set_character_flag = opt_A
+#        
+#        if = { #if you already have a friend-opinion in place, become friends...
+#            limit = {
+#                OR = {
+#                    reverse_has_opinion_modifier = { who = event_target:mentor_target modifier = opinion_budding_friendship }
+#                    has_opinion_modifier = { who = event_target:mentor_target modifier = opinion_budding_friendship }
+#                }
+#            }
+#            tooltip = { add_friend = event_target:mentor_target }
+#        }
+#        else_if = { #if they don't hate you, they feel professionally praised...
+#            limit = {
+#                event_target:mentor_target = {
+#                    potentially_interested_in_rivaling_root_trigger = no
+#                }
+#            }
+#            tooltip = {
+#                reverse_opinion = {
+#                    who = event_target:mentor_target
+#                    modifier = opinion_was_praised
+#                    years = 10
+#                }
+#            }
+#        }
+#        else = { #otherwise, they probably hate you, but are strangely flattered by your request...
+#            tooltip = {
+#                reverse_opinion = {
+#                    who = event_target:mentor_target
+#                    modifier = opinion_strangely_flattered
+#                    years = 10
+#                }
+#            }
+#        }
+#
+#        prestige = -25
+#
+#        if = {
+#            limit = { event_target:mentor_target = { is_alive = yes } }
+#            event_target:mentor_target = {
+#                character_event = { id = HF.10023 } #Ping, before trait is awarded
+#            }
+#        }
+#        else = {  #so to not freeze the decision (in case MP and time ticks and they die)
+#            clr_character_flag = choosing_military_aspect
+#            add_society_currency_minor_effect = yes
+#        }
+#
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 2
+#                has_pleasant_personality_trigger = yes
+#            }
+#        }
+#
+#        trigger = {
+#            event_target:mentor_target = { always = yes }
+#        }
+#    }
+#    
+#    option = {
+#        name = EVTOPTB_HF_10022 #hire someone to train you
+#        set_character_flag = opt_B
+#                    
+#        scaled_wealth = { value = -0.4 min = -40 }
+#        
+#        add_trait_silently_diligent_effect = yes
+#        remove_trait_silently_slothful_effect = yes
+#        
+#        add_character_modifier = {
+#            modifier = rigorous_practice
+#            duration = 3650
+#        }
+#
+#        hidden_effect = {
+#            clear_event_target = mentor_target
+#            character_event = { id = HF.10024 days = 60 random = 30 } #Lifestyle achieved: DUELIST
+#        }
+#
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 0.2
+#                trait = greedy
+#            }
+#            modifier = {
+#                factor = 1.5
+#                trait = proud
+#            }
+#            modifier = {
+#                factor = 0
+#                NOT = { wealth = 50 }
+#            }
+#        }
+#    }
+#
+#    option = {
+#        name = EVTOPTC_HF_10022 #go about it alone
+#
+#        set_character_flag = opt_C
+#        
+#        hidden_effect = {
+#            clear_event_target = mentor_target
+#            character_event = { id = HF.10024 days = 90 random = 30 } #Lifestyle achieved: DUELIST
+#        }
+#
+#        ai_chance = {
+#            factor = 1
+#        }
+#    }
+#}
+#
+##[Sidetrack from option A] - For the mentor: how involved do you wanna be?
+#character_event = {
+#    id = HF.10023
+#    desc = EVTDESC_HF_10023
+#    picture = GFX_evt_teaching_moment
+#    border = GFX_event_normal_frame_war
+#    is_triggered_only = yes
+#    
+#    trigger = {
+#        FROM = { is_alive = yes }
+#        is_alive = yes
+#    }
+#
+#    fail_trigger_effect = {
+#        if = {
+#            limit = { NOT = { is_alive = yes } }  #so to not freeze the decision
+#            FROM = {
+#                clr_character_flag = choosing_military_aspect
+#                add_society_currency_minor_effect = yes
+#            }
+#        }
+#    }
+#
+#    option = {      
+#        name = EVTOPTA_HF_10023
+#        add_character_modifier = {
+#            modifier = duelist_mentor
+#            duration = 730
+#        }
+#    }
+#    option = {      
+#        name = EVTOPTB_HF_10023
+#
+#        scaled_wealth = { value = -0.2 min = -20 }
+#    }
+#    after = {
+#        if = { #if you already have a friend-opinion in place, become friends...
+#            limit = {
+#                OR = {
+#                    reverse_has_opinion_modifier = { who = FROM modifier = opinion_budding_friendship }
+#                    has_opinion_modifier = { who = FROM modifier = opinion_budding_friendship }
+#                }
+#            }
+#            add_friend = FROM
+#        }
+#        else_if = { #if you don't hate them, feel professionally praised...
+#            limit = {
+#                FROM = { root_potentially_interested_in_rivaling_this_trigger = no }
+#            }
+#            reverse_opinion = {
+#                who = FROM
+#                modifier = opinion_was_praised
+#                years = 10
+#            }
+#        }
+#        else = { #otherwise, you probably hate them, but are strangely flattered by the request...
+#            reverse_opinion = {
+#                who = FROM
+#                modifier = opinion_strangely_flattered
+#                years = 10
+#            }
+#        }
+#        FROM = { character_event = { id = HF.10024 days = 60 random = 30 } } #Lifestyle achieved: DUELIST
+#    }
+#}
+#
+##Lifestyle achieved: DUELIST
+#character_event = {
+#    id = HF.10024
+#    picture = GFX_evt_duel_team
+#    border = GFX_event_normal_frame_war
+#    
+#    is_triggered_only = yes
+#    
+#    desc = { #fallback in case mentor died
+#        trigger = {
+#            has_character_flag = opt_A
+#            FROM = { NOT = { is_alive = yes } }
+#        }
+#        text = EVTDESC_HF_10024_mentor_died
+#    }
+#    desc = {
+#        trigger = {
+#            has_character_flag = opt_A
+#            FROM = { is_alive = yes }
+#        }
+#        text = EVTDESC_HF_10024_A
+#    }
+#    desc = {
+#        trigger = {
+#            OR = {
+#                has_character_flag = opt_B
+#                has_character_flag = opt_C
+#            }
+#        }
+#        text = EVTDESC_HF_10024_B
+#    }
+#    option = {
+#        name = {
+#            text = EVTOPTA_HF_10024_A
+#            trigger = { has_character_flag = opt_A }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10024_B
+#            trigger = { has_character_flag = opt_B }
+#        }
+#        name = {
+#            text = EVTOPTA_HF_10024_C
+#            trigger = { has_character_flag = opt_C }
+#        }
+#        
+#        hidden_tooltip = {
+#            if = {
+#                limit = {
+#                    lifestyle_traits = 1
+#                }
+#                remove_lifestyle_trait_effect = yes
+#            }
+#        }
+#        add_trait = duelist
+#        add_legend_progress_trivial_effect = yes
+#        clr_character_flag = choosing_military_aspect
+#        clr_character_flag = opt_A
+#        clr_character_flag = opt_B
+#        clr_character_flag = opt_C
+#    }
+#}
 
-    immediate = {
-        hidden_effect = {
-            if = {
-                limit = {
-                    any_society_member = { #If there is a character with the desired trait...
-                        same_society_as = ROOT
-                        ai = yes
-                        NOT = { character = ROOT }
-                        NOT = { block_general_event_trigger = yes }
-                        trait = duelist
-                    }
-                }
-                random_society_member = { #save them as mentor...
-                    limit = {
-                        same_society_as = ROOT
-                        ai = yes
-                        NOT = { character = ROOT }
-                        NOT = { block_general_event_trigger = yes }
-                        trait = duelist
-                    }
-                    save_event_target_as = mentor_target
-                }
-            }
-        }
-    }
-    
-    option = {
-        name = EVTOPTA_HF_10022 #I will ask fellow society member for guidance!
-
-        set_character_flag = opt_A
-        
-        if = { #if you already have a friend-opinion in place, become friends...
-            limit = {
-                OR = {
-                    reverse_has_opinion_modifier = { who = event_target:mentor_target modifier = opinion_budding_friendship }
-                    has_opinion_modifier = { who = event_target:mentor_target modifier = opinion_budding_friendship }
-                }
-            }
-            tooltip = { add_friend = event_target:mentor_target }
-        }
-        else_if = { #if they don't hate you, they feel professionally praised...
-            limit = {
-                event_target:mentor_target = {
-                    potentially_interested_in_rivaling_root_trigger = no
-                }
-            }
-            tooltip = {
-                reverse_opinion = {
-                    who = event_target:mentor_target
-                    modifier = opinion_was_praised
-                    years = 10
-                }
-            }
-        }
-        else = { #otherwise, they probably hate you, but are strangely flattered by your request...
-            tooltip = {
-                reverse_opinion = {
-                    who = event_target:mentor_target
-                    modifier = opinion_strangely_flattered
-                    years = 10
-                }
-            }
-        }
-
-        prestige = -25
-
-        if = {
-            limit = { event_target:mentor_target = { is_alive = yes } }
-            event_target:mentor_target = {
-                character_event = { id = HF.10023 } #Ping, before trait is awarded
-            }
-        }
-        else = {  #so to not freeze the decision (in case MP and time ticks and they die)
-            clr_character_flag = choosing_military_aspect
-            add_society_currency_minor_effect = yes
-        }
-
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 2
-                has_pleasant_personality_trigger = yes
-            }
-        }
-
-        trigger = {
-            event_target:mentor_target = { always = yes }
-        }
-    }
-    
-    option = {
-        name = EVTOPTB_HF_10022 #hire someone to train you
-        set_character_flag = opt_B
-                    
-        scaled_wealth = { value = -0.4 min = -40 }
-        
-        add_trait_silently_diligent_effect = yes
-        remove_trait_silently_slothful_effect = yes
-        
-        add_character_modifier = {
-            modifier = rigorous_practice
-            duration = 3650
-        }
-
-        hidden_effect = {
-            clear_event_target = mentor_target
-            character_event = { id = HF.10024 days = 60 random = 30 } #Lifestyle achieved: DUELIST
-        }
-
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 0.2
-                trait = greedy
-            }
-            modifier = {
-                factor = 1.5
-                trait = proud
-            }
-            modifier = {
-                factor = 0
-                NOT = { wealth = 50 }
-            }
-        }
-    }
-
-    option = {
-        name = EVTOPTC_HF_10022 #go about it alone
-
-        set_character_flag = opt_C
-        
-        hidden_effect = {
-            clear_event_target = mentor_target
-            character_event = { id = HF.10024 days = 90 random = 30 } #Lifestyle achieved: DUELIST
-        }
-
-        ai_chance = {
-            factor = 1
-        }
-    }
-}
-
-#[Sidetrack from option A] - For the mentor: how involved do you wanna be?
-character_event = {
-    id = HF.10023
-    desc = EVTDESC_HF_10023
-    picture = GFX_evt_teaching_moment
-    border = GFX_event_normal_frame_war
-    is_triggered_only = yes
-    
-    trigger = {
-        FROM = { is_alive = yes }
-        is_alive = yes
-    }
-
-    fail_trigger_effect = {
-        if = {
-            limit = { NOT = { is_alive = yes } }  #so to not freeze the decision
-            FROM = {
-                clr_character_flag = choosing_military_aspect
-                add_society_currency_minor_effect = yes
-            }
-        }
-    }
-
-    option = {      
-        name = EVTOPTA_HF_10023
-        add_character_modifier = {
-            modifier = duelist_mentor
-            duration = 730
-        }
-    }
-    option = {      
-        name = EVTOPTB_HF_10023
-
-        scaled_wealth = { value = -0.2 min = -20 }
-    }
-    after = {
-        if = { #if you already have a friend-opinion in place, become friends...
-            limit = {
-                OR = {
-                    reverse_has_opinion_modifier = { who = FROM modifier = opinion_budding_friendship }
-                    has_opinion_modifier = { who = FROM modifier = opinion_budding_friendship }
-                }
-            }
-            add_friend = FROM
-        }
-        else_if = { #if you don't hate them, feel professionally praised...
-            limit = {
-                FROM = { root_potentially_interested_in_rivaling_this_trigger = no }
-            }
-            reverse_opinion = {
-                who = FROM
-                modifier = opinion_was_praised
-                years = 10
-            }
-        }
-        else = { #otherwise, you probably hate them, but are strangely flattered by the request...
-            reverse_opinion = {
-                who = FROM
-                modifier = opinion_strangely_flattered
-                years = 10
-            }
-        }
-        FROM = { character_event = { id = HF.10024 days = 60 random = 30 } } #Lifestyle achieved: DUELIST
-    }
-}
-
-#Lifestyle achieved: DUELIST
-character_event = {
-    id = HF.10024
-    picture = GFX_evt_duel_team
-    border = GFX_event_normal_frame_war
-    
-    is_triggered_only = yes
-    
-    desc = { #fallback in case mentor died
-        trigger = {
-            has_character_flag = opt_A
-            FROM = { NOT = { is_alive = yes } }
-        }
-        text = EVTDESC_HF_10024_mentor_died
-    }
-    desc = {
-        trigger = {
-            has_character_flag = opt_A
-            FROM = { is_alive = yes }
-        }
-        text = EVTDESC_HF_10024_A
-    }
-    desc = {
-        trigger = {
-            OR = {
-                has_character_flag = opt_B
-                has_character_flag = opt_C
-            }
-        }
-        text = EVTDESC_HF_10024_B
-    }
-    option = {
-        name = {
-            text = EVTOPTA_HF_10024_A
-            trigger = { has_character_flag = opt_A }
-        }
-        name = {
-            text = EVTOPTA_HF_10024_B
-            trigger = { has_character_flag = opt_B }
-        }
-        name = {
-            text = EVTOPTA_HF_10024_C
-            trigger = { has_character_flag = opt_C }
-        }
-        
-        hidden_tooltip = {
-            if = {
-                limit = {
-                    lifestyle_traits = 1
-                }
-                remove_lifestyle_trait_effect = yes
-            }
-        }
-        add_trait = duelist
-        add_legend_progress_trivial_effect = yes
-        clr_character_flag = choosing_military_aspect
-        clr_character_flag = opt_A
-        clr_character_flag = opt_B
-        clr_character_flag = opt_C
-    }
-}
-
-# Become a Strategist
-character_event = {
-    id = HF.10025
-    desc = EVTDESC_HF_10025
-    picture = GFX_evt_upsetting_letter
-    border = GFX_event_normal_frame_war
-    
-    is_triggered_only = yes
-    
-    option = {
-        name = EVTOPTA_HF_10025
-        
-        if = {
-            limit = {
-                NOT = { trait = patient }
-                NOT = { trait = wroth }
-            }
-            add_trait = patient
-        }
-
-        add_character_modifier = {
-            modifier = hitting_the_books
-            duration = 730
-        }
-        
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 4
-                trait = brave
-            }
-            modifier = {
-                factor = 3
-                trait = ambitious
-            }
-        }
-    }
-    
-    option = {
-        name = EVTOPTB_HF_10025
-        
-         if = {
-            limit = {
-                NOT = { trait = diligent }
-                NOT = { trait = slothful }
-            }
-            add_trait = diligent
-        }
-        if = {
-            limit = {
-                trait = slothful
-            }
-            remove_trait = slothful
-        }
-        
-        add_character_modifier = {
-            modifier = observing_the_troops
-            duration = 730
-        }
-        
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 4
-                trait = craven
-            }
-            modifier = {
-                factor = 3
-                trait = erudite
-            }
-        }
-    }
-    after = {
-        character_event = { id = HF.10026 days = 60 random = 30 } #Lifestyle achieved: STRATEGIST
-    }
-}
-
-#Lifestyle achieved: STRATEGIST
-character_event = {
-    id = HF.10026
-    desc = EVTDESC_HF_10026
-    picture = GFX_evt_teaching_moment
-    border = GFX_event_normal_frame_war
-    
-    is_triggered_only = yes
-    
-    option = {
-        name = EVTOPTA_HF_10026
-        custom_tooltip = { text = EVTOPTA_HF_10026_tt }
-
-        hidden_tooltip = {
-            if = {
-                limit = {
-                    lifestyle_traits = 1
-                }
-                remove_lifestyle_trait_effect = yes
-            }
-        }
-        add_trait = strategist
-        add_legend_progress_trivial_effect = yes
-        clr_character_flag = choosing_military_aspect
-    }
-}
-
-# Become a Hunter
-character_event = {
-    id = HF.10030
-    desc = EVTDESC_HF_10030
-    picture = GFX_evt_hunt
-    border = GFX_event_normal_frame_war
-    
-    is_triggered_only = yes
-    
-    option = {
-        name = EVTOPTA_HF_10030
-        
-        add_character_modifier = {
-            modifier = tracker_student
-            duration = 3650
-        }
-        
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 4
-                trait = erudite
-            }
-            modifier = {
-                factor = 4
-                trait = honest
-            }
-        }
-    }
-    
-    option = {
-        name = EVTOPTB_HF_10030
-        
-        add_character_modifier = {
-            modifier = trapper_student
-            duration = 3650
-        }
-        
-        ai_chance = {
-            factor = 1
-            modifier = {
-                factor = 5
-                trait = deceitful
-            }
-            modifier = {
-                factor = 3
-                trait = cynical
-            }
-        }
-    }
-    after = {
-        character_event = { id = HF.10031 days = 60 random = 30 } #Lifestyle achieved: HUNTER
-    }
-}
-
-#Lifestyle achieved: HUNTER
-character_event = {
-    id = HF.10031
-    desc = EVTDESC_HF_10031
-    picture = GFX_evt_hunt
-    border = GFX_event_normal_frame_war
-    
-    is_triggered_only = yes
-    
-    option = {
-        name = EVTOPTA_HF_10031
-        
-        hidden_tooltip = {
-            if = {
-                limit = {
-                    lifestyle_traits = 1
-                }
-                remove_lifestyle_trait_effect = yes
-            }
-        }
-        if = {
-            limit = { has_nickname = no }
-            give_nickname = nick_the_hunter
-        }
-        add_trait = hunter
-        add_legend_progress_trivial_effect = yes
-        clr_character_flag = choosing_military_aspect
-    }
-}
+## Become a Strategist
+#character_event = {
+#    id = HF.10025
+#    desc = EVTDESC_HF_10025
+#    picture = GFX_evt_upsetting_letter
+#    border = GFX_event_normal_frame_war
+#    
+#    is_triggered_only = yes
+#    
+#    option = {
+#        name = EVTOPTA_HF_10025
+#        
+#        if = {
+#            limit = {
+#                NOT = { trait = patient }
+#                NOT = { trait = wroth }
+#            }
+#            add_trait = patient
+#        }
+#
+#        add_character_modifier = {
+#            modifier = hitting_the_books
+#            duration = 730
+#        }
+#        
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 4
+#                trait = brave
+#            }
+#            modifier = {
+#                factor = 3
+#                trait = ambitious
+#            }
+#        }
+#    }
+#    
+#    option = {
+#        name = EVTOPTB_HF_10025
+#        
+#         if = {
+#            limit = {
+#                NOT = { trait = diligent }
+#                NOT = { trait = slothful }
+#            }
+#            add_trait = diligent
+#        }
+#        if = {
+#            limit = {
+#                trait = slothful
+#            }
+#            remove_trait = slothful
+#        }
+#        
+#        add_character_modifier = {
+#            modifier = observing_the_troops
+#            duration = 730
+#        }
+#        
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 4
+#                trait = craven
+#            }
+#            modifier = {
+#                factor = 3
+#                trait = erudite
+#            }
+#        }
+#    }
+#    after = {
+#        character_event = { id = HF.10026 days = 60 random = 30 } #Lifestyle achieved: STRATEGIST
+#    }
+#}
+#
+##Lifestyle achieved: STRATEGIST
+#character_event = {
+#    id = HF.10026
+#    desc = EVTDESC_HF_10026
+#    picture = GFX_evt_teaching_moment
+#    border = GFX_event_normal_frame_war
+#    
+#    is_triggered_only = yes
+#    
+#    option = {
+#        name = EVTOPTA_HF_10026
+#        custom_tooltip = { text = EVTOPTA_HF_10026_tt }
+#
+#        hidden_tooltip = {
+#            if = {
+#                limit = {
+#                    lifestyle_traits = 1
+#                }
+#                remove_lifestyle_trait_effect = yes
+#            }
+#        }
+#        add_trait = strategist
+#        add_legend_progress_trivial_effect = yes
+#        clr_character_flag = choosing_military_aspect
+#    }
+#}
+#
+## Become a Hunter
+#character_event = {
+#    id = HF.10030
+#    desc = EVTDESC_HF_10030
+#    picture = GFX_evt_hunt
+#    border = GFX_event_normal_frame_war
+#    
+#    is_triggered_only = yes
+#    
+#    option = {
+#        name = EVTOPTA_HF_10030
+#        
+#        add_character_modifier = {
+#            modifier = tracker_student
+#            duration = 3650
+#        }
+#        
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 4
+#                trait = erudite
+#            }
+#            modifier = {
+#                factor = 4
+#                trait = honest
+#            }
+#        }
+#    }
+#    
+#    option = {
+#        name = EVTOPTB_HF_10030
+#        
+#        add_character_modifier = {
+#            modifier = trapper_student
+#            duration = 3650
+#        }
+#        
+#        ai_chance = {
+#            factor = 1
+#            modifier = {
+#                factor = 5
+#                trait = deceitful
+#            }
+#            modifier = {
+#                factor = 3
+#                trait = cynical
+#            }
+#        }
+#    }
+#    after = {
+#        character_event = { id = HF.10031 days = 60 random = 30 } #Lifestyle achieved: HUNTER
+#    }
+#}
+#
+##Lifestyle achieved: HUNTER
+#character_event = {
+#    id = HF.10031
+#    desc = EVTDESC_HF_10031
+#    picture = GFX_evt_hunt
+#    border = GFX_event_normal_frame_war
+#    
+#    is_triggered_only = yes
+#    
+#    option = {
+#        name = EVTOPTA_HF_10031
+#        
+#        hidden_tooltip = {
+#            if = {
+#                limit = {
+#                    lifestyle_traits = 1
+#                }
+#                remove_lifestyle_trait_effect = yes
+#            }
+#        }
+#        if = {
+#            limit = { has_nickname = no }
+#            give_nickname = nick_the_hunter
+#        }
+#        add_trait = hunter
+#        add_legend_progress_trivial_effect = yes
+#        clr_character_flag = choosing_military_aspect
+#    }
+#}
 
 ########################################################
 # RANK 2 POWER - Warrior Training
@@ -2389,52 +2389,52 @@ character_event = {
 #}
 
 # Ping to relation of the casualty. To become rivals, or nah?
-character_event = {
-    id = HF.10057
-    desc = EVTDESC_HF_10057
-    picture = GFX_evt_duel_team
-    border = GFX_event_normal_frame_war
-    has_dlc = "Holy Fury"
-    is_triggered_only = yes
-
-    trigger = {
-        NOT = { trait = incapable }
-        is_alive = yes
-    }
-    option = {      
-        name = EVTOPTA_HF_10057 #I will not let this insult stand!
-        prestige = 10
-        tooltip = { add_rival = FROM }
-        FROM = { character_event = { id = HF.10058 } }
-    }
-    option = {      
-        name = EVTOPTB_HF_10057 #My [relation] should have known better.
-        if = {
-            limit = { NOT = { trait = cruel } }
-            add_trait = cruel
-        }
-    }
-}
-
-# Someone has sworn to take vengeance upon you (fires for the original berserker)...
-character_event = {
-    id = HF.10058
-    desc = EVTDESC_HF_10058
-    picture = GFX_evt_upsetting_letter
-    border = GFX_event_normal_frame_war
-    has_dlc = "Holy Fury"
-    is_triggered_only = yes
-
-    trigger = {
-        FROM = { is_alive = yes }
-        is_alive = yes
-    }
-
-    option = {      
-        name = EVTOPTA_HF_10058 #I am sure we will settle this, in time..
-        add_rival = FROM
-    }
-}
+#character_event = {
+#    id = HF.10057
+#    desc = EVTDESC_HF_10057
+#    picture = GFX_evt_duel_team
+#    border = GFX_event_normal_frame_war
+#    has_dlc = "Holy Fury"
+#    is_triggered_only = yes
+#
+#    trigger = {
+#        NOT = { trait = incapable }
+#        is_alive = yes
+#    }
+#    option = {      
+#        name = EVTOPTA_HF_10057 #I will not let this insult stand!
+#        prestige = 10
+#        tooltip = { add_rival = FROM }
+#        FROM = { character_event = { id = HF.10058 } }
+#    }
+#    option = {      
+#        name = EVTOPTB_HF_10057 #My [relation] should have known better.
+#        if = {
+#            limit = { NOT = { trait = cruel } }
+#            add_trait = cruel
+#        }
+#    }
+#}
+#
+## Someone has sworn to take vengeance upon you (fires for the original berserker)...
+#character_event = {
+#    id = HF.10058
+#    desc = EVTDESC_HF_10058
+#    picture = GFX_evt_upsetting_letter
+#    border = GFX_event_normal_frame_war
+#    has_dlc = "Holy Fury"
+#    is_triggered_only = yes
+#
+#    trigger = {
+#        FROM = { is_alive = yes }
+#        is_alive = yes
+#    }
+#
+#    option = {      
+#        name = EVTOPTA_HF_10058 #I am sure we will settle this, in time..
+#        add_rival = FROM
+#    }
+#}
 
 ### IN PRISON VERSION ### 
 #character_event = {
@@ -3020,45 +3020,45 @@ character_event = {
 #}
 
 # Ping to relation of the casualty. To become rivals, or nah?
-character_event = {
-    id = HF.10071
-    title = HF_10070_title
-    picture = GFX_evt_jailbreak
-    border = GFX_event_normal_frame_war
-    has_dlc = "Holy Fury"
-    is_triggered_only = yes
-
-    desc = {
-        text = EVTDESC_HF_10071_A
-        trigger = { has_character_flag = i_am_hurt_and_original_captor }
-    }
-    desc = {
-        text = EVTDESC_HF_10071_B
-        trigger = { NOT = { has_character_flag = i_am_hurt_and_original_captor } }
-    }
-
-    trigger = {
-        NOT = { trait = incapable }
-        is_alive = yes
-    }
-
-    option = {      
-        name = EVTOPTA_HF_10057 #I will not let this insult stand!
-        prestige = 10
-        tooltip = { add_rival = FROM }
-        FROM = { character_event = { id = HF.10058 } }
-    }
-    option = {      
-        name = EVTOPTB_HF_10057 #My [relation] should have known better.
-        if = {
-            limit = { NOT = { trait = cruel } }
-            add_trait = cruel
-        }
-    }
-    after = {
-        clr_character_flag = i_am_hurt_and_original_captor
-    }
-}
+#character_event = {
+#    id = HF.10071
+#    title = HF_10070_title
+#    picture = GFX_evt_jailbreak
+#    border = GFX_event_normal_frame_war
+#    has_dlc = "Holy Fury"
+#    is_triggered_only = yes
+#
+#    desc = {
+#        text = EVTDESC_HF_10071_A
+#        trigger = { has_character_flag = i_am_hurt_and_original_captor }
+#    }
+#    desc = {
+#        text = EVTDESC_HF_10071_B
+#        trigger = { NOT = { has_character_flag = i_am_hurt_and_original_captor } }
+#    }
+#
+#    trigger = {
+#        NOT = { trait = incapable }
+#        is_alive = yes
+#    }
+#
+#    option = {      
+#        name = EVTOPTA_HF_10057 #I will not let this insult stand!
+#        prestige = 10
+#        tooltip = { add_rival = FROM }
+#        FROM = { character_event = { id = HF.10058 } }
+#    }
+#    option = {      
+#        name = EVTOPTB_HF_10057 #My [relation] should have known better.
+#        if = {
+#            limit = { NOT = { trait = cruel } }
+#            add_trait = cruel
+#        }
+#    }
+#    after = {
+#        clr_character_flag = i_am_hurt_and_original_captor
+#    }
+#}
 
 ########################################################
 # RANK 3 POWER - Inspire Warriors

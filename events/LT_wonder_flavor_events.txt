@@ -1611,7 +1611,7 @@ character_event = {
 				is_building_wonder = yes
 			}
 			save_event_target_as = wonder_or_upgrade
-			save_event_target_as = target_wonder
+			#save_event_target_as = target_wonder ### Hoping this fixes a bug -00matthew2000 ###
 		}
 		if = { 
 			limit = { NOT = { event_target:target_wonder = { always = yes } } }
@@ -2581,6 +2581,7 @@ character_event = { #invitation
 		name = EVTOPTB_LT_20405
 		hidden_effect = { FROMFROM = { character_event = { id = LT.20412 } } }
 		ai_chance = {
+			factor = 1
 			trigger = { NOT = { diplomacy = 15 } }
 			modifier = { 
 				factor = 10
@@ -2597,6 +2598,7 @@ character_event = { #invitation
 		set_character_flag = polite_refuse
 		hidden_effect = { FROMFROM = { character_event = { id = LT.20412 } } }
 		ai_chance = {
+			factor = 1
 			modifier = { 
 				factor = 10
 				NOT = { opinion = { who = FROMFROM value = -25 } }
@@ -2921,6 +2923,7 @@ character_event = { #Seduction reaction
 			}
 		}
 		ai_chance = {
+			factor = 1
 			trigger = { 
 				FROM = { event_target:target_character = { attacted_to_prev_trigger = yes } }
 			}
@@ -2981,6 +2984,7 @@ character_event = { #Seduction reaction
 			}
 		}
 		ai_chance = {
+			factor = 1
 			trigger = { 
 				FROM = { event_target:target_character = { attacted_to_prev_trigger = yes } }
 			}
@@ -3158,7 +3162,7 @@ character_event = { #Lovers make love
 	is_triggered_only = yes
 
 	option = {  # ok
-		name = EVTOPTA_LT_20432
+		name = EVTOPTA_LT_20432_B
 		random = { 
 			chance = 30
 			opinion = { modifier = opinion_budding_romance who = FROM }
@@ -3248,6 +3252,7 @@ character_event = { #Murder attempt Reaction. This event can happen to either ch
 		}
 
 		ai_chance = {
+			factor = 1
 			modifier = { factor = 0.75 combat_rating_diff = { character = FROM  value = 50 } }
 			modifier = { factor = 0.75 combat_rating_diff = { character = FROM  value = 40 } }
 			modifier = { factor = 0.75 combat_rating_diff = { character = FROM  value = 30 } }
@@ -3891,41 +3896,41 @@ character_event = {
 ## upgrade_strategic_exclaves effect.
 
 # Fired from on_action when the upgrades finishes construction
-province_event = {
-	id = LT.20700
-	title = EVT_TITLE_LT_20700
-	desc = EVTDESC_LT_20700
-	trigger = {
-		FROM = { has_wonder_upgrade = upgrade_strategic_exclaves }
-	}
-
-	picture = GFX_evt_castle_construction
-	border = GFX_event_normal_frame_war
-
-	is_triggered_only = yes
-
-	immediate = {
-		FROM = { save_event_target_as = target_upgrade }
-		FROMFROM = { save_event_target_as = target_wonder }
-		FROMFROMFROM = {
-			save_event_target_as = target_province
-			any_province_holding = {
-				trigger_switch = {
-					on_trigger = holding_type
-					city = { add_building = ct_wall_5 }
-					temple = { add_building = tp_wall_5 }
-					castle = { add_building = ca_wall_5 }
-					tribal = { add_building = tb_hillfort_4 }
-					nomad = { add_building = no_camp_fortifications_8 }
-				}
-			}
-		}
-	}
-	option = {  # ok
-		name = EVTOPTA_LT_20700
-		custom_tooltip = { text = EVTOPTA_LT_20700_TT }
-	}
-}
+#province_event = {
+#	id = LT.20700
+#	title = EVT_TITLE_LT_20700
+#	desc = EVTDESC_LT_20700
+#	trigger = {
+#		FROM = { has_wonder_upgrade = upgrade_strategic_exclaves }
+#	}
+#
+#	picture = GFX_evt_castle_construction
+#	border = GFX_event_normal_frame_war
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		FROM = { save_event_target_as = target_upgrade }
+#		FROMFROM = { save_event_target_as = target_wonder }
+#		FROMFROMFROM = {
+#			save_event_target_as = target_province
+#			any_province_holding = {
+#				trigger_switch = {
+#					on_trigger = holding_type
+#					city = { add_building = ct_wall_5 }
+#					temple = { add_building = tp_wall_5 }
+#					castle = { add_building = ca_wall_5 }
+#					tribal = { add_building = tb_hillfort_4 }
+#					nomad = { add_building = no_camp_fortifications_8 }
+#				}
+#			}
+#		}
+#	}
+#	option = {  # ok
+#		name = EVTOPTA_LT_20700
+#		custom_tooltip = { text = EVTOPTA_LT_20700_TT }
+#	}
+#}
 
 ## Looting Events
 
@@ -3984,7 +3989,6 @@ character_event = {
 		NOT = { has_character_flag = looted_wonder_artifact }
 		FROM = { has_wonder_flag = gives_artifact }
 	}
-
 
     is_triggered_only = yes
 
@@ -4205,153 +4209,153 @@ character_event = {
 
 # Hagia Sophia conversion event
 
-character_event = {
-	id = LT.20900
-	title = wonder_cathedral_hagia_sophia
-	picture = GFX_evt_hagia_sofia
-	desc = {
-		trigger = { event_target:target_chaplain = { always = yes } }
-		text = EVTDESC_LT_20900_chaplain
-	}
-	desc = {
-		trigger = { NOT =  { event_target:target_chaplain = { always = yes } } }
-		text = EVTDESC_LT_20900
-	}
-
-	trigger = {
-		OR = {
-			AND = {
-				any_realm_wonder = {
-					NOT = { has_wonder_flag = Hagia_Sophia_catholic_cult }
-					OR = {
-						has_wonder_flag = Hagia_Sophia_orthodox_cult
-						has_wonder_flag = Hagia_Sophia_muslim_cult
-					}
-				}
-				religion = catholic
-			}
-			AND = {
-				any_realm_wonder = {
-					NOT = { has_wonder_flag = Hagia_Sophia_orthodox_cult }
-					OR = {
-						has_wonder_flag = Hagia_Sophia_catholic_cult
-						has_wonder_flag = Hagia_Sophia_muslim_cult
-					}
-				}
-				religion = orthodox
-			}
-			AND = {
-				any_realm_wonder = {
-					NOT = { has_wonder_flag = Hagia_Sophia_muslim_cult }
-					OR = {
-						has_wonder_flag = Hagia_Sophia_orthodox_cult
-						has_wonder_flag = Hagia_Sophia_catholic_cult
-					}
-				}
-				religion_group = muslim
-			}
-		}
-   	}
-	border = GFX_event_normal_frame_religion
-
-    is_triggered_only = yes
-
-    only_independent = yes
-
-    immediate = {
-    	random_realm_wonder = {
-    		limit = {
-    			has_wonder = wonder_cathedral_hagia_sophia
-    		}
-    		save_event_target_as = target_wonder
-    	}
-    	job_spiritual = {
-    		save_event_target_as = target_chaplain
-    	}
-    	if = {
-    		limit = {
-    			OR = {
-    				event_target:target_wonder = {
-    					has_wonder_flag = Hagia_Sophia_catholic_cult
-    					location = { religion = catholic }
-    				}
-    				event_target:target_wonder = {
-    					has_wonder_flag = Hagia_Sophia_orthodox_cult
-    					location = { religion = orthodox }
-    				}
-    				event_target:target_wonder = {
-    					has_wonder_flag = Hagia_Sophia_muslim_cult
-    					location = { religion_group = muslim }
-    				}
-    			}
-    		}
-    		event_target:target_wonder = { location = { set_province_flag = people_had_hagia_sophia } }
-    	}
-    }
-
-    option = { #Convert
-		name = EVTOPTA_LT_20900
-		event_target:target_wonder = { clear_flags_with_prefix = Hagia_Sophia_ }
-		if = {
-			limit = { religion = catholic }
-			event_target:target_wonder = {
-				set_wonder_flag = Hagia_Sophia_catholic_cult
-				set_wonder_model = wonder_hagia_sophia
-			}
-			
-		}
-		else_if = {
-			limit = { religion = orthodox }
-			event_target:target_wonder = {
-				set_wonder_flag = Hagia_Sophia_orthodox_cult
-				set_wonder_model = wonder_hagia_sophia
-			}
-		}
-		else_if = {
-			limit = { religion_group = muslim }
-			event_target:target_wonder = {
-				set_wonder_flag = Hagia_Sophia_muslim_cult
-				set_wonder_model = wonder_hagia_sophia_minarets
-			}
-		}
-		piety = 200
-		reverse_opinion = {
-			modifier = opinion_religious_tract
-			who = event_target:target_chaplain
-			years = 5
-		}
-		event_target:target_wonder = {
-			show_scope_change = no
-			location = {
-				show_scope_change = no
-				if = {
-					limit = { has_province_flag = people_had_hagia_sophia }
-				}
-				add_province_modifier = { modifier = religious_tension years = 5 }
-			}
-		}
-	}
-    option = { #Not Convert
-		name = EVTOPTB_LT_20900
-		piety = -50
-		reverse_opinion = {
-			modifier = opinion_angry
-			who = event_target:target_chaplain
-			years = 5
-		}
-		event_target:target_wonder = {
-			show_scope_change = no
-			location = {
-				show_scope_change = no
-				if = {
-					limit = { has_province_flag = people_had_hagia_sophia }
-				}
-				add_province_modifier = { modifier = religious_tolerance years = 10 }
-			}
-			
-		}
-	}
-}
+#character_event = {
+#	id = LT.20900
+#	title = wonder_cathedral_hagia_sophia
+#	picture = GFX_evt_hagia_sofia
+#	desc = {
+#		trigger = { event_target:target_chaplain = { always = yes } }
+#		text = EVTDESC_LT_20900_chaplain
+#	}
+#	desc = {
+#		trigger = { NOT =  { event_target:target_chaplain = { always = yes } } }
+#		text = EVTDESC_LT_20900
+#	}
+#
+#	trigger = {
+#		OR = {
+#			AND = {
+#				any_realm_wonder = {
+#					NOT = { has_wonder_flag = Hagia_Sophia_catholic_cult }
+#					OR = {
+#						has_wonder_flag = Hagia_Sophia_orthodox_cult
+#						has_wonder_flag = Hagia_Sophia_muslim_cult
+#					}
+#				}
+#				religion = catholic
+#			}
+#			AND = {
+#				any_realm_wonder = {
+#					NOT = { has_wonder_flag = Hagia_Sophia_orthodox_cult }
+#					OR = {
+#						has_wonder_flag = Hagia_Sophia_catholic_cult
+#						has_wonder_flag = Hagia_Sophia_muslim_cult
+#					}
+#				}
+#				religion = orthodox
+#			}
+#			AND = {
+#				any_realm_wonder = {
+#					NOT = { has_wonder_flag = Hagia_Sophia_muslim_cult }
+#					OR = {
+#						has_wonder_flag = Hagia_Sophia_orthodox_cult
+#						has_wonder_flag = Hagia_Sophia_catholic_cult
+#					}
+#				}
+#				religion_group = muslim
+#			}
+#		}
+#   	}
+#	border = GFX_event_normal_frame_religion
+#
+#    is_triggered_only = yes
+#
+#    only_independent = yes
+#
+#    immediate = {
+#    	random_realm_wonder = {
+#    		limit = {
+#    			has_wonder = wonder_cathedral_hagia_sophia
+#    		}
+#    		save_event_target_as = target_wonder
+#    	}
+#    	job_spiritual = {
+#    		save_event_target_as = target_chaplain
+#    	}
+#    	if = {
+#    		limit = {
+#    			OR = {
+#    				event_target:target_wonder = {
+#    					has_wonder_flag = Hagia_Sophia_catholic_cult
+#    					location = { religion = catholic }
+#    				}
+#    				event_target:target_wonder = {
+#    					has_wonder_flag = Hagia_Sophia_orthodox_cult
+#    					location = { religion = orthodox }
+#    				}
+#    				event_target:target_wonder = {
+#    					has_wonder_flag = Hagia_Sophia_muslim_cult
+#    					location = { religion_group = muslim }
+#    				}
+#    			}
+#    		}
+#    		event_target:target_wonder = { location = { set_province_flag = people_had_hagia_sophia } }
+#    	}
+#    }
+#
+#    option = { #Convert
+#		name = EVTOPTA_LT_20900
+#		event_target:target_wonder = { clear_flags_with_prefix = Hagia_Sophia_ }
+#		if = {
+#			limit = { religion = catholic }
+#			event_target:target_wonder = {
+#				set_wonder_flag = Hagia_Sophia_catholic_cult
+#				set_wonder_model = wonder_hagia_sophia
+#			}
+#			
+#		}
+#		else_if = {
+#			limit = { religion = orthodox }
+#			event_target:target_wonder = {
+#				set_wonder_flag = Hagia_Sophia_orthodox_cult
+#				set_wonder_model = wonder_hagia_sophia
+#			}
+#		}
+#		else_if = {
+#			limit = { religion_group = muslim }
+#			event_target:target_wonder = {
+#				set_wonder_flag = Hagia_Sophia_muslim_cult
+#				set_wonder_model = wonder_hagia_sophia_minarets
+#			}
+#		}
+#		piety = 200
+#		reverse_opinion = {
+#			modifier = opinion_religious_tract
+#			who = event_target:target_chaplain
+#			years = 5
+#		}
+#		event_target:target_wonder = {
+#			show_scope_change = no
+#			location = {
+#				show_scope_change = no
+#				if = {
+#					limit = { has_province_flag = people_had_hagia_sophia }
+#				}
+#				add_province_modifier = { modifier = religious_tension years = 5 }
+#			}
+#		}
+#	}
+#    option = { #Not Convert
+#		name = EVTOPTB_LT_20900
+#		piety = -50
+#		reverse_opinion = {
+#			modifier = opinion_angry
+#			who = event_target:target_chaplain
+#			years = 5
+#		}
+#		event_target:target_wonder = {
+#			show_scope_change = no
+#			location = {
+#				show_scope_change = no
+#				if = {
+#					limit = { has_province_flag = people_had_hagia_sophia }
+#				}
+#				add_province_modifier = { modifier = religious_tolerance years = 10 }
+#			}
+#			
+#		}
+#	}
+#}
 
 # After a Siege, things might get out of control and a sack occur. Similar to HL.4813, but weaker. Triggered as random event from on_action on_siege_won_leader
 character_event = { 
@@ -4404,10 +4408,12 @@ character_event = {
 	}
 	
 	immediate = {
-		holder_scope = {
-			save_event_target_as = holder_target
-			top_liege = {
-				save_event_target_as = top_liege_target
+		FROM = {
+			holder_scope = {
+				save_event_target_as = holder_target
+				top_liege = {
+					save_event_target_as = top_liege_target
+				}
 			}
 		}
 		FROM = {
@@ -4600,7 +4606,9 @@ character_event = {
 				show_scope_change = no
 				if = {
 					limit = { has_wonder = yes }
-					wealth = 30
+					ROOT = {
+						wealth = 30
+					}
 					random = {
 						chance = 30
 						wonder = { set_wonder_damaged = yes }

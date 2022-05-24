@@ -4,7 +4,7 @@ character_event = {
 	desc = "EVTDESC320000"
 	picture = GFX_evt_bandits
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 	
 	prisoner = no
 	only_rulers = yes
@@ -223,7 +223,7 @@ character_event = {
 	desc = "EVTDESC320001"
 	picture = GFX_evt_bandits
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	prisoner = no
 	only_rulers = yes
@@ -451,7 +451,7 @@ character_event = {
 	desc = "EVTDESC320002"
 	picture = GFX_evt_bandits
 	
-	##is_triggered_only = yes
+	#is_triggered_only = yes
 
 	prisoner = no
 	only_rulers = yes
@@ -583,7 +583,7 @@ character_event = {
 	desc = "EVTDESC320003"
 	picture = GFX_evt_bandits
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 	
 	prisoner = no
 	only_rulers = yes
@@ -810,7 +810,7 @@ character_event = {
 	desc = "EVTDESC321001"
 	picture = GFX_evt_bandits
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 	
 	prisoner = no
 	only_rulers = yes

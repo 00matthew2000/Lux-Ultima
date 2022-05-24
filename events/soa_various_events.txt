@@ -241,7 +241,8 @@ narrative_event = {
 		}
 		
 		if = {
-			#limit = { #society_member_of = the_satanists }
+			limit = { #society_member_of = the_satanists 
+			}
 			add_society_currency_major_effect = yes
 		}
 		
@@ -285,7 +286,8 @@ narrative_event = {
 		}
 		
 		if = {
-			#limit = { #society_member_of = the_satanists }
+			limit = { #society_member_of = the_satanists 
+			}
 			add_society_currency_massive_effect = yes
 		}
 		
@@ -2715,65 +2717,65 @@ narrative_event = {
 	# }
 # }
 
-# Satanists are notified about the departure of the Demon Child
-narrative_event = {
-	id = SoA.3082
-	title = EVTTITLE_SOA_3082
-	desc = EVTDESC_SOA_3082
-	picture = GFX_evt_throne_room_mesoamerican
-	border = GFX_event_narrative_frame_war
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		FROM = { is_alive = yes }
-	}
-	
-	option = {
-		name = {
-			text = EVTOPTA_SOA_3082_MUSLIM
-			trigger = {
-				religion_group = muslim
-			}
-		}
-		name = {
-			text = EVTOPTA_SOA_3082
-			trigger = {
-				NOT = { religion_group = muslim }
-			}
-		}
-	}
-}
+## Satanists are notified about the departure of the Demon Child
+#narrative_event = {
+#	id = SoA.3082
+#	title = EVTTITLE_SOA_3082
+#	desc = EVTDESC_SOA_3082
+#	picture = GFX_evt_throne_room_mesoamerican
+#	border = GFX_event_narrative_frame_war
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		FROM = { is_alive = yes }
+#	}
+#	
+#	option = {
+#		name = {
+#			text = EVTOPTA_SOA_3082_MUSLIM
+#			trigger = {
+#				religion_group = muslim
+#			}
+#		}
+#		name = {
+#			text = EVTOPTA_SOA_3082
+#			trigger = {
+#				NOT = { religion_group = muslim }
+#			}
+#		}
+#	}
+#}
 
 # Relatives are notified about the departure of the Demon Child
-narrative_event = {
-	id = SoA.3083
-	title = EVTTITLE_SOA_3083
-	desc = EVTDESC_SOA_3083
-	picture = GFX_evt_throne_room_mesoamerican
-	border = GFX_event_narrative_frame_war
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		FROM = { is_alive = yes }
-	}
-	
-	option = {
-		name = {
-			text = EVTOPTA_SOA_3082
-			trigger = {
-				#society_member_of = the_satanists
-			}
-		}
-		name = {
-			text = EVTOPTA_SOA_3083
-			trigger = {
-				#NOT = { #society_member_of = the_satanists }
-			}
-		}
-	}
-}
+#narrative_event = {
+#	id = SoA.3083
+#	title = EVTTITLE_SOA_3083
+#	desc = EVTDESC_SOA_3083
+#	picture = GFX_evt_throne_room_mesoamerican
+#	border = GFX_event_narrative_frame_war
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		FROM = { is_alive = yes }
+#	}
+#	
+#	option = {
+#		name = {
+#			text = EVTOPTA_SOA_3082
+#			trigger = {
+#				#society_member_of = the_satanists
+#			}
+#		}
+#		name = {
+#			text = EVTOPTA_SOA_3083
+#			trigger = {
+#				#NOT = { #society_member_of = the_satanists }
+#			}
+#		}
+#	}
+#}
 
 # Satanists are notified of the coming of age of the Demon Child
 narrative_event = {
@@ -2827,7 +2829,8 @@ character_event = {
 	
 	immediate = {
 		if = {
-			#limit = { #society_member_of = the_satanists }
+			limit = { #society_member_of = the_satanists 
+			}
 			society = {
 				any_society_member = {
 					limit = { NOT = { character = ROOT } }

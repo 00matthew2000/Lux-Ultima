@@ -711,277 +711,277 @@ character_event = {
 #}
 
 #Slavic Stand Together. Spawn troops and move character.
-character_event = {
-	id = HF.25008
-	desc = EVTDESCHF25008
-	picture = GFX_evt_viking_battle_oldgods
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-
-	immediate = {
-		random_list = { 
-			33 = { sound_effect = stand_together_01 } 
-			33 = { sound_effect = stand_together_02 } 
-			33 = { sound_effect = stand_together_03 } 
-		}
-	}
-	option = { 
-		name = EVTOPTAHF25008
-		event_target:scoped_slavic_savior = { move_character = ROOT }
-		hidden_tooltip = { 
-			random_realm_character = { 
-				limit = { has_minor_title = title_commander } 
-				preferred_limit = { NOT = { martial = 10 } }
-				preferred_limit = { NOT = { martial = 15 } } 
-				remove_title = title_commander
-			} 
-			event_target:scoped_slavic_savior = { give_minor_title = title_commander }
-		} 
-		capital_scope = {
-			show_scope_change = no
-			ROOT = {
-				show_scope_change = no
-				spawn_unit = {
-					province = PREV
-					home = PREV
-					owner = THIS
-					leader = event_target:scoped_slavic_savior
-					match_character = THIS
-					match_mult = 0.075
-					match_min = 100
-					match_max = 3000
-					attrition = 1.0
-					earmark = lodge_stand_together
-					disband_on_peace = yes
-					can_toggle_looting = no
-				}
-				spawn_unit = {
-					province = PREV
-					home = PREV
-					owner = THIS
-					match_character = THIS
-					match_mult = 0.075
-					match_min = 100
-					match_max = 3000
-					attrition = 1.0
-					earmark = lodge_stand_together
-					disband_on_peace = yes
-					can_toggle_looting = no
-				}
-				spawn_unit = {
-					province = PREV
-					home = PREV
-					owner = THIS
-					match_character = THIS
-					match_mult = 0.075
-					match_min = 100
-					match_max = 3000
-					attrition = 1.0
-					earmark = lodge_stand_together
-					disband_on_peace = yes
-					can_toggle_looting = no
-				}
-			}
-		}
-		hidden_tooltip = {  
-			random_list = { #chance of befriending the savior.
-				25 = {
-					trigger = { #Becoming lovers.
-						NOT = { num_of_lovers = 3 }
-						event_target:scoped_slavic_savior = { NOT = { num_of_lovers = 3 } }
-						opinion = {
-							who = event_target:scoped_slavic_savior
-							value = -20
-						}
-						OR = {
-							has_religion_feature = religion_holy_family
-							NOT = { is_close_relative = event_target:scoped_slavic_savior }
-						}
-						OR = {
-							AND = {	
-								prefers_men_trigger = yes
-								event_target:scoped_slavic_savior = { is_female = no }
-							}
-							AND = {	
-								prefers_men_trigger = no
-								event_target:scoped_slavic_savior = { is_female = yes }
-							}	
-						}
-					}
-					modifier = {
-						factor = 0.5
-						age = 35
-					}
-					modifier = {
-						factor = 1.5
-						trait = gregarious
-					}
-					modifier = {
-						factor = 1.5
-						event_target:scoped_slavic_savior = { trait = gregarious }
-					}
-					modifier = {
-						factor = 0.5
-						trait = shy
-					}
-					modifier = {
-						factor = 0.5
-						event_target:scoped_slavic_savior = { trait = shy }
-					}
-					modifier = {
-						factor = 1.25
-						event_target:scoped_slavic_savior = { martial = 15 } #Helpful
-					}
-					modifier = {
-						factor = 1.25
-						event_target:scoped_slavic_savior = { martial = 20 } #Helpful
-					}
-					modifier = {
-						factor = 0.25
-						trait = envious
-					}
-					modifier = {
-						factor = 0.25
-						trait = cruel
-					}
-					modifier = {
-						factor = 0.25
-						trait = paranoid
-					}
-					modifier = {
-						factor = 0.75
-						event_target:scoped_slavic_savior = { has_ugly_trait_trigger = yes }
-					}
-					modifier = {
-						factor = 0.75
-						event_target:scoped_slavic_savior = { trait = lisp }
-					}
-					modifier = {
-						factor = 0.75
-						event_target:scoped_slavic_savior = { trait = hunchback }
-					}
-					modifier = {
-						factor = 0.75
-						event_target:scoped_slavic_savior = { trait = inbred }
-					}
-					modifier = {
-						factor = 0.5
-						event_target:scoped_slavic_savior = { age = 50 }
-					}
-					modifier = {
-						factor = 1.5
-						event_target:scoped_slavic_savior = { has_fair_trait_trigger = yes }
-					}
-					modifier = {
-						factor = 1.5
-						event_target:scoped_slavic_savior = { trait = strong }
-					}
-					modifier = {
-						factor = 1.5
-						event_target:scoped_slavic_savior = { NOT = { age = 30 } }
-					}
-					character_event = { id = HF.25009 days = 30 random = 15 } #Falling in Love.
-				}
-				25 = {
-					trigger = { #Becoming friends
-						NOT = { num_of_friends = 3 }
-						event_target:scoped_slavic_savior = { NOT = { num_of_friends = 3 } }
-						opinion = {
-							who = event_target:scoped_slavic_savior
-							value = -20
-						}
-					}
-					modifier = {
-						factor = 0.5
-						age = 35
-					}
-					modifier = {
-						factor = 1.5
-						trait = gregarious
-					}
-					modifier = {
-						factor = 1.5
-						event_target:scoped_slavic_savior = { trait = gregarious }
-					}
-					modifier = {
-						factor = 0.5
-						trait = shy
-					}
-					modifier = {
-						factor = 0.5
-						event_target:scoped_slavic_savior = { trait = shy }
-					}
-					modifier = {
-						factor = 1.25
-						event_target:scoped_slavic_savior = { martial = 15 } #Helpful
-					}
-					modifier = {
-						factor = 1.25
-						event_target:scoped_slavic_savior = { martial = 20 } #Helpful
-					}
-					modifier = {
-						factor = 0.25
-						trait = envious
-					}
-					modifier = {
-						factor = 0.25
-						trait = cruel
-					}
-					modifier = {
-						factor = 0.25
-						trait = paranoid
-					}
-					modifier = {
-						factor = 0.75
-						event_target:scoped_slavic_savior = { trait = hunchback }
-					}
-					modifier = {
-						factor = 0.75
-						event_target:scoped_slavic_savior = { trait = inbred }
-					}
-					modifier = {
-						factor = 0.5
-						event_target:scoped_slavic_savior = { age = 50 }
-					}
-					modifier = {
-						factor = 1.5
-						event_target:scoped_slavic_savior = { NOT = { age = 30 } }
-					}	
-					character_event = { id = HF.25013 days = 30 random = 15 } #Becoming friends.
-				}
-				1 = {
-
-				}
-			}
-		}
-	}
-}
+#character_event = {
+#	id = HF.25008
+#	desc = EVTDESCHF25008
+#	picture = GFX_evt_viking_battle_oldgods
+#	border = GFX_event_normal_frame_war
+#	
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		random_list = { 
+#			33 = { sound_effect = stand_together_01 } 
+#			33 = { sound_effect = stand_together_02 } 
+#			33 = { sound_effect = stand_together_03 } 
+#		}
+#	}
+#	option = { 
+#		name = EVTOPTAHF25008
+#		event_target:scoped_slavic_savior = { move_character = ROOT }
+#		hidden_tooltip = { 
+#			random_realm_character = { 
+#				limit = { has_minor_title = title_commander } 
+#				preferred_limit = { NOT = { martial = 10 } }
+#				preferred_limit = { NOT = { martial = 15 } } 
+#				remove_title = title_commander
+#			} 
+#			event_target:scoped_slavic_savior = { give_minor_title = title_commander }
+#		} 
+#		capital_scope = {
+#			show_scope_change = no
+#			ROOT = {
+#				show_scope_change = no
+#				spawn_unit = {
+#					province = PREV
+#					home = PREV
+#					owner = THIS
+#					leader = event_target:scoped_slavic_savior
+#					match_character = THIS
+#					match_mult = 0.075
+#					match_min = 100
+#					match_max = 3000
+#					attrition = 1.0
+#					earmark = lodge_stand_together
+#					disband_on_peace = yes
+#					can_toggle_looting = no
+#				}
+#				spawn_unit = {
+#					province = PREV
+#					home = PREV
+#					owner = THIS
+#					match_character = THIS
+#					match_mult = 0.075
+#					match_min = 100
+#					match_max = 3000
+#					attrition = 1.0
+#					earmark = lodge_stand_together
+#					disband_on_peace = yes
+#					can_toggle_looting = no
+#				}
+#				spawn_unit = {
+#					province = PREV
+#					home = PREV
+#					owner = THIS
+#					match_character = THIS
+#					match_mult = 0.075
+#					match_min = 100
+#					match_max = 3000
+#					attrition = 1.0
+#					earmark = lodge_stand_together
+#					disband_on_peace = yes
+#					can_toggle_looting = no
+#				}
+#			}
+#		}
+#		hidden_tooltip = {  
+#			random_list = { #chance of befriending the savior.
+#				25 = {
+#					trigger = { #Becoming lovers.
+#						NOT = { num_of_lovers = 3 }
+#						event_target:scoped_slavic_savior = { NOT = { num_of_lovers = 3 } }
+#						opinion = {
+#							who = event_target:scoped_slavic_savior
+#							value = -20
+#						}
+#						OR = {
+#							has_religion_feature = religion_holy_family
+#							NOT = { is_close_relative = event_target:scoped_slavic_savior }
+#						}
+#						OR = {
+#							AND = {	
+#								prefers_men_trigger = yes
+#								event_target:scoped_slavic_savior = { is_female = no }
+#							}
+#							AND = {	
+#								prefers_men_trigger = no
+#								event_target:scoped_slavic_savior = { is_female = yes }
+#							}	
+#						}
+#					}
+#					modifier = {
+#						factor = 0.5
+#						age = 35
+#					}
+#					modifier = {
+#						factor = 1.5
+#						trait = gregarious
+#					}
+#					modifier = {
+#						factor = 1.5
+#						event_target:scoped_slavic_savior = { trait = gregarious }
+#					}
+#					modifier = {
+#						factor = 0.5
+#						trait = shy
+#					}
+#					modifier = {
+#						factor = 0.5
+#						event_target:scoped_slavic_savior = { trait = shy }
+#					}
+#					modifier = {
+#						factor = 1.25
+#						event_target:scoped_slavic_savior = { martial = 15 } #Helpful
+#					}
+#					modifier = {
+#						factor = 1.25
+#						event_target:scoped_slavic_savior = { martial = 20 } #Helpful
+#					}
+#					modifier = {
+#						factor = 0.25
+#						trait = envious
+#					}
+#					modifier = {
+#						factor = 0.25
+#						trait = cruel
+#					}
+#					modifier = {
+#						factor = 0.25
+#						trait = paranoid
+#					}
+#					modifier = {
+#						factor = 0.75
+#						event_target:scoped_slavic_savior = { has_ugly_trait_trigger = yes }
+#					}
+#					modifier = {
+#						factor = 0.75
+#						event_target:scoped_slavic_savior = { trait = lisp }
+#					}
+#					modifier = {
+#						factor = 0.75
+#						event_target:scoped_slavic_savior = { trait = hunchback }
+#					}
+#					modifier = {
+#						factor = 0.75
+#						event_target:scoped_slavic_savior = { trait = inbred }
+#					}
+#					modifier = {
+#						factor = 0.5
+#						event_target:scoped_slavic_savior = { age = 50 }
+#					}
+#					modifier = {
+#						factor = 1.5
+#						event_target:scoped_slavic_savior = { has_fair_trait_trigger = yes }
+#					}
+#					modifier = {
+#						factor = 1.5
+#						event_target:scoped_slavic_savior = { trait = strong }
+#					}
+#					modifier = {
+#						factor = 1.5
+#						event_target:scoped_slavic_savior = { NOT = { age = 30 } }
+#					}
+#					character_event = { id = HF.25009 days = 30 random = 15 } #Falling in Love.
+#				}
+#				25 = {
+#					trigger = { #Becoming friends
+#						NOT = { num_of_friends = 3 }
+#						event_target:scoped_slavic_savior = { NOT = { num_of_friends = 3 } }
+#						opinion = {
+#							who = event_target:scoped_slavic_savior
+#							value = -20
+#						}
+#					}
+#					modifier = {
+#						factor = 0.5
+#						age = 35
+#					}
+#					modifier = {
+#						factor = 1.5
+#						trait = gregarious
+#					}
+#					modifier = {
+#						factor = 1.5
+#						event_target:scoped_slavic_savior = { trait = gregarious }
+#					}
+#					modifier = {
+#						factor = 0.5
+#						trait = shy
+#					}
+#					modifier = {
+#						factor = 0.5
+#						event_target:scoped_slavic_savior = { trait = shy }
+#					}
+#					modifier = {
+#						factor = 1.25
+#						event_target:scoped_slavic_savior = { martial = 15 } #Helpful
+#					}
+#					modifier = {
+#						factor = 1.25
+#						event_target:scoped_slavic_savior = { martial = 20 } #Helpful
+#					}
+#					modifier = {
+#						factor = 0.25
+#						trait = envious
+#					}
+#					modifier = {
+#						factor = 0.25
+#						trait = cruel
+#					}
+#					modifier = {
+#						factor = 0.25
+#						trait = paranoid
+#					}
+#					modifier = {
+#						factor = 0.75
+#						event_target:scoped_slavic_savior = { trait = hunchback }
+#					}
+#					modifier = {
+#						factor = 0.75
+#						event_target:scoped_slavic_savior = { trait = inbred }
+#					}
+#					modifier = {
+#						factor = 0.5
+#						event_target:scoped_slavic_savior = { age = 50 }
+#					}
+#					modifier = {
+#						factor = 1.5
+#						event_target:scoped_slavic_savior = { NOT = { age = 30 } }
+#					}	
+#					character_event = { id = HF.25013 days = 30 random = 15 } #Becoming friends.
+#				}
+#				1 = {
+#
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Falling in love with new commander.
-character_event = {
-	id = HF.25009
-	desc = EVTDESCHF25009
-	picture = GFX_evt_viking_battle_oldgods
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-
-	trigger = { event_target:scoped_slavic_savior = { is_alive = yes } }
-
-	option = { 
-		name = EVTOPTAHF25009
-		tooltip = { add_lover = event_target:scoped_slavic_savior }
-		hidden_tooltip = { 
-			event_target:scoped_slavic_savior = { 
-				character_event = { id = HF.25010 } 
-			} 
-		}
-	}
-	option = { 
-		name = EVTOPTBHF25009
-	}
-}
+#character_event = {
+#	id = HF.25009
+#	desc = EVTDESCHF25009
+#	picture = GFX_evt_viking_battle_oldgods
+#	border = GFX_event_normal_frame_war
+#	
+#	is_triggered_only = yes
+#
+#	trigger = { event_target:scoped_slavic_savior = { is_alive = yes } }
+#
+#	option = { 
+#		name = EVTOPTAHF25009
+#		tooltip = { add_lover = event_target:scoped_slavic_savior }
+#		hidden_tooltip = { 
+#			event_target:scoped_slavic_savior = { 
+#				character_event = { id = HF.25010 } 
+#			} 
+#		}
+#	}
+#	option = { 
+#		name = EVTOPTBHF25009
+#	}
+#}
 #Commander reacts.
 character_event = {
 	id = HF.25010
@@ -1083,29 +1083,29 @@ character_event = {
 }
 
 #Becoming friends with new commander.
-character_event = {
-	id = HF.25013
-	desc = EVTDESCHF25013
-	picture = GFX_evt_camaraderie
-	border = GFX_event_normal_frame_war
-
-	trigger = { event_target:scoped_slavic_savior = { is_alive = yes } }
-	
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25013
-		add_friend = event_target:scoped_slavic_savior
-		hidden_tooltip = { 
-			event_target:scoped_slavic_savior = { 
-				add_friend = ROOT 
-			} 
-		}
-	}
-	option = { 
-		name = EVTOPTBHF25013
-	}
-}
+#character_event = {
+#	id = HF.25013
+#	desc = EVTDESCHF25013
+#	picture = GFX_evt_camaraderie
+#	border = GFX_event_normal_frame_war
+#
+#	trigger = { event_target:scoped_slavic_savior = { is_alive = yes } }
+#	
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25013
+#		add_friend = event_target:scoped_slavic_savior
+#		hidden_tooltip = { 
+#			event_target:scoped_slavic_savior = { 
+#				add_friend = ROOT 
+#			} 
+#		}
+#	}
+#	option = { 
+#		name = EVTOPTBHF25013
+#	}
+#}
 
 
 ####################################################################
@@ -1535,793 +1535,793 @@ character_event = {
 #}
 
 #Sacrificed relative to the gods.
-character_event = {
-	id = HF.25022
-	desc = {
-		trigger = {
-			has_character_flag = flag_painted_by_norse
-		}
-		text = EVTDESCAHF25022
-		picture = GFX_evt_midwinter_blot_oldgods
-	}
-	desc = {
-		trigger = {
-			has_character_flag = flag_painted_by_tengri
-		}
-		text = EVTDESCBHF25022
-	}
-	desc = {
-		trigger = {
-			OR = {
-				has_character_flag = flag_painted_by_baltic
-				has_character_flag = flag_painted_by_slavic
-				has_character_flag = flag_painted_by_finnish
-			}
-		}
-		text = EVTDESCCHF25022
-		picture = GFX_evt_mysterious_forest
-	}
-	desc = {
-		trigger = {
-			has_character_flag = flag_painted_by_west_african
-		}
-		text = EVTDESCDHF25022
-		picture = GFX_evt_sun_temple
-	}
-	desc = {
-		trigger = {
-			has_character_flag = flag_painted_by_zun
-		}
-		text = EVTDESCEHF25022
-		picture = GFX_evt_sun_temple
-	}
-	desc = {
-		trigger = {
-			OR = {
-				has_character_flag = flag_painted_by_bon
-				has_character_flag = flag_painted_by_hellenic
-			}
-		}
-		text = EVTDESCFHF25022
-	}
-	hide_new = yes
-
-	picture = GFX_evt_religious_exultation
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { #Tattoos/warpaint assignment is tiered, depending on the sacrifice performed. Tattoos can only be applied once.
-		random_list = { 
-			33 = { sound_effect = sacrifice_family_01 } 
-			33 = { sound_effect = sacrifice_family_02 } 
-			33 = { sound_effect = sacrifice_family_03 } 
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_norse 
-				NOR = { 
-					trait = african_tattoo_1
-					trait = african_tattoo_2
-					trait = african_tattoo_3
-					trait = african_tattoo_4
-					trait = african_tattoo_5
-					trait = african_tattoo_6
-					trait = african_tattoo_7
-					trait = african_tattoo_8
-					trait = african_tattoo_9
-					trait = african_tattoo_10
-					trait = african_tattoo_11
-					trait = african_tattoo_12
-					trait = slavic_tattoo_1
-					trait = slavic_tattoo_2
-					trait = slavic_tattoo_3
-					trait = slavic_tattoo_4
-					trait = slavic_tattoo_5
-					trait = slavic_tattoo_6
-					trait = norse_tattoo_1
-					trait = norse_tattoo_2
-					trait = norse_tattoo_3
-					trait = norse_tattoo_4
-					trait = norse_tattoo_5
-					trait = norse_tattoo_6
-				}
-			}
-			random_list = { 
-				50 = { add_trait = norse_tattoo_5 }
-				50 = { add_trait = norse_tattoo_6 } 
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_west_african
-				NOR = { 
-					trait = african_tattoo_1
-					trait = african_tattoo_2
-					trait = african_tattoo_3
-					trait = african_tattoo_4
-					trait = african_tattoo_5
-					trait = african_tattoo_6
-					trait = african_tattoo_7
-					trait = african_tattoo_8
-					trait = african_tattoo_9
-					trait = african_tattoo_10
-					trait = african_tattoo_11
-					trait = african_tattoo_12
-					trait = slavic_tattoo_1
-					trait = slavic_tattoo_2
-					trait = slavic_tattoo_3
-					trait = slavic_tattoo_4
-					trait = slavic_tattoo_5
-					trait = slavic_tattoo_6
-					trait = norse_tattoo_1
-					trait = norse_tattoo_2
-					trait = norse_tattoo_3
-					trait = norse_tattoo_4
-					trait = norse_tattoo_5
-					trait = norse_tattoo_6
-				}
-			}
-			random_list = { 
-				50 = { add_trait = african_tattoo_7 }
-				50 = { add_trait = african_tattoo_8 } 
-			}
-		}
-		if = { 
-			limit = { 
-				OR = { 
-					has_character_flag = flag_painted_by_slavic
-					has_character_flag = flag_painted_by_baltic
-				}
-				NOR = { 
-					trait = african_tattoo_1
-					trait = african_tattoo_2
-					trait = african_tattoo_3
-					trait = african_tattoo_4
-					trait = african_tattoo_5
-					trait = african_tattoo_6
-					trait = african_tattoo_7
-					trait = african_tattoo_8
-					trait = african_tattoo_9
-					trait = african_tattoo_10
-					trait = african_tattoo_11
-					trait = african_tattoo_12
-					trait = slavic_tattoo_1
-					trait = slavic_tattoo_2
-					trait = slavic_tattoo_3
-					trait = slavic_tattoo_4
-					trait = slavic_tattoo_5
-					trait = slavic_tattoo_6
-					trait = norse_tattoo_1
-					trait = norse_tattoo_2
-					trait = norse_tattoo_3
-					trait = norse_tattoo_4
-					trait = norse_tattoo_5
-					trait = norse_tattoo_6
-				}
-			}
-			random_list = { 
-				50 = { add_trait = slavic_tattoo_5 }
-				50 = { add_trait = slavic_tattoo_6 } 
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_tengri
-			}
-			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
-			remove_character_modifier = tengri_warpaint_2
-			remove_character_modifier = aztec_warpaint_1
-			remove_character_modifier = aztec_warpaint_2
-			remove_character_modifier = finnish_warpaint_1
-			remove_character_modifier = finnish_warpaint_2
-			remove_character_modifier = zun_warpaint_1
-			remove_character_modifier = zun_warpaint_2
-			random_list = { 
-				50 = { 
-					add_character_modifier = { 
-						modifier = tengri_warpaint_1
-						years = 5 
-						hidden = yes
-					}
-				}
-				50 = { 
-					add_character_modifier = { 
-						modifier = tengri_warpaint_2
-						years = 5 
-						hidden = yes
-					}
-				}
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_finnish
-			}
-			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
-			remove_character_modifier = tengri_warpaint_2
-			remove_character_modifier = aztec_warpaint_1
-			remove_character_modifier = aztec_warpaint_2
-			remove_character_modifier = finnish_warpaint_1
-			remove_character_modifier = finnish_warpaint_2
-			remove_character_modifier = zun_warpaint_1
-			remove_character_modifier = zun_warpaint_2
-			random_list = { 
-				50 = { 
-					add_character_modifier = { 
-						modifier = finnish_warpaint_1
-						years = 5 
-						hidden = yes
-					}
-				}
-				50 = { 
-					add_character_modifier = { 
-						modifier = finnish_warpaint_2
-						years = 5 
-						hidden = yes
-					}
-				}
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_zun
-			}
-			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
-			remove_character_modifier = tengri_warpaint_2
-			remove_character_modifier = aztec_warpaint_1
-			remove_character_modifier = aztec_warpaint_2
-			remove_character_modifier = finnish_warpaint_1
-			remove_character_modifier = finnish_warpaint_2
-			remove_character_modifier = zun_warpaint_1
-			remove_character_modifier = zun_warpaint_2
-			random_list = { 
-				50 = { 
-					add_character_modifier = { 
-						modifier = zun_warpaint_1
-						years = 5 
-						hidden = yes
-					}
-				}
-				50 = { 
-					add_character_modifier = { 
-						modifier = zun_warpaint_2
-						years = 5 
-						hidden = yes
-					}
-				}
-			}
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25022
-		clr_character_flag = flag_painted_by_norse # Flag cleanup
-		clr_character_flag = flag_painted_by_tengri
-		clr_character_flag = flag_painted_by_baltic
-		clr_character_flag = flag_painted_by_finnish
-		clr_character_flag = flag_painted_by_slavic
-		clr_character_flag = flag_painted_by_west_african
-		clr_character_flag = flag_painted_by_zun
-		clr_character_flag = flag_painted_by_bon
-		clr_character_flag = flag_painted_by_hellenic
-	}
-}
+#character_event = {
+#	id = HF.25022
+#	desc = {
+#		trigger = {
+#			has_character_flag = flag_painted_by_norse
+#		}
+#		text = EVTDESCAHF25022
+#		picture = GFX_evt_midwinter_blot_oldgods
+#	}
+#	desc = {
+#		trigger = {
+#			has_character_flag = flag_painted_by_tengri
+#		}
+#		text = EVTDESCBHF25022
+#	}
+#	desc = {
+#		trigger = {
+#			OR = {
+#				has_character_flag = flag_painted_by_baltic
+#				has_character_flag = flag_painted_by_slavic
+#				has_character_flag = flag_painted_by_finnish
+#			}
+#		}
+#		text = EVTDESCCHF25022
+#		picture = GFX_evt_mysterious_forest
+#	}
+#	desc = {
+#		trigger = {
+#			has_character_flag = flag_painted_by_west_african
+#		}
+#		text = EVTDESCDHF25022
+#		picture = GFX_evt_sun_temple
+#	}
+#	desc = {
+#		trigger = {
+#			has_character_flag = flag_painted_by_zun
+#		}
+#		text = EVTDESCEHF25022
+#		picture = GFX_evt_sun_temple
+#	}
+#	desc = {
+#		trigger = {
+#			OR = {
+#				has_character_flag = flag_painted_by_bon
+#				has_character_flag = flag_painted_by_hellenic
+#			}
+#		}
+#		text = EVTDESCFHF25022
+#	}
+#	hide_new = yes
+#
+#	picture = GFX_evt_religious_exultation
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { #Tattoos/warpaint assignment is tiered, depending on the sacrifice performed. Tattoos can only be applied once.
+#		random_list = { 
+#			33 = { sound_effect = sacrifice_family_01 } 
+#			33 = { sound_effect = sacrifice_family_02 } 
+#			33 = { sound_effect = sacrifice_family_03 } 
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_norse 
+#				NOR = { 
+#					trait = african_tattoo_1
+#					trait = african_tattoo_2
+#					trait = african_tattoo_3
+#					trait = african_tattoo_4
+#					trait = african_tattoo_5
+#					trait = african_tattoo_6
+#					trait = african_tattoo_7
+#					trait = african_tattoo_8
+#					trait = african_tattoo_9
+#					trait = african_tattoo_10
+#					trait = african_tattoo_11
+#					trait = african_tattoo_12
+#					trait = slavic_tattoo_1
+#					trait = slavic_tattoo_2
+#					trait = slavic_tattoo_3
+#					trait = slavic_tattoo_4
+#					trait = slavic_tattoo_5
+#					trait = slavic_tattoo_6
+#					trait = norse_tattoo_1
+#					trait = norse_tattoo_2
+#					trait = norse_tattoo_3
+#					trait = norse_tattoo_4
+#					trait = norse_tattoo_5
+#					trait = norse_tattoo_6
+#				}
+#			}
+#			random_list = { 
+#				50 = { add_trait = norse_tattoo_5 }
+#				50 = { add_trait = norse_tattoo_6 } 
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_west_african
+#				NOR = { 
+#					trait = african_tattoo_1
+#					trait = african_tattoo_2
+#					trait = african_tattoo_3
+#					trait = african_tattoo_4
+#					trait = african_tattoo_5
+#					trait = african_tattoo_6
+#					trait = african_tattoo_7
+#					trait = african_tattoo_8
+#					trait = african_tattoo_9
+#					trait = african_tattoo_10
+#					trait = african_tattoo_11
+#					trait = african_tattoo_12
+#					trait = slavic_tattoo_1
+#					trait = slavic_tattoo_2
+#					trait = slavic_tattoo_3
+#					trait = slavic_tattoo_4
+#					trait = slavic_tattoo_5
+#					trait = slavic_tattoo_6
+#					trait = norse_tattoo_1
+#					trait = norse_tattoo_2
+#					trait = norse_tattoo_3
+#					trait = norse_tattoo_4
+#					trait = norse_tattoo_5
+#					trait = norse_tattoo_6
+#				}
+#			}
+#			random_list = { 
+#				50 = { add_trait = african_tattoo_7 }
+#				50 = { add_trait = african_tattoo_8 } 
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				OR = { 
+#					has_character_flag = flag_painted_by_slavic
+#					has_character_flag = flag_painted_by_baltic
+#				}
+#				NOR = { 
+#					trait = african_tattoo_1
+#					trait = african_tattoo_2
+#					trait = african_tattoo_3
+#					trait = african_tattoo_4
+#					trait = african_tattoo_5
+#					trait = african_tattoo_6
+#					trait = african_tattoo_7
+#					trait = african_tattoo_8
+#					trait = african_tattoo_9
+#					trait = african_tattoo_10
+#					trait = african_tattoo_11
+#					trait = african_tattoo_12
+#					trait = slavic_tattoo_1
+#					trait = slavic_tattoo_2
+#					trait = slavic_tattoo_3
+#					trait = slavic_tattoo_4
+#					trait = slavic_tattoo_5
+#					trait = slavic_tattoo_6
+#					trait = norse_tattoo_1
+#					trait = norse_tattoo_2
+#					trait = norse_tattoo_3
+#					trait = norse_tattoo_4
+#					trait = norse_tattoo_5
+#					trait = norse_tattoo_6
+#				}
+#			}
+#			random_list = { 
+#				50 = { add_trait = slavic_tattoo_5 }
+#				50 = { add_trait = slavic_tattoo_6 } 
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_tengri
+#			}
+#			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
+#			remove_character_modifier = tengri_warpaint_2
+#			remove_character_modifier = aztec_warpaint_1
+#			remove_character_modifier = aztec_warpaint_2
+#			remove_character_modifier = finnish_warpaint_1
+#			remove_character_modifier = finnish_warpaint_2
+#			remove_character_modifier = zun_warpaint_1
+#			remove_character_modifier = zun_warpaint_2
+#			random_list = { 
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = tengri_warpaint_1
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = tengri_warpaint_2
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_finnish
+#			}
+#			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
+#			remove_character_modifier = tengri_warpaint_2
+#			remove_character_modifier = aztec_warpaint_1
+#			remove_character_modifier = aztec_warpaint_2
+#			remove_character_modifier = finnish_warpaint_1
+#			remove_character_modifier = finnish_warpaint_2
+#			remove_character_modifier = zun_warpaint_1
+#			remove_character_modifier = zun_warpaint_2
+#			random_list = { 
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = finnish_warpaint_1
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = finnish_warpaint_2
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_zun
+#			}
+#			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
+#			remove_character_modifier = tengri_warpaint_2
+#			remove_character_modifier = aztec_warpaint_1
+#			remove_character_modifier = aztec_warpaint_2
+#			remove_character_modifier = finnish_warpaint_1
+#			remove_character_modifier = finnish_warpaint_2
+#			remove_character_modifier = zun_warpaint_1
+#			remove_character_modifier = zun_warpaint_2
+#			random_list = { 
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = zun_warpaint_1
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = zun_warpaint_2
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25022
+#		clr_character_flag = flag_painted_by_norse # Flag cleanup
+#		clr_character_flag = flag_painted_by_tengri
+#		clr_character_flag = flag_painted_by_baltic
+#		clr_character_flag = flag_painted_by_finnish
+#		clr_character_flag = flag_painted_by_slavic
+#		clr_character_flag = flag_painted_by_west_african
+#		clr_character_flag = flag_painted_by_zun
+#		clr_character_flag = flag_painted_by_bon
+#		clr_character_flag = flag_painted_by_hellenic
+#	}
+#}
 
 #Sacrificed courtier to the gods.
-character_event = {
-	id = HF.25023
-	desc = {
-		trigger = {
-			has_character_flag = flag_painted_by_norse
-		}
-		text = EVTDESCAHF25023
-		picture = GFX_evt_midwinter_blot_oldgods
-	}
-	desc = {
-		trigger = {
-			has_character_flag = flag_painted_by_tengri
-		}
-		text = EVTDESCBHF25023
-	}
-	desc = {
-		trigger = {
-			OR = {
-				has_character_flag = flag_painted_by_baltic
-				has_character_flag = flag_painted_by_slavic
-				has_character_flag = flag_painted_by_finnish
-			}
-		}
-		text = EVTDESCCHF25023
-		picture = GFX_evt_mysterious_forest
-	}
-	desc = {
-		trigger = {
-			has_character_flag = flag_painted_by_west_african
-		}
-		text = EVTDESCDHF25023
-		picture = GFX_evt_sun_temple
-	}
-	desc = {
-		trigger = {
-			has_character_flag = flag_painted_by_zun
-		}
-		text = EVTDESCEHF25023
-		picture = GFX_evt_sun_temple
-	}
-	desc = {
-		trigger = {
-			OR = {
-				has_character_flag = flag_painted_by_bon
-				has_character_flag = flag_painted_by_hellenic
-			}
-		}
-		text = EVTDESCFHF25023
-	}
-	hide_new = yes
-
-	picture = GFX_evt_religious_exultation
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { #Tattoos/warpaint assignment is tiered, depending on the sacrifice performed. Tattoos can only be applied once.
-		random_list = { 
-			33 = { sound_effect = sacrifice_family_01 } 
-			33 = { sound_effect = sacrifice_family_02 } 
-			33 = { sound_effect = sacrifice_family_03 } 
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_norse 
-				NOR = { 
-					trait = african_tattoo_1
-					trait = african_tattoo_2
-					trait = african_tattoo_3
-					trait = african_tattoo_4
-					trait = african_tattoo_5
-					trait = african_tattoo_6
-					trait = african_tattoo_7
-					trait = african_tattoo_8
-					trait = african_tattoo_9
-					trait = african_tattoo_10
-					trait = african_tattoo_11
-					trait = african_tattoo_12
-					trait = slavic_tattoo_1
-					trait = slavic_tattoo_2
-					trait = slavic_tattoo_3
-					trait = slavic_tattoo_4
-					trait = slavic_tattoo_5
-					trait = slavic_tattoo_6
-					trait = norse_tattoo_1
-					trait = norse_tattoo_2
-					trait = norse_tattoo_3
-					trait = norse_tattoo_4
-					trait = norse_tattoo_5
-					trait = norse_tattoo_6
-				}
-			}
-			random_list = { 
-				50 = { add_trait = norse_tattoo_3 }
-				50 = { add_trait = norse_tattoo_4 } 
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_west_african
-				NOR = { 
-					trait = african_tattoo_1
-					trait = african_tattoo_2
-					trait = african_tattoo_3
-					trait = african_tattoo_4
-					trait = african_tattoo_5
-					trait = african_tattoo_6
-					trait = african_tattoo_7
-					trait = african_tattoo_8
-					trait = african_tattoo_9
-					trait = african_tattoo_10
-					trait = african_tattoo_11
-					trait = african_tattoo_12
-					trait = slavic_tattoo_1
-					trait = slavic_tattoo_2
-					trait = slavic_tattoo_3
-					trait = slavic_tattoo_4
-					trait = slavic_tattoo_5
-					trait = slavic_tattoo_6
-					trait = norse_tattoo_1
-					trait = norse_tattoo_2
-					trait = norse_tattoo_3
-					trait = norse_tattoo_4
-					trait = norse_tattoo_5
-					trait = norse_tattoo_6
-				}
-			}
-			random_list = { 
-				50 = { add_trait = african_tattoo_5 }
-				50 = { add_trait = african_tattoo_6 } 
-			}
-		}
-		if = { 
-			limit = { 
-				OR = { 
-					has_character_flag = flag_painted_by_slavic
-					has_character_flag = flag_painted_by_baltic
-				}
-				NOR = { 
-					trait = african_tattoo_1
-					trait = african_tattoo_2
-					trait = african_tattoo_3
-					trait = african_tattoo_4
-					trait = african_tattoo_5
-					trait = african_tattoo_6
-					trait = african_tattoo_7
-					trait = african_tattoo_8
-					trait = african_tattoo_9
-					trait = african_tattoo_10
-					trait = african_tattoo_11
-					trait = african_tattoo_12
-					trait = slavic_tattoo_1
-					trait = slavic_tattoo_2
-					trait = slavic_tattoo_3
-					trait = slavic_tattoo_4
-					trait = slavic_tattoo_5
-					trait = slavic_tattoo_6
-					trait = norse_tattoo_1
-					trait = norse_tattoo_2
-					trait = norse_tattoo_3
-					trait = norse_tattoo_4
-					trait = norse_tattoo_5
-					trait = norse_tattoo_6
-				}
-			}
-			random_list = { 
-				50 = { add_trait = slavic_tattoo_3 }
-				50 = { add_trait = slavic_tattoo_4 } 
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_tengri
-			}
-			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
-			remove_character_modifier = tengri_warpaint_2
-			remove_character_modifier = aztec_warpaint_1
-			remove_character_modifier = aztec_warpaint_2
-			remove_character_modifier = finnish_warpaint_1
-			remove_character_modifier = finnish_warpaint_2
-			remove_character_modifier = zun_warpaint_1
-			remove_character_modifier = zun_warpaint_2
-			random_list = { 
-				50 = { 
-					add_character_modifier = { 
-						modifier = tengri_warpaint_1
-						years = 5 
-						hidden = yes
-					}
-				}
-				50 = { 
-					add_character_modifier = { 
-						modifier = tengri_warpaint_2
-						years = 5 
-						hidden = yes
-					}
-				}
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_finnish
-			}
-			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
-			remove_character_modifier = tengri_warpaint_2
-			remove_character_modifier = aztec_warpaint_1
-			remove_character_modifier = aztec_warpaint_2
-			remove_character_modifier = finnish_warpaint_1
-			remove_character_modifier = finnish_warpaint_2
-			remove_character_modifier = zun_warpaint_1
-			remove_character_modifier = zun_warpaint_2
-			random_list = { 
-				50 = { 
-					add_character_modifier = { 
-						modifier = finnish_warpaint_1
-						years = 5 
-						hidden = yes
-					}
-				}
-				50 = { 
-					add_character_modifier = { 
-						modifier = finnish_warpaint_2
-						years = 5 
-						hidden = yes
-					}
-				}
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_zun
-			}
-			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
-			remove_character_modifier = tengri_warpaint_2
-			remove_character_modifier = aztec_warpaint_1
-			remove_character_modifier = aztec_warpaint_2
-			remove_character_modifier = finnish_warpaint_1
-			remove_character_modifier = finnish_warpaint_2
-			remove_character_modifier = zun_warpaint_1
-			remove_character_modifier = zun_warpaint_2
-			random_list = { 
-				50 = { 
-					add_character_modifier = { 
-						modifier = zun_warpaint_1
-						years = 5 
-						hidden = yes
-					}
-				}
-				50 = { 
-					add_character_modifier = { 
-						modifier = zun_warpaint_2
-						years = 5 
-						hidden = yes
-					}
-				}
-			}
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25023
-		clr_character_flag = flag_painted_by_norse # Flag cleanup
-		clr_character_flag = flag_painted_by_tengri
-		clr_character_flag = flag_painted_by_baltic
-		clr_character_flag = flag_painted_by_finnish
-		clr_character_flag = flag_painted_by_slavic
-		clr_character_flag = flag_painted_by_west_african
-		clr_character_flag = flag_painted_by_zun
-		clr_character_flag = flag_painted_by_bon
-		clr_character_flag = flag_painted_by_hellenic
-	}
-}
+#character_event = {
+#	id = HF.25023
+#	desc = {
+#		trigger = {
+#			has_character_flag = flag_painted_by_norse
+#		}
+#		text = EVTDESCAHF25023
+#		picture = GFX_evt_midwinter_blot_oldgods
+#	}
+#	desc = {
+#		trigger = {
+#			has_character_flag = flag_painted_by_tengri
+#		}
+#		text = EVTDESCBHF25023
+#	}
+#	desc = {
+#		trigger = {
+#			OR = {
+#				has_character_flag = flag_painted_by_baltic
+#				has_character_flag = flag_painted_by_slavic
+#				has_character_flag = flag_painted_by_finnish
+#			}
+#		}
+#		text = EVTDESCCHF25023
+#		picture = GFX_evt_mysterious_forest
+#	}
+#	desc = {
+#		trigger = {
+#			has_character_flag = flag_painted_by_west_african
+#		}
+#		text = EVTDESCDHF25023
+#		picture = GFX_evt_sun_temple
+#	}
+#	desc = {
+#		trigger = {
+#			has_character_flag = flag_painted_by_zun
+#		}
+#		text = EVTDESCEHF25023
+#		picture = GFX_evt_sun_temple
+#	}
+#	desc = {
+#		trigger = {
+#			OR = {
+#				has_character_flag = flag_painted_by_bon
+#				has_character_flag = flag_painted_by_hellenic
+#			}
+#		}
+#		text = EVTDESCFHF25023
+#	}
+#	hide_new = yes
+#
+#	picture = GFX_evt_religious_exultation
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { #Tattoos/warpaint assignment is tiered, depending on the sacrifice performed. Tattoos can only be applied once.
+#		random_list = { 
+#			33 = { sound_effect = sacrifice_family_01 } 
+#			33 = { sound_effect = sacrifice_family_02 } 
+#			33 = { sound_effect = sacrifice_family_03 } 
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_norse 
+#				NOR = { 
+#					trait = african_tattoo_1
+#					trait = african_tattoo_2
+#					trait = african_tattoo_3
+#					trait = african_tattoo_4
+#					trait = african_tattoo_5
+#					trait = african_tattoo_6
+#					trait = african_tattoo_7
+#					trait = african_tattoo_8
+#					trait = african_tattoo_9
+#					trait = african_tattoo_10
+#					trait = african_tattoo_11
+#					trait = african_tattoo_12
+#					trait = slavic_tattoo_1
+#					trait = slavic_tattoo_2
+#					trait = slavic_tattoo_3
+#					trait = slavic_tattoo_4
+#					trait = slavic_tattoo_5
+#					trait = slavic_tattoo_6
+#					trait = norse_tattoo_1
+#					trait = norse_tattoo_2
+#					trait = norse_tattoo_3
+#					trait = norse_tattoo_4
+#					trait = norse_tattoo_5
+#					trait = norse_tattoo_6
+#				}
+#			}
+#			random_list = { 
+#				50 = { add_trait = norse_tattoo_3 }
+#				50 = { add_trait = norse_tattoo_4 } 
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_west_african
+#				NOR = { 
+#					trait = african_tattoo_1
+#					trait = african_tattoo_2
+#					trait = african_tattoo_3
+#					trait = african_tattoo_4
+#					trait = african_tattoo_5
+#					trait = african_tattoo_6
+#					trait = african_tattoo_7
+#					trait = african_tattoo_8
+#					trait = african_tattoo_9
+#					trait = african_tattoo_10
+#					trait = african_tattoo_11
+#					trait = african_tattoo_12
+#					trait = slavic_tattoo_1
+#					trait = slavic_tattoo_2
+#					trait = slavic_tattoo_3
+#					trait = slavic_tattoo_4
+#					trait = slavic_tattoo_5
+#					trait = slavic_tattoo_6
+#					trait = norse_tattoo_1
+#					trait = norse_tattoo_2
+#					trait = norse_tattoo_3
+#					trait = norse_tattoo_4
+#					trait = norse_tattoo_5
+#					trait = norse_tattoo_6
+#				}
+#			}
+#			random_list = { 
+#				50 = { add_trait = african_tattoo_5 }
+#				50 = { add_trait = african_tattoo_6 } 
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				OR = { 
+#					has_character_flag = flag_painted_by_slavic
+#					has_character_flag = flag_painted_by_baltic
+#				}
+#				NOR = { 
+#					trait = african_tattoo_1
+#					trait = african_tattoo_2
+#					trait = african_tattoo_3
+#					trait = african_tattoo_4
+#					trait = african_tattoo_5
+#					trait = african_tattoo_6
+#					trait = african_tattoo_7
+#					trait = african_tattoo_8
+#					trait = african_tattoo_9
+#					trait = african_tattoo_10
+#					trait = african_tattoo_11
+#					trait = african_tattoo_12
+#					trait = slavic_tattoo_1
+#					trait = slavic_tattoo_2
+#					trait = slavic_tattoo_3
+#					trait = slavic_tattoo_4
+#					trait = slavic_tattoo_5
+#					trait = slavic_tattoo_6
+#					trait = norse_tattoo_1
+#					trait = norse_tattoo_2
+#					trait = norse_tattoo_3
+#					trait = norse_tattoo_4
+#					trait = norse_tattoo_5
+#					trait = norse_tattoo_6
+#				}
+#			}
+#			random_list = { 
+#				50 = { add_trait = slavic_tattoo_3 }
+#				50 = { add_trait = slavic_tattoo_4 } 
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_tengri
+#			}
+#			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
+#			remove_character_modifier = tengri_warpaint_2
+#			remove_character_modifier = aztec_warpaint_1
+#			remove_character_modifier = aztec_warpaint_2
+#			remove_character_modifier = finnish_warpaint_1
+#			remove_character_modifier = finnish_warpaint_2
+#			remove_character_modifier = zun_warpaint_1
+#			remove_character_modifier = zun_warpaint_2
+#			random_list = { 
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = tengri_warpaint_1
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = tengri_warpaint_2
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_finnish
+#			}
+#			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
+#			remove_character_modifier = tengri_warpaint_2
+#			remove_character_modifier = aztec_warpaint_1
+#			remove_character_modifier = aztec_warpaint_2
+#			remove_character_modifier = finnish_warpaint_1
+#			remove_character_modifier = finnish_warpaint_2
+#			remove_character_modifier = zun_warpaint_1
+#			remove_character_modifier = zun_warpaint_2
+#			random_list = { 
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = finnish_warpaint_1
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = finnish_warpaint_2
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_zun
+#			}
+#			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
+#			remove_character_modifier = tengri_warpaint_2
+#			remove_character_modifier = aztec_warpaint_1
+#			remove_character_modifier = aztec_warpaint_2
+#			remove_character_modifier = finnish_warpaint_1
+#			remove_character_modifier = finnish_warpaint_2
+#			remove_character_modifier = zun_warpaint_1
+#			remove_character_modifier = zun_warpaint_2
+#			random_list = { 
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = zun_warpaint_1
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = zun_warpaint_2
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25023
+#		clr_character_flag = flag_painted_by_norse # Flag cleanup
+#		clr_character_flag = flag_painted_by_tengri
+#		clr_character_flag = flag_painted_by_baltic
+#		clr_character_flag = flag_painted_by_finnish
+#		clr_character_flag = flag_painted_by_slavic
+#		clr_character_flag = flag_painted_by_west_african
+#		clr_character_flag = flag_painted_by_zun
+#		clr_character_flag = flag_painted_by_bon
+#		clr_character_flag = flag_painted_by_hellenic
+#	}
+#}
 
 #Sacrificed cattle to the gods.
-character_event = {
-	id = HF.25024
-	desc = {
-		trigger = {
-			is_nomadic = no
-		}
-		text = EVTDESCAHF25024
-	}
-	desc = {
-		trigger = {
-			is_nomadic = yes
-		}
-		text = EVTDESCBHF25024
-	}
-
-	hide_new = yes
-	picture = GFX_evt_religious_exultation
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { #Tattoos/warpaint assignment is tiered, depending on the sacrifice performed. Tattoos can only be applied once.
-		random_list = { 
-			33 = { sound_effect = sacrifice_cattle_01 } 
-			33 = { sound_effect = sacrifice_cattle_02 } 
-			33 = { sound_effect = sacrifice_cattle_03 } 
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_norse 
-				NOR = { 
-					trait = african_tattoo_1
-					trait = african_tattoo_2
-					trait = african_tattoo_3
-					trait = african_tattoo_4
-					trait = african_tattoo_5
-					trait = african_tattoo_6
-					trait = african_tattoo_7
-					trait = african_tattoo_8
-					trait = african_tattoo_9
-					trait = african_tattoo_10
-					trait = african_tattoo_11
-					trait = african_tattoo_12
-					trait = slavic_tattoo_1
-					trait = slavic_tattoo_2
-					trait = slavic_tattoo_3
-					trait = slavic_tattoo_4
-					trait = slavic_tattoo_5
-					trait = slavic_tattoo_6
-					trait = norse_tattoo_1
-					trait = norse_tattoo_2
-					trait = norse_tattoo_3
-					trait = norse_tattoo_4
-					trait = norse_tattoo_5
-					trait = norse_tattoo_6
-				}
-			}
-			random_list = { 
-				50 = { add_trait = norse_tattoo_1 }
-				50 = { add_trait = norse_tattoo_2 } 
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_west_african
-				NOR = { 
-					trait = african_tattoo_1
-					trait = african_tattoo_2
-					trait = african_tattoo_3
-					trait = african_tattoo_4
-					trait = african_tattoo_5
-					trait = african_tattoo_6
-					trait = african_tattoo_7
-					trait = african_tattoo_8
-					trait = african_tattoo_9
-					trait = african_tattoo_10
-					trait = african_tattoo_11
-					trait = african_tattoo_12
-					trait = slavic_tattoo_1
-					trait = slavic_tattoo_2
-					trait = slavic_tattoo_3
-					trait = slavic_tattoo_4
-					trait = slavic_tattoo_5
-					trait = slavic_tattoo_6
-					trait = norse_tattoo_1
-					trait = norse_tattoo_2
-					trait = norse_tattoo_3
-					trait = norse_tattoo_4
-					trait = norse_tattoo_5
-					trait = norse_tattoo_6
-				}
-			}
-			random_list = { 
-				50 = { add_trait = african_tattoo_1 }
-				50 = { add_trait = african_tattoo_2 } 
-				50 = { add_trait = african_tattoo_3 }
-				50 = { add_trait = african_tattoo_4 } 
-			}
-		}
-		if = { 
-			limit = { 
-				OR = { 
-					has_character_flag = flag_painted_by_slavic
-					has_character_flag = flag_painted_by_baltic
-				}
-				NOR = { 
-					trait = african_tattoo_1
-					trait = african_tattoo_2
-					trait = african_tattoo_3
-					trait = african_tattoo_4
-					trait = african_tattoo_5
-					trait = african_tattoo_6
-					trait = african_tattoo_7
-					trait = african_tattoo_8
-					trait = african_tattoo_9
-					trait = african_tattoo_10
-					trait = african_tattoo_11
-					trait = african_tattoo_12
-					trait = slavic_tattoo_1
-					trait = slavic_tattoo_2
-					trait = slavic_tattoo_3
-					trait = slavic_tattoo_4
-					trait = slavic_tattoo_5
-					trait = slavic_tattoo_6
-					trait = norse_tattoo_1
-					trait = norse_tattoo_2
-					trait = norse_tattoo_3
-					trait = norse_tattoo_4
-					trait = norse_tattoo_5
-					trait = norse_tattoo_6
-				}
-			}
-			random_list = { 
-				50 = { add_trait = slavic_tattoo_1 }
-				50 = { add_trait = slavic_tattoo_2 } 
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_tengri
-			}
-			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
-			remove_character_modifier = tengri_warpaint_2
-			remove_character_modifier = aztec_warpaint_1
-			remove_character_modifier = aztec_warpaint_2
-			remove_character_modifier = finnish_warpaint_1
-			remove_character_modifier = finnish_warpaint_2
-			remove_character_modifier = zun_warpaint_1
-			remove_character_modifier = zun_warpaint_2
-			random_list = { 
-				50 = { 
-					add_character_modifier = { 
-						modifier = tengri_warpaint_1
-						years = 5 
-						hidden = yes
-					}
-				}
-				50 = { 
-					add_character_modifier = { 
-						modifier = tengri_warpaint_2
-						years = 5 
-						hidden = yes
-					}
-				}
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_finnish
-			}
-			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
-			remove_character_modifier = tengri_warpaint_2
-			remove_character_modifier = aztec_warpaint_1
-			remove_character_modifier = aztec_warpaint_2
-			remove_character_modifier = finnish_warpaint_1
-			remove_character_modifier = finnish_warpaint_2
-			remove_character_modifier = zun_warpaint_1
-			remove_character_modifier = zun_warpaint_2
-			random_list = { 
-				50 = { 
-					add_character_modifier = { 
-						modifier = finnish_warpaint_1
-						years = 5 
-						hidden = yes
-					}
-				}
-				50 = { 
-					add_character_modifier = { 
-						modifier = finnish_warpaint_2
-						years = 5 
-						hidden = yes
-					}
-				}
-			}
-		}
-		if = { 
-			limit = { 
-				has_character_flag = flag_painted_by_zun
-			}
-			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
-			remove_character_modifier = tengri_warpaint_2
-			remove_character_modifier = aztec_warpaint_1
-			remove_character_modifier = aztec_warpaint_2
-			remove_character_modifier = finnish_warpaint_1
-			remove_character_modifier = finnish_warpaint_2
-			remove_character_modifier = zun_warpaint_1
-			remove_character_modifier = zun_warpaint_2
-			random_list = { 
-				50 = { 
-					add_character_modifier = { 
-						modifier = aztec_warpaint_1
-						years = 5 
-						hidden = yes
-					}
-				}
-				50 = { 
-					add_character_modifier = { 
-						modifier = aztec_warpaint_2
-						years = 5 
-						hidden = yes
-					}
-				}
-			}
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25024
-		clr_character_flag = flag_painted_by_norse # Flag cleanup
-		clr_character_flag = flag_painted_by_tengri
-		clr_character_flag = flag_painted_by_baltic
-		clr_character_flag = flag_painted_by_finnish
-		clr_character_flag = flag_painted_by_slavic
-		clr_character_flag = flag_painted_by_west_african
-		clr_character_flag = flag_painted_by_zun
-		clr_character_flag = flag_painted_by_bon
-		clr_character_flag = flag_painted_by_hellenic
-	}
-}
+#character_event = {
+#	id = HF.25024
+#	desc = {
+#		trigger = {
+#			is_nomadic = no
+#		}
+#		text = EVTDESCAHF25024
+#	}
+#	desc = {
+#		trigger = {
+#			is_nomadic = yes
+#		}
+#		text = EVTDESCBHF25024
+#	}
+#
+#	hide_new = yes
+#	picture = GFX_evt_religious_exultation
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { #Tattoos/warpaint assignment is tiered, depending on the sacrifice performed. Tattoos can only be applied once.
+#		random_list = { 
+#			33 = { sound_effect = sacrifice_cattle_01 } 
+#			33 = { sound_effect = sacrifice_cattle_02 } 
+#			33 = { sound_effect = sacrifice_cattle_03 } 
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_norse 
+#				NOR = { 
+#					trait = african_tattoo_1
+#					trait = african_tattoo_2
+#					trait = african_tattoo_3
+#					trait = african_tattoo_4
+#					trait = african_tattoo_5
+#					trait = african_tattoo_6
+#					trait = african_tattoo_7
+#					trait = african_tattoo_8
+#					trait = african_tattoo_9
+#					trait = african_tattoo_10
+#					trait = african_tattoo_11
+#					trait = african_tattoo_12
+#					trait = slavic_tattoo_1
+#					trait = slavic_tattoo_2
+#					trait = slavic_tattoo_3
+#					trait = slavic_tattoo_4
+#					trait = slavic_tattoo_5
+#					trait = slavic_tattoo_6
+#					trait = norse_tattoo_1
+#					trait = norse_tattoo_2
+#					trait = norse_tattoo_3
+#					trait = norse_tattoo_4
+#					trait = norse_tattoo_5
+#					trait = norse_tattoo_6
+#				}
+#			}
+#			random_list = { 
+#				50 = { add_trait = norse_tattoo_1 }
+#				50 = { add_trait = norse_tattoo_2 } 
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_west_african
+#				NOR = { 
+#					trait = african_tattoo_1
+#					trait = african_tattoo_2
+#					trait = african_tattoo_3
+#					trait = african_tattoo_4
+#					trait = african_tattoo_5
+#					trait = african_tattoo_6
+#					trait = african_tattoo_7
+#					trait = african_tattoo_8
+#					trait = african_tattoo_9
+#					trait = african_tattoo_10
+#					trait = african_tattoo_11
+#					trait = african_tattoo_12
+#					trait = slavic_tattoo_1
+#					trait = slavic_tattoo_2
+#					trait = slavic_tattoo_3
+#					trait = slavic_tattoo_4
+#					trait = slavic_tattoo_5
+#					trait = slavic_tattoo_6
+#					trait = norse_tattoo_1
+#					trait = norse_tattoo_2
+#					trait = norse_tattoo_3
+#					trait = norse_tattoo_4
+#					trait = norse_tattoo_5
+#					trait = norse_tattoo_6
+#				}
+#			}
+#			random_list = { 
+#				50 = { add_trait = african_tattoo_1 }
+#				50 = { add_trait = african_tattoo_2 } 
+#				50 = { add_trait = african_tattoo_3 }
+#				50 = { add_trait = african_tattoo_4 } 
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				OR = { 
+#					has_character_flag = flag_painted_by_slavic
+#					has_character_flag = flag_painted_by_baltic
+#				}
+#				NOR = { 
+#					trait = african_tattoo_1
+#					trait = african_tattoo_2
+#					trait = african_tattoo_3
+#					trait = african_tattoo_4
+#					trait = african_tattoo_5
+#					trait = african_tattoo_6
+#					trait = african_tattoo_7
+#					trait = african_tattoo_8
+#					trait = african_tattoo_9
+#					trait = african_tattoo_10
+#					trait = african_tattoo_11
+#					trait = african_tattoo_12
+#					trait = slavic_tattoo_1
+#					trait = slavic_tattoo_2
+#					trait = slavic_tattoo_3
+#					trait = slavic_tattoo_4
+#					trait = slavic_tattoo_5
+#					trait = slavic_tattoo_6
+#					trait = norse_tattoo_1
+#					trait = norse_tattoo_2
+#					trait = norse_tattoo_3
+#					trait = norse_tattoo_4
+#					trait = norse_tattoo_5
+#					trait = norse_tattoo_6
+#				}
+#			}
+#			random_list = { 
+#				50 = { add_trait = slavic_tattoo_1 }
+#				50 = { add_trait = slavic_tattoo_2 } 
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_tengri
+#			}
+#			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
+#			remove_character_modifier = tengri_warpaint_2
+#			remove_character_modifier = aztec_warpaint_1
+#			remove_character_modifier = aztec_warpaint_2
+#			remove_character_modifier = finnish_warpaint_1
+#			remove_character_modifier = finnish_warpaint_2
+#			remove_character_modifier = zun_warpaint_1
+#			remove_character_modifier = zun_warpaint_2
+#			random_list = { 
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = tengri_warpaint_1
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = tengri_warpaint_2
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_finnish
+#			}
+#			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
+#			remove_character_modifier = tengri_warpaint_2
+#			remove_character_modifier = aztec_warpaint_1
+#			remove_character_modifier = aztec_warpaint_2
+#			remove_character_modifier = finnish_warpaint_1
+#			remove_character_modifier = finnish_warpaint_2
+#			remove_character_modifier = zun_warpaint_1
+#			remove_character_modifier = zun_warpaint_2
+#			random_list = { 
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = finnish_warpaint_1
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = finnish_warpaint_2
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#			}
+#		}
+#		if = { 
+#			limit = { 
+#				has_character_flag = flag_painted_by_zun
+#			}
+#			remove_character_modifier = tengri_warpaint_1 #Remove all previous paint that might still be lingering, for whatever reason.
+#			remove_character_modifier = tengri_warpaint_2
+#			remove_character_modifier = aztec_warpaint_1
+#			remove_character_modifier = aztec_warpaint_2
+#			remove_character_modifier = finnish_warpaint_1
+#			remove_character_modifier = finnish_warpaint_2
+#			remove_character_modifier = zun_warpaint_1
+#			remove_character_modifier = zun_warpaint_2
+#			random_list = { 
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = aztec_warpaint_1
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#				50 = { 
+#					add_character_modifier = { 
+#						modifier = aztec_warpaint_2
+#						years = 5 
+#						hidden = yes
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25024
+#		clr_character_flag = flag_painted_by_norse # Flag cleanup
+#		clr_character_flag = flag_painted_by_tengri
+#		clr_character_flag = flag_painted_by_baltic
+#		clr_character_flag = flag_painted_by_finnish
+#		clr_character_flag = flag_painted_by_slavic
+#		clr_character_flag = flag_painted_by_west_african
+#		clr_character_flag = flag_painted_by_zun
+#		clr_character_flag = flag_painted_by_bon
+#		clr_character_flag = flag_painted_by_hellenic
+#	}
+#}
 
 #Sacrificed wealth to the gods. - REMOVED
 #character_event = {
@@ -4165,628 +4165,628 @@ character_event = {
 #}
 
 #Mask: Pick quality.
-character_event = {
-	id = HF.25041
-	desc = EVTDESCHF25041
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Good
-		name = EVTOPTAHF25041
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25041 } 
-		if = {
-			limit = { 
-   				ai = no
-   			}
-			scaled_wealth = { value = -1 min = -150 max = -500 }
-		}
-		hidden_tooltip = { character_event = { id = HF.25043 days = 35 random = 25 } } #Pick Top Tier Mask Type.
-		ai_chance = {
-			factor = 30
-		}
-	}
-	option = { #Mid
-		name = EVTOPTBHF25041
-		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25041 } 
-		if = {
-			limit = { 
-   				ai = no
-   			}
-			scaled_wealth = { value = -0.5 min = -25 max = -100 }
-		}
-		hidden_tooltip = { character_event = { id = HF.25044 days = 35 random = 25 } } #Pick Mid-Tier Mask Type.
-		ai_chance = {
-			factor = 40
-		}
-	}
-	option = { #Low quality
-		name = EVTOPTCHF25041
-		custom_tooltip = { text = TOOLTIP_EVTOPTCHF25041 } 
-		hidden_tooltip = { character_event = { id = HF.25045 days = 35 random = 25 } } #Pick Low Tier Mask Type.
-		ai_chance = {
-			factor = 30
-		}
-	}
-}
+#character_event = {
+#	id = HF.25041
+#	desc = EVTDESCHF25041
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	option = { #Good
+#		name = EVTOPTAHF25041
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25041 } 
+#		if = {
+#			limit = { 
+#   				ai = no
+#   			}
+#			scaled_wealth = { value = -1 min = -150 max = -500 }
+#		}
+#		hidden_tooltip = { character_event = { id = HF.25043 days = 35 random = 25 } } #Pick Top Tier Mask Type.
+#		ai_chance = {
+#			factor = 30
+#		}
+#	}
+#	option = { #Mid
+#		name = EVTOPTBHF25041
+#		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25041 } 
+#		if = {
+#			limit = { 
+#   				ai = no
+#   			}
+#			scaled_wealth = { value = -0.5 min = -25 max = -100 }
+#		}
+#		hidden_tooltip = { character_event = { id = HF.25044 days = 35 random = 25 } } #Pick Mid-Tier Mask Type.
+#		ai_chance = {
+#			factor = 40
+#		}
+#	}
+#	option = { #Low quality
+#		name = EVTOPTCHF25041
+#		custom_tooltip = { text = TOOLTIP_EVTOPTCHF25041 } 
+#		hidden_tooltip = { character_event = { id = HF.25045 days = 35 random = 25 } } #Pick Low Tier Mask Type.
+#		ai_chance = {
+#			factor = 30
+#		}
+#	}
+#}
 
 #Idol: Pick type.
-character_event = {
-	id = HF.25042
-	desc = EVTDESCHF25042
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Carved Totem
-		name = EVTOPTAHF25042
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25042 } 
-		if = {
-			limit = { 
-   				ai = no
-   			}
-			scaled_wealth = { value = -0.75 min = -50 max = -200 }
-		}
-		hidden_tooltip = { character_event = { id = HF.25046 } }
-		ai_chance = {
-			factor = 30
-		}
-	}
-	option = { #Ivory Idol
-		name = EVTOPTBHF25042
-		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25042 } 
-		if = {
-			limit = { 
-   				ai = no
-   			}
-			scaled_wealth = { value = -0.75 min = -50 max = -200 }
-		}
-		hidden_tooltip = { character_event = { id = HF.25047 } }
-		ai_chance = {
-			factor = 30
-		}
-	}
-	option = { #Rainstick
-		name = EVTOPTCHF25042
-		custom_tooltip = { text = TOOLTIP_EVTOPTCHF25042 } 
-		hidden_tooltip = { character_event = { id = HF.25048 } } 
-		ai_chance = {
-			factor = 30
-		}
-	}
-}
+#character_event = {
+#	id = HF.25042
+#	desc = EVTDESCHF25042
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	option = { #Carved Totem
+#		name = EVTOPTAHF25042
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25042 } 
+#		if = {
+#			limit = { 
+#   				ai = no
+#   			}
+#			scaled_wealth = { value = -0.75 min = -50 max = -200 }
+#		}
+#		hidden_tooltip = { character_event = { id = HF.25046 } }
+#		ai_chance = {
+#			factor = 30
+#		}
+#	}
+#	option = { #Ivory Idol
+#		name = EVTOPTBHF25042
+#		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25042 } 
+#		if = {
+#			limit = { 
+#   				ai = no
+#   			}
+#			scaled_wealth = { value = -0.75 min = -50 max = -200 }
+#		}
+#		hidden_tooltip = { character_event = { id = HF.25047 } }
+#		ai_chance = {
+#			factor = 30
+#		}
+#	}
+#	option = { #Rainstick
+#		name = EVTOPTCHF25042
+#		custom_tooltip = { text = TOOLTIP_EVTOPTCHF25042 } 
+#		hidden_tooltip = { character_event = { id = HF.25048 } } 
+#		ai_chance = {
+#			factor = 30
+#		}
+#	}
+#}
 
 #Top Tier Mask: Pick spirit to inhabit it with.
-character_event = {
-	id = HF.25043
-	desc = EVTDESCHF25043
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Inspiring
-		name = EVTOPTAHF25043
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25043 } 
-		hidden_tooltip = { character_event = { id = HF.25049 } }
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				has_pleasant_trait_trigger = yes
-			}
-		}
-	}
-	option = { #Terrifying
-		name = EVTOPTBHF25043
-		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25043 } 
-		hidden_tooltip = { character_event = { id = HF.25050 } }
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				has_unpleasant_trait_trigger = yes
-			}
-		}
-	}
-}
-#Mid Tier Mask: Pick spirit to inhabit it with.
-character_event = {
-	id = HF.25044
-	desc = EVTDESCHF25044
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Unyielding
-		name = EVTOPTAHF25044
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25044 } 
-		hidden_tooltip = { character_event = { id = HF.25051 } }
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 1.75
-				OR = {
-					trait = stubborn
-					trait = brave
-				}
-			}
-		}
-	}
-	option = { #Ruthless
-		name = EVTOPTBHF25044
-		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25044 } 
-		hidden_tooltip = { character_event = { id = HF.25052 } }
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 1.75
-				OR = {
-					trait = impaler
-					trait = cruel
-				}
-			}
-		}
-	}
-	option = { #Trickster
-		name = EVTOPTCHF25044
-		custom_tooltip = { text = TOOLTIP_EVTOPTCHF25044 } 
-		hidden_tooltip = { character_event = { id = HF.25053 } }
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 1.75
-				OR = {
-					trait = deceitful
-					trait = shy
-				}
-			}
-		}
-	}
-}
-
-#Low Tier Mask: Pick spirit to inhabit it with.
-character_event = {
-	id = HF.25045
-	desc = EVTDESCHF25045
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Angry
-		name = EVTOPTAHF25045
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25045 } 
-		hidden_tooltip = { character_event = { id = HF.25054 } }
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 1.75
-				OR = {
-					trait = wroth
-					trait = stubborn
-				}
-			}
-		}
-	}
-	option = { #Staunch
-		name = EVTOPTBHF25045
-		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25045 } 
-		hidden_tooltip = { character_event = { id = HF.25055 } }
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 1.75
-				OR = {
-					trait = brave
-					trait = zealous
-				}
-			}
-		}
-	}
-	option = { #Fleeting
-		name = EVTOPTCHF25045
-		custom_tooltip = { text = TOOLTIP_EVTOPTCHF25045 } 
-		hidden_tooltip = { character_event = { id = HF.25056 } }
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 1.75
-				OR = {
-					trait = craven
-					trait = shy
-				}
-			}
-		}
-	}
-}
+#character_event = {
+#	id = HF.25043
+#	desc = EVTDESCHF25043
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	option = { #Inspiring
+#		name = EVTOPTAHF25043
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25043 } 
+#		hidden_tooltip = { character_event = { id = HF.25049 } }
+#		ai_chance = {
+#			factor = 50
+#			modifier = {
+#				factor = 2
+#				has_pleasant_trait_trigger = yes
+#			}
+#		}
+#	}
+#	option = { #Terrifying
+#		name = EVTOPTBHF25043
+#		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25043 } 
+#		hidden_tooltip = { character_event = { id = HF.25050 } }
+#		ai_chance = {
+#			factor = 50
+#			modifier = {
+#				factor = 2
+#				has_unpleasant_trait_trigger = yes
+#			}
+#		}
+#	}
+#}
+##Mid Tier Mask: Pick spirit to inhabit it with.
+#character_event = {
+#	id = HF.25044
+#	desc = EVTDESCHF25044
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	option = { #Unyielding
+#		name = EVTOPTAHF25044
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25044 } 
+#		hidden_tooltip = { character_event = { id = HF.25051 } }
+#		ai_chance = {
+#			factor = 30
+#			modifier = {
+#				factor = 1.75
+#				OR = {
+#					trait = stubborn
+#					trait = brave
+#				}
+#			}
+#		}
+#	}
+#	option = { #Ruthless
+#		name = EVTOPTBHF25044
+#		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25044 } 
+#		hidden_tooltip = { character_event = { id = HF.25052 } }
+#		ai_chance = {
+#			factor = 30
+#			modifier = {
+#				factor = 1.75
+#				OR = {
+#					trait = impaler
+#					trait = cruel
+#				}
+#			}
+#		}
+#	}
+#	option = { #Trickster
+#		name = EVTOPTCHF25044
+#		custom_tooltip = { text = TOOLTIP_EVTOPTCHF25044 } 
+#		hidden_tooltip = { character_event = { id = HF.25053 } }
+#		ai_chance = {
+#			factor = 30
+#			modifier = {
+#				factor = 1.75
+#				OR = {
+#					trait = deceitful
+#					trait = shy
+#				}
+#			}
+#		}
+#	}
+#}
+#
+##Low Tier Mask: Pick spirit to inhabit it with.
+#character_event = {
+#	id = HF.25045
+#	desc = EVTDESCHF25045
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	option = { #Angry
+#		name = EVTOPTAHF25045
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25045 } 
+#		hidden_tooltip = { character_event = { id = HF.25054 } }
+#		ai_chance = {
+#			factor = 30
+#			modifier = {
+#				factor = 1.75
+#				OR = {
+#					trait = wroth
+#					trait = stubborn
+#				}
+#			}
+#		}
+#	}
+#	option = { #Staunch
+#		name = EVTOPTBHF25045
+#		custom_tooltip = { text = TOOLTIP_EVTOPTBHF25045 } 
+#		hidden_tooltip = { character_event = { id = HF.25055 } }
+#		ai_chance = {
+#			factor = 30
+#			modifier = {
+#				factor = 1.75
+#				OR = {
+#					trait = brave
+#					trait = zealous
+#				}
+#			}
+#		}
+#	}
+#	option = { #Fleeting
+#		name = EVTOPTCHF25045
+#		custom_tooltip = { text = TOOLTIP_EVTOPTCHF25045 } 
+#		hidden_tooltip = { character_event = { id = HF.25056 } }
+#		ai_chance = {
+#			factor = 30
+#			modifier = {
+#				factor = 1.75
+#				OR = {
+#					trait = craven
+#					trait = shy
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Receive Carved Totem Artifact.
-character_event = {
-	id = HF.25046
-	desc = EVTDESCHF25046
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25046
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25046 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = scepter_african_1
-			new_artifact = {
-				random_list = { 
-					20 = { trigger = { ROOT = { NOT = { dynasty = none } } } set_name = scepter_african_1_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = scepter_african_1_random_b }
-					20 = { trigger = { ROOT = { NOT = { dynasty = none } } } set_name = scepter_african_1_random_c }
-					20 = { set_name = scepter_african_1_random_d } 
-				}
-			}
-		}
-	}
-}
-#Receive Ivory Idol Artifact.
-character_event = {
-	id = HF.25047
-	desc = EVTDESCHF25047
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25047
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25047 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = scepter_african_2
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = scepter_african_2_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = scepter_african_2_random_b }
-					20 = { set_name = scepter_african_2_random_c }
-					20 = { set_name = scepter_african_2_random_d } 
-				}
-			}
-		}
-	}
-}
-
-#Receive Rainstick Artifact.
-character_event = {
-	id = HF.25048
-	desc = EVTDESCHF25048
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25048
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25048 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = scepter_african_3
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = scepter_african_3_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = scepter_african_3_random_b }
-					20 = { set_name = scepter_african_3_random_c }
-					20 = { set_name = scepter_african_3_random_d } 
-				}
-			}
-		}
-	}
-}
+#character_event = {
+#	id = HF.25046
+#	desc = EVTDESCHF25046
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25046
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25046 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = scepter_african_1
+#			new_artifact = {
+#				random_list = { 
+#					20 = { trigger = { ROOT = { NOT = { dynasty = none } } } set_name = scepter_african_1_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = scepter_african_1_random_b }
+#					20 = { trigger = { ROOT = { NOT = { dynasty = none } } } set_name = scepter_african_1_random_c }
+#					20 = { set_name = scepter_african_1_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
+##Receive Ivory Idol Artifact.
+#character_event = {
+#	id = HF.25047
+#	desc = EVTDESCHF25047
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25047
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25047 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = scepter_african_2
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = scepter_african_2_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = scepter_african_2_random_b }
+#					20 = { set_name = scepter_african_2_random_c }
+#					20 = { set_name = scepter_african_2_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
+#
+##Receive Rainstick Artifact.
+#character_event = {
+#	id = HF.25048
+#	desc = EVTDESCHF25048
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25048
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25048 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = scepter_african_3
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = scepter_african_3_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = scepter_african_3_random_b }
+#					20 = { set_name = scepter_african_3_random_c }
+#					20 = { set_name = scepter_african_3_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Receive Top Tier Inspiring Mask
-character_event = {
-	id = HF.25049
-	desc = EVTDESCHF25049
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25049
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25049 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = crown_african_mask_1
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = crown_african_mask_1_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = crown_african_mask_1_random_b }
-					20 = { set_name = crown_african_mask_1_random_c }
-					20 = { set_name = crown_african_mask_1_random_d } 
-				}
-			}
-		}
-	}
-}
-
-#Receive Top Tier Terrifying Mask
-character_event = {
-	id = HF.25050
-	desc = EVTDESCHF25050
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25050
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25050 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = crown_african_mask_2
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = crown_african_mask_2_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = crown_african_mask_2_random_b }
-					20 = { set_name = crown_african_mask_2_random_c }
-					20 = { set_name = crown_african_mask_2_random_d } 
-				}
-			}
-		}
-	}
-}
-
-#Receive Mid Tier Unyielding Mask
-character_event = {
-	id = HF.25051
-	desc = EVTDESCHF25051
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25051
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25051 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = crown_african_mask_3
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = crown_african_mask_3_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = crown_african_mask_3_random_b }
-					20 = { set_name = crown_african_mask_3_random_c }
-					20 = { set_name = crown_african_mask_3_random_d } 
-				}
-			}
-		}
-	}
-}
-
-#Receive Mid Tier Ruthless Mask
-character_event = {
-	id = HF.25052
-	desc = EVTDESCHF25052
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25052
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25052 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = crown_african_mask_4
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = crown_african_mask_4_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = crown_african_mask_4_random_b }
-					20 = { set_name = crown_african_mask_4_random_c }
-					20 = { set_name = crown_african_mask_4_random_d } 
-				}
-			}
-		}
-	}
-}
+#character_event = {
+#	id = HF.25049
+#	desc = EVTDESCHF25049
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25049
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25049 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = crown_african_mask_1
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = crown_african_mask_1_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = crown_african_mask_1_random_b }
+#					20 = { set_name = crown_african_mask_1_random_c }
+#					20 = { set_name = crown_african_mask_1_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
+#
+##Receive Top Tier Terrifying Mask
+#character_event = {
+#	id = HF.25050
+#	desc = EVTDESCHF25050
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25050
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25050 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = crown_african_mask_2
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = crown_african_mask_2_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = crown_african_mask_2_random_b }
+#					20 = { set_name = crown_african_mask_2_random_c }
+#					20 = { set_name = crown_african_mask_2_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
+#
+##Receive Mid Tier Unyielding Mask
+#character_event = {
+#	id = HF.25051
+#	desc = EVTDESCHF25051
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25051
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25051 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = crown_african_mask_3
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = crown_african_mask_3_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = crown_african_mask_3_random_b }
+#					20 = { set_name = crown_african_mask_3_random_c }
+#					20 = { set_name = crown_african_mask_3_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
+#
+##Receive Mid Tier Ruthless Mask
+#character_event = {
+#	id = HF.25052
+#	desc = EVTDESCHF25052
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25052
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25052 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = crown_african_mask_4
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = crown_african_mask_4_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = crown_african_mask_4_random_b }
+#					20 = { set_name = crown_african_mask_4_random_c }
+#					20 = { set_name = crown_african_mask_4_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Receive Mid Tier Trickster Mask
-character_event = {
-	id = HF.25053
-	desc = EVTDESCHF25053
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25053
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25053 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = crown_african_mask_5
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = crown_african_mask_5_random_a } #Randomize names to avoid too much repetition.
-					20 = { trigger = { ROOT = { NOT = { dynasty = none } } } set_name = crown_african_mask_5_random_b }
-					20 = { set_name = crown_african_mask_5_random_c }
-					20 = { set_name = crown_african_mask_5_random_d } 
-				}
-			}
-		}
-	}
-}
+#character_event = {
+#	id = HF.25053
+#	desc = EVTDESCHF25053
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25053
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25053 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = crown_african_mask_5
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = crown_african_mask_5_random_a } #Randomize names to avoid too much repetition.
+#					20 = { trigger = { ROOT = { NOT = { dynasty = none } } } set_name = crown_african_mask_5_random_b }
+#					20 = { set_name = crown_african_mask_5_random_c }
+#					20 = { set_name = crown_african_mask_5_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Receive Low Tier Angry Mask
-character_event = {
-	id = HF.25054
-	desc = EVTDESCHF25054
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25054
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25054 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = crown_african_mask_6
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = crown_african_mask_6_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = crown_african_mask_6_random_b }
-					20 = { trigger = { ROOT = { NOT = { dynasty = none } } } set_name = crown_african_mask_6_random_c }
-					20 = { set_name = crown_african_mask_6_random_d } 
-				}
-			}
-		}
-	}
-}
+#character_event = {
+#	id = HF.25054
+#	desc = EVTDESCHF25054
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25054
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25054 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = crown_african_mask_6
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = crown_african_mask_6_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = crown_african_mask_6_random_b }
+#					20 = { trigger = { ROOT = { NOT = { dynasty = none } } } set_name = crown_african_mask_6_random_c }
+#					20 = { set_name = crown_african_mask_6_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Receive Low Tier Staunch Mask
-character_event = {
-	id = HF.25055
-	desc = EVTDESCHF25055
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25055
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25055 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = crown_african_mask_7
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = crown_african_mask_7_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = crown_african_mask_7_random_b }
-					20 = { set_name = crown_african_mask_7_random_c }
-					20 = { set_name = crown_african_mask_7_random_d } 
-				}
-			}
-		}
-	}
-}
+#character_event = {
+#	id = HF.25055
+#	desc = EVTDESCHF25055
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25055
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25055 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = crown_african_mask_7
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = crown_african_mask_7_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = crown_african_mask_7_random_b }
+#					20 = { set_name = crown_african_mask_7_random_c }
+#					20 = { set_name = crown_african_mask_7_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Receive Low Tier Fleeting Mask
-character_event = {
-	id = HF.25056
-	desc = EVTDESCHF25056
-	picture = GFX_evt_west_african_ruler
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	immediate = { 
-		random_list = { 
-			33 = { sound_effect = create_fetish_01 } 
-			33 = { sound_effect = create_fetish_02 } 
-			33 = { sound_effect = create_fetish_03 } 
-		}
-	}
-
-	option = { 
-		name = EVTOPTAHF25056
-		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25056 } 
-		hidden_tooltip = {
-			clr_character_flag = flag_ordered_fetish_creation
-			add_artifact = crown_african_mask_8
-			new_artifact = {
-				random_list = { 
-					20 = { set_name = crown_african_mask_8_random_a } #Randomize names to avoid too much repetition.
-					20 = { set_name = crown_african_mask_8_random_b }
-					20 = { set_name = crown_african_mask_8_random_c }
-					20 = { set_name = crown_african_mask_8_random_d } 
-				}
-			}
-		}
-	}
-}
+#character_event = {
+#	id = HF.25056
+#	desc = EVTDESCHF25056
+#	picture = GFX_evt_west_african_ruler
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	immediate = { 
+#		random_list = { 
+#			33 = { sound_effect = create_fetish_01 } 
+#			33 = { sound_effect = create_fetish_02 } 
+#			33 = { sound_effect = create_fetish_03 } 
+#		}
+#	}
+#
+#	option = { 
+#		name = EVTOPTAHF25056
+#		custom_tooltip = { text = TOOLTIP_EVTOPTAHF25056 } 
+#		hidden_tooltip = {
+#			clr_character_flag = flag_ordered_fetish_creation
+#			add_artifact = crown_african_mask_8
+#			new_artifact = {
+#				random_list = { 
+#					20 = { set_name = crown_african_mask_8_random_a } #Randomize names to avoid too much repetition.
+#					20 = { set_name = crown_african_mask_8_random_b }
+#					20 = { set_name = crown_african_mask_8_random_c }
+#					20 = { set_name = crown_african_mask_8_random_d } 
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Notifications for Baltic Holds Power.
 #tb_defensive_fortifications_1

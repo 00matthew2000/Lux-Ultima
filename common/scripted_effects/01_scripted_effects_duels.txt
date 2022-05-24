@@ -2487,74 +2487,74 @@ apply_merciful_modifier_effect = { #For Claim Duels
 
 }
 
-handle_warrior_lodge_induction_effect = { #Will only affect those trying to join warrior lodges...
-	hidden_effect = {
-		if = {
-        	limit = { has_character_flag = awaiting_initiation_trial }
-        	if = {
-        		limit = { has_character_flag = mildly_injured }
-        		set_character_flag = was_mildly_injured
-        	}
-        	if = {
-        		limit = { has_character_flag = actually_injured }
-        		set_character_flag = was_actually_injured
-        	}
-        	if = {
-        		limit = {
-        			OR = {
-						has_character_flag = is_victorious_attacker
-						has_character_flag = is_victorious_defender
-        			}
-        			NOR = {
-        				has_character_flag = stalemate_won
-						has_character_flag = stalemate_lost
-        			}
-        		}
-        		#Medium power boon upon joining
-        		set_character_flag = medium_reward
-				#Small chance of befriending your duel target
-				#Small chance of becoming rivals with your target
-				#Small chance of getting wounded
-
-        	}
-        	if = {
-        		limit = {
-        			OR = {
-						has_character_flag = is_defeated_attacker
-						has_character_flag = is_defeated_defender
-        			}
-					NOR = {
-        				has_character_flag = stalemate_won
-						has_character_flag = stalemate_lost
-        			}
-        		}
-        		#Small chance of befriending your duel target
-				#Small chance of becoming rivals with your target
-				#High chance of getting wounded
-
-        	}
-        	if = {
-        		limit = {
-					OR = {
-						has_character_flag = stalemate_won
-						has_character_flag = stalemate_lost
-					}
-        		}
-        		#Low power boon upon joining
-        		set_character_flag = minor_reward
-				#Big chance of befriending your duel target
-				#Big chance of becoming rivals with your target
-				#Medium chance of getting wounded
-        	}
-        	if = {
-        		limit = { has_character_modifier = warrior_lodge_failed_joining_cd }
-        		set_character_flag = duel_fled
-        	}
-
-        	character_event = { id = HF.10011 days = 10 } #delayed gating event for final outcome...
-        }
-	}
-}
+#handle_warrior_lodge_induction_effect = { #Will only affect those trying to join warrior lodges...
+#	hidden_effect = {
+#		if = {
+#        	limit = { has_character_flag = awaiting_initiation_trial }
+#        	if = {
+#        		limit = { has_character_flag = mildly_injured }
+#        		set_character_flag = was_mildly_injured
+#        	}
+#        	if = {
+#        		limit = { has_character_flag = actually_injured }
+#        		set_character_flag = was_actually_injured
+#        	}
+#        	if = {
+#        		limit = {
+#        			OR = {
+#						has_character_flag = is_victorious_attacker
+#						has_character_flag = is_victorious_defender
+#        			}
+#        			NOR = {
+#        				has_character_flag = stalemate_won
+#						has_character_flag = stalemate_lost
+#        			}
+#        		}
+#        		#Medium power boon upon joining
+#        		set_character_flag = medium_reward
+#				#Small chance of befriending your duel target
+#				#Small chance of becoming rivals with your target
+#				#Small chance of getting wounded
+#
+#        	}
+#        	if = {
+#        		limit = {
+#        			OR = {
+#						has_character_flag = is_defeated_attacker
+#						has_character_flag = is_defeated_defender
+#        			}
+#					NOR = {
+#        				has_character_flag = stalemate_won
+#						has_character_flag = stalemate_lost
+#        			}
+#        		}
+#        		#Small chance of befriending your duel target
+#				#Small chance of becoming rivals with your target
+#				#High chance of getting wounded
+#
+#        	}
+#        	if = {
+#        		limit = {
+#					OR = {
+#						has_character_flag = stalemate_won
+#						has_character_flag = stalemate_lost
+#					}
+#        		}
+#        		#Low power boon upon joining
+#        		set_character_flag = minor_reward
+#				#Big chance of befriending your duel target
+#				#Big chance of becoming rivals with your target
+#				#Medium chance of getting wounded
+#        	}
+#        	if = {
+#        		limit = { has_character_modifier = warrior_lodge_failed_joining_cd }
+#        		set_character_flag = duel_fled
+#        	}
+#
+#        	character_event = { id = HF.10011 days = 10 } #delayed gating event for final outcome...
+#        }
+#	}
+#}
 
 handle_poison_effect = { #shows tooltips, etc
 	if = {

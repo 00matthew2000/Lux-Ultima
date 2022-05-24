@@ -3628,316 +3628,316 @@ character_event = { # Gain a friend
 	}
 }
 
-character_event = { # Child of Destiny launches Adventure
-	id = HF.290
-	hide_window = yes
-	is_triggered_only = yes
-	
-	hide_new = yes
-	
-	trigger = {
-		has_character_flag = is_child_of_destiny
-	}
-	
-	immediate = {
-		set_character_flag = child_of_destiny_adventure
-		save_event_target_as = child_of_destiny
-		random_independent_ruler = {
-			limit = {
-				ai = yes
-				is_tributary = no
-				is_landed = yes
-				independent = yes
-				NOT = { is_vassal_or_below = event_target:child_of_destiny }
-				realm_size = 25
-				event_target:child_of_destiny = {
-					NOR = {
-						obedient = PREV
-						non_interference = PREV
-						has_non_aggression_pact_with = PREV
-						top_liege = {
-							distance_from_realm = { who = PREVPREV value = 1200 }
-						}
-					}
-				}
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 800 }
-				}
-				is_nomadic = no
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 1000 }
-				}
-				NOT = {
-					any_realm_character = {
-						ai = no
-					}
-				}
-				is_nomadic = no
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 1000 }
-				}
-				is_nomadic = no
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 150 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 1100 }
-				}
-				NOT = {
-					any_realm_character = {
-						ai = no
-					}
-				}
-				is_nomadic = no
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 150 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 1100 }
-				}
-				is_nomadic = no
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 800 }
-				}
-				NOT = {
-					any_realm_character = {
-						ai = no
-					}
-				}
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 800 }
-				}
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 1000 }
-				}
-				NOT = {
-					any_realm_character = {
-						ai = no
-					}
-				}
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 200 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 1000 }
-				}
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 150 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 1100 }
-				}
-				NOT = {
-					any_realm_character = {
-						ai = no
-					}
-				}
-			}
-			preferred_limit = {
-				distance_from_realm = { who = PREV value = 150 }
-				NOT = {
-					distance_from_realm = { who = PREV value = 1100 }
-				}
-			}
-			save_event_target_as = target_character
-		}
-		if = {
-			limit = {
-				is_landed = yes
-				independent = no
-			}
-			liege = { save_event_target_as = liege_title_target }
-			any_demesne_title = {
-				grant_title = event_target:liege_title_target
-			}
-			any_vassal = {
-				set_defacto_liege = event_target:liege_title_target
-			}
-		}
-		else_if = {
-			limit = {
-				is_landed = yes
-				independent = yes
-			}
-			abdicate = yes
-		}
-		liege = {
-			capital_scope = {
-				event_target:target_character = {
-					random_realm_province = {
-						event_target:child_of_destiny = {
-							set_defacto_liege = event_target:child_of_destiny
-							create_title = {
-								tier = DUKE
-								landless = yes
-								temporary = yes
-								adventurer = yes
-								culture = event_target:child_of_destiny
-								name = "CLAIMANT_ADVENTURE"
-								holder = event_target:child_of_destiny
-							}
-							
-							set_character_flag = duchy_adventurer
-						
-							spawn_unit = {
-								province = PREVPREVPREV
-								home = PREVPREVPREV
-								owner = THIS
-								match_character = PREVPREV
-								match_mult = 0.66
-								match_min = 1000
-								match_max = 10000
-								reinforces = yes
-								reinforce_rate_multiplier = 0.25
-								merge = yes
-								attrition = 0.25
-								cannot_inherit = yes
-							}
-							spawn_unit = {
-								province = PREVPREVPREV
-								home = PREVPREVPREV
-								owner = THIS
-								match_character = PREVPREV
-								match_mult = 0.66
-								match_min = 1000
-								match_max = 10000
-								reinforces = yes
-								reinforce_rate_multiplier = 0.25
-								merge = yes
-								attrition = 0.25
-								cannot_inherit = yes
-							}
-							spawn_unit = {
-								province = PREVPREVPREV
-								home = PREVPREVPREV
-								owner = THIS
-								match_character = PREVPREV
-								match_mult = 0.66
-								match_min = 1000
-								match_max = 10000
-								reinforces = yes
-								reinforce_rate_multiplier = 0.25
-								merge = yes
-								attrition = 0.25
-								cannot_inherit = yes
-							}
-							spawn_fleet = {
-								province = closest # closest sea zone
-								owner = THIS
-								cannot_inherit = yes
-								troops =
-								{
-									galleys = { 150 150 }
-								}
-							}
-							unsafe_war = {
-								target = PREVPREV
-								#casus_belli = kingdom_adventure
-								thirdparty_title = PREV
-								tier = KING
-							}
-						}
-					}
-				}
-			}
-		}
-		
-		if = { # If the war starts
-			limit = {
-				any_war = {
-					#using_cb = kingdom_adventure
-				}
-			}
-			# Create some fantastic commander characters
-			spawn_fantastic_commander_effect = yes
-			spawn_fantastic_commander_effect = yes
-			spawn_fantastic_commander_effect = yes
-			
-			add_trait = disinherited
-			
-			# Notify Parents
-			father = { character_event = { id = HF.291 } }
-			mother = { character_event = { id = HF.291 } }
-			if = {
-				limit = {
-					liege = {
-						NOR = {
-							is_parent_of = event_target:child_of_destiny
-							character = event_target:child_of_destiny
-						}
-					}
-				}
-				liege = { character_event = { id = HF.291 } }
-			}
-		}
-		else_if = { # If the entire thing somehow fails, remove the flag and try again
-			limit = {
-				NOT = {
-					any_war = {
-						#using_cb = kingdom_adventure
-					}
-				}
-			}
-			clr_character_flag = child_of_destiny_adventure
-		}
-	}
-		
-	after = { # Back to the journey tombola!
-		child_of_destiny_journey_resume_effect = yes
-	}
-}
-
-character_event = { # Notification - Launched Adventure
-	id = HF.291
-	desc = HF_291_DESC
-	picture = GFX_evt_large_army
-	is_triggered_only = yes
-	ai = no
-	portrait = event_target:child_of_destiny
-	
-	hide_new = yes
-	
-	option = {
-		name = HF_291_OPTA
-		show_portrait = event_target:target_character
-		trigger = {
-			is_parent_of = FROM
-		}
-		custom_tooltip = {
-			text = disinherit_tt
-		}
-	}
-	option = {
-		name = HF_291_OPTB
-		show_portrait = event_target:target_character
-		trigger = {
-			NOT = {
-				is_parent_of = FROM
-			}
-		}	
-		custom_tooltip = {
-			text = disinherit_tt
-		}
-	}
-}
+#character_event = { # Child of Destiny launches Adventure
+#	id = HF.290
+#	hide_window = yes
+#	is_triggered_only = yes
+#	
+#	hide_new = yes
+#	
+#	trigger = {
+#		has_character_flag = is_child_of_destiny
+#	}
+#	
+#	immediate = {
+#		set_character_flag = child_of_destiny_adventure
+#		save_event_target_as = child_of_destiny
+#		random_independent_ruler = {
+#			limit = {
+#				ai = yes
+#				is_tributary = no
+#				is_landed = yes
+#				independent = yes
+#				NOT = { is_vassal_or_below = event_target:child_of_destiny }
+#				realm_size = 25
+#				event_target:child_of_destiny = {
+#					NOR = {
+#						obedient = PREV
+#						non_interference = PREV
+#						has_non_aggression_pact_with = PREV
+#						top_liege = {
+#							distance_from_realm = { who = PREVPREV value = 1200 }
+#						}
+#					}
+#				}
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 200 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 800 }
+#				}
+#				is_nomadic = no
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 200 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 1000 }
+#				}
+#				NOT = {
+#					any_realm_character = {
+#						ai = no
+#					}
+#				}
+#				is_nomadic = no
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 200 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 1000 }
+#				}
+#				is_nomadic = no
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 150 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 1100 }
+#				}
+#				NOT = {
+#					any_realm_character = {
+#						ai = no
+#					}
+#				}
+#				is_nomadic = no
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 150 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 1100 }
+#				}
+#				is_nomadic = no
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 200 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 800 }
+#				}
+#				NOT = {
+#					any_realm_character = {
+#						ai = no
+#					}
+#				}
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 200 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 800 }
+#				}
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 200 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 1000 }
+#				}
+#				NOT = {
+#					any_realm_character = {
+#						ai = no
+#					}
+#				}
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 200 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 1000 }
+#				}
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 150 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 1100 }
+#				}
+#				NOT = {
+#					any_realm_character = {
+#						ai = no
+#					}
+#				}
+#			}
+#			preferred_limit = {
+#				distance_from_realm = { who = PREV value = 150 }
+#				NOT = {
+#					distance_from_realm = { who = PREV value = 1100 }
+#				}
+#			}
+#			save_event_target_as = target_character
+#		}
+#		if = {
+#			limit = {
+#				is_landed = yes
+#				independent = no
+#			}
+#			liege = { save_event_target_as = liege_title_target }
+#			any_demesne_title = {
+#				grant_title = event_target:liege_title_target
+#			}
+#			any_vassal = {
+#				set_defacto_liege = event_target:liege_title_target
+#			}
+#		}
+#		else_if = {
+#			limit = {
+#				is_landed = yes
+#				independent = yes
+#			}
+#			abdicate = yes
+#		}
+#		liege = {
+#			capital_scope = {
+#				event_target:target_character = {
+#					random_realm_province = {
+#						event_target:child_of_destiny = {
+#							set_defacto_liege = event_target:child_of_destiny
+#							create_title = {
+#								tier = DUKE
+#								landless = yes
+#								temporary = yes
+#								adventurer = yes
+#								culture = event_target:child_of_destiny
+#								name = "CLAIMANT_ADVENTURE"
+#								holder = event_target:child_of_destiny
+#							}
+#							
+#							set_character_flag = duchy_adventurer
+#						
+#							spawn_unit = {
+#								province = PREVPREVPREV
+#								home = PREVPREVPREV
+#								owner = THIS
+#								match_character = PREVPREV
+#								match_mult = 0.66
+#								match_min = 1000
+#								match_max = 10000
+#								reinforces = yes
+#								reinforce_rate_multiplier = 0.25
+#								merge = yes
+#								attrition = 0.25
+#								cannot_inherit = yes
+#							}
+#							spawn_unit = {
+#								province = PREVPREVPREV
+#								home = PREVPREVPREV
+#								owner = THIS
+#								match_character = PREVPREV
+#								match_mult = 0.66
+#								match_min = 1000
+#								match_max = 10000
+#								reinforces = yes
+#								reinforce_rate_multiplier = 0.25
+#								merge = yes
+#								attrition = 0.25
+#								cannot_inherit = yes
+#							}
+#							spawn_unit = {
+#								province = PREVPREVPREV
+#								home = PREVPREVPREV
+#								owner = THIS
+#								match_character = PREVPREV
+#								match_mult = 0.66
+#								match_min = 1000
+#								match_max = 10000
+#								reinforces = yes
+#								reinforce_rate_multiplier = 0.25
+#								merge = yes
+#								attrition = 0.25
+#								cannot_inherit = yes
+#							}
+#							spawn_fleet = {
+#								province = closest # closest sea zone
+#								owner = THIS
+#								cannot_inherit = yes
+#								troops =
+#								{
+#									galleys = { 150 150 }
+#								}
+#							}
+#							unsafe_war = {
+#								target = PREVPREV
+#								#casus_belli = kingdom_adventure
+#								thirdparty_title = PREV
+#								tier = KING
+#							}
+#						}
+#					}
+#				}
+#			}
+#		}
+#		
+#		if = { # If the war starts
+#			limit = {
+#				any_war = {
+#					#using_cb = kingdom_adventure
+#				}
+#			}
+#			# Create some fantastic commander characters
+#			spawn_fantastic_commander_effect = yes
+#			spawn_fantastic_commander_effect = yes
+#			spawn_fantastic_commander_effect = yes
+#			
+#			add_trait = disinherited
+#			
+#			# Notify Parents
+#			father = { character_event = { id = HF.291 } }
+#			mother = { character_event = { id = HF.291 } }
+#			if = {
+#				limit = {
+#					liege = {
+#						NOR = {
+#							is_parent_of = event_target:child_of_destiny
+#							character = event_target:child_of_destiny
+#						}
+#					}
+#				}
+#				liege = { character_event = { id = HF.291 } }
+#			}
+#		}
+#		else_if = { # If the entire thing somehow fails, remove the flag and try again
+#			limit = {
+#				NOT = {
+#					any_war = {
+#						#using_cb = kingdom_adventure
+#					}
+#				}
+#			}
+#			clr_character_flag = child_of_destiny_adventure
+#		}
+#	}
+#		
+#	after = { # Back to the journey tombola!
+#		child_of_destiny_journey_resume_effect = yes
+#	}
+#}
+#
+#character_event = { # Notification - Launched Adventure
+#	id = HF.291
+#	desc = HF_291_DESC
+#	picture = GFX_evt_large_army
+#	is_triggered_only = yes
+#	ai = no
+#	portrait = event_target:child_of_destiny
+#	
+#	hide_new = yes
+#	
+#	option = {
+#		name = HF_291_OPTA
+#		show_portrait = event_target:target_character
+#		trigger = {
+#			is_parent_of = FROM
+#		}
+#		custom_tooltip = {
+#			text = disinherit_tt
+#		}
+#	}
+#	option = {
+#		name = HF_291_OPTB
+#		show_portrait = event_target:target_character
+#		trigger = {
+#			NOT = {
+#				is_parent_of = FROM
+#			}
+#		}	
+#		custom_tooltip = {
+#			text = disinherit_tt
+#		}
+#	}
+#}
 
 character_event = { # Child of Destiny reaches adulthood
 	id = HF.300
