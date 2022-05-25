@@ -1955,22 +1955,22 @@ character_event = {
 				factor = 1.5
 				trait = brave
 			}
-			modifier = { 
-				factor = 1.25
+			#modifier = { 
+				#factor = 1.25
 				#ROOT = { attribute_diff = { character = FROM combat_rating  = 5 } }
-			}
-			modifier = { 
-				factor = 1.25
+			#}
+			#modifier = { 
+				#factor = 1.25
 				#ROOT = { attribute_diff = { character = FROM combat_rating  = 10 } }
-			}
-			modifier = { 
-				factor = 1.5
+			#}
+			#modifier = { 
+				#factor = 1.5
 				#ROOT = { attribute_diff = { character = FROM combat_rating  = 15 } }
-			}
-			modifier = { 
-				factor = 1.75
+			#}
+			#modifier = { 
+				#factor = 1.75
 				#ROOT = { attribute_diff = { character = FROM combat_rating  = 20 } }
-			}
+			#}
 		}
 	}
 	option = { 
@@ -2118,22 +2118,22 @@ character_event = {
 				factor = 1.5
 				trait = brave
 			}
-			modifier = { 
-				factor = 1.25
+			#modifier = { 
+				#factor = 1.25
 				#ROOT = { attribute_diff = { character = FROM combat_rating  = 5 } }
-			}
-			modifier = { 
-				factor = 1.25
+			#}
+			#modifier = { 
+				#factor = 1.25
 				#ROOT = { attribute_diff = { character = FROM combat_rating  = 10 } }
-			}
-			modifier = { 
-				factor = 1.5
+			#}
+			#modifier = { 
+				#factor = 1.5
 				#ROOT = { attribute_diff = { character = FROM combat_rating  = 15 } }
-			}
-			modifier = { 
-				factor = 1.75
+			#}
+			#modifier = { 
+				#factor = 1.75
 				#ROOT = { attribute_diff = { character = FROM combat_rating  = 20 } }
-			}
+			#}
 		}
 	}
 	option = { 

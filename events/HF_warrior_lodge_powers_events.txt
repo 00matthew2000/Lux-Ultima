@@ -983,69 +983,69 @@ character_event = {
 #	}
 #}
 #Commander reacts.
-character_event = {
-	id = HF.25010
-	desc = EVTDESCHF25010
-	picture = GFX_evt_camaraderie
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25010
-		trigger = {
-			OR = {
-				AND = {
-					prefers_men_trigger = yes
-					FROM = { is_female = no }
-				}
-				AND = {
-					prefers_men_trigger = no
-					FROM = { is_female = yes }
-				}
-			}  
-		} 
-		add_lover = FROM
-		hidden_tooltip = { 
-			FROM = {
-				add_lover = ROOT 
-				character_event = { id = HF.25011 } 
-			} 
-		}
-	}
-	option = { 
-		name = EVTOPTBHF25010
-		trigger = {
-			NOR = {
-				AND = {
-					prefers_men_trigger = yes
-					FROM = { is_female = no }
-				}
-				AND = {
-					prefers_men_trigger = no
-					FROM = { is_female = yes }
-				}
-			}  
-		}
-		hidden_tooltip = { 
-			FROM = {
-				character_event = { id = HF.25012 } 
-			} 
-		}
-	}
-}
-character_event = {
-	id = HF.25011
-	desc = EVTDESCHF25011
-	picture = GFX_evt_camaraderie
-	border = GFX_event_normal_frame_war
-	
-	is_triggered_only = yes
-
-	option = { 
-		name = EVTOPTAHF25011
-	}
-}
+#character_event = {
+#	id = HF.25010
+#	desc = EVTDESCHF25010
+#	picture = GFX_evt_camaraderie
+#	border = GFX_event_normal_frame_war
+#	
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25010
+#		trigger = {
+#			OR = {
+#				AND = {
+#					prefers_men_trigger = yes
+#					FROM = { is_female = no }
+#				}
+#				AND = {
+#					prefers_men_trigger = no
+#					FROM = { is_female = yes }
+#				}
+#			}  
+#		} 
+#		add_lover = FROM
+#		hidden_tooltip = { 
+#			FROM = {
+#				add_lover = ROOT 
+#				character_event = { id = HF.25011 } 
+#			} 
+#		}
+#	}
+#	option = { 
+#		name = EVTOPTBHF25010
+#		trigger = {
+#			NOR = {
+#				AND = {
+#					prefers_men_trigger = yes
+#					FROM = { is_female = no }
+#				}
+#				AND = {
+#					prefers_men_trigger = no
+#					FROM = { is_female = yes }
+#				}
+#			}  
+#		}
+#		hidden_tooltip = { 
+#			FROM = {
+#				character_event = { id = HF.25012 } 
+#			} 
+#		}
+#	}
+#}
+#character_event = {
+#	id = HF.25011
+#	desc = EVTDESCHF25011
+#	picture = GFX_evt_camaraderie
+#	border = GFX_event_normal_frame_war
+#	
+#	is_triggered_only = yes
+#
+#	option = { 
+#		name = EVTOPTAHF25011
+#	}
+#}
 
 character_event = {
 	id = HF.25012

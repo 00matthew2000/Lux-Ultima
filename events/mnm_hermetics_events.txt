@@ -4438,7 +4438,7 @@ character_event = { # A Child is born - you have a good feeling about the kid! (
     id = MNM.1204
     picture = GFX_evt_state_diplomacy
     border = GFX_event_normal_frame_religion
-    #is_triggered_only = yes ### So I #'ed this out because I guess its supposed to fire from other events here, not the on_actions. Possible its not supposed to fire at all -00matthew2000 ###
+    is_triggered_only = yes ### Don't know why this supposedly doesn't fire, it should fire from MNM.1206 -00matthew2000 ###
 
     trigger = {
     	has_dlc = "Mystics"
@@ -4511,7 +4511,7 @@ character_event = { # A Child is born - you're not impressed (fired from on_birt
     id = MNM.1205
     picture = GFX_evt_secluded_in_prayer
     border = GFX_event_normal_frame_religion
-    #is_triggered_only = yes
+    is_triggered_only = yes
 
     trigger = {
     	has_dlc = "Mystics"
@@ -9891,7 +9891,7 @@ character_event = {
 		
 		set_character_flag = had_a_divine_summoning
 		
-		FROM = { character_event = { id = MNM.1623 tooltip = EVT_TT_1622 portrait = no } }
+		FROM = { character_event = { id = MNM.1623 tooltip = EVT_TT_1622 portrait = yes } } ### Changed portrait from = no to = yes -00matthew2000 ###
 	}
 
 	option = {
@@ -9920,7 +9920,7 @@ character_event = {
 		set_character_flag = had_a_divine_summoning
 		set_character_flag = used_ingredients_for_summoning
 		
-		FROM = { character_event = { id = MNM.1623 portrait = no } }
+		FROM = { character_event = { id = MNM.1623 portrait = yes } } ### Changed portrait from = no to = yes -00matthew2000 ###
 
 		trigger = {
 			any_artifact = {

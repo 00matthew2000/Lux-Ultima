@@ -5052,228 +5052,228 @@ character_event = {
 ########################################################################################################################################
 
 ####Coronation sponsor found, now decide how much money to invest in it. (REVISED WITH SCALED WEALTH)
-character_event = {
-	id = HF.20300
-	desc = {
-		trigger = {
-			OR = { 
-				has_character_flag = flag_crowned_by_bishop
-				has_character_flag = flag_crowned_by_pope 
-			}
-			war = no
-		}
-		text = EVTDESCHFA20300
-	}
-	desc = {
-		trigger = {
-			has_character_flag = flag_crowned_by_priest
-			war = no
-		}
-		text = EVTDESCHFB20300
-	}
-	desc = {
-		trigger = {
-			war = yes
-		}
-		text = EVTDESCHFC20300
-		picture = GFX_evt_mounted_combat_day_hf
-	}
-
-	picture = GFX_evt_diplomatic_greeting
-	border = GFX_event_normal_frame_religion
-
-	trigger = {
-			religion = catholic
-	}
-	is_triggered_only = yes
-	
-	immediate = {
-		save_event_target_as = coronation_ruler
-		add_character_modifier = {
-			name = out_traveling
-			duration = 66
-			hidden = yes #Make the character inaccessible, the ruler himself is not actually out, he's still at court.
-		}
-	}
-
-	option = {
-		name = EVTOPTAHF20300
-		trigger = { war = no }
-		set_character_flag = flag_extravagant_coronation
-		custom_tooltip = { text = send_extracoronation_invitations }
-		if = { 
-			limit = { ai = no } #Cheaty AI...
-			scaled_wealth = { value = -1 min = -250 max = -1000 }
-		}
-		hidden_tooltip = {
-			character_event = { id = HF.20305 days = 11 } #Ceremony actually starts
-			any_vassal = {
-				limit =  {
-					prisoner = no
-					NOT = { has_character_flag = do_not_disturb }
-					NOT = { has_character_modifier = holding_large_feast }
-					is_adult = yes
-					NOT = { trait = incapable }
-					NOT = { is_inaccessible_trigger = yes }
-					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
-				}
-				#character_event = { id = HF.20301 } #Send Invitations
-			}
-			any_independent_ruler = {
-				limit = { 
-					war = no
-					prisoner = no
-					is_theocracy = no
-					NOT = { has_character_flag = do_not_disturb }
-					NOT = { has_character_modifier = holding_large_feast }
-					is_adult = yes
-					NOT = { trait = incapable }
-					NOT = { is_inaccessible_trigger = yes }
-					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
-					religion = ROOT 	
-					is_within_diplo_range = ROOT
-					higher_real_tier_than = DUKE
-					NOT = { distance_from_realm = { who = ROOT value = 120 } }
-				}
-				#character_event = { id = HF.20302 } #Send Invitations to other Catholic neighbors
-			}
-		}
-		ai_chance = { 
-			factor = 30 
-			modifier = { 
-				factor = 0.5
-				NOT = { scaled_wealth = 1 } 
-			} 
-			modifier = { 
-				factor = 0.5
-				NOT = { scaled_wealth = 0.5 } 
-			} 
-			modifier = { 
-				factor = 0.25
-				NOT = { wealth = 0 } 
-			} 
-			modifier = { 
-				factor = 0
-				NOT = { wealth = -100 } 
-			} 
-			modifier = { 
-				factor = 3
-				tier = EMPEROR
-			} 
-			modifier = { 
-				factor = 0.75
-				trait = greedy
-			} 
-		}
-	}
-	option = {
-		name = EVTOPTBHF20300
-		trigger = { war = no }
-		set_character_flag = flag_regular_coronation
-		custom_tooltip = { text = send_coronation_invitations }
-		hidden_tooltip = {
-			character_event = { id = HF.20305 days = 11 } #Ceremony actually starts
-			any_vassal = {
-				limit =  {
-					prisoner = no
-					NOT = { has_character_flag = do_not_disturb }
-					NOT = { has_character_modifier = holding_large_feast }
-					is_adult = yes
-					NOT = { trait = incapable }
-					NOT = { is_inaccessible_trigger = yes }
-					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
-				}
-				#character_event = { id = HF.20301 } #Send Invitations
-			}
-		}
-		if = { 
-			limit = { ai = no } #Cheaty AI...
-			scaled_wealth = { value = -0.5 min = -100 max = -500 }
-		}
-		ai_chance = { 
-			factor = 40 
-			modifier = { 
-				factor = 0.5
-				NOT = { scaled_wealth = 0.5 } 
-			} 
-			modifier = { 
-				factor = 0.5
-				NOT = { scaled_wealth = 0.25 } 
-			} 
-			modifier = { 
-				factor = 0.25
-				NOT = { wealth = 0 } 
-			} 
-			modifier = { 
-				factor = 0
-				NOT = { wealth = -100 } 
-			} 
-			modifier = { 
-				factor = 0.5
-				tier = EMPEROR
-			} 
-			modifier = { 
-				factor = 0.75
-				trait = greedy
-			} 
-		}
-	}
-	option = {
-		name = {
-			text = EVTOPTCHF20300
-			trigger = {
-				war = no
-			}
-		}
-		name = {
-			text = EVTOPTCHF20300_B
-			trigger = {
-				war = yes
-			}
-		}
-		set_character_flag = flag_secluded_coronation
-		custom_tooltip = { text = send_seclcoronation_invitations }
-		if = { 
-			limit = { ai = no } #Cheaty AI...
-			scaled_wealth = { value = -0.05 min = -10 max = -150 }
-		}
-		hidden_tooltip = {
-			character_event = { id = HF.20305 days = 11 } #Ceremony actually starts
-			any_courtier = {
-				limit = { 
-					is_councillor = yes 
-					prisoner = no
-					NOT = { has_character_flag = do_not_disturb }
-					NOT = { has_character_modifier = holding_large_feast }
-					is_adult = yes
-					NOT = { trait = incapable }
-					NOT = { is_inaccessible_trigger = yes }
-					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
-				}
-				#character_event = { id = HF.20301 } #Send Invitations
-			}
-		}
-		ai_chance = { 
-			factor = 30 
-			modifier = { 
-				factor = 0.25
-				NOT = { wealth = 0 } 
-			} 
-			modifier = { 
-				factor = 3
-				NOT = { wealth = -100 } 
-			} 
-			modifier = { 
-				factor = 0.1
-				tier = EMPEROR
-			} 
-			modifier = { 
-				factor = 1.5
-				trait = greedy
-			}
-		}
-	}
-}
+#character_event = {
+#	id = HF.20300
+#	desc = {
+#		trigger = {
+#			OR = { 
+#				has_character_flag = flag_crowned_by_bishop
+#				has_character_flag = flag_crowned_by_pope 
+#			}
+#			war = no
+#		}
+#		text = EVTDESCHFA20300
+#	}
+#	desc = {
+#		trigger = {
+#			has_character_flag = flag_crowned_by_priest
+#			war = no
+#		}
+#		text = EVTDESCHFB20300
+#	}
+#	desc = {
+#		trigger = {
+#			war = yes
+#		}
+#		text = EVTDESCHFC20300
+#		picture = GFX_evt_mounted_combat_day_hf
+#	}
+#
+#	picture = GFX_evt_diplomatic_greeting
+#	border = GFX_event_normal_frame_religion
+#
+#	trigger = {
+#			religion = catholic
+#	}
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		save_event_target_as = coronation_ruler
+#		add_character_modifier = {
+#			name = out_traveling
+#			duration = 66
+#			hidden = yes #Make the character inaccessible, the ruler himself is not actually out, he's still at court.
+#		}
+#	}
+#
+#	option = {
+#		name = EVTOPTAHF20300
+#		trigger = { war = no }
+#		set_character_flag = flag_extravagant_coronation
+#		custom_tooltip = { text = send_extracoronation_invitations }
+#		if = { 
+#			limit = { ai = no } #Cheaty AI...
+#			scaled_wealth = { value = -1 min = -250 max = -1000 }
+#		}
+#		hidden_tooltip = {
+#			character_event = { id = HF.20305 days = 11 } #Ceremony actually starts
+#			any_vassal = {
+#				limit =  {
+#					prisoner = no
+#					NOT = { has_character_flag = do_not_disturb }
+#					NOT = { has_character_modifier = holding_large_feast }
+#					is_adult = yes
+#					NOT = { trait = incapable }
+#					NOT = { is_inaccessible_trigger = yes }
+#					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
+#				}
+#				#character_event = { id = HF.20301 } #Send Invitations
+#			}
+#			any_independent_ruler = {
+#				limit = { 
+#					war = no
+#					prisoner = no
+#					is_theocracy = no
+#					NOT = { has_character_flag = do_not_disturb }
+#					NOT = { has_character_modifier = holding_large_feast }
+#					is_adult = yes
+#					NOT = { trait = incapable }
+#					NOT = { is_inaccessible_trigger = yes }
+#					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
+#					religion = ROOT 	
+#					is_within_diplo_range = ROOT
+#					higher_real_tier_than = DUKE
+#					NOT = { distance_from_realm = { who = ROOT value = 120 } }
+#				}
+#				#character_event = { id = HF.20302 } #Send Invitations to other Catholic neighbors
+#			}
+#		}
+#		ai_chance = { 
+#			factor = 30 
+#			modifier = { 
+#				factor = 0.5
+#				NOT = { scaled_wealth = 1 } 
+#			} 
+#			modifier = { 
+#				factor = 0.5
+#				NOT = { scaled_wealth = 0.5 } 
+#			} 
+#			modifier = { 
+#				factor = 0.25
+#				NOT = { wealth = 0 } 
+#			} 
+#			modifier = { 
+#				factor = 0
+#				NOT = { wealth = -100 } 
+#			} 
+#			modifier = { 
+#				factor = 3
+#				tier = EMPEROR
+#			} 
+#			modifier = { 
+#				factor = 0.75
+#				trait = greedy
+#			} 
+#		}
+#	}
+#	option = {
+#		name = EVTOPTBHF20300
+#		trigger = { war = no }
+#		set_character_flag = flag_regular_coronation
+#		custom_tooltip = { text = send_coronation_invitations }
+#		hidden_tooltip = {
+#			character_event = { id = HF.20305 days = 11 } #Ceremony actually starts
+#			any_vassal = {
+#				limit =  {
+#					prisoner = no
+#					NOT = { has_character_flag = do_not_disturb }
+#					NOT = { has_character_modifier = holding_large_feast }
+#					is_adult = yes
+#					NOT = { trait = incapable }
+#					NOT = { is_inaccessible_trigger = yes }
+#					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
+#				}
+#				#character_event = { id = HF.20301 } #Send Invitations
+#			}
+#		}
+#		if = { 
+#			limit = { ai = no } #Cheaty AI...
+#			scaled_wealth = { value = -0.5 min = -100 max = -500 }
+#		}
+#		ai_chance = { 
+#			factor = 40 
+#			modifier = { 
+#				factor = 0.5
+#				NOT = { scaled_wealth = 0.5 } 
+#			} 
+#			modifier = { 
+#				factor = 0.5
+#				NOT = { scaled_wealth = 0.25 } 
+#			} 
+#			modifier = { 
+#				factor = 0.25
+#				NOT = { wealth = 0 } 
+#			} 
+#			modifier = { 
+#				factor = 0
+#				NOT = { wealth = -100 } 
+#			} 
+#			modifier = { 
+#				factor = 0.5
+#				tier = EMPEROR
+#			} 
+#			modifier = { 
+#				factor = 0.75
+#				trait = greedy
+#			} 
+#		}
+#	}
+#	option = {
+#		name = {
+#			text = EVTOPTCHF20300
+#			trigger = {
+#				war = no
+#			}
+#		}
+#		name = {
+#			text = EVTOPTCHF20300_B
+#			trigger = {
+#				war = yes
+#			}
+#		}
+#		set_character_flag = flag_secluded_coronation
+#		custom_tooltip = { text = send_seclcoronation_invitations }
+#		if = { 
+#			limit = { ai = no } #Cheaty AI...
+#			scaled_wealth = { value = -0.05 min = -10 max = -150 }
+#		}
+#		hidden_tooltip = {
+#			character_event = { id = HF.20305 days = 11 } #Ceremony actually starts
+#			any_courtier = {
+#				limit = { 
+#					is_councillor = yes 
+#					prisoner = no
+#					NOT = { has_character_flag = do_not_disturb }
+#					NOT = { has_character_modifier = holding_large_feast }
+#					is_adult = yes
+#					NOT = { trait = incapable }
+#					NOT = { is_inaccessible_trigger = yes }
+#					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
+#				}
+#				#character_event = { id = HF.20301 } #Send Invitations
+#			}
+#		}
+#		ai_chance = { 
+#			factor = 30 
+#			modifier = { 
+#				factor = 0.25
+#				NOT = { wealth = 0 } 
+#			} 
+#			modifier = { 
+#				factor = 3
+#				NOT = { wealth = -100 } 
+#			} 
+#			modifier = { 
+#				factor = 0.1
+#				tier = EMPEROR
+#			} 
+#			modifier = { 
+#				factor = 1.5
+#				trait = greedy
+#			}
+#		}
+#	}
+#}
 
 ##Vassal: King is inviting you to his coronation.
 #letter_event = {

@@ -113,7 +113,7 @@ character_event = {
 									} 
 								}
 							}
-							capital_scope = { NOT = { holding_type = nomad } } ### Not sure about this one really, changed it from holding to scope -00matthew2000 ###
+							capital_holding = { NOT = { holding_type = nomad } } ### Not sure about this one really, changed it from holding to scope then back -00matthew2000 ###
 							holder_scope = {
 								NOT = {
 									character = ROOT

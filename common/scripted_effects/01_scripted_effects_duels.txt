@@ -2761,7 +2761,7 @@ clean_up_after_duel_effect = { #Runs for both combatant_1 and 2
 				value = 0 #set to zero so can be cleared on save
 			}
 
-			handle_warrior_lodge_induction_effect = yes
+			##handle_warrior_lodge_induction_effect = yes
 		}
 	}
 
