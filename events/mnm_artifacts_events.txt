@@ -12404,13 +12404,13 @@ character_event = {
 						#wonder = { wonder_owner = ROOT }
 					}
 				}
-				modifier = {
-					factor = 0.5 # if the sieger was a warrior lodge member
-					FROM = {
+				#modifier = {
+					#factor = 0.5 # if the sieger was a warrior lodge member
+					#FROM = {
 						#is_member_of_any_warrior_lodge_trigger = yes
-						society_rank > 1 #Must be rank 2 or higher
-					}
-				}
+						#society_rank > 1 #Must be rank 2 or higher
+					#}
+				#}
 				modifier = {
 					factor = 0.5 # if the sieger has a reaver bloodline
 					FROM = {

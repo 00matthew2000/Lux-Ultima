@@ -2052,7 +2052,124 @@ useless_character_trigger = {
 
 #True religion triggers
 true_religion_antinomian_trigger = {
-	true_religion = antinomian
+    true_religion = antinomian
+}	
+true_religion_aten_trigger = {
+    true_religion = aten
+}	
+true_religion_batembuzi_trigger = {
+    true_religion = batembuzi
+}	
+true_religion_bud_bahusrutiya_trigger = {
+    true_religion = bud_bahusrutiya
+}	
+true_religion_bud_mahayana_trigger = {
+    true_religion = bud_mahayana
+}	
+true_religion_cathar_trigger = {
+    true_religion = cathar
+}	
+true_religion_dionysos_trigger = {
+    true_religion = dionysos
+}	
+true_religion_donatist_trigger = {
+    true_religion = donatist
+}	
+true_religion_druze_trigger = {
+    true_religion = druze
+}	
+true_religion_erlik_trigger = {
+    true_religion = erlik
+}	
+true_religion_haruri_trigger = {
+    true_religion = haruri
+}	
+true_religion_hubal_trigger = {
+    true_religion = hubal
+}	
+true_religion_hurufi_trigger = {
+    true_religion = hurufi
+}	
+true_religion_ibadi_trigger = {
+    true_religion = ibadi
+}	
+true_religion_iconoclast_trigger = {
+    true_religion = iconoclast
+}	
+true_religion_illuyanka_trigger = {
+    true_religion = illuyanka
+}	
+true_religion_irminsul_trigger = {
+    true_religion = irminsul
+}	
+true_religion_jud_sabaoth_trigger = {
+    true_religion = jud_sabaoth
+}	
+true_religion_kharijite_trigger = {
+    true_religion = kharijite
+}	
+true_religion_mand_ruha_trigger = {
+    true_religion = mand_ruha
+}	
+true_religion_mani_ahriman_trigger = {
+    true_religion = mani_ahriman
+}	
+true_religion_mazdakism_trigger = {
+    true_religion = mazdakism
+}	
+true_religion_melkite_trigger = {
+    true_religion = melkite
+}	
+true_religion_montanist_trigger = {
+    true_religion = montanist
+}	
+true_religion_norse_war_trigger = {
+    true_religion = norse_war
+}	
+true_religion_pelagian_trigger = {
+    true_religion = pelagian
+}	
+true_religion_plato_christ_trigger = {
+    true_religion = plato_christ
+}	
+true_religion_plato_islam_trigger = {
+    true_religion = plato_islam
+}	
+true_religion_priscillian_trigger = {
+    true_religion = priscillian 
+}	
+true_religion_qarmatian_trigger = {
+    true_religion = qarmatian
+}	
+true_religion_ragnarok_trigger = {
+    true_religion = ragnarok
+}	
+true_religion_saule_trigger = {
+    true_religion = saule
+}	
+true_religion_saura_trigger = {
+    true_religion = saura
+}	
+true_religion_set_trigger = {
+    true_religion = set
+}	
+true_religion_sol_christ_trigger = {
+    true_religion = sol_christ
+}	
+true_religion_sufi_trigger = {
+    true_religion = sufi
+}	
+true_religion_tengri_ahriman_trigger = {
+    true_religion = tengri_ahriman
+}	
+true_religion_vidharma_trigger = {
+    true_religion = vidharma
+}	
+true_religion_yahyanism_trigger = {
+    true_religion = yahyanism
+}	
+true_religion_zor_angra_trigger = {
+    true_religion = zor_angra
 }
 
 # true_religion_group_christian_trigger = {
@@ -2750,12 +2867,246 @@ has_my_liege_secret_religion_truly_trigger = {
 }
 
 is_in_prevs_interesting_society_trigger = {
-	#OR = {
+	OR = {
 		AND = {
 			society_member_of = secret_religious_society_antinomian
 			PREV = { interested_in_society = secret_religious_society_antinomian }
 		}
-	#}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_aten
+    		PREV = { interested_in_society = secret_religious_society_aten }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_batembuzi
+    		PREV = { interested_in_society = secret_religious_society_batembuzi }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_bud_bahusrutiya
+    		PREV = { interested_in_society = secret_religious_society_bud_bahusrutiya }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_bud_mahayana
+    		PREV = { interested_in_society = secret_religious_society_bud_mahayana }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_cathar
+    		PREV = { interested_in_society = secret_religious_society_cathar }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_dionysos
+    		PREV = { interested_in_society = secret_religious_society_dionysos }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_donatist
+    		PREV = { interested_in_society = secret_religious_society_donatist }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_druze
+    		PREV = { interested_in_society = secret_religious_society_druze }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_erlik
+    		PREV = { interested_in_society = secret_religious_society_erlik }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_haruri
+    		PREV = { interested_in_society = secret_religious_society_haruri }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_hubal
+    		PREV = { interested_in_society = secret_religious_society_hubal }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_hurufi
+    		PREV = { interested_in_society = secret_religious_society_hurufi }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_ibadi
+    		PREV = { interested_in_society = secret_religious_society_ibadi }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_iconoclast
+    		PREV = { interested_in_society = secret_religious_society_iconoclast }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_illuyanka
+    		PREV = { interested_in_society = secret_religious_society_illuyanka }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_irminsul
+    		PREV = { interested_in_society = secret_religious_society_irminsul }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_jud_sabaoth
+    		PREV = { interested_in_society = secret_religious_society_jud_sabaoth }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_kharijite
+    		PREV = { interested_in_society = secret_religious_society_kharijite }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_mand_ruha
+    		PREV = { interested_in_society = secret_religious_society_mand_ruha }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_mani_ahriman
+    		PREV = { interested_in_society = secret_religious_society_mani_ahriman }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_mazdakism
+    		PREV = { interested_in_society = secret_religious_society_mazdakism }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_melkite
+    		PREV = { interested_in_society = secret_religious_society_melkite }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_montanist
+    		PREV = { interested_in_society = secret_religious_society_montanist }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_norse_war
+    		PREV = { interested_in_society = secret_religious_society_norse_war }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_pelagian
+    		PREV = { interested_in_society = secret_religious_society_pelagian }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_plato_christ
+    		PREV = { interested_in_society = secret_religious_society_plato_christ }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_plato_islam
+    		PREV = { interested_in_society = secret_religious_society_plato_islam }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_priscillian 
+    		PREV = { interested_in_society = secret_religious_society_priscillian  }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_qarmatian
+    		PREV = { interested_in_society = secret_religious_society_qarmatian }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_ragnarok
+    		PREV = { interested_in_society = secret_religious_society_ragnarok }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_saule
+    		PREV = { interested_in_society = secret_religious_society_saule }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_saura
+    		PREV = { interested_in_society = secret_religious_society_saura }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_set
+    		PREV = { interested_in_society = secret_religious_society_set }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_sol_christ
+    		PREV = { interested_in_society = secret_religious_society_sol_christ }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_sufi
+    		PREV = { interested_in_society = secret_religious_society_sufi }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_tengri_ahriman
+    		PREV = { interested_in_society = secret_religious_society_tengri_ahriman }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_vidharma
+    		PREV = { interested_in_society = secret_religious_society_vidharma }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_yahyanism
+    		PREV = { interested_in_society = secret_religious_society_yahyanism }	
+		}
+	}
+	OR = {
+		AND = {	
+			society_member_of = secret_religious_society_zor_angra
+    		PREV = { interested_in_society = secret_religious_society_zor_angra }
+		}
+	}
 }
 
 shares_prevs_secret_religion_trigger = {

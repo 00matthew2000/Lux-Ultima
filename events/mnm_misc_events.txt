@@ -1311,6 +1311,1137 @@ character_event = {
 							set_society_grandmaster = yes
 						}
 					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_aten
+						}
+						join_society = secret_religious_society_aten
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_batembuzi
+						}
+						join_society = secret_religious_society_batembuzi
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_bud_bahusrutiya
+						}
+						join_society = secret_religious_society_bud_bahusrutiya
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_bud_mahayana
+						}
+						join_society = secret_religious_society_bud_mahayana
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_cathar
+						}
+						join_society = secret_religious_society_cathar
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_dionysos
+						}
+						join_society = secret_religious_society_dionysos
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_donatist
+						}
+						join_society = secret_religious_society_donatist
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_druze
+						}
+						join_society = secret_religious_society_druze
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_erlik
+						}
+						join_society = secret_religious_society_erlik
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_haruri
+						}
+						join_society = secret_religious_society_haruri
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_hubal
+						}
+						join_society = secret_religious_society_hubal
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_hurufi
+						}
+						join_society = secret_religious_society_hurufi
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_ibadi
+						}
+						join_society = secret_religious_society_ibadi
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_iconoclast
+						}
+						join_society = secret_religious_society_iconoclast
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_illuyanka
+						}
+						join_society = secret_religious_society_illuyanka
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_irminsul
+						}
+						join_society = secret_religious_society_irminsul
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_jud_sabaoth
+						}
+						join_society = secret_religious_society_jud_sabaoth
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_kharijite
+						}
+						join_society = secret_religious_society_kharijite
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_mand_ruha
+						}
+						join_society = secret_religious_society_mand_ruha
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_mani_ahriman
+						}
+						join_society = secret_religious_society_mani_ahriman
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_mazdakism
+						}
+						join_society = secret_religious_society_mazdakism
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_melkite
+						}
+						join_society = secret_religious_society_melkite
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_montanist
+						}
+						join_society = secret_religious_society_montanist
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_norse_war
+						}
+						join_society = secret_religious_society_norse_war
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_pelagian
+						}
+						join_society = secret_religious_society_pelagian
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_plato_christ
+						}
+						join_society = secret_religious_society_plato_christ
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_plato_islam
+						}
+						join_society = secret_religious_society_plato_islam
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_priscillian 
+						}
+						join_society = secret_religious_society_priscillian 
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_qarmatian
+						}
+						join_society = secret_religious_society_qarmatian
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_ragnarok
+						}
+						join_society = secret_religious_society_ragnarok
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_saule
+						}
+						join_society = secret_religious_society_saule
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_saura
+						}
+						join_society = secret_religious_society_saura
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_set
+						}
+						join_society = secret_religious_society_set
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_sol_christ
+						}
+						join_society = secret_religious_society_sol_christ
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_sufi
+						}
+						join_society = secret_religious_society_sufi
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_tengri_ahriman
+						}
+						join_society = secret_religious_society_tengri_ahriman
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_vidharma
+						}
+						join_society = secret_religious_society_vidharma
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_yahyanism
+						}
+						join_society = secret_religious_society_yahyanism
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					200 = {
+						trigger = {
+							can_join_society = secret_religious_society_zor_angra
+						}
+						join_society = secret_religious_society_zor_angra
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
 					150 = {
 						trigger = {
 							can_join_society = hermetics
@@ -2302,7 +3433,167 @@ character_event = { #Save game conversion of secret_traits to secret religions
 		any_character = {
 			trigger_switch = {
 				on_trigger = trait
-				secretly_antinomian = { set_secret_religion = antinomian remove_trait = secretly_antinomian }
+				secretly_antinomian = { 
+					set_secret_religion = antinomian 
+					remove_trait = secretly_antinomian 
+				}
+				secretly_aten = {
+					set_secret_religion = aten
+					remove_trait = secretly_aten
+				}	
+				secretly_batembuzi = {
+					set_secret_religion = batembuzi
+					remove_trait = secretly_batembuzi
+				}	
+				secretly_bud_bahusrutiya = {
+					set_secret_religion = bud_bahusrutiya
+					remove_trait = secretly_bud_bahusrutiya
+				}	
+				secretly_bud_mahayana = {
+					set_secret_religion = bud_mahayana
+					remove_trait = secretly_bud_mahayana
+				}	
+				secretly_cathar = {
+					set_secret_religion = cathar
+					remove_trait = secretly_cathar
+				}	
+				secretly_dionysos = {
+					set_secret_religion = dionysos
+					remove_trait = secretly_dionysos
+				}	
+				secretly_donatist = {
+					set_secret_religion = donatist
+					remove_trait = secretly_donatist
+				}	
+				secretly_druze = {
+					set_secret_religion = druze
+					remove_trait = secretly_druze
+				}	
+				secretly_erlik = {
+					set_secret_religion = erlik
+					remove_trait = secretly_erlik
+				}	
+				secretly_haruri = {
+					set_secret_religion = haruri
+					remove_trait = secretly_haruri
+				}	
+				secretly_hubal = {
+					set_secret_religion = hubal
+					remove_trait = secretly_hubal
+				}	
+				secretly_hurufi = {
+					set_secret_religion = hurufi
+					remove_trait = secretly_hurufi
+				}	
+				secretly_ibadi = {
+					set_secret_religion = ibadi
+					remove_trait = secretly_ibadi
+				}	
+				secretly_iconoclast = {
+					set_secret_religion = iconoclast
+					remove_trait = secretly_iconoclast
+				}	
+				secretly_illuyanka = {
+					set_secret_religion = illuyanka
+					remove_trait = secretly_illuyanka
+				}	
+				secretly_irminsul = {
+					set_secret_religion = irminsul
+					remove_trait = secretly_irminsul
+				}	
+				secretly_jud_sabaoth = {
+					set_secret_religion = jud_sabaoth
+					remove_trait = secretly_jud_sabaoth
+				}	
+				secretly_kharijite = {
+					set_secret_religion = kharijite
+					remove_trait = secretly_kharijite
+				}	
+				secretly_mand_ruha = {
+					set_secret_religion = mand_ruha
+					remove_trait = secretly_mand_ruha
+				}	
+				secretly_mani_ahriman = {
+					set_secret_religion = mani_ahriman
+					remove_trait = secretly_mani_ahriman
+				}	
+				secretly_mazdakism = {
+					set_secret_religion = mazdakism
+					remove_trait = secretly_mazdakism
+				}	
+				secretly_melkite = {
+					set_secret_religion = melkite
+					remove_trait = secretly_melkite
+				}	
+				secretly_montanist = {
+					set_secret_religion = montanist
+					remove_trait = secretly_montanist
+				}	
+				secretly_norse_war = {
+					set_secret_religion = norse_war
+					remove_trait = secretly_norse_war
+				}	
+				secretly_pelagian = {
+					set_secret_religion = pelagian
+					remove_trait = secretly_pelagian
+				}	
+				secretly_plato_christ = {
+					set_secret_religion = plato_christ
+					remove_trait = secretly_plato_christ
+				}	
+				secretly_plato_islam = {
+					set_secret_religion = plato_islam
+					remove_trait = secretly_plato_islam
+				}	
+				secretly_priscillian = {
+					set_secret_religion = priscillian 
+					remove_trait = secretly_priscillian 
+				}	
+				secretly_qarmatian = {
+					set_secret_religion = qarmatian
+					remove_trait = secretly_qarmatian
+				}	
+				secretly_ragnarok = {
+					set_secret_religion = ragnarok
+					remove_trait = secretly_ragnarok
+				}	
+				secretly_saule = {
+					set_secret_religion = saule
+					remove_trait = secretly_saule
+				}	
+				secretly_saura = {
+					set_secret_religion = saura
+					remove_trait = secretly_saura
+				}	
+				secretly_set = {
+					set_secret_religion = set
+					remove_trait = secretly_set
+				}	
+				secretly_sol_christ = {
+					set_secret_religion = sol_christ
+					remove_trait = secretly_sol_christ
+				}	
+				secretly_sufi = {
+					set_secret_religion = sufi
+					remove_trait = secretly_sufi
+				}	
+				secretly_tengri_ahriman = {
+					set_secret_religion = tengri_ahriman
+					remove_trait = secretly_tengri_ahriman
+				}	
+				secretly_vidharma = {
+					set_secret_religion = vidharma
+					remove_trait = secretly_vidharma
+				}	
+				secretly_yahyanism = {
+					set_secret_religion = yahyanism
+					remove_trait = secretly_yahyanism
+				}	
+				secretly_zor_angra = {
+					set_secret_religion = zor_angra
+					remove_trait = secretly_zor_angra
+					}
+				}
 			}
 		}
 	}

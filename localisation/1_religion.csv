@@ -1180,6 +1180,635 @@ secret_religious_community_antinomian;Secret Antinomian Community;;;;;;;;;;;;;x
 secret_antinomian_community;Secret Antinomian Community;;;;;;;;;;;;;x
 secret_antinomian_community_desc;In secret, Antinomian faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
 secret_religious_society_antinomian_leader_desc;A High Priest in the Hidden Antinomian society;;;;;;;;;x
+secret_religious_society_aten;the Hidden Atenist;;;;;;;;x
+secret_religious_society_aten_desc;Placeholder;;;;;;;;x
+secretly_convert_to_aten_holy_site;Secretly Convert to Atenist;;;;;;;;;;;;;x
+secretly_convert_to_aten_holy_site_desc;The §YAtenist§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_aten_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_aten_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_aten_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_aten_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_aten_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_aten_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_aten_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_aten_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_aten_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_aten;Secret Atenist Community;;;;;;;;;;;;;x
+secret_aten_community;Secret Atenist Community;;;;;;;;;;;;;x
+secret_aten_community_desc;In secret, Atenist faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_aten_leader_desc;A High Priest in the Hidden Atenist society;;;;;;;;;x
+secret_religious_society_batembuzi;the Hidden Batembuzi;;;;;;;;x
+secret_religious_society_batembuzi_desc;Placeholder;;;;;;;;x
+secretly_convert_to_batembuzi_holy_site;Secretly Convert to Batembuzi;;;;;;;;;;;;;x
+secretly_convert_to_batembuzi_holy_site_desc;The §YBatembuzi§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_batembuzi_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_batembuzi_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_batembuzi_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_batembuzi_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_batembuzi_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_batembuzi_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_batembuzi_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_batembuzi_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_batembuzi_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_batembuzi;Secret Batembuzi Community;;;;;;;;;;;;;x
+secret_batembuzi_community;Secret Batembuzi Community;;;;;;;;;;;;;x
+secret_batembuzi_community_desc;In secret, Batembuzi faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_batembuzi_leader_desc;A High Priest in the Hidden Batembuzi society;;;;;;;;;x
+secret_religious_society_bud_bahusrutiya;the Hidden Bahusrutiya;;;;;;;;x
+secret_religious_society_bud_bahusrutiya_desc;Placeholder;;;;;;;;x
+secretly_convert_to_bud_bahusrutiya_holy_site;Secretly Convert to Bahusrutiya;;;;;;;;;;;;;x
+secretly_convert_to_bud_bahusrutiya_holy_site_desc;The §YBahusrutiya§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_bud_bahusrutiya_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_bud_bahusrutiya_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_bud_bahusrutiya_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_bud_bahusrutiya_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_bud_bahusrutiya_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_bud_bahusrutiya_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_bud_bahusrutiya_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_bud_bahusrutiya_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_bud_bahusrutiya_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_bud_bahusrutiya;Secret Bahusrutiya Community;;;;;;;;;;;;;x
+secret_bud_bahusrutiya_community;Secret Bahusrutiya Community;;;;;;;;;;;;;x
+secret_bud_bahusrutiya_community_desc;In secret, Bahusrutiya faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_bud_bahusrutiya_leader_desc;A High Priest in the Hidden Bahusrutiya society;;;;;;;;;x
+secret_religious_society_bud_mahayana;the Hidden Mahayana;;;;;;;;x
+secret_religious_society_bud_mahayana_desc;Placeholder;;;;;;;;x
+secretly_convert_to_bud_mahayana_holy_site;Secretly Convert to Mahayana;;;;;;;;;;;;;x
+secretly_convert_to_bud_mahayana_holy_site_desc;The §YMahayana§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_bud_mahayana_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_bud_mahayana_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_bud_mahayana_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_bud_mahayana_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_bud_mahayana_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_bud_mahayana_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_bud_mahayana_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_bud_mahayana_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_bud_mahayana_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_bud_mahayana;Secret Mahayana Community;;;;;;;;;;;;;x
+secret_bud_mahayana_community;Secret Mahayana Community;;;;;;;;;;;;;x
+secret_bud_mahayana_community_desc;In secret, Mahayana faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_bud_mahayana_leader_desc;A High Priest in the Hidden Mahayana society;;;;;;;;;x
+secret_religious_society_cathar;the Hidden Cathar;;;;;;;;x
+secret_religious_society_cathar_desc;Placeholder;;;;;;;;x
+secretly_convert_to_cathar_holy_site;Secretly Convert to Cathar;;;;;;;;;;;;;x
+secretly_convert_to_cathar_holy_site_desc;The §YCathar§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_cathar_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_cathar_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_cathar_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_cathar_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_cathar_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_cathar_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_cathar_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_cathar_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_cathar_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_cathar;Secret Cathar Community;;;;;;;;;;;;;x
+secret_cathar_community;Secret Cathar Community;;;;;;;;;;;;;x
+secret_cathar_community_desc;In secret, Cathar faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_cathar_leader_desc;A High Priest in the Hidden Cathar society;;;;;;;;;x
+secret_religious_society_dionysos;the Hidden Dionysian;;;;;;;;x
+secret_religious_society_dionysos_desc;Placeholder;;;;;;;;x
+secretly_convert_to_dionysos_holy_site;Secretly Convert to Dionysian;;;;;;;;;;;;;x
+secretly_convert_to_dionysos_holy_site_desc;The §YDionysian§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_dionysos_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_dionysos_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_dionysos_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_dionysos_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_dionysos_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_dionysos_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_dionysos_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_dionysos_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_dionysos_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_dionysos;Secret Dionysian Community;;;;;;;;;;;;;x
+secret_dionysos_community;Secret Dionysian Community;;;;;;;;;;;;;x
+secret_dionysos_community_desc;In secret, Dionysian faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_dionysos_leader_desc;A High Priest in the Hidden Dionysian society;;;;;;;;;x
+secret_religious_society_donatist;the Hidden Donatist;;;;;;;;x
+secret_religious_society_donatist_desc;Placeholder;;;;;;;;x
+secretly_convert_to_donatist_holy_site;Secretly Convert to Donatist;;;;;;;;;;;;;x
+secretly_convert_to_donatist_holy_site_desc;The §YDonatist§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_donatist_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_donatist_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_donatist_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_donatist_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_donatist_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_donatist_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_donatist_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_donatist_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_donatist_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_donatist;Secret Donatist Community;;;;;;;;;;;;;x
+secret_donatist_community;Secret Donatist Community;;;;;;;;;;;;;x
+secret_donatist_community_desc;In secret, Donatist faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_donatist_leader_desc;A High Priest in the Hidden Donatist society;;;;;;;;;x
+secret_religious_society_druze;the Hidden Druze;;;;;;;;x
+secret_religious_society_druze_desc;Placeholder;;;;;;;;x
+secretly_convert_to_druze_holy_site;Secretly Convert to Druze;;;;;;;;;;;;;x
+secretly_convert_to_druze_holy_site_desc;The §YDruze§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_druze_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_druze_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_druze_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_druze_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_druze_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_druze_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_druze_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_druze_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_druze_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_druze;Secret Druze Community;;;;;;;;;;;;;x
+secret_druze_community;Secret Druze Community;;;;;;;;;;;;;x
+secret_druze_community_desc;In secret, Druze faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_druze_leader_desc;A High Priest in the Hidden Druze society;;;;;;;;;x
+secret_religious_society_erlik;the Hidden Erliki;;;;;;;;x
+secret_religious_society_erlik_desc;Placeholder;;;;;;;;x
+secretly_convert_to_erlik_holy_site;Secretly Convert to Erliki;;;;;;;;;;;;;x
+secretly_convert_to_erlik_holy_site_desc;The §YErliki§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_erlik_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_erlik_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_erlik_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_erlik_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_erlik_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_erlik_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_erlik_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_erlik_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_erlik_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_erlik;Secret Erliki Community;;;;;;;;;;;;;x
+secret_erlik_community;Secret Erliki Community;;;;;;;;;;;;;x
+secret_erlik_community_desc;In secret, Erliki faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_erlik_leader_desc;A High Priest in the Hidden Erliki society;;;;;;;;;x
+secret_religious_society_haruri;the Hidden Haruri;;;;;;;;x
+secret_religious_society_haruri_desc;Placeholder;;;;;;;;x
+secretly_convert_to_haruri_holy_site;Secretly Convert to Haruri;;;;;;;;;;;;;x
+secretly_convert_to_haruri_holy_site_desc;The §YHaruri§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_haruri_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_haruri_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_haruri_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_haruri_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_haruri_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_haruri_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_haruri_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_haruri_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_haruri_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_haruri;Secret Haruri Community;;;;;;;;;;;;;x
+secret_haruri_community;Secret Haruri Community;;;;;;;;;;;;;x
+secret_haruri_community_desc;In secret, Haruri faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_haruri_leader_desc;A High Priest in the Hidden Haruri society;;;;;;;;;x
+secret_religious_society_hubal;the Hidden Hubali;;;;;;;;x
+secret_religious_society_hubal_desc;Placeholder;;;;;;;;x
+secretly_convert_to_hubal_holy_site;Secretly Convert to Hubali;;;;;;;;;;;;;x
+secretly_convert_to_hubal_holy_site_desc;The §YHubali§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_hubal_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_hubal_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_hubal_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_hubal_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_hubal_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_hubal_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_hubal_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_hubal_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_hubal_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_hubal;Secret Hubali Community;;;;;;;;;;;;;x
+secret_hubal_community;Secret Hubali Community;;;;;;;;;;;;;x
+secret_hubal_community_desc;In secret, Hubali faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_hubal_leader_desc;A High Priest in the Hidden Hubali society;;;;;;;;;x
+secret_religious_society_ibadi;the Hidden Ibadi;;;;;;;;x
+secret_religious_society_ibadi_desc;Placeholder;;;;;;;;x
+secretly_convert_to_ibadi_holy_site;Secretly Convert to Ibadi;;;;;;;;;;;;;x
+secretly_convert_to_ibadi_holy_site_desc;The §YIbadi§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_ibadi_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_ibadi_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_ibadi_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_ibadi_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_ibadi_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_ibadi_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_ibadi_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_ibadi_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_ibadi_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_ibadi;Secret Ibadi Community;;;;;;;;;;;;;x
+secret_ibadi_community;Secret Ibadi Community;;;;;;;;;;;;;x
+secret_ibadi_community_desc;In secret, Ibadi faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_ibadi_leader_desc;A High Priest in the Hidden Ibadi society;;;;;;;;;x
+secret_religious_society_iconoclast;the Hidden Iconoclast;;;;;;;;x
+secret_religious_society_iconoclast_desc;Placeholder;;;;;;;;x
+secretly_convert_to_iconoclast_holy_site;Secretly Convert to Iconoclast;;;;;;;;;;;;;x
+secretly_convert_to_iconoclast_holy_site_desc;The §YIconoclast§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_iconoclast_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_iconoclast_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_iconoclast_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_iconoclast_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_iconoclast_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_iconoclast_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_iconoclast_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_iconoclast_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_iconoclast_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_iconoclast;Secret Iconoclast Community;;;;;;;;;;;;;x
+secret_iconoclast_community;Secret Iconoclast Community;;;;;;;;;;;;;x
+secret_iconoclast_community_desc;In secret, Iconoclast faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_iconoclast_leader_desc;A High Priest in the Hidden Iconoclast society;;;;;;;;;x
+secret_religious_society_illuyanka;the Hidden Illuyankan;;;;;;;;x
+secret_religious_society_illuyanka_desc;Placeholder;;;;;;;;x
+secretly_convert_to_illuyanka_holy_site;Secretly Convert to Illuyankan;;;;;;;;;;;;;x
+secretly_convert_to_illuyanka_holy_site_desc;The §YIlluyankan§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_illuyanka_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_illuyanka_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_illuyanka_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_illuyanka_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_illuyanka_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_illuyanka_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_illuyanka_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_illuyanka_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_illuyanka_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_illuyanka;Secret Illuyankan Community;;;;;;;;;;;;;x
+secret_illuyanka_community;Secret Illuyankan Community;;;;;;;;;;;;;x
+secret_illuyanka_community_desc;In secret, Illuyankan faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_illuyanka_leader_desc;A High Priest in the Hidden Illuyankan society;;;;;;;;;x
+secret_religious_society_irminsul;the Hidden Irminsulic;;;;;;;;x
+secret_religious_society_irminsul_desc;Placeholder;;;;;;;;x
+secretly_convert_to_irminsul_holy_site;Secretly Convert to Irminsulic;;;;;;;;;;;;;x
+secretly_convert_to_irminsul_holy_site_desc;The §YIrminsulic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_irminsul_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_irminsul_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_irminsul_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_irminsul_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_irminsul_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_irminsul_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_irminsul_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_irminsul_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_irminsul_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_irminsul;Secret Irminsulic Community;;;;;;;;;;;;;x
+secret_irminsul_community;Secret Irminsulic Community;;;;;;;;;;;;;x
+secret_irminsul_community_desc;In secret, Irminsulic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_irminsul_leader_desc;A High Priest in the Hidden Irminsulic society;;;;;;;;;x
+secret_religious_society_jud_sabaoth;the Hidden Yahweh Sabaothite;;;;;;;;x
+secret_religious_society_jud_sabaoth_desc;Placeholder;;;;;;;;x
+secretly_convert_to_jud_sabaoth_holy_site;Secretly Convert to Yahweh Sabaothite;;;;;;;;;;;;;x
+secretly_convert_to_jud_sabaoth_holy_site_desc;The §YYahweh Sabaothite§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_jud_sabaoth_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_jud_sabaoth_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_jud_sabaoth_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_jud_sabaoth_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_jud_sabaoth_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_jud_sabaoth_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_jud_sabaoth_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_jud_sabaoth_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_jud_sabaoth_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_jud_sabaoth;Secret Yahweh Sabaothite Community;;;;;;;;;;;;;x
+secret_jud_sabaoth_community;Secret Yahweh Sabaothite Community;;;;;;;;;;;;;x
+secret_jud_sabaoth_community_desc;In secret, Yahweh Sabaothite faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_jud_sabaoth_leader_desc;A High Priest in the Hidden Yahweh Sabaothite society;;;;;;;;;x
+secret_religious_society_kharijite;the Hidden Kharijite;;;;;;;;x
+secret_religious_society_kharijite_desc;Placeholder;;;;;;;;x
+secretly_convert_to_kharijite_holy_site;Secretly Convert to Kharijite;;;;;;;;;;;;;x
+secretly_convert_to_kharijite_holy_site_desc;The §YKharijite§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_kharijite_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_kharijite_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_kharijite_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_kharijite_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_kharijite_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_kharijite_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_kharijite_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_kharijite_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_kharijite_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_kharijite;Secret Kharijite Community;;;;;;;;;;;;;x
+secret_kharijite_community;Secret Kharijite Community;;;;;;;;;;;;;x
+secret_kharijite_community_desc;In secret, Kharijite faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_kharijite_leader_desc;A High Priest in the Hidden Kharijite society;;;;;;;;;x
+secret_religious_society_mand_ruha;the Hidden Ruha d-Qudshai;;;;;;;;x
+secret_religious_society_mand_ruha_desc;Placeholder;;;;;;;;x
+secretly_convert_to_mand_ruha_holy_site;Secretly Convert to Ruha d-Qudshai;;;;;;;;;;;;;x
+secretly_convert_to_mand_ruha_holy_site_desc;The §YRuha d-Qudshai§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_mand_ruha_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_mand_ruha_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_mand_ruha_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_mand_ruha_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_mand_ruha_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_mand_ruha_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_mand_ruha_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_mand_ruha_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_mand_ruha_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_mand_ruha;Secret Ruha d-Qudshai Community;;;;;;;;;;;;;x
+secret_mand_ruha_community;Secret Ruha d-Qudshai Community;;;;;;;;;;;;;x
+secret_mand_ruha_community_desc;In secret, Ruha d-Qudshai faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_mand_ruha_leader_desc;A High Priest in the Hidden Ruha d-Qudshai society;;;;;;;;;x
+secret_religious_society_mani_ahriman;the Hidden Ahrimanic;;;;;;;;x
+secret_religious_society_mani_ahriman_desc;Placeholder;;;;;;;;x
+secretly_convert_to_mani_ahriman_holy_site;Secretly Convert to Ahrimanic;;;;;;;;;;;;;x
+secretly_convert_to_mani_ahriman_holy_site_desc;The §YAhrimanic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_mani_ahriman_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_mani_ahriman_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_mani_ahriman_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_mani_ahriman_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_mani_ahriman_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_mani_ahriman_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_mani_ahriman_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_mani_ahriman_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_mani_ahriman_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_mani_ahriman;Secret Ahrimanic Community;;;;;;;;;;;;;x
+secret_mani_ahriman_community;Secret Ahrimanic Community;;;;;;;;;;;;;x
+secret_mani_ahriman_community_desc;In secret, Ahrimanic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_mani_ahriman_leader_desc;A High Priest in the Hidden Ahrimanic society;;;;;;;;;x
+secret_religious_society_melkite;the Hidden Melkite;;;;;;;;x
+secret_religious_society_melkite_desc;Placeholder;;;;;;;;x
+secretly_convert_to_melkite_holy_site;Secretly Convert to Melkite;;;;;;;;;;;;;x
+secretly_convert_to_melkite_holy_site_desc;The §YMelkite§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_melkite_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_melkite_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_melkite_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_melkite_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_melkite_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_melkite_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_melkite_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_melkite_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_melkite_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_melkite;Secret Melkite Community;;;;;;;;;;;;;x
+secret_melkite_community;Secret Melkite Community;;;;;;;;;;;;;x
+secret_melkite_community_desc;In secret, Melkite faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_melkite_leader_desc;A High Priest in the Hidden Melkite society;;;;;;;;;x
+secret_religious_society_montanist;the Hidden Montanist;;;;;;;;x
+secret_religious_society_montanist_desc;Placeholder;;;;;;;;x
+secretly_convert_to_montanist_holy_site;Secretly Convert to Montanist;;;;;;;;;;;;;x
+secretly_convert_to_montanist_holy_site_desc;The §YMontanist§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_montanist_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_montanist_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_montanist_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_montanist_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_montanist_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_montanist_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_montanist_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_montanist_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_montanist_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_montanist;Secret Montanist Community;;;;;;;;;;;;;x
+secret_montanist_community;Secret Montanist Community;;;;;;;;;;;;;x
+secret_montanist_community_desc;In secret, Montanist faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_montanist_leader_desc;A High Priest in the Hidden Montanist society;;;;;;;;;x
+secret_religious_society_norse_war;the Hidden Ófriðartrívaric;;;;;;;;x
+secret_religious_society_norse_war_desc;Placeholder;;;;;;;;x
+secretly_convert_to_norse_war_holy_site;Secretly Convert to Ófriðartrívaric;;;;;;;;;;;;;x
+secretly_convert_to_norse_war_holy_site_desc;The §YÓfriðartrívaric§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_norse_war_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_norse_war_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_norse_war_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_norse_war_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_norse_war_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_norse_war_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_norse_war_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_norse_war_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_norse_war_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_norse_war;Secret Ófriðartrívaric Community;;;;;;;;;;;;;x
+secret_norse_war_community;Secret Ófriðartrívaric Community;;;;;;;;;;;;;x
+secret_norse_war_community_desc;In secret, Ófriðartrívaric faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_norse_war_leader_desc;A High Priest in the Hidden Ófriðartrívaric society;;;;;;;;;x
+secret_religious_society_pelagian;the Hidden Pelagian;;;;;;;;x
+secret_religious_society_pelagian_desc;Placeholder;;;;;;;;x
+secretly_convert_to_pelagian_holy_site;Secretly Convert to Pelagian;;;;;;;;;;;;;x
+secretly_convert_to_pelagian_holy_site_desc;The §YPelagian§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_pelagian_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_pelagian_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_pelagian_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_pelagian_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_pelagian_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_pelagian_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_pelagian_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_pelagian_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_pelagian_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_pelagian;Secret Pelagian Community;;;;;;;;;;;;;x
+secret_pelagian_community;Secret Pelagian Community;;;;;;;;;;;;;x
+secret_pelagian_community_desc;In secret, Pelagian faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_pelagian_leader_desc;A High Priest in the Hidden Pelagian society;;;;;;;;;x
+secret_religious_society_plato_christ;the Hidden Platonic Christian;;;;;;;;x
+secret_religious_society_plato_christ_desc;Placeholder;;;;;;;;x
+secretly_convert_to_plato_christ_holy_site;Secretly Convert to Platonic Christian;;;;;;;;;;;;;x
+secretly_convert_to_plato_christ_holy_site_desc;The §YPlatonic Christian§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_plato_christ_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_plato_christ_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_plato_christ_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_plato_christ_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_plato_christ_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_plato_christ_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_plato_christ_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_plato_christ_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_plato_christ_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_plato_christ;Secret Platonic Christian Community;;;;;;;;;;;;;x
+secret_plato_christ_community;Secret Platonic Christian Community;;;;;;;;;;;;;x
+secret_plato_christ_community_desc;In secret, Platonic Christian faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_plato_christ_leader_desc;A High Priest in the Hidden Platonic Christian society;;;;;;;;;x
+secret_religious_society_plato_islam;the Hidden Platonic Islamic;;;;;;;;x
+secret_religious_society_plato_islam_desc;Placeholder;;;;;;;;x
+secretly_convert_to_plato_islam_holy_site;Secretly Convert to Platonic Islamic;;;;;;;;;;;;;x
+secretly_convert_to_plato_islam_holy_site_desc;The §YPlatonic Islamic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_plato_islam_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_plato_islam_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_plato_islam_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_plato_islam_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_plato_islam_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_plato_islam_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_plato_islam_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_plato_islam_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_plato_islam_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_plato_islam;Secret Platonic Islamic Community;;;;;;;;;;;;;x
+secret_plato_islam_community;Secret Platonic Islamic Community;;;;;;;;;;;;;x
+secret_plato_islam_community_desc;In secret, Platonic Islamic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_plato_islam_leader_desc;A High Priest in the Hidden Platonic Islamic society;;;;;;;;;x
+secret_religious_society_priscillian;the Hidden Priscillian;;;;;;;;x
+secret_religious_society_priscillian_desc;Placeholder;;;;;;;;x
+secretly_convert_to_priscillian_holy_site;Secretly Convert to Priscillianic;;;;;;;;;;;;;x
+secretly_convert_to_priscillian_holy_site_desc;The §YPriscillianic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_priscillian_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_priscillian_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_priscillian_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_priscillian_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_priscillian_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_priscillian_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_priscillian_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_priscillian_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_priscillian_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_priscillian;Secret Priscillianic Community;;;;;;;;;;;;;x
+secret_priscillian_community;Secret Priscillianic Community;;;;;;;;;;;;;x
+secret_priscillian_community_desc;In secret, Priscillianic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_priscillian_leader_desc;A High Priest in the Hidden Priscillianic society;;;;;;;;;x
+secret_religious_society_qarmatian;the Hidden Qarmatian;;;;;;;;x
+secret_religious_society_qarmatian_desc;Placeholder;;;;;;;;x
+secretly_convert_to_qarmatian_holy_site;Secretly Convert to Qarmatianic;;;;;;;;;;;;;x
+secretly_convert_to_qarmatian_holy_site_desc;The §YQarmatianic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_qarmatian_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_qarmatian_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_qarmatian_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_qarmatian_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_qarmatian_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_qarmatian_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_qarmatian_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_qarmatian_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_qarmatian_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_qarmatian;Secret Qarmatianic Community;;;;;;;;;;;;;x
+secret_qarmatian_community;Secret Qarmatianic Community;;;;;;;;;;;;;x
+secret_qarmatian_community_desc;In secret, Qarmatianic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_qarmatian_leader_desc;A High Priest in the Hidden Qarmatianic society;;;;;;;;;x
+secret_religious_society_ragnarok;the Hidden Ragnarökic;;;;;;;;x
+secret_religious_society_ragnarok_desc;Placeholder;;;;;;;;x
+secretly_convert_to_ragnarok_holy_site;Secretly Convert to Ragnarökicic;;;;;;;;;;;;;x
+secretly_convert_to_ragnarok_holy_site_desc;The §YRagnarökicic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_ragnarok_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_ragnarok_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_ragnarok_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_ragnarok_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_ragnarok_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_ragnarok_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_ragnarok_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_ragnarok_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_ragnarok_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_ragnarok;Secret Ragnarökicic Community;;;;;;;;;;;;;x
+secret_ragnarok_community;Secret Ragnarökicic Community;;;;;;;;;;;;;x
+secret_ragnarok_community_desc;In secret, Ragnarökicic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_ragnarok_leader_desc;A High Priest in the Hidden Ragnarökicic society;;;;;;;;;x
+secret_religious_society_saule;the Hidden Saulic;;;;;;;;x
+secret_religious_society_saule_desc;Placeholder;;;;;;;;x
+secretly_convert_to_saule_holy_site;Secretly Convert to Saulicic;;;;;;;;;;;;;x
+secretly_convert_to_saule_holy_site_desc;The §YSaulicic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_saule_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_saule_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_saule_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_saule_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_saule_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_saule_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_saule_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_saule_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_saule_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_saule;Secret Saulicic Community;;;;;;;;;;;;;x
+secret_saule_community;Secret Saulicic Community;;;;;;;;;;;;;x
+secret_saule_community_desc;In secret, Saulicic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_saule_leader_desc;A High Priest in the Hidden Saulicic society;;;;;;;;;x
+secret_religious_society_saura;the Hidden Saura;;;;;;;;x
+secret_religious_society_saura_desc;Placeholder;;;;;;;;x
+secretly_convert_to_saura_holy_site;Secretly Convert to Sauraic;;;;;;;;;;;;;x
+secretly_convert_to_saura_holy_site_desc;The §YSauraic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_saura_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_saura_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_saura_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_saura_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_saura_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_saura_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_saura_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_saura_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_saura_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_saura;Secret Sauraic Community;;;;;;;;;;;;;x
+secret_saura_community;Secret Sauraic Community;;;;;;;;;;;;;x
+secret_saura_community_desc;In secret, Sauraic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_saura_leader_desc;A High Priest in the Hidden Sauraic society;;;;;;;;;x
+secret_religious_society_set;the Hidden Setite;;;;;;;;x
+secret_religious_society_set_desc;Placeholder;;;;;;;;x
+secretly_convert_to_set_holy_site;Secretly Convert to Setiteic;;;;;;;;;;;;;x
+secretly_convert_to_set_holy_site_desc;The §YSetiteic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_set_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_set_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_set_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_set_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_set_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_set_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_set_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_set_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_set_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_set;Secret Setiteic Community;;;;;;;;;;;;;x
+secret_set_community;Secret Setiteic Community;;;;;;;;;;;;;x
+secret_set_community_desc;In secret, Setiteic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_set_leader_desc;A High Priest in the Hidden Setiteic society;;;;;;;;;x
+secret_religious_society_sol_christ;the Hidden Solar-Christian;;;;;;;;x
+secret_religious_society_sol_christ_desc;Placeholder;;;;;;;;x
+secretly_convert_to_sol_christ_holy_site;Secretly Convert to Solar-Christianic;;;;;;;;;;;;;x
+secretly_convert_to_sol_christ_holy_site_desc;The §YSolar-Christianic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_sol_christ_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_sol_christ_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_sol_christ_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_sol_christ_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_sol_christ_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_sol_christ_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_sol_christ_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_sol_christ_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_sol_christ_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_sol_christ;Secret Solar-Christianic Community;;;;;;;;;;;;;x
+secret_sol_christ_community;Secret Solar-Christianic Community;;;;;;;;;;;;;x
+secret_sol_christ_community_desc;In secret, Solar-Christianic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_sol_christ_leader_desc;A High Priest in the Hidden Solar-Christianic society;;;;;;;;;x
+secret_religious_society_sufi;the Hidden Sufi;;;;;;;;x
+secret_religious_society_sufi_desc;Placeholder;;;;;;;;x
+secretly_convert_to_sufi_holy_site;Secretly Convert to Sufiic;;;;;;;;;;;;;x
+secretly_convert_to_sufi_holy_site_desc;The §YSufiic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_sufi_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_sufi_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_sufi_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_sufi_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_sufi_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_sufi_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_sufi_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_sufi_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_sufi_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_sufi;Secret Sufiic Community;;;;;;;;;;;;;x
+secret_sufi_community;Secret Sufiic Community;;;;;;;;;;;;;x
+secret_sufi_community_desc;In secret, Sufiic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_sufi_leader_desc;A High Priest in the Hidden Sufiic society;;;;;;;;;x
+secret_religious_society_tengri_ahriman;the Hidden Ahriman Tanrili;;;;;;;;x
+secret_religious_society_tengri_ahriman_desc;Placeholder;;;;;;;;x
+secretly_convert_to_tengri_ahriman_holy_site;Secretly Convert to Ahriman Tanriliic;;;;;;;;;;;;;x
+secretly_convert_to_tengri_ahriman_holy_site_desc;The §YAhriman Tanriliic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_tengri_ahriman_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_tengri_ahriman_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_tengri_ahriman_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_tengri_ahriman_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_tengri_ahriman_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_tengri_ahriman_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_tengri_ahriman_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_tengri_ahriman_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_tengri_ahriman_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_tengri_ahriman;Secret Ahriman Tanriliic Community;;;;;;;;;;;;;x
+secret_tengri_ahriman_community;Secret Ahriman Tanriliic Community;;;;;;;;;;;;;x
+secret_tengri_ahriman_community_desc;In secret, Ahriman Tanriliic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_tengri_ahriman_leader_desc;A High Priest in the Hidden Ahriman Tanriliic society;;;;;;;;;x
+secret_religious_society_vidharma;the Hidden Vaishnava;;;;;;;;x
+secret_religious_society_vidharma_desc;Placeholder;;;;;;;;x
+secretly_convert_to_vidharma_holy_site;Secretly Convert to Vaishnavaic;;;;;;;;;;;;;x
+secretly_convert_to_vidharma_holy_site_desc;The §YVaishnavaic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_vidharma_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_vidharma_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_vidharma_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_vidharma_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_vidharma_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_vidharma_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_vidharma_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_vidharma_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_vidharma_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_vidharma;Secret Vaishnavaic Community;;;;;;;;;;;;;x
+secret_vidharma_community;Secret Vaishnavaic Community;;;;;;;;;;;;;x
+secret_vidharma_community_desc;In secret, Vaishnavaic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_vidharma_leader_desc;A High Priest in the Hidden Vaishnavaic society;;;;;;;;;x
+secret_religious_society_yahyanism;the Hidden Yahyanist;;;;;;;;x
+secret_religious_society_yahyanism_desc;Placeholder;;;;;;;;x
+secretly_convert_to_yahyanism_holy_site;Secretly Convert to Yahyanist;;;;;;;;;;;;;x
+secretly_convert_to_yahyanism_holy_site_desc;The §YYahyanist§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_yahyanism_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_yahyanism_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_yahyanism_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_yahyanism_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_yahyanism_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_yahyanism_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_yahyanism_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_yahyanism_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_yahyanism_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_yahyanism;Secret Yahyanist Community;;;;;;;;;;;;;x
+secret_yahyanism_community;Secret Yahyanist Community;;;;;;;;;;;;;x
+secret_yahyanism_community_desc;In secret, Yahyanist faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_yahyanism_leader_desc;A High Priest in the Hidden Yahyanist society;;;;;;;;;x
+secret_religious_society_zor_angra;the Hidden Angra Mainyui;;;;;;;;x
+secret_religious_society_zor_angra_desc;Placeholder;;;;;;;;x
+secretly_convert_to_zor_angra_holy_site;Secretly Convert to Angra Mainyui;;;;;;;;;;;;;x
+secretly_convert_to_zor_angra_holy_site_desc;The §YAngra Mainyui§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_zor_angra_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_zor_angra_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_zor_angra_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_zor_angra_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_zor_angra_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_zor_angra_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_zor_angra_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_zor_angra_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_zor_angra_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_zor_angra;Secret Angra Mainyui Community;;;;;;;;;;;;;x
+secret_zor_angra_community;Secret Angra Mainyui Community;;;;;;;;;;;;;x
+secret_zor_angra_community_desc;In secret, Angra Mainyui faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
+secret_religious_society_zor_angra_leader_desc;A High Priest in the Hidden Angra Mainyui society;;;;;;;;;x
 #PIETY
 STAT_PIETY_XIAO;Xiao;Xiao;Xiao;;Xiao;;;;;;;;;x
 STAT_PIETY_DESC_XIAO;Xiao;Xiao;Xiao;;Xiao;;;;;;;;;x
