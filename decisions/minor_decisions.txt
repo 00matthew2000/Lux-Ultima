@@ -43,6 +43,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			wealth = -25
@@ -153,6 +156,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			wealth = -25
@@ -257,6 +263,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			wealth = -25
@@ -333,7 +342,14 @@ decisions = {
 			prisoner = no
 			num_of_vassals = 1
 			capital_scope = {
-				region = world_india
+				OR = {
+					region = world_india
+					# Tianxia regions
+					region = world_indochina
+					region = world_java_sumatra_malacca
+					region = world_china
+					region = world_korea
+				}
 			}
 		}
 		allow = {
@@ -360,6 +376,9 @@ decisions = {
 					NOT = { has_character_flag = holding_tiger_hunt }
 					NOT = { has_character_modifier = hunt_timer }
 				}
+			}
+			NOT = {
+				trait = treasure_fleet_preparation
 			}
 		}
 		effect = {
@@ -512,6 +531,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			scaled_wealth = -0.2
@@ -594,6 +616,9 @@ decisions = {
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			NOT = {
+				trait = treasure_fleet_preparation
 			}
 		}
 		effect = {
@@ -680,6 +705,9 @@ decisions = {
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			NOT = {
+				trait = treasure_fleet_preparation
 			}
 		}
 		effect = {
@@ -787,6 +815,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			wealth = -50
@@ -887,6 +918,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			wealth = -50
@@ -979,6 +1013,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 			custom_tooltip = {
 				text = worship_cooldown_tooltip
 				hidden_tooltip = { NOT = { has_character_modifier = worshipped_ancestors_timer } }
@@ -1062,6 +1099,9 @@ decisions = {
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			NOT = {
+				trait = treasure_fleet_preparation
 			}
 		}
 		effect = {
@@ -1291,6 +1331,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			wealth = -50
@@ -1384,6 +1427,9 @@ decisions = {
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			NOT = {
+				trait = treasure_fleet_preparation
 			}
 		}
 		effect = {
@@ -1479,6 +1525,9 @@ decisions = {
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			NOT = {
+				trait = treasure_fleet_preparation
 			}
 		}
 		effect = {
@@ -1794,6 +1843,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			scaled_wealth = -0.2
@@ -1909,6 +1961,9 @@ decisions = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			scaled_wealth = -0.2
@@ -2021,6 +2076,9 @@ decisions = {
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			NOT = {
+				trait = treasure_fleet_preparation
 			}
 		}
 		effect = {
@@ -2146,6 +2204,9 @@ decisions = {
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			NOT = {
+				trait = treasure_fleet_preparation
 			}
 		}
 		effect = {
@@ -2439,6 +2500,9 @@ decisions = {
 			NOT = { trait = infirm }
 			NOT = { is_inaccessible_trigger = yes }
 			NOT = { has_character_flag = do_not_disturb }
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			custom_tooltip = { text = sky_burial_custom_tooltip }
@@ -2474,6 +2538,9 @@ decisions = {
 				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
 			}
 			wealth = 20
+			NOT = {
+				trait = treasure_fleet_preparation
+			}
 		}
 		effect = {
 			wealth = -20
