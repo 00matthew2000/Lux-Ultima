@@ -9181,7 +9181,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	set_secret_religion = antinomian
     	clr_character_flag = character_was_antinomian
 		break = yes
-    }
+   }
 	if = {	
 			limit = {
     		OR = {
@@ -9890,17 +9890,17 @@ add_religion_char_flag_effect = {
 	if = {
     	limit = { religion = antinomian }
     	set_character_flag = character_was_antinomian
-    }
+   }
 	if = {
-		limit = { religion = aten = }	
+		limit = { religion = aten }	
 		set_character_flag = character_was_aten
 	}
 	if = {
-		limit = { religion = batembuzi = }	
+		limit = { religion = batembuzi }	
 		set_character_flag = character_was_batembuzi
 	}
 	if = {
-		limit = { religion = bud_bahusrutiya = {	
+		limit = { religion = bud_bahusrutiya }	
 		set_character_flag = character_was_bud_bahusrutiya
 	}
 	if = {
@@ -9908,145 +9908,144 @@ add_religion_char_flag_effect = {
 		set_character_flag = character_was_bud_mahayana
 	}
 	if = {
-		limit = { religion = cathar = {	
+		limit = { religion = cathar }	
 		set_character_flag = character_was_cathar
 	}
 	if = {
-		limit = { religion = dionysos = {	
+		limit = { religion = dionysos }	
 		set_character_flag = character_was_dionysos
 	}
 	if = {
-		limit = { religion = donatist = {	
+		limit = { religion = donatist }	
 		set_character_flag = character_was_donatist
 	}
 	if = {
-		limit = { religion = druze = {	
+		limit = { religion = druze }	
 		set_character_flag = character_was_druze
 	}
 	if = {
-		limit = { religion = erlik = {	
+		limit = { religion = erlik }	
 		set_character_flag = character_was_erlik
 	}
 	if = {
-		limit = { religion = haruri = {	
+		limit = { religion = haruri }	
 		set_character_flag = character_was_haruri
 	}
 	if = {
-		limit = { religion = hubal = {	
+		limit = { religion = hubal }	
 		set_character_flag = character_was_hubal
 	}
 	if = {
-		limit = { religion = hurufi = {	
+		limit = { religion = hurufi }	
 		set_character_flag = character_was_hurufi
 	}
 	if = {
-		limit = { religion = ibadi = {	
+		limit = { religion = ibadi }	
 		set_character_flag = character_was_ibadi
 	}
 	if = {
-		limit = { religion = iconoclast = {	
+		limit = { religion = iconoclast }	
 		set_character_flag = character_was_iconoclast
 	}
 	if = {
-		limit = { religion = illuyanka = {	
+		limit = { religion = illuyanka }	
 		set_character_flag = character_was_illuyanka
 	}
 	if = {
-		limit = { religion = irminsul = {	
+		limit = { religion = irminsul }	
 		set_character_flag = character_was_irminsul
 	}
 	if = {
-		limit = { religion = jud_sabaoth = {	
+		limit = { religion = jud_sabaoth }	
 		set_character_flag = character_was_jud_sabaoth
 	}
 	if = {
-		limit = { religion = kharijite = {	
+		limit = { religion = kharijite }	
 		set_character_flag = character_was_kharijite
 	}
 	if = {
-		limit = { religion = mand_ruha = {	
+		limit = { religion = mand_ruha }	
 		set_character_flag = character_was_mand_ruha
 	}
 	if = {
-		limit = { religion = mani_ahriman = {	
+		limit = { religion = mani_ahriman }	
 		set_character_flag = character_was_mani_ahriman
 	}
 	if = {
-		limit = { religion = mazdakism = {	
+		limit = { religion = mazdakism }	
 		set_character_flag = character_was_mazdakism
 	}
 	if = {
-		limit = { religion = melkite = {	
+		limit = { religion = melkite }	
 		set_character_flag = character_was_melkite
 	}
 	if = {
-		limit = { religion = montanist = {	
+		limit = { religion = montanist }	
 		set_character_flag = character_was_montanist
 	}
 	if = {
-		limit = { religion = norse_war = {	
+		limit = { religion = norse_war }	
 		set_character_flag = character_was_norse_war
 	}
 	if = {
-		limit = { religion = pelagian = {	
+		limit = { religion = pelagian }	
 		set_character_flag = character_was_pelagian
 	}
 	if = {
-		limit = { religion = plato_christ = {	
+		limit = { religion = plato_christ }	
 		set_character_flag = character_was_plato_christ
 	}
 	if = {
-		limit = { religion = plato_islam = {	
+		limit = { religion = plato_islam }	
 		set_character_flag = character_was_plato_islam
 	}
 	if = {
-		limit = { religion = priscillian = {	
+		limit = { religion = priscillian }	
 		set_character_flag = character_was_priscillian 
 	}
 	if = {
-		limit = { religion = qarmatian = {	
+		limit = { religion = qarmatian }	
 		set_character_flag = character_was_qarmatian
 	}
 	if = {
-		limit = { religion = ragnarok = {	
+		limit = { religion = ragnarok }	
 		set_character_flag = character_was_ragnarok
 	}
 	if = {
-		limit = { religion = saule = {	
+		limit = { religion = saule }	
 		set_character_flag = character_was_saule
 	}
 	if = {
-		limit = { religion = saura = {	
+		limit = { religion = saura }	
 		set_character_flag = character_was_saura
 	}
 	if = {
-		limit = { religion = set = {	
+		limit = { religion = set }	
 		set_character_flag = character_was_set
 	}
 	if = {
-		limit = { religion = sol_christ = {	
+		limit = { religion = sol_christ }	
 		set_character_flag = character_was_sol_christ
 	}
 	if = {
-		limit = { religion = sufi = {	
+		limit = { religion = sufi }	
 		set_character_flag = character_was_sufi
 	}
 	if = {
-		limit = { religion = tengri_ahriman = {	
+		limit = { religion = tengri_ahriman }	
 		set_character_flag = character_was_tengri_ahriman
 	}
 	if = {
-		limit = { religion = vidharma = {	
+		limit = { religion = vidharma }	
 		set_character_flag = character_was_vidharma
 	}
 	if = {
-		limit = { religion = yahyanism = {	
+		limit = { religion = yahyanism }	
 		set_character_flag = character_was_yahyanism
 	}
 	if = {
-		limit = { religion = zor_angra = {	
+		limit = { religion = zor_angra }	
 		set_character_flag = character_was_zor_angra
-		}
 	}
 }
 
@@ -10099,7 +10098,7 @@ event_target_old_religion_from_flag_effect = {
     	antinomian = {
     		save_event_target_as = old_religion
     	}
-    }
+   }
 	if = {
 		limit = { has_character_flag = character_was_aten }
 			aten = {
@@ -10263,7 +10262,7 @@ event_target_old_religion_from_flag_effect = {
 		}
 	}
 	if = {
-		limit = { has_character_flag = character_was_priscillian  }
+		limit = { has_character_flag = character_was_priscillian }
 			priscillian = {
 				save_event_target_as = old_religion
 		}
@@ -10334,6 +10333,7 @@ event_target_old_religion_from_flag_effect = {
 				save_event_target_as = old_religion
 		}
 	}
+}
 }
 
 increase_visibility_effect = {
@@ -14089,7 +14089,7 @@ destroy_all_ingredients_effect = {
         		limit = { has_artifact_flag = ingredient }
         		destroy_artifact = yes
         	}
-        }
+       }
 	}
 }
 
@@ -14109,8 +14109,8 @@ calculate_health_level_of_ingredient_1_effect = {
                 change_variable = {
                     which = current_potion_quality
                     value = 1
-                }
-            }
+               }
+           }
     	}
     	if = {
     		limit = {
@@ -14121,10 +14121,10 @@ calculate_health_level_of_ingredient_1_effect = {
                 change_variable = {
                     which = current_potion_quality
                     value = -1
-                }
-            }
+               }
+           }
     	}
-    }
+   }
 }
 
 calculate_health_level_of_ingredient_2_effect = {
@@ -14142,8 +14142,8 @@ calculate_health_level_of_ingredient_2_effect = {
                 change_variable = {
                     which = current_potion_quality
                     value = 1
-                }
-            }
+               }
+           }
     	}
     	if = {
     		limit = {
@@ -14154,10 +14154,10 @@ calculate_health_level_of_ingredient_2_effect = {
                 change_variable = {
                     which = current_potion_quality
                     value = -1
-                }
-            }
+               }
+           }
     	}
-    }
+   }
 }
 
 calculate_health_level_of_ingredient_1_and_2_effect = {
@@ -14174,8 +14174,8 @@ calculate_health_level_of_ingredient_1_and_2_effect = {
 						has_artifact_flag = selected_ingredient_2
 					}
 		            NOT = { has_artifact_flag = ingredient_counted }
-		        }
-		    }
+		       }
+		   }
 		    random_artifact = {
 		        limit = {
 		            OR = {
@@ -14183,36 +14183,36 @@ calculate_health_level_of_ingredient_1_and_2_effect = {
 						has_artifact_flag = selected_ingredient_2
 					}
 		            NOT = { has_artifact_flag = ingredient_counted }
-		        }
+		       }
 		        set_artifact_flag = ingredient_counted
 		        if = {
 		            limit = {
 		                ingredient_is_perceived_healthy_trigger = yes
-		            }
+		           }
 		            ROOT = {
 		                change_variable = {
 		                    which = current_potion_quality
 		                    value = 1
-		                }
-		            }
-		        }
+		               }
+		           }
+		       }
 		        if = {
 		            limit = {
 		                ingredient_is_unhealthy_trigger = yes
-		            }
+		           }
 		            ROOT = {
 		                change_variable = {
 		                    which = current_potion_quality
 		                    value = -1
-		                }
-		            }
-		        }
-		    }
+		               }
+		           }
+		       }
+		   }
 		}
 		any_artifact = {
 			clr_artifact_flag = ingredient_counted
 		}
-    }
+   }
 }
 
 calculate_health_level_of_all_ingredients_effect = {
@@ -14222,42 +14222,42 @@ calculate_health_level_of_all_ingredients_effect = {
 				any_artifact = {
 		            has_artifact_flag = ingredient
 		            NOT = { has_artifact_flag = ingredient_counted }
-		        }
-		    }
+		       }
+		   }
 		    random_artifact = {
 		        limit = {
 		            has_artifact_flag = ingredient
 		            NOT = { has_artifact_flag = ingredient_counted }
-		        }
+		       }
 		        set_artifact_flag = ingredient_counted
 		        if = {
 		            limit = {
 		                ingredient_is_perceived_healthy_trigger = yes
-		            }
+		           }
 		            ROOT = {
 		                change_variable = {
 		                    which = current_potion_quality
 		                    value = 1
-		                }
-		            }
-		        }
+		               }
+		           }
+		       }
 		        if = {
 		            limit = {
 		                ingredient_is_unhealthy_trigger = yes
-		            }
+		           }
 		            ROOT = {
 		                change_variable = {
 		                    which = current_potion_quality
 		                    value = -1
-		                }
-		            }
-		        }
-		    }
+		               }
+		           }
+		       }
+		   }
 		}
 		any_artifact = {
 			clr_artifact_flag = ingredient_counted
 		}
-    }
+   }
 }
 
 
@@ -15228,32 +15228,32 @@ check_likes_or_dislikes_THIS_effect = {
  	if = {  #If the current Emperor LIKES target
         limit = {
             is_liked_by_China_trigger = yes
-        }
+       }
         offmap_china = {
 			#show_scope_change = no
             custom_tooltip = { text = emperor_likes_THIS_tt }
-        }
-    }
+       }
+   }
 
     if = { #If the current Emperor DISLIKES target
         limit = {
            is_disliked_by_China_trigger = yes
-        }
+       }
         offmap_china = {
 			#show_scope_change = no
 			custom_tooltip = { text = emperor_dislikes_THIS_tt }
-        }
-    }
+       }
+   }
 
     if = { #If the current Emperor LIKES *and* DISLIKES target
         limit = {
             is_liked_and_disliked_by_China = yes
-        }
+       }
         offmap_china = {
 			#show_scope_change = no
             custom_tooltip = { text = emperor_has_ambiguous_feelings_of_THIS_tt }
-        }
-    }
+       }
+   }
 }
 
 print_china_status_update_effect = {
@@ -20953,35 +20953,35 @@ select_and_save_fellow_society_member_effect = { #[Runs for ROOT]
             same_society_as = ROOT
             NOT = { character = ROOT }
             prisoner = no
-        }
+       }
         save_event_target_as = fellow_member
-    }
+   }
     random_society_member = { #Second worst, etc...
         limit = { 
             same_society_as = ROOT
             NOT = { character = ROOT }
             prisoner = no
-        }
+       }
         save_event_target_as = fellow_member
-    }
+   }
     random_society_member = {
         limit = { 
             same_society_as = ROOT
             NOT = { character = ROOT }
             block_general_event_trigger = no
             root_has_terrible_opinion_modifier_of_this_trigger = no
-        }
+       }
         save_event_target_as = fellow_member
-    }
+   }
     random_society_member = {
         limit = { 
             same_society_as = ROOT
             NOT = { character = ROOT }
             block_general_event_trigger = no
             this_has_terrible_opinion_modifier_of_root_trigger = no
-        }
+       }
         save_event_target_as = fellow_member
-    }
+   }
     random_society_member = {
         limit = { 
             same_society_as = ROOT
@@ -20989,36 +20989,36 @@ select_and_save_fellow_society_member_effect = { #[Runs for ROOT]
             block_general_event_trigger = no
             root_has_terrible_opinion_modifier_of_this_trigger = no
             this_has_terrible_opinion_modifier_of_root_trigger = no
-        }
+       }
         save_event_target_as = fellow_member
-    }
+   }
     random_society_member = {
         limit = { 
             same_society_as = ROOT
             NOT = { character = ROOT }
             block_general_event_trigger = no
             root_potentially_platonically_interested_in_this_trigger = yes
-        }
+       }
         save_event_target_as = fellow_member
-    }
+   }
     random_society_member = {
         limit = { 
             same_society_as = ROOT
             NOT = { character = ROOT }
             block_general_event_trigger = no
             potentially_platonically_interested_in_root_trigger = yes
-        }
+       }
         save_event_target_as = fellow_member
-    }
+   }
     random_society_member = { #Best case scenario...
         limit = { 
             same_society_as = ROOT
             NOT = { character = ROOT }
             block_general_event_trigger = no
             current_scope_and_root_make_sense_as_friendlies_trigger = yes
-        }
+       }
         save_event_target_as = fellow_member
-    }
+   }
 }
 
 add_warrior_lodge_leader_trait_effect = {
@@ -21156,7 +21156,7 @@ save_beloved_character_effect = {
 			score_value = { #Prioritizes selecting some kind of loved person...
                 value = 1
                 beloved_target_selection_score = yes
-            }
+           }
 			#Effect:
 			save_event_target_as = my_beloved
 		}
@@ -24523,8 +24523,8 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	        	religion_group = muslim 
 	        	religion_group = bantu_group
 				religion_group = serer_group
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = engraved_dagger
         add_artifact = silver_bracelets
 	}
@@ -24534,8 +24534,8 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	        	religion_group = indian_group
 	        	religion = bon
 	        	religion = bon_reformed
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = engraved_dagger
         add_artifact = collar_of_pearls
 	}
@@ -24549,7 +24549,7 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	else_if = {
 	    limit = {
 	        	religion_group = norsegerman_group
-	    }
+	   }
 	    add_artifact = iron_crown
         add_artifact = engraved_sword
 	}
@@ -24577,8 +24577,8 @@ give_goldsmith_artifacts_flag_good_effect = {
 	        	religion_group = muslim 
 	        	religion_group = bantu_group
 				religion_group = serer_group
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = bejeweled_dagger
         add_artifact = golden_bracelets
 	}
@@ -24588,8 +24588,8 @@ give_goldsmith_artifacts_flag_good_effect = {
 	        	religion_group = indian_group
 	        	religion = bon
 	        	religion = bon_reformed
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = bejeweled_dagger
         add_artifact = necklace_of_radiance
 	}
@@ -24603,7 +24603,7 @@ give_goldsmith_artifacts_flag_good_effect = {
 	else_if = {
 	    limit = {
 	        	religion_group = norsegerman_group
-	    }
+	   }
 	    add_artifact = crown_of_the_sea
         add_artifact = golden_sword
 	}
@@ -24631,8 +24631,8 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	        	religion_group = muslim 
 	        	religion_group = bantu_group
 				religion_group = serer_group
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = dagger_of_glory
 	    add_artifact = ruby_bracelets
 	}
@@ -24642,8 +24642,8 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	        	religion_group = indian_group
 	        	religion = bon
 	        	religion = bon_reformed
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = dagger_of_glory
 	    add_artifact = celestial_necklace
 	}
@@ -24657,7 +24657,7 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	else_if = {
 	    limit = {
 	        	religion_group = norsegerman_group
-	    }
+	   }
 	    add_artifact = crown_of_crows
 	    add_artifact = sword_of_heroes
 	}
@@ -24685,8 +24685,8 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 	        	religion_group = muslim 
 	        	religion_group = bantu_group
 				religion_group = serer_group
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = dagger_of_glory_2
 	    add_artifact = ruby_bracelets_2
 	}
@@ -24696,8 +24696,8 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 	        	religion_group = indian_group
 	        	religion = bon
 	        	religion = bon_reformed
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = dagger_of_glory_2
 	    add_artifact = celestial_necklace_2
 	}
@@ -24711,7 +24711,7 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 	else_if = {
 	    limit = {
 	        	religion_group = norsegerman_group
-	    }
+	   }
 	    add_artifact = crown_of_crows_2
 	    add_artifact = sword_of_heroes_2
 	}
@@ -24740,8 +24740,8 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 	        	religion_group = muslim 
 	        	religion_group = bantu_group
 				religion_group = serer_group
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = engraved_dagger
         add_artifact = silver_bracelets
 	}
@@ -24751,8 +24751,8 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 	        	religion_group = indian_group
 	        	religion = bon
 	        	religion = bon_reformed
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = engraved_dagger
         add_artifact = collar_of_pearls
 	}
@@ -24766,7 +24766,7 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 	else_if = {
 	    limit = {
 	        	religion_group = norsegerman_group
-	    }
+	   }
 	    add_artifact = iron_crown
         add_artifact = engraved_sword
 	}
@@ -24794,8 +24794,8 @@ give_weaponsmith_artifacts_flag_good_effect = {
 	        	religion_group = muslim 
 	        	religion_group = bantu_group
 				religion_group = serer_group
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = bejeweled_dagger
         add_artifact = golden_bracelets
 	}
@@ -24805,8 +24805,8 @@ give_weaponsmith_artifacts_flag_good_effect = {
 	        	religion_group = indian_group
 	        	religion = bon
 	        	religion = bon_reformed
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = bejeweled_dagger
         add_artifact = necklace_of_radiance
 	}
@@ -24820,7 +24820,7 @@ give_weaponsmith_artifacts_flag_good_effect = {
 	else_if = {
 	    limit = {
 	        	religion_group = norsegerman_group
-	    }
+	   }
 	    add_artifact = crown_of_the_sea
         add_artifact = golden_sword
 	}
@@ -24848,8 +24848,8 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 	        	religion_group = muslim 
 	        	religion_group = bantu_group
 				religion_group = serer_group
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = dagger_of_glory
 	    add_artifact = ruby_bracelets
 	}
@@ -24859,8 +24859,8 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 	        	religion_group = indian_group
 	        	religion = bon
 	        	religion = bon_reformed
-	        }
-	    }
+	       }
+	   }
 	    add_artifact = dagger_of_glory
 	    add_artifact = celestial_necklace
 	}
@@ -24874,7 +24874,7 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 	else_if = {
 	    limit = {
 	        	religion_group = norsegerman_group
-	    }
+	   }
 	    add_artifact = crown_of_crows
 	    add_artifact = sword_of_heroes
 	}
@@ -24892,8 +24892,8 @@ give_smith_artifacts_flag_okay_effect = {
             new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_1
-            }
-    }
+           }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_scimitar } }
         add_artifact = scimitar_tier_1_new
@@ -24901,8 +24901,8 @@ give_smith_artifacts_flag_okay_effect = {
         new_artifact = {
           	set_name = artifact_name
            	set_description = artifact_description_smith_tier_1
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_lance } }
         add_artifact = lance_tier_1_new
@@ -24910,8 +24910,8 @@ give_smith_artifacts_flag_okay_effect = {
         new_artifact = {
             set_name = artifact_name
             set_description = artifact_description_smith_tier_1
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_axe } }
         add_artifact = axe_tier_1_new
@@ -24919,8 +24919,8 @@ give_smith_artifacts_flag_okay_effect = {
         new_artifact = {
             set_name = artifact_name
             set_description = artifact_description_smith_tier_1
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_mace } }
         add_artifact = mace_tier_1_new
@@ -24928,8 +24928,8 @@ give_smith_artifacts_flag_okay_effect = {
         new_artifact = {
         	set_name = artifact_name
         	set_description = artifact_description_smith_tier_1
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_bow } }
         add_artifact = bow_tier_1_new
@@ -24937,12 +24937,12 @@ give_smith_artifacts_flag_okay_effect = {
         new_artifact = {
             set_name = artifact_name
             set_description = artifact_description_smith_tier_1
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = armor_set } }
         add_artifact = armor_tier_1
-    }
+   }
 }
 
 give_smith_artifacts_flag_good_effect = {
@@ -24953,8 +24953,8 @@ give_smith_artifacts_flag_good_effect = {
             new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_2
-            }
-    }
+           }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_scimitar } }
         add_artifact = scimitar_tier_2_new
@@ -24962,8 +24962,8 @@ give_smith_artifacts_flag_good_effect = {
         new_artifact = {
           	set_name = artifact_name
            	set_description = artifact_description_smith_tier_2
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_lance } }
         add_artifact = lance_tier_2_new
@@ -24971,8 +24971,8 @@ give_smith_artifacts_flag_good_effect = {
         new_artifact = {
             set_name = artifact_name
             set_description = artifact_description_smith_tier_2
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_axe } }
         add_artifact = axe_tier_2_new
@@ -24980,8 +24980,8 @@ give_smith_artifacts_flag_good_effect = {
         new_artifact = {
             set_name = artifact_name
             set_description = artifact_description_smith_tier_2
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_mace } }
         add_artifact = mace_tier_2_new
@@ -24989,8 +24989,8 @@ give_smith_artifacts_flag_good_effect = {
         new_artifact = {
         	set_name = artifact_name
         	set_description = artifact_description_smith_tier_2
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_bow } }
         add_artifact = bow_tier_2_new
@@ -24998,198 +24998,198 @@ give_smith_artifacts_flag_good_effect = {
         new_artifact = {
             set_name = artifact_name
             set_description = artifact_description_smith_tier_2
-        }
-    }
+       }
+   }
     if = {
         limit = { FROM = { has_character_flag = armor_set } }
         add_artifact = armor_tier_2
-    }
+   }
 }
 
 give_smith_artifacts_flag_amazing_optionA_effect = {
 	if = {
         limit = { FROM = { has_character_flag = weapon_sword } }
         add_artifact = sword_tier_4_heartseeker
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_scimitar } }
         add_artifact = scimitar_tier_4_golden
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_lance } }
         add_artifact = lance_tier_4_impaler
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_axe } }
         add_artifact = axe_tier_4_cleaver
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_mace } }
         add_artifact = mace_tier_4_foe_hammer
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_bow } }
         add_artifact = bow_tier_4_silent_wind
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = armor_set } }
         add_artifact = armor_tier_4_guardian
-    }
+   }
 }
 
 give_smith_artifacts_flag_amazing_optionB_effect = {
 	if = {
         limit = { FROM = { has_character_flag = weapon_sword } }
         add_artifact = sword_tier_4_vengeance
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_scimitar } }
         add_artifact = scimitar_tier_4_fortune
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_lance } }
         add_artifact = lance_tier_4_trident
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_axe } }
         add_artifact = axe_tier_4_ravager
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_mace } }
         add_artifact = mace_tier_4_bone_breaker
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_bow } }
         add_artifact = bow_tier_4_lightning
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = armor_set } }
         add_artifact = armor_tier_4_champion
-    }
+   }
 }
 
 give_smith_artifacts_flag_amazing_optionC_effect = {
 	if = {
         limit = { FROM = { has_character_flag = weapon_sword } }
         add_artifact = sword_tier_4_fury
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_scimitar } }
         add_artifact = scimitar_tier_4_conquest
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_lance } }
         add_artifact = lance_tier_4_piercer
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_axe } }
         add_artifact = axe_tier_4_marauder
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_mace } }
         add_artifact = mace_tier_4_shatterer
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_bow } }
         add_artifact = bow_tier_4_eagle
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = armor_set } }
         add_artifact = armor_tier_4_warden
-    }
+   }
 }
 
 give_smith_artifacts_flag_expensive_optionA_effect = {
 	if = {
         limit = { FROM = { has_character_flag = weapon_sword } }
         add_artifact = sword_tier_3_heartseeker
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_scimitar } }
         add_artifact = scimitar_tier_3_golden
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_lance } }
         add_artifact = lance_tier_3_impaler
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_axe } }
         add_artifact = axe_tier_3_cleaver
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_mace } }
         add_artifact = mace_tier_3_foe_hammer
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_bow } }
         add_artifact = bow_tier_3_silent_wind
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = armor_set } }
         add_artifact = armor_tier_3_guardian
-    }
+   }
 }
 
 give_smith_artifacts_flag_expensive_optionB_effect = {
 	if = {
         limit = { FROM = { has_character_flag = weapon_sword } }
         add_artifact = sword_tier_3_vengeance
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_scimitar } }
         add_artifact = scimitar_tier_3_fortune
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_lance } }
         add_artifact = lance_tier_3_trident
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_axe } }
         add_artifact = axe_tier_3_ravager
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_mace } }
         add_artifact = mace_tier_3_bone_breaker
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_bow } }
         add_artifact = bow_tier_3_lightning
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = armor_set } }
         add_artifact = armor_tier_3_champion
-    }
+   }
 }
 
 give_smith_artifacts_flag_expensive_optionC_effect = {
 	if = {
         limit = { FROM = { has_character_flag = weapon_sword } }
         add_artifact = sword_tier_3_fury
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_scimitar } }
         add_artifact = scimitar_tier_3_conquest
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_lance } }
         add_artifact = lance_tier_3_piercer
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_axe } }
         add_artifact = axe_tier_3_marauder
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_mace } }
         add_artifact = mace_tier_3_shatterer
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = weapon_bow } }
         add_artifact = bow_tier_3_eagle
-    }
+   }
     if = {
         limit = { FROM = { has_character_flag = armor_set } }
         add_artifact = armor_tier_3_warden
-    }
+   }
 }
 
 give_random_character_modifier_effect = {
