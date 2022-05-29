@@ -8369,7 +8369,7 @@ letter_event = {
 			}
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30003 days = 3 }
+			letter_event = { id = RIP.30003 days = 3 }
 		}
 	}
 	option = {
@@ -8424,7 +8424,7 @@ letter_event = {
 			FROMFROM = { NOT = { owes_favor_to = ROOT } }
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30007 days = 3 }
+			letter_event = { id = RIP.30007 days = 3 }
 		}
 	}
 	
@@ -8468,7 +8468,7 @@ letter_event = {
 		}
 		
 		FROMFROM = {
-			character_event = { id = RIP.30001 days = 3 }
+			letter_event = { id = RIP.30001 days = 3 }
 		}
 	}
 	
@@ -8561,7 +8561,7 @@ letter_event = {
 			}
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30006 days = 3 }
+			letter_event = { id = RIP.30006 days = 3 }
 		}
 	}
 	
@@ -8654,7 +8654,7 @@ letter_event = {
 			}
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30006 days = 3 }
+			letter_event = { id = RIP.30006 days = 3 }
 		}
 	}
 	
@@ -8967,7 +8967,7 @@ letter_event = {
 		}
 		
 		FROMFROM = {
-			character_event = { id = RIP.30011 }
+			letter_event = { id = RIP.30011 }
 		}
 	}
 }
@@ -9062,7 +9062,7 @@ letter_event = {
 			}
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30023 days = 3 }
+			letter_event = { id = RIP.30023 days = 3 }
 		}
 	}
 	option = {
@@ -9117,7 +9117,7 @@ letter_event = {
 			FROMFROM = { NOT = { owes_favor_to = ROOT } }
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30027 days = 3 }
+			letter_event = { id = RIP.30027 days = 3 }
 		}
 	}
 	
@@ -9163,7 +9163,7 @@ letter_event = {
 		prestige = 100
 		
 		FROMFROM = {
-			character_event = { id = RIP.30021 days = 3 }
+			letter_event = { id = RIP.30021 days = 3 }
 		}
 	}
 	
@@ -9256,7 +9256,7 @@ letter_event = {
 			}
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30026 days = 3 }
+			letter_event = { id = RIP.30026 days = 3 }
 		}
 	}
 	
@@ -9349,7 +9349,7 @@ letter_event = {
 			}
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30026 days = 3 }
+			letter_event = { id = RIP.30026 days = 3 }
 		}
 	}
 }
@@ -9651,7 +9651,7 @@ letter_event = {
 		}
 		
 		FROMFROM = {
-			character_event = { id = RIP.30031 }
+			letter_event = { id = RIP.30031 }
 		}
 	}
 }
@@ -9749,7 +9749,7 @@ letter_event = {
 			}
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30043 days = 3 }
+			letter_event = { id = RIP.30043 days = 3 }
 		}
 	}
 	option = {
@@ -9804,7 +9804,7 @@ letter_event = {
 			FROMFROM = { NOT = { owes_favor_to = ROOT } }
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30047 days = 3 }
+			letter_event = { id = RIP.30047 days = 3 }
 		}
 	}
 	
@@ -9850,7 +9850,7 @@ letter_event = {
 		prestige = 100
 		
 		FROMFROM = {
-			character_event = { id = RIP.30041 days = 3 }
+			letter_event = { id = RIP.30041 days = 3 }
 		}
 	}
 	
@@ -9945,7 +9945,7 @@ letter_event = {
 			}
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30046 days = 3 }
+			letter_event = { id = RIP.30046 days = 3 }
 		}
 	}
 	
@@ -10038,7 +10038,7 @@ letter_event = {
 			}
 		}
 		FROMFROM = {
-			character_event = { id = RIP.30046 days = 3 }
+			letter_event = { id = RIP.30046 days = 3 }
 		}
 	}
 }
@@ -10298,7 +10298,7 @@ letter_event = {
 		}
 		
 		FROMFROM = {
-			character_event = { id = RIP.30051 }
+			letter_event = { id = RIP.30051 }
 		}
 	}
 }
@@ -11634,9 +11634,249 @@ character_event = {
 		custom_tooltip = { text = EVTOPTA_RIP_30223_TOOLTIP }
 
 		if = {
-			limit = { NOT = { religion_group = christian } }
+			limit = { 
+				NOT = { religion_group = abrahamic_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_abrahamics
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = anatolian_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_anatolians
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = arabpagan_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_arabpagans
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = aztec_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_aztecs
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = baltic_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_baltics
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = bantu_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_bantus
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = berberpagan_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_berbers
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = bud_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_buddhists
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = celtic_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_celtics
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = chinese_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_chinese
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = christian }
+			}
 			remove_trait_zealous_effect = yes
 			add_trait = sympathy_christendom
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = east_african_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_east_africans
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = egyptian_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_egyptian
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = finnish_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_finnish
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = graecoroman_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_graecoroman
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = indian_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_indian
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = indohelen_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_indohellens
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = inuit_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_inuit
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = jewish_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_judaism
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = luwian_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_luwians
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = mand_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_mande
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = mani_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_manichaeans
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = mithra_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_mithraics
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = muslim }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_islam
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = neoplato_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_platonics
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = norsegerman_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_nordic
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = pagan_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_pagans
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = palmyranpagan_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_palmyrans
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = serer_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_sererics
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = slavic_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_slavics
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = sol_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_sol
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = tengri_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_tengri
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = yazd_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_yazd
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = zal_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_zal
+		}
+		if = {
+			limit = { 
+				NOT = { religion_group = zoroastrian_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_zoroastrianism
 		}
 
 		set_character_flag = invited_death

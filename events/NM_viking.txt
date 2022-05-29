@@ -451,7 +451,7 @@ character_event = {
 	desc = "EVTDESC320002"
 	picture = GFX_evt_bandits
 	
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	prisoner = no
 	only_rulers = yes

@@ -453,44 +453,44 @@ targetted_decisions = {
 
 
 decisions = {
-	# syncretic_sympathy_decision = {
-		# only_playable = yes
-		# is_high_prio = yes
-		# ai_check_interval = 20 #check only once every 20 months.
-		# potential = {
-			# is_adult = yes
-			# NOR = {
-				# trait = incapable
-				# trait = sympathy_christendom
-				# trait = sympathy_islam
-				# trait = sympathy_pagans
-				# trait = sympathy_zoroastrianism
-				# trait = sympathy_judaism
-				# trait = sympathy_indian
-				# has_character_flag = flag_picking_sympathy
-			# }
-			# OR = { 
-				# has_religion_feature = religion_syncretic
-				# has_religion_feature = religion_feature_hellenic 
-			# }
-		# }
+	 syncretic_sympathy_decision = { ### Not sure what to make of this, gonna leave it out for now -00matthew2000 ###
+		 only_playable = yes
+		 is_high_prio = yes
+		 ai_check_interval = 20 #check only once every 20 months.
+		 potential = {
+			 is_adult = yes
+			 NOR = {
+				 trait = incapable
+				 trait = sympathy_christendom
+				 trait = sympathy_islam
+				 trait = sympathy_pagans
+				 trait = sympathy_zoroastrianism
+				 trait = sympathy_judaism
+				 trait = sympathy_indian
+				 has_character_flag = flag_picking_sympathy
+			 }
+			 OR = { 
+				 has_religion_feature = religion_syncretic
+				 has_religion_feature = religion_feature_hellenic 
+			 }
+		 }
 		
-		# allow = {
-			# prisoner = no
-			# OR = { 
-				# has_religion_feature = religion_syncretic
-				# has_religion_feature = religion_feature_hellenic 
-			# }
-		# }
+		 allow = {
+			 prisoner = no
+			 OR = { 
+				 has_religion_feature = religion_syncretic
+				 has_religion_feature = religion_feature_hellenic 
+			 }
+		 }
 		
-		# effect = {
-			# hidden_tooltip = {
+		 effect = {
+			 hidden_tooltip = {
 				# if = {
 					# limit = {
 						# ai = no
 					# }
-					# set_character_flag = flag_picking_sympathy
-					# character_event = { id = HF.23003 }
+					 set_character_flag = flag_picking_sympathy
+					 character_event = { id = HF.23003 }
 				# }
 				# else = {
 					# random_list = {
@@ -886,63 +886,63 @@ decisions = {
 						# }
 					# }
 				# }
-			# }
-		# }
+			}
+		}
 		# revoke_allowed = {
 			# always = no
 		# }
-		# ai_will_do = {
-			# factor = 1
+		 ai_will_do = {
+			 factor = 1
 			
-			# modifier = { # These are the most important reasons to gain a sympathy trait, if the AI has neither they are less likely to gain a trait
-				# factor = 0.25
-				# NOR = {
-					# any_demesne_province = {
-						# NOT = { religion_group = ROOT }
-					# }
-					# any_vassal = {
-						# NOT = { religion_group = ROOT }
-					# }
-					# any_liege = {
-						# religion = ROOT
-						# has_any_sympathy_trait_trigger = yes
-					# }
-				# }
-			# }
+			 modifier = { # These are the most important reasons to gain a sympathy trait, if the AI has neither they are less likely to gain a trait
+				 factor = 0.25
+				 NOR = {
+					 any_demesne_province = {
+						 NOT = { religion_group = ROOT }
+					 }
+					 any_vassal = {
+						 NOT = { religion_group = ROOT }
+					 }
+					 any_liege = {
+						 religion = ROOT
+						 has_any_sympathy_trait_trigger = yes
+					 }
+				 }
+			 }
 
-			# modifier = { # Zealous characters do not want to understand
-				# factor = 0
-				# trait = zealous
-			# }
+			 modifier = { # Zealous characters do not want to understand
+				 factor = 0
+				 trait = zealous
+			 }
 			
-			# modifier = { # The AI needs a reason to do the decision at all
-				# factor = 0
-				# NOR = {
-					# any_liege = {
-						# OR = {
-							# AND = {
-								# has_any_sympathy_trait_trigger = yes
-								# religion = ROOT
-							# }
-							# NOT = { religion_group = ROOT }
-						# }
-					# }
-					# spouse = {
-						# NOT = { religion_group = ROOT }
-					# }
-					# any_courtier_or_vassal = {
-						# NOT = { religion_group = ROOT }
-					# }
-					# any_neighbor_independent_ruler = {
-						# NOT = { religion_group = ROOT }
-					# }
-					# any_demesne_province = {
-						# NOT = { religion_group = ROOT }
-					# }
-				# }
-			# }
-		# }
-	# }
+			 modifier = { # The AI needs a reason to do the decision at all
+				 factor = 0
+				 NOR = {
+					 any_liege = {
+						 OR = {
+							 AND = {
+								 has_any_sympathy_trait_trigger = yes
+								 religion = ROOT
+							 }
+							 NOT = { religion_group = ROOT }
+						 }
+					 }
+					 spouse = {
+						 NOT = { religion_group = ROOT }
+					 }
+					 any_courtier_or_vassal = {
+						 NOT = { religion_group = ROOT }
+					 }
+					 any_neighbor_independent_ruler = {
+						 NOT = { religion_group = ROOT }
+					 }
+					 any_demesne_province = {
+						 NOT = { religion_group = ROOT }
+					 }
+				 }
+			 }
+		 }
+	 }
 	# pagan_branch_decision = {
 		# is_high_prio = yes
 		# ai_check_interval = 70 #check only once every 70 months.

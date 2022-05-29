@@ -696,7 +696,7 @@ character_event = {
 			factor = 0.25
 			trait = craven
 		}
-		interesting_courtier_outcome_score = yes #comment out if throws errors - tsf4
+		#interesting_courtier_outcome_score = yes #comment out if throws errors - tsf4 ### Thrown out b/c it threw errors -00matthew2000 ###
 	}
 	
 	immediate = {
@@ -759,10 +759,16 @@ character_event = {
 		}
 		hidden_tooltip = {
 			FROM = { 
-				character_event = { id = TOG.3108 days = 1460 }
+				if = {
+					limit = { is_female = yes }
+					set_character_flag = special_marshal #for safety, so they can go lead armies...
+				}
+				character_event = { id = TOG.3108 days = 1460 } # 4 years later (set some flags, not really necessary anymore, but why not)
+				
+				character_event = { id = HFP.19102 days = 1465 random = 300 } # 4 + years later
 			}
 		}
-		prestige = 50
+		prestige = 100
 	}
 }
 
@@ -955,11 +961,11 @@ character_event = {
 											culture = roman
 										}
 									}
-									OR = {
-										religion_group = christian
-										religion = hellenic_pagan
-										religion = hellenic_pagan_reformed
-									}
+									#OR = {
+										#religion_group = christian
+										#religion = hellenic_pagan
+										#religion = hellenic_pagan_reformed
+									#}
 								}
 							}
 						}
@@ -2092,7 +2098,7 @@ character_event = {
 		had_character_flag = { flag = serving_varangian months = 75 }
 	}
 	
-	weight_multiplier = {
+	weight_multiplier = { ### Leave these for now, weight multipliers still work if they're not from on_actions -00matthew2000 ###
 		days = 1
 		
 		modifier = {
@@ -2175,7 +2181,22 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = TOG.3131 } }
+		random_list = { #prioritize player parents
+			50 = {
+				modifier = {
+					factor = 100
+					father = { ai = no }
+				}
+				father = { character_event = { id = TOG.3131 } }
+			}
+			50 = {
+				modifier = {
+					factor = 100
+					mother = { ai = no }
+				}
+				mother = { character_event = { id = TOG.3131 } }
+			}
+		}
 		clr_character_flag = serving_varangian
 		clr_character_flag = son_vassal_merc 
 	}
@@ -4444,23 +4465,22 @@ character_event = {
 	id = TOG.3260
 	hide_window = yes
 	
-	min_age = 16
-	max_age = 17
 	has_character_flag = demon_child
+	is_triggered_only = yes
 	has_dlc = "The Old Gods"
 	
-	trigger = {
+	trigger = {	
 		FROM = { always = yes }
 	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
+
 	immediate = {
 		clr_character_flag = demon_child
 		clr_character_flag = demon_child_fake
 		clr_character_flag = child_exorcism
+	}
+	
+	option = {
+		name = OK
 	}
 }
 

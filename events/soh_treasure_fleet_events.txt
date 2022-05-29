@@ -16362,6 +16362,86 @@ character_event = {
 		if = {
 			limit = {
 				event_target:tf_sympathy_target = {
+					religion_group = abrahamic_group
+				}
+			}
+			add_trait = sympathy_abrahamics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = anatolian_group
+				}
+			}
+			add_trait = sympathy_anatolians
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = arabpagan_group
+				}
+			}
+			add_trait = sympathy_arabpagans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = aztec_group
+				}
+			}
+			add_trait = sympathy_aztecs
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = baltic_group
+				}
+			}
+			add_trait = sympathy_baltics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = bantu_group
+				}
+			}
+			add_trait = sympathy_bantus
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = berberpagan_group
+				}
+			}
+			add_trait = sympathy_berbers
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = bud_group
+				}
+			}
+			add_trait = sympathy_buddhists
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = celtic_group
+				}
+			}
+			add_trait = sympathy_celtics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = chinese_group
+				}
+			}
+			add_trait = sympathy_chinese
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
 					religion_group = christian
 				}
 			}
@@ -16370,18 +16450,34 @@ character_event = {
 		else_if = {
 			limit = {
 				event_target:tf_sympathy_target = {
-					religion_group = jewish_group
+					religion_group = east_african_group
 				}
 			}
-			add_trait = sympathy_judaism
+			add_trait = sympathy_east_africans
 		}
 		else_if = {
 			limit = {
 				event_target:tf_sympathy_target = {
-					religion_group = muslim
+					religion_group = egyptian_group
 				}
 			}
-			add_trait = sympathy_islam
+			add_trait = sympathy_egyptian
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = finnish_group
+				}
+			}
+			add_trait = sympathy_finnish
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = graecoroman_group
+				}
+			}
+			add_trait = sympathy_graecoroman
 		}
 		else_if = {
 			limit = {
@@ -16394,10 +16490,82 @@ character_event = {
 		else_if = {
 			limit = {
 				event_target:tf_sympathy_target = {
-					religion_group = zoroastrian_group
+					religion_group = indohelen_group
 				}
 			}
-			add_trait = sympathy_zoroastrianism
+			add_trait = sympathy_indohellens
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = inuit_group
+				}
+			}
+			add_trait = sympathy_inuit
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = jewish_group
+				}
+			}
+			add_trait = sympathy_judaism
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = luwian_group
+				}
+			}
+			add_trait = sympathy_luwians
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mand_group
+				}
+			}
+			add_trait = sympathy_mande
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mani_group
+				}
+			}
+			add_trait = sympathy_manichaeans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mithra_group
+				}
+			}
+			add_trait = sympathy_mithraics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = muslim
+				}
+			}
+			add_trait = sympathy_islam
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = neoplato_group
+				}
+			}
+			add_trait = sympathy_platonics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = norsegerman_group
+				}
+			}
+			add_trait = sympathy_nordic
 		}
 		else_if = {
 			limit = {
@@ -16406,6 +16574,70 @@ character_event = {
 				}
 			}
 			add_trait = sympathy_pagans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = palmyranpagan_group
+				}
+			}
+			add_trait = sympathy_palmyrans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = serer_group
+				}
+			}
+			add_trait = sympathy_sererics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = slavic_group
+				}
+			}
+			add_trait = sympathy_slavics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = sol_group
+				}
+			}
+			add_trait = sympathy_sol
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = tengri_group
+				}
+			}
+			add_trait = sympathy_tengri
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = yazd_group
+				}
+			}
+			add_trait = sympathy_yazd
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = zal_group
+				}
+			}
+			add_trait = sympathy_zal
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = zoroastrian_group
+				}
+			}
+			add_trait = sympathy_zoroastrianism
 		}
 	}
 }
@@ -19191,7 +19423,87 @@ character_event = {
 		
 		if = {
 			limit = {
-				event_target:tf_feast_event_target = {
+				event_target:tf_sympathy_target = {
+					religion_group = abrahamic_group
+				}
+			}
+			add_trait = sympathy_abrahamics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = anatolian_group
+				}
+			}
+			add_trait = sympathy_anatolians
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = arabpagan_group
+				}
+			}
+			add_trait = sympathy_arabpagans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = aztec_group
+				}
+			}
+			add_trait = sympathy_aztecs
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = baltic_group
+				}
+			}
+			add_trait = sympathy_baltics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = bantu_group
+				}
+			}
+			add_trait = sympathy_bantus
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = berberpagan_group
+				}
+			}
+			add_trait = sympathy_berbers
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = bud_group
+				}
+			}
+			add_trait = sympathy_buddhists
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = celtic_group
+				}
+			}
+			add_trait = sympathy_celtics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = chinese_group
+				}
+			}
+			add_trait = sympathy_chinese
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
 					religion_group = christian
 				}
 			}
@@ -19199,23 +19511,39 @@ character_event = {
 		}
 		else_if = {
 			limit = {
-				event_target:tf_feast_event_target = {
-					religion_group = jewish_group
+				event_target:tf_sympathy_target = {
+					religion_group = east_african_group
 				}
 			}
-			add_trait = sympathy_judaism
+			add_trait = sympathy_east_africans
 		}
 		else_if = {
 			limit = {
-				event_target:tf_feast_event_target = {
-					religion_group = muslim
+				event_target:tf_sympathy_target = {
+					religion_group = egyptian_group
 				}
 			}
-			add_trait = sympathy_islam
+			add_trait = sympathy_egyptian
 		}
 		else_if = {
 			limit = {
-				event_target:tf_feast_event_target = {
+				event_target:tf_sympathy_target = {
+					religion_group = finnish_group
+				}
+			}
+			add_trait = sympathy_finnish
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = graecoroman_group
+				}
+			}
+			add_trait = sympathy_graecoroman
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
 					religion_group = indian_group
 				}
 			}
@@ -19223,19 +19551,155 @@ character_event = {
 		}
 		else_if = {
 			limit = {
-				event_target:tf_feast_event_target = {
-					religion_group = zoroastrian_group
+				event_target:tf_sympathy_target = {
+					religion_group = indohelen_group
 				}
 			}
-			add_trait = sympathy_zoroastrianism
+			add_trait = sympathy_indohellens
 		}
 		else_if = {
 			limit = {
-				event_target:tf_feast_event_target = {
+				event_target:tf_sympathy_target = {
+					religion_group = inuit_group
+				}
+			}
+			add_trait = sympathy_inuit
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = jewish_group
+				}
+			}
+			add_trait = sympathy_judaism
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = luwian_group
+				}
+			}
+			add_trait = sympathy_luwians
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mand_group
+				}
+			}
+			add_trait = sympathy_mande
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mani_group
+				}
+			}
+			add_trait = sympathy_manichaeans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mithra_group
+				}
+			}
+			add_trait = sympathy_mithraics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = muslim
+				}
+			}
+			add_trait = sympathy_islam
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = neoplato_group
+				}
+			}
+			add_trait = sympathy_platonics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = norsegerman_group
+				}
+			}
+			add_trait = sympathy_nordic
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
 					religion_group = pagan_group
 				}
 			}
 			add_trait = sympathy_pagans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = palmyranpagan_group
+				}
+			}
+			add_trait = sympathy_palmyrans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = serer_group
+				}
+			}
+			add_trait = sympathy_sererics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = slavic_group
+				}
+			}
+			add_trait = sympathy_slavics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = sol_group
+				}
+			}
+			add_trait = sympathy_sol
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = tengri_group
+				}
+			}
+			add_trait = sympathy_tengri
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = yazd_group
+				}
+			}
+			add_trait = sympathy_yazd
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = zal_group
+				}
+			}
+			add_trait = sympathy_zal
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = zoroastrian_group
+				}
+			}
+			add_trait = sympathy_zoroastrianism
 		}
 	}
 }
@@ -19254,7 +19718,87 @@ character_event = {
 		
 		if = {
 			limit = {
-				FROM = {
+				event_target:tf_sympathy_target = {
+					religion_group = abrahamic_group
+				}
+			}
+			add_trait = sympathy_abrahamics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = anatolian_group
+				}
+			}
+			add_trait = sympathy_anatolians
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = arabpagan_group
+				}
+			}
+			add_trait = sympathy_arabpagans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = aztec_group
+				}
+			}
+			add_trait = sympathy_aztecs
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = baltic_group
+				}
+			}
+			add_trait = sympathy_baltics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = bantu_group
+				}
+			}
+			add_trait = sympathy_bantus
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = berberpagan_group
+				}
+			}
+			add_trait = sympathy_berbers
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = bud_group
+				}
+			}
+			add_trait = sympathy_buddhists
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = celtic_group
+				}
+			}
+			add_trait = sympathy_celtics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = chinese_group
+				}
+			}
+			add_trait = sympathy_chinese
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
 					religion_group = christian
 				}
 			}
@@ -19262,23 +19806,39 @@ character_event = {
 		}
 		else_if = {
 			limit = {
-				FROM = {
-					religion_group = jewish_group
+				event_target:tf_sympathy_target = {
+					religion_group = east_african_group
 				}
 			}
-			add_trait = sympathy_judaism
+			add_trait = sympathy_east_africans
 		}
 		else_if = {
 			limit = {
-				FROM = {
-					religion_group = muslim
+				event_target:tf_sympathy_target = {
+					religion_group = egyptian_group
 				}
 			}
-			add_trait = sympathy_islam
+			add_trait = sympathy_egyptian
 		}
 		else_if = {
 			limit = {
-				FROM = {
+				event_target:tf_sympathy_target = {
+					religion_group = finnish_group
+				}
+			}
+			add_trait = sympathy_finnish
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = graecoroman_group
+				}
+			}
+			add_trait = sympathy_graecoroman
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
 					religion_group = indian_group
 				}
 			}
@@ -19286,19 +19846,155 @@ character_event = {
 		}
 		else_if = {
 			limit = {
-				FROM = {
-					religion_group = zoroastrian_group
+				event_target:tf_sympathy_target = {
+					religion_group = indohelen_group
 				}
 			}
-			add_trait = sympathy_zoroastrianism
+			add_trait = sympathy_indohellens
 		}
 		else_if = {
 			limit = {
-				FROM = {
+				event_target:tf_sympathy_target = {
+					religion_group = inuit_group
+				}
+			}
+			add_trait = sympathy_inuit
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = jewish_group
+				}
+			}
+			add_trait = sympathy_judaism
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = luwian_group
+				}
+			}
+			add_trait = sympathy_luwians
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mand_group
+				}
+			}
+			add_trait = sympathy_mande
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mani_group
+				}
+			}
+			add_trait = sympathy_manichaeans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mithra_group
+				}
+			}
+			add_trait = sympathy_mithraics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = muslim
+				}
+			}
+			add_trait = sympathy_islam
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = neoplato_group
+				}
+			}
+			add_trait = sympathy_platonics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = norsegerman_group
+				}
+			}
+			add_trait = sympathy_nordic
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
 					religion_group = pagan_group
 				}
 			}
 			add_trait = sympathy_pagans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = palmyranpagan_group
+				}
+			}
+			add_trait = sympathy_palmyrans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = serer_group
+				}
+			}
+			add_trait = sympathy_sererics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = slavic_group
+				}
+			}
+			add_trait = sympathy_slavics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = sol_group
+				}
+			}
+			add_trait = sympathy_sol
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = tengri_group
+				}
+			}
+			add_trait = sympathy_tengri
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = yazd_group
+				}
+			}
+			add_trait = sympathy_yazd
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = zal_group
+				}
+			}
+			add_trait = sympathy_zal
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = zoroastrian_group
+				}
+			}
+			add_trait = sympathy_zoroastrianism
 		}
 	}
 }
@@ -23981,6 +24677,86 @@ character_event = {
 		if = {
 			limit = {
 				event_target:tf_sympathy_target = {
+					religion_group = abrahamic_group
+				}
+			}
+			add_trait = sympathy_abrahamics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = anatolian_group
+				}
+			}
+			add_trait = sympathy_anatolians
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = arabpagan_group
+				}
+			}
+			add_trait = sympathy_arabpagans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = aztec_group
+				}
+			}
+			add_trait = sympathy_aztecs
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = baltic_group
+				}
+			}
+			add_trait = sympathy_baltics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = bantu_group
+				}
+			}
+			add_trait = sympathy_bantus
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = berberpagan_group
+				}
+			}
+			add_trait = sympathy_berbers
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = bud_group
+				}
+			}
+			add_trait = sympathy_buddhists
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = celtic_group
+				}
+			}
+			add_trait = sympathy_celtics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = chinese_group
+				}
+			}
+			add_trait = sympathy_chinese
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
 					religion_group = christian
 				}
 			}
@@ -23989,18 +24765,34 @@ character_event = {
 		else_if = {
 			limit = {
 				event_target:tf_sympathy_target = {
-					religion_group = jewish_group
+					religion_group = east_african_group
 				}
 			}
-			add_trait = sympathy_judaism
+			add_trait = sympathy_east_africans
 		}
 		else_if = {
 			limit = {
 				event_target:tf_sympathy_target = {
-					religion_group = muslim
+					religion_group = egyptian_group
 				}
 			}
-			add_trait = sympathy_islam
+			add_trait = sympathy_egyptian
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = finnish_group
+				}
+			}
+			add_trait = sympathy_finnish
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = graecoroman_group
+				}
+			}
+			add_trait = sympathy_graecoroman
 		}
 		else_if = {
 			limit = {
@@ -24013,10 +24805,82 @@ character_event = {
 		else_if = {
 			limit = {
 				event_target:tf_sympathy_target = {
-					religion_group = zoroastrian_group
+					religion_group = indohelen_group
 				}
 			}
-			add_trait = sympathy_zoroastrianism
+			add_trait = sympathy_indohellens
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = inuit_group
+				}
+			}
+			add_trait = sympathy_inuit
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = jewish_group
+				}
+			}
+			add_trait = sympathy_judaism
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = luwian_group
+				}
+			}
+			add_trait = sympathy_luwians
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mand_group
+				}
+			}
+			add_trait = sympathy_mande
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mani_group
+				}
+			}
+			add_trait = sympathy_manichaeans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = mithra_group
+				}
+			}
+			add_trait = sympathy_mithraics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = muslim
+				}
+			}
+			add_trait = sympathy_islam
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = neoplato_group
+				}
+			}
+			add_trait = sympathy_platonics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = norsegerman_group
+				}
+			}
+			add_trait = sympathy_nordic
 		}
 		else_if = {
 			limit = {
@@ -24025,6 +24889,70 @@ character_event = {
 				}
 			}
 			add_trait = sympathy_pagans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = palmyranpagan_group
+				}
+			}
+			add_trait = sympathy_palmyrans
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = serer_group
+				}
+			}
+			add_trait = sympathy_sererics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = slavic_group
+				}
+			}
+			add_trait = sympathy_slavics
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = sol_group
+				}
+			}
+			add_trait = sympathy_sol
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = tengri_group
+				}
+			}
+			add_trait = sympathy_tengri
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = yazd_group
+				}
+			}
+			add_trait = sympathy_yazd
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = zal_group
+				}
+			}
+			add_trait = sympathy_zal
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = zoroastrian_group
+				}
+			}
+			add_trait = sympathy_zoroastrianism
 		}
 	}
 }

@@ -6966,30 +6966,146 @@ kurultai = {
 			NOT = { has_religion_feature = religion_dogmatic }
 			NOT = { religion_group = indian_group }
 			NOR = { 
-				AND = {  
+				AND = { 
+					FROM = { religion_group = abrahamic }
+					trait = sympathy_abrahamics
+				}
+				AND = { 
+					FROM = { religion_group = anatolian }
+					trait = sympathy_anatolians
+				}
+				AND = { 
+					FROM = { religion_group = arabpagan }
+					trait = sympathy_arabpagans
+				}
+				AND = { 
+					FROM = { religion_group = aztec }
+					trait = sympathy_aztecs
+				}
+				AND = { 
+					FROM = { religion_group = baltic }
+					trait = sympathy_baltics
+				}
+				AND = { 
+					FROM = { religion_group = bantu }
+					trait = sympathy_bantus
+				}
+				AND = { 
+					FROM = { religion_group = berberpagan }
+					trait = sympathy_berbers
+				}
+				AND = { 
+					FROM = { religion_group = bud }
+					trait = sympathy_buddhists
+				}
+				AND = { 
+					FROM = { religion_group = celtic }
+					trait = sympathy_celtics
+				}
+				AND = { 
+					FROM = { religion_group = chinese }
+					trait = sympathy_chinese
+				}
+				AND = { 
+					FROM = { religion_group = christian }
 					trait = sympathy_christendom
-					FROM = { religion_group = christian } 
-				} 
-				AND = {  
-					trait = sympathy_islam
-					FROM = { religion_group = muslim } 
-				} 
-				AND = {  
-					trait = sympathy_pagans
-					FROM = { religion_group = pagan_group } 
-				} 
-				AND = {  
-					trait = sympathy_zoroastrianism
-					FROM = { religion_group = zoroastrian_group } 
-				} 
-				AND = {  
-					trait = sympathy_judaism
-					FROM = { religion_group = jewish_group } 
-				} 
-				AND = {  
+				}
+				AND = { 
+					FROM = { religion_group = east_african }
+					trait = sympathy_east_africans
+				}
+				AND = { 
+					FROM = { religion_group = egyptian }
+					trait = sympathy_egyptian
+				}
+				AND = { 
+					FROM = { religion_group = finnish }
+					trait = sympathy_finnish
+				}
+				AND = { 
+					FROM = { religion_group = graecoroman }
+					trait = sympathy_graecoroman
+				}
+				AND = { 
+					FROM = { religion_group = indian }
 					trait = sympathy_indian
-					FROM = { religion_group = indian_group } 
-				} 
+				}
+				AND = { 
+					FROM = { religion_group = indohelen }
+					trait = sympathy_indohellens
+				}
+				AND = { 
+					FROM = { religion_group = inuit }
+					trait = sympathy_inuit
+				}
+				AND = { 
+					FROM = { religion_group = jewish }
+					trait = sympathy_judaism
+				}
+				AND = { 
+					FROM = { religion_group = luwian }
+					trait = sympathy_luwians
+				}
+				AND = { 
+					FROM = { religion_group = mand }
+					trait = sympathy_mande
+				}
+				AND = { 
+					FROM = { religion_group = mani }
+					trait = sympathy_manichaeans
+				}
+				AND = { 
+					FROM = { religion_group = mithra }
+					trait = sympathy_mithraics
+				}
+				AND = { 
+					FROM = { religion_group = muslim }
+					trait = sympathy_islam
+				}
+				AND = { 
+					FROM = { religion_group = neoplato }
+					trait = sympathy_platonics
+				}
+				AND = { 
+					FROM = { religion_group = norsegerman }
+					trait = sympathy_nordic
+				}
+				AND = { 
+					FROM = { religion_group = pagan }
+					trait = sympathy_pagans
+				}
+				AND = { 
+					FROM = { religion_group = palmyranpagan }
+					trait = sympathy_palmyrans
+				}
+				AND = { 
+					FROM = { religion_group = serer }
+					trait = sympathy_sererics
+				}
+				AND = { 
+					FROM = { religion_group = slavic }
+					trait = sympathy_slavics
+				}
+				AND = { 
+					FROM = { religion_group = sol }
+					trait = sympathy_sol
+				}
+				AND = { 
+					FROM = { religion_group = tengri }
+					trait = sympathy_tengri
+				}
+				AND = { 
+					FROM = { religion_group = yazd }
+					trait = sympathy_yazd
+				}
+				AND = { 
+					FROM = { religion_group = zal }
+					trait = sympathy_zal
+				}
+				AND = { 
+					FROM = { religion_group = zoroastrian }
+					trait = sympathy_zoroastrianism
+				}
 			}
 			FROM = { 
 				NOT = { religion_group = ROOT } 
