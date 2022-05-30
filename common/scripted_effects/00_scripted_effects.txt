@@ -4135,7 +4135,7 @@ remove_assassins_debt_effect = {
 			set_variable = { which = assassins_debt value = 0 } 
 		}
 		clr_character_flag = assassins_target_debt
-		#clear_delayed_event = { id = MNM.6009 }
+		clear_delayed_event = { id = MNM.6009 }
 	}
 }
 
@@ -12723,12 +12723,21 @@ clean_up_after_leaving_society_effect = {
 		remove_character_modifier = quest_cooldown_timer
 		
 		#Powers, Missions and Interactions: the Assassins
-		#quest_the_assassins_assassination
-		#quest_the_assassins_collect_debt
-		#quest_the_assassins_convert_province
-		#quest_the_assassins_occupy_holding
-		#quest_the_assassins_protege
+		quest_the_assassins_assassination
+		quest_the_assassins_collect_debt
+		quest_the_assassins_convert_province
+		quest_the_assassins_occupy_holding
+		quest_the_assassins_protege
 		clr_character_flag = ongoing_recruitment
+		clr_character_flag = lux_wanted_assassins
+		clr_character_flag = lux_wanted_assassins_bud_mahayana
+		clr_character_flag = lux_wanted_assassins_mani_ahriman
+		clr_character_flag = lux_wanted_assassins_priscillian
+		clr_character_flag = lux_wanted_assassins_ragnarok
+		clr_character_flag = lux_wanted_assassins_set
+		clr_character_flag = lux_wanted_assassins_tengri_ahriman
+		clr_character_flag = lux_wanted_assassins_yahyanism
+		clr_character_flag = lux_wanted_assassins_zor_angra
 		clr_character_flag = approves_of_shia
 		clr_character_flag = disapproves_of_shia
 		clr_character_flag = willing_to_join

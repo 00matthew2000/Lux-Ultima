@@ -26,6 +26,40 @@ e_pirates = {
 
 # SPECIAL TITLES
 
+d_hashshashin = {
+
+	color={ 100 100 0 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = hashshashingfx
+	
+	capital = 693 # Baghdad
+	
+	title = "GRANDHEADMASTER"
+	foa = "GRANDHEADMASTER_FOA"
+	
+	holy_order = yes
+
+	# Always exists
+	landless = yes
+	
+	culture = bedouin_arabic
+	
+	# Parent Religion 
+	religion = qarmatian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
+
+	mercenary_type = hashshashin_composition
+}
+
 d_huitzilopochtli = {
 
 	color={ 255 200 0 }

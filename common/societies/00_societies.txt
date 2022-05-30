@@ -279,10 +279,10 @@ monastic_order_benedictine = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = catholic
+	   	controls_religion = no
+		  	religion = catholic
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -584,10 +584,10 @@ monastic_order_dominican = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = catholic
+	   	controls_religion = no
+		  	religion = catholic
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -891,10 +891,10 @@ monastic_order_orthodox = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = orthodox
+	   	controls_religion = no
+		  	religion = orthodox
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -1198,10 +1198,10 @@ monastic_order_nestorian = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = nestorian
+	   	controls_religion = no
+		  	religion = nestorian
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -1433,10 +1433,10 @@ monastic_order_monophysite = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = monophysite
+	   	controls_religion = no
+		  	religion = monophysite
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -1693,10 +1693,10 @@ monastic_order_hindu = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = hindu
+	   	controls_religion = no
+		  	religion = hindu
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -1946,10 +1946,10 @@ monastic_order_hindu = {
 	# }
 	
 	# startup_populate = {
-	    # trigger = {
+	   # trigger = {
 			# ai = yes
-	    	# controls_religion = no
-		   	# religion = buddhist
+	   	# controls_religion = no
+		  	# religion = buddhist
 			# age = 16
 			# is_in_society = no
 			# NOT = { higher_tier_than = DUKE }
@@ -2214,10 +2214,10 @@ monastic_order_jain = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = jain
+	   	controls_religion = no
+		  	religion = jain
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -2524,10 +2524,10 @@ monastic_order_adoptionist = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = adoptionist
+	   	controls_religion = no
+		  	religion = adoptionist
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -2838,10 +2838,10 @@ monastic_order_apollinarist = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = apollinarist
+	   	controls_religion = no
+		  	religion = apollinarist
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -3152,10 +3152,10 @@ monastic_order_iconoclast = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = iconoclast
+	   	controls_religion = no
+		  	religion = iconoclast
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -3466,10 +3466,10 @@ monastic_order_melkite = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = melkite
+	   	controls_religion = no
+		  	religion = melkite
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -3780,10 +3780,10 @@ monastic_order_monothelite = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = monothelite
+	   	controls_religion = no
+		  	religion = monothelite
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -4094,10 +4094,10 @@ monastic_order_montanist = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = montanist
+	   	controls_religion = no
+		  	religion = montanist
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -4408,10 +4408,10 @@ monastic_order_pelagian = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
-		   	religion = pelagian
+	   	controls_religion = no
+		  	religion = pelagian
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -4653,9 +4653,9 @@ hermetics = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+	   trigger = {
 			ai = yes
-	    	controls_religion = no
+	   	controls_religion = no
 			age = 16
 			is_in_society = no
 			is_dumb_trigger = no
@@ -4698,350 +4698,3126 @@ hermetics = {
 
  ###THE ASSASSINS###
  the_assassins = {
-	 primary_attribute = intrigue
-	 is_secret = yes
-	 devil_worshipper = no
-	 opinion_to_other_members = +10
-	 opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
-	 opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
-	 opinion_per_rank_above = +10
-	 society_rank_up_decision = request_to_rank_up_within_society
-	 sound = assassins_interface
-	 society_ranks_gfx = generic_ranks
+	primary_attribute = intrigue
+	is_secret = yes
+	devil_worshipper = no
+	opinion_to_other_members = +10
+	opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
+	opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	society_rank_up_decision = request_to_rank_up_within_society
+	sound = assassins_interface
+	society_ranks_gfx = generic_ranks
 	
-	 active = {
-		 has_dlc = "Mystics"
-	 }
-	 indestructible = yes
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
 
-	 can_join_society = {
-		 hidden_trigger = {
-			 NAND = {
-				 ai = yes
-				 is_society_rank_full = { 
-					 society = the_assassins
-					 rank = 1
-				 }
-			 }
-		 }
-		 age = 16
-		 OR = {
-			 true_religion = shiite
-			 religion_group = muslim
-			 AND = {
-				 ai = no
-				 NOT = { trait = zealous }
-				 any_playable_ruler = {
-					 religion = shiite
-					 NOT = {
-						 distance_from_realm = { value = 300 who = ROOT }
-					 }
-				 }
-			 }
-		 }
-		 OR = {
-			 is_female = no
-			 has_game_rule = {
-				 name = gender
-				 value = all
-			 }
-		 }
-		 hidden_trigger = {
-			 NOT = { has_character_flag = society_join_block }
-		 }
-	 }
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = the_assassins
+					rank = 1
+				}
+			}
+		}
+		age = 16
+		OR = {
+			true_religion = qarmatian
+			religion_group = muslim
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = qarmatian
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+		}
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
 
-	 show_society = {
-		 OR = {
-			 religion_group = muslim
-			 secret_religion = shiite
-			 AND = {
-				 ai = no
-				 NOT = { trait = zealous }
-				 any_playable_ruler = {
-					 religion = shiite
-					 NOT = {
-						 distance_from_realm = { value = 300 who = ROOT }
-					 }
-				 }
-			 }
-			 society_member_of = the_assassins
-		 }
-		 age = 16
-		 OR = {
-			 is_female = no
-			 has_game_rule = {
-				 name = gender
-				 value = all
-			 }
-		 }
-	 }
+	show_society = {
+		OR = {
+			religion_group = muslim
+			secret_religion = qarmatian
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = qarmatian
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+			society_member_of = the_assassins
+		}
+		age = 16
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+	}
 
-	 potential = {
-		 OR = {
-			 religion = shiite
-			 secret_religion = shiite
-		 }
-	 }
+	potential = {
+		OR = {
+			religion = qarmatian
+			secret_religion = qarmatian
+		}
+	}
 
-	 society_rank = {
-		 level = 1
-		 limit = 20 
-		 startup_limit = 10
-		 modifier = {
-			 is_visible = {
-				 OR = {
-					 society_member_of = the_assassins
-					 FROM = { is_society_discovered = yes }
-				 }
-			 }
-			 murder_plot_power_modifier = 0.1  increased plotpower
-		 }
-		 decisions = {
-			 decision_abduct
-			 assassins_borrow_money
-			 assassins_donate
-			 assassins_drug_effect
-		 }
-	 }
+	society_rank = {
+		level = 1
+		limit = 20 
+		startup_limit = 10
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.1  increased plotpower
+		}
+		decisions = {
+			decision_abduct
+			assassins_borrow_money
+			assassins_donate
+			assassins_drug_effect
+		}
+	}
 	
-	 society_rank = {
-		 level = 2
-		 limit = 15
-		 startup_limit = 6
-		 modifier = { 
-			 is_visible = {
-				 OR = {
-					 society_member_of = the_assassins
-					 FROM = { is_society_discovered = yes }
-				 }
-			 }
-			 murder_plot_power_modifier = 0.2  further increased plotpower
-			 defensive_plot_power_modifier = 0.1
-			 intrigue = 1 
-			 combat_rating = 1  bonus to dueling
-		 }
-		 decisions = {
-			 assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
-		 }
-	 }
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 6
+		modifier = { 
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.2  further increased plotpower
+			defensive_plot_power_modifier = 0.1
+			intrigue = 1 
+			combat_rating = 1  bonus to dueling
+		}
+		decisions = {
+			assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
+		}
+	}
 	
-	 society_rank = {
-		 level = 3
-		 limit = 5 
-		 startup_limit = 3
-		 modifier = {
-			 is_visible = {
-				 OR = {
-					 society_member_of = the_assassins
-					 FROM = { is_society_discovered = yes }
-				 }
-			 }
-			 murder_plot_power_modifier = 0.30  further increased plotpower
-			 defensive_plot_power_modifier = 0.15
-			 intrigue = 2  further increase
-			 combat_rating = 1  bonus to dueling (left over)
-			 plot_discovery_chance = 0.1  bonus to plot discovery chance
-		 }
-		 decisions = {
-			 assassins_raise_ships #Available Power: Can raise special fleet of Ships
-		 }
-	 }
+	society_rank = {
+		level = 3
+		limit = 5 
+		startup_limit = 3
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.30  further increased plotpower
+			defensive_plot_power_modifier = 0.15
+			intrigue = 2  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.1  bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_ships #Available Power: Can raise special fleet of Ships
+		}
+	}
 
-	 society_rank = {
-		 level = 4
-		 limit = 1 
-		 startup_limit = 1
-		 modifier = {
-			 is_visible = {
-				 OR = {
-					 society_member_of = the_assassins
-					 FROM = { is_society_discovered = yes }
-				 }
-			 }
-			 murder_plot_power_modifier = 0.50  further increased plotpower
-			 defensive_plot_power_modifier = 0.25
-			 intrigue = 3  further increase
-			 combat_rating = 1  bonus to dueling (left over)
-			 plot_discovery_chance = 0.2  further bonus to plot discovery chance
-		 }
-		 decisions = {
-			 assassins_raise_troops #Available Power: Can raise a special regiment
-			 assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
-		 }
-		 obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
-		 obedient = {
-			 ROOT = {
-				 always = yes
-			 }
-		 }
-	 }
+	society_rank = {
+		level = 4
+		limit = 1 
+		startup_limit = 1
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.50  further increased plotpower
+			defensive_plot_power_modifier = 0.25
+			intrigue = 3  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.2  further bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_troops #Available Power: Can raise a special regiment
+			assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
+		}
+		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
+		obedient = {
+			ROOT = {
+				always = yes
+			}
+		}
+	}
 
-	 monthly_currency_gain = {
-		 name = currency_name_the_assassins
+	monthly_currency_gain = {
+		name = currency_name_the_assassins
     
-		 per_attribute = {
-			 name = intrigue 
-			 value = 0.5
-		 }
-		 has_trait = {
-			 trait = zealous
-			 value = 3
-		 }
-		 has_trait = {
-			 trait = erudite
-			 value = 3
-		 }
-		 has_trait = {
-			 trait = scholar
-			 value = 3
-		 }
-		 has_trait = {
-			 trait = theologian
-			 value = 3
-		 }
-		 has_trait = {
-			 trait = schemer
-			 value = 3
-		 }
-		 has_trait = {
-			 trait = strong
-			 value = 1
-		 }
-		 has_trait = {
-			 trait = robust
-			 value = 1
-		 }
-		 has_trait = {
-			 trait = genius
-			 value = 1
-		 }
-		 has_trait = {
-			 trait = quick
-			 value = 1
-		 }
-		 has_trait = {
-			 trait = shrewd
-			 value = 1
-		 }
-		 has_trait = {
-			 trait = diligent
-			 value = 1
-		 }
-		 has_trait = {
-			 trait = patient
-			 value = 1
-		 }
-		 has_trait = {
-			 trait = temperate
-			 value = 1
-		 }
-		 has_trait = {
-			 trait = charitable
-			 value = 1
-		 }
-		 society_rank = {
-			 rank = 4
-			 value = 10
-		 }
-	 }
+		per_attribute = {
+			name = intrigue 
+			value = 0.5
+		}
+		has_trait = {
+			trait = zealous
+			value = 3
+		}
+		has_trait = {
+			trait = erudite
+			value = 3
+		}
+		has_trait = {
+			trait = scholar
+			value = 3
+		}
+		has_trait = {
+			trait = theologian
+			value = 3
+		}
+		has_trait = {
+			trait = schemer
+			value = 3
+		}
+		has_trait = {
+			trait = strong
+			value = 1
+		}
+		has_trait = {
+			trait = robust
+			value = 1
+		}
+		has_trait = {
+			trait = genius
+			value = 1
+		}
+		has_trait = {
+			trait = quick
+			value = 1
+		}
+		has_trait = {
+			trait = shrewd
+			value = 1
+		}
+		has_trait = {
+			trait = diligent
+			value = 1
+		}
+		has_trait = {
+			trait = patient
+			value = 1
+		}
+		has_trait = {
+			trait = temperate
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
 
-	 member_score_per_attribute = 3
-	 member_score_per_rank = 100
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
 
-	 member_score = {
-		 value = 10
+	member_score = {
+		value = 10
 
-		 modifier = {
-			 primary_title = { title = d_hashshashin }
-			 factor = 2
-		 }
-		 modifier = {
-			 trait = zealous
-			 factor = 1.3
-		 }
-		 modifier = {
-			 trait = erudite
-			 factor = 1.3
-		 }
-		 modifier = {
-			 trait = scholar
-			 factor = 1.3
-		 }
-		 modifier = {
-			 trait = theologian
-			 factor = 1.3
-		 }
-		 modifier = {
-			 trait = schemer
-			 factor = 1.3
-		 }
-		 modifier = {
-			 trait = strong
-			 factor = 1.1
-		 }
-		 modifier = {
-			 trait = robust
-			 factor = 1.1
-		 }
-		 modifier = {
-			 trait = genius
-			 factor = 1.1
-		 }
-		 modifier = {
-			 trait = quick
-			 factor = 1.1
-		 }
-		 modifier = {
-			 trait = shrewd
-			 factor = 1.1
-		 }
-		 modifier = {
-			 trait = diligent
-			 factor = 1.1
-		 }
-		 modifier = {
-			 trait = patient
-			 factor = 1.1
-		 }
-		 modifier = {
-			 trait = temperate
-			 factor = 1.1
-		 }
-		 modifier = {
-			 trait = charitable
-			 factor = 1.1
-		 }	
-	 }
+		modifier = {
+			primary_title = { title = d_hashshashin }
+			factor = 2
+		}
+		modifier = {
+			trait = zealous
+			factor = 1.3
+		}
+		modifier = {
+			trait = erudite
+			factor = 1.3
+		}
+		modifier = {
+			trait = scholar
+			factor = 1.3
+		}
+		modifier = {
+			trait = theologian
+			factor = 1.3
+		}
+		modifier = {
+			trait = schemer
+			factor = 1.3
+		}
+		modifier = {
+			trait = strong
+			factor = 1.1
+		}
+		modifier = {
+			trait = robust
+			factor = 1.1
+		}
+		modifier = {
+			trait = genius
+			factor = 1.1
+		}
+		modifier = {
+			trait = quick
+			factor = 1.1
+		}
+		modifier = {
+			trait = shrewd
+			factor = 1.1
+		}
+		modifier = {
+			trait = diligent
+			factor = 1.1
+		}
+		modifier = {
+			trait = patient
+			factor = 1.1
+		}
+		modifier = {
+			trait = temperate
+			factor = 1.1
+		}
+		modifier = {
+			trait = charitable
+			factor = 1.1
+		}	
+	}
 	
-	 startup_populate = {
-	     trigger = {
-			 ai = yes
-	    	 controls_religion = no 
-			 religion = shiite
-			 age = 16
-			 OR = {
-				 is_female = no
-				 has_game_rule = {
-					 name = gender
-					 value = all
-				 }
-			 }
-			 NOT = { trait = decadent }
-			 OR = {
-				 trait = zealous
-				 trait = schemer
-				 trait = elusive_shadow
-				 trait = deceitful
-				 trait = ambitious
-				 intrigue = 18
-			 }
-			 is_in_society = no
-			 NOT = { higher_tier_than = DUKE }
-			 NOT = { mercenary = yes }
-			 NOT = { holy_order = yes }
-		 }
-	 }
+	startup_populate = {
+	    trigger = {
+			ai = yes
+	   	controls_religion = no 
+			religion = qarmatian
+			age = 16
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+			NOT = { trait = decadent }
+			OR = {
+				trait = zealous
+				trait = schemer
+				trait = elusive_shadow
+				trait = deceitful
+				trait = ambitious
+				intrigue = 18
+			}
+			is_in_society = no
+			NOT = { higher_tier_than = DUKE }
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+		}
+	}
+ }
+ 
+ the_assassins_bud_mahayana = {
+	primary_attribute = intrigue
+	is_secret = yes
+	devil_worshipper = no
+	opinion_to_other_members = +10
+	opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
+	opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	society_rank_up_decision = request_to_rank_up_within_society
+	sound = assassins_interface
+	society_ranks_gfx = generic_ranks
+	
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
+
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = the_assassins_bud_mahayana
+					rank = 1
+				}
+			}
+		}
+		age = 16
+		OR = {
+			true_religion = bud_mahayana
+			religion_group = bud_group
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = bud_mahayana
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+		}
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
+
+	show_society = {
+		OR = {
+			religion_group = bud_group
+			secret_religion = bud_mahayana
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = bud_mahayana
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+			society_member_of = the_assassins_bud_mahayana
+		}
+		age = 16
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+	}
+
+	potential = {
+		OR = {
+			religion = bud_mahayana
+			secret_religion = bud_mahayana
+		}
+	}
+
+	society_rank = {
+		level = 1
+		limit = 20 
+		startup_limit = 10
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_bud_mahayana
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.1  increased plotpower
+		}
+		decisions = {
+			decision_abduct
+			assassins_borrow_money
+			assassins_donate
+			assassins_drug_effect
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 6
+		modifier = { 
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_bud_mahayana
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.2  further increased plotpower
+			defensive_plot_power_modifier = 0.1
+			intrigue = 1 
+			combat_rating = 1  bonus to dueling
+		}
+		decisions = {
+			assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
+		}
+	}
+	
+	society_rank = {
+		level = 3
+		limit = 5 
+		startup_limit = 3
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_bud_mahayana
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.30  further increased plotpower
+			defensive_plot_power_modifier = 0.15
+			intrigue = 2  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.1  bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_ships #Available Power: Can raise special fleet of Ships
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 1 
+		startup_limit = 1
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_bud_mahayana
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.50  further increased plotpower
+			defensive_plot_power_modifier = 0.25
+			intrigue = 3  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.2  further bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_troops #Available Power: Can raise a special regiment
+			assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
+		}
+		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
+		obedient = {
+			ROOT = {
+				always = yes
+			}
+		}
+	}
+
+	monthly_currency_gain = {
+		name = currency_name_the_assassins
+    
+		per_attribute = {
+			name = intrigue 
+			value = 0.5
+		}
+		has_trait = {
+			trait = zealous
+			value = 3
+		}
+		has_trait = {
+			trait = erudite
+			value = 3
+		}
+		has_trait = {
+			trait = scholar
+			value = 3
+		}
+		has_trait = {
+			trait = theologian
+			value = 3
+		}
+		has_trait = {
+			trait = schemer
+			value = 3
+		}
+		has_trait = {
+			trait = strong
+			value = 1
+		}
+		has_trait = {
+			trait = robust
+			value = 1
+		}
+		has_trait = {
+			trait = genius
+			value = 1
+		}
+		has_trait = {
+			trait = quick
+			value = 1
+		}
+		has_trait = {
+			trait = shrewd
+			value = 1
+		}
+		has_trait = {
+			trait = diligent
+			value = 1
+		}
+		has_trait = {
+			trait = patient
+			value = 1
+		}
+		has_trait = {
+			trait = temperate
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			primary_title = { title = d_hashshashin } ### change to landed title of this assassin group -00matthew2000 ###
+			factor = 2
+		}
+		modifier = {
+			trait = zealous
+			factor = 1.3
+		}
+		modifier = {
+			trait = erudite
+			factor = 1.3
+		}
+		modifier = {
+			trait = scholar
+			factor = 1.3
+		}
+		modifier = {
+			trait = theologian
+			factor = 1.3
+		}
+		modifier = {
+			trait = schemer
+			factor = 1.3
+		}
+		modifier = {
+			trait = strong
+			factor = 1.1
+		}
+		modifier = {
+			trait = robust
+			factor = 1.1
+		}
+		modifier = {
+			trait = genius
+			factor = 1.1
+		}
+		modifier = {
+			trait = quick
+			factor = 1.1
+		}
+		modifier = {
+			trait = shrewd
+			factor = 1.1
+		}
+		modifier = {
+			trait = diligent
+			factor = 1.1
+		}
+		modifier = {
+			trait = patient
+			factor = 1.1
+		}
+		modifier = {
+			trait = temperate
+			factor = 1.1
+		}
+		modifier = {
+			trait = charitable
+			factor = 1.1
+		}	
+	}
+	
+	startup_populate = {
+	    trigger = {
+			ai = yes
+	   	controls_religion = no 
+			religion = bud_mahayana
+			age = 16
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+			NOT = { trait = decadent }
+			OR = {
+				trait = zealous
+				trait = schemer
+				trait = elusive_shadow
+				trait = deceitful
+				trait = ambitious
+				intrigue = 18
+			}
+			is_in_society = no
+			NOT = { higher_tier_than = DUKE }
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+		}
+	}
+ }
+ 
+  the_assassins_mani_ahriman = {
+	primary_attribute = intrigue
+	is_secret = yes
+	devil_worshipper = no
+	opinion_to_other_members = +10
+	opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
+	opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	society_rank_up_decision = request_to_rank_up_within_society
+	sound = assassins_interface
+	society_ranks_gfx = generic_ranks
+	
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
+
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = the_assassins_mani_ahriman
+					rank = 1
+				}
+			}
+		}
+		age = 16
+		OR = {
+			true_religion = mani_ahriman
+			religion_group = bud_group
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = mani_ahriman
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+		}
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
+
+	show_society = {
+		OR = {
+			religion_group = bud_group
+			secret_religion = mani_ahriman
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = mani_ahriman
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+			society_member_of = the_assassins_mani_ahriman
+		}
+		age = 16
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+	}
+
+	potential = {
+		OR = {
+			religion = mani_ahriman
+			secret_religion = mani_ahriman
+		}
+	}
+
+	society_rank = {
+		level = 1
+		limit = 20 
+		startup_limit = 10
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_mani_ahriman
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.1  increased plotpower
+		}
+		decisions = {
+			decision_abduct
+			assassins_borrow_money
+			assassins_donate
+			assassins_drug_effect
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 6
+		modifier = { 
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_mani_ahriman
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.2  further increased plotpower
+			defensive_plot_power_modifier = 0.1
+			intrigue = 1 
+			combat_rating = 1  bonus to dueling
+		}
+		decisions = {
+			assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
+		}
+	}
+	
+	society_rank = {
+		level = 3
+		limit = 5 
+		startup_limit = 3
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_mani_ahriman
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.30  further increased plotpower
+			defensive_plot_power_modifier = 0.15
+			intrigue = 2  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.1  bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_ships #Available Power: Can raise special fleet of Ships
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 1 
+		startup_limit = 1
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_mani_ahriman
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.50  further increased plotpower
+			defensive_plot_power_modifier = 0.25
+			intrigue = 3  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.2  further bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_troops #Available Power: Can raise a special regiment
+			assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
+		}
+		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
+		obedient = {
+			ROOT = {
+				always = yes
+			}
+		}
+	}
+
+	monthly_currency_gain = {
+		name = currency_name_the_assassins
+    
+		per_attribute = {
+			name = intrigue 
+			value = 0.5
+		}
+		has_trait = {
+			trait = zealous
+			value = 3
+		}
+		has_trait = {
+			trait = erudite
+			value = 3
+		}
+		has_trait = {
+			trait = scholar
+			value = 3
+		}
+		has_trait = {
+			trait = theologian
+			value = 3
+		}
+		has_trait = {
+			trait = schemer
+			value = 3
+		}
+		has_trait = {
+			trait = strong
+			value = 1
+		}
+		has_trait = {
+			trait = robust
+			value = 1
+		}
+		has_trait = {
+			trait = genius
+			value = 1
+		}
+		has_trait = {
+			trait = quick
+			value = 1
+		}
+		has_trait = {
+			trait = shrewd
+			value = 1
+		}
+		has_trait = {
+			trait = diligent
+			value = 1
+		}
+		has_trait = {
+			trait = patient
+			value = 1
+		}
+		has_trait = {
+			trait = temperate
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			primary_title = { title = d_hashshashin } ### change to landed title of this assassin group -00matthew2000 ###
+			factor = 2
+		}
+		modifier = {
+			trait = zealous
+			factor = 1.3
+		}
+		modifier = {
+			trait = erudite
+			factor = 1.3
+		}
+		modifier = {
+			trait = scholar
+			factor = 1.3
+		}
+		modifier = {
+			trait = theologian
+			factor = 1.3
+		}
+		modifier = {
+			trait = schemer
+			factor = 1.3
+		}
+		modifier = {
+			trait = strong
+			factor = 1.1
+		}
+		modifier = {
+			trait = robust
+			factor = 1.1
+		}
+		modifier = {
+			trait = genius
+			factor = 1.1
+		}
+		modifier = {
+			trait = quick
+			factor = 1.1
+		}
+		modifier = {
+			trait = shrewd
+			factor = 1.1
+		}
+		modifier = {
+			trait = diligent
+			factor = 1.1
+		}
+		modifier = {
+			trait = patient
+			factor = 1.1
+		}
+		modifier = {
+			trait = temperate
+			factor = 1.1
+		}
+		modifier = {
+			trait = charitable
+			factor = 1.1
+		}	
+	}
+	
+	startup_populate = {
+	    trigger = {
+			ai = yes
+	   	controls_religion = no 
+			religion = mani_ahriman
+			age = 16
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+			NOT = { trait = decadent }
+			OR = {
+				trait = zealous
+				trait = schemer
+				trait = elusive_shadow
+				trait = deceitful
+				trait = ambitious
+				intrigue = 18
+			}
+			is_in_society = no
+			NOT = { higher_tier_than = DUKE }
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+		}
+	}
+ }
+ 
+  the_assassins_priscillian = {
+	primary_attribute = intrigue
+	is_secret = yes
+	devil_worshipper = no
+	opinion_to_other_members = +10
+	opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
+	opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	society_rank_up_decision = request_to_rank_up_within_society
+	sound = assassins_interface
+	society_ranks_gfx = generic_ranks
+	
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
+
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = the_assassins_priscillian
+					rank = 1
+				}
+			}
+		}
+		age = 16
+		OR = {
+			true_religion = priscillian
+			religion_group = bud_group
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = priscillian
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+		}
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
+
+	show_society = {
+		OR = {
+			religion_group = bud_group
+			secret_religion = priscillian
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = priscillian
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+			society_member_of = the_assassins_priscillian
+		}
+		age = 16
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+	}
+
+	potential = {
+		OR = {
+			religion = priscillian
+			secret_religion = priscillian
+		}
+	}
+
+	society_rank = {
+		level = 1
+		limit = 20 
+		startup_limit = 10
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_priscillian
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.1  increased plotpower
+		}
+		decisions = {
+			decision_abduct
+			assassins_borrow_money
+			assassins_donate
+			assassins_drug_effect
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 6
+		modifier = { 
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_priscillian
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.2  further increased plotpower
+			defensive_plot_power_modifier = 0.1
+			intrigue = 1 
+			combat_rating = 1  bonus to dueling
+		}
+		decisions = {
+			assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
+		}
+	}
+	
+	society_rank = {
+		level = 3
+		limit = 5 
+		startup_limit = 3
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_priscillian
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.30  further increased plotpower
+			defensive_plot_power_modifier = 0.15
+			intrigue = 2  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.1  bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_ships #Available Power: Can raise special fleet of Ships
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 1 
+		startup_limit = 1
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_priscillian
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.50  further increased plotpower
+			defensive_plot_power_modifier = 0.25
+			intrigue = 3  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.2  further bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_troops #Available Power: Can raise a special regiment
+			assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
+		}
+		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
+		obedient = {
+			ROOT = {
+				always = yes
+			}
+		}
+	}
+
+	monthly_currency_gain = {
+		name = currency_name_the_assassins
+    
+		per_attribute = {
+			name = intrigue 
+			value = 0.5
+		}
+		has_trait = {
+			trait = zealous
+			value = 3
+		}
+		has_trait = {
+			trait = erudite
+			value = 3
+		}
+		has_trait = {
+			trait = scholar
+			value = 3
+		}
+		has_trait = {
+			trait = theologian
+			value = 3
+		}
+		has_trait = {
+			trait = schemer
+			value = 3
+		}
+		has_trait = {
+			trait = strong
+			value = 1
+		}
+		has_trait = {
+			trait = robust
+			value = 1
+		}
+		has_trait = {
+			trait = genius
+			value = 1
+		}
+		has_trait = {
+			trait = quick
+			value = 1
+		}
+		has_trait = {
+			trait = shrewd
+			value = 1
+		}
+		has_trait = {
+			trait = diligent
+			value = 1
+		}
+		has_trait = {
+			trait = patient
+			value = 1
+		}
+		has_trait = {
+			trait = temperate
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			primary_title = { title = d_hashshashin } ### change to landed title of this assassin group -00matthew2000 ###
+			factor = 2
+		}
+		modifier = {
+			trait = zealous
+			factor = 1.3
+		}
+		modifier = {
+			trait = erudite
+			factor = 1.3
+		}
+		modifier = {
+			trait = scholar
+			factor = 1.3
+		}
+		modifier = {
+			trait = theologian
+			factor = 1.3
+		}
+		modifier = {
+			trait = schemer
+			factor = 1.3
+		}
+		modifier = {
+			trait = strong
+			factor = 1.1
+		}
+		modifier = {
+			trait = robust
+			factor = 1.1
+		}
+		modifier = {
+			trait = genius
+			factor = 1.1
+		}
+		modifier = {
+			trait = quick
+			factor = 1.1
+		}
+		modifier = {
+			trait = shrewd
+			factor = 1.1
+		}
+		modifier = {
+			trait = diligent
+			factor = 1.1
+		}
+		modifier = {
+			trait = patient
+			factor = 1.1
+		}
+		modifier = {
+			trait = temperate
+			factor = 1.1
+		}
+		modifier = {
+			trait = charitable
+			factor = 1.1
+		}	
+	}
+	
+	startup_populate = {
+	    trigger = {
+			ai = yes
+	   	controls_religion = no 
+			religion = priscillian
+			age = 16
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+			NOT = { trait = decadent }
+			OR = {
+				trait = zealous
+				trait = schemer
+				trait = elusive_shadow
+				trait = deceitful
+				trait = ambitious
+				intrigue = 18
+			}
+			is_in_society = no
+			NOT = { higher_tier_than = DUKE }
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+		}
+	}
+ }
+ 
+  the_assassins_ragnarok = {
+	primary_attribute = intrigue
+	is_secret = yes
+	devil_worshipper = no
+	opinion_to_other_members = +10
+	opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
+	opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	society_rank_up_decision = request_to_rank_up_within_society
+	sound = assassins_interface
+	society_ranks_gfx = generic_ranks
+	
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
+
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = the_assassins_ragnarok
+					rank = 1
+				}
+			}
+		}
+		age = 16
+		OR = {
+			true_religion = ragnarok
+			religion_group = bud_group
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = ragnarok
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+		}
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
+
+	show_society = {
+		OR = {
+			religion_group = bud_group
+			secret_religion = ragnarok
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = ragnarok
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+			society_member_of = the_assassins_ragnarok
+		}
+		age = 16
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+	}
+
+	potential = {
+		OR = {
+			religion = ragnarok
+			secret_religion = ragnarok
+		}
+	}
+
+	society_rank = {
+		level = 1
+		limit = 20 
+		startup_limit = 10
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_ragnarok
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.1  increased plotpower
+		}
+		decisions = {
+			decision_abduct
+			assassins_borrow_money
+			assassins_donate
+			assassins_drug_effect
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 6
+		modifier = { 
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_ragnarok
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.2  further increased plotpower
+			defensive_plot_power_modifier = 0.1
+			intrigue = 1 
+			combat_rating = 1  bonus to dueling
+		}
+		decisions = {
+			assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
+		}
+	}
+	
+	society_rank = {
+		level = 3
+		limit = 5 
+		startup_limit = 3
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_ragnarok
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.30  further increased plotpower
+			defensive_plot_power_modifier = 0.15
+			intrigue = 2  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.1  bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_ships #Available Power: Can raise special fleet of Ships
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 1 
+		startup_limit = 1
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_ragnarok
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.50  further increased plotpower
+			defensive_plot_power_modifier = 0.25
+			intrigue = 3  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.2  further bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_troops #Available Power: Can raise a special regiment
+			assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
+		}
+		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
+		obedient = {
+			ROOT = {
+				always = yes
+			}
+		}
+	}
+
+	monthly_currency_gain = {
+		name = currency_name_the_assassins
+    
+		per_attribute = {
+			name = intrigue 
+			value = 0.5
+		}
+		has_trait = {
+			trait = zealous
+			value = 3
+		}
+		has_trait = {
+			trait = erudite
+			value = 3
+		}
+		has_trait = {
+			trait = scholar
+			value = 3
+		}
+		has_trait = {
+			trait = theologian
+			value = 3
+		}
+		has_trait = {
+			trait = schemer
+			value = 3
+		}
+		has_trait = {
+			trait = strong
+			value = 1
+		}
+		has_trait = {
+			trait = robust
+			value = 1
+		}
+		has_trait = {
+			trait = genius
+			value = 1
+		}
+		has_trait = {
+			trait = quick
+			value = 1
+		}
+		has_trait = {
+			trait = shrewd
+			value = 1
+		}
+		has_trait = {
+			trait = diligent
+			value = 1
+		}
+		has_trait = {
+			trait = patient
+			value = 1
+		}
+		has_trait = {
+			trait = temperate
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			primary_title = { title = d_hashshashin } ### change to landed title of this assassin group -00matthew2000 ###
+			factor = 2
+		}
+		modifier = {
+			trait = zealous
+			factor = 1.3
+		}
+		modifier = {
+			trait = erudite
+			factor = 1.3
+		}
+		modifier = {
+			trait = scholar
+			factor = 1.3
+		}
+		modifier = {
+			trait = theologian
+			factor = 1.3
+		}
+		modifier = {
+			trait = schemer
+			factor = 1.3
+		}
+		modifier = {
+			trait = strong
+			factor = 1.1
+		}
+		modifier = {
+			trait = robust
+			factor = 1.1
+		}
+		modifier = {
+			trait = genius
+			factor = 1.1
+		}
+		modifier = {
+			trait = quick
+			factor = 1.1
+		}
+		modifier = {
+			trait = shrewd
+			factor = 1.1
+		}
+		modifier = {
+			trait = diligent
+			factor = 1.1
+		}
+		modifier = {
+			trait = patient
+			factor = 1.1
+		}
+		modifier = {
+			trait = temperate
+			factor = 1.1
+		}
+		modifier = {
+			trait = charitable
+			factor = 1.1
+		}	
+	}
+	
+	startup_populate = {
+	    trigger = {
+			ai = yes
+	   	controls_religion = no 
+			religion = ragnarok
+			age = 16
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+			NOT = { trait = decadent }
+			OR = {
+				trait = zealous
+				trait = schemer
+				trait = elusive_shadow
+				trait = deceitful
+				trait = ambitious
+				intrigue = 18
+			}
+			is_in_society = no
+			NOT = { higher_tier_than = DUKE }
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+		}
+	}
+ }
+ 
+  the_assassins_set = {
+	primary_attribute = intrigue
+	is_secret = yes
+	devil_worshipper = no
+	opinion_to_other_members = +10
+	opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
+	opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	society_rank_up_decision = request_to_rank_up_within_society
+	sound = assassins_interface
+	society_ranks_gfx = generic_ranks
+	
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
+
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = the_assassins_set
+					rank = 1
+				}
+			}
+		}
+		age = 16
+		OR = {
+			true_religion = set
+			religion_group = bud_group
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = set
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+		}
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
+
+	show_society = {
+		OR = {
+			religion_group = bud_group
+			secret_religion = set
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = set
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+			society_member_of = the_assassins_set
+		}
+		age = 16
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+	}
+
+	potential = {
+		OR = {
+			religion = set
+			secret_religion = set
+		}
+	}
+
+	society_rank = {
+		level = 1
+		limit = 20 
+		startup_limit = 10
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_set
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.1  increased plotpower
+		}
+		decisions = {
+			decision_abduct
+			assassins_borrow_money
+			assassins_donate
+			assassins_drug_effect
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 6
+		modifier = { 
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_set
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.2  further increased plotpower
+			defensive_plot_power_modifier = 0.1
+			intrigue = 1 
+			combat_rating = 1  bonus to dueling
+		}
+		decisions = {
+			assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
+		}
+	}
+	
+	society_rank = {
+		level = 3
+		limit = 5 
+		startup_limit = 3
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_set
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.30  further increased plotpower
+			defensive_plot_power_modifier = 0.15
+			intrigue = 2  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.1  bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_ships #Available Power: Can raise special fleet of Ships
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 1 
+		startup_limit = 1
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_set
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.50  further increased plotpower
+			defensive_plot_power_modifier = 0.25
+			intrigue = 3  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.2  further bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_troops #Available Power: Can raise a special regiment
+			assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
+		}
+		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
+		obedient = {
+			ROOT = {
+				always = yes
+			}
+		}
+	}
+
+	monthly_currency_gain = {
+		name = currency_name_the_assassins
+    
+		per_attribute = {
+			name = intrigue 
+			value = 0.5
+		}
+		has_trait = {
+			trait = zealous
+			value = 3
+		}
+		has_trait = {
+			trait = erudite
+			value = 3
+		}
+		has_trait = {
+			trait = scholar
+			value = 3
+		}
+		has_trait = {
+			trait = theologian
+			value = 3
+		}
+		has_trait = {
+			trait = schemer
+			value = 3
+		}
+		has_trait = {
+			trait = strong
+			value = 1
+		}
+		has_trait = {
+			trait = robust
+			value = 1
+		}
+		has_trait = {
+			trait = genius
+			value = 1
+		}
+		has_trait = {
+			trait = quick
+			value = 1
+		}
+		has_trait = {
+			trait = shrewd
+			value = 1
+		}
+		has_trait = {
+			trait = diligent
+			value = 1
+		}
+		has_trait = {
+			trait = patient
+			value = 1
+		}
+		has_trait = {
+			trait = temperate
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			primary_title = { title = d_hashshashin } ### change to landed title of this assassin group -00matthew2000 ###
+			factor = 2
+		}
+		modifier = {
+			trait = zealous
+			factor = 1.3
+		}
+		modifier = {
+			trait = erudite
+			factor = 1.3
+		}
+		modifier = {
+			trait = scholar
+			factor = 1.3
+		}
+		modifier = {
+			trait = theologian
+			factor = 1.3
+		}
+		modifier = {
+			trait = schemer
+			factor = 1.3
+		}
+		modifier = {
+			trait = strong
+			factor = 1.1
+		}
+		modifier = {
+			trait = robust
+			factor = 1.1
+		}
+		modifier = {
+			trait = genius
+			factor = 1.1
+		}
+		modifier = {
+			trait = quick
+			factor = 1.1
+		}
+		modifier = {
+			trait = shrewd
+			factor = 1.1
+		}
+		modifier = {
+			trait = diligent
+			factor = 1.1
+		}
+		modifier = {
+			trait = patient
+			factor = 1.1
+		}
+		modifier = {
+			trait = temperate
+			factor = 1.1
+		}
+		modifier = {
+			trait = charitable
+			factor = 1.1
+		}	
+	}
+	
+	startup_populate = {
+	    trigger = {
+			ai = yes
+	   	controls_religion = no 
+			religion = set
+			age = 16
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+			NOT = { trait = decadent }
+			OR = {
+				trait = zealous
+				trait = schemer
+				trait = elusive_shadow
+				trait = deceitful
+				trait = ambitious
+				intrigue = 18
+			}
+			is_in_society = no
+			NOT = { higher_tier_than = DUKE }
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+		}
+	}
+ }
+ 
+  the_assassins_tengri_ahriman = {
+	primary_attribute = intrigue
+	is_secret = yes
+	devil_worshipper = no
+	opinion_to_other_members = +10
+	opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
+	opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	society_rank_up_decision = request_to_rank_up_within_society
+	sound = assassins_interface
+	society_ranks_gfx = generic_ranks
+	
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
+
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = the_assassins_tengri_ahriman
+					rank = 1
+				}
+			}
+		}
+		age = 16
+		OR = {
+			true_religion = tengri_ahriman
+			religion_group = bud_group
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = tengri_ahriman
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+		}
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
+
+	show_society = {
+		OR = {
+			religion_group = bud_group
+			secret_religion = tengri_ahriman
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = tengri_ahriman
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+			society_member_of = the_assassins_tengri_ahriman
+		}
+		age = 16
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+	}
+
+	potential = {
+		OR = {
+			religion = tengri_ahriman
+			secret_religion = tengri_ahriman
+		}
+	}
+
+	society_rank = {
+		level = 1
+		limit = 20 
+		startup_limit = 10
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_tengri_ahriman
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.1  increased plotpower
+		}
+		decisions = {
+			decision_abduct
+			assassins_borrow_money
+			assassins_donate
+			assassins_drug_effect
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 6
+		modifier = { 
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_tengri_ahriman
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.2  further increased plotpower
+			defensive_plot_power_modifier = 0.1
+			intrigue = 1 
+			combat_rating = 1  bonus to dueling
+		}
+		decisions = {
+			assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
+		}
+	}
+	
+	society_rank = {
+		level = 3
+		limit = 5 
+		startup_limit = 3
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_tengri_ahriman
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.30  further increased plotpower
+			defensive_plot_power_modifier = 0.15
+			intrigue = 2  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.1  bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_ships #Available Power: Can raise special fleet of Ships
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 1 
+		startup_limit = 1
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_tengri_ahriman
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.50  further increased plotpower
+			defensive_plot_power_modifier = 0.25
+			intrigue = 3  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.2  further bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_troops #Available Power: Can raise a special regiment
+			assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
+		}
+		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
+		obedient = {
+			ROOT = {
+				always = yes
+			}
+		}
+	}
+
+	monthly_currency_gain = {
+		name = currency_name_the_assassins
+    
+		per_attribute = {
+			name = intrigue 
+			value = 0.5
+		}
+		has_trait = {
+			trait = zealous
+			value = 3
+		}
+		has_trait = {
+			trait = erudite
+			value = 3
+		}
+		has_trait = {
+			trait = scholar
+			value = 3
+		}
+		has_trait = {
+			trait = theologian
+			value = 3
+		}
+		has_trait = {
+			trait = schemer
+			value = 3
+		}
+		has_trait = {
+			trait = strong
+			value = 1
+		}
+		has_trait = {
+			trait = robust
+			value = 1
+		}
+		has_trait = {
+			trait = genius
+			value = 1
+		}
+		has_trait = {
+			trait = quick
+			value = 1
+		}
+		has_trait = {
+			trait = shrewd
+			value = 1
+		}
+		has_trait = {
+			trait = diligent
+			value = 1
+		}
+		has_trait = {
+			trait = patient
+			value = 1
+		}
+		has_trait = {
+			trait = temperate
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			primary_title = { title = d_hashshashin } ### change to landed title of this assassin group -00matthew2000 ###
+			factor = 2
+		}
+		modifier = {
+			trait = zealous
+			factor = 1.3
+		}
+		modifier = {
+			trait = erudite
+			factor = 1.3
+		}
+		modifier = {
+			trait = scholar
+			factor = 1.3
+		}
+		modifier = {
+			trait = theologian
+			factor = 1.3
+		}
+		modifier = {
+			trait = schemer
+			factor = 1.3
+		}
+		modifier = {
+			trait = strong
+			factor = 1.1
+		}
+		modifier = {
+			trait = robust
+			factor = 1.1
+		}
+		modifier = {
+			trait = genius
+			factor = 1.1
+		}
+		modifier = {
+			trait = quick
+			factor = 1.1
+		}
+		modifier = {
+			trait = shrewd
+			factor = 1.1
+		}
+		modifier = {
+			trait = diligent
+			factor = 1.1
+		}
+		modifier = {
+			trait = patient
+			factor = 1.1
+		}
+		modifier = {
+			trait = temperate
+			factor = 1.1
+		}
+		modifier = {
+			trait = charitable
+			factor = 1.1
+		}	
+	}
+	
+	startup_populate = {
+	    trigger = {
+			ai = yes
+	   	controls_religion = no 
+			religion = tengri_ahriman
+			age = 16
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+			NOT = { trait = decadent }
+			OR = {
+				trait = zealous
+				trait = schemer
+				trait = elusive_shadow
+				trait = deceitful
+				trait = ambitious
+				intrigue = 18
+			}
+			is_in_society = no
+			NOT = { higher_tier_than = DUKE }
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+		}
+	}
+ }
+ 
+  the_assassins_yahyanism = {
+	primary_attribute = intrigue
+	is_secret = yes
+	devil_worshipper = no
+	opinion_to_other_members = +10
+	opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
+	opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	society_rank_up_decision = request_to_rank_up_within_society
+	sound = assassins_interface
+	society_ranks_gfx = generic_ranks
+	
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
+
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = the_assassins_yahyanism
+					rank = 1
+				}
+			}
+		}
+		age = 16
+		OR = {
+			true_religion = yahyanism
+			religion_group = bud_group
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = yahyanism
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+		}
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
+
+	show_society = {
+		OR = {
+			religion_group = bud_group
+			secret_religion = yahyanism
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = yahyanism
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+			society_member_of = the_assassins_yahyanism
+		}
+		age = 16
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+	}
+
+	potential = {
+		OR = {
+			religion = yahyanism
+			secret_religion = yahyanism
+		}
+	}
+
+	society_rank = {
+		level = 1
+		limit = 20 
+		startup_limit = 10
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_yahyanism
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.1  increased plotpower
+		}
+		decisions = {
+			decision_abduct
+			assassins_borrow_money
+			assassins_donate
+			assassins_drug_effect
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 6
+		modifier = { 
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_yahyanism
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.2  further increased plotpower
+			defensive_plot_power_modifier = 0.1
+			intrigue = 1 
+			combat_rating = 1  bonus to dueling
+		}
+		decisions = {
+			assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
+		}
+	}
+	
+	society_rank = {
+		level = 3
+		limit = 5 
+		startup_limit = 3
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_yahyanism
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.30  further increased plotpower
+			defensive_plot_power_modifier = 0.15
+			intrigue = 2  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.1  bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_ships #Available Power: Can raise special fleet of Ships
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 1 
+		startup_limit = 1
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_yahyanism
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.50  further increased plotpower
+			defensive_plot_power_modifier = 0.25
+			intrigue = 3  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.2  further bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_troops #Available Power: Can raise a special regiment
+			assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
+		}
+		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
+		obedient = {
+			ROOT = {
+				always = yes
+			}
+		}
+	}
+
+	monthly_currency_gain = {
+		name = currency_name_the_assassins
+    
+		per_attribute = {
+			name = intrigue 
+			value = 0.5
+		}
+		has_trait = {
+			trait = zealous
+			value = 3
+		}
+		has_trait = {
+			trait = erudite
+			value = 3
+		}
+		has_trait = {
+			trait = scholar
+			value = 3
+		}
+		has_trait = {
+			trait = theologian
+			value = 3
+		}
+		has_trait = {
+			trait = schemer
+			value = 3
+		}
+		has_trait = {
+			trait = strong
+			value = 1
+		}
+		has_trait = {
+			trait = robust
+			value = 1
+		}
+		has_trait = {
+			trait = genius
+			value = 1
+		}
+		has_trait = {
+			trait = quick
+			value = 1
+		}
+		has_trait = {
+			trait = shrewd
+			value = 1
+		}
+		has_trait = {
+			trait = diligent
+			value = 1
+		}
+		has_trait = {
+			trait = patient
+			value = 1
+		}
+		has_trait = {
+			trait = temperate
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			primary_title = { title = d_hashshashin } ### change to landed title of this assassin group -00matthew2000 ###
+			factor = 2
+		}
+		modifier = {
+			trait = zealous
+			factor = 1.3
+		}
+		modifier = {
+			trait = erudite
+			factor = 1.3
+		}
+		modifier = {
+			trait = scholar
+			factor = 1.3
+		}
+		modifier = {
+			trait = theologian
+			factor = 1.3
+		}
+		modifier = {
+			trait = schemer
+			factor = 1.3
+		}
+		modifier = {
+			trait = strong
+			factor = 1.1
+		}
+		modifier = {
+			trait = robust
+			factor = 1.1
+		}
+		modifier = {
+			trait = genius
+			factor = 1.1
+		}
+		modifier = {
+			trait = quick
+			factor = 1.1
+		}
+		modifier = {
+			trait = shrewd
+			factor = 1.1
+		}
+		modifier = {
+			trait = diligent
+			factor = 1.1
+		}
+		modifier = {
+			trait = patient
+			factor = 1.1
+		}
+		modifier = {
+			trait = temperate
+			factor = 1.1
+		}
+		modifier = {
+			trait = charitable
+			factor = 1.1
+		}	
+	}
+	
+	startup_populate = {
+	    trigger = {
+			ai = yes
+	   	controls_religion = no 
+			religion = yahyanism
+			age = 16
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+			NOT = { trait = decadent }
+			OR = {
+				trait = zealous
+				trait = schemer
+				trait = elusive_shadow
+				trait = deceitful
+				trait = ambitious
+				intrigue = 18
+			}
+			is_in_society = no
+			NOT = { higher_tier_than = DUKE }
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+		}
+	}
+ }
+ 
+  the_assassins_zor_angra = {
+	primary_attribute = intrigue
+	is_secret = yes
+	devil_worshipper = no
+	opinion_to_other_members = +10
+	opinion_to_pretenders = -20			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
+	opinion_to_perceived_members = -20 	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
+	opinion_per_rank_above = +10
+	society_rank_up_decision = request_to_rank_up_within_society
+	sound = assassins_interface
+	society_ranks_gfx = generic_ranks
+	
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
+
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = the_assassins_zor_angra
+					rank = 1
+				}
+			}
+		}
+		age = 16
+		OR = {
+			true_religion = zor_angra
+			religion_group = bud_group
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = zor_angra
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+		}
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
+
+	show_society = {
+		OR = {
+			religion_group = bud_group
+			secret_religion = zor_angra
+			AND = {
+				ai = no
+				NOT = { trait = zealous }
+				any_playable_ruler = {
+					religion = zor_angra
+					NOT = {
+						distance_from_realm = { value = 300 who = ROOT }
+					}
+				}
+			}
+			society_member_of = the_assassins_zor_angra
+		}
+		age = 16
+		OR = {
+			is_female = no
+			has_game_rule = {
+				name = gender
+				value = all
+			}
+		}
+	}
+
+	potential = {
+		OR = {
+			religion = zor_angra
+			secret_religion = zor_angra
+		}
+	}
+
+	society_rank = {
+		level = 1
+		limit = 20 
+		startup_limit = 10
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_zor_angra
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.1  increased plotpower
+		}
+		decisions = {
+			decision_abduct
+			assassins_borrow_money
+			assassins_donate
+			assassins_drug_effect
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 15
+		startup_limit = 6
+		modifier = { 
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_zor_angra
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.2  further increased plotpower
+			defensive_plot_power_modifier = 0.1
+			intrigue = 1 
+			combat_rating = 1  bonus to dueling
+		}
+		decisions = {
+			assassins_scare_ruler #Available (targeted) Power: Can scare rulers to get a Favor (leave a dagger on their pillow, etc. 
+		}
+	}
+	
+	society_rank = {
+		level = 3
+		limit = 5 
+		startup_limit = 3
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_zor_angra
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.30  further increased plotpower
+			defensive_plot_power_modifier = 0.15
+			intrigue = 2  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.1  bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_ships #Available Power: Can raise special fleet of Ships
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 1 
+		startup_limit = 1
+		modifier = {
+			is_visible = {
+				OR = {
+					society_member_of = the_assassins_zor_angra
+					FROM = { is_society_discovered = yes }
+				}
+			}
+			murder_plot_power_modifier = 0.50  further increased plotpower
+			defensive_plot_power_modifier = 0.25
+			intrigue = 3  further increase
+			combat_rating = 1  bonus to dueling (left over)
+			plot_discovery_chance = 0.2  further bonus to plot discovery chance
+		}
+		decisions = {
+			assassins_raise_troops #Available Power: Can raise a special regiment
+			assassins_mark_for_death #Available (targeted) Power: Mark for death (+ assassins_clear_marked_for_death_target i.e. the clearing of the mark)
+		}
+		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
+		obedient = {
+			ROOT = {
+				always = yes
+			}
+		}
+	}
+
+	monthly_currency_gain = {
+		name = currency_name_the_assassins
+    
+		per_attribute = {
+			name = intrigue 
+			value = 0.5
+		}
+		has_trait = {
+			trait = zealous
+			value = 3
+		}
+		has_trait = {
+			trait = erudite
+			value = 3
+		}
+		has_trait = {
+			trait = scholar
+			value = 3
+		}
+		has_trait = {
+			trait = theologian
+			value = 3
+		}
+		has_trait = {
+			trait = schemer
+			value = 3
+		}
+		has_trait = {
+			trait = strong
+			value = 1
+		}
+		has_trait = {
+			trait = robust
+			value = 1
+		}
+		has_trait = {
+			trait = genius
+			value = 1
+		}
+		has_trait = {
+			trait = quick
+			value = 1
+		}
+		has_trait = {
+			trait = shrewd
+			value = 1
+		}
+		has_trait = {
+			trait = diligent
+			value = 1
+		}
+		has_trait = {
+			trait = patient
+			value = 1
+		}
+		has_trait = {
+			trait = temperate
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			primary_title = { title = d_hashshashin } ### change to landed title of this assassin group -00matthew2000 ###
+			factor = 2
+		}
+		modifier = {
+			trait = zealous
+			factor = 1.3
+		}
+		modifier = {
+			trait = erudite
+			factor = 1.3
+		}
+		modifier = {
+			trait = scholar
+			factor = 1.3
+		}
+		modifier = {
+			trait = theologian
+			factor = 1.3
+		}
+		modifier = {
+			trait = schemer
+			factor = 1.3
+		}
+		modifier = {
+			trait = strong
+			factor = 1.1
+		}
+		modifier = {
+			trait = robust
+			factor = 1.1
+		}
+		modifier = {
+			trait = genius
+			factor = 1.1
+		}
+		modifier = {
+			trait = quick
+			factor = 1.1
+		}
+		modifier = {
+			trait = shrewd
+			factor = 1.1
+		}
+		modifier = {
+			trait = diligent
+			factor = 1.1
+		}
+		modifier = {
+			trait = patient
+			factor = 1.1
+		}
+		modifier = {
+			trait = temperate
+			factor = 1.1
+		}
+		modifier = {
+			trait = charitable
+			factor = 1.1
+		}	
+	}
+	
+	startup_populate = {
+	    trigger = {
+			ai = yes
+	   	controls_religion = no 
+			religion = zor_angra
+			age = 16
+			OR = {
+				is_female = no
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+			NOT = { trait = decadent }
+			OR = {
+				trait = zealous
+				trait = schemer
+				trait = elusive_shadow
+				trait = deceitful
+				trait = ambitious
+				intrigue = 18
+			}
+			is_in_society = no
+			NOT = { higher_tier_than = DUKE }
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+		}
+	}
  }
 
 # Hardcoded society tag. If this exists, religions will get versions of this society generated for them unless specifically opted out, or another is specificed. See dynamic_societies.info for more documentation
@@ -5301,8 +8077,8 @@ secret_religious_society_template = {
 	}
 	
 	startup_populate = {
-	    trigger = {
-	    	always = no
+	   trigger = {
+	   	always = no
 		}
 	}
 }

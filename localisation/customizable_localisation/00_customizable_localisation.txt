@@ -1722,13 +1722,13 @@ defined_text = {
 
 ###SOCIETIES###
 
-#defined_text = {
-#	name = GetSocietyNameCap # Returns the name of target's society with inital Capital letter
-#
-#	text = {
-#		localisation_key = the_assassins
-#		trigger = { society_member_of = the_assassins }
-#	}
+defined_text = {
+	name = GetSocietyNameCap # Returns the name of target's society with inital Capital letter
+
+	text = {
+		localisation_key = the_assassins
+		trigger = { society_member_of = the_assassins }
+	}
 #	text = {
 #		localisation_key = the_satanists
 #		trigger = { society_member_of = the_satanists }
@@ -1805,7 +1805,7 @@ defined_text = {
 #		localisation_key = hermeticsCap
 #		trigger = { society_member_of = hermetics }
 #	}
-#}
+}
 
 
 defined_text = {
