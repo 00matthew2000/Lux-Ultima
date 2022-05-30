@@ -460,14 +460,14 @@ character_event = {
 						has_character_flag = lux_wanted_assassins_set
 						} 
 					}
-					character_event = { id = lux_assassins.7 } 
+					character_event = { id = lux_assassins.9 } 
 				}
 				if = {
 					limit = { 
 						religion = set
 						has_character_flag = lux_wanted_assassins_set
 					}
-					character_event = { id = lux_assassins.8 } 
+					character_event = { id = lux_assassins.10 } 
 				}
 			}
 			if = {
@@ -485,14 +485,14 @@ character_event = {
 						has_character_flag = lux_wanted_assassins_tengri_ahriman
 						} 
 					}
-					character_event = { id = lux_assassins.9 } 
+					character_event = { id = lux_assassins.11 } 
 				}
 				if = {
 					limit = { 
 						religion = tengri_ahriman
 						has_character_flag = lux_wanted_assassins_tengri_ahriman
 					}
-					character_event = { id = lux_assassins.10 } 
+					character_event = { id = lux_assassins.12 } 
 				}
 			}
 			if = {
@@ -510,14 +510,14 @@ character_event = {
 						has_character_flag = lux_wanted_assassins_yahyanism
 						} 
 					}
-					character_event = { id = lux_assassins.11 } 
+					character_event = { id = lux_assassins.13 } 
 				}
 				if = {
 					limit = { 
 						religion = yahyanism
 						has_character_flag = lux_wanted_assassins_yahyanism
 					}
-					character_event = { id = lux_assassins.12 } 
+					character_event = { id = lux_assassins.14 } 
 				}
 			}
 			if = {
@@ -535,14 +535,14 @@ character_event = {
 						has_character_flag = lux_wanted_assassins_zor_angra
 						} 
 					}
-					character_event = { id = lux_assassins.13 } 
+					character_event = { id = lux_assassins.15 } 
 				}
 				if = {
 					limit = { 
 						religion = zor_angra
 						has_character_flag = lux_wanted_assassins_zor_angra
 					}
-					character_event = { id = lux_assassins.14 } 
+					character_event = { id = lux_assassins.16 } 
 				}
 			}
 		}

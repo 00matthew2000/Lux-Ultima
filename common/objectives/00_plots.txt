@@ -2446,10 +2446,10 @@ plot_seize_trade_post = {
 ###Assassins###
 
  plot_assassins_collect_debt = {
-	 type = realm_characters_plus  All characters in the same realm, plus rivals and relatives of self, parents, children and spouse, and quest target
+	 type = realm_characters_plus  #All characters in the same realm, plus rivals and relatives of self, parents, children and spouse, and quest target
 	 intrigue_plot = yes
 	
-	  Plotter scope
+	 #Plotter scope
 	 potential = {
 		 prisoner = no
 		 is_adult = yes
@@ -2468,7 +2468,7 @@ plot_seize_trade_post = {
 		 has_quest = quest_the_assassins_collect_debt
 	 }
 	
-	  Targe scope scope
+	 #Target scope scope
 	 player_allow = {
 		 FROM = { has_quest = quest_the_assassins_collect_debt }
 	 }
@@ -2481,7 +2481,7 @@ plot_seize_trade_post = {
 		 }
 	 }
 	
-	  Target character scope
+	 #Target character scope
 	 allow = {
 		 custom_tooltip = {
 			 text = plot_assassins_collect_debt_allow_tt
