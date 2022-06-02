@@ -3653,7 +3653,10 @@ ok_sr_induction_mission_target_trigger = {
 	NOT = { trait = incapable }
 	is_inaccessible_trigger = no
 	NOT = { has_character_modifier = secret_religion_sympathy_timer }
-	religion_group = { target_type = secret target = ROOT }
+	OR = {
+		religion_group = { target_type = secret target = ROOT }
+		has_sympathy_for_true_religion_of_root_trigger = yes
+	}
 }
 
 ok_sr_sympathy_mission_target_trigger = {
@@ -5570,48 +5573,48 @@ is_romantic_zodiac_mismatch_with_root = {
 #to check type of ingredient... (if more are added, they need to go in here to work with the current system)
 is_ingredient_herb_trigger = {
 	OR = {
-		#artifact_type = ingredient_herb1
-		#artifact_type = ingredient_herb2
-		#artifact_type = ingredient_herb3
-		#artifact_type = ingredient_herb4
-		#artifact_type = ingredient_herb5
-		#artifact_type = ingredient_herb6
-		#artifact_type = ingredient_herb7
-		#artifact_type = ingredient_herb8
-		#artifact_type = ingredient_herb9
+		artifact_type = ingredient_herb1
+		artifact_type = ingredient_herb2
+		artifact_type = ingredient_herb3
+		artifact_type = ingredient_herb4
+		artifact_type = ingredient_herb5
+		artifact_type = ingredient_herb6
+		artifact_type = ingredient_herb7
+		artifact_type = ingredient_herb8
+		artifact_type = ingredient_herb9
 	}
 }
 
 is_ingredient_animal_part_trigger = {
 	OR = {
-		#artifact_type = ingredient_animal1
-		#artifact_type = ingredient_animal2
-		#artifact_type = ingredient_animal3
-		#artifact_type = ingredient_animal4
-		#artifact_type = ingredient_animal5
-		#artifact_type = ingredient_animal6
-		#artifact_type = ingredient_animal7
-		#artifact_type = ingredient_animal8
-		#artifact_type = ingredient_animal9
+		artifact_type = ingredient_animal1
+		artifact_type = ingredient_animal2
+		artifact_type = ingredient_animal3
+		artifact_type = ingredient_animal4
+		artifact_type = ingredient_animal5
+		artifact_type = ingredient_animal6
+		artifact_type = ingredient_animal7
+		artifact_type = ingredient_animal8
+		artifact_type = ingredient_animal9
 	}
 }
 
 is_ingredient_powder_trigger = {
 	OR = {
-		#artifact_type = ingredient_metal_exotic1
-		#artifact_type = ingredient_metal_exotic5
-		#artifact_type = ingredient_metal_exotic6
-		#artifact_type = ingredient_metal_exotic7
-		#artifact_type = ingredient_metal_exotic8
-		#artifact_type = ingredient_metal_exotic9
+		artifact_type = ingredient_metal_exotic1
+		artifact_type = ingredient_metal_exotic5
+		artifact_type = ingredient_metal_exotic6
+		artifact_type = ingredient_metal_exotic7
+		artifact_type = ingredient_metal_exotic8
+		artifact_type = ingredient_metal_exotic9
 	}
 }
 
 is_ingredient_liquid_trigger = {
 	OR = {
-		#artifact_type = ingredient_metal_exotic2
-		#artifact_type = ingredient_metal_exotic3
-		#artifact_type = ingredient_metal_exotic4
+		artifact_type = ingredient_metal_exotic2
+		artifact_type = ingredient_metal_exotic3
+		artifact_type = ingredient_metal_exotic4
 	}
 }
 
@@ -5716,9 +5719,9 @@ selected_ingredient_is_sleep_inducing_trigger = {
 			has_artifact_flag = selected_ingredient_2
 		}
 		OR = {
-			#artifact_type = ingredient_herb7
-			#artifact_type = ingredient_herb3
-			#artifact_type = ingredient_herb9			
+			artifact_type = ingredient_herb7
+			artifact_type = ingredient_herb3
+			artifact_type = ingredient_herb9			
 		}
 	}
 }
@@ -5730,12 +5733,12 @@ selected_ingredient_is_antipyretic_trigger = {
 			has_artifact_flag = selected_ingredient_2
 		}
 		OR = {
-			#artifact_type = ingredient_herb1
-			#artifact_type = ingredient_herb2
-			#artifact_type = ingredient_herb4
-			#artifact_type = ingredient_herb5
-			#artifact_type = ingredient_herb8
-			#artifact_type = ingredient_metal_exotic6
+			artifact_type = ingredient_herb1
+			artifact_type = ingredient_herb2
+			artifact_type = ingredient_herb4
+			artifact_type = ingredient_herb5
+			artifact_type = ingredient_herb8
+			artifact_type = ingredient_metal_exotic6
 		}
 	}
 }
@@ -5749,19 +5752,18 @@ selected_ingredient_is_perceived_healthy_trigger = {
 		OR = {
 			AND = {
 				is_ingredient_herb_trigger = yes
-				NOT = { #artifact_type = ingredient_herb3 } #Mandrake
+				NOT = { artifact_type = ingredient_herb3 } #Mandrake
 			}
-			#artifact_type = ingredient_metal_exotic8 #Mercury
-			#artifact_type = ingredient_metal_exotic7 #Iron
-			#artifact_type = ingredient_metal_exotic6 #Gold
+			artifact_type = ingredient_metal_exotic8 #Mercury
+			artifact_type = ingredient_metal_exotic7 #Iron
+			artifact_type = ingredient_metal_exotic6 #Gold
 
-			#artifact_type = ingredient_animal2 #Kidney
-			#artifact_type = ingredient_animal7 #Heart
-			#artifact_type = ingredient_animal8 #Liver
-			#artifact_type = ingredient_animal9 #Intestines
+			artifact_type = ingredient_animal2 #Kidney
+			artifact_type = ingredient_animal7 #Heart
+			artifact_type = ingredient_animal8 #Liver
+			artifact_type = ingredient_animal9 #Intestines
 		}
 	}
-}
 }
 
 selected_ingredient_is_unhealthy_trigger = {
@@ -5771,9 +5773,9 @@ selected_ingredient_is_unhealthy_trigger = {
 			has_artifact_flag = selected_ingredient_2
 		}
 		OR = {
-			#artifact_type = ingredient_herb3 #Mandrake
-			#artifact_type = ingredient_metal_exotic8 #Mercury
-			#artifact_type = ingredient_metal_exotic7 #Iron
+			artifact_type = ingredient_herb3 #Mandrake
+			artifact_type = ingredient_metal_exotic8 #Mercury
+			artifact_type = ingredient_metal_exotic7 #Iron
 			is_ingredient_animal_part_trigger = yes
 		}
 	}
@@ -5794,56 +5796,55 @@ selected_ingredient_1_and_2_are_same = {
 
 ingredient_is_sleep_inducing_trigger = {
 	OR = {
-		#artifact_type = ingredient_herb7
-		#artifact_type = ingredient_herb3
-		#artifact_type = ingredient_herb9
+		artifact_type = ingredient_herb7
+		artifact_type = ingredient_herb3
+		artifact_type = ingredient_herb9
 	}
 }
 
 ingredient_is_antipyretic_trigger = {
 	OR = {
-		#artifact_type = ingredient_herb1
-		#artifact_type = ingredient_herb2
-		#artifact_type = ingredient_herb4
-		#artifact_type = ingredient_herb5
-		#artifact_type = ingredient_herb8
-		#artifact_type = ingredient_metal_exotic6
+		artifact_type = ingredient_herb1
+		artifact_type = ingredient_herb2
+		artifact_type = ingredient_herb4
+		artifact_type = ingredient_herb5
+		artifact_type = ingredient_herb8
+		artifact_type = ingredient_metal_exotic6
 	}
 }
 
 ingredient_is_perceived_healthy_trigger = {
-	#OR = {
-		#AND = {
+	OR = {
+		AND = {
 			is_ingredient_herb_trigger = yes
-			#NOT = { #artifact_type = ingredient_herb3 } #Mandrake
-		#}
-		#artifact_type = ingredient_metal_exotic8 #Mercury
-		#artifact_type = ingredient_metal_exotic7 #Iron
-		#artifact_type = ingredient_metal_exotic6 #Gold
+			NOT = { artifact_type = ingredient_herb3 } #Mandrake
+		}
+		artifact_type = ingredient_metal_exotic8 #Mercury
+		artifact_type = ingredient_metal_exotic7 #Iron
+		artifact_type = ingredient_metal_exotic6 #Gold
 
-		#artifact_type = ingredient_animal2 #Kidney
-		#artifact_type = ingredient_animal7 #Heart
-		#artifact_type = ingredient_animal8 #Liver
-		#artifact_type = ingredient_animal9 #Intestines
-	#}
-#}
+		artifact_type = ingredient_animal2 #Kidney
+		artifact_type = ingredient_animal7 #Heart
+		artifact_type = ingredient_animal8 #Liver
+		artifact_type = ingredient_animal9 #Intestines
+	}
 }
 
 ingredient_is_unhealthy_trigger = {
-	#OR = {
-		#artifact_type = ingredient_herb3 #Mandrake
-		#artifact_type = ingredient_metal_exotic7 #Mercury
-		#artifact_type = ingredient_metal_exotic8 #Iron
-		#AND = {
+	OR = {
+		artifact_type = ingredient_herb3 #Mandrake
+		artifact_type = ingredient_metal_exotic7 #Mercury
+		artifact_type = ingredient_metal_exotic8 #Iron
+		AND = {
 			is_ingredient_animal_part_trigger = yes
-			#NOR = {
-				#artifact_type = ingredient_animal2 #Kidney
-				#artifact_type = ingredient_animal7 #Heart
-				#artifact_type = ingredient_animal8 #Liver
-				#artifact_type = ingredient_animal9 #Intestines
-			#}
-		#}
-	#}
+			NOR = {
+				artifact_type = ingredient_animal2 #Kidney
+				artifact_type = ingredient_animal7 #Heart
+				artifact_type = ingredient_animal8 #Liver
+				artifact_type = ingredient_animal9 #Intestines
+			}
+		}
+	}
 }
 
 same_true_religion_as_from_trigger = {
