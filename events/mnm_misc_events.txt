@@ -146,6 +146,7 @@ character_event = {
 				}
 				save_event_target_as = assassins_recruiter
 				set_character_flag = lux_wanted_assassins
+				set_global_flag = lux_wanted_assassins_safety_flag
 				character_event = { id = MNM.10012 }
 			}
 		}
@@ -164,6 +165,7 @@ character_event = {
 				}
 				save_event_target_as = assassins_recruiter
 				set_character_flag = lux_wanted_assassins_bud_mahayana
+				set_global_flag = lux_wanted_assassins_bud_mahayana_safety_flag
 				character_event = { id = MNM.10012 }
 			}
 		}
@@ -182,6 +184,7 @@ character_event = {
 				}
 				save_event_target_as = assassins_recruiter
 				set_character_flag = lux_wanted_assassins_mani_ahriman
+				set_global_flag = lux_wanted_assassins_mani_ahriman_safety_flag
 				character_event = { id = MNM.10012 }
 			}
 		}
@@ -200,6 +203,7 @@ character_event = {
 				}
 				save_event_target_as = assassins_recruiter
 				set_character_flag = lux_wanted_assassins_priscillian
+				set_global_flag = lux_wanted_assassins_priscillian_safety_flag
 				character_event = { id = MNM.10012 }
 			}
 		}
@@ -218,6 +222,7 @@ character_event = {
 				}
 				save_event_target_as = assassins_recruiter
 				set_character_flag = lux_wanted_assassins_ragnarok
+				set_global_flag = lux_wanted_assassins_ragnarok_safety_flag
 				character_event = { id = MNM.10012 }
 			}
 		}
@@ -236,6 +241,7 @@ character_event = {
 				}
 				save_event_target_as = assassins_recruiter
 				set_character_flag = lux_wanted_assassins_set
+				set_global_flag = lux_wanted_assassins_set_safety_flag
 				character_event = { id = MNM.10012 }
 			}
 		}
@@ -254,6 +260,7 @@ character_event = {
 				}
 				save_event_target_as = assassins_recruiter
 				set_character_flag = lux_wanted_assassins_tengri_ahriman
+				set_global_flag = lux_wanted_assassins_tengri_ahriman_safety_flag
 				character_event = { id = MNM.10012 }
 			}
 		}
@@ -272,6 +279,7 @@ character_event = {
 				}
 				save_event_target_as = assassins_recruiter
 				set_character_flag = lux_wanted_assassins_yahyanism
+				set_global_flag = lux_wanted_assassins_yahyanism_safety_flag
 				character_event = { id = MNM.10012 }
 			}
 		}
@@ -290,6 +298,7 @@ character_event = {
 				}
 				save_event_target_as = assassins_recruiter
 				set_character_flag = lux_wanted_assassins_zor_angra
+				set_global_flag = lux_wanted_assassins_zor_angra_safety_flag
 				character_event = { id = MNM.10012 }
 			}
 		}
@@ -345,7 +354,7 @@ character_event = {
 					character_event = { id = MNM.6022 } 
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
 					NOT = { 
 						has_character_flag = ongoing_recruitment 
@@ -370,7 +379,7 @@ character_event = {
 					character_event = { id = lux_assassins.2 } 
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
 					NOT = { 
 						has_character_flag = ongoing_recruitment 
@@ -395,7 +404,7 @@ character_event = {
 					character_event = { id = lux_assassins.4 } 
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
 					NOT = { 
 						has_character_flag = ongoing_recruitment 
@@ -420,7 +429,7 @@ character_event = {
 					character_event = { id = lux_assassins.6 } 
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
 					NOT = { 
 						has_character_flag = ongoing_recruitment 
@@ -445,7 +454,7 @@ character_event = {
 					character_event = { id = lux_assassins.8 } 
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
 					NOT = { 
 						has_character_flag = ongoing_recruitment 
@@ -470,7 +479,7 @@ character_event = {
 					character_event = { id = lux_assassins.10 } 
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
 					NOT = { 
 						has_character_flag = ongoing_recruitment 
@@ -495,7 +504,7 @@ character_event = {
 					character_event = { id = lux_assassins.12 } 
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
 					NOT = { 
 						has_character_flag = ongoing_recruitment 
@@ -520,7 +529,7 @@ character_event = {
 					character_event = { id = lux_assassins.14 } 
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
 					NOT = { 
 						has_character_flag = ongoing_recruitment 

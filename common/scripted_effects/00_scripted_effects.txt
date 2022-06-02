@@ -5288,10 +5288,10 @@ join_prev_monastic_order_society = {
 		limit = { PREV = { society_member_of = monastic_order_hindu } }
 		join_society = monastic_order_hindu
 	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_buddhist } }
-		join_society = monastic_order_buddhist
-	}
+	#if = { ### I guess look at this later? -00matthew2000 ###
+		#limit = { PREV = { society_member_of = monastic_order_buddhist } }
+		#join_society = monastic_order_buddhist
+	#}
 	if = {
 		limit = { PREV = { society_member_of = monastic_order_jain } }
 		join_society = monastic_order_jain

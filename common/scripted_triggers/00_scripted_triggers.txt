@@ -2618,42 +2618,338 @@ is_murder_quest_target_of_root_trigger = {
 	}
 }
 
-#assassins_appropriate_target_trigger = {
-#	is_within_diplo_range = ROOT
-#	is_adult = yes
-#	is_quest_target = no
-#
-#	OR = {
-#		is_ruler = no
-#		AND = {
-#			ROOT = {
-#				society_rank = {
-#					rank = 3
-#					society = the_assassins
-#				}
-#			}
-#			primary_title = { higher_real_tier_than = COUNT }
-#		}
-#		AND = {
-#			ROOT = {
-#				society_rank = {
-#					rank = 2
-#					society = the_assassins
-#				}
-#			}
-#			primary_title = { lower_real_tier_than = EMPEROR }
-#		}
-#		AND = {
-#			ROOT = {
-#				society_rank = {
-#					rank = 1
-#					society = the_assassins
-#				}
-#			}
-#			primary_title = { lower_real_tier_than = DUKE }
-#		}
-#	}
-#}
+assassins_appropriate_target_trigger = {
+	is_within_diplo_range = ROOT
+	is_adult = yes
+	is_quest_target = no
+
+	OR = {
+		is_ruler = no
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 3
+					society = the_assassins
+				}
+			}
+			primary_title = { higher_real_tier_than = COUNT }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 2
+					society = the_assassins
+				}
+			}
+			primary_title = { lower_real_tier_than = EMPEROR }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 1
+					society = the_assassins
+				}
+			}
+			primary_title = { lower_real_tier_than = DUKE }
+		}
+	}
+}
+
+assassins_bud_mahayana_appropriate_target_trigger = {
+	is_within_diplo_range = ROOT
+	is_adult = yes
+	is_quest_target = no
+
+	OR = {
+		is_ruler = no
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 3
+					society = the_assassins_bud_mahayana
+				}
+			}
+			primary_title = { higher_real_tier_than = COUNT }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 2
+					society = the_assassins_bud_mahayana
+				}
+			}
+			primary_title = { lower_real_tier_than = EMPEROR }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 1
+					society = the_assassins_bud_mahayana
+				}
+			}
+			primary_title = { lower_real_tier_than = DUKE }
+		}
+	}
+}
+
+assassins_mani_ahriman_appropriate_target_trigger = {
+	is_within_diplo_range = ROOT
+	is_adult = yes
+	is_quest_target = no
+
+	OR = {
+		is_ruler = no
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 3
+					society = the_assassins_mani_ahriman
+				}
+			}
+			primary_title = { higher_real_tier_than = COUNT }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 2
+					society = the_assassins_mani_ahriman
+				}
+			}
+			primary_title = { lower_real_tier_than = EMPEROR }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 1
+					society = the_assassins_mani_ahriman
+				}
+			}
+			primary_title = { lower_real_tier_than = DUKE }
+		}
+	}
+}
+
+assassins_priscillian_appropriate_target_trigger = {
+	is_within_diplo_range = ROOT
+	is_adult = yes
+	is_quest_target = no
+
+	OR = {
+		is_ruler = no
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 3
+					society = the_assassins_priscillian
+				}
+			}
+			primary_title = { higher_real_tier_than = COUNT }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 2
+					society = the_assassins_priscillian
+				}
+			}
+			primary_title = { lower_real_tier_than = EMPEROR }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 1
+					society = the_assassins_priscillian
+				}
+			}
+			primary_title = { lower_real_tier_than = DUKE }
+		}
+	}
+}
+
+assassins_ragnarok_appropriate_target_trigger = {
+	is_within_diplo_range = ROOT
+	is_adult = yes
+	is_quest_target = no
+
+	OR = {
+		is_ruler = no
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 3
+					society = the_assassins_ragnarok
+				}
+			}
+			primary_title = { higher_real_tier_than = COUNT }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 2
+					society = the_assassins_ragnarok
+				}
+			}
+			primary_title = { lower_real_tier_than = EMPEROR }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 1
+					society = the_assassins_ragnarok
+				}
+			}
+			primary_title = { lower_real_tier_than = DUKE }
+		}
+	}
+}
+
+assassins_set_appropriate_target_trigger = {
+	is_within_diplo_range = ROOT
+	is_adult = yes
+	is_quest_target = no
+
+	OR = {
+		is_ruler = no
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 3
+					society = the_assassins_set
+				}
+			}
+			primary_title = { higher_real_tier_than = COUNT }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 2
+					society = the_assassins_set
+				}
+			}
+			primary_title = { lower_real_tier_than = EMPEROR }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 1
+					society = the_assassins_set
+				}
+			}
+			primary_title = { lower_real_tier_than = DUKE }
+		}
+	}
+}
+
+assassins_tengri_ahriman_appropriate_target_trigger = {
+	is_within_diplo_range = ROOT
+	is_adult = yes
+	is_quest_target = no
+
+	OR = {
+		is_ruler = no
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 3
+					society = the_assassins_tengri_ahriman
+				}
+			}
+			primary_title = { higher_real_tier_than = COUNT }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 2
+					society = the_assassins_tengri_ahriman
+				}
+			}
+			primary_title = { lower_real_tier_than = EMPEROR }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 1
+					society = the_assassins_tengri_ahriman
+				}
+			}
+			primary_title = { lower_real_tier_than = DUKE }
+		}
+	}
+}
+
+assassins_yahyanism_appropriate_target_trigger = {
+	is_within_diplo_range = ROOT
+	is_adult = yes
+	is_quest_target = no
+
+	OR = {
+		is_ruler = no
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 3
+					society = the_assassins_yahyanism
+				}
+			}
+			primary_title = { higher_real_tier_than = COUNT }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 2
+					society = the_assassins_yahyanism
+				}
+			}
+			primary_title = { lower_real_tier_than = EMPEROR }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 1
+					society = the_assassins_yahyanism
+				}
+			}
+			primary_title = { lower_real_tier_than = DUKE }
+		}
+	}
+}
+
+assassins_zor_angra_appropriate_target_trigger = {
+	is_within_diplo_range = ROOT
+	is_adult = yes
+	is_quest_target = no
+
+	OR = {
+		is_ruler = no
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 3
+					society = the_assassins_zor_angra
+				}
+			}
+			primary_title = { higher_real_tier_than = COUNT }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 2
+					society = the_assassins_zor_angra
+				}
+			}
+			primary_title = { lower_real_tier_than = EMPEROR }
+		}
+		AND = {
+			ROOT = {
+				society_rank = {
+					rank = 1
+					society = the_assassins_zor_angra
+				}
+			}
+			primary_title = { lower_real_tier_than = DUKE }
+		}
+	}
+}
 
 interesting_face_trigger = {
 	OR = {

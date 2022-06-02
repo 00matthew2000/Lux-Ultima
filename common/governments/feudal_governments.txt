@@ -43,6 +43,7 @@ feudal_governments = {
 			NOT = { classical_government_trigger = yes }
 			NOT = { is_government_potential = chinese_imperial_government }
 			NOT = { is_government_potential = japanese_imperial_government }
+			NOT = { is_government_potential = order_government }
 			NAND = { 
 				culture_group = tibetan_group
 				OR = {
@@ -129,6 +130,7 @@ feudal_governments = {
 				can_head_religion_trigger = no
 			}
 			religion_group = muslim
+			NOT = { is_government_potential = order_government }
 			is_patrician = no
 		}
 		
@@ -213,6 +215,7 @@ feudal_governments = {
             }
 			NOT = { is_government_potential = chinese_imperial_government }
 			NOT = { is_government_potential = japanese_imperial_government }
+			NOT = { is_government_potential = order_government }
 			NAND = { 
 				culture_group = tibetan_group
 				OR = {
@@ -313,6 +316,7 @@ feudal_governments = {
 				capital_holding = { holding_type = castle }
 			}
 			NOT = { government = republic_government }
+			NOT = { is_government_potential = order_government }
 		}
 		
 		color = { 238 238 238 }
@@ -354,6 +358,7 @@ feudal_governments = {
 				has_law = people_control_0
 				has_law = people_control_1
 			}
+			NOT = { is_government_potential = order_government }
 		}
 		
 		color = { 225 0 0 }
@@ -415,6 +420,7 @@ feudal_governments = {
 				has_law = people_control_3
 				has_law = people_control_4
 			}
+			NOT = { is_government_potential = order_government }
 		}
 		
 		color = { 64 64 64 }
@@ -484,6 +490,7 @@ feudal_governments = {
 				has_law = clergy_control_3
 				has_law = clergy_control_4
 			}
+			NOT = { is_government_potential = order_government }
 		}
 		
 		color = { 64 64 64 }
@@ -549,6 +556,7 @@ feudal_governments = {
 				has_law = state_control_3
 				has_law = state_control_4
 			}
+			NOT = { is_government_potential = order_government }
 		}
 		
 		color = { 64 64 64 }
@@ -619,6 +627,7 @@ feudal_governments = {
 				has_law = knowledge_control_3
 				has_law = knowledge_control_4
 			}
+			NOT = { is_government_potential = order_government }
 		}
 		
 		color = { 0 51 102 }
@@ -691,6 +700,7 @@ feudal_governments = {
 				has_law = messianic_power_3
                 has_law = messianic_power_4
 			}
+			NOT = { is_government_potential = order_government }
 		}
 		
 		color = { 103 108 114 }
@@ -800,6 +810,7 @@ feudal_governments = {
 			NOT = {	religion_group = muslim	}
 			NOT = { is_government_potential = classical_government }
 			NOT = { is_government_potential = japanese_imperial_government }
+			NOT = { is_government_potential = order_government }
 			AND = {
 				OR = {
 					culture_group = tibetan_group
@@ -878,6 +889,7 @@ feudal_governments = {
 				culture = sinohellenic
 			}
 			is_patrician = no
+			NOT = { is_government_potential = order_government }
 		}
 		
 		color = { 118 255 163 }
@@ -957,6 +969,7 @@ feudal_governments = {
 				is_government_potential = japanese_imperial_government
 				is_government_potential = japanese_feudal_government
 				is_government_potential = japanese_monastic_feudal_government
+				is_government_potential = order_government
 			}
 			OR = {
 				AND = {
@@ -1072,6 +1085,7 @@ feudal_governments = {
 			#controls_religion = yes
 			religion = nihon_shinto
 			is_patrician = no
+			NOT = { is_government_potential = order_government }
 		}
 		
 		color = { 157 0 47 } # Same as Shinto religion
@@ -1108,6 +1122,7 @@ feudal_governments = {
 		## Modifiers
 		court_size_modifier = 1000 # To account for concubines
 	}
+
 	japanese_feudal_government = { # Keeps a few features from CVG (holding cities, not caring about religion (due to Buddhist-Shinto tolerance/syncretism))
 		preferred_holdings = { CASTLE }
 		allowed_holdings = { 
@@ -1148,6 +1163,7 @@ feudal_governments = {
 			NOR = {
 				is_government_potential = chinese_imperial_government
 				is_government_potential = japanese_imperial_government
+				is_government_potential = order_government
 			}
 			OR = {
 				religion = nihon_shinto
@@ -1190,6 +1206,7 @@ feudal_governments = {
 		## Modifiers
 		court_size_modifier = 15
 	}
+
 	japanese_monastic_feudal_government = {
 		preferred_holdings = { CASTLE TEMPLE }
 		allowed_holdings = { 
@@ -1239,6 +1256,7 @@ feudal_governments = {
 			NOR = {
 				is_government_potential = chinese_imperial_government
 				is_government_potential = japanese_imperial_government
+				is_government_potential = order_government
 			}
 			religion = nihon_shinto
 			OR = {
@@ -1276,4 +1294,89 @@ feudal_governments = {
 		court_size_modifier = 15
 	}
 
+	order_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = {
+			CASTLE
+			TEMPLE
+			TRIBAL
+			FORT
+			HOSPITAL
+		}
+		accepts_liege_governments = {
+			feudal_government
+			muslim_government
+			theocracy_government
+			theocratic_feudal_government
+			chinese_imperial_government
+			chinese_vassal_government
+			japanese_imperial_government
+			japanese_feudal_government
+			japanese_monastic_feudal_government
+		}
+		free_revoke_on_governments = {
+			order_government
+		}
+		free_revoke_on_tiers = {
+			BARON
+		}
+
+		forced_contract = {
+			order_government
+		}
+
+		frame_suffix = "_order"
+		title_prefix = "order_"
+
+		potential = {
+			OR = {
+				holy_order = yes
+				AND = {
+					any_liege = {
+						holy_order = yes
+						religion = ROOT
+					}
+					ai = yes
+					NAND = { 
+						is_government_potential = merchant_republic_government 
+						OR = {
+							tier = DUKE
+							is_patrician = yes
+						}
+						any_demesne_province = {
+							any_province_holding = {
+								OR = {
+									AND = {
+										tier = BARON
+										holding_type = family_palace
+									}
+									AND = {
+										NOT = {
+											tier = BARON
+										}
+										holding_type = city
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		color = { 169 169 169 }
+
+		have_gender_laws = no
+		can_create_kingdoms = no
+		can_create_empires = no
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		dukes_called_kings = yes
+		barons_need_dynasty = yes
+		can_usurp_kingdoms_and_empires = no
+		can_grant_kingdoms_and_empires_to_other_government = no
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+		can_inherit = no
+		free_retract_vassalage = yes
+	}
 }

@@ -593,11 +593,51 @@ society_decisions = {
 					 }
 					 OR = {
 						 ai = no
-						 NOT = { primary_title = { title = d_hashshashin } } ### Gonna need to adjust this for other assassin titles -00matthew2000 ###
-						 AND = {
-							 primary_title = { title = d_hashshashin } 							
-							 wealth = 50
-						 }
+						 NOT = { primary_title = { title = d_hashshashin } }
+						 NOT = { primary_title = { title = d_enemies_of_avidya } }
+						 NOT = { primary_title = { title = d_ahrimans_divs } }
+						 NOT = { primary_title = { title = d_holy_doctors } }
+						 NOT = { primary_title = { title = d_council_of_aesir } }
+						 NOT = { primary_title = { title = d_warriors_of_oasis } }
+						 NOT = { primary_title = { title = d_blue_wolves } }
+						 NOT = { primary_title = { title = d_order_of_righteous } }
+						 NOT = { primary_title = { title = d_avengers_of_holy_pyre } }
+						AND = {
+							primary_title = { title = d_hashshashin } 							
+							wealth = 50
+						}
+						AND = {
+							primary_title = { title = d_enemies_of_avidya } 							
+							wealth = 50
+						}
+						AND = {
+							primary_title = { title = d_ahrimans_divs } 							
+							wealth = 50
+						}
+						AND = {
+							primary_title = { title = d_holy_doctors } 							
+							wealth = 50
+						}
+						AND = {
+							primary_title = { title = d_council_of_aesir } 							
+							wealth = 50
+						}
+						AND = {
+							primary_title = { title = d_warriors_of_oasis } 							
+							wealth = 50
+						}
+						AND = {
+							primary_title = { title = d_blue_wolves } 							
+							wealth = 50
+						}
+						AND = {
+							primary_title = { title = d_order_of_righteous } 							
+							wealth = 50
+						}
+						AND = {
+							primary_title = { title = d_avengers_of_holy_pyre } 							
+							wealth = 50
+						}
 					 }
 				 }
 			 }

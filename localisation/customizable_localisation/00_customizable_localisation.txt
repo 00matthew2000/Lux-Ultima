@@ -1729,6 +1729,38 @@ defined_text = {
 		localisation_key = the_assassins
 		trigger = { society_member_of = the_assassins }
 	}
+	text = {
+		localisation_key = the_assassins_bud_mahayana
+		trigger = { society_member_of = the_assassins_bud_mahayana }
+	}
+	text = {
+		localisation_key = the_assassins_mani_ahriman
+		trigger = { society_member_of = the_assassins_mani_ahriman }
+	}
+	text = {
+		localisation_key = the_assassins_priscillian
+		trigger = { society_member_of = the_assassins_priscillian }
+	}
+	text = {
+		localisation_key = the_assassins_ragnarok
+		trigger = { society_member_of = the_assassins_ragnarok }
+	}
+	text = {
+		localisation_key = the_assassins_set
+		trigger = { society_member_of = the_assassins_set }
+	}
+	text = {
+		localisation_key = the_assassins_tengri_ahriman
+		trigger = { society_member_of = the_assassins_tengri_ahriman }
+	}
+	text = {
+		localisation_key = the_assassins_yahyanism
+		trigger = { society_member_of = the_assassins_yahyanism }
+	}
+	text = {
+		localisation_key = the_assassins_zor_angra
+		trigger = { society_member_of = the_assassins_zor_angra }
+	}
 #	text = {
 #		localisation_key = the_satanists
 #		trigger = { society_member_of = the_satanists }
@@ -2354,7 +2386,7 @@ defined_text = {
 				has_character_flag = assassins_target_war_attacker 
 				has_character_flag = assassins_target_war_attacker_vassal
 				has_character_flag = assassins_target_war_attacker_commander
-				has_character_flag = assassins_target_persecutes_shiites
+				has_character_flag = assassins_target_persecutes_qarmatians
 			}
 		}
 	}
@@ -2386,7 +2418,7 @@ defined_text = {
 					has_character_flag = assassins_target_war_attacker
 					has_character_flag = assassins_target_war_attacker_vassal
 					has_character_flag = assassins_target_war_attacker_commander
-					has_character_flag = assassins_target_persecutes_shiites
+					has_character_flag = assassins_target_persecutes_qarmatians
 					has_character_flag = assassins_target_marked_for_death
 					has_character_flag = assassins_target_killed_member
 					has_character_flag = assassins_target_assaulted_member
