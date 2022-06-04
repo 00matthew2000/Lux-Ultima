@@ -4586,10 +4586,10 @@ secretly_priscillian = {
 	is_visible = {
 		OR = {
 			character = FROM
-			society_member_of = secret_religious_society_jud_priscillian
+			society_member_of = secret_religious_society_priscillian
 			AND = {
 				is_close_relative = FROM
-				trait = secretly_jud_priscillian
+				trait = secretly_priscillian
 			}
 		}
 	}

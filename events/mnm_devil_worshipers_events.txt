@@ -1,8 +1,8 @@
 ##########################################
                                          
- M&M Satanists Society Events            
+ #M&M Satanists Society Events            
                                          
- ID MNM.7000-MNM.7999		              
+ #ID MNM.7000-MNM.7999		              
                                          
 ##########################################
 
@@ -62,9 +62,9 @@ character_event = {
 }
 
 
-####JOINING & RECRUITMENT EVENTS##
+####JOINING & RECRUITMENT EVENTS####
 
-##For the recruit: Do you approve of "alternative views"?
+#For the recruit: Do you approve of "alternative views"?
 character_event = {
  	id = MNM.7001
  	desc = {
@@ -346,7 +346,7 @@ character_event = {
  	}
 }
 
-# Safety ping.
+#Safety ping.
 character_event = {
  	id = MNM.6999
  	hide_window = yes
@@ -487,7 +487,7 @@ character_event = {
  		character_event = { id = MNM.6995 }
  	}
 }
-#
+
 character_event = { # event notifying recruitee that "Something must've gone wrong" (in case recruiter/inductor dies)
  	id = MNM.6995
  	desc = {
@@ -1322,7 +1322,7 @@ character_event = {
 }
 
 #"Await the messenger" a letter reads
-#letter_event = {
+letter_event = {
  	id = MNM.7014
  	desc = EVTDESC_MNM_7014
  	border = GFX_event_letter_frame_intrigue
@@ -2117,7 +2117,7 @@ character_event = {
 							being_recruited_by_the_cult_of_balor = { PREV = { join_society = the_cult_of_balor } }
 							being_recruited_by_the_jinn = { PREV = { join_society = arab_jinn_sorcerers } }
 							being_recruited_by_the_apepcult = { PREV = { join_society = cult_of_apep } }
-							being_recruited_by_cult_of_angra_mainyu = { PREV = { join_society = cult_of_angra_mainyu } 
+							being_recruited_by_cult_of_angra_mainyu = { PREV = { join_society = cult_of_angra_mainyu } }
  							being_recruited_by_the_plaguebringers = { PREV = { join_society = the_plaguebringers } }
  							being_recruited_by_the_vodouns = { PREV = { join_society = the_vodouns } }
  							being_recruited_by_the_bacchants = { PREV = { join_society = the_bacchants } }
@@ -2238,7 +2238,7 @@ character_event = {
  		character_event = { id = MNM.6993 }
  	}
 }
-#
+
 character_event = {
  	id = MNM.6989
  	hide_window = yes
@@ -2269,7 +2269,7 @@ character_event = {
  		character_event = { id = MNM.6993 }
  	}
 }
-#
+
 character_event = {
  	id = MNM.6988
  	hide_window = yes
@@ -2301,7 +2301,7 @@ character_event = {
  		character_event = { id = MNM.6993 }
  	}
 }
-#
+
 character_event = {
  	id = MNM.6987
  	hide_window = yes
@@ -2332,7 +2332,7 @@ character_event = {
  		character_event = { id = MNM.6993 }
  	}
 }
-#
+
 character_event = {
  	id = MNM.6993
  	desc = {
@@ -3394,7 +3394,7 @@ character_event = {
 }
 
 #Outcome of recruitment for the original recruiter (if there is one)
-#letter_event = {
+letter_event = {
  	id = MNM.7022
  	border = GFX_event_letter_frame_intrigue
 
@@ -3428,7 +3428,7 @@ character_event = {
  	}
 }
 
-First ping event for joining in case inductor(s) died
+#First ping event for joining in case inductor(s) died
 character_event = {
 	id = MNM.7030
 	hide_window = yes
@@ -3859,238 +3859,238 @@ character_event = {
 
 #Soul corruption adds stress
 character_event = {
-#    id = MNM.7051
-#    desc = EVTDESC_MNM_7051
-#    picture = GFX_evt_illness
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7051
+     desc = EVTDESC_MNM_7051
+     picture = GFX_evt_illness
+     border = GFX_event_normal_frame_intrigue
 
     is_triggered_only = yes
-#    hide_from = yes
-#    
-#    trigger = {
-#    	NOT = { trait = stressed }
-#    }
+     hide_from = yes
+     
+     trigger = {
+     	NOT = { trait = stressed }
+     }
 
     option = { 
-#        name = EVTOPTA_MNM_7051
-#        custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
-#        add_trait = stressed
-#    }
+         name = EVTOPTA_MNM_7051
+         custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
+         add_trait = stressed
+     }
 }
 
 #Soul corruption adds lunatic
 character_event = {
-#    id = MNM.7052
-#    desc = EVTDESC_MNM_7052
-#    picture = GFX_evt_lunatic
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7052
+     desc = EVTDESC_MNM_7052
+     picture = GFX_evt_lunatic
+     border = GFX_event_normal_frame_intrigue
 
     is_triggered_only = yes
-#    hide_from = yes
-#    
-#    trigger = {
-#    	NOT = { trait = lunatic }
-#    }
+     hide_from = yes
+     
+     trigger = {
+     	NOT = { trait = lunatic }
+     }
 
     option = { 
-#        name = EVTOPTA_MNM_7052
-#        custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
-#        add_trait = lunatic
-#    }
+         name = EVTOPTA_MNM_7052
+         custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
+         add_trait = lunatic
+     }
 }
 
 #Soul corruption adds stutter
 character_event = {
-#    id = MNM.7053
-#    desc = EVTDESC_MNM_7053
-#    picture = GFX_evt_uncomfortable
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7053
+     desc = EVTDESC_MNM_7053
+     picture = GFX_evt_uncomfortable
+     border = GFX_event_normal_frame_intrigue
 
     is_triggered_only = yes
-#    hide_from = yes
-#    
-#    trigger = {
-#    	NOT = { trait = stutter }
-#    }
+     hide_from = yes
+     
+     trigger = {
+     	NOT = { trait = stutter }
+     }
 
     option = { 
-#        name = EVTOPTA_MNM_7051
-#        custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
-#        add_trait = stutter
-#    }
+         name = EVTOPTA_MNM_7051
+         custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
+         add_trait = stutter
+     }
 }
 
 #Soul corruption adds clubfooted
 character_event = {
-#    id = MNM.7054
-#    desc = EVTDESC_MNM_7054
-#    picture = GFX_evt_uncomfortable
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7054
+     desc = EVTDESC_MNM_7054
+     picture = GFX_evt_uncomfortable
+     border = GFX_event_normal_frame_intrigue
 
     is_triggered_only = yes
-#    hide_from = yes
-#    
-#    trigger = {
-#    	NOT = { trait = clubfooted }
-#    }
+     hide_from = yes
+     
+     trigger = {
+     	NOT = { trait = clubfooted }
+     }
 
     option = { 
-#        name = EVTOPTA_MNM_7051
-#        custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
-#        add_trait = clubfooted
-#    }
+         name = EVTOPTA_MNM_7051
+         custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
+         add_trait = clubfooted
+     }
 }
 
 #Soul corruption adds hunchback
 character_event = {
-#    id = MNM.7055
-#    desc = EVTDESC_MNM_7055
-#    picture = GFX_evt_uncomfortable
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7055
+     desc = EVTDESC_MNM_7055
+     picture = GFX_evt_uncomfortable
+     border = GFX_event_normal_frame_intrigue
 
     is_triggered_only = yes
-#    hide_from = yes
-#    
-#    trigger = {
-#    	NOT = { trait = hunchback }
-#    }
+     hide_from = yes
+     
+     trigger = {
+     	NOT = { trait = hunchback }
+     }
 
     option = { 
-#        name = EVTOPTA_MNM_7051
-#        custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
-#        add_trait = hunchback
-#    }
+         name = EVTOPTA_MNM_7051
+         custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
+         add_trait = hunchback
+     }
 }
 
 #Soul corruption adds ugly
 character_event = {
-#    id = MNM.7056
-#    desc = EVTDESC_MNM_7056
-#    picture = GFX_evt_uncomfortable
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7056
+     desc = EVTDESC_MNM_7056
+     picture = GFX_evt_uncomfortable
+     border = GFX_event_normal_frame_intrigue
 
     is_triggered_only = yes
-#    hide_from = yes
-#    
-#    trigger = {
-#    	NOT = { trait = ugly }
-#    }
+     hide_from = yes
+     
+     trigger = {
+     	NOT = { trait = ugly }
+     }
 
     option = { 
-#        name = EVTOPTA_MNM_7051
-#        custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
-#        add_trait = ugly
-#        hidden_effect = { remove_trait = fair }
-#    }
+         name = EVTOPTA_MNM_7051
+         custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
+         add_trait = ugly
+         hidden_effect = { remove_trait = fair }
+     }
 }
 
 #Soul corruption adds corrupting_magic_major
 character_event = {
-#    id = MNM.7057
-#    desc = EVTDESC_MNM_7057_NEW
-#    picture = GFX_evt_illness
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7057
+     desc = EVTDESC_MNM_7057_NEW
+     picture = GFX_evt_illness
+     border = GFX_event_normal_frame_intrigue
  	
  	notification = yes
 
     is_triggered_only = yes
-#    hide_from = yes
-#    
-#    #trigger = {
-#     	NOR = { 
+     hide_from = yes
+     
+     #trigger = {
+      	NOR = { 
  	 		NOT = { health = 3 }
  	 		has_character_modifier = corrupting_magic_minor
  	 		has_character_modifier = corrupting_magic_major
  	 	}
-#    }
+     }
 
  	immediate = {
  		add_character_modifier = {
-#        	name = corrupting_magic_minor
-#        	years = 5
+         	name = corrupting_magic_minor
+         	years = 5
  			stacking = yes
-#        }
+         }
  		add_character_modifier = {
-#        	name = corrupting_magic_minor
-#        	years = 5
+         	name = corrupting_magic_minor
+         	years = 5
  			stacking = yes
-#        }
+         }
  	}
  	
-#    option = { 
-#        name = EVTOPTA_MNM_7051
-#        custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
-#    }
+     option = { 
+         name = EVTOPTA_MNM_7051
+         custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
+     }
 }
 
 
-##Soul corruption adds corrupting_magic_minor
+#Soul corruption adds corrupting_magic_minor
 character_event = {
-#    id = MNM.7058
-#    desc = EVTDESC_MNM_7057_NEW
-#    picture = GFX_evt_illness
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7058
+     desc = EVTDESC_MNM_7057_NEW
+     picture = GFX_evt_illness
+     border = GFX_event_normal_frame_intrigue
  	
  	notification = yes
 
     is_triggered_only = yes
-#    hide_from = yes
-#    
-#    #trigger = {
-#     	NOR = { 
+     hide_from = yes
+     
+     trigger = {
+      	NOR = { 
  	 		NOT = { health = 3 }
  	 		has_character_modifier = corrupting_magic_minor
  	 		has_character_modifier = corrupting_magic_major
  	 	}
-#    }
+     }
  	
  	immediate = {
  		add_character_modifier = {
-#        	name = corrupting_magic_minor
-#        	years = 5
+         	name = corrupting_magic_minor
+         	years = 5
  			stacking = yes
-#        }
+         }
  	}
 
     option = { 
-#        name = EVTOPTA_MNM_7051
-#        custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
-#    }
+         name = EVTOPTA_MNM_7051
+         custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
+     }
 }
 
 #Soul corruption adds frail
 character_event = {
-#    id = MNM.7059
-#    desc = EVTDESC_MNM_7059
-#    picture = GFX_evt_illness
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7059
+     desc = EVTDESC_MNM_7059
+     picture = GFX_evt_illness
+     border = GFX_event_normal_frame_intrigue
 
     is_triggered_only = yes
-#    hide_from = yes
-#    
-#    trigger = {
-#    	NOR = {
-#    		trait = feeble
-#    		trait = weak
-#    		trait = strong
-#    	}
-#    }
+     hide_from = yes
+     
+     trigger = {
+     	NOR = {
+     		trait = feeble
+     		trait = weak
+     		trait = strong
+     	}
+     }
 
     option = { 
-#        name = EVTOPTA_MNM_7051
-#        custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
-#        add_trait = feeble
-#        hidden_effect = { remove_trait = robust }
-#    }
+         name = EVTOPTA_MNM_7051
+         custom_tooltip = { text = EVTOPTA_MNM_7051_TT }
+         add_trait = feeble
+         hidden_effect = { remove_trait = robust }
+     }
 }
 
-### MISSIONS ##
+## MISSIONS ##
 
-##Desecration temporarily moved to mnm_devil_worshipers_events_axel to prevent future conflicts
+#Desecration temporarily moved to mnm_devil_worshipers_events_axel to prevent future conflicts
 
-### POWERS ##
+## POWERS ##
 
-##Power: Corrupt a priest 
+#Power: Corrupt a priest 
 
 #Ping event for Corrupt a priest
 character_event = {
@@ -4420,85 +4420,85 @@ character_event = {
  	id = MNM.7830
  	picture = GFX_evt_eavesdropping
  	desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_add_lustful
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_lustful
-#    }
-#    desc = {
-#        trigger = { 
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_add_gluttonous
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_gluttonous
-#    }
-#    desc = {
-#        trigger = { 
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_add_greedy
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_greedy
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_add_slothful
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_slothful
-#    }
-#    desc = {
-#        trigger = { 
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_add_envious
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_envious
-#    }
-#    desc = {
-#        trigger = { 
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_add_wroth
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_wroth
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_add_proud
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_proud
-#    }
-#    desc = {
-#        trigger = { 
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_add_deceitful
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_deceitful
-#    }
-#    desc = {
-#        trigger = { 
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_add_arbitrary
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_arbitrary
-#    }
-#    desc = {
-#        trigger = { 
-#       		event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_add_cruel
-#            }
-#        }
-#        text = EVTDESC_MNM_7830_cruel
-#    }
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_add_lustful
+             }
+         }
+         text = EVTDESC_MNM_7830_lustful
+     }
+     desc = {
+         trigger = { 
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_add_gluttonous
+             }
+         }
+         text = EVTDESC_MNM_7830_gluttonous
+     }
+     desc = {
+         trigger = { 
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_add_greedy
+             }
+         }
+         text = EVTDESC_MNM_7830_greedy
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_add_slothful
+             }
+         }
+         text = EVTDESC_MNM_7830_slothful
+     }
+     desc = {
+         trigger = { 
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_add_envious
+             }
+         }
+         text = EVTDESC_MNM_7830_envious
+     }
+     desc = {
+         trigger = { 
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_add_wroth
+             }
+         }
+         text = EVTDESC_MNM_7830_wroth
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_add_proud
+             }
+         }
+         text = EVTDESC_MNM_7830_proud
+     }
+     desc = {
+         trigger = { 
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_add_deceitful
+             }
+         }
+         text = EVTDESC_MNM_7830_deceitful
+     }
+     desc = {
+         trigger = { 
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_add_arbitrary
+             }
+         }
+         text = EVTDESC_MNM_7830_arbitrary
+     }
+     desc = {
+         trigger = { 
+        		event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_add_cruel
+             }
+         }
+         text = EVTDESC_MNM_7830_cruel
+     }
  	border = GFX_event_normal_frame_intrigue
 
  	is_triggered_only = yes
@@ -4757,140 +4757,140 @@ character_event = {
  	picture = GFX_evt_shady_meeting
  	###default descriptions
  	desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {
-#       			AND = { 
-#            		has_character_flag = corrupt_priest_add_lustful
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_lustful
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	AND = { 
-#            		has_character_flag = corrupt_priest_add_gluttonous
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_gluttonous
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	AND = { 
-#            		has_character_flag = corrupt_priest_add_greedy
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_greedy
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	AND = { 
-#            		has_character_flag = corrupt_priest_add_slothful
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_slothful
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	AND = { 
-#            		has_character_flag = corrupt_priest_add_envious
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_envious
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	AND = { 
-#            		has_character_flag = corrupt_priest_add_wroth
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_wroth
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	AND = { 
-#            		has_character_flag = corrupt_priest_add_proud
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_proud
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	AND = { 
-#            		has_character_flag = corrupt_priest_add_deceitful
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_deceitful
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	AND = { 
-#            		has_character_flag = corrupt_priest_add_arbitrary
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_arbitrary
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	AND = { 
-#            		has_character_flag = corrupt_priest_add_cruel
-#            		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_cruel
-#    }
+         trigger = {
+         	event_target:corrupt_priest_target = {
+        			AND = { 
+             		has_character_flag = corrupt_priest_add_lustful
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_lustful
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	AND = { 
+             		has_character_flag = corrupt_priest_add_gluttonous
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_gluttonous
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	AND = { 
+             		has_character_flag = corrupt_priest_add_greedy
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_greedy
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	AND = { 
+             		has_character_flag = corrupt_priest_add_slothful
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_slothful
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	AND = { 
+             		has_character_flag = corrupt_priest_add_envious
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_envious
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	AND = { 
+             		has_character_flag = corrupt_priest_add_wroth
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_wroth
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	AND = { 
+             		has_character_flag = corrupt_priest_add_proud
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_proud
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	AND = { 
+             		has_character_flag = corrupt_priest_add_deceitful
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_deceitful
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	AND = { 
+             		has_character_flag = corrupt_priest_add_arbitrary
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_arbitrary
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	AND = { 
+             		has_character_flag = corrupt_priest_add_cruel
+             		NOT = { has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption } }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_cruel
+     }
 
     ###bonus descriptions if resulting from event id = MNM.7836
 
     desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {
-#       			AND = {
-#       				OR = {
-#       					has_character_flag = corrupt_priest_add_lustful
-#            			has_character_flag = corrupt_priest_add_gluttonous
-#            			has_character_flag = corrupt_priest_add_greedy
-#            			has_character_flag = corrupt_priest_add_slothful
-#            			has_character_flag = corrupt_priest_add_envious
-#            			has_character_flag = corrupt_priest_add_wroth
-#            			has_character_flag = corrupt_priest_add_proud
-#            			has_character_flag = corrupt_priest_add_deceitful
-#            			has_character_flag = corrupt_priest_add_arbitrary
-#            			has_character_flag = corrupt_priest_add_cruel
-#       				} 
-#            		has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption }
-#            	}
-#            }
-#        }
-#        text = EVTDESC_MNM_7832_bonus
-#    }
+         trigger = {
+         	event_target:corrupt_priest_target = {
+        			AND = {
+        				OR = {
+        					has_character_flag = corrupt_priest_add_lustful
+             			has_character_flag = corrupt_priest_add_gluttonous
+             			has_character_flag = corrupt_priest_add_greedy
+             			has_character_flag = corrupt_priest_add_slothful
+             			has_character_flag = corrupt_priest_add_envious
+             			has_character_flag = corrupt_priest_add_wroth
+             			has_character_flag = corrupt_priest_add_proud
+             			has_character_flag = corrupt_priest_add_deceitful
+             			has_character_flag = corrupt_priest_add_arbitrary
+             			has_character_flag = corrupt_priest_add_cruel
+        				} 
+             		has_opinion_modifier = { who = event_target:corrupt_priest_spell_caster modifier = opinion_successful_corruption }
+             	}
+             }
+         }
+         text = EVTDESC_MNM_7832_bonus
+     }
 
  	border = GFX_event_normal_frame_intrigue
 
@@ -5066,77 +5066,77 @@ character_event = {
  	id = MNM.7835
  	picture = GFX_evt_eavesdropping
  	desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_remove_chaste
-#        	}
-#        }
-#        text = EVTDESC_MNM_7835_remove_chaste
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_remove_temperate
-#        	}
-#        }
-#        text = EVTDESC_MNM_7835_remove_temperate
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_remove_charitable
-#        	}
-#        }
-#        text = EVTDESC_MNM_7835_remove_charitable
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_remove_diligent
-#        	}
-#        }
-#        text = EVTDESC_MNM_7835_remove_diligent
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_remove_kind
-#        	}
-#        }
-#        text = EVTDESC_MNM_7835_remove_kind
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_remove_patient
-#        	}
-#        }
-#        text = EVTDESC_MNM_7835_remove_patient
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_remove_humble
-#        	}
-#        }
-#        text = EVTDESC_MNM_7835_remove_humble
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_remove_honest
-#        	}
-#        }
-#        text = EVTDESC_MNM_7835_remove_honest
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {  
-#            	has_character_flag = corrupt_priest_remove_just
-#        	}
-#        }
-#        text = EVTDESC_MNM_7835_remove_just
-#    }
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_remove_chaste
+         	}
+         }
+         text = EVTDESC_MNM_7835_remove_chaste
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_remove_temperate
+         	}
+         }
+         text = EVTDESC_MNM_7835_remove_temperate
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_remove_charitable
+         	}
+         }
+         text = EVTDESC_MNM_7835_remove_charitable
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_remove_diligent
+         	}
+         }
+         text = EVTDESC_MNM_7835_remove_diligent
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_remove_kind
+         	}
+         }
+         text = EVTDESC_MNM_7835_remove_kind
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_remove_patient
+         	}
+         }
+         text = EVTDESC_MNM_7835_remove_patient
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_remove_humble
+         	}
+         }
+         text = EVTDESC_MNM_7835_remove_humble
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_remove_honest
+         	}
+         }
+         text = EVTDESC_MNM_7835_remove_honest
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = {  
+             	has_character_flag = corrupt_priest_remove_just
+         	}
+         }
+         text = EVTDESC_MNM_7835_remove_just
+     }
  	border = GFX_event_normal_frame_intrigue
 
  	is_triggered_only = yes
@@ -5436,77 +5436,77 @@ character_event = {
  	id = MNM.7837
  	picture = GFX_evt_shady_meeting
  	desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = {        	
-#            	has_character_flag = corrupt_priest_remove_chaste
-#        	}
-#        }
-#        text = EVTDESC_MNM_7837_chaste
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_remove_temperate
-#        	}
-#        }
-#        text = EVTDESC_MNM_7837_temperate
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_remove_charitable
-#        	}
-#        }
-#        text = EVTDESC_MNM_7837_charitable
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_remove_diligent
-#        	}
-#        }
-#        text = EVTDESC_MNM_7837_diligent
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_remove_kind
-#        	}
-#        }
-#        text = EVTDESC_MNM_7837_kind
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_remove_patient
-#        	}
-#        }
-#        text = EVTDESC_MNM_7837_patient
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_remove_humble
-#        	}
-#        }
-#        text = EVTDESC_MNM_7837_humble
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_remove_honest
-#        	}
-#        }
-#        text = EVTDESC_MNM_7837_honest
-#    }
-#    desc = {
-#        trigger = {
-#        	event_target:corrupt_priest_target = { 
-#            	has_character_flag = corrupt_priest_remove_just
-#        	}
-#        }
-#        text = EVTDESC_MNM_7837_just
-#    }
+         trigger = {
+         	event_target:corrupt_priest_target = {        	
+             	has_character_flag = corrupt_priest_remove_chaste
+         	}
+         }
+         text = EVTDESC_MNM_7837_chaste
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_remove_temperate
+         	}
+         }
+         text = EVTDESC_MNM_7837_temperate
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_remove_charitable
+         	}
+         }
+         text = EVTDESC_MNM_7837_charitable
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_remove_diligent
+         	}
+         }
+         text = EVTDESC_MNM_7837_diligent
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_remove_kind
+         	}
+         }
+         text = EVTDESC_MNM_7837_kind
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_remove_patient
+         	}
+         }
+         text = EVTDESC_MNM_7837_patient
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_remove_humble
+         	}
+         }
+         text = EVTDESC_MNM_7837_humble
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_remove_honest
+         	}
+         }
+         text = EVTDESC_MNM_7837_honest
+     }
+     desc = {
+         trigger = {
+         	event_target:corrupt_priest_target = { 
+             	has_character_flag = corrupt_priest_remove_just
+         	}
+         }
+         text = EVTDESC_MNM_7837_just
+     }
 
  	border = GFX_event_normal_frame_intrigue
 
@@ -7052,7 +7052,7 @@ character_event = {
  		character_event = { id = MNM.7820 days = 7 }
  	}
 }
-#
+
 character_event = {
  	id = MNM.7820
  	hide_window = yes
@@ -7078,7 +7078,7 @@ character_event = {
  		}
  	}
 }
-#
+
 character_event = {
  	id = MNM.7821
  	picture = GFX_evt_illness
@@ -7544,7 +7544,7 @@ character_event = {
  		}
  	}
 }
-#
+
 character_event = {
  	id = MNM.7829
  	hide_window = yes
@@ -7567,7 +7567,7 @@ character_event = {
 }
 
 
-###Sacrifice prisoner events 
+#Sacrifice prisoner events 
 character_event = { #Head of Religion
  	id = MNM.7500
  	picture = GFX_evt_sacrifice
@@ -7580,7 +7580,7 @@ character_event = { #Head of Religion
  		name = MNM.7500.a
  	}
 }
-#
+
 character_event = { #Holy man
  	id = MNM.7501
  	picture = GFX_evt_sacrifice
@@ -7593,7 +7593,7 @@ character_event = { #Holy man
  		name = MNM.7500.a
  	}
 }
-#
+
 character_event = { #Dwarf
  	id = MNM.7502
  	picture = GFX_evt_sacrifice
@@ -7606,7 +7606,7 @@ character_event = { #Dwarf
  		name = MNM.7502.a
  	}
 }
-#
+
 character_event = { #child
  	id = MNM.7503
  	picture = GFX_evt_sacrifice
@@ -7619,7 +7619,7 @@ character_event = { #child
  		name = MNM.7503.a
  	}
 }
-#
+
 character_event = { #Virgin
  	id = MNM.7504
  	picture = GFX_evt_sacrifice
@@ -7632,7 +7632,7 @@ character_event = { #Virgin
  		name = MNM.7504.a
  	}
 }
-#
+
 character_event = { #regular dude
  	id = MNM.7505
  	picture = GFX_evt_sacrifice
@@ -7677,7 +7677,7 @@ long_character_event = { #reaction
  		
  	}
 }
-#
+
 character_event = { #demonic impregnation 
  	id = MNM.7507
  	picture = GFX_evt_dark_love
@@ -7714,7 +7714,7 @@ character_event = { #demonic impregnation
  		}
  	}
 }
-#
+
 character_event = { #birth
  	id = MNM.7508
  	hide_window = yes
@@ -7825,7 +7825,7 @@ character_event = { #birth
  		}
  		remove_trait = sickly
  		character_event = { id = SoA.3019 days = 90 random = 90 } # Demon child tombola
- 		#random_list = {
+ 		random_list = {
  		 	50 = { set_character_flag = demon_child_non_pagan }
  		 	50 = { set_character_flag = demon_child_fake }
  		}
@@ -7839,31 +7839,31 @@ character_event = { #birth
  		}	
  	}
 }
-#
+
 character_event = { #Announcement
-#    id = MNM.7511
-#    picture = GFX_evt_magic_ritual
-#    border = GFX_event_normal_frame_intrigue
+     id = MNM.7511
+     picture = GFX_evt_magic_ritual
+     border = GFX_event_normal_frame_intrigue
 
     trigger = { 
-#    	has_quest = quest_the_devil_worshipers_demonic_impregnation
-#    }
-#    
-#    desc = {
-#    	trigger = { any_child = { character = FROM } }
-#    	text = EVTDESC_MNM_7511_SELF
-#    }
-#    desc = {
-#    	trigger = { NOT = { any_child = { character = FROM } } }
-#    	text = EVTDESC_MNM_7511_OTHER
-#    }
+     	has_quest = quest_the_devil_worshipers_demonic_impregnation
+     }
+     
+     desc = {
+     	trigger = { any_child = { character = FROM } }
+     	text = EVTDESC_MNM_7511_SELF
+     }
+     desc = {
+     	trigger = { NOT = { any_child = { character = FROM } } }
+     	text = EVTDESC_MNM_7511_OTHER
+     }
 
     is_triggered_only = yes
-#    
-#    option = { 
-#        name = EVTOPTA_MNM_7511
-#           
-#        clr_quest = quest_the_devil_worshipers_demonic_impregnation
+     
+     option = { 
+         name = EVTOPTA_MNM_7511
+            
+         clr_quest = quest_the_devil_worshipers_demonic_impregnation
  		if = {
  			limit = { FROM = { is_female = yes } }
  			sound_effect = devil_worshippers_impregnation_courtier_female
@@ -7872,10 +7872,10 @@ character_event = { #Announcement
  			limit = { FROM = { is_female = no } }
  			sound_effect = devil_worshippers_impregnation_courtier_male
  		}
-#        add_society_currency_massive_effect = yes
-#    }
+         add_society_currency_massive_effect = yes
+     }
 }
-#
+
 character_event = { #prolong life sacrifice
  	id = MNM.7509
  	picture = GFX_evt_sacrifice
@@ -7887,7 +7887,7 @@ character_event = { #prolong life sacrifice
  	option = {
  		name = MNM.7509.a
  		FROM = {
- 			hidden_effect = { character_event = { id = MNM.7506 } }
+ 			hidden_effect = { long_character_event = { id = MNM.7506 } }
  			death = {
  				death_reason = death_missing
  			}
@@ -7899,7 +7899,7 @@ character_event = { #prolong life sacrifice
  		character_event = { id = MNM.7510 days = 3651 }
  	}
 }
-#
+
 character_event = { #prolong life effect fades
  	id = MNM.7510
  	picture = GFX_evt_dark_prayer
@@ -7922,8 +7922,8 @@ character_event = { #prolong life effect fades
  	}
 }
 
-###MISSIONS##
-##DW Mission Tombola
+##MISSIONS##
+#DW Mission Tombola
 character_event = {
  	id = MNM.7200
  	hide_window = yes
@@ -8097,10 +8097,10 @@ character_event = {
  	}
 }
 
-###Desecrate temple##
+##Desecrate temple##
 
-##MISSION: 
-##Ping event for the mission Desecrate a temple
+#MISSION: 
+#Ping event for the mission Desecrate a temple
 character_event = {
  	id = MNM.7023
  	hide_window = yes
@@ -8111,7 +8111,7 @@ character_event = {
 }
 
 #Assign event
-#society_quest_event = {
+society_quest_event = {
  	id = MNM.7110
  	desc = EVTDESC_MNM_7110
 
@@ -8338,7 +8338,7 @@ character_event = {
  		name = EVTOPT_MNM_7113_MARTIAL
  		add_society_currency_minor_effect = yes
  		event_target:desecration_holder = {
- 			#if = {
+ 			if = {
  				death = {
  					death_reason = death_sacrificed
  				}
@@ -8729,7 +8729,7 @@ character_event = {
 
 
 #MISSION: Corrupt a priest
-##Ping event for mission Corrupt a Priest
+#Ping event for mission Corrupt a Priest
 character_event = {
  	id = MNM.7838
  	hide_window = yes
@@ -8742,8 +8742,8 @@ character_event = {
 }
 
 #MISSION: 
-##We want you to corrupt this priest!
-#society_quest_event = {
+#We want you to corrupt this priest!
+society_quest_event = {
  	id = MNM.7839
  	desc = EVTDESC_MNM_7839
  	quest_target = event_target:corrupt_priest_mission_target
@@ -8838,8 +8838,8 @@ character_event = {
 }
 
 
-##MISSION: Sacrifice character
-##Ping event for the mission Sacrifice Someone
+#MISSION: Sacrifice character
+#Ping event for the mission Sacrifice Someone
 character_event = {
  	id = MNM.7024
  	hide_window = yes
@@ -8849,8 +8849,8 @@ character_event = {
  	immediate = { FROM = { society_quest_event = { id = MNM.7025 days = 7 random = 7 } } }
 }
 
-## For the character that gets the mission Sacrifice someone
-#society_quest_event = {
+#For the character that gets the mission Sacrifice someone
+society_quest_event = {
  	id = MNM.7025
  	desc = EVTDESC_MNM_7025
  	border = GFX_event_letter_frame_intrigue
@@ -8911,8 +8911,8 @@ character_event = {
 }
 
 
-##MISSION: Demonic impregnation
-##Ping event for the mission Demonic Impregnation
+#MISSION: Demonic impregnation
+#Ping event for the mission Demonic Impregnation
 character_event = {
  	id = MNM.7026
  	hide_window = yes
@@ -8922,8 +8922,8 @@ character_event = {
  	immediate = { FROM = { society_quest_event = { id = MNM.7027 days = 7 random = 7 } } }
 }
 
-## For the character that gets the mission Demonic Impregnation
-#society_quest_event = {
+#For the character that gets the mission Demonic Impregnation
+society_quest_event = {
  	id = MNM.7027
  	desc = EVTDESC_MNM_7027
 
@@ -8949,8 +8949,8 @@ character_event = {
 }
 
 
-##MISSION: Demonic posesssion
-##Ping event for the mission Demonic Possession
+#MISSION: Demonic posesssion
+#Ping event for the mission Demonic Possession
 character_event = {
  	id = MNM.7028
  	hide_window = yes
@@ -8960,8 +8960,8 @@ character_event = {
  	immediate = { FROM = { society_quest_event = { id = MNM.7029 days = 7 random = 7 } } }
 }
 
-## For the character that gets the mission Demonic Possession
-#society_quest_event = {
+#For the character that gets the mission Demonic Possession
+society_quest_event = {
  	id = MNM.7029
  	desc = EVTDESC_MNM_7029
  	border = GFX_event_letter_frame_intrigue
@@ -9127,10 +9127,10 @@ character_event = {
  			minor_soul_corruption_effect = yes
  			event_target:possess_courtier_target = {
  				random = { #might kill you first year
-#   					chance = 2
-#    				character_event = { id = MNM.7846 days = 180 random = 180 } 
-#  				}
-#  			}
+   					chance = 2
+    				character_event = { id = MNM.7846 days = 180 random = 180 } 
+ 				}
+  			}
  		}
  	}
 }
@@ -10779,7 +10779,7 @@ character_event = {
 }
 
 
-## Night at the tavern - Bounce
+# Night at the tavern - Bounce
 character_event = {
  	id = MNM.20020
  	hide_window = yes
@@ -11356,7 +11356,7 @@ character_event = {
 }
 
 # Demon Summoning - Planning
-#narrative_event = {
+narrative_event = {
  	id = MNM.20032
  	picture = GFX_evt_shadowy_cabal
  	border = GFX_event_narrative_frame_intrigue
@@ -11432,7 +11432,7 @@ character_event = {
 }
 
 # Demon Summoning - The Ritual
-#narrative_event = {
+narrative_event = {
  	id = MNM.20034
  	picture = GFX_evt_magic_ritual
  	border = GFX_event_narrative_frame_intrigue
@@ -12756,7 +12756,7 @@ character_event = {
 }
 
 # Province: notify lieges of heresy
-#province_event = {
+province_event = {
  	id = MNM.20050
  	hide_window = yes
  	
@@ -12971,14 +12971,14 @@ character_event = {
  					}
  				}
  				save_event_target_as = dw_buddy
- 				ROOT = { character_event = { id = MNM.20061 } }
+ 				ROOT = { narrative_event = { id = MNM.20061 } }
  			}
  		}
  	}
 }
 
 # Infernal Choir - Planning
-#narrative_event = {
+narrative_event = {
  	id = MNM.20061
  	picture = GFX_evt_lunatic
  	border = GFX_event_narrative_frame_intrigue
@@ -13037,7 +13037,7 @@ character_event = {
  			factor = 100
  		}
  		
- 		FROM = { character_event = { id = MNM.20064 days = 3 tooltip = EVT_TT_20013 portrait = no } }
+ 		FROM = { narrative_event = { id = MNM.20064 days = 3 tooltip = EVT_TT_20013 portrait = no } }
  	}
  	option = {
  		name = EVTOPTC_MNM_20062 # I knew it!
@@ -13051,7 +13051,7 @@ character_event = {
  		}
  		
  		set_character_flag = dw_double_cross
- 		FROM = { character_event = { id = MNM.20064 tooltip = EVT_TT_20064 days = 3 portrait = no } }
+ 		FROM = { narrative_event = { id = MNM.20064 tooltip = EVT_TT_20064 days = 3 portrait = no } }
  	}
  	option = {
  		name = EVTOPTB_MNM_20012 # No way!
@@ -13099,7 +13099,7 @@ character_event = {
 }
 
 # Rival accepts the invitation
-#narrative_event = {
+narrative_event = {
  	id = MNM.20064
  	picture = GFX_evt_sacrifice #GFX_evt_witch_burning
  	border = GFX_event_narrative_frame_intrigue
@@ -13238,7 +13238,7 @@ character_event = {
 }
 
 # Rival dies horribly
-#narrative_event = {
+narrative_event = {
  	id = MNM.20065
  	picture = GFX_evt_sacrifice #GFX_evt_witch_burning
  	border = GFX_event_narrative_frame_intrigue
@@ -13287,7 +13287,7 @@ character_event = {
  	is_triggered_only = yes
  	
  	immediate = {
- 		FROMFROM = { character_event = { id = MNM.20067 } }
+ 		FROMFROM = { narrative_event = { id = MNM.20067 } }
  		FROM = { character_event = { id = MNM.20068 } }
  		
  		death = {
@@ -13297,7 +13297,7 @@ character_event = {
 }
 
 # Rival replaced with close relative!
-#narrative_event = {
+narrative_event = {
  	id = MNM.20067
  	picture = GFX_evt_sacrifice #GFX_evt_witch_burning
  	border = GFX_event_narrative_frame_intrigue
@@ -13999,19 +13999,19 @@ character_event = {
 
 ####### Hidden: Demon/Witch-hunters SET-UP ########
 character_event = {
-#    id = MNM.7854
-#    hide_window = yes
-#    is_triggered_only = yes
+    id = MNM.7854
+    hide_window = yes
+    is_triggered_only = yes
 
     trigger = {
  	    has_dlc = "Mystics"
-#    	#is_devil_worshiper_trigger = yes
-#    	OR = {
-#   			has_character_modifier = known_satanist
-#   			has_character_flag = was_ratted_out_by_fellow_member
+    	is_devil_worshiper_trigger = yes
+    	OR = {
+   			has_character_modifier = known_satanist
+   			has_character_flag = was_ratted_out_by_fellow_member
  			has_character_flag = has_it_coming
-#    	}
-#    }
+    	}
+    }
  	
  	weight_multiplier = {
  		factor = 1
@@ -14033,96 +14033,96 @@ character_event = {
  		}
  	}
  	
-#    immediate = {
-#    	if = { #Incapable ruler attacked in bed
-#    		limit = { is_incapable = yes }
-#    		set_character_flag = DW_was_attacked_is_incapable
-#    		break = yes
-#    	}
-#    	#chooses who attacks you...
-#    	random_list = {
-#    		10 = {
-#    			trigger = { NOT = { has_character_flag = DW_was_attacked_by_the_slayer } }
-#    			set_character_flag = DW_was_attacked_by_the_slayer
-#    		}
-#    		10 = {
-#    			set_character_flag = DW_was_attacked_by_angry_villagers
-#    			trigger = {
-#    				OR = {
-#    					has_character_modifier = cat_familiar
-#    					has_character_modifier = wolf_familiar
-#    					has_character_modifier = raven_familiar
-#    					has_character_modifier = owl_familiar
-#    				}
-#    				NOT = { has_character_flag = DW_was_attacked_by_angry_villagers }
-#    			}
-#    		}
-#    		10 = {
-#    			trigger = { NOT = { has_character_flag = DW_was_attacked_by_demon_hunters } }
-#    			set_character_flag = DW_was_attacked_by_demon_hunters
-#    		}
-#    		10 = {
-#    			trigger = { NOT = { has_character_flag = DW_was_attacked_by_lone_demon_hunter } }
-#    			set_character_flag = DW_was_attacked_by_lone_demon_hunter
-#    		}
-#    		10 = {
-#    			trigger = { NOT = { has_character_flag = DW_was_attacked_by_righteous_knights } }
-#    			set_character_flag = DW_was_attacked_by_righteous_knights
-#    		}
+    immediate = {
+     	if = { #Incapable ruler attacked in bed
+     		limit = { is_incapable = yes }
+     		set_character_flag = DW_was_attacked_is_incapable
+     		break = yes
+     	}
+     	#chooses who attacks you...
+     	random_list = {
+     		10 = {
+     			trigger = { NOT = { has_character_flag = DW_was_attacked_by_the_slayer } }
+     			set_character_flag = DW_was_attacked_by_the_slayer
+     		}
+     		10 = {
+     			set_character_flag = DW_was_attacked_by_angry_villagers
+     			trigger = {
+     				OR = {
+     					has_character_modifier = cat_familiar
+     					has_character_modifier = wolf_familiar
+     					has_character_modifier = raven_familiar
+     					has_character_modifier = owl_familiar
+     				}
+     				NOT = { has_character_flag = DW_was_attacked_by_angry_villagers }
+     			}
+     		}
+     		10 = {
+     			trigger = { NOT = { has_character_flag = DW_was_attacked_by_demon_hunters } }
+     			set_character_flag = DW_was_attacked_by_demon_hunters
+     		}
+     		10 = {
+     			trigger = { NOT = { has_character_flag = DW_was_attacked_by_lone_demon_hunter } }
+     			set_character_flag = DW_was_attacked_by_lone_demon_hunter
+     		}
+     		10 = {
+     			trigger = { NOT = { has_character_flag = DW_was_attacked_by_righteous_knights } }
+     			set_character_flag = DW_was_attacked_by_righteous_knights
+     		}
 
     		#if attacked a second time...
-#    		10 = {
-#    			trigger = { has_character_flag = DW_was_attacked_by_the_slayer }
-#    			modifier = {
-#   					factor = 1000
-#  					has_character_flag = DW_was_attacked_by_the_slayer
-#   				}
-#    			set_character_flag = DW_was_attacked_by_the_slayer_again
-#    			clr_character_flag = DW_was_attacked_by_the_slayer
-#    		}
-#    		10 = {
-#    			trigger = { has_character_flag = DW_was_attacked_by_angry_villagers }
-#    			modifier = {
-#   					factor = 1000
-#  					has_character_flag = DW_was_attacked_by_angry_villagers
-#   				}
-#    			set_character_flag = DW_was_attacked_by_angry_villagers_again
-#    			clr_character_flag = DW_was_attacked_by_angry_villagers
-#    		}
-#    		10 = {
-#    			trigger = { has_character_flag = DW_was_attacked_by_demon_hunters }
-#    			modifier = {
-#   					factor = 1000
-#  					has_character_flag = DW_was_attacked_by_demon_hunters
-#   				}
-#    			set_character_flag = DW_was_attacked_by_demon_hunters_again
-#    			clr_character_flag = DW_was_attacked_by_demon_hunters
-#    		}
-#    		10 = {
-#    			trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter }
-#    			modifier = {
-#   					factor = 1000
-#  					has_character_flag = DW_was_attacked_by_lone_demon_hunter
-#   				}
-#    			set_character_flag = DW_was_attacked_by_lone_demon_hunter_again
-#    			clr_character_flag = DW_was_attacked_by_lone_demon_hunter
-#    		}
-#    		10 = {
-#    			trigger = { has_character_flag = DW_was_attacked_by_righteous_knights }
-#    			modifier = {
-#   					factor = 1000
-#  					has_character_flag = DW_was_attacked_by_righteous_knights
-#   				}
-#    			set_character_flag = DW_was_attacked_by_righteous_knights_again
-#    			clr_character_flag = DW_was_attacked_by_righteous_knights
-#    		}
-#    	}
+     		10 = {
+     			trigger = { has_character_flag = DW_was_attacked_by_the_slayer }
+     			modifier = {
+    					factor = 1000
+   					has_character_flag = DW_was_attacked_by_the_slayer
+    				}
+     			set_character_flag = DW_was_attacked_by_the_slayer_again
+     			clr_character_flag = DW_was_attacked_by_the_slayer
+     		}
+     		10 = {
+     			trigger = { has_character_flag = DW_was_attacked_by_angry_villagers }
+     			modifier = {
+    					factor = 1000
+   					has_character_flag = DW_was_attacked_by_angry_villagers
+    				}
+     			set_character_flag = DW_was_attacked_by_angry_villagers_again
+     			clr_character_flag = DW_was_attacked_by_angry_villagers
+     		}
+     		10 = {
+     			trigger = { has_character_flag = DW_was_attacked_by_demon_hunters }
+     			modifier = {
+    					factor = 1000
+   					has_character_flag = DW_was_attacked_by_demon_hunters
+    				}
+     			set_character_flag = DW_was_attacked_by_demon_hunters_again
+     			clr_character_flag = DW_was_attacked_by_demon_hunters
+     		}
+     		10 = {
+     			trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter }
+     			modifier = {
+    					factor = 1000
+   					has_character_flag = DW_was_attacked_by_lone_demon_hunter
+    				}
+     			set_character_flag = DW_was_attacked_by_lone_demon_hunter_again
+     			clr_character_flag = DW_was_attacked_by_lone_demon_hunter
+     		}
+     		10 = {
+     			trigger = { has_character_flag = DW_was_attacked_by_righteous_knights }
+     			modifier = {
+    					factor = 1000
+   					has_character_flag = DW_was_attacked_by_righteous_knights
+    				}
+     			set_character_flag = DW_was_attacked_by_righteous_knights_again
+     			clr_character_flag = DW_was_attacked_by_righteous_knights
+     		}
+     	}
 
     	#Finds someone else to blame...
-#    	hidden_effect = {
+    	hidden_effect = {
  	    	society = {
  	    		#first look for someone you like...
-#  				random_society_member = {
+  				random_society_member = {
  					limit = {
  						is_incapable = no
  						prisoner = no
@@ -14193,508 +14193,508 @@ character_event = {
  				}
  			}
  		}
-#    }
-#    after = {
+    }
+    after = {
  		character_event = { id = MNM.7855 }
  		clr_character_flag = has_it_coming
-#    }
+    }
 }
 
 #Demon/Witch-hunters have tracked you down!
 character_event = {
-#    id = MNM.7855
-#    title = EVTTITLE_MNM_7855
-#    picture = GFX_evt_catching_heretic
-#    border = GFX_event_normal_frame_war
-#    is_triggered_only = yes
+    id = MNM.7855
+    title = EVTTITLE_MNM_7855
+    picture = GFX_evt_catching_heretic
+    border = GFX_event_normal_frame_war
+    is_triggered_only = yes
 
     hide_from = yes
 
     trigger = {
-#    	has_dlc = "Mystics"
-#    	OR = {
-#   			has_character_modifier = known_satanist
-#   			has_character_flag = was_ratted_out_by_fellow_member
-#    	}
-#    }
+    	has_dlc = "Mystics"
+    	OR = {
+   			has_character_modifier = known_satanist
+   			has_character_flag = was_ratted_out_by_fellow_member
+    	}
+    }
 
     desc = {
-#    	trigger = { has_character_flag = DW_was_attacked_by_the_slayer } #The Slayer
-#    	text = EVTDESC_MNM_7855_A
-#    	picture = GFX_evt_whispers
-#    }
-#    desc = { #To set pictures...
-#    	trigger = {
-#   			has_character_flag = DW_was_attacked_by_angry_villagers # Angry Villagers
-#    		has_dlc = "Reapers"
-#    	}
-#    	text = EVTDESC_MNM_7855_B
-#    	picture = GFX_evt_witch_burning
-#    }
-#    desc = { #To set pictures (if NOT has Reapers)...
-#    	trigger = {
-#   			has_character_flag = DW_was_attacked_by_angry_villagers
-#    		NOT = { has_dlc = "Reapers" }
-#    	}
-#    	text = EVTDESC_MNM_7855_B
-#    	picture = GFX_evt_catching_heretic
-#    }
-#    desc = {
-#    	trigger = { has_character_flag = DW_was_attacked_by_demon_hunters } #Winchesters
-#    	text = EVTDESC_MNM_7855_C
-#    	picture = GFX_evt_catching_heretic
-#    }
-#    desc = {
-#    	trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter } #Demon Hunter
-#    	text = EVTDESC_MNM_7855_D
-#    	picture = GFX_evt_dark_love
-#    }
-#    desc = {
-#    	trigger = { has_character_flag = DW_was_attacked_by_righteous_knights } #Holy Knights
-#    	text = EVTDESC_MNM_7855_E
-#    	picture = GFX_evt_catching_heretic
-#    }
-#    desc = {
-#    	trigger = { has_character_flag = DW_was_attacked_is_incapable } #Incapable ruler attacked in bed
-#    	text = EVTDESC_MNM_7855_F
-#    	picture = GFX_evt_illness
-#    }
-#    desc = {
-#    	trigger = { has_character_flag = DW_was_attacked_by_the_slayer_again } #The Slayer II
-#    	text = EVTDESC_MNM_7855_A_again
-#    	picture = GFX_evt_whispers
-#    }
-#    desc = { #To set pictures...
-#    	trigger = {
-#   			has_character_flag = DW_was_attacked_by_angry_villagers_again # Angry Villagers II
-#    		has_dlc = "Reapers"
-#    	}
-#    	text = EVTDESC_MNM_7855_B_again
-#    	picture = GFX_evt_witch_burning
-#    }
-#    desc = { #To set pictures (if NOT has Reapers)...
-#    	trigger = {
-#   			has_character_flag = DW_was_attacked_by_angry_villagers_again
-#    		NOT = { has_dlc = "Reapers" }
-#    	}
-#    	text = EVTDESC_MNM_7855_B_again
-#    	picture = GFX_evt_catching_heretic
-#    }
-#    desc = {
-#    	trigger = { has_character_flag = DW_was_attacked_by_demon_hunters_again } #Winchesters II
-#    	text = EVTDESC_MNM_7855_C_again
-#    	picture = GFX_evt_dark_prayer
-#    }
-#    desc = {
-#    	trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter_again } #Demon Hunter II 
-#    	text = EVTDESC_MNM_7855_D_again
-#    	picture = GFX_evt_shadow
-#    }
-#    desc = {
-#    	trigger = { has_character_flag = DW_was_attacked_by_righteous_knights_again } #Holy Knights II
-#    	text = EVTDESC_MNM_7855_E_again
-#    	picture = GFX_evt_battle
-#    }
+    	trigger = { has_character_flag = DW_was_attacked_by_the_slayer } #The Slayer
+    	text = EVTDESC_MNM_7855_A
+    	picture = GFX_evt_whispers
+    }
+    desc = { #To set pictures...
+    	trigger = {
+   			has_character_flag = DW_was_attacked_by_angry_villagers # Angry Villagers
+    		has_dlc = "Reapers"
+    	}
+    	text = EVTDESC_MNM_7855_B
+    	picture = GFX_evt_witch_burning
+    }
+    desc = { #To set pictures (if NOT has Reapers)...
+    	trigger = {
+   			has_character_flag = DW_was_attacked_by_angry_villagers
+    		NOT = { has_dlc = "Reapers" }
+    	}
+    	text = EVTDESC_MNM_7855_B
+    	picture = GFX_evt_catching_heretic
+    }
+    desc = {
+    	trigger = { has_character_flag = DW_was_attacked_by_demon_hunters } #Winchesters
+    	text = EVTDESC_MNM_7855_C
+    	picture = GFX_evt_catching_heretic
+    }
+    desc = {
+    	trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter } #Demon Hunter
+    	text = EVTDESC_MNM_7855_D
+    	picture = GFX_evt_dark_love
+    }
+    desc = {
+    	trigger = { has_character_flag = DW_was_attacked_by_righteous_knights } #Holy Knights
+    	text = EVTDESC_MNM_7855_E
+    	picture = GFX_evt_catching_heretic
+    }
+    desc = {
+    	trigger = { has_character_flag = DW_was_attacked_is_incapable } #Incapable ruler attacked in bed
+    	text = EVTDESC_MNM_7855_F
+    	picture = GFX_evt_illness
+    }
+    desc = {
+    	trigger = { has_character_flag = DW_was_attacked_by_the_slayer_again } #The Slayer II
+    	text = EVTDESC_MNM_7855_A_again
+    	picture = GFX_evt_whispers
+    }
+    desc = { #To set pictures...
+    	trigger = {
+   			has_character_flag = DW_was_attacked_by_angry_villagers_again # Angry Villagers II
+    		has_dlc = "Reapers"
+    	}
+    	text = EVTDESC_MNM_7855_B_again
+    	picture = GFX_evt_witch_burning
+    }
+    desc = { #To set pictures (if NOT has Reapers)...
+    	trigger = {
+   			has_character_flag = DW_was_attacked_by_angry_villagers_again
+    		NOT = { has_dlc = "Reapers" }
+    	}
+    	text = EVTDESC_MNM_7855_B_again
+    	picture = GFX_evt_catching_heretic
+    }
+    desc = {
+    	trigger = { has_character_flag = DW_was_attacked_by_demon_hunters_again } #Winchesters II
+    	text = EVTDESC_MNM_7855_C_again
+    	picture = GFX_evt_dark_prayer
+    }
+    desc = {
+    	trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter_again } #Demon Hunter II 
+    	text = EVTDESC_MNM_7855_D_again
+    	picture = GFX_evt_shadow
+    }
+    desc = {
+    	trigger = { has_character_flag = DW_was_attacked_by_righteous_knights_again } #Holy Knights II
+    	text = EVTDESC_MNM_7855_E_again
+    	picture = GFX_evt_battle
+    }
 
     option = { #fight them...
-#    	trigger = { NOT = { has_character_flag = DW_was_attacked_is_incapable } }
-#        name = {
-#        	trigger = {
-#        		OR = {
- 					has_character_flag = DW_was_attacked_by_the_slayer
- 					has_character_flag = DW_was_attacked_by_angry_villagers
- 					has_character_flag = DW_was_attacked_by_demon_hunters
- 					has_character_flag = DW_was_attacked_by_lone_demon_hunter
- 					has_character_flag = DW_was_attacked_by_righteous_knights
-#        		}
-#        	}
-#        	text = EVTOPTA_MNM_7855
-#        }
-#        name = {
-#        	trigger = {
-#        		OR = {
- 					has_character_flag = DW_was_attacked_by_the_slayer_again
- 					has_character_flag = DW_was_attacked_by_angry_villagers_again
- 					has_character_flag = DW_was_attacked_by_demon_hunters_again
- 					has_character_flag = DW_was_attacked_by_lone_demon_hunter_again
- 					has_character_flag = DW_was_attacked_by_righteous_knights_again
-#        		}
-#        	}
-#        	text = EVTOPTA_MNM_7855_again
-#        }
-#        custom_tooltip = { text = EVTOPTA_MNM_7855_TT }
+    	trigger = { NOT = { has_character_flag = DW_was_attacked_is_incapable } }
+        name = {
+        	trigger = {
+        		OR = {
+					has_character_flag = DW_was_attacked_by_the_slayer
+					has_character_flag = DW_was_attacked_by_angry_villagers
+					has_character_flag = DW_was_attacked_by_demon_hunters
+					has_character_flag = DW_was_attacked_by_lone_demon_hunter
+					has_character_flag = DW_was_attacked_by_righteous_knights
+        		}
+        	}
+        	text = EVTOPTA_MNM_7855
+        }
+        name = {
+        	trigger = {
+        		OR = {
+					has_character_flag = DW_was_attacked_by_the_slayer_again
+					has_character_flag = DW_was_attacked_by_angry_villagers_again
+					has_character_flag = DW_was_attacked_by_demon_hunters_again
+					has_character_flag = DW_was_attacked_by_lone_demon_hunter_again
+					has_character_flag = DW_was_attacked_by_righteous_knights_again
+        		}
+        	}
+        	text = EVTOPTA_MNM_7855_again
+        }
+        custom_tooltip = { text = EVTOPTA_MNM_7855_TT }
 
         random_list = {
-#    		10 = {
-#    			#Nothing happens
-#    			modifier = {
-#   					factor = 0.9
-#  					has_injury_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#  					is_maimed_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#   					has_severe_disability_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#   					has_medium_disability_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 1.1
-#   					is_smart_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 1.1
-#   					is_strong_trigger = yes
-#   				}
-#   				custom_tooltip = { text = they_escape_TT }
-#    		}
-#    		30 = { #You are injured
-# 				modifier = {
-#   					factor = 0.9
-#  					combat_rating = 10
-#   				}
-# 				modifier = {
-#   					factor = 0.9
-#  					combat_rating = 20
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#  					combat_rating = 30
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#  					combat_rating = 40
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#  					combat_rating = 50
-#   				}
-#   				custom_tooltip = {
-#    				text = you_are_seriously_injured_TT
-#    				hidden_effect = { add_maimed_trait_effect = yes }
-#    			}
-#    		}
-#    		50 = { #You are slain in personal combat
-#    			modifier = {
-#   					factor = 0.9
-#  					combat_rating = 10
-#   				}
-# 				modifier = {
-#   					factor = 0.9
-#  					combat_rating = 20
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#  					combat_rating = 30
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#  					combat_rating = 40
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#  					combat_rating = 50
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#   					has_lifestyle_martial_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#   					has_education_martial_trigger = yes
-#   					has_top_tier_education_trait_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 1.1
- 					has_severe_disability_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 1.1
- 	   				is_dumb_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 1.1
-#   					is_weak_trigger = yes
-#   				}
-#   				custom_tooltip = {
-#    				text = you_are_killed_in_personal_combat_TT
-#    				hidden_effect = { death = { death_reason = death_duel } }
-#    			}
-#    		}
-#    	}
-#    }
+    		10 = {
+    			#Nothing happens
+    			modifier = {
+   					factor = 0.9
+  					has_injury_trigger = yes
+   				}
+   				modifier = {
+   					factor = 0.9
+  					is_maimed_trigger = yes
+   				}
+   				modifier = {
+   					factor = 0.9
+   					has_severe_disability_trigger = yes
+   				}
+   				modifier = {
+   					factor = 0.9
+   					has_medium_disability_trigger = yes
+   				}
+   				modifier = {
+   					factor = 1.1
+   					is_smart_trigger = yes
+   				}
+   				modifier = {
+   					factor = 1.1
+   					is_strong_trigger = yes
+   				}
+   				custom_tooltip = { text = they_escape_TT }
+    		}
+    		30 = { #You are injured
+ 				modifier = {
+   					factor = 0.9
+  					combat_rating = 10
+   				}
+ 				modifier = {
+   					factor = 0.9
+  					combat_rating = 20
+   				}
+   				modifier = {
+   					factor = 0.9
+  					combat_rating = 30
+   				}
+   				modifier = {
+   					factor = 0.9
+  					combat_rating = 40
+   				}
+   				modifier = {
+   					factor = 0.9
+  					combat_rating = 50
+   				}
+   				custom_tooltip = {
+    				text = you_are_seriously_injured_TT
+    				hidden_effect = { add_maimed_trait_effect = yes }
+    			}
+    		}
+    		50 = { #You are slain in personal combat
+    			modifier = {
+   					factor = 0.9
+  					combat_rating = 10
+   				}
+ 				modifier = {
+   					factor = 0.9
+  					combat_rating = 20
+   				}
+   				modifier = {
+   					factor = 0.9
+  					combat_rating = 30
+   				}
+   				modifier = {
+   					factor = 0.9
+  					combat_rating = 40
+   				}
+   				modifier = {
+   					factor = 0.9
+  					combat_rating = 50
+   				}
+   				modifier = {
+   					factor = 0.9
+   					has_lifestyle_martial_trigger = yes
+   				}
+   				modifier = {
+   					factor = 0.9
+   					has_education_martial_trigger = yes
+   					has_top_tier_education_trait_trigger = yes
+   				}
+   				modifier = {
+   					factor = 1.1
+					has_severe_disability_trigger = yes
+   				}
+   				modifier = {
+   					factor = 1.1
+	   				is_dumb_trigger = yes
+   				}
+   				modifier = {
+   					factor = 1.1
+   					is_weak_trigger = yes
+   				}
+   				custom_tooltip = {
+    				text = you_are_killed_in_personal_combat_TT
+    				hidden_effect = { death = { death_reason = death_duel } }
+    			}
+    		}
+    	}
+    }
 
     option = { #attempt to bribe them...
-#    	trigger = { NOT = { has_character_flag = DW_was_attacked_is_incapable } }
-#        name = {
-#        	text = EVTOPTC_MNM_7855_A
-#        	trigger = { has_character_flag = DW_was_attacked_by_the_slayer }
-#        }
-#        name = {
-#        	text = EVTOPTC_MNM_7855_B
-#        	trigger = { has_character_flag = DW_was_attacked_by_angry_villagers }
-#        }
-#        name = {
-#        	text = EVTOPTC_MNM_7855_C
-#        	trigger = { has_character_flag = DW_was_attacked_by_demon_hunters }
-#        }
-#        name = {
-#        	text = EVTOPTC_MNM_7855_D
-#        	trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter }
-#        }
-#        name = {
-#        	text = EVTOPTC_MNM_7855_E
-#        	trigger = { has_character_flag = DW_was_attacked_by_righteous_knights }
-#        }
- 		name = {
-#        	text = EVTOPTC_MNM_7855_A_again
-#        	trigger = { has_character_flag = DW_was_attacked_by_the_slayer_again }
-#        }
-#        name = {
-#        	text = EVTOPTC_MNM_7855_B_again
-#        	trigger = { has_character_flag = DW_was_attacked_by_angry_villagers_again }
-#        }
-#        name = {
-#        	text = EVTOPTC_MNM_7855_C_again
-#        	trigger = { has_character_flag = DW_was_attacked_by_demon_hunters_again }
-#        }
-#        name = {
-#        	text = EVTOPTC_MNM_7855_D_again
-#        	trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter_again }
-#        }
-#        name = {
-#        	text = EVTOPTC_MNM_7855_E_again
-#        	trigger = { has_character_flag = DW_was_attacked_by_righteous_knights_again }
-#        }
+    	trigger = { NOT = { has_character_flag = DW_was_attacked_is_incapable } }
+        name = {
+        	text = EVTOPTC_MNM_7855_A
+        	trigger = { has_character_flag = DW_was_attacked_by_the_slayer }
+        }
+        name = {
+        	text = EVTOPTC_MNM_7855_B
+        	trigger = { has_character_flag = DW_was_attacked_by_angry_villagers }
+        }
+        name = {
+        	text = EVTOPTC_MNM_7855_C
+        	trigger = { has_character_flag = DW_was_attacked_by_demon_hunters }
+        }
+        name = {
+        	text = EVTOPTC_MNM_7855_D
+        	trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter }
+        }
+        name = {
+        	text = EVTOPTC_MNM_7855_E
+        	trigger = { has_character_flag = DW_was_attacked_by_righteous_knights }
+        }
+		name = {
+        	text = EVTOPTC_MNM_7855_A_again
+        	trigger = { has_character_flag = DW_was_attacked_by_the_slayer_again }
+        }
+        name = {
+        	text = EVTOPTC_MNM_7855_B_again
+        	trigger = { has_character_flag = DW_was_attacked_by_angry_villagers_again }
+        }
+        name = {
+        	text = EVTOPTC_MNM_7855_C_again
+        	trigger = { has_character_flag = DW_was_attacked_by_demon_hunters_again }
+        }
+        name = {
+        	text = EVTOPTC_MNM_7855_D_again
+        	trigger = { has_character_flag = DW_was_attacked_by_lone_demon_hunter_again }
+        }
+        name = {
+        	text = EVTOPTC_MNM_7855_E_again
+        	trigger = { has_character_flag = DW_was_attacked_by_righteous_knights_again }
+        }
 
         custom_tooltip = {
-#        	text = EVTOPTC_MNM_7855_TT
-#        }
+        	text = EVTOPTC_MNM_7855_TT
+        }
 
         scaled_wealth = {
- 			value = -1 min = -100
- 		}
+			value = -1 min = -100
+		}
 
     	random_list = {
-#    		10 = {
-#   				modifier = {
-#   					factor = 0.9
-#  					has_unattractive_trait_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 0.9
-#   					is_unattractive_trigger = yes
-#   				}
-# 				modifier = {
-#   					factor = 1.1
-#  					diplomacy = 10
-#   				}
-#   				modifier = {
-#   					factor = 1.1
-#  					diplomacy = 15
-#   				}
-#   				modifier = {
-#   					factor = 1.1
-#  					diplomacy = 17
-#   				}
-# 				modifier = {
-#   					factor = 1.1
-#  					diplomacy = 20
-#   				}
-#   				modifier = {
-#   					factor = 1.1
-#   					has_top_tier_education_trait_trigger = yes
-#   					has_education_diplomacy_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 1.1
-#  					has_attractive_trait_trigger = yes
-#   				}
-#   				modifier = {
-#   					factor = 1.1
-#   					is_attractive_trigger = yes
-#   				}
-#    			custom_tooltip = { text = they_accept_your_offer_TT }
-#    		}
-#    		20 = { #You are injured
-#    			custom_tooltip = { text = you_are_seriously_injured_TT }
-#    			hidden_effect = { add_maimed_trait_effect = yes }
-#    		}
-#    		40 = { #You are dragged off and burnt as a witch/warlock
-#    			trigger = {
-#    				OR = {
-#    					has_character_flag = DW_was_attacked_by_angry_villagers
-#    					has_character_flag = DW_was_attacked_by_demon_hunters
-#    					has_character_flag = DW_was_attacked_by_righteous_knights
-#    					has_character_flag = DW_was_attacked_by_angry_villagers_again
-#    					has_character_flag = DW_was_attacked_by_demon_hunters_again
-#    					has_character_flag = DW_was_attacked_by_righteous_knights_again
-#    				}
-#    			}
-#    			custom_tooltip = {
-#    				text = they_drag_you_off_to_burn
-#    				hidden_effect = { death = { death_reason = death_execution_burning } }
-#    			}
-#    		}
-#    		10 = { #You are dragged off and burnt as a witch/warlock
-#    			trigger = {
-#    				OR = {
- 	    				has_character_flag = DW_was_attacked_by_lone_demon_hunter
- 	    				has_character_flag = DW_was_attacked_by_lone_demon_hunter_again
- 	    			}
- 				}
-#    			custom_tooltip = {
-#    				text = they_saw_you_in_half
-#    				hidden_effect = { death = { death_reason = death_execution_sawing } }
-#    			}
-#    		}
-#    		10 = { #You are dragged off and burnt as a witch/warlock
-#    			trigger = {
-#    				OR = {
-#    					has_character_flag = DW_was_attacked_by_the_slayer
-#    					has_character_flag = DW_was_attacked_by_the_slayer_again   					
-#    				}
-#    			}
-#    			custom_tooltip = {
-#    				text = they_impale_you
-#    				hidden_effect = { death = { death_reason = death_execution_impaling } }
-#    			}
-#    		}
-#    	}
-#    }
+    		10 = {
+   				modifier = {
+   					factor = 0.9
+  					has_unattractive_trait_trigger = yes
+   				}
+   				modifier = {
+   					factor = 0.9
+   					is_unattractive_trigger = yes
+   				}
+ 				modifier = {
+   					factor = 1.1
+  					diplomacy = 10
+   				}
+   				modifier = {
+   					factor = 1.1
+  					diplomacy = 15
+   				}
+   				modifier = {
+   					factor = 1.1
+  					diplomacy = 17
+   				}
+ 				modifier = {
+   					factor = 1.1
+  					diplomacy = 20
+   				}
+   				modifier = {
+   					factor = 1.1
+   					has_top_tier_education_trait_trigger = yes
+   					has_education_diplomacy_trigger = yes
+   				}
+   				modifier = {
+   					factor = 1.1
+  					has_attractive_trait_trigger = yes
+   				}
+   				modifier = {
+   					factor = 1.1
+   					is_attractive_trigger = yes
+   				}
+    			custom_tooltip = { text = they_accept_your_offer_TT }
+    		}
+    		20 = { #You are injured
+    			custom_tooltip = { text = you_are_seriously_injured_TT }
+    			hidden_effect = { add_maimed_trait_effect = yes }
+    		}
+    		40 = { #You are dragged off and burnt as a witch/warlock
+    			trigger = {
+    				OR = {
+    					has_character_flag = DW_was_attacked_by_angry_villagers
+    					has_character_flag = DW_was_attacked_by_demon_hunters
+    					has_character_flag = DW_was_attacked_by_righteous_knights
+    					has_character_flag = DW_was_attacked_by_angry_villagers_again
+    					has_character_flag = DW_was_attacked_by_demon_hunters_again
+    					has_character_flag = DW_was_attacked_by_righteous_knights_again
+    				}
+    			}
+    			custom_tooltip = {
+    				text = they_drag_you_off_to_burn
+    				hidden_effect = { death = { death_reason = death_execution_burning } }
+    			}
+    		}
+    		10 = { #You are dragged off and burnt as a witch/warlock
+    			trigger = {
+    				OR = {
+	    				has_character_flag = DW_was_attacked_by_lone_demon_hunter
+	    				has_character_flag = DW_was_attacked_by_lone_demon_hunter_again
+	    			}
+				}
+    			custom_tooltip = {
+    				text = they_saw_you_in_half
+    				hidden_effect = { death = { death_reason = death_execution_sawing } }
+    			}
+    		}
+    		10 = { #You are dragged off and burnt as a witch/warlock
+    			trigger = {
+    				OR = {
+    					has_character_flag = DW_was_attacked_by_the_slayer
+    					has_character_flag = DW_was_attacked_by_the_slayer_again   					
+    				}
+    			}
+    			custom_tooltip = {
+    				text = they_impale_you
+    				hidden_effect = { death = { death_reason = death_execution_impaling } }
+    			}
+    		}
+    	}
+    }
 
- 	option = { #do a spell (sacrifice your child)...
-#        name = EVTOPTB_MNM_7855
-#        custom_tooltip = { text = EVTOPTB_MNM_7855_TT }
+	option = { #do a spell (sacrifice your child)...
+        name = EVTOPTB_MNM_7855
+        custom_tooltip = { text = EVTOPTB_MNM_7855_TT }
 
         if = {
-#        	limit = {
-#        		OR = {
-#        			has_character_flag = DW_was_attacked_by_the_slayer
-#        			has_character_flag = DW_was_attacked_by_lone_demon_hunter
-#        		}
-#        	}
-#        	custom_tooltip = { text = EVTOPTB_MNM_7855_TT_singular }	
-#        }
-#        if = {
-#        	limit = {
-#        		OR = {
-#        			has_character_flag = DW_was_attacked_by_angry_villagers
-#        			has_character_flag = DW_was_attacked_by_demon_hunters
-#        			has_character_flag = DW_was_attacked_by_righteous_knights
-#        		}
-#        	}
-#        	custom_tooltip = { text = EVTOPTB_MNM_7855_TT_plural }	
-#        }
+        	limit = {
+        		OR = {
+        			has_character_flag = DW_was_attacked_by_the_slayer
+        			has_character_flag = DW_was_attacked_by_lone_demon_hunter
+        		}
+        	}
+        	custom_tooltip = { text = EVTOPTB_MNM_7855_TT_singular }	
+        }
+        if = {
+        	limit = {
+        		OR = {
+        			has_character_flag = DW_was_attacked_by_angry_villagers
+        			has_character_flag = DW_was_attacked_by_demon_hunters
+        			has_character_flag = DW_was_attacked_by_righteous_knights
+        		}
+        	}
+        	custom_tooltip = { text = EVTOPTB_MNM_7855_TT_plural }	
+        }
 
         detract_society_currency_major_effect = yes
 
         random_child = {
-#        	limit = { is_child_of = ROOT }
-#        	random_accident_death_effect = yes
-#        }
+        	limit = { is_child_of = ROOT }
+        	random_accident_death_effect = yes
+        }
 
         trigger = {
-#        	NOT = { has_character_flag = DW_was_attacked_is_incapable }
-#    		has_society_currency_major_trigger = yes
-#    		num_of_children = 1
-#    		any_child = {
-#    			is_child_of = ROOT
-#    			ai = yes
-#    		}
-#        }
-#    }
+        	NOT = { has_character_flag = DW_was_attacked_is_incapable }
+    		has_society_currency_major_trigger = yes
+    		num_of_children = 1
+    		any_child = {
+    			is_child_of = ROOT
+    			ai = yes
+    		}
+        }
+    }
 
     option = { #offer them another member...!
-#        name = EVTOPTD_MNM_7855
-#        custom_tooltip = { text = EVTOPTD_MNM_7855_TT }
+        name = EVTOPTD_MNM_7855
+        custom_tooltip = { text = EVTOPTD_MNM_7855_TT }
 
- 		if = {
-#        	limit = {
-#        		OR = {
- 					has_character_flag = DW_was_attacked_by_angry_villagers
- 					has_character_flag = DW_was_attacked_by_demon_hunters
- 					has_character_flag = DW_was_attacked_by_righteous_knights
- 					has_character_flag = DW_was_attacked_by_angry_villagers_again
- 					has_character_flag = DW_was_attacked_by_demon_hunters_again
- 					has_character_flag = DW_was_attacked_by_righteous_knights_again
- 				}
-#        	}
- 	        random = {
- 	        	chance = 50
- 	        	custom_tooltip = {
-#    				text = they_drag_you_off_to_burn
-#    				hidden_effect = { death = { death_reason = death_execution_burning } }
-#    			}
- 	        }        	
-#        }
-#        if = {
-#        	limit = {
-#        		OR = {
-#        			has_character_flag = DW_was_attacked_by_lone_demon_hunter
-#        			has_character_flag = DW_was_attacked_by_lone_demon_hunter_again
-#        		}
-#        	}
- 	        random = {
- 	        	chance = 50
- 	        	custom_tooltip = {
-#    				text = they_saw_you_in_half
-#    				hidden_effect = { death = { death_reason = death_execution_sawing } }
-#    			}
- 	        }        	
-#        }
-#        if = {
-#        	limit = {
-#        		OR = {
- 	        		has_character_flag = DW_was_attacked_by_the_slayer
- 	        		has_character_flag = DW_was_attacked_by_the_slayer_again
-#        		}
-#        	}
- 	        random = {
- 	        	chance = 50
- 	        	custom_tooltip = {
-#    				text = they_impale_you
-#    				hidden_effect = { death = { death_reason = death_execution_impaling } }
-#    			}
- 	        }        	
-#        }
+		if = {
+        	limit = {
+        		OR = {
+					has_character_flag = DW_was_attacked_by_angry_villagers
+					has_character_flag = DW_was_attacked_by_demon_hunters
+					has_character_flag = DW_was_attacked_by_righteous_knights
+					has_character_flag = DW_was_attacked_by_angry_villagers_again
+					has_character_flag = DW_was_attacked_by_demon_hunters_again
+					has_character_flag = DW_was_attacked_by_righteous_knights_again
+				}
+        	}
+	        random = {
+	        	chance = 50
+	        	custom_tooltip = {
+    				text = they_drag_you_off_to_burn
+    				hidden_effect = { death = { death_reason = death_execution_burning } }
+    			}
+	        }        	
+        }
+        if = {
+        	limit = {
+        		OR = {
+        			has_character_flag = DW_was_attacked_by_lone_demon_hunter
+        			has_character_flag = DW_was_attacked_by_lone_demon_hunter_again
+        		}
+        	}
+	        random = {
+	        	chance = 50
+	        	custom_tooltip = {
+    				text = they_saw_you_in_half
+    				hidden_effect = { death = { death_reason = death_execution_sawing } }
+    			}
+	        }        	
+        }
+        if = {
+        	limit = {
+        		OR = {
+	        		has_character_flag = DW_was_attacked_by_the_slayer
+	        		has_character_flag = DW_was_attacked_by_the_slayer_again
+        		}
+        	}
+	        random = {
+	        	chance = 50
+	        	custom_tooltip = {
+    				text = they_impale_you
+    				hidden_effect = { death = { death_reason = death_execution_impaling } }
+    			}
+	        }        	
+        }
 
         event_target:other_member_to_blame = {
-#        	set_character_flag = was_ratted_out_by_fellow_member
- 			if = {
- 				limit = {
- 					ai = yes
- 				}
- 				increase_visibility_minor_effect = yes
- 			}
-#        }
+        	set_character_flag = was_ratted_out_by_fellow_member
+			if = {
+				limit = {
+					ai = yes
+				}
+				increase_visibility_minor_effect = yes
+			}
+        }
 
         trigger = {
-#        	NOT = { has_character_flag = DW_was_attacked_is_incapable }
-# 			is_devil_worshiper_trigger = yes
-# 			society_rank < 4
+        	NOT = { has_character_flag = DW_was_attacked_is_incapable }
+ 			is_devil_worshiper_trigger = yes
+ 			society_rank < 4
 
  			event_target:other_member_to_blame = { always = yes }
-#        }
-#    }
-#    option = {
-#    	name = EVTOPTE_MNM_7855
-#    	trigger = { has_character_flag = DW_was_attacked_is_incapable }
-#    	death = { death_reason = death_execution_burning }
-#    }
- 	
-#    after = {
-#    	#CLEAR ALL FLAGS
-#    	clr_character_flag = DW_was_attacked_by_the_slayer_again
-#    	clr_character_flag = DW_was_attacked_by_angry_villagers_again
-#    	clr_character_flag = DW_was_attacked_by_demon_hunters_again
-#    	clr_character_flag = DW_was_attacked_by_lone_demon_hunter_again
-#    	clr_character_flag = DW_was_attacked_by_righteous_knights_again
-#    	clr_character_flag = was_ratted_out_by_fellow_member
-#    }
+        }
+    }
+    option = {
+    	name = EVTOPTE_MNM_7855
+    	trigger = { has_character_flag = DW_was_attacked_is_incapable }
+    	death = { death_reason = death_execution_burning }
+    }
+	
+    after = {
+    	#CLEAR ALL FLAGS
+    	clr_character_flag = DW_was_attacked_by_the_slayer_again
+    	clr_character_flag = DW_was_attacked_by_angry_villagers_again
+    	clr_character_flag = DW_was_attacked_by_demon_hunters_again
+    	clr_character_flag = DW_was_attacked_by_lone_demon_hunter_again
+    	clr_character_flag = DW_was_attacked_by_righteous_knights_again
+    	clr_character_flag = was_ratted_out_by_fellow_member
+    }
 }

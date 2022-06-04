@@ -309,7 +309,7 @@ society_decisions = { # Society decisions are only evaluated by members of socie
 	}
 }
 
-	#Hermetic/mystic
+#Hermetic/mystic
 	
 society_decisions = {
 	
@@ -5589,7 +5589,7 @@ targeted_decisions = {
 			#always = no
 		#}
 		ai_will_do = {
-			factor = 0 		  1 = 100% chance every month (for each allowed target!)
+			factor = 0  #1 = 100% chance every month (for each allowed target!)
 		}
 	}
 	
