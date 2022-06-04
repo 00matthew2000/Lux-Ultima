@@ -14618,8 +14618,8 @@ character_event = {
 #							religion = slavic_pagan_reformed
 #							religion = ainu_pagan
 #							religion = ainu_pagan_reformed
-#							religion = inca_religion
-#							religion = inca_religion_reformed
+#							religion = inti
+#							religion = inti_reformed
 #						}
 #					}
 #				}
@@ -14642,8 +14642,8 @@ character_event = {
 #							religion = slavic_pagan_reformed
 #							religion = ainu_pagan
 #							religion = ainu_pagan_reformed
-#							religion = inca_religion
-#							religion = inca_religion_reformed
+#							religion = inti
+#							religion = inti_reformed
 #						}
 #					}
 #				}
@@ -14666,8 +14666,8 @@ character_event = {
 #							religion = slavic_pagan_reformed
 #							religion = ainu_pagan
 #							religion = ainu_pagan_reformed
-#							religion = inca_religion
-#							religion = inca_religion_reformed
+#							religion = inti
+#							religion = inti_reformed
 #						}
 #					}
 #				}
@@ -14690,8 +14690,8 @@ character_event = {
 #							religion = slavic_pagan_reformed
 #							religion = ainu_pagan
 #							religion = ainu_pagan_reformed
-#							religion = inca_religion
-#							religion = inca_religion_reformed
+#							religion = inti
+#							religion = inti_reformed
 #						}
 #					}
 #				}
@@ -14714,8 +14714,8 @@ character_event = {
 #							religion = slavic_pagan_reformed
 #							religion = ainu_pagan
 #							religion = ainu_pagan_reformed
-#							religion = inca_religion
-#							religion = inca_religion_reformed
+#							religion = inti
+#							religion = inti_reformed
 #						}
 #					}
 #				}
@@ -14738,8 +14738,8 @@ character_event = {
 #							religion = slavic_pagan_reformed
 #							religion = ainu_pagan
 #							religion = ainu_pagan_reformed
-#							religion = inca_religion
-#							religion = inca_religion_reformed
+#							religion = inti
+#							religion = inti_reformed
 #						}
 #					}
 #				}
@@ -16494,6 +16494,14 @@ character_event = {
 				}
 			}
 			add_trait = sympathy_indohellens
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = inti_group
+				}
+			}
+			add_trait = sympathy_intis
 		}
 		else_if = {
 			limit = {
@@ -19560,6 +19568,14 @@ character_event = {
 		else_if = {
 			limit = {
 				event_target:tf_sympathy_target = {
+					religion_group = inti_group
+				}
+			}
+			add_trait = sympathy_intis
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
 					religion_group = inuit_group
 				}
 			}
@@ -19851,6 +19867,14 @@ character_event = {
 				}
 			}
 			add_trait = sympathy_indohellens
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = inti_group
+				}
+			}
+			add_trait = sympathy_intis
 		}
 		else_if = {
 			limit = {
@@ -24809,6 +24833,14 @@ character_event = {
 				}
 			}
 			add_trait = sympathy_indohellens
+		}
+		else_if = {
+			limit = {
+				event_target:tf_sympathy_target = {
+					religion_group = inti_group
+				}
+			}
+			add_trait = sympathy_intis
 		}
 		else_if = {
 			limit = {

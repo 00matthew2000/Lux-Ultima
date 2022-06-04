@@ -5047,6 +5047,53 @@ character_event = {
 	}
 }
 
+# Tolerant character making Inti friend
+character_event = {
+	id = LISoA.1600
+	desc = EVTDESC_LISoA_1600
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+
+	only_playable = yes
+	prisoner = no
+	min_age = 16
+	capable_only = yes
+	has_dlc = "Sons of Abraham"
+	
+	trigger = {
+		trait = sympathy_intis
+		any_courtier = {
+			religion_group = inti_group
+			prisoner = no
+			is_adult = yes
+			NOR = {
+				trait = incapable
+				is_friend = ROOT
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	option = {
+		name = EVTOPTA_SoA_5410
+		random_courtier = {
+			limit = {
+				religion_group = inti_group
+				prisoner = no
+				is_adult = yes
+				NOR = {
+					trait = incapable
+					is_friend = ROOT
+				}
+			}
+			add_friend = ROOT
+		}
+	}
+}
+
 # Tolerant character making Inuit friend
 character_event = {
 	id = LISoA.17

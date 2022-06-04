@@ -11754,6 +11754,13 @@ character_event = {
 		}
 		if = {
 			limit = { 
+				NOT = { religion_group = inti_group }
+			}
+			remove_trait_zealous_effect = yes
+			add_trait = sympathy_intis
+		}
+		if = {
+			limit = { 
 				NOT = { religion_group = inuit_group }
 			}
 			remove_trait_zealous_effect = yes

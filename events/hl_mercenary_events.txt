@@ -853,6 +853,7 @@ character_event = {
 					finnish_group		= { FROM = { add_trait = sympathy_finnish } }
 					graecoroman_group	= { FROM = { add_trait = sympathy_graecoroman } }
 					indohelen_group		= { FROM = { add_trait = sympathy_indohellens } }
+					inti_group			= { FROM = { add_trait = sympathy_intis } }
 					inuit_group			= { FROM = { add_trait = sympathy_inuit } }
 					mand_group			= { FROM = { add_trait = sympathy_mande } }
 					mani_group			= { FROM = { add_trait = sympathy_manichaeans } }
@@ -1066,6 +1067,12 @@ character_event = {
 								}
 							}
 							AND = {
+								religion_group = inti_group
+								ROOT = {
+									trait = sympathy_intis
+								}
+							}
+							AND = {
 								religion_group = inuit_group
 								ROOT = {
 									trait = sympathy_inuit
@@ -1265,6 +1272,7 @@ character_event = {
 										finnish_group 		= { ROOT = { add_trait = sympathy_finnish } }
 										graecoroman_group	= { ROOT = { add_trait = sympathy_graecoroman } }
 										indohelen_group		= { ROOT = { add_trait = sympathy_indohellens } }
+										inti_group			= { ROOT = { add_trait = sympathy_intis } }
 										luwian_group 		= { ROOT = { add_trait = sympathy_luwians } }
 										mand_group	 		= { ROOT = { add_trait = sympathy_mande } }
 										mani_group	 		= { ROOT = { add_trait = sympathy_manichaeans } }

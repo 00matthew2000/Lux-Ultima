@@ -7,6 +7,9 @@
 ###########################################
 
 namespace = MNM
+namespace = Plus
+
+#reserved: Plus.4100 to Plus.4149
 
 ###RANKING UP EVENTS####
 
@@ -106,7 +109,33 @@ character_event = {
 
 	trigger = {
 		is_in_society = no
-		interested_in_society = secret_religious_cult
+		OR = {
+			interested_in_society = the_assassins
+			interested_in_society = the_assassins_bud_mahayana
+			interested_in_society = the_assassins_mani_ahriman
+			interested_in_society = the_assassins_priscillian
+			interested_in_society = the_assassins_ragnarok
+			interested_in_society = the_assassins_set
+			interested_in_society = the_assassins_tengri_ahriman
+			interested_in_society = the_assassins_yahyanism
+			interested_in_society = the_assassins_zor_angra
+			interested_in_society = the_satanists
+			interested_in_society = the_trollcrafters
+			interested_in_society = the_cult_of_kali
+			interested_in_society = the_cold_ones
+			interested_in_society = the_plaguebringers
+			interested_in_society = the_vodouns
+			interested_in_society = the_bacchants
+			interested_in_society = secret_religious_cult
+			interested_in_society = the_ghost_gatherers
+			interested_in_society = the_underworld_triad
+			interested_in_society = the_sacrificers
+			interested_in_society = the_procession_of_pox
+			interested_in_society = the_cult_of_balor
+			interested_in_society = cult_of_angra_mainyu
+			interested_in_society = arab_jinn_sorcerers
+			interested_in_society = cult_of_apep
+		}
 	}
 
 	immediate = {
@@ -122,7 +151,35 @@ character_event = {
 
 	trigger = {
 		is_in_society = no
-		interested_in_society = secret_religious_cult		
+		OR = {
+			interested_in_society = the_assassins
+			interested_in_society = the_assassins_bud_mahayana
+			interested_in_society = the_assassins_mani_ahriman
+			interested_in_society = the_assassins_priscillian
+			interested_in_society = the_assassins_ragnarok
+			interested_in_society = the_assassins_set
+			interested_in_society = the_assassins_tengri_ahriman
+			interested_in_society = the_assassins_yahyanism
+			interested_in_society = the_assassins_zor_angra
+			interested_in_society = the_satanists
+			interested_in_society = the_trollcrafters
+			interested_in_society = the_cult_of_kali
+			interested_in_society = the_cold_ones
+			interested_in_society = the_plaguebringers
+			interested_in_society = the_vodouns
+			interested_in_society = the_bacchants
+			interested_in_society = secret_religious_cult
+			interested_in_society = the_ghost_gatherers
+			interested_in_society = the_underworld_triad
+			interested_in_society = the_sacrificers
+			interested_in_society = the_procession_of_pox
+			interested_in_society = the_cult_of_balor
+			interested_in_society = cult_of_angra_mainyu
+			interested_in_society = arab_jinn_sorcerers
+			interested_in_society = cult_of_titan
+			interested_in_society = cult_of_apep
+			interested_in_society = secret_religious_cult	
+		}
 	}
 
 	immediate = {
@@ -302,6 +359,182 @@ character_event = {
 				character_event = { id = MNM.10012 }
 			}
 		}
+		#Satanists
+		if = {
+			limit = {
+				interested_in_society = the_satanists
+				NOT = { has_character_flag = being_recruited_by_the_satanists }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_satanists
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10013 }
+			}
+		}
+		#Trollcrafters
+		if = {
+			limit = {
+				interested_in_society = the_trollcrafters
+				NOT = { has_character_flag = being_recruited_by_the_trollcrafters }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_trollcrafters
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10014 }
+			}
+		}
+		#Cult of Kali
+		if = {
+			limit = {
+				interested_in_society = the_cult_of_kali
+				NOT = { has_character_flag = being_recruited_by_the_cult_of_kali }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_cult_of_kali
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10015 }
+			}
+		}
+		#Neo-sarkites
+		if = {
+			limit = {
+				interested_in_society = the_neo_sarkites
+				NOT = { has_character_flag = being_recruited_by_the_neo_sarkites }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_neo_sarkites
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10016 }
+			}
+		}
+		#Plaguebringers
+		if = {
+			limit = {
+				interested_in_society = the_plaguebringers
+				NOT = { has_character_flag = being_recruited_by_the_plaguebringers }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_plaguebringers
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10017 }
+			}
+		}
+		#Balor
+		if = {
+			limit = {
+				interested_in_society = the_cult_of_balor
+				NOT = { has_character_flag = being_recruited_by_the_cult_of_balor }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_cult_of_balor
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = Plus.4100 }
+			}
+		}
+		#Destroyer
+		if = {
+			limit = {
+				interested_in_society = cult_of_angra_mainyu
+				NOT = { has_character_flag = being_recruited_by_cult_of_angra_mainyu }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = cult_of_angra_mainyu
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = Plus.4101 }
+			}
+		}
+		#Jinn
+		if = {
+			limit = {
+				interested_in_society = arab_jinn_sorcerers
+				NOT = { has_character_flag = being_recruited_by_the_jinn }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = arab_jinn_sorcerers
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = Plus.4102 }
+			}
+		}
+		#Apepcult
+		if = {
+			limit = {
+				interested_in_society = cult_of_apep
+				NOT = { has_character_flag = being_recruited_by_the_apepcult }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = cult_of_apep
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = Plus.4104 }
+			}
+		}
+		#Vodunons
+		if = {
+			limit = {
+				interested_in_society = the_vodouns
+				NOT = { has_character_flag = being_recruited_by_the_vodouns }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_vodouns
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10027 }
+			}
+		}
+		#Bacchants
+		if = {
+			limit = {
+				interested_in_society = the_bacchants
+				NOT = { has_character_flag = being_recruited_by_the_bacchants }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_bacchants
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10026 }
+			}
+		}
 		#Secret religious society
 		if = {
 			limit = {
@@ -316,7 +549,73 @@ character_event = {
 				years = 5
 				hidden = yes
 			}
-			character_event = { id = MNM.3420 }
+			character_event = { id = MNM.3420 } 
+		}
+		
+		# Tianxia DWs - split into multiple ifs
+		if = {
+			limit = {
+				interested_in_society = the_ghost_gatherers
+				NOT = { has_character_flag = being_recruited_by_the_ghost_gatherers }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_ghost_gatherers
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10028 }
+			}
+		}
+		   
+		if = {
+			limit = {
+				interested_in_society = the_underworld_triad
+				NOT = { has_character_flag = being_recruited_by_the_underworld_triad }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_underworld_triad
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10028 }
+			}
+		}
+			
+		if = {
+			limit = {
+				interested_in_society = the_sacrificers
+				NOT = { has_character_flag = being_recruited_by_the_sacrificers }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_sacrificers
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10028 }
+			}
+		}
+						   
+		if = {
+			limit = {
+				interested_in_society = the_procession_of_pox
+				NOT = { has_character_flag = being_recruited_by_the_procession_of_pox }
+			}
+			random_society_member = {
+				limit = {
+					society_member_of = the_procession_of_pox
+					#is_within_diplo_range = ROOT
+					is_society_grandmaster = no
+				}
+				save_event_target_as = satanists_recruiter
+				character_event = { id = MNM.10028 }
+			}
+									   
 		}
 	}	
 }
@@ -558,85 +857,244 @@ character_event = {
 	}
 }
 
-#character_event = {
-#	id = MNM.10013
-#	hide_window = yes
-#
-#	is_triggered_only = yes
-#
-#	immediate = { 
-#		FROM = {
-#			set_character_flag = satanists_attempted_recruitment
-#			#set_character_flag = being_recruited_by_the_satanists
-#			#character_event = { id = MNM.7001 }
-#		}
-#	}
-#}
-#
-#character_event = {
-#	id = MNM.10014
-#	hide_window = yes
-#
-#	is_triggered_only = yes
-#
-#	immediate = { 
-#		FROM = {
-#			set_character_flag = trollcrafters_attempted_recruitment
-#			#set_character_flag = being_recruited_by_the_trollcrafters
-#			#character_event = { id = MNM.7001 }
-#		}
-#	}
-#}
-#
-#character_event = {
-#	id = MNM.10015
-#	hide_window = yes
-#
-#	is_triggered_only = yes
-#
-#	immediate = { 
-#		FROM = {
-#			set_character_flag = cult_of_kali_attempted_recruitment
-#			#set_character_flag = being_recruited_by_the_cult_of_kali
-#			#character_event = { id = MNM.7001 }
-#		}
-#	}
-#}
-#
-#character_event = {
-#	id = MNM.10016
-#	hide_window = yes
-#
-#	is_triggered_only = yes
-#
-#	immediate = { 
-#		FROM = {
-#			set_character_flag = cold_ones_attempted_recruitment
-#			#set_character_flag = being_recruited_by_the_cold_ones
-#			#character_event = { id = MNM.7001 }
-#		}
-#	}
-#}
-#
-#character_event = {
-#	id = MNM.10017
-#	hide_window = yes
-#
-#	is_triggered_only = yes
-#
-#	immediate = { 
-#		FROM = {
-#			set_character_flag = plaguebringers_attempted_recruitment
-#			#set_character_flag = being_recruited_by_the_plaguebringers
-#			#character_event = { id = MNM.7001 }
-#		}
-#	}
-#}
+character_event = {
+	id = MNM.10013
+	hide_window = yes
 
+	is_triggered_only = yes
 
+	immediate = { 
+		FROM = {
+			set_character_flag = satanists_attempted_recruitment
+			set_character_flag = being_recruited_by_the_satanists
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
 
+character_event = {
+	id = MNM.10014
+	hide_window = yes
 
+	is_triggered_only = yes
 
+	immediate = { 
+		FROM = {
+			set_character_flag = trollcrafters_attempted_recruitment
+			set_character_flag = being_recruited_by_the_trollcrafters
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+character_event = {
+	id = MNM.10015
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = cult_of_kali_attempted_recruitment
+			set_character_flag = being_recruited_by_the_cult_of_kali
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+character_event = {
+	id = MNM.10016
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = neo_sarkites_attempted_recruitment
+			set_character_flag = being_recruited_by_the_neo_sarkites
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+character_event = {
+	id = MNM.10017
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = plaguebringers_attempted_recruitment
+			set_character_flag = being_recruited_by_the_plaguebringers
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+character_event = {
+	id = MNM.10026
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = bacchants_attempted_recruitment
+			set_character_flag = being_recruited_by_the_bacchants
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+character_event = {
+	id = MNM.10027
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = vodouns_attempted_recruitment
+			set_character_flag = being_recruited_by_the_vodouns
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+character_event = {
+	id = Plus.4100
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = the_cult_of_balor_attempted_recruitment
+			set_character_flag = being_recruited_by_the_cult_of_balor
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+character_event = {
+	id = Plus.4101
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = cult_of_angra_mainyu_attempted_recruitment
+			set_character_flag = being_recruited_by_cult_of_angra_mainyu
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+character_event = {
+	id = Plus.4102
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = jinn_attempted_recruitment
+			set_character_flag = being_recruited_by_the_jinn
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+character_event = {
+	id = Plus.4103
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = titancult_attempted_recruitment
+			set_character_flag = being_recruited_by_the_titancult
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+character_event = {
+	id = Plus.4104
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = {
+			set_character_flag = apepcult_attempted_recruitment
+			set_character_flag = being_recruited_by_the_apepcult
+			character_event = { id = MNM.7001 }
+		}
+	}
+}
+
+# Tianxia DWs
+character_event = {
+	id = MNM.10028
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				FROM = {
+					interested_in_society = the_ghost_gatherers
+				}
+			}
+			FROM = {
+				set_character_flag = ghost_gatherers_attempted_recruitment
+				set_character_flag = being_recruited_by_the_ghost_gatherers
+				character_event = { id = MNM.7001 }
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					interested_in_society = the_underworld_triad
+				}
+			}
+			FROM = {
+				set_character_flag = underworld_triad_attempted_recruitment
+				set_character_flag = being_recruited_by_the_underworld_triad
+				character_event = { id = MNM.7001 }
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					interested_in_society = the_sacrificers
+				}
+			}
+			FROM = {
+				set_character_flag = sacrificers_attempted_recruitment
+				set_character_flag = being_recruited_by_the_sacrificers
+				character_event = { id = MNM.7001 }
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					interested_in_society = the_procession_of_pox
+				}
+			}
+			   
+			FROM = {
+				set_character_flag = procession_of_pox_attempted_recruitment
+				set_character_flag = being_recruited_by_the_procession_of_pox
+				character_event = { id = MNM.7001 }
+			}
+		}
+	}
+}
 
 #Becoming stressed about keeping a secret
 character_event = {
@@ -3322,241 +3780,683 @@ character_event = {
 							set_society_grandmaster = yes
 						}
 					}
-					#50 = { 
-						#trigger = {
-						#	can_join_society = the_satanists
-						#}
-						#modifier = {
-						#	factor = 5
-						#	OR = {
-						#		has_impious_trait_trigger = yes
-						#		has_vice_trigger = yes
-						#		trait = drunkard
-						#		trait = possessed
-						#		trait = lunatic
-						#	}
-						#}
-						#modifier = {
-						#	factor = 2
-						#	the_satanists = { num_of_society_members < 15 }
-						#}
-						#modifier = {
-						#	factor = 2
-						#	the_satanists = { num_of_society_members < 10 }
-						#}
-						#join_society = the_satanists
-						#random_list = { # Artificially increase society influence for balance purposes
-						#	75 = {
-						#		modifier = {
-						#			factor = 0
-						#			society_influence >= 30
-						#		}
-						#		add_mission_succeed_influence_effect = yes
-						#	}
-						#	25 = {
-						#	}
-						#}
-						#if = {
-						#	limit = {
-						#		NOT = {
-						#			society = {
-						#				any_society_member = {
-						#					is_society_grandmaster = yes
-						#				}
-						#			}
-						#		}
-						#	}
-						#	set_society_grandmaster = yes
-						#}
-					#}
-					# 50 = { 
-						# trigger = {
-							# can_join_society = the_trollcrafters
-						# }
-						# modifier = {
-							# factor = 5
-							# OR = {
-								# has_impious_trait_trigger = yes
-								# has_vice_trigger = yes
-								# trait = drunkard
-								# trait = possessed
-								# trait = lunatic
-							# }
-						# }
-						# modifier = {
-							# factor = 2
-							# the_trollcrafters = { num_of_society_members < 15 }
-						# }
-						# modifier = {
-							# factor = 2
-							# the_trollcrafters = { num_of_society_members < 10 }
-						# }
-						# join_society = the_trollcrafters
-						# random_list = { # Artificially increase society influence for balance purposes
-							# 75 = {
-								# modifier = {
-									# factor = 0
-									# society_influence >= 30
-								# }
-								# add_mission_succeed_influence_effect = yes
-							# }
-							# 25 = {
-							# }
-						# }
-						# if = {
-							# limit = {
-								# NOT = {
-									# society = {
-										# any_society_member = {
-											# is_society_grandmaster = yes
-										# }
-									# }
-								# }
-							# }
-							# set_society_grandmaster = yes
-						# }
-					# }
-					# 50 = { 
-						# trigger = {
-							# can_join_society = the_cult_of_kali
-						# }
-						# modifier = {
-							# factor = 5
-							# OR = {
-								# has_impious_trait_trigger = yes
-								# has_vice_trigger = yes
-								# trait = drunkard
-								# trait = possessed
-								# trait = lunatic
-							# }
-						# }
-						# modifier = {
-							# factor = 2
-							# the_cult_of_kali = { num_of_society_members < 15 }
-						# }
-						# modifier = {
-							# factor = 2
-							# the_cult_of_kali = { num_of_society_members < 10 }
-						# }
-						# join_society = the_cult_of_kali
-						# random_list = { # Artificially increase society influence for balance purposes
-							# 75 = {
-								# modifier = {
-									# factor = 0
-									# society_influence >= 30
-								# }
-								# add_mission_succeed_influence_effect = yes
-							# }
-							# 25 = {
-							# }
-						# }
-						# if = {
-							# limit = {
-								# NOT = {
-									# society = {
-										# any_society_member = {
-											# is_society_grandmaster = yes
-										# }
-									# }
-								# }
-							# }
-							# set_society_grandmaster = yes
-						# }
-					# }
-					# 50 = { 
-						# trigger = {
-							# can_join_society = the_cold_ones
-						# }
-						# modifier = {
-							# factor = 5
-							# OR = {
-								# has_impious_trait_trigger = yes
-								# has_vice_trigger = yes
-								# trait = drunkard
-								# trait = possessed
-								# trait = lunatic
-							# }
-						# }
-						# modifier = {
-							# factor = 2
-							# the_cold_ones = { num_of_society_members < 15 }
-						# }
-						# modifier = {
-							# factor = 2
-							# the_cold_ones = { num_of_society_members < 10 }
-						# }
-						# join_society = the_cold_ones
-						# random_list = { # Artificially increase society influence for balance purposes
-							# 75 = {
-								# modifier = {
-									# factor = 0
-									# society_influence >= 30
-								# }
-								# add_mission_succeed_influence_effect = yes
-							# }
-							# 25 = {
-							# }
-						# }
-						# if = {
-							# limit = {
-								# NOT = {
-									# society = {
-										# any_society_member = {
-											# is_society_grandmaster = yes
-										# }
-									# }
-								# }
-							# }
-							# set_society_grandmaster = yes
-						# }
-					# }
-					# 50 = {
-						# trigger = {
-							# can_join_society = the_plaguebringers
-						# }
-						# modifier = {
-							# factor = 5
-							# OR = {
-								# has_impious_trait_trigger = yes
-								# has_vice_trigger = yes
-								# trait = drunkard
-								# trait = possessed
-								# trait = lunatic
-							# }
-						# }
-						# modifier = {
-							# factor = 2
-							# the_plaguebringers = { num_of_society_members < 15 }
-						# }
-						# modifier = {
-							# factor = 2
-							# the_plaguebringers = { num_of_society_members < 10 }
-						# }
-						# join_society = the_plaguebringers
-						# random_list = { # Artificially increase society influence for balance purposes
-							# 75 = {
-								# modifier = {
-									# factor = 0
-									# society_influence >= 30
-								# }
-								# add_mission_succeed_influence_effect = yes
-							# }
-							# 25 = {
-							# }
-						# }
-						# if = {
-							# limit = {
-								# NOT = {
-									# society = {
-										# any_society_member = {
-											# is_society_grandmaster = yes
-										# }
-									# }
-								# }
-							# }
-							# set_society_grandmaster = yes
-						# }
-					# }
+					 50 = { 
+						 trigger = {
+						 	can_join_society = the_satanists
+						 }
+						 modifier = {
+						 	factor = 5
+						 	OR = {
+						 		has_impious_trait_trigger = yes
+						 		has_vice_trigger = yes
+						 		trait = drunkard
+						 		trait = possessed
+						 		trait = lunatic
+						 	}
+						 }
+						 modifier = {
+						 	factor = 2
+						 	the_satanists = { num_of_society_members < 15 }
+						 }
+						 modifier = {
+						 	factor = 2
+						 	the_satanists = { num_of_society_members < 10 }
+						 }
+						 join_society = the_satanists
+						 random_list = { # Artificially increase society influence for balance purposes
+						 	75 = {
+						 		modifier = {
+						 			factor = 0
+						 			society_influence >= 30
+						 		}
+						 		add_mission_succeed_influence_effect = yes
+						 	}
+						 	25 = {
+						 	}
+						 }
+						 if = {
+						 	limit = {
+						 		NOT = {
+						 			society = {
+						 				any_society_member = {
+						 					is_society_grandmaster = yes
+						 				}
+						 			}
+						 		}
+						 	}
+						 	set_society_grandmaster = yes
+						 }
+					 }
+					50 = { 
+						trigger = {
+							can_join_society = the_trollcrafters
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_trollcrafters = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_trollcrafters = { num_of_society_members < 10 }
+						}
+						join_society = the_trollcrafters
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = { 
+						trigger = {
+							can_join_society = the_cult_of_kali
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_cult_of_kali = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_cult_of_kali = { num_of_society_members < 10 }
+						}
+						join_society = the_cult_of_kali
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = { 
+						trigger = {
+							can_join_society = the_neo_sarkites
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_neo_sarkites = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_neo_sarkites = { num_of_society_members < 10 }
+						}
+						join_society = the_neo_sarkites
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = the_plaguebringers
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_plaguebringers = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_plaguebringers = { num_of_society_members < 10 }
+						}
+						join_society = the_plaguebringers
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = the_vodouns
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_vodouns = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_vodouns = { num_of_society_members < 10 }
+						}
+						join_society = the_vodouns
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = the_bacchants
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_bacchants = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_bacchants = { num_of_society_members < 10 }
+						}
+						join_society = the_bacchants
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					# Tianxia
+					50 = {
+						trigger = {
+							can_join_society = the_underworld_triad
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_underworld_triad = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_underworld_triad = { num_of_society_members < 10 }
+						}
+						join_society = the_underworld_triad
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = the_sacrificers
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_sacrificers = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_sacrificers = { num_of_society_members < 10 }
+						}
+						join_society = the_sacrificers
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = the_procession_of_pox
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_procession_of_pox = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_procession_of_pox = { num_of_society_members < 10 }
+						}
+						join_society = the_procession_of_pox
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = the_ghost_gatherers
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						modifier = {
+							factor = 2
+							the_ghost_gatherers = { num_of_society_members < 15 }
+						}
+						modifier = {
+							factor = 2
+							the_ghost_gatherers = { num_of_society_members < 10 }
+						}
+						join_society = the_ghost_gatherers
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = the_cult_of_balor
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+							}
+						}
+						join_society = the_cult_of_balor
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = cult_of_angra_mainyu
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+								trait = deceitful # Special for Zoroastrians
+							}
+						}
+						join_society = cult_of_angra_mainyu
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = arab_jinn_sorcerers
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+								trait = deceitful # Special for Zoroastrians
+							}
+						}
+						join_society = arab_jinn_sorcerers
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					50 = {
+						trigger = {
+							can_join_society = cult_of_apep
+						}
+						modifier = {
+							factor = 5
+							OR = {
+								has_impious_trait_trigger = yes
+								has_vice_trigger = yes
+								trait = drunkard
+								trait = possessed
+								trait = lunatic
+								trait = deceitful # Special for Zoroastrians
+							}
+						}
+						join_society = cult_of_apep
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
 				}
 			}
 		}

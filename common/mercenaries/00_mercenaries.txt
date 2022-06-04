@@ -222,6 +222,11 @@ d_holyindoh_zor_composition = {
 	light_infantry = 22
 	archers = 11
 }
+d_holyinti_composition = {
+	levy_size = 7
+	heavy_infantry = 200
+	archers = 400
+}
 d_holyjain_composition = {
 	levy_size = 2.90
 	heavy_infantry = 67
@@ -764,6 +769,11 @@ d_holyindohelen_reformed_composition = {
 	light_cavalry = 50
 	light_infantry = 44
 	archers = 89
+}
+d_holyinti_reformed_composition = {
+	levy_size = 7
+	heavy_infantry = 200
+	archers = 400
 }
 d_holyinuit_pagan_reformed_composition = {
 	levy_size = 10
@@ -2109,6 +2119,14 @@ kashmiri_thunder_composition = {
 	light_infantry = 75
 	heavy_infantry = 25
 	pikemen = 75
+}
+
+hashshashin_composition = {
+	levy_size = 6
+	archers = 150
+	light_infantry = 150
+	heavy_infantry = 300
+	light_cavalry = 150
 }
 
 bektashi_composition = {

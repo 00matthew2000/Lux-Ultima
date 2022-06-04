@@ -3071,13 +3071,21 @@ is_devil_worshiper_trigger = {
 	custom_tooltip = {
 		text = IS_DEVIL_WORSHIPPER_TRIGGER
 		OR = {
-			# society_member_of = the_satanists
-			# society_member_of = the_cold_ones
-			# society_member_of = the_plaguebringers
-			# society_member_of = the_cult_of_kali
-			# society_member_of = the_trollcrafters
-			# society_member_of = the_vodouns
-			# society_member_of = the_bacchants
+			society_member_of = the_satanists
+			society_member_of = the_neo_sarkites
+			society_member_of = the_plaguebringers
+			society_member_of = the_cult_of_kali
+			society_member_of = the_cult_of_balor
+			society_member_of = cult_of_angra_mainyu
+			society_member_of = the_trollcrafters
+			society_member_of = the_vodouns
+			society_member_of = the_bacchants
+			society_member_of = the_ghost_gatherers
+			society_member_of = the_underworld_triad
+			society_member_of = the_sacrificers
+			society_member_of = the_procession_of_pox
+			society_member_of = arab_jinn_sorcerers
+			society_member_of = cult_of_apep
 		}
 	}
 }
@@ -4178,49 +4186,123 @@ has_satanists_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 	OR = {
 		religion_group = christian
-		religion_group = muslim
-		religion_group = zoroastrian_group
 		religion_group = jewish_group
-		# religion = zun_pagan
-		# religion = zun_pagan_reformed
+		secret_religion_group = christian
+		secret_religion_group = jewish_group
 	}
 }
 
 has_trollcrafters_prerequisites = {
 	has_common_devilworship_prerequisites = yes
-	religion_openly_norse_or_reformed_trigger = yes
+	OR = {
+		religion_group = norsegerman_group
+		secret_religion_group = norsegerman_group
+	}
 }
 
 has_cult_of_kali_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 	OR = {
-		religion = hindu
+		religion_group = indian_group
+		religion = zor_hindu
+		religion = nasrani_reformed
+		religion = zz01_vedanta
+		secret_religion_group = indian_group
+		secret_religion = zor_hindu
+		secret_religion = nasrani_reformed
+		secret_religion = zz01_vedanta
 	}
 }
 
-has_cold_ones_prerequisites = {
+has_cult_of_balor_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 	OR = {
-		religion_openly_baltic_or_reformed_trigger = yes
-		religion_openly_slavic_or_reformed_trigger = yes
-		religion_openly_finnish_or_reformed_trigger = yes
+		religion_group = celtic_group
+		secret_religion_group = celtic_group
 	}
+}
+
+has_cult_of_angra_mainyu_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		AND = {
+			religion_group = zoroastrian_group
+			NOT = { religion = zor_angra }
+		}
+		secret_religion_group = zoroastrian_group
+	}
+}
+
+has_jinn_sorceror_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion_group = muslim
+		secret_religion_group = muslim
+	}
+}
+
+has_cult_of_apep_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	archaic_civilization_trigger = yes
+}
+
+has_neo_sarkites_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	gnostic_civilization_trigger = yes
 }
 
 has_plaguebringers_prerequisites = {
 	has_common_devilworship_prerequisites = yes
-	religion_openly_tengri_or_reformed_trigger = yes
+	OR = {	
+		religion_openly_tengri_or_reformed_trigger = yes
+		secret_religion_group = tengri_group
+	}
+	NOT = {
+		religion = erlik
+	}
 }
 
 has_vodouns_prerequisites = {
 	has_common_devilworship_prerequisites = yes
-	religion_openly_west_african_or_reformed_trigger = yes
+	OR = {
+		religion_group = berberpagan_group
+		secret_religion_group = berberpagan_group
+	}
 }
 
 has_bacchants_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 	OR = { 
-		##religion_openly_hellenic_or_reformed_trigger = yes = yes = yes
+		graecoroman_civilization_trigger = yes
+		secret_religion = alexandros
+		secret_religion = cybele
+		secret_religion = dionysos
+		secret_religion = graeco_roman
+		secret_religion = indoh_bud
+		secret_religion = indoh_confucian
+		secret_religion = indoh_hindu
+		secret_religion = indoh_zor
+		secret_religion = indohelen
+		secret_religion = jupiter
+		secret_religion = mithra_sol
+		secret_religion = porphyryan
+		secret_religion = roman_imperial
+		secret_religion = sol
+		secret_religion = sol_apollo
+		secret_religion = sol_boreas
+		secret_religion = sol_christ
+		secret_religion = solomonic_alexandros
+		secret_religion = zal
+		secret_religion = zal_christ
+		secret_religion = zal_mani
+		secret_religion = cybele_reformed
+		secret_religion = graeco_roman_reformed
+		secret_religion = indohelen_reformed
+		secret_religion = isis_reformed
+		secret_religion = sol_boreas_reformed
+		secret_religion = sol_sahara_reformed
+		society_member_of = the_bacchants
+		top_liege = { true_religion_group_graecoroman_group_trigger = yes }
 		culture = roman #Historically fashionable thrill for bored patricians.
 		AND = { 
 			has_global_flag = flag_started_roman_renaissance
@@ -4228,6 +4310,63 @@ has_bacchants_prerequisites = {
 		} 
 	} 
 }
+
+# Tianxia
+
+has_ghost_gatherers_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion = nihon_shinto
+		AND = {
+			culture = japanese
+			culture = nihono_hellenic
+			religion_group = bud_group
+		}
+	}
+}
+
+has_underworld_triad_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion = indoh_confucian
+		religion_group = chinese_group
+		AND = {
+			OR = {
+				culture_group = chinese
+				culture_group = vietic
+				culture = tangut
+				culture = sinohellenic
+				culture_group = altaic
+				culture_group = yue
+			}
+			religion_group = bud_group
+		}
+	}
+}
+
+has_sacrificers_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion_group = asian_religion_group
+		religion_group = inti_group
+	}
+}
+
+has_procession_of_pox_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion = shingyo
+		AND = {
+			culture_group = korean_group
+			OR = {
+				religion_group = bud_group
+				religion_group = chinese_group
+				religion_group = indohelen_group
+			}
+		}
+	}
+}
+
 same_society_rank_as_prev_trigger = {
 	OR = {
 		AND = {

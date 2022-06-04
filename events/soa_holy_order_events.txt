@@ -194,6 +194,11 @@ character_event = {
 					save_event_target_as = holy_order
 				}
 			}
+			inti = {
+				d_holyinti = {
+					save_event_target_as = holy_order
+				}
+			}
 			jain = {
 				d_holyjain = {
 					save_event_target_as = holy_order
@@ -536,6 +541,11 @@ character_event = {
 			}
 			indohelen_reformed = {
 				d_holyindohelen_reformed = {
+					save_event_target_as = holy_order
+				}
+			}
+			inti_reformed = {
+				d_holyinti_reformed = {
 					save_event_target_as = holy_order
 				}
 			}
@@ -1137,6 +1147,11 @@ province_event = {
 						save_event_target_as = holy_order
 					}
 				}
+				inti = {
+					d_holyinti = {
+						save_event_target_as = holy_order
+					}
+				}
 				jain = {
 					d_holyjain = {
 						save_event_target_as = holy_order
@@ -1479,6 +1494,11 @@ province_event = {
 				}
 				indohelen_reformed = {
 					d_holyindohelen_reformed = {
+						save_event_target_as = holy_order
+					}
+				}
+				inti_reformed = {
+					d_holyinti_pagan_reformed = {
 						save_event_target_as = holy_order
 					}
 				}
@@ -2128,6 +2148,11 @@ character_event = {
 					save_event_target_as = holy_order
 				}
 			}
+			inti = {
+				d_holyinti = {
+					save_event_target_as = holy_order
+				}
+			}
 			jain = {
 				d_holyjain = {
 					save_event_target_as = holy_order
@@ -2470,6 +2495,11 @@ character_event = {
 			}
 			indohelen_reformed = {
 				d_holyindohelen_reformed = {
+					save_event_target_as = holy_order
+				}
+			}
+			inti_reformed = {
+				d_holyinti_reformed = {
 					save_event_target_as = holy_order
 				}
 			}
@@ -2927,6 +2957,11 @@ province_event = {
 						save_event_target_as = holy_order
 					}
 				}
+				inti = {
+					d_holyinti = {
+						save_event_target_as = holy_order
+					}
+				}
 				jain = {
 					d_holyjain = {
 						save_event_target_as = holy_order
@@ -3269,6 +3304,11 @@ province_event = {
 				}
 				indohelen_reformed = {
 					d_holyindohelen_reformed = {
+						save_event_target_as = holy_order
+					}
+				}
+				inti_reformed = {
+					d_holyinti_reformed = {
 						save_event_target_as = holy_order
 					}
 				}
@@ -4367,6 +4407,23 @@ character_event = {
 					clr_character_flag = expel_d_holyindoh_zor_check
 				}
 			}
+			expel_d_holyinti_check = {
+				hidden_tooltip = {
+					d_holyinti = {
+						holder_scope = {
+							#character_event = {
+								#id = SoA.1760
+							#}
+						}
+					}
+					add_character_modifier = {
+						name = expelled_d_holyinti
+						duration = -1
+						inherit = yes
+					}
+					clr_character_flag = expel_d_holyinti_check
+				}
+			}
 			expel_d_holyjain_check = {
 				hidden_tooltip = {
 					d_holyjain = {
@@ -5319,6 +5376,20 @@ character_event = {
 					clr_character_flag = expel_d_holyindohelen_reformed_check
 				}
 			}
+			expel_d_holyinti_reformed_check = {
+				hidden_tooltip = {
+					d_holyinti_reformed = {
+						holder_scope = {
+}
+					}
+					add_character_modifier = {
+						name = expelled_d_holyinti_reformed
+						duration = -1
+						inherit = yes
+					}
+					clr_character_flag = expel_d_holyinti_reformed_check
+				}
+			}
 			expel_d_holyinuit_pagan_reformed_check = {
 				hidden_tooltip = {
 					d_holyinuit_pagan_reformed = {
@@ -6039,6 +6110,7 @@ character_event = {
 			clr_character_flag = expel_d_holyindoh_confucian_check
 			clr_character_flag = expel_d_holyindoh_hindu_check
 			clr_character_flag = expel_d_holyindoh_zor_check
+			clr_character_flag = expel_d_holyinti_check
 			clr_character_flag = expel_d_holyjain_check
 			clr_character_flag = expel_d_holyjud_zion_check
 			clr_character_flag = expel_d_holyjupiter_check
@@ -6106,6 +6178,7 @@ character_event = {
 			clr_character_flag = expel_d_holyiberian_pagan_reformed_check
 			clr_character_flag = expel_d_holyilluyanka_reformed_check
 			clr_character_flag = expel_d_holyindohelen_reformed_check
+			clr_character_flag = expel_d_holyinti_reformed_check
 			clr_character_flag = expel_d_holyinuit_pagan_reformed_check
 			clr_character_flag = expel_d_holyisis_reformed_check
 			clr_character_flag = expel_d_holyjud_ark_reformed_check

@@ -442,7 +442,7 @@ character_event = {
 				chance = 25
 				any_realm_character = {
 					limit = {
-						#society_member_of = the_ghost_gatherers
+						society_member_of = the_ghost_gatherers
 						NOT = {
 							character = ROOT
 						}
@@ -477,7 +477,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				#society_member_of = the_ghost_gatherers
+				society_member_of = the_ghost_gatherers
 			}
 		}
 	}
@@ -498,7 +498,7 @@ character_event = {
 				chance = 25
 				any_realm_character = {
 					limit = {
-						#society_member_of = the_ghost_gatherers
+						society_member_of = the_ghost_gatherers
 						NOT = {
 							character = ROOT
 						}
@@ -537,14 +537,14 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				#society_member_of = the_ghost_gatherers
+				society_member_of = the_ghost_gatherers
 			}
 		}
 	}
 	
 	option = {
 		trigger = {
-			#society_member_of = the_ghost_gatherers
+			society_member_of = the_ghost_gatherers
 			wealth = 10
 		}
 		
@@ -1866,7 +1866,7 @@ character_event = {
 	war = no
 	
 	trigger = {
-		#society_member_of = the_ghost_gatherers
+		society_member_of = the_ghost_gatherers
 	}
 	
 	immediate = {
@@ -1993,7 +1993,7 @@ character_event = {
 		FROM = {
 			has_character_modifier = hanami_in_progress
 		}
-		#society_member_of = the_ghost_gatherers
+		society_member_of = the_ghost_gatherers
 	}
 	
 	immediate = {

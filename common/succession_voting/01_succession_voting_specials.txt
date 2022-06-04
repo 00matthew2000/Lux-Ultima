@@ -1805,6 +1805,10 @@ byzantine_elective = {
 					 trait = sympathy_indohellens 
 					 FROM = { religion_group = indohelen_group }
 				 }
+				AND = {
+					 trait = sympathy_intis
+					 FROM = { religion_group = inti_group }
+				 }
 				 AND = {
 					 trait = sympathy_inuit 
 					 FROM = { religion_group = inuit_group }
@@ -4292,6 +4296,7 @@ byzantine_elective = {
 					trait = sympathy_graecoroman
 					trait = sympathy_indian
 					trait = sympathy_indohellens
+					trait = sympathy_intis
 					trait = sympathy_inuit
 					trait = sympathy_islam
 					trait = sympathy_judaism
@@ -5581,6 +5586,10 @@ hre_feudal_elective = {
 				 AND = {
 					 trait = sympathy_indohellens 
 					 FROM = { religion_group = indohelen_group }
+				 }
+				AND = {
+					 trait = sympathy_intis
+					 FROM = { religion_group = inti_group }
 				 }
 				 AND = {
 					 trait = sympathy_inuit 
@@ -7813,6 +7822,7 @@ hre_feudal_elective = {
 					trait = sympathy_graecoroman
 					trait = sympathy_indian
 					trait = sympathy_indohellens
+					trait = sympathy_intis
 					trait = sympathy_inuit
 					trait = sympathy_islam
 					trait = sympathy_judaism

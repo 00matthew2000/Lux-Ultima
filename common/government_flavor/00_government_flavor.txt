@@ -3426,6 +3426,16 @@ government_flavor = {
 	}
 }
 
+government_flavor = {
+	name = gov_andean
+	graphics = GFX_evt_aztec_court
+	priority = 2
+	trigger = {
+		independent = yes
+		religion_group = inti_group
+	}
+}
+
 #government_flavor = {
 #	name = gov_hereditary_zun
 #	graphics = GFX_evt_sun_temple

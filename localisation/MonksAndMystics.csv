@@ -214,11 +214,19 @@ the_satanists_rank_2_male;Conjurer;Sorcier;Beschwörer;;Conjurador;;;;;;;;;x
 the_satanists_rank_3_male;Priest;Prêtre;Priester;;Sacerdote;;;;;;;;;x
 the_satanists_rank_4_male;High Priest;Grand prêtre;Hohepriester;;Sumo sacerdote;;;;;;;;;x
 currency_name_the_assassins;Divine Power;Pouvoir divin;Göttliche Macht;;Poder divino;;;;;;;;;x
+currency_name_the_assassins_bud_mahayana;Divine Power;Pouvoir divin;Göttliche Macht;;Poder divino;;;;;;;;;x
+currency_name_the_assassins_mani_ahriman;Divine Power;Pouvoir divin;Göttliche Macht;;Poder divino;;;;;;;;;x
+currency_name_the_assassins_priscillian;Divine Power;Pouvoir divin;Göttliche Macht;;Poder divino;;;;;;;;;x
+currency_name_the_assassins_ragnarok;Divine Power;Pouvoir divin;Göttliche Macht;;Poder divino;;;;;;;;;x
+currency_name_the_assassins_set;Divine Power;Pouvoir divin;Göttliche Macht;;Poder divino;;;;;;;;;x
+currency_name_the_assassins_tengri_ahriman;Divine Power;Pouvoir divin;Göttliche Macht;;Poder divino;;;;;;;;;x
+currency_name_the_assassins_yahyanism;Divine Power;Pouvoir divin;Göttliche Macht;;Poder divino;;;;;;;;;x
+currency_name_the_assassins_zor_angra;Divine Power;Pouvoir divin;Göttliche Macht;;Poder divino;;;;;;;;;x
 currency_name_the_satanists;Dark Power;Pouvoir obscur;Dunkle Macht;;Poder oscuro;;;;;;;;;x
 currency_name_the_trollcrafters;Dark Power;Pouvoir obscur;Dunkle Macht;;Poder oscuro;;;;;;;;;x
 currency_name_the_cult_of_kali;Dark Power;Pouvoir obscur;Dunkle Macht;;Poder oscuro;;;;;;;;;x
 currency_name_the_plaguebringers;Dark Power;Pouvoir obscur;Dunkle Macht;;Poder oscuro;;;;;;;;;x
-currency_name_the_cold_ones;Dark Power;Pouvoir obscur;Dunkle Macht;;Poder oscuro;;;;;;;;;x
+currency_name_the_neo_sarkites;Dark Power;Pouvoir obscur;Dunkle Macht;;Poder oscuro;;;;;;;;;x
 common_interests_opinion;Common Interests;Intérêts en commun;Gemeinsame Interessen;;Intereses comunes;;;;;;;;;x
 EVTDESC_37252;You are bent low over your [Root.GetEducationTool], struggling to stay focused and to keep your eyes open, when your [From.GetHusbandWife] [From.GetTitledFirstName] enters. [From.GetSheHeCap] crosses the room and inspects the [Root.GetEducationTool] over your shoulder. "Perhaps a fresh pair of eyes might prove helpful, dear [Root.GetHusbandWife]?";Vous êtes penché[Root.Get_E] sur [Root.GetEducationTool], luttant pour rester concentré[Root.Get_E] et garder les yeux ouverts, lorsque votre [From.GetHusbandWife], [From.Get_le_TitledFirstName], entre. [From.GetIlElleCap] traverse la pièce et examine [Root.GetEducationTool] par-dessus votre épaule. « Peut-être qu'un autre regard pourrait se révéler utile, m[Root.GetOnA] ch[Root.GetErEre] [Root.GetHusbandWife] ? »;Ihr seid über etwas ([Root.GetEducationTool]) gebeugt und versucht, Euch zu konzentrieren und Eure Augen offenzuhalten, als [From.GetEuerEure] [From.GetHusbandWife] [From.GetTitledFirstName] das Zimmer betritt. [From.GetSheHeCap] kommt auf Euch zu und sieht sich über Eure Schulter an, was Ihr studiert. "Vielleicht wäre ein frisches Paar Augen hilfreich, mein Liebling?";;Mientras estudiabas [Root.GetEducationTool] y luchabas por mantener los ojos abiertos, entró en la sala tu [From.GetHusbandWife] [From.GetTitledFirstName] y se puso a mirar por encima de tu hombro. "Dicen que cuatro ojos ven más que dos".;;;;;;;;;x
 EVTOPTA_37252;Perhaps you are right, [From.GetFirstName].;Peut-être avez-vous raison, [From.GetFirstName].;Vielleicht hast du recht, [From.GetFirstName].;;Tal vez tengas razón, [From.GetFirstName].;;;;;;;;;x
@@ -1071,8 +1079,8 @@ String_GetDWDevil_fallback;the Devil;le Démon;Teufel;;el diablo;;;;;;;;;x
 String_GetDWDevilCap_fallback;The Devil;Le Démon;Teufel;;El diablo;;;;;;;;;x
 String_witch;witch;sorcière;Hexe;;bruja;;;;;;;;;x
 String_warlock;witch;sorcier;Hexer;;brujo;;;;;;;;;x
-String_koldunya;koldunya;koldunya;Koldunya;;koldunya;;;;;;;;;x
-String_koldun;koldun;koldun;Koldun;;koldun;;;;;;;;;x
+String_Pursuer of Apotheosis;Pursuer of Apotheosis;Pursuer of Apotheosis;Pursuer of Apotheosis;;Pursuer of Apotheosis;;;;;;;;;x
+String_Pursuer of Apotheosis;Pursuer of Apotheosis;Pursuer of Apotheosis;Pursuer of Apotheosis;;Pursuer of Apotheosis;;;;;;;;;x
 String_GetDWMagician_fallback;practitioner of magic;praticien de la magie;Experte der Magie;;practicante de magia;;;;;;;;;x
 String_demon;demon;démon;Dämon;;demonio/a;;;;;;;;;x
 String_likho;likho;likho;Likho;;likho;;;;;;;;;x
@@ -1114,7 +1122,7 @@ String_sainikon;sainikon;sainikon;Sainikon;;sainikon;;;;;;;;;x
 String_the_Plaguebringers;the Plaguebringers;les Porteurs de la Peste;Seuchenbringer;;los pandemonios;;;;;;;;;x
 String_the_Cult_of_Kali_Purusha;the Cult of Kali Purusha;les Adeptes de Kâli Purusha;Kult der Kali Purusha;;los adoradores de Kali Purusha;;;;;;;;;x
 String_the_Cold_Ones;the Cold Ones;les Sangs Froids;Kalte;;los fríos;;;;;;;;;x
-String_Chernobog;Chernobog;Tchernobog;Chernobog;;Chernabog;;;;;;;;;x
+String_Grand_Karcist_Ion;Grand Karcist Ion;Grand Karcist Ion;Grand Karcist Ion;;Grand Karcist Ion;;;;;;;;;x
 String_Kali;Kali Purusha;Kâli Purusha;Kali;;Kali;;;;;;;;;x
 String_Erlik;Erlik;Erlik;Erlik;;Erlik;;;;;;;;;x
 String_Iblis;Iblis;Iblis;Iblis;;Iblis;;;;;;;;;x
@@ -2269,14 +2277,14 @@ the_trollcrafters_rank_3_female;Seiðkona;Seiðkona;Seiðkona;;Seiðkona;;;;;;;;;x
 the_trollcrafters_rank_3_male;Seiðmaðr;Seiðmaðr;Seiðmaðr;;Seiðmaðr;;;;;;;;;x
 the_trollcrafters_rank_4_female;Trollkona;Trollkona;Trollkona;;Trollkona;;;;;;;;;x
 the_trollcrafters_rank_4_male;Trollmaðr;Trollmaðr;Trollmaðr;;Trollmaðr;;;;;;;;;x
-the_cold_ones_rank_1_female;Uchenik;Uchenik;Uchenik;;Uchenik;;;;;;;;;x
-the_cold_ones_rank_1_male;Uchenik;Uchenik;Uchenik;;Uchenik;;;;;;;;;x
-the_cold_ones_rank_2_female;Zhritsa;Zhritsa;Zhritsa;;Zhritsa;;;;;;;;;x
-the_cold_ones_rank_2_male;Zhrets;Zhrets;Zhrets;;Zhrets;;;;;;;;;x
-the_cold_ones_rank_3_female;Koldunya;Koldunya;Koldunya;;Koldunya;;;;;;;;;x
-the_cold_ones_rank_3_male;Koldun;Koldun;Koldun;;Koldun;;;;;;;;;x
-the_cold_ones_rank_4_female;Vedma;Vedma;Vedma;;Vedma;;;;;;;;;x
-the_cold_ones_rank_4_male;Vedun;Vedoun;Vedun;;Vedun;;;;;;;;;x
+the_neo_sarkites_rank_1_female;Shepherd of the Flesh;Shepherd of the Flesh;Shepherd of the Flesh;;Shepherd of the Flesh;;;;;;;;;x
+the_neo_sarkites_rank_1_male;Shepherd of the Flesh;Shepherd of the Flesh;Shepherd of the Flesh;;Shepherd of the Flesh;;;;;;;;;x
+the_neo_sarkites_rank_2_female;Protector of the Valkzaron;Protector of the Valkzaron;Protector of the Valkzaron;;Protector of the Valkzaron;;;;;;;;;x
+the_neo_sarkites_rank_2_male;Protector of the Valkzaron;Protector of the Valkzaron;Protector of the Valkzaron;;Protector of the Valkzaron;;;;;;;;;x
+the_neo_sarkites_rank_3_female;Pursuer of Apotheosis;Pursuer of Apotheosis;Pursuer of Apotheosis;;Pursuer of Apotheosis;;;;;;;;;x
+the_neo_sarkites_rank_3_male;Pursuer of Apotheosis;Pursuer of Apotheosis;Pursuer of Apotheosis;;Pursuer of Apotheosis;;;;;;;;;x
+the_neo_sarkites_rank_4_female;Theophagite;Theophagite;Theophagite;;Theophagite;;;;;;;;;x
+the_neo_sarkites_rank_4_male;Theophagite;Theophagite;Theophagite;;Theophagite;;;;;;;;;x
 the_cult_of_kali_rank_1_female;Deceiver;Imposteur;Schwindlerin;;Falsaria;;;;;;;;;x
 the_cult_of_kali_rank_1_male;Deceiver;Imposteur;Schwindler;;Falsario;;;;;;;;;x
 the_cult_of_kali_rank_2_female;Jemadar;Jemadar;Jemadar;;Jemadar;;;;;;;;;x
@@ -3902,6 +3910,14 @@ SHOW_INTEREST_DESC;By carefully showing subtle interest in joining this Society 
 STOP_SHOWING_INTEREST;Withdraw interest in joining the $SOCIETY|Y$.;Ne plus montrer son intérêt pour la société '$SOCIETY|Y$'.;Beendet Euer Interesse an einem Beitritt zu diesem Zirkel ($SOCIETY|Y$);;Dejas de mostrar interés por unirte a $SOCIETY|Y$.;;;;;;;;;x
 STOP_SHOWING_INTEREST_DESC;By refusing to respond to the secret signs flashed at you by shadowy strangers you can make it clear you no longer have any interest in joining $SOCIETY|Y$.;En refusant de répondre aux signes secrets émis par d'obscurs inconnus, vous pouvez faire comprendre que vous n'avez plus aucun intérêt à rejoindre la société '$SOCIETY|Y$'.;Wenn Ihr Euch weigert, auf die geheimen Zeichen zu reagieren, die man Euch durch zwielichtige Fremde übermitteln lässt, könnt Ihr durchblicken lassen, dass Ihr an einem Betritt zum Zirkel ($SOCIETY|Y$) nicht mehr länger interessiert seid.;;Negándote a responder a las señales secretas que te envían ciertos desconocidos sospechosos dejarás claro que ya no te interesa unirte a $SOCIETY|Y$.;;;;;;;;;x
 the_assassins_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+the_assassins_bud_mahayana_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+the_assassins_mani_ahriman_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+the_assassins_priscillian_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+the_assassins_ragnarok_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+the_assassins_set_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+the_assassins_tengri_ahriman_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+the_assassins_yahyanism_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+the_assassins_zor_angra_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
 the_satanists_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
 String_monk;monk;e moine;Mönch;;monje;;;;;;;;;x
 String_nun;nun;a nonne;Nonne;;monja;;;;;;;;;x
@@ -4831,7 +4847,7 @@ monastic_order_hindu_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[
 monastic_order_buddhist_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
 monastic_order_jain_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
 the_plaguebringers_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
-the_cold_ones_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+the_neo_sarkites_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
 the_trollcrafters_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
 the_cult_of_kali_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
 EVTDESC933;A noble in [Root.Location.GetName] caught me while I was spying there!;Un noble en [Root.Location.GetName] m'a surpris[Root.Get_E] en train d'espionner !;Ein Adliger in [Root.Location.GetName] hat mich beim Spionieren ertappt!;;¡Un noble en [Root.Location.GetName] me descubrió mientras espiaba!;;;;;;;;;x
@@ -5955,3 +5971,12 @@ on_indian_pilgrimage;On pilgrimage;En pèlerinage;Auf Pilgerfahrt;;De peregrinaci
 on_indian_pilgrimage_desc;The character is currently away on a great pilgrimage.;Ce personnage est actuellement parti en pèlerinage.;Diese Figur ist sich zur Zeit auf einer Pilgerfahrt und daher abwesend.;;El personaje está fuera, en una gran peregrinación.;;;;;;;;;x
 temple_baron_female_christian;Bishop;Évêque;Bischof;;Obispo;;;;;;;;;x
 String_spahis;spahis;spahis;Spahis;;spahis;;;;;;;;;x
+expelled_d_hashshashin;Expelled the Hashshashin;Hashshâshîns expulsés;Die Haschaschim vertrieben;;Hashshashins expulsados;;;;;;;;;x
+expelled_d_enemies_of_avidya;Expelled the Enemies Of Avidya;Hashshâshîns expulsés;Die Haschaschim vertrieben;;Hashshashins expulsados;;;;;;;;;x
+expelled_d_ahrimans_divs;Expelled the Ahrimans Divs;Hashshâshîns expulsés;Die Haschaschim vertrieben;;Hashshashins expulsados;;;;;;;;;x
+expelled_d_holy_doctors;Expelled the Holy Doctors;Hashshâshîns expulsés;Die Haschaschim vertrieben;;Hashshashins expulsados;;;;;;;;;x
+expelled_d_council_of_aesir;Expelled the Council Of Aesir;Hashshâshîns expulsés;Die Haschaschim vertrieben;;Hashshashins expulsados;;;;;;;;;x
+expelled_d_warriors_of_oasis;Expelled the Warriors Of Oasis;Hashshâshîns expulsés;Die Haschaschim vertrieben;;Hashshashins expulsados;;;;;;;;;x
+expelled_d_blue_wolves;Expelled the Blue Wolves;Hashshâshîns expulsés;Die Haschaschim vertrieben;;Hashshashins expulsados;;;;;;;;;x
+expelled_d_order_of_righteous;Expelled the Order Of Righteous;Hashshâshîns expulsés;Die Haschaschim vertrieben;;Hashshashins expulsados;;;;;;;;;x
+expelled_d_avengers_of_holy_pyre;Expelled the Avengers Of Holy Pyre;Hashshâshîns expulsés;Die Haschaschim vertrieben;;Hashshashins expulsados;;;;;;;;;x

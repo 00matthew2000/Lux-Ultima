@@ -29759,6 +29759,127 @@ african_pagan_group = {
 	}
 }
 
+inti_group = {
+	graphical_culture = mesoamericangfx
+    playable = yes
+	has_coa_on_barony_only = no
+	hostile_within_group = yes
+
+	color = { 0.49 0.82 0.16 }
+	
+	inti_reformed = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		secondary_event_pictures = odinane
+
+		icon = 35
+		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.66 0.44 0.15 }
+		alternate_start = { always = no }
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = NANGA
+		
+		high_god_name = "Inti"
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_ZIMWI
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		short_reign_opinion_year_mult = 1.5
+
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		intermarry = inti
+		aggression = 1.3 # AI aggression factor
+	}
+	
+
+	inti = {
+		graphical_culture = mesoamericangfx
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 0.11 0.22 0.33 }
+
+		scripture_name = THE_QUIPUS
+		priest_title = UMU_MAMAKUNA
+		
+		high_god_name = "Tiqsi Wiraqutra"
+		
+		god_names = {
+			"Inti" "Mama Killa" "Pachamama" "Manco Capac" "Mama Uqllu" "Mama Qucha" "Illapa" "Apus" "Imaymana and Tocapo"
+		}
+		evil_god_names = {
+			"Supay"
+		}
+		
+		unit_modifier = {		
+			garrison_size = 0.3
+			levy_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.9
+			light_infantry_defensive = 0.9
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.7
+			knights_defensive = 0.9
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.7
+			camel_cavalry_defensive = 0.7
+			war_elephants_defensive = 0.7
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+	
+		max_consorts = 5
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = inti_reformed
+
+		short_reign_opinion_year_mult = 2
+		
+		aggression = 1 # AI aggression factor
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		
+	}
+}
+
 native_american_group = {
     graphical_culture = mesoamericangfx
     playable = yes
@@ -31228,118 +31349,6 @@ native_american_group = {
 		}
 		evil_god_names = {
 			"Lasadawanka" "Pruradawanka"
-		}
-		
-		unit_modifier = {		
-			garrison_size = 0.3
-			levy_size = 0.1
-			
-			key = "DEF_RELIGION"
-		}
-		unit_home_modifier = {
-			land_morale = 0.9
-			light_infantry_defensive = 0.9
-			heavy_infantry_defensive = 0.8
-			pikemen_defensive = 0.8
-			light_cavalry_defensive = 0.7
-			knights_defensive = 0.9
-			archers_defensive = 0.8
-			horse_archers_defensive = 0.7
-			camel_cavalry_defensive = 0.7
-			war_elephants_defensive = 0.7
-			
-			garrison_size = 0.4
-			
-			key = "DEF_RELIGION_HOME_TERRITORY"
-		}
-
-		
-		priests_can_marry = yes
-		female_temple_holders = yes
-		defensive_attrition = yes
-		allow_looting = yes
-	
-		max_consorts = 5
-		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		reformed = inti_reformed
-
-		short_reign_opinion_year_mult = 2
-		
-		aggression = 1 # AI aggression factor
-
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-		
-		dislike_tribal_organization = yes
-		can_demand_religious_conversion = no
-		
-	}
-
-	inti_reformed = {
-		graphical_culture = mesoamericangfx
-		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
-		secondary_event_pictures = odinane
-
-		icon = 35
-		heresy_icon = 36
-		
-		ai_convert_other_group = 2 # always try to convert
-		
-		color = { 0.66 0.44 0.15 }
-		alternate_start = { always = no }
-		
-		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
-		priest_title = NANGA
-		
-		high_god_name = "Inti"
-		
-		god_names = {
-			GOD_THE_SPIRITS GOD_THE_ANCESTORS
-		}
-		evil_god_names = {
-			THE_ZIMWI
-		}
-
-		
-		priests_can_marry = yes
-		female_temple_holders = yes
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		allow_looting = yes
-		short_reign_opinion_year_mult = 1.5
-
-		max_consorts = 3
-		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-		
-		allow_in_ruler_designer = no
-		intermarry = inti
-		aggression = 1.3 # AI aggression factor
-	}
-	
-
-	inti = {
-		graphical_culture = mesoamericangfx
-		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
-
-		icon = 34
-		heresy_icon = 35
-		
-		color = { 0.11 0.22 0.33 }
-
-		scripture_name = THE_QUIPUS
-		priest_title = UMU_MAMAKUNA
-		
-		high_god_name = "Tiqsi Wiraqutra"
-		
-		god_names = {
-			"Inti" "Mama Killa" "Pachamama" "Manco Capac" "Mama Uqllu" "Mama Qucha" "Illapa" "Apus" "Imaymana and Tocapo"
-		}
-		evil_god_names = {
-			"Supay"
 		}
 		
 		unit_modifier = {		

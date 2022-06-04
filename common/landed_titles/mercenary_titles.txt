@@ -675,6 +675,31 @@ d_holyindoh_zor = {
 	strength_growth_per_century = 0.5
 	mercenary_type = d_holyindoh_zor_composition
 }
+d_holyinti = {
+	color = { 255 100 25 }
+	color2 = { 255 255 255 }
+	capital = 3936
+
+	holy_order = yes
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	culture = quechua
+
+	# Parent Religion/Culture
+	religion = inti
+
+	# Cannot be held as a secondary title
+	primary = yes
+
+	strength_growth_per_century = 0.5
+	mercenary_type = d_holyinti_composition
+}
 d_holyjain = {
 	color = { 1.0 1.0 0.4  }
 	color2 = { 255 255 255 }
@@ -2374,6 +2399,31 @@ d_holyindohelen_reformed = {
 
 	strength_growth_per_century = 0.5
 	mercenary_type = d_holyindohelen_reformed_composition
+}
+d_holyinti_reformed = {
+	color = { 0.6 0.3 0.3 }
+	color2 = { 255 255 255 }
+	capital = 3936
+
+	holy_order = yes
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	culture = quechua
+
+	# Parent Religion/Culture
+	religion = inti_reformed
+
+	# Cannot be held as a secondary title
+	primary = yes
+
+	strength_growth_per_century = 0.5
+	mercenary_type = d_holyinti_reformed_composition
 }
 d_holyinuit_pagan_reformed = {
 	color = { 0.6 0.3 0.3 }

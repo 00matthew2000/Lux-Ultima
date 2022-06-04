@@ -3737,6 +3737,7 @@ character_event = {
 						trait = sympathy_finnish
 						trait = sympathy_graecoroman
 						trait = sympathy_indohellens
+						trait = sympathy_intis
 						trait = sympathy_inuit
 						trait = sympathy_luwians
 						trait = sympathy_mande
@@ -4124,6 +4125,22 @@ character_event = {
 					}
 				}
 				10 = {
+					set_character_flag = add_sympathy_intis
+					modifier = {
+						factor = 0
+						religion_group = inti_group
+					}
+					modifier = {
+						factor = 0
+						NOR = {
+							educator = { religion_group = inti_group }
+							location = { religion_group = inti_group }
+							any_friend = { religion_group = inti_group }
+							any_sibling = { religion_group = inti_group }
+						}
+					}
+				}
+				10 = {
 					set_character_flag = add_sympathy_inuit
 					modifier = {
 						factor = 0
@@ -4371,6 +4388,7 @@ character_event = {
 						trait = sympathy_finnish
 						trait = sympathy_graecoroman
 						trait = sympathy_indohellens
+						trait = sympathy_intis
 						trait = sympathy_inuit
 						trait = sympathy_luwians
 						trait = sympathy_mande
@@ -4608,6 +4626,12 @@ character_event = {
 			remove_trait = curious
 			add_trait = sympathy_indohellens
 			clr_character_flag = add_sympathy_indohellens
+		}
+		if = {
+			limit = { has_character_flag = add_sympathy_intis }
+			remove_trait = curious
+			add_trait = sympathy_intis
+			clr_character_flag = add_sympathy_intis
 		}
 		if = {
 			limit = { has_character_flag = add_sympathy_inuit }
@@ -4952,6 +4976,14 @@ character_event = {
 				}
 			}
 			tooltip = { FROM = { remove_trait = curious add_trait = sympathy_indohellens } }
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_character_flag = add_sympathy_intis
+				}
+			}
+			tooltip = { FROM = { remove_trait = curious add_trait = sympathy_intis } }
 		}
 		if = {
 			limit = {
@@ -5318,6 +5350,11 @@ character_event = {
 			clr_character_flag = add_sympathy_indohellens
 		}
 		if = {
+			limit = { has_character_flag = add_sympathy_intis }
+			add_trait = sympathy_intis
+			clr_character_flag = add_sympathy_intis
+		}
+		if = {
 			limit = { has_character_flag = add_sympathy_inuit }
 			add_trait = sympathy_inuit
 			clr_character_flag = add_sympathy_inuit
@@ -5463,6 +5500,7 @@ character_event = {
 						trait = sympathy_finnish
 						trait = sympathy_graecoroman
 						trait = sympathy_indohellens
+						trait = sympathy_intis
 						trait = sympathy_inuit
 						trait = sympathy_luwians
 						trait = sympathy_mande
@@ -5544,6 +5582,7 @@ character_event = {
 						trait = sympathy_finnish
 						trait = sympathy_graecoroman
 						trait = sympathy_indohellens
+						trait = sympathy_intis
 						trait = sympathy_inuit
 						trait = sympathy_luwians
 						trait = sympathy_mande

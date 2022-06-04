@@ -1761,39 +1761,55 @@ defined_text = {
 		localisation_key = the_assassins_zor_angra
 		trigger = { society_member_of = the_assassins_zor_angra }
 	}
-#	text = {
-#		localisation_key = the_satanists
-#		trigger = { society_member_of = the_satanists }
-#	}
-#	text = {
-#		localisation_key = the_bacchants
-#		trigger = { society_member_of = the_bacchants }
-#	}
-#	text = {
-#		localisation_key = the_cold_ones
-#		trigger = { society_member_of = the_cold_ones }
-#	}
-#	text = {
-#		localisation_key = the_trollcrafters
-#		trigger = { society_member_of = the_trollcrafters }
-#	}
-#	text = {
-#		localisation_key = the_cult_of_kali
-#		trigger = { society_member_of = the_cult_of_kali }
-#	}
-#	text = {
-#		localisation_key = the_plaguebringers
-#		trigger = { society_member_of = the_plaguebringers }
-#	}
-#	text = {
-#		localisation_key = monastic_order_benedictine
-#		trigger = {
-#			society_member_of = monastic_order_benedictine
-#			NOT = {
-#				has_alternate_start_parameter = { key = religion_names value = random }
-#			}
-#		}
-#	}
+	text = {
+		localisation_key = the_satanists
+		trigger = { society_member_of = the_satanists }
+	}
+	text = {
+		localisation_key = the_bacchants
+		trigger = { society_member_of = the_bacchants }
+	}
+	text = {
+		localisation_key = the_neo_sarkites
+		trigger = { society_member_of = the_neo_sarkites }
+	}
+	text = {
+		localisation_key = the_trollcrafters
+		trigger = { society_member_of = the_trollcrafters }
+	}
+	text = {
+		localisation_key = the_cult_of_kali
+		trigger = { society_member_of = the_cult_of_kali }
+	}
+	text = {
+		localisation_key = the_plaguebringers
+		trigger = { society_member_of = the_plaguebringers }
+	}
+	text = {
+		localisation_key = the_cult_of_balor
+		trigger = { society_member_of = the_cult_of_balor }
+	}
+	text = {
+		localisation_key = cult_of_angra_mainyu
+		trigger = { society_member_of = cult_of_angra_mainyu }
+	}
+	text = {
+		localisation_key = String_arab_jinn_sorcerers
+		trigger = { society_member_of = arab_jinn_sorcerers }
+	}
+	text = {
+		localisation_key = String_cult_of_apep
+		trigger = { society_member_of = cult_of_apep }
+	}
+	text = {
+		localisation_key = monastic_order_benedictine
+		trigger = {
+			society_member_of = monastic_order_benedictine
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+	}
 #	text = {
 #		localisation_key = monastic_order_benedictine
 #		trigger = {
@@ -1918,8 +1934,8 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_Chernobog
-		trigger = { society_member_of = the_cold_ones
+		localisation_key = String_Grand_Karcist_Ion
+		trigger = { society_member_of = the_neo_sarkites
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		}
 	}
@@ -1927,6 +1943,17 @@ defined_text = {
 		localisation_key = String_Kali
 		trigger = { society_member_of = the_cult_of_kali 
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
+		}
+	}
+	text = {
+		localisation_key = String_Balor
+		trigger = { society_member_of = the_cult_of_balor }
+	}
+	text = {
+		localisation_key = String_Angra_Mainyu
+		trigger = {
+			society_member_of = cult_of_angra_mainyu
+			NOT = { culture_group = iranian }
 		}
 	}
 	text = {
@@ -1952,6 +1979,14 @@ defined_text = {
 		trigger = { society_member_of = the_vodouns
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		}
+	}
+	text = {
+		localisation_key = String_jinns
+		trigger = { society_member_of = arab_jinn_sorcerers }
+	}
+	text = {
+		localisation_key = String_Apep
+		trigger = { society_member_of = cult_of_apep }
 	}
 	fallback_text = {
 		localisation_key = String_Random_Devil
@@ -1991,7 +2026,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_koldovstvo
-		trigger = { society_member_of = the_cold_ones } 
+		trigger = { society_member_of = the_neo_sarkites } 
 	}
 	text = {
 		localisation_key = String_seiðr
@@ -2002,8 +2037,24 @@ defined_text = {
 		trigger = { society_member_of = the_plaguebringers } 
 	}
 	text = {
+		localisation_key = String_black_magic
+		trigger = { society_member_of = the_cult_of_balor } 
+	}
+	text = {
+		localisation_key = String_black_magic
+		trigger = { society_member_of = cult_of_angra_mainyu } 
+	}
+	text = {
 		localisation_key = String_dark_tantras
 		trigger = { society_member_of = the_cult_of_kali } 
+	}
+	text = {
+		localisation_key = String_sihr
+		trigger = { society_member_of = arab_jinn_sorcerers } 
+	}
+	text = {
+		localisation_key = String_black_magic
+		trigger = { society_member_of = cult_of_apep } 
 	}
 	text = {
 		localisation_key = String_sorcery
@@ -2040,7 +2091,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_likho
-		trigger = { society_member_of = the_cold_ones 
+		trigger = { society_member_of = the_neo_sarkites 
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		} 
 	}
@@ -2077,6 +2128,18 @@ defined_text = {
 	fallback_text = {
 		localisation_key = String_demon
 	}
+	text = {
+		localisation_key = String_Dark_Spirit
+		trigger = { society_member_of = the_cult_of_balor } 
+	}
+	text = {
+		localisation_key = String_demon
+		trigger = { society_member_of = cult_of_angra_mainyu } 
+	}
+	text = {
+		localisation_key = String_Apep
+		trigger = { society_member_of = cult_of_apep }
+	}
 }
 
 defined_text = {
@@ -2098,13 +2161,12 @@ defined_text = {
 		localisation_key = String_jinns
 		trigger = { 
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
-			society_member_of = the_satanists 
-			religion_group = muslim
+			society_member_of = arab_jinn_sorcerers
 		} 
 	}
 	text = {
 		localisation_key = String_likhos
-		trigger = { society_member_of = the_cold_ones 
+		trigger = { society_member_of = the_neo_sarkites 
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		} 
 	}
@@ -2140,6 +2202,18 @@ defined_text = {
 	}
 	fallback_text = {
 		localisation_key = String_demons
+	}
+	text = {
+		localisation_key = String_Dark_Spirits
+		trigger = { society_member_of = the_cult_of_balor } 
+	}
+	text = {
+		localisation_key = String_demons
+		trigger = { society_member_of = cult_of_angra_mainyu } 
+	}
+	text = {
+		localisation_key = String_Dark_Spirits
+		trigger = { society_member_of = cult_of_apep } 
 	}
 }
 
@@ -2192,14 +2266,14 @@ defined_text = {
 		localisation_key = String_koldunya
 		trigger = {
 			is_female = yes
-			society_member_of = the_cold_ones
+			society_member_of = the_neo_sarkites
 		}
 	}
 	text = {
 		localisation_key = String_koldun
 		trigger = {
 			is_female = no
-			society_member_of = the_cold_ones
+			society_member_of = the_neo_sarkites
 		}
 	}
 	text = {
@@ -2224,6 +2298,68 @@ defined_text = {
 		localisation_key = String_dark_tantrik
 		trigger = {
 			society_member_of = the_cult_of_kali
+		}
+	}
+	text = {
+		localisation_key = String_sorceress
+		trigger = {
+			is_female = yes
+			OR = {
+				society_member_of = the_ghost_gatherers
+				society_member_of = the_underworld_triad
+				society_member_of = the_sacrificers
+				society_member_of = the_procession_of_pox
+				society_member_of = arab_jinn_sorcerers
+			}
+		}
+	}
+	text = {
+		localisation_key = String_sorcerer
+		trigger = {
+			is_female = no
+			OR = {
+				society_member_of = the_ghost_gatherers
+				society_member_of = the_underworld_triad
+				society_member_of = the_sacrificers
+				society_member_of = the_procession_of_pox
+				society_member_of = the_cult_of_balor
+				society_member_of = arab_jinn_sorcerers
+			}
+		}
+	}
+	text = {
+		localisation_key = String_witch
+		trigger = {
+			is_female = yes
+			society_member_of = the_cult_of_balor
+		}
+	}
+	text = {
+		trigger = {
+			society_member_of = cult_of_angra_mainyu
+			culture = persian
+		}
+		localisation_key = String_div
+	}
+	text = {
+		trigger = {
+			society_member_of = cult_of_angra_mainyu
+			culture_group = iranian
+			NOT = { culture = persian }
+		}
+		localisation_key = String_dew
+	}
+	text = {
+		trigger = {
+			society_member_of = cult_of_angra_mainyu
+			NOT = { culture_group = iranian }
+		}
+		localisation_key = String_daeva
+	}
+	text = {
+		localisation_key = String_cultist
+		trigger = {
+			society_member_of = cult_of_apep
 		}
 	}
 }
@@ -2277,14 +2413,14 @@ defined_text = {
 		localisation_key = String_koldunyas
 		trigger = {
 			is_female = yes
-			society_member_of = the_cold_ones
+			society_member_of = the_neo_sarkites
 		}
 	}
 	text = {
 		localisation_key = String_kolduns
 		trigger = {
 			is_female = no
-			society_member_of = the_cold_ones
+			society_member_of = the_neo_sarkites
 		}
 	}
 	text = {
@@ -2309,6 +2445,30 @@ defined_text = {
 		localisation_key = String_dark_tantriks
 		trigger = {
 			society_member_of = the_cult_of_kali
+		}
+	}
+	text = {
+		localisation_key = String_sorceresses
+		trigger = {
+			is_female = yes
+			OR = {
+				society_member_of = the_ghost_gatherers
+				society_member_of = the_underworld_triad
+				society_member_of = the_sacrificers
+				society_member_of = the_procession_of_pox
+			}
+		}
+	}
+	text = {
+		localisation_key = String_sorcerers
+		trigger = {
+			is_female = no
+			OR = {
+				society_member_of = the_ghost_gatherers
+				society_member_of = the_underworld_triad
+				society_member_of = the_sacrificers
+				society_member_of = the_procession_of_pox
+			}
 		}
 	}
 }
@@ -2338,7 +2498,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_Glory_to_the_Black_God
-		trigger = { society_member_of = the_cold_ones 
+		trigger = { society_member_of = the_neo_sarkites 
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		}
 	}
@@ -2347,6 +2507,24 @@ defined_text = {
 		trigger = { society_member_of = the_cult_of_kali 
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		}
+	}
+	text = {
+		localisation_key = String_Glory_to_the_Smiter
+		trigger = { society_member_of = the_cult_of_balor }
+	}
+	#FYI, having two triggers pass will act as random
+	text = {
+		localisation_key = String_Glory_to_Chaos
+		trigger = {
+			OR = {
+				society_member_of = cult_of_angra_mainyu
+				society_member_of = cult_of_apep
+			}
+		}
+	}
+	text = {
+		localisation_key = String_Glory_to_the_Deceiver
+		trigger = { society_member_of = cult_of_angra_mainyu }
 	}
 	text = {
 		localisation_key = String_Glory_to_the_God_of_Death
@@ -2359,6 +2537,10 @@ defined_text = {
 		trigger = { society_member_of = the_trollcrafters 
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		}
+	}
+	text = {
+		localisation_key = String_Praise_the_Jinn
+		trigger = { society_member_of = arab_jinn_sorcerers }
 	}
 	text = {
 		localisation_key = String_Praise_to_Bacchus
@@ -5425,25 +5607,25 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			society_member_of = the_cold_ones
+			society_member_of = the_neo_sarkites
 		}
 		localisation_key = String_Baba_Yaga
 	}
 	text = {
 		trigger = {
-			society_member_of = the_cold_ones
+			society_member_of = the_neo_sarkites
 		}
 		localisation_key = String_Berstuk
 	}
 	text = {
 		trigger = {
-			society_member_of = the_cold_ones
+			society_member_of = the_neo_sarkites
 		}
 		localisation_key = String_the_Shishigas
 	}
 	text = {
 		trigger = {
-			society_member_of = the_cold_ones
+			society_member_of = the_neo_sarkites
 		}
 		localisation_key = String_Polunocnica
 	}
@@ -5479,6 +5661,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			society_member_of = the_cult_of_balor
+		}
+		localisation_key = String_Dark_Spirit
+	}
+	text = {
+		trigger = {
 			society_member_of = the_trollcrafters
 		}
 		localisation_key = String_Angrboda
@@ -5500,6 +5688,18 @@ defined_text = {
 			society_member_of = the_trollcrafters
 		}
 		localisation_key = String_Great_Loki
+	}
+	text = {
+		trigger = {
+			society_member_of = arab_jinn_sorcerers
+		}
+		localisation_key = String_Iblis
+	}
+	text = {
+		trigger = {
+			society_member_of = arab_jinn_sorcerers
+		}
+		localisation_key = String_Ifrit
 	}
 	text = {
 		trigger = {
@@ -5578,6 +5778,12 @@ defined_text = {
 			society_member_of = the_vodouns
 		}
 		localisation_key = String_Nyamia
+	}
+	text = {
+		trigger = {
+			society_member_of = cult_of_apep
+		}
+		localisation_key = String_Apep
 	}
 }
 
@@ -5705,7 +5911,7 @@ defined_text = {
 	text = {
 		trigger = {
 			NOR = {
-				society_member_of = the_cold_ones
+				society_member_of = the_neo_sarkites
 				society_member_of = the_plaguebringers
 			}
 		}
@@ -5713,7 +5919,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			society_member_of = the_cold_ones
+			society_member_of = the_neo_sarkites
 		}
 		localisation_key = String_Winter
 	}
@@ -5748,7 +5954,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 			OR = {
-				society_member_of = the_cold_ones
+				society_member_of = the_neo_sarkites
 				society_member_of = the_plaguebringers
 			}
 		}
@@ -5780,6 +5986,46 @@ defined_text = {
 		trigger = { society_member_of = the_vodouns
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		} 
+	}
+	text = {
+		trigger = {
+			society_member_of = the_cult_of_balor
+		}
+		localisation_key = String_Dark_Spirit_Lord
+	}
+	text = {
+		trigger = {
+			society_member_of = cult_of_angra_mainyu
+			culture = persian
+		}
+		localisation_key = String_mighty_div
+	}
+	text = {
+		trigger = {
+			society_member_of = cult_of_angra_mainyu
+			culture_group = iranian
+			NOT = { culture = persian }
+		}
+		localisation_key = String_mighty_dew
+	}
+	text = {
+		trigger = {
+			society_member_of = cult_of_angra_mainyu
+			NOT = { culture_group = iranian }
+		}
+		localisation_key = String_mighty_daeva
+	}
+	text = {
+		trigger = {
+			society_member_of = arab_jinn_sorcerers
+		}
+		localisation_key = String_jinns
+	}
+	text = {
+		trigger = {
+			society_member_of = cult_of_apep
+		}
+		localisation_key = String_Eater_of_Souls
 	}
 	fallback_text = {
 		localisation_key = String_Demon_Prince

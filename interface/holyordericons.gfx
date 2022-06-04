@@ -442,6 +442,23 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_borrow_money_d_holyinti"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_d_holyinti"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_d_holyinti"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_vassalize_d_holyinti"
+		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
+	}
+
+	spriteType = {
 		name = "GFX_borrow_money_d_holyjain"
 		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
 	}
@@ -1594,6 +1611,23 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_vassalize_d_holyindohelen_reformed"
+		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
+	}
+
+	spriteType = {
+		name = "GFX_borrow_money_d_holyinti_reformed"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_d_holyinti_reformed"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_d_holyinti_reformed"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_vassalize_d_holyinti_reformed"
 		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
 	}
 

@@ -3384,6 +3384,10 @@ character_event = {
 						trait = sympathy_indohellens
 					}
 					AND = {
+						FROM = { religion_group = inti_group }
+						trait = sympathy_intis
+					}
+					AND = {
 						FROM = { religion_group = inuit_group }
 						trait = sympathy_inuit
 					}
@@ -3855,6 +3859,10 @@ character_event = {
 					AND = {
 						FROM = { religion_group = aztec_group }
 						trait = sympathy_aztecs
+					}
+					AND = {
+						FROM = { religion_group = inti_group }
+						trait = sympathy_intis
 					}
 					AND = {
 						FROM = { religion_group = bud_group }
@@ -5107,6 +5115,9 @@ character_event = {
 			}
 			indohelen_group = {
 				add_trait = sympathy_indohellens
+			}
+			inti_group = {
+				add_trait = sympathy_intis
 			}
 			inuit_group = {
 				add_trait = sympathy_inuit

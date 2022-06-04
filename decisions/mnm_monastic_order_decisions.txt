@@ -40,9 +40,9 @@ society_decisions = {
 			}
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		#revoke_allowed = {
+			#always = no
+		#}
 
 		ai_will_do = {
 			factor = 0.001
@@ -72,7 +72,7 @@ targetted_decisions = {
 		}
 		
 		from_potential = {
-			has_DLC = "Mystics"
+			has_dlc = "Mystics"
 			society_rank >= 2
 			is_monastic_member_trigger = yes
 			is_adult = yes
@@ -228,9 +228,9 @@ targetted_decisions = {
 			character_event = { id = MNM.4951 }
 		}
 		
-		revoke_allowed = {
-		always = no
-		}
+		#revoke_allowed = {
+		#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -265,7 +265,7 @@ targetted_decisions = {
 		}
 		
 		from_potential = {
-			has_DLC = "Mystics"
+			has_dlc = "Mystics"
 			society_rank >= 3
 			is_monastic_member_trigger = yes
 			is_adult = yes
@@ -422,9 +422,9 @@ targetted_decisions = {
 			character_event = { id = MNM.4961 }
 		}
 		
-		revoke_allowed = {
-		always = no
-		}
+		#revoke_allowed = {
+		#always = no
+		#}
 		
 		ai_will_do = {
 			factor = 1
@@ -458,7 +458,7 @@ title_decisions = {
 			has_dlc = "Mystics"
 			is_ruler = yes
 			is_monastic_member_trigger = yes
-			NOT = { society_member_of = monastic_order_stoics } 
+			#NOT = { society_member_of = monastic_order_stoics } 
 			society_rank == 4
 		}
 		
@@ -490,11 +490,11 @@ title_decisions = {
 						}
 					}
 					NOR = {
-						religion = buddhist
-						religion = shinto
+						religion_group = bud_group
+						religion = nihon_shinto
 					}
 					AND = {
-						religion = shinto
+						religion = nihon_shinto
 						OR = {
 							province_id = 1189 # Bamiyan
 							province_id = 1163 # Varanasi
@@ -504,7 +504,7 @@ title_decisions = {
 						}
 					}
 					AND = {
-						religion = buddhist
+						religion_group = bud_group
 						OR = {
 							province_id = 2435 # Nanzan
 							province_id = 2448 # Buzen

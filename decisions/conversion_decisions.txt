@@ -634,6 +634,19 @@ targetted_decisions = {
 			}
 			if = {
 				limit = {
+					religion_group = inti_group
+					NOT = { trait = sympathy_intis }
+					capital_scope = {
+						NOT = { true_religion_group = ROOT }
+					}
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_intis
+				}
+			}
+			if = {
+				limit = {
 					religion_group = inuit_group
 					NOT = { trait = sympathy_inuit }
 					capital_scope = {
@@ -720,7 +733,7 @@ targetted_decisions = {
 				}
 				random = {
 					chance = 60
-					add_trait = sympathy_muslim
+					add_trait = sympathy_islam
 				}
 			}
 			if = {
