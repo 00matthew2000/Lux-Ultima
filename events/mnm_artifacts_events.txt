@@ -1449,12 +1449,6 @@ character_event = {
 							religion_group = bud_group
 						}
 					}
-					modifier = { 
-						factor = 0.5
-						NOT = {
-							religion_group = bud_group
-						}
-					}
 					modifier = {
 						factor = 0
 						NOT = { has_character_modifier = relic_rumor_minor }
@@ -1471,12 +1465,6 @@ character_event = {
 						factor = 0 
 						NOR = {
 							religion_group = indian_group
-							religion_group = bud_group
-						}
-					}
-					modifier = { 
-						factor = 0.5
-						NOT = {
 							religion_group = bud_group
 						}
 					}
