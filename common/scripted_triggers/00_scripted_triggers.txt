@@ -387,7 +387,6 @@ has_disease_trigger = {
 		trait = rabies
 		trait = cancer
 		trait = pneumonic
-
 		trait = dancing_plague
 		trait = scurvy
 		trait = ill
@@ -5712,6 +5711,7 @@ is_romantic_zodiac_mismatch_with_root = {
 	}
 }
 
+# Audax Validator "!" Ignore_NEXT
 #to check type of ingredient... (if more are added, they need to go in here to work with the current system)
 is_ingredient_herb_trigger = {
 	OR = {

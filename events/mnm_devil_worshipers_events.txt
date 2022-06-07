@@ -210,7 +210,7 @@ character_event = {
  			modifier = {
  				factor = 1.5
  				has_character_flag = being_recruited_by_the_bacchants
- 				is_close_relative = yes 	#Decadence
+ 				is_close_relative = FROM 	#Decadence
  			}
  			modifier = {
  				factor = 0.2
@@ -1322,8 +1322,7 @@ character_event = {
 letter_event = {
  	id = MNM.7014
  	desc = EVTDESC_MNM_7014
- 	border = GFX_event_letter_frame_intrigue
-
+ 	border = GFX_event_letter_frame_intrigue_LI
  	is_triggered_only = yes
 
  	trigger = {
@@ -3393,8 +3392,7 @@ character_event = {
 #Outcome of recruitment for the original recruiter (if there is one)
 letter_event = {
  	id = MNM.7022
- 	border = GFX_event_letter_frame_intrigue
-
+ 	border = GFX_event_letter_frame_intrigue_LI
  	trigger = { is_devil_worshiper_trigger = yes }
 
  	desc = {
@@ -8241,7 +8239,7 @@ character_event = {
  			save_event_target_as =  dw_desecration_target
  		}
  	}
-#
+
 
  	option = {
  		name  = EVTOPT_MNM_7112
@@ -8851,8 +8849,7 @@ character_event = {
 society_quest_event = {
  	id = MNM.7025
  	desc = EVTDESC_MNM_7025
- 	border = GFX_event_letter_frame_intrigue
-
+ 	border = GFX_event_letter_frame_intrigue_LI
  	is_triggered_only = yes
 
  	immediate = {
@@ -8962,8 +8959,7 @@ character_event = {
 society_quest_event = {
  	id = MNM.7029
  	desc = EVTDESC_MNM_7029
- 	border = GFX_event_letter_frame_intrigue
-
+ 	border = GFX_event_letter_frame_intrigue_LI
  	is_triggered_only = yes
  	quest_target = event_target:demonic_possession_mission_target
 
@@ -12803,6 +12799,7 @@ character_event = {
  	}
 }
 
+# Audax Validator "!" Ignore_NEXT
 # Agitation - Rivalry aftermath
 character_event = {
  	id = MNM.20052
