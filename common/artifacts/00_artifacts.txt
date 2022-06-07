@@ -1066,7 +1066,7 @@ buddhas_tooth = {
 		religion_group = indian_group
 	}
 	quality = 5
-	flags = { religious indian_group very_rare }
+	flags = { religious indian_group bud_group very_rare }
 	stacking = no
 	picture = "GFX_pouch"
 }
@@ -1112,7 +1112,7 @@ sarira = {
 	allowed_gift = {
 		religion_group = indian_group
 	}
-	flags = { religious indian_group jewelry }
+	flags = { religious indian_group bud_group jewelry }
 	stacking = no
 	picture = "GFX_gem_sapphire"
 }
