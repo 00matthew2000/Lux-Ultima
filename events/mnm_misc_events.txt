@@ -4616,18 +4616,18 @@ character_event = {
     desc = {
     	trigger = { 
     		NOR = {
-    			#is_devil_worshiper_trigger = yes
+    			is_devil_worshiper_trigger = yes
     			society_member_of = hermetics
     			society_member_of = secret_religious_cult
     			society_member_of = the_assassins
-				society_member_of = the_assassins_bud_mahayana
-				society_member_of = the_assassins_mani_ahriman
-				society_member_of = the_assassins_priscillian
-				society_member_of = the_assassins_ragnarok
-				society_member_of = the_assassins_set
-				society_member_of = the_assassins_tengri_ahriman
-				society_member_of = the_assassins_yahyanism
-				society_member_of = the_assassins_zor_angra
+			society_member_of = the_assassins_bud_mahayana
+			society_member_of = the_assassins_mani_ahriman
+			society_member_of = the_assassins_priscillian
+			society_member_of = the_assassins_ragnarok
+			society_member_of = the_assassins_set
+			society_member_of = the_assassins_tengri_ahriman
+			society_member_of = the_assassins_yahyanism
+			society_member_of = the_assassins_zor_angra
     			is_dharmic_monastic_member_trigger = yes
     			is_christian_monastic_member_trigger = yes
     		}
@@ -4635,11 +4635,11 @@ character_event = {
     	text = EVTDESC_MNM_10045
     	picture = GFX_evt_rival_rulers
     }
-#    desc = {
-#    	#trigger = { is_devil_worshiper_trigger = yes }
-#    	text = EVTDESC_MNM_10045
-#    	picture = GFX_evt_magic_ritual
-#    }
+    desc = {
+    	trigger = { is_devil_worshiper_trigger = yes }
+    	text = EVTDESC_MNM_10045
+    	picture = GFX_evt_magic_ritual
+    }
     desc = {
     	trigger = { society_member_of = hermetics }
     	text = EVTDESC_MNM_10045
@@ -4700,7 +4700,7 @@ character_event = {
         name = EVTOPTC_MNM_10045
         custom_tooltip = { text = EVTOPTB_MNM_6903_TT }
 
-        #hidden_effect = { FROM = { character_event = { id = MNM.6906 days = 3 } } }
+        hidden_effect = { FROM = { character_event = { id = MNM.6906 days = 3 } } }
 
         if = {
         	limit = { ai = no }
