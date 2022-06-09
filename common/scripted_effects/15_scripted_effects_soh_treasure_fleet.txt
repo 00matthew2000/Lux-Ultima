@@ -379,6 +379,14 @@ set_chinese_name_for_treasure_fleet_effect = { # Handles artifact naming
 		}
 		set_province_flag = treasure_fleet_is_min
 	}
+	else_if = {
+		limit = {
+			e_china = {
+				has_title_flag = sinohellenic_china
+			}
+		}
+		set_province_flag = treasure_fleet_is_sinohellenic
+	}
 }
 
 ### Adding more stuff
