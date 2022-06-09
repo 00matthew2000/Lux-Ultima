@@ -522,7 +522,7 @@ china_or_pretender_can_be_wei_trigger = {
 	}
 }
 
-china_or_pretender_can_be_qi_trigger = {
+china_or_pretender_can_be_qi_trigger = { # Audax Validator "!" Ignore_NEXT
 	dynasty = 1000156608 # Xu #These are added to effectively make these ones impossible to fulfill, since they dont exist -00matthew2000 ###
 	NOR = {
 		has_global_flag = qi_china_exists
@@ -530,7 +530,7 @@ china_or_pretender_can_be_qi_trigger = {
 	}
 }
 
-china_or_pretender_can_be_zhou_trigger = {
+china_or_pretender_can_be_zhou_trigger = { # Audax Validator "!" Ignore_NEXT
 	OR = {
 		dynasty = 1000156603 # Guo
 		dynasty = 1000156604 # Chai
@@ -555,7 +555,7 @@ china_or_pretender_can_be_qin_trigger = {
 	}
 }
 
-china_or_pretender_can_be_yan_trigger = {
+china_or_pretender_can_be_yan_trigger = { # Audax Validator "!" Ignore_NEXT
 	dynasty = 1000156623 # Liu
 	NOR = {
 		has_global_flag = yan_china_exists
@@ -577,7 +577,7 @@ china_or_pretender_can_be_liao_trigger = {
 	}
 }
 
-china_or_pretender_can_be_yuan_trigger = {
+china_or_pretender_can_be_yuan_trigger = { # Audax Validator "!" Ignore_NEXT
 	OR = {
 		dynasty = 11100
 		dynasty = 1051210
@@ -616,8 +616,8 @@ china_or_pretender_can_be_cheng_trigger = {
 	}
 }
 
-china_or_pretender_can_be_liang_trigger = {
-	#dynasty = 1000156600 # Zhu
+china_or_pretender_can_be_liang_trigger = { # Audax Validator "!" Ignore_NEXT
+	dynasty = 1000156600 # Zhu
 	NOR = {
 		has_global_flag = liang_china_exists
 		has_global_flag = pretender_liang_china_exists
@@ -688,7 +688,7 @@ china_or_pretender_can_be_sui_trigger = {
 }
 
 china_or_pretender_can_be_min_trigger = {
-	dynasty = 1000156611 # Wang
+	dynasty = 1000156611 # Wang # Audax Validator "!" Ignore_NEXT
 	NOR = {
 		has_global_flag = min_china_exists
 		has_global_flag = pretender_min_china_exists

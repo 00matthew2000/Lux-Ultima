@@ -5177,7 +5177,7 @@ targeted_decisions = {
 					}
 					OR = {
 						religion = nihon_shinto
-						AND = {
+						OR = {
 							culture = japanese
 							culture = nihonohellenic
 							religion_group = bud_group
