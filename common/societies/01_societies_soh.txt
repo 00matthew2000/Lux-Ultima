@@ -60,8 +60,10 @@ the_ghost_gatherers = {
 		OR = {
 			religion = nihon_shinto
 			AND = {
-				culture = japanese
-				culture = nihono_hellenic
+				OR = {
+					culture = japanese
+					culture = nihonohellenic
+				}
 				religion_group = bud_group
 			}
 		}
@@ -71,8 +73,10 @@ the_ghost_gatherers = {
 		OR = {
 			religion = nihon_shinto
 			AND = {
-				culture = japanese
-				culture = nihono_hellenic
+				OR = {
+					culture = japanese
+					culture = nihonohellenic
+				}
 				religion_group = bud_group
 			}
 		}
@@ -335,8 +339,10 @@ the_ghost_gatherers = {
 			OR = {
 				religion = nihon_shinto
 				AND = {
-					culture = japanese
-					culture = nihono_hellenic
+					OR = {
+						culture = japanese
+						culture = nihonohellenic
+					}
 					religion_group = bud_group
 				}
 			}

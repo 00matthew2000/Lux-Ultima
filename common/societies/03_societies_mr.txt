@@ -309,10 +309,8 @@ the_sacrificers = {
 			ai = yes
 	    	controls_religion = no
     		OR = {
-				religion = dayak_pagan	
-				religion = dayak_pagan_reformed
-				religion = melanesian_pagan
-				religion = melanesian_pagan_reformed				
+				religion_group = asian_religion_group
+				religion_group = inti_group
 			}
 			OR = {
 				has_impious_trait_trigger = yes
