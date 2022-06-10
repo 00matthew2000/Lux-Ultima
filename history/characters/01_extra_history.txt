@@ -369,6 +369,9 @@
 	add_trait = "hist_mathrafal"
 	820.1.1 = {
 		birth = yes
+		create_bloodline = {
+			type = mathrafal
+		}
 	}
 	878.1.1 = {
 		death = yes
@@ -508,6 +511,9 @@
 	add_trait = hist_hengist
 	360.1.1 = {
 		birth = yes
+		create_bloodline = {
+			type = hengist
+		}
 	}
 	450.1.1 = {
 		death = yes
@@ -621,6 +627,9 @@
 	add_trait = hist_maelgwn
 	480.1.1 = {
 		birth = yes
+		create_bloodline = {
+			type = maelgwn
+		}
 	}
 	549.1.1 = {
 		death = yes
@@ -5341,6 +5350,9 @@
 	culture = "galatian"
 	1.1.4 = {
 		birth = "1.1.4"
+		create_bloodline = {
+			type = amyntas
+		}
 	}
 	40.1.2 = {
 		death = "40.1.2"
@@ -9133,6 +9145,9 @@
 	culture = "hellenistic" 
 	1.1.1 = {
 		birth = "1.1.1"
+		create_bloodline = {
+			type = mithridates
+		}
 	}
 	40.1.2 = {
 		death = "40.1.2"
@@ -10552,6 +10567,9 @@
 	culture = "hellenistic" 
 	1.1.1 = {
 		birth = "1.1.1"
+		create_bloodline = {
+			type = asander
+		}
 	}
 	40.1.2 = {
 		death = "40.1.2"
@@ -11229,6 +11247,9 @@
 	culture = "roman" 
 	250.1.1 = {
 		birth = "250.1.1"
+		create_bloodline = {
+			type = chlorus
+		}
 	}
 	270.1.1 = {
 		add_spouse = 11103
@@ -16427,6 +16448,9 @@
 	culture = "dacian"
 	1.1.1 = {
 		birth = "1.1.1" 
+		create_bloodline = {
+			type = decebal
+		}
 	}
 	40.1.1 = {
 		death = "40.1.1"
@@ -20380,6 +20404,9 @@
 	father = 1711384
 	409.1.3 = {
 		birth = "409.1.3"
+		create_bloodline = {
+			type = atilla
+		}
 	}
 	453.1.2 = {
 		death = "453.1.2"
@@ -23181,10 +23208,14 @@
 1711602 = {
 	name = "Ptolemaios" #Ptolemy I Soter, marries Berenike and Eurydice
 	dynasty = 1100150 
+	add_trait = "hist_ptolemaios"
 	religion = "graeco_roman" #cult of Serapis
 	culture = "hellenistic"
 	1.1.1 = {
 		birth = "1.1.1"
+		create_bloodline = {
+			type = ptolemaios
+		}
 	}
 	1.1.3 = { 
 	add_spouse = 1711574
@@ -23204,6 +23235,7 @@
 	mother = 1711574 
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.4 = {
 		birth = "1.1.4"
 	}
@@ -23218,6 +23250,7 @@
 	mother = 1711574 
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.5 = {
 		birth = "1.1.5"
 	}
@@ -23233,6 +23266,7 @@
 	mother = 1711546
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.5 = {
 		birth = "1.1.5"
 	}
@@ -23251,6 +23285,7 @@
 	mother = 1711546
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.6 = {
 		birth = "1.1.6"
 	}
@@ -23265,6 +23300,7 @@
 	mother = 1711574 
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.6 = {
 		birth = "1.1.6"
 	}
@@ -23310,6 +23346,7 @@
 	mother = 1711609
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.6 = {
 		birth = "1.1.6"
 	}
@@ -23328,6 +23365,7 @@
 	mother = 1711601
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.7 = {
 		birth = "1.1.7"
 	}
@@ -23342,6 +23380,7 @@
 	mother = 1711601
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.8 = {
 		birth = "1.1.8"
 	}
@@ -23359,6 +23398,7 @@
 	mother = 1711611
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.9 = {
 		birth = "1.1.9"
 	}
@@ -23392,6 +23432,7 @@
 	mother = 1711614
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.10 = {
 		birth = "1.1.10"
 	}
@@ -23410,6 +23451,7 @@
 	mother = 1711614
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.10 = {
 		birth = "1.1.10"
 	}
@@ -23424,6 +23466,7 @@
 	mother = 1711609
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.10 = {
 		birth = "1.1.10"
 	}
@@ -23444,6 +23487,7 @@
 	mother = 1711616
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.11 = {
 		birth = "1.1.11"
 	}
@@ -23459,6 +23503,7 @@
 	mother = 1711616
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.11 = {
 		birth = "1.1.11"
 	}
@@ -23473,6 +23518,7 @@
 	mother = 1711616
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.13 = {
 		birth = "1.1.13"
 	}
@@ -23486,6 +23532,7 @@
 	father = 1711617
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.11 = {
 		birth = "1.1.11"
 	}
@@ -23501,6 +23548,7 @@
 	mother = 1711619
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.12 = {
 		birth = "1.1.12"
 	}
@@ -23515,6 +23563,7 @@
 	mother = 1711619
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.13 = {
 		birth = "1.1.13"
 	}
@@ -23536,6 +23585,7 @@
 	mother = 1711619
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.14 = {
 		birth = "1.1.14"
 	}
@@ -23550,6 +23600,7 @@
 	mother = 1711619
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.15 = {
 		birth = "1.1.15"
 	}
@@ -23570,6 +23621,7 @@
 	mother = 1711622
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.14 = {
 		birth = "1.1.14"
 	}
@@ -23587,6 +23639,7 @@
 	mother = 1711624
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.16 = {
 		birth = "1.1.16"
 	}
@@ -23605,6 +23658,7 @@
 	mother = 1711624
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.15 = {
 		birth = "1.1.15"
 	}
@@ -23620,6 +23674,7 @@
 	mother = 1711628
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.17 = {
 		birth = "1.1.17"
 	}
@@ -23635,6 +23690,7 @@
 	mother = 1711629
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.19 = {
 		birth = "1.1.19"
 	}
@@ -23650,6 +23706,7 @@
 	mother = 1711629
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.20 = {
 		birth = "1.1.20"
 	}
@@ -23664,6 +23721,7 @@
 	mother = 1711629
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.21 = {
 		birth = "1.1.21"
 	}
@@ -23682,6 +23740,7 @@
 	mother = 1711629
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.22 = {
 		birth = "1.1.22"
 	}
@@ -23696,6 +23755,7 @@
 	mother = 1711629
 	religion = "graeco_roman"
 	culture = "hellenistic"
+	add_trait = "hist_ptolemaios"
 	1.1.23 = {
 		birth = "1.1.23"
 	}
@@ -28378,6 +28438,9 @@
 	culture = "berber"
 	707.1.1 = {
 		birth = "707.1.1"
+		create_bloodline = {
+			type = kahina
+		}
 	}
 	786.1.2 = {
 		death = "786.1.2"
@@ -28665,6 +28728,9 @@
 	culture = "visigothic"
 	755.1.1 = {
 		birth = "755.1.1"
+		create_bloodline = {
+			type = barcelona
+		}
 	}
 	810.1.2 = {
 		death = "810.1.2"
@@ -29490,6 +29556,9 @@
 	culture = "roman"
 	244.1.1 = {
 		birth = "244.1.1"
+		create_bloodline = {
+			type = diocletian
+		}
 	}
 	311.1.2 = {
 		death = "311.1.2"
@@ -36374,6 +36443,9 @@
 	father = 1712594
 	802.1.1 = {
 		birth = "802.1.1"
+		create_bloodline = {
+			type = piast
+		}
 	}
 	861.1.2 = {
 		death = "861.1.2"
@@ -39608,6 +39680,9 @@
 	culture = "lusitanian"
 	1.1.1 = {
 		birth = "1.1.1"
+		create_bloodline = {
+			type = viriathus
+		}
 	}
 	40.1.1 = {
 		death = "40.1.1"
@@ -39901,6 +39976,9 @@
 	culture = "vandal"
 	265.1.2 = {
 		birth = "265.1.2"
+		create_bloodline = {
+			type = wisimar
+		}
 	}
 	340.1.1 = {
 		death = "340.1.1"
@@ -40598,6 +40676,9 @@
 	culture = "hellenistic"
 	1.1.1 = {
 		birth = "1.1.1"
+		create_bloodline = {
+			type = agiad
+		}
 	}
 	40.1.1 = {
 		death = "40.1.1"
@@ -48323,6 +48404,9 @@
 	father = 1713092
 	623.1.1={
 		birth="623.1.1"
+		create_bloodline = {
+			type = muawiyah
+		}
 	}
 	685.5.7={
 		death="685.5.7"
@@ -54389,6 +54473,9 @@
 	mother = 1713469
 	1.1.19 = {
 		birth="1.1.19"
+		create_bloodline = {
+			type = david
+		}
 	}
 	1.1.25 = { 
 		add_spouse = 1713482 
@@ -63723,6 +63810,9 @@
 	father = 1714153
 	1.2.12 = {
 		birth="1.2.12"
+		create_bloodline = {
+			type = maccabeus
+		}
 	}
 	40.1.2 = {
 		death="40.1.2"
@@ -66113,6 +66203,9 @@
 	culture = "sabaean"
 	1.1.1 = {
 		birth = "1.1.1"
+		create_bloodline = {
+			type = almaqah
+		}
 	}
 	40.1.2 = {
 		death = "40.1.2"
@@ -74663,6 +74756,9 @@
 	culture="teutonic"
 	730.1.1 = {
 		birth="730.1.1"
+		create_bloodline = {
+			type = arminius
+		}
 	}
 	785.1.25 = {
 		death="785.1.25"
@@ -75868,6 +75964,9 @@
 	add_trait = hist_zenobia
 	1005.1.2 = {
 		birth = "1005.1.2"
+		create_bloodline = {
+			type = zenobia
+		}
 	}
 	1055.1.2 = {
 		death = "1055.1.2"
