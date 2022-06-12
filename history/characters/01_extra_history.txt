@@ -42016,12 +42016,205 @@
 		death = "990.1.1"
 	}
 }
+#Demetrius
+1730308 = {
+	name = "Demetrius" #Demetrius I
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	1.1.1 = {
+		birth = "1.1.1"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+1730309 = {
+	name = "Demetrius II" #Demetrius II
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	father = 1730308
+	1.1.1 = {
+		birth = "1.1.1"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+1730310 = {
+	name = "Antimachus I" #Antimachus I
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	father = 1730308
+	1.1.1 = {
+		birth = "1.1.1"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+1730311 = {
+	name = "Menander" #Menander I
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	father = 1730308
+	1.1.1 = {
+		birth = "1.1.1"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+#Aniketos
+17303122 = {
+	name = "Alexandros" #Alexandros I
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	1.1.5 = {
+		birth = "1.1.5"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+1730312 = {
+	name = "Alexandros" #Alexandros II
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	add_trait = "brilliant_strategist"
+	add_trait = "tall"
+	add_trait = "diligent"
+	add_trait = "strategist"
+	add_trait = "ambitious"
+	add_trait = "hist_aniketos"
+	father = 17303122
+	1.1.6 = {
+		birth = "1.1.6"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+1730313 = {
+	name = "Achilles" #Achilles
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	father = 1730312
+	add_trait = "hist_aniketos"
+	1.1.7 = {
+		birth = "1.1.7"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+1730314 = {
+	name = "Alexandros" #Alexandros III
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	father = 1730312
+	add_trait = "hist_aniketos"
+	1.1.8 = {
+		birth = "1.1.8"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+1730315 = {
+	name = "Craterus" #Craterus
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	father = 1730314
+	add_trait = "hist_aniketos"
+	1.1.9 = {
+		birth = "1.1.9"
+	}
+	1.1.10 = {
+		add_spouse = 1730317 #Alexandra Epander
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+1730316 = {
+	name = "Menander" #Menander
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "indohellenic"
+	father = 1730314
+	add_trait = "hist_aniketos"
+	1.1.9 = {
+		birth = "1.1.9"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+1730317 = {
+	name = "Alexandra" #Alexandra I of Archeserika
+	dynasty = 1100426
+	religion = "indoh_confucian"
+	culture = "sinohellenic"
+	add_trait = "mastermind_theologian"
+	add_trait = "theologian"
+	add_trait = "chaste"
+	add_trait = "administrator"
+	add_trait = "hist_epanderos"
+	1.1.9 = {
+		birth = "1.1.9"
+	}
+	1.1.10 = {
+		add_spouse = 1730315 #Craterus
+	}
+	70.1.1 = {
+		death = "70.1.1"
+	}
+}
+1730318 = {
+	name = "Alexandros" #Alexandros Epander (but Aniketos)
+	dynasty = 1100426
+	religion = "indoh_confucian"
+	culture = "sinohellenic"
+	father = 1730315
+	mother = 1730317
+	add_trait = "hist_aniketos"
+	4.1.1 = {
+		birth = "4.1.1"
+	}
+	74.1.1 = {
+		death = "74.1.1"
+	}
+}
+1730319 = {
+	name = "Antiochus" #Antiochus
+	dynasty = 1100426
+	religion = "indoh_bud"
+	culture = "sinohellenic"
+	father = 1730316
+	add_trait = "hist_aniketos"
+	1.1.10 = {
+		birth = "1.1.10"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
 #Epanderos
 1712645 = { 
 	name = "Epander" #Epander I
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	father = 1730311
 	1.1.2 = {
 		birth = "1.1.2"
 	}
@@ -42034,9 +42227,13 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712645
 	1.1.3 = {
 		birth = "1.1.3"
+		create_bloodline = {
+			type = epanderos
+		}
 	}
 	40.1.1 = {
 		death = "40.1.1"
@@ -42047,6 +42244,7 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712645
 	1.1.4 = {
 		birth = "1.1.4"
@@ -42060,6 +42258,7 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712646 
 	1.1.4 = {
 		birth = "1.1.4"
@@ -42073,6 +42272,7 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712648
 	1.1.5 = {
 		birth = "1.1.5"
@@ -42086,6 +42286,7 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712648
 	1.1.6 = {
 		birth = "1.1.6"
@@ -42099,6 +42300,7 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712649
 	1.1.6 = {
 		birth = "1.1.6"
@@ -42112,6 +42314,7 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712651
 	1.1.7 = {
 		birth = "1.1.7"
@@ -42125,6 +42328,7 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712651
 	1.1.8 = {
 		birth = "1.1.8"
@@ -42138,6 +42342,7 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712652
 	25.1.2 = {
 		birth = "25.1.2"
@@ -42151,6 +42356,7 @@
 	dynasty = 1100425
 	religion = "indoh_bud"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712652
 	31.1.2 = {
 		birth = "31.1.2"
@@ -42164,6 +42370,7 @@
 	dynasty = 1100425
 	religion = "bud_pratyeka" #change in religion in 100 CE
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712654
 	79.1.2 = {
 		birth = "79.1.2"
@@ -42177,6 +42384,7 @@
 	dynasty = 1100425
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712654
 	87.1.2 = {
 		birth = "87.1.2"
@@ -42190,6 +42398,7 @@
 	dynasty = 1100425
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712656
 	130.1.2 = {
 		birth = "130.1.2"
@@ -42203,6 +42412,7 @@
 	dynasty = 1100425
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712657
 	141.1.2 = {
 		birth = "141.1.2"
@@ -42216,6 +42426,7 @@
 	dynasty = 1100425
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712658
 	168.1.2 = {
 		birth = "168.1.2"
@@ -42229,6 +42440,7 @@
 	dynasty = 1100425
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712658
 	179.1.2 = {
 		birth = "179.1.2"
@@ -42242,6 +42454,7 @@
 	dynasty = 1100425
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712659
 	188.1.2 = {
 		birth = "188.1.2"
@@ -42255,6 +42468,7 @@
 	dynasty = 1100425
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712662
 	236.1.2 = {
 		birth = "236.1.2"
@@ -42269,6 +42483,7 @@
 	dynasty = 1100425
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	father = 1712663
 	299.1.2 = { 
 		birth = "299.1.2" #dates unclear
@@ -42285,6 +42500,7 @@
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
 	add_trait = "bastard"
+	add_trait = "hist_epanderos"
 	294.1.1 = {
 		birth = "294.1.1"
 	}
@@ -42298,6 +42514,7 @@
 	father = 1712664
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	342.1.1 = {
 		birth = "342.1.1"
 	}
@@ -42311,6 +42528,7 @@
 	father = 1712665
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	368.1.1 = {
 		birth = "368.1.1"
 	}
@@ -42324,6 +42542,7 @@
 	father = 1712666
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	400.1.1 = {
 		birth = "400.1.1"
 	}
@@ -42337,6 +42556,7 @@
 	father = 1712667
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	436.1.1 = {
 		birth = "436.1.1"
 	}
@@ -42350,6 +42570,7 @@
 	father = 1712668
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	501.1.1 = {
 		birth = "501.1.1"
 	}
@@ -42363,6 +42584,7 @@
 	father = 1712669
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	518.1.1 = {
 		birth = "518.1.1"
 	}
@@ -42376,6 +42598,7 @@
 	father = 1712670
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	539.1.1 = {
 		birth = "539.1.1"
 	}
@@ -42389,6 +42612,7 @@
 	father = 1712671
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	554.1.1 = {
 		birth = "554.1.1"
 	}
@@ -42402,6 +42626,7 @@
 	father = 1712671
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	560.1.1 = {
 		birth = "560.1.1"
 	}
@@ -42415,6 +42640,7 @@
 	father = 1712673
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	576.1.1 = {
 		birth = "576.1.1"
 	}
@@ -42428,6 +42654,7 @@
 	father = 1712673
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	579.1.1 = {
 		birth = "579.1.1"
 	}
@@ -42441,6 +42668,7 @@
 	father = 1712675
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	598.1.1 = {
 		birth = "598.1.1"
 	}
@@ -42454,6 +42682,7 @@
 	father = 1712676
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	616.1.1 = {
 		birth = "616.1.1"
 	}
@@ -42467,6 +42696,7 @@
 	father = 1712677
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	641.1.1 = {
 		birth = "641.1.1"
 	}
@@ -42480,6 +42710,7 @@
 	father = 1712678
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	682.1.1 = {
 		birth = "682.1.1"
 	}
@@ -42493,6 +42724,7 @@
 	father = 1712679
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	705.1.1 = {
 		birth = "705.1.1"
 	}
@@ -42506,6 +42738,7 @@
 	father = 1712680
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	748.1.1 = {
 		birth = "748.1.1"
 	}
@@ -42519,6 +42752,7 @@
 	father = 1712681
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	776.1.1 = {
 		birth = "776.1.1"
 	}
@@ -42532,6 +42766,7 @@
 	father = 1712682
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	809.1.1 = {
 		birth = "809.1.1"
 	}
@@ -42545,6 +42780,7 @@
 	father = 1712683
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	862.1.1 = {
 		birth = "862.1.1"
 	}
@@ -42558,6 +42794,7 @@
 	father = 1712684
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	879.1.1 = {
 		birth = "879.1.1"
 	}
@@ -42571,6 +42808,7 @@
 	father = 1712685
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	902.1.1 = {
 		birth = "902.1.1"
 	}
@@ -42584,6 +42822,7 @@
 	father = 1712686
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	928.1.1 = {
 		birth = "928.1.1"
 	}
@@ -42597,6 +42836,7 @@
 	father = 1712687
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	942.1.1 = {
 		birth = "942.1.1"
 	}
@@ -42610,6 +42850,7 @@
 	father = 1712688
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	966.1.1 = {
 		birth = "966.1.1"
 	}
@@ -42623,6 +42864,7 @@
 	father = 1712688
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	976.1.1 = {
 		birth = "976.1.1"
 	}
@@ -42636,6 +42878,7 @@
 	father = 1712690
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	992.1.1 = {
 		birth = "992.1.1"
 	}
@@ -42649,6 +42892,7 @@
 	father = 1712691
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	1008.1.1 = {
 		birth = "1008.1.1"
 	}
@@ -42662,6 +42906,7 @@
 	father = 1712692
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	1028.1.1 = {
 		birth = "1028.1.1"
 	}
@@ -42676,6 +42921,7 @@
 	father = 1712660
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	210.1.1 = {
 		birth = "210.1.1"
 	}
@@ -42689,6 +42935,7 @@
 	father = 1712694
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	290.1.1 = {
 		birth = "290.1.1"
 	}
@@ -42702,6 +42949,7 @@
 	father = 1712695
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	358.1.1 = {
 		birth = "358.1.1"
 	}
@@ -42715,6 +42963,7 @@
 	father = 1712696
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	400.1.1 = {
 		birth = "400.1.1"
 	}
@@ -42728,6 +42977,7 @@
 	father = 1712697
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	436.1.1 = {
 		birth = "436.1.1"
 	}
@@ -42741,6 +42991,7 @@
 	father = 1712698
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	501.1.1 = {
 		birth = "501.1.1"
 	}
@@ -42754,6 +43005,7 @@
 	father = 1712699
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	518.1.1 = {
 		birth = "518.1.1"
 	}
@@ -42767,6 +43019,7 @@
 	father = 1712700
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	539.1.1 = {
 		birth = "539.1.1"
 	}
@@ -42780,6 +43033,7 @@
 	father = 1712701
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	554.1.1 = {
 		birth = "554.1.1"
 	}
@@ -42793,6 +43047,7 @@
 	father = 1712701
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	560.1.1 = {
 		birth = "560.1.1"
 	}
@@ -42806,6 +43061,7 @@
 	father = 1712703
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	576.1.1 = {
 		birth = "576.1.1"
 	}
@@ -42819,6 +43075,7 @@
 	father = 1712703
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	579.1.1 = {
 		birth = "579.1.1"
 	}
@@ -42832,6 +43089,7 @@
 	father = 1712705
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	598.1.1 = {
 		birth = "598.1.1"
 	}
@@ -42845,6 +43103,7 @@
 	father = 1712706
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	616.1.1 = {
 		birth = "616.1.1"
 	}
@@ -42858,6 +43117,7 @@
 	father = 1712707
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	641.1.1 = {
 		birth = "641.1.1"
 	}
@@ -42871,6 +43131,7 @@
 	father = 1712708
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	682.1.1 = {
 		birth = "682.1.1"
 	}
@@ -42884,6 +43145,7 @@
 	father = 1712709
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	705.1.1 = {
 		birth = "705.1.1"
 	}
@@ -42897,6 +43159,7 @@
 	father = 1712710
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	748.1.1 = {
 		birth = "748.1.1"
 	}
@@ -42910,6 +43173,7 @@
 	father = 1712711
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	776.1.1 = {
 		birth = "776.1.1"
 	}
@@ -42923,6 +43187,7 @@
 	father = 1712712
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	809.1.1 = {
 		birth = "809.1.1"
 	}
@@ -42936,6 +43201,7 @@
 	father = 1712713
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	add_trait = "bastard"
 	862.1.1 = {
 		birth = "862.1.1"
@@ -42950,6 +43216,7 @@
 	father = 1712714
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	879.1.1 = {
 		birth = "879.1.1"
 	}
@@ -42963,6 +43230,7 @@
 	father = 1712715
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	902.1.1 = {
 		birth = "902.1.1"
 	}
@@ -42976,6 +43244,7 @@
 	father = 1712716
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	928.1.1 = {
 		birth = "928.1.1"
 	}
@@ -42989,6 +43258,7 @@
 	father = 1712717
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	942.1.1 = {
 		birth = "942.1.1"
 	}
@@ -43002,6 +43272,7 @@
 	father = 1712718
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	966.1.1 = {
 		birth = "966.1.1"
 	}
@@ -43015,6 +43286,7 @@
 	father = 1712718
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	976.1.1 = {
 		birth = "976.1.1"
 	}
@@ -43028,6 +43300,7 @@
 	father = 1712720
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	992.1.1 = {
 		birth = "992.1.1"
 	}
@@ -43041,6 +43314,7 @@
 	father = 1712721
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	1008.1.1 = {
 		birth = "1008.1.1"
 	}
@@ -43054,6 +43328,7 @@
 	father = 1712722
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	1028.1.1 = {
 		birth = "1028.1.1"
 	}
@@ -43068,6 +43343,7 @@
 	father = 1712722
 	religion = "bud_pratyeka"
 	culture = "indohellenic"
+	add_trait = "hist_epanderos"
 	1032.1.1 = {
 		birth = "1032.1.1"
 	}
