@@ -16,7 +16,7 @@ character_event = { # Great warrior character chance
 
 	trigger = {
 		any_owned_bloodline = {
-			#has_bloodline_flag = bloodline_heroes
+			has_bloodline_flag = bloodline_heroes
 			bloodline_is_active_for = PREV
 			founder = {
 				NOT = {
@@ -90,7 +90,7 @@ character_event = { # Great warrior character arrives
 	immediate = {
 		random_owned_bloodline = {
 			limit = {
-				#has_bloodline_flag = bloodline_heroes
+				has_bloodline_flag = bloodline_heroes
 				founder = {
 					NOT = {
 						character = ROOT
@@ -2730,7 +2730,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -2785,7 +2785,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -2849,7 +2849,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3027,7 +3027,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3070,7 +3070,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3114,7 +3114,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3173,7 +3173,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3209,7 +3209,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3264,7 +3264,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3325,7 +3325,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3455,7 +3455,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3506,7 +3506,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3561,7 +3561,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3597,7 +3597,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3639,7 +3639,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3706,7 +3706,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3776,7 +3776,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3818,7 +3818,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3860,7 +3860,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3908,7 +3908,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -3956,7 +3956,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4012,7 +4012,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4060,7 +4060,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4108,7 +4108,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4156,7 +4156,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4204,7 +4204,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4252,7 +4252,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4300,7 +4300,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4368,7 +4368,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4447,7 +4447,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4509,7 +4509,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4570,7 +4570,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4639,7 +4639,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4787,7 +4787,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4930,7 +4930,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -4990,7 +4990,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -5136,7 +5136,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -5295,7 +5295,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -5353,7 +5353,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -5458,7 +5458,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -5571,7 +5571,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -5704,7 +5704,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -5821,7 +5821,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -5933,7 +5933,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -5983,7 +5983,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -6096,7 +6096,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -6230,7 +6230,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -6383,7 +6383,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -6530,7 +6530,7 @@ character_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -6677,7 +6677,7 @@ narrative_event = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { 
-				#has_bloodline_flag = created_bloodline
+				has_bloodline_flag = created_bloodline
 			}
 		}
 		has_ambition = obj_forge_bloodline
@@ -6732,7 +6732,7 @@ character_event = {
 
 	trigger = { 
 		any_owned_bloodline = {
-			#has_bloodline_flag = bloodline_murder_child
+			has_bloodline_flag = bloodline_murder_child
 			bloodline_is_active_for = PREV
 		}
 		intrigue = 3
@@ -7336,7 +7336,7 @@ character_event = {
 	
 	trigger = {
 		any_owned_bloodline = {
-			#has_bloodline_flag = bloodline_murder_stalk 
+			has_bloodline_flag = bloodline_murder_stalk 
 			bloodline_is_active_for = PREV
 		}
 		OR = {
@@ -15793,7 +15793,7 @@ character_event = { # Mystic character arrives
 #		has_dlc = "Holy Fury"
 #		NOT = {
 #			any_owned_bloodline = { 
-#				#has_bloodline_flag = created_bloodline
+#				has_bloodline_flag = created_bloodline
 #			}
 #		}
 #	}
@@ -15846,7 +15846,7 @@ character_event = { # Mystic character arrives
 #			} 
 #			NOR = { #Not if already Forger of a Bloodline, or owner of a Forged Bloodline.
 #				any_owned_bloodline = { 
-#					#has_bloodline_flag = created_bloodline
+#					has_bloodline_flag = created_bloodline
 #				}
 #				any_owned_bloodline = { 
 #					founder = {
