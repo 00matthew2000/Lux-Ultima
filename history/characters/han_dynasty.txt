@@ -561,6 +561,11 @@
 	religion="shenjiao"
 	culture="zhongyuan"
 	father = 100045142
+	trait="amateurish_plotter"
+	trait="wroth"
+	trait="greedy"
+	trait="arbitrary"
+	trait="hedonist"
 	1.1.23={
 		birth=yes
 		religion="confucian"
@@ -569,16 +574,459 @@
 		death=yes
 	}
 }
-
-
-
-
-
-
-
-
-
-
+100045145 = {
+	name="Jin"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045138
+	1.1.21={
+		birth=yes
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045146 = {
+	name="Xun"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045145
+	trait="grey_eminence"
+	trait="erudite"
+	trait="just"
+	trait="genius"
+	trait="administrator"
+	trait="diligent"
+	trait="honorable"
+	trait="patient"
+	trait="temperate"
+	1.1.22={
+		birth=yes
+		name="Xuan"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045147 = {
+	name="Shi"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045146
+	trait="naive_appeaser"
+	trait="content"
+	trait="trusting"
+	trait="zealous"
+	trait="slow"
+	trait="indecisive"
+	1.1.23={
+		birth=yes
+		name="Yuan"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045148 = {
+	name="Guantao"
+	dynasty = 1000156116
+	female = yes
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045146
+	1.1.24={
+		birth=yes
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045149 = {
+	name="Qin"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045146
+	1.1.25={
+		birth=yes
+		name="Xian"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045150 = {
+	name="Jingwu"
+	dynasty = 1000156116
+	female = yes
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045146
+	1.1.25={
+		birth=yes
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045151 = {
+	name="Xiao"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045146
+	1.1.26={
+		birth=yes
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045152 = {
+	name="Yu"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045146
+	1.1.27={
+		birth=yes
+		name="Su"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045153 = {
+	name="Jing"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045146
+	1.1.28={
+		birth=yes
+		name="Ai"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045154 = {
+	name="Ao"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045147
+	trait="underhanded_rogue"
+	trait="trusting"
+	trait="hedonist"
+	trait="lustful"
+	trait="socializer"
+	trait="greedy"
+	1.1.24={
+		birth=yes
+		name="Cheng"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045155 = {
+	name="Pingdou"
+	dynasty = 1000156116
+	female = yes
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045147
+	1.1.25={
+		birth=yes
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045156 = {
+	name="Kang"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045147
+	trait="quick"
+	trait="diligent"
+	trait="schemer"
+	trait="socializer"
+	1.1.26={
+		birth=yes
+		name="Gong"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045157 = {
+	name="Xing"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045147
+	1.1.27={
+		birth=yes
+		name="Xiao"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045158 = {
+	name="Pingyang"
+	dynasty = 1000156116
+	female = yes
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045147
+	1.1.28={
+		birth=yes
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045159 = {
+	name="Yingyi"
+	dynasty = 1000156116
+	female = yes
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045147
+	1.1.29={
+		birth=yes
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045160 = {
+	name="Xin"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045156
+	trait="naive_appeaser"
+	trait="quick"
+	trait="patient"
+	trait="content"
+	trait="homosexual"
+	trait="arbitrary"
+	trait="weak"
+	trait="indecisive"
+	1.1.27={
+		birth=yes
+		name="Ai"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045161 = {
+	name="Jizi"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045157
+	trait="weak"
+	trait="wroth"
+	trait="indecisive"
+	1.1.28={
+		birth=yes
+		name="Ping"
+		religion="confucian"
+	}
+	40.1.1={
+		death = {
+			death_reason = death_murder
+			killer = 1730317
+		}
+	}
+}
+100045162 = {
+	name="Xun"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045151
+	1.1.27={
+		birth=yes
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045163 = {
+	name="Xian"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045162
+	1.1.28={
+		birth=yes
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045164 = {
+	name="Ying"
+	dynasty = 1000156116
+	religion="shenjiao"
+	culture="zhongyuan"
+	father = 100045163
+	1.1.29={
+		birth=yes
+		name="Ruzi Ying"
+		religion="confucian"
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045165={
+	name="Zhen"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045133
+	37.1.1={
+		birth=yes
+	}
+	98.1.1={
+		death=yes
+	}
+}
+100045166={
+	name="Xiong"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045165
+	86.1.1={
+		birth=yes
+	}
+	145.1.1={
+		death=yes
+	}
+}
+100045167={
+	name="Hong"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045166
+	126.1.1={
+		birth=yes
+	}
+	166.1.1={
+		death=yes
+	}
+}
+100045168={
+	name="Bei"
+	dynasty = 1000156116
+	dna="bcdbkckbbcm"
+	prp="fd0ehk000000000000"
+    diplomacy=10
+    martial=7
+    stewardship=7
+    intrigue=8
+	learning=10
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045167
+    trait="grey_eminence"
+    trait="quick"
+    trait="ambitious"
+    trait="temperate"
+    trait="diligent"
+    trait="patient"
+    trait="charitable"
+    trait="just"
+    trait="zealous"
+	trait="inspiring_leader"
+	trait="back_seat_leader"
+	161.1.1={
+		birth=yes
+	}
+	184.1.1={
+		effect={
+			health=1
+		}
+	}
+	214.1.1={
+		add_spouse=100045169
+	}
+	223.6.10={
+		death=yes
+	}
+}
+100045169={
+	name="Zhaolie"
+	female=yes
+	dynasty=1000151658 #Wu
+	religion="confucian"
+	culture="zhongyuan"
+	180.1.1={
+		birth=yes
+	}
+	214.1.1={
+		add_spouse=100045168
+	}
+	245.10.1={
+		death=yes
+	}
+}
+100045170={
+	name="Shan"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045168
+	mother=100045169
+	trait="indulgent_wastrel"
+	trait="honest"
+	trait="shy"
+    trait="kind"
+    trait="content"
+	trait="paranoid"
+	207.1.1={
+		birth=yes
+		employer=600
+		effect={
+			health=2
+		}
+	}
+	271.5.1={
+		death=yes
+	}
+}
 
 
 
