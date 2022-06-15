@@ -1442,50 +1442,6 @@
 	}
 }
 
-1000451126 ={
-	name = "Gong"
-	dynasty = 1000156116
-	culture = "zhongyuan"
-	religion = "tao"
-	father = 1000451125
-	trait = charismatic_negotiator
-	trait = proud
-	trait = zealous
-	1040.10.8 ={
-		birth = "1040.10.8"
-	}
-	1100.7.8 ={
-		death = "1100.7.8"
-	}
-}
-
-1100451126 ={
-	name = "Shuxiang"
-	dynasty = 1000156116
-	culture = "ba_shu"
-	religion = "confucian"
-	1045.6.14 ={
-		birth = "1045.6.14"
-	}
-	1108.11.3 ={
-		death = "1108.11.3"
-	}
-}
-
-1000451127 ={
-	name = "XiuXi"
-	dynasty = 1000156116
-	culture = "zhongyuan"
-	religion = "tao"
-	father = 1000451126
-	1059.12.5 ={
-		birth = "1059.12.5"
-	}
-	1116.9.19 ={
-		death = "1116.9.19"
-	}
-}
-
 1000451132 ={
 	name = "BiPing"
 	dynasty = 1000156118
@@ -25873,12 +25829,75 @@
 	}
 }
 
+1100454684 ={ #May need to make a Legalist religion at some point
+	name = "Zheng"
+	dynasty = 1000156423
+	culture = "han"
+	religion = "shenjiao"
+	nickname = "nick_the_shi_huangdi"
+	add_trait = "midas_touched"
+	add_trait = "ruthless"
+	add_trait = "ambitious"
+	add_trait = "genius"
+	add_trait = "paranoid"
+	add_trait = "cynical"
+	add_trait = "administrator"
+	add_trait = "schemer"
+	1.1.2 ={
+		birth = "1.1.2"
+	}
+	40.1.1 ={
+		death = "40.1.1"
+	}
+}
+
+1100454685 ={ #May need to make a Legalist religion at some point
+	name = "Fusu"
+	dynasty = 1000156423
+	culture = "han"
+	religion = "shenjiao"
+	father = 1100454684
+	1.1.3 ={
+		birth = "1.1.3"
+	}
+	40.1.1 ={
+		death = "40.1.1"
+	}
+}
+
+1100454686 ={ #May need to make a Legalist religion at some point
+	name = "Ziying" #Third Emperor of Qin, very briefly
+	dynasty = 1000156423
+	culture = "han"
+	religion = "shenjiao"
+	father = 1100454685
+	1.1.4 ={
+		birth = "1.1.4"
+	}
+	40.1.1 ={
+		death = "40.1.1"
+	}
+}
+
+1100454687 ={ #May need to make a Legalist religion at some point
+	name = "Huhai" #Second Emperor of Qin
+	dynasty = 1000156423
+	culture = "han"
+	religion = "shenjiao"
+	father = 1100454684
+	1.1.4 ={
+		birth = "1.1.4"
+	}
+	40.1.1 ={
+		death = "40.1.1"
+	}
+}
+
 1000454684 ={
 	name = "Gonghao"
 	dynasty = 1000156423
 	culture = "sinohellenic"
 	religion = "indoh_confucian"	
-	
 	931.2.27 ={
 		birth = "931.2.27"
 	}
