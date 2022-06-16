@@ -909,7 +909,7 @@
 		death=yes
 	}
 }
-100045165={
+100045165 = {
 	name="Zhen"
 	dynasty = 1000156116
 	religion="confucian"
@@ -922,7 +922,7 @@
 		death=yes
 	}
 }
-100045166={
+100045166 = {
 	name="Xiong"
 	dynasty = 1000156116
 	religion="confucian"
@@ -935,7 +935,7 @@
 		death=yes
 	}
 }
-100045167={
+100045167 = {
 	name="Hong"
 	dynasty = 1000156116
 	religion="confucian"
@@ -948,7 +948,7 @@
 		death=yes
 	}
 }
-100045168={
+100045168 = {
 	name="Bei"
 	dynasty = 1000156116
 	dna="bcdbkckbbcm"
@@ -987,7 +987,7 @@
 		death=yes
 	}
 }
-100045169={
+100045169 = {
 	name="Zhaolie"
 	female=yes
 	dynasty=1000151658 #Wu
@@ -1003,7 +1003,7 @@
 		death=yes
 	}
 }
-100045170={
+100045170 = {
 	name="Shan"
 	dynasty = 1000156116
 	religion="confucian"
@@ -1027,11 +1027,378 @@
 		death=yes
 	}
 }
-
-
-
-
-
+100045171 = {
+	name="Mai"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045132
+	1.1.17={
+		birth=yes
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045172 = {
+	name="Xiongqu"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045171
+	1.1.18={
+		birth=yes
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045173 = {
+	name="Wai"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045171
+	1.1.19={
+		birth=yes
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045174 = {
+	name="Li"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045172
+	1.1.19={
+		birth=yes
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045175 = {
+	name="Zizhang"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045174
+	1.1.20={
+		birth=yes
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045176 = {
+	name="Xuan"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	trait="flamboyant_schemer"
+	trait="indecisive"
+	trait="envious"
+	trait="proud"
+	father=100045175
+	1.1.21={
+		birth=yes
+		name = "Gengshi"
+	}
+	25.1.1={
+		death=yes
+	}
+}
+100045177 = {
+	name="Hui"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045173
+	1.1.20={
+		birth=yes
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045178 = {
+	name="Qin"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045177
+	1.1.21={
+		birth=yes
+	}
+	40.1.1={
+		death=yes
+	}
+}
+100045179 = {   ### 1st Emperor of Eastern Han
+	name="Xiu"
+	dynasty = 1000156116
+	religion="confucian"
+	culture="zhongyuan"
+	father=100045178
+	trait="brilliant_strategist"
+	trait="ambitious"
+	trait="diligent"
+	trait="gregarious"
+	trait="temperate"
+	trait="just"
+	trait="quick"
+	1.1.22={
+		birth=yes
+	}
+	25.1.1={
+		name="Guangwu"
+	}
+	27.1.1={
+		add_spouse = 100045181
+	}
+	28.1.1={
+		add_spouse = 100045180
+	}
+	57.3.29={
+		death=yes
+	}
+}
+100045180 = {
+	name="Lihua"
+	female = yes
+	dynasty = 1000156117
+	religion="confucian"
+	culture="zhongyuan"
+	15.1.1={
+		birth=yes
+	}
+	28.1.1={
+		add_spouse = 100045179
+	}
+	64.1.1={
+		death=yes
+	}
+}
+100045181 = {
+	name="Shengtong"
+	female = yes
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	10.1.1={
+		birth=yes
+	}
+	27.1.1={
+		add_spouse = 100045179
+	}
+	52.1.1={
+		death=yes
+	}
+}
+100045182 = {   ### 2nd Emperor
+	name="Zhuang"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045179
+	mother = 100045180
+	trait="fortune_builder"
+	trait="quick"
+	trait="administrator"
+	trait="just"
+	trait="honorable"
+	trait="humble"
+	trait="ambitious"
+	trait="paranoid"
+	28.1.1={
+		birth=yes
+	}
+	57.3.29={
+		name="Ming"
+	}
+	75.1.1={
+		death=yes
+	}
+}
+100045183 = {
+	name="Jiang"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045179
+	mother = 100045181
+	27.1.1={
+		birth=yes
+	}
+	58.1.1={
+		death=yes
+	}
+}
+100045184 = {
+	name="Cang"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045179
+	mother = 100045180
+	trait="mastermind_theologian"
+	trait="honest"
+	trait="zealous"
+	trait="content"
+	trait="genius"
+	32.1.1={
+		birth=yes
+	}
+	83.1.1={
+		death=yes
+	}
+}
+100045185 = {
+	name="Fu"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045179
+	27.1.1={
+		birth=yes
+	}
+	84.1.1={
+		death=yes
+	}
+}
+100045186 = {
+	name="Jing"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045179
+	37.1.1={
+		birth=yes
+	}
+	81.1.1={
+		death=yes
+	}
+}
+100045187 = {
+	name="Kang"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045179
+	mother = 100045181
+	28.1.1={
+		birth=yes
+	}
+	97.1.1={
+		death=yes
+	}
+}
+100045188 = {
+	name="Jing"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045179
+	mother = 100045180
+	trait="lunatic"
+	trait="deceitful"
+	30.1.1={
+		birth=yes
+	}
+	67.1.1={
+		death=yes
+	}
+}
+100045189 = {   ### 3rd Emperor
+	name="Da"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045182
+	trait="scholarly_theologian"
+	trait="diligent"
+	trait="administrator"
+	trait="zealous"
+	trait="temperate"
+	trait="kind"
+	trait="humble"
+	57.1.1={
+		birth=yes
+	}
+	75.1.1={
+		name="Zhang"
+	}
+	88.4.9={
+		death=yes
+	}
+}
+100045190 = {
+	name="Xian"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045182
+	58.1.1={
+		birth=yes
+	}
+	96.1.1={
+		death=yes
+	}
+}
+100045191 = {
+	name="Yan"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045182
+	57.1.1={
+		birth=yes
+	}
+	125.1.1={
+		death=yes
+	}
+}
+100045192 = {
+	name="Bing"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045182
+	47.1.1={
+		birth=yes
+	}
+	87.1.1={
+		death=yes
+	}
+}
+100045193 = {
+	name="Chang"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045182
+	62.1.1={
+		birth=yes
+	}
+	98.1.1={
+		death=yes
+	}
+}
+100045194 = {
+	name="Gong"
+	dynasty = 1000156118
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045182
+	57.1.1={
+		birth=yes
+	}
+	117.1.1={
+		death=yes
+	}
+}
 
 
 
