@@ -6826,6 +6826,246 @@
 		death=yes
 	}
 }
+
+#Wei Dynasty
+100045224 = {
+	name="Cao"
+	dynasty = 10625631
+    dna="medjejoencc"
+	properties="ce0jej000000"
+    diplomacy=10
+    martial=8
+    stewardship=9
+    intrigue=10
+	learning=10
+	religion="indoh_confucian"
+	culture="zhongyuan"
+    trait="brilliant_strategist"
+    trait="strategist"
+    trait="genius"
+    trait="ambitious"
+    trait="temperate"
+    trait="diligent"
+    trait="shrewd"
+    trait="just"
+	trait="ruthless"
+	trait="levy_coordinator"
+	trait="sapper"
+	trait="back_seat_leader"
+	155.1.1={
+		birth=yes
+	}
+	220.3.15 ={
+		death=yes
+	}
+}
+100045225 = {
+	name="Ang"
+	dynasty = 10625631
+	diplomacy=4
+	martial=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045224
+	trait="tough_soldier"
+	trait="brave"
+	trait="just"
+	trait="defensive_leader"
+	177.1.1={
+		birth=yes
+	}
+	196.1.1={
+		death={death_reason=death_battle} #killed in battle vs Zhang Xiu
+	}
+}
+100045226 = {
+	name="Shuo"
+	dynasty = 10625631
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045224
+	178.1.1={
+		birth=yes
+	}
+	200.1.1={
+		death=yes
+	}
+}
+100045227 = {
+	name="Qinghe"
+	female=yes
+	dynasty = 10625631
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045224
+	trait="proud"
+	trait="just"
+	trait="envious"
+	trait="temperate"
+	trait="chaste"
+	184.1.1={
+		birth=yes
+		employer=400
+	}
+	239.1.1={
+		death=yes
+	}
+}
+100045228 = {
+	name="Pi"
+	dynasty = 10625631
+	dna="eedsehuwfuc"
+	properties="ac00e0000000"
+	diplomacy=5
+	martial=4
+	stewardship=8
+	intrigue=9
+	learning=7
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045224
+	trait="intricate_webweaver"
+	trait="poet"
+	trait="ambitious"
+	trait="deceitful"
+	trait="cruel"
+	trait="greedy"
+	trait="arbitrary"
+	trait="envious"
+	187.1.1={
+		birth=yes
+	}
+	220.12.10={
+		add_trait="tyrant"
+	}
+	226.6.29={
+		death=yes
+	}
+}
+100045229 = {
+	name="Zhang" #Husband of Sun Ji
+	dynasty = 10625631
+	diplomacy=5
+	martial=9
+	stewardship=4
+	intrigue=4
+	learning=4
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045224
+	trait="skilled_tactician"
+	trait="brave"
+	trait="wroth"
+	trait="diligent"
+	trait="just"
+	trait="content"
+	trait="organizer"
+	trait="unyielding_leader"
+	trait="inspiring_leader"
+	188.1.1={
+		birth=yes
+	}
+	223.1.1={
+		death=yes
+	}
+}
+100045230 = {
+	name="Rui"
+	dynasty = 10625631
+	diplomacy=7
+	martial=4
+	stewardship=6
+	intrigue=4
+	learning=7
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045228
+	trait="charismatic_negotiator"
+	trait="architect"
+	trait="diligent"
+	trait="patient"
+	trait="gluttonous"
+	205.1.1={
+		birth=yes
+	}
+	239.1.22={
+		death=yes
+	}
+}
+100045231 = {
+	name="Fang"
+	dynasty = 10625631
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045230
+	trait="adopted"
+	231.1.1={
+		birth=yes
+	}
+	274.1.1={
+		death=yes
+	}
+}
+100045232 = {
+	name="Ling"
+	dynasty = 10625631
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045228
+	216.1.1={
+		birth=yes
+	}
+	247.1.1={
+		death=yes
+	}
+}
+100045233 = {
+	name="Mao"
+	dynasty = 10625631
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045232
+	241.1.1={
+		birth=yes
+	}
+	260.3.1={
+		death=yes #killed by Cheng Ji
+	}
+}
+100045234 = {
+	name="Yu"
+	dynasty = 10625631
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045224
+	trait="content"
+	trait="humble"
+	197.1.1={
+		birth=yes
+	}
+	249.1.1={
+		death=yes
+	}
+}
+100045235 = {
+	name="Huang" #Last Emperor of Wei
+	dynasty = 10625631
+	religion="indoh_confucian"
+	culture="zhongyuan"
+	father = 100045234
+	246.1.1={
+		birth=yes
+	}
+	260.3.1={
+		name="Huan"
+	}
+	303.1.1={
+		death=yes
+	}
+}
 242349 = {
 	name="Fang"
 	dynasty = 10625631
