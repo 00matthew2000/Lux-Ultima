@@ -288,26 +288,27 @@ character_event = {
 						intrigue = 10
 					}
 				}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
-				#}
+				#keep these in, vanilla has this
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
+				}
 				persistent_event_target:antagonize_target = { character_event = { id = HF.22050 } }
 			}
 			5 = { #Sins event - Lustful.
@@ -353,26 +354,26 @@ character_event = {
 						intrigue = 12
 					}
 				}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
-				#}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
+				}
 				persistent_event_target:antagonize_target = { 
 					add_character_modifier = {
 						name = antagonize_sins_1_cooldown
@@ -426,26 +427,26 @@ character_event = {
 						intrigue = 12
 					}
 				}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
-				#}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
+				}
 				persistent_event_target:antagonize_target = { 
 					add_character_modifier = {
 						name = antagonize_sins_2_cooldown
@@ -560,26 +561,26 @@ character_event = {
 						intrigue = 12
 					}
 				}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
-				#}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
+				}
 				persistent_event_target:antagonize_target = { 
 					add_character_modifier = {
 						name = antagonize_sins_4_cooldown
@@ -627,26 +628,26 @@ character_event = {
 						intrigue = 12
 					}
 				}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
-				#}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
+				}
 				persistent_event_target:antagonize_target = { 
 					add_character_modifier = {
 						name = antagonize_sins_5_cooldown
@@ -694,26 +695,26 @@ character_event = {
 						intrigue = 12
 					}
 				}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
-				#}
-				#modifier = {
-					#factor = 1.5
-					#ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
-				#}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 2 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 4 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 6 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 8 } }
+				}
+				modifier = {
+					factor = 1.5
+					ROOT = { attribute_diff = { character = persistent_event_target:antagonize_target attribute = intrigue  value = 10 } }
+				}
 				persistent_event_target:antagonize_target = { 
 					add_character_modifier = {
 						name = antagonize_sins_6_cooldown
