@@ -7100,7 +7100,7 @@
 # Cao family
 1059714 = {
 	name="Yijin"
-	dynasty=1055036
+	dynasty = 10625632
 	religion="tao"
 	culture="han"
 	trait = brilliant_strategist
@@ -7117,7 +7117,7 @@
 }
 1059715 = {
 	name="Huinan" # unnamed daughter of Cao Yijin
-	dynasty=1055036
+	dynasty = 10625632
 	female=yes
 	religion="tao"
 	culture="han"
@@ -7131,7 +7131,7 @@
 }
 1059716 = {
 	name="Yuande" 
-	dynasty=1055036
+	dynasty = 10625632
 	religion="tao"
 	culture="han"
 	father=1059714
@@ -7143,9 +7143,6 @@
 		birth=yes
 	}
 	936.1.1={ # historical claims toward Qocho
-		add_claim = c_lopnor
-		add_claim = c_kumtag
-		add_claim = c_kumul
 		effect = {
 			spawn_unit = {
 				province = 1448 # Dunhuang
@@ -7165,7 +7162,7 @@
 }
 1059717 = {
 	name="Yuanshen" 
-	dynasty=1055036
+	dynasty = 10625632
 	religion="tao"
 	culture="han"
 	father=1059714
@@ -7181,7 +7178,7 @@
 }
 1059718 = {
 	name="Yuanzhong" 
-	dynasty=1055036
+	dynasty = 10625632
 	religion="indoh_confucian"
 	culture="han"
 	father=1059714
@@ -7199,7 +7196,7 @@
 }
 1059719 = {
 	name="Jiangui" # unnamed daughter of Cao Yijin
-	dynasty=1055036
+	dynasty = 10625632
 	female=yes
 	religion="tao"
 	culture="han"
@@ -7214,7 +7211,7 @@
 
 1059720 = {
 	name="Yangong" 
-	dynasty=1055036
+	dynasty = 10625632
 	religion="tao"
 	culture="han"
 	father=1059716
@@ -7227,7 +7224,7 @@
 }
 1059721 = {
 	name="Yanlu" 
-	dynasty=1055036
+	dynasty = 10625632
 	religion="tao"
 	culture="han"
 	father=1059716
@@ -7240,7 +7237,7 @@
 }
 1059722 = {
 	name="Zongshou" 
-	dynasty=1055036
+	dynasty = 10625632
 	religion="tao"
 	culture="han"
 	father=1059718
@@ -7254,7 +7251,7 @@
 }
 1059723 = {
 	name="Zongshou" 
-	dynasty=1055036
+	dynasty = 10625632
 	religion="tao"
 	culture="han"
 	father=1059722
