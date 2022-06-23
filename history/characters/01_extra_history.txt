@@ -360,15 +360,15 @@
 }
 #Mathrafal
 1730067 = {
-	name = Rhodri
+	name="Rhodri 'the Great'"
 	dynasty = 548
 	culture = welsh
 	religion = celtic_pagan
 	father = 1730066
-	give_nickname = nick_the_great
+	#give_nickname = nick_the_great
 	add_trait = "hist_mathrafal"
 	820.1.1 = {
-		birth = yes
+		birth="820.1.1"
 		create_bloodline = {
 			type = mathrafal
 		}

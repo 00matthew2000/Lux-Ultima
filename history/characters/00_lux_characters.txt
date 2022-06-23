@@ -9781,9 +9781,6 @@
 	give_nickname = nick_the_great
 	272.2.27 = {
 		birth = "272.2.27"
-		create_bloodline = {
-			type = britconstantine
-		}
 	}
 	300.1.1 = {
 		add_spouse = 1730134
@@ -9807,6 +9804,9 @@
 	give_nickname = nick_the_slayer_of_emperors
 	302.1.1 = {
 		birth = "302.1.1"
+		create_bloodline = {
+			type = britconstantine
+		}
 	}
 	325.1.1 = {
 		add_spouse = 1730135
@@ -18093,14 +18093,19 @@
 }
 
 16728 = {
-	name = "Robert"
-	dynasty = 743
-	religion = "semipelagian"
-	culture = "frankish"
-	add_trait = "strong"
-	give_nickname = nick_the_strong
-	father = 16727
-	820.1.1 = { birth = yes }
+	name="Robert 'the Strong'"
+	dynasty=743
+	religion="semipelagian"
+	culture="frankish"
+	add_trait="strong"
+	#give_nickname=nick_the_strong
+	father=16727
+	820.1.1 = { 
+		birth = "820.1.1"
+		create_bloodline = {
+			type = capet
+		}
+	}
 	866.1.1 = { death = yes }
 }
 
@@ -18184,9 +18189,6 @@
 	# mother = 16983
 	972.1.1 = { 
 		birth = yes 
-		create_bloodline = {
-			type = capet
-		}
 	}
 	1031.1.1 = { death = yes }
 }
