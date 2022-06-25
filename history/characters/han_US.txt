@@ -16602,7 +16602,7 @@
 }
 
 1000453088 ={
-	name = "Xian"
+	name = "Chi"
 	dynasty = 1000156285
 	culture = "xiang"
 	religion = "confucian"
@@ -16773,7 +16773,7 @@
 	dynasty = 1000156285
 	religion="confucian"
 	culture="zhongyuan"
-	father = 100045242
+	father = 100045239
 	236.1.1={
 		birth=yes
 	}
@@ -16845,19 +16845,57 @@
 		death=yes
 	}
 }
+100045252 = {
+	name="Jin"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045242
+	248.1.1={
+		birth=yes
+	}
+	290.1.1={
+		death=yes
+	}
+}
+100045253 = {
+	name="Rui"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045252
+	trait="skilled_tactician"
+	trait="trusting"
+	trait="just"
+	trait="depressed"
+	trait="shy"
+	276.1.1={
+		birth=yes
+	}
+	318.1.1={
+		name="Yuan"
+	}
+	323.1.3={
+		death=yes
+	}
+}
 
 
 1000453089 ={
-	name = "Bo"
+	name = "Guang"
 	dynasty = 1000156285
 	culture = "xiang"
 	religion = "confucian"
 	father = 1000453088
-	1028.8.17 ={
-		birth = "1028.8.17"
+	trait="chaste"
+	trait="quick"
+	trait="scholar"
+	trait="erudite"
+	1019.11.17 ={
+		birth = "1019.11.17"
 	}
-	1085.7.5 ={
-		death = "1085.7.5"
+	1086.10.11 ={
+		death = "1086.10.11"
 	}
 }
 
