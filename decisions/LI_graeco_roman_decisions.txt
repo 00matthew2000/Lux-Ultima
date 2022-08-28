@@ -87,10 +87,10 @@ targetted_decisions = {
 		from_potential = {
 			religion = roman_imperial
 			any_realm_province = {
-				province = 275
+				province = 333
 			}
 			any_realm_province = {
-				province = 517
+				province = 496
 			}
 			OR = {
 				trait = hist_augustus
@@ -107,10 +107,7 @@ targetted_decisions = {
 				}
 			}
 			is_ruler = yes
-			OR = {
-				is_feudal = yes
-				is_theocracy = yes
-			}
+			classical_government_trigger = yes
 		}
 		allow = {
 			religion = roman_imperial
