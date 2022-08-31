@@ -10,6 +10,15 @@ silk_road = {
 			province_id = 1448
 			province_id = 1440
 			province_id = 1439
+			province_id = 1521
+			province_id = 1526
+			province_id = 1870
+			province_id = 682
+			province_id = 1537
+			province_id = 3435
+			province_id = 1509 
+			province_id = 901
+			province_id = 870 
 			province_id = 678
 			province_id = 764
 			province_id = 802
@@ -150,7 +159,6 @@ silk_road = {
 			province_id = 912
 			province_id = 3335
 			province_id = 3334
-                                          province_id = 920
 # 			province_id = 3393
 # 			province_id = 3395
 # 			province_id = 3407
@@ -241,14 +249,20 @@ silk_road = {
 	path = {	# Samarkand-Otrar
 		903 1181 1186 1431
 	}
-	path = {	# Otrar-Turkestan-Itil-Tana
-		1431 900 1794 622 623 1793 621 618 620 619 605 1811 607 596
+	path = {	# Otrar-Turkestan-Itil-Cherson
+		1431 1795 1799 1186 1181 903 1789 902 1378 1792 623 1793 621 618 620 619 605 1811 607 596 560
+	}
+	path = {	# Cherson-Venezia
+			560 496 483 478 345 356
 	}
 	path = {	# Baghdad-Palmyra
 		693 696 695 712 729 730
 	}
 	path = {	# Palmyra-Antioch
 		730 732 733 764
+	}
+	path = {	# Antioch-Venezia
+		764 483 478 345 356
 	}
 	path = {	# Palmyra-Jerusalem
 		730 731 768 769 728 725 773 774 775
@@ -309,6 +323,12 @@ silk_road = {
 	}
 	path = {	# Aden-Mecca-Cairo-Alexandria
 		1388 871 1387 1386 858 859 1532 1385 1384 716 719 718 1536 1383 1320 794 791 795 796 797 802
+	}
+	path = {	# Alexandria-Venezia
+		802 478 345 356
+	}
+	path = {	# Alexandria-Cherson
+		802 483 496 560
 	}
 
 	# Asia Minor Silk Route
@@ -372,12 +392,6 @@ silk_road = {
 	}
 	path = {	# Kilwa-Mapungubwe
  		2352 2354 2359 2360 2361 2362 2072 2377 2068 2372 2076 2069 2374
-	}
-	path = {	# Kilwa-Mapungubwe
- 		2352 2361 2371 2363 3392 3391 3390 3389 3388 3387 3383 3377 3378 3372 3371 3368 3367 3366 3352 3348 3345 3344 3342 3341 3340 3339 3338 925 913 912 3335 3334 920 847
-	}
-	path = {	# Kilwa-Mapungubwe
- 		2352 2361 2372 3385 3381 3380 3376 3375 3362 3365 3360 3359 3356 3354 3355 1741 1742 1743 1739 1736 1735 1732 1730 1723 811
 	}
 	#path = {	# Kilwa-Mapungubwe
  	#	2122 2218 2243 2314 2259 3393 3395 3147 3407 3403 3404 3406 3409 3410 3411 3412 3413 3414 3415 3416 3417 3416 3415 3414 3413 3412 3411 3410 3409 3406 3404 3403 3407 3147 3395 3393 2259 2314 2243 2218 2122

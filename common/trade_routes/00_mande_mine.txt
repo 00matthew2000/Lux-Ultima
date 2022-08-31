@@ -1,10 +1,32 @@
 mande_mine = {
 	wealth = 15			# 
 	trade_post_display_trigger = {
-		#OR = {
-			#province_id = 914
+		OR = {
+			province_id = 802
+			province_id = 811
+			province_id = 829
+			province_id = 843
+			province_id = 846
+			province_id = 847
 			province_id = 911
-		#}
+			province_id = 912
+			province_id = 916
+			province_id = 917
+			province_id = 918
+			province_id = 919
+			province_id = 920
+			province_id = 921
+			province_id = 922
+			province_id = 926
+			province_id = 1724
+			province_id = 1725
+			province_id = 1730
+			province_id = 1735
+			province_id = 1762
+			province_id = 1775
+			province_id = 1778
+			province_id = 3334
+		}
 	}
 
 	modifier = {			# How the trade route modifies the provinces it passes
@@ -21,11 +43,20 @@ mande_mine = {
 	start = {				# Start provinces of trade route
 		914 #
 		911 #
-		
+		802 #
 	}
 
-	# Northern Silk Route
-	path = {	# Jiuquan-Anxi-Dunhuang
+	# Trans-Saharan Route
+	path = {	# Trans-Saharan (Gao-Timbuktu)
                 914 911
+	}
+	path = {	# Trans-Saharan (Alexandria to Timbuktu)
+ 		802 811 1724 1725 1730 1735 922 829 911
+	}
+	path = {	# Trans-Saharan (Timbuktu to Marrakech)
+ 		911 917 916 918 1775 1778 843
+	}
+	path = {	# Trans-Saharan (Timbuktu to Marrakech 2)
+ 		911 919 912 1762 926 3334 920 921 846 847 1778 843
 	}
 }
