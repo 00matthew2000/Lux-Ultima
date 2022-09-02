@@ -66,6 +66,23 @@
 	1043.1.22={ birth=yes }
 	1125.7.24={ death=yes }
 }
+1019922068={
+	name=Haubariria
+	dynasty=1009990188
+	culture=taino 
+	religion=zemiist
+	1023.6.20={ birth=yes }
+	1096.2.21={ death=yes }
+}
+1019922069={
+	name=Arah
+	dynasty=1009990188
+	culture=taino 
+	religion=zemiist
+	father=1019922068	#Haubariria
+	1055.5.22={ birth=yes }
+	1107.12.21={ death=yes }
+}
 1019922129={
 	name=Gunfuli
 	dynasty=1009990189
@@ -96,8 +113,7 @@
 	dynasty=1009990191
 	culture=taino 
 	religion=zemiist
-	father=1019922342	#Gunfuli
-	985.4.23={ birth=yes }
+	1025.4.23={ birth=yes }
 	1070.11.27={ death=yes }
 }
 1019922348={
@@ -106,7 +122,7 @@
 	culture=taino 
 	religion=zemiist
 	father=1019922344	#Semén
-	1010.7.14={ birth=yes }
+	1050.7.14={ birth=yes }
 	1085.7.20={ death=yes }
 }
 1019922351={
@@ -115,7 +131,7 @@
 	culture=taino 
 	religion=zemiist
 	father=1019922348	#Laliwa
-	1034.1.16={ birth=yes }
+	1054.1.16={ birth=yes }
 	1086.5.18={ death=yes }
 }
 
