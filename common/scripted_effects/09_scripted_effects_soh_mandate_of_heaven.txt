@@ -2104,15 +2104,15 @@ calculate_personal_mandate_of_heaven_effect = {
 			value = -1000
 		}
 	}
-	if = {
-		limit = {
-			has_character_modifier = negative_money
-		}
-		change_variable = {
-			which = personal_mandate_of_heaven
-			value = -250
-		}
-	}
+	#if = {
+	#	limit = {
+	#		has_character_modifier = negative_money
+	#	}
+	#	change_variable = {
+	#		which = personal_mandate_of_heaven
+	#		value = -250
+	#	}
+	#}
 	if = {
 		limit = {
 			has_character_modifier = the_merciful
