@@ -24180,7 +24180,7 @@ add_random_commander_trait_effect = {
 }
 
 add_same_commander_trait_as_FROM = {
-	random_list = {
+	#	random_list = {
 		if = {
 			limit = {
 				NOT = {
@@ -24413,10 +24413,10 @@ add_same_commander_trait_as_FROM = {
 			}
 			add_trait = levy_coordinator
 		}
-		10 = {
-			add_trait_wounded_effect = yes
-		}
-	}
+		#10 = {
+		#	add_trait_wounded_effect = yes
+		#}
+#	}
 }
 
 landless_pope_effect = {
