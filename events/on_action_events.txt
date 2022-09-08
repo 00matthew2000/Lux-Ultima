@@ -4647,9 +4647,7 @@ narrative_event = {
 			FROM = {
 				religion_group = PREV
 			}
-			NOT = {
-				is_heresy_of = ROOT
-			}
+			is_heretic = no
 		}
 	}
 	option = {
@@ -4658,7 +4656,7 @@ narrative_event = {
 			FROM = {
 				religion_group = PREV
 			}
-			is_heresy_of = ROOT
+			is_heretic = yes
 		}
 	}
 	

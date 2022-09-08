@@ -1,269 +1,44 @@
 1019929325={
 	name=Cusichaca
 	dynasty=1009990261
-	dna="icifhgabhoh"
-	culture=aimara religion=inti
-	martial=5 diplomacy=7 stewardship=8 intrigue=5 learning=5
-	add_trait=flamboyant_schemer add_trait=arbitrary add_trait=envious add_trait=gluttonous add_trait=zealous 
-	add_trait=greedy 
+	culture=aimara 
+	religion=inti
 	720.7.16={ birth=yes }
 	807.4.11={ death=yes }
-}
-1019929326={
-	name=Katari
-	dynasty=1009990261
-	dna="iciglgcbhoj"
-	culture=aimara religion=inti
-	martial=6 diplomacy=5 stewardship=5 intrigue=5 learning=4
-	add_trait=flamboyant_schemer add_trait=gregarious add_trait=just 
-	father=1019929325	#Cusichaca
-	751.8.2={ birth=yes }
-	838.2.4={ death=yes }
-}
-1019929327={
-	name=Ana
-	female=yes
-	dynasty=1009990261
-	dna="omafhdaadoh"
-	culture=aimara religion=inti
-	father=1019929325	#Cusichaca
-	758.12.16={ birth=yes }
-	833.8.5={ death=yes }
-}
-1019929328={
-	name=Taraque
-	dynasty=1009990261
-	dna="gjceggfbfda"
-	culture=aimara religion=inti
-	martial=5 diplomacy=7 stewardship=4 intrigue=5 learning=8
-	add_trait=martial_cleric add_trait=zealous add_trait=quick 
-	father=1019929325	#Cusichaca
-	763.8.18={ birth=yes }
-	840.11.5={ death=yes }
-}
-1019929329={
-	name=Guaritopa
-	dynasty=1009990261
-	dna="efinlmcbaop"
-	culture=aimara religion=inti
-	martial=7 diplomacy=8 stewardship=8 intrigue=4 learning=5
-	add_trait=midas_touched add_trait=lustful add_trait=zealous add_trait=proud add_trait=wroth 
-	father=1019929326	#Katari
-	774.9.19={ birth=yes }
-	834.8.28={ death=yes }
-}
-1019929330={
-	name=Axomamma
-	female=yes
-	dynasty=1009990261
-	dna="iciplgcbhol"
-	culture=aimara religion=inti
-	father=1019929326	#Katari
-	780.7.20={ birth=yes }
-	816.12.23={ death=yes }
-}
-1019929331={
-	name=Quispe
-	dynasty=1009990261
-	dna="icigdgcchap"
-	culture=aimara religion=inti
-	martial=7 diplomacy=4 stewardship=8 intrigue=6 learning=5
-	add_trait=scholarly_theologian add_trait=temperate add_trait=brave add_trait=greedy 
-	add_trait=gregarious 
-	father=1019929326	#Katari
-	786.4.11={ birth=yes }
-	825.10.20={ death=yes }
-}
-1019929332={
-	name=Sopa
-	dynasty=1009990261
-	dna="idfgloclooc"
-	culture=aimara religion=inti
-	martial=8 diplomacy=6 stewardship=7 intrigue=5 learning=8
-	add_trait=midas_touched add_trait=poet add_trait=charitable add_trait=cynical 
-	add_trait=lustful 
-	father=1019929326	#Katari
-	791.11.4={ birth=yes }
-	876.6.16={ death=yes }
-}
-1019929333={
-	name=Maiara
-	female=yes
-	dynasty=1009990261
-	dna="iligkgpkeoj"
-	culture=aimara religion=inti
-	father=1019929326	#Katari
-	796.2.8={ birth=yes }
-	871.10.2={ death=yes }
 }
 1019929334={
 	name=Ruminavi
 	dynasty=1009990261
-	dna="eficdncjfda"
-	culture=aimara religion=inti
-	martial=8 diplomacy=8 stewardship=8 intrigue=8 learning=8
-	add_trait=flamboyant_schemer add_trait=slothful add_trait=just add_trait=envious 
-	 
-	father=1019929329	#Guaritopa
+	culture=aimara 
+	religion=inti
+	father=1019929325	#Cusichaca
 	795.10.15={ birth=yes }
 	878.1.25={ death=yes }
-}
-1019929335={
-	name=Nina
-	female=yes
-	dynasty=1009990261
-	dna="efmogmbbpoi"
-	culture=aimara religion=inti
-	father=1019929329	#Guaritopa
-	799.9.22={ birth=yes }
-	864.8.14={ death=yes }
-}
-1019929336={
-	name=Taraque
-	dynasty=1009990261
-	dna="nhindccbfop"
-	culture=aimara religion=inti
-	martial=7 diplomacy=8 stewardship=5 intrigue=7 learning=6
-	add_trait=flamboyant_schemer add_trait=poet add_trait=shy add_trait=lustful add_trait=gluttonous 
-	add_trait=envious 
-	father=1019929329	#Guaritopa
-	805.8.25={ birth=yes }
-	875.8.26={ death=yes }
-}
-1019929337={
-	name=Nina
-	female=yes
-	dynasty=1009990261
-	dna="efbdlocnahp"
-	culture=aimara religion=inti
-	father=1019929329	#Guaritopa
-	810.12.24={ birth=yes }
-	876.6.30={ death=yes }
-}
-1019929338={
-	name=Ana
-	female=yes
-	dynasty=1009990261
-	dna="nhiblmcaaod"
-	culture=aimara religion=inti
-	father=1019929329	#Guaritopa
-	815.5.15={ birth=yes }
-	893.11.1={ death=yes }
-}
-1019929339={
-	name=Orco
-	dynasty=1009990261
-	dna="dfineicjcdo"
-	culture=aimara religion=inti
-	martial=8 diplomacy=5 stewardship=4 intrigue=8 learning=8
-	add_trait=martial_cleric add_trait=arbitrary add_trait=zealous  
-	father=1019929334	#Ruminavi
-	829.1.11={ birth=yes }
-	904.7.16={ death=yes }
-}
-1019929340={
-	name=Amaru
-	dynasty=1009990261
-	dna="mcipondncda"
-	culture=aimara religion=inti
-	martial=6 diplomacy=4 stewardship=6 intrigue=4 learning=4
-	add_trait=detached_priest add_trait=wroth add_trait=drunkard add_trait=hunchback 
-	father=1019929334	#Ruminavi
-	832.5.6={ birth=yes }
-	918.4.30={ death=yes }
-}
-1019929341={
-	name=Kantuta
-	female=yes
-	dynasty=1009990261
-	dna="bjdgbiojfdo"
-	culture=aimara religion=inti
-	father=1019929334	#Ruminavi
-	837.8.15={ birth=yes }
-	900.12.6={ death=yes }
-}
-1019929342={
-	name=Axomamma
-	female=yes
-	dynasty=1009990261
-	dna="fgicdngjfgf"
-	culture=aimara religion=inti
-	father=1019929334	#Ruminavi
-	840.5.11={ birth=yes }
-	895.1.3={ death=yes }
-}
-1019929343={
-	name=Villac
-	dynasty=1009990261
-	dna="mcmboicjlnn"
-	culture=aimara religion=inti
-	martial=4 diplomacy=8 stewardship=8 intrigue=5 learning=5
-	add_trait=thrifty_clerk add_trait=patient add_trait=zealous add_trait=gluttonous 
-	add_trait=craven 
-	father=1019929339	#Orco
-	854.3.19={ birth=yes }
-	914.6.11={ death=yes }
 }
 1019929347={
 	name=Pumi
 	dynasty=1009990261
 	culture=aimara 
 	religion=inti
-	father=1019929343	#Villac
+	father=1019929334	#Ruminavi
 	877.2.2={ birth=yes }
 	961.7.12={ death=yes }
-}
-1019929351={
-	name=Colla
-	dynasty=1009990261
-	culture=aimara 
-	religion=inti
-	father=1019929347	#Pumi
-	904.6.23={ birth=yes }
-	989.6.23={ death=yes }
-}
-1019929356={
-	name=Sopa
-	dynasty=1009990261
-	culture=aimara 
-	religion=inti
-	father=1019929351	#Colla
-	927.10.14={ birth=yes }
-	1000.4.25={ death=yes }
 }
 1019929362={
 	name=Pomaguala
 	dynasty=1009990261
 	culture=aimara 
 	religion=inti
-	father=1019929356	#Sopa
+	father=1019929347	#Pumi
 	959.6.18={ birth=yes }
 	1040.12.15={ death=yes }
-}
-1019929364={
-	name=Orco
-	dynasty=1009990261
-	culture=aimara 
-	religion=inti
-	father=1019929362	#Pomaguala
-	986.9.1={ birth=yes }
-	1041.6.1={ death=yes }
-}
-1019929370={
-	name=Huachuri
-	dynasty=1009990261
-	culture=aimara 
-	religion=inti
-	father=1019929364	#Orco
-	1008.12.18={ birth=yes }
-	1050.5.31={ death=yes }
 }
 1019929376={
 	name=Yupanqui
 	dynasty=1009990261
 	culture=aimara 
 	religion=inti
-	father=1019929370	#Huachuri
+	father=1019929362	#Pomaguala
 	1041.8.9={ birth=yes }
 	1107.12.24={ death=yes }
 }
