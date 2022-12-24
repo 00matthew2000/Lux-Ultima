@@ -350,9 +350,7 @@ character_event = {
 			}
 		}
 		any_ward = {
-			NOT = {
-				family = ROOT
-			}
+			family = no
 			age = 6
 			NOT = {
 				age = 16
@@ -380,9 +378,7 @@ character_event = {
 		}
 		random_ward = {
 			limit = {
-				NOT = {
-				family = ROOT
-			}
+				family = no
 				age = 6
 				NOT = {
 					age = 16
@@ -425,9 +421,7 @@ character_event = {
 		}
 		random_ward = {
 			limit = {
-				NOT = {
-				family = ROOT
-			}
+				family = no
 				age = 6
 				NOT = {
 					age = 16
@@ -473,9 +467,7 @@ character_event = {
 		name = EVTOPTD78010
 		trigger = {
 			any_ward = {
-				NOT = {
-				family = ROOT
-			}
+				family = no
 				age = 6
 				NOT = {
 					age = 16
@@ -529,9 +521,7 @@ character_event = {
 		}
 		random_ward = {
 			limit = {
-				NOT = {
-				family = ROOT
-			}
+				family = no
 				age = 6
 				NOT = {
 					age = 16
@@ -611,9 +601,7 @@ character_event = {
 	
 	trigger = {
 		any_ward = {
-			NOT = {
-				family = ROOT
-			}
+			family = no
 			age = 6
 			NOT = {
 				father = {
