@@ -331,6 +331,8 @@ feudal_governments = {
 		}
 		
 		can_grant_kingdoms_and_empires_to_other_government = yes
+
+		demesne_size = -2
 		
 		unit_modifier = {
 			pikemen_defensive = 0.50
@@ -369,6 +371,9 @@ feudal_governments = {
 		can_build_city = no
 		can_build_temple = no
 		can_build_tribal = no
+		
+		max_liege_levy = -0.5
+		max_liege_tax = -0.5
 		
 		ignore_in_vassal_limit_calculation = {
 			anarchist_government
