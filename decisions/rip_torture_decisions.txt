@@ -25,6 +25,43 @@ targetted_decisions = {
 		}
 
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					FROM = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				if = {
 					limit = {
@@ -111,6 +148,7 @@ targetted_decisions = {
 											capital_scope = { region = world_europe_north }
 											capital_scope = { region = world_steppe_west }
 											capital_scope = { region = world_steppe_east }
+											capital_scope = { region = world_japan } # Tianxia
 										}
 									}
 								}
@@ -363,6 +401,43 @@ targetted_decisions = {
 		}
 
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					FROM = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				if = {
 					limit = {
@@ -698,6 +773,43 @@ targetted_decisions = {
 			prisoner = yes
 		}
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					FROM = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_medium_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_minor_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				FROM = {
 					random_list = {
@@ -950,6 +1062,43 @@ targetted_decisions = {
 		}
 		
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Jade Dragon"
+					FROM = {
+						is_chinese_emperor_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_chinese_emperor_trigger = yes
+					}
+					FROM = {
+						detract_grace_super_huge_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_close_relative = {
+							dynasty = ROOT
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_massive_effect = yes
+					}
+				}
+				else_if = {
+					limit = {
+						any_dynasty_member = {
+							is_chinese_emperor_trigger = yes
+						}
+					}
+					FROM = {
+						detract_grace_major_effect = yes
+					}
+				}
+			}
 			hidden_tooltip = {
 				any_dynasty_member = {
 					limit = {
