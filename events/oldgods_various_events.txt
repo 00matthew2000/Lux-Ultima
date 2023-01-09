@@ -696,7 +696,7 @@ character_event = {
 			factor = 0.25
 			trait = craven
 		}
-		#interesting_courtier_outcome_score = yes #comment out if throws errors - tsf4 ### Thrown out b/c it threw errors -00matthew2000 ###
+		interesting_courtier_outcome_score = yes
 	}
 	
 	immediate = {
@@ -759,390 +759,10 @@ character_event = {
 		}
 		hidden_tooltip = {
 			FROM = { 
-				if = {
-					limit = { is_female = yes }
-					set_character_flag = special_marshal #for safety, so they can go lead armies...
-				}
-				character_event = { id = TOG.3108 days = 1460 } # 4 years later (set some flags, not really necessary anymore, but why not)
-				
-				character_event = { id = HFP.19102 days = 1465 random = 300 } # 4 + years later
+				character_event = { id = TOG.3108 days = 1460 }
 			}
 		}
-		prestige = 100
-	}
-}
-
-# Hidden tombola: fired from event above to determine what happened to Varangian child
-# Formely MTTH events, then random yearly events, but for more control, now a delayed tombola event...
-character_event = {
-	id = HFP.19102
-	is_triggered_only = yes
-	hide_window = yes
-
-	trigger = {
-		is_alive = yes
-		varangian_guard_events_default_trigger = yes
-	}
-
-	immediate = {
-		hidden_effect = {
-			### Possible outcomes...
-			# Child stays in Greece with wife (Setup)...................... TOG.3111
-			# Child returns scarred but seasoned (Setup)................... TOG.3114
-			# Child returns with notions of Greek love (Setup)............. TOG.3116
-			# Child returns castrated and blinded (Setup).................. TOG.3118 
-			# Child returns as excellent strategist (Setup)................ TOG.3120
-			# Child returns with PTSD (Setup).............................. TOG.3122
-			# Child returns home with Greek wife (Setup)................... TOG.3124
-			# Child returns home as a Christian zealot (Setup)............. TOG.3126
-			# Child returns home as a seasoned warrior (Setup)............. TOG.3128
-			# Child dies in battle (Setup)................................. TOG.3130
-			# Child returns with loot (Setup).............................. TOG.3132
-
-			random_list = {
-				10 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-						is_married = no
-						NOR = {
-							father = {
-								primary_title = {
-									current_heir = { character = PREV }
-								}
-							}
-							mother = {
-								primary_title = {
-									current_heir = { character = PREV }
-								}
-							}
-						}
-						had_character_flag = { flag = serving_varangian days = 5 }
-					}
-					modifier = {
-						factor = 1.75
-						trait = lustful
-					}
-					modifier = {
-						factor = 1.75
-						trait = content
-					}
-					modifier = {
-						factor = 1.75
-						trait = slothful
-					}
-					# Child stays in Greece with spouse (Child)...
-					character_event = { id = TOG.3111 } # send outcome event...
-				}
-
-				12 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-						is_married = no
-						had_character_flag = { flag = serving_varangian days = 5 }
-						has_scarred_trait_trigger = no
-					}
-					modifier = {
-						factor = 1.75
-						trait = brave
-					}
-					modifier = {
-						factor = 0.25
-						trait = craven
-					}
-					# Child returns scarred but seasoned (Child)
-					character_event = { id = TOG.3114 } # send outcome event...
-				}
-
-				11 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-						NOT = { trait = homosexual }
-					}
-					modifier = {
-						factor = 1.75
-						trait = lustful
-					}
-					modifier = {
-						factor = 1.75
-						trait = hedonist
-					}
-					modifier = {
-						factor = 1.75
-						trait = chaste
-					}
-					# Child returns with notions of Greek love (Child)
-					character_event = { id = TOG.3116 } # send outcome event...
-				}
-
-				7 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-						NOT = {
-							trait = eunuch
-							trait = blinded
-						}
-					}
-					# Setup: Child returns castrated and blinded (Child)
-					character_event = { id = TOG.3118 } # send outcome event...
-				}
-
-				12 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-						NOT = { trait = brilliant_strategist }
-						OR = {
-							trait = misguided_warrior
-							trait = tough_soldier
-							trait = skilled_tactician
-						}
-					}
-					modifier = {
-						factor = 1.5
-						trait = genius
-					}
-					modifier = {
-						factor = 1.75
-						trait = diligent
-					}
-					modifier = {
-						factor = 1.75
-						OR = {
-							trait = quick
-							trait = shrewd
-						}
-					}
-					modifier = {
-						factor = 0.5
-						OR = {
-							trait = slow
-							trait = dull
-						}
-					}
-					modifier = {
-						factor = 0.5
-						trait = imbecile
-					}
-					# Child returns as excellent strategist (Child)
-					character_event = { id = TOG.3120 } # send outcome event...
-				}
-
-				11 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-						NOT = { trait = depressed }
-					}
-					modifier = {
-						factor = 1.75
-						trait = kind
-					}
-					modifier = {
-						factor = 1.75
-						trait = poet
-					}
-					modifier = {
-						factor = 1.75
-						trait = just
-					}
-					# Child returns with PTSD (Child)
-					character_event = { id = TOG.3122 } # send outcome event...
-				}
-
-				11 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-						is_married = no
-						d_varangian_guard = {
-							holder_scope = { # Intentionally different!
-								liege = {
-									OR = {
-										culture = greek
-										AND = {
-											has_landed_title = e_roman_empire
-											culture = roman
-										}
-									}
-									#OR = {
-										#religion_group = christian
-										#religion = hellenic_pagan
-										#religion = hellenic_pagan_reformed
-									#}
-								}
-							}
-						}
-					}
-					modifier = {
-						factor = 1.75
-						trait = lustful
-					}
-					# Child returns home with Greek spouse (Child)
-					character_event = { id = TOG.3124 } # send outcome event...
-				}
-
-
-				12 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-						OR = {
-							religion = norse_pagan
-							religion = norse_pagan_reformed
-						}
-						OR = {
-							father = {
-								OR = {
-									religion = norse_pagan
-									religion = norse_pagan_reformed
-								}
-								ai = no
-							}
-							mother = {
-								OR = {
-									religion = norse_pagan
-									religion = norse_pagan_reformed
-								}
-								ai = no
-							}
-						}
-						NOT = { trait = zealous }
-						d_varangian_guard = {
-							holder_scope = { # Vanilla's way of doing it is wrong!
-								liege = {
-									religion = orthodox
-								}
-							}
-						}
-					}
-					modifier = {
-						factor = 0.20
-						trait = cynical
-					}
-					# Child returns home as a Christian zealot (Child)
-					character_event = { id = TOG.3126 } # send outcome event...
-				}
-
-				14 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-					}
-					modifier = {
-						factor = 1.75
-						trait = brave
-					}
-					modifier = {
-						factor = 1.75
-						is_strong_trigger = yes
-					}
-					modifier = {
-						factor = 1.75
-						OR = {
-							trait = quick
-							trait = shrewd
-						}
-					}
-					modifier = {
-						factor = 1.75
-						trait = genius
-					}
-					modifier = {
-						factor = 0.5
-						trait = slothful
-					}
-					modifier = {
-						factor = 0.5
-						OR = {
-							trait = slow
-							trait = dull
-						}
-					}
-					modifier = {
-						factor = 0.25
-						trait = imbecile
-					}
-					# Child returns home as a seasoned warrior (Child)
-					character_event = { id = TOG.3128 } # send outcome event...
-				}
-
-				10 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-					}
-					modifier = {
-						factor = 1.75
-						trait = brave
-					}
-					modifier = {
-						factor = 1.75
-						trait = wroth
-					}
-					modifier = {
-						factor = 1.75
-						trait = berserker
-					}
-					modifier = {
-						factor = 0.25
-						trait = craven
-					}
-					modifier = {
-						factor = 1.75
-						trait = drunkard
-					}
-					modifier = {
-						factor = 1.75
-						trait = has_tuberculosis
-					}
-					modifier = {
-						factor = 1.75
-						trait = has_typhoid_fever
-					}
-					modifier = {
-						factor = 1.75
-						trait = has_typhus
-					}
-					modifier = {
-						factor = 1.75
-						trait = has_bubonic_plague
-					}
-					modifier = {
-						factor = 1.75
-						trait = has_measles
-					}		
-					modifier = {
-						factor = 1.75
-						trait = has_small_pox
-					}
-					modifier = {
-						factor = 1.75
-						trait = wounded
-					}
-					modifier = {
-						factor = 1.5
-						trait = infirm
-					}
-					modifier = {
-						factor = 1.5
-						trait = incapable
-					}
-					# Child dies in battle (Child)
-					character_event = { id = TOG.3130 } # send outcome event...
-				}
-
-				12 = {
-					trigger = {
-						varangian_guard_events_default_trigger = yes
-					}
-					modifier = {
-						factor = 1.75
-						trait = greedy
-					}
-					modifier = {
-						factor = 1.75
-						stewardship = 10
-					}
-					# Child returns with loot (Child)
-					character_event = { id = TOG.3132 } # send outcome event...
-				}
-				
-			}
-		}
+		prestige = 50
 	}
 }
 
@@ -2181,22 +1801,7 @@ character_event = {
 	}
 	
 	immediate = {
-		random_list = { #prioritize player parents
-			50 = {
-				modifier = {
-					factor = 100
-					father = { ai = no }
-				}
-				father = { character_event = { id = TOG.3131 } }
-			}
-			50 = {
-				modifier = {
-					factor = 100
-					mother = { ai = no }
-				}
-				mother = { character_event = { id = TOG.3131 } }
-			}
-		}
+		father = { character_event = { id = TOG.3131 } }
 		clr_character_flag = serving_varangian
 		clr_character_flag = son_vassal_merc 
 	}
@@ -2350,8 +1955,8 @@ character_event = {
 	option = {
 		name = EVTOPTA_TOG_3134
 		add_trait = varangian
-		prestige = 50
-		wealth = 50
+		prestige = 200
+		wealth = 200
 	}
 }
 
@@ -5034,6 +4639,12 @@ character_event = {
 		num_of_children = 0
 		has_lover = no
 		is_pregnant = no
+		NOT = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+		}
 	}
 	
 	immediate = {
@@ -5117,10 +4728,14 @@ character_event = {
 	
 	trigger = {
 		religion_group = finnish_group
-		NOT = {
-			has_character_flag = peijaiset
-		}
+		NOT = { has_character_flag = peijaiset }
 		NOT = { is_inaccessible_trigger = yes }
+		NOT = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+		}
 	}
 	
 	immediate = {
@@ -5182,6 +4797,12 @@ character_event = {
 		religion_group = norsegerman_group
 		NOT = { has_character_flag = odin_event }
 		NOT = { is_inaccessible_trigger = yes }
+		NOT = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+		}
 	}
 	
 	immediate = {
