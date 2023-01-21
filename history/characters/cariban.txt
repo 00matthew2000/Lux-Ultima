@@ -2121,543 +2121,102 @@
 1019925618={
 	name=Toruí
 	dynasty=1009990224
-	dna="ondigjnedne"
-	culture=kalina religion=aiwamdzu
-	martial=6 diplomacy=4 stewardship=4 intrigue=4 learning=6
-	add_trait=elusive_shadow add_trait=gardener add_trait=honest add_trait=shy  
-	add_trait=temperate 
+	culture=kalina 
+	religion=aiwamdzu
 	719.1.1={ birth=yes }
 	792.6.10={ death=yes }
 }
 1019925619={
 	name=Toratora
 	dynasty=1009990224
-	dna="emdiojjejjm"
-	culture=kalina religion=aiwamdzu
-	martial=5 diplomacy=4 stewardship=8 intrigue=8 learning=8
-	add_trait=detached_priest add_trait=craven add_trait=proud add_trait=temperate add_trait=wounded 
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925618
 	741.3.1={ birth=yes }
 	831.8.4={ death=yes }
 }
 1019925620={
-	name=Takuiba
-	female=yes
+	name=Haubariria
 	dynasty=1009990224
-	dna="oepijkfnomi"
-	culture=kalina religion=aiwamdzu
-	746.7.14={ birth=yes }
-	805.5.29={ death=yes }
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925619
+	767.2.16={ birth=yes }
+	845.2.9={ death=yes }
 }
 1019925621={
 	name=Laliwa
 	dynasty=1009990224
-	dna="ondigjjedcb"
-	culture=kalina religion=aiwamdzu
-	martial=7 diplomacy=7 stewardship=5 intrigue=8 learning=6
-	add_trait=indulgent_wastrel add_trait=charitable add_trait=gregarious add_trait=brave 
-	750.7.2={ birth=yes }
-	818.8.5={ death=yes }
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925620
+	801.7.25={ birth=yes }
+	863.12.25={ death=yes }
 }
 1019925622={
-	name=Pirijá
+	name=Toruí
 	dynasty=1009990224
-	dna="onioghnedoo"
-	culture=kalina religion=aiwamdzu
-	martial=8 diplomacy=8 stewardship=4 intrigue=7 learning=8
-	add_trait=martial_cleric add_trait=gregarious add_trait=honest add_trait=diligent 
-	add_trait=brave add_trait=possessed 
-	755.4.19={ birth=yes }
-	850.3.3={ death=yes }
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925621
+	829.9.2={ birth=yes }
+	907.6.22={ death=yes }
 }
 1019925623={
-	name=Twengga
-	female=yes
+	name=Pirijá
 	dynasty=1009990224
-	dna="jnmijpneane"
-	culture=kalina religion=aiwamdzu
-	761.2.2={ birth=yes }
-	815.9.15={ death=yes }
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925622
+	860.9.4={ birth=yes }
+	959.8.10={ death=yes }
 }
 1019925624={
-	name=Haubariria
+	name=Arah
 	dynasty=1009990224
-	dna="obkkphdjknp"
-	culture=kalina religion=aiwamdzu
-	martial=8 diplomacy=6 stewardship=4 intrigue=4 learning=6
-	add_trait=charismatic_negotiator add_trait=greedy add_trait=trusting add_trait=just 
-	add_trait=temperate add_trait=honest 
-	767.2.16={ birth=yes }
-	845.2.9={ death=yes }
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925623
+	899.4.19={ birth=yes }
+	984.4.24={ death=yes }
 }
 1019925625={
-	name=Shoko
+	name=Toratora
 	dynasty=1009990224
-	dna="nmdiojjbjjm"
-	culture=kalina religion=aiwamdzu
-	martial=6 diplomacy=5 stewardship=7 intrigue=4 learning=6
-	add_trait=intricate_webweaver add_trait=arbitrary add_trait=gluttonous add_trait=chaste add_trait=envious 
-	add_trait=diligent add_trait=zealous 
-	772.10.12={ birth=yes }
-	855.2.23={ death=yes }
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925624
+	953.12.13={ birth=yes }
+	1035.8.12={ death=yes }
 }
 1019925626={
-	name=Twengga
-	female=yes
+	name=Shoko
 	dynasty=1009990224
-	dna="emdiijjljjm"
-	culture=kalina religion=aiwamdzu
-	777.10.4={ birth=yes }
-	836.1.11={ death=yes }
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925625
+	1003.10.8={ birth=yes }
+	1079.10.13={ death=yes }
 }
 1019925627={
-	name=Takuiba
-	female=yes
+	name=Pirijá
 	dynasty=1009990224
-	dna="emfioijenbm"
-	culture=kalina religion=aiwamdzu
-	785.3.15={ birth=yes }
-	844.5.30={ death=yes }
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925626
+	1026.12.2={ birth=yes }
+	1090.12.20={ death=yes }
 }
 1019925628={
 	name=Laliwa
 	dynasty=1009990224
-	dna="nnmmpjjmjjd"
-	culture=kalina religion=aiwamdzu
-	martial=5 diplomacy=5 stewardship=7 intrigue=8 learning=7
-	add_trait=indulgent_wastrel add_trait=celibate add_trait=shy add_trait=cynical add_trait=greedy 
-	add_trait=temperate   
-	801.7.25={ birth=yes }
-	863.12.25={ death=yes }
-}
-1019925629={
-	name=Mbicy
-	dynasty=1009990224
-	dna="dnbiibjbjjm"
-	culture=kalina religion=aiwamdzu
-	martial=6 diplomacy=4 stewardship=6 intrigue=7 learning=5
-	add_trait=intricate_webweaver add_trait=proud add_trait=shy add_trait=arbitrary 
-	806.12.26={ birth=yes }
-	875.8.7={ death=yes }
-}
-1019925630={
-	name=Laliwa
-	dynasty=1009990224
-	dna="nmdicjjbdkm"
-	culture=kalina religion=aiwamdzu
-	martial=6 diplomacy=6 stewardship=6 intrigue=7 learning=5
-	add_trait=tough_soldier add_trait=wounded 
-	811.7.16={ birth=yes }
-	874.9.3={ death=yes }
-}
-1019925631={
-	name=Arata
-	dynasty=1009990224
-	dna="pmniokdebip"
-	culture=kalina religion=aiwamdzu
-	martial=4 diplomacy=6 stewardship=4 intrigue=7 learning=6
-	add_trait=intricate_webweaver add_trait=just add_trait=shy 
-	add_trait=temperate add_trait=slothful 
-	814.9.19={ birth=yes }
-	877.8.3={ death=yes }
-}
-1019925632={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="bmgiojfijjb"
-	culture=kalina religion=aiwamdzu
-	818.12.7={ birth=yes }
-	879.8.27={ death=yes }
-}
-1019925633={
-	name=Toruí
-	dynasty=1009990224
-	dna="kgmeljmejdb"
-	culture=kalina religion=aiwamdzu
-	martial=7 diplomacy=5 stewardship=8 intrigue=5 learning=4
-	add_trait=naive_appeaser add_trait=gregarious add_trait=arbitrary 
-	add_trait=patient add_trait=diligent add_trait=depressed 
-	829.9.2={ birth=yes }
-	907.6.22={ death=yes }
-}
-1019925634={
-	name=Arata
-	dynasty=1009990224
-	dna="nodmpjnmjjp"
-	culture=kalina religion=aiwamdzu
-	martial=8 diplomacy=6 stewardship=8 intrigue=5 learning=7
-	add_trait=intricate_webweaver add_trait=hunter add_trait=proud add_trait=gluttonous 
-	add_trait=honest  
-	832.5.11={ birth=yes }
-	895.10.31={ death=yes }
-}
-1019925635={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="doehpebmhbd"
-	culture=kalina religion=aiwamdzu
-	836.4.27={ birth=yes }
-	913.4.14={ death=yes }
-}
-1019925636={
-	name=Haubariria
-	dynasty=1009990224
-	dna="imjjejjkhjd"
-	culture=kalina religion=aiwamdzu
-	martial=7 diplomacy=7 stewardship=5 intrigue=4 learning=5
-	add_trait=grey_eminence add_trait=just add_trait=chaste add_trait=brave 
-	839.12.3={ birth=yes }
-	912.9.21={ death=yes }
-}
-1019925637={
-	name=Shoko
-	dynasty=1009990224
-	dna="nlbkjjjhljd"
-	culture=kalina religion=aiwamdzu
-	martial=8 diplomacy=6 stewardship=5 intrigue=6 learning=6
-	add_trait=martial_cleric add_trait=charitable add_trait=ambitious add_trait=diligent 
-	843.7.18={ birth=yes }
-	914.9.1={ death=yes }
-}
-1019925638={
-	name=Takuiba
-	female=yes
-	dynasty=1009990224
-	dna="enmlpjjmjjd"
-	culture=kalina religion=aiwamdzu
-	847.5.11={ birth=yes }
-	921.9.15={ death=yes }
-}
-1019925639={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="nnclkjdhjmd"
-	culture=kalina religion=aiwamdzu
-	853.5.8={ birth=yes }
-	923.12.30={ death=yes }
-}
-1019925640={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="hgmpkjmiinb"
-	culture=kalina religion=aiwamdzu
-	857.10.1={ birth=yes }
-	934.4.23={ death=yes }
-}
-1019925641={
-	name=Pirijá
-	dynasty=1009990224
-	dna="pdfeljmigjb"
-	culture=kalina religion=aiwamdzu
-	martial=4 diplomacy=7 stewardship=8 intrigue=6 learning=6
-	add_trait=elusive_shadow add_trait=craven add_trait=wroth add_trait=honest  
-	860.9.4={ birth=yes }
-	959.8.10={ death=yes }
-}
-1019925642={
-	name=Takuiba
-	female=yes
-	dynasty=1009990224
-	dna="fgmemheeemh"
-	culture=kalina religion=aiwamdzu
-	863.6.10={ birth=yes }
-	942.7.21={ death=yes }
-}
-1019925643={
-	name=Laliwa
-	dynasty=1009990224
-	dna="kbmjlakemdf"
-	culture=kalina religion=aiwamdzu
-	martial=8 diplomacy=7 stewardship=4 intrigue=8 learning=6
-	add_trait=indulgent_wastrel add_trait=chaste add_trait=honest add_trait=harelip 
-	868.3.22={ birth=yes }
-	907.5.16={ death=yes }
-}
-1019925644={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="denekjmbjde"
-	culture=kalina religion=aiwamdzu
-	872.7.18={ birth=yes }
-	928.9.3={ death=yes }
-}
-1019925645={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="bdjoiimllai"
-	culture=kalina religion=aiwamdzu
-	882.4.3={ birth=yes }
-	946.7.16={ death=yes }
-}
-1019925646={
-	name=Haubariria
-	dynasty=1009990224
-	dna="pfcelgmpmjb"
-	culture=kalina religion=aiwamdzu
-	martial=5 diplomacy=7 stewardship=6 intrigue=6 learning=6
-	add_trait=martial_cleric add_trait=brave add_trait=honest add_trait=temperate  
-	add_trait=arbitrary add_trait=zealous add_trait=drunkard 
-	888.1.8={ birth=yes }
-	944.9.10={ death=yes }
-}
-1019925647={
-	name=Haubariria
-	dynasty=1009990224
-	dna="pdkpmjgngbb"
-	culture=kalina religion=aiwamdzu
-	martial=5 diplomacy=4 stewardship=5 intrigue=7 learning=7
-	add_trait=misguided_warrior add_trait=gregarious add_trait=wroth add_trait=humble 
-	893.8.19={ birth=yes }
-	948.2.9={ death=yes }
-}
-1019925648={
-	name=Arah
-	dynasty=1009990224
-	dna="pgbeljmkgjb"
-	culture=kalina religion=aiwamdzu
-	martial=4 diplomacy=8 stewardship=6 intrigue=6 learning=7
-	add_trait=flamboyant_schemer add_trait=arbitrary add_trait=honest add_trait=gregarious 
-	add_trait=brave 
-	899.4.19={ birth=yes }
-	984.4.24={ death=yes }
-}
-1019925649={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="pfjalgmpmjp"
-	culture=kalina religion=aiwamdzu
-	911.7.21={ birth=yes }
-	989.4.3={ death=yes }
-}
-1019925650={
-	name=Amorotahe
-	dynasty=1009990224
-	dna="meceidhhmdj"
-	culture=kalina religion=aiwamdzu
-	martial=6 diplomacy=8 stewardship=7 intrigue=7 learning=7
-	add_trait=martial_cleric add_trait=temperate add_trait=shy  
-	add_trait=cynical 
-	914.8.22={ birth=yes }
-	990.11.1={ death=yes }
-}
-1019925651={
-	name=Takuiba
-	female=yes
-	dynasty=1009990224
-	dna="mapkijhkhab"
-	culture=kalina religion=aiwamdzu
-	933.2.15={ birth=yes }
-	996.10.5={ death=yes }
-}
-1019925652={
-	name=Haubariria
-	dynasty=1009990224
-	dna="kecdicfhmdj"
-	culture=kalina religion=aiwamdzu
-	martial=7 diplomacy=5 stewardship=4 intrigue=5 learning=5
-	add_trait=grey_eminence add_trait=trusting add_trait=humble 
-	940.2.12={ birth=yes }
-	995.8.22={ death=yes }
-}
-1019925653={
-	name=Takuiba
-	female=yes
-	dynasty=1009990224
-	dna="bejdkcahmmd"
-	culture=kalina religion=aiwamdzu
-	958.7.9={ birth=yes }
-	1019.2.20={ death=yes }
-}
-1019925654={
-	name=Toratora
-	dynasty=1009990224
-	dna="cncpicclpmc"
-	culture=kalina religion=aiwamdzu
-	martial=8 diplomacy=8 stewardship=4 intrigue=7 learning=8
-	add_trait=midas_touched add_trait=diligent add_trait=honest  
-	963.12.13={ birth=yes }
-	1035.8.12={ death=yes }
-}
-1019925655={
-	name=Takuiba
-	female=yes
-	dynasty=1009990224
-	dna="kedihcfhmdi"
-	culture=kalina religion=aiwamdzu
-	968.6.8={ birth=yes }
-	1066.6.28={ death=yes }
-}
-1019925656={
-	name=Toruí
-	dynasty=1009990224
-	dna="mdcgiccjppc"
-	culture=kalina religion=aiwamdzu
-	martial=7 diplomacy=8 stewardship=5 intrigue=6 learning=8
-	add_trait=scholarly_theologian add_trait=arbitrary add_trait=gregarious add_trait=temperate  
-	add_trait=greedy 
-	982.5.4={ birth=yes }
-	1052.6.8={ death=yes }
-}
-1019925657={
-	name=Kaigouchi
-	dynasty=1009990224
-	dna="cncppcompac"
-	culture=kalina religion=aiwamdzu
-	martial=6 diplomacy=4 stewardship=5 intrigue=4 learning=4
-	add_trait=charismatic_negotiator add_trait=brave add_trait=patient add_trait=diligent 
-	988.3.11={ birth=yes }
-	1033.1.15={ death=yes }
-}
-1019925658={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="cfcnlccapbe"
-	culture=kalina religion=aiwamdzu
-	991.6.8={ birth=yes }
-	1056.5.9={ death=yes }
-}
-1019925659={
-	name=Takuiba
-	female=yes
-	dynasty=1009990224
-	dna="cilieppbphc"
-	culture=kalina religion=aiwamdzu
-	995.3.22={ birth=yes }
-	1054.10.14={ death=yes }
-}
-1019925660={
-	name=Shoko
-	dynasty=1009990224
-	dna="mdonikcjfpc"
-	culture=kalina religion=aiwamdzu
-	martial=6 diplomacy=8 stewardship=6 intrigue=4 learning=5
-	add_trait=thrifty_clerk add_trait=charitable add_trait=just add_trait=ambitious 
-	1003.10.8={ birth=yes }
-	1079.10.13={ death=yes }
-}
-1019925661={
-	name=Takuiba
-	female=yes
-	dynasty=1009990224
-	dna="ldcgbccpppc"
-	culture=kalina religion=aiwamdzu
-	1009.8.2={ birth=yes }
-	1064.9.5={ death=yes }
-}
-1019925662={
-	name=Takuiba
-	female=yes
-	dynasty=1009990224
-	dna="occgpnchhpi"
-	culture=kalina religion=aiwamdzu
-	1012.8.2={ birth=yes }
-	1098.5.2={ death=yes }
-}
-1019925663={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="hdcbiegjppc"
-	culture=kalina religion=aiwamdzu
-	1017.12.19={ birth=yes }
-	1102.11.5={ death=yes }
-}
-1019925664={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="okagbjjceic"
-	culture=kalina religion=aiwamdzu
-	1020.12.1={ birth=yes }
-	1093.6.9={ death=yes }
-}
-1019925665={
-	name=Pirijá
-	dynasty=1009990224
-	dna="mdfnccilfna"
-	culture=kalina religion=aiwamdzu
-	martial=4 diplomacy=6 stewardship=7 intrigue=5 learning=6
-	add_trait=charismatic_negotiator add_trait=charitable add_trait=patient add_trait=trusting  
-	add_trait=humble 
-	1026.12.2={ birth=yes }
-	1090.12.20={ death=yes }
-}
-1019925666={
-	name=Arata
-	dynasty=1009990224
-	dna="fdcnikcjlld"
-	culture=kalina religion=aiwamdzu
-	martial=6 diplomacy=8 stewardship=8 intrigue=5 learning=8
-	add_trait=skilled_tactician  add_trait=patient add_trait=ambitious 
-	add_trait=proud 
-	1030.4.12={ birth=yes }
-	1091.10.19={ death=yes }
-}
-1019925667={
-	name=Shoko
-	dynasty=1009990224
-	dna="cdnnikfjipc"
-	culture=kalina religion=aiwamdzu
-	martial=5 diplomacy=4 stewardship=5 intrigue=7 learning=4
-	add_trait=thrifty_clerk add_trait=ambitious add_trait=slothful add_trait=zealous add_trait=craven 
-	add_trait=arbitrary 
-	1034.8.10={ birth=yes }
-	1098.12.5={ death=yes }
-}
-1019925668={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="oenfmkimfch"
-	culture=kalina religion=aiwamdzu
-	1039.9.2={ birth=yes }
-	1097.1.9={ death=yes }
-}
-1019925669={
-	name=Takuiba
-	female=yes
-	dynasty=1009990224
-	dna="adokmkfbgpc"
-	culture=kalina religion=aiwamdzu
-	1044.7.16={ birth=yes }
-	1114.8.12={ death=yes }
-}
-1019925670={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="mmfnjcgmfeo"
-	culture=kalina religion=aiwamdzu
-	1050.3.13={ birth=yes }
-	1128.12.10={ death=yes }
-}
-1019925671={
-	name=Laliwa
-	dynasty=1009990224
-	dna="fdlaccoldne"
-	culture=kalina religion=aiwamdzu
-	martial=6 diplomacy=6 stewardship=8 intrigue=6 learning=7
-	add_trait=grey_eminence add_trait=honest add_trait=zealous add_trait=patient add_trait=proud 
-	add_trait=slothful 
+	culture=kalina 
+	religion=aiwamdzu
+	father=1019925627
 	1056.12.15={ birth=yes }
 	1110.4.25={ death=yes }
 }
-1019925672={
-	name=Twengga
-	female=yes
-	dynasty=1009990224
-	dna="abciccflfna"
-	culture=kalina religion=aiwamdzu
-	1062.4.26={ birth=yes }
-	1138.8.13={ death=yes }
-}
+
 1019925556={
 	name=Amorotahe
 	dynasty=1109991359
