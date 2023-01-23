@@ -543,309 +543,68 @@
 	1065.9.19={ birth=yes }
 	1120.12.4={ death=yes }
 }
+
 1019917697={
 	name=Uncas
 	dynasty=1009990144
-	dna="faahikdnmea"
-	culture=mahican religion=algic_pagan
-	martial=6 diplomacy=6 stewardship=4 intrigue=5 learning=4
-	add_trait=charismatic_negotiator add_trait=chaste add_trait=envious 
+	culture=mahican 
+	religion=algic_pagan
 	720.3.9={ birth=yes }
 	780.12.20={ death=yes }
 }
 1019917698={
 	name=Tatobem
 	dynasty=1009990144
-	dna="faahimdbmed"
-	culture=mahican religion=algic_pagan
-	martial=8 diplomacy=8 stewardship=6 intrigue=4 learning=5
-	add_trait=flamboyant_schemer add_trait=gardener add_trait=envious add_trait=craven  
-	add_trait=greedy add_trait=slothful add_trait=temperate 
+	culture=mahican 
+	religion=algic_pagan
 	father=1019917697	#Uncas
 	746.5.7={ birth=yes }
 	808.3.21={ death=yes }
 }
-1019917699={
-	name=Wamsutta
-	dynasty=1009990144
-	dna="daaeigellek"
-	culture=mahican religion=algic_pagan
-	martial=6 diplomacy=4 stewardship=8 intrigue=8 learning=4
-	add_trait=flamboyant_schemer add_trait=slothful add_trait=trusting add_trait=zealous add_trait=humble 
-	 
-	father=1019917697	#Uncas
-	754.7.14={ birth=yes }
-	840.10.22={ death=yes }
-}
-1019917700={
-	name=Wequash
-	dynasty=1009990144
-	dna="aaakindngea"
-	culture=mahican religion=algic_pagan
-	martial=5 diplomacy=6 stewardship=7 intrigue=7 learning=4
-	add_trait=misguided_warrior add_trait=duelist add_trait=zealous add_trait=humble add_trait=wroth 
-	 
-	father=1019917697	#Uncas
-	760.9.9={ birth=yes }
-	816.1.16={ death=yes }
-}
-1019917701={
-	name=Awashonks
-	female=yes
-	dynasty=1009990144
-	dna="fadfighbmea"
-	culture=mahican religion=algic_pagan
-	father=1019917697	#Uncas
-	764.4.18={ birth=yes }
-	826.10.9={ death=yes }
-}
 1019917702={
 	name=Sassamon
 	dynasty=1009990144
-	dna="habgiiekmdd"
-	culture=mahican religion=algic_pagan
-	martial=5 diplomacy=4 stewardship=6 intrigue=5 learning=8
-	add_trait=misguided_warrior add_trait=lustful add_trait=stressed 
+	culture=mahican 
+	religion=algic_pagan
 	father=1019917698	#Tatobem
 	771.4.7={ birth=yes }
 	839.5.13={ death=yes }
 }
-1019917703={
-	name=Djitsbudnaca
-	female=yes
-	dynasty=1009990144
-	dna="laghildbmep"
-	culture=mahican religion=algic_pagan
-	father=1019917698	#Tatobem
-	778.4.21={ birth=yes }
-	837.9.15={ death=yes }
-}
-1019917704={
-	name=Tisquantum
-	dynasty=1009990144
-	dna="kaejlmkbica"
-	culture=mahican religion=algic_pagan
-	martial=5 diplomacy=7 stewardship=5 intrigue=8 learning=5
-	add_trait=martial_cleric  add_trait=greedy add_trait=temperate 
-	add_trait=gregarious 
-	father=1019917698	#Tatobem
-	781.1.22={ birth=yes }
-	876.6.15={ death=yes }
-}
 1019917705={
 	name=Uncas
 	dynasty=1009990144
-	dna="palkjibkbdd"
-	culture=mahican religion=algic_pagan
-	martial=4 diplomacy=7 stewardship=6 intrigue=7 learning=4
-	add_trait=martial_cleric add_trait=cynical add_trait=diligent add_trait=ambitious add_trait=possessed 
+	culture=mahican 
+	religion=algic_pagan
 	father=1019917702	#Sassamon
 	802.10.14={ birth=yes }
 	866.7.19={ death=yes }
 }
-1019917706={
-	name=Canonchet
-	dynasty=1009990144
-	dna="nboaiikkmdc"
-	culture=mahican religion=algic_pagan
-	martial=6 diplomacy=8 stewardship=7 intrigue=7 learning=6
-	add_trait=charismatic_negotiator add_trait=gluttonous add_trait=arbitrary add_trait=greedy 
-	father=1019917702	#Sassamon
-	810.6.23={ birth=yes }
-	855.7.2={ death=yes }
-}
-1019917707={
-	name=Weetamoo
-	female=yes
-	dynasty=1009990144
-	dna="hamkicgbfcd"
-	culture=mahican religion=algic_pagan
-	father=1019917702	#Sassamon
-	814.1.2={ birth=yes }
-	884.4.10={ death=yes }
-}
 1019917708={
 	name=Pessicus
 	dynasty=1009990144
-	dna="hpkkjjjkpaf"
-	culture=mahican religion=algic_pagan
-	martial=4 diplomacy=5 stewardship=4 intrigue=8 learning=7
-	add_trait=martial_cleric add_trait=envious add_trait=greedy add_trait=temperate add_trait=brave 
+	culture=mahican 
+	religion=algic_pagan
 	father=1019917705	#Uncas
 	827.7.9={ birth=yes }
 	906.12.30={ death=yes }
 }
-1019917709={
-	name=Weetamoo
-	female=yes
-	dynasty=1009990144
-	dna="phefjibilmc"
-	culture=mahican religion=algic_pagan
-	father=1019917705	#Uncas
-	831.12.18={ birth=yes }
-	904.3.3={ death=yes }
-}
-1019917710={
-	name=Canonchet
-	dynasty=1009990144
-	dna="pdimjibhbpd"
-	culture=mahican religion=algic_pagan
-	martial=5 diplomacy=6 stewardship=6 intrigue=8 learning=5
-	add_trait=detached_priest add_trait=lustful add_trait=cynical add_trait=shy  
-	add_trait=brave add_trait=greedy 
-	father=1019917705	#Uncas
-	835.3.24={ birth=yes }
-	912.2.11={ death=yes }
-}
-1019917711={
-	name=Wootonekanuske
-	female=yes
-	dynasty=1009990144
-	dna="laigjhbafdd"
-	culture=mahican religion=algic_pagan
-	father=1019917705	#Uncas
-	839.5.18={ birth=yes }
-	900.9.10={ death=yes }
-}
-1019917712={
-	name=Wootonekanuske
-	female=yes
-	dynasty=1009990144
-	dna="pdlknpmnbdk"
-	culture=mahican religion=algic_pagan
-	father=1019917705	#Uncas
-	844.3.19={ birth=yes }
-	923.1.3={ death=yes }
-}
-1019917713={
-	name=Weetamoo
-	female=yes
-	dynasty=1009990144
-	dna="pkakaibpbde"
-	culture=mahican religion=algic_pagan
-	father=1019917705	#Uncas
-	847.7.24={ birth=yes }
-	903.3.4={ death=yes }
-}
-1019917714={
-	name=Sassacus
-	dynasty=1009990144
-	dna="lapbmimlbdd"
-	culture=mahican religion=algic_pagan
-	martial=5 diplomacy=6 stewardship=6 intrigue=4 learning=6
-	add_trait=thrifty_clerk add_trait=arbitrary add_trait=proud 
-	father=1019917705	#Uncas
-	851.11.24={ birth=yes }
-	936.4.26={ death=yes }
-}
 1019917715={
 	name=Uncas
 	dynasty=1009990144
-	dna="fppkojjdlhi"
-	culture=mahican religion=algic_pagan
-	martial=6 diplomacy=5 stewardship=8 intrigue=7 learning=7
-	add_trait=midas_touched add_trait=humble add_trait=greedy add_trait=chaste 
+	culture=mahican 
+	religion=algic_pagan
 	father=1019917708	#Pessicus
 	851.4.25={ birth=yes }
 	924.5.15={ death=yes }
 }
-1019917716={
-	name=Awashonks
-	female=yes
-	dynasty=1009990144
-	dna="oigkjjjklkb"
-	culture=mahican religion=algic_pagan
-	father=1019917708	#Pessicus
-	857.3.9={ birth=yes }
-	912.2.13={ death=yes }
-}
-1019917717={
-	name=Miantonomo
-	dynasty=1009990144
-	dna="hepkiijdpop"
-	culture=mahican religion=algic_pagan
-	martial=6 diplomacy=7 stewardship=7 intrigue=8 learning=4
-	add_trait=charismatic_negotiator add_trait=shy add_trait=slothful add_trait=brave 
-	 
-	father=1019917708	#Pessicus
-	861.3.26={ birth=yes }
-	935.11.22={ death=yes }
-}
-1019917718={
-	name=Weetamoo
-	female=yes
-	dynasty=1009990144
-	dna="hpanjcjgphf"
-	culture=mahican religion=algic_pagan
-	father=1019917708	#Pessicus
-	864.5.22={ birth=yes }
-	946.6.7={ death=yes }
-}
-1019917719={
-	name=Weetamoo
-	female=yes
-	dynasty=1009990144
-	dna="hedeojjdkhb"
-	culture=mahican religion=algic_pagan
-	father=1019917715	#Uncas
-	879.3.16={ birth=yes }
-	943.1.26={ death=yes }
-}
 1019917720={
 	name=Sassacus
 	dynasty=1009990144
-	dna="fabkohmdloe"
-	culture=mahican religion=algic_pagan
-	martial=4 diplomacy=5 stewardship=8 intrigue=4 learning=6
-	add_trait=intricate_webweaver add_trait=temperate add_trait=brave add_trait=slothful 
-	add_trait=zealous 
+	culture=mahican 
+	religion=algic_pagan
 	father=1019917715	#Uncas
 	883.9.4={ birth=yes }
 	967.1.28={ death=yes }
-}
-1019917721={
-	name=Mahomet
-	dynasty=1009990144
-	dna="fgkkopmklli"
-	culture=mahican religion=algic_pagan
-	martial=6 diplomacy=8 stewardship=4 intrigue=5 learning=7
-	add_trait=tough_soldier add_trait=poet add_trait=slothful add_trait=humble add_trait=gluttonous 
-	add_trait=drunkard 
-	father=1019917715	#Uncas
-	889.4.7={ birth=yes }
-	928.1.15={ death=yes }
-}
-1019917722={
-	name=Wootonekanuske
-	female=yes
-	dynasty=1009990144
-	dna="fppkpejplki"
-	culture=mahican religion=algic_pagan
-	father=1019917715	#Uncas
-	893.9.21={ birth=yes }
-	961.9.27={ death=yes }
-}
-1019917723={
-	name=Metacom
-	dynasty=1009990144
-	dna="nhjpjkjcchi"
-	culture=mahican religion=algic_pagan
-	martial=4 diplomacy=8 stewardship=5 intrigue=4 learning=6
-	add_trait=grey_eminence add_trait=gluttonous add_trait=zealous add_trait=slothful add_trait=just 
-	add_trait=weak 
-	father=1019917715	#Uncas
-	896.4.19={ birth=yes }
-	962.5.14={ death=yes }
-}
-1019917724={
-	name=Awashonks
-	female=yes
-	dynasty=1009990144
-	dna="ffpibcmfofj"
-	culture=mahican religion=algic_pagan
-	father=1019917720	#Sassacus
-	915.6.27={ birth=yes }
-	982.7.21={ death=yes }
 }
 1019917725={
 	name=Wequash
