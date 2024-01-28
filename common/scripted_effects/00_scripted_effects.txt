@@ -9250,35 +9250,35 @@ spawn_slave_army_effect = {
 			attrition = 1.0
 		}
 	}
-	if = {
-		limit = { can_use_dragon_abilities_trigger = yes }
-		create_random_soldier = {
-			random_traits = yes
-			dynasty = none
-			religion = ROOT
-			culture = random
-			female = no
-			trait = liberator
-			trait = former_slave
-		}
-		new_character = {
-			random_list = {
-				10 = { add_trait = skilled_warrior }
-				30 = { add_trait = trained_warrior }
-				60 = { add_trait = poor_warrior }
-			}
-			set_character_flag = escaped_slave
-			spawn_unit = {
-				province = ROOT
-				home = ROOT
-				owner = PREV
+	#if = {
+		#limit = { can_use_dragon_abilities_trigger = yes }
+		#create_random_soldier = {
+			#random_traits = yes
+			#dynasty = none
+			#religion = ROOT
+			#culture = random
+			#female = no
+			#trait = liberator
+			#trait = former_slave
+		#}
+		#new_character = {
+			#random_list = {
+				#10 = { add_trait = skilled_warrior }
+				#30 = { add_trait = trained_warrior }
+				#60 = { add_trait = poor_warrior }
+			#}
+			#set_character_flag = escaped_slave
+			#spawn_unit = {
+				#province = ROOT
+				#home = ROOT
+				#owner = PREV
 				#leader = THIS
-				scaled_by_biggest_garrison = 0.15
-				troops = { light_infantry = { 1 1 } }
-				attrition = 1.0
-			}
-		}
-	}
+				#scaled_by_biggest_garrison = 0.15
+				#troops = { light_infantry = { 1 1 } }
+				#attrition = 1.0
+			#}
+		#}
+	#}
 }
 spawn_slave_reinforcements_effect = {
 	create_random_soldier = {

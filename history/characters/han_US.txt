@@ -16879,7 +16879,166 @@
 		death=yes
 	}
 }
-
+100045254 = {
+	name="Shao"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045253
+	299.1.1={
+		birth=yes
+	}
+	323.1.4={
+		name="Ming"
+	}
+	325.10.18={
+		death=yes
+	}
+}
+100045260 = {
+	name="Yan"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045254
+	322.1.1={
+		birth=yes
+	}
+	325.10.19={
+		name="Cheng"
+	}
+	342.7.26={
+		death=yes
+	}
+}
+100045261 = {
+	name="Yue"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045254
+	322.2.1={
+		birth=yes
+	}
+	342.7.27={
+		name="Kang"
+	}
+	344.11.17={
+		death=yes
+	}
+}
+100045262 = {
+	name="Dan"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045261
+	343.1.1={
+		birth=yes
+	}
+	344.11.18={
+		name="Mu"
+	}
+	361.7.10={
+		death=yes
+	}
+}
+100045263 = {
+	name="Pi"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045260
+	341.1.1={
+		birth=yes
+	}
+	361.7.13={
+		name="Ai"
+	}
+	365.3.30={
+		death=yes
+	}
+}
+100045264 = {
+	name="Yi"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045260
+	342.1.1={
+		birth=yes
+	}
+	365.3.31={
+		name="Fei"
+	}
+	372.1.6={
+		death=yes
+	}
+}
+100045259 = {
+	name="Yu"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045253
+	320.1.1={
+		birth=yes
+	}
+	372.1.6={
+		name="Jianwen"
+	}
+	372.9.12={
+		death=yes
+	}
+}
+100045265 = {
+	name="Yao"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045259
+	362.1.1={
+		birth=yes
+	}
+	372.9.13={
+		name="Xiaowu"
+	}
+	396.11.6={
+		death=yes
+	}
+}
+100045266 = {
+	name="Dezong"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045265
+	382.1.1={
+		birth=yes
+	}
+	397.11.7={
+		name="An"
+	}
+	419.1.28={
+		death=yes
+	}
+}
+100045267 = {
+	name="Dewen"
+	dynasty = 1000156285
+	religion="confucian"
+	culture="zhongyuan"
+	father = 100045265
+	386.1.1={
+		birth=yes
+	}
+	419.1.29={
+		name="Gong"
+	}
+	420.7.5={
+		death=yes
+	}
+}
 
 1000453089 ={
 	name = "Guang"
@@ -26104,7 +26263,7 @@
 	dynasty = 1000156423
 	culture = "han"
 	religion = "shenjiao"
-	nickname = "nick_the_shi_huangdi"
+	give_nickname = "nick_the_shi_huangdi"
 	add_trait = "midas_touched"
 	add_trait = "ruthless"
 	add_trait = "ambitious"

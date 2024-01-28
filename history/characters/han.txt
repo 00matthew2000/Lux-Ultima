@@ -6851,7 +6851,6 @@
 	trait="ruthless"
 	trait="levy_coordinator"
 	trait="sapper"
-	trait="back_seat_leader"
 	155.1.1={
 		birth=yes
 	}
@@ -6939,7 +6938,7 @@
 		birth=yes
 	}
 	220.12.10={
-		add_trait="tyrant"
+		give_nickname = the_tyrant
 	}
 	226.6.29={
 		death=yes
@@ -7001,7 +7000,6 @@
 	religion="indoh_confucian"
 	culture="zhongyuan"
 	father = 100045230
-	trait="adopted"
 	231.1.1={
 		birth=yes
 	}
