@@ -53,113 +53,6 @@ e_australia = {
 				b_ferthperlen = {
 				}
 			}
-			c_paraburdoo = {
-
-				color={ 32 125 191 }
-				color2={ 255 255 255 }
-
-				b_paraburdoo = {
-				}
-				b_uthlemen = {
-				}
-				b_wvayradaman = {
-				}
-			}
-			c_wiluna = {
-
-				color={ 122 135 111 }
-				color2={ 255 255 255 }
-
-				b_wiluna = {
-				}
-				b_wurranlakapa = {
-				}
-				b_meunsterent = {
-				}
-			}
-			c_exmouth = {
-
-				color={ 12 65 138 }
-				color2={ 255 255 255 }
-
-				b_exmouth = {
-				}
-				b_huyepeksan = {
-				}
-				b_munpueraka = {
-				}
-			}
-		}
-		d_carnbro = {
-
-			color={ 64 64 244 }
-			color2={ 255 255 255 }
-
-			capital = 3490 # Derbyy
-
-			c_carnarvon = {
-
-				color={ 82 15 18 }
-				color2={ 255 255 255 }
-
-				b_carnarvon = {
-				}
-				b_feuploeopa = {
-				}
-				b_manjimup = {
-				}
-			}
-			c_derbyy = {
-
-				color={ 52 65 181 }
-				color2={ 255 255 255 }
-
-				b_derbyy = {
-				}
-				b_newman = {
-				}
-				b_ujalanthe = {
-				}
-			}
-			c_loungston = {
-
-				color={ 142 25 111 }
-				color2={ 255 255 255 }
-
-				b_loungston = {
-				}
-				b_wehlalerth = {
-				}
-				b_pturanmanthe = {
-				}
-			}
-			c_broome = {
-
-				color={ 32 35 171 }
-				color2={ 255 255 255 }
-
-				holy_site = dreamtime_religion
-				holy_site = dreamtime_religion_reformed
-
-				b_broome = {
-				}
-				b_heukkente = {
-				}
-				b_emequaelle = {
-				}
-			}
-			c_kununurra = {
-
-				color={ 142 15 101 }
-				color2={ 255 255 255 }
-
-				b_kununurra = {
-				}
-				b_halls_creek = {
-				}
-				b_bullocanpe = {
-				}
-			}
 		}
 		d_pernors = { #Guide
 
@@ -199,54 +92,6 @@ e_australia = {
 				b_geyulerenthe = {
 				}
 			}
-			c_norseman = {
-
-				color={ 21 35 17 }
-				color2={ 255 255 255 }
-
-				b_norseman = {
-				}
-				b_esperance = {
-				}
-				b_cape_arid = {
-				}
-			}
-			c_madura = {
-
-				color={ 151 135 127 }
-				color2={ 255 255 255 }
-
-				b_madura = {
-				}
-				b_huabanperent = {
-				}
-				b_zaklotere = {
-				}
-			}
-			c_ravensthorpe = {
-
-				color={ 71 15 77 }
-				color2={ 255 255 255 }
-
-				b_ravensthorpe = {
-				}
-				b_laverton = {
-				}
-				b_merredin = {
-				}
-			}
-			c_albany = {
-
-				color={ 141 55 97 }
-				color2={ 255 255 255 }
-
-				b_albany = {
-				}
-				b_quanpank = {
-				}
-				b_werrionlaph = {
-				}
-			}
 		}
         }
 	k_central_australia = { 
@@ -256,178 +101,6 @@ e_australia = {
 
 		capital = 3406 # 
 
-		d_southern_territory = {
-
-			color={ 218 25 114 }
-			color2={ 255 255 255 }
-
-			capital = 3494 # Cloncurry
-
-			c_cloncurry = {
-
-				color={ 18 210 104 }
-				color2={ 255 255 255 }
-
-				b_cloncurry = {
-				}
-				b_mount_isa = {
-				}
-				b_garonsuena = {
-				}
-			}
-			c_augustaa = {
-
-				color={ 168 230 24 }
-				color2={ 255 255 255 }
-
-				b_augustaa = {
-				}
-				b_cunkupusta = {
-				}
-				b_jeilandarhan = {
-				}
-			}
-			c_ewihsemport = {
-
-				color={ 43 140 54 }
-				color2={ 255 255 255 }
-
-				b_ewihsemport = {
-				}
-				b_tenypensah = {
-				}
-				b_zelithkech = {
-				}
-			}
-			c_petermann = {
-
-				color={ 48 160 127 }
-				color2={ 255 255 255 }
-
-				b_petermann = {
-				}
-				b_mount_woodroffe = {
-				}
-				b_tennant_creek = {
-				}
-			}
-			c_tennant = {
-
-				color={ 178 120 35 }
-				color2={ 255 255 255 }
-
-				b_tennant = {
-				}
-				b_woodroffe = {
-				}
-				b_tueannape = {
-				}
-			}
-			c_maria = {
-
-				color={ 88 65 187 }
-				color2={ 255 255 255 }
-
-				b_maria = {
-				}
-				b_marree = {
-				}
-				b_eloparenthe = {
-				}
-			}
-			c_elliston = {
-
-				color={ 18 175 137 }
-				color2={ 255 255 255 }
-
-				b_elliston = {
-				}
-				b_asulkanterre = {
-				}
-				b_luohakanra = {
-				}
-			}
-		}
-		d_northern_territory = { #
-
-			color={ 28 130 144 }
-			color2={ 255 255 255 }
-
-			capital = 3402 #
-
-			c_katherine = {
-
-				color={ 28 78 14 }
-				color2={ 255 255 255 }
-
-				b_katherine = {
-				}
-				b_sexinpropr = {
-				}
-				b_lexaxpiwe = {
-				}
-			}
-			c_davenport = {
-
-				color={ 168 30 164 }
-				color2={ 255 255 255 }
-
-				b_davenport = {
-				}
-				b_lekpenmente = {
-				}
-				b_quanepinai = {
-				}
-			}
-			c_darwin = {
-
-				color={ 118 120 34 }
-				color2={ 255 255 255 }
-
-				b_darwin = {
-				}
-				b_alexraprand = {
-				}
-				b_top_springs = {
-				}
-			}
-			c_hurelthport = {
-
-				color={ 38 60 194 }
-				color2={ 255 255 255 }
-
-				b_hurelthport = {
-				}
-				b_teyleppe = {
-				}
-				b_quarmeareo = {
-				}
-			}
-			c_alice_springs = {
-
-				color={ 48 80 54 }
-				color2={ 255 255 255 }
-
-				b_alice_springs = {
-				}
-				b_dusulkapanth = {
-				}
-				b_cazuperlaeon = {
-				}
-			}
-			c_klampeken = {
-
-				color={ 68 138 54 }
-				color2={ 255 255 255 }
-
-				b_klampeken = {
-				}
-				b_faheuplek = {
-				}
-				b_neneyelem = {
-				}
-			}
-		}
 		d_south_australia = { #
 
 			color={ 14 48 71 }
@@ -435,30 +108,6 @@ e_australia = {
 
 			capital = 3406 #
 
-			c_ceduna = {
-
-				color={ 234 138 61 }
-				color2={ 255 255 255 }
-
-				b_ceduna = {
-				}
-				b_coober_pedy = {
-				}
-				b_streaky_bay = {
-				}
-			}
-			c_woomera = {
-
-				color={ 34 128 21 }
-				color2={ 255 255 255 }
-
-				b_woomera = {
-				}
-				b_soulaperri = {
-				}
-				b_lernleseth = {
-				}
-			}
 			c_adelaiede = {
 
 				color={ 154 8 41 }
@@ -535,54 +184,6 @@ e_australia = {
 				b_ruhthmerkempi = {
 				}
 			}
-			c_rockhampton = {
-
-				color={ 17 128 77 }
-				color2={ 255 255 255 }
-
-				b_rockhampton = {
-				}
-				b_murreykenth = {
-				}
-				b_lucklaeamph = {
-				}
-			}
-			c_thargomindah = {
-
-				color={ 66 88 97 }
-				color2={ 255 255 255 }
-
-				b_thargomindah = {
-				}
-				b_feuropenketh= {
-				}
-				b_klampentenpe = {
-				}
-			}
-			c_winton = {
-
-				color={ 176 8 47 }
-				color2={ 255 255 255 }
-
-				b_winton = {
-				}
-				b_st_george = {
-				}
-				b_yekkampla = {
-				}
-			}
-			c_cbarcaldine = {
-
-				color={ 176 8 47 }
-				color2={ 255 255 255 }
-
-				b_cbarcaldine = {
-				}
-				b_luxlepeth = {
-				}
-				b_cullantere = {
-				}
-			}
 			c_sydney = {
 
 				color={ 66 68 97 }
@@ -617,18 +218,6 @@ e_australia = {
 
 			capital = 3585 # Bundaberg
 
-			c_charleville = {
-
-				color={ 16 18 27 }
-				color2={ 255 255 255 }
-
-				b_charleville = {
-				}
-				b_romaa = {
-				}
-				b_xeterpurph = {
-				}
-			}
 			c_brisbane = {
 
 				color={ 196 78 77 }
@@ -639,30 +228,6 @@ e_australia = {
 				b_townsville = {
 				}
 				b_ayrr = {
-				}
-			}
-			c_cooktown = {
-
-				color={ 216 2 217 }
-				color2={ 255 255 255 }
-
-				b_cooktown = {
-				}
-				b_bamaga = {
-				}
-				b_innisfail = {
-				}
-			}
-			c_hughenden = {
-
-				color={ 36 42 57 }
-				color2={ 255 255 255 }
-
-				b_hughenden = {
-				}
-				b_aebemega = {
-				}
-				b_ruklyleppe = {
 				}
 			}
 			c_bundaberg = {
