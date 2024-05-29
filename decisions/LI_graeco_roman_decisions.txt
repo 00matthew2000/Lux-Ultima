@@ -86,11 +86,13 @@ targetted_decisions = {
 		ai_target_filter = realm
 		from_potential = {
 			religion = roman_imperial
-			any_realm_province = {
-				province = 333
-			}
-			any_realm_province = {
-				province = 496
+			OR = {
+				any_realm_province = {
+					province = 333
+				}
+				any_realm_province = {
+					province = 496
+				}
 			}
 			OR = {
 				trait = hist_augustus
@@ -99,13 +101,7 @@ targetted_decisions = {
 			}
 		}
 		potential = {
-			NOT = {
-				d_roman_imperial = {
-					holder_scope = {
-						always = yes
-					}
-				}
-			}
+			NOT = { is_title_active = d_roman_imperial }
 			is_ruler = yes
 			classical_government_trigger = yes
 		}
@@ -113,12 +109,22 @@ targetted_decisions = {
 			religion = roman_imperial
 		}
 		effect = {
-			d_roman_imperial = {
-				activate_title = {
-					title = THIS
-					status = yes
+			activate_title = { title = d_roman_imperial status = yes }
+			hidden_tooltip = {
+				create_random_priest = {
+					dynasty = none
+					random_traits = yes
 				}
-				grant_title = ROOT
+				new_character = {
+					d_roman_imperial = {
+						grant_title = PREV
+					}
+					wealth = 500
+					opinion = {
+						who = ROOT
+						modifier = opinion_creator_of_rel_heal
+					}
+				}
 			}
 		}
 		#revoke_allowed = {
