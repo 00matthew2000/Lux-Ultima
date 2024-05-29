@@ -90,11 +90,7 @@ character_event = {
 					religion = ROOT
 					has_opinion_modifier = { who = ROOT modifier = opinion_sent_preacher }
 				}
-				religion_group = pagan_group
-				OR = {
-					NOT = { religion = quetzal }
-					year = 1350
-				}
+				LI_pagan_trigger = yes
 				is_reformed_religion = no
 				controls_religion = no
 				ROOT = {
