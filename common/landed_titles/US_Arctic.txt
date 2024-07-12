@@ -724,57 +724,8 @@ e_nunavut = {
 		vinlandic = "Yukon"
 		swedish = "Yukon"
 
-		capital = 4573 # Yukon
+		capital = 4576 # Yukon
 
-		d_yukon = {
-
-			color={ 45 44 79 }
-			color2={ 220 220 220 }
-
-			roman = "Yukon"
-			norwegian = "Yukon"
-			danish = "Yukon"
-			vinlandic = "Yukon"
-			swedish = "Yukon"
-			
-			capital = 4556 # Kaskayukuuk
-			
-			c_insapiangwichan = {
-				color={ 5 224 179 }
-				color2={ 220 220 220 }
-				
-				b_insapiangwichan = {
-				}
-			}
-			c_tutchone = {
-				color={ 8 84 19 }
-				color2={ 220 220 220 }
-				
-				b_tutchone = {
-				}
-			}
-			c_inukyon = {
-				color={ 91 63 45 }
-				color2={ 220 220 220 }
-				
-				b_inukyon = {
-				}
-			}
-			c_kaskayukuuk = {
-				color={ 15 8 123 }
-				color2={ 220 220 220 }
-				
-				b_kaskayukuuk = {
-				}
-			}
-			c_bataine = {
-				color={ 130 42 79 }
-				color2={ 220 220 220 }
-				
-				b_bataine = {
-				}
-			}
-		}
 		d_kikuyaliksuk = {
 
 			color={ 27 104 179 }
@@ -786,50 +737,8 @@ e_nunavut = {
 			swedish = "Kikuyaliksuk"
 			vinlandic = "Kikuyaliksuk"
 			
-			capital = 4573 # Yukon
+			capital = 4576 # Yukon
 			
-			c_wesunukitut = {
-				color={ 135 124 119 }
-				color2={ 220 220 220 }
-
-				b_wesunukitut = {
-				}
-			}
-			c_slavey = {
-				color={ 15 15 15 }
-				color2={ 220 220 220 }
-				
-				b_slavey = {
-				}
-			}
-			c_suthsavey = {
-				color={ 8 84 19 }
-				color2={ 220 220 220 }
-				
-				b_suthsavey = {
-				}
-			}
-			c_nosrunukitut = {
-				color={ 215 124 49 }
-				color2={ 220 220 220 }
-				
-				b_nosrunukitut = {
-				}
-			}
-			c_nodukitut = {
-				color={ 4 78 85 }
-				color2 = { 220 220 220 }
-				
-				b_nodukitut = {
-				}
-			}
-			c_ogrib = {
-				color={ 101 105 112 }
-				color2={ 220 220 220 }
-				
-				b_ogrib = {
-				}
-			}
 			c_kolkrunkitut = {
 				color={ 8 84 19 }
 				color2={ 220 220 220 }
@@ -842,13 +751,6 @@ e_nunavut = {
 				color2={ 220 220 220 }
 				
 				b_inukit = {
-				}
-			}
-			c_nothununukitut = {
-				color={ 12 223 157 }
-				color2={ 220 220 220 }
-				
-				b_nothununukitut = {
 				}
 			}
 		}
@@ -917,19 +819,6 @@ e_nunavut = {
 				b_denalaska = {
 				}
 			}
-			c_yukonaska = {
-				color={ 144 144 209 }
-				color2={ 220 220 220 }
-				
-				b_yukonaska = {
-				}
-				b_yukonkunock = {
-				}
-				b_koyukukaska = {
-				}
-				b_matanuskasuista = {
-				}
-			}
 			c_yukuk = {
 				color={ 118 51 19 }
 				color2={ 220 220 220 }
@@ -995,41 +884,13 @@ e_nunavut = {
 			c_yupik = {
 				color={ 11 241 29 }
 				color2={ 220 220 220 }
+
+				holy_site = inuit_pagan
+				holy_site = inuit_pagan_reformed
 				
 				b_sugpiaq = {
 				}
 				b_mikuryar = {
-				}
-			}
-			c_inupiaq = {
-				color={ 211 1 166 }
-				color2={ 220 220 220 }
-				
-				b_inupiaq = {
-				}
-				b_kaktovik = {
-				}
-			}
-			c_illingban = {
-				color={ 105 64 79 }
-				color2={ 220 220 220 }
-				
-					holy_site = inuit_pagan
-					holy_site = inuit_pagan_reformed
-				
-				b_illingban = {
-				}
-				b_yukobe = {
-				}
-				b_kusilvak = {
-				}
-				b_nome = {
-				}
-				b_arcyuk = {
-				}
-				b_athelerius = {
-				}
-				b_mammoth = {
 				}
 			}
 			c_fasaleutia = {
@@ -1306,19 +1167,6 @@ e_saskatchewan = {
 				b_ignikililgaak = {
 				}
 			}
-			c_akigatukaga = {
-				color={ 181 23 43 }
-				color2={ 220 220 220 }
-				
-				b_akigatukaga = {
-				}
-				b_nuirukakimaruk = {
-				}
-				b_hudnigiuktuk = {
-				}
-				b_chetwynd = {
-				}
-			}
 			c_manmataginhtahkn = {
 				color={ 181 23 43 }
 				color2={ 220 220 220 }
@@ -1401,24 +1249,12 @@ e_saskatchewan = {
 				b_ingikaimagvik = {
 				}
 			}
-			c_wesdenekuuk = {
-				color={ 116 17 59 }
-				color2={ 220 220 220 }
-				
-				b_wesdenekuuk = {
-				}
-				b_chipewyannarvak = {
-				}
-				b_athabskanarkvak = {
-				}
-				b_urgilikiggikingi = {
-				}
-				b_kayuktuknarvak = {
-				}
-			}
 			c_paluktuk = {
 				color={ 72 91 22 }
 				color2={ 220 220 220 }
+
+				holy_site = sgaanaang
+				holy_site = sgaanaang_reformed
 				
 				b_naskatchearan = {
 				}
@@ -1429,20 +1265,6 @@ e_saskatchewan = {
 				b_athabascakuuk = {
 				}
 				b_urgiilikuuk = {
-				}
-			}
-			c_shuowap = {
-				color={ 142 101 124 }
-				color2={ 220 220 220 }
-				
-				holy_site = sgaanaang
-				holy_site = sgaanaang_reformed
-				
-				b_shuowap = {
-				}
-				b_kuunniikuliksak = {
-				}
-				b_kirukuukiyu = {
 				}
 			}
 		}
@@ -1512,17 +1334,6 @@ e_saskatchewan = {
 				b_bdobdonabde = {
 				}
 				b_zuyaiyuweyapi = {
-				}
-			}
-			c_estdene = {
-				color={ 132 141 167 }
-				color2={ 220 220 220 }
-				
-				b_estdene = {
-				}
-				b_athubusrn = {
-				}
-				b_oiayaabaapiwakpa = {
 				}
 			}
 		}

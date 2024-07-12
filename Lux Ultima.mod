@@ -1,4 +1,4 @@
-name = "Lux Ultima v0.6K10" 
+name = "Lux Ultima v0.1" 
 path = "mod/Lux-Ultima"
 user_dir = "Lux-Ultima"
 

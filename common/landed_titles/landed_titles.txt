@@ -28240,15 +28240,17 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_tahnasha = {}
 			}
 		}
-		d_aswan = {
-			color = { 41 188 120 }
+		d_thebes = {
+			color = { 37 168 119 }
 			
-			capital = 794 #Aswan
+			capital = 1509 #Thebai
 
-			nubian = "Sioout"
-			greek = "Lycopolis"
-			roman = "Oasis Magna"
-
+			nubian = "Nut"
+			greek = "Thebai" 
+			hellenistic = "Thebai"
+			roman = "Thebae"
+			egyptian_arabic = "Luxor"
+			
 			c_asyut = {
 				color = { 43 190 122 }
 				
@@ -28284,100 +28286,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_meir = {
 				}
 				b_suhaj = {
-				}
-			}
-			c_dotawo = {
-				color = { 160 130 85 }
-				color2={ 255 255 255 }
-			
-				b_dotawo = {
-				}
-				b_jebeladda = {
-				}
-				b_faras = {
-				}
-				b_qasribrim = {
-				}
-				b_ballana = {
-				}
-				b_buhen = {
-				}
-				b_premnis = {
-				}
-			}
-			c_pakhoras = {
-				color = { 201 140 57 }
-				color2={ 255 255 255 }
-			
-				b_pakhoras = {
-				}
-				b_kom_ombo = {
-				}
-				b_abu_simbel = {
-				}
-				b_tutankhamun = {
-				}
-				b_dakka = {
-				}
-				b_maharraqa = {
-				}
-				b_argeen = {
-				}
-			}
-			c_qasr_ibrim = {
-				color = { 119 134 74 }
-				
-				b_ukhta2 = {}
-				b_sosnogorsk2 = {}
-				b_yarega2 = {}
-				b_vodnyy2 = {}
-				b_nizhodes2 = {}
-				b_vuktyl2 = {}
-				b_kadzherom2 = {}
-				b_voyvozh2 = {}
-			}
-			c_nechesia = {
-				color = { 122 4 16 }
-				
-				b_nechesia = {}
-				b_safaga = {}
-				b_hurghada = {}
-				b_jiftun = {}
-				b_pentedactylus = {}
-				b_karejat = {}
-			}
-			c_aswan = {
-				color={ 43 190 122 }
-				color2={ 255 255 255 }
-				
-				holy_site = amun
-				holy_site = aten
-				holy_site = isis
-				holy_site = set
-				holy_site = amun_reformed
-				holy_site = aten_reformed
-				holy_site = isis_reformed
-				holy_site = set_reformed
-				
-				nubian = "Sowan"
-				
-				b_aswan = {
-					nubian = "Sowan"
-					sao = "Karnak" 
-					fur = "Karnak" 
-					luo = "Karnak"
-				}
-				b_elefantina = {
-				}
-				b_shellal = {
-				}
-				b_bigeh = {
-				}
-				b_veset = {
-				}
-				b_philae = {
-				}
-				b_kalabsha = {
 				}
 			}
 			c_luxor = {
@@ -28428,20 +28336,6 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 				b_ain_bishay = {}
 				b_qasrfarfra = {}
 			}
-			c_kharga = {
-				color = { 108 227 142 }
-
-				nubian = "Wah Empsoy"
-				roman = "Oasis Magna"
-			
-				b_buhairya1 = {}
-				b_qasrfarfra1 = {}
-				b_elkharga = {}
-				b_baris = {}
-				b_budhkula1 = {}
-				b_abuminqar1 = {}
-				b_ismant = {}
-			}
 			c_esna = {
 				color={ 33 242 122 }
 				color2={ 255 255 255 }
@@ -28476,6 +28370,124 @@ e_levant = { # dejure empire for Judea, Egypt, Palmyra & Syria
 					nubian = "Ebot"
 				}
 				b_khnum = {}
+			}
+			c_nechesia = {
+				color = { 122 4 16 }
+				
+				b_nechesia = {}
+				b_safaga = {}
+				b_hurghada = {}
+				b_jiftun = {}
+				b_pentedactylus = {}
+				b_karejat = {}
+			}
+		}
+		d_aswan = {
+			color = { 41 188 120 }
+			
+			capital = 794 #Aswan
+
+			nubian = "Sioout"
+			greek = "Lycopolis"
+			roman = "Oasis Magna"
+
+			c_dotawo = {
+				color = { 160 130 85 }
+				color2={ 255 255 255 }
+			
+				b_dotawo = {
+				}
+				b_jebeladda = {
+				}
+				b_faras = {
+				}
+				b_qasribrim = {
+				}
+				b_ballana = {
+				}
+				b_buhen = {
+				}
+				b_premnis = {
+				}
+			}
+			c_pakhoras = {
+				color = { 201 140 57 }
+				color2={ 255 255 255 }
+			
+				b_pakhoras = {
+				}
+				b_kom_ombo = {
+				}
+				b_abu_simbel = {
+				}
+				b_tutankhamun = {
+				}
+				b_dakka = {
+				}
+				b_maharraqa = {
+				}
+				b_argeen = {
+				}
+			}
+			c_qasr_ibrim = {
+				color = { 119 134 74 }
+				
+				b_ukhta2 = {}
+				b_sosnogorsk2 = {}
+				b_yarega2 = {}
+				b_vodnyy2 = {}
+				b_nizhodes2 = {}
+				b_vuktyl2 = {}
+				b_kadzherom2 = {}
+				b_voyvozh2 = {}
+			}
+			c_aswan = {
+				color={ 43 190 122 }
+				color2={ 255 255 255 }
+				
+				holy_site = amun
+				holy_site = aten
+				holy_site = isis
+				holy_site = set
+				holy_site = amun_reformed
+				holy_site = aten_reformed
+				holy_site = isis_reformed
+				holy_site = set_reformed
+				
+				nubian = "Sowan"
+				
+				b_aswan = {
+					nubian = "Sowan"
+					sao = "Karnak" 
+					fur = "Karnak" 
+					luo = "Karnak"
+				}
+				b_elefantina = {
+				}
+				b_shellal = {
+				}
+				b_bigeh = {
+				}
+				b_veset = {
+				}
+				b_philae = {
+				}
+				b_kalabsha = {
+				}
+			}
+			c_kharga = {
+				color = { 108 227 142 }
+
+				nubian = "Wah Empsoy"
+				roman = "Oasis Magna"
+			
+				b_buhairya1 = {}
+				b_qasrfarfra1 = {}
+				b_elkharga = {}
+				b_baris = {}
+				b_budhkula1 = {}
+				b_abuminqar1 = {}
+				b_ismant = {}
 			}
 		}
 		d_paraetonium = {
